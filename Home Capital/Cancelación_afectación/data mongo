@@ -92,7 +92,7 @@
             type: 'name'
         },
         {
-            description: 'Seleccione el sexo del primer testigo',
+            description: 'Seleccione el sexo del primer testigo - apoderado',
             name: 'sexo_testigo_1',
             options: [
                 {
@@ -176,7 +176,7 @@
             type: 'name'
         },
         {
-            description: 'Seleccione el sexo del segundo testigo',
+            description: 'Seleccione el sexo del segundo testigo - apoderado',
             name: 'sexo_testigo_2',
             options: [
                 {
@@ -192,7 +192,7 @@
             value: 'm'
         },
         {
-            description: 'Seleccione el tipo de documento del segundo testigo',
+            description: 'Seleccione el tipo de documento del segundo testigo - apoderado',
             name: 'tipo_documento_testigo_2',
             options: [
                 {
@@ -260,13 +260,13 @@
             type: 'text'
         },
         {
-            description: 'Digite el correo electrónico del primer testigo',
+            description: 'Digite el correo electrónico del primer testigo - apoderado',
             help: 'correo',
             name: 'correo_testigo_1',
             type: 'text'
         },
         {
-            description: 'Digite el correo electrónico del segundo testigo',
+            description: 'Digite el correo electrónico del segundo testigo - apoderado',
             help: 'correo',
             name: 'correo_testigo_2',
             type: 'text'

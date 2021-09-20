@@ -14,9 +14,9 @@
             type: 'number'
         },
         {
-            description: 'Digite el lugar de expedición de la cédula de ciudadanía del cliente',
+            description: 'Digite el municipio donde fue expedido el documento de identificación del cliente',
             help: 'lugar_expedicion_cedula',
-            name: 'lugar_expe_cedula_cliente',
+            name: 'lugar_expe_cedula_cliente', 
             type: 'text'
         },
         {
@@ -24,11 +24,6 @@
             help: 'estado_civil',
             name: 'estado_cliente',
             options: [
-                {
-                    label: ' soltero',
-                    name: 'Soltero',
-                    value: 'so'
-                },
                 {
                     label: ' casado con sociedad conyugal vigente',
                     name: 'Casado con sociedad conyugal vigente',
@@ -40,58 +35,185 @@
                     value: 'cs'
                 },
                 {
-                    label: ' viudo',
-                    name: 'Viudo',
-                    value: 'vi'
-                },
-                {
-                    label: ' soltero con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
+                    label: ' con unión marital de hecho',
+                    name: 'Con con unión marital de hecho',
                     value: 'su'
                 }
             ],
             type: 'select',
-            value: 'so'
+            value: 'cc'
         },
         {
-            description: 'Digite el lugar de residencia del cliente',
+            description: 'Digite el municipio de domicilio del cliente',
             help: 'lugar',
             name: 'lugar_cliente',
             type: 'text'
         },
         {
-            description: 'Digite el nombre completo del(a) primer(a) testigo',
+            description: 'Digite el nombre completo del primer testigo - apoderado',
             help: 'nombre',
             name: 'nombre_testigo_1',
             type: 'name'
         },
         {
-            description: 'Digite el número de cédula de ciudadanía del(a) primer(a) testigo',
+            description: 'Seleccione el sexo del primer testigo - apoderado',
+            name: 'sexo_testigo_1',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del primer testigo - apoderado',
+            name: 'tipo_documento_testigo_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del primer testigo - apoderado',
             help: 'cedula',
             name: 'cedula_testigo_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'cc'
+                }
+            ],
             type: 'number'
         },
         {
-            description: 'Digite el lugar de expedeción del documento de identificación del(a) primer(a) testigo',
+            description: 'Digite el número de cédula de extranjería del primer testigo - apoderado',
+            help: 'cedula',
+            name: 'cedulae_testigo_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del primer testigo - apoderado',
+            help: 'cedula',
+            name: 'pasaporte_testigo_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el lugar de expedición del documento de identificación del primer testigo - apoderado',
             help: 'lugar_expedicion',
             name: 'lugar_expe_cedula_testigo_1',
             type: 'text'
         },
         {
-            description: 'Digite el nombre completo del(a) segundo(a) testigo',
+            description: 'Digite el nombre completo del segundo testigo - apoderado',
             help: 'nombre',
             name: 'nombre_testigo_2',
             type: 'name'
         },
         {
-            description: 'Digite el número de cédula de ciudadanía del(a) segundo(a) testigo',
+            description: 'Seleccione el sexo del segundo testigo - apoderado',
+            name: 'sexo_testigo_2',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del segundo testigo - apoderado',
+            name: 'tipo_documento_testigo_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo testigo - apoderado',
             help: 'cedula',
             name: 'cedula_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'cc'
+                }
+            ],
             type: 'number'
         },
         {
-            description: 'Digite el lugar de expedeción del documento de identificación del(a) segundo(a) testigo',
-            help: 'lugar_expedicion',
+            description: 'Digite el número de cédula de extranjería del segundo testigo - apoderado',
+            help: 'cedula',
+            name: 'cedulae_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo testigo - apoderado',
+            help: 'cedula',
+            name: 'pasaporte_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del segundo testigo - apoderado',
+            help: 'lugar_expedicion_cedula',
             name: 'lugar_expe_cedula_testigo_2',
             type: 'text'
         },
@@ -143,7 +265,7 @@
             description: 'Digite el correo electrónico del cliente',
             help: 'correo',
             name: 'correo_cliente',
-            type: 'text'
+            type: 'text' 
         },
         {
             description: 'Digite el nombre completo del apoderado',
@@ -173,9 +295,13 @@
         'lugar_cliente',
         'nombre_testigo_1',
         'cedula_testigo_1',
+        'cedulae_testigo_1',
+        'pasaporte_testigo_1',
         'lugar_expe_cedula_testigo_1',
         'nombre_testigo_2',
         'cedula_testigo_2',
+        'cedulae_testigo_2',
+        'pasaporte_testigo_2',
         'lugar_expe_cedula_testigo_2',
         'descripcion_inmu',
         'hijos',
@@ -193,10 +319,10 @@
             type: 'cliente'
         },
         {
-            email: 'correo_apoderado',
-            identification: 'cedula_apoderado',
-            name: 'nombre_apoderado',
-            type: 'apoderado'
+            email: 'correo_testigo_1',
+            identification: 'cedula_testigo_1|cedulae_testigo_1|pasaporte_testigo_1',
+            name: 'nombre_testigo_1',
+            type: 'testigo_1'
         }
     ],
     preBuildData: [],

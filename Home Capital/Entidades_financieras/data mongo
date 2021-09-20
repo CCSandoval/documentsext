@@ -14,21 +14,16 @@
             type: 'number'
         },
         {
-            description: 'Digite el lugar de expedición de la cédula de ciudadanía del cliente',
+            description: 'Digite el municipio donde fue expedido el documento de identificación del cliente',
             help: 'lugar_expedicion_cedula',
             name: 'lugar_expe_cedula_cliente',
             type: 'text'
         },
         {
-            description: 'Digite el estado civil del cliente',
+            description: 'Seleccione el estado civil del cónyuge',
             help: 'estado_civil',
-            name: 'estado_cliente',
+            name: 'estado_conyuge',
             options: [
-                {
-                    label: ' soltero',
-                    name: 'Soltero',
-                    value: 'so'
-                },
                 {
                     label: ' casado con sociedad conyugal vigente',
                     name: 'Casado con sociedad conyugal vigente',
@@ -40,41 +35,102 @@
                     value: 'cs'
                 },
                 {
-                    label: ' viudo',
-                    name: 'Viudo',
-                    value: 'vi'
-                },
-                {
-                    label: ' soltero con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
+                    label: ' con unión marital de hecho',
+                    name: 'Con unión marital de hecho',
                     value: 'su'
                 }
             ],
             type: 'select',
-            value: 'so'
+            value: 'cc'
         },
         {
-            description: 'Digite el lugar de residencia del cliente',
+            description: 'Digite el municipio de domicilio del cliente',
             help: 'lugar',
             name: 'lugar_cliente',
             type: 'text'
         },
         {
-            description: 'Digite el nombre completo del representante',
+            description: 'Seleccione el sexo del representante - apoderado',
+            name: 'sexo_representante',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del representante - apoderado',
             help: 'nombre',
             name: 'nombre_representante',
             type: 'name'
         },
         {
-            description: 'Digite el número de cédula de ciudadanía del representante',
+            description: 'Seleccione el tipo de documento del representante - apoderado',
+            name: 'tipo_documento_representante',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del representante - apoderado',
             help: 'cedula',
             name: 'cedula_representante',
+            prereq: [
+                {
+                    k: 'tipo_documento_representante',
+                    v: 'cc'
+                }
+            ],
             type: 'number'
         },
         {
-            description: 'Digite el lugar de expedición de la cédula de ciudadanía del representante',
-            help: 'lugar_expedicion_cedula',
-            name: 'lugar_expe_cedula_repre',
+            description: 'Digite el número de cédula de extranjería del representante - apoderado',
+            help: 'cedula',
+            name: 'cedulae_representante',
+            prereq: [
+                {
+                    k: 'tipo_documento_representante',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del representante  - apoderado',
+            help: 'cedula',
+            name: 'pasaporte_representante',
+            prereq: [
+                {
+                    k: 'tipo_documento_representante',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del representante - apoderado',
+            help: 'lugar_expedicion_representante',
+            name: 'lugar_expe_cedula_representante',
             type: 'text'
         },
         {
@@ -84,21 +140,9 @@
             type: 'text'
         },
         {
-            description: 'Digite el nombre completo del apoderado',
-            help: 'nombre',
-            name: 'nombre_apoderado',
-            type: 'name'
-        },
-        {
-            description: 'Digite el número de cédula de ciudadanía del apoderado',
-            help: 'cedula',
-            name: 'cedula_apoderado',
-            type: 'number'
-        },
-        {
             description: 'Digite el correo electrónico del apoderado',
             help: 'correo',
-            name: 'correo_apoderado',
+            name: 'correo_representante',
             type: 'text'
         }
     ],
