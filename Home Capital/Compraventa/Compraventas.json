@@ -266,8 +266,8 @@
         },
         {
             "description": "Digite el año del proceso del número de la escritura",
-            "help": "año",
-            "name": "año_num_escritura",
+            "help": "ano",
+            "name": "ano_num_escritura",
             "type": "number"
         },
         {
@@ -302,8 +302,8 @@
         },
         {
             "description": "Digite el año del proceso de la escritura púbica",
-            "help": "año",
-            "name": "año_escritura_pub",
+            "help": "ano",
+            "name": "ano_escritura_pub",
             "type": "number"
         },
         {
@@ -332,8 +332,8 @@
         },
         {
             "description": "Digite el año de pago de la cuota inicial",
-            "help": "año",
-            "name": "año_cuota_inicial",
+            "help": "ano",
+            "name": "ano_cuota_inicial",
             "type": "number"
         },
         {
@@ -362,8 +362,8 @@
         },
         {
             "description": "Digite el año de pago del cheque",
-            "help": "año",
-            "name": "año_pago_cheque",
+            "help": "ano",
+            "name": "ano_pago_cheque",
             "type": "number"
         },
         {
@@ -398,8 +398,8 @@
         },
         {
             "description": "Digite el año de pago del restante total",
-            "help": "año",
-            "name": "año_pago_restante",
+            "help": "ano",
+            "name": "ano_pago_restante",
             "type": "number"
         },
         {
@@ -422,8 +422,8 @@
         },
         {
             "description": "Digite el año de la entrega de los inmuebles",
-            "help": "año",
-            "name": "año_entrega_inmu",
+            "help": "ano",
+            "name": "ano_entrega_inmu",
             "type": "number"
         },
         {
@@ -440,8 +440,8 @@
         },
         {
             "description": "Digite el año de celebración de la escritura de compraventa",
-            "help": "año",
-            "name": "año_celebracion",
+            "help": "ano",
+            "name": "ano_celebracion",
             "type": "number"
         },
         {
@@ -500,8 +500,8 @@
         },
         {
             "description": "Digite el año en el que se firma el contrato",
-            "help": "año",
-            "name": "año_firma",
+            "help": "ano",
+            "name": "ano_firma",
             "type": "number"
         },
         {
@@ -538,7 +538,7 @@
         "area": "Ejemplo: 20 metros cuadrados (m2)",
         "dia": "Ejemplo: 20",
         "mes": "Ejemplo 10",
-        "año": "Ejemplo: 2021",
+        "ano": "Ejemplo: 2021",
         "precio": "Ejemplo: 100.000.000",
         "valor": "Ejemplo: 5.000.000",
         "forma_pago": "Ejemplo: Efectivo",
@@ -591,36 +591,36 @@
         "numero_escritura",
         "dia_num_escritura",
         "mes_num_escritura",
-        "año_num_escritura",
+        "ano_num_escritura",
         "numero_notaria",
         "lugar_notaria",
         "num_escritura_pub",
         "dia_escritura_pub",
         "mes_escritura_pub",
-        "año_escritura_pub",
+        "ano_escritura_pub",
         "precio_inmueble",
         "cuota_inicial",
         "dia_cuota_inicial",
         "mes_cuota_inicial",
-        "año_cuota_inicial",
+        "ano_cuota_inicial",
         "f_pago_cuota_inicial",
         "valor_cheque",
         "dia_pago_cheque",
         "mes_pago_cheque",
-        "año_pago_cheque",
+        "ano_pago_cheque",
         "f_pago_cheque",
         "condi_pago_cheque",
         "restante_pago",
         "dia_pago_restante",
         "mes_pago_restante",
-        "año_pago_restante",
+        "ano_pago_restante",
         "horas",
         "dia_entrega_inmu",
         "mes_entrega_inmu",
-        "año_entrega_inmu",
+        "ano_entrega_inmu",
         "dia_celebracion",
         "mes_celebracion",
-        "año_celebracion",
+        "ano_celebracion",
         "hora_celebracion",
         "f_hora",
         "nombre_comprador",
@@ -630,7 +630,7 @@
         "lugar_firma",
         "dia_firma",
         "mes_firma",
-        "año_firma",
+        "ano_firma",
         "activ_econ_vendedor",
         "correo_vendedor",
         "correo_comprador"
