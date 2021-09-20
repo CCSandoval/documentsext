@@ -1,8 +1,7 @@
 {
     "build": 2,
     "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
-    "config": [
-        {
+    "config": [{
             "description": "Digite el nombre completo del vendedor",
             "help": "nombre",
             "name": "nombre_vendedor",
@@ -15,11 +14,16 @@
             "type": "number"
         },
         {
+            "description": "Digite el municipio donde fue expedido el documento de identificación del vendedor",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_vendedor",
+            "type": "text"
+        },
+        {
             "description": "Digite el estado civil del vendedor",
             "help": "estado_civil",
             "name": "estado_vendedor",
-            "options": [
-                {
+            "options": [{
                     "label": " soltero",
                     "name": "Soltero",
                     "value": "so"
@@ -55,7 +59,7 @@
             "type": "text"
         },
         {
-            "description": "Digite la ubicación del vendedor",
+            "description": "Digite el municipio de domicilio del vendedor",
             "help": "lugar",
             "name": "lugar_vendedor",
             "type": "text"
@@ -79,75 +83,191 @@
             "type": "text"
         },
         {
-            "description": "Digite el nombre completo del(a) primer(a) representante",
+            "description": "Seleccione el sexo del primer apoderado",
+            "name": "sexo_representante_1",
+            "options": [{
+                    "name": "Femenino",
+                    "value": "m"
+                },
+                {
+                    "name": "Masculino",
+                    "value": "h"
+                }
+            ],
+            "type": "clausula",
+            "value": "m"
+        },
+        {
+            "description": "Digite el nombre completo del primer apoderado",
             "help": "nombre",
-            "name": "nombre_repre_1",
+            "name": "nombre_representante_1",
             "type": "name"
         },
         {
-            "description": "Digite el número de cédula de ciudadanía del(a) primer(a) representante",
+            "description": "Seleccione el tipo de documento del primer apoderado",
+            "name": "tipo_documento_representante_1",
+            "options": [{
+                    "name": "Cédula de Ciudadanía",
+                    "value": "cc"
+                },
+                {
+                    "name": "Cédula de Extranjería",
+                    "value": "ce"
+                },
+                {
+                    "name": "Pasaporte",
+                    "value": "pa"
+                }
+            ],
+            "type": "clausula",
+            "value": "cc"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del primer apoderado",
             "help": "cedula",
-            "name": "cedula_repre_1",
+            "name": "cedula_representante_1",
+            "prereq": [{
+                "k": "tipo_documento_representante_1",
+                "v": "cc"
+            }],
             "type": "number"
         },
         {
-            "description": "Digite el lugar de expedición de la cédula del(a) primer(a) representante",
-            "help": "lugar_expedicion_cedula",
-            "name": "lugar_expe_cedula_repre_1",
-            "type": "text"
-        },
-        {
-            "description": "Digite la dirección del(a) primer(a) representante",
-            "help": "direccion",
-            "name": "direccion_repre_1",
-            "type": "text"
-        },
-        {
-            "description": "Digite el número de teléfono del(a) primer(a) representante",
-            "help": "telefono",
-            "name": "telefono_repre_1",
+            "description": "Digite el número de cédula de extranjería del primer apoderado",
+            "help": "cedula",
+            "name": "cedulae_representante_1",
+            "prereq": [{
+                "k": "tipo_documento_representante_1",
+                "v": "ce"
+            }],
             "type": "number"
         },
         {
-            "description": "Digite el correo electrónico del primer(a) representante",
-            "help": "correo",
-            "name": "correo_repre_1",
-            "type": "text"
-        },
-        {
-            "description": "Digite el nombre completo del(a) segundo(a) representante",
-            "help": "nombre",
-            "name": "nombre_repre_2",
+            "description": "Digite el número de pasaporte del primer apoderado",
+            "help": "cedula",
+            "name": "pasaporte_representante_1",
+            "prereq": [{
+                "k": "tipo_documento_representante_1",
+                "v": "pa"
+            }],
             "type": "name"
         },
         {
-            "description": "Digite el número de cédula de ciudadanía del(a) segundo(a) representante",
+            "description": "Digite el municipio donde fue expedido el documento de identificación del primer apoderado",
+            "help": "lugar_expedicion_representante",
+            "name": "lugar_expe_cedula_representante_1",
+            "type": "text"
+        },
+        {
+            "description": "Seleccione el sexo del segundo apoderado",
+            "name": "sexo_representante_2",
+            "options": [{
+                    "name": "Femenino",
+                    "value": "m"
+                },
+                {
+                    "name": "Masculino",
+                    "value": "h"
+                }
+            ],
+            "type": "clausula",
+            "value": "m"
+        },
+        {
+            "description": "Digite el nombre completo del segundo  apoderado",
+            "help": "nombre",
+            "name": "nombre_representante_2",
+            "type": "name"
+        },
+        {
+            "description": "Seleccione el tipo de documento del segundo apoderado",
+            "name": "tipo_documento_representante_2",
+            "options": [{
+                    "name": "Cédula de Ciudadanía",
+                    "value": "cc"
+                },
+                {
+                    "name": "Cédula de Extranjería",
+                    "value": "ce"
+                },
+                {
+                    "name": "Pasaporte",
+                    "value": "pa"
+                }
+            ],
+            "type": "clausula",
+            "value": "cc"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del segundo apoderado",
             "help": "cedula",
-            "name": "cedula_repre_2",
+            "name": "cedula_representante_2",
+            "prereq": [{
+                "k": "tipo_documento_representante_2",
+                "v": "cc"
+            }],
             "type": "number"
         },
         {
-            "description": "Digite el lugar de expedición de la cédula del(a) segundo(a) representante",
-            "help": "lugar_expedicion_cedula",
-            "name": "lugar_expe_cedula_repre_2",
+            "description": "Digite el número de cédula de extranjería del segundo apoderado",
+            "help": "cedula",
+            "name": "cedulae_representante_2",
+            "prereq": [{
+                "k": "tipo_documento_representante_2",
+                "v": "ce"
+            }],
+            "type": "number"
+        },
+        {
+            "description": "Digite el número de pasaporte del segundo apoderado",
+            "help": "cedula",
+            "name": "pasaporte_representante_2",
+            "prereq": [{
+                "k": "tipo_documento_representante_2",
+                "v": "pa"
+            }],
+            "type": "name"
+        },
+        {
+            "description": "Digite el municipio donde fue expedido el documento de identificación del segundo apoderado",
+            "help": "lugar_expedicion_representante",
+            "name": "lugar_expe_cedula_representante_2",
             "type": "text"
         },
         {
-            "description": "Digite la dirección del(a) segundo(a) representante",
+            "description": "Digite la dirección del primer apoderado",
             "help": "direccion",
-            "name": "direccion_repre_2",
+            "name": "direccion_representante_1",
             "type": "text"
         },
         {
-            "description": "Digite el número de teléfono del(a) segundo(a) representante",
+            "description": "Digite el número de teléfono del primer apoderado",
             "help": "telefono",
-            "name": "telefono_repre_2",
+            "name": "telefono_representante_1",
             "type": "number"
         },
         {
-            "description": "Digite el correo electrónico del segundo(a) representante",
+            "description": "Digite el correo electrónico del primer apoderado",
             "help": "correo",
-            "name": "correo_repre_2",
+            "name": "correo_representante_1",
+            "type": "text"
+        },
+        {
+            "description": "Digite la dirección del segundo apoderado",
+            "help": "direccion",
+            "name": "direccion_representante_2",
+            "type": "text"
+        },
+        {
+            "description": "Digite el número de teléfono del segundo apoderado",
+            "help": "telefono",
+            "name": "telefono_representante_2",
+            "type": "number"
+        },
+        {
+            "description": "Digite el correo electrónico del segundo representante",
+            "help": "correo",
+            "name": "correo_representante_2",
             "type": "text"
         },
         {
@@ -157,7 +277,7 @@
             "type": "number"
         },
         {
-            "description": "Digite el número de la matrícula inmobiliaria del apartamento",
+            "description": "Digite el número de matrícula inmobiliaria del apartamento",
             "help": "matricula",
             "name": "numero_matri_apart",
             "type": "number"
@@ -181,7 +301,7 @@
             "type": "number"
         },
         {
-            "description": "Digite el número de la matrícula inmobiliaria del parqueadero",
+            "description": "Digite el número de matrícula inmobiliaria del parqueadero",
             "help": "matricula",
             "name": "numero_matri_parq",
             "type": "number"
@@ -205,7 +325,7 @@
             "type": "number"
         },
         {
-            "description": "Digite el número de la matrícula inmobiliaria util",
+            "description": "Digite el número de matrícula inmobiliaria del util",
             "help": "matricula",
             "name": "numero_matri_util",
             "type": "number"
@@ -225,8 +345,7 @@
         {
             "description": "¿Desea agregar algún campo?",
             "name": "agregar_campo",
-            "options": [
-                {
+            "options": [{
                     "name": "No",
                     "value": "n"
                 },
@@ -242,12 +361,20 @@
             "description": "Nombre del campo",
             "help": "nombre",
             "name": "nombre_campo",
+            "prereq": [{
+                "k": "agregar_campo",
+                "v": "s"
+            }],
             "type": "text"
         },
         {
             "description": "Descripción del campo",
             "help": "descripcion",
             "name": "descripcion_campo",
+            "prereq": [{
+                "k": "agregar_campo",
+                "v": "s"
+            }],
             "type": "text"
         },
         {
@@ -263,7 +390,7 @@
             "type": "text"
         },
         {
-            "description": "Digite el lugar donde está ubicada la urbanización",
+            "description": "Digite el municipio de donde está ubicada la urbanización",
             "help": "lugar",
             "name": "lugar_urba",
             "type": "text"
@@ -342,7 +469,7 @@
         },
         {
             "description": "Digite el valor de la cuota inicial",
-            "help": "valor",
+            "help": "precio",
             "name": "cuota_inicial",
             "type": "currency"
         },
@@ -372,7 +499,7 @@
         },
         {
             "description": "Digite el valor del cheque",
-            "help": "valor",
+            "help": "precio",
             "name": "valor_cheque",
             "type": "currency"
         },
@@ -408,7 +535,7 @@
         },
         {
             "description": "Digite el valor restante del total",
-            "help": "valor",
+            "help": "precio",
             "name": "restante_pago",
             "type": "currency"
         },
@@ -545,9 +672,15 @@
             "type": "text"
         },
         {
-            "description": "Digite el correo electrónico del comprador",
+            "description": "Digite el correo electrónico del primer representante - apoderado",
             "help": "correo",
-            "name": "correo_comprador",
+            "name": "correo_representante_1",
+            "type": "text"
+        },
+        {
+            "description": "Digite el correo electrónico del segundo representante - apoderado",
+            "help": "correo",
+            "name": "correo_representante_2",
             "type": "text"
         }
     ],
@@ -567,16 +700,15 @@
         "dia": "Ejemplo: 20",
         "mes": "Ejemplo 10",
         "ano": "Ejemplo: 2021",
-        "precio": "Ejemplo: 100.000.000",
-        "valor": "Ejemplo: 5.000.000",
+        "precio": "Ejemplo: 10.000.000",
         "forma_pago": "Ejemplo: Efectivo",
         "f_pago_cheque": "Ejemplo. Físico",
         "condiciones": "Ejemplo: Deben haber testigos",
         "concilador": "Ejemplo: Centro de Arbitraje y conciliación de la Cámara de Comercio de Bogotá",
         "actividad_econ_vendedor": "Ejemplo: Empresario",
-        "correo":"Ejemplo: ejemplo@gmail.com"
+        "correo": "Ejemplo: ejemplo@gmail.com"
     },
-    "sign":[
+    "sign": [
         "nombre_vendedor",
         "cedula_vendedor",
         "estado_vendedor",
@@ -661,20 +793,26 @@
         "ano_firma",
         "activ_econ_vendedor",
         "correo_vendedor",
-        "correo_comprador"
+        "correo_representante_1",
+        "correo_representante_2"
     ],
-    "signatureProfile":[
-        {
+    "signatureProfile": [{
             "email": "correo_comprador",
-            "name":"nombre_comprador",
-            "identification":"cedula_comprador",
-            "type":"comprador"
+            "name": "nombre_comprador",
+            "identification": "cedula_comprador",
+            "type": "comprador"
         },
         {
-            "email": "correo_vendedor",
-            "name":"nombre_vendedor",
-            "identification":"cedula_vendedor",
-            "type":"vendedor"
+            "email": "correo_representante_1",
+            "identification": "cedula_representante_1|cedulae_representante_1|pasaporte_representante_1",
+            "name": "nombre_representante_1",
+            "type": "representante_1"
+        },
+        {
+            "email": "correo_representante_2",
+            "identification": "cedula_representante_2|cedulae_representante_2|pasaporte_representante_2",
+            "name": "nombre_representante_2",
+            "type": "representante_2"
         }
     ]
 }

@@ -67,6 +67,22 @@
             "type": "text"
         },
         {
+            "description": "Seleccione el sexo del representante - apoderado",
+            "name": "sexo_representante",
+            "options": [
+                {
+                    "name": "Femenino",
+                    "value": "m"
+                },
+                {
+                    "name": "Masculino",
+                    "value": "h"
+                }
+            ],
+            "type": "clausula",
+            "value": "m"
+        },
+        {
             "description": "Digite el nombre completo del representante - apoderado",
             "help": "nombre",
             "name": "nombre_representante",
@@ -150,6 +166,8 @@
     "help": {
         "nombre": "Ejemplo: Paola Lucia Rueda Daza",
         "cedula": "Ejemplo: 1234567890",
+        "cedulae": "Ejemplo: 1234567890",
+        "pasaporte": "Ejemplo: ZA 00221",
         "lugar_expedicion_cedula": "Ejemplo: Medellín",
         "estado_civil": "Ejemplo: Soltero",
         "lugar": "Ejemplo: Bogotá",
@@ -162,8 +180,11 @@
         "lugar_expe_cedula_cliente",
         "estado_cliente",
         "lugar_cliente",
+        "sexo_representante",
         "nombre_representante",
         "cedula_representante",
+        "cedulae_representante",
+        "pasaporte_representante",
         "lugar_expe_cedula_representante",
         "correo_cliente",
         "correo_representante"
