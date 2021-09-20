@@ -24,7 +24,35 @@
             "description": "Digite el estado civil del cliente",
             "help": "estado_civil",
             "name": "estado_cliente",
-            "type": "text"
+            "options": [
+                {
+                    "label": " soltero",
+                    "name": "Soltero",
+                    "value": "so"
+                },
+                {
+                    "label": " casado con sociedad conyugal vigente",
+                    "name": "Casado con sociedad conyugal vigente",
+                    "value": "cc"
+                },
+                {
+                    "label": " casado sin sociedad conyugal vigente",
+                    "name": "Casado sin sociedad conyugal vigente",
+                    "value": "cs"
+                },
+                {
+                    "label": " viudo",
+                    "name": "Viudo",
+                    "value": "vi"
+                },
+                {
+                    "label": " soltero con unión marital de hecho",
+                    "name": "Soltero con unión marital de hecho",
+                    "value": "su"
+                }
+            ],
+            "type": "select",
+            "value": "so"
         },
         {
             "description": "Digite el lugar de residencia del cliente",
@@ -84,7 +112,7 @@
             "description": "Digite el código catastral del apartamento",
             "help": "codigo",
             "name": "codigo_catastral_apart",
-            "type": "number"
+            "type": "name"
         },
         {
             "description": "Digite el área del apartamento en metros cuadrados (m2)",
@@ -108,7 +136,7 @@
             "description": "Digite el código catastral del parqueadero",
             "help": "codigo",
             "name": "codigo_catastral_parq",
-            "type": "number"
+            "type": "name"
         },
         {
             "description": "Digite el área del parqueadero en metros cuadrados (m2)",
@@ -132,7 +160,7 @@
             "description": "Digite el código catastral util",
             "help": "codigo",
             "name": "codigo_catastral_util",
-            "type": "number"
+            "type": "name"
         },
         {
             "description": "Digite el área util en metros cuadrados (m2)",
@@ -237,13 +265,19 @@
             "help": "cedula",
             "name": "cedula_apoderado",
             "type": "number"
+        },
+        {
+            "description": "Digite el nombre completo del apoderado",
+            "help": "nombre",
+            "name": "nombre_apoderado",
+            "type": "name"
         }
     ],
     "help": {
         "nombre": "Ejemplo: Paola Lucia Rueda Daza",
         "cedula": "Ejemplo: 1234567890",
         "lugar_expedicion_cedula": "Ejemplo: Medellín",
-        "Estado civil": "Ejemplo: Soltero",
+        "Estado_civil": "Ejemplo: Soltero",
         "lugar": "Ejemplo: Bogotá",
         "matricula": "Ejemplo: 50S23434",
         "codigo": "Ejemplo: 9872023 VH5797S 0001 WX",

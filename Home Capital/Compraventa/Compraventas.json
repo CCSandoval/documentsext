@@ -18,7 +18,35 @@
             "description": "Digite el estado civil del vendedor",
             "help": "estado_civil",
             "name": "estado_vendedor",
-            "type": "text"
+            "options": [
+                {
+                    "label": " soltero",
+                    "name": "Soltero",
+                    "value": "so"
+                },
+                {
+                    "label": " casado con sociedad conyugal vigente",
+                    "name": "Casado con sociedad conyugal vigente",
+                    "value": "cc"
+                },
+                {
+                    "label": " casado sin sociedad conyugal vigente",
+                    "name": "Casado sin sociedad conyugal vigente",
+                    "value": "cs"
+                },
+                {
+                    "label": " viudo",
+                    "name": "Viudo",
+                    "value": "vi"
+                },
+                {
+                    "label": " soltero con unión marital de hecho",
+                    "name": "Soltero con unión marital de hecho",
+                    "value": "su"
+                }
+            ],
+            "type": "select",
+            "value": "so"
         },
         {
             "description": "Digite la dirección del vendedor",
@@ -138,7 +166,7 @@
             "description": "Digite el código catastral del apartamento",
             "help": "codigo",
             "name": "codigo_catas_apart",
-            "type": "number"
+            "type": "name"
         },
         {
             "description": "Digite el área del apartamento en metros cuadrados (m2)",
@@ -162,7 +190,7 @@
             "description": "Digite el código catastral del parqueadero",
             "help": "codigo",
             "name": "codigo_catas_parq",
-            "type": "number"
+            "type": "name"
         },
         {
             "description": "Digite el área del parqueadero en metros cuadrados (m2)",
@@ -186,7 +214,7 @@
             "description": "Digite el código catastral util",
             "help": "codigo",
             "name": "codigo_catas_util",
-            "type": "number"
+            "type": "name"
         },
         {
             "description": "Digite el área util en metros cuadrados (m2)",
@@ -526,7 +554,7 @@
     "help": {
         "nombre": "Ejemplo: Paola Lucia Rueda Daza",
         "cedula": "Ejemplo: 1234567890",
-        "Estado civil": "Ejemplo: Soltero",
+        "Estado_civil": "Ejemplo: Soltero",
         "direccion": "Ejemplo: Calle 15 #20-31",
         "lugar": "Ejemplo: Bogotá",
         "departamento": "Ejemplo: Antioquia",

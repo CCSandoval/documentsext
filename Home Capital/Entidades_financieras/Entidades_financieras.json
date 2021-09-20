@@ -23,7 +23,35 @@
             "description": "Digite el estado civil del cliente",
             "help": "estado_civil",
             "name": "estado_cliente",
-            "type": "text"
+            "options": [
+                {
+                    "label": " soltero",
+                    "name": "Soltero",
+                    "value": "so"
+                },
+                {
+                    "label": " casado con sociedad conyugal vigente",
+                    "name": "Casado con sociedad conyugal vigente",
+                    "value": "cc"
+                },
+                {
+                    "label": " casado sin sociedad conyugal vigente",
+                    "name": "Casado sin sociedad conyugal vigente",
+                    "value": "cs"
+                },
+                {
+                    "label": " viudo",
+                    "name": "Viudo",
+                    "value": "vi"
+                },
+                {
+                    "label": " soltero con unión marital de hecho",
+                    "name": "Soltero con unión marital de hecho",
+                    "value": "su"
+                }
+            ],
+            "type": "select",
+            "value": "so"
         },
         {
             "description": "Digite el lugar de residencia del cliente",
@@ -66,13 +94,19 @@
             "help": "cedula",
             "name": "cedula_apoderado",
             "type": "number"
+        },
+        {
+            "description": "Digite el nombre completo del apoderado",
+            "help": "nombre",
+            "name": "nombre_apoderado",
+            "type": "name"
         }
     ],
     "help": {
         "nombre": "Ejemplo: Paola Lucia Rueda Daza",
         "cedula": "Ejemplo: 1234567890",
         "lugar_expedicion_cedula": "Ejemplo: Medellín",
-        "Estado civil": "Ejemplo: Soltero",
+        "Estado_civil": "Ejemplo: Soltero",
         "lugar": "Ejemplo: Bogotá",
         "correo":"Ejemplo: ejemplo@gmail.com"
     },
