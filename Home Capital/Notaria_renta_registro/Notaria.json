@@ -15,7 +15,7 @@
             "type": "number"
         },
         {
-            "description": "Digite el lugar de expedición de la cédula de ciudadanía del cliente",
+            "description": "Digite el municipio donde fue expedido el documento de identificación del cliente",
             "help": "lugar_expedicion_cedula",
             "name": "lugar_expe_cedula_cliente",
             "type": "text"
@@ -55,45 +55,177 @@
             "value": "so"
         },
         {
-            "description": "Digite el lugar de residencia del cliente",
+            "description": "Digite el municipio de domicilio del cliente",
             "help": "lugar",
             "name": "lugar_cliente",
             "type": "text"
         },
         {
-            "description": "Digite el nombre completo del primer representante",
+            "description": "Seleccione el sexo del primer representante - apoderado",
+            "name": "sexo_representante_1",
+            "options": [
+                {
+                    "name": "Femenino",
+                    "value": "m"
+                },
+                {
+                    "name": "Masculino",
+                    "value": "h"
+                }
+            ],
+            "type": "clausula",
+            "value": "m"
+        },
+        {
+            "description": "Digite el nombre completo del primer representante - apoderado",
             "help": "nombre",
-            "name": "nombre_repre_1",
+            "name": "nombre_representante_1",
             "type": "name"
         },
         {
-            "description": "Digite el número de cédula de ciudadanía del primer representante",
+            "description": "Seleccione el tipo de documento del primer representante - apoderado",
+            "name": "tipo_documento_representante_1",
+            "options": [
+                {
+                    "name": "Cédula de Ciudadanía",
+                    "value": "cc"
+                },
+                {
+                    "name": "Cédula de Extranjería",
+                    "value": "ce"
+                },
+                {
+                    "name": "Pasaporte",
+                    "value": "pa"
+                }
+            ],
+            "type": "clausula",
+            "value": "cc"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del primer representante - apoderado",
             "help": "cedula",
-            "name": "cedula_repre_1",
+            "name": "cedula_representante_1",
+            "prereq": [
+                {
+                    "k": "tipo_documento_representante_1",
+                    "v": "cc"
+                }
+            ],
             "type": "number"
         },
         {
-            "description": "Digite el lugar de expedición de la cédula de ciudadanía del primer representante",
-            "help": "lugar_expedicion_cedula",
-            "name": "lugar_expe_cedula_repre_1",
+            "description": "Digite el número de cédula de extranjería del primer representante - apoderado",
+            "help": "cedula",
+            "name": "cedulae_representante_1",
+            "prereq": [
+                {
+                    "k": "tipo_documento_representante_1",
+                    "v": "ce"
+                }
+            ],
+            "type": "number"
+        },
+        {
+            "description": "Digite el número de pasaporte del primer representante  - apoderado",
+            "help": "cedula",
+            "name": "pasaporte_representante_1",
+            "prereq": [
+                {
+                    "k": "tipo_documento_representante_1",
+                    "v": "pa"
+                }
+            ],
+            "type": "name"
+        },
+        {
+            "description": "Digite el municipio donde fue expedido el documento de identificación del primer representante - apoderado",
+            "help": "lugar_expedicion_representante",
+            "name": "lugar_expe_cedula_representante_1",
             "type": "text"
         },
         {
-            "description": "Digite el nombre completo del segundo representante",
+            "description": "Seleccione el sexo del segundo representante - apoderado",
+            "name": "sexo_representante_2",
+            "options": [
+                {
+                    "name": "Femenino",
+                    "value": "m"
+                },
+                {
+                    "name": "Masculino",
+                    "value": "h"
+                }
+            ],
+            "type": "clausula",
+            "value": "m"
+        },
+        {
+            "description": "Digite el nombre completo del segundo representante - apoderado",
             "help": "nombre",
-            "name": "nombre_repre_2",
+            "name": "nombre_representante_2",
             "type": "name"
         },
         {
-            "description": "Digite el número de cédula de ciudadanía del segundo representante",
+            "description": "Seleccione el tipo de documento del segundo representante - apoderado",
+            "name": "tipo_documento_representante_2",
+            "options": [
+                {
+                    "name": "Cédula de Ciudadanía",
+                    "value": "cc"
+                },
+                {
+                    "name": "Cédula de Extranjería",
+                    "value": "ce"
+                },
+                {
+                    "name": "Pasaporte",
+                    "value": "pa"
+                }
+            ],
+            "type": "clausula",
+            "value": "cc"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del segundo representante - apoderado",
             "help": "cedula",
-            "name": "cedula_repre_2",
+            "name": "cedula_representante_2",
+            "prereq": [
+                {
+                    "k": "tipo_documento_representante_2",
+                    "v": "cc"
+                }
+            ],
             "type": "number"
         },
         {
-            "description": "Digite el lugar de expedición de la cédula de ciudadanía del segundo representante",
-            "help": "lugar_expedicion_cedula",
-            "name": "lugar_expe_cedula_repre_2",
+            "description": "Digite el número de cédula de extranjería del segundo representante - apoderado",
+            "help": "cedula",
+            "name": "cedulae_representante_2",
+            "prereq": [
+                {
+                    "k": "tipo_documento_representante_2",
+                    "v": "ce"
+                }
+            ],
+            "type": "number"
+        },
+        {
+            "description": "Digite el número de pasaporte del segundo representante  - apoderado",
+            "help": "cedula",
+            "name": "pasaporte_representante_2",
+            "prereq": [
+                {
+                    "k": "tipo_documento_representante_2",
+                    "v": "pa"
+                }
+            ],
+            "type": "name"
+        },
+        {
+            "description": "Digite el municipio donde fue expedido el documento de identificación del segundo representante - apoderado",
+            "help": "lugar_expedicion_representante",
+            "name": "lugar_expe_cedula_representante_2",
             "type": "text"
         },
         {
@@ -103,7 +235,7 @@
             "type": "number"
         },
         {
-            "description": "Digite el número de la matrícula inmobiliaria del apartamento",
+            "description": "Digite el número de matrícula inmobiliaria del apartamento",
             "help": "numero",
             "name": "numero_matricula_apart",
             "type": "number"
@@ -127,7 +259,7 @@
             "type": "number"
         },
         {
-            "description": "Digite el número de la matrícula inmobiliaria del parqueadero",
+            "description": "Digite el número de matrícula inmobiliaria del parqueadero",
             "help": "numero",
             "name": "numero_matricula_parq",
             "type": "number"
@@ -151,7 +283,7 @@
             "type": "number"
         },
         {
-            "description": "Digite el número de la matrícula inmobiliaria util",
+            "description": "Digite el número de matrícula inmobiliaria del util",
             "help": "numero",
             "name": "numero_matricula_util",
             "type": "number"
@@ -255,21 +387,15 @@
             "type": "text"
         },
         {
-            "description": "Digite el nombre completo del apoderado",
-            "help": "nombre",
-            "name": "nombre_apoderado",
-            "type": "name"
-        },
-        {
-            "description": "Digite el número de cédula de ciudadanía del apoderado",
-            "help": "cedula",
-            "name": "cedula_apoderado",
-            "type": "number"
-        },
-        {
-            "description": "Digite el correo electrónico del apoderado",
+            "description": "Digite el correo electrónico del primer representante - apoderado",
             "help": "correo",
-            "name": "correo_apoderado",
+            "name": "correo_representante_1",
+            "type": "text"
+        },
+        {
+            "description": "Digite el correo electrónico del segundo representante - apoderado",
+            "help": "correo",
+            "name": "correo_representante_2",
             "type": "text"
         }
     ],
@@ -289,12 +415,14 @@
         "lugar_expe_cedula_cliente",
         "estado_cliente",
         "lugar_cliente",
-        "nombre_repre_1",
-        "cedula_repre_1",
-        "lugar_expe_cedula_repre_1",
-        "nombre_repre_2",
-        "cedula_repre_2",
-        "lugar_expe_cedula_repre_2",
+        "sexo_representante_1",
+        "nombre_representante_1",
+        "cedula_representante_1",
+        "lugar_expe_cedula_representante_1",
+        "sexo_representante_2",
+        "nombre_representante_2",
+        "cedula_representante_2",
+        "lugar_expe_cedula_representante_2",
         "numero_apart",
         "numero_matricula_apart",
         "codigo_catastral_apart",
@@ -318,9 +446,8 @@
         "lugar_notaria",
         "afectado",
         "correo_cliente",
-        "correo_apoderado",
-        "cedula_apoderado",
-        "nombre_apoderado"
+        "correo_representante_1",        
+        "correo_representante_2"
     ],
     "signatureProfile":[
         {
@@ -330,10 +457,16 @@
             "type":"cliente"
         },
         {
-            "email": "correo_apoderado",
-            "identification":"cedula_apoderado",
-            "name":"nombre_apoderado",
-            "type":"apoderado"
+            "email": "correo_representante_1",
+            "identification":"cedula_representante_1",
+            "name":"nombre_representante_1",
+            "type":"representante_1"
+        },
+        {
+            "email": "correo_representante_2",
+            "identification":"cedula_representante_2",
+            "name":"nombre_representante_2",
+            "type":"representante_2"
         }
     ]
 }
