@@ -1,0 +1,340 @@
+{
+    _id: ObjectId('6148a856b0b19e000804f8c5'),
+    config: [
+        {
+            description: 'Digite el nombre completo del cónyuge',
+            help: 'nombre',
+            name: 'nombre_conyuge',
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del del cónyuge',
+            help: 'cedula',
+            name: 'cedula_conyuge',
+            type: 'number'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del cónyuge',
+            help: 'lugar_expedicion_cedula',
+            name: 'lugar_expe_cedula_conyuge',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione el estado civil del cónyuge',
+            help: 'estado_civil',
+            name: 'estado_conyuge',
+            options: [
+                {
+                    label: ' casado con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cc'
+                },
+                {
+                    label: ' casado sin sociedad conyugal vigente',
+                    name: 'Casado sin sociedad conyugal vigente',
+                    value: 'cs'
+                },
+                {
+                    label: ' con unión marital de hecho',
+                    name: 'Con unión marital de hecho',
+                    value: 'su'
+                }
+            ],
+            type: 'select',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el municipio de domicilio del cónyuge',
+            help: 'lugar',
+            name: 'lugar_conyuge',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre completo del propietario del bien inmueble',
+            help: 'nombre',
+            name: 'nombre_propietario',
+            type: 'name'
+        },
+        {
+            description: 'Digite la descripción del bien inmueble',
+            help: 'descripcion',
+            name: 'descripcion_inmu',
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del bien inmueble',
+            help: 'direccion',
+            name: 'direccion_inmu',
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio donde está ubicado el bien inmueble',
+            help: 'lugar',
+            name: 'lugar_inmu',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de matrícula inmobiliaria del bien inmueble',
+            help: 'matricula',
+            name: 'matricula_inmo',
+            type: 'name'
+        },
+        {
+            description: 'Digite el código catastral del bien inmuble',
+            help: 'codigo',
+            name: 'codigo_cata',
+            type: 'name'
+        },
+        {
+            description: 'Digite el nombre completo del primer testigo - apoderado',
+            help: 'nombre',
+            name: 'nombre_testigo_1',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el sexo del primer testigo',
+            name: 'sexo_testigo_1',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del primer testigo',
+            name: 'tipo_documento_testigo_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del primer testigo - apoderado',
+            help: 'cedula',
+            name: 'cedula_testigo_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del primer testigo - apoderado',
+            help: 'cedula',
+            name: 'cedulae_testigo_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del primer testigo - apoderado',
+            help: 'cedula',
+            name: 'pasaporte_testigo_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del primer testigo - apoderado',
+            help: 'lugar_expedicion_cedula',
+            name: 'lugar_expe_cedula_testigo_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre completo del segundo testigo - apoderado',
+            help: 'nombre',
+            name: 'nombre_testigo_2',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el sexo del segundo testigo',
+            name: 'sexo_testigo_2',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del segundo testigo',
+            name: 'tipo_documento_testigo_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo testigo - apoderado',
+            help: 'cedula',
+            name: 'cedula_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del segundo testigo - apoderado',
+            help: 'cedula',
+            name: 'cedulae_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo testigo - apoderado',
+            help: 'cedula',
+            name: 'pasaporte_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del segundo testigo - apoderado',
+            help: 'lugar_expedicion_cedula',
+            name: 'lugar_expe_cedula_testigo_2',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del cónyuge',
+            help: 'correo',
+            name: 'correo_conyuge',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del primer testigo',
+            help: 'correo',
+            name: 'correo_testigo_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del segundo testigo',
+            help: 'correo',
+            name: 'correo_testigo_2',
+            type: 'text'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_conyuge',
+        'cedula_conyuge',
+        'lugar_expe_cedula_conyuge',
+        'estado_conyuge',
+        'lugar_conyuge',
+        'nombre_propietario',
+        'descripcion_inmu',
+        'direccion_inmu',
+        'lugar_inmu',
+        'matricula_inmo',
+        'codigo_cata',
+        'nombre_testigo_1',
+        'cedula_testigo_1',
+        'cedulae_testigo_1',
+        'pasaporte_testigo_1',
+        'lugar_expe_cedula_testigo_1',
+        'nombre_testigo_2',
+        'cedula_testigo_2',
+        'cedulae_testigo_2',
+        'pasaporte_testigo_2',
+        'lugar_expe_cedula_testigo_2',
+        'correo_conyuge',
+        'correo_testigo_1',
+        'correo_testigo_2'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_conyuge',
+            identification: 'cedula_conyuge',
+            name: 'nombre_conyuge',
+            type: 'conyuge'
+        },
+        {
+            email: 'correo_testigo_1',
+            identification: 'cedula_testigo_1|cedulae_testigo_1|pasaporte_testigo_1',
+            name: 'nombre_testigo_1',
+            type: 'testigo_1'
+        },
+        {
+            email: 'correo_testigo_2',
+            identification: 'cedula_testigo_2|cedulae_testigo_2|pasaporte_testigo_2',
+            name: 'nombre_testigo_2',
+            type: 'testigo_2'
+        }
+    ],
+    preBuildData: [],
+    name: 'PODER ESPECIAL CACELACIÓN AFECTACIÓN A VIVIENDA FAMILIAR',
+    price: 0,
+    help: {
+        nombre: 'Ejemplo: Paola Lucia Rueda Daza',
+        cedula: 'Ejemplo: 1234567890',
+        lugar_expedicion_cedula: 'Ejemplo: Medellín',
+        estado_civil: 'Ejemplo: Casado con sociedad conyugal vigente',
+        lugar: 'Ejemplo: Bogotá',
+        descripcion: 'Ejemplo: 4 habitaciones',
+        direccion: 'Ejemplo: Avenida 20 # 98 - 76',
+        matricula: 'Ejemplo: 50S23434 \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
+        codigo: 'Ejemplo: 9872023 VH5797S 0001 WX \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
+        correo: 'Ejemplo: ejemplo@gmail.com'
+    },
+    build: 6,
+    createdAt: ISODate('2021-09-20T15:27:18.914Z'),
+    updatedAt: ISODate('2021-09-20T15:27:18.914Z')
+}
