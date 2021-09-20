@@ -122,21 +122,24 @@
         "matricula": "Ejemplo: 50S23434",
         "codigo": "Ejemplo: 9872023 VH5797S 0001 WX"
     },
+    "sign": [
+        "nombre_conyuge",
+        "cedula_conyuge",
+        "lugar_expe_cedula_conyuge",
+        "estado_conyuge"
+    ],
     "signatureProfile":[
         {
-            "name":"nombre_conyuge",
+            "email": "correo_conyuge",
             "identification":"cedula_conyuge",
+            "name":"nombre_conyuge",
             "type":"conyuge"
         },
         {
-            "name":"nombre_testigo_1",
-            "identification":"cedula_testigo_1",
-            "type":"testigo_1"
-        },
-        {
-            "name":"nombre_testigo_2",
-            "identification":"cedula_testigo_2",
-            "type":"testigo_2"
+            "email": "correo_apoderado",
+            "identification":"cedula_apoderado",
+            "name":"nombre_apoderado",
+            "type":"apoderado"
         }
     ]
 }
