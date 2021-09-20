@@ -1,7 +1,8 @@
 {
     "build": 2,
     "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
-    "config": [{
+    "config": [
+        {
             "description": "Digite el nombre completo del cliente",
             "help": "nombre",
             "name": "nombre_cliente",
@@ -84,10 +85,10 @@
             "type": "text"
         },
         {
-            "description": "Digite el correo electrónico del apoderado",
-            "help": "correo",
-            "name": "correo_apoderado",
-            "type": "text"
+            "description": "Digite el nombre completo del apoderado",
+            "help": "nombre",
+            "name": "nombre_apoderado",
+            "type": "name"
         },
         {
             "description": "Digite el número de cédula de ciudadanía del apoderado",
@@ -96,10 +97,10 @@
             "type": "number"
         },
         {
-            "description": "Digite el nombre completo del apoderado",
-            "help": "nombre",
-            "name": "nombre_apoderado",
-            "type": "name"
+            "description": "Digite el correo electrónico del apoderado",
+            "help": "correo",
+            "name": "correo_apoderado",
+            "type": "text"
         }
     ],
     "help": {
@@ -120,6 +121,7 @@
         "cedula_representante",
         "lugar_expe_cedula_repre",
         "correo_cliente",
+        "nombre_apoderado",
         "correo_apoderado",
         "cedula_apoderado"
     ],

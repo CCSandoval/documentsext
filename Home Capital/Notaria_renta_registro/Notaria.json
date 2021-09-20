@@ -1,5 +1,5 @@
 {
-    "build": 2,
+    "build": 0,
     "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
     "config": [
         {
@@ -255,10 +255,10 @@
             "type": "text"
         },
         {
-            "description": "Digite el correo electrónico del apoderado",
-            "help": "correo",
-            "name": "correo_apoderado",
-            "type": "text"
+            "description": "Digite el nombre completo del apoderado",
+            "help": "nombre",
+            "name": "nombre_apoderado",
+            "type": "name"
         },
         {
             "description": "Digite el número de cédula de ciudadanía del apoderado",
@@ -267,17 +267,17 @@
             "type": "number"
         },
         {
-            "description": "Digite el nombre completo del apoderado",
-            "help": "nombre",
-            "name": "nombre_apoderado",
-            "type": "name"
+            "description": "Digite el correo electrónico del apoderado",
+            "help": "correo",
+            "name": "correo_apoderado",
+            "type": "text"
         }
     ],
     "help": {
         "nombre": "Ejemplo: Paola Lucia Rueda Daza",
         "cedula": "Ejemplo: 1234567890",
         "lugar_expedicion_cedula": "Ejemplo: Medellín",
-        "Estado_civil": "Ejemplo: Soltero",
+        "estado_civil": "Ejemplo: Soltero",
         "lugar": "Ejemplo: Bogotá",
         "matricula": "Ejemplo: 50S23434",
         "codigo": "Ejemplo: 9872023 VH5797S 0001 WX",
@@ -319,7 +319,8 @@
         "afectado",
         "correo_cliente",
         "correo_apoderado",
-        "cedula_apoderado"
+        "cedula_apoderado",
+        "nombre_apoderado"
     ],
     "signatureProfile":[
         {

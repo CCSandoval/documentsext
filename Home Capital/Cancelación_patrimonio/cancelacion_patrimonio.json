@@ -140,16 +140,22 @@
             "type": "text"
         },
         {
-            "description": "Digite el correo electrónico del apoderado",
-            "help": "correo",
-            "name": "correo_apoderado",
-            "type": "text"
+            "description": "Digite el nombre completo del apoderado",
+            "help": "nombre",
+            "name": "nombre_apoderado",
+            "type": "name"
         },
         {
             "description": "Digite el número de cédula de ciudadanía del apoderado",
             "help": "cedula",
             "name": "cedula_apoderado",
             "type": "number"
+        },
+        {
+            "description": "Digite el correo electrónico del apoderado",
+            "help": "correo",
+            "name": "correo_apoderado",
+            "type": "text"
         }
     ],
     "help": {
@@ -177,6 +183,7 @@
         "hijos",
         "mayores",
         "correo_cliente",
+        "nombre_apoderado",
         "correo_apoderado",
         "cedula_apoderado"
     ],
