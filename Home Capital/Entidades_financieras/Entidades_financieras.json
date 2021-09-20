@@ -1,8 +1,7 @@
 {
     "build": 2,
     "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
-    "config": [
-        {
+    "config": [{
             "description": "Digite el nombre completo del cliente",
             "help": "nombre",
             "name": "nombre_cliente",
@@ -51,6 +50,18 @@
             "type": "text"
         },
         {
+            "description": "Digite el correo electrónico del cliente",
+            "help": "correo",
+            "name": "correo_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el correo electrónico del apoderado",
+            "help": "correo",
+            "name": "correo_apoderado",
+            "type": "text"
+        },
+        {
             "description": "Digite el número de cédula de ciudadanía del apoderado",
             "help": "cedula",
             "name": "cedula_apoderado",
@@ -62,18 +73,34 @@
         "cedula": "Ejemplo: 1234567890",
         "lugar_expedicion_cedula": "Ejemplo: Medellín",
         "Estado civil": "Ejemplo: Soltero",
-        "lugar": "Ejemplo: Bogotá"        
+        "lugar": "Ejemplo: Bogotá",
+        "correo":"Ejemplo: ejemplo@gmail.com"
     },
+    "sign":[
+        "nombre_cliente",
+        "cedula_cliente",
+        "lugar_expe_cedula_cliente",
+        "estado_cliente",
+        "lugar_cliente",
+        "nombre_representante",
+        "cedula_representante",
+        "lugar_expe_cedula_repre",
+        "correo_cliente",
+        "correo_apoderado",
+        "cedula_apoderado"
+    ],
     "signatureProfile":[
         {
-            "name":"nombre_cliente",
+            "email":"correo_cliente",
             "identification":"cedula_cliente",
+            "name":"nombre_cliente",
             "type":"cliente"
         },
         {
-            "name":"nombre_representante",
-            "identification":"cedula_representante",
-            "type":"representante"
-        }
+            "email": "correo_apoderado",
+            "identification":"cedula_apoderado",
+            "name":"nombre_apoderado",
+            "type":"apoderado"
+        }      
     ]
 }

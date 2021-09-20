@@ -47,7 +47,7 @@
         {
             "description": "Digite el lugar de expedeción del documento de identificación del(a) primer(a) testigo",
             "help": "lugar_expedicion",
-            "name": "lugar_expe_testigo_1",
+            "name": "lugar_expe_cedula_testigo_1",
             "type": "text"
         },
         {
@@ -65,7 +65,7 @@
         {
             "description": "Digite el lugar de expedeción del documento de identificación del(a) segundo(a) testigo",
             "help": "lugar_expedicion",
-            "name": "lugar_expe_testigo_2",
+            "name": "lugar_expe_cedula_testigo_2",
             "type": "text"
         },
         {
@@ -106,6 +106,18 @@
             "type": "text"
         },
         {
+            "description": "Digite el correo electrónico del cliente",
+            "help": "correo",
+            "name": "correo_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el correo electrónico del apoderado",
+            "help": "correo",
+            "name": "correo_apoderado",
+            "type": "text"
+        },
+        {
             "description": "Digite el número de cédula de ciudadanía del apoderado",
             "help": "cedula",
             "name": "cedula_apoderado",
@@ -118,23 +130,40 @@
         "lugar_expedicion_cedula": "Ejemplo: Medellín",
         "estado civil": "Ejemplo: Soltero",
         "lugar": "Ejemplo: Bogotá",
-        "descripcion": "Ejemplo: 4 habitaciones"
+        "descripcion": "Ejemplo: 4 habitaciones",
+        "correo":"Ejemplo: ejemplo@gmail.com"
     },
+    "sing": [
+        "nombre_cliente",
+        "cedula_cliente",
+        "lugar_expe_cedula_cliente",
+        "estado_cliente",
+        "lugar_cliente",
+        "nombre_testigo_1",
+        "cedula_testigo_1",
+        "lugar_expe_cedula_testigo_1",
+        "nombre_testigo_2",
+        "cedula_testigo_2",
+        "lugar_expe_cedula_testigo_2",
+        "descripcion_inmu",
+        "hijos",
+        "mayores",
+        "correo_cliente",
+        "correo_apoderado",
+        "cedula_apoderado"
+    ],
     "signatureProfile":[
         {
-            "name":"nombre_cliente",
+            "email":"correo_cliente",
             "identification":"cedula_cliente",
+            "name":"nombre_cliente",
             "type":"cliente"
         },
         {
-            "name":"nombre_testigo_1",
-            "identification":"cedula_testigo_1",
-            "type":"testigo_1"
-        },
-        {
-            "name":"nombre_testigo_2",
-            "identification":"cedula_testigo_2",
-            "type":"testigo_2"
-        }
+            "email": "correo_apoderado",
+            "identification":"cedula_apoderado",
+            "name":"nombre_apoderado",
+            "type":"apoderado"
+        }      
     ]
 }

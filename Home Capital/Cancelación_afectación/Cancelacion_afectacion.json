@@ -105,6 +105,18 @@
             "type": "text"
         },
         {
+            "description": "Digite el correo electrónico del conyuge",
+            "help": "correo",
+            "name": "correo_conyuge",
+            "type": "text"
+        },
+        {
+            "description": "Digite el correo electrónico del apoderado",
+            "help": "correo",
+            "name": "correo_apoderado",
+            "type": "text"
+        },
+        {
             "description": "Digite el número de cédula de ciudadanía del apoderado",
             "help": "cedula",
             "name": "cedula_apoderado",
@@ -120,14 +132,30 @@
         "descripcion": "Ejemplo: 4 habitaciones",
         "direccion": "Ejemplo: Avenid 20 # 98 - 76",
         "matricula": "Ejemplo: 50S23434",
-        "codigo": "Ejemplo: 9872023 VH5797S 0001 WX"
+        "codigo": "Ejemplo: 9872023 VH5797S 0001 WX",
+        "correo":"Ejemplo: ejemplo@gmail.com"
     },
     "sign": [
         "nombre_conyuge",
         "cedula_conyuge",
         "lugar_expe_cedula_conyuge",
         "estado_conyuge",
-        "lugar_conyuge"
+        "lugar_conyuge",
+        "nombre_propietario",
+        "descripcion_inmu",
+        "direccion_inmu",
+        "lugar_inmu",
+        "matricula_inmo",
+        "codigo_cata",
+        "nombre_testigo_1",
+        "cedula_testigo_1",
+        "lugar_expe_cedula_testigo_1",
+        "nombre_testigo_2",
+        "cedula_testigo_2",
+        "lugar_expe_cedula_testigo_2",
+        "correo_conyuge",
+        "correo_apoderado",
+        "cedula_apoderado"
     ],
     "signatureProfile":[
         {
