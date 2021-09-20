@@ -177,7 +177,7 @@
         },
         {
             "email":"correo_representante",
-            "identification":"cedula_representante",
+            "identification":"cedula_representante|cedulae_representante|pasaporte_representante",
             "name":"nombre_representante",
             "type":"representante"
         }

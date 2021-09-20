@@ -458,13 +458,13 @@
         },
         {
             "email": "correo_representante_1",
-            "identification":"cedula_representante_1",
+            "identification":"cedula_representante_1|cedulae_representante_1|pasaporte_representante_1",
             "name":"nombre_representante_1",
             "type":"representante_1"
         },
         {
             "email": "correo_representante_2",
-            "identification":"cedula_representante_2",
+            "identification":"cedula_representante_2|cedulae_representante_2|pasaporte_representante_2",
             "name":"nombre_representante_2",
             "type":"representante_2"
         }
