@@ -221,6 +221,18 @@
             "value": "n"
         },
         {
+            "description": "Digite el correo electrónico del cliente",
+            "help": "correo",
+            "name": "correo_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el correo electrónico del apoderado",
+            "help": "correo",
+            "name": "correo_apoderado",
+            "type": "text"
+        },
+        {
             "description": "Digite el número de cédula de ciudadanía del apoderado",
             "help": "cedula",
             "name": "cedula_apoderado",
@@ -236,21 +248,56 @@
         "matricula": "Ejemplo: 50S23434",
         "codigo": "Ejemplo: 9872023 VH5797S 0001 WX"
     },
+    "sign":[
+        "nombre_cliente",
+        "cedula_cliente",
+        "lugar_expe_cedula_cliente",
+        "estado_cliente",
+        "lugar_cliente",
+        "nombre_repre_1",
+        "cedula_repre_1",
+        "lugar_expe_cedula_repre_1",
+        "nombre_repre_2",
+        "cedula_repre_2",
+        "lugar_expe_cedula_repre_2",
+        "numero_apart",
+        "numero_matricula_apart",
+        "codigo_catastral_apart",
+        "area_apart",
+        "numero_parq",
+        "numero_matricula_parq",
+        "codigo_catastral_parq",
+        "area_parq",
+        "numero_util",
+        "numero_matricula_util",
+        "codigo_catastral_util",
+        "area_util",
+        "agregar_campo",
+        "nombre_campo",
+        "descripcion_campo",
+        "numero_escritura",
+        "dia_escritura",
+        "mes_escritura",
+        "año_escritura",
+        "numero_notaria",
+        "lugar_notaria",
+        "afectado",
+        "correo_cliente",
+        "correo_apoderado",
+        "cedula_apoderado"
+    ],
     "signatureProfile":[
         {
-            "name":"nombre_cliente",
+            "email": "correo_cliente",
             "identification":"cedula_cliente",
+            "name":"nombre_cliente",
             "type":"cliente"
         },
         {
-            "name":"nombre_repre_1",
-            "identification":"cedula_repre_1",
-            "type":"representante_1"
-        },
-        {
-            "name":"nombre_repre_2",
-            "identification":"cedula_repre_2",
-            "type":"representante_2"
+            "email": "correo_apoderado",
+            "identification":"cedula_apoderado",
+            "name":"nombre_apoderado",
+            "type":"apoderado"
         }
     ]
 }

@@ -105,6 +105,18 @@
             "type": "text"
         },
         {
+            "description": "Digite el correo electrónico del conyuge",
+            "help": "correo",
+            "name": "correo_conyuge",
+            "type": "text"
+        },
+        {
+            "description": "Digite el correo electrónico del apoderado",
+            "help": "correo",
+            "name": "correo_apoderado",
+            "type": "text"
+        },
+        {
             "description": "Digite el número de cédula de ciudadanía del apoderado",
             "help": "cedula",
             "name": "cedula_apoderado",
@@ -127,7 +139,22 @@
         "cedula_conyuge",
         "lugar_expe_cedula_conyuge",
         "estado_conyuge",
-        "lugar_conyuge"
+        "lugar_conyuge",
+        "nombre_propietario",
+        "descripcion_inmu",
+        "direccion_inmu",
+        "lugar_inmu",
+        "matricula_inmo",
+        "codigo_cata",
+        "nombre_testigo_1",
+        "cedula_testigo_1",
+        "lugar_expe_cedula_testigo_1",
+        "nombre_testigo_2",
+        "cedula_testigo_2",
+        "lugar_expe_cedula_testigo_2",
+        "correo_conyuge",
+        "correo_apoderado",
+        "cedula_apoderado"
     ],
     "signatureProfile":[
         {
