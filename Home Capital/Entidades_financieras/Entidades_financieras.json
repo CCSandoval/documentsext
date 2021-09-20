@@ -1,0 +1,79 @@
+{
+    "build": 2,
+    "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
+    "config": [
+        {
+            "description": "Digite el nombre completo del cliente",
+            "help": "nombre",
+            "name": "nombre_cliente",
+            "type": "name"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del cliente",
+            "help": "cedula",
+            "name": "cedula_cliente",
+            "type": "number"
+        },
+        {
+            "description": "Digite el lugar de expedición de la cédula de ciudadanía del cliente",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el estado civil del cliente",
+            "help": "estado_civil",
+            "name": "estado_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el lugar de residencia del cliente",
+            "help": "lugar",
+            "name": "lugar_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el nombre completo del representante",
+            "help": "nombre",
+            "name": "nombre_representante",
+            "type": "name"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del representante",
+            "help": "cedula",
+            "name": "cedula_representante",
+            "type": "number"
+        },
+        {
+            "description": "Digite el lugar de expedición de la cédula de ciudadanía del representante",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_repre",
+            "type": "text"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del apoderado",
+            "help": "cedula",
+            "name": "cedula_apoderado",
+            "type": "number"
+        }
+    ],
+    "help": {
+        "nombre": "Ejemplo: Paola Lucia Rueda Daza",
+        "cedula": "Ejemplo: 1234567890",
+        "lugar_expedicion_cedula": "Ejemplo: Medellín",
+        "Estado civil": "Ejemplo: Soltero",
+        "lugar": "Ejemplo: Bogotá"        
+    },
+    "signatureProfile":[
+        {
+            "name":"nombre_cliente",
+            "identification":"cedula_cliente",
+            "type":"cliente"
+        },
+        {
+            "name":"nombre_representante",
+            "identification":"cedula_representante",
+            "type":"representante"
+        }
+    ]
+}

@@ -1,0 +1,256 @@
+{
+    "build": 2,
+    "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
+    "config": [
+        {
+            "description": "Digite el nombre completo del cliente",
+            "help": "nombre",
+            "name": "nombre_cliente",
+            "type": "name"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del cliente",
+            "help": "cedula",
+            "name": "cedula_cliente",
+            "type": "number"
+        },
+        {
+            "description": "Digite el lugar de expedición de la cédula de ciudadanía del cliente",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el estado civil del cliente",
+            "help": "estado_civil",
+            "name": "estado_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el lugar de residencia del cliente",
+            "help": "lugar",
+            "name": "lugar_cliente",
+            "type": "text"
+        },
+        {
+            "description": "Digite el nombre completo del primer representante",
+            "help": "nombre",
+            "name": "nombre_repre_1",
+            "type": "name"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del primer representante",
+            "help": "cedula",
+            "name": "cedula_repre_1",
+            "type": "number"
+        },
+        {
+            "description": "Digite el lugar de expedición de la cédula de ciudadanía del primer representante",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_repre_1",
+            "type": "text"
+        },
+        {
+            "description": "Digite el nombre completo del segundo representante",
+            "help": "nombre",
+            "name": "nombre_repre_2",
+            "type": "name"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del segundo representante",
+            "help": "cedula",
+            "name": "cedula_repre_2",
+            "type": "number"
+        },
+        {
+            "description": "Digite el lugar de expedición de la cédula de ciudadanía del segundo representante",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_repre_2",
+            "type": "text"
+        },
+        {
+            "description": "Digite el número del apartamento",
+            "help": "numero",
+            "name": "numero_apart",
+            "type": "number"
+        },
+        {
+            "description": "Digite el número de la matrícula inmobiliaria del apartamento",
+            "help": "numero",
+            "name": "numero_matricula_apart",
+            "type": "number"
+        },
+        {
+            "description": "Digite el código catastral del apartamento",
+            "help": "codigo",
+            "name": "codigo_catastral_apart",
+            "type": "number"
+        },
+        {
+            "description": "Digite el área del apartamento en metros cuadrados (m2)",
+            "help": "area",
+            "name": "area_apart",
+            "type": "number"
+        },
+        {
+            "description": "Digite el número del parqueadero",
+            "help": "numero",
+            "name": "numero_parq",
+            "type": "number"
+        },
+        {
+            "description": "Digite el número de la matrícula inmobiliaria del parqueadero",
+            "help": "numero",
+            "name": "numero_matricula_parq",
+            "type": "number"
+        },
+        {
+            "description": "Digite el código catastral del parqueadero",
+            "help": "codigo",
+            "name": "codigo_catastral_parq",
+            "type": "number"
+        },
+        {
+            "description": "Digite el área del parqueadero en metros cuadrados (m2)",
+            "help": "area",
+            "name": "area_parq",
+            "type": "number"
+        },
+        {
+            "description": "Digite el número util",
+            "help": "numero",
+            "name": "numero_util",
+            "type": "number"
+        },
+        {
+            "description": "Digite el número de la matrícula inmobiliaria util",
+            "help": "numero",
+            "name": "numero_matricula_util",
+            "type": "number"
+        },
+        {
+            "description": "Digite el código catastral util",
+            "help": "codigo",
+            "name": "codigo_catastral_util",
+            "type": "number"
+        },
+        {
+            "description": "Digite el área util en metros cuadrados (m2)",
+            "help": "area",
+            "name": "area_util",
+            "type": "number"
+        },
+        {
+            "description": "¿Desea agregar algún campo?",
+            "name":"agregar_campo",
+            "options": [
+                {
+                    "name": "No",
+                    "value": "n"
+                },
+                {
+                    "name": "Sí",
+                    "value": "s"
+                }
+            ],
+            "type": "clausula",
+            "value": "n"
+        },
+        {
+            "description": "Nombre del campo",
+            "help": "nombre",
+            "name": "nombre_campo",
+            "type": "text"
+        },
+        {
+            "description": "Descripción del campo",
+            "help": "descripcion",
+            "name": "descripcion_campo",
+            "type": "text"
+        },
+        {
+            "description": "Digite el número de la escritura donde quieren los vendedores",
+            "help": "numero",
+            "name": "numero_escritura",
+            "type": "number"
+        },
+        {
+            "description": "Digite el día del proceso del número de la escritura",
+            "help": "dia",
+            "name": "dia_escritura",
+            "type": "number"
+        },
+        {
+            "description": "Digite el mes del proceso del número de la escritura",
+            "help": "mes",
+            "name": "mes_escritura",
+            "type": "number"
+        },
+        {
+            "description": "Digite el año del proceso del número de la escritura",
+            "help": "año",
+            "name": "año_escritura",
+            "type": "number"
+        },
+        {
+            "description": "Digite el número de la notaria",
+            "help": "numero",
+            "name": "numero_notaria",
+            "type": "number"
+        },
+        {
+            "description": "Digite la ubicación de la notaria",
+            "help": "lugar",
+            "name": "lugar_notaria",
+            "type": "text"
+        },
+        {
+            "description": "¿El inmueble se encuentra afectado a VIVIENDA FAMILIAR",
+            "name": "afectado",
+            "options": [
+                {
+                    "name": "No",
+                    "value": "n"
+                },
+                {
+                    "name": "Sí",
+                    "value": "s"
+                }
+            ],
+            "type": "clausula",
+            "value": "n"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del apoderado",
+            "help": "cedula",
+            "name": "cedula_apoderado",
+            "type": "number"
+        }
+    ],
+    "help": {
+        "nombre": "Ejemplo: Paola Lucia Rueda Daza",
+        "cedula": "Ejemplo: 1234567890",
+        "lugar_expedicion_cedula": "Ejemplo: Medellín",
+        "Estado civil": "Ejemplo: Soltero",
+        "lugar": "Ejemplo: Bogotá",
+        "matricula": "Ejemplo: 50S23434",
+        "codigo": "Ejemplo: 9872023 VH5797S 0001 WX"
+    },
+    "signatureProfile":[
+        {
+            "name":"nombre_cliente",
+            "identification":"cedula_cliente",
+            "type":"cliente"
+        },
+        {
+            "name":"nombre_repre_1",
+            "identification":"cedula_repre_1",
+            "type":"representante_1"
+        },
+        {
+            "name":"nombre_repre_2",
+            "identification":"cedula_repre_2",
+            "type":"representante_2"
+        }
+    ]
+}

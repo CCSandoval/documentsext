@@ -1,0 +1,142 @@
+{
+    "build": 2,
+    "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
+    "config": [
+        {
+            "description": "Digite el nombre completo del conyuge",
+            "help": "nombre",
+            "name": "nombre_conyuge",
+            "type": "name"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del del conyuge",
+            "help": "cedula",
+            "name": "cedula_conyuge",
+            "type": "number"
+        },
+        {
+            "description": "Digite el lugar de expedición de cédula de la ciudadanía del del conyuge",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_conyuge",
+            "type": "text"
+        },
+        {
+            "description": "Digite el estado civil del conyuge",
+            "help": "estado_civil",
+            "name": "estado_conyuge",
+            "type": "text"
+        },
+        {
+            "description": "Digite el lugar de domicilio del conyuge",
+            "help": "lugar",
+            "name": "lugar_conyuge",
+            "type": "text"
+        },
+        {
+            "description": "Digite el nombre completo del propietario",
+            "help": "nombre",
+            "name": "nombre_propietario",
+            "type": "name"
+        },
+        {
+            "description": "Digite la descripción del inmueble",
+            "help": "descripcion",
+            "name": "descripcion_inmu",
+            "type": "text"
+        },
+        {
+            "description": "Digite la dirección del inmueble",
+            "help": "direccion",
+            "name": "direccion_inmu",
+            "type": "text"
+        },
+        {
+            "description": "Digite el lugar donde está ubicado el inmueble",
+            "help": "lugar",
+            "name": "lugar_inmu",
+            "type": "text"
+        },
+        {
+            "description": "Digite la matrícula de la inmobiliaria",
+            "help": "matricula",
+            "name": "matricula_inmo",
+            "type": "text"
+        },
+        {
+            "description": "Digite el código catastral del inmuble",
+            "help": "codigo",
+            "name": "codigo_cata",
+            "type": "number"
+        },
+        {
+            "description": "Digite el nombre completo del(a) primer(a) testigo",
+            "help": "nombre",
+            "name": "nombre_testigo_1",
+            "type": "name"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del(a) primer(a) testigo",
+            "help": "cedula",
+            "name": "cedula_testigo_1",
+            "type": "number"
+        },
+        {
+            "description": "Digite el lugar de expedeción del documento de identificación del(a) primer(a) testigo",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_testigo_1",
+            "type": "text"
+        },
+        {
+            "description": "Digite el nombre completo del(a) segundo testigo",
+            "help": "nombre",
+            "name": "nombre_testigo_2",
+            "type": "name"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del del(a) segundo testigo",
+            "help": "cedula",
+            "name": "cedula_testigo_2",
+            "type": "number"
+        },
+        {
+            "description": "Digite el lugar de expedeción del documento de identificación del(a) segundo testigo",
+            "help": "lugar_expedicion_cedula",
+            "name": "lugar_expe_cedula_testigo_2",
+            "type": "text"
+        },
+        {
+            "description": "Digite el número de cédula de ciudadanía del apoderado",
+            "help": "cedula",
+            "name": "cedula_apoderado",
+            "type": "number"
+        }
+    ],
+    "help": {
+        "nombre": "Ejemplo: Paola Lucia Rueda Daza",
+        "cedula": "Ejemplo: 1234567890",
+        "lugar_expedicion_cedula": "Ejemplo: Medellín",
+        "Estado civil": "Ejemplo: Soltero",
+        "lugar": "Ejemplo: Bogotá",
+        "descripcion": "Ejemplo: 4 habitaciones",
+        "direccion": "Ejemplo: Avenid 20 # 98 - 76",
+        "matricula": "Ejemplo: 50S23434",
+        "codigo": "Ejemplo: 9872023 VH5797S 0001 WX"
+    },
+    "signatureProfile":[
+        {
+            "name":"nombre_conyuge",
+            "identification":"cedula_conyuge",
+            "type":"conyuge"
+        },
+        {
+            "name":"nombre_testigo_1",
+            "identification":"cedula_testigo_1",
+            "type":"testigo_1"
+        },
+        {
+            "name":"nombre_testigo_2",
+            "identification":"cedula_testigo_2",
+            "type":"testigo_2"
+        }
+    ]
+}
