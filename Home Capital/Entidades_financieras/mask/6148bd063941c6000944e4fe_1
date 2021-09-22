@@ -3,7 +3,6 @@
         width: 10%;
         left: 20%
     }
-
     .first_cell {
         width: 15rem
     }
@@ -18,16 +17,13 @@
 <h2 class="text-center" style="font-size: 12pt">PODER ESPECIAL PARA ENTIDADES FINANCIERAS</h2>
 
 <p>
-    <span name="nombre_cliente">_________________________</span>, mayor de edad, 
-    <span name="sexo_cliente_m">identificada</span>
-    <span name="sexo_cliente_h" hidden>identificado</span> con cédula de ciudadanía número
-    <span name="cedula_cliente">_________________________</span> de
-    <span name="lugar_expe_cedula_cliente">_________________________</span>, con estado civil
-    <span name="estado_cliente"> casado con sociedad conyugal vigente</span>, 
-    <span name="sexo_cliente_m">domiciliada</span>
-    <span name="sexo_cliente_h" hidden>domiciliado</span> en
+    Yo <span name="nombre_cliente">_________________________</span>, mayor de edad, identificado con cédula de
+    ciudadanía número
+    <span name="cedula_cliente">_________________________</span> de 
+    <span name="lugar_expe_cedula_cliente">_________________________</span>, estado civil
+    <span name="estado_cliente">_________________________</span>, domiciliado en
     <span name="lugar_cliente">_________________________</span> , me permito manifestar que confiero poder especial
-    amplio y suficiente
+    amplio y suficiente a
     <span name="sexo_representante_m"> a la señora</span>
     <span name="sexo_representante_h" hidden> al señor</span>
     <span name="nombre_representante">_________________________</span>
@@ -42,8 +38,7 @@
     <span name="tipo_documento_representante_pa" hidden> pasaporte No.
         <span name="pasaporte_representante">_________________________</span>
     </span> de
-    <span name="lugar_expe_cedula_representante">_________________________</span>, para que me represente ante las
-    entidades
+    <span name="lugar_expe_cedula_representante">_________________________</span>, para que me represente ante las entidades
     financieras en aras de solicitar información, realizar acuerdos de pago, suscribir memoriales, autorizaciones de
     desembolso, documentos necesarios para hacer uso de la opción de compra en caso de leasing y suscribir la
     correspondiente escritura de compraventa, solicitar certificaciones, paz y salvos, cartas de compromiso, solicitar y
@@ -58,7 +53,7 @@
 
 <p><br /><br /><br /><br />
     <span>______________________________________</span> <br />
-    <b name="nombre_cliente">______________________</b><br />
+    <b name="nombre_cliente">______________________</b><br/>
     <b>Poderante</b> <br />
     <b>C.C. No.</b> <b name="cedula_cliente">_________________________</b><br />
     <b>Correo: </b> <b name="correo_cliente">_________________________</b>

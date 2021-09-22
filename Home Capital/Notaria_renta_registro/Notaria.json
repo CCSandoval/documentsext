@@ -9,6 +9,22 @@
             "type": "name"
         },
         {
+            "description": "Seleccione el sexo del cliente",
+            "name": "sexo_cliente",
+            "options": [
+                {
+                    "name": "Femenino",
+                    "value": "m"
+                },
+                {
+                    "name": "Masculino",
+                    "value": "h"
+                }
+            ],
+            "type": "clausula",
+            "value": "m"
+        },
+        {
             "description": "Digite el número de cédula de ciudadanía del cliente",
             "help": "cedula",
             "name": "cedula_cliente",

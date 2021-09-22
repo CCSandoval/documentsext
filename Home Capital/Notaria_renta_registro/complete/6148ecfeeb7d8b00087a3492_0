@@ -4,14 +4,17 @@
     }
 </style>
 
-<h2 class="text-center" style="font-size: 12pt"> PODER ESPECIAL PARA VENTA DE INMUEBLE (NOTARÍA, RENTAS Y REGISTRO)</h2>
+<h2 class="text-center" style="font-size: 12pt">PODER ESPECIAL PARA VENTA DE INMUEBLE (NOTARÍA, RENTAS Y REGISTRO)</h2>
 
 <p>
-    Yo <span name="nombre_cliente">________________________</span>, mayor de edad, identificado con cédula de
-    ciudadanía No.
+    Yo <span name="nombre_cliente">________________________</span>, mayor de edad, 
+    <span name="sexo_cliente_m">identificada</span>
+    <span name="sexo_cliente_h" hidden>identificado</span> con cédula de ciudadanía No.
     <span name="cedula_cliente">________________________</span> de
     <span name="lugar_expe_cedula_cliente">________________________</span> y estado civil
-    <span name="estado_cliente">________________________</span>, domiciliado en
+    <span name="estado_cliente">________________________</span>, 
+    <span name="sexo_cliente_m">domiciliada</span>
+    <span name="sexo_cliente_h" hidden>domiciliado</span> en
     <span name="lugar_cliente">________________________</span>, me permito manifestar que confiero poder especial
     amplio y suficiente
     <span name="sexo_representante_1_m"> a la señora</span>
@@ -122,25 +125,22 @@
     comercial y que no hay un acuerdo privado adicional a dicho precio.
 </p>
 
-<p><br /><br /><br /><br />
+<p><br /> <br /><br /> <br />
     Atentamente,
 </p>
 
-<p><br /><br /><br /><br />
-    <span>______________________________________</span> <br />
-    <b name="nombre_cliente">______________________</b><br />
-    <b>Poderante</b> <br />
-    <b>C.C. No.</b> <b name="cedula_cliente">_________________________</b><br />
-    <b>Correo: </b> <b name="correo_cliente">_________________________</b>
+<p>
+<div id="cliente" class="sign-margin"></div>
+<b>Poderante</b> <br />
+<b>C.C. No.</b> <b name="cedula_cliente">_________________________</b>
 </p>
 
-<p><br /><br /><br /><br />
+<p><br /> <br /><br /> <br />
     Acepto,
 </p>
 
-<p><br /><br /><br /><br />
-    <span>______________________________________</span> <br />
-    <b name="nombre_representante_1">______________________</b><br />
+<p>
+    <div id="representante_1" class="sign-margin"></div>
     <b>Representante 1</b> <br />
     <b name="tipo_documento_representante_cc">C.C. No.
         <b name="cedula_representante_1">_________________________</b>
@@ -150,14 +150,12 @@
     </b>
     <b name="tipo_documento_representante_pa" hidden>PASAPORTE No.
         <b name="pasaporte_representante_1">_________________________</b>
-    </b><br />
-    <b>Correo: </b> <b name="correo_representante_1">_________________________</b>
+    </b>
 </p>
 
-<p><br /><br /><br /><br />
-    <span>______________________________________</span> <br />
-    <b name="nombre_representante_2">______________________</b><br />
-    <b>Representante 2</b> <br />
+<p>
+    <div id="representante_2" class="sign-margin"></div>
+    <b>Representante 1</b> <br />
     <b name="tipo_documento_representante_cc">C.C. No.
         <b name="cedula_representante_2">_________________________</b>
     </b>
@@ -166,6 +164,5 @@
     </b>
     <b name="tipo_documento_representante_pa" hidden>PASAPORTE No.
         <b name="pasaporte_representante_2">_________________________</b>
-    </b><br />
-    <b>Correo: </b> <b name="correo_representante_2">_________________________</b>
+    </b>
 </p>

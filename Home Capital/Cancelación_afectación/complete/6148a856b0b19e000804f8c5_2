@@ -19,10 +19,10 @@
 <h2 class="text-center" style="font-size: 12pt">PODER ESPECIAL CANCELACIÓN AFECTACIÓN A VIVIENDA FAMILIAR</h2>
 
 <p>
-    <span name="nombre_conyuge">______________________</span> mayor de edad, identificado(a) con la cédula de
+    Yo <span name="nombre_conyuge">______________________</span> mayor de edad, identificado(a) con la cédula de
     ciudadanía No.
     <span name="cedula_conyuge">______________________</span> de
-    <span name="lugar_expe_cedula_conyuge">_________________________</span>, con estado civil
+    <span name="lugar_expe_cedula_conyuge">_________________________</span>, estado civil
     <span name="estado_conyuge"> casado con sociedad conyugal vigente</span>, domiciliado en
     <span name="lugar_conyuge">_________________________</span>, actuando en calidad de cónyuge del señor(a)
     <span name="nombre_propietario">_________________________</span>, me permito manifestar que conozco de la promesa y
@@ -85,46 +85,40 @@
     representación para los fines establecidos en este escrito.
 </p>
 
-<p><br /> <br /><br /><br />
+<p><br /> <br /><br /> <br />
     Atentamente,
 </p>
 
-<p><br /> <br /><br /><br />
-    <span>______________________________________</span> <br />
-    <b name="nombre_conyuge">______________________</b><br />
-    <b>Poderdante</b> <br />
-    <b>C.C. No.</b> <b name="cedula_conyuge">_________________________</b><br />
-    <b>Correo: </b> <b name="correo_conyuge">_________________________</b>
+<p>
+<div id="conyuge" class="sign-margin"></div>
+<b>Poderdante</b> <br />
+<b>C.C. No.</b> <b name="cedula_conyuge">_________________________</b>
 </p>
 
-<p><br /><br /><br /><br />
-    <span>______________________________________</span> <br />
-    <b name="nombre_testigo_1">______________________</b><br />
-    <b>Apoderado 1</b> <br />
-    <b name="tipo_documento_testigo_1_cc">C.C. No.
-        <b name="cedula_testigo_1">_________________________</b>
-    </b>
-    <b name="tipo_documento_testigo_1_ce" hidden>C.E. No.
-        <b name="cedulae_testigo_1">_________________________</b>
-    </b>
-    <b name="tipo_documento_testigo_1_pa" hidden>PASAPORTE No.
-        <b name="pasaporte_testigo_1">_________________________</b>
-    </b><br />
-    <b>Correo: </b> <b name="correo_testigo_1">_________________________</b>
+<p>
+<div id="testigo_1" class="sign-margin"></div>
+<b>Apoderado 1</b> <br />
+<b name="tipo_documento_testigo_1_cc">C.C. No.
+    <b name="cedula_testigo_1">_________________________</b>
+</b>
+<b name="tipo_documento_testigo_1_ce" hidden>C.E. No.
+    <b name="cedulae_testigo_1">_________________________</b>
+</b>
+<b name="tipo_documento_testigo_1_pa" hidden>PASAPORTE No.
+    <b name="pasaporte_testigo_1">_________________________</b>
+</b>
 </p>
 
-<p><br /><br /><br /><br />
-    <span>______________________________________</span> <br />
-    <b name="nombre_testigo_2">______________________</b><br />
-    <b>Apoderado 2</b> <br />
-    <b name="tipo_documento_testigo_2_cc">C.C. No.
-        <b name="cedula_testigo_2">_________________________</b>
-    </b>
-    <b name="tipo_documento_testigo_2_ce" hidden>C.E. No.
-        <b name="cedulae_testigo_2">_________________________</b>
-    </b>
-    <b name="tipo_documento_testigo_2_pa" hidden>PASAPORTE No.
-        <b name="pasaporte_testigo_2">_________________________</b>
-    </b><br />
-    <b>Correo: </b> <b name="correo_testigo_2">_________________________</b>
+<p>
+<div id="testigo_2" class="sign-margin"></div>
+<b>Apoderado 2</b> <br />
+<b name="tipo_documento_testigo_2_cc">C.C. No.
+    <b name="cedula_testigo_2">_________________________</b>
+</b>
+<b name="tipo_documento_testigo_2_ce" hidden>C.E. No.
+    <b name="cedulae_testigo_2">_________________________</b>
+</b>
+<b name="tipo_documento_testigo_2_pa" hidden>PASAPORTE No.
+    <b name="pasaporte_testigo_2">_________________________</b>
+</b>
 </p>
