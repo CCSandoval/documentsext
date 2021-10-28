@@ -1,0 +1,733 @@
+{
+    _id: ObjectId('6127aaccbcfa9d0009df613d'),
+    config: [
+        {
+            description: 'Seleccione el genero del propietario',
+            name: 'genero_propietario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                }
+            ],
+            value: 'm'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el nombre del propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el nombre de la propietaria'
+                }
+            ],
+            name: 'nombre_propietario',
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'El propietario es:'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'La propietaria es:'
+                }
+            ],
+            name: 'tipo_propietario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite la ciudad donde vecina el propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite la ciudad donde vecina la propietaria'
+                }
+            ],
+            name: 'residencia_propietario',
+            prereq: [
+                {
+                    k: 'tipo_propietario',
+                    v: 'n'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite la nacionalidad del propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite la nacionalidad de la propietaria'
+                }
+            ],
+            name: 'nacionalidad_propietario',
+            prereq: [
+                {
+                    k: 'tipo_propietario',
+                    v: 'n'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el nombre de la empresa que representa el propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el nombre de la empresa que representa la propietaria'
+                }
+            ],
+            name: 'nombre_empresa_propietario',
+            prereq: [
+                {
+                    k: 'tipo_propietario',
+                    v: 'j'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el nombre de la ciudad donde está domiciliada la empresa que representa el propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el nombre de la ciudad donde está domiciliada la empresa que representa la propietaria'
+                }
+            ],
+            name: 'ciudad_empresa_propietario',
+            prereq: [
+                {
+                    k: 'tipo_propietario',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el número de identificación de la empresa que representa el propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el número de identificación de la empresa que representa la propietaria'
+                }
+            ],
+            name: 'identificacion_empresa_propietario',
+            prereq: [
+                {
+                    k: 'tipo_propietario',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico del propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la propietaria'
+                }
+            ],
+            name: 'correo_propietario',
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el tipo de documento del propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el tipo de documento de la propietaria'
+                }
+            ],
+            name: 'tipo_documento_propietario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía del propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la propietaria'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_documento_propietario',
+                    v: 'cc'
+                }
+            ],
+            name: 'cedula_propietario',
+            type: 'number'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería del propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la propietaria'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_documento_propietario',
+                    v: 'ce'
+                }
+            ],
+            name: 'cedulae_propietario',
+            type: 'number'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el número de pasaporte del propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el número de pasaporte de la propietaria'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_documento_propietario',
+                    v: 'pa'
+                }
+            ],
+            name: 'pasaporte_propietario',
+            type: 'name'
+        },
+        {
+            description: 'Digite la direccion donde se encuentra ubicado el inmueble',
+            name: 'direccion_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número asignado de parqueadero del inmueble',
+            name: 'parqueadero_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número asignado de cuarto útil del inmueble',
+            name: 'util_inmueble',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar beneficios adicionales al inmueble?',
+            name: 'otro_inmueble',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            description: 'Digite el otro beneficio adicional con el que cuenta el inmueble',
+            prereq: [
+                {
+                    k: 'otro_inmueble',
+                    v: 's'
+                }
+            ],
+            name: 'valor_otro_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite la destinación de inmueble',
+            name: 'destinacion_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite el valor del cánon de arrendamiento del inmueble',
+            name: 'canon_inmueble',
+            type: 'currency'
+        },
+        {
+            description: 'Digite la duración del contrato de arrendamiento del inmueble',
+            name: 'duracion_contrato_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha a partir de la cual rige el presente contrato',
+            name: 'inicio_contrato',
+            type: 'date'
+        },
+        {
+            description: '¿Desea agregar una cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_1',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_1',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una segunda cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_2',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una tercera cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_3',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_3',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una cuarta cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_4',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_4',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una quinta cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_5',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_5',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la cual se firma el presente documento',
+            name: 'lugar_firma',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la cual se firma el presente documento',
+            name: 'fecha_firma',
+            type: 'date'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_propietario',
+        'residencia_propietario',
+        'nacionalidad_propietario',
+        'correo_propietario',
+        'cedula_propietario',
+        'cedulae_propietario',
+        'pasaporte_propietario',
+        'direccion_inmueble',
+        'parqueadero_inmueble',
+        'util_inmueble',
+        'valor_otro_inmueble',
+        'destinacion_inmueble',
+        'canon_inmueble',
+        'duracion_contrato_inmueble',
+        'lugar_firma',
+        'fecha_firma',
+    ],
+    preFill: [
+        {
+            name: 'nombre_administradora',
+            value: 'Aracelly Del Socorro Naranjo Aristizábal'
+        },
+        {
+            name: 'cedula_administradora',
+            value: '43.095.952'
+        },
+        {
+            name: 'correo_administradora',
+            value: 'hans.palominon@gmail.com'
+        }
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_propietario',
+            identification: 'cedula_propietario|cedulae_propietario|pasaporte_propietario',
+            name: 'nombre_propietario',
+            type: 'propietario'
+        },
+        {
+            email: 'correo_administradora',
+            identification: 'cedula_administradora',
+            name: 'nombre_administradora',
+            type: 'administradora'
+        }
+    ],
+    preBuildData: [],
+    company: ObjectId('614a3a750aebb000084cbac0'),
+    name: 'CONTRATO DE ADMINISTRACIÓN DE INMUEBLES',
+    price: 0,
+    build: 6,
+    username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
+    createdAt: ISODate('2021-08-26T14:53:00.657Z'),
+    updatedAt: ISODate('2021-08-26T14:53:00.657Z')
+}

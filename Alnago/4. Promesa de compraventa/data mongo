@@ -1,0 +1,4855 @@
+{
+    _id: ObjectId('615e15bf95ae0d0009203104'),
+    config: [
+        {
+            description: 'Digite el nombre completo del vendedor',
+            help: 'nombre',
+            name: 'nombre_vendedor_1',
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del vendedor',
+            help: 'sexo',
+            name: 'sexo_vendedor_1',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del vendedor',
+            name: 'tipo_documento_vendedor_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del vendedor',
+            help: 'cedula',
+            name: 'cedula_vendedor_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del vendedor',
+            help: 'cedula',
+            name: 'cedulae_vendedor_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del vendedor',
+            help: 'cedula',
+            name: 'pasaporte_vendedor_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del vendedor',
+            help: 'lugar',
+            name: 'lugar_expe_documento_vendedor_1',
+            type: 'text'
+        },
+        {
+            description: 'El vendedor es:',
+            help: 'tipo',
+            name: 'tipo_vendedor_1',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                },
+                {
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 'j'
+        },
+        {
+            description: 'seleccione el estado civil del vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_1_a',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre completo del poderdante del vendedor',
+            help: 'nombre',
+            name: 'nombre_poderdante_v_1',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'a'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del poderdante del vendedor',
+            help: 'sexo',
+            name: 'sexo_poderdante_v_1',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del poderdante del vendedor',
+            name: 'tipo_documento_poderdante_v_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del poderdante del vendedor',
+            help: 'cedula',
+            name: 'cedula_poderdante_v_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_1',
+                    v: 'cc'
+                },
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'a'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del poderdante del vendedor',
+            help: 'cedula',
+            name: 'cedulae_poderdante_v_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_1',
+                    v: 'ce'
+                },
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'a'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del poderdante del vendedor',
+            help: 'cedula',
+            name: 'pasaporte_poderdante_v_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_1',
+                    v: 'pa'
+                },
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'a'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'seleccione el estado civil del poderdante del vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_1_p',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre de la empresa vendedora',
+            help: 'nombre',
+            name: 'nombre_empresa_v_1',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el NIT de la empresa vendedora',
+            help: 'nit',
+            name: 'nit_empresa_v_1',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'seleccione el estado civil del vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_1',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'n'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el municipio de domicilio del vendedor',
+            help: 'lugar',
+            name: 'domicilio_vendedor_1',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_1',
+                    v: 'n'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un segundo vendedor?',
+            name: 'segundo_vendedor',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del segundo vendedor',
+            help: 'nombre',
+            name: 'nombre_vendedor_2',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del segundo vendedor',
+            help: 'sexo',
+            name: 'sexo_vendedor_2',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del segundo vendedor',
+            name: 'tipo_documento_vendedor_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo vendedor',
+            help: 'cedula',
+            name: 'cedula_vendedor_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del segundo vendedor',
+            help: 'cedula',
+            name: 'cedulae_vendedor_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo vendedor',
+            help: 'cedula',
+            name: 'pasaporte_vendedor_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del segundo vendedor',
+            help: 'lugar',
+            name: 'lugar_expe_documento_vendedor_2',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'El segundo vendedor es:',
+            help: 'tipo',
+            name: 'tipo_vendedor_2',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                },
+                {
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'j'
+        },
+        {
+            description: 'seleccione el estado civil del segundo vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_2_a',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre completo del poderdante del segundo vendedor',
+            help: 'nombre',
+            name: 'nombre_poderdante_v_2',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del poderdante del segundo vendedor',
+            help: 'sexo',
+            name: 'sexo_poderdante_v_2',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del poderdante del segundo vendedor',
+            name: 'tipo_documento_poderdante_v_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del poderdante del segundo vendedor',
+            help: 'cedula',
+            name: 'cedula_poderdante_v_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del poderdante del segundo vendedor',
+            help: 'cedula',
+            name: 'cedulae_poderdante_v_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del poderdante del segundo vendedor',
+            help: 'cedula',
+            name: 'pasaporte_poderdante_v_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'seleccione el estado civil del apoderado del segundo vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_2_p',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre de la empresa de la segunda parte vendedora',
+            help: 'nombre',
+            name: 'nombre_empresa_v_2',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el NIT de la segunda empresa vendedora',
+            help: 'nit',
+            name: 'nit_empresa_v_2',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'seleccione el estado civil del segundo vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_2',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'n'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el municipio de domicilio del segundo vendedor',
+            help: 'lugar',
+            name: 'domicilio_vendedor_2',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'n'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un tercer vendedor?',
+            name: 'tercer_vendedor',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del tercer vendedor',
+            help: 'nombre',
+            name: 'nombre_vendedor_3',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del tercer vendedor',
+            help: 'sexo',
+            name: 'sexo_vendedor_3',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del tercer vendedor',
+            name: 'tipo_documento_vendedor_3',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del tercer vendedor',
+            help: 'cedula',
+            name: 'cedula_vendedor_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del tercer vendedor',
+            help: 'cedula',
+            name: 'cedulae_vendedor_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del tercer vendedor',
+            help: 'cedula',
+            name: 'pasaporte_vendedor_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_3',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del tercer vendedor',
+            help: 'lugar',
+            name: 'lugar_expe_documento_vendedor_3',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'El tercer vendedor es:',
+            help: 'tipo',
+            name: 'tipo_vendedor_3',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                },
+                {
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'j'
+        },
+        {
+            description: 'seleccione el estado civil del tercer vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_3_a',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre completo del poderdante del tercer vendedor',
+            help: 'nombre',
+            name: 'nombre_poderdante_v_3',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del poderdante del tercer vendedor',
+            help: 'sexo',
+            name: 'sexo_poderdante_v_3',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del poderdante del tercer vendedor',
+            name: 'tipo_documento_poderdante_v_3',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del poderdante del tercer vendedor',
+            help: 'cedula',
+            name: 'cedula_poderdante_v_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del poderdante del tercer vendedor',
+            help: 'cedula',
+            name: 'cedulae_poderdante_v_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del poderdante del tercer vendedor',
+            help: 'cedula',
+            name: 'pasaporte_poderdante_v_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_v_3',
+                    v: 'pa'
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'seleccione el estado civil del apoderado del tercer vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_3',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre de la empresa de la tercera parte vendedora',
+            help: 'nombre',
+            name: 'nombre_empresa_v_3',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el NIT de la tercera empresa vendedora',
+            help: 'nit',
+            name: 'nit_empresa_v_3',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'seleccione el estado civil del tercer vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_3',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'n'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el municipio de domicilio del tercer vendedor',
+            help: 'lugar',
+            name: 'domicilio_vendedor_3',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'n'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre completo del comprador',
+            help: 'nombre',
+            name: 'nombre_comprador_1',
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del comprador',
+            help: 'sexo',
+            name: 'sexo_comprador_1',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del comprador',
+            name: 'tipo_documento_comprador_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del comprador',
+            help: 'cedula',
+            name: 'cedula_comprador_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del comprador',
+            help: 'cedula',
+            name: 'cedulae_comprador_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del comprador',
+            help: 'cedula',
+            name: 'pasaporte_comprador_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del comprador',
+            help: 'lugar',
+            name: 'lugar_expe_documento_comprador_1',
+            type: 'text'
+        },
+        {
+            description: 'El comprador es:',
+            help: 'tipo',
+            name: 'tipo_comprador_1',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                },
+                {
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 'j'
+        },
+        {
+            description: 'seleccione el estado civil del comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_1_a',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre completo del poderdante del comprador',
+            help: 'nombre',
+            name: 'nombre_poderdante_c_1',
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'a'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del poderdante del comprador',
+            help: 'sexo',
+            name: 'sexo_poderdante_c_1',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del poderdante del comprador',
+            name: 'tipo_documento_poderdante_c_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del poderdante del comprador',
+            help: 'cedula',
+            name: 'cedula_poderdante_c_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_1',
+                    v: 'cc'
+                },
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'a'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del poderdante del comprador',
+            help: 'cedula',
+            name: 'cedulae_poderdante_c_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_1',
+                    v: 'ce'
+                },
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'a'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del poderdante del comprador',
+            help: 'cedula',
+            name: 'pasaporte_poderdante_c_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_1',
+                    v: 'pa'
+                },
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'a'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'seleccione el estado civil del poderdante del comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_1_p',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre',
+            name: 'nombre_empresa_1',
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el NIT de la empresa',
+            help: 'nit',
+            name: 'nit_empresa_1',
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'seleccione el estado civil del comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_1',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'n'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el municipio de domicilio del comprador',
+            help: 'lugar',
+            name: 'domicilio_comprador_1',
+            prereq: [
+                {
+                    k: 'tipo_comprador_1',
+                    v: 'n'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un segundo comprador?',
+            name: 'segundo_comprador',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del segundo comprador',
+            help: 'nombre',
+            name: 'nombre_comprador_2',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del segundo comprador',
+            help: 'sexo',
+            name: 'sexo_comprador_2',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del segundo comprador',
+            name: 'tipo_documento_comprador_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo comprador',
+            help: 'cedula',
+            name: 'cedula_comprador_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del segundo comprador',
+            help: 'cedula',
+            name: 'cedulae_comprador_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo comprador',
+            help: 'cedula',
+            name: 'pasaporte_comprador_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del segundo comprador',
+            help: 'lugar',
+            name: 'lugar_expe_documento_comprador_2',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'El segundo comprador es:',
+            help: 'tipo',
+            name: 'tipo_comprador_2',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                },
+                {
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'j'
+        },
+        {
+            description: 'seleccione el estado civil del segundo comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_2_a',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre completo del poderdante del segundo comprador',
+            help: 'nombre',
+            name: 'nombre_poderdante_c_2',
+            prereq: [
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del poderdante del segundo comprador',
+            help: 'sexo',
+            name: 'sexo_poderdante_c_2',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del poderdante del segundo comprador',
+            name: 'tipo_documento_poderdante_c_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del poderdante del segundo comprador',
+            help: 'cedula',
+            name: 'cedula_poderdante_c_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del poderdante del segundo comprador',
+            help: 'cedula',
+            name: 'cedulae_poderdante_c_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del poderdante del segundo comprador',
+            help: 'cedula',
+            name: 'pasaporte_poderdante_c_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'seleccione el estado civil del apoderado del segundo comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_2_p',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre de la empresa de la segunda parte compradora',
+            help: 'nombre',
+            name: 'nombre_empresa_2',
+            prereq: [
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el NIT de la segunda empresa',
+            help: 'nit',
+            name: 'nit_empresa_2',
+            prereq: [
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'seleccione el estado civil del segundo comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_2',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'n'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el municipio de domicilio del segundo comprador',
+            help: 'lugar',
+            name: 'domicilio_comprador_2',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_comprador_2',
+                    v: 'n'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un tercer comprador?',
+            name: 'tercer_comprador',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del tercer comprador',
+            help: 'nombre',
+            name: 'nombre_comprador_3',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del tercer comprador',
+            help: 'sexo',
+            name: 'sexo_comprador_3',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del tercer comprador',
+            name: 'tipo_documento_comprador_3',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del tercer comprador',
+            help: 'cedula',
+            name: 'cedula_comprador_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del tercer comprador',
+            help: 'cedula',
+            name: 'cedulae_comprador_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del tercer comprador',
+            help: 'cedula',
+            name: 'pasaporte_comprador_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_3',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del tercer comprador',
+            help: 'lugar',
+            name: 'lugar_expe_documento_comprador_3',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'El tercer comprador es:',
+            help: 'tipo',
+            name: 'tipo_comprador_3',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                },
+                {
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'j'
+        },
+        {
+            description: 'seleccione el estado civil del tercer comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_3_a',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre completo del poderdante del tercer comprador',
+            help: 'nombre',
+            name: 'nombre_poderdante_c_3',
+            prereq: [
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el sexo del poderdante del tercer comprador',
+            help: 'sexo',
+            name: 'sexo_poderdante_c_3',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Seleccione el tipo de documento del poderdante del tercer comprador',
+            name: 'tipo_documento_poderdante_c_3',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del poderdante del tercer comprador',
+            help: 'cedula',
+            name: 'cedula_poderdante_c_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del poderdante del tercer comprador',
+            help: 'cedula',
+            name: 'cedulae_poderdante_c_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del poderdante del tercer comprador',
+            help: 'cedula',
+            name: 'pasaporte_poderdante_c_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_poderdante_c_3',
+                    v: 'pa'
+                },
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'a'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'seleccione el estado civil del poderdante del tercer comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_3_p',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el nombre de la empresa de la tercera parte compradora',
+            help: 'nombre',
+            name: 'nombre_empresa_3',
+            prereq: [
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el NIT de la tercera empresa',
+            help: 'nit',
+            name: 'nit_empresa_3',
+            prereq: [
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'seleccione el estado civil del tercer comprador',
+            help: 'estado_civil',
+            name: 'estado_comprador_3',
+            options: [
+                {
+                    name: 'Soltero(a) sin unión marital de hecho.',
+                    value: 's1'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho.',
+                    value: 's2'
+                },
+                {
+                    name: 'Soltero(a) con unión marital de hecho y capitulaciones maritales.',
+                    value: 's3'
+                },
+                {
+                    name: 'Soltero(a) por efectos de viudez.',
+                    value: 's4'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y liquidada.',
+                    value: 's5'
+                },
+                {
+                    name: 'Soltero(a) por divorcio con sociedad conyugal disuelta y sin liquidar.',
+                    value: 's6'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal vigente.',
+                    value: 'c1'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y liquidada.',
+                    value: 'c2'
+                },
+                {
+                    name: 'Casado(a) con sociedad conyugal disuelta y no liquidada.',
+                    value: 'c3'
+                },
+                {
+                    name: 'Casado(a) con acuerdo prematrimonial o capitulaciones matrimoniales.',
+                    value: 'c4'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'n'
+                }
+            ],
+            type: 'clausula',
+            value: 's1'
+        },
+        {
+            description: 'Digite el municipio de domicilio del tercer comprador',
+            help: 'lugar',
+            name: 'domicilio_comprador_3',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_comprador_3',
+                    v: 'n'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la información correspondiente a los linderos del inmueble',
+            name: 'info_linderos',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de la matrícula de la inmobiliaria',
+            help: 'numero',
+            name: 'numero_matricula_inmo',
+            type: 'text'
+        },
+        {
+            description: 'seleccione el municipio donde está ubicada la oficna de instrumento públicos',
+            name: 'municipio_oficina_fij',
+            options: [
+                {
+                    name: 'Medellín Norte',
+                    value: 'mn'
+                },
+                {
+                    name: 'Medellín Sur',
+                    value: 'ms'
+                },
+                {
+                    name: 'Otro',
+                    value: 'ot'
+                }
+            ],
+            type: 'clausula',
+            value: 'mn'
+        },
+        {
+            description: 'Digite el municipio donde está ubicada la oficna de instrumento públicos',
+            help: 'lugar',
+            name: 'municipio_oficina_ins',
+            prereq: [
+                {
+                    k: 'municipio_oficina_fij',
+                    v: 'ot'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el dirección catastral',
+            help: 'direccion',
+            name: 'direccion_catastral',
+            type: 'name'
+        },
+        {
+            description: 'Digite el código catastral',
+            help: 'codigo',
+            name: 'codigo_catastral',
+            type: 'name'
+        },
+        {
+            description: 'Digite el título de la adquisición',
+            help: 'nombre',
+            name: 'titulo_compraventa',
+            type: 'name'
+        },
+        {
+            description: 'Digite el precio del inmueble prometido en venta',
+            help: 'valor',
+            name: 'valor_total_inmueble',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el valor del primer pago',
+            help: 'valor',
+            name: 'pago_1',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el origen de los recursos con los que realiza el primer pago',
+            help: 'origen_recursos',
+            name: 'origen_recursos_pago_1',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se hará el primer pago',
+            help: 'fecha',
+            name: 'fecha_pago_1',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione el método de pago utilizado para realizar el primer pago',
+            name: 'metodo_pago_1',
+            options: [
+                {
+                    name: 'Consignación',
+                    value: 'cons'
+                },
+                {
+                    name: 'Otro',
+                    value: 'otro'
+                }
+            ],
+            type: 'clausula',
+            value: 'cons'
+        },
+        {
+            description: 'Seleccione si la cuenta es corriente o de ahorro',
+            name: 'cuenta_1',
+            options: [
+                {
+                    name: 'ahorros',
+                    value: 'ahorro'
+                },
+                {
+                    name: 'corrientes',
+                    value: 'corriente'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'metodo_pago_1',
+                    v: 'cons'
+                }
+            ],
+            type: 'clausula',
+            value: 'ahorro'
+        },
+        {
+            description: 'Digite el nombre del banco donde se hará el primer pago',
+            help: 'banco',
+            name: 'nombre_banco_1',
+            prereq: [
+                {
+                    k: 'metodo_pago_1',
+                    v: 'cons'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de la cuenta donde se hará el primer pago',
+            help: 'numero_cuenta',
+            name: 'numero_cuenta_banco_1',
+            prereq: [
+                {
+                    k: 'metodo_pago_1',
+                    v: 'cons'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre del propietario de la cuenta donde se hará el primer pago',
+            help: 'nombre',
+            name: 'n_propietario_cuenta_1',
+            prereq: [
+                {
+                    k: 'metodo_pago_1',
+                    v: 'cons'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del propietario de la cuenta donde se hará el primer pago',
+            help: 'cedula',
+            name: 'cedula_p_cuenta_1',
+            prereq: [
+                {
+                    k: 'metodo_pago_1',
+                    v: 'cons'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el método de pago utilizado para el primer pago',
+            name: 'otro_metodo_pago_1',
+            prereq: [
+                {
+                    k: 'metodo_pago_1',
+                    v: 'otro'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el valor del segundo pago',
+            help: 'valor',
+            name: 'pago_2',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el origen de los recursos con los que realiza el segundo pago',
+            help: 'origen_recursos',
+            name: 'origen_recursos_pago_2',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione si el segundo pago se realiza a la firma de la escritura pública',
+            name: 'firma_escritura_publica_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione la fecha para la firma de la escritura pública',
+            help: 'fecha',
+            name: 'fecha_firma_escritura_2',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione fecha hasta donde será prorrogada la firma de la escritura',
+            help: 'fecha',
+            name: 'prorroga_firma_escritura_2',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione el método de pago utilizado para realizar el segundo pago',
+            name: 'metodo_pago_2',
+            options: [
+                {
+                    name: 'Consignación',
+                    value: 'cons'
+                },
+                {
+                    name: 'Otro',
+                    value: 'otro'
+                }
+            ],
+            type: 'clausula',
+            value: 'cons'
+        },
+        {
+            description: 'Seleccione si la cuenta donde se hará el segundo pago es corriente o de ahorro',
+            name: 'cuenta_2',
+            options: [
+                {
+                    name: 'ahorros',
+                    value: 'ahorro'
+                },
+                {
+                    name: 'corrientes',
+                    value: 'corriente'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'metodo_pago_2',
+                    v: 'cons'
+                }
+            ],
+            type: 'clausula',
+            value: 'ahorro'
+        },
+        {
+            description: 'Digite el nombre del banco donde se hará el segundo pago',
+            help: 'banco',
+            name: 'nombre_banco_2',
+            prereq: [
+                {
+                    k: 'metodo_pago_2',
+                    v: 'cons'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de la cuenta donde se hará el segundo pago',
+            help: 'numero_cuenta',
+            name: 'numero_cuenta_banco_2',
+            prereq: [
+                {
+                    k: 'metodo_pago_2',
+                    v: 'cons'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre del propietario de la cuenta donde se hará el segundo pago',
+            help: 'nombre',
+            name: 'n_propietario_cuenta_2',
+            prereq: [
+                {
+                    k: 'metodo_pago_2',
+                    v: 'cons'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del propietario de la cuenta donde se hará el segundo pago',
+            help: 'cedula',
+            name: 'cedula_p_cuenta_2',
+            prereq: [
+                {
+                    k: 'metodo_pago_2',
+                    v: 'cons'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el método de pago utilizado para el segundo pago',
+            name: 'otro_metodo_pago_2',
+            prereq: [
+                {
+                    k: 'metodo_pago_2',
+                    v: 'otro'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un tercer pago?',
+            name: 'tercer_pago',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el valor del tercer pago',
+            help: 'valor',
+            name: 'pago_3',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'currency'
+        },
+        {
+            description: 'Digite el origen de los recursos con los que realiza el tercer pago',
+            help: 'origen_recursos',
+            name: 'origen_recursos_pago_3',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Seleccione si el tercer pago se realiza a la firma de la escritura pública',
+            name: 'firma_escritura_publica_3',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione la fecha para la firma de la escritura pública',
+            help: 'fecha',
+            name: 'fecha_firma_escritura_3',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Seleccione fecha hasta donde será prorrogada la firma de la escritura',
+            help: 'fecha',
+            name: 'prorroga_firma_escritura_3',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Seleccione el método de pago utilizado para realizar el tercer pago',
+            name: 'metodo_pago_3',
+            options: [
+                {
+                    name: 'Consignación',
+                    value: 'cons'
+                },
+                {
+                    name: 'Otro',
+                    value: 'otro'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cons'
+        },
+        {
+            description: 'Seleccione si la cuenta donde se hará el tercer pago es corriente o de ahorro',
+            name: 'cuenta_3',
+            options: [
+                {
+                    name: 'ahorros',
+                    value: 'ahorro'
+                },
+                {
+                    name: 'corrientes',
+                    value: 'corriente'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'metodo_pago_3',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'ahorro'
+        },
+        {
+            description: 'Digite el nombre del banco donde se hará el tercer pago',
+            help: 'banco',
+            name: 'nombre_banco_3',
+            prereq: [
+                {
+                    k: 'metodo_pago_3',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de la cuenta donde se hará el tercer pago',
+            help: 'numero_cuenta',
+            name: 'numero_cuenta_banco_3',
+            prereq: [
+                {
+                    k: 'metodo_pago_3',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre del propietario de la cuenta donde se hará el tercer pago',
+            help: 'nombre',
+            name: 'n_propietario_cuenta_3',
+            prereq: [
+                {
+                    k: 'metodo_pago_3',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del propietario de la cuenta donde se hará el tercer pago',
+            help: 'cedula',
+            name: 'cedula_p_cuenta_3',
+            prereq: [
+                {
+                    k: 'metodo_pago_3',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el método de pago utilizado para el tercer pago',
+            name: 'otro_metodo_pago_3',
+            prereq: [
+                {
+                    k: 'metodo_pago_3',
+                    v: 'otro'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un cuarto pago?',
+            name: 'cuarto_pago',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el valor del cuarto pago',
+            help: 'valor',
+            name: 'pago_4',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'currency'
+        },
+        {
+            description: 'Digite el origen de los recursos con los que realiza el cuarto pago',
+            help: 'origen_recursos',
+            name: 'origen_recursos_pago_4',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Seleccione si el cuarto pago se realiza a la firma de la escritura pública',
+            name: 'firma_escritura_publica_4',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione la fecha para la firma de la escritura pública',
+            help: 'fecha',
+            name: 'fecha_firma_escritura_4',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Seleccione fecha hasta donde será prorrogada la firma de la escritura',
+            help: 'fecha',
+            name: 'prorroga_firma_escritura_4',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Seleccione el método de pago utilizado para realizar el cuarto pago',
+            name: 'metodo_pago_4',
+            options: [
+                {
+                    name: 'Consignación',
+                    value: 'cons'
+                },
+                {
+                    name: 'Otro',
+                    value: 'otro'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cons'
+        },
+        {
+            description: 'Seleccione si la cuenta donde se hará el cuarto pago es corriente o de ahorro',
+            name: 'cuenta_4',
+            options: [
+                {
+                    name: 'ahorros',
+                    value: 'ahorro'
+                },
+                {
+                    name: 'corrientes',
+                    value: 'corriente'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'metodo_pago_4',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'ahorro'
+        },
+        {
+            description: 'Digite el nombre del banco donde se hará el cuarto pago',
+            help: 'banco',
+            name: 'nombre_banco_4',
+            prereq: [
+                {
+                    k: 'metodo_pago_4',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de la cuenta donde se hará el cuarto pago',
+            help: 'numero_cuenta',
+            name: 'numero_cuenta_banco_4',
+            prereq: [
+                {
+                    k: 'metodo_pago_4',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre del propietario de la cuenta donde se hará el cuarto pago',
+            help: 'nombre',
+            name: 'n_propietario_cuenta_4',
+            prereq: [
+                {
+                    k: 'metodo_pago_4',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del propietario de la cuenta donde se hará el cuarto pago',
+            help: 'cedula',
+            name: 'cedula_p_cuenta_4',
+            prereq: [
+                {
+                    k: 'metodo_pago_4',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el método de pago utilizado para el cuarto pago',
+            name: 'otro_metodo_pago_4',
+            prereq: [
+                {
+                    k: 'metodo_pago_4',
+                    v: 'otro'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un quinto pago?',
+            name: 'quinto_pago',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el valor del quinto pago',
+            help: 'valor',
+            name: 'pago_5',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'currency'
+        },
+        {
+            description: 'Digite el origen de los recursos con los que realiza el quinto pago',
+            help: 'origen_recursos',
+            name: 'origen_recursos_pago_5',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Seleccione si el quinto pago se realiza a la firma de la escritura pública',
+            name: 'firma_escritura_publica_5',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione la fecha para la firma de la escritura pública',
+            help: 'fecha',
+            name: 'fecha_firma_escritura_5',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Seleccione fecha hasta donde será prorrogada la firma de la escritura',
+            help: 'fecha',
+            name: 'prorroga_firma_escritura_5',
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Seleccione el método de pago utilizado para realizar el quinto pago',
+            name: 'metodo_pago_5',
+            options: [
+                {
+                    name: 'Consignación',
+                    value: 'cons'
+                },
+                {
+                    name: 'Otro',
+                    value: 'otro'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cons'
+        },
+        {
+            description: 'Seleccione si la cuenta donde se hará el quinto pago es corriente o de ahorro',
+            name: 'cuenta_5',
+            options: [
+                {
+                    name: 'ahorros',
+                    value: 'ahorro'
+                },
+                {
+                    name: 'corrientes',
+                    value: 'corriente'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'metodo_pago_5',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'ahorro'
+        },
+        {
+            description: 'Digite el nombre del banco donde se hará el quinto pago',
+            help: 'banco',
+            name: 'nombre_banco_5',
+            prereq: [
+                {
+                    k: 'metodo_pago_5',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de la cuenta donde se hará el quinto pago',
+            help: 'numero_cuenta',
+            name: 'numero_cuenta_banco_5',
+            prereq: [
+                {
+                    k: 'metodo_pago_5',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre del propietario de la cuenta donde se hará el quinto pago',
+            help: 'nombre',
+            name: 'n_propietario_cuenta_5',
+            prereq: [
+                {
+                    k: 'metodo_pago_5',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del propietario de la cuenta donde se hará el quinto pago',
+            help: 'cedula',
+            name: 'cedula_p_cuenta_5',
+            prereq: [
+                {
+                    k: 'metodo_pago_5',
+                    v: 'cons'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el método de pago utilizado para el quinto pago',
+            name: 'otro_metodo_pago_5',
+            prereq: [
+                {
+                    k: 'metodo_pago_5',
+                    v: 'otro'
+                },
+                {
+                    k: 'tercer_pago',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_pago',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_pago',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿El presente contrato cuenta con gravámenes especiales?',
+            name: 'gravamenes_especiales',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre del gravante',
+            help: 'nombre',
+            name: 'nombre_gravante',
+            prereq: [
+                {
+                    k: 'gravamenes_especiales',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el momento límite hasta el que se podrá realizar la cancelación del gravante',
+            help: 'nombre',
+            name: 'limite_gravamen',
+            prereq: [
+                {
+                    k: 'gravamenes_especiales',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha de entrega del bien inmueble',
+            name: 'fecha_entrega_inmueble',
+            type: 'date'
+        },
+        {
+            description: '¿Desea agregar fecha adelantable, prorrogable o ningúna?',
+            name: 'fecha_tipo',
+            options: [
+                {
+                    name: 'Fecha adelantable',
+                    value: 'ad'
+                },
+                {
+                    name: 'Fecha prorrogable',
+                    value: 'pr'
+                },
+                {
+                    name: 'No',
+                    value: 'no'
+                }
+            ],
+            type: 'clausula',
+            value: 'ad'
+        },
+        {
+            description: 'Seleccione la fecha adelantable de la entrega del bien inmueble',
+            name: 'tipo_fecha_ad',
+            prereq: [
+                {
+                    k: 'fecha_tipo',
+                    v: 'ad'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la fecha prorrogable de la entrega del bien inmueble',
+            name: 'tipo_fecha_pr',
+            prereq: [
+                {
+                    k: 'fecha_tipo',
+                    v: 'pr'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Digite la condición de entrega del bien inmueble',
+            name: 'condicion_entrega',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de la notaria donde se otorgará la escritura Pública de compraventa del inmueble',
+            help: 'numero',
+            name: 'numero_notaria',
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio donde se encuentra la notaria que otorgará la escritura Pública de compraventa del inmueble',
+            help: 'municipio',
+            name: 'municipio_notaria',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha inicial en la que se realiza la escritura pública de compraventa del inmueble',
+            help: 'fecha',
+            name: 'fecha_i_escritura_p',
+            type: 'date'
+        },
+        {
+            description: 'Digite la hora en la que se realiza la escritura pública de compraventa del inmueble',
+            help: 'hora',
+            name: 'hora_escritura_p',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar fecha adelantable, prorrogable u otra a la escritura pública?',
+            name: 'fecha_escritura_tipo',
+            options: [
+                {
+                    name: 'Fecha adelantable',
+                    value: 'ad'
+                },
+                {
+                    name: 'Fecha prorrogable',
+                    value: 'pr'
+                },
+                {
+                    name: 'Otro',
+                    value: 'ot'
+                }
+            ],
+            type: 'clausula',
+            value: 'ad'
+        },
+        {
+            description: 'Seleccione la fecha adelantable de la escritura pública del bien inmueble',
+            name: 'tipo_escritura_fecha_ad',
+            prereq: [
+                {
+                    k: 'fecha_escritura_tipo',
+                    v: 'ad'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la fecha prorrogable de la escritura pública del bien inmueble',
+            name: 'tipo_escritura_fecha_pr',
+            prereq: [
+                {
+                    k: 'fecha_escritura_tipo',
+                    v: 'pr'
+                }
+            ],
+            type: 'date'
+        },
+        {
+            description: 'Digite el tipo y fecha de escritura pública del bien inmueble',
+            name: 'tipo_escritura_fecha_ot',
+            prereq: [
+                {
+                    k: 'fecha_escritura_tipo',
+                    v: 'ot'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la condición de escritura pública del bien inmueble',
+            name: 'condicion_escritura',
+            type: 'text'
+        },
+        {
+            description: 'Digite el valor de la multa por incumplimiento',
+            help: 'valor',
+            name: 'valor_multa',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el porcentaje correspondiente al valor total de la negociación',
+            help: 'numero',
+            name: 'porcentaje_v_total',
+            type: 'number'
+        },
+        {
+            description: 'Digite el porcentaje de comisión en caso de desistir a la negociación que tendrán que pagar a arrendamientos Alnago',
+            help: 'numero',
+            name: 'porcentaje_negociacion',
+            type: 'number'
+        },
+        {
+            description: '¿El presente contrato cuenta con tramite hipotecario?',
+            name: 'tramite_hipotecario',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el banco del tramite hipotecario',
+            name: 'banco_hipoteca',
+            prereq: [
+                {
+                    k: 'tramite_hipotecario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+
+
+        {
+            description: '¿Se desea pactar colegaje?',
+            name: 'colegaje',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre de la empresa que compartirá comisiones con Arrendamientos Alnago',
+            name: 'nombre_empresa_comision',
+            prereq: [
+                {
+                    k: 'colegaje',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+
+
+        {
+            description: 'Digite el valor de la comisión a cancelar a alnago',
+            help: 'valor',
+            name: 'valor_comision',
+            refer: [
+                '50_p_1_valor_comision',
+                '50_p_2_valor_comision'
+            ],
+            type: 'currency'
+        },
+
+        {
+            description: 'Digite el primer porcentaje de pago de comisión a cancelar',
+            name: 'p_1_comision',
+            refer: [
+                'p_1_comision_1',
+                '50_p_1_valor_comision'
+            ],
+            type: 'number'
+        },   
+        {
+            description: 'Digite el primer valor de la comisión a cancelar a alnago',
+            help: 'valor',
+            name: '50_p_1_valor_comision',
+            refer: [
+                '50_p_2_valor_comision'
+            ],
+            type: 'currency'
+        },
+        {
+            description: 'Digite el método y fecha en la que se hará el primer pago de la comisión',
+            name: 'pago_comision_1',
+            type: 'text'
+        },
+        
+        
+
+
+        {
+            description: 'Digite el segundo porcentaje de pago de comisión a cancelar',
+            name: 'p_2_comision',
+            refer: [
+                'p_2_comision_1'
+            ],
+            type: 'number'
+        }, 
+        {
+            description: 'Digite el método y fecha en la que se hará el segundo pago de la comisión',
+            name: 'pago_comision_2',
+            type: 'text'
+        },
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        {
+            description: 'Digite el segundo 50% del valor de la comisión a cancelar a alnago',
+            help: 'valor',
+            name: '50_p_2_valor_comision',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el municipio donde se firma el presente contrato',
+            help: 'municipio',
+            name: 'municipio_firma_contrato',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            help: 'fecha',
+            name: 'fecha_firma_contrato',
+            type: 'date'
+        },
+        {
+            description: 'Digite el correo electrónico del comprador',
+            help: 'correo',
+            name: 'correo_comprador_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del segundo comprador',
+            help: 'correo',
+            name: 'correo_comprador_2',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del tercer comprador',
+            help: 'correo',
+            name: 'correo_comprador_3',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del vendedor',
+            help: 'correo',
+            name: 'correo_vendedor_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del segundo vendedor',
+            help: 'correo',
+            name: 'correo_vendedor_2',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del tercer vendedor',
+            help: 'correo',
+            name: 'correo_vendedor_3',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        }
+    ],
+    operation: [
+        {
+            subtract: [
+                {
+                    name: '50_p_1_valor_comision',
+                    fromOperation: true
+                }
+            ],
+            name: '50_p_2_valor_comision',
+            type: 'res',
+            valueInitial: [
+                {
+                    name: 'valor_comision',
+                    fromOperation: false
+                }
+            ]
+        },
+        {
+            name: '50_p_1_valor_comision',
+            product: [
+                {
+                    name: 'p_1_comision',
+                    fromOperation: false
+                },
+                {
+                    name: 'valor_comision',
+                    fromOperation: false
+                }
+            ],
+            refer: [
+                '50_p_2_valor_comision'
+            ],
+            scalar: 1,
+            type: 'prod'
+        },
+
+        {
+            name: 'p_1_comision_1',
+            product: [
+                {
+                    name: 'p_1_comision',
+                    fromOperation: false
+                }
+            ],
+            scalar: 0.5,
+            type: 'prod'
+        },
+        {
+            name: 'p_2_comision_1',
+            product: [
+                {
+                    name: 'p_2_comision',
+                    fromOperation: false
+                }
+            ],
+            scalar: 0.5,
+            type: 'prod'
+        }
+    ],
+    sign: [
+        'nombre_comprador_1',
+        'sexo_comprador_1',
+        'tipo_documento_comprador_1',
+        'cedula_comprador_1',
+        'cedulae_comprador_1',
+        'pasaporte_comprador_1',
+        'lugar_expe_documento_comprador_1',
+        'tipo_comprador_1',
+        'nombre_empresa_1',
+        'estado_comprador_1',
+        'domicilio_comprador_1',
+        'nombre_comprador_2',
+        'sexo_comprador_2',
+        'tipo_documento_comprador_2',
+        'cedula_comprador_2',
+        'cedulae_comprador_2',
+        'pasaporte_comprador_2',
+        'lugar_expe_documento_comprador_2',
+        'tipo_comprador_2',
+        'nombre_empresa_2',
+        'estado_comprador_2',
+        'domicilio_comprador_2',
+        'nombre_comprador_3',
+        'sexo_comprador_3',
+        'tipo_documento_comprador_3',
+        'cedula_comprador_3',
+        'cedulae_comprador_3',
+        'pasaporte_comprador_3',
+        'lugar_expe_documento_comprador_3',
+        'tipo_comprador_3',
+        'nombre_empresa_3',
+        'estado_comprador_3',
+        'domicilio_comprador_3',
+        'nombre_vendedor_1',
+        'sexo_vendedor_1',
+        'tipo_documento_vendedor_1',
+        'cedula_vendedor_1',
+        'cedulae_vendedor_1',
+        'pasaporte_vendedor_1',
+        'lugar_expe_documento_vendedor_1',
+        'tipo_vendedor_1',
+        'nombre_empresa_v_1',
+        'estado_vendedor_1',
+        'domicilio_vendedor_1',
+        'nombre_vendedor_2',
+        'sexo_vendedor_2',
+        'tipo_documento_vendedor_2',
+        'cedula_vendedor_2',
+        'cedulae_vendedor_2',
+        'pasaporte_vendedor_2',
+        'lugar_expe_documento_vendedor_2',
+        'tipo_vendedor_2',
+        'nombre_empresa_v_2',
+        'estado_vendedor_2',
+        'domicilio_vendedor_2',
+        'nombre_vendedor_3',
+        'sexo_vendedor_3',
+        'tipo_documento_vendedor_3',
+        'cedula_vendedor_3',
+        'cedulae_vendedor_3',
+        'pasaporte_vendedor_3',
+        'lugar_expe_documento_vendedor_3',
+        'tipo_vendedor_3',
+        'nombre_empresa_v_1',
+        'estado_vendedor_3',
+        'domicilio_vendedor_3',
+        'numero_matricula_inmo',
+        'municipio_oficina_ins',
+        'direccion_catastral',
+        'codigo_catastral',
+        'titulo_compraventa',
+        'valor_total_inmueble',
+        'pago_1',
+        'fecha_pago_1',
+        'nombre_banco_1',
+        'numero_cuenta_banco_1',
+        'propietario_cuenta_1',
+        'cedula_p_cuenta_1',
+        'pago_2',
+        'fecha_firma_escritura',
+        'prorroga_firma_escritura',
+        'nombre_banco_2',
+        'numero_cuenta_banco_2',
+        'propietario_cuenta_2',
+        'cedula_p_cuenta_2',
+        'pago_3',
+        'nombre_banco_3',
+        'fecha_desembolso',
+        'fecha_adelantable',
+        'fecha_prorrogable',
+        'nombre_gravante',
+        'limite_gravamen',
+        'numero_notaria',
+        'nombre_notaria',
+        'fecha_i_escritura_p',
+        'hora_escritura_p',
+        'fecha_f_escritura_p',
+        'valor_multa',
+        'porcentaje_v_total',
+        'valor_comision',
+        'municipio_firma_contrato',
+        'fecha_firma_contrato',
+        'correo_comprador_1',
+        'correo_comprador_2',
+        'correo_comprador_3',
+        'correo_vendedor_1',
+        'correo_vendedor_2',
+        'correo_vendedor_3'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_comprador_1',
+            identification: 'cedula_comprador_1|cedulae_comprador_1|pasaporte_comprador_1',
+            email: 'correo_comprador_1',
+            type: 'comprador_1'
+        },
+        {
+            name: 'nombre_comprador_2',
+            identification: 'cedula_comprador_2|cedulae_comprador_2|pasaporte_comprador_2',
+            email: 'correo_comprador_2',
+            type: 'segundo_comprador'
+        },
+        {
+            name: 'nombre_comprador_3',
+            identification: 'cedula_comprador_3|cedulae_comprador_3|pasaporte_comprador_3',
+            email: 'correo_comprador_3',
+            type: 'tercer_comprador'
+        },
+        {
+            name: 'nombre_vendedor_1',
+            identification: 'cedula_vendedor_1|cedulae_vendedor_1|pasaporte_vendedor_1',
+            email: 'correo_vendedor_1',
+            type: 'vendedor_1'
+        },
+        {
+            name: 'nombre_vendedor_2',
+            identification: 'cedula_vendedor_2|cedulae_vendedor_2|pasaporte_vendedor_2',
+            email: 'correo_vendedor_2',
+            type: 'segundo_vendedor'
+        },
+        {
+            name: 'nombre_vendedor_3',
+            identification: 'cedula_vendedor_3|cedulae_vendedor_3|pasaporte_vendedor_3',
+            email: 'correo_vendedor_3',
+            type: 'tercer_vendedor'
+        }
+    ],
+    preBuildData: [],
+    name: 'CONTRATO DE PROMESA DE COMPRAVENTA DE BIEN INMUEBLE',
+    price: 5000,
+    help: {
+        hora: '08:00 AM',
+        numero: 'Ejemplo 10',
+        nombre: 'Ejemplo: Antonio Diaz Ruiz',
+        sexo: 'Ejemplo: Femenino',
+        cedula: 'Ejemplo: 1234567890',
+        estado_civil: 'Ejemplo: soltero',
+        tipo: 'Ejemplo: Natural',
+        direccion: 'Ejemplo: Calle 12 #45-23',
+        codigo: 'Ejemplo: 9872023 VH5797S 0001 WX',
+        valor: 'Ejemplo: 10.000.000',
+        fecha: 'Ejemplo: 12 de Octubre del 2021',
+        banco: 'Ejemplo: Bancolombia',
+        numero_cuenta: 'Ejemplo 1234 5678 8765 4321',
+        nit: 'Ejemplo: 123456789-0',
+        origen_recursos: 'Ejemplo: propios'
+    },
+    build: 26,
+    username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
+    company: ObjectId('6179a50cc930d700099c5bd6'),
+    createdAt: ISODate('2021-10-06T21:31:43.788Z'),
+    updatedAt: ISODate('2021-10-06T21:31:43.788Z')
+}

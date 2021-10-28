@@ -1,0 +1,193 @@
+{
+    _id: ObjectId('6170524f2812a30009253592'),
+    config: [
+        {
+            description: 'Seleccione la empresa que hará el pacto de exclusión salarial con el trabajador',
+            help: 'empresas',
+            name: 'empresa',
+            options: [
+                {
+                    name: 'INTEEGRA S.A.S.',
+                    value: 'int'
+                },
+                {
+                    name: 'NETCOL S.A.S.',
+                    value: 'net'
+                },
+                {
+                    name: 'PLEX S.A.S.',
+                    value: 'ple'
+                },
+                {
+                    name: 'TRIANGULUM S.A.S.',
+                    value: 'tri'
+                },
+                {
+                    name: 'NETIA S.A.S.',
+                    value: 'nei'
+                }
+            ],
+            type: 'clausula',
+            value: 'int'
+        },
+        {
+            description: 'Digite el nombre del trabajador',
+            help: 'nombre',
+            name: 'nombre_trabajador',
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde esta domiciliado el representante',
+            help: 'lugar',
+            name: 'municipio_representante',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione el tipo de documento del trabajador',
+            help: 'tipo_documento',
+            name: 'tipo_documento_trabajador',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del trabajador',
+            help: 'cedula',
+            name: 'cedula_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del trabajador',
+            help: 'cedula',
+            name: 'cedulae_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del trabajador',
+            help: 'pasaporte',
+            name: 'pasaporte_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el auxilio laboral que se le otorgará al trabajador',
+            help: 'auxilio',
+            name: 'tipo_auxilio',
+            type: 'text'
+        },
+        {
+            description: 'Digite el valor correspondiente al auxilio laboral que se le otorgará al trabajador',
+            help: 'valor',
+            name: 'valor_auxilio',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el municipio donde se firma el pacto de exclusión salarial',
+            help: 'lugar',
+            name: 'municipio_firma',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el pacto de exclusión salarial',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        },
+        {
+            description: 'Digite el correo electrónico del representante',
+            help: 'correo',
+            name: 'correo_representante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del trabajador',
+            help: 'correo',
+            name: 'correo_trabajador',
+            type: 'text'
+        }
+    ],
+    operation: [],
+    sign: [
+        'empresa',
+        'municipio_representante',
+        'nombre_trabajador',
+        'tipo_documento_trabajador',
+        'cedula_trabajador',
+        'cedulae_trabajador',
+        'pasaporte_trabajador',
+        'tipo_auxilio',
+        'valor_auxilio',
+        'municipio_firma',
+        'fecha_firma',
+        'correo_representante',
+        'correo_trabajador'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_representante',
+            identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
+            name: 'nombre_r_empresa',
+            type: 'repre_empresa'
+        },
+        {
+            email: 'correo_trabajador',
+            identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
+            name: 'nombre_trabajador',
+            type: 'trabajador'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_r_empresa',
+            value: 'Representante Legal de la parte Empleadora'
+        }
+    ],
+    preBuildData: [],
+    name: 'PACTO DE EXCLUSIÓN SALARIAL',
+    price: 5000,
+    help: {
+        empresas: 'Ejemplo: TSG S.A.S.',
+        nombre: 'Ejemplo: Paola Andrea Diaz Diaz',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        lugar: 'Ejemplo: Medellín',
+        auxilio: 'Ejemplo: Salud',
+        valor: 'Ejemplo: 100.000',
+        fecha: 'Ejemplo: 12 de Noviembre del 2021',
+        correo: 'Ejemplo: ejemplo@tsg.com'
+    },
+    build: 3,
+    createdAt: ISODate('2021-10-20T17:30:55.675Z'),
+    updatedAt: ISODate('2021-10-20T17:30:55.675Z')
+}

@@ -1,0 +1,2048 @@
+{
+    _id: ObjectId('6127ad62cce128000955453f'),
+    config: [
+        {
+            description: 'Digite el lugar desde donde se diligencia el presente contrato',
+            help: 'lugar',
+            name: 'lugar_contrato',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se diligencia el presente contrato',
+            name: 'fecha_contrato',
+            type: 'date'
+        },
+        {
+            description: 'Digite el nombre de la parte arrendataria',
+            help: 'nombre',
+            name: 'nombre_arrendatario',
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección de la parte arrendataria',
+            help: 'lugar',
+            name: 'direccion_arrendatario',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico de la parte arrendataria',
+            help: 'correo',
+            name: 'correo_arrendatario',
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del inmueble que se entrega en arrendamiento sin incluir la ciudad',
+            help: 'direccion',
+            name: 'direccion_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad del inmueble que se entrega en arrendamiento',
+            help: 'ciudad',
+            name: 'ciudad_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del parqueadero del inmueble que se entrega en arrendamiento',
+            help: 'numero_parqueadero',
+            name: 'numero_parqueadero',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del cuarto útil del inmueble que se entrega en arrendamiento',
+            help: 'numero_cuarto_util',
+            name: 'numero_cuarto_util',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar beneficios adicionales al inmueble?',
+            name: 'otro_inmueble',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el otro beneficio adicional con el que cuenta el inmueble',
+            name: 'valor_otro',
+            prereq: [
+                {
+                    k: 'otro_inmueble',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el total de personas que pueden habitar el inmueble',
+            help: 'total_personas',
+            name: 'total_personas_inmueble',
+            type: 'number'
+        },
+        {
+            description: 'Digite el precio de arrendamiento del inmueble en números, sin comas ni puntos',
+            help: 'precio_inmueble',
+            name: 'precio_inmueble',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el periodo de vigencia del presente contrato en meses',
+            name: 'vigencia_contrato',
+            type: 'number'
+        },
+        {
+            description: 'Seleccione la fecha en la que se da inicio el presente contrato',
+            name: 'fecha_inicio_contrato',
+            type: 'date'
+        },
+        {
+            description: '¿Al inmueble le faltan servicios públicos?',
+            name: 'falta_servicios_publicos',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el servicio público que le hace falta al inmueble',
+            name: 'servicio_publico_falta',
+            prereq: [
+                {
+                    k: 'falta_servicios_publicos',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿El inmueble comparte algún servicios públicos?',
+            name: 'comparte_servicios_publicos',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el servicio público que comparte el inmueble',
+            name: 'servicio_publico_comparte',
+            prereq: [
+                {
+                    k: 'comparte_servicios_publicos',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿El inmueble cuenta con servicios públicos adicionales?',
+            name: 'adicionales_servicios_publicos',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el servicio público adicional con el que cuenta el inmueble',
+            name: 'servicio_publico_adicionales',
+            prereq: [
+                {
+                    k: 'adicionales_servicios_publicos',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿La parte arrendadora deberá pagar algún servicios público del inmueble?',
+            name: 'arrendador_servicios',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el servicio público que deberá pagar la parte arrendadora',
+            name: 'servicios_arrendador',
+            prereq: [
+                {
+                    k: 'arrendador_servicios',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite los usos conexos con los que cuenta el inmueble',
+            name: 'usos_conexos_arrendatario',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar deudores solidarios al presente contrato?',
+            name: 'total_deudor_1',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre del deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_1',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del deudor solidario',
+            name: 'tipo_documento_deudor_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_1',
+                    v: 'cc'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_1',
+                    v: 'ce'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_1',
+                    v: 'pa'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'El deudor solidario es:',
+            name: 'tipo_deudor_1',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre',
+            name: 'nombre_empresa_deudor_1',
+            prereq: [
+                {
+                    k: 'tipo_deudor_1',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del NIT de la empresa',
+            help: 'cedula',
+            name: 'nit_empresa_deudor_1',
+            prereq: [
+                {
+                    k: 'tipo_deudor_1',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: '¿Desea agregar un segundo deudor solidario al presente contrato?',
+            name: 'total_deudor_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre del segundo deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_2',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del segundo deudor solidario',
+            name: 'tipo_documento_deudor_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del segundo deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'El segundo deudor solidario es:',
+            name: 'tipo_deudor_2',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre',
+            name: 'nombre_empresa_deudor_2',
+            prereq: [
+                {
+                    k: 'tipo_deudor_2',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del NIT de la empresa',
+            help: 'cedula',
+            name: 'nit_empresa_deudor_2',
+            prereq: [
+                {
+                    k: 'tipo_deudor_2',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: '¿Desea agregar un tercer deudor solidario al presente contrato?',
+            name: 'total_deudor_3',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre del tercer deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_3',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del tercer deudor solidario',
+            name: 'tipo_documento_deudor_3',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del tercer deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del tercer deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del tercer deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_3',
+                    v: 'pa'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'El tercer deudor solidario es:',
+            name: 'tipo_deudor_3',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre',
+            name: 'nombre_empresa_deudor_3',
+            prereq: [
+                {
+                    k: 'tipo_deudor_3',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del NIT de la empresa',
+            help: 'cedula',
+            name: 'nit_empresa_deudor_3',
+            prereq: [
+                {
+                    k: 'tipo_deudor_3',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: '¿Desea agregar un cuarto deudor solidario al presente contrato?',
+            name: 'total_deudor_4',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre del cuarto deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_4',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del cuarto deudor solidario',
+            name: 'tipo_documento_deudor_4',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del cuarto deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_4',
+                    v: 'cc'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del cuarto deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_4',
+                    v: 'ce'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del cuarto deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_4',
+                    v: 'pa'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'El cuarto deudor solidario es:',
+            name: 'tipo_deudor_4',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre',
+            name: 'nombre_empresa_deudor_4',
+            prereq: [
+                {
+                    k: 'tipo_deudor_4',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del NIT de la empresa',
+            help: 'cedula',
+            name: 'nit_empresa_deudor_4',
+            prereq: [
+                {
+                    k: 'tipo_deudor_4',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: '¿Desea agregar un quinto deudor solidario al presente contrato?',
+            name: 'total_deudor_5',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre del quinto deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_5',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del quinto deudor solidario',
+            name: 'tipo_documento_deudor_5',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del quinto deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_5',
+                    v: 'cc'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del quinto deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_5',
+                    v: 'ce'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del quinto deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_5',
+                    v: 'pa'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'El cuarto quinto solidario es:',
+            name: 'tipo_deudor_5',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre',
+            name: 'nombre_empresa_deudor_5',
+            prereq: [
+                {
+                    k: 'tipo_deudor_5',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del NIT de la empresa',
+            help: 'cedula',
+            name: 'nit_empresa_deudor_5',
+            prereq: [
+                {
+                    k: 'tipo_deudor_5',
+                    v: 'j'
+                },
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el nombre de la aseguradora que puede procesar la información en caso de incumplimento en el contrato',
+            name: 'nombre_aseguradora',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_1',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_1',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una segunda cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_2',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una tercera cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_3',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_3',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una cuarta cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_4',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_4',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una quinta cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_5',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes.',
+            name: 'adicional_clausulas_5',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            name: 'fecha_firma',
+            type: 'date'
+        },
+        
+
+        {
+            description: 'Seleccione el tipo de documento del arrendatario',
+            name: 'tipo_documento_arrendatario',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del arrendatario',
+            help: 'cedula',
+            name: 'cedula_arrendatario',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del arrendatario',
+            help: 'cedula',
+            name: 'cedulae_arrendatario',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del arrendatario',
+            help: 'cedula',
+            name: 'pasaporte_arrendatario',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+
+        {
+            description: '¿Desea agregar un testigo al presente contrato?',
+            name: 'total_testigo_1',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre del primer testigo',
+            name: 'nombre_testigo_1',
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del primer testigo',
+            name: 'cedula_testigo_1',
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el correo electrónico del primer testigo',
+            name: 'correo_testigo_1',
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un segundo testigo al presente contrato?',
+            name: 'total_testigo_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre del segundo testigo',
+            name: 'nombre_testigo_2',
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo testigo',
+            name: 'cedula_testigo_2',
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el correo electrónico del segundo testigo',
+            name: 'correo_testigo_2',
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del primer deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_1',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del segundo deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_2',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del tercer deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_3',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del cuarto deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_4',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del quinto deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_5',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        }
+    ],
+    operation: [],
+    sign: [
+        'lugar_contrato',
+        'fecha_contrato',
+        'nombre_arrendatario',
+        'direccion_arrendatario',
+        'correo_arrendatario',
+        'direccion_inmueble',
+        'ciudad_inmueble',
+        'numero_parqueadero',
+        'numero_cuarto_util',
+        'valor_otro',
+        'total_personas_inmueble',
+        'precio_inmueble',
+        'fecha_final_contrato',
+        'fecha_inicio_contrato',
+        'servicio_publico_falta',
+        'servicio_publico_comparte',
+        'servicio_publico_adicionales',
+        'servicios_arrendador',
+        'usos_conexos_arrendatario',
+        'total_deudor_1',
+        'nombre_deudor_1',
+        'tipo_documento_deudor_1',
+        'cedula_deudor_1',
+        'cedulae_deudor_1',
+        'pasaporte_deudor_1',
+        'nit_deudor_1',
+        'total_deudor_2',
+        'nombre_deudor_2',
+        'tipo_documento_deudor_2',
+        'cedula_deudor_2',
+        'cedulae_deudor_2',
+        'pasaporte_deudor_2',
+        'nit_deudor_2',
+        'total_deudor_3',
+        'nombre_deudor_3',
+        'tipo_documento_deudor_3',
+        'cedula_deudor_3',
+        'cedulae_deudor_3',
+        'pasaporte_deudor_3',
+        'nit_deudor_3',
+        'total_deudor_4',
+        'nombre_deudor_4',
+        'tipo_documento_deudor_4',
+        'cedula_deudor_4',
+        'cedulae_deudor_4',
+        'pasaporte_deudor_4',
+        'nit_deudor_4',
+        'total_deudor_5',
+        'nombre_deudor_5',
+        'tipo_documento_deudor_5',
+        'cedula_deudor_5',
+        'cedulae_deudor_5',
+        'pasaporte_deudor_5',
+        'nit_deudor_5',
+        'nombre_aseguradora',
+        'fecha_firma',
+        'cedula_arrendatario',
+        'cedulae_arrendatario',
+        'pasaporte_arrendatario',
+        'nit_arrendatario',
+        'total_testigo_1',
+        'nombre_testigo_1',
+        'tipo_documento_testigo_1',
+        'cedula_testigo_1',
+        'cedulae_testigo_1',
+        'pasaporte_testigo_1',
+        'nit_testigo_1',
+        'correo_testigo_1',
+        'total_testigo_2',
+        'nombre_testigo_2',
+        'tipo_documento_testigo_2',
+        'cedula_testigo_2',
+        'cedulae_testigo_2',
+        'pasaporte_testigo_2',
+        'nit_testigo_2',
+        'correo_testigo_2',
+        'correo_deudor_1',
+        'correo_deudor_2',
+        'correo_deudor_3',
+        'correo_deudor_4',
+        'correo_deudor_5'
+    ],
+    preFill: [
+        {
+            name: 'nombre_arrendador',
+            value: 'Aracelly Del Socorro Naranjo Aristizábal'
+        },
+        {
+            name: 'cedula_arrendador',
+            value: '43.095.952'
+        },
+        {
+            name: 'correo_arrendador',
+            value: 'hans.palominon@gmail.com'
+        }
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_arrendador',
+            identification: 'cedula_arrendador',
+            name: 'nombre_arrendador',
+            type: 'arrendador'
+        },
+        {
+            email: 'correo_arrendatario',
+            identification: 'cedula_arrendatario|cedulae_arrendatario|pasaporte_arrendatario|nit_arrendatario',
+            name: 'nombre_arrendatario',
+            type: 'arrendatario'
+        },
+        {
+            email: 'correo_testigo_1',
+            identification: 'cedula_testigo_1|cedulae_testigo_1|pasaporte_testigo_1|nit_testigo_1',
+            name: 'nombre_testigo_1',
+            type: 'testigo_1'
+        },
+        {
+            email: 'correo_testigo_2',
+            identification: 'cedula_testigo_2|cedulae_testigo_2|pasaporte_testigo_2|nit_testigo_2',
+            name: 'nombre_testigo_2',
+            type: 'testigo_2'
+        },
+        {
+            email: 'correo_deudor_1',
+            identification: 'cedula_deudor_1|cedulae_deudor_1|pasaporte_deudor_1',
+            name: 'nombre_deudor_1',
+            type: 'deudor_1'
+        },
+        {
+            email: 'correo_deudor_2',
+            identification: 'cedula_deudor_2|cedulae_deudor_2|pasaporte_deudor_2',
+            name: 'nombre_deudor_2',
+            type: 'deudor_2'
+        },
+        {
+            email: 'correo_deudor_3',
+            identification: 'cedula_deudor_3|cedulae_deudor_3|pasaporte_deudor_3',
+            name: 'nombre_deudor_3',
+            type: 'deudor_3'
+        },
+        {
+            email: 'correo_deudor_4',
+            identification: 'cedula_deudor_4|cedulae_deudor_4|pasaporte_deudor_4',
+            name: 'nombre_deudor_4',
+            type: 'deudor_4'
+        },
+        {
+            email: 'correo_deudor_5',
+            identification: 'cedula_deudor_5|cedulae_deudor_5|pasaporte_deudor_5',
+            name: 'nombre_deudor_5',
+            type: 'deudor_5'
+        }
+    ],
+    preBuildData: [],
+    name: 'CONTRATO DE ARRENDAMIENTO DE VIVIENDA URBANA ALNAGO',
+    price: 0,
+    help: {
+        lugar: 'Ejemplo: Avenida siempre viva 12 # 34 - 56',
+        nombre: 'Ejemplo: Elon Patarroyo',
+        correo: 'Ejemplo: elonmartinez@alnago.com.co',
+        direccion: 'Ejemplo: Avenid 20 # 98 - 76, Medellín Antioquia',
+        ciudad: 'Ejemplo: Medellín',
+        numero_parqueadero: 'Ejemplo: 01',
+        numero_cuarto_util: 'Ejemplo: 12',
+        total_personas: 'Ejemplo: 5',
+        precio_inmueble: 'Ejemplo: 1200000'
+    },
+    build: 6,
+    username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
+    createdAt: ISODate('2021-08-26T15:04:02.766Z'),
+    updatedAt: ISODate('2021-08-26T15:04:02.766Z')
+}

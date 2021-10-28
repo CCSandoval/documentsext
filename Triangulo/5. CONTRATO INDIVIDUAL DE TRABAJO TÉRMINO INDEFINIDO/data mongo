@@ -1,0 +1,322 @@
+{
+    _id: ObjectId('61704db8ce0b8b0009117c4a'),
+    config: [
+        {
+            description: 'Seleccione la empresa que hará el pacto de exclusión salarial con el trabajador',
+            help: 'empresas',
+            name: 'empresa',
+            options: [
+                {
+                    name: 'INTEEGRA S.A.S.',
+                    value: 'int'
+                },
+                {
+                    name: 'NETCOL S.A.S.',
+                    value: 'net'
+                },
+                {
+                    name: 'PLEX S.A.S.',
+                    value: 'ple'
+                },
+                {
+                    name: 'TRIANGULUM S.A.S.',
+                    value: 'tri'
+                },
+                {
+                    name: 'NETIA S.A.S.',
+                    value: 'nei'
+                }
+            ],
+            type: 'clausula',
+            value: 'int'
+        },
+        {
+            description: 'Digite el número de teléfono del representante',
+            help: 'telefono',
+            name: 'telefono_representante',
+            type: 'name'
+        },
+        {
+            description: '¿Desea agregar otro número de teléfono?',
+            help: 'telefono',
+            name: 'telefono_repre_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el otro número de teléfono',
+            help: 'telefono',
+            name: 'telefono_representante_2',
+            prereq: [
+                {
+                    k: 'telefono_repre_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el nombre del trabajador',
+            help: 'nombre',
+            name: 'nombre_trabajador',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione el tipo de documento del trabajador',
+            help: 'tipo_documento',
+            name: 'tipo_documento_trabajador',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del trabajador',
+            help: 'cedula',
+            name: 'cedula_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del trabajador',
+            help: 'cedula',
+            name: 'cedulae_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del trabajador',
+            help: 'pasaporte',
+            name: 'pasaporte_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la domicilio y dirección donde se encuetra el trabajador',
+            help: 'direccion',
+            name: 'direccion_trabajador',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del trabajador',
+            help: 'telefono',
+            name: 'telefono_trabajador',
+            type: 'name'
+        },
+        {
+            description: '¿Desea agregar otro número de teléfono?',
+            help: 'telefono',
+            name: 'telefono_traba_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el otro número de teléfono',
+            help: 'telefono',
+            name: 'telefono_trabajador_2',
+            prereq: [
+                {
+                    k: 'telefono_traba_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del trabajador',
+            help: 'correo',
+            name: 'correo_trabajador',
+            type: 'text'
+        },
+        {
+            description: 'Digite el cargo que tendrá el trabajador',
+            help: 'cargo',
+            name: 'cargo_trabajador',
+            type: 'text'
+        },
+        {
+            description: 'Digite el tipo de salario que tendrá el trabajador',
+            help: 'tipo_salario',
+            name: 'tipo_salario_trabajador',
+            type: 'text'
+        },
+        {
+            description: 'Digite el salario que tendrá el trabajador',
+            help: 'salario',
+            name: 'salario_trabajador',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el período de pago que tendrá el trabajador',
+            help: 'periodo',
+            name: 'periodo_pago',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha de inicio de labores',
+            help: 'fecha',
+            name: 'fecha_i_labores',
+            type: 'date'
+        },
+        {
+            description: 'Digite el lugar base de contratación',
+            help: 'lugar',
+            name: 'lugar_contrato',
+            type: 'text'
+        },
+        {
+            description: 'Digite el valor que se le pagará al trabajador por la prestación de sus servicios',
+            help: 'valor',
+            name: 'valor_p_servicios',
+            type: 'currency'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        },
+        {
+            description: 'Digite el correo electrónico del representante',
+            help: 'correo',
+            name: 'correo_representante',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione el sexo del trabajador',
+            help: 'sexos',
+            name: 'sexo',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        }
+    ],
+    operation: [],
+    sign: [
+        'empresa',
+        'telefono_representante',
+        'telefono_repre_2',
+        'telefono_representante_2',
+        'nombre_trabajador',
+        'tipo_documento_trabajador',
+        'cedula_trabajador',
+        'cedulae_trabajador',
+        'pasaporte_trabajador',
+        'direccion_trabajador',
+        'telefono_trabajador',
+        'telefono_traba_2',
+        'telefono_trabajador_2',
+        'correo_trabajador',
+        'cargo_trabajador',
+        'tipo_salario_trabajador',
+        'salario_trabajador',
+        'periodo_pago',
+        'fecha_i_labores',
+        'lugar_contrato',
+        'valor_p_servicios',
+        'fecha_firma',
+        'correo_representante',
+        'sexo'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_representante',
+            identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
+            name: 'nombre_r_empresa',
+            type: 'repre_empresa'
+        },
+        {
+            email: 'correo_trabajador',
+            identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
+            name: 'nombre_trabajador',
+            type: 'trabajador'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_r_empresa',
+            value: 'Representante Legal de la parte Empleadora'
+        }
+    ],
+    preBuildData: [],
+    name: 'CONTRATO INDIVIDUAL DE TRABAJO TÉRMINO INDEFINIDO',
+    price: 5000,
+    help: {
+        empresas: 'Ejemplo: NETIA S.A.S.',
+        telefono: 'Ejemplo: 3214567890',
+        nombre: 'Ejemplo: Paola Andrea Diaz Diaz',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        direccion: 'Ejemplo: Dirección Cra 49b N 112-90 Bogotá',
+        correo: 'Ejemplo: ejemplo@netia.com',
+        cargo: 'Ejemplo: Vigilante',
+        tipo_salario: 'Ejemplo: Básico',
+        salario: 'Ejemplo: 800.000',
+        periodo: 'Ejemplo: Mensual',
+        fecha: 'Ejemplo: 12 de Noviembre del 2021',
+        lugar: 'Ejemplo: Bogotá',
+        valor: 'Ejemplo: 100.000',
+        sexos: 'Ejemplo: Femenino'
+    },
+    build: 2,
+    username: 'dde0a72b-6497-4e96-8fef-1c08c4d33128',
+    createdAt: ISODate('2021-10-20T17:11:20.668Z'),
+    updatedAt: ISODate('2021-10-20T17:11:20.668Z')
+}
