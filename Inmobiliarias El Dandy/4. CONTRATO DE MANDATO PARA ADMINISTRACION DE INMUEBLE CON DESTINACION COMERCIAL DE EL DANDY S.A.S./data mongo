@@ -1,0 +1,4450 @@
+{
+    _id: ObjectId('615347286897cf00094aef90'),
+    config: [
+        {
+            description: 'Seleccione el sexo del mandante',
+            name: 'sexo_mandante_1',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_1',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del mandante',
+            name: 'tipo_documento_mandante_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del mandante',
+            help: 'cedula',
+            name: 'pep_mandante_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_1',
+                    v: 'pep'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_1',
+                    v: 'pep'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_1',
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del mandante',
+            help: 'correo',
+            name: 'correo_mandante_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del mandante en caso de haber',
+            help: 'celular',
+            name: 'celular_mandante_1',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un segundo mandante? ',
+            name: 'segundo_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del segundo mandante',
+            name: 'sexo_mandante_2',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del segundo mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_2',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del segundo mandante',
+            name: 'tipo_documento_mandante_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del segundo mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del segundo mandante',
+            help: 'cedula',
+            name: 'pep_mandante_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_2',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del segundo mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_2',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del segundo mandante',
+            help: 'correo',
+            name: 'correo_mandante_2',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del segundo mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_2',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del segundo mandante',
+            help: 'celular',
+            name: 'celular_mandante_2',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un tercer mandante? ',
+            name: 'tercer_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del tercer mandante',
+            name: 'sexo_mandante_3',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del tercer mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_3',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del tercer mandante',
+            name: 'tipo_documento_mandante_3',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del tercer mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del tercer mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del tercer mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_3',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del tercer mandante',
+            help: 'cedula',
+            name: 'pep_mandante_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_3',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del tercer mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_3',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del tercer mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_3',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del tercer mandante',
+            help: 'correo',
+            name: 'correo_mandante_3',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del tercer mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_3',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del tercer mandante',
+            help: 'celular',
+            name: 'celular_mandante_3',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un cuarto mandante? ',
+            name: 'cuarto_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del cuarto mandante',
+            name: 'sexo_mandante_4',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del cuarto mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_4',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del cuarto mandante',
+            name: 'tipo_documento_mandante_4',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del cuarto mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_4',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del cuarto mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_4',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del cuarto mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_4',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del cuarto mandante',
+            help: 'cedula',
+            name: 'pep_mandante_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_4',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del cuarto mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_4',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del cuarto mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_4',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del cuarto mandante',
+            help: 'correo',
+            name: 'correo_mandante_4',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del cuarto mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_4',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del cuarto mandante',
+            help: 'celular',
+            name: 'celular_mandante_4',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un quinto mandante? ',
+            name: 'quinto_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del quinto mandante',
+            name: 'sexo_mandante_5',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del quinto mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_5',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del quinto mandante',
+            name: 'tipo_documento_mandante_5',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del quinto mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_5',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del quinto mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_5',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del quinto mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_5',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del quinto mandante',
+            help: 'cedula',
+            name: 'pep_mandante_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_5',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del quinto mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_5',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del quinto mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_5',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del quinto mandante',
+            help: 'correo',
+            name: 'correo_mandante_5',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del quinto mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_5',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del quinto mandante',
+            help: 'celular',
+            name: 'celular_mandante_5',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un sexto mandante? ',
+            name: 'sexto_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del sexto mandante',
+            name: 'sexo_mandante_6',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del sexto mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_6',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del sexto mandante',
+            name: 'tipo_documento_mandante_6',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del sexto mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_6',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del sexto mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_6',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del sexto mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_6',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del sexto mandante',
+            help: 'cedula',
+            name: 'pep_mandante_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_6',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del sexto mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_6',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del sexto mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_6',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del sexto mandante',
+            help: 'correo',
+            name: 'correo_mandante_6',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del sexto mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_6',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del sexto mandante',
+            help: 'celular',
+            name: 'celular_mandante_6',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un septimo mandante? ',
+            name: 'septimo_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del septimo mandante',
+            name: 'sexo_mandante_7',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del septimo mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_7',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del septimo mandante',
+            name: 'tipo_documento_mandante_7',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del septimo mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_7',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del septimo mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_7',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del septimo mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_7',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del septimo mandante',
+            help: 'cedula',
+            name: 'pep_mandante_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_7',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del septimo mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_7',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del septimo mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_7',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del septimo mandante',
+            help: 'correo',
+            name: 'correo_mandante_7',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del septimo mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_7',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del septimo mandante',
+            help: 'celular',
+            name: 'celular_mandante_7',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un octavo mandante? ',
+            name: 'octavo_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del octavo mandante',
+            name: 'sexo_mandante_8',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del octavo mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_8',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del octavo mandante',
+            name: 'tipo_documento_mandante_8',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del octavo mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_8',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del octavo mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_8',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del octavo mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_8',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del octavo mandante',
+            help: 'cedula',
+            name: 'pep_mandante_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_8',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del octavo mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_8',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del octavo mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_8',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del octavo mandante',
+            help: 'correo',
+            name: 'correo_mandante_8',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del octavo mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_8',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del octavo mandante',
+            help: 'celular',
+            name: 'celular_mandante_8',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un noveno mandante? ',
+            name: 'noveno_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del noveno mandante',
+            name: 'sexo_mandante_9',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del noveno mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_9',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del noveno mandante',
+            name: 'tipo_documento_mandante_9',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del noveno mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_9',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_9',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del noveno mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_9',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_9',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del noveno mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_9',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_9',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del noveno mandante',
+            help: 'cedula',
+            name: 'pep_mandante_9',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_9',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del noveno mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_9',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_9',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del noveno mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_9',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del noveno mandante',
+            help: 'correo',
+            name: 'correo_mandante_9',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del noveno mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_9',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del noveno mandante',
+            help: 'celular',
+            name: 'celular_mandante_9',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un decimo mandante? ',
+            name: 'decimo_mandante',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el sexo del decimo mandante',
+            name: 'sexo_mandante_10',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del decimo mandante',
+            help: 'nombre',
+            name: 'nombre_mandante_10',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del decimo mandante',
+            name: 'tipo_documento_mandante_10',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del decimo mandante',
+            help: 'cedula',
+            name: 'cedula_mandante_10',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_10',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del decimo mandante',
+            help: 'cedula',
+            name: 'cedulae_mandante_10',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_10',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del decimo mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_10',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_10',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del decimo mandante',
+            help: 'cedula',
+            name: 'pep_mandante_10',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_10',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del decimo mandante',
+            help: 'cedula',
+            name: 'pasaporte_mandante_p_10',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_10',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección del decimo mandante',
+            help: 'direccion',
+            name: 'direccion_mandante_10',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del decimo mandante',
+            help: 'correo',
+            name: 'correo_mandante_10',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono fijo del decimo mandante en caso de haber',
+            help: 'telefono',
+            name: 'telefono_mandante_10',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del decimo mandante',
+            help: 'celular',
+            name: 'celular_mandante_10',
+            prereq: [
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del inmueble consignado',
+            help: 'direccion',
+            name: 'd_inmueble_consignado',
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde se encuentra el inmueble consignado',
+            help: 'municipio',
+            name: 'm_inmueble_consignado',
+            type: 'text'
+        },
+        {
+            description: 'Digite el valor canon de arrendamiento inicial',
+            help: 'valor',
+            name: 'valor_cuota_inicial',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el área aproximada del inmueble en metros cuadrados',
+            help: 'area',
+            name: 'area_inmu',
+            type: 'number'
+        },
+        {
+            description: 'Digite el número del folio de matrícula inmobiliaria (F.M.I)',
+            help: 'numero',
+            name: 'numero_matricula',
+            type: 'text'
+        },
+        {
+            description: 'Digite la zona de la oficina de registros de instrumentos públicos donde se encuentra la inmobiliaria',
+            help: 'zona',
+            name: 'zona_matricula',
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio de la oficina de registros de instrumentos públicos donde se encuentra la inmobiliaria',
+            help: 'municipio',
+            name: 'municipio_matricula',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra al frente del inmueble',
+            help: 'linderos',
+            name: 'lindero_frente',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra al lado derecho del inmueble',
+            help: 'linderos',
+            name: 'lindero_lado',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra por el lado izquierdo del inmueble',
+            help: 'linderos',
+            name: 'lindero_o_lado',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra por la parte de atrás del inmueble',
+            help: 'linderos',
+            name: 'lindero_atras',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra por la parte de arriba del inmueble',
+            help: 'linderos',
+            name: 'lindero_arriba',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra en la parte de abajo del inmueble',
+            help: 'linderos',
+            name: 'lindero_abajo',
+            type: 'text'
+        },
+        {
+            description: 'Digite el porcentaje correspondiente a la administración del inmueble',
+            help: 'porcentaje',
+            name: 'porcentaje_a_inmueble',
+            type: 'number'
+        },
+        {
+            description: 'Digite el valor a pagar por la documentación del presente contrato',
+            help: 'valor',
+            name: 'valor_documentacion',
+            type: 'currency'
+        },
+        {
+            description: '¿Desea agregar una cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_1',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_1',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una segunda cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_2',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una tercera cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_3',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_3',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una cuarta cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_4',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_4',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una quinta cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_5',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_5',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Hay algún deudor solidario que cuenta con Pep?',
+            help: 'pep',
+            name: 'deudor_pep',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite la observación para los deudores solidarios con pep',
+            help: 'pep',
+            name: 'pep_deudores',
+            prereq: [
+                {
+                    k: 'deudor_pep',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        }
+    ],
+    operation: [],
+    sign: [
+        'sexo_mandante_1',
+        'nombre_mandante_1',
+        'cedula_mandante_1',
+        'cedulae_mandante_1',
+        'pasaporte_mandante_1',
+        'pep_mandante_1',
+        'pasaporte_mandante_p_1',
+        'direccion_mandante_1',
+        'correo_mandante_1',
+        'celular_mandante_1',
+        'sexo_mandante_2',
+        'nombre_mandante_2',
+        'cedula_mandante_2',
+        'cedulae_mandante_2',
+        'pasaporte_mandante_2',
+        'pep_mandante_2',
+        'pasaporte_mandante_p_2',
+        'direccion_mandante_2',
+        'correo_mandante_2',
+        'celular_mandante_2',
+        'sexo_mandante_3',
+        'nombre_mandante_3',
+        'cedula_mandante_3',
+        'cedulae_mandante_3',
+        'pasaporte_mandante_3',
+        'pep_mandante_3',
+        'pasaporte_mandante_p_4',
+        'direccion_mandante_3',
+        'correo_mandante_3',
+        'celular_mandante_3',
+        'sexo_mandante_4',
+        'nombre_mandante_4',
+        'cedula_mandante_4',
+        'cedulae_mandante_4',
+        'pasaporte_mandante_4',
+        'pep_mandante_4',
+        'pasaporte_mandante_p_5',
+        'direccion_mandante_4',
+        'correo_mandante_4',
+        'celular_mandante_4',
+        'sexo_mandante_5',
+        'nombre_mandante_5',
+        'cedula_mandante_5',
+        'cedulae_mandante_5',
+        'pasaporte_mandante_5',
+        'pep_mandante_5',
+        'pasaporte_mandante_p_5',
+        'direccion_mandante_5',
+        'correo_mandante_5',
+        'celular_mandante_5',
+        'sexo_mandante_6',
+        'nombre_mandante_6',
+        'cedula_mandante_6',
+        'cedulae_mandante_6',
+        'pasaporte_mandante_6',
+        'pep_mandante_6',
+        'pasaporte_mandante_p_6',
+        'direccion_mandante_6',
+        'correo_mandante_6',
+        'celular_mandante_6',
+        'sexo_mandante_7',
+        'nombre_mandante_7',
+        'cedula_mandante_7',
+        'cedulae_mandante_7',
+        'pasaporte_mandante_7',
+        'pep_mandante_7',
+        'pasaporte_mandante_p_7',
+        'direccion_mandante_7',
+        'correo_mandante_7',
+        'celular_mandante_7',
+        'sexo_mandante_8',
+        'nombre_mandante_8',
+        'cedula_mandante_8',
+        'cedulae_mandante_8',
+        'pasaporte_mandante_8',
+        'pep_mandante_8',
+        'pasaporte_mandante_p_8',
+        'direccion_mandante_8',
+        'correo_mandante_8',
+        'celular_mandante_8',
+        'sexo_mandante_9',
+        'nombre_mandante_9',
+        'cedula_mandante_9',
+        'cedulae_mandante_9',
+        'pasaporte_mandante_9',
+        'pep_mandante_9',
+        'direccion_mandante_9',
+        'correo_mandante_9',
+        'celular_mandante_9',
+        'sexo_mandante_10',
+        'nombre_mandante_10',
+        'cedula_mandante_10',
+        'cedulae_mandante_10',
+        'pasaporte_mandante_10',
+        'pep_mandante_10',
+        'pasaporte_mandante_p_10',
+        'direccion_mandante_10',
+        'correo_mandante_10',
+        'celular_mandante_10',
+        'd_inmueble_consignado',
+        'm_inmueble_consignado',
+        'valor_cuota_inicial',
+        'area_inmueble',
+        'numero_matricula',
+        'zona_matricula',
+        'municipio_matricula',
+        'porcentaje_a_inmueble',
+        'valor_documentacion',
+        'adicional_clausulas_1',
+        'adicional_clausulas_2',
+        'adicional_clausulas_3',
+        'adicional_clausulas_4',
+        'adicional_clausulas_5',
+        'pep_deudores',
+        'fecha_firma'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_mandatario',
+            identification: 'cedula_mandatario',
+            email: 'correo_mandatario',
+            type: 'mandatario'
+        },
+        {
+            name: 'nombre_mandante_1',
+            identification: 'cedula_mandante_1|cedulae_mandante_1|pasaporte_mandante_1|pep_mandante_1|pasaporte_mandante_p_1',
+            email: 'correo_mandante_1',
+            type: 'mandante_1'
+        },
+        {
+            name: 'nombre_mandante_2',
+            identification: 'cedula_mandante_2|cedulae_mandante_2|pasaporte_mandante_2|pep_mandante_2|pasaporte_mandante_p_2',
+            email: 'correo_mandante_2',
+            type: 'mandante_2'
+        },
+        {
+            name: 'nombre_mandante_3',
+            identification: 'cedula_mandante_3|cedulae_mandante_3|pasaporte_mandante_3|pep_mandante_3|pasaporte_mandante_p_3',
+            email: 'correo_mandante_3',
+            type: 'mandante_3'
+        },
+        {
+            name: 'nombre_mandante_4',
+            identification: 'cedula_mandante_4|cedulae_mandante_4|pasaporte_mandante_4|pep_mandante_4|pasaporte_mandante_p_4',
+            email: 'correo_mandante_4',
+            type: 'mandante_4'
+        },
+        {
+            name: 'nombre_mandante_5',
+            identification: 'cedula_mandante_5|cedulae_mandante_5|pasaporte_mandante_5|pep_mandante_5|pasaporte_mandante_p_5',
+            email: 'correo_mandante_5',
+            type: 'mandante_5'
+        },
+        {
+            name: 'nombre_mandante_6',
+            identification: 'cedula_mandante_6|cedulae_mandante_6|pasaporte_mandante_6|pep_mandante_6|pasaporte_mandante_p_6',
+            email: 'correo_mandante_6',
+            type: 'mandante_6'
+        },
+        {
+            name: 'nombre_mandante_7',
+            identification: 'cedula_mandante_7|cedulae_mandante_7|pasaporte_mandante_7|pep_mandante_7|pasaporte_mandante_p_7',
+            email: 'correo_mandante_7',
+            type: 'mandante_7'
+        },
+        {
+            name: 'nombre_mandante_8',
+            identification: 'cedula_mandante_8|cedulae_mandante_8|pasaporte_mandante_8|pep_mandante_8|pasaporte_mandante_p_8',
+            email: 'correo_mandante_8',
+            type: 'mandante_8'
+        },
+        {
+            name: 'nombre_mandante_9',
+            identification: 'cedula_mandante_9|cedulae_mandante_9|pasaporte_mandante_9|pep_mandante_9|pasaporte_mandante_p_9',
+            email: 'correo_mandante_9',
+            type: 'mandante_9'
+        },
+        {
+            name: 'nombre_mandante_10',
+            identification: 'cedula_mandante_10|cedulae_mandante_10|pasaporte_mandante_10|pep_mandante_10|pasaporte_mandante_p_10',
+            email: 'correo_mandante_10',
+            type: 'mandante_10'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_mandatario',
+            value: 'EL DANDY INMOBILIARIA S.A.'
+        },
+        {
+            name: 'cedula_mandatario',
+            value: '8.909.080.941'
+        },
+        {
+            name: 'correo_mandatario',
+            value: 'mercadeo@eldandyinmobiliaria.com'
+        }
+    ],
+    preBuildData: [],
+    name: 'CONTRATO DE MANDATO PARA ADMINISTRACION DE INMUEBLE CON DESTINACION COMERCIAL DE EL DANDY S.A.S.',
+    username: '2f3ec4a1-1659-4b93-88eb-12c70236b1a5',
+    price: 5000,
+    help: {
+        sexo: 'Ejemplo: Femenino',
+        nombre: 'Ejemplo: Jorge Rueda Diaz',
+        cedula: 'Ejemplo: 1234567890',
+        direccion: 'Ejemplo: Calle 15 #20-31',
+        municipio: 'Ejemplo: Medellín',
+        correo: 'Ejemplo: ejemplo@gmail.com',
+        telefono: 'Ejemplo: 7482999',
+        celular: 'Ejemplo: 3214567890',
+        valor: 'Ejemplo: 4.500.000',
+        area: 'Ejemplo: 90',
+        zona: 'Ejemplo: Sur',
+        linderos: 'Linderos: Límite con otro inmueble',
+        porcentaje: 'Ejemplo: 15',
+        fecha: 'Ejemplo: 13 de Septiembre del 2021'
+    },
+    build: 14,
+    createdAt: ISODate('2021-09-28T16:47:36.942Z'),
+    updatedAt: ISODate('2021-09-28T16:47:36.942Z')
+}

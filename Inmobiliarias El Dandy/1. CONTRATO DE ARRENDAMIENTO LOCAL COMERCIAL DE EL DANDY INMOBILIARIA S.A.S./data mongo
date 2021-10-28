@@ -1,0 +1,1735 @@
+{
+    _id: ObjectId('6160aa62b1c1d20008dde0ee'),
+    config: [
+        {
+            description: 'Digite el número del contrato de arrendamiento',
+            help: 'numero',
+            name: 'numero_contrato',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha de hoy',
+            help: 'fecha',
+            name: 'fecha_hoy',
+            type: 'date'
+        },
+        {
+            description: 'Digite el nombre completo del arrendatario',
+            help: 'nombre',
+            name: 'nombre_arrendatario_1',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del arrendatario',
+            name: 'tipo_documento_arrendatario_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del arrendatario',
+            help: 'cedula',
+            name: 'cedula_arrendatario_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del arrendatario',
+            help: 'cedula',
+            name: 'cedulae_arrendatario_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del arrendatario',
+            help: 'cedula',
+            name: 'pasaporte_arrendatario_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del arrendatario',
+            help: 'cedula',
+            name: 'pep_arrendatario_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_1',
+                    v: 'pep'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del arrendatario',
+            help: 'cedula',
+            name: 'pasaporte_arrendatario_1_p',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_1',
+                    v: 'pep'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: '¿Desea agregar un segundo arrendatario?',
+            name: 'segundo_arrendatario',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del segundo arrendatario',
+            help: 'nombre',
+            name: 'nombre_arrendatario_2',
+            prereq: [
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del segundo arrendatario',
+            name: 'tipo_documento_arrendatario_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo arrendatario',
+            help: 'cedula',
+            name: 'cedula_arrendatario_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del segundo arrendatario',
+            help: 'cedula',
+            name: 'cedulae_arrendatario_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo arrendatario',
+            help: 'cedula',
+            name: 'pasaporte_arrendatario_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del segundo arrendatario',
+            help: 'cedula',
+            name: 'pep_arrendatario_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_2',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo arrendatario',
+            help: 'cedula',
+            name: 'pasaporte_arrendatario_2_p',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_2',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el nombre completo del deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_soli_1',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del deudor solidario',
+            name: 'tipo_documento_deudor_soli_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del deudor solidario',
+            help: 'cedula',
+            name: 'pep_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_1',
+                    v: 'pep'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte del deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_soli_1_p',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_1',
+                    v: 'pep'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: '¿Desea agregar un segundo deudor solidario? ',
+            name: 'segundo_solidario',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del segundo deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del segundo deudor solidario',
+            name: 'tipo_documento_deudor_soli_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del segundo deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del segundo deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del segundo deudor solidario',
+            help: 'cedula',
+            name: 'pep_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_2',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte del segundo deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_soli_2_p',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_2',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: '¿Desea agregar un tercer deudor solidario? ',
+            name: 'tercer_solidario',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del tercer deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del tercer deudor solidario',
+            name: 'tipo_documento_deudor_soli_3',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del tercer deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del tercer deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del tercer deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_3',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del tercer deudor solidario',
+            help: 'cedula',
+            name: 'pep_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_3',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte del tercer deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_soli_3_p',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_3',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: '¿Desea agregar un cuarto deudor solidario?',
+            name: 'cuarto_solidario',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del cuarto deudor solidario',
+            help: 'nombre',
+            name: 'nombre_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del cuarto deudor solidario',
+            name: 'tipo_documento_deudor_soli_4',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del cuarto deudor solidario',
+            help: 'cedula',
+            name: 'cedula_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_4',
+                    v: 'cc'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del cuarto deudor solidario',
+            help: 'cedula',
+            name: 'cedulae_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_4',
+                    v: 'ce'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del cuarto deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_4',
+                    v: 'pa'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia del cuarto deudor solidario',
+            help: 'cedula',
+            name: 'pep_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_4',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte del cuarto deudor solidario',
+            help: 'cedula',
+            name: 'pasaporte_deudor_soli_4_p',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_4',
+                    v: 'pep'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el valor canon de arrendamiento',
+            help: 'valor',
+            name: 'valor_c_arrendamiento',
+            type: 'currency'
+        },
+        {
+            description: '¿Desea agregar el valor de la cuota de administración? ',
+            name: 'valor_c',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el valor de la cuota de administración',
+            help: 'valor',
+            name: 'cuota_administracion',
+            prereq: [
+                {
+                    k: 'valor_c',
+                    v: 's'
+                }
+            ],
+            type: 'currency'
+        },
+        {
+            description: 'Digite la dirección del local comercial',
+            help: 'direccion',
+            name: 'direccion_inmueble',
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde están ubicado el local comercial',
+            help: 'municipio',
+            name: 'municipio_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de matrícula inmobiliaria del local comercial',
+            help: 'numero',
+            name: 'numero_matricula',
+            type: 'text'
+        },
+        {
+            description: 'Digite la zona de la oficina de registros de instrumentos públicos donde se encuentra el local comercial',
+            help: 'zona',
+            name: 'zona_matricula',
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio de la oficina de registros de instrumentos públicos donde se encuentra el local comercial',
+            help: 'municipio',
+            name: 'municipio_matricula',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de meses que tiene de plazo',
+            help: 'numero',
+            name: 'plazo',
+            type: 'text'
+        },
+        {
+            description: 'seleccione la fecha de inicio',
+            help: 'fecha',
+            name: 'fecha_inicio',
+            type: 'date'
+        },
+        {
+            description: 'seleccione la fecha final',
+            help: 'fecha',
+            name: 'fecha_final',
+            type: 'date'
+        },
+        {
+            description: 'Digite el área aproximada del local comercial en metros cuadrados',
+            help: 'numero',
+            name: 'area_inmueble',
+            type: 'number'
+        },
+        {
+            description: 'Digite el lindero que se encuentra al frente del local comercial',
+            help: 'linderos',
+            name: 'lindero_frente',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra al otro lado del local comercial',
+            help: 'linderos',
+            name: 'lindero_o_lado',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra atrás del local comercial',
+            help: 'linderos',
+            name: 'lindero_atras',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra arriba del local comercial',
+            help: 'linderos',
+            name: 'lindero_arriba',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra abajo del local comercial',
+            help: 'linderos',
+            name: 'lindero_abajo',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otros servicios, cosas o usos adicionales?',
+            name: 'servicio_adicional',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite los servicios, cosas o usos adicionales',
+            help: 'servicios',
+            name: 'servicios_adicionales',
+            prereq: [
+                {
+                    k: 'servicio_adicional',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio vecino',
+            help: 'municipio',
+            name: 'n_municipio_vecino_1',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro municipio vecino? ',
+            name: 'municipio_vecino_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el municipio vecino',
+            help: 'municipio',
+            name: 'n_municipio_vecino_2',
+            prereq: [
+                {
+                    k: 'municipio_vecino_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro municipio vecino? ',
+            name: 'municipio_vecino_3',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'municipio_vecino_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el municipio vecino',
+            help: 'municipio',
+            name: 'n_municipio_vecino_3',
+            prereq: [
+                {
+                    k: 'municipio_vecino_2',
+                    v: 's'
+                },
+                {
+                    k: 'municipio_vecino_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro municipio vecino? ',
+            name: 'municipio_vecino_4',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'municipio_vecino_2',
+                    v: 's'
+                },
+                {
+                    k: 'municipio_vecino_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el municipio vecino',
+            help: 'municipio',
+            name: 'n_municipio_vecino_4',
+            prereq: [
+                {
+                    k: 'municipio_vecino_2',
+                    v: 's'
+                },
+                {
+                    k: 'municipio_vecino_3',
+                    v: 's'
+                },
+                {
+                    k: 'municipio_vecino_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la cantidad de meses de duración del presente contrato',
+            help: 'numero',
+            name: 'tiempo_contrato',
+            type: 'number'
+        },
+        {
+            description: 'Seleccione la fecha desde que comenzará el termino de duración del presente contrato',
+            help: 'fecha',
+            name: 'fecha_t_contrato',
+            type: 'date'
+        },
+        {
+            description: 'Digite el porcentaje de incremento',
+            help: 'porcentaje',
+            name: 'porcentaje_incremento',
+            type: 'text'
+        },
+        {
+            description: 'Digite el uso que tendra el local comercial',
+            help: 'uso',
+            name: 'uso_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo del arrendatario',
+            help: 'correo',
+            name: 'correo_arrendatario_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo del segundo arrendatario',
+            help: 'correo',
+            name: 'correo_arrendatario_2',
+            prereq: [
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del arrendatario',
+            help: 'celular',
+            name: 'celular_arrendatario_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de celular del segundo arrendatario',
+            help: 'celular',
+            name: 'celular_arrendatario_2',
+            prereq: [
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Hay algún deudor solidario que cuenta con Pep?',
+            help: 'pep',
+            name: 'deudor_pep',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Digite la observación para los deudores solidarios con pep',
+            help: 'pep',
+            name: 'pep_deudores',
+            prereq: [
+                {
+                    k: 'deudor_pep',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección donde está ubicado el arrendatario',
+            help: 'direccion',
+            name: 'direccion_arrendatario_1',
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde está ubicado el arrendatario',
+            help: 'municipio',
+            name: 'municipio_arrendatario_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del arrendatario en caso de tener',
+            help: 'telefono',
+            name: 'telefono_arrendatario_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección donde está ubicado el segundo arrendatario',
+            help: 'direccion',
+            name: 'direccion_arrendatario_2',
+            prereq: [
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde está ubicado el segundo arrendatario',
+            help: 'municipio',
+            name: 'municipio_arrendatario_2',
+            prereq: [
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del segundo arrendatario en caso de tener',
+            help: 'telefono',
+            name: 'telefono_arrendatario_2',
+            prereq: [
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del deudor solidario',
+            help: 'direccion',
+            name: 'direccion_deudor_soli_1',
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde esta ubicado el deudor solidario',
+            help: 'municipio',
+            name: 'municipio_deudor_soli_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del deudor solidario',
+            help: 'telefono',
+            name: 'telefono_deudor_soli_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_soli_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de whatsapp del deudor solidario',
+            help: 'celular',
+            name: 'celular_deudor_soli_1',
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del segundo deudor solidario',
+            help: 'direccion',
+            name: 'direccion_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde esta ubicado el segundo deudor solidario',
+            help: 'municipio',
+            name: 'municipio_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del segundo deudor solidario',
+            help: 'telefono',
+            name: 'telefono_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del segundo deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de whatsapp del segundo deudor solidario',
+            help: 'celular',
+            name: 'celular_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del tercer deudor solidario',
+            help: 'direccion',
+            name: 'direccion_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde esta ubicado el tercer deudor solidario',
+            help: 'municipio',
+            name: 'municipio_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del tercer deudor solidario',
+            help: 'telefono',
+            name: 'telefono_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del tercer deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de whatsapp del tercer deudor solidario',
+            help: 'celular',
+            name: 'celular_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del cuarto deudor solidario',
+            help: 'direccion',
+            name: 'direccion_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde esta ubicado el cuarto deudor solidario',
+            help: 'municipio',
+            name: 'municipio_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del cuarto solidario',
+            help: 'telefono',
+            name: 'telefono_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del cuarto deudor solidario',
+            help: 'correo',
+            name: 'correo_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de whatsapp del cuarto deudor solidario',
+            help: 'celular',
+            name: 'celular_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_arrendador',
+            value: 'EL DANDY INMOBILIARIA S.A.S.'
+        },
+        {
+            name: 'cedula_arrendador',
+            value: '8909080941'
+        },
+        {
+            name: 'correo_arrendador',
+            value: 'mercadeo@eldandyinmobiliaria.com'
+        }
+    ],
+    operation: [],
+    sign: [
+        'numero_contrato',
+        'fecha_hoy',
+        'nombre_arrendatario_1',
+        'tipo_documento_arrendatario_1',
+        'cedula_arrendatario_1',
+        'cedulae_arrendatario_1',
+        'pasaporte_arrendatario_1',
+        'pep_arrendatario_1',
+        'pasaporte_arrendatario_1_p',
+        'nombre_arrendatario_2',
+        'tipo_documento_arrendatario_2',
+        'cedula_arrendatario_2',
+        'cedulae_arrendatario_2',
+        'pasaporte_arrendatario_2',
+        'pep_arrendatario_2',
+        'pasaporte_arrendatario_2_p',
+        'nombre_deudor_soli_1',
+        'tipo_documento_deudor_soli_1',
+        'cedula_deudor_soli_1',
+        'cedulae_deudor_soli_1',
+        'pasaporte_deudor_soli_1',
+        'pep_deudor_soli_1',
+        'pasaporte_deudor_soli_1_p',
+        'segundo_solidario',
+        'nombre_deudor_soli_2',
+        'tipo_documento_deudor_soli_2',
+        'cedula_deudor_soli_2',
+        'cedulae_deudor_soli_2',
+        'pasaporte_deudor_soli_2',
+        'pep_deudor_soli_2',
+        'pasaporte_deudor_soli_2_p',
+        'tercer_solidario',
+        'nombre_deudor_soli_3',
+        'tipo_documento_deudor_soli_3',
+        'cedula_deudor_soli_3',
+        'cedulae_deudor_soli_3',
+        'pasaporte_deudor_soli_3',
+        'pep_deudor_soli_3',
+        'pasaporte_deudor_soli_3_p',
+        'cuarto_solidario',
+        'nombre_deudor_soli_4',
+        'tipo_documento_deudor_soli_4',
+        'cedula_deudor_soli_4',
+        'cedulae_deudor_soli_4',
+        'pasaporte_deudor_soli_4',
+        'pep_deudor_soli_4',
+        'pasaporte_deudor_soli_4_p',
+        'valor_c_arrendamiento',
+        'valor_c',
+        'cuota_administracion',
+        'direccion_inmueble',
+        'municipio_inmueble',
+        'numero_matricula',
+        'zona_matricula',
+        'municipio_matricula',
+        'plazo',
+        'fecha_inicio',
+        'fecha_final',
+        'area_inmueble',
+        'servicios_adicionales',
+        'n_municipio_vecino_1',
+        'n_municipio_vecino_2',
+        'n_municipio_vecino_3',
+        'n_municipio_vecino_4',
+        'tiempo_contrato',
+        'fecha_t_contrato',
+        'porcentaje_incremento',
+        'uso_inmueble',
+        'correo_arrendatario_1',
+        'correo_arrendatario_2',
+        'celular_arrendatario_1',
+        'celular_arrendatario_2',
+        'deudor_pep',
+        'pep_deudores',
+        'fecha_firma',
+        'direccion_arrendatario_1',
+        'municipio_arrendatario_1',
+        'telefono_arrendatario_1',
+        'direccion_arrendatario_2',
+        'municipio_arrendatario_2',
+        'telefono_arrendatario_2',
+        'direccion_deudor_soli_1',
+        'municipio_deudor_soli_1',
+        'telefono_deudor_soli_1',
+        'correo_deudor_soli_1',
+        'celular_deudor_soli_1',
+        'direccion_deudor_soli_2',
+        'municipio_deudor_soli_2',
+        'telefono_deudor_soli_2',
+        'correo_deudor_soli_2',
+        'celular_deudor_soli_2',
+        'direccion_deudor_soli_3',
+        'municipio_deudor_soli_3',
+        'telefono_deudor_soli_3',
+        'correo_deudor_soli_3',
+        'celular_deudor_soli_3',
+        'direccion_deudor_soli_4',
+        'municipio_deudor_soli_4',
+        'telefono_deudor_soli_4',
+        'correo_deudor_soli_4',
+        'celular_deudor_soli_4'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_arrendador',
+            identification: 'cedula_arrendador',
+            email: 'correo_arrendador',
+            type: 'arrendador',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_arrendatario_1',
+            identification: 'cedula_arrendatario_1|cedulae_arrendatario_1|pasaporte_arrendatario_1|pep_arrendatario_1',
+            email: 'correo_arrendatario_1',
+            type: 'arrendatario_1',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_arrendatario_2',
+            identification: 'cedula_arrendatario_2|cedulae_arrendatario_2|pasaporte_arrendatario_2|pep_arrendatario_2',
+            email: 'correo_arrendatario_2',
+            type: 'arrendatario_2',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_arrendatario_2',
+            identification: 'cedula_arrendatario_2|cedulae_arrendatario_2|pasaporte_arrendatario_2|pep_arrendatario_2',
+            email: 'correo_arrendatario_2',
+            type: 'arrendatario_2',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_deudor_soli_1',
+            identification: 'cedula_deudor_soli_1|cedulae_deudor_soli_1|pasaporte_deudor_soli_1|pep_deudor_soli_1',
+            email: 'correo_deudor_soli_1',
+            type: 'deudor_soli_1',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_deudor_soli_2',
+            identification: 'cedula_deudor_soli_2|cedulae_deudor_soli_2|pasaporte_deudor_soli_2|pep_deudor_soli_2',
+            email: 'correo_deudor_soli_2',
+            type: 'deudor_soli_2',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_deudor_soli_3',
+            identification: 'cedula_deudor_soli_3|cedulae_deudor_soli_3|pasaporte_deudor_soli_3|pep_deudor_soli_3',
+            email: 'correo_deudor_soli_3',
+            type: 'deudor_soli_3',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_deudor_soli_4',
+            identification: 'cedula_deudor_soli_4|cedulae_deudor_soli_4|pasaporte_deudor_soli_4|pep_deudor_soli_4',
+            email: 'correo_deudor_soli_4',
+            type: 'deudor_soli_4',
+            role: 'SIGN',
+            order: 0
+        }
+    ],
+    preBuildData: [],
+    name: 'CONTRATO DE ARRENDAMIENTO LOCAL COMERCIAL DE EL DANDY INMOBILIARIA S.A.S.',
+    price: 5000,
+    help: {
+        nombre: 'Ejemplo: Jaime David Diaz Monte',
+        cedula: 'Ejemplo: 1234567890',
+        valor: 'Ejemplo: 90.000.000',
+        direccion: 'Ejemplo: CL 64 B SUR 4',
+        numero: 'Ejemplo: 12',
+        persona: 'Arrendatario o Propietario',
+        fecha: 'Ejemplo: 13 de Septiembre del 2021',
+        linderos: 'Linderos: Límite con otro inmueble',
+        servicios: 'Ejemplo: Gas',
+        municipio: 'Ejemplo: Medellín',
+        zona: 'Ejemplo: Sur',
+        telefono: 'Ejemplo: 5556803',
+        correo: 'Ejemplo: ejemplo@gmail.com',
+        celular: 'Ejemplo: 3214567890',
+        uso: 'Ejemplo: Montacargas',
+        porcentaje: 'Ejemplo: 10%'
+    },
+    build: 9,
+    username: '2f3ec4a1-1659-4b93-88eb-12c70236b1a5',
+    createdAt: ISODate('2021-10-08T20:30:26.972Z'),
+    updatedAt: ISODate('2021-10-08T20:30:26.972Z')
+}
