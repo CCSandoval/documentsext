@@ -928,12 +928,6 @@
             type: 'date'
         },
         {
-            description: 'Digite el área aproximada del local comercial en metros cuadrados',
-            help: 'numero',
-            name: 'area_inmueble',
-            type: 'number'
-        },
-        {
             description: 'Digite el lindero que se encuentra al frente del local comercial',
             help: 'linderos',
             name: 'lindero_frente',
@@ -1597,7 +1591,6 @@
         'plazo',
         'fecha_inicio',
         'fecha_final',
-        'area_inmueble',
         'servicios_adicionales',
         'n_municipio_vecino_1',
         'n_municipio_vecino_2',
