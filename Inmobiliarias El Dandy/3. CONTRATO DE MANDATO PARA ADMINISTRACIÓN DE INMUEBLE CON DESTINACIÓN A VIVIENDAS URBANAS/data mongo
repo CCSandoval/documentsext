@@ -3984,9 +3984,33 @@
             type: 'text'
         },
         {
-            description: 'Digite los linderos que rodean el inmueble',
+            description: 'Digite el lindero que se encuentra al frente del inmueble',
             help: 'linderos',
-            name: 'linderos',
+            name: 'lindero_frente',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra al otro lado del inmueble',
+            help: 'linderos',
+            name: 'lindero_o_lado',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra atrás del inmueble',
+            help: 'linderos',
+            name: 'lindero_atras',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra arriba del inmueble',
+            help: 'linderos',
+            name: 'lindero_arriba',
+            type: 'text'
+        },
+        {
+            description: 'Digite el lindero que se encuentra abajo del inmueble',
+            help: 'linderos',
+            name: 'lindero_abajo',
             type: 'text'
         },
         {
