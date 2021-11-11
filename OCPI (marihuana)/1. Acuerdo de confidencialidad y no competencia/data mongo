@@ -1,0 +1,222 @@
+{
+    _id: ObjectId('61854de5f439eb0009255785'),
+    config: [
+        {
+            description: 'Digite el código del comercial que invitó',
+            help: 'codigo',
+            name: 'codigo_comercial',
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del representante legal',
+            help: 'direccion',
+            name: 'direccion_representante',
+            type: 'text'
+        },
+        {
+            description: 'Digite la correo electrónico del representante legal',
+            help: 'correo',
+            name: 'correo_representante',
+            type: 'text'
+        },
+        {
+            description: 'Digite la número de teléfono del representante legal',
+            help: 'telefono',
+            name: 'telefono_representante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre del firmante',
+            help: 'nombre',
+            name: 'nombre_firmante',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del firmante',
+            help: 'tipo_documento',
+            name: 'tipo_documento_firmante',
+            options: [
+                {
+                    name: 'Cédula de Ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cedula de ciudadania del firmante',
+            help: 'cedula',
+            name: 'cedula_firmante',
+            prereq: [
+                {
+                    k: 'tipo_documento_firmante',
+                    v: 'cc'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de cedula de extranjeria del firmante',
+            help: 'cedula',
+            name: 'cedulae_firmante',
+            prereq: [
+                {
+                    k: 'tipo_documento_firmante',
+                    v: 'ce'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el número de pasaporte del firmante',
+            help: 'pasaporte',
+            name: 'pasaporte_firmante',
+            prereq: [
+                {
+                    k: 'tipo_documento_firmante',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el lugar de expedición del documento de identificación del firmante',
+            help: 'lugar',
+            name: 'lugar_expe_documento_firmante',
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del firmante',
+            help: 'direccion',
+            name: 'direccion_firmante',
+            type: 'text'
+        },
+        {
+            description: 'Digite la correo electrónico del firmante',
+            help: 'correo',
+            name: 'correo_firmante',
+            type: 'text'
+        },
+        {
+            description: 'Digite la número de teléfono del firmante',
+            help: 'telefono',
+            name: 'telefono_firmante',
+            type: 'text'
+        },
+        {
+            description: 'El firmante es:',
+            help: 'tipo',
+            name: 'tipo_firmante',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite la nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_f',
+            prereq: [
+                {
+                    k: 'tipo_firmante',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_f',
+            prereq: [
+                {
+                    k: 'tipo_firmante',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        }
+    ],
+    operation: [],
+    sign: [
+        'codigo_comercial',
+        'direccion_representante',
+        'telefono_representante',
+        'correo_representante',
+        'nombre_firmante',
+        'tipo_documento_firmante',
+        'cedula_firmante',
+        'cedulae_firmante',
+        'pasaporte_firmante',
+        'lugar_expe_documento_firmante',
+        'direccion_firmante',
+        'telefono_firmante',
+        'correo_firmante',
+        'tipo_firmante',
+        'nombre_empresa_f',
+        'nit_empresa_f'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_representante',
+            identification: 'cedula_representante',
+            name: 'nombre_representante',
+            type: 'representante'
+        },
+        {
+            email: 'correo_firmante',
+            identification: 'cedula_firmante|cedulae_firmante|pasaporte_firmante',
+            name: 'nombre_firmante',
+            type: 'firmante'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_representante',
+            value: 'Fredy Armando Arcila Castañeda'
+        },
+        {
+            name: 'cedula_representante',
+            value: '79915917'
+        }
+    ],
+    preBuildData: [],
+    name: 'ACUERDO DE CONFIDENCIALIDAD Y NO COMPETENCIA ENTRE GREEN PARTNER SOCIETY G.P.S. SAS Y LOS FIRMANTES',
+    price: 5000,
+    help: {
+        codigo: 'Ejemplo: 102',
+        nombre: 'Ejemplo: Jaime David Diaz Monte',
+        tipo_documento: 'Ejemplo: Pasaporte',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        lugar: 'Ejemplo: Medellín',
+        direccion: 'Ejemplo: Carrera 70 #21-3',
+        telefono: 'Ejemplo: 3214567890',
+        correo: 'ejemplo: ejemplo@gmail.com',
+        tipo: 'ejemplo: Persona Natural',
+        nombre_empresa: 'Ejemplo: Green Partner Society S.A.S.',
+        nit_empresa: 'Ejemplo: 901530645-2'
+    },
+    build: 2,
+    company: ObjectId('618a8308ddd84f00088b42eb'),
+    username: '6858dbf7-1bbe-430d-9c7d-bd4aab048b6a',
+    createdAt: ISODate('2021-11-05T15:29:41.379Z'),
+    updatedAt: ISODate('2021-11-05T15:29:41.379Z')
+}
