@@ -1,0 +1,985 @@
+<style type="text/css">
+    .main_title {
+        text-align: center;
+    }
+</style>
+<p class="text-center"><b>CONTRATO COMERCIAL DE GESTIÓN DE COBRANZA</b></p>
+<p>
+    Entre los suscritos
+    <b name="nombre_contratante">_______</b>, mayor de edad y con domicilio en la ciudad de
+    <span name="municipio_contratante">_______</span>,
+    <span name="sexo_contratante_h">identificado</span>
+    <span name="sexo_contratante_m" hidden>identificada</span> con
+    <span name="tipo_documento_contratante_cc"> C.C. No.
+        <b name="cedula_contratante">_______</b>
+    </span>
+    <span name="tipo_documento_contratante_ce" hidden> C.E. No.
+        <b name="cedulae_contratante">_______</b>
+    </span>
+    <span name="tipo_documento_contratante_pa" hidden> PASAPORTE No.
+        <b name="pasaporte_contratante">_______</b>
+    </span> de
+    <span name="municipio_exp_documento_contratante">_______</span>,
+    <span name="tipo_persona_na">
+        actuando en nombre propio
+    </span>
+    <span name="tipo_persona_ju" hidden>
+        actuando en nombre y representación legal de
+        <b name="nombre_empresa_contratante">_______</b>, empresa legalmente constituida, identificada con el NIT No.
+        <b name="nit_empresa_contratante">_______</b>
+    </span>
+    y que se denominará para efectos del contrato <b>EL CONTRATANTE</b>, por una parte, y por otra,
+    <b>VANESSA FORTICH GRAU</b>, mayor de edad, vecina de la ciudad de Medellín, identificada con la C.C.
+    No.1.128.267.734 de Medellín, actuando en nombre y representación de <b>TRÉBOL JURÍDICO S.A.S.</b>, sociedad
+    legalmente constituida, identificada con el NIT No. 900.477.900-6, con domicilio en la ciudad de Medellín y que para
+    efectos del siguiente contrato se denominará <b>EL CONTRATISTA</b>, acuerdan celebrar el presente contrato, el cual
+    se regirá por las siguientes cláusulas:
+</p>
+<ol>
+    <li>
+        <b>OBJETO:</b> El CONTRATISTA se compromete a prestar al CONTRATANTE, con plena autonomía técnica,
+        administrativa y directiva, los servicios de cobro prejurídico, jurídico y extrajurídico, de las obligaciones
+        económicas a favor del CONTRATANTE conforme a las directrices e instrucciones que para tal efecto impartan. Como
+        contraprestación el CONTRATANTE pagará al CONTRATISTA las sumas de dinero que resulten a favor de éste de
+        conformidad con lo establecido en el presente contrato.
+    </li><br />
+    <li>
+        <b>OBLIGACIONES DEL CONTRATISTA:</b> En cumplimiento del objeto del contrato el CONTRATISTA se obliga a realizar
+        las siguientes actividades:<br /><br />
+        2.1 Realizar las actuaciones con diligencia y dentro de la normatividad aplicable, velando por salvaguardar
+        los intereses del CONTRATANTE.<br />
+        2.2 Estudiar y determinar las posibilidades de cobro de cartera.<br />
+        2.3 En caso de optar por el cobro jurídico determinar, identificar y ubicar los bienes que posee el
+        deudor.<br />
+        2.4 Entregar al CONTRATANTE un usuario y contraseña para acceso al CRM de gestión de cobranza al cual se
+        accederá por la pagina web
+        <a href="https://treboljuridico.com/" target="_blank">www.treboljuridico.com</a><br />
+        2.5 Actualizar la información de la gestión de cobranza y el estado de la cartera que ha sido entregada para
+        recuperación en el CRM de manera detallada y actualizada.<br />
+        2.6 Guardar estricta confidencialidad sobre la información a la que tenga acceso y la documentación que sea
+        entregada para la ejecución de las labores encomendadas.<br /><br />
+        <b>PARÁGRAFO:</b> El CONTRATISTA se reserva el derecho de no aceptar el negocio encomendado en aquellos casos en
+        los que se rompa con el equilibrio económico del contrato, atendiendo criterios objetivos como la cuantía de la
+        obligación, el lugar de ubicación del deudor, la baja expectativa de recaudo y el costo de la labor de cobranza.
+    </li><br />
+    <li>
+        <b>OBLIGACIONES DEL CONTRATANTE:</b> Además de las obligaciones derivadas de la naturaleza misma del presente
+        contrato, el CONTRATANTE se obliga especialmente a:<br /><br />
+        3.1 Entregar al CONTRATISTA todos los documentos e información necesarios para la efectiva y oportuna
+        realización de la gestión de cobranza.<br />
+        3.2 Informar de manera inmediata al CONTRATISTA sobre abonos realizados por el DEUDOR a la obligación,
+        indicando la fecha y el valor del abono, caso en el cual se deberá cancelar al CONTRATISTA el porcentaje
+        establecido en el presente contrato.<br />
+        3.3 Aclarar y responder a los requerimientos realizados por el CONTRATISTA con el fin de obtener claridad en
+        las cuentas o para responder las objeciones o excepciones presentadas por el deudor al momento del cobro
+        de la obligación.<br />
+        3.4 Pagar el valor del servicio pactado y en las circunstancias de modo, tiempo y lugar pactadas en la
+        cláusula cuarta del presente contrato. El retraso en el pago de las facturas emitidas por el CONTRATISTA
+        generará sus respectivos intereses de mora.<br />
+    </li><br />
+    <li>
+        <b>HONORARIOS:</b> Los honorarios que el CONTRATANTE pagará al CONTRATISTA por la contraprestación del servicio,
+        se liquidarán en el momento efectivo del recaudo y sobre el total del valor recaudado (capital + intereses),
+        teniendo en cuenta la fase de cobro en donde se haya realizado el pago y de acuerdo a la siguiente tabla:
+    </li>
+</ol>
+<table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #808080; width: 95%; margin-left: 2rem;">
+    <tr>
+        <td>FASE DE COBRO PREJURÍDICO</td>
+        <td>
+            <span name="cobro_prejuridico">_______</span> % +IVA
+        </td>
+    </tr>
+    <tr>
+        <td>FASE DE COBRO JURÍDICO O EXTRAJURÍDICO</td>
+        <td>
+            <span name="cobro_juridico">_______</span> % +IVA
+        </td>
+    </tr>
+</table>
+<ol>
+    4.1 El CONTRATISTA presentará factura al momento efectivo del recaudo, es decir, cuando el dinero
+    efectivamente se encuentre en las cuentas bancarias del CONTRATANTE. EL CONTRATANTE deberá cancelar por
+    medio de transferencia bancaria en la cuenta que se indique por el CONTRATISTA, dentro de los 5 días
+    siguientes al recibo de la factura por el CONTRATANTE.<br />
+
+    4.2 Para todos los efectos en los cobros prejuridicos y jurídicos las costas procesales por concepto de
+    gastos y agencias en derecho (honorarios) a cargo del deudor serán a favor del CONTRATISTA quien es el
+    que asume las costas y gastos de todas las etapas procesales, lo anterior sin perjuicio de la comisión
+    establecida a favor del CONTRATISTA pactado con el CONTRATANTE. Si el CONTRANTANTE recibe en sus cuentas
+    dichos dineros serán reembolsados inmediatamente al CONTRATISTA.<br />
+
+    4.3 Una vez el CONTRATANTE haya entregado la cobranza al CONTRATISTA, no podrá efectuar ninguna transacción
+    directa con el deudor sin dar aviso al CONTRATISTA, en caso de hacerlo, el CONTRATISTA facturará y
+    cobrará a su nombre el porcentaje establecido, sin perjuicio de que además deba pagar los gastos en que
+    incurrió el contratista, debidamente soportados.<br />
+</ol>
+<ol start="5">
+
+    <li>
+        <b>CIRCUNSTANCIAS DE RECONOCIMIENTO DE GESTIÓN:</b> Para el cobro del porcentaje pactado se tendrán en cuenta
+        los siguientes:<br /><br />
+
+        5.1 Todo pago o abono realizado por parte del deudor al CONTRATANTE con posterioridad a la entrega de la
+        cartera, se entenderá causado por la gestión adelantada por el CONTRATISTA por lo tanto generará los
+        honorarios previstos en la cláusula cuarta del presente contrato.<br />
+
+        5.2 Entendiendo que el presente contrato es de recaudo de cartera y no de saneamiento de cartera, las
+        obligaciones que el CONTRATANTE entregue al CONTRATISTA sobre las que existan pagos o abonos con
+        anterioridad a la entrega de la cartera y que no hubieran sido aclarados por el CONTRATANTE se entenderá
+        causado por la gestión aclaratoria del CONTRATISTA por lo tanto generará los honorarios previstos en la
+        cláusula cuarta.<br />
+
+        5.3 Cuando el DEUDOR realice un abono directo al CONTRATANTE con posterioridad a la entrega de la cartera,
+        este deberá dar aviso inmediato al CONTRATISTA y realizar el pago del porcentaje acordado por la
+        prestación del servicio, ya que este pago se entenderá realizado como consecuencia de la gestión
+        efectuada por el CONTRATISTA.<br />
+
+        5.4 Todo acuerdo de pago solicitado por el deudor al CONTRATANTE se entenderá producto de la gestión del
+        CONTRATISTA el cual tendrá derecho al reconocimiento de la comisión establecida cuando hubiere dado
+        inicio a la gestión de cobro. En los casos en que el proceso estuviere en la etapa Jurídica del recaudo,
+        los acuerdos de pago deberán incluir las agencias en derecho y gastos realizados por el CONTRATISTA sin
+        detrimento de la comisión establecida.<br />
+
+        5.5 Cuando la cuenta se encuentre en cobro jurídico el CONTRATANTE no podrá realizar acuerdo de pago, ya que
+        este afectará el proceso en curso, pero podrá conjuntamente con el CONTRATISTA negociar con el deudor
+        acerca de formas de pago la cual será anexada al juzgado suspendiendo provisionalmente el proceso.<br />
+
+        5.6 Entendiendo que el CONTRATANTE entrega la cartera debido a que no ha podido recuperarla por sus propios
+        medios, entonces una vez entregada la cartera para cobro al CONTRATISTA, el CONTRATANTE respetará la
+        gestión de cobro. En caso de solicitar devolución de la cartera sin haber concluido el proceso de cobro
+        por parte del CONTRATISTA, entonces el CONTRATANTE asumirá los honorarios generados por la prestación
+        del servicio sobre el capital entregado para recuperación.<br />
+    </li><br />
+    <li>
+        <b>DACIÓN EN PAGO:</b> Cuando se trate de solicitar adjudicación de los bienes embargados o de la posibilidad de
+        recibir bienes en dación en pago por las obligaciones encomendadas para el recaudo, el CONTRATISTA deberá
+        informar previamente y por escrito al CONTRATANTE sobre la viabilidad de adoptar tales alternativas y sólo podrá
+        solicitar la adjudicación de bienes o aceptar la dación en pago cuando reciba autorización expresa y escrita por
+        parte del CONTRATANTE. De esta forma se deberá pagar al CONTRATISTA el porcentaje correspondiente a la etapa en
+        que se encuentre, teniendo en cuenta el valor del avalúo que se realice previo peritazgo de persona idónea y
+        conocedora al respecto.
+    </li><br />
+    <li>
+        <b>PROCESOS DE INSOLVENCIA:</b> Para la Representación Jurídica en procesos de Reorganización empresarial según
+        la ley 1116 de 2006, se cancelarán los honorarios 50% a la entrega del poder y 50% con el acuerdo de
+        reorganización en firme, de acuerdo a la siguiente tabla:
+    </li>
+</ol>
+<table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #808080; width: 95%; margin-left: 2rem;">
+    <tr>
+        <td>Capital del crédito inferior a $20.000.000</td>
+        <td>15 % +IVA</td>
+    </tr>
+    <tr>
+        <td>Capital del crédito entre $20.000.001 y $50.000.000</td>
+        <td>10 % +IVA</td>
+    </tr>
+    <tr>
+        <td>Capital del crédito superior a $50.000.001</td>
+        <td>8 % +IVA</td>
+    </tr>
+</table>
+<ol start="8">
+    <li>
+        <b>ESTUDIOS DE BIENES:</b> El costo del estudio de bienes para los deudores con capital superior a los VEINTE
+        MILLONES DE PESOS ($20.000.000) será asumido por el CONTRATISTA, para los casos de cuantías inferiores el valor
+        será de OCHENTA MIL PESOS + IVA ($80.000 + IVA) asumido por el CONTRATANTE y solamente se realizará previa
+        autorización del mismo.
+    </li><br />
+    <li>
+        <b>CERTIFICADOS DE CASTIGO DE CARTERA:</b> Cuando el CONTRATISTA haya gestionada un deudor sobre el que se
+        consideren agotadas las acciones para su recuperación, el CONTRATANTE podrá solicitar la expedición de un
+        certificado de castigo el cual tendrá un costo de OCHENTA MIL PESOS + IVA ($80.000 + IVA)
+    </li><br />
+    <li>
+        <b>GASTOS DE COBRANZA:</b> El CONTRATISTA asumirá por su cuenta y riesgo, la totalidad de los gastos pre
+        jurídicos y extrajurídicos necesarios para la gestión del objeto del contrato. <br /> <br />
+
+        Los gastos para la gestión jurídica de demanda tales como pólizas judiciales, honorarios de auxiliares de la
+        justicia, avalúos, edictos y notificaciones, entre otros, serán asumidos por el CONTRATISTA cuando la cuantía
+        del proceso sea superior a los VEINTE MILLONES DE PESOS ($20´000.000) y siempre y cuando a su criterio exista
+        posibilidad de recaudo.
+    </li><br />
+    <li>
+        <b>DURACIÓN:</b> El presente contrato entrará en vigor el día de su firma y tendrá una duración inicial de UN
+        (1) AÑO, renovándose automáticamente por períodos sucesivos de un (1) año, salvo que cualquiera de las partes
+        comunique a la otra su decisión de darlo por terminado con treinta (30) días de antelación a la expiración de
+        cada período anual de renovación.
+    </li><br />
+    <li>
+        <b>TERMINACIÓN:</b> El presente contrato podrá darse por terminado de la siguiente forma:<br /><br />
+        12.1 Terminación anticipada.<br />
+        12.2 Las partes decidan en el tiempo estipulado la no prorrogación del contrato celebrado.<br />
+        12.3 Por mutuo acuerdo.<br /><br />
+        Para los casos de terminación anticipada sin justa causa solicitada por el CONTRATANTE y cuando existieren
+        procesos vigentes en gestión del CONTRATISTA se seguirán las siguientes reglas:<br /><br />
+        <b>OBLIGACIONES EN COBRO PRE JURÍDICO:</b> Si al momento de la terminación del contrato se ha celebrado acuerdo
+        de pago con el deudor, EL CONTRATANTE se compromete a pagar el total de los honorarios previstos en la cláusula
+        cuarta del presente contrato, incluyendo las cuotas de amortización sin vencer a fin de hacer la devolución del
+        caso y la documentación correspondiente, salvo que se decida que el caso siga siendo gestionado por el
+        CONTRATISTA bajo las condiciones pactadas inicialmente, es decir, reconociendo los honorarios pactados sobre
+        recaudo efectivo. <br /><br />
+        <b>OBLIGACIONES EN COBRO JURÍDICO:</b> Cuando existan procesos con sentencias ejecutoriadas o proceso judicial
+        con medidas cautelares de embargo efectivas o se haya suscrito acuerdo de pago, EL CONTRANTANTE pagará la
+        totalidad de los honorarios pactados en la cláusula cuarta del presente contrato, incluyendo las cuotas de
+        amortización no vencidas y las costas que se fijen dentro del proceso, a fin de que el CONTRATISTA renuncie al
+        mandato conferido, emita el correspondiente paz y salvo y devuelva la documentación en su poder; salvo que se
+        decida que el caso siga siendo gestionado por el CONTRATISTA bajo las condiciones pactadas inicialmente, es
+        decir, reconociendo los honorarios pactados sobre recaudo efectivo. <br /><br />
+        La terminación unilateral de alguna de las partes del presente contrato no generará indemnización alguna, sin
+        embargo, las partes deberán estar a paz y salvo por concepto de las obligaciones adquiridas por medio de este
+        contrato.
+    </li><br />
+    <li>
+        <b>CONFIDENCIALIDAD:</b> El contenido del presente contrato, los documentos y la información que sea entregada
+        al CONTRATISTA por el CONTRATANTE para el desarrollo y ejecución del mismo gozan de confidencialidad, es por
+        ellos que toda la información a la que tengan acceso los dependientes y funcionarios con o sin vinculación
+        laboral, está protegida por las normas que rigen el secreto profesional y, por tanto, solo podrá ser usada para
+        fines inherentes a su actividad.
+    </li><br />
+    <li>
+        <b>HABEAS DATA:</b> Considerando que en virtud de la naturaleza jurídica de las actividades objeto del presente
+        contrato y el tipo de datos objeto de tratamiento aplican dos regímenes jurídicos, por una parte la regulación
+        sectorial del hábeas data financiero plasmado en la Ley 1266 de 2008, regula la utilización de la información
+        financiera, crediticia, comercial, de servicios y la proveniente de terceros países, aquella referida al
+        nacimiento, ejecución y extinción de obligaciones dinerarias, independientemente de la naturaleza del contrato
+        que les dé origen, y por otra parte la Ley 1581 de 2012, que tiene como finalidad regular el tratamiento de los
+        datos personales para finalidades diferentes de las referidas a la gestión del cálculo de riesgo crediticio y
+        financiero.<br /><br />
+        14.1 Para el caso de los datos relacionados con el hábeas data financiero el CONTRATANTE deberá contar con la
+        autorización de los titulares es decir de los DEUDORES, para que TRÉBOL JURÍDICO desarrolle las
+        actividades de conformidad con las siguientes finalidades:<br /><br />
+
+        1. Contactar el deudor o deudores del CONTRATANTE para el envío de información relacionada con la
+        relación contractual, comercial y obligacional que tenga lugar. La comunicación podrá ser por
+        diferentes canales y aplicaciones tales como el canal telefónico (automatizado o no) y medios de
+        comunicación electrónica (mensajes de datos, correo electrónico, fax), y cualquier otro que en
+        virtud de los avances en tecnología o comunicaciones exista; chat, SMS, WhatsApp, entre otros.<br />
+
+        2. Para proporcionarle un efectivo servicio al cliente.<br />
+
+        3. Cuando el CONTRATANTE proporciona datos personales propios o de tercero (DEUDORES), ésta
+        información será utilizada sólo para los propósitos aquí señalados, y no será objeto de venta,
+        licencia, transmisión o divulgación salvo que
+                (i) Se cuente con autorización expresa para hacerlo.
+                (ii) Sea necesario para prestar los servicios encomendados.
+                (iii) Según sea requerido o permitido por la ley. A fin de poner en práctica los propósitos
+                descritos anteriormente, los datos podrán ser divulgados con los fines dispuestos
+                anteriormente al personal encargado, consultores, asesores, abogados y a otras personas
+                y oficinas según corresponda. Adicionalmente, una vez cese la necesidad de tratamiento
+                de datos, los mismos serán archivados en términos seguros a efectos de que solamente
+                sean divulgados cuando a ello hubiere lugar de acuerdo con la ley.
+        4. El CONTRATANTE deberá contar con la autorización del deudor o deudores para que el CONTRATANTE
+        y/o quien en el futuro ostente la calidad de acreedor de la(s) obligación (es) o a las empresas
+        o personas naturales que el CONTRATANTE utilice para gestionar actividades de cobro en sus
+        diferentes etapas, como b pueda: consultar y obtener de centrales de riesgo crediticio u
+        operadores de bancos de datos de información financiera, crediticia, comercial, de servicios y
+        la proveniente de terceros países o entidades similares cualquier información sobre el
+        nacimiento, la modificación, el cumplimiento o incumplimiento y/o la extinción de las
+        obligaciones que llegue a contraer el CONTRATANTE con sus deudores, respecto de los cuales b
+        adelante las respectivas actividades de cobranza. Elaborar y contratar servicios de estudios de
+        bienes de los deudores para el efectivo desarrollo de actividades de cobranza, así como realizar
+        investigaciones de bienes y localización personal, para obtener el pago de las obligaciones.
+        Consultar y/o verificar la información del Titular de los Datos Personales en fuentes públicas,
+        directamente o a través de proveedores, cuyo objeto social sea consolidar información pública
+        atendiendo las disposiciones de ley. Asimismo, autorizar a b las consultas, verificaciones y
+        utilizar información proveniente de operadores de información financiera y crediticia que
+        permitan la validación de información de los deudores del CONTRATANTE.<br  /><br  />
+
+        14.2 Para aquellos datos regulados por la ley 1581 de 2012 la partes Suscribirán el CONTRATO DE TRANSMISIÓN,
+        el cual señalará los alcances del tratamiento, las actividades que el encargado realizará por cuenta del
+        responsable para el tratamiento de los datos personales y las obligaciones de las partes. (ANEXO 1)
+    </li><br  />
+    <li>
+        <b>RELACIÓN LABORAL:</b> No existirá relación laboral alguna entre EL CONTRATANTE y el CONTRATISTA o el personal
+        que se utilice en la ejecución del objeto del presente contrato, ya que el CONTRATISTA no está sometido a
+        subordinación por parte del CONTRATANTE, y no habrá a favor del CONTRATISTA y a cargo del CONTRATANTE,
+        prestación alguna que implique carga laboral, como pago de cesantías, vacaciones, primas, salarios, entre otros.
+    </li><br  />
+    <li>
+        <b>MÉRITO EJECUTIVO:</b> El presente contrato presta mérito ejecutivo; en consecuencia, constituye título
+        suficiente para acudir ante la jurisdicción ordinaria, sin perjuicio del agotamiento previo de mecanismos
+        alternativos de solución de conflictos.
+    </li><br  />
+    <li>
+        <b>DOMICILIO:</b> Para todos los efectos legales y extralegales el domicilio de este contrato será la ciudad de
+        Medellín con las siguientes direcciones para las notificaciones:
+    </li>
+</ol>
+<p>
+    EL CONTRATANTE:
+    <span name="direccion_contratante">_______</span><br />
+    Ciudad:
+    <span name="municipio_contratante">_______</span><br />
+    Teléfono:
+    <span name="telefono_contratante">_______</span>
+</p>
+<p>
+    EL CONTRATISTA: Cra 36 No. 8ª-46 Interior 201 <br />
+    Teléfono: (4)5816777
+</p>
+<p>
+    El presente contrato se firma en la ciudad de
+    <span name="municipio_firma">_______</span> el
+    <span name="fecha_firma">_______</span> en dos copias del mismo ejemplar y valor para cada parte de la relación
+    comercial.
+</p>
+<p><br /><br /><br /><br />
+    <span>_____________________</span><br />
+    <b> Trébol Jurídico S.A.S.</b><br />
+    <b>NIT. 900.477.900-6</b><br />
+    <b>Correo:</b> <b>vanessafortich@treboljuridico.com</b>
+</p>
+<p><br /><br /><br /><br />
+    <span>_____________________</span><br />
+    <span name="tipo_persona_na">
+        <b name="nombre_contratante">_______</b><br />
+        <span name="tipo_documento_contratante_cc"> <b>C.C. No.</b>
+            <b name="cedula_contratante">_______</b>
+        </span>
+        <span name="tipo_documento_contratante_ce" hidden> <b>C.E. No.</b>
+            <b name="cedulae_contratante">_______</b>
+        </span>
+        <span name="tipo_documento_contratante_pa" hidden> <b>PASAPORTE No.</b>
+            <b name="pasaporte_contratante">_______</b>
+        </span>
+    </span>
+    <span name="tipo_persona_ju" hidden>
+        <b name="nombre_empresa_contratante">_______</b><br />
+        <b>NIT.</b> <b name="nit_empresa_contratante">_______</b>
+    </span><br />
+    <b>Correo:</b> <b name="correo_contratante">_______</b>
+</p>
+<span name="tipo_persona_na">
+
+    <table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #a08989">
+        <tr>
+            <td class="main_title" style="width: 18cm">
+                <img src="https://mi-contrato-static.s3.amazonaws.com/empresas+ext/Trebol+juridico/trebol_juridico.png">
+            </td>
+            <td class="main_title">
+                <b>AUTORIZACIÓN PARA EL TRATAMIENTO DE INFORMACIÓN CLIENTES PERSONAS NATURALES</b>
+            </td>
+        </tr>
+    </table>
+    <p>
+        Por medio del presente documento manifiesto que he sido informado que <b>TRÉBOL JURÍDICO</b> en calidad de
+        Responsable tratará mis datos personales obtenidos a través de las relaciones comerciales en mi calidad de
+        cliente,
+        por lo cual consiento y autorizo de manera previa, expresa, informada e inequívoca que mis datos personales sean
+        tratados (recolectados, almacenados, usados, compartidos, procesados, transmitidos, transferidos, suprimidos o
+        actualizados,) para el cumplimiento de las siguientes finalidades:
+    </p>
+    <p>
+        <b>CLIENTES Y DEUDORES DE LOS CLIENTES </b>
+    </p>
+    <p>
+        Los datos personales tratados por TRÉBOL JURÍDICO S.A.S. tendrán como finalidades las que se señalan a
+        continuación.
+        Así mismo los encargados o terceros que tengan acceso a los datos personales por virtud de ley o contrato,
+        mantendrán el tratamiento dentro de las siguientes finalidades:
+    </p>
+    <ol>
+        <li>
+            Cumplimiento y ejecución de los contratos de servicios celebrados con los clientes.
+        </li>
+        <li>
+            Prestar los servicios de acuerdo con las necesidades particulares de los clientes de TRÉBOL JURÍDICO, con el
+            fin
+            de cumplir los contratos de servicios celebrados.
+        </li>
+        <li>
+            Envío de información a entidades gubernamentales o judiciales por solicitud expresa de la misma.
+        </li>
+        <li>
+            Soporte en procesos de auditoría externa/interna.
+        </li>
+        <li>
+            Contacto con clientes y deudores del cliente para el envío de información relacionada con la relación
+            contractual, comercial y obligacional que tenga lugar. La comunicación podrá ser por diferentes canales y
+            aplicaciones tales como el canal telefónico (automatizado o no) y medios de comunicación electrónica
+            (mensajes
+            de datos, correo electrónico, fax), y cualquier otro que en virtud de los avances en tecnología o
+            comunicaciones
+            exista; SMS, WhatsApp, chat, entre otros.
+        </li>
+        <li>
+            Con propósitos de seguridad o prevención de fraude.
+        </li>
+        <li>
+            Para proporcionarle un efectivo servicio al cliente.
+        </li>
+        <li>
+            Cualquier otra finalidad que resulte en el desarrollo de los contratos o la relación con los diferentes
+            clientes
+            de TRÉBOL JURÍDICO.
+        </li>
+        <li>
+            Gestionar toda la información necesaria para el cumplimiento de las obligaciones tributarias y de registros
+            comerciales, corporativos y contables de TRÉBOL JURÍDICO.
+        </li>
+        <li>
+            Procesos al interior de la Firma, con fines de desarrollo u operativo y/o de administración de sistemas.
+        </li>
+        <li>
+            Mantener y procesar por computadora u otros medios, cualquier tipo de información relacionada con el negocio
+            del
+            cliente con el fin de brindar los servicios y productos pertinentes.
+        </li>
+        <li>
+            Cuando los clientes proporcionan datos personales propios o de tercero (DEUDORES), ésta información será
+            utilizada sólo para los propósitos aquí señalados, y no será objeto de venta, licencia, transmisión o
+            divulgación salvo que:
+            <ol type="i">
+                <li>
+                    Se cuente con autorización expresa para hacerlo.
+                </li>
+                <li>
+                    Ssea necesario para prestar los servicios encomendados
+                </li>
+                <li>
+                    Según sea requerido o permitido por la ley.
+                </li>
+            </ol>
+        </li>
+        <li>
+            TRÉBOL JURÍDICO podrá consultar y obtener de centrales de riesgo crediticio u operadores de bancos de datos
+            de
+            información financiera, crediticia, comercial, de servicios y la proveniente de terceros países o entidades
+            similares cualquier información sobre el nacimiento, la modificación, el cumplimiento o incumplimiento y/o
+            la
+            extinción de las obligaciones que llegue a contraer el CLIENTE con sus deudores, respecto de los cuales
+            TRÉBOL
+            JURÍDICO adelante las respectivas actividades de cobranza. Igualmente con la finalidad de adelantar los
+            procesos
+            prejurídicos y jurídicos contratados por los CLIENTES con sus deudores, TRÉBOL JURÍDICO podrá elaborar y
+            contratar servicios de estudios de bienes de los deudores para el efectivo desarrollo de actividades de
+            cobranza, así como realizar investigaciones de bienes y localización personal, para obtener el pago de las
+            obligaciones. TRÉBOL JURÍDICO podrá consultar y/o verificar la información del Titular de los Datos
+            Personales
+            en fuentes públicas, directamente o a través de proveedores, cuyo objeto social sea consolidar información
+            pública atendiendo las disposiciones de ley. Asimismo, realizar consultas, verificaciones y utilizar
+            información
+            proveniente de operadores de información financiera y crediticia que permitan la validación de información
+            del
+            Titular de los Datos Personales.
+        </li>
+    </ol>
+    <p>
+        A fin de poner en práctica los propósitos descritos anteriormente, los datos podrán ser divulgados con los fines
+        dispuestos anteriormente al personal encargado, consultores, asesores, abogados y a otras personas y oficinas
+        según
+        corresponda. Adicionalmente, una vez cese la necesidad de tratamiento de datos, los mismos serán archivados en
+        términos seguros a efectos de que solamente sean divulgados cuando a ello hubiere lugar de acuerdo con la ley.
+    </p>
+    <p>
+        Autorizo expresamente que las anteriores finalidades y/o tratamientos puedan ser realizadas directamente por
+        <b>TRÉBOL JURÍDICO</b> o a través de terceros encargados.
+    </p>
+    <p>
+        DERECHOS DEL TITULAR. Mis derechos como titular del dato son los previstos en la Constitución y en la Ley 1581
+        de
+        2012, especialmente los siguientes:
+    </p>
+    <ol type="a">
+        <li>
+            Acceder en forma gratuita a los datos proporcionados que hayan sido objeto de tratamiento.
+        </li>
+        <li>
+            Solicitar la actualización y rectificación de su información frente a datos parciales, inexactos,
+            incompletos,
+            fraccionados, que induzcan a error, o a aquellos cuyo tratamiento esté prohibido o no haya sido autorizado.
+        </li>
+        <li>
+            Solicitar prueba de la autorización otorgada.
+        </li>
+        <li>
+            Presentar ante la Superintendencia de Industria y Comercio (SIC) quejas por infracciones a lo dispuesto en
+            la
+            normatividad vigente.
+        </li>
+        <li>
+            Revocar la autorización y/o solicitar la supresión del dato, a menos que exista un deber legal o contractual
+            que
+            haga imperativo conservar la información.
+        </li>
+        <li>
+            Abstenerse de responder las preguntas sobre datos sensibles o sobre datos de las niñas y niños y
+            adolescentes.
+            Estos derechos los podré ejercer a través de los siguientes canales de <b>TRÉBOL JURÍDICO S.A.S.</b>,
+            Correo:
+            treboljuridico@treboljuridico.com o Físicamente a la dirección Carrera 36 No. 8 A 46 Int. 201 Medellín,
+            Antioquia.
+        </li>
+    </ol>
+    <p>
+        Por todo lo anterior, he otorgado mi consentimiento a TRÉBOL JURÍDICO S.A.S para que trate mi información
+        personal
+        de acuerdo con las finalidades aquí señaladas y de conformidad con la Política de Tratamiento de Datos
+        Personales a
+        la cual puedo acceder en
+        <a href="https://treboljuridico.com/" target="_blank">www.treboljuridico.com</a>
+    </p>
+    <p>
+        Declaro haber leído, comprendido y aceptado lo indicado y en señal de aceptación firmo el presente documento.
+    </p>
+    <p>
+        <b>Nombre:</b> <span name="nombre_contratante">_______</span><br /><br /><br /><br />
+        <b>Firma:</b> <span>_____________________</span><br />
+        <b>Identificación:</b>
+        <span name="tipo_documento_contratante_cc">
+            <span name="cedula_contratante">_______</span>
+        </span>
+        <span name="tipo_documento_contratante_ce" hidden>
+            <span name="cedulae_contratante">_______</span>
+        </span>
+        <span name="tipo_documento_contratante_pa" hidden>
+            <span name="pasaporte_contratante">_______</span>
+        </span><br />
+        <b>Fecha:</b> <span name="fecha_firma">_______</span>
+    </p>
+</span>
+<span name="tipo_persona_ju" hidden>
+    <p class="text-center">
+        <b>CONTRATO DE TRANSMISIÓN DE DATOS ENTRE</b>
+        <b name="nombre_empresa_contratante">_______</b>
+        <b>Y TRÉBOL JURÍDICO S.A.S.</b>
+    </p>
+    <p>
+        Entre los suscritos a saber:
+        <span name="nombre_contratante">_______</span>, mayor de edad, con domicilio en la ciudad de
+        <span name="municipio_contratante">_______</span>,
+        <span name="sexo_contratante_h">identificado</span>
+        <span name="sexo_contratante_m" hidden>identificada</span> con
+        <span name="tipo_documento_contratante_cc"> Cédula de Ciudadanía No.
+            <b name="cedula_contratante">_______</b>
+        </span>
+        <span name="tipo_documento_contratante_ce" hidden> Cédula de Extranjería No.
+            <b name="cedulae_contratante">_______</b>
+        </span>
+        <span name="tipo_documento_contratante_pa" hidden> Pasaporte No.
+            <b name="pasaporte_contratante">_______</b>
+        </span> expedida en
+        <span name="municipio_exp_documento_contratante">_______</span>, en su calidad de representante Legal de
+        <span name="nombre_empresa_contratante">_______</span>, sociedad mercantil, identificada con NIT
+        <span name="nit_empresa_contratante">_______</span>, quien se denominará para los efectos legales del presente
+        contrato EL RESPONSABLE y VANESSA DEL CARMEN FORTICH GRAU, mayor de edad, con domicilio y residencia en
+        Medellin,
+        identificada con la Cédula de Ciudadanía Número 1.128.267.734 expedida en Medellin, en su calidad de
+        representante Legal de la empresa <b>TRÉBOL JURÍDICO S.A.S.</b> sociedad comercial con domicilio en Medellin,
+        con NIT 900.477.900-6, quien para los efectos del contrato se denomina ENCARGADO, se ha acordado regular el uso
+        de datos personales de los titulares de conformidad con las siguientes:
+    </p>
+    <p class="text-center">
+        <b>CONSIDERACIONES</b>
+    </p>
+    <ol>
+        <li>
+            <span name="nombre_empresa_contratante">_______</span> es el responsable del tratamiento de los datos
+            personales
+            contenidos en la base de datos DEUDORES.
+        </li>
+        <li>
+            <b>TRÉBOL JURÍDICO,</b> como empresa dedicada a la gestión de cobranza es la encargada del tratamiento de
+            los datos personales, en virtud del potencial acceso y tratamiento a la información de carácter personal de
+            propiedad de
+            <span name="nombre_empresa_contratante">_______</span>
+        </li>
+        <li>
+            En virtud de lo anterior EL ENCARGADO realiza tratamiento de la información que contiene datos personales
+            que deben ser regulados con ocasión de las normas sobre Protección de datos personales de la Ley 1581 de
+            2012, Decreto 1074 de 2015 y normas reglamentarias.
+        </li>
+        <li>
+            4. Que con el fin de darle cumplimiento a los postulados de la norma, las partes deciden de manera libre y
+            espontánea regular su relación en lo atinente a tratamiento de datos personales de las bases de datos de los
+            DEUDORES de
+            <span name="nombre_empresa_contratante">_______</span>
+            en calidad de RESPONSABLE.
+        </li>
+    </ol>
+    <p class="text-center">
+        <b>CLÁUSULAS</b>
+    </p>
+    <ol type="I">
+        <li>
+            OBJETO <br /><br />
+            El objeto del presente contrato es regular las condiciones y alcances en las que el ENCARGADO DEL
+            TRATAMIENTO tratará los datos contenidos en la(s) base(s) de dato(s) de propiedad de
+            <span name="nombre_empresa_contratante">_______</span> actuando por cuenta del RESPONSABLE, con la única
+            finalidad
+            de ejecutar las labores de conformidad con lo establecido en el contrato comercial de gestión de cobranza y
+            dentro de las siguientes finalidades:
+            Los datos personales tratados por TRÉBOL JURÍDICO S.A.S. tendrán como finalidades las que se señalan a
+            continuación. Así mismo los encargados o terceros que tengan acceso a los datos personales por virtud de ley
+            o contrato, mantendrán el tratamiento dentro de los siguientes usos y finalidades:
+            <ol>
+                <li>
+                    Cumplimiento y ejecución de los contratos de servicios celebrados con los clientes.
+                </li>
+                <li>
+                    Prestar los servicios de acuerdo con las necesidades particulares de los clientes de TRÉBOL
+                    JURÍDICO, con el fin de cumplir los contratos de servicios celebrados.
+                </li>
+                <li>
+                    Envío de información a entidades gubernamentales o judiciales por solicitud expresa de la misma.
+                </li>
+                <li>
+                    Soporte en procesos de auditoría externa/interna.
+                </li>
+                <li>
+                    Contacto con clientes y deudores del cliente para el envío de información relacionado con la
+                    relación contractual, comercial y obligacional que tenga lugar. La comunicación podrá ser por
+                    diferentes canales y aplicaciones tales como el canal telefónico (automatizado o no) y medios de
+                    comunicación electrónica (mensajes de datos, correo electrónico, fax), y cualquier otro que en
+                    virtud de los avances en tecnología o comunicaciones exista; SMS, WhatsApp, chat, entre otros.
+                </li>
+                <li>
+                    Con propósitos de seguridad o prevención de fraude.
+                </li>
+                <li>
+                    Para proporcionarle un efectivo servicio al cliente.
+                </li>
+                <li>
+                    Cualquier otra finalidad que resulte en el desarrollo de los contratos o la relación con los
+                    diferentes clientes de TRÉBOL JURÍDICO.
+                </li>
+                <li>
+                    Gestionar toda la información necesaria para el cumplimiento de las obligaciones tributarias y de
+                    registros comerciales, corporativos y contables de TRÉBOL JURÍDICO.
+                </li>
+                <li>
+                    Procesos al interior de la Firma, con fines de desarrollo u operativo y/o de administración de
+                    sistemas.
+                </li>
+                <li>
+                    Mantener y procesar por computadora u otros medios, cualquier tipo de información relacionada con el
+                    negocio del cliente con el fin de brindar los servicios y productos pertinentes.
+                </li>
+                <li>
+                    Cuando los clientes proporcionan datos personales propios o de terceros (DEUDORES), ésta información
+                    será utilizada sólo para los propósitos aquí señalados, y no será objeto de venta, licencia,
+                    transmisión o divulgación salvo que:
+                    <ol type="i">
+                        <li>
+                            Se cuente con autorización expresa para hacerlo.
+                        </li>
+                        <li>
+                            Sea necesario para prestar los servicios encomendados
+                        </li>
+                        <li>
+                            Según sea requerido o permitido por la ley.
+                        </li>
+                    </ol>
+                </li>
+                <li>
+                    EL ENCARGADO -TRÉBOL JURÍDICO podrá consultar y obtener de centrales de riesgo crediticio u
+                    operadores de bancos de datos de información financiera, crediticia, comercial, de servicios y la
+                    proveniente de terceros países o entidades similares cualquier información sobre el nacimiento, la
+                    modificación, el cumplimiento o incumplimiento y/o la extinción de las obligaciones que llegue a
+                    contraer el RESPONSABLE- CLIENTE con sus deudores, respecto de los cuales TRÉBOL JURÍDICO en calidad
+                    de ENCARGADO adelante las respectivas actividades de cobranza. Igualmente con la finalidad de
+                    adelantar los procesos prejurídicos y jurídicos contratados por el RESPONSABLE- CLIENTES con sus
+                    deudores, EL ENCARGADO -TRÉBOL JURÍDICO podrá elaborar y contratar servicios de estudios de bienes
+                    de los deudores para el efectivo desarrollo de actividades de cobranza, así como realizar
+                    investigaciones de bienes y localización personal, para obtener el pago de las obligaciones. EL
+                    ENCARGADO- TRÉBOL JURÍDICO podrá consultar y/o verificar la información del Titular de los Datos
+                    Personales en fuentes públicas, directamente o a través de proveedores, cuyo objeto social sea
+                    consolidar información pública atendiendo las disposiciones de ley. Asimismo, realizar consultas,
+                    verificaciones y utilizar información proveniente de operadores de información financiera y
+                    crediticia que permitan la validación de información del Titular de los Datos Personales.
+                </li>
+                A fin de poner en práctica los propósitos descritos anteriormente, los datos podrán ser divulgados con
+                los fines dispuestos anteriormente al personal encargado, consultores, asesores, abogados y a otras
+                personas y oficinas según corresponda. Adicionalmente, una vez cese la necesidad de tratamiento de
+                datos, los mismos serán archivados en términos seguros a efectos de que solamente sean divulgados cuando
+                a ello hubiere lugar de acuerdo con la ley. <br /><br />
+                El uso de datos se realizará por un tiempo determinado y mientras se mantenga vigente el contrato de
+                prestación de servicios suscrito entre las partes. En ningún caso el uso de los datos comprenderá la
+                cesión de la propiedad sobre los derechos de propiedad intelectual de la base de datos.
+            </ol>
+        </li>
+        <li>
+            <b>CONDICIONES DEL USO DE LOS DATOS</b>
+            <ol>
+                <li>
+                    El ENCARGADO tratará los datos dentro de las finalidades propias del contrato suscrito entre las
+                    partes.
+                </li>
+                <li>
+                    El RESPONSABLE garantiza al ENCARGADO que todos los datos personales incluidos en la base de datos
+                    han sido obtenidos de forma lícita y conforme a la legislación vigente, prestando especial atención
+                    al cumplimiento de la Ley 1581 de 2012 y el Decreto 1074 de 2015, para el caso del hábeas data
+                    financiero la ley 1266 de 2008 y las normas que las modifiquen o adicionen. Considerando que en
+                    virtud de la naturaleza jurídica de las actividades objeto del presente contrato y el tipo de datos
+                    objeto de tratamiento aplican dos regímenes jurídicos, por una parte la regulación sectorial del
+                    hábeas data financiero plasmado en la Ley 1266 de 2008, que regula la utilización de la información
+                    financiera, crediticia, comercial, de servicios y la proveniente de terceros países, aquella
+                    referida al nacimiento, ejecución y extinción de obligaciones dinerarias, independientemente de la
+                    naturaleza del contrato que les dé origen, y por otra parte la Ley 1581 de 2012, que tiene como
+                    finalidad regular el tratamiento de los datos personales para finalidades diferentes de las
+                    referidas a la gestión del cálculo de riesgo crediticio y financiero. <br /><br />
+                    Para el caso de los datos relacionados con el hábeas data financiero el RESPONSABLE deberá contar
+                    con la autorización de los titulares es decir de los DEUDORES, para que TRÉBOL JURÍDICO desarrolle
+                    las siguientes actividades:
+                    <ol>
+                        <li>
+                            Contactar el deudor o deudores del RESPONSABLE para el envío de información relacionada con
+                            la relación contractual, comercial y obligacional que tenga lugar. La comunicación podrá ser
+                            por diferentes canales y aplicaciones tales como el canal telefónico (automatizado o no) y
+                            medios de comunicación electrónica (mensajes de datos, correo electrónico, fax), y cualquier
+                            otro que en virtud de los avances en tecnología o comunicaciones exista; chat, SMS,
+                            WhatsApp, chat, entre otros.
+                        </li>
+                        <li>
+                            El RESPONSABLE deberá contar con la autorización del deudor o deudores para que el
+                            RESPONSABLE y/o quien en el futuro ostente la calidad de acreedor de la(s) obligación (es) o
+                            a las empresas o personas naturales que el RESPONSABLE contrate para gestionar actividades
+                            de cobro en sus diferentes etapas, como <b>TRÉBOL JURÍDICO</b> en calidad de ENCARGADO
+                            pueda: consultar y obtener de centrales de riesgo crediticio u operadores de bancos de datos
+                            de información financiera, crediticia, comercial, de servicios y la proveniente de terceros
+                            países o entidades similares cualquier información sobre el nacimiento, la modificación, el
+                            cumplimiento o incumplimiento y/o la extinción de las obligaciones que llegue a contraer el
+                            CONTRATANTE con sus deudores, respecto de los cuales <b>TRÉBOL JURÍDICO</b> adelante las
+                            respectivas actividades de cobranza. Elaborar y contratar servicios de estudios de bienes de
+                            los deudores para el efectivo desarrollo de actividades de cobranza, así como realizar
+                            investigaciones de bienes y localización personal, para obtener el pago de las obligaciones.
+                            Consultar y/o verificar la información del Titular de los Datos Personales en fuentes
+                            públicas, directamente o a través de proveedores, cuyo objeto social sea consolidar
+                            información pública atendiendo las disposiciones de ley. Asimismo, autorizar a <b>TRÉBOL
+                                JURÍDICO</b> las consultas, verificaciones y utilizar información proveniente de
+                            operadores de información financiera y crediticia que permitan la validación de información
+                            de los deudores del RESPONSABLE.
+                        </li>
+                    </ol>
+                </li>
+            </ol>
+        </li>
+        <li>
+            <b>CONFIDENCIALIDAD Y PROTECCIÓN DE DATOS PERSONALES</b><br /><br />
+            Todas las informaciones relativas al presente contrato, así como los acuerdos, pre acuerdos, correos
+            electrónicos intercambiados entre las partes o terceros intervinientes, serán completamente CONFIDENCIALES.
+            Sólo tendrán acceso a la información indicada, aquellas personas autorizadas expresamente por las personas
+            firmantes del presente contrato y las que por éstas hubieran sido autorizadas. En el caso de datos
+            personales regulados por la ley 1581 de 2012 y normas reglamentarias y en virtud del principio de
+            confidencialidad consagrado en el artículo 4º de la mencionada ley, EL ENCARGADO que intervengan en el
+            Tratamiento de datos personales que no tengan la naturaleza de públicos está obligado a garantizar la
+            reserva de la información, inclusive después de finalizada su relación con alguna de las labores que
+            comprende el Tratamiento, pudiendo sólo realizar suministro o comunicación de datos personales cuando ello
+            corresponda al desarrollo de las actividades autorizadas en la ley y en los términos de la misma. En
+            cumplimiento de la Ley 1581 de 2012, las partes manifiestan expresamente el cumplimiento de la normativa
+            colombiana de protección de datos personales.
+        </li>
+        <li>
+            <b>DEBERES DE LAS PARTES</b><br /><br />
+            <b>DEBERES DEL RESPONSABLE</b><br /><br />
+            EL RESPONSABLE deberá cumplir los siguientes deberes, sin perjuicio de las demás disposiciones previstas en
+            la ley y en otras que rijan su actividad:
+            <ol type="a">
+                <li>
+                    Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data.
+                </li>
+                <li>
+                    Solicitar y conservar, en las condiciones previstas en la presente ley, copia de la respectiva
+                    autorización otorgada por el Titular.
+                </li>
+                <li>
+                    Informar debidamente al Titular sobre la finalidad de la recolección y los derechos que le asisten
+                    por virtud de la autorización otorgada.
+                </li>
+                <li>
+                    Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración,
+                    pérdida, consulta, uso o acceso no autorizado o fraudulento.
+                </li>
+                <li>
+                    Garantizar que la información que se suministre al Encargado del Tratamiento sea veraz, completa,
+                    exacta, actualizada, comprobable y comprensible.
+                </li>
+                <li>
+                    Actualizar la información, comunicando de forma oportuna al Encargado del Tratamiento, todas las
+                    novedades respecto de los datos que previamente le haya suministrado y adoptar las demás medidas
+                    necesarias para que la información suministrada a este se mantenga actualizada.
+                </li>
+                <li>
+                    Rectificar la información cuando sea incorrecta y comunicar lo pertinente al Encargado del
+                    Tratamiento.
+                </li>
+                <li>
+                    Suministrar al Encargado del Tratamiento, según el caso, únicamente datos cuyo Tratamiento esté
+                    previamente autorizado de conformidad con lo previsto en la presente ley.
+                </li>
+                <li>
+                    Exigir al Encargado del Tratamiento en todo momento, el respeto a las condiciones de seguridad y
+                    privacidad de la información del Titular.
+                </li>
+                <li>
+                    Tramitar las consultas y reclamos formulados en los términos señalados en la presente ley.
+                </li>
+                <li>
+                    Adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de
+                    la presente ley y en especial, para la atención de consultas y reclamos.
+                </li>
+                <li>
+                    Informar al Encargado del Tratamiento cuando determinada información se encuentra en discusión por
+                    parte del Titular, una vez se haya presentado la reclamación y no haya finalizado el trámite
+                    respectivo.
+                </li>
+                <li>
+                    Informar a solicitud del Titular sobre el uso dado a sus datos.
+                </li>
+                <li>
+                    Informar a la autoridad de protección de datos cuando se presenten violaciones a los códigos de
+                    seguridad y existan riesgos en la administración de la información de los Titulares.
+                </li>
+                <li>
+                    Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio.
+                </li>
+            </ol>
+            <b>DEBERES DEL ENCARGADO</b><br /><br />
+            EL ENCARGADO al llevar a cabo cualquier operación o conjunto de operaciones sobre datos personales, tales
+            como la recolección, almacenamiento, uso, circulación o supresión (en adelante el Tratamiento) por cuenta y
+            bajo las instrucciones del RESPONSABLE deberá cumplir los siguientes deberes, sin perjuicio de las demás
+            disposiciones previstas en la ley y en otras que rijan su actividad:
+            <ol type="a">
+                <li>
+                    Garantizar al Titular, en todo tiempo, el pleno y efectivo ejercicio del derecho de hábeas data.
+                </li>
+                <li>
+                    Conservar la información bajo las condiciones de seguridad necesarias para impedir su adulteración,
+                    pérdida, consulta, uso o acceso no autorizado o fraudulento.
+                </li>
+                <li>
+                    Realizar oportunamente la actualización, rectificación o supresión de los datos en los términos de
+                    la ley.
+                </li>
+                <li>
+                    Actualizar la información reportada por los Responsables del Tratamiento dentro de los cinco (5)
+                    días hábiles contados a partir de su recibo.
+                </li>
+                <li>
+                    Tramitar las consultas y los reclamos formulados por los Titulares en los términos señalados en la
+                    ley.
+                </li>
+                <li>
+                    Adoptar un manual interno de políticas y procedimientos para garantizar el adecuado cumplimiento de
+                    la ley y, en especial, para la atención de consultas y reclamos por parte de los Titulares.
+                </li>
+                <li>
+                    Registrar en la base de datos la leyenda "reclamo en trámite" en la forma en que se regula en la
+                    ley.
+                </li>
+                <li>
+                    Insertar en la base de datos la leyenda "información en discusión judicial" una vez notificado por
+                    parte de la autoridad competente sobre procesos judiciales relacionados con la calidad del dato
+                    personal.
+                </li>
+                <li>
+                    Abstenerse de circular información que esté siendo controvertida por el Titular y cuyo bloqueo haya
+                    sido ordenado por la Superintendencia de Industria y Comercio
+                </li>
+                <li>
+                    Permitir el acceso a la información únicamente a las personas que pueden tener acceso a ella.
+                </li>
+                <li>
+                    Informar a la Superintendencia de Industria y Comercio cuando se presenten violaciones a los códigos
+                    de seguridad y existan riesgos en la administración de la información de los Titulares.
+                </li>
+                <li>
+                    Cumplir las instrucciones y requerimientos que imparta la Superintendencia de Industria y Comercio.
+                </li>
+                <li>
+                    Verificar que el Responsable del Tratamiento tiene la autorización para el tratamiento de datos
+                    personales del Titular.
+                </li>
+            </ol>
+            Además de las obligaciones previamente señaladas y de conformidad con la reglamentación el ENCARGADO deberá:
+            <ol>
+                <li>
+                    Dar tratamiento, a nombre del Responsable, a los datos personales conforme a los principios que los
+                    tutelan.
+                </li>
+                <li>
+                    Salvaguardar la seguridad de las bases de datos en los que se contengan datos personales.
+                </li>
+                <li>
+                    Guardar confidencialidad respecto del tratamiento de los datos personales.
+                </li>
+            </ol>
+            <b>PARÁGRAFO:</b><br /><br />
+            En el evento de presentarse algún incidente, definido como la violación de los códigos de seguridad o la
+            pérdida, robo y/o acceso no autorizado de información de una base de datos física o automatizada EL
+            ENCARGADO debe reportar al RESPONSABLE dentro de los 5 días hábiles siguientes al conocimiento del incidente
+            al siguiente correo electrónico
+            <span name="correo_contratante">_______</span>
+            . Las partes de común acuerdo analizarán las causas del incidente,
+            para el efectivo manejo del mismo y su reporte a la Superintendencia de Industria y Comercio a más tardar
+            dentro los 15 días hábiles siguientes al momento en que se detecten.
+        </li>
+        <li>
+            <b>EXTINCIÓN</b> El presente contrato podrá extinguirse por las siguientes causas:
+            <ol>
+                <li>
+                    Por el cumplimiento de las obligaciones principales del presente contrato.
+                </li>
+                <li>
+                    Por la terminación del plazo temporal acordado, en su caso.
+                </li>
+                <li>
+                    Por ser declarada cualquiera de las partes en estado judicial de suspensión de pagos, quiebra o
+                    concurso de acreedores y fuese demostrada una situación de insolvencia o cese de actividades, o se
+                    iniciase un proceso de liquidación o disolución.
+                </li>
+                <li>
+                    Por las demás causas previstas en Derecho.
+                </li>
+                <li>
+                    En caso de incumplimiento por alguna de las partes de las obligaciones asumidas en el presente
+                    contrato.
+                </li>
+            </ol>
+        </li>
+        <li>
+            <b>CLÁUSULA DE SALVAGUARDA.</b><br /><br />
+            Las cláusulas del presente contrato son independientes y deben ser consideradas una a una, de tal forma que
+            si alguna de ellas pasara a ser inválida, ilegal o inejecutable en virtud de alguna norma jurídica, se
+            considerará ineficaz en la medida que corresponda, pero en lo demás, este contrato conservará su validez y
+            eficacia en cuanto al resto del contenido, estipulaciones y obligaciones.<br /><br />
+            Las partes contratantes acuerdan sustituir la cláusula o cláusulas afectadas de invalidez, ilegalidad o
+            imposibilidad de ejecutar por otra u otras que tengan los efectos económicos más parecidos a los de las
+            sustituidas.
+        </li>
+        <li>
+            <b>LEGISLACIÓN APLICABLE.</b><br /><br />
+            Para la resolución de todas las controversias o cuestiones relacionadas con el presente contrato, será de
+            aplicación directa la legislación colombiana, específicamente el Ley 1581 de 2012, 1266 de 2008 y normas
+            reglamentarias, Código Civil, Código de Comercio y demás legislación vigente aplicable a las relaciones
+            comerciales entre empresas, renunciando expresamente a cualquier otro tipo de legislación aplicable.
+        </li>
+        <li>
+            <b>FINALIZACIÓN DEL CONTRATO:</b> Una vez terminado este Contrato por cualquier causa, EL ENCARGADO deberá
+            suspender todas las actividades encaminadas al tratamiento de datos personales regulado por este contrato y
+            deberá enviar o eliminar cuando sea posible toda la información que EL RESPONSABLE haya entregado.
+        </li>
+    </ol>
+    <p>
+        En constancia de aceptación de las partes intervinientes con el contenido de este documentos, se firma el
+        presente acuerdo, por los aquí intervinientes, el
+        <span name="fecha_firma">_______</span> en
+        <span name="municipio_firma">_______</span>en dos ejemplares de
+        <span name="cantidad_hojas">_______</span> hojas útiles cada uno, siendo una copia para EL RESPONSABLE, y la
+        otra para EfL ENCARGADO DEL TRATAMIENTO.
+    </p>
+    <p><br /><br /><br /><br />
+        <span>_____________________</span><br />
+        RESPONSABLE DE LOS DATOS <br />
+        <span name="nombre_empresa_contratante">_______</span><br />
+        NIT. <span name="nit_empresa_contratante">_______</span>
+    </p>
+    <p><br /><br /><br /><br />
+        <span>_____________________</span><br />
+        ENCARGADO DEL TRATAMIENTO <br />
+        TRÉBOL JURÍDICO S.A.S. <br />
+        NIT. 900.477.900-6
+    </p>
+</span>

@@ -1,0 +1,394 @@
+{
+    _id: ObjectId('61a818b1ff52d90009455638'),
+    config: [
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'ju'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo del representante legal de la parte contratante'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo del contratante'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_contratante',
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde está ubicado el representante legal de la parte contratante'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde está ubicado el contratante'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_contratante',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione el sexo de la parte contratante',
+            name: 'sexo_contratante',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento del representante legal de la parte contratante'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento del contratante'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_contratante',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía del representante legal de la parte contratante'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía del contratante'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_contratante',
+            prereq: [
+                {
+                    k: 'tipo_documento_contratante',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería del representante legal de la parte contratante'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería del contratante'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_contratante',
+            prereq: [
+                {
+                    k: 'tipo_documento_contratante',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte del representante legal de la parte contratante'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte del contratante'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_contratante',
+            prereq: [
+                {
+                    k: 'tipo_documento_contratante',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación del representante legal de la parte contratante'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación del contratante'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_exp_documento_contratante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_contratante',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'ju'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_contratante',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'ju'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el porcentaje correspondiente al cobro prejurídico',
+            help: 'numero',
+            name: 'cobro_prejuridico',
+            type: 'number'
+        },
+        {
+            description: 'Digite el porcentaje correspondiente al cobro jurídico o extrajurídico',
+            help: 'numero',
+            name: 'cobro_juridico',
+            type: 'number'
+        },
+        {
+            description: 'Digite la dirección de la parte contratante',
+            help: 'direccion',
+            name: 'direccion_contratante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono de la parte contratante',
+            help: 'telefono',
+            name: 'telefono_contratante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio donde se firma el presente contrato',
+            help: 'municipio',
+            name: 'municipio_firma',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        },
+        {
+            description: 'Digite el correo de la parte contratante',
+            help: 'correo',
+            name: 'correo_contratante',
+            type: 'text'
+        },
+        {
+            description: 'Digite la cantidad de hojas que tiene el presente contrato',
+            help: 'numero',
+            name: 'cantidad_hojas',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'ju'
+                }
+            ],
+            type: 'number'
+        }
+    ],
+    operation: [],
+    sign: [
+        'tipo_persona',
+        'nombre_contratante',
+        'municipio_contratante',
+        'sexo_contratante',
+        'tipo_documento_contratante',
+        'cedula_contratante',
+        'cedulae_contratante',
+        'pasaporte_contratante',
+        'municipio_exp_documento_contratante',
+        'nombre_empresa_contratante',
+        'nit_empresa_contratante',
+        'cobro_prejuridico',
+        'cobro_juridico',
+        'direccion_contratante',
+        'telefono_contratante',
+        'municipio_firma',
+        'fecha_firma',
+        'correo_contratante',
+        'cantidad_hojas'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_representante',
+            identification: 'cedula_representante',
+            email: 'correo_representante',
+            type: 'representante'
+        },
+        {
+            name: 'nombre_contratante',
+            identification: 'cedula_contratante|cedulae_contratante|pasaporte_contratante',
+            email: 'correo_contratante',
+            type: 'contratante'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_representante',
+            value: 'VANESSA DEL CARMEN FOTICH GRAU'
+        },
+        {
+            name: 'cedula_representante',
+            value: '1.128.267.734'
+        },
+        {
+            name: 'correo_representante',
+            value: 'vanessafortich@treboljuridico.com'
+        }
+    ],
+    preBuildData: [],
+    username: '031afdbd-0075-4987-ba7d-464be11414f5',
+    name: 'CONTRATO COMERCIAL DE GESTIÓN DE COBRANZA TREBOL JURIDICO',
+    price: 5000,
+    help: {
+        nombre: 'Ejemplo: Carolina Andrea Diaz Diaz',
+        municipio: 'Ejemplo: Medellín',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        nombre_empresa: 'Ejemplo: Trébol Jurídico S.A.S.',
+        nit_empresa: 'Ejemplo: 900.477.900-6',
+        numero: 'Ejemplo: 12',
+        direccion: 'Ejemplo: Carrera 70 #45-15',
+        telefono: 'Ejemplo: (4)5816777',
+        fecha: '01 de Enero del 2022',
+        correo: 'Ejemplo: ejemplo@gmail.com'
+    },
+    build: 4,
+    createdAt: ISODate('2021-12-02T00:52:01.378Z'),
+    updatedAt: ISODate('2021-12-02T00:52:01.378Z')
+}
