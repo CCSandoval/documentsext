@@ -1,0 +1,138 @@
+{
+    _id: ObjectId('61b896c23b8f8d0009a9cfd4'),
+    config: [
+        {
+            description: 'Digite el nombre completo de la persona',
+            help: 'nombre',
+            name: 'nombre_cliente',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el sexo de la persona',
+            name: 'sexo_cliente',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: 'Seleccione el tipo de documento de la persona',
+            help: 'tipo_documento',
+            name: 'tipo_documento_cliente',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía de la persona',
+            help: 'cedula',
+            name: 'cedula_cliente',
+            prereq: [
+                {
+                    k: 'tipo_documento_cliente',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería de la persona',
+            help: 'cedula',
+            name: 'cedulae_cliente',
+            prereq: [
+                {
+                    k: 'tipo_documento_cliente',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte de la persona',
+            help: 'cedula',
+            name: 'pasaporte_cliente',
+            prereq: [
+                {
+                    k: 'tipo_documento_cliente',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite la ciudad en la que se firma el presente contrato',
+            help: 'ciudad',
+            name: 'ciudad_firma',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        },
+        {
+            description: 'Digite el correo electrónico de la persona',
+            help: 'correo',
+            name: 'correo_cliente',
+            type: 'text'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_cliente',
+        'sexo_cliente',
+        'tipo_documento_cliente',
+        'cedula_cliente',
+        'cedulae_cliente',
+        'pasaporte_cliente',
+        'ciudad_firma',
+        'fecha_firma',
+        'correo_cliente'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_cliente',
+            identification: 'cedula_cliente',
+            email: 'correo_cliente',
+            type: 'cliente'
+        }
+    ],
+    preFill: [],
+    preBuildData: [],
+    name: 'AUTORIZACIÓN DE TRATAMIENTO DE DATOS PARA LA REALIZACIÓN DE ESTUDIO DE CONFIABILIDAD',
+    price: 5000,
+    help: {
+        nombre: 'Ejemplo: Carolina Andrea Diaz Diaz',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        ciudad: 'Ejemplo: Medellín',
+        fecha: 'Ejemplo: 14 de Enero del 2022',
+        correo: 'Ejemplo: ejemplo@gmail.com'
+    },
+    build: 3,
+    createdAt: ISODate('2021-12-14T13:06:10.348Z'),
+    updatedAt: ISODate('2021-12-14T13:06:10.348Z')
+}
