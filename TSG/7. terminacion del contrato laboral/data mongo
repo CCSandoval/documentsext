@@ -1,0 +1,114 @@
+{
+    _id: ObjectId('61b78ea9fd1d9b0008969e4a'),
+    config: [
+        {
+            description: 'Seleccione la fecha en la que se realiza la terminación de contrato laboral a término fijo',
+            help: 'fecha',
+            name: 'fecha_hoy',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione el sexo del trabajador',
+            help: 'sexo',
+            name: 'sexo_trabajador',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre del trabajador',
+            help: 'nombre',
+            name: 'nombre_trabajador',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione la fecha en la que se pacto el contrato laboral a termino fijo',
+            help: 'fecha',
+            name: 'fecha_t_contrato',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la fecha en la que se terminará el vínculo laboral',
+            help: 'fecha',
+            name: 'fecha_t_laboral',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la empresa que hará el pacto de exclusión salarial con el trabajador',
+            help: 'empresas',
+            name: 'empresa',
+            options: [
+                {
+                    name: 'TSG THE IT EXPERTS S.A.S.',
+                    value: 'tsg'
+                },
+                {
+                    name: 'INNOVA DTI S.A.S.',
+                    value: 'inn'
+                },
+                {
+                    name: 'IT4U S.A.S.',
+                    value: 'it4'
+                }
+            ],
+            type: 'clausula',
+            value: 'tsg'
+        }
+    ],
+    operation: [],
+    sign: [
+        'fecha_hoy',
+        'sexo_trabajador',
+        'nombre_trabajador',
+        'fecha_t_contrato',
+        'fecha_t_laboral',
+        'empresa'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_g_t_humano',
+            identification: 'cedula_g_t_humano',
+            name: 'nombre_g_t_humano',
+            type: 'g_t_humano'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_g_t_humano',
+            value: 'Diana Carolian Esparza Moreno'
+        },
+        {
+            name: 'cedula_g_t_humano',
+            value: '1024471102'
+        },
+        {
+            name: 'correo_g_t_humano',
+            value: ' jeyson.agudelo@micontrato.co'
+        }
+    ],
+    preBuildData: [],
+    name: 'TERMINACIÓN DEL CONTRATO LABORAL A TÉRMINO FIJO TSG',
+    price: 5000,
+    help: {
+        fecha: 'Ejemplo: 03 de Enero del 2022',
+        sexo: 'Ejemplo: Femenino',
+        nombre: 'Ejemplo: Andrea Sofia Diaz Diaz',
+        empresas: 'Ejemplo: TSG THE IT EXPERTS S.A.S.',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        correo: 'Ejemplo: ejemplo@tsg.net.com'
+    },
+    build: 0,
+    createdAt: ISODate('2021-12-13T18:19:21.826Z'),
+    updatedAt: ISODate('2021-12-13T18:19:21.826Z')
+}

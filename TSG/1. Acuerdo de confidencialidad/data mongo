@@ -1,0 +1,232 @@
+{
+    _id: ObjectId('61b78cd9fd1d9b0008969e45'),
+    config: [
+        {
+            description: 'Seleccione la empresa que hará el acuerdo de confidencialidad con el trabajador',
+            help: 'empresas',
+            name: 'empresa',
+            options: [
+                {
+                    name: 'TSG THE IT EXPERTS S.A.S.',
+                    value: 'tsg'
+                },
+                {
+                    name: 'INNOVA DTI S.A.S.',
+                    value: 'inn'
+                },
+                {
+                    name: 'IT4U S.A.S.',
+                    value: 'it4'
+                }
+            ],
+            type: 'clausula',
+            value: 'tsg'
+        },
+        {
+            description: 'Digite el número de teléfono del representante',
+            help: 'telefono',
+            name: 'telefono_representante',
+            type: 'name'
+        },
+        {
+            description: '¿Desea agregar otro número de teléfono?',
+            help: 'telefono',
+            name: 'telefono_repre_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el otro número de teléfono',
+            help: 'telefono',
+            name: 'telefono_representante_2',
+            prereq: [
+                {
+                    k: 'telefono_repre_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el nombre del trabajador',
+            help: 'nombre',
+            name: 'nombre_trabajador',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del trabajador',
+            help: 'tipo_documento',
+            name: 'tipo_documento_trabajador',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del trabajador',
+            help: 'cedula',
+            name: 'cedula_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del trabajador',
+            help: 'cedula',
+            name: 'cedulae_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del trabajador',
+            help: 'pasaporte',
+            name: 'pasaporte_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el domicilio y dirección donde se encuentra el trabajador',
+            help: 'direccion',
+            name: 'direccion_trabajador',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del trabajador',
+            help: 'telefono',
+            name: 'telefono_trabajador',
+            type: 'name'
+        },
+        {
+            description: '¿Desea agregar otro número de teléfono?',
+            help: 'telefono',
+            name: 'telefono_traba_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el otro número de teléfono',
+            help: 'telefono',
+            name: 'telefono_trabajador_2',
+            prereq: [
+                {
+                    k: 'telefono_traba_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del trabajador',
+            help: 'correo',
+            name: 'correo_trabajador',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente acuerdo',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        }
+    ],
+    operation: [],
+    sign: [
+        'empresa',
+        'telefono_representante',
+        'telefono_repre_2',
+        'telefono_representante_2',
+        'nombre_trabajador',
+        'tipo_documento_trabajador',
+        'cedula_trabajador',
+        'cedulae_trabajador',
+        'pasaporte_trabajador',
+        'direccion_trabajador',
+        'telefono_trabajador',
+        'telefono_traba_2',
+        'telefono_trabajador_2',
+        'correo_trabajador',
+        'fecha_firma'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_trabajador',
+            identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
+            name: 'nombre_r_empresa',
+            type: 'repre_empresa'
+        },
+        {
+            email: 'correo_trabajador',
+            identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
+            name: 'nombre_trabajador',
+            type: 'trabajador'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_r_empresa',
+            value: 'Representante Legal de la parte reveladora'
+        }
+    ],
+    preBuildData: [],
+    name: 'ACUERDO DE CONFIDENCIALIDAD TSG',
+    price: 5000,
+    help: {
+        empresas: 'Ejemplo: TSG THE IT EXPERTS S.A.S.',
+        nombre: 'Ejemplo: Paola Andrea Diaz Diaz',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'AAA1234567',
+        direccion: 'Ejemplo: Dirección Cra 49b N 112-90 Bogotá',
+        telefono: 'Ejemplo: 3214567890',
+        correo: 'Ejemplo: ejemplo@gmail.com',
+        fecha: 'Ejemplo: 03 de Enero del 2022'
+    },
+    build: 0,
+    createdAt: ISODate('2021-12-13T18:11:37.986Z'),
+    updatedAt: ISODate('2021-12-13T18:11:37.986Z')
+}
