@@ -1,0 +1,3882 @@
+<style type="text/css">
+  .main_title {
+    background-color: #bfbfbf;
+    text-align: center;
+  }
+
+  .second_title {
+    background-color: #d9d9d9;
+    text-align: center;
+  }
+
+  .logo img {
+    width: 10cm
+  }
+
+  .text_center {
+    text-align: center
+  }
+</style>
+
+<table class="text-center" id="table_1" border="1" style="border: 0.5px solid #808080">
+  <tr>
+    <td colspan="9" class="main_title" style="width:21cm">INVENTARIO (ANEXO 1)</td>
+  </tr>
+  <tr>
+    <td class="second_title">Fecha</td>
+    <td class="second_title">Día</td>
+    <td class="second_title">Mes</td>
+    <td class="second_title">Año</td>
+    <td colspan="4" rowspan="4"></td>
+    <td rowspan="4" class="logo"><img src="https://mi-contrato-static.s3.amazonaws.com/alborada/alborada.jpg" /></td>
+  </tr>
+  <tr>
+    <td class="text_center">Entrega</td>
+    <td><span name="dia_entrega">________</span></td>
+    <td><span name="mes_entrega">________</span></td>
+    <td><span name="ano_entrega">________</span></td>
+  </tr>
+  <tr>
+    <td class="text_center">Recibe</td>
+    <td><span name="dia_recibe">________</span></td>
+    <td><span name="mes_recibe">________</span></td>
+    <td><span name="ano_recibe">________</span></td>
+  </tr>
+  <tr>
+    <td class="text_center">Contrato</td>
+    <td><span name="dia_contrato">________</span></td>
+    <td><span name="mes_contrato">________</span></td>
+    <td><span name="ano_contrato">________</span></td>
+  </tr>
+  <tr>
+    <td class="second_title">Arrendatario</td>
+    <td colspan="7"><span name="nombre_arrendatario">________</span></td>
+    <td>
+      Identificación:
+      <span name="tipo_documento_arrendatario_cc">C.C.
+        <span name="cedula_arrendatario">________</span>
+      </span>
+      <span name="tipo_documento_arrendatario_ce" hidden>C.E.
+        <span name="cedulae_arrendatario">________</span>
+      </span>
+      <span name="tipo_documento_arrendatario_pa" hidden>PA.
+        <span name="pasaporte_arrendatario">________</span>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td class="second_title">Inmueble</td>
+    <td colspan="7"><span name="direccion_inmueble">________</span></td>
+    <td>
+      Municipio:
+      <span name="municipio_inmueble">________</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="main_title">Área/Zona</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td rowspan="2" colspan="2" class="main_title">Tipo Material</td>
+    <td colspan="4" class="main_title">Estado de Entrega </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="second_title">Ingreso</td>
+    <td class="second_title">B</td>
+    <td class="second_title">R</td>
+    <td class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+
+  <tr name="existe_pta_ppal_ing_s">
+    <td colspan="2">Puerta principal</td>
+    <td><span name="cantidad_pta_ppal_ing">________</span></td>
+    <td colspan="2"><span name="material_pta_ppal_ing">________</span></td>
+    <td class="text_center">
+      <span name="estado_pta_ppal_ing_b">x</span>
+      <span name="estado_pta_ppal_ing_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_pta_ppal_ing_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_pta_ppal_ing_m" hidden>x</span></td>
+    <td><span name="observacion_pta_ppal_ing">________</span></td>
+  </tr>
+  <tr name="existe_pta_ppal_ing_n" hidden>
+    <td colspan="2">Puerta principal</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_cerradura_ing_s">
+    <td colspan="2">Cerraduras</td>
+    <td><span name="cantidad_cerradura_ing">________</span></td>
+    <td colspan="2"><span name="material_cerradura_ing">________</span></td>
+    <td class="text_center">
+      <span name="estado_cerradura_ing_b">x</span>
+      <span name="estado_cerradura_ing_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_cerradura_ing_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_cerradura_ing_m" hidden>x</span></td>
+    <td><span name="observacion_cerradura_ing">________</span></td>
+  </tr>
+  <tr name="existe_cerradura_ing_n" hidden>
+    <td colspan="2">Cerraduras</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_piso_ingreso_ing_s">
+    <td colspan="2">Piso ingreso</td>
+    <td><span name="cantidad_piso_ingreso_ing">________</span></td>
+    <td colspan="2"><span name="material_piso_ingreso_ing">________</span></td>
+    <td class="text_center">
+      <span name="estado_piso_ingreso_ing_b">x</span>
+      <span name="estado_piso_ingreso_ing_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_piso_ingreso_ing_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_piso_ingreso_ing_m" hidden>x</span></td>
+    <td><span name="observacion_piso_ingreso_ing">________</span></td>
+  </tr>
+  <tr name="existe_piso_ingreso_ing_n" hidden>
+    <td colspan="2">Piso ingreso</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_ing_s">
+    <td colspan="2">Iluminación</td>
+    <td><span name="cantidad_iluminacion_ing">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_ing">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_ing_b">x</span>
+      <span name="estado_iluminacion_ing_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_ing_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_ing_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_ing">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_ing_n" hidden>
+    <td colspan="2">Iluminación</td>
+    <td>-</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_timbre_ing_s">
+    <td colspan="2">Timbre</td>
+    <td><span name="cantidad_timbre_ing">________</span></td>
+    <td colspan="2"><span name="material_timbre_ing">________</span></td>
+    <td class="text_center">
+      <span name="estado_timbre_ing_b">x</span>
+      <span name="estado_timbre_ing_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_timbre_ing_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_timbre_ing_m" hidden>x</span></td>
+    <td><span name="observacion_timbre_ing">________</span></td>
+  </tr>
+  <tr name="existe_timbre_ing_n" hidden>
+    <td colspan="2">Timbre</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_guarda_escobas_ing_s">
+    <td colspan="2">Guarda escobas</td>
+    <td><span name="cantidad_guarda_escobas_ing">________</span></td>
+    <td colspan="2"><span name="material_guarda_escobas_ing">________</span></td>
+    <td class="text_center">
+      <span name="estado_guarda_escobas_ing_b">x</span>
+      <span name="estado_guarda_escobas_ing_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_guarda_escobas_ing_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_guarda_escobas_ing_m" hidden>x</span></td>
+    <td><span name="observacion_guarda_escobas_ing">________</span></td>
+  </tr>
+  <tr name="existe_guarda_escobas_ing_n" hidden>
+    <td colspan="2">Guarda escobas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="main_title">Área/Zona</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td rowspan="2" colspan="2" class="main_title">Tipo Material</td>
+    <td colspan="4" class="main_title">Estado de Entrega </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="second_title">Cocina</td>
+    <td class="second_title">B</td>
+    <td class="second_title">R</td>
+    <td class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+
+  <tr name="existe_puerta_coc_s">
+    <td colspan="2">Puerta</td>
+    <td><span name="cantidad_puerta_coc">________</span></td>
+    <td colspan="2"><span name="material_puerta_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_coc_b">x</span>
+      <span name="estado_puerta_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_coc_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_coc">________</span></td>
+  </tr>
+  <tr name="existe_guarda_escobas_ing_n" hidden>
+    <td colspan="2">Puerta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_piso_coc_s">
+    <td colspan="2">Piso</td>
+    <td><span name="cantidad_piso_coc">________</span></td>
+    <td colspan="2"><span name="material_piso_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_piso_coc_b">x</span>
+      <span name="estado_piso_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_piso_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_piso_coc_m" hidden>x</span></td>
+    <td><span name="observacion_piso_coc">________</span></td>
+  </tr>
+  <tr name="existe_piso_coc_n" hidden>
+    <td colspan="2">Piso</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_paredes_coc_s">
+    <td colspan="2">Paredes</td>
+    <td><span name="cantidad_paredes_coc">________</span></td>
+    <td colspan="2"><span name="material_paredes_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_paredes_coc_b">x</span>
+      <span name="estado_paredes_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_paredes_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_paredes_coc_m" hidden>x</span></td>
+    <td><span name="observacion_paredes_coc">________</span></td>
+  </tr>
+  <tr name="existe_paredes_coc_n" hidden>
+    <td colspan="2">Paredes</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_techo_coc_s">
+    <td colspan="2">Techo</td>
+    <td><span name="cantidad_techo_coc">________</span></td>
+    <td colspan="2"><span name="material_techo_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_techo_coc_b">x</span>
+      <span name="estado_techo_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_techo_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_techo_coc_m" hidden>x</span></td>
+    <td><span name="observacion_techo_coc">________</span></td>
+  </tr>
+  <tr name="existe_techo_coc_n" hidden>
+    <td colspan="2">Techo</td>
+    <td>-</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_energia_coc_s">
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td><span name="cantidad_energia_coc">________</span></td>
+    <td colspan="2"><span name="material_energia_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_energia_coc_b">x</span>
+      <span name="estado_energia_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_energia_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_energia_coc_m" hidden>x</span></td>
+    <td><span name="observacion_energia_coc">________</span></td>
+  </tr>
+  <tr name="existe_energia_coc_n" hidden>
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tv_coc_s">
+    <td>TV</td>
+    <td><span name="cantidad_tv_coc">________</span></td>
+    <td colspan="2"><span name="material_tv_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_tv_coc_b">x</span>
+      <span name="estado_tv_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tv_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tv_coc_m" hidden>x</span></td>
+    <td><span name="observacion_tv_coc">________</span></td>
+  </tr>
+  <tr name="existe_tv_coc_n" hidden>
+    <td>TV</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tel_coc_s">
+    <td>TEL</td>
+    <td><span name="cantidad_tel_coc">________</span></td>
+    <td colspan="2"><span name="material_tel_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_tel_coc_b">x</span>
+      <span name="estado_tel_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tel_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tel_coc_m" hidden>x</span></td>
+    <td><span name="observacion_tel_coc">________</span></td>
+  </tr>
+  <tr name="existe_tel_coc_n" hidden>
+    <td>TEL</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_coc_s">
+    <td class="text_center" colspan="2">Iluminación</td>
+    <td><span name="cantidad_iluminacion_coc">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_coc_b">x</span>
+      <span name="estado_iluminacion_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_coc_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_coc">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_coc_n" hidden>
+    <td colspan="2">Iluminación</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_sencillo_coc_s">
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td><span name="cantidad_sencillo_coc">________</span></td>
+    <td colspan="2"><span name="material_sencillo_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_sencillo_coc_b">x</span>
+      <span name="estado_sencillo_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sencillo_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sencillo_coc_m" hidden>x</span></td>
+    <td><span name="observacion_sencillo_coc">________</span></td>
+  </tr>
+  <tr name="existe_sencillo_coc_n" hidden>
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_doble_coc_s">
+    <td>Doble</td>
+    <td><span name="cantidad_doble_coc">________</span></td>
+    <td colspan="2"><span name="material_doble_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_doble_coc_b">x</span>
+      <span name="estado_doble_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_doble_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_doble_coc_m" hidden>x</span></td>
+    <td><span name="observacion_doble_coc">________</span></td>
+  </tr>
+  <tr name="existe_doble_coc_n" hidden>
+    <td>Doble</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_triple_coc_s">
+    <td>Triple</td>
+    <td><span name="cantidad_triple_coc">________</span></td>
+    <td colspan="2"><span name="material_triple_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_triple_coc_b">x</span>
+      <span name="estado_triple_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_triple_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_triple_coc_m" hidden>x</span></td>
+    <td><span name="observacion_triple_coc">________</span></td>
+  </tr>
+  <tr name="existe_triple_coc_n" hidden>
+    <td>Triple</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+
+  <tr name="existe_lavaplatos_coc_s">
+    <td colspan="2">Lavaplatos</td>
+    <td><span name="cantidad_lavaplatos_coc">________</span></td>
+    <td colspan="2"><span name="material_lavaplatos_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_lavaplatos_coc_b">x</span>
+      <span name="estado_lavaplatos_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_lavaplatos_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_lavaplatos_coc_m" hidden>x</span></td>
+    <td><span name="observacion_lavaplatos_coc">________</span></td>
+  </tr>
+  <tr name="existe_lavaplatos_coc_n" hidden>
+    <td colspan="2">Lavaplatos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_griferia_coc_s">
+    <td colspan="2">Grifería</td>
+    <td><span name="cantidad_griferia_coc">________</span></td>
+    <td colspan="2"><span name="material_griferia_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_griferia_coc_b">x</span>
+      <span name="estado_griferia_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_griferia_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_griferia_coc_m" hidden>x</span></td>
+    <td><span name="observacion_griferia_coc">________</span></td>
+  </tr>
+  <tr name="existe_griferia_coc_n" hidden>
+    <td colspan="2">Grifería</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td class="text_center"></td>
+    <td class="text_center"></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_estufa_coc_s">
+    <td colspan="2">Estufa</td>
+    <td><span name="cantidad_estufa_coc">________</span></td>
+    <td colspan="2"><span name="material_estufa_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_estufa_coc_b">x</span>
+      <span name="estado_estufa_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_estufa_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_estufa_coc_m" hidden>x</span></td>
+    <td><span name="observacion_estufa_coc">________</span></td>
+  </tr>
+  <tr name="existe_estufa_coc_n" hidden>
+    <td colspan="2">Estufa</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_campana_extractora_coc">
+    <td colspan="2">Campana extractora</td>
+    <td><span name="cantidad_campana_ext_coc">________</span></td>
+    <td colspan="2"><span name="material_campana_ext_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_campana_ext_coc_b">x</span>
+      <span name="estado_campana_ext_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_campana_ext_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_campana_ext_coc_m" hidden>x</span></td>
+    <td><span name="observacion_campana_ext_coc">________</span></td>
+  </tr>
+  <tr name="existe_campana_extractora_coc" hidden>
+    <td colspan="2">Campana extractora</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_muebles_coc_s">
+    <td colspan="2">Muebles</td>
+    <td><span name="cantidad_muebles_coc">________</span></td>
+    <td colspan="2"><span name="material_muebles_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_muebles_coc_b">x</span>
+      <span name="estado_muebles_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_muebles_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_muebles_coc_m" hidden>x</span></td>
+    <td><span name="observacion_muebles_coc">________</span></td>
+  </tr>
+  <tr name="existe_muebles_coc_n" hidden>
+    <td colspan="2">Muebles</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr>
+    <td colspan="2">Red de gas</td>
+    <td>
+      <span name="existe_red_gas_coc_s">Sí</span>
+      <span name="existe_red_gas_coc_n" hidden>No</span>
+    </td>
+    <td colspan="2">
+      <span name="existe_red_gas_coc_s">
+        <span name="material_red_gas_coc">________</span>
+      </span>
+    </td>
+    <td class="text_center">
+      <span name="estado_red_gas_coc_b">x</span>
+      <span name="estado_red_gas_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_red_gas_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_red_gas_coc_m" hidden>x</span></td>
+    <td><span name="observacion_red_gas_coc">________</span></td>
+  </tr>
+  
+  <tr name=existe_calentador_coc_s">
+    <td colspan="2">Calentador</td>
+    <td><span name="cantidad_calentador_coc">________</span></td>
+    <td colspan="2"><span name="material_calentador_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_calentador_coc_b">x</span>
+      <span name="estado_calentador_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_calentador_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_calentador_coc_m" hidden>x</span></td>
+    <td><span name="observacion_calentador_coc">________</span></td>
+  </tr>
+  <tr name="existe_calentador_coc_n" hidden>
+    <td colspan="2">Calentador</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_lavadero_coc_s">  
+    <td colspan="2">Lavadero</td>
+    <td><span name="cantidad_lavadero_coc">________</span></td>
+    <td colspan="2"><span name="material_lavadero_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_lavadero_coc_b">x</span>
+      <span name="estado_lavadero_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_lavadero_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_lavadero_coc_m" hidden>x</span></td>
+    <td><span name="observacion_lavadero_coc">________</span></td>
+  </tr>
+  <tr name="existe_lavadero_coc_n" hidden>
+    <td colspan="2">Lavadero</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tendero_coc_s">
+    <td colspan="2">Tendero</td>
+    <td><span name="cantidad_tendero_coc">________</span></td>
+    <td colspan="2"><span name="material_tendero_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_tendero_coc_b">x</span>
+      <span name="estado_tendero_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tendero_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tendero_coc_m" hidden>x</span></td>
+    <td><span name="observacion_tendero_coc">________</span></td>
+  </tr>
+  <tr name="existe_tendero_coc_n" hidden>
+    <td colspan="2">Tendero</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2">Guarda escobas</td>
+    <td>
+      <span name="existe_guarda_esc_coc_s">Sí</span>
+      <span name="existe_guarda_esc_coc_n" hidden>No</span>
+    </td>
+    <td colspan="2"><span name="material_guarda_esc_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_guarda_esc_coc_b">x</span>
+      <span name="estado_guarda_esc_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_guarda_esc_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_guarda_esc_coc_m" hidden>x</span></td>
+    <td><span name="observacion_guarda_esc_coc">________</span></td>
+  </tr>
+
+  <tr name="existe_ventanas_coc_s">
+    <td colspan="2">Ventanas</td>
+    <td><span name="cantidad_ventana_coc">________</span></td>
+    <td colspan="2"><span name="material_ventana_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_ventana_coc_b">x</span>
+      <span name="estado_ventana_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ventana_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ventana_coc_m" hidden>x</span></td>
+    <td><span name="observacion_ventana_coc">________</span></td>
+  </tr>
+  <tr name="existe_ventanas_coc_n" hidden>
+    <td colspan="2">Ventanas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_poceta_coc_s">
+    <td colspan="2">Poceta</td>
+    <td><span name="cantidad_poceta_coc">________</span></td>
+    <td colspan="2"><span name="material_poceta_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_poceta_coc_b">x</span>
+      <span name="estado_poceta_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_poceta_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_poceta_coc_m" hidden>x</span></td>
+    <td><span name="observacion_poceta_coc">________</span></td>
+  </tr>
+  <tr name="existe_poceta_coc_n" hidden>
+    <td colspan="2">Poceta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_mueble_aux_coc_s">
+    <td colspan="2">Mueble auxiliar</td>
+    <td><span name="cantidad_mueble_aux_coc">________</span></td>
+    <td colspan="2"><span name="material_mueble_aux_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_mueble_aux_coc_b">x</span>
+      <span name="estado_mueble_aux_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_mueble_aux_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_mueble_aux_coc_m" hidden>x</span></td>
+    <td><span name="observacion_mueble_aux_coc">________</span></td>
+  </tr>
+  <tr name="existe_mueble_aux_coc_n" hidden>
+    <td colspan="2">Mueble auxiliar</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_barra_ame_coc_s">
+    <td colspan="2">Barra americana</td>
+    <td><span name="cantidad_barra_ame_coc">________</span></td>
+    <td colspan="2"><span name="material_barra_ame_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_barra_ame_coc_b">x</span>
+      <span name="estado_barra_ame_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_barra_ame_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_barra_ame_coc_m" hidden>x</span></td>
+    <td><span name="observacion_barra_ame_coc">________</span></td>
+  </tr>
+  <tr name="existe_barra_ame_coc_n" hidden>
+    <td colspan="2">Barra americana</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_conex_lav_coc_s">
+    <td colspan="2">Conexión lavadora</td>
+    <td><span name="cantidad_conex_lav_coc">________</span></td>
+    <td colspan="2"><span name="material_conex_lav_coc">________</span></td>
+    <td class="text_center">
+      <span name="estado_conex_lav_coc_b">x</span>
+      <span name="estado_conex_lav_coc_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_conex_lav_coc_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_conex_lav_coc_m" hidden>x</span></td>
+    <td><span name="observacion_conex_lav_coc">________</span></td>
+  </tr>
+  <tr name="existe_conex_lav_coc_n" hidden>
+    <td colspan="2">Conexión lavadora</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="main_title">Área/Zona</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td rowspan="2" colspan="2" class="main_title">Tipo Material</td>
+    <td colspan="4" class="main_title">Estado de Entrega </td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="second_title">Sala Comedor</td>
+    <td class="second_title">B</td>
+    <td class="second_title">R</td>
+    <td class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+
+  <tr name="existe_piso_sala_c_s">
+    <td class="text_center" colspan="2">Piso</td>
+    <td><span name="cantidad_piso_sala_c">________</span></td>
+    <td colspan="2"><span name="material_piso_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_piso_sala_c_b">x</span>
+      <span name="estado_piso_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_piso_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_piso_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_piso_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_piso_sala_c_n" hidden>
+    <td colspan="2">Piso</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_paredes_sala_c_s">
+    <td class="text_center" colspan="2">Paredes</td>
+    <td><span name="cantidad_paredes_sala_c">________</span></td>
+    <td colspan="2"><span name="material_paredes_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_paredes_sala_c_b">x</span>
+      <span name="estado_paredes_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_paredes_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_paredes_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_paredes_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_paredes_sala_c_n" hidden>
+    <td colspan="2">Paredes</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_techo_sala_c_s">
+    <td class="text_center" colspan="2">Techo</td>
+    <td><span name="cantidad_techo_sala_c">________</span></td>
+    <td colspan="2"><span name="material_techo_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_techo_sala_c_b">x</span>
+      <span name="estado_techo_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_techo_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_techo_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_techo_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_techo_sala_c_n" hidden>
+    <td colspan="2">Techo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_energia_sala_c_s">
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td><span name="cantidad_energia_sala_c">________</span></td>
+    <td colspan="2"><span name="material_energia_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_energia_sala_c_b">x</span>
+      <span name="estado_energia_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_energia_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_energia_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_energia_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_energia_sala_c_n" hidden>
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tv_sala_c_s">
+    <td>TV</td>
+    <td><span name="cantidad_tv_sala_c">________</span></td>
+    <td colspan="2"><span name="material_tv_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_tv_sala_c_b">x</span>
+      <span name="estado_tv_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tv_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tv_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_tv_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_tv_sala_c_n" hidden>
+    <td>TV</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tel_sala_c_s">
+    <td>TEL</td>
+    <td><span name="cantidad_tel_sala_c">________</span></td>
+    <td colspan="2"><span name="material_tel_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_tel_sala_c_b">x</span>
+      <span name="estado_tel_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tel_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tel_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_tel_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_tel_sala_c_n" hidden>
+    <td>TEL</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_sala_c_s">
+    <td class="text_center" colspan="2">Iluminación</td>
+    <td><span name="cantidad_iluminacion_sala_c">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_sala_c_b">x</span>
+      <span name="estado_iluminacion_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_sala_c_n" hidden>
+    <td>Iluminación</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_sencillo_sala_c_s">
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td><span name="cantidad_sencillo_sala_c">________</span></td>
+    <td colspan="2"><span name="material_sencillo_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_sencillo_sala_c_b">x</span>
+      <span name="estado_sencillo_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sencillo_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sencillo_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_sencillo_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_sencillo_sala_c_n" hidden>
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_doble_sala_c_s">
+    <td>Doble</td>
+    <td><span name="cantidad_doble_sala_c">________</span></td>
+    <td colspan="2"><span name="material_doble_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_doble_sala_c_b">x</span>
+      <span name="estado_doble_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_doble_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_doble_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_doble_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_doble_sala_c_n" hidden>
+    <td>Doble</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_triple_sala_c_s">
+    <td>Triple</td>
+    <td><span name="cantidad_triple_sala_c">________</span></td>
+    <td colspan="2"><span name="material_triple_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_triple_sala_c_b">x</span>
+      <span name="estado_triple_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_triple_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_triple_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_triple_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_triple_sala_c_n" hidden>
+    <td>Triple</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ventanas_sala_c_s">
+    <td class="text_center" colspan="2">Ventanas</td>
+    <td><span name="cantidad_ventana_sala_c">________</span></td>
+    <td colspan="2"><span name="material_ventana_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_ventana_sala_c_b">x</span>
+      <span name="estado_ventana_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ventana_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ventana_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_ventana_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_ventanas_sala_c_n" hidden>
+    <td>Ventanas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_piso_b_sala_c_s">
+    <td class="text_center" rowspan="5">Balcón</td>
+    <td>Piso</td>
+    <td><span name="cantidad_piso_b_sala_c">________</span></td>
+    <td colspan="2"><span name="material_piso_b_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_piso_b_sala_c_b">x</span>
+      <span name="estado_piso_b_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_piso_b_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_piso_b_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_piso_b_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_piso_b_sala_c_n" hidden>
+    <td>Piso</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_b_sala_c_s">
+    <td>Iluminación</td>
+    <td><span name="cantidad_iluminacion_b_sala_c">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_b_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_b_sala_c_b">x</span>
+      <span name="estado_iluminacion_b_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_b_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_b_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_b_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_b_sala_c_n" hidden>
+    <td>Iluminación</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_toma_b_sala_c_s">
+    <td>Toma</td>
+    <td><span name="cantidad_toma_b_sala_c">________</span></td>
+    <td colspan="2"><span name="material_toma_b_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_toma_b_sala_c_b">x</span>
+      <span name="estado_toma_b_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_toma_b_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_toma_b_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_toma_b_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_toma_b_sala_c_n" hidden>
+    <td>Toma</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_interruptor_b_sala_c_s">
+    <td>Interruptor</td>
+    <td><span name="cantidad_interruptor_b_sala_c">________</span></td>
+    <td colspan="2"><span name="material_interruptor_b_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_interruptor_b_sala_c_b">x</span>
+      <span name="estado_interruptor_b_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_interruptor_b_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_interruptor_b_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_interruptor_b_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_interruptor_b_sala_c_n" hidden>
+    <td>Interruptor</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_baranda_b_sala_c_s">
+    <td>Baranda</td>
+    <td><span name="cantidad_baranda_b_sala_c">________</span></td>
+    <td colspan="2"><span name="material_baranda_b_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_baranda_b_sala_c_b">x</span>
+      <span name="estado_baranda_b_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_baranda_b_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_baranda_b_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_baranda_b_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_baranda_b_sala_c_n" hidden>
+    <td>Baranda</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_mueble_aux_sala_s">
+    <td class="text_center" colspan="2">Mueble auxiliar</td>
+    <td><span name="cantidad_mueble_aux_sala_c">________</span></td>
+    <td colspan="2"><span name="material_mueble_aux_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_mueble_aux_sala_c_b">x</span>
+      <span name="estado_mueble_aux_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_mueble_aux_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_mueble_aux_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_mueble_aux_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_baranda_b_sala_c_n" hidden>
+    <td>Mueble auxiliar</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_guarda_escobas_sala_c_s">
+    <td class="text_center" colspan="2">Guarda escobas</td>
+    <td><span name="cantidad_guarda_escobas_sala_c">________</span></td>
+    <td colspan="2"><span name="material_guarda_escobas_sala_c">________</span></td>
+    <td class="text_center">
+      <span name="estado_guarda_escobas_sala_c_b">x</span>
+      <span name="estado_guarda_escobas_sala_c_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_guarda_escobas_sala_c_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_guarda_escobas_sala_c_m" hidden>x</span></td>
+    <td><span name="observacion_guarda_escobas_sala_c">________</span></td>
+  </tr>
+  <tr name="existe_guarda_escobas_sala_c_n" hidden>
+    <td>Guarda escobas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="main_title">Área/Zona</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td rowspan="2" colspan="2" class="main_title">Tipo Material</td>
+    <td colspan="4" class="main_title">Estado de Entrega </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="second_title">Alcoba 1</td>
+    <td class="second_title">B</td>
+    <td class="second_title">R</td>
+    <td class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+  
+  <tr name="existe_puerta_alcoba_1_s">
+    <td colspan="2">Puerta</td>
+    <td><span name="cantidad_puerta_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_puerta_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_alcoba_1_b">x</span>
+      <span name="estado_puerta_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_puerta_alcoba_1_n" hidden>
+    <td>Puerta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+  
+  <tr name="existe_cerradura_alcoba_1_s">
+    <td colspan="2">Cerraduras</td>
+    <td><span name="cantidad_cerradura_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_cerradura_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_cerradura_alcoba_1_b">x</span>
+      <span name="estado_cerradura_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_cerradura_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_cerradura_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_cerradura_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_cerradura_alcoba_1_n" hidden>
+    <td>Cerraduras</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_pisos_alcoba_1_s">
+    <td colspan="2">Pisos</td>
+    <td><span name="cantidad_pisos_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_pisos_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_pisos_alcoba_1_b">x</span>
+      <span name="estado_pisos_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_pisos_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_pisos_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_pisos_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_pisos_alcoba_1_n" hidden>
+    <td>Pisos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_paredes_alcoba_1_s">
+    <td colspan="2">Paredes</td>
+    <td><span name="cantidad_paredes_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_paredes_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_paredes_alcoba_1_b">x</span>
+      <span name="estado_paredes_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_paredes_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_paredes_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_paredes_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_paredes_alcoba_1_n" hidden>
+    <td>Paredes</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_techo_alcoba_1_s">
+    <td colspan="2">Techo</td>
+    <td><span name="cantidad_techo_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_techo_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_techo_alcoba_1_b">x</span>
+      <span name="estado_techo_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_techo_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_techo_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_techo_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_techo_alcoba_1_n" hidden>
+    <td>Techo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_energia_alcoba_1_s">
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td><span name="cantidad_energia_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_energia_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_energia_alcoba_1_b">x</span>
+      <span name="estado_energia_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_energia_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_energia_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_energia_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_energia_alcoba_1_n" hidden>
+    <td>Energía</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tv_alcoba_1_s">
+    <td>TV</td>
+    <td><span name="cantidad_tv_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_tv_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_tv_alcoba_1_b">x</span>
+      <span name="estado_tv_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tv_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tv_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_tv_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_tv_alcoba_1_n" hidden>
+    <td>TV</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tel_alcoba_1_s">
+    <td>TEL</td>
+    <td><span name="cantidad_tel_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_tel_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_tel_alcoba_1_b">x</span>
+      <span name="estado_tel_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tel_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tel_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_tel_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_tel_alcoba_1_n" hidden>
+    <td>TEL</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_alcoba_1_s">
+    <td class="text_center" colspan="2">Iluminación</td>
+    <td><span name="cantidad_iluminacion_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_alcoba_1_b">x</span>
+      <span name="estado_iluminacion_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_alcoba_1_n" hidden>
+    <td>Iluminación</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_sencillo_alcoba_1_s">
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td><span name="cantidad_sencillo_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_sencillo_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_sencillo_alcoba_1_b">x</span>
+      <span name="estado_sencillo_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sencillo_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sencillo_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_sencillo_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_sencillo_alcoba_1_n" hidden>
+    <td>Sencillo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_doble_alcoba_1_s">
+    <td>Doble</td>
+    <td><span name="cantidad_doble_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_doble_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_doble_alcoba_1_b">x</span>
+      <span name="estado_doble_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_doble_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_doble_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_doble_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_doble_alcoba_1_n" hidden>
+    <td>Doble</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_triple_alcoba_1_s">
+    <td>Triple</td>
+    <td><span name="cantidad_triple_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_triple_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_triple_alcoba_1_b">x</span>
+      <span name="estado_triple_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_triple_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_triple_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_triple_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_triple_alcoba_1_n" hidden>
+    <td>Triple</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ventanas_alcoba_1_s">
+    <td class="text_center" colspan="2">Ventanas</td>
+    <td><span name="cantidad_ventanas_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_ventanas_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_ventanas_alcoba_1_b">x</span>
+      <span name="estado_ventanas_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ventanas_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ventanas_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_ventanas_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_ventanas_alcoba_1_n" hidden>
+    <td>Ventenas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_puerta_c_alcoba_1_s">
+    <td class="text_center" rowspan="4">Vestier/Closet</td>
+    <td>Puertas</td>
+    <td><span name="cantidad_puerta_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_puerta_c_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_alcoba_c_1_b">x</span>
+      <span name="estado_puerta_alcoba_c_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_c_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_c_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_c_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_puerta_c_alcoba_1_n" hidden>
+    <td>Puertas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_gaveta_alcoba_1_s">
+    <td>Gaveta</td>
+    <td><span name="cantidad_gaveta_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_gaveta_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_gaveta_alcoba_1_b">x</span>
+      <span name="estado_gaveta_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_gaveta_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_gaveta_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_gaveta_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_gaveta_alcoba_1_n" hidden>
+    <td>Gaveta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_barra_alcoba_1_s">
+    <td>Barras</td>
+    <td><span name="cantidad_barra_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_barra_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_barra_alcoba_1_b">x</span>
+      <span name="estado_barra_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_barra_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_barra_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_barra_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_barra_alcoba_1_n" hidden>
+    <td>Barras</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_divison_alcoba_1_s">
+    <td>División</td>
+    <td><span name="cantidad_division_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_division_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_division_alcoba_1_b">x</span>
+      <span name="estado_division_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_division_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_division_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_division_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_division_alcoba_1_n" hidden>
+    <td>División</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_guarda_escobas_alcoba_1_s">
+    <td class="text_center" colspan="2">Guarda escobas</td>
+    <td><span name="cantidad_guarda_escobas_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_guarda_escobas_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_guarda_escobas_alcoba_1_b">x</span>
+      <span name="estado_guarda_escobas_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_guarda_escobas_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_guarda_escobas_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_guarda_escobas_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_guarda_escobas_alcoba_1_n" hidden>
+    <td>Guarda escobas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_espejos_alcoba_1_s">
+    <td class="text_center" colspan="2">Espejos</td>
+    <td><span name="cantidad_espejos_alcoba_1">________</span></td>
+    <td colspan="2"><span name="material_espejos_alcoba_1">________</span></td>
+    <td class="text_center">
+      <span name="estado_espejos_alcoba_1_b">x</span>
+      <span name="estado_espejos_alcoba_1_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_espejos_alcoba_1_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_espejos_alcoba_1_m" hidden>x</span></td>
+    <td><span name="observacion_espejos_alcoba_1">________</span></td>
+  </tr>
+  <tr name="existe_espejos_alcoba_1_n" hidden>
+    <td>Espejos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="main_title">Área/Zona</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td rowspan="2" colspan="2" class="main_title">Tipo Material</td>
+    <td colspan="4" class="main_title">Estado de Entrega </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="second_title">Alcoba 2</td>
+    <td class="second_title">B</td>
+    <td class="second_title">R</td>
+    <td class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+
+  <tr name="existe_puerta_alcoba_2_s">
+    <td colspan="2">Puerta</td>
+    <td><span name="cantidad_puerta_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_puerta_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_alcoba_2_b">x</span>
+      <span name="estado_puerta_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_puerta_alcoba_2_n" hidden>
+    <td>Puerta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_cerradura_alcoba_2_s">
+    <td colspan="2">Cerraduras</td>
+    <td><span name="cantidad_cerradura_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_cerradura_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_cerradura_alcoba_2_b">x</span>
+      <span name="estado_cerradura_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_cerradura_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_cerradura_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_cerradura_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_cerradura_alcoba_2_n" hidden>
+    <td>Cerradura</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_pisos_alcoba_2_s">
+    <td colspan="2">Pisos</td>
+    <td><span name="cantidad_pisos_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_pisos_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_pisos_alcoba_2_b">x</span>
+      <span name="estado_pisos_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_pisos_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_pisos_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_pisos_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_pisos_alcoba_2_n" hidden>
+    <td>Pisos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_paredes_alcoba_2_s">
+    <td colspan="2">Paredes</td>
+    <td><span name="cantidad_paredes_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_paredes_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_paredes_alcoba_2_b">x</span>
+      <span name="estado_paredes_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_paredes_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_paredes_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_paredes_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_paredes_alcoba_2_n" hidden>
+    <td>Paredes</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_techo_alcoba_2_s">
+    <td colspan="2">Techo</td>
+    <td><span name="cantidad_techo_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_techo_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_techo_alcoba_2_b">x</span>
+      <span name="estado_techo_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_techo_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_techo_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_techo_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_techo_alcoba_2_n" hidden>
+    <td>Techo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_energia_alcoba_2_s">
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td><span name="cantidad_energia_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_energia_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_energia_alcoba_2_b">x</span>
+      <span name="estado_energia_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_energia_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_energia_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_energia_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_energia_alcoba_2_n" hidden>
+    <td>Energía</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tv_alcoba_2_s">
+    <td>TV</td>
+    <td><span name="cantidad_tv_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_tv_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_tv_alcoba_2_b">x</span>
+      <span name="estado_tv_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tv_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tv_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_tv_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_tv_alcoba_2_n" hidden>
+    <td>TV</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tel_alcoba_2_s">
+    <td>TEL</td>
+    <td><span name="cantidad_tel_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_tel_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_tel_alcoba_2_b">x</span>
+      <span name="estado_tel_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tel_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tel_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_tel_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_tel_alcoba_2_n" hidden>
+    <td>TEL</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_alcoba_2_s">
+    <td class="text_center" colspan="2">Iluminación</td>
+    <td><span name="cantidad_iluminacion_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_alcoba_2_b">x</span>
+      <span name="estado_iluminacion_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_alcoba_2_n" hidden>
+    <td>Iluminación</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_sencillo_alcoba_2_s">
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td><span name="cantidad_sencillo_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_sencillo_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_sencillo_alcoba_2_b">x</span>
+      <span name="estado_sencillo_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sencillo_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sencillo_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_sencillo_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_sencillo_alcoba_2_n" hidden>
+    <td>Sencillo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_doble_alcoba_2_s">
+    <td>Doble</td>
+    <td><span name="cantidad_doble_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_doble_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_doble_alcoba_2_b">x</span>
+      <span name="estado_doble_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_doble_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_doble_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_doble_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_doble_alcoba_2_n" hidden>
+    <td>Doble</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_triple_alcoba_2_s">
+    <td>Triple</td>
+    <td><span name="cantidad_triple_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_triple_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_triple_alcoba_2_b">x</span>
+      <span name="estado_triple_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_triple_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_triple_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_triple_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_triple_alcoba_2_n" hidden>
+    <td>Triple</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ventanas_alcoba_2_s">
+    <td class="text_center" colspan="2">Ventanas</td>
+    <td><span name="cantidad_ventanas_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_ventanas_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_ventanas_alcoba_2_b">x</span>
+      <span name="estado_ventanas_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ventanas_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ventanas_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_ventanas_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_ventanas_alcoba_2_n" hidden>
+    <td>Ventanas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_puerta_c_alcoba_2_s">
+    <td class="text_center" rowspan="4">Vestier/Closet</td>
+    <td>Puertas</td>
+    <td><span name="cantidad_puerta_c_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_puerta_c_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_c_alcoba_2_b">x</span>
+      <span name="estado_puerta_c_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_c_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_c_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_c_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_puerta_c_alcoba_2_n" hidden>
+    <td>Puertas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_gaveta_alcoba_2_s">
+    <td>Gaveta</td>
+    <td><span name="cantidad_gaveta_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_gaveta_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_gaveta_alcoba_2_b">x</span>
+      <span name="estado_gaveta_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_gaveta_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_gaveta_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_gaveta_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_gaveta_alcoba_2_n" hidden>
+    <td>Gaveta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_barra_alcoba_2_s">
+    <td>Barras</td>
+    <td><span name="cantidad_barra_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_barra_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_barra_alcoba_2_b">x</span>
+      <span name="estado_barra_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_barra_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_barra_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_barra_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_barra_alcoba_2_n" hidden>
+    <td>Barras</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_divison_alcoba_2_s">
+    <td>División</td>
+    <td><span name="cantidad_division_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_division_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_division_alcoba_2_b">x</span>
+      <span name="estado_division_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_division_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_division_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_division_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_division_alcoba_2_n" hidden>
+    <td>División</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_guarda_escobas_alcoba_2_s">
+    <td class="text_center" colspan="2">Guarda escobas</td>
+    <td><span name="cantidad_guarda_escobas_alcoba_2">________</span></td>
+    <td colspan="2"><span name="material_guarda_escobas_alcoba_2">________</span></td>
+    <td class="text_center">
+      <span name="estado_guarda_escobas_alcoba_2_b">x</span>
+      <span name="estado_guarda_escobas_alcoba_2_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_guarda_escobas_alcoba_2_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_guarda_escobas_alcoba_2_m" hidden>x</span></td>
+    <td><span name="observacion_guarda_escobas_alcoba_2">________</span></td>
+  </tr>
+  <tr name="existe_guarda_escobas_alcoba_2_n" hidden>
+    <td>Guarda escobas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="main_title">Área/Zona</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td rowspan="2" colspan="2" class="main_title">Tipo Material</td>
+    <td colspan="4" class="main_title">Estado de Entrega </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="second_title">Alcoba 3</td>
+    <td class="second_title">B</td>
+    <td class="second_title">R</td>
+    <td class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+  
+  <tr name="existe_puerta_alcoba_3_s">
+    <td colspan="2">Puerta</td>
+    <td><span name="cantidad_puerta_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_puerta_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_alcoba_3_b">x</span>
+      <span name="estado_puerta_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_puerta_alcoba_3_n" hidden>
+    <td>Puerta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_cerradura_alcoba_3_s">
+    <td colspan="2">Cerraduras</td>
+    <td><span name="cantidad_cerradura_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_cerradura_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_cerradura_alcoba_3_b">x</span>
+      <span name="estado_cerradura_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_cerradura_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_cerradura_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_cerradura_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_cerradura_alcoba_3_n" hidden>
+    <td>Cerraduras</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_pisos_alcoba_3_s">
+    <td colspan="2">Pisos</td>
+    <td><span name="cantidad_pisos_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_pisos_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_pisos_alcoba_3_b">x</span>
+      <span name="estado_pisos_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_pisos_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_pisos_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_pisos_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_piso_alcoba_3_n" hidden>
+    <td>Pisos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_paredes_alcoba_3_s">
+    <td colspan="2">Paredes</td>
+    <td><span name="cantidad_paredes_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_paredes_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_paredes_alcoba_3_b">x</span>
+      <span name="estado_paredes_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_paredes_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_paredes_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_paredes_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_paredes_alcoba_3_n" hidden>
+    <td>Paredes</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_techo_alcoba_3_s">
+    <td colspan="2">Techo</td>
+    <td><span name="cantidad_techo_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_techo_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_techo_alcoba_3_b">x</span>
+      <span name="estado_techo_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_techo_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_techo_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_techo_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_techo_alcoba_3_n" hidden>
+    <td>Techo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_energia_alcoba_3_s">
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td><span name="cantidad_energia_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_energia_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_energia_alcoba_3_b">x</span>
+      <span name="estado_energia_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_energia_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_energia_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_energia_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_energia_alcoba_3_n" hidden>
+    <td>Energía</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tv_alcoba_3_s">
+    <td>TV</td>
+    <td><span name="cantidad_tv_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_tv_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_tv_alcoba_3_b">x</span>
+      <span name="estado_tv_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tv_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tv_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_tv_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_tv_alcoba_3_n" hidden>
+    <td>TV</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tel_alcoba_3_s">
+    <td>TEL</td>
+    <td><span name="cantidad_tel_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_tel_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_tel_alcoba_3_b">x</span>
+      <span name="estado_tel_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tel_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tel_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_tel_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_tel_alcoba_3_n" hidden>
+    <td>TEL</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_alcoba_3_s">
+    <td class="text_center" colspan="2">Iluminación</td>
+    <td><span name="cantidad_iluminacion_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_alcoba_3_b">x</span>
+      <span name="estado_iluminacion_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_alcoba_3_n" hidden>
+    <td>Iluminación</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_sencillo_alcoba_3_s">
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td><span name="cantidad_sencillo_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_sencillo_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_sencillo_alcoba_3_b">x</span>
+      <span name="estado_sencillo_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sencillo_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sencillo_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_sencillo_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_sencillo_alcoba_3_n" hidden>
+    <td>Sencillo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_doble_alcoba_3_s">
+    <td>Doble</td>
+    <td><span name="cantidad_doble_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_doble_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_doble_alcoba_3_b">x</span>
+      <span name="estado_doble_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_doble_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_doble_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_doble_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_doble_alcoba_3_n" hidden>
+    <td>Doble</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_triple_alcoba_3_s">
+    <td>Triple</td>
+    <td><span name="cantidad_triple_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_triple_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_triple_alcoba_3_b">x</span>
+      <span name="estado_triple_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_triple_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_triple_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_triple_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_triple_alcoba_3_n" hidden>
+    <td>Triple</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ventanas_alcoba_3_s">
+    <td class="text_center" colspan="2">Ventanas</td>
+    <td><span name="cantidad_ventanas_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_ventanas_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_ventanas_alcoba_3_b">x</span>
+      <span name="estado_ventanas_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ventanas_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ventanas_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_ventanas_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_ventanas_alcoba_3_n" hidden>
+    <td>Ventanas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_puerta_c_alcoba_3_s">
+    <td class="text_center" rowspan="4">Vestier/Closet</td>
+    <td>Puertas</td>
+    <td><span name="cantidad_puerta_c_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_puerta_c_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_c_alcoba_3_b">x</span>
+      <span name="estado_puerta_c_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_c_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_c_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_c_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_puerta_c_alcoba_3_n" hidden>
+    <td>Puertas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_gaveta_alcoba_3_s">
+    <td>Gaveta</td>
+    <td><span name="cantidad_gaveta_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_gaveta_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_gaveta_alcoba_3_b">x</span>
+      <span name="estado_gaveta_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_gaveta_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_gaveta_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_gaveta_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_gaveta_alcoba_3_n" hidden>
+    <td>Gaveta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_barra_alcoba_3_s">
+    <td>Barras</td>
+    <td><span name="cantidad_barra_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_barra_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_barra_alcoba_3_b">x</span>
+      <span name="estado_barra_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_barra_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_barra_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_barra_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_barra_alcoba_3_n" hidden>
+    <td>Barras</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_divison_alcoba_3_s">
+    <td>División</td>
+    <td><span name="cantidad_division_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_division_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_division_alcoba_3_b">x</span>
+      <span name="estado_division_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_division_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_division_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_division_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_division_alcoba_3_n" hidden>
+    <td>División</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_guarda_escobas_alcoba_3_s">
+    <td class="text_center" colspan="2">Guarda escobas</td>
+    <td><span name="cantidad_guarda_escobas_alcoba_3">________</span></td>
+    <td colspan="2"><span name="material_guarda_escobas_alcoba_3">________</span></td>
+    <td class="text_center">
+      <span name="estado_guarda_escobas_alcoba_3_b">x</span>
+      <span name="estado_guarda_escobas_alcoba_3_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_guarda_escobas_alcoba_3_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_guarda_escobas_alcoba_3_m" hidden>x</span></td>
+    <td><span name="observacion_guarda_escobas_alcoba_3">________</span></td>
+  </tr>
+  <tr name="existe_guarda_escobas_alcoba_3_n" hidden>
+    <td>Guarda escobas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="main_title">Área/Zona</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td rowspan="2" colspan="2" class="main_title">Tipo Material</td>
+    <td colspan="4" class="main_title">Estado de Entrega </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="second_title">Baño Alcoba Principal</td>
+    <td class="second_title">B</td>
+    <td class="second_title">R</td>
+    <td class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+
+  <tr name="existe_puerta_bano_alcoba_ppal_s">
+    <td colspan="2">Puerta</td>
+    <td><span name="cantidad_puerta_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_puerta_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_bano_alcoba_ppal_b">x</span>
+      <span name="estado_puerta_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_puerta_bano_alcoba_ppal_n" hidden>
+    <td>Puerta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_cerradura_bano_alcoba_ppal_s">
+    <td colspan="2">Cerraduras</td>
+    <td><span name="cantidad_cerradura_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_cerradura_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_cerradura_bano_alcoba_ppal_b">x</span>
+      <span name="estado_cerradura_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_cerradura_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_cerradura_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_cerradura_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_cerradura_bano_alcoba_ppal_n" hidden>
+    <td>Cerradura</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_lavamanos_bano_alcoba_ppal_s">
+    <td colspan="2">Lavamanos</td>
+    <td><span name="cantidad_lavamanos_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_lavamanos_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_lavamanos_bano_alcoba_ppal_b">x</span>
+      <span name="estado_lavamanos_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_lavamanos_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_lavamanos_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_lavamanos_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_lavamanos_bano_alcoba_ppal_n" hidden>
+    <td>Lavamanos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_griferia_bano_alcoba_ppal_s">
+    <td colspan="2">Grifería</td>
+    <td><span name="cantidad_griferia_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_griferia_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_griferia_bano_alcoba_ppal_b">x</span>
+      <span name="estado_griferia_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_griferia_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_griferia_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_griferia_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_griferia_bano_alcoba_ppal_n" hidden>
+    <td>Grifería</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name=existe_sanitario_bano_alcoba_ppal_s">
+    <td colspan="2">Sanitario</td>
+    <td><span name="cantidad_sanitario_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_sanitario_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_sanitario_bano_alcoba_ppal_b">x</span>
+      <span name="estado_sanitario_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sanitario_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sanitario_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_sanitario_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_sanitario_bano_alcoba_ppal_n" hidden>
+    <td>Sanitario</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_toallero_bano_alcoba_ppal_s">
+    <td colspan="2">Toallero</td>
+    <td><span name="cantidad_toallero_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_toallero_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_toallero_bano_alcoba_ppal_b">x</span>
+      <span name="estado_toallero_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_toallero_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_toallero_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_toallero_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_toallero_bano_alcoba_ppal_n" hidden>
+    <td>Toallero</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_jabonera_bano_alcoba_ppal_s">
+    <td colspan="2">Jabonera</td>
+    <td><span name="cantidad_jabonera_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_jabonera_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_jabonera_bano_alcoba_ppal_b">x</span>
+      <span name="estado_jabonera_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_jabonera_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_jabonera_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_jabonera_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_jabonera_bano_alcoba_ppal_n" hidden>
+    <td>Jabonera</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ducha_bano_alcoba_ppal_s">
+    <td colspan="2">Ducha</td>
+    <td><span name="cantidad_ducha_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_ducha_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_ducha_bano_alcoba_ppal_b">x</span>
+      <span name="estado_ducha_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ducha_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ducha_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_ducha_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_ducha_bano_alcoba_ppal_n" hidden>
+    <td>Ducha</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_espejos_bano_alcoba_ppal_s">
+    <td colspan="2">Espejos</td>
+    <td><span name="cantidad_espejos_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_espejos_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_espejos_bano_alcoba_ppal_b">x</span>
+      <span name="estado_espejos_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_espejos_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_espejos_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_espejos_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_espejos_bano_alcoba_ppal_n" hidden>
+    <td>Espejos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_mueble_lavamanos_bano_alcoba_ppal_s">
+    <td colspan="2">Mueble lavamanos</td>
+    <td><span name="cantidad_mueble_lavamanos_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_mueble_lavamanos_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_mueble_lavamanos_bano_alcoba_ppal_b">x</span>
+      <span name="estado_mueble_lavamanos_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_mueble_lavamanos_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_mueble_lavamanos_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_mueble_lavamanos_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_mueble_lavamanos_bano_alcoba_ppal_n" hidden>
+    <td>Mueble lavamanos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_cabina_bano_alcoba_ppal_s">
+    <td colspan="2">División/Cabina</td>
+    <td><span name="cantidad_cabina_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_cabina_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_cabina_bano_alcoba_ppal_b">x</span>
+      <span name="estado_cabina_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_cabina_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_cabina_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_cabina_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_cabina_bano_alcoba_ppal_n" hidden>
+    <td>División/Cabina</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_pisos_bano_alcoba_ppal_s">
+    <td colspan="2">Pisos</td>
+    <td><span name="cantidad_pisos_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_pisos_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_pisos_bano_alcoba_ppal_b">x</span>
+      <span name="estado_pisos_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_pisos_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_pisos_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_pisos_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_pisos_bano_alcoba_ppal_n" hidden>
+    <td>Pisos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_paredes_bano_alcoba_ppal_s">
+    <td colspan="2">Paredes</td>
+    <td><span name="cantidad_paredes_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_paredes_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_paredes_bano_alcoba_ppal_b">x</span>
+      <span name="estado_paredes_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_paredes_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_paredes_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_paredes_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_paredes_bano_alcoba_ppal_n" hidden>
+    <td>Paredes</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_techo_bano_alcoba_ppal_s">
+    <td colspan="2">Techo</td>
+    <td><span name="cantidad_techo_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_techo_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_techo_bano_alcoba_ppal_b">x</span>
+      <span name="estado_techo_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_techo_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_techo_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_techo_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_techo_bano_alcoba_ppal_n" hidden>
+    <td>Techo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_energia_bano_alcoba_ppal_s">
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td><span name="cantidad_energia_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_energia_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_energia_bano_alcoba_ppal_b">x</span>
+      <span name="estado_energia_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_energia_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_energia_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_energia_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_energia_bano_alcoba_ppal_n" hidden>
+    <td>Energía</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tv_bano_alcoba_ppal_s">
+    <td>TV</td>
+    <td><span name="cantidad_tv_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_tv_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_tv_bano_alcoba_ppal_b">x</span>
+      <span name="estado_tv_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tv_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tv_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_tv_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_tv_bano_alcoba_ppal_n" hidden>
+    <td>TV</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tel_bano_alcoba_ppal_s">
+    <td>TEL</td>
+    <td><span name="cantidad_tel_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_tel_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_tel_bano_alcoba_ppal_b">x</span>
+      <span name="estado_tel_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tel_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tel_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_tel_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_tel_bano_alcoba_ppal_n" hidden>
+    <td>TEL</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_bano_alcoba_ppal_s">
+    <td class="text_center" colspan="2">Iluminación</td>
+    <td><span name="cantidad_iluminacion_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_bano_alcoba_ppal_b">x</span>
+      <span name="estado_iluminacion_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_bano_alcoba_ppal_n" hidden>
+    <td>Iluminación</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_sencillo_bano_alcoba_ppal_s">
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td><span name="cantidad_sencillo_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_sencillo_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_sencillo_bano_alcoba_ppal_b">x</span>
+      <span name="estado_sencillo_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sencillo_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sencillo_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_sencillo_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_sencillo_bano_alcoba_ppal_n" hidden>
+    <td>Sencillo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_doble_bano_alcoba_ppal_s">
+    <td>Doble</td>
+    <td><span name="cantidad_doble_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_doble_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_doble_bano_alcoba_ppal_b">x</span>
+      <span name="estado_doble_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_doble_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_doble_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_doble_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_doble_bano_alcoba_ppal_n" hidden>
+    <td>Doble</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_triple_bano_alcoba_ppal_s">
+    <td>Triple</td>
+    <td><span name="cantidad_triple_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_triple_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_triple_bano_alcoba_ppal_b">x</span>
+      <span name="estado_triple_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_triple_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_triple_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_triple_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_triple_bano_alcoba_ppal_n" hidden>
+    <td>Triple</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ventanas_bano_alcoba_ppal_s">
+    <td class="text_center" colspan="2">Ventanas</td>
+    <td><span name="cantidad_ventanas_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_ventanas_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_ventanas_bano_alcoba_ppal_b">x</span>
+      <span name="estado_ventanas_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ventanas_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ventanas_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_ventanas_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_ventanas_bano_alcoba_ppal_n" hidden>
+    <td>Ventanas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_portapapel_bano_alcoba_ppal_s">
+    <td class="text_center" colspan="2">Portapapel</td>
+    <td><span name="cantidad_portapapel_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_portapapel_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_portapapel_bano_alcoba_ppal_b">x</span>
+      <span name="estado_portapapel_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_portapapel_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_portapapel_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_portapapel_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_portapapel_bano_alcoba_ppal_n" hidden>
+    <td>Portapapel</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_guarda_escobas_bano_alcoba_ppal_s">
+    <td class="text_center" colspan="2">Guarda escobas</td>
+    <td><span name="cantidad_guarda_escobas_bano_alcoba_ppal">________</span></td>
+    <td colspan="2"><span name="material_guarda_escobas_bano_alcoba_ppal">________</span></td>
+    <td class="text_center">
+      <span name="estado_guarda_escobas_bano_alcoba_ppal_b">x</span>
+      <span name="estado_guarda_escobas_bano_alcoba_ppal_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_guarda_escobas_bano_alcoba_ppal_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_guarda_escobas_bano_alcoba_ppal_m" hidden>x</span></td>
+    <td><span name="observacion_guarda_escobas_bano_alcoba_ppal">________</span></td>
+  </tr>
+  <tr name="existe_guarda_escobas_bano_alcoba_ppal_n" hidden>
+    <td>Guarda escobas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" class="main_title">Área/Zona</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td rowspan="2" colspan="2" class="main_title">Tipo Material</td>
+    <td colspan="4" class="main_title">Estado de Entrega </td>
+  </tr>
+  <tr>
+    <td colspan="2" class="second_title">Baño Social</td>
+    <td class="second_title">B</td>
+    <td class="second_title">R</td>
+    <td class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+
+  <tr name="existe_puerta_bano_social_s">
+    <td colspan="2">Puerta</td>
+    <td><span name="cantidad_puerta_bano_social">________</span></td>
+    <td colspan="2"><span name="material_puerta_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_puerta_bano_social_b">x</span>
+      <span name="estado_puerta_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_puerta_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_puerta_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_puerta_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_puerta_bano_social_n" hidden>
+    <td>Puerta</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_cerradura_bano_social_s">
+    <td colspan="2">Cerraduras</td>
+    <td><span name="cantidad_cerradura_bano_social">________</span></td>
+    <td colspan="2"><span name="material_cerradura_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_cerradura_bano_social_b">x</span>
+      <span name="estado_cerradura_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_cerradura_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_cerradura_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_cerradura_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_cerradura_bano_social_n" hidden>
+    <td>Cerradura</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_lavamanos_bano_social_s">
+    <td colspan="2">Lavamanos</td>
+    <td><span name="cantidad_lavamanos_bano_social">________</span></td>
+    <td colspan="2"><span name="material_lavamanos_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_lavamanos_bano_social_b">x</span>
+      <span name="estado_lavamanos_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_lavamanos_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_lavamanos_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_lavamanos_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_lavamanos_bano_social_n" hidden>
+    <td>Lavamanos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_griferia_bano_social_s">
+    <td colspan="2">Grifería</td>
+    <td><span name="cantidad_griferia_bano_social">________</span></td>
+    <td colspan="2"><span name="material_griferia_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_griferia_bano_social_b">x</span>
+      <span name="estado_griferia_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_griferia_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_griferia_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_griferia_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_griferia_bano_social_n" hidden>
+    <td>Grifería</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_sanitario_bano_social_s">
+    <td colspan="2">Sanitario</td>
+    <td><span name="cantidad_sanitario_bano_social">________</span></td>
+    <td colspan="2"><span name="material_sanitario_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_sanitario_bano_social_b">x</span>
+      <span name="estado_sanitario_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sanitario_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sanitario_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_sanitario_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_sanitario_bano_social_n" hidden>
+    <td>Sanitario</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_Toallero_bano_social_s">
+    <td colspan="2">Toallero</td>
+    <td><span name="cantidad_toallero_bano_social">________</span></td>
+    <td colspan="2"><span name="material_toallero_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_toallero_bano_social_b">x</span>
+      <span name="estado_toallero_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_toallero_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_toallero_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_toallero_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_Toallero_bano_social_n" hidden>
+    <td>Toallero</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_jabonera_bano_social_s">
+    <td colspan="2">Jabonera</td>
+    <td><span name="cantidad_jabonera_bano_social">________</span></td>
+    <td colspan="2"><span name="material_jabonera_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_jabonera_bano_social_b">x</span>
+      <span name="estado_jabonera_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_jabonera_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_jabonera_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_jabonera_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_jabonera_bano_social_n" hidden>
+    <td>Jabonera</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ducha_bano_social_s">
+    <td colspan="2">Ducha</td>
+    <td><span name="cantidad_ducha_bano_social">________</span></td>
+    <td colspan="2"><span name="material_ducha_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_ducha_bano_social_b">x</span>
+      <span name="estado_ducha_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ducha_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ducha_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_ducha_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_ducha_bano_social_n" hidden>
+    <td>Ducha</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_espejos_bano_social_s">
+    <td colspan="2">Espejos</td>
+    <td><span name="cantidad_espejos_bano_social">________</span></td>
+    <td colspan="2"><span name="material_espejos_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_espejos_bano_social_b">x</span>
+      <span name="estado_espejos_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_espejos_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_espejos_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_espejos_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_espejos_bano_social_n" hidden>
+    <td>Espejos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_mueble_lavamanos_bano_social_s">
+    <td colspan="2">Mueble lavamanos</td>
+    <td><span name="cantidad_mueble_lavamanos_bano_social">________</span></td>
+    <td colspan="2"><span name="material_mueble_lavamanos_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_mueble_lavamanos_bano_social_b">x</span>
+      <span name="estado_mueble_lavamanos_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_mueble_lavamanos_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_mueble_lavamanos_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_mueble_lavamanos_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_mueble_lavamanos_bano_social_n" hidden>
+    <td>Mueble lavamanos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_cabina_bano_social_s">
+    <td colspan="2">División/Cabina</td>
+    <td><span name="cantidad_cabina_bano_social">________</span></td>
+    <td colspan="2"><span name="material_cabina_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_cabina_bano_social_b">x</span>
+      <span name="estado_cabina_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_cabina_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_cabina_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_cabina_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_cabina_bano_social_n" hidden>
+    <td>División/Cabina</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_pisos_bano_social_s">
+    <td colspan="2">Pisos</td>
+    <td><span name="cantidad_pisos_bano_social">________</span></td>
+    <td colspan="2"><span name="material_pisos_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_pisos_bano_social_b">x</span>
+      <span name="estado_pisos_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_pisos_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_pisos_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_pisos_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_pisos_bano_social_n" hidden>
+    <td>Pisos</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_paredes_bano_social_s">
+    <td colspan="2">Paredes</td>
+    <td><span name="cantidad_paredes_bano_social">________</span></td>
+    <td colspan="2"><span name="material_paredes_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_paredes_bano_social_b">x</span>
+      <span name="estado_paredes_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_paredes_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_paredes_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_paredes_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_paredes_bano_social_n" hidden>
+    <td>Paredes</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_techo_bano_social_s">
+    <td colspan="2">Techo</td>
+    <td><span name="cantidad_techo_bano_social">________</span></td>
+    <td colspan="2"><span name="material_techo_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_techo_bano_social_b">x</span>
+      <span name="estado_techo_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_techo_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_techo_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_techo_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_techo_bano_social_n" hidden>
+    <td>Techo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_energia_bano_social_s">
+    <td class="text_center" rowspan="3">Tomas</td>
+    <td>Energía</td>
+    <td><span name="cantidad_energia_bano_social">________</span></td>
+    <td colspan="2"><span name="material_energia_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_energia_bano_social_b">x</span>
+      <span name="estado_energia_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_energia_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_energia_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_energia_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_energia_bano_social_n" hidden>
+    <td>Energía</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tv_bano_social_s">
+    <td>TV</td>
+    <td><span name="cantidad_tv_bano_social">________</span></td>
+    <td colspan="2"><span name="material_tv_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_tv_bano_social_b">x</span>
+      <span name="estado_tv_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tv_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tv_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_tv_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_tv_bano_social_n" hidden>
+    <td>TV</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_tel_bano_social_s">
+    <td>TEL</td>
+    <td><span name="cantidad_tel_bano_social">________</span></td>
+    <td colspan="2"><span name="material_tel_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_tel_bano_social_b">x</span>
+      <span name="estado_tel_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_tel_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_tel_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_tel_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_tel_bano_social_n" hidden>
+    <td>TEL</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_iluminacion_bano_social_s">
+    <td class="text_center" colspan="2">Iluminación</td>
+    <td><span name="cantidad_iluminacion_bano_social">________</span></td>
+    <td colspan="2"><span name="material_iluminacion_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_iluminacion_bano_social_b">x</span>
+      <span name="estado_iluminacion_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_iluminacion_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_iluminacion_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_iluminacion_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_iluminacion_bano_social_n" hidden>
+    <td>Iluminación</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_senillo_bano_social_s">
+    <td class="text_center" rowspan="3">Interruptor</td>
+    <td>Sencillo</td>
+    <td><span name="cantidad_sencillo_bano_social">________</span></td>
+    <td colspan="2"><span name="material_sencillo_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_sencillo_bano_social_b">x</span>
+      <span name="estado_sencillo_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_sencillo_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_sencillo_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_sencillo_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_sencillo_bano_social_n" hidden>
+    <td>Sencillo</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_doble_bano_social_s">
+    <td>Doble</td>
+    <td><span name="cantidad_doble_bano_social">________</span></td>
+    <td colspan="2"><span name="material_doble_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_doble_bano_social_b">x</span>
+      <span name="estado_doble_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_doble_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_doble_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_doble_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_doble_bano_social_n" hidden>
+    <td>Doble</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_triple_bano_social_s">
+    <td>Triple</td>
+    <td><span name="cantidad_triple_bano_social">________</span></td>
+    <td colspan="2"><span name="material_triple_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_triple_bano_social_b">x</span>
+      <span name="estado_triple_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_triple_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_triple_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_triple_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_triple_bano_social_n" hidden>
+    <td>Triple</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ventanas_bano_social_s">
+    <td colspan="2">Ventanas</td>
+    <td><span name="cantidad_ventanas_bano_social">________</span></td>
+    <td colspan="2"><span name="material_ventanas_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_ventanas_bano_social_b">x</span>
+      <span name="estado_ventanas_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_ventanas_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_ventanas_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_ventanas_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_ventanas_bano_social_n" hidden>
+    <td>Ventanas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_portapapel_bano_social_s">
+    <td colspan="2">Portapapel</td>
+    <td><span name="cantidad_portapapel_bano_social">________</span></td>
+    <td colspan="2"><span name="material_portapapel_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_portapapel_bano_social_b">x</span>
+      <span name="estado_portapapel_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_portapapel_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_portapapel_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_portapapel_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_portapapel_bano_social_n" hidden>
+    <td>Portapapel</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_guarda_escobas_bano_social_s">
+    <td colspan="2">Guarda escobas</td>
+    <td><span name="cantidad_guarda_escobas_bano_social">________</span></td>
+    <td colspan="2"><span name="material_guarda_escobas_bano_social">________</span></td>
+    <td class="text_center">
+      <span name="estado_guarda_escobas_bano_social_b">x</span>
+      <span name="estado_guarda_escobas_bano_social_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_guarda_escobas_bano_social_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_guarda_escobas_bano_social_m" hidden>x</span></td>
+    <td><span name="observacion_guarda_escobas_bano_social">________</span></td>
+  </tr>
+  <tr name="existe_guarda_escobas_bano_social_n" hidden>
+    <td>Guarda escobas</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="9" class="main_title">Servicios Públicos</td>
+  </tr>
+  <tr>
+    <td class="second_title">Servicio</td>
+    <td colspan="2" class="second_title">Contrato</td>
+    <td colspan="2" class="second_title">Fecha Facturación</td>
+    <td colspan="3" class="second_title">Estado</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+
+  <tr name="existe_energia_servicio_pub_s"> 
+    <td colspan="1">Energía</td>
+    <td colspan="2"><span name="contrato_energia_servicio_pub">________</span></td>
+    <td colspan="2"><span name="facturacion_energia_servicio_pub">________</span></td>
+    <td colspan="3"><span name="estado_energia_servicio_pub">________</span></td>
+    <td><span name="observacion_energia_servicio_pub">________</span></td>
+  </tr>
+  <tr name="existe_energia_servicio_pub_n" hidden>
+  <td>Energía</td>
+  <td>-</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
+
+  <tr name="existe_acueducto_servicio_pub_s"> 
+    <td colspan="1">Acueducto</td>
+    <td colspan="2"><span name="contrato_acueducto_servicio_pub">________</span></td>
+    <td colspan="2"><span name="facturacion_acueducto_servicio_pub">________</span></td>
+    <td colspan="3"><span name="estado_acueducto_servicio_pub">________</span></td>
+    <td><span name="observacion_acueducto_servicio_pub">________</span></td>
+  </tr>
+  <tr name="existe_acueducto_servicio_pub_n" hidden>
+  <td>Acueducto</td>
+  <td>-</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
+
+  <tr name="existe_gas_servicio_pub_s"> 
+    <td colspan="1">Gas natural</td>
+    <td colspan="2"><span name="contrato_gas_servicio_pub">________</span></td>
+    <td colspan="2"><span name="facturacion_gas_servicio_pub">________</span></td>
+    <td colspan="3"><span name="estado_gas_servicio_pub">________</span></td>
+    <td><span name="observacion_gas_servicio_pub">________</span></td>
+  </tr>
+  <tr name="existe_gas_servicio_pub_n" hidden>
+  <td>Gas natural</td>
+  <td>-</td>
+  <td></td>
+  <td></td>
+  <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="2" rowspan="2" class="main_title">Elementos Electronicos</td>
+    <td rowspan="2" class="main_title">Cant</td>
+    <td colspan="2" rowspan="2" class="main_title">Marca</td>
+    <td colspan="4" class="main_title">Estado de Entrega</td>    
+  </tr>
+  <tr>
+    <td colspan="1" class="second_title">B</td>
+    <td colspan="1" class="second_title">R</td>
+    <td colspan="1" class="second_title">M</td>
+    <td class="second_title">Observaciones</td>
+  </tr>
+
+  <tr name="existe_video_citofina_s">
+    <td colspan="2">Vídeo-citofina</td>
+    <td><span name="cantidad_video_citofina">________</span></td>
+    <td colspan="2"><span name="marca_video_citofina">________</span></td>
+    <td class="text_center">
+      <span name="estado_video_citofina_b">x</span>
+      <span name="estado_video_citofina_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_video_citofina_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_video_citofina_m" hidden>x</span></td>
+    <td><span name="observacion_video_citofina">________</span></td>
+  </tr>
+  <tr name="existe_video_citofina_n" hidden>
+    <td>Vídeo-citofina</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_alarma_s">
+    <td colspan="2">Alarma</td>
+    <td><span name="cantidad_alarma">________</span></td>
+    <td colspan="2"><span name="marca_alarma">________</span></td>
+    <td class="text_center">
+      <span name="estado_alarma_b">x</span>
+      <span name="estado_alarma_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_alarma_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_alarma_m" hidden>x</span></td>
+    <td><span name="observacion_alarma">________</span></td>
+  </tr>
+  <tr name="existe_alarma_n" hidden>
+    <td>Alarma</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_citofono_s">
+    <td colspan="2">Citofono</td>
+    <td><span name="cantidad_citofono">________</span></td>
+    <td colspan="2"><span name="marca_citofono">________</span></td>
+    <td class="text_center">
+      <span name="estado_citofono_b">x</span>
+      <span name="estado_citofono_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_citofono_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_citofono_m" hidden>x</span></td>
+    <td><span name="observacion_citofono">________</span></td>
+  </tr>
+  <tr name="existe_citofono_n" hidden>
+    <td>Citofono</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_camara_s">
+    <td colspan="2">Cámara de seguridad</td>
+    <td><span name="cantidad_camara">________</span></td>
+    <td colspan="2"><span name="marca_camara">________</span></td>
+    <td class="text_center">
+      <span name="estado_camara_b">x</span>
+      <span name="estado_camara_n" hidden>-</span>
+    </td>
+    <td class="text_center"><span name="estado_camara_r" hidden>x</span></td>
+    <td class="text_center"><span name="estado_camara_m" hidden>x</span></td>
+    <td><span name="observacion_camara">________</span></td>
+  </tr>
+  <tr name="existe_camara_n" hidden>
+    <td>Cámara de seguridad</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+    <td></td>
+    <td></td>
+  </tr>
+
+  <tr>
+    <td colspan="9" class="main_title">LLAVES</td>
+  </tr>
+  <tr>
+    <td class="second_title">Detalle</td>
+    <td colspan="1" class="second_title">Cant</td>
+    <td colspan="8" class="second_title" class="second_title">Observaciones</td>        
+  </tr>
+
+  <tr name="existe_puerta_principal_s">
+    <td colspan="1">Puerta principal</td>
+    <td colspan="1"><span name="cantidad_puerta_principal">________</span></td>    
+    <td colspan="8"><span name="observacion_puerta_principal">________</span></td>
+  </tr>
+  <tr name="existe_puerta_principal_n" hidden>
+    <td>Puerta principal</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_alcoba_principal_s">
+    <td colspan="1">Alcoba principal</td>
+    <td colspan="1"><span name="cantidad_alcoba_principal">________</span></td>    
+    <td colspan="8"><span name="observacion_alcoba_principal">________</span></td>
+  </tr>
+  <tr name="existe_puerta_principal_n" hidden>
+    <td>Alcoba principal</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_alcoba_aux_1_s">
+    <td colspan="1">Alcoba auxiliar 1</td>
+    <td colspan="1"><span name="cantidad_alcoba_aux_1">________</span></td>    
+    <td colspan="8"><span name="observacion_alcoba_aux_1">________</span></td>
+  </tr>
+  <tr name="existe_alcoba_aux_1_n" hidden>
+    <td>Alcoba auxiliar 1</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_alcoba_aux_2_s">
+    <td colspan="1">Alcoba auxiliar 2</td>
+    <td colspan="1"><span name="cantidad_alcoba_aux_2">________</span></td>    
+    <td colspan="8"><span name="observacion_alcoba_aux_2">________</span></td>
+  </tr>
+  <tr name="existe_alcoba_aux_2_n" hidden>
+    <td>Alcoba auxiliar 2</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_alcoba_servicio_s">
+    <td colspan="1">Alcoba servicio</td>
+    <td colspan="1"><span name="cantidad_alcoba_servicio">________</span></td>    
+    <td colspan="8"><span name="observacion_alcoba_servicio">________</span></td>
+  </tr>
+  <tr name="existe_alcoba_servicio_n" hidden>
+    <td>Alcoba servicio</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_ingreso_copro_s">
+    <td colspan="1">Ingreso copropiedad</td>
+    <td colspan="1"><span name="cantidad_ingreso_copro">________</span></td>    
+    <td colspan="8"><span name="observacion_ingreso_copro">________</span></td>
+  </tr>
+  <tr name="existe_ingreso_copro_n" hidden>
+    <td>Ingreso copropiedad</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+  </tr>
+
+  <tr name="existe_cuarto_util_s">
+    <td colspan="1">Cuarto útil</td>
+    <td colspan="1"><span name="cantidad_cuarto_util">________</span></td>    
+    <td colspan="8"><span name="observacion_cuarto_util">________</span></td>
+  </tr>
+  <tr name="existe_cuarto_util_n" hidden>
+    <td>Cuarto útil</td>
+    <td>0</td>
+    <td colspan="2"></td>
+    <td class="text_center">-</td>
+    <td></td>
+  </tr>
+
+  <tr name="observacion_1_s" hidden>
+    <td colspan="9" class="main_title">Observaciones</td>
+  </tr>
+
+  <tr name="observacion_1_s" hidden>
+    <td colspan="9"><span name="valor_observacion_1">________</span></td>
+  </tr>
+
+  <tr name="observacion_2_s" hidden>
+    <td colspan="9"><span name="valor_observacion_2">________</span></td>
+  </tr>
+  
+  <tr name="observacion_3_s" hidden>
+    <td colspan="9"><span name="valor_observacion_3">________</span></td>
+  </tr>
+
+  <tr name="observacion_4_s" hidden>
+    <td colspan="9"><span name="valor_observacion_4">________</span></td>
+  </tr>
+
+  <tr name="observacion_5_s" hidden>
+    <td colspan="9"><span name="valor_observacion_5">________</span></td>
+  </tr>
+
+  <tr>
+    <td colspan="9"><br/>Este documento hace parte integral del contrato de arrendamiento y/o Acta de Recibo o toma de posesión del inmueble
+      <br/>
+      <br/>
+      Para constancia se firma el día cinco (05) de agosto del año 2021
+    </td>
+  </tr>
+</table>
+
+
+
+<p>
+  <b>ARRENDATARIO</b>
+  <div id="arrendatario" class="sign-margin"></div>
+  <b name="nombre_arrendatario">________</b><br/>
+  <b name="tipo_documento_arrendatario_cc">C.C.
+    <b name="cedula_arrendatario">________</b>
+  </b>
+  <b name="tipo_documento_arrendatario_ce" hidden>C.E.
+    <b name="cedulae_arrendatario">________</b>
+  </b>
+  <b name="tipo_documento_arrendatario_pa" hidden>PA.
+    <b name="pasaporte_arrendatario">________</b>
+  </b>
+</p>
+
+
+<p>
+  <b>ARRENDADOR</b>
+  <div id="arrendador" class="sign-margin"></div>
+  <b>INMOBILIARIA ALBORADA LTDA.</b><br/>
+  <b>NIT. 830.513.076-2</b>
+</p>
