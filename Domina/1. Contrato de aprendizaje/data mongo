@@ -1,0 +1,583 @@
+{
+    _id: ObjectId('618962d2fb8daa000969b7c1'),
+    config: [
+        {
+            description: 'Digite el nombre completo del aprendiz',
+            help: 'nombre',
+            name: 'nombre_aprendiz',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del aprendiz',
+            name: 'tipo_documento_aprendiz',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tajeta de identidad',
+                    value: 'ti'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de la cédula de ciudadanía del aprendiz',
+            help: 'cedula',
+            name: 'cedula_aprendiz',
+            prereq: [
+                {
+                    k: 'tipo_documento_aprendiz',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de la cédula de extranjería del aprendiz',
+            help: 'cedula',
+            name: 'cedulae_aprendiz',
+            prereq: [
+                {
+                    k: 'tipo_documento_aprendiz',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de la tarjeta de identificación del aprendiz',
+            help: 'cedula',
+            name: 'tarjeta_aprendiz',
+            prereq: [
+                {
+                    k: 'tipo_documento_aprendiz',
+                    v: 'ti'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del permiso especial de permanencia (pep) del aprendiz',
+            help: 'pep',
+            name: 'pep_aprendiz',
+            prereq: [
+                {
+                    k: 'tipo_documento_aprendiz',
+                    v: 'pep'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha de nacimiento del aprendiz',
+            help: 'fecha',
+            name: 'fecha_n_aprendiz',
+            type: 'date'
+        },
+        {
+            description: 'Digite la dirección del aprendiz',
+            help: 'direccion',
+            name: 'direccion_aprendiz',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del aprendiz',
+            help: 'telefono',
+            name: 'telefono_aprendiz',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del aprendiz',
+            help: 'correo',
+            name: 'correo_aprendiz',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha de inicio de la etapa lectiva del aprendiz',
+            help: 'fecha',
+            name: 'f_i_etapa_lectiva',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la fecha de terminación de la etapa lectiva del aprendiz',
+            help: 'fecha',
+            name: 'f_t_etapa_lectiva',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la fecha de inicio de la etapa productiva del aprendiz',
+            help: 'fecha',
+            name: 'f_i_etapa_productiva',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la fecha de terminación de la etapa productiva del aprendiz',
+            help: 'fecha',
+            name: 'f_t_etapa_productiva',
+            type: 'date'
+        },
+        {
+            description: 'Digite la especialidad o curso que tiene el aprendiz',
+            help: 'especialidad',
+            name: 'especialidad_aprendiz',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del grupo donde se encuentra el aprendiz',
+            help: 'numero',
+            name: 'numero_grupo',
+            type: 'name'
+        },
+        {
+            description: 'Digite la Entidades Promotoras de Salud (EPS) del aprendiz',
+            help: 'eps',
+            name: 'eps_aprendiz',
+            type: 'text'
+        },
+        {
+            description: 'Digite la Administradora de Riesgo Laboral (ARL) del aprendiz',
+            help: 'arl',
+            name: 'arl_aprendiz',
+            type: 'text'
+        },
+        {
+            description: 'Selecione el lugar donde realizó el proceso de formación el aprendiz',
+            name: 'lugar_formacion',
+            options: [
+                {
+                    name: 'Institución',
+                    value: 'ins'
+                },
+                {
+                    name: 'SENA',
+                    value: 'sen'
+                }
+            ],
+            type: 'clausula',
+            value: 'ins'
+        },
+        {
+            description: 'Digite el nombre de la institución de formación del aprendiz',
+            help: 'institucion',
+            name: 'institucion_aprendiz',
+            prereq: [
+                {
+                    k: 'lugar_formacion',
+                    v: 'ins'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el nit de la institución de formación del aprendiz',
+            help: 'nit',
+            name: 'nit_institucion',
+            type: 'text'
+        },
+        {
+            description: 'Selecione el sexo del aprendiz',
+            name: 'sexo_aprendiz',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: 'Digite el municipio de expedición del documento de identificación del aprendiz',
+            help: 'lugar',
+            name: 'lugar_exp_documento_aprendiz',
+            type: 'text'
+        },
+        {
+            description: 'Digite las funciones que tendrá el aprendiz',
+            help: 'funcion',
+            name: 'funciones_aprendiz',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        },
+        {
+            description: 'Digite el correo electrónico de la parte empleadora',
+            help: 'correo',
+            name: 'correo_empleador',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un testigo?',
+            name: 'testigo_1',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del testigo',
+            help: 'nombre',
+            name: 'nombre_testigo_1',
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del testigo',
+            name: 'tipo_documento_testigo_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de la cédula de ciudadanía del testigo',
+            help: 'cedula',
+            name: 'cedula_testigo_1',
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del testigo',
+            help: 'cedula',
+            name: 'cedulae_testigo_1',
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del pasaporte del testigo',
+            help: 'pasaporte',
+            name: 'pasaporte_testigo_1',
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_documento_testigo_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del testigo',
+            help: 'correo',
+            name: 'correo_testigo_1',
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro testigo?',
+            name: 'testigo_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del testigo',
+            help: 'nombre',
+            name: 'nombre_testigo_2',
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del testigo',
+            name: 'tipo_documento_testigo_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de la cédula de ciudadanía del testigo',
+            help: 'cedula',
+            name: 'cedula_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del testigo',
+            help: 'cedula',
+            name: 'cedulae_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número del pasaporte del testigo',
+            help: 'pasaporte',
+            name: 'pasaporte_testigo_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_testigo_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del testigo',
+            help: 'correo',
+            name: 'correo_testigo_2',
+            prereq: [
+                {
+                    k: 'testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_aprendiz',
+        'cedula_aprendiz',
+        'cedulae_aprendiz',
+        'tarjeta_aprendiz',
+        'pep_aprendiz',
+        'fecha_n_aprendiz',
+        'direccion_aprendiz',
+        'telefono_aprendiz',
+        'correo_aprendiz',
+        'f_i_etapa_lectiva',
+        'f_t_etapa_lectiva',
+        'f_i_etapa_productiva',
+        'f_t_etapa_productiva',
+        'especialidad_aprendiz',
+        'numero_grupo',
+        'eps_aprendiz',
+        'arl_aprendiz',
+        'sexo_aprendiz',
+        'lugar_exp_documento_aprendiz',
+        'funciones_aprendiz',
+        'fecha_firma',
+        'correo_empleador',
+        'nombre_testigo_1',
+        'tipo_documento_testigo_1',
+        'cedula_testigo_1',
+        'cedulae_testigo_1',
+        'pasaporte_testigo_1',
+        'correo_testigo_1',
+        'nombre_testigo_2',
+        'tipo_documento_testigo_2',
+        'cedula_testigo_2',
+        'cedulae_testigo_2',
+        'pasaporte_testigo_2',
+        'correo_testigo_2'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_empleador',
+            identification: 'cedula_aprendiz|tarjeta_aprendiz',
+            name: 'nombre_empleador',
+            type: 'empleador'
+        },
+        {
+            email: 'correo_aprendiz',
+            identification: 'cedula_aprendiz|tarjeta_aprendiz',
+            name: 'nombre_aprendiz',
+            type: 'aprendiz'
+        },
+        {
+            email: 'correo_testigo_1',
+            identification: 'cedula_testigo_1|cedulae_testigo_1|pasaporte_testigo_1',
+            name: 'nombre_testigo_1',
+            type: '1_testigo'
+        },
+        {
+            email: 'correo_testigo_2',
+            identification: 'cedula_testigo_2|cedulae_testigo_2|pasaporte_testigo_2',
+            name: 'nombre_testigo_2',
+            type: '2_testigo'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_empleador',
+            value: 'DOMINA ENTREGA TOTAL S.A.S.'
+        }
+    ],
+    preBuildData: [],
+    name: 'CONTRATO DE APRENDIZAJE DOMINA.',
+    price: 5000,
+    help: {
+        nombre: 'Ejemplo: Carolina Andrea Diaz Diaz',
+        cedula: 'Ejemplo: 123456789',
+        pep: 'Ejemplo: 123456789012345',
+        pasaporte: 'Ejemplo: AAA1234567',
+        fecha: 'Ejemplo: 09 de Diciembre del 2004',
+        direccion: 'Ejemplo: Carrera 70 #12-4',
+        telefono: 'Ejemplo: 3214567890',
+        correo: 'Ejemplo: ejemplo@gmail.com',
+        especialidad: 'Ejemplo: Técnico en sistemas',
+        numero: 'Ejemplo: 12',
+        eps: 'Ejemplo: Salud Total S.A.',
+        arl: 'Ejemplo: ARL Sura S.A.S.',
+        institucion: 'Ejemplo: politecnico de colombia',
+        sena: 'Ejemplo: Medellín',
+        nit: 'Ejemplo: 123456-7',
+        lugar: 'Ejemplo: Medellín',
+        funcion: 'Ejemplo: Programador'
+    },
+    build: 1,
+    username: '87cefb05-b8e7-43be-8444-adf2259e313c',
+    company: ObjectId('618d8a0c7e6627000962020f'),
+    createdAt: ISODate('2021-11-08T17:48:02.111Z'),
+    updatedAt: ISODate('2021-11-08T17:48:02.111Z')
+}

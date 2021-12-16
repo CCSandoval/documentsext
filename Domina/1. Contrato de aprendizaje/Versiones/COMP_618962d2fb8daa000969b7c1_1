@@ -1,0 +1,512 @@
+<p class="text-center"><b>CONTRATO DE APRENDIZAJE</b></p>
+<table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #000">
+    <tr>
+        <td><b>EMPRESA</b></td>
+        <td>Domina Entrega Total S.A.S.</td>
+    </tr>
+    <tr>
+        <td><b>NIT</b></td>
+        <td>800.088.155-3</td>
+    </tr>
+    <tr>
+        <td><b>DIRECCIÓN</b></td>
+        <td>Carrera 76 N° 43-24</td>
+    </tr>
+    <tr>
+        <td><b>TELÉFONO</b></td>
+        <td>430-20-20</td>
+    </tr>
+    <tr>
+        <td><b>REPRESENTANTE LEGAL</b></td>
+        <td>José Jaime Chavarriaga Pareja</td>
+    </tr>
+    <tr>
+        <td><b>CARGO</b></td>
+        <td>Representante Legal</td>
+    </tr>
+    <tr>
+        <td><b>CEDULA NO.</b></td>
+        <td>70.097.417</td>
+    </tr>
+</table><br />
+
+<table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #000">
+    <tr>
+        <td><b>NOMBRE APRENDIZ</b></td>
+        <td>
+            <span name="nombre_aprendiz">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b name="tipo_documento_aprendiz_cc"> CÉDULA DE CIUDADANÍA</b>
+            <b name="tipo_documento_aprendiz_ce" hidden> CÉDULA DE EXTRANJERÍA</b>
+            <b name="tipo_documento_aprendiz_ti" hidden> TARJETA DE IDENTIDAD</b>
+            <b name="tipo_documento_aprendiz_pep" hidden> PERMISO ESPECIAL DE PERMANENCIA</b>
+        </td>
+        <td>
+            <span name="tipo_documento_aprendiz_cc">
+                <span name="cedula_aprendiz">________</span>
+            </span>
+            <span name="tipo_documento_aprendiz_ce" hidden>
+                <span name="cedulae_aprendiz">________</span>
+            </span>
+            <span name="tipo_documento_aprendiz_ti" hidden>
+                <span name="tarjeta_aprendiz">________</span>
+            </span>
+            <span name="tipo_documento_aprendiz_pep" hidden>
+                <span name="pep_aprendiz">________</span>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>FECHA NACIMIENTO</b></td>
+        <td>
+            <span name="fecha_n_aprendiz">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>DIRECCIÓN</b></td>
+        <td>
+            <span name="direccion_aprendiz">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>TELÉFONO</b></td>
+        <td>
+            <span name="telefono_aprendiz">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>CORREO ELECTRÓNICO</b></td>
+        <td>
+            <span name="correo_aprendiz">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>FECHA INICIO ETAPA LECTIVA</b></td>
+        <td>
+            <span name="f_i_etapa_lectiva">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>ETAPA TERMINACIÓN ETAPA LECTIVA</b></td>
+        <td>
+            <span name="f_t_etapa_lectiva">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>FECHA INICIO ETAPA PRODUCTIVA</b></td>
+        <td>
+            <span name="f_i_etapa_productiva">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>FECHA TERMINACIÓN ETAPA PRODUCTIVA</b></td>
+        <td>
+            <span name="f_t_etapa_productiva">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>ESPECIALIDAD O CURSO</b></td>
+        <td>
+            <span name="especialidad_aprendiz">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>No. DE GRUPO</b></td>
+        <td>
+            <span name="numero_grupo">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>EPS DEL APRENDIZ</b></td>
+        <td>
+            <span name="eps_aprendiz">__________</span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>ARL DEL APRENDIZ</b></td>
+        <td>
+            <span name="arl_aprendiz">__________</span>
+        </td>
+    </tr>
+</table><br />
+
+<table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #000">
+    <tr>
+        <td>
+            <b name="lugar_formacion_ins">INSTITUCIÓN DE FORMACIÓN</b>
+            <b name="lugar_formacion_sen" hidden> CENTRO DE FORMACIÓN</b>
+        </td>
+        <td>
+            <span name="lugar_formacion_ins">
+                <span name="institucion_aprendiz">________</span>
+            </span>
+            <span name="lugar_formacion_sen" hidden>
+                SENA
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td><b>NIT:</b></td>
+        <td>
+            <span name="nit_institucion">__________</span>
+        </td>
+    </tr>
+</table>
+
+<p class="text-center"><b>CLÁUSULAS</b></p>
+<p>
+    Entre los suscritos a saber José Jaime Chavarriaga Pareja, identificado con la cédula de ciudadanía No.70.097.417,
+    actuando como Representante Legal de Domina Entrega Total S.A.S, identificada con NIT. 800.088.155-3 quien para los
+    efectos del presente Contrato se denominará LA EMPRESA y
+    <b name="nombre_aprendiz">__________</b>,
+    <span name="sexo_aprendiz_h">identificado</span>
+    <span name="sexo_aprendiz_m" hidden>identificada</span> con
+    <span name="tipo_documento_aprendiz_cc"> Cédula de ciudadanía No.
+        <b name="cedula_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_ce" hidden> Cédula de extranjería No.
+        <b name="cedulae_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_ti" hidden> Tarjeta de identidad No.
+        <b name="tarjeta_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_pep" hidden> Permiso especial de permanencia No.
+        <b name="pep_aprendiz">________</b>
+    </span> de
+    <b name="lugar_exp_documento_aprendiz">__________</b>, quien para los efectos del presente contrato se
+    denominará el APRENDIZ, se suscribe el presente Contrato de Aprendizaje, conforme a lo preceptuado por la Ley 789 de
+    2002 y su decreto reglamentario 933 de 2003, de acuerdo a las siguientes cláusulas:
+</p>
+<p>
+    <b> PRIMERA.</b> – OBJETO. <b>LA EMPRESA,</b> contrata los servicios del <b>APRENDIZ,</b> y éste se obliga a poner
+    al servicio de <b>LA EMPRESA,</b> toda su capacidad normal de trabajo, en forma exclusiva en el desempeño de las
+    funciones propias de
+    <span name="funciones_aprendiz">__________</span> y en las labores anexas y complementarias del mismo, de
+    conformidad con las ordenes e instrucciones que le imparta <b>LA EMPRESA,</b> o sus representantes.
+</p>
+<p>
+    <b>SEGUNDA.</b> -DURACIÓN. El contrato tiene un término de duración de 6 meses, comprendidos desde
+    <span name="f_i_etapa_productiva">__________</span> <b>hasta el</b>
+    <span name="f_t_etapa_productiva">__________</span> fecha de terminación del mismo.
+</p>
+<p>
+    <b>TERCERA.</b> - APOYO DE SOSTENIEMIENTO. Reconocer mensualmente al <b>APRENDIZ,</b> por concepto de apoyo
+    económico para el aprendizaje, durante la etapa lectiva, el equivalente al 50% de un SMLMV y durante la etapa
+    práctica de su formación el equivalente al 75% de un SMLMV y/o al 100% cuando la tasa de desempleo promedio del año
+    inmediatamente anterior sea de un solo digito, para la vigencia 2020 este apoyo será del 75% de un SMLMV.
+    Cuando el aprendiz sea estudiante universitario el apoyo de sostenimiento será equivalente a un SMLMV. (Artículo 30
+    de la Ley 789 de 2002 y Decreto 451 de 2008).
+</p>
+<p>
+    <b>PARÁGRAFO.</b> - Este apoyo de sostenimiento no constituye salario en forma alguna, ni podrá ser regulado a
+    través de convenios o contratos colectivos o fallos arbítrales que recaigan sobre esto último.
+</p>
+<p>
+    <b>CUARTA.</b> - OBLIGACIONES POR PARTE DE LA EMPRESA. - En virtud del presente contrato la <b>EMPRESA</b> deberá:
+</p>
+<ol>
+    <li>
+        Facilitar al <b>APRENDIZ</b> los medios para que reciba formación profesional integral, metódica y completa en
+        la ocupación u oficio materia del presente contrato;
+    </li>
+    <li>
+        Atender los requerimientos que le haga la institución de formación del <b>APRENDIZ</b> y brindar la información
+        necesaria para el correcto desarrollo del contrato de aprendizaje, a través de las certificaciones e informes
+        requeridos.
+    </li>
+    <li>
+        Afiliar a el <b>APRENDIZ</b> a la ARL que cubre a <b>LA EMPRESA</b> durante la etapa práctica, y al Sistema de
+        Seguridad Social en Salud durante las fases lectiva y práctica.
+    </li>
+    <li>
+        Suministrar a el <b>APRENDIZ</b> todos los elementos que sean necesarios para desarrollar a cabalidad, y con
+        seguridad, la etapa práctica.
+    </li>
+</ol>
+<p>
+    POR PARTE DEL APRENDIZ. - Por su parte se compromete en virtud del presente contrato a:
+</p>
+<ol>
+    <li>
+        Asistir puntualmente al lugar asignado por <b>LA EMPRESA</b> para desarrollar su formación en las fases lectiva
+        y
+        práctica, durante el periodo establecido para el mismo, en las actividades que se le encomiende y cumpliendo con
+        las indicaciones que le señale <b>LA EMPRESA</b>.
+    </li>
+    <li>
+        En lo que tiene que ver con la disciplina interna de <b>LA EMPRESA</b>, se rige por la ley laboral y por el
+        reglamento interno de él, que previamente conocerá <b>EL APRENDIZ</b>, y que, al momento de suscribirlo, declara
+        conocerlo plenamente y aceptarlo, regido además por las siguientes cláusulas.
+    </li>
+    <li>
+        Realizar con empeño, seriedad y responsabilidad todas las actividades propias de las etapas lectiva y práctica.
+    </li>
+    <li>
+        No realizar actividades diferentes a las propias de la etapa lectiva y práctica, ni aquellas que pongan en
+        riesgo las personas o las cosas o los asuntos de carácter reservado de <b>LA EMPRESA.</b>
+    </li>
+    <li>
+        No prestar directa ni indirectamente servicios laborales a otras <b>EMPRESAS</b>, ni a trabajar por cuenta
+        propia en el mismo oficio, durante la vigencia de este contrato.
+    </li>
+    <li>
+        Cumplir con las demás obligaciones propias que se desprendan de la ejecución del contrato de aprendizaje y las
+        que en general disponga la ley.
+    </li>
+</ol>
+<p>
+    <b>QUINTA.</b> - Suspensión. El presente contrato se podrá suspender temporalmente en los siguientes casos:
+</p>
+<ol>
+    <li>
+        Licencia de maternidad.
+    </li>
+    <li>
+        Incapacidades debidamente certificadas.
+    </li>
+    <li>
+        Caso fortuito o fuerza mayor debidamente certificado o constatado.
+    </li>
+    <li>
+        Vacaciones por parte de <b>LA EMPRESA</b>, siempre y cuando el <b>APRENDIZ</b> se encuentre desarrollando la
+        etapa práctica.
+    </li>
+</ol>
+<p>
+    <b>PARÁGRAFO 1°.</b> Esta suspensión debe constar por escrito.
+</p>
+<p>
+    <b>PARÁGRAFO 2°</b> Durante la suspensión el contrato se encuentra vigente, por lo tanto, la relación de aprendizaje
+    está vigente para las partes.
+</p>
+<p>
+    <b>SEXTA.</b> - Terminación. El presente contrato podrá darse por terminado en los siguientes casos:
+</p>
+<ol>
+    <li>
+        Por mutuo acuerdo entre las partes.
+    </li>
+    <li>
+        Por el vencimiento del término de duración del presente contrato.
+    </li>
+    <li>
+        Por la parte de <b>LA EMPRESA</b>, las faltas que para tal efecto se califiquen como graves en el reglamento
+        interno del trabajo. También se deja expresamente acordado que en caso de que el Representante Legal de la
+        sociedad a la cual le presta la labor <b>EL APRENDIZ</b>, exija su cambio por no cumplir con las normas
+        estipuladas previamente también será motivo de dar por terminado de manera unilateral el contrato.
+    </li>
+    <li>
+        Por el incumplimiento de cualquiera de las obligaciones contraídas por las partes.
+    </li>
+    <li>
+        Porque el <b>APRENDIZ</b> no cumpla con los requerimientos establecidos por la ley para ser sujeto del contrato
+        de aprendizaje.
+    </li>
+    <li>
+        Por las demás causales que señale la ley.
+    </li>
+</ol>
+<p>
+    <b>SEPTIMA.</b> – NATURALEZA DE LA RELACION DE APRENDIZAJE. El presente Contrato no implica relación laboral alguna
+    entre las partes, y se regirá en todas sus partes por el artículo 30 y s.s. de la ley 789 de 2002. Declaración
+    Juramentada. <b>El APRENDIZ</b> declara bajo la gravedad de juramento que no se encuentra ni ha estado vinculado con
+    <b>LA EMPRESA</b> o con otras EMPRESAS en una relación de aprendizaje. Así mismo, declara que no se encuentra ni ha
+    estado vinculado mediante una relación laboral con <b>LA EMPRESA.</b>
+</p>
+<p>
+    <b>OCTAVA.</b> - Este contrato ha sido redactado estrictamente de acuerdo con la ley y la jurisprudencia y será
+    interpretado de buena fe en consonancia con el Código Sustantivo del trabajo, la ley 789 de 2002 y su decreto
+    reglamentario 933 de 2003, y se le podrá modificar o acordar otras cláusulas y estas se anotarán a continuación de
+    su texto o en escrito separado que hará parte integral del contrato, para constancia se firma en <b>MEDELLÍN el </b>
+    <b name="fecha_firma">__________</b>, ante testigos en dos ejemplares del mismo tenor.
+</p>
+
+<p>
+    <div id="empleador_1" name="empleador" class="sign-margin"></div>
+    <b>EMPLEADOR</b><br />
+    <b>DOMINA ENTREGA TOTAL S.A.S.</b>
+</p>
+<p>
+    <div id="aprendiz_1" name="aprendiz" class="sign-margin"></div>
+    <b name="nombre_aprendiz">__________</b><br />
+    <b>APRENDIZ</b><br />
+    <span name="tipo_documento_aprendiz_cc"> <b>C.C.</b>
+        <b name="cedula_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_ce" hidden> <b>C.E.</b>
+        <b name="cedulae_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_ti" hidden> <b>T.I.</b>
+        <b name="tarjeta_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_pep" hidden> <b>PEP.</b>
+        <b name="pep_aprendiz">________</b>
+    </span>
+</p>
+<p>
+    <div id="1_testigo" class="sign-margin"></div>
+    <b name="nombre_testigo_1">__________</b><br />
+    <b>TESTIGO</b><br />
+    <span name="tipo_documento_testigo_1_cc"> <b>C.C.</b>
+        <b name="cedula_testigo_1">________</b>
+    </span>
+    <span name="tipo_documento_testigo_1_ce" hidden> <b>C.E.</b>
+        <b name="cedulae_testigo_1">________</b>
+    </span>
+    <span name="tipo_documento_testigo_1_pa" hidden> <b>PASAPORTE.</b>
+        <b name="pasaporte_testigo_1">________</b>
+    </span>
+</p>
+<p>
+    <div name="testigo_2_n"></div>
+    <div name="testigo_2_s" hidden>
+        <div id="2_testigo" class="sign-margin"></div>
+        <b name="nombre_testigo_2">__________</b><br />
+        <b>TESTIGO</b><br />
+        <b name="tipo_documento_testigo_2_cc"> <b>C.C.</b>
+            <b name="cedula_testigo_2">________</b>
+        </b>
+        <b name="tipo_documento_testigo_2_ce" hidden> <b>C.E.</b>
+            <b name="cedulae_testigo_2">________</b>
+        </b>
+        <b name="tipo_documento_testigo_2_pa" hidden> <b>PASAPORTE.</b>
+            <b name="pasaporte_testigo_2">________</b>
+        </b>
+    </div>
+</p>
+
+<div style="page-break-after: always;"></div>
+
+<p class="text-center"><b>ACUERDO DE CONFIDENCIALIDAD</b></p>
+<p>
+    Yo: <span name="nombre_aprendiz">__________</span>
+    <span name="sexo_aprendiz_h">identificado</span>
+    <span name="sexo_aprendiz_m" hidden>identificada</span> con
+    <span name="tipo_documento_aprendiz_cc"> cédula de ciudadanía número
+        <span name="cedula_aprendiz">________</span>
+    </span>
+    <span name="tipo_documento_aprendiz_ti" hidden> tarjeta de identidad número
+        <span name="tarjeta_aprendiz">________</span>
+    </span>
+    acepto que la información relativa a DOMINA ENTREGA TOTAL S.A.S, sus clientes y del negocio en general, bien
+    sea de índole jurídico, comercial, financiero, administrativo u operativo, a la que como EMPLEADO de la empresa
+    tenga acceso, es información que pertenece en su totalidad, tanto en su forma como en su contenido, a mi EMPLEADOR,
+    sus clientes y/o proveedores, según corresponda y tiene el carácter de confidencial.
+</p>
+<p>
+    Como EMPLEADO de DOMINA ENTREGA TOTAL S.A.S. reconozco y acepto que la información relativa a los clientes de mi
+    empleador contenida en la(s) base(s) de datos o archivos en medio digital o físico, a los que tenga acceso en
+    desarrollo de las labores descritas y encomendadas en mi contrato laboral, es de propiedad de éste y no podrá ser
+    revelada, manipulada, comercializada ni ser utilizada por ningún medio, salvo la solicitud expresa y escrita de un
+    organismo regulador o por un representante autorizado expresamente por mi EMPLEADOR.
+</p>
+<p>
+    Así mismo, declaro que conozco que esta información no puede ser utilizada de manera personal o para beneficio
+    propio o de terceros, con o sin fines de lucro. Por lo tanto, me comprometo a manejar de manera ética, profesional,
+    prudente y diligente la información del empleador y la de sus clientes durante el tiempo que dure mi vínculo laboral
+    con la empresa y diez (10) años más, a cumplir con este acuerdo en su totalidad y estaré dispuesto para la
+    realización de revisiones e investigaciones cuando sea necesario a fin esclarecer cualquier situación.
+</p>
+<p>
+    Mi empleador podrá ejercer las acciones que se estimen necesarias en términos legales cuando se demuestre la falta a
+    este acuerdo.
+</p>
+<p>
+    Se declara por parte del EMPLEADOR y el EMPLEADO que las demás cláusulas del contrato de trabajo suscrito
+    inicialmente y sus adicciones, continuarán vigentes.
+</p>
+
+<p>
+    <div id="empleador_2" name="empleador" class="sign-margin"></div>
+    <b>EMPLEADOR</b><br />
+    <b>DOMINA ENTREGA TOTAL S.A.S.</b>
+</p>
+<p>
+    <div id="aprendiz_2" name="aprendiz" class="sign-margin"></div>
+    <b>EMPLEADO</b><br />
+    <span name="tipo_documento_aprendiz_cc"> <b>C.C.</b>
+        <b name="cedula_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_ce" hidden> <b>C.E.</b>
+        <b name="cedulae_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_ti" hidden> <b>T.I.</b>
+        <b name="tarjeta_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_pep" hidden> <b>PEP.</b>
+        <b name="pep_aprendiz">________</b>
+    </span>
+</p>
+
+<div style="page-break-after: always;"></div>
+
+<p class="text-center"><b>CLÁUSULA ADICIONAL AL CONTRATO DE TRABAJO</b></p>
+<p>
+    Entre los suscritos a saber de una parte EL EMPLEADOR, sociedad comercial DOMINA ENTREGA TOTAL S.A.S., con domicilio
+    principal en la ciudad de Medellín, representada legalmente por el señor JOSE JAIME CHAVARRIAGA PAREJA y por otra
+    para EL TRABAJADOR,
+    <span name="sexo_aprendiz_h">señor</span>
+    <span name="sexo_aprendiz_m" hidden>señora</span>
+    <span name="nombre_aprendiz">__________</span>, mayor de edad,
+    <span name="sexo_aprendiz_h">identificado</span>
+    <span name="sexo_aprendiz_m" hidden>identificada</span>con
+    <span name="tipo_documento_aprendiz_cc"> cédula de ciudadanía número
+        <span name="cedula_aprendiz">________</span>;
+    </span>
+    <span name="tipo_documento_aprendiz_ti" hidden> tarjeta de identidad número
+        <span name="tarjeta_aprendiz">________</span>;
+    </span>
+    mediante el presente escrito proceden a adicionar el Contrato de Trabajo suscrito entre las partes, en los
+    siguientes términos:
+</p>
+<p>
+    PRIMERO: El TRABAJADOR declara aceptar que la información relativa a DOMINA ENTREGA TOTAL S.A.S, sus clientes y del
+    negocio en general, bien sea de índole jurídico, comercial, financiero, administrativo u operativo, a la que como
+    EMPLEADO de la empresa tenga acceso, es información que pertenece en su totalidad, tanto en su forma como en su
+    contenido al EMPLEADOR, sus clientes y/o proveedores, según corresponda y tiene el carácter de confidencial.
+</p>
+<p>
+    SEGUNDO: El TRABAJADOR reconoce y acepta que la información relativa a los clientes de la empresa contenida en la(s)
+    base(s) de datos o archivos en medio digital o físico, a los que tenga acceso en desarrollo de las labores descritas
+    y encomendadas en su contrato laboral, es de propiedad del EMPLEADOR y no podrá ser revelada, manipulada,
+    comercializada ni ser utilizada por ningún medio, salvo la solicitud expresa y escrita de un organismo regulador o
+    por un representante autorizado por la empresa.
+</p>
+<p>
+    TERCERA: El TRABAJADOR declara que conoce que esta información no puede ser utilizada de manera personal o para
+    beneficio propio o de terceros, con o sin fines de lucro. Por lo tanto se compromete a manejar de manera ética,
+    profesional, prudente y diligente la información del empleador y la de sus clientes durante el tiempo que dure su
+    vínculo laboral con la empresa y diez (10) años más, así como a estar dispuesto para la realización de revisiones e
+    investigaciones cuando sea necesario a fin esclarecer cualquier situación, por lo cual el EMPLEADOR podrá ejercer
+    las acciones que estime necesarias en términos legales, como pruebas y revisiones de seguridad, cuando se demuestre
+    la falta a esta obligación sin considerar esta acción como una violación de sus garantías constitucionales.
+</p>
+<p>
+    CUARTA: Así mismo, El TRABAJADOR declara conocer y entender la <b>POLÍTICA DE SEGURIDAD DE LA INFORMACIÓN</b> de la
+    empresa, entendiendo por ésta un compendio de buenas prácticas para el correcto uso y protección de la información.
+</p>
+<p>
+    Se declara por parte del EMPLEADOR y el TRABAJADOR que las demás cláusulas del contrato de trabajo suscrito
+    inicialmente y sus adicciones, continuarán vigentes. Se firma en la ciudad de
+    Medellín, el
+    <span name="fecha_firma">__________</span> por las partes.
+</p>
+
+<p>
+    <div id="empleador_3" name="empleador" class="sign-margin"></div>
+    <b>EMPLEADOR</b><br />
+    <b>DOMINA ENTREGA TOTAL S.A.S.</b>
+</p>
+<p>
+    <div id="aprendiz_3" name="aprendiz" class="sign-margin"></div>
+    <b>EMPLEADO</b><br />
+    <span name="tipo_documento_aprendiz_cc"> <b>C.C.</b>
+        <b name="cedula_aprendiz">________</b>
+    </span>
+    <span name="tipo_documento_aprendiz_ti" hidden> <b>T.C.</b>
+        <b name="tarjeta_aprendiz">________</b>
+    </span>
+</p>
