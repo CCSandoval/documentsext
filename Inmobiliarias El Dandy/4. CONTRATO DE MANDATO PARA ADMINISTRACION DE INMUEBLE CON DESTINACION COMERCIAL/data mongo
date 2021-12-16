@@ -3957,6 +3957,7 @@
             description: 'Digite el porcentaje correspondiente a la administración del inmueble',
             help: 'porcentaje',
             name: 'porcentaje_a_inmueble',
+            addText: true,
             type: 'number'
         },
         {
@@ -4444,7 +4445,7 @@
         porcentaje: 'Ejemplo: 15',
         fecha: 'Ejemplo: 13 de Septiembre del 2021'
     },
-    build: 14,
+    build: 20,
     createdAt: ISODate('2021-09-28T16:47:36.942Z'),
     updatedAt: ISODate('2021-09-28T16:47:36.942Z')
 }
