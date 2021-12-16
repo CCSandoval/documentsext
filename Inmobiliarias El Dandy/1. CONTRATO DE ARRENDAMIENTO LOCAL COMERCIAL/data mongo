@@ -934,6 +934,12 @@
             type: 'text'
         },
         {
+            description: 'Digite el lindero que se encuentra al lado del local comercial',
+            help: 'linderos',
+            name: 'lindero_lado',
+            type: 'text'
+        },
+        {
             description: 'Digite el lindero que se encuentra al otro lado del local comercial',
             help: 'linderos',
             name: 'lindero_o_lado',
@@ -1721,7 +1727,7 @@
         uso: 'Ejemplo: Montacargas',
         porcentaje: 'Ejemplo: 10%'
     },
-    build: 9,
+    build: 12,
     username: '2f3ec4a1-1659-4b93-88eb-12c70236b1a5',
     createdAt: ISODate('2021-10-08T20:30:26.972Z'),
     updatedAt: ISODate('2021-10-08T20:30:26.972Z')

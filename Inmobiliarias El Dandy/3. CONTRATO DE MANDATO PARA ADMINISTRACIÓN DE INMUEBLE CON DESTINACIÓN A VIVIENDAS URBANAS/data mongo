@@ -3929,6 +3929,7 @@
                     v: 's'
                 }
             ],
+            removeText: true,
             type: 'currency'
         },
         {
@@ -3957,6 +3958,7 @@
                     v: 's'
                 }
             ],
+            removeText: true,
             type: 'currency'
         },
         {
@@ -4228,7 +4230,9 @@
             name: 'nombre_mandante_4',
             identification: 'cedula_mandante_4|cedulae_mandante_4|pasaporte_mandante_4|pep_mandante_4|pasaporte_mandante_p_4',
             email: 'correo_mandante_4',
-            type: 'mandante_4'
+            type: 'mandante_4',
+            role: 'SIGN',
+            order: 0
         },
         {
             name: 'nombre_mandante_5',
@@ -4299,7 +4303,7 @@
         porcentaje: 'Ejemplo: 15',
         fecha: 'Ejemplo: 13 de Septiembre del 2021'
     },
-    build: 16,
+    build: 22,
     createdAt: ISODate('2021-09-29T18:40:33.337Z'),
     updatedAt: ISODate('2021-09-29T18:40:33.337Z')
 }

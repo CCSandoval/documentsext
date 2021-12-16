@@ -880,12 +880,6 @@
             type: 'currency'
         },
         {
-            description: 'Digite la dirección del inmueble',
-            help: 'direccion',
-            name: 'direccion_inmueble',
-            type: 'name'
-        },
-        {
             description: 'Digite el municipio donde están ubicados los inmueble',
             help: 'municipio',
             name: 'municipio_inmueble',
@@ -934,6 +928,12 @@
             type: 'date'
         },
         {
+            description: 'Digite la dirección del inmueble',
+            help: 'direccion',
+            name: 'direccion_inmueble',
+            type: 'name'
+        },
+        {
             description: 'Digite el área aproximada del inmueble en metros cuadrados',
             help: 'numero',
             name: 'area_inmueble',
@@ -965,6 +965,7 @@
                     v: 's'
                 }
             ],
+            removeText: true,
             type: 'currency'
         },
         {
@@ -993,6 +994,7 @@
                     v: 's'
                 }
             ],
+            removeText: true,
             type: 'currency'
         },
         {
@@ -1820,7 +1822,7 @@
         },
         {
             name: 'correo_arrendador',
-            value: 'mercadeo@eldandyinmobiliaria.com'
+            value: 'fery06@me.com'
         }
     ],
     operation: [],
@@ -1992,7 +1994,7 @@
         pep: 'Permiso especial de permanencia',
         zona: 'Sur'
     },
-    build: 30,
+    build: 37,
     createdAt: ISODate('2021-09-28T19:07:38.268Z'),
     updatedAt: ISODate('2021-09-28T19:07:38.268Z')
 }
