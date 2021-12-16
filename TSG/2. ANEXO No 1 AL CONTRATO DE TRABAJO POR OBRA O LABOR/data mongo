@@ -1,0 +1,147 @@
+{
+    _id: ObjectId('61b78da3fd1d9b0008969e46'),
+    config: [
+        {
+            description: '"Seleccione la fecha en la que se realiza el anexo No 1 al contrato de trabajo por obra o labor',
+            help: 'fecha',
+            name: 'fecha_hoy',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la empresa que hará el anexo No 1 al contrato de trabajo por obra o labor',
+            help: 'empresas',
+            name: 'empresa',
+            options: [
+                {
+                    name: 'TSG THE IT EXPERTS S.A.S.',
+                    value: 'tsg'
+                },
+                {
+                    name: 'INNOVA DTI S.A.S.',
+                    value: 'inn'
+                },
+                {
+                    name: 'IT4U S.A.S.',
+                    value: 'it4'
+                }
+            ],
+            type: 'clausula',
+            value: 'tsg'
+        },
+        {
+            description: 'Digite el nombre del trabajador',
+            help: 'nombre',
+            name: 'nombre_trabajador',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del trabajador',
+            help: 'tipo_documento',
+            name: 'tipo_documento_trabajador',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del trabajador',
+            help: 'cedula',
+            name: 'cedula_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del trabajador',
+            help: 'cedula',
+            name: 'cedulae_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de pasaporte del trabajador',
+            help: 'pasaporte',
+            name: 'pasaporte_trabajador',
+            prereq: [
+                {
+                    k: 'tipo_documento_trabajador',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del trabajador',
+            help: 'correo',
+            name: 'correo_trabajador',
+            type: 'text'
+        }
+    ],
+    operation: [],
+    sign: [
+        'fecha_hoy',
+        'nombre_trabajador',
+        'empresa',
+        'tipo_documento_trabajador',
+        'cedula_trabajador',
+        'cedulae_trabajador',
+        'pasaporte_trabajador',
+        'correo_trabajador'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_trabajador',
+            identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
+            name: 'nombre_r_empresa',
+            type: 'repre_empresa'
+        },
+        {
+            email: 'correo_trabajador',
+            identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
+            name: 'nombre_trabajador',
+            type: 'trabajador'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_r_empresa',
+            value: 'Representante Legal de la parte Empleadora'
+        }
+    ],
+    preBuildData: [],
+    name: 'ANEXO No 1 AL CONTRATO DE TRABAJO POR OBRA O LABOR TSG',
+    price: 5000,
+    help: {
+        fecha: 'Ejemplo: 03 de Enero del 2022',
+        nombre: 'Ejemplo: Andrea Sofia Diaz Diaz',
+        empresas: 'Ejemplo: TSG THE IT EXPERTS S.A.S.',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo:1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        correo: 'Ejemplo: ejemplo@innva.com'
+    },
+    build: 0,
+    createdAt: ISODate('2021-12-13T18:14:59.566Z'),
+    updatedAt: ISODate('2021-12-13T18:14:59.566Z')
+}

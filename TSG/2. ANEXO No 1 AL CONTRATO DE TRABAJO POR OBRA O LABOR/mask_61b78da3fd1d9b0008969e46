@@ -1,0 +1,106 @@
+<style type="text/css">
+    .main_title {
+        background-color: #bfbfbf;
+        text-align: center;
+    }
+</style>
+
+<p>
+    <b>Bogotá,</b>
+    <b name="fecha_hoy">_______</b>
+</p>
+
+<p class="text-center" style="font-size: 12pt">
+    <b>ANEXO No 1 AL CONTRATO DE TRABAJO POR OBRA O LABOR</b>
+</p>
+
+<p>
+    Entre
+    <span name="empresa_tsg">TSG THE IT EXPERTS S.A.S.</span>
+    <span name="empresa_inn" hidden>INNOVA DTI S.A.S.</span>
+    <span name="empresa_it4" hidden>IT4U S.A.S.</span>
+    en calidad de empleador y
+    <span name="nombre_trabajador">_______</span> en calidad de trabajador han decidido acordar el siguiente incentivo:
+</p>
+
+<p>
+    <b>PRIMERO:</b> Por el cumplimiento de KPI en el mes y reportado por el supervisor, el trabajador podrá recibir
+    hasta el valor de cien mil pesos m/te ($ 100.000), pagaderos en la nómina del mes en que efectivamente lo cause,
+    como un factor constitutivo de salario.
+</p>
+
+<p>
+    <b>SEGUNDO:</b> El supervisor entregará y/o capacitará al trabajador oportunamente sobre el cumplimiento del KPI,
+    qué objetivos contempla, qué se espera del trabajador en el desarrollo de sus funciones, en qué casos se pueden
+    perder y todos los aspectos relacionados con los KPI.
+</p>
+
+<p>
+    En manifestación de aceptación de las condiciones pactadas se firma este documento el
+    <span name="fecha_hoy">_______</span>
+</p>
+
+<table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #808080">
+    <tr>
+        <th class="main_title" style="width: 9cm; color: #000086">EMPLEADOR</th>
+        <th class="main_title" style="width: 9cm; color: #000086">TRABAJADOR</th>
+    </tr>
+    <tr>
+        <td style="height: 5rem"></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>
+            <b name="empresa_tsg">Edwin Castillo Ortiz</b>
+            <b name="empresa_inn" hidden>Daniela Rojas Alarcón</b>
+            <b name="empresa_it4" hidden>Daniela Rojas Alarcón</b>
+        </td>
+        <td>
+            <b name="nombre_trabajador">_______</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b name="empresa_tsg">C.C. 75.084.509</b>
+            <b name="empresa_inn" hidden>C.C. 1.073.607.772</b>
+            <b name="empresa_it4" hidden>C.C. 1.073.607.772</b>
+        </td>
+        <td>
+            <span name="tipo_documento_trabajador_cc"> <b>C.C. N°</b>
+                <b name="cedula_trabajador">________</b>
+            </span>
+            <span name="tipo_documento_trabajador_ce" hidden> <b>C.E. N°</b>
+                <b name="cedulae_trabajador">________</b>
+            </span>
+            <span name="tipo_documento_trabajador_pa" hidden> <b>PASAPORTE. N°</b>
+                <b name="pasaporte_trabajador">________</b>
+            </span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b name="empresa_tsg">TSG THE IT EXPERTS S.A.S.</b>
+            <b name="empresa_inn" hidden>INNOVA DTI S.A.S.</b>
+            <b name="empresa_it4" hidden>IT4U S.A.S.</b>
+
+        </td>
+        <td>
+            <b>correo:</b> <b name="correo_trabajador" style="text-transform: lowercase">_______</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b name="empresa_tsg">NIT No. 900.994.724</b>
+            <b name="empresa_inn" hidden>NIT No. 901.206.305-5</b>
+            <b name="empresa_it4" hidden>NIT No. 901.157.678-6</b>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <b>Correo:</b>
+            <b name="empresa_tsg">edwin.castillo@tsg.net.co</b>
+            <b name="empresa_inn" hidden>info@innovadti.com</b>
+            <b name="empresa_it4" hidden>ventas@it4u.com.co</b>
+        </td>
+    </tr>
+</table>
