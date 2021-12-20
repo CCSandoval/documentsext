@@ -175,12 +175,6 @@
     ],
     signatureProfile: [
         {
-            email: 'correo_representante',
-            identification: 'cedula_representante',
-            name: 'nombre_representante',
-            type: 'representante'
-        },
-        {
             email: 'correo_firmante',
             identification: 'cedula_firmante|cedulae_firmante|pasaporte_firmante',
             name: 'nombre_firmante',
@@ -214,7 +208,7 @@
         nombre_empresa: 'Ejemplo: Green Partner Society S.A.S.',
         nit_empresa: 'Ejemplo: 901530645-2'
     },
-    build: 2,
+    build: 3,
     company: ObjectId('618a8308ddd84f00088b42eb'),
     username: '6858dbf7-1bbe-430d-9c7d-bd4aab048b6a',
     createdAt: ISODate('2021-11-05T15:29:41.379Z'),
