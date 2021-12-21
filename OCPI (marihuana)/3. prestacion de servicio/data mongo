@@ -1,0 +1,196 @@
+{
+    _id: ObjectId('619ce092ab5eb9000843b513'),
+    config: [
+        {
+            description: 'Digite el nombre del contratante',
+            help: 'nombre',
+            name: 'nombre_propietario',
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde está ubicado el contratante',
+            help: 'municipio',
+            name: 'municipio_propietario',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione el sexo del contratante',
+            name: 'sexo_propietario',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: 'Seleccione el tipo de documento del contratante',
+            help: 'tipo_documento',
+            name: 'tipo_documento_propietario',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del contratante',
+            help: 'cedula',
+            name: 'cedula_propietario',
+            prereq: [
+                {
+                    k: 'tipo_documento_propietario',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del contratante',
+            help: 'cedula',
+            name: 'cedulae_propietario',
+            prereq: [
+                {
+                    k: 'tipo_documento_propietario',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del contratante',
+            help: 'cedula',
+            name: 'pasaporte_propietario',
+            prereq: [
+                {
+                    k: 'tipo_documento_propietario',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio de expedición del documento de identificación del contratante',
+            help: 'municipio',
+            name: 'lugar_exp_documento_propietario',
+            type: 'text'
+        },
+        {
+            description: 'Digite el coreo electrónico del contratante',
+            help: 'correo',
+            name: 'correo_propietario',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del contratante',
+            help: 'celular',
+            name: 'celular_propietario',
+            type: 'text'
+        },
+        {
+            description: 'Digite la cantidad de metros',
+            help: 'numero',
+            name: 'metros',
+            type: 'number'
+        },
+        {
+            description: 'Digite el valor del contrato',
+            help: 'valor',
+            name: 'valor_contrato',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el municipio donde se firma el presente contrato',
+            help: 'municipio',
+            name: 'municipio_firma',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_propietario',
+        'municipio_propietario',
+        'sexo_propietario',
+        'tipo_documento_propietario',
+        'cedula_propietario',
+        'cedulae_propietario',
+        'pasaporte_propietario',
+        'lugar_exp_documento_propietario',
+        'correo_propietario',
+        'celular_propietario',
+        'metros',
+        'valor_contrato',
+        'municipio_firma'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_representante',
+            identification: 'cedula_representante',
+            email: 'correo_representante',
+            type: 'representante'
+        },
+        {
+            name: 'nombre_propietario',
+            identification: 'cedula_propietario|cedulae_propietario|pasaporte_propietario',
+            email: 'correo_propietario',
+            type: 'propietario'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_representante',
+            value: 'Fredy Armando Arcila Castañeda'
+        },
+        {
+            name: 'cedula_representante',
+            value: '79915917'
+        },
+        {
+            name: 'correo_representante',
+            value: 'freddarcila@gmail.com'
+        }
+    ],
+    preBuildData: [],
+    company: ObjectId('618a8308ddd84f00088b42eb'),
+    username: '6858dbf7-1bbe-430d-9c7d-bd4aab048b6a',
+    name: 'CONTRATO DE PRESTACIÓN DE SERVICIOS DE OUTSOURCING DE COMERCIALIZACIÓN GREEN PARTNER SOCIETY',
+    price: 5000,
+    help: {
+        nombre: 'Ejemplo: Carolina Andrea Diaz Diaz',
+        municipio: 'Ejemplo: Medellín',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        correo: 'Ejemplo: ejemplo@gmail.com',
+        celular: 'Ejemplo: 3214567890',
+        numero: 'Ejemplo: 12',
+        valor: 'Ejemplo: 100.000',
+        fecha: 'Ejemplo: 22 de Diciembre del 2021'
+    },
+    build: 2,
+    createdAt: ISODate('2021-11-23T12:37:38.886Z'),
+    updatedAt: ISODate('2021-11-23T12:37:38.886Z')
+}
