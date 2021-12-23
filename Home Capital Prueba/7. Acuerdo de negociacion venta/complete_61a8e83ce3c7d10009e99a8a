@@ -5,11 +5,11 @@
     }
 </style>
 
-<p>
+<!-- <p>
     <span class="img_tittle">
         <img src="https://mi-contrato-static.s3.amazonaws.com/Home+capital/compramos_casas.jpg" />
     </span>
-</p><br />
+</p><br /> -->
 
 <h2 class="text-center" style="font-size: 12pt">
     ACUERDO PRIVADO DE NEGOCIACIÓN PARA CELEBRACIÓN DE UN CONTRATO DE PROMESA DE COMPRAVENTA
@@ -542,9 +542,15 @@
 
 <p><b>AUTORIZACIONES Y DECLARACIONES</b></p>
 <p>
-    Con la firma del presente acuerdo los promitentes
-    <span name="tipo_persona_1_co"> compradores</span>
-    <span name="tipo_persona_1_ve" hidden> vendedores</span>
+    Con la firma del presente acuerdo
+    <span name="tipo_persona_co"> 
+        <span name="comprador_2_n"> el promitente comprador</span>
+        <span name="comprador_2_s" hidden> los promitentes compradores</span>
+    </span>
+    <span name="tipo_persona_ve" hidden>
+        <span name="vendedor_2_n"> el promitente vendedor</span>
+        <span name="vendedor_2_s" hidden> los promitentes vendedores</span>
+    </span>
     autorizan expresamente a HOME CAPITAL COLOMBIA S.A.S, para Consultar en las bases de datos legalmente constituidas,
     las condiciones personales, de crédito de este último y en listas restrictivas del sistema de administración de
     riesgos de lavado de activos, de financiación de terrorismo, requeridas para adoptar decisiones relativas a la
@@ -552,9 +558,15 @@
 </p>
 <p>
     Por medio del presente documento se hace constancia de que existe una real intención de compra y venta de las partes
-    sobre el inmueble descrito anteriormente. Una vez se hayan aportado los documentos solicitados por la parte del
-    <span name="tipo_persona_2_co"> comprador</span>
-    <span name="tipo_persona_2_ve" hidden> vendedor</span> se procederá a firmar la promesa de compraventa el día
+    sobre el inmueble descrito anteriormente. Una vez se hayan aportado los documentos solicitados por la parte 
+    <span name="tipo_persona_co"> 
+        <span name="comprador_2_n"> del promitente comprador</span>
+        <span name="comprador_2_s" hidden> de los promitentes compradores</span>
+    </span>
+    <span name="tipo_persona_ve" hidden>
+        <span name="vendedor_2_n"> del promitente vendedor</span>
+        <span name="vendedor_2_s" hidden> de los promitentes vendedores</span>
+    </span> se procederá a firmar la promesa de compraventa el día
     <span name="fecha_firma">_______</span> para perfeccionar la presente intención de
     <span name="tipo_negocio">_______</span>.
 </p>
@@ -565,177 +577,159 @@
     <span name="depart_firma">_______</span>.
 </p>
 <p><br /><br /><br /><br />
-    <span>____________________</span><br />
-    <b name="nombre_comprador_1">_______</b><br />
-    <span name="tipo_documento_comprador_1_cc"> <b>C.C. No.</b>
-        <b name="cedula_comprador_1">_______</b>
+<div id="comprador_1" class="sign-margin"></div>
+<b name="nombre_comprador_1">_______</b><br />
+<span name="tipo_documento_comprador_1_cc"> <b>C.C. No.</b>
+    <b name="cedula_comprador_1">_______</b>
+</span>
+<span name="tipo_documento_comprador_1_ce" hidden> <b>C.E. No.</b>
+    <b name="cedulae_comprador_1">_______</b>
+</span>
+<span name="tipo_documento_comprador_1_pa" hidden> <b>PASAPORTE. No.</b>
+    <b name="pasaporte_comprador_1">_______</b>
+</span><br />
+<b>PROMITENTE COMPRADOR 1</b>
+
+<div name="comprador_2_n"></div>
+<div name="comprador_2_s" hidden>
+    <div id="comprador_2" class="sign-margin"></div>
+    <b name="nombre_comprador_2">_______</b><br />
+    <span name="tipo_documento_comprador_2_cc"> <b>C.C. No.</b>
+        <b name="cedula_comprador_2">_______</b>
     </span>
-    <span name="tipo_documento_comprador_1_ce" hidden> <b>C.E. No.</b>
-        <b name="cedulae_comprador_1">_______</b>
+    <span name="tipo_documento_comprador_2_ce" hidden> <b>C.E. No.</b>
+        <b name="cedulae_comprador_2">_______</b>
     </span>
-    <span name="tipo_documento_comprador_1_pa" hidden> <b>PASAPORTE. No.</b>
-        <b name="pasaporte_comprador_1">_______</b>
+    <span name="tipo_documento_comprador_2_pa" hidden> <b>PASAPORTE. No.</b>
+        <b name="pasaporte_comprador_2">_______</b>
     </span><br />
-    <b>Correo:</b><b name="correo_comprador_1">_______</b><br />
-    <b>PROMITENTE COMPRADOR 1</b>
+    <b>PROMITENTE COMPRADOR 2</b>
 
-    <span name="comprador_2_n"></span>
-    <span name="comprador_2_s" hidden>
-        <br /><br /><br /><br />
-        <span>____________________</span><br />
-        <b name="nombre_comprador_2">_______</b><br />
-        <span name="tipo_documento_comprador_2_cc"> <b>C.C. No.</b>
-            <b name="cedula_comprador_2">_______</b>
+    <div name="comprador_3_n"></div>
+    <div name="comprador_3_s" hidden>
+        <div id="comprador_3" class="sign-margin"></div>
+        <b name="nombre_comprador_3">_______</b><br />
+        <span name="tipo_documento_comprador_3_cc"> <b>C.C. No.</b>
+            <b name="cedula_comprador_3">_______</b>
         </span>
-        <span name="tipo_documento_comprador_2_ce" hidden> <b>C.E. No.</b>
-            <b name="cedulae_comprador_2">_______</b>
+        <span name="tipo_documento_comprador_3_ce" hidden> <b>C.E. No.</b>
+            <b name="cedulae_comprador_3">_______</b>
         </span>
-        <span name="tipo_documento_comprador_2_pa" hidden> <b>PASAPORTE. No.</b>
-            <b name="pasaporte_comprador_2">_______</b>
+        <span name="tipo_documento_comprador_3_pa" hidden> <b>PASAPORTE. No.</b>
+            <b name="pasaporte_comprador_3">_______</b>
         </span><br />
-        <b>Correo:</b><b name="correo_comprador_2">_______</b><br />
-        <b>PROMITENTE COMPRADOR 2</b>
+        <b>PROMITENTE COMPRADOR 3</b>
 
-        <span name="comprador_3_n"></span>
-        <span name="comprador_3_s" hidden>
-            <br /><br /><br /><br />
-            <span>____________________</span><br />
-            <b name="nombre_comprador_3">_______</b><br />
-            <span name="tipo_documento_comprador_3_cc"> <b>C.C. No.</b>
-                <b name="cedula_comprador_3">_______</b>
+        <div name="comprador_4_n"></div>
+        <div name="comprador_4_s" hidden>
+            <div id="comprador_4" class="sign-margin"></div>
+            <b name="nombre_comprador_4">_______</b><br />
+            <span name="tipo_documento_comprador_4_cc"> <b>C.C. No.</b>
+                <b name="cedula_comprador_4">_______</b>
             </span>
-            <span name="tipo_documento_comprador_3_ce" hidden> <b>C.E. No.</b>
-                <b name="cedulae_comprador_3">_______</b>
+            <span name="tipo_documento_comprador_4_ce" hidden> <b>C.E. No.</b>
+                <b name="cedulae_comprador_4">_______</b>
             </span>
-            <span name="tipo_documento_comprador_3_pa" hidden> <b>PASAPORTE. No.</b>
-                <b name="pasaporte_comprador_3">_______</b>
+            <span name="tipo_documento_comprador_4_pa" hidden> <b>PASAPORTE. No.</b>
+                <b name="pasaporte_comprador_4">_______</b>
             </span><br />
-            <b>Correo:</b><b name="correo_comprador_3">_______</b><br />
-            <b>PROMITENTE COMPRADOR 3</b>
+            <b>PROMITENTE COMPRADOR 4</b>
 
-            <span name="comprador_4_n"></span>
-            <span name="comprador_4_s" hidden>
-                <br /><br /><br /><br />
-                <span>____________________</span><br />
-                <b name="nombre_comprador_4">_______</b><br />
-                <span name="tipo_documento_comprador_4_cc"> <b>C.C. No.</b>
-                    <b name="cedula_comprador_4">_______</b>
+            <div name="comprador_5_n"></div>
+            <div name="comprador_5_s" hidden>
+                <div id="comprador_5" class="sign-margin"></div>
+                <b name="nombre_comprador_5">_______</b><br />
+                <span name="tipo_documento_comprador_5_cc"> <b>C.C. No.</b>
+                    <b name="cedula_comprador_5">_______</b>
                 </span>
-                <span name="tipo_documento_comprador_4_ce" hidden> <b>C.E. No.</b>
-                    <b name="cedulae_comprador_4">_______</b>
+                <span name="tipo_documento_comprador_5_ce" hidden> <b>C.E. No.</b>
+                    <b name="cedulae_comprador_5">_______</b>
                 </span>
-                <span name="tipo_documento_comprador_4_pa" hidden> <b>PASAPORTE. No.</b>
-                    <b name="pasaporte_comprador_4">_______</b>
+                <span name="tipo_documento_comprador_5_pa" hidden> <b>PASAPORTE. No.</b>
+                    <b name="pasaporte_comprador_5">_______</b>
                 </span><br />
-                <b>Correo:</b><b name="correo_comprador_4">_______</b><br />
-                <b>PROMITENTE COMPRADOR 4</b>
-
-                <span name="comprador_5_n"></span>
-                <span name="comprador_5_s" hidden>
-                    <br /><br /><br /><br />
-                    <span>____________________</span><br />
-                    <b name="nombre_comprador_5">_______</b><br />
-                    <span name="tipo_documento_comprador_5_cc"> <b>C.C. No.</b>
-                        <b name="cedula_comprador_5">_______</b>
-                    </span>
-                    <span name="tipo_documento_comprador_5_ce" hidden> <b>C.E. No.</b>
-                        <b name="cedulae_comprador_5">_______</b>
-                    </span>
-                    <span name="tipo_documento_comprador_5_pa" hidden> <b>PASAPORTE. No.</b>
-                        <b name="pasaporte_comprador_5">_______</b>
-                    </span><br />
-                    <b>Correo:</b><b name="correo_comprador_5">_______</b><br />
-                    <b>PROMITENTE COMPRADOR 5</b>
-                </span>
-            </span>
-        </span>
-    </span>
+                <b>PROMITENTE COMPRADOR 5</b>
+            </div>
+        </div>
+    </div>
+</div>
 </p>
 
 <p><br /><br /><br /><br />
-    <span>____________________</span><br />
-    <b name="nombre_vendedor_1">_______</b><br />
-    <span name="tipo_documento_vendedor_1_cc"> <b>C.C. No.</b>
-        <b name="cedula_vendedor_1">_______</b>
+<div id="vendedor_1" class="sign-margin"></div>
+<b name="nombre_vendedor_1">_______</b><br />
+<span name="tipo_documento_vendedor_1_cc"> <b>C.C. No.</b>
+    <b name="cedula_vendedor_1">_______</b>
+</span>
+<span name="tipo_documento_vendedor_1_ce" hidden> <b>C.E. No.</b>
+    <b name="cedulae_vendedor_1">_______</b>
+</span>
+<span name="tipo_documento_vendedor_1_pa" hidden> <b>PASAPORTE. No.</b>
+    <b name="pasaporte_vendedor_1">_______</b>
+</span><br />
+<b>PROMITENTE VENDEDOR 1</b>
+
+<div name="vendedor_2_n"></div>
+<div name="vendedor_2_s" hidden>
+    <div id="vendedor_2" class="sign-margin"></div>
+    <b name="nombre_vendedor_2">_______</b><br />
+    <span name="tipo_documento_vendedor_2_cc"> <b>C.C. No.</b>
+        <b name="cedula_vendedor_2">_______</b>
     </span>
-    <span name="tipo_documento_vendedor_1_ce" hidden> <b>C.E. No.</b>
-        <b name="cedulae_vendedor_1">_______</b>
+    <span name="tipo_documento_vendedor_2_ce" hidden> <b>C.E. No.</b>
+        <b name="cedulae_vendedor_2">_______</b>
     </span>
-    <span name="tipo_documento_vendedor_1_pa" hidden> <b>PASAPORTE. No.</b>
-        <b name="pasaporte_vendedor_1">_______</b>
+    <span name="tipo_documento_vendedor_2_pa" hidden> <b>PASAPORTE. No.</b>
+        <b name="pasaporte_vendedor_2">_______</b>
     </span><br />
-    <b>Correo:</b><b name="correo_vendedor_1">_______</b><br />
-    <b>PROMITENTE VENDEDOR 1</b>
+    <b>PROMITENTE VENDEDOR 2</b>
 
-    <span name="vendedor_2_n"></span>
-    <span name="vendedor_2_s" hidden>
-        <br /><br /><br /><br />
-        <span>____________________</span><br />
-        <b name="nombre_vendedor_2">_______</b><br />
-        <span name="tipo_documento_vendedor_2_cc"> <b>C.C. No.</b>
-            <b name="cedula_vendedor_2">_______</b>
+    <div name="vendedor_3_n"></div>
+    <div name="vendedor_3_s" hidden>
+        <div id="vendedor_3" class="sign-margin"></div>
+        <b name="nombre_vendedor_3">_______</b><br />
+        <span name="tipo_documento_vendedor_3_cc"> <b>C.C. No.</b>
+            <b name="cedula_vendedor_3">_______</b>
         </span>
-        <span name="tipo_documento_vendedor_2_ce" hidden> <b>C.E. No.</b>
-            <b name="cedulae_vendedor_2">_______</b>
+        <span name="tipo_documento_vendedor_3_ce" hidden> <b>C.E. No.</b>
+            <b name="cedulae_vendedor_3">_______</b>
         </span>
-        <span name="tipo_documento_vendedor_2_pa" hidden> <b>PASAPORTE. No.</b>
-            <b name="pasaporte_vendedor_2">_______</b>
+        <span name="tipo_documento_vendedor_3_pa" hidden> <b>PASAPORTE. No.</b>
+            <b name="pasaporte_vendedor_3">_______</b>
         </span><br />
-        <b>Correo:</b><b name="correo_vendedor_2">_______</b><br />
-        <b>PROMITENTE VENDEDOR 2</b>
+        <b>PROMITENTE VENDEDOR 3</b>
 
-        <span name="vendedor_3_n"></span>
-        <span name="vendedor_3_s" hidden>
-            <br /><br /><br /><br />
-            <span>____________________</span><br />
-            <b name="nombre_vendedor_3">_______</b><br />
-            <span name="tipo_documento_vendedor_3_cc"> <b>C.C. No.</b>
-                <b name="cedula_vendedor_3">_______</b>
+        <div name="vendedor_4_n"></div>
+        <div name="vendedor_4_s" hidden>
+            <div id="vendedor_4" class="sign-margin"></div>
+            <b name="nombre_vendedor_4">_______</b><br />
+            <span name="tipo_documento_vendedor_4_cc"> <b>C.C. No.</b>
+                <b name="cedula_vendedor_4">_______</b>
             </span>
-            <span name="tipo_documento_vendedor_3_ce" hidden> <b>C.E. No.</b>
-                <b name="cedulae_vendedor_3">_______</b>
+            <span name="tipo_documento_vendedor_4_ce" hidden> <b>C.E. No.</b>
+                <b name="cedulae_vendedor_4">_______</b>
             </span>
-            <span name="tipo_documento_vendedor_3_pa" hidden> <b>PASAPORTE. No.</b>
-                <b name="pasaporte_vendedor_3">_______</b>
+            <span name="tipo_documento_vendedor_4_pa" hidden> <b>PASAPORTE. No.</b>
+                <b name="pasaporte_vendedor_4">_______</b>
             </span><br />
-            <b>Correo:</b><b name="correo_vendedor_3">_______</b><br />
-            <b>PROMITENTE VENDEDOR 3</b>
+            <b>PROMITENTE VENDEDOR 4</b>
 
-            <span name="vendedor_4_n"></span>
-            <span name="vendedor_4_s" hidden>
-                <br /><br /><br /><br />
-                <span>____________________</span><br />
-                <b name="nombre_vendedor_4">_______</b><br />
-                <span name="tipo_documento_vendedor_4_cc"> <b>C.C. No.</b>
-                    <b name="cedula_vendedor_4">_______</b>
+            <div name="vendedor_5_n"></div>
+            <div name="vendedor_5_s" hidden>
+                <div id="vendedor_5" class="sign-margin"></div>
+                <b name="nombre_vendedor_5">_______</b><br />
+                <span name="tipo_documento_vendedor_5_cc"> <b>C.C. No.</b>
+                    <b name="cedula_vendedor_5">_______</b>
                 </span>
-                <span name="tipo_documento_vendedor_4_ce" hidden> <b>C.E. No.</b>
-                    <b name="cedulae_vendedor_4">_______</b>
+                <span name="tipo_documento_vendedor_5_ce" hidden> <b>C.E. No.</b>
+                    <b name="cedulae_vendedor_5">_______</b>
                 </span>
-                <span name="tipo_documento_vendedor_4_pa" hidden> <b>PASAPORTE. No.</b>
-                    <b name="pasaporte_vendedor_4">_______</b>
+                <span name="tipo_documento_vendedor_5_pa" hidden> <b>PASAPORTE. No.</b>
+                    <b name="pasaporte_vendedor_5">_______</b>
                 </span><br />
-                <b>Correo:</b><b name="correo_vendedor_4">_______</b><br />
-                <b>PROMITENTE VENDEDOR 4</b>
-
-                <span name="vendedor_5_n"></span>
-                <span name="vendedor_5_s" hidden>
-                    <br /><br /><br /><br />
-                    <span>____________________</span><br />
-                    <b name="nombre_vendedor_5">_______</b><br />
-                    <span name="tipo_documento_vendedor_5_cc"> <b>C.C. No.</b>
-                        <b name="cedula_vendedor_5">_______</b>
-                    </span>
-                    <span name="tipo_documento_vendedor_5_ce" hidden> <b>C.E. No.</b>
-                        <b name="cedulae_vendedor_5">_______</b>
-                    </span>
-                    <span name="tipo_documento_vendedor_5_pa" hidden> <b>PASAPORTE. No.</b>
-                        <b name="pasaporte_vendedor_5">_______</b>
-                    </span><br />
-                    <b>Correo:</b><b name="correo_vendedor_5">_______</b><br />
-                    <b>PROMITENTE VENDEDOR 5</b>
-                </span>
-            </span>
-        </span>
-    </span>
+                <b>PROMITENTE VENDEDOR 5</b>
+            </div>
+        </div>
+    </div>
+</div>
 </p>

@@ -5,11 +5,11 @@
     }
 </style>
 
-<p>
+<!-- <p>
     <span class="img_tittle">
         <img src="https://mi-contrato-static.s3.amazonaws.com/Home+capital/compramos_casas.jpg" />
     </span>
-</p><br />
+</p><br /> -->
 
 <h2 class="text-center" style="font-size: 12pt">
     ACUERDO PRIVADO DE NEGOCIACIÓN PARA CELEBRACIÓN DE UN CONTRATO DE PROMESA DE COMPRAVENTA
@@ -542,9 +542,15 @@
 
 <p><b>AUTORIZACIONES Y DECLARACIONES</b></p>
 <p>
-    Con la firma del presente acuerdo los promitentes
-    <span name="tipo_persona_1_co"> compradores</span>
-    <span name="tipo_persona_1_ve" hidden> vendedores</span>
+    Con la firma del presente acuerdo
+    <span name="tipo_persona_co"> 
+        <span name="comprador_2_n"> el promitente comprador</span>
+        <span name="comprador_2_s" hidden> los promitentes compradores</span>
+    </span>
+    <span name="tipo_persona_ve" hidden>
+        <span name="vendedor_2_n"> el promitente vendedor</span>
+        <span name="vendedor_2_s" hidden> los promitentes vendedores</span>
+    </span>
     autorizan expresamente a HOME CAPITAL COLOMBIA S.A.S, para Consultar en las bases de datos legalmente constituidas,
     las condiciones personales, de crédito de este último y en listas restrictivas del sistema de administración de
     riesgos de lavado de activos, de financiación de terrorismo, requeridas para adoptar decisiones relativas a la
@@ -552,9 +558,15 @@
 </p>
 <p>
     Por medio del presente documento se hace constancia de que existe una real intención de compra y venta de las partes
-    sobre el inmueble descrito anteriormente. Una vez se hayan aportado los documentos solicitados por la parte del
-    <span name="tipo_persona_2_co"> comprador</span>
-    <span name="tipo_persona_2_ve" hidden> vendedor</span> se procederá a firmar la promesa de compraventa el día
+    sobre el inmueble descrito anteriormente. Una vez se hayan aportado los documentos solicitados por la parte 
+    <span name="tipo_persona_co"> 
+        <span name="comprador_2_n"> del promitente comprador</span>
+        <span name="comprador_2_s" hidden> de los promitentes compradores</span>
+    </span>
+    <span name="tipo_persona_ve" hidden>
+        <span name="vendedor_2_n"> del promitente vendedor</span>
+        <span name="vendedor_2_s" hidden> de los promitentes vendedores</span>
+    </span> se procederá a firmar la promesa de compraventa el día
     <span name="fecha_firma">_______</span> para perfeccionar la presente intención de
     <span name="tipo_negocio">_______</span>.
 </p>

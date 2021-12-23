@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('617abae9cd09a700090308f2'),
+    _id: ObjectId('61a8e83ce3c7d10009e99a8a'),
     config: [
         {
             description: 'Seleccione el tipo de persona',
@@ -7716,23 +7716,7 @@
         },
         {
             description: 'Seleccione el tipo de persona',
-            name: 'tipo_persona_1',
-            options: [
-                {
-                    name: 'Comprador',
-                    value: 'co'
-                },
-                {
-                    name: 'Vendedor',
-                    value: 've'
-                }
-            ],
-            type: 'clausula',
-            value: 'co'
-        },
-        {
-            description: 'Seleccione el tipo de persona',
-            name: 'tipo_persona_2',
+            name: 'tipo_persona',
             options: [
                 {
                     name: 'Comprador',
@@ -8037,8 +8021,7 @@
         'f_pago_sexto_pago',
         'fecha_entrega_inmu',
         'fecha_escritura_pub',
-        'tipo_persona_1',
-        'tipo_persona_2',
+        'tipo_persona',
         'fecha_firma',
         'tipo_negocio',
         'municipio_firma',
@@ -8126,10 +8109,6 @@
             order: 0
         }
     ],
-    preFill: [],
-    preBuildData: [],
-    name: 'ACUERDO PRIVADO DE NEGOCIACION PARA CELEBRACION DE UN CONTRATO DE PROMESA DE COMPRAVENTA',
-    price: 5000,
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
         tipo_documento: 'Ejemplo: Cédula de ciudadanía',
@@ -8157,10 +8136,13 @@
         fecha: 'Ejemplo: 27 de Noviembre 2021',
         forma_pago: 'Ejemplo: Consignación'
     },
-    build: 6,
+    company: ObjectId('618d299c3b775300099e6214'),
     preBuild: true,
-    username: '8b62df2f-b613-402c-ae84-690ada65fb2b',
-    company: ObjectId('614a3a750aebb000084cbac0'),
-    createdAt: ISODate('2021-10-28T14:59:53.792Z'),
-    updatedAt: ISODate('2021-10-28T14:59:53.792Z')
+    preFill: [],
+    preBuildData: [],
+    name: 'Acuerdo de negociación venta TEST',
+    price: 5000,
+    build: 0,
+    createdAt: ISODate('2021-12-02T15:37:32.695Z'),
+    updatedAt: ISODate('2021-12-02T15:37:32.695Z')
 }
