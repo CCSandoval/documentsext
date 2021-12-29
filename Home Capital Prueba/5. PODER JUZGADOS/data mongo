@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('6148eb659b96db0009bd5f40'),
+    _id: ObjectId('61a8e68fe3c7d10009e99a88'),
     config: [
         {
             description: 'Digite el nombre del juzgado',
@@ -1778,10 +1778,9 @@
             type: 'apoderado_3'
         }
     ],
+    preFill: [],
     preBuildData: [],
-    preBuild: true,
-    name: 'PODER JUZGADOS',
-    price: 5000,
+    name: 'PODER JUZGADOS TEST',
     help: {
         juzgado_nombre: 'Juez 5to Civil Municipal',
         poderdante: 'Persona que da poder a otra persona para que la represente en un juicio o actuar en su nombre en cualquier situación',
@@ -1794,9 +1793,10 @@
         estado_civil: 'Ejemplo: casado, con sociedad conyugal vigente',
         correo: 'Ejemplo: ejemplo@gmail.com'
     },
-    build: 10,
-    username: '8b62df2f-b613-402c-ae84-690ada65fb2b',
-    company: ObjectId('614a3a750aebb000084cbac0'),
-    createdAt: ISODate('2021-09-20T20:13:25.407Z'),
-    updatedAt: ISODate('2021-09-20T20:13:25.407Z')
+    preBuild: true,
+    company: ObjectId('618d299c3b775300099e6214'),
+    price: 5000,
+    build: 0,
+    createdAt: ISODate('2021-12-02T15:30:23.218Z'),
+    updatedAt: ISODate('2021-12-02T15:30:23.218Z')
 }

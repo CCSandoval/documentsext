@@ -1,18 +1,6 @@
 {
-    _id: ObjectId('6148eb659b96db0009bd5f40'),
+    _id: ObjectId('61a8e5aae3c7d10009e99a87'),
     config: [
-        {
-            description: 'Digite el nombre del juzgado',
-            help: 'juzgado_nombre',
-            name: 'nombre_juzgado',
-            type: 'text'
-        },
-        {
-            description: 'Digite el municipio donde está ubicado el juzgado',
-            help: 'lugar',
-            name: 'municipio_juzgado',
-            type: 'text'
-        },
         {
             description: 'Digite el nombre completo del poderdante',
             help: 'poderdante',
@@ -1215,7 +1203,7 @@
         },
         {
             description: 'Digite el número de pasaporte del apoderado',
-            help: 'pasaporte',
+            help: 'cedula',
             name: 'pasaporte_apoderado_1',
             prereq: [
                 {
@@ -1226,7 +1214,7 @@
             type: 'name'
         },
         {
-            description: 'Digite el municipio donde fue expedido el documento de identificación del apoderado',
+            description: 'Digite el lugar de expedición del documento de identificación del apoderado',
             help: 'lugar',
             name: 'lugar_expe_cedula_apoderado_1',
             type: 'text'
@@ -1342,8 +1330,8 @@
             type: 'text'
         },
         {
-            description: 'Digite el número de pasaporte del segundo apoderado ',
-            help: 'pasaporte',
+            description: 'Digite el número de pasaporte del segundo apoderado',
+            help: 'cedula',
             name: 'pasaporte_apoderado_2',
             prereq: [
                 {
@@ -1506,8 +1494,8 @@
             type: 'text'
         },
         {
-            description: 'Digite el número de pasaporte del tercer apoderado ',
-            help: 'pasaporte',
+            description: 'Digite el número de pasaporte del tercer apoderado',
+            help: 'cedula',
             name: 'pasaporte_apoderado_3',
             prereq: [
                 {
@@ -1656,8 +1644,6 @@
     ],
     operation: [],
     sign: [
-        'nombre_juzgado',
-        'municipio_juzgado',
         'nombre_poderdante_1',
         'tipo_documento_poderdante_1',
         'cedula_poderdante_1',
@@ -1698,21 +1684,18 @@
         'lugar_expe_cedula_poderdante_5',
         'estado_poderdante_5',
         'lugar_poderdante_5',
-        'sexo_apoderado_1',
         'nombre_apoderado_1',
         'tipo_documento_apoderado_1',
         'cedula_apoderado_1',
         'cedulae_apoderado_1',
         'pasaporte_apoderado_1',
         'lugar_expe_cedula_apoderado_1',
-        'sexo_apoderado_2',
         'nombre_apoderado_2',
         'tipo_documento_apoderado_2',
         'cedula_apoderado_2',
         'cedulae_apoderado_2',
         'pasaporte_apoderado_2',
         'lugar_expe_cedula_apoderado_1',
-        'sexo_apoderado_3',
         'nombre_apoderado_3',
         'tipo_documento_apoderado_3',
         'cedula_apoderado_3',
@@ -1778,25 +1761,24 @@
             type: 'apoderado_3'
         }
     ],
+    preFill: [],
     preBuildData: [],
-    preBuild: true,
-    name: 'PODER JUZGADOS',
-    price: 5000,
+    name: 'PODER ESPECIAL PARA ENTIDADES FINANCIERAS TEST',
     help: {
-        juzgado_nombre: 'Juez 5to Civil Municipal',
-        poderdante: 'Persona que da poder a otra persona para que la represente en un juicio o actuar en su nombre en cualquier situación',
+        poderdante: 'Poderdante: Quien otorga poder a otra persona para que pueda cancelar el patrimonio de familia',
         sexo: 'Femenino',
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
         tipo_documento: 'Cédula de Ciudadanía',
         cedula: 'Ejemplo: 1234567890',
         pasaporte: 'Ejemplo: AAS1234567',
-        lugar: 'Ejemplo: Medellín',
         estado_civil: 'Ejemplo: casado, con sociedad conyugal vigente',
+        lugar: 'Ejemplo: Bogotá',
         correo: 'Ejemplo: ejemplo@gmail.com'
     },
-    build: 10,
-    username: '8b62df2f-b613-402c-ae84-690ada65fb2b',
-    company: ObjectId('614a3a750aebb000084cbac0'),
-    createdAt: ISODate('2021-09-20T20:13:25.407Z'),
-    updatedAt: ISODate('2021-09-20T20:13:25.407Z')
+    preBuild: true,
+    company: ObjectId('618d299c3b775300099e6214'),
+    price: 5000,
+    build: 0,
+    createdAt: ISODate('2021-12-02T15:26:34.857Z'),
+    updatedAt: ISODate('2021-12-02T15:26:34.857Z')
 }

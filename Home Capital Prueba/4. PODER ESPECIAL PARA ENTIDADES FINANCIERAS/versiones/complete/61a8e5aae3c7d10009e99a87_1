@@ -8,12 +8,12 @@
         width: 15rem
     }
 </style>
-<p>
+<!-- <p>
     <span class="img_tittle">
         <img src="https://mi-contrato-static.s3.amazonaws.com/Home+capital/Home_Capital.jpg" />
         <img src="https://mi-contrato-static.s3.amazonaws.com/Home+capital/La_Lonja.jpg" align="right" />
     </span>
-</p><br />
+</p><br /> -->
 
 <h2 class="text-center" style="font-size: 12pt">PODER ESPECIAL PARA ENTIDADES FINANCIERAS</h2>
 
@@ -188,13 +188,13 @@
 <span name="poderdante_2_n"><b>Poderdante</b></span>
 <span name="poderdante_2_s" hidden><b>Poderdante 1</b></span> <br />
 <span name="tipo_documento_poderdante_1_cc"><b>C.C. No.</b>
-    <span name="cedula_poderdante_1">__________</span>
+    <b name="cedula_poderdante_1">__________</b>
 </span>
 <span name="tipo_documento_poderdante_1_ce" hidden><b>C.E. No.</b>
-    <span name="cedulae_poderdante_1">__________</span>
+    <b name="cedulae_poderdante_1">__________</b>
 </span>
 <span name="tipo_documento_poderdante_1_pa" hidden><b>PASAPORTE No.</b>
-    <span name="pasaporte_poderdante_1">__________</span>
+    <b name="pasaporte_poderdante_1">__________</b>
 </span>
 </p>
 
@@ -204,13 +204,13 @@
     <div id="poderdante_2" class="sign-margin"></div>
     <b>Poderdante 2</b> <br />
     <span name="tipo_documento_poderdante_2_cc"><b>C.C. No.</b>
-        <span name="cedula_poderdante_2">__________</span>
+        <b name="cedula_poderdante_2">__________</b>
     </span>
     <span name="tipo_documento_poderdante_2_ce" hidden><b>C.E. No.</b>
-        <span name="cedulae_poderdante_2">__________</span>
+        <b name="cedulae_poderdante_2">__________</b>
     </span>
     <span name="tipo_documento_poderdante_2_pa" hidden><b>PASAPORTE No.</b>
-        <span name="pasaporte_poderdante_2">__________</span>
+        <b name="pasaporte_poderdante_2">__________</b>
     </span>
 </div>
 </p>
@@ -223,13 +223,13 @@
         <div id="poderdante_3" class="sign-margin"></div>
         <b>Poderdante 3</b> <br />
         <span name="tipo_documento_poderdante_3_cc"><b>C.C. No.</b>
-            <span name="cedula_poderdante_3">__________</span>
+            <b name="cedula_poderdante_3">__________</b>
         </span>
         <span name="tipo_documento_poderdante_3_ce" hidden><b>C.E. No.</b>
-            <span name="cedulae_poderdante_3">__________</span>
+            <b name="cedulae_poderdante_3">__________</b>
         </span>
         <span name="tipo_documento_poderdante_3_pa" hidden><b>PASAPORTE No.</b>
-            <span name="pasaporte_poderdante_3">__________</span>
+            <b name="pasaporte_poderdante_3">__________</b>
         </span>
     </div>
 </div>
@@ -245,13 +245,13 @@
             <div id="poderdante_4" class="sign-margin"></div>
             <b>Poderdante 4</b> <br />
             <span name="tipo_documento_poderdante_4_cc"><b>C.C. No.</b>
-                <span name="cedula_poderdante_4">__________</span>
+                <b name="cedula_poderdante_4">__________</b>
             </span>
             <span name="tipo_documento_poderdante_4_ce" hidden><b>C.E. No.</b>
-                <span name="cedulae_poderdante_4">__________</span>
+                <b name="cedulae_poderdante_4">__________</b>
             </span>
             <span name="tipo_documento_poderdante_4_pa" hidden><b>PASAPORTE No.</b>
-                <span name="pasaporte_poderdante_4">__________</span>
+                <b name="pasaporte_poderdante_4">__________</b>
             </span>
         </div>
     </div>
@@ -270,13 +270,13 @@
                 <div id="poderdante_5" class="sign-margin"></div>
                 <b>Poderdante 5</b> <br />
                 <span name="tipo_documento_poderdante_5_cc"><b>C.C. No.</b>
-                    <span name="cedula_poderdante_5">__________</span>
+                    <b name="cedula_poderdante_5">__________</b>
                 </span>
                 <span name="tipo_documento_poderdante_5_ce" hidden><b>C.E. No.</b>
-                    <span name="cedulae_poderdante_5">__________</span>
+                    <b name="cedulae_poderdante_5">__________</b>
                 </span>
                 <span name="tipo_documento_poderdante_5_pa" hidden><b>PASAPORTE No.</b>
-                    <span name="pasaporte_poderdante_5">__________</span>
+                    <b name="pasaporte_poderdante_5">__________</b>
                 </span>
             </div>
         </div>
@@ -289,13 +289,13 @@
 <b name="segundo_apoderado_n">Apoderado</b>
 <b name="segundo_apoderado_s" hidden>Apoderado 1</b><br />
 <span name="tipo_documento_apoderado_1_cc"><b>C.C. No.</b>
-    <span name="cedula_apoderado_1">__________</span>
+    <b name="cedula_apoderado_1">__________</b>
 </span>
 <span name="tipo_documento_apoderado_1_ce" hidden><b>C.E. No.</b>
-    <span name="cedulae_apoderado_1">__________</span>
+    <b name="cedulae_apoderado_1">__________</b>
 </span>
 <span name="tipo_documento_apoderado_1_pa" hidden><b>PASAPORTE No.</b>
-    <span name="pasaporte_apoderado_1">__________</span>
+    <b name="pasaporte_apoderado_1">__________</b>
 </span>
 </p>
 
@@ -305,13 +305,13 @@
     <div id="apoderado_2" class="sign-margin"></div>
     <b>Apoderado 2</b><br />
     <span name="tipo_documento_apoderado_2_cc"><b>C.C. No.</b>
-        <span name="cedula_apoderado_2">__________</span>
+        <b name="cedula_apoderado_2">__________</b>
     </span>
     <span name="tipo_documento_apoderado_2_ce" hidden><b>C.E. No.</b>
-        <span name="cedulae_apoderado_2">__________</span>
+        <b name="cedulae_apoderado_2">__________</b>
     </span>
     <span name="tipo_documento_apoderado_2_pa" hidden><b>PASAPORTE No.</b>
-        <span name="pasaporte_apoderado_2">__________</span>
+        <b name="pasaporte_apoderado_2">__________</b>
     </span>
 </div>
 </p>
@@ -324,13 +324,13 @@
         <div id="apoderado_3" class="sign-margin"></div>
         <b>Apoderado 3</b><br />
         <span name="tipo_documento_apoderado_3_cc"><b>C.C. No.</b>
-            <span name="cedula_apoderado_3">__________</span>
+            <b name="cedula_apoderado_3">__________</b>
         </span>
         <span name="tipo_documento_apoderado_3_ce" hidden><b>C.E. No.</b>
-            <span name="cedulae_apoderado_3">__________</span>
+            <b name="cedulae_apoderado_3">__________</b>
         </span>
         <span name="tipo_documento_apoderado_3_pa" hidden><b>PASAPORTE No.</b>
-            <span name="pasaporte_apoderado_3">__________</span>
+            <b name="pasaporte_apoderado_3">__________</b>
         </span>
     </div>
 </div>

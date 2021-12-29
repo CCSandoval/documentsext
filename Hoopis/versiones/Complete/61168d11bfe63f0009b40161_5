@@ -1,0 +1,1570 @@
+<style type="text/css">
+  .column {
+    display: flex;
+    flex-direction: column
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row
+  }
+
+  .center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text_center {
+    text-align: center
+  }
+
+  .main_content {
+    margin: 5mm 16mm 27mm 16mm;
+    width: 21cm;
+  }
+
+  .header {
+    position: relative;
+    height: 68rem;
+    width: 100%;
+  }
+
+  .header_2 {
+    position: relative;
+    height: 73rem;
+    width: 100%;
+  }
+
+  .header_logo {
+    position: absolute;
+    top: 0.7rem;
+    left: 1rem;
+    width: 10rem
+  }
+
+  .header_logo img {
+    width: 150px
+  }
+
+  .header_logo_2 {
+    position: absolute;
+    top: 0;
+    left: 43rem;
+  }
+
+  .header_logo_2 img {
+    height: 70px
+  }
+
+  .box_1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 21cm;
+    height: 4rem;
+    border: 3px solid #023160;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+
+  .box_2 {
+    position: absolute;
+    top: 4rem;
+    left: 0;
+    width: 21cm;
+    height: 3rem;
+    border: 3px solid #023160;
+    background-color: #023160;
+  }
+
+  .box_3 {
+    position: absolute;
+    top: 4.5rem;
+    left: 0;
+    width: 21cm;
+    height: 4rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center
+  }
+
+  .box_4 {
+    position: absolute;
+    top: 7.3rem;
+    left: 0;
+    width: 21cm;
+    height: 60rem;
+    border: 3px solid #023160;
+  }
+
+  .box_5 {
+    position: absolute;
+    top: 7.8rem;
+    left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .box_6 {
+    position: absolute;
+    top: 11rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_7 {
+    position: absolute;
+    top: 11rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_8 {
+    position: absolute;
+    top: 10rem;
+    left: 0.5rem;
+  }
+
+  .box_9 {
+    position: absolute;
+    top: 10rem;
+    left: 25.5rem;
+  }
+
+  .box_10 {
+    position: absolute;
+    top: 9.8rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_11 {
+    position: absolute;
+    top: 9.8rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_12 {
+    position: absolute;
+    top: 14rem;
+    left: 0.5rem;
+    font-size: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .box_13 {
+    position: absolute;
+    top: 13rem;
+    left: 0.5rem;
+  }
+
+  .box_14 {
+    position: absolute;
+    top: 12.8rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_15 {
+    position: absolute;
+    top: 15.8rem;
+    left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .box_16 {
+    position: absolute;
+    top: 19rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_17 {
+    position: absolute;
+    top: 19rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_18 {
+    position: absolute;
+    top: 18rem;
+    left: 0.5rem;
+  }
+
+  .box_19 {
+    position: absolute;
+    top: 18rem;
+    left: 25.5rem;
+  }
+
+  .box_20 {
+    position: absolute;
+    top: 17.8rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_21 {
+    position: absolute;
+    top: 17.8rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_22 {
+    position: absolute;
+    top: 22rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_23 {
+    position: absolute;
+    top: 21rem;
+    left: 0.5rem;
+  }
+
+  .box_24 {
+    position: absolute;
+    top: 20.8rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_25 {
+    position: absolute;
+    top: 24rem;
+    left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .box_26 {
+    position: absolute;
+    top: 25.5rem;
+    left: 2.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_27 {
+    position: absolute;
+    top: 25.5rem;
+    left: 7.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_28 {
+    position: absolute;
+    top: 25.5rem;
+    left: 11.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_29 {
+    position: absolute;
+    top: 25.5rem;
+    left: 16.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_30 {
+    position: absolute;
+    top: 25.5rem;
+    left: 27rem;
+    font-size: 0.8rem;
+  }
+
+  .box_31 {
+    position: absolute;
+    top: 25.5rem;
+    left: 32.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_32 {
+    position: absolute;
+    top: 25.5rem;
+    left: 39rem;
+    font-size: 0.8rem;
+  }
+
+  .box_33 {
+    position: absolute;
+    top: 25.5rem;
+    left: 46rem;
+    font-size: 0.8rem;
+  }
+
+  .box_34 {
+    position: absolute;
+    top: 25.4rem;
+    left: 1.1rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000000;
+  }
+
+  .box_35 {
+    position: absolute;
+    top: 25.4rem;
+    left: 6.1rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000000;
+  }
+
+  .box_36 {
+    position: absolute;
+    top: 25.4rem;
+    left: 10.1rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000000;
+  }
+
+  .box_37 {
+    position: absolute;
+    top: 25.4rem;
+    left: 25.6rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000000;
+  }
+
+  .box_38 {
+    position: absolute;
+    top: 25.4rem;
+    left: 31.1rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000000;
+  }
+
+  .box_39 {
+    position: absolute;
+    top: 25.4rem;
+    left: 37.6rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000000;
+  }
+
+  .box_40 {
+    position: absolute;
+    top: 25.4rem;
+    left: 44.6rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000000;
+  }
+
+  .box_41 {
+    position: absolute;
+    top: 25.4rem;
+    left: 1.45rem;
+    font-size: 0.8rem;
+  }
+
+  .box_42 {
+    position: absolute;
+    top: 25.4rem;
+    left: 6.45rem;
+    font-size: 0.8rem;
+  }
+
+  .box_43 {
+    position: absolute;
+    top: 25.4rem;
+    left: 10.45rem;
+    font-size: 0.8rem;
+  }
+
+  .box_44 {
+    position: absolute;
+    top: 25.4rem;
+    left: 25.95rem;
+    font-size: 0.8rem;
+  }
+
+  .box_45 {
+    position: absolute;
+    top: 25.4rem;
+    left: 31.45rem;
+    font-size: 0.8rem;
+  }
+
+  .box_46 {
+    position: absolute;
+    top: 25.4rem;
+    left: 37.95rem;
+    font-size: 0.8rem;
+  }
+
+  .box_47 {
+    position: absolute;
+    top: 25.4rem;
+    left: 44.95rem;
+    font-size: 0.8rem;
+  }
+
+  .box_48 {
+    position: absolute;
+    top: 29rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_49 {
+    position: absolute;
+    top: 29rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_50 {
+    position: absolute;
+    top: 29rem;
+    left: 44rem;
+    font-size: 0.8rem;
+  }
+
+  .box_51 {
+    position: absolute;
+    top: 27.8rem;
+    left: 0.5rem;
+  }
+
+  .box_52 {
+    position: absolute;
+    top: 27.8rem;
+    left: 25.5rem;
+  }
+
+  .box_53 {
+    position: absolute;
+    top: 27.8rem;
+    left: 44rem;
+  }
+
+  .box_54 {
+    position: absolute;
+    top: 27.6rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_55 {
+    position: absolute;
+    top: 27.6rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_56 {
+    position: absolute;
+    top: 27.6rem;
+    left: 44rem;
+    font-size: 0.8rem;
+  }
+
+  .box_57 {
+    position: absolute;
+    top: 34rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_58 {
+    position: absolute;
+    top: 34rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_59 {
+    position: absolute;
+    top: 33rem;
+    left: 0.5rem;
+  }
+
+  .box_60 {
+    position: absolute;
+    top: 33rem;
+    left: 25.5rem;
+  }
+
+  .box_61 {
+    position: absolute;
+    top: 32.8rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_62 {
+    position: absolute;
+    top: 31rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_63 {
+    position: absolute;
+    top: 36rem;
+    left: 0.5rem;
+    font-size: 1.2rem;
+  }
+
+  .box_64 {
+    position: absolute;
+    top: 39rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_65 {
+    position: absolute;
+    top: 38rem;
+    left: 0.5rem;
+  }
+
+  .box_66 {
+    position: absolute;
+    top: 37.8rem;
+    left: 0.5rem;
+  }
+
+  .box_67 {
+    position: absolute;
+    top: 41.5rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_68 {
+    position: absolute;
+    top: 41.5rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_69 {
+    position: absolute;
+    top: 41.5rem;
+    left: 36rem;
+    font-size: 0.8rem;
+  }
+
+  .box_70 {
+    position: absolute;
+    top: 41.5rem;
+    left: 43rem;
+    font-size: 0.8rem;
+  }
+
+  .box_71 {
+    position: absolute;
+    top: 40.3rem;
+    left: 0.5rem;
+  }
+
+  .box_72 {
+    position: absolute;
+    top: 40.3rem;
+    left: 25.5rem;
+  }
+
+  .box_73 {
+    position: absolute;
+    top: 40.3rem;
+    left: 36rem;
+  }
+
+  .box_74 {
+    position: absolute;
+    top: 40.3rem;
+    left: 43rem;
+  }
+
+  .box_75 {
+    position: absolute;
+    top: 40.1rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_76 {
+    position: absolute;
+    top: 40.1rem;
+    left: 25.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_77 {
+    position: absolute;
+    top: 40.1rem;
+    left: 36rem;
+    font-size: 0.8rem;
+  }
+
+  .box_78 {
+    position: absolute;
+    top: 40.1rem;
+    left: 43rem;
+    font-size: 0.8rem;
+  }
+
+  .box_79 {
+    position: absolute;
+    top: 43rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_80 {
+    position: absolute;
+    top: 45rem;
+    left: 0;
+    text-align: center;
+    width: 21cm;
+    font-size: 1.2rem;
+  }
+
+  .box_81 {
+    position: absolute;
+    top: 47rem;
+    left: 1rem;
+    width: 20cm;
+    height: 1rem;
+    border: 3px solid #023160;
+    background-color: #023160;
+  }
+
+  .box_82 {
+    position: absolute;
+    top: 47.25rem;
+    left: 1.5rem;
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .box_83 {
+    position: absolute;
+    top: 47.25rem;
+    left: 39rem;
+    color: white;
+    font-size: 0.8rem;
+  }
+
+  .box_84 {
+    position: absolute;
+    top: 48.2rem;
+    left: 1rem;
+    width: 20.105cm;
+    height: 8.5rem;
+    border: 1px solid #023160;
+  }
+
+  .box_85 {
+    position: absolute;
+    top: 48.5rem;
+    left: 1.5rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem
+  }
+
+  .box_86 {
+    position: absolute;
+    top: 49.8rem;
+    left: 1.5rem;
+    width: 19.5cm;
+    border-top: 1px solid #023160;
+  }
+
+  .box_87 {
+    position: absolute;
+    top: 51rem;
+    left: 1.5rem;
+    width: 19.5cm;
+    border-top: 1px solid #023160;
+  }
+
+  .box_88 {
+    position: absolute;
+    top: 52.2rem;
+    left: 1.5rem;
+    width: 19.5cm;
+    border-top: 1px solid #023160;
+  }
+
+  .box_89 {
+    position: absolute;
+    top: 53.4rem;
+    left: 1.5rem;
+    width: 19.5cm;
+    border-top: 1px solid #023160;
+  }
+
+  .box_90 {
+    position: absolute;
+    top: 54.6rem;
+    left: 1.5rem;
+    width: 19.5cm;
+    border-top: 1px solid #023160;
+  }
+
+  .box_91 {
+    position: absolute;
+    top: 55.7rem;
+    left: 1.5rem;
+    width: 19.5cm;
+    border-top: 1px solid #023160;
+  }
+
+  .box_92 {
+    position: absolute;
+    top: 48.5rem;
+    left: 36rem;
+    font-size: 0.8rem;
+  }
+
+  .box_93 {
+    position: absolute;
+    top: 49.7rem;
+    left: 39.5rem;
+    font-size: 0.8rem;
+    line-height: 1.2rem
+  }
+
+  .box_94 {
+    position: absolute;
+    top: 57.5rem;
+    left: 1.6rem;
+    font-size: 1.2rem;
+  }
+
+  .box_95 {
+    position: absolute;
+    top: 59.5rem;
+    left: 1.6rem;
+    width: 14cm;
+    font-size: 0.8rem;
+    line-height: 1rem;
+  }
+
+  .box_96 {
+    position: absolute;
+    top: 59.5rem;
+    left: 35.6rem;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #000000;
+  }
+
+  .box_97 {
+    position: absolute;
+    top: 59.5rem;
+    left: 37rem;
+    font-size: 0.8rem;
+  }
+
+  .box_98 {
+    position: absolute;
+    top: 4.3rem;
+    /* //63rem */
+    left: 0;
+    width: 21cm;
+    height: 3rem;
+    border: 3px solid #023160;
+    background-color: #023160;
+  }
+
+  .box_99 {
+    position: absolute;
+    top: 4.8rem;
+    left: 0;
+    width: 21cm;
+    height: 4rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center
+  }
+
+  .box_100 {
+    position: absolute;
+    top: 9.3rem;
+    left: 0.5rem;
+    font-size: 0.85rem;
+    width: 19cm;
+  }
+
+  .box_101 {
+    position: absolute;
+    top: 12.3rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_102 {
+    position: absolute;
+    top: 13.3rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    width: 20cm;
+    line-height: 0.8rem
+  }
+
+  .box_103 {
+    position: absolute;
+    top: 56.3rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_104 {
+    position: absolute;
+    top: 57.3rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    width: 20cm;
+    line-height: 0.8rem
+  }
+
+  .box_105 {
+    position: absolute;
+    top: 17.5rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_106 {
+    position: absolute;
+    top: 18.5rem;
+    left: 3.5rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+
+  .box_107 {
+    position: absolute;
+    top: 31.5rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_108 {
+    position: absolute;
+    top: 32.5rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+
+  .box_109 {
+    position: absolute;
+    top: 9rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_110 {
+    position: absolute;
+    top: 10rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+
+  .box_111 {
+    position: absolute;
+    top: 28rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_112 {
+    position: absolute;
+    top: 29rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+
+  .box_113 {
+    position: absolute;
+    top: 47rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_114 {
+    position: absolute;
+    top: 48rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+
+  .box_115 {
+    position: absolute;
+    top: 52rem;
+    left: 5.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_116 {
+    position: absolute;
+    top: 9rem;
+    left: 3.5rem;
+    font-size: 0.8rem;
+    width: 18cm;
+    line-height: 0.8rem;
+  }
+
+  .box_117 {
+    position: absolute;
+    top: 7.3rem;
+    left: 0;
+    width: 21cm;
+    height: 65rem;
+    border: 3px solid #023160;
+  }
+
+  .box_118 {
+    position: absolute;
+    top: 67.6rem;
+    left: 0;
+    width: 21cm;
+    height: 4rem;
+    border: 3px solid #023160;
+    background-color: #023160;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .box_119 {
+    position: absolute;
+    top: 68rem;
+    left: 0;
+    width: 21cm;
+    height: 4rem;
+    font-size: 1rem;
+    color: white;
+    text-align: center
+  }
+
+  .box_120 {
+    position: absolute;
+    top: 9rem;
+    left: 2.6rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+
+  .box_121 {
+    position: absolute;
+    top: 9rem;
+    left: 3.5rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+
+  .box_122 {
+    position: absolute;
+    top: 13.5rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+
+  .box_123 {
+    position: absolute;
+    top: 23.5rem;
+    left: 0.5rem;
+    font-size: 0.8rem;
+  }
+
+  .box_124 {
+    position: absolute;
+    top: 24rem;
+    left: 1rem;
+    font-size: 0.8rem;
+    width: 19cm;
+    line-height: 0.8rem;
+  }
+</style>
+
+<div class="column main_content">
+  <!-- head -->
+  <div class="header">
+    <!-- Preliminares -->
+    <div>
+      <div class="header_logo">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/Hoopis-logo.png" />
+      </div>
+
+      <div class="header_logo_2" style=" width: 10rem">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/world.png" />
+      </div>
+
+      <span class="box_1"></span>
+      <span class="box_2"></span>
+      <span class="box_3">Acuerdo de suscripción a HPN University</span>
+      <span class="box_4"></span>
+
+      <span class="box_5">Líder de agencia HPN (para imprimir o completar de forma digital)</span>
+      <span class="box_6">NOMBRE</span>
+      <span class="box_7">TELÉFONO</span>
+      <span class="box_8">______________________________________________</span>
+      <span class="box_9">______________________________________________</span>
+      <span class="box_10" name="nombre_lider">________</span>
+      <span class="box_11" name="telefono_lider">________</span>
+      <span class="box_12">CORREO ELECTRÓNICO</span>
+      <span
+        class="box_13">________________________________________________________________________________________________</span>
+      <span class="box_14" name="correo_lider">________</span>
+
+
+      <span class="box_15">Coordinador administrativo</span>
+      <span class="box_16">NOMBRE</span>
+      <span class="box_17">TELÉFONO</span>
+      <span class="box_18">______________________________________________</span>
+      <span class="box_19">______________________________________________</span>
+      <span class="box_20" name="nombre_coordinador">________</span>
+      <span class="box_21" name="telefono_coordinador">________</span>
+      <span class="box_22">CORREO ELECTRÓNICO</span>
+      <span
+        class="box_23">________________________________________________________________________________________________</span>
+      <span class="box_24" name="correo_coordinador">________</span>
+    </div>
+
+
+    <div>
+      <span class="box_25">Información sobre pagos</span>
+      <span class="box_26">VISA</span>
+      <span class="box_27">MC</span>
+      <span class="box_28">AMEX</span>
+      <span class="box_29">FRECUENCIA DE<br />FACTURACIÓN:</span>
+      <span class="box_30">Mensual</span>
+      <span class="box_31">Trimestral</span>
+      <span class="box_32">Semi anual</span>
+      <span class="box_33">Anual</span>
+      <span class="box_34"></span>
+      <span class="box_35"></span>
+      <span class="box_36"></span>
+      <span class="box_37"></span>
+      <span class="box_38"></span>
+      <span class="box_39"></span>
+      <span class="box_40"></span>
+
+      <span class="box_41"><span name="pago_v">x</span></span>
+      <span class="box_42"><span name="pago_m" hidden>x</span></span>
+      <span class="box_43"><span name="pago_a" hidden>x</span></span>
+      <span class="box_44"><span name="frecuencia_m">x</span></span>
+      <span class="box_45"><span name="frecuencia_t" hidden>x</span></span>
+      <span class="box_46"><span name="frecuencia_s" hidden>x</span></span>
+      <span class="box_47"><span name="frecuencia_a" hidden>x</span></span>
+    </div>
+
+    <div>
+      <span class="box_48">NÚMERO DE TARJETA DE CRÉDITO</span>
+      <span class="box_49">FECHA DE VENCIMIENTO</span>
+      <span class="box_50">CSV</span>
+      <span class="box_51">______________________________________________</span>
+      <span class="box_52">__________________________________</span>
+      <span class="box_53">_________</span>
+      <span class="box_54" name="tarjeta_numero">________</span>
+      <span class="box_55" name="tarjeta_vencimiento">________</span>
+      <span class="box_56" name="tarjeta_csv">________</span>
+
+      <span class="box_57">NOMBRE SEGÚN FIGURA EN LA TARJETA</span>
+      <span class="box_58">FIRMA</span>
+      <span class="box_59">______________________________________________</span>
+      <span class="box_60">______________________________________________</span>
+      <span class="box_61" name="nombre_tarjeta">________</span>
+
+      <span class="box_62">
+        <div id="tarjeta" class="sign-margin"></div>
+      </span>
+    </div>
+
+    <div>
+      <span class="box_63">Dirección de facturación</span>
+      <span class="box_64">EMPRESA/NOMBRE DE ORGANIZACIÓN</span>
+      <span
+        class="box_65">________________________________________________________________________________________________</span>
+      <span class="box_66" name="nombre_empresa">________</span>
+      <span class="box_67">DIRECCIÓN DE CALLE</span>
+      <span class="box_68">CIUDAD</span>
+      <span class="box_69">ESTADO</span>
+      <span class="box_70">CÓDIGO POSTAL</span>
+      <span class="box_71">______________________________________________</span>
+      <span class="box_72">__________________</span>
+      <span class="box_73">___________</span>
+      <span class="box_74">___________</span>
+      <span class="box_75" name="direccion_empresa">________</span>
+      <span class="box_76" name="ciudad_empresa">________</span>
+      <span class="box_77" name="estado_empresa">________</span>
+      <span class="box_78" name="codigo_postal_empresa">________</span>
+
+
+      <span class="box_79">Al ejecutar este documento, confirmo que actualmente tengo
+        <span name="numero_asesores">________</span> de asesores.
+      </span>
+    </div>
+
+    <div>
+      <span class="box_80">Beneficios incluidos con Su Suscripción:</span>
+      <span class="box_81"></span>
+      <span class="box_82">DESCRIPCIÓN</span>
+      <span class="box_83">CANTIDAD</span>
+      <span class="box_84"></span>
+      <span class="box_85">
+        Licencia para sitio de HPN University; con acceso de hasta (300) usuarios<br />
+        Acceso al Canal en español de HPN<br />
+        Acceso al Programa de Certificación en Orientación y Administración<br />
+        Acceso al Contenido de Desarrollo de Liderazgo de HPN<br />
+        Acceso a herramientas; es decir, evaluaciones de capacidades, Phone Buddy, y más<br /><br />
+        *40% de descuento
+      </span>
+      <span class="box_86"></span>
+      <span class="box_87"></span>
+      <span class="box_88"></span>
+      <span class="box_89"></span>
+      <span class="box_90"></span>
+      <span class="box_91"></span>
+      <span class="box_92"><del>$1000.00</del> $600.00 USD por mes*</span>
+      <span class="box_93">Incluido<br />Incluido<br />Incluido<br />Incluido</span>
+    </div>
+
+    <div>
+      <span class="box_94">Paquetes de usuario adicionales</span>
+      <span class="box_95">Usted puede comprar paquetes de usuario para acomodar más usuarios de los que están incluidos
+        en su licencia para sitio. Los precios son adicionales a sus cargos por conexión regulares.
+      </span>
+      <span class="box_96"></span>
+      <span class="box_97">(10) USUARIOS POR $50/MES</span>
+    </div>
+    <span class="box_118"></span>
+    <span class="box_119">
+      Hoopis Performance Network • 790 Frontage Road, Ste.300 • Northfield, IL 60093<br />
+      Correo electrónico: info@hoopis.com • Teléfono: 847-716-1800 • Fax: 847-716-1801 • www.hoopis.com<br />
+      REGRESE ESTE FORMULARIO POR CORREO ELECTRÓNICO O FAX
+    </span>
+  </div>
+</div>
+
+
+<div style="page-break-after: always;"></div>
+
+<div class="column main_content">
+  <!-- head -->
+  <div class="header_2">
+    <!-- Preliminares -->
+    <div>
+      <div class="header_logo">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/Hoopis-logo.png" />
+      </div>
+
+      <div class="header_logo_2" style=" width: 10rem">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/world.png" />
+      </div>
+      <span class="box_1"></span>
+      <span class="box_117"></span>
+    </div>
+
+    <div>
+      <span class="box_98"></span>
+      <span class="box_99">Términos y Condiciones</span>
+      <span class="box_100">LEA EL SIGUIENTE ACUERDO (el “Acuerdo”) entre usted (el “Cliente”) y Hoopis Performance
+        Network, LLC (“HPN”) (cada cual una “Parte”, y colectivamente, las “Partes”).
+      </span>
+    </div>
+
+    <div>
+      <span class="box_101">1. DEFINICIONES</span>
+      <span class="box_102">
+        <ol type="a">
+          <li><b>“Datos del Cliente”</b> hace referencia a todo uso asociado con cualquier Usuario y cualquier
+            información que dichos Usuarios transmitan y/o ingresen al Sitio que está asociado con su uso del Sitio o
+            los Servicios.
+          </li><br /><br />
+          <li><b>“Información confidencial”</b> hace referencia, en el caso del Cliente, a la información o datos
+            relacionados a la actividad comercial y asuntos del Cliente que el Cliente pueda demostrar con evidencia
+            escrita que es confidencial y de propiedad del Cliente y que tiene un valor derivado de su confidencialidad,
+            y que incluirá, en cualquier caso, Datos del Cliente, Información Personal, y todas las copias, pasajes,
+            extractos, informes, análisis, compilaciones y resúmenes hechos y derivados del anterior, y en el caso de
+            HPN, hace referencia a toda la información respecto a las actividades y asuntos comerciales de HPN, la
+            operación del Sitio y Servicios, la propiedad intelectual de los licenciadores y de HPN y otros trabajos de
+            autoría, los términos de este Acuerdo, la fijación de precios de los Servicios en virtud de este Acuerdo, y
+            cualquier información que tenga relación con la propiedad de HPN según se describe en la Sección 5. El
+            término “Información confidencial”, en ningún caso, incluirá información que se encuentre en el dominio
+            público a menos que sea consecuencia de una violación de las obligaciones de este Acuerdo, que sea conocida
+            o desarrollada independientemente por el receptor antes de la divulgación, o que haya sido recibida por el
+            receptor de manos de una tercera parte que no se encuentre en una violación de una obligación de
+            confidencialidad con respecto a dicha información.
+          </li><br /><br />
+          <li><b>“Fecha efectiva”</b> hace referencia a la fecha en que el Cliente ejecuta este Acuerdo.</li>
+          <br /><br />
+          <li><b>“Material”</b> hace referencia a los materiales de capacitación contenidos en el Sitio, los cuales se
+            derivan completa o parcialmente del material entregado por HPN, sus filiales, licenciadores y otras fuentes.
+          </li><br /><br />
+          <li><b>“Información personal”</b> hace referencia a la información relacionada a personas identificadas o
+            identificables que podría ser utilizada para identificar a dichas personas.
+          </li><br /><br />
+          <li><b>“Servicio” o “Servicios”</b> hace referencia, según requiera el contexto, (i) al Sitio y a todas las
+            bibliotecas, módulos de información y Materiales asociados; (ii) al derecho de acceso y uso que HPN entrega
+            al Cliente y a sus Usuarios al Sitio y a las características y funcionalidades del servicio que son parte
+            del Sitio; (iii) a la mantención del Sitio y a todos los lanzamientos, actualizaciones y mejoras y a las
+            interfaces del Sitio y el Servicio puestos a disposición por HPN a lo largo del Período de este Acuerdo;
+            (iv) al almacenamiento e información de los Datos del Cliente para el Cliente; (v) a cualquier servicio de
+            personalización/modificación que se haya acordado entre las Partes; y (vi) a otros servicios a los que las
+            Partes puedan acordar por escrito en algún momento.
+          </li><br /><br />
+          <li><b>“Sitio”</b> hace referencia a la plataforma en línea de productos y materiales de capacitación
+            normalmente conocidos como “the HPN University,” incluyendo al sitio móvil relacionado, el cual se pondrá a
+            disposición, alojará y recibirá mantención de parte de HPN en virtud de este Acuerdo.
+          </li><br /><br />
+          <li><b>“Marcas registradas”</b> hace referencia de forma colectiva, a las marcas registradas, marcas de
+            servicio, nombres comerciales, logotipos y otras designaciones comerciales o de productos de una Parte.
+          </li><br /><br />
+          <li><b>“Datos de uso”</b> hace referencia a todos los datos e información relacionados al uso del Sitio de
+            parte de Usuarios que HPN recopila o mantiene en conjunto con su entrega del Sitio o de los Servicios,
+            incluyendo todas las estadísticas de uso del Usuario, registros de visitas, estadísticas de visitas a la
+            página e información relacionada.
+          </li><br /><br />
+          <li><b>“Usuario” o “Usuarios”</b> hace referencia al Cliente y a aquellos empleados del Cliente que puedan
+            tener la autorización del Cliente, de vez en cuando, para utilizar el Sitio y el Servicio.
+          </li>
+        </ol>
+      </span>
+
+      <span class="box_103">2. EL SITIO</span>
+      <span class="box_104">
+        <ol type="a">
+          <li><b>Propiedad de HPN.</b> El Sitio, incluyendo los sistemas operativos de soporte, todo el contenido, y
+            herramientas que allí residan, incluyendo los diferentes módulos y bibliotecas de capacitación y otros
+            Materiales, al igual que toda actualización y mejora a cualquiera de los ya mencionados, lo cual podría
+            incluir, o no, Materiales nuevos, mejoras y características, capacidades y funcionalidades adicionales, y
+            salvo para la propiedad del Cliente detallada en la Sección 8(c) más adelante, en todo momento permanecerá
+            como la propiedad única y exclusiva de HPN, sus filiales y licenciadores.
+          </li><br /><br />
+          <li><b>Concesión de Licencia.</b> HPN por la presente concede al Cliente (y, por extensión mediante este
+            Acuerdo, a los Usuarios), una licencia no excluyente para acceder y utilizar el Sitio y los Materiales allí
+            contenidos, a lo largo del Período. El Cliente es responsable por todo costo asociado con su propio
+            hardware, software y acceso a las telecomunicaciones de su computador y dispositivo móvil según se requiera
+            para acceder al Internet.
+          </li>
+        </ol>
+      </span>
+      <span class="box_118"></span>
+      <span class="box_119">
+        Hoopis Performance Network • 790 Frontage Road, Ste.300 • Northfield, IL 60093<br />
+        Correo electrónico: info@hoopis.com • Teléfono: 847-716-1800 • Fax: 847-716-1801 • www.hoopis.com<br />
+        REGRESE ESTE FORMULARIO POR CORREO ELECTRÓNICO O FAX
+      </span>
+    </div>
+  </div>
+</div>
+
+<div style="page-break-after: always;"></div>
+
+<div class="column main_content">
+  <!-- head -->
+  <div class="header_2">
+    <!-- Preliminares -->
+    <div>
+      <div class="header_logo">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/Hoopis-logo.png" />
+      </div>
+
+      <div class="header_logo_2" style=" width: 10rem">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/world.png" />
+      </div>
+      <span class="box_1"></span>
+      <span class="box_117"></span>
+    </div>
+
+    <div>
+      <span class="box_98"></span>
+      <span class="box_99">Términos y Condiciones</span>
+    </div>
+
+    <div>
+      <span class="box_120">c.</span>
+      <span class="box_121">
+        <b>Referencias promocionales internas.</b> HPN concede al Cliente una licencia limitada, no excluyente y
+        el derecho de usar, incorporar, exhibir, distribuir y publicar el nombre y Marcas registradas de HPN, al
+        igual que los nombres de las filiales de HPN y los nombres de los licenciadores de HPN, incluyendo el
+        nombre personal de Harry Hoopis, así como cualquier imagen o información biográfica utilizada de manera
+        pública, para los fines de promoción interna del Sitio, los Servicios y los Materiales de HPN, entre el
+        público de Usuarios internos del Cliente, durante el Período. El uso del Cliente de cualquier nombre o
+        Marca registrada en lo sucesivo cumplirá con las directrices de dicho uso según HPN le entregue al Cliente
+        de vez en cuando, y HPN tendrá el derecho de terminar la licencia concedida en esta Sección con respecto a
+        cualquier nombre o Marca registrada si, a la entera discreción de HPN; el Cliente no cumple con dichas
+        directrices o realiza cualquier acción que pueda perjudicar los derechos de HPN, filiales de HPN,
+        licenciadores de HPN o Harry Hoopis en dicho nombre o Marca registrada, la buena voluntad inherente en ello,
+        o su reputación de forma general.</span>
+      <span class="box_105">3. USO DEL SITIO Y LOS MATERIALES</span>
+      <span class="box_106">
+        <p>A menos que se especifique lo contrario, el Sitio es para el uso personal del Cliente o de sus Usuarios, o
+          según se describe en este Acuerdo. El Cliente ni sus Usuarios pueden usar el Sitio, el Material o cualquier
+          otro contenido que esté contenido allí mismo para cualquier fin que sea ilícito o que esté prohibido en virtud
+          de este Acuerdo, para solicitar la realización de cualquier actividad ilegal u otra actividad que infrinja los
+          derechos de HPN u otros. Salvo que en este Acuerdo se entregue o contemple, el Cliente y sus Usuarios no
+          pueden modificar, copiar, reproducir, re-publicar, subir, publicar, transmitir, distribuir o mostrar
+          públicamente en modo alguno ningún Material del Sitio incluyendo el código y el software.
+        </p>
+        <p>A pesar de lo anteriormente mencionado, nada impedirá que el Cliente y los Usuarios del Sitio: (i) comenten
+          el Sitio o los Materiales con otros Usuarios del Sitio o que se distribuyan Materiales a esos Usuarios, o (ii)
+          utilicen evaluaciones, cuestionarios u otros Materiales que para HPN están dirigidos para su distribución,
+          siempre que la fuente de esos Materiales sea atribuida a HPN. Todo derecho, título y participación (incluyendo
+          todo derecho de autor y otro derecho de propiedad intelectual) en el Material sobre el Sitio (tanto en formato
+          impreso como legible por máquina) pertenece a HPN y a sus licenciantes (con la excepción de cualquier
+          Marca registrada del Cliente). El Cliente y sus Usuarios no adquieren ninguna participación patrimonial en
+          ningún Material o copias del mismo.
+        </p>
+      </span>
+    </div>
+
+    <span class="box_107">4. CONTRASEÑAS Y SEGURIDAD</span>
+    <span class="box_108">
+      <ol type="a">
+        <li><b>Asignación de contraseña.</b> El Sitio está disponible solamente con base en una suscripción
+          (“Suscripción”) pagada. El Cliente asignará a cada persona con acceso al Sitio, conforme a la Suscripción, una
+          contraseña personal generada por HPN. El Cliente asignará y distribuirá contraseñas personales a las personas
+          con acceso al Sitio conforme a la Suscripción de acuerdo a los términos establecidos en este Acuerdo. El
+          Cliente es únicamente responsable de asegurarse de que sus Usuarios (i) mantengan sus contraseñas
+          confidenciales, (ii) se abstengan de compartir una contraseña entre dos o más individuos, y (iii) restrinjan
+          el acceso a cualquier computador que un Usuario utilice para acceder al Sitio. El Cliente reconoce que cada
+          contraseña será personal y única para el Usuario correspondiente, que no será utilizada por nadie más que el
+          Usuario y que el Cliente es responsable por las actividades de sus Usuarios. El Cliente guardará registros
+          actualizados y precisos de sus Usuarios y podría solicitársele entregarlos a HPN bajo petición. HPN puede
+          realizar un control del uso de contraseñas del Cliente y sus Usuarios en las instalaciones del Cliente bajo
+          aviso razonable.
+        </li><br /><br />
+        <li><b>Usuario y Cambios de Contraseña.</b> El Cliente puede cambiar, eliminar y añadir Usuarios de vez en
+          cuando, incluyendo mediante el reemplazo de Usuarios antiguos que hayan terminado su empleo con el Cliente,
+          hayan cambiado su estado o función laboral, o que ya no necesiten o tengan la autorización del Cliente de
+          hacer un uso continuo del Sitio o de los Servicios, sin pago de un cobro por activación o desactivación en
+          el momento de cualquiera de dichos cambios, siempre que el número de Usuarios no exceda el número máximo
+          pagado en virtud de la Suscripción. El Cliente notificará a HPN inmediatamente si un Usuario ha sido despedido
+          o si ya no tiene autorización del Cliente para utilizar el Sitio o los Servicios de modo que HPN pueda
+          desactivar la contraseña del Usuario y entregar una contraseña de recambio si es necesario.
+        </li><br /><br />
+        <li><b>Información del Cliente/Usuario.</b> Todo material, información u otra comunicación transmitida o
+          publicada en el Sitio por el Cliente o cualquiera de sus Usuarios, salvo Información Personal, será
+          considerado como no confidencial y de no propiedad y HPN no tendrá compromisos con respecto al mismo. HPN y
+          sus designados tienen la libertad de copiar, divulgar, distribuir, incorporar y por lo demás utilizar
+          cualquier otra comunicación y todos los datos, imágenes, sonidos, texto y otras cosas de allí materializadas
+          para cualquier fin comercial o no comercial. HPN acepta que las direcciones de correo electrónico del Usuario
+          no serán utilizadas para ningún otro propósito que el de registrar a las personas como Usuario y para
+          comunicarse con dichos Usuarios en el curso de la entrega de Servicios en virtud de este Acuerdo. HPN además
+          acepta que la Información Personal solamente será utilizada para fines de entrega de Servicios en virtud de
+          este Acuerdo, acceso al Sitio, y dicho uso e informes de actividad según se contemplan en este Acuerdo. El
+          Cliente reconoce que cualquier mensaje o información enviada a través del Sitio puede ser leída o interceptada
+          por otros, incluso si las transmisiones están etiquetadas de “cifradas”.
+        </li>
+      </ol>
+    </span>
+
+    <span class="box_118"></span>
+    <span class="box_119">
+      Hoopis Performance Network • 790 Frontage Road, Ste.300 • Northfield, IL 60093<br />
+      Correo electrónico: info@hoopis.com • Teléfono: 847-716-1800 • Fax: 847-716-1801 • www.hoopis.com<br />
+      REGRESE ESTE FORMULARIO POR CORREO ELECTRÓNICO O FAX
+    </span>
+  </div>
+</div>
+
+<div style="page-break-after: always;"></div>
+
+<div class="column main_content">
+  <!-- head -->
+  <div class="header_2">
+    <!-- Preliminares -->
+    <div>
+      <div class="header_logo">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/Hoopis-logo.png" />
+      </div>
+
+      <div class="header_logo_2" style=" width: 10rem">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/world.png" />
+      </div>
+      <span class="box_1"></span>
+      <span class="box_117"></span>
+    </div>
+
+    <div>
+      <span class="box_98"></span>
+      <span class="box_99">Términos y Condiciones</span>
+    </div>
+
+    <span class="box_109">5. CONFIDENCIALIDAD</span>
+    <span class="box_110">
+      <ol type="a">
+        <li><b>Información confidencial.</b> Cada parte podrá, en el curso de la consecución en virtud de este Acuerdo y
+          de vez en cuando durante el Período, proveer a la otra parte de Información Confidencial. Las Partes aceptan
+          que, durante el período de este Acuerdo y en adelante, cada Parte mantendrá la Información Confidencial en
+          confidencialidad para el beneficio de la otra Parte (incluso realizando aquellos pasos que la Parte realiza
+          para proteger su propia información, datos u otra propiedad tangible o intangible que considera confidencial),
+          y no distribuirá, duplicará, revelará, publicará, divulgará o causará que se divulgue, o por lo demás
+          transferirá, de forma directa o indirecta, la Información Confidencial de la otra Parte a ningún otro tercero.
+          Cada Parte limitara la divulgación interna de la Información Confidencial de la otra Parte al personal que
+          tenga una necesidad de conocerla y a quienes se les ha informado de la naturaleza confidencial de la misma.
+          Cada Parte puede divulgar la Información Confidencial a sus filiales y a sus contratistas cuando sea necesario
+          y solamente en conexión con la realización de sus obligaciones de aquí en adelante, siempre que dicha Parte
+          sea responsable por el cumplimiento de sus filiales y contratistas de todos los términos y condiciones de este
+          Acuerdo que tengan relación con dicha Información Confidencial. Los términos de esta Sección sobrevivirán la
+          terminación o vencimiento de este Acuerdo.
+        </li><br /><br />
+        <li><b>Divulgación requerida.</b> En el caso que en virtud de una ley, norma, regulación, tribunal u orden
+          administrativa se requiera que una Parte divulgue Información Confidencial de la otra Parte, la Parte
+          receptora realizará esfuerzos comerciales razonables para hacer lo siguiente: (A) donde no lo prohíba la ley,
+          entregar una Notificación escrita oportuna sobre la divulgación requerida a la Parte divulgadora; (B) limitar
+          dicha divulgación lo más practicable y requerido posible; y (C) proporcionar ayuda razonable a la Parte
+          divulgadora, a expensas de la Parte divulgadora, para buscar evitar cualquier divulgación del tipo o para
+          obtener una orden de protección adecuada para dicha divulgación requerida.
+        </li>
+      </ol>
+    </span>
+
+    <span class="box_111">6. PERÍODO Y TERMINACIÓN</span>
+    <span class="box_112">
+      <ol type="a">
+        <li><b>Período.</b> El período de este Acuerdo comenzará en la Fecha Efectiva, y será renovado automáticamente
+          al comienzo de cada mes luego de la Fecha Efectiva (o al comienzo de cada año para Suscripciones anuales), a
+          menos que se termine antes de acuerdo con sus periodos (el “Período”). La Suscripción está sujeta a
+          un Período mínimo de 180 días.
+        </li><br /><br />
+        <li><b>Terminación por Conveniencia.</b> El Cliente puede terminar este Acuerdo en cualquier momento luego del
+          Período mínimo de 180 días. HPN puede terminar este Acuerdo en cualquier momento. La Parte terminante debe
+          entregar notificación escrita a la otra Parte de acuerdo con la Sección 12(i) de la misma. Si una Parte
+          termina este Acuerdo, la Suscripción terminará el final del mes en el cual la Parte no terminante recibió
+          dicha notificación. Si dicha terminación ocurre bajo una Suscripción anual, HPN reembolsará al Cliente los
+          Cargos de Suscripción prorrateados por los meses pagados y no utilizados. Si el Cliente termina este Acuerdo
+          antes del Período mínimo de 180 días, el crédito o la tarjeta de crédito del Cliente recibirá un cargo por el
+          pago de los Cargos de Suscripción correspondientes al Período mínimo de 180 días.
+        </li><br /><br />
+        <li><b>Terminación por Causa justificada.</b> HPN tendrá el derecho de terminar inmediatamente la Suscripción
+          (incluyendo las contraseñas y el derecho de acceso al Sitio y los Servicios) si HPN, en su entera discreción,
+          considera que el uso del Cliente o de cualquier Usuario es inaceptable, o en el caso de alguna violación
+          de estos términos por parte del Cliente. Luego de la terminación o cancelación de la Suscripción, el Cliente
+          asegurará que todo individuo que tuvo acceso al Sitio bajo la Suscripción recibió instrucción de cesar el uso,
+          y de eliminar, toda copia de todo Material. Bajo solicitud de HPN, el Cliente le entregará a HPN una
+          declaración escrita, firmada por el Cliente, que certifica el cumplimiento con la anterior obligación.
+        </li>
+      </ol>
+    </span>
+
+    <span class="box_113">7. CARGOS DE SUSCRIPCIÓN</span>
+    <span class="box_114">
+      <ol type="a">
+        <li><b>Cargos.</b> El Cliente pagará a HPN de acuerdo con los siguientes modelos de precios, según se indica en
+          el formulario de registro completado por el Cliente, en consideración de los derechos y Servicios en virtud de
+          este Acuerdo (los “Cargos de Suscripción”):
+        </li><br /><br /><br /><br /><br />
+        <li><b>Pago de Cargos.</b> El Cliente pagará a HPN los Cargos de Suscripción con una periodicidad mensual o
+          anual. HPN cobrará a la tarjeta de débito o de crédito del cliente por el monto completo de los Cargos de
+          Suscripción mensuales y los impuestos que apliquen (si hubiere) el primer día hábil de cada mes a menos que
+          el Acuerdo llegue a término de acuerdo con sus períodos. Los Cargos de Suscripción pagados con periodicidad
+          mensual no son reembolsables, completa o parcialmente. Si el cliente selecciona una Suscripción anual, HPN
+          notificará al Cliente antes de que se haga el cobro del Cargo de Suscripción anual a la tarjeta registrada de
+          débito o de crédito (lo cual incluirá impuestos aplicables, si hubiere) luego del pago inicial por un año. El
+          primer pago vence en la Fecha Efectiva (menos cualquier monto prorrateado).
+        </li>
+      </ol>
+    </span>
+    <span class="box_115">(i) $600.00 USD por mes por Ciento Setenta y Seis (176) hasta Tres Cientos Usuarios
+      (300)
+    </span>
+
+    <span class="box_118"></span>
+    <span class="box_119">
+      Hoopis Performance Network • 790 Frontage Road, Ste.300 • Northfield, IL 60093<br />
+      Correo electrónico: info@hoopis.com • Teléfono: 847-716-1800 • Fax: 847-716-1801 • www.hoopis.com<br />
+      REGRESE ESTE FORMULARIO POR CORREO ELECTRÓNICO O FAX
+    </span>
+  </div>
+
+</div>
+
+<div style="page-break-after: always;"></div>
+
+<div class="column main_content">
+  <!-- head -->
+  <div class="header_2">
+    <!-- Preliminares -->
+    <div>
+      <div class="header_logo">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/Hoopis-logo.png" />
+      </div>
+
+      <div class="header_logo_2" style=" width: 10rem">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/hoopis/world.png" />
+      </div>
+      <span class="box_1"></span>
+      <span class="box_117"></span>
+    </div>
+
+    <div>
+      <span class="box_98"></span>
+      <span class="box_99">Términos y Condiciones</span>
+    </div>
+
+    <span class="box_116">Si HPN no puede procesar el pago utilizando la tarjeta registrada de débito o crédito, HPN
+      entregará notificación al Cliente. El hecho de que el Cliente no entregue información válida de la tarjeta de
+      débito y de crédito y que no pague los Cargos de Suscripción dentro de diez (10) días hábiles luego de recibir
+      notificación constituirá una violación de este Acuerdo y resultará en la terminación de la Suscripción del
+      Cliente. El Cliente es responsable de entregar a HPN información actualizada, completa y eficaz respecto a la
+      información del nombre, correo electrónico y tarjetas de débito y de crédito proporcionadas al momento del
+      registro.
+    </span>
+    <span class="box_122">
+      <ol type="a" start="3">
+        <li><b>Impuestos.</b> El Cliente será responsable del pago de todos los cargos asociados con la conexión al
+          Sitio de HPN y del pago del Impuesto sobre Bienes y Servicios, Impuesto sobre la Venta e impuestos y cargos de
+          consumo o uso similar, según aplique.
+        </li><br /><br />
+        <li><b>Modificación de Términos.</b> HPN tendrá el derecho en cualquier momento de imponer, cambiar o modificar
+          sus Cargos de Suscripción y métodos de facturación u otros términos y condiciones aplicables al uso de la
+          Suscripción por parte del Cliente, incluyendo pero no limitando a los términos de este Acuerdo, o para imponer
+          nuevos términos y condiciones. Dichos cambios, modificaciones, adiciones o eliminaciones serán efectivos tres
+          días luego de que HPN envíe una notificación de los mismos de acuerdo con la Sección 12(f) de esto. Cualquier
+          uso de la Suscripción por el Cliente luego de dicha notificación será considerado concluyentemente como la
+          aceptación del Cliente de dichos cambios, modificaciones, adiciones o eliminaciones.
+        </li>
+      </ol>
+    </span>
+
+    <span class="box_123">8. SERVICIOS</span>
+    <span class="box_124">
+      <ol type="a">
+        <li><b>Gestor de Clientes.</b> A partir de la Fecha Efectiva, HPN designará un gestor de clientes HPN al Cliente
+          para ayudar con el uso del Sitio y los Servicios por parte del Cliente (el “Gestor de Clientes”). HPN
+          entregará al Cliente el número de teléfono y dirección de correo electrónico del Gestor de Clientes y éste
+          actuará como el punto de contacto principal del Cliente en HPN para la resolución de problemas y ayuda
+          respecto a la Suscripción a lo largo del Período.
+        </li><br /><br />
+        <li><b>Capacitación.</b> 
+        </li>
+      </ol>
+    </span>
+
+
+    <span class="box_118"></span>
+    <span class="box_119">
+      Hoopis Performance Network • 790 Frontage Road, Ste.300 • Northfield, IL 60093<br />
+      Correo electrónico: info@hoopis.com • Teléfono: 847-716-1800 • Fax: 847-716-1801 • www.hoopis.com<br />
+      REGRESE ESTE FORMULARIO POR CORREO ELECTRÓNICO O FAX
+    </span>
+
+  </div>
+</div>
