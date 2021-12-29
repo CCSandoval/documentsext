@@ -1,0 +1,258 @@
+{
+    _id: ObjectId('61168d11bfe63f0009b40161'),
+    config: [
+        {
+            description: 'Seleccione el máximo de usuarios',
+            name: 'max_users',
+            options: [
+                {
+                    name: '75 usuarios',
+                    value: '75'
+                },
+                {
+                    name: '175 usuarios',
+                    value: '175'
+                },
+                {
+                    name: '300 usuarios',
+                    value: '300'
+                }
+            ],
+            type: 'clausula',
+            value: '75'
+        },
+        {
+            description: 'Digite el correo electrónico del usuario que diligenciará el documento',
+            help: 'correo',
+            name: 'correo_receptor',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre de líder de agencia HPN',
+            help: 'name',
+            name: 'nombre_lider',
+            type: 'text'
+        },
+        {
+            description: 'Digite el teléfono de líder de agencia HPN',
+            help: 'telefono',
+            name: 'telefono_lider',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico de líder de agencia HPN',
+            help: 'correo',
+            name: 'correo_lider',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre del coordinador administrativo',
+            help: 'name',
+            name: 'nombre_coordinador',
+            type: 'name'
+        },
+        {
+            description: 'Digite el teléfono del coordinador administrativo',
+            help: 'telefono',
+            name: 'telefono_coordinador',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del coordinador administrativo',
+            help: 'correo',
+            name: 'correo_coordinador',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione el tipo de de tarjeta de crédito a utilizar',
+            name: 'pago',
+            options: [
+                {
+                    name: 'Visa',
+                    value: 'v'
+                },
+                {
+                    name: 'Mastercard',
+                    value: 'm'
+                },
+                {
+                    name: 'American Express',
+                    value: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 'v'
+        },
+        {
+            description: 'Seleccione la frecuencia de facturación',
+            name: 'frecuencia',
+            options: [
+                {
+                    name: 'Mensual',
+                    value: 'm'
+                },
+                {
+                    name: 'Trimestral',
+                    value: 't'
+                },
+                {
+                    name: 'Semi anual',
+                    value: 's'
+                },
+                {
+                    name: 'Anual',
+                    value: 'a'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el número de la tarjeta de crédito',
+            help: 'tarjeta_numero',
+            name: 'tarjeta_numero',
+            type: 'text'
+        },
+        {
+            description: 'Digite la fecha de vencimiento de la tarjeta de crédito mm/aa',
+            help: 'tarjeta_vencimiento',
+            name: 'tarjeta_vencimiento',
+            type: 'text'
+        },
+        {
+            description: 'Digite el código csv que está al reverso de la tarjeta de crédito',
+            help: 'tarjeta_csv',
+            name: 'tarjeta_csv',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre tal como aparece en la tarjeta de crédito',
+            help: 'nombre_tarjeta',
+            name: 'nombre_tarjeta',
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico de la persona que va a firmar el presente documento',
+            help: 'correo',
+            name: 'correo_tarjeta',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre de la empresa que realiza la compra',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa',
+            type: 'name'
+        },
+        {
+            description: 'Digite la dirección de la empresa que realiza la compra',
+            help: 'direccion_empresa',
+            name: 'direccion_empresa',
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad donde está domiciliada la empresa que realiza la compra',
+            help: 'ciudad_empresa',
+            name: 'ciudad_empresa',
+            type: 'text'
+        },
+        {
+            description: 'Digite el estado donde se encuentra domiciliada la empresa que realiza la compra',
+            help: 'estado_empresa',
+            name: 'estado_empresa',
+            type: 'text'
+        },
+        {
+            description: 'Digite el código postal de la ubicación de la empresa que realiza la compra',
+            help: 'codigo_postal_empresa',
+            name: 'codigo_postal_empresa',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de asesores de la empresa que realiza la compra',
+            help: 'numero_asesores',
+            name: 'numero_asesores',
+            type: 'number'
+        },
+        {
+            description: 'Digite el nombre completo del cliente',
+            help: 'nombre_tarjeta',
+            name: 'nombre_cliente',
+            type: 'name'
+        },
+        {
+            description: 'Digite el correo electrónico del cliente',
+            help: 'correo',
+            name: 'correo_cliente',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se suscribe el presente contrato',
+            name: 'fecha_cliente',
+            type: 'date'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_lider',
+        'telefono_lider',
+        'correo_lider',
+        'nombre_coordinador',
+        'telefono_coordinador',
+        'correo_coordinador',
+        'tarjeta_numero',
+        'tarjeta_vencimiento',
+        'tarjeta_csv',
+        'nombre_tarjeta',
+        'correo_tarjeta',
+        'nombre_empresa',
+        'direccion_empresa',
+        'ciudad_empresa',
+        'estado_empresa',
+        'codigo_postal_empresa',
+        'numero_asesores',
+        'nombre_cliente',
+        'correo_cliente',
+        'fecha_cliente',
+        'correo_receptor'
+    ],
+    signatureProfile: [
+        {
+            email: 'correo_cliente',
+            identification: 'numero_asesores',
+            name: 'nombre_cliente',
+            type: 'cliente'
+        },
+        {
+            email: 'correo_tarjeta',
+            identification: 'numero_asesores',
+            name: 'nombre_tarjeta',
+            type: 'tarjeta'
+        }
+    ],
+    preBuildData: [
+        'max_users',
+        'correo_receptor'
+    ],
+    name: 'Acuerdo de suscripción a HPN University',
+    username: '010673e0-e385-40e0-8ee1-187fb62883bc',
+    preBuild: true,
+    price: 0,
+    help: {
+        name: 'Ejemplo: Elon Patarroyo Gonzales',
+        telefono: 'Ejemplo: 302 709 17 13',
+        correo: 'Ejemplo: elon123@hoobis.com.co',
+        tarjeta_numero: 'Ejemplo: 1234 5678 9012 3456',
+        tarjeta_vencimiento: 'Ejemplo: 12/29',
+        tarjeta_csv: 'Ejemplo: 123',
+        nombre_tarjeta: 'Ejemplo: ELON PATARROYO G',
+        nombre_empresa: 'Ejemplo: Test S.A.S.',
+        direccion_empresa: 'Ejemplo: Avenida siempre viva #12 - 34',
+        ciudad_empresa: 'Ejemplo: medellín',
+        estado_empresa: 'Ejemplo: antioquia',
+        codigo_postal_empresa: 'Ejemplo: 123456',
+        numero_asesores: 'Ejemplo: 2'
+    },
+    build: 15,
+    createdAt: ISODate('2021-08-13T15:17:37.269Z'),
+    updatedAt: ISODate('2021-08-13T15:17:37.269Z')
+}

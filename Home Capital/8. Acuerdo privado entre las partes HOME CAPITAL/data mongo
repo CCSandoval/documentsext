@@ -3649,7 +3649,7 @@
     ],
     preFill: [],
     preBuildData: [],
-    name: 'ACUERDO PRIVADO ENTRE LAS PARTES HOME CAPITAL.',
+    name: 'Acuerdo privado entre las partes OVMT',
     price: 5000,
     help: {
         tipo_repre: 'Ejemplo: Inversionista',
@@ -3670,7 +3670,7 @@
         cuenta_numero: 'Ejemplo: 1423 5867 7089',
         fecha: 'Ejemplo: 12 de Diciembre del 2021'
     },
-    build: 4,
+    build: 6,
     preBuild: true,
     company: ObjectId('614a3a750aebb000084cbac0'),
     username: '8b62df2f-b613-402c-ae84-690ada65fb2b',

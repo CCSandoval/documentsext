@@ -1,0 +1,741 @@
+<style type="text/css">
+    .img_tittle img {
+        width: 50%;
+        left: 80%
+    }
+
+    .first_cell {
+        width: 15rem
+    }
+</style>
+
+<script>
+    function changeDot(value) {
+        let val = value.replace(/\./g, '');
+        document.getElementById("text").value = val;
+    }
+</script>
+
+<!-- <p>
+    <span class="img_tittle">
+        <img src="https://mi-contrato-static.s3.amazonaws.com/Home+capital/compramos_casas.jpg" />
+    </span>
+</p><br /> -->
+
+<h2 class="text-center" style="font-size: 12pt"> PROMESA DE COMPRA </h2>
+
+<p>
+    <b>Entre los suscritos: </b>
+</p>
+
+<p>
+    <b name="vendedor_2_n">PROMITENTE VENDEDOR:</b>
+    <b name="vendedor_2_s" hidden>PROMITENTES VENDEDORES:</b>
+</p>
+
+<p>
+    <b name="vendedor_2_n"></b>
+    <b name="vendedor_2_s" hidden>PROMITENTE VENDEDOR 1<br/></b>
+    <span name="nombre_vendedor_1">________</span> mayor de edad, con
+    <span name="tipo_documento_vendedor_1_cc"> cédula de ciudadanía No.
+        <span name="cedula_vendedor_1">________</span>
+    </span>
+    <span name="tipo_documento_vendedor_1_ce" hidden> cédula de extranjería No.
+        <span name="cedulae_vendedor_1">________</span>
+    </span>
+    <span name="tipo_documento_vendedor_1_pa" hidden> pasaporte No.
+        <span name="pasaporte_vendedor_1">________</span>
+    </span> de
+    <span name="lugar_expe_cedula_vendedor_1">_______</span>.<br />
+    Estado civil: <span name="estado_vendedor_1">casado, con sociedad conyugal vigente</span>.<br />
+    Dirección: <span name="direccion_vendedor_1">________</span>.<br />
+    Ciudad: <span name="lugar_vendedor_1">________</span>.<br />
+    Departamento: <span name="depart_vendedor_1">________</span>.<br />
+    Teléfono: <span name="telefono_vendedor_1">_________</span>.<br />
+    Correo electrónico: <span name="correo_vendedor_1">________</span>.
+
+    <span name="vendedor_2_n"></span>
+    <span name="vendedor_2_s" hidden>
+        <br /><br/>
+        <b>PROMITENTE VENDEDOR 2</b><br/>
+        <span name="nombre_vendedor_2">________</span> mayor de edad, con
+        <span name="tipo_documento_vendedor_2_cc"> cédula de ciudadanía No.
+            <span name="cedula_vendedor_2">________</span>
+        </span>
+        <span name="tipo_documento_vendedor_2_ce" hidden> cédula de extranjería No.
+            <span name="cedulae_vendedor_2">________</span>
+        </span>
+        <span name="tipo_documento_vendedor_2_pa" hidden> pasaporte No.
+            <span name="pasaporte_vendedor_2">________</span>
+        </span> de
+        <span name="lugar_expe_cedula_vendedor_2">_______</span>.<br />
+        Estado civil: <span name="estado_vendedor_2">casado, con sociedad conyugal vigente</span>.<br />
+        Dirección: <span name="direccion_vendedor_2">________</span>.<br />
+        Ciudad: <span name="lugar_vendedor_2">________</span>.<br />
+        Departamento: <span name="depart_vendedor_2">________</span>.<br />
+        Teléfono: <span name="telefono_vendedor_2">_________</span>.<br />
+        Correo electrónico: <span name="correo_vendedor_2">________</span>.
+
+        <span name="vendedor_3_n"></span>
+        <span name="vendedor_3_s" hidden>
+            <br /><br/>
+            <b>PROMITENTE VENDEDOR 3</b><br/>
+            <span name="nombre_vendedor_3">________</span> mayor de edad, con
+            <span name="tipo_documento_vendedor_3_cc"> cédula de ciudadanía No.
+                <span name="cedula_vendedor_3">________</span>
+            </span>
+            <span name="tipo_documento_vendedor_3_ce" hidden> cédula de extranjería No.
+                <span name="cedulae_vendedor_3">________</span>
+            </span>
+            <span name="tipo_documento_vendedor_3_pa" hidden> pasaporte No.
+                <span name="pasaporte_vendedor_3">________</span>
+            </span> de
+            <span name="lugar_expe_cedula_vendedor_3">_______</span>.<br />
+            Estado civil: <span name="estado_vendedor_3">casado, con sociedad conyugal vigente</span>.<br />
+            Dirección: <span name="direccion_vendedor_3">________</span>.<br />
+            Ciudad: <span name="lugar_vendedor_3">________</span>.<br />
+            Departamento: <span name="depart_vendedor_3">________</span>.<br />
+            Teléfono: <span name="telefono_vendedor_3">_________</span>.<br />
+            Correo electrónico: <span name="correo_vendedor_3">________</span>.
+
+            <span name="vendedor_4_n"></span>
+            <span name="vendedor_4_s" hidden>
+                <br /><br/>
+                <b>PROMITENTE VENDEDOR 4</b><br/>
+                <span name="nombre_vendedor_4">________</span> mayor de edad, con
+                <span name="tipo_documento_vendedor_4_cc"> cédula de ciudadanía No.
+                    <span name="cedula_vendedor_4">________</span>
+                </span>
+                <span name="tipo_documento_vendedor_4_ce" hidden> cédula de extranjería No.
+                    <span name="cedulae_vendedor_4">________</span>
+                </span>
+                <span name="tipo_documento_vendedor_4_pa" hidden> pasaporte No.
+                    <span name="pasaporte_vendedor_4">________</span>
+                </span> de
+                <span name="lugar_expe_cedula_vendedor_4">_______</span>.<br />
+                Estado civil: <span name="estado_vendedor_4">casado, con sociedad conyugal vigente</span>.<br />
+                Dirección: <span name="direccion_vendedor_4">________</span>.<br />
+                Ciudad: <span name="lugar_vendedor_4">________</span>.<br />
+                Departamento: <span name="depart_vendedor_4">________</span>.<br />
+                Teléfono: <span name="telefono_vendedor_4">_________</span>.<br />
+                Correo electrónico: <span name="correo_vendedor_4">________</span>.
+
+                <span name="vendedor_5_n"></span>
+                <span name="vendedor_5_s" hidden>
+                    <br /><br/>
+                    <b>PROMITENTE VENDEDOR 5</b><br/>
+                    <span name="nombre_vendedor_5">________</span> mayor de edad, con
+                    <span name="tipo_documento_vendedor_5_cc"> cédula de ciudadanía No.
+                        <span name="cedula_vendedor_5">________</span>
+                    </span>
+                    <span name="tipo_documento_vendedor_5_ce" hidden> cédula de extranjería No.
+                        <span name="cedulae_vendedor_5">________</span>
+                    </span>
+                    <span name="tipo_documento_vendedor_5_pa" hidden> pasaporte No.
+                        <span name="pasaporte_vendedor_5">________</span>
+                    </span> de
+                    <span name="lugar_expe_cedula_vendedor_5">_______</span>.<br />
+                    Estado civil: <span name="estado_vendedor_5">casado, con sociedad conyugal vigente</span>.<br />
+                    Dirección: <span name="direccion_vendedor_5">________</span>.<br />
+                    Ciudad: <span name="lugar_vendedor_5">________</span>.<br />
+                    Departamento: <span name="depart_vendedor_5">________</span>.<br />
+                    Teléfono: <span name="telefono_vendedor_5">_________</span>.<br />
+                    Correo electrónico: <span name="correo_vendedor_5">________</span>.
+                </span>
+            </span>
+        </span>
+    </span>
+</p>
+
+<p>
+    <b>PROMITENTE COMPRADOR: HOME CAPITAL COLOMBIA S.A.S.</b> identificada con NIT. 901211179-3, sociedad constituida y
+    debidamente inscrita en Cámara de Comercio de la ciudad de Medellín, debidamente representada, en su calidad de
+    <span name="representante_c_1"> representante legal suplente</span> por
+    <b><span name="nombre_representante">________</span></b>,
+    <span name="sexo_representante_m"> identificada</span>
+    <span name="sexo_representante_h" hidden> Identificado</span> con
+    <span name="tipo_documento_representante_cc"> cédula de ciudadanía No.
+        <span name="cedula_representante">________</span>
+    </span>
+    <span name="tipo_documento_representante_ce" hidden> cédula de extranjería No.
+        <span name="cedulae_representante">________</span>
+    </span>
+    <span name="tipo_documento_representante_pa" hidden> pasaporte No.
+        <span name="pasaporte_representante">________</span>
+    </span> de
+    <span name="lugar_expe_cedula_representante">_______</span><br />
+    Dirección: <span name="direccion_representante">________</span> <br />
+    Ciudad: <span name="lugar_representante">________</span> <br />
+    Teléfono: <span name="telefono_representante">_______</span> <br />
+    Correo electrónico: <span name="correo_representante">________</span>
+</p>
+<p>
+    <b>Hemos celebrado el contrato de promesa de compraventa que se regirá por las siguientes cláusulas:</b>
+</p>
+
+<p>
+    <b>PRIMERA. OBJETO DEL CONTRATO:</b> LOS PROMITENTES VENDEDORES se obligan a transferir, a título de venta, de
+    manera que cause total y real enajenación, a favor DEL PROMITENTE COMPRADOR, quien a su vez se obliga a adquirir al
+    mismo título, y con arreglo a los términos y condiciones que a continuación se expresan, el derecho de dominio y la
+    posesión material e inscrita que LOS PROMITENTES VENDEDORES tienen y ejercen sobre los siguientes inmuebles urbanos:
+</p>
+
+<ol type="a">
+    <li>
+        <span name="elige_apart">Apartamento
+            <span name="numero_apart">_______</span>.
+        </span>
+        <span name="elige_casa" hidden>Casa
+            <span name="numero_casa">_______</span>.
+        </span> Identificado con folio Matricula inmobiliaria
+        <span name="numero_matricula_inmueble">_______</span> y Código Catastral
+        <span name="codigo_catastral_inmueble">_______</span>, con un área de
+        <span name="area_inmueble">_______</span> metros cuadrados.
+    </li>
+
+    <span name="primer_parqueadero_n"></span>
+    <span name="primer_parqueadero_s" hidden>
+        <li>
+            Parqueadero
+            <span name="numero_parq_1">_______</span>. Identificado con folio Matricula inmobiliaria
+            <span name="numero_matricula_parq_1">_______</span> y Código Catastral
+            <span name="codigo_catastral_parq_1">_______</span>, con un área de
+            <span name="area_parq_1">_______</span> metros cuadrados.
+        </li>
+        <span name="segundo_parqueadero_n"></span>
+        <span name="segundo_parqueadero_s" hidden>
+            <li>
+                Parqueadero
+                <span name="numero_parq_2">_______</span>. Identificado con folio Matricula inmobiliaria
+                <span name="numero_matricula_parq_2">_______</span> y Código Catastral
+                <span name="codigo_catastral_parq_2">_______</span>, con un área de
+                <span name="area_parq_2">_______</span> metros cuadrados.
+            </li>
+            <span name="tercer_parqueadero_n"></span>
+            <span name="tercer_parqueadero_s" hidden>
+                <li>
+                    Parqueadero
+                    <span name="numero_parq_3">_______</span>. Identificado con folio Matricula inmobiliaria
+                    <span name="numero_matricula_parq_3">_______</span> y Código Catastral
+                    <span name="codigo_catastral_parq_3">_______</span>, con un área de
+                    <span name="area_parq_3">_______</span> metros cuadrados.
+                </li>
+                <span name="cuarto_parqueadero_n"></span>
+                <span name="cuarto_parqueadero_s" hidden>
+                    <li>
+                        Parqueadero
+                        <span name="numero_parq_4">_______</span>. Identificado con folio Matricula inmobiliaria
+                        <span name="numero_matricula_parq_4">_______</span> y Código Catastral
+                        <span name="codigo_catastral_parq_4">_______</span>, con un área de
+                        <span name="area_parq_4">_______</span> metros cuadrados.
+                    </li>
+                    <span name="quinto_parqueadero_n"></span>
+                    <span name="quinto_parqueadero_s" hidden>
+                        <li>
+                            Parqueadero
+                            <span name="numero_parq_5">_______</span>. Identificado con folio Matricula inmobiliaria
+                            <span name="numero_matricula_parq_5">_______</span> y Código Catastral
+                            <span name="codigo_catastral_parq_5">_______</span>, con un área de
+                            <span name="area_parq_5">_______</span> metros cuadrados.
+                        </li>
+                    </span>
+                </span>
+            </span>
+        </span>
+    </span>
+
+    <span name="primer_cuarto_util_n"></span>
+    <span name="primer_cuarto_util_s" hidden>
+        <li>
+            Cuarto útil
+            <span name="numero_cuarto_util_1">_______</span>. Identificado con folio Matricula inmobiliaria
+            <span name="numero_matricula_cuarto_util_1">_______</span> y Código Catastral
+            <span name="codigo_catastral_cuarto_util_1">_______</span>, con un área de
+            <span name="area_cuarto_util_1">_______</span> metros cuadrados.
+        </li>
+        <span name="segundo_cuarto_util_n"></span>
+        <span name="segundo_cuarto_util_s" hidden>
+            <li>
+                Cuarto útil
+                <span name="numero_cuarto_util_2">_______</span>. Identificado con folio Matricula inmobiliaria
+                <span name="numero_matricula_cuarto_util_2">_______</span> y Código Catastral
+                <span name="codigo_catastral_cuarto_util_2">_______</span>, con un área de
+                <span name="area_cuarto_util_2">_______</span> metros cuadrados.
+            </li>
+            <span name="tercer_cuarto_util_n"></span>
+            <span name="tercer_cuarto_util_s" hidden>
+                <li>
+                    Cuarto útil
+                    <span name="numero_cuarto_util_3">_______</span>. Identificado con folio Matricula inmobiliaria
+                    <span name="numero_matricula_cuarto_util_3">_______</span> y Código Catastral
+                    <span name="codigo_catastral_cuarto_util_3">_______</span>, con un área de
+                    <span name="area_cuarto_util_3">_______</span> metros cuadrados.
+                </li>
+                <span name="cuarto_cuarto_util_n"></span>
+                <span name="cuarto_cuarto_util_s" hidden>
+                    <li>
+                        Cuarto útil
+                        <span name="numero_cuarto_util_4">_______</span>. Identificado con folio Matricula inmobiliaria
+                        <span name="numero_matricula_cuarto_util_4">_______</span> y Código Catastral
+                        <span name="codigo_catastral_cuarto_util_4">_______</span>, con un área de
+                        <span name="area_cuarto_util_4">_______</span> metros cuadrados.
+                    </li>
+                    <span name="quinto_cuarto_util_n"></span>
+                    <span name="quinto_cuarto_util_s" hidden>
+                        <li>
+                            Cuarto útil
+                            <span name="numero_cuarto_util_5">_______</span>. Identificado con folio Matricula
+                            inmobiliaria
+                            <span name="numero_matricula_cuarto_util_5">_______</span> y Código Catastral
+                            <span name="codigo_catastral_cuarto_util_5">_______</span>, con un área de
+                            <span name="area_cuarto_util_5">_______</span> metros cuadrados.
+                        </li>
+                    </span>
+                </span>
+            </span>
+        </span>
+    </span>
+</ol>
+
+<p>
+    <span name="agregar_campo_n"></span>
+    <span name="agregar_campo_s" hidden><br />
+        <span name="nombre_campo">_________</span>:
+        <span name="descripcion_campo">________</span>
+    </span>
+</p>
+
+<p>
+    Los inmuebles hacen parte del
+    <span name="nombre_urba">________</span>, ubicada en la
+    <span name="direccion_urba">________</span>, de
+    <span name="lugar_urba">___________</span>,
+    <span name="departamento_urba">___________</span>
+</p>
+
+<p>
+    <b>PARÁGRAFO PRIMERO:</b> La Cabida y Linderos de los inmuebles se encuentran descritos en la escritura No.
+    <span name="numero_escritura">________</span> del
+    <span name="fecha_escritura">_________</span> de la notaría
+    <span name="numero_notaria">_______</span> de
+    <span name="lugar_notaria">_________</span>. No obstante, la mención del área, la compraventa se hace
+    como cuerpo cierto.
+</p>
+
+<p>
+    <b>PARÁGRAFO SEGUNDO:</b> Los anteriores inmuebles hacen parte integrante de
+    <span name="nombre_urba">________</span>, reglamento
+    de propiedad horizontal constituido mediante escritura pública número
+    <span name="num_escritura_pub">_______</span>, del
+    <span name="fecha_escritura_pub">_______</span> de la notaría
+    <span name="numero_escritura_pub">_______</span> de
+    <span name="lugar_escritura_pub">_________</span>.
+</p>
+
+<p>
+    <b>SEGUNDA. ADQUISICIÓN: LOS PROMITENTES VENDEDORES</b> adquirieron este inmueble por
+    <span name="adquirio_inmuble">_______</span>
+    <span name="sexo_anterior_dueno_m"> a la señora</span>
+    <span name="sexo_anterior_dueno_h" hidden> al señor</span>
+    <span name="nombre_anterior_dueno">_______</span>, según da cuenta la escritura No.
+    <span name="numero_escritura_publica_anterior_dueno">_______</span> con fecha del
+    <span name="fecha_escritura_publica_anterior_dueno">_______</span> otorgada en la notaría No.
+    <span name="nombre_notaria_escritura_publica_anterior_dueno">_______</span> de la ciudad de
+    <span name="ciudad_notaria_escritura_publica_anterior_dueno">_______</span>, debidamente registrada.
+</p>
+
+<p>
+    <b>TERCERA: PRECIO Y FORMA DE PAGO:</b> El precio de los inmuebles, objeto de esta promesa, asciende a la suma de
+    <span name="precio_inmueble">_________________</span>. Valor que será cancelado por
+    <b>EL PROMITENTE COMPRADOR</b> de la siguiente manera:
+</p>
+
+
+<ol type="a">
+    <li>Se pacta un pago inicial o anticipo, por valor de
+        <span name="cuota_inicial">________</span> el
+        <span name="fecha_cuota_inicial">_______</span>, que serán cancelados
+        <span name="f_pago_cuota_inicial">_________________</span>, siempre
+        y cuando el certificado de libertad esté disponible y se evidencia que no hay restricciones para el
+        perfeccionamiento de este negocio.
+    </li>
+    <li>Se pacta un segundo pago, por valor de
+        <span name="valor_2">_______</span> el
+        <span name="fecha_pago_2">_______</span>, que serán cancelados
+        <span name="detalle_pago_2">_______</span>.
+    </li>
+    <span name="pago_3_n"></span>
+    <span name="pago_3_s" hidden>
+        <li>
+            Se pacta un tercer pago, por valor de
+            <span name="valor_3">_______</span> el
+            <span name="fecha_pago_3">_______</span>, que serán cancelados
+            <span name="detalle_pago_3">_______</span>.
+        </li>
+        <span name="pago_4_n"></span>
+        <span name="pago_4_s" hidden>
+            <li>Se pacta un cuarto pago, por valor de
+                <span name="valor_4">_______</span> el
+                <span name="fecha_pago_4">_______</span>, que serán cancelados
+                <span name="detalle_pago_4">_______</span>
+            </li>
+            <span name="pago_5_n"></span>
+            <span name="pago_5_s" hidden>
+                <li>Se pacta un quinto pago, por valor de
+                    <span name="valor_5">_______</span> el
+                    <span name="fecha_pago_5">_______</span>, que serán cancelados
+                    <span name="detalle_pago_5">_______</span>
+                </li>
+                <span name="pago_6_n"></span>
+                <span name="pago_6_s" hidden>
+                    <li>Se pacta un sexto pago, por valor de
+                        <span name="valor_6">_______</span> el
+                        <span name="fecha_pago_6">_______</span>, que serán cancelados
+                        <span name="detalle_pago_6">_______</span>
+                    </li>
+                    <span name="pago_7_n"></span>
+                    <span name="pago_7_s" hidden>
+                        <li>Se pacta un séptimo pago, por valor de
+                            <span name="valor_7">_______</span> el
+                            <span name="fecha_pago_7">_______</span>, que serán cancelados
+                            <span name="detalle_pago_7">_______</span>
+                        </li>
+                        <span name="pago_8_n"></span>
+                        <span name="pago_8_s" hidden>
+                            <li>Se pacta un octavo pago, por valor de
+                                <span name="valor_8">_______</span> el
+                                <span name="fecha_pago_8">_______</span>, que serán cancelados
+                                <span name="detalle_pago_8">_______</span>
+                            </li>
+                        </span>
+                    </span>
+                </span>
+            </span>
+        </span>
+    </span>
+</ol>
+
+<p>
+    <span name="agregar_campo_2_n"></span>
+    <span name="agregar_campo_2_s" hidden><br />
+        <span name="nombre_campo_2">_________</span>:
+        <span name="descripcion_campo_2">________</span>
+    </span>
+</p>
+
+<p>
+    <b>PARÁGRAFO PRIMERO: LOS PROMITENTES VENDEDORES</b> autorizan a pagar saldos necesarios para el perfeccionamiento y
+    saneamiento del inmueble que les correspondan a ellos, a tramitar los paz y salvos y a efectuar las deducciones de
+    estos valores en el último contado del precio convenido para los inmuebles descritos anteriormente.
+</p>
+
+<p>
+    <b>PARÁGRAFO SEGUNDO: EL PROMITENTE COMPRADOR</b> eclaramos que los recursos entregados en parte de pago por la
+    compra de los inmuebles descritos, provienen de las fuentes que en virtud de la ocupación, profesión u oficio
+    desarrollamos lícitamente y que por tanto dichos recursos no provienen de ninguna actividad ilícita de las
+    contempladas en el Código Penal Colombiano o en cualquier norma que lo modifican, adicionan o complementan.
+</p>
+
+<p>
+    <b>CUARTA. DEPOSITO INICIAL:</b> Se hará en las
+    <span name="horas"> 48</span>
+    Horas hábiles después de la firma del presente documento a
+    nombre de LOS PROMITENTES VENDEDORES o quien este haya autorizado en la cláusula tercera literal a, siempre y cuando
+    LOS PROMITENTES VENDEDORES no se encuentre reportado en el sistema de administración de riesgos de lavado de
+    activos, de financiación de terrorismo y además, que no exista ningún tipo de gravamen, embargo o deuda relacionada
+    con el inmueble que impida el perfeccionamiento de esta negociación. De encontrarse alguna de estas causales que
+    impidan el perfeccionamiento de la presente promesa, el contrato se resciliaria de manera ipso-facta.
+</p>
+
+<p>
+    <b>QUINTA. POSESIÓN, LIBERTAD DE GRAVAMENES Y SANEAMIENTO: LOS PROMITENTES VENDEDORES</b> declaran que los inmuebles
+    objeto de la presente promesa:
+
+    <ol type="a">
+        <li>Garantiza la titularidad del derecho de domino del inmueble prometido en venta.</li>
+        <li>Que los poseen de manera regular, pacifica, publica y material. </li>
+        <li>Que el bien no haya sido enajenado ni prometido en venta a favor de otra persona.</li>
+        <li>Que, al momento de la entrega del inmueble, éste se encuentre desocupado.</li>
+        <li>Que el inmueble se encuentra libre de; gravámenes, medidas cautelares, inscripciones de demandas a cualquier
+            título, títulos de tenencia por escritura pública, condiciones resolutorias, nulidades y limitaciones al
+            dominio, a excepción de las limitaciones inherentes al régimen de propiedad horizontal.
+        </li>
+        <li>En caso de existir cuotas extraordinarias de administración sobre el inmueble serán pagadas en su totalidad
+            por los promitentes vendedores.
+        </li>
+        <li>No serán retirados de la propiedad los electrodomésticos, gasodomésticos, calentadores y otros aparatos que
+            suministran los servicios complementarios de energía, acueducto o alcantarillado. Así mismo en caso de
+            existir
+            pagos pendientes con la empresa prestadora de estos servicios, deberá ser pagado en su totalidad por los
+            Promitentes Vendedores.
+        </li>
+        <li>En caso de que el inmueble presente afectación a patrimonio de familia, y éste no pueda ser cancelado por
+            parte del PROMITENTE VENDEDOR no pudiéndose realizar el negocio, se exonera de cualquier responsabilidad al
+            PROMITENTE COMPRADOR debido a que esta actividad depende de un tercero.
+        </li>
+    </ol>
+</p>
+
+<p>
+    <b>PARÁGRAFO: LOS PROMITENTES VENDEDORES</b> se obligan, igualmente, al saneamiento del bien prometido en venta, en
+    los casos de la ley, bien sea por evicción o por vicios redhibitorios.
+</p>
+
+<p>
+    <b>SEXTA. MATERIAL FOTOGRAFICO:</b> En el precio de venta acordado por las partes, está incluido como verificación
+    del inmueble en cuestión, el material fotográfico suministrado por LOS PROMITENTES VENDEDORES en el momento de la
+    entrevista inicial.
+</p>
+
+<p>
+    <b>SEPTIMA. ENTREGA MATERIAL:</b> La entrega material de los inmuebles se efectuará el
+    <span name="fecha_entrega_inmu">_______</span>. Para la entrega del inmueble, las partes suscribirán un acta
+    en la que se consigne su estado real del momento. A partir de esta fecha serán de cargo del comprador los costos de
+    administración, impuesto predial y servicios públicos. En el evento de que el inmueble sea entregado antes de
+    otorgar la escritura de compraventa, la ocupación del mismo será a título de MERA TENENCIA.
+</p>
+
+<p>
+    <b>OCTAVA. CELEBRACIÓN DE LA ESCRITURA DE COMPRAVENTA:</b> La escritura pública que servirá para dar cumplimiento al
+    presente contrato de Promesa de Compraventa, se otorgará en la Notaria
+    <span name="numero_notaria">__________________</span> del Círculo Notarial de
+    <span name="lugar_notaria">_________</span> el
+    <span name="fecha_celebracion">_______</span> a las
+    <span name="hora_celebracion">_______</span>
+    <span name="f_hora_am">AM</span>
+    <span name="f_hora_pm" hidden>PM</span>
+    o antes si es posible, fecha que podrá adelantarse por mutuo acuerdo entre las
+    partes. LOS PROMITENTES VENDEDORES se obligan a disponer para la fecha señalada de todos
+    los paz y salvos y documentos necesarios para el otorgamiento de la escritura de compraventa.
+</p>
+
+<P>
+    <b>NOVENA. GASTOS DE LOS INMUEBLES:</b> LOS PROMITENTE VENDEDORES queda obligado a cancelar, todos los gastos que
+    los inmuebles generen, tales como: Impuestos predial, valorización, administración, servicios públicos, cuota extra
+    por mantenimiento de ascensores y todos los demás que se causen por cualquier concepto hasta la fecha en la cual se
+    hará entrega real y material del inmueble prometido en venta. Los gastos que por su naturaleza deban cancelarse
+    anticipadamente, serán prorrateados y reintegrados por el comprador.
+</P>
+
+<p>
+    <b>DECIMA. GASTOS DE LA ESCRITURA DE VENTA:</b> Los gastos notariales y el impuesto de anotación y registro (boleta
+    de rentas) corren por mitades, a cargo de ambas partes; los gastos de registro de la compraventa por cuenta del
+    PROMITENTE COMPRADOR. La retención en la fuente corre a cargo exclusivo de LOS PROMITENTES VENDEDORES.
+</p>
+
+
+<p>
+    <b>DECIMA PRIMERA. CESIÓN DEL CONTRATO:</b> LOS PROMITENTES VENDEDORES autorizan al PROMITENTE COMPRADOR para ceder
+    sus derechos sobre la presente promesa de compraventa, mediante la nota de cesión y la notificación por escrito vía
+    WhatsApp o Correo Electrónico a LOS PROMITENTES VENDEDORES.
+</p>
+
+<p>
+    <b>DECIMA SEGUNDA. INCUMPLIMIENTO DEL CONTRATO:</b> El incumplimiento de las obligaciones contraídas en virtud del
+    presente contrato, por cualquiera de las partes contratantes, dará derecho a aquella que hubiere cumplido o se
+    hubiere allanado a cumplir las obligaciones a su cargo para exigir inmediatamente a título de pena a quien no
+    cumplió o no se allanó a cumplir, el pago equivalente al diez por ciento (10%), del precio pactado en el presente.
+</p>
+
+<p>
+    <b>DECIMA TERCERA. DERECHO DE INSPECCIÓN:</b> LOS PROMITENTES VENDEDORES se obligan a suministrar toda la
+    información al PROMITENTE COMPRADOR y permitirle el ingreso e inspección del inmueble, con el fin de constatar todos
+    los aspectos relevantes o de importancia para los fines de esta negociación.
+</p>
+
+<p>
+    <b>DECIMA CUARTA. AUTORIZACIÓN ESPECIAL PARA EL PROMITENTE COMPRADOR:</b> LOS PROMITENTES VENDEDORES autorizan
+    expresamente a AL PROMITENTE COMPRADOR para: <br />
+</p>
+<ol type="a">
+    <li>Consultar en las bases de datos legalmente constituidas, las condiciones personales y de crédito de este
+        último, requeridas para adoptar decisiones relativas a la presente negociación.
+    </li>
+    <li>En caso de ser necesario aclarar cualquier situación ante notariado y registro hacerlo directamente.</li>
+    <li>Autorizar a
+        <span name="nombre_p_certificaciones">________</span> con
+        <span name="tipo_documento_p_certificaciones_cc"> cédula de ciudadanía No.
+            <span name="cedula_p_certificaciones">________</span>
+        </span>
+        <span name="tipo_documento_p_certificaciones_ce" hidden> cédula de extranjería No.
+            <span name="cedulae_p_certificaciones">________</span>
+        </span>
+        <span name="tipo_documento_p_certificaciones_pa" hidden> pasaporte No.
+            <span name="pasaporte_p_certificaciones">________</span>
+        </span>
+        para poder realizar todo lo concerniente con la obtención de certificaciones, oficios, paz y salvos de
+        Predial, administración y Valorización.
+    </li>
+</ol>
+
+<p>
+    <b>DECIMA QUINTA. CLAUSULA COMPROMISORIA:</b> Las diferencias que ocurrieren entre las partes con motivo de la
+    interpretación, ejecución y cumplimiento del presente contrato de promesa de compraventa, serán sometidas a la
+    decisión de un arbitro designado por el(a)
+    <span name="conciliador_1">________</span>,
+    a solicitud de cualquiera de las partes, según el procedimiento previsto en las normas vigentes sobre la materia.
+</p>
+
+<P>
+    <b>DECIMA SEXTA. CELEBRACIÓN Y EJECUCIÓN DE BUENA FE:</b> Las partes contratantes dejamos expresamente consignado
+    que hemos actuado de buena fe exenta de culpa en todo el proceso previo al de la celebración del presente contrato y
+    nos obligamos recíprocamente a ejecutarlo y dar cumplimiento a las obligaciones adquiridas, prevalidos de la mayor
+    buena fe y con la clara intención de no causar perjuicios al otro contratante ni a terceros.
+</P>
+
+<p>
+    Las partes manifiestan que no reconocerán validez a estipulaciones verbales relacionadas con el presente contrato,
+    ya que, aquí se consigna el acuerdo completo y total acerca de su objeto y reemplaza y deja sin efecto alguno
+    cualquier contrato verbal o escrito celebrado entre las partes con anterioridad. <br />
+    Los Contratantes declaran que conocieron con suficiente antelación, el presente contrato y los inmuebles objeto del
+    mismo, los cuales aceptan en todas sus partes.
+</p>
+
+<p>
+    El presente contrato de promesa de compraventa, PRESTA MERITO EJECUTIVO para exigir el cumplimiento de las
+    obligaciones, que de él emanan, para constancia, se firma en
+    <span name="lugar_firma">________</span>, el dia
+    <span name="fecha_firma">_______</span>
+</p>
+
+<p><br /><br /><br /><br />
+    <span>______________________</span> <br />
+    <b name="nombre_vendedor_1">_________</b><br />
+    <span name="tipo_documento_vendedor_1_cc"> <b>C.C. No.</b>
+        <span name="cedula_vendedor_1">_________________________</span>
+    </span>
+    <span name="tipo_documento_vendedor_1_ce" hidden> <b>C.E. No.</b>
+        <span name="cedulae_vendedor_1">_________________________</span>
+    </span>
+    <span name="tipo_documento_vendedor_1_pa" hidden> <b>PASAPORTE No.</b>
+        <span name="pasaporte_vendedor_1">_________________________</span>
+    </span><br />
+    <b>Actividad Económica: </b>
+    <span name="activ_econ_vendedor_1">__________</span><br />
+    <b>Correo: </b> <span name="correo_vendedor_1">________</span><br/>
+    <b name="vendedor_2_n">PROMITENTE VENDEDOR</b>
+    <b name="vendedor_2_s" hidden>PROMITENTE VENDEDOR 1</b>
+</p>
+
+<p>
+    <span name="vendedor_2_n"></span>
+    <span name="vendedor_2_s" hidden>
+        <br /><br /><br /><br />
+        <span>______________________</span><br/>
+        <b name="nombre_vendedor_2">_________</b><br />
+        <span name="tipo_documento_vendedor_2_cc"> <b>C.C. No.</b>
+            <span name="cedula_vendedor_2">_________________________</span>
+        </span>
+        <span name="tipo_documento_vendedor_2_ce" hidden> <b>C.E. No.</b>
+            <span name="cedulae_vendedor_2">_________________________</span>
+        </span>
+        <span name="tipo_documento_vendedor_2_pa" hidden> <b>PASAPORTE No.</b>
+            <span name="pasaporte_vendedor_2">_________________________</span>
+        </span><br />
+        <b>Actividad Económica: </b>
+        <span name="activ_econ_vendedor_2">__________</span><br />
+        <b>Correo: </b> <span name="correo_vendedor_2">________</span><br/>
+        <b>PROMITENTE VENDEDOR 2</b>
+    </span>
+</p>
+
+<p>
+    <span name="vendedor_2_n"></span>
+    <span name="vendedor_2_s" hidden>
+        <span name="vendedor_3_n"></span>
+        <span name="vendedor_3_s" hidden>
+            <br /><br /><br /><br />
+            <span>______________________</span><br/>
+            <b name="nombre_vendedor_3">_________</b><br />
+            <span name="tipo_documento_vendedor_3_cc"> <b>C.C. No.</b>
+                <span name="cedula_vendedor_3">_________________________</span>
+            </span>
+            <span name="tipo_documento_vendedor_3_ce" hidden> <b>C.E. No.</b>
+                <span name="cedulae_vendedor_3">_________________________</span>
+            </span>
+            <span name="tipo_documento_vendedor_3_pa" hidden> <b>PASAPORTE No.</b>
+                <span name="pasaporte_vendedor_3">_________________________</span>
+            </span><br />
+            <b>Actividad Económica: </b>
+            <span name="activ_econ_vendedor_3">__________</span><br />
+            <b>Correo: </b> <span name="correo_vendedor_3">________</span><br/>
+            <b>PROMITENTE VENDEDOR 3</b>
+        </span>
+    </span>
+</p>
+
+<p>
+    <span name="vendedor_2_n"></span>
+    <span name="vendedor_2_s" hidden>
+        <span name="vendedor_3_n"></span>
+        <span name="vendedor_3_s" hidden>
+            <span name="vendedor_4_n"></span>
+            <span name="vendedor_4_s" hidden>
+                <br /><br /><br /><br />
+                <span>______________________</span><br/>
+                <b name="nombre_vendedor_4">_________</b><br />
+                <span name="tipo_documento_vendedor_4_cc"> <b>C.C. No.</b>
+                    <span name="cedula_vendedor_4">_________________________</span>
+                </span>
+                <span name="tipo_documento_vendedor_4_ce" hidden> <b>C.E. No.</b>
+                    <span name="cedulae_vendedor_4">_________________________</span>
+                </span>
+                <span name="tipo_documento_vendedor_4_pa" hidden> <b>PASAPORTE No.</b>
+                    <span name="pasaporte_vendedor_4">_________________________</span>
+                </span><br />
+                <b>Actividad Económica: </b>
+                <span name="activ_econ_vendedor_4">__________</span><br />
+                <b>Correo: </b> <span name="correo_vendedor_4">________</span><br/>
+                <b>PROMITENTE VENDEDOR 4</b>
+            </span>
+        </span>
+    </span>
+</p>
+
+<p>
+    <span name="vendedor_2_n"></span>
+    <span name="vendedor_2_s" hidden>
+        <span name="vendedor_3_n"></span>
+        <span name="vendedor_3_s" hidden>
+            <span name="vendedor_4_n"></span>
+            <span name="vendedor_4_s" hidden>
+                <span name="vendedor_5_n"></span>
+                <span name="vendedor_5_s" hidden>
+                    <br /><br /><br /><br />
+                    <span>______________________</span><br/>
+                    <b name="nombre_vendedor_5">_________</b><br />
+                    <span name="tipo_documento_vendedor_5_cc"> <b>C.C. No.</b>
+                        <span name="cedula_vendedor_5">_________________________</span>
+                    </span>
+                    <span name="tipo_documento_vendedor_5_ce" hidden> <b>C.E. No.</b>
+                        <span name="cedulae_vendedor_5">_________________________</span>
+                    </span>
+                    <span name="tipo_documento_vendedor_5_pa" hidden> <b>PASAPORTE No.</b>
+                        <span name="pasaporte_vendedor_5">_________________________</span>
+                    </span><br />
+                    <b>Actividad Económica: </b>
+                    <span name="activ_econ_vendedor_5">__________</span><br />
+                    <b>Correo: </b> <span name="correo_vendedor_5">________</span><br/>
+                    <b>PROMITENTE VENDEDOR 5</b>
+                </span>
+            </span>
+        </span>
+    </span>
+</p>
+
+<p>
+    <br /><br /><br /><br />
+    <span>______________________</span><br/>
+    <b name="nombre_representante">_________</b><br />
+    <span name="tipo_documento_representante_cc"> <b>C.C. No.</b>
+        <span name="cedula_representante">_________________________</span>
+    </span>
+    <span name="tipo_documento_representante_ce" hidden> <b>C.E. No.</b>
+        <span name="cedulae_representante">_________________________</span>
+    </span>
+    <span name="tipo_documento_representante_pa" hidden> <b>PASAPORTE No.</b>
+        <span name="pasaporte_representante">_________________________</span>
+    </span><br />
+    <b name="representante_c_1">Representante Legal Suplente de</b> <b>HOME CAPITAL COLOMBIA S.A.S.</b><br/>
+    <b>PROMITENTE COMPRADOR</b>
+</p>
