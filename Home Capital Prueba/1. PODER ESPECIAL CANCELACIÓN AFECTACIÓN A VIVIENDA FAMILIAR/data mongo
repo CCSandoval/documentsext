@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('6148b6bd58225d00095a2a8b'),
+    _id: ObjectId('61a8e11096593800081b9510'),
     config: [
         {
             description: 'Digite el nombre completo del poderdante',
@@ -1134,6 +1134,65 @@
             type: 'text'
         },
         {
+            description: 'Seleccione el sexo del propietario',
+            help: 'sexo',
+            name: 'sexo_propietario',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del propietario del bien inmueble',
+            help: 'nombre',
+            name: 'nombre_propietario',
+            type: 'name'
+        },
+        {
+            description: 'Digite el nombre completo del bien inmueble',
+            help: 'descripcion',
+            name: 'descripcion_inmu',
+            type: 'text'
+        },
+        {
+            description: 'Digite la dirección del bien inmueble',
+            help: 'direccion',
+            name: 'direccion_inmu',
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio donde está ubicado el bien inmueble',
+            help: 'lugar',
+            name: 'lugar_inmu',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de matrícula inmobiliaria del bien inmueble',
+            help: 'matricula',
+            name: 'matricula_inmo',
+            type: 'name'
+        },
+        {
+            description: 'Digite el código catastral del inmuble',
+            help: 'codigo',
+            name: 'codigo_cata',
+            type: 'name'
+        },
+        {
+            description: 'Digite el nombre completo del apoderado',
+            help: 'nombre',
+            name: 'nombre_apoderado_1',
+            type: 'name'
+        },
+        {
             description: 'Seleccione el sexo del apoderado',
             help: 'sexo',
             name: 'sexo_apoderado_1',
@@ -1149,12 +1208,6 @@
             ],
             type: 'clausula',
             value: 'm'
-        },
-        {
-            description: 'Digite el nombre completo del apoderado',
-            help: 'nombre',
-            name: 'nombre_apoderado_1',
-            type: 'name'
         },
         {
             description: 'Seleccione el tipo de documento del apoderado',
@@ -1203,7 +1256,7 @@
         },
         {
             description: 'Digite el número de pasaporte del apoderado',
-            help: 'cedula',
+            help: 'pasaporte',
             name: 'pasaporte_apoderado_1',
             prereq: [
                 {
@@ -1214,26 +1267,38 @@
             type: 'name'
         },
         {
-            description: 'Digite el lugar de expedición del documento de identificación del apoderado',
+            description: 'Digite el municipio donde fue expedido el documento de identificación del apoderado',
             help: 'lugar',
             name: 'lugar_expe_cedula_apoderado_1',
             type: 'text'
         },
         {
             description: '¿Desea agregar un segundo apoderado?',
-            name: 'segundo_apoderado',
+            name: 'apoderado_2',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sí',
+                    name: 'Sì',
                     value: 's'
                 }
             ],
             type: 'clausula',
             value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del segundo apoderado',
+            help: 'nombre',
+            name: 'nombre_apoderado_2',
+            prereq: [
+                {
+                    k: 'apoderado_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
         },
         {
             description: 'Seleccione el sexo del segundo apoderado',
@@ -1251,24 +1316,12 @@
             ],
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 }
             ],
             type: 'clausula',
             value: 'm'
-        },
-        {
-            description: 'Digite el nombre completo del segundo apoderado',
-            help: 'nombre',
-            name: 'nombre_apoderado_2',
-            prereq: [
-                {
-                    k: 'segundo_apoderado',
-                    v: 's'
-                }
-            ],
-            type: 'name'
         },
         {
             description: 'Seleccione el tipo de documento del segundo apoderado',
@@ -1288,13 +1341,13 @@
                     value: 'pa'
                 }
             ],
+            type: 'clausula',
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 }
             ],
-            type: 'clausula',
             value: 'cc'
         },
         {
@@ -1307,7 +1360,7 @@
                     v: 'cc'
                 },
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 }
             ],
@@ -1323,7 +1376,7 @@
                     v: 'ce'
                 },
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 }
             ],
@@ -1331,7 +1384,7 @@
         },
         {
             description: 'Digite el número de pasaporte del segundo apoderado',
-            help: 'cedula',
+            help: 'pasaporte',
             name: 'pasaporte_apoderado_2',
             prereq: [
                 {
@@ -1339,7 +1392,7 @@
                     v: 'pa'
                 },
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 }
             ],
@@ -1351,7 +1404,7 @@
             name: 'lugar_expe_cedula_apoderado_2',
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 }
             ],
@@ -1359,25 +1412,41 @@
         },
         {
             description: '¿Desea agregar un tercer apoderado?',
-            name: 'tercer_apoderado',
+            name: 'apoderado_3',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sí',
+                    name: 'Sì',
                     value: 's'
                 }
             ],
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 }
             ],
             type: 'clausula',
             value: 'n'
+        },
+        {
+            description: 'Digite el nombre completo del tercer apoderado',
+            help: 'nombre',
+            name: 'nombre_apoderado_3',
+            prereq: [
+                {
+                    k: 'apoderado_2',
+                    v: 's'
+                },
+                {
+                    k: 'apoderado_3',
+                    v: 's'
+                }
+            ],
+            type: 'name'
         },
         {
             description: 'Seleccione el sexo del tercer apoderado',
@@ -1395,32 +1464,16 @@
             ],
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 },
                 {
-                    k: 'tercer_apoderado',
+                    k: 'apoderado_3',
                     v: 's'
                 }
             ],
             type: 'clausula',
             value: 'm'
-        },
-        {
-            description: 'Digite el nombre completo del tercer apoderado',
-            help: 'nombre',
-            name: 'nombre_apoderado_3',
-            prereq: [
-                {
-                    k: 'segundo_apoderado',
-                    v: 's'
-                },
-                {
-                    k: 'tercer_apoderado',
-                    v: 's'
-                }
-            ],
-            type: 'name'
         },
         {
             description: 'Seleccione el tipo de documento del tercer apoderado',
@@ -1440,17 +1493,17 @@
                     value: 'pa'
                 }
             ],
+            type: 'clausula',
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 },
                 {
-                    k: 'tercer_apoderado',
+                    k: 'apoderado_3',
                     v: 's'
                 }
             ],
-            type: 'clausula',
             value: 'cc'
         },
         {
@@ -1463,11 +1516,11 @@
                     v: 'cc'
                 },
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 },
                 {
-                    k: 'tercer_apoderado',
+                    k: 'apoderado_3',
                     v: 's'
                 }
             ],
@@ -1483,11 +1536,11 @@
                     v: 'ce'
                 },
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 },
                 {
-                    k: 'tercer_apoderado',
+                    k: 'apoderado_3',
                     v: 's'
                 }
             ],
@@ -1495,7 +1548,7 @@
         },
         {
             description: 'Digite el número de pasaporte del tercer apoderado',
-            help: 'cedula',
+            help: 'pasaporte',
             name: 'pasaporte_apoderado_3',
             prereq: [
                 {
@@ -1503,11 +1556,11 @@
                     v: 'pa'
                 },
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 },
                 {
-                    k: 'tercer_apoderado',
+                    k: 'apoderado_3',
                     v: 's'
                 }
             ],
@@ -1519,323 +1572,15 @@
             name: 'lugar_expe_cedula_apoderado_3',
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 },
                 {
-                    k: 'tercer_apoderado',
+                    k: 'apoderado_3',
                     v: 's'
                 }
             ],
             type: 'text'
-        },
-        {
-            description: 'Digite el nombre completo del bien inmueble',
-            help: 'descripcion',
-            name: 'descripcion_inmu',
-            type: 'text'
-        },
-        {
-            description: 'Digite la dirección del bien inmueble',
-            help: 'direccion',
-            name: 'direccion_inmu',
-            type: 'text'
-        },
-        {
-            description: 'Digite el municipio donde está ubicado el bien inmueble',
-            help: 'lugar',
-            name: 'lugar_inmu',
-            type: 'text'
-        },
-        {
-            description: 'Digite el número de matrícula inmobiliaria del bien inmueble',
-            help: 'matricula',
-            name: 'matricula_inmo',
-            type: 'name'
-        },
-        {
-            description: 'Digite el código catastral del inmuble',
-            help: 'codigo',
-            name: 'codigo_cata',
-            type: 'name'
-        },
-        {
-            description: '¿El primer poderdante tiene hijos?',
-            name: 'hijos_1',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿Los hijos del primer poderdante son mayores de edad?',
-            name: 'mayores_1',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'hijos_1',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿El segundo poderdante tiene hijos?',
-            name: 'hijos_2',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'poderdante_2',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿Los hijos del segundo poderdante son mayores de edad?',
-            name: 'mayores_2',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'hijos_2',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_2',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿El tercer poderdante tiene hijos?',
-            name: 'hijos_3',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'poderdante_2',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_3',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿Los hijos del tercer poderdante son mayores de edad?',
-            name: 'mayores_3',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'hijos_3',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_2',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_3',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿El cuarto poderdante tiene hijos?',
-            name: 'hijos_4',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'poderdante_2',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_3',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_4',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿Los hijos del cuarto poderdante son mayores de edad?',
-            name: 'mayores_4',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'hijos_4',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_2',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_3',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_4',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿El quinto poderdante tiene hijos?',
-            name: 'hijos_5',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'poderdante_2',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_3',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_4',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_5',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: '¿Los hijos del quinto poderdante son mayores de edad?',
-            name: 'mayores_5',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Sí',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'hijos_4',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_2',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_3',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_4',
-                    v: 's'
-                },
-                {
-                    k: 'poderdante_5',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
         },
         {
             description: 'Digite el correo electrónico del poderdante',
@@ -1927,7 +1672,7 @@
             name: 'correo_apoderado_2',
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 }
             ],
@@ -1939,11 +1684,11 @@
             name: 'correo_apoderado_3',
             prereq: [
                 {
-                    k: 'segundo_apoderado',
+                    k: 'apoderado_2',
                     v: 's'
                 },
                 {
-                    k: 'tercer_apoderado',
+                    k: 'apoderado_3',
                     v: 's'
                 }
             ],
@@ -1961,7 +1706,6 @@
         'lugar_expe_cedula_poderdante_1',
         'estado_poderdante_1',
         'lugar_poderdante_1',
-        'poderdante_2',
         'nombre_poderdante_2',
         'sexo_poderdante_2',
         'tipo_documento_poderdante_2',
@@ -1971,7 +1715,6 @@
         'lugar_expe_cedula_poderdante_2',
         'estado_poderdante_2',
         'lugar_poderdante_2',
-        'poderdante_3',
         'nombre_poderdante_3',
         'sexo_poderdante_3',
         'tipo_documento_poderdante_3',
@@ -1981,7 +1724,6 @@
         'lugar_expe_cedula_poderdante_3',
         'estado_poderdante_3',
         'lugar_poderdante_3',
-        'poderdante_4',
         'nombre_poderdante_4',
         'sexo_poderdante_4',
         'tipo_documento_poderdante_4',
@@ -1991,7 +1733,6 @@
         'lugar_expe_cedula_poderdante_4',
         'estado_poderdante_4',
         'lugar_poderdante_4',
-        'poderdante_5',
         'nombre_poderdante_5',
         'sexo_poderdante_5',
         'tipo_documento_poderdante_5',
@@ -2001,44 +1742,34 @@
         'lugar_expe_cedula_poderdante_5',
         'estado_poderdante_5',
         'lugar_poderdante_5',
-        'sexo_apoderado_1',
-        'nombre_apoderado_1',
-        'tipo_documento_apoderado_1',
-        'cedula_apoderado_1',
-        'cedulae_apoderado_1',
-        'pasaporte_apoderado_1',
-        'lugar_expe_cedula_apoderado_1',
-        'segundo_apoderado',
-        'sexo_apoderado_2',
-        'nombre_apoderado_2',
-        'tipo_documento_apoderado_2',
-        'cedula_apoderado_2',
-        'cedulae_apoderado_2',
-        'pasaporte_apoderado_2',
-        'lugar_expe_cedula_apoderado_2',
-        'tercer_apoderado',
-        'sexo_apoderado_3',
-        'nombre_apoderado_3',
-        'tipo_documento_apoderado_3',
-        'cedula_apoderado_3',
-        'cedulae_apoderado_3',
-        'pasaporte_apoderado_3',
-        'lugar_expe_cedula_apoderado_3',
+        'sexo_propietario',
+        'nombre_propietario',
         'descripcion_inmu',
         'direccion_inmu',
         'lugar_inmu',
         'matricula_inmo',
         'codigo_cata',
-        'hijos_1',
-        'mayores_1',
-        'hijos_2',
-        'mayores_2',
-        'hijos_3',
-        'mayores_3',
-        'hijos_4',
-        'mayores_4',
-        'hijos_5',
-        'mayores_5',
+        'nombre_apoderado_1',
+        'sexo_apoderado_1',
+        'tipo_documento_apoderado_1',
+        'cedula_apoderado_1',
+        'cedulae_apoderado_1',
+        'pasaporte_apoderado_1',
+        'lugar_expe_cedula_apoderado_1',
+        'nombre_apoderado_2',
+        'sexo_apoderado_2',
+        'tipo_documento_apoderado_2',
+        'cedula_apoderado_2',
+        'cedulae_apoderado_2',
+        'pasaporte_apoderado_2',
+        'lugar_expe_cedula_apoderado_1',
+        'nombre_apoderado_3',
+        'sexo_apoderado_3',
+        'tipo_documento_apoderado_3',
+        'cedula_apoderado_3',
+        'cedulae_apoderado_3',
+        'pasaporte_apoderado_3',
+        'lugar_expe_cedula_apoderado_3',
         'correo_poderdante_1',
         'correo_poderdante_2',
         'correo_poderdante_3',
@@ -2098,27 +1829,28 @@
             type: 'apoderado_3'
         }
     ],
+    preFill: [],
     preBuildData: [],
     preBuild: true,
-    name: 'PODER ESPECIAL PARA CANCELACIÓN DE PATRIMONIO DE FAMILIA',
+    name: 'PODER ESPECIAL CANCELACIÓN AFECTACIÓN A VIVIENDA FAMILIAR HOME CAPITAL TEST',
     price: 5000,
     help: {
-        matricula: 'Ejemplo: 50S23434 \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
-        codigo: 'Ejemplo: 9872023 VH5797S 0001 WX \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
-        direccion: 'Ejemplo: Avenida 12 # 34 - 56',
-        poderdante: 'Poderdante: Quien otorga poder a otra persona para que pueda cancelar el patrimonio de familia',
+        poderdante: 'Poderdante: Persona que da poder a otra persona para que la represente en un juicio o actuar en su nombre en cualquier situación',
         sexo: 'Femenino',
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
         tipo_documento: 'Cédula de Ciudadanía',
         cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAS1234567',
         descripcion: 'Ejemplo: Urbanización colores 1504 bloque 3',
-        estado_civil: 'Ejemplo: Casado con sociedad conyugal vigente',
+        estado_civil: 'Ejemplo: casado, con sociedad conyugal vigente',
         lugar: 'Ejemplo: Bogotá',
+        direccion: 'Ejemplo: Avenida 20 # 98 - 76',
+        matricula: 'Ejemplo: 50S23434 \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
+        codigo: 'Ejemplo: 9872023 VH5797S 0001 WX \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
         correo: 'Ejemplo: ejemplo@gmail.com'
     },
-    build: 21,
-    username: '8b62df2f-b613-402c-ae84-690ada65fb2b',
-    company: ObjectId('614a3a750aebb000084cbac0'),
-    createdAt: ISODate('2021-09-20T16:28:45.135Z'),
-    updatedAt: ISODate('2021-09-20T16:28:45.135Z')
+    build: 0,
+    company: ObjectId('618d299c3b775300099e6214'),
+    createdAt: ISODate('2021-12-02T15:06:56.513Z'),
+    updatedAt: ISODate('2021-12-02T15:06:56.513Z')
 }

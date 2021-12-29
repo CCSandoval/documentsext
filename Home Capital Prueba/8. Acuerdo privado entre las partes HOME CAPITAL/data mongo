@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('618aae5c3d94430009432474'),
+    _id: ObjectId('61a8f4944f6f7000094df988'),
     config: [
         {
             description: '¿Cuál es el tipo de representante?',
@@ -3649,8 +3649,7 @@
     ],
     preFill: [],
     preBuildData: [],
-    name: 'Acuerdo privado entre las partes OVMT',
-    price: 5000,
+    name: 'Acuerdo privado entre las partes OVMT TEST',
     help: {
         tipo_repre: 'Ejemplo: Inversionista',
         nombre: 'Ejemplo: Carolina Andrea Diaz Diaz',
@@ -3670,10 +3669,10 @@
         cuenta_numero: 'Ejemplo: 1423 5867 7089',
         fecha: 'Ejemplo: 12 de Diciembre del 2021'
     },
-    build: 6,
     preBuild: true,
-    company: ObjectId('614a3a750aebb000084cbac0'),
-    username: '8b62df2f-b613-402c-ae84-690ada65fb2b',
-    createdAt: ISODate('2021-11-09T17:22:36.442Z'),
-    updatedAt: ISODate('2021-11-09T17:22:36.442Z')
+    company: ObjectId('618d299c3b775300099e6214'),
+    price: 5000,
+    build: 0,
+    createdAt: ISODate('2021-12-02T16:30:12.167Z'),
+    updatedAt: ISODate('2021-12-02T16:30:12.167Z')
 }
