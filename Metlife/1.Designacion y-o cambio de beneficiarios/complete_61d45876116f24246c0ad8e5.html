@@ -1,0 +1,710 @@
+<style type="text/css">
+  .main_content {
+    width: 21cm;
+  }
+  .header {
+    position: relative;
+    width: 100%;
+  }
+  .header_logo {
+    margin-right: 25px;
+    vertical-align: middle;
+    width: 200px;
+  }
+  .box_1 {
+    border: 1px black solid;
+    padding: 5px 0px;
+    font-size: 13px;
+    font-family: sans-serif;
+    margin-top: 10px;
+  }
+  .box_3 {
+    padding: 5px;
+  }
+  .box_4 {
+    border-left: 1px black solid;
+    padding: 5px;
+  }
+  .box_5 {
+    border-left: 1px black solid;
+    padding: 5px 0px 5px 5px;
+  }
+  .padded {
+    margin-right: 20px;
+  }
+  .box_6 {
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px black solid;
+    padding: 5px 0px;
+    font-size: 13px;
+    font-family: sans-serif;
+  }
+  .box_7 {
+    border-right: 1px black solid;
+    padding: 5px 2px;
+    /* padding: 5px 32em 6px 5px; */
+  }
+  .box_8 {
+    padding: 5px 0px 2px 5px;
+  }
+  .table_title {
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  .table2 {
+    width: 100%;
+  }
+  .table2_title {
+    background-color: black;
+    color: white;
+    margin-top: 5px;
+    margin-bottom: 1px;
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight: bold;
+  }
+  table {
+    border-collapse: collapse;
+    font-family: sans-serif;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    width: 100%;
+  }
+  thead {
+    border-left: #909090;
+    border-right: #909090;
+  }
+  th {
+    color: white;
+    background-color: #909090;
+    font-size: 14px;
+    padding: 8px;
+  }
+  .thead_1,
+  .thead_2 {
+    padding: 8px 35px;
+  }
+  .thead_1,
+  .thead_2,
+  .thead_3,
+  .thead_4,
+  .thead_5 {
+    border-right: white 1px solid;
+  }
+  td {
+    font-size: 12px;
+    text-align: center;
+    height: 32px;
+    border-left: black 1px solid;
+    border-top: black 1px solid;
+  }
+  td p {
+    word-break: break-all;
+    margin: 0;
+  }
+
+  .diligenciamiento {
+    margin-top: 0.7em;
+    width: 26rem;
+    border: 1px black solid;
+    padding: 5px 0px;
+  }
+
+  .diligenciamiento p {
+    display: inline;
+  }
+
+  .diligenciamiento_texto {
+    background-color: black;
+    color: white;
+    font-family: sans-serif;
+    padding: 6px 12px;
+  }
+  .diligenciamiento_campo {
+    font-size: 16px;
+    height: 100%;
+    vertical-align: bottom;
+  }
+  .extra_info_box {
+    width: 60%;
+    font-family: sans-serif;
+  }
+  .caja_firma {
+    position: relative;
+    left: 32.5rem;
+    bottom: 9.5rem;
+    border: 1px black solid;
+    border-radius: 0 0 10px 10px;
+    width: 17rem;
+  }
+  .caja_firma p {
+    text-align: center;
+  }
+</style>
+
+<div class="main_content">
+  <div class="header">
+    <p
+      style="
+        font-family: serif;
+        color: black;
+        top: 0;
+        left: 23rem;
+        text-align: right;
+        font-size: 25px;
+      "
+    >
+      <img
+        class="header_logo"
+        src="https://mi-contrato-static.s3.amazonaws.com/metlife/logo.jpg"
+      />
+      <span>
+        DESIGNACIÓN Y/O CAMBIO DE BENEFICIARIOS <br />
+        GLOBAL EMPLOYEE BENEFITS
+      </span>
+    </p>
+  </div>
+  <div class="box_1">
+    <span class="box_3">
+      <span>No. DE PÓLIZA: </span>
+      <span name="num_poliza">_________________</span>
+    </span>
+    <span class="box_4">
+      <span>EMPRESA:</span>
+      <span name="nombre_empresa">___________________</span>
+    </span>
+    <span class="box_5">
+      <span>TOMADOR:</span>
+      <span name="nombre_tomador">__________________________________</span>
+    </span>
+  </div>
+  <div class="box_6">
+    <span class="box_7">
+      <span name="asegurado_genero_m">ASEGURADO:</span>
+      <span name="asegurado_genero_f" hidden>ASEGURADA:</span>
+      <span name="nombre_asegurado"
+        >___________________________________________________</span
+      >
+    </span>
+    <span class="box_8">
+      <span name="id_asegurado_cc">C.C. ASEGURADO:</span>
+      <span name="id_asegurado_pa" hidden>PAS. DEL ASEGURADO:</span>
+      <span name="id_asegurado_ce" hidden>C.E. ASEGURADO:</span>
+      <span name="numero_id_asegurado">______________________</span>
+    </span>
+  </div>
+
+  <p class="table_title">DESIGNACIÓN DE BENEFICIARIOS</p>
+  <table>
+    <thead>
+      <th class="thead_1">
+        <p>NOMBRES</p>
+      </th>
+      <th class="thead_2">
+        <p>APELLIDOS</p>
+      </th>
+      <th class="thead_3">
+        <p>TIPO ID (CC/RC/CE)</p>
+      </th>
+      <th class="thead_4">
+        <p>No. DE IDENTIFICACIÓN</p>
+      </th>
+      <th class="thead_5">
+        <p>PARENTESCO</p>
+      </th>
+      <th class="thead_6">
+        <p>PORCENTAJE DE PARTICIPACIÓN</p>
+      </th>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span name="nombres_beneficiario_1"></span></td>
+        <td><span name="apellidos_beneficiario_1"></span></td>
+        <td>
+          <span name="tipo_id_beneficiario_1_cc" hidden>CC</span>
+          <span name="tipo_id_beneficiario_1_ce" hidden>CE</span>
+          <span name="tipo_id_beneficiario_1_rc" hidden>RC</span>
+        </td>
+        <td><span name="numero_id_beneficiario_1"></span></td>
+        <td><span name="parentesco_beneficiario_1"></span></td>
+        <td><span name="participacion_beneficiario_1"></span></td>
+      </tr>
+      <tr name="segundo_beneficiario_n">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr name="segundo_beneficiario_s" hidden>
+        <td><p name="nombres_beneficiario_2"></p></td>
+        <td><p name="apellidos_beneficiario_2"></p></td>
+        <td>
+          <span name="tipo_id_beneficiario_2_cc" hidden>CC</span>
+          <span name="tipo_id_beneficiario_2_ce" hidden>CE</span>
+          <span name="tipo_id_beneficiario_2_rc" hidden>RC</span>
+        </td>
+        <td><span name="numero_id_beneficiario_2"></span></td>
+        <td><span name="parentesco_beneficiario_2"></span></td>
+        <td><span name="participacion_beneficiario_2"></span></td>
+      </tr>
+      <tr name="tercer_beneficiario_n">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr name="tercer_beneficiario_s" hidden>
+        <td><span name="nombres_beneficiario_3"></span></td>
+        <td><span name="apellidos_beneficiario_3"></span></td>
+        <td>
+          <span name="tipo_id_beneficiario_3_cc" hidden>CC</span>
+          <span name="tipo_id_beneficiario_3_ce" hidden>CE</span>
+          <span name="tipo_id_beneficiario_3_rc" hidden>RC</span>
+        </td>
+        <td><span name="numero_id_beneficiario_3"></span></td>
+        <td><span name="parentesco_beneficiario_3"></span></td>
+        <td><span name="participacion_beneficiario_3"></span></td>
+      </tr>
+      <tr name="cuarto_beneficiario_n">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr name="cuarto_beneficiario_s" hidden>
+        <td><span name="nombres_beneficiario_4"></span></td>
+        <td><span name="apellidos_beneficiario_4"></span></td>
+        <td>
+          <span name="tipo_id_beneficiario_4_cc" hidden>CC</span>
+          <span name="tipo_id_beneficiario_4_ce" hidden>CE</span>
+          <span name="tipo_id_beneficiario_4_rc" hidden>RC</span>
+        </td>
+        <td><span name="numero_id_beneficiario_4"></span></td>
+        <td><span name="parentesco_beneficiario_4"></span></td>
+        <td><span name="participacion_beneficiario_4"></span></td>
+      </tr>
+      <tr name="quinto_beneficiario_n">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr name="quinto_beneficiario_s" hidden>
+        <td><span name="nombres_beneficiario_5"></span></td>
+        <td><span name="apellidos_beneficiario_5"></span></td>
+        <td>
+          <span name="tipo_id_beneficiario_5_cc" hidden>CC</span>
+          <span name="tipo_id_beneficiario_5_ce" hidden>CE</span>
+          <span name="tipo_id_beneficiario_5_rc" hidden>RC</span>
+        </td>
+        <td><span name="numero_id_beneficiario_5"></span></td>
+        <td><span name="parentesco_beneficiario_5"></span></td>
+        <td><span name="participacion_beneficiario_5"></span></td>
+      </tr>
+      <tr name="sexto_beneficiario_n">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr name="sexto_beneficiario_s" hidden>
+        <td><span name="nombres_beneficiario_6"></span></td>
+        <td><span name="apellidos_beneficiario_6"></span></td>
+        <td>
+          <span name="tipo_id_beneficiario_6_cc" hidden>CC</span>
+          <span name="tipo_id_beneficiario_6_ce" hidden>CE</span>
+          <span name="tipo_id_beneficiario_6_rc" hidden>RC</span>
+        </td>
+        <td><span name="numero_id_beneficiario_6"></span></td>
+        <td><span name="parentesco_beneficiario_6"></span></td>
+        <td><span name="participacion_beneficiario_6"></span></td>
+      </tr>
+      <tr name="septimo_beneficiario_n">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr name="septimo_beneficiario_s" hidden>
+        <td><span name="nombres_beneficiario_7"></span></td>
+        <td><span name="apellidos_beneficiario_7"></span></td>
+        <td>
+          <span name="tipo_id_beneficiario_7_cc" hidden>CC</span>
+          <span name="tipo_id_beneficiario_7_ce" hidden>CE</span>
+          <span name="tipo_id_beneficiario_7_rc" hidden>RC</span>
+        </td>
+        <td><span name="numero_id_beneficiario_7"></span></td>
+        <td><span name="parentesco_beneficiario_7"></span></td>
+        <td><span name="participacion_beneficiario_7"></span></td>
+      </tr>
+      <tr name="octavo_beneficiario_n">
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr name="octavo_beneficiario_s" hidden>
+        <td><span name="nombres_beneficiario_8"></span></td>
+        <td><span name="apellidos_beneficiario_8"></span></td>
+        <td>
+          <span name="tipo_id_beneficiario_8_cc" hidden>CC</span>
+          <span name="tipo_id_beneficiario_8_ce" hidden>CE</span>
+          <span name="tipo_id_beneficiario_8_rc" hidden>RC</span>
+        </td>
+        <td><span name="numero_id_beneficiario_8"></span></td>
+        <td><span name="parentesco_beneficiario_8"></span></td>
+        <td><span name="participacion_beneficiario_8"></span></td>
+      </tr>
+    </tbody>
+  </table>
+
+  <div name="beneficiarios_contingentes_n">
+    <p class="table2_title">BENEFICIARIOS CONTINGENTES</p>
+    <table>
+      <thead>
+        <th class="thead_1">
+          <p>NOMBRES</p>
+        </th>
+        <th class="thead_2">
+          <p>APELLIDOS</p>
+        </th>
+        <th class="thead_3">
+          <p>TIPO ID (CC/RC/CE)</p>
+        </th>
+        <th class="thead_4">
+          <p>No. DE IDENTIFICACIÓN</p>
+        </th>
+        <th class="thead_5">
+          <p>PARENTESCO</p>
+        </th>
+        <th class="thead_6">
+          <p>PORCENTAJE DE PARTICIPACIÓN</p>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table2" name="beneficiarios_contingentes_s" hidden>
+    <p class="table2_title">BENEFICIARIOS CONTINGENTES</p>
+    <table>
+      <thead>
+        <th class="thead_1">
+          <p>NOMBRES</p>
+        </th>
+        <th class="thead_2">
+          <p>APELLIDOS</p>
+        </th>
+        <th class="thead_3">
+          <p>TIPO ID (CC/RC/CE)</p>
+        </th>
+        <th class="thead_4">
+          <p>No. DE IDENTIFICACIÓN</p>
+        </th>
+        <th class="thead_5">
+          <p>PARENTESCO</p>
+        </th>
+        <th class="thead_6">
+          <p>PORCENTAJE DE PARTICIPACIÓN</p>
+        </th>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span name="nombres_beneficiario_con_1"></span></td>
+          <td><span name="apellidos_beneficiario_con_1"></span></td>
+          <td>
+            <span name="tipo_id_beneficiario_con_1_cc" hidden>CC</span>
+            <span name="tipo_id_beneficiario_con_1_ce" hidden>CE</span>
+            <span name="tipo_id_beneficiario_con_1_rc" hidden>RC</span>
+          </td>
+          <td><span name="numero_id_beneficiario_con_1"></span></td>
+          <td><span name="parentesco_beneficiario_con_1"></span></td>
+          <td><span name="participacion_beneficiario_con_1"></span></td>
+        </tr>
+        <tr name="segundo_beneficiario_con_n">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr name="segundo_beneficiario_con_s" hidden>
+          <td><span name="nombres_beneficiario_con_2"></span></td>
+          <td><span name="apellidos_beneficiario_con_2"></span></td>
+          <td>
+            <span name="tipo_id_beneficiario_con_2_cc" hidden>CC</span>
+            <span name="tipo_id_beneficiario_con_2_ce" hidden>CE</span>
+            <span name="tipo_id_beneficiario_con_2_rc" hidden>RC</span>
+          </td>
+          <td><span name="numero_id_beneficiario_con_2"></span></td>
+          <td><span name="parentesco_beneficiario_con_2"></span></td>
+          <td><span name="participacion_beneficiario_con_2"></span></td>
+        </tr>
+        <tr name="tercer_beneficiario_con_n">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr name="tercer_beneficiario_con_s">
+          <td><span name="nombres_beneficiario_con_3"></span></td>
+          <td><span name="apellidos_beneficiario_con_3"></span></td>
+          <td>
+            <span name="tipo_id_beneficiario_con_3_cc" hidden>CC</span>
+            <span name="tipo_id_beneficiario_con_3_ce" hidden>CE</span>
+            <span name="tipo_id_beneficiario_con_3_rc" hidden>RC</span>
+          </td>
+          <td><span name="numero_id_beneficiario_con_3"></span></td>
+          <td><span name="parentesco_beneficiario_con_3"></span></td>
+          <td><span name="participacion_beneficiario_con_3"></span></td>
+        </tr>
+        <tr name="cuarto_beneficiario_con_n" hidden>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr name="cuarto_beneficiario_con_s" hidden>
+          <td><span name="nombres_beneficiario_con_4"></span></td>
+          <td><span name="apellidos_beneficiario_con_4"></span></td>
+          <td>
+            <span name="tipo_id_beneficiario_con_4_cc" hidden>CC</span>
+            <span name="tipo_id_beneficiario_con_4_ce" hidden>CE</span>
+            <span name="tipo_id_beneficiario_con_4_rc" hidden>RC</span>
+          </td>
+          <td><span name="numero_id_beneficiario_con_4"></span></td>
+          <td><span name="parentesco_beneficiario_con_4"></span></td>
+          <td><span name="participacion_beneficiario_con_4"></span></td>
+        </tr>
+        <tr name="quinto_beneficiario_con_n">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr name="quinto_beneficiario_con_s" hidden>
+          <td><span name="nombres_beneficiario_con_5"></span></td>
+          <td><span name="apellidos_beneficiario_con_5"></span></td>
+          <td>
+            <span name="tipo_id_beneficiario_con_5_cc" hidden>CC</span>
+            <span name="tipo_id_beneficiario_con_5_ce" hidden>CE</span>
+            <span name="tipo_id_beneficiario_con_5_rc" hidden>RC</span>
+          </td>
+          <td><span name="numero_id_beneficiario_con_5"></span></td>
+          <td><span name="parentesco_beneficiario_con_5"></span></td>
+          <td><span name="participacion_beneficiario_con_5"></span></td>
+        </tr>
+        <tr name="sexto_beneficiario_con_n">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr name="sexto_beneficiario_con_s" hidden>
+          <td><span name="nombres_beneficiario_con_6"></span></td>
+          <td><span name="apellidos_beneficiario_con_6"></span></td>
+          <td>
+            <span name="tipo_id_beneficiario_con_6_cc" hidden>CC</span>
+            <span name="tipo_id_beneficiario_con_6_ce" hidden>CE</span>
+            <span name="tipo_id_beneficiario_con_6_rc" hidden>RC</span>
+          </td>
+          <td><span name="numero_id_beneficiario_con_6"></span></td>
+          <td><span name="parentesco_beneficiario_con_6"></span></td>
+          <td><span name="participacion_beneficiario_con_6"></span></td>
+        </tr>
+        <tr name="septimo_beneficiario_con_n">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr name="septimo_beneficiario_con_s" hidden>
+          <td><span name="nombres_beneficiario_con_7"></span></td>
+          <td><span name="apellidos_beneficiario_con_7"></span></td>
+          <td>
+            <span name="tipo_id_beneficiario_con_7_cc" hidden>CC</span>
+            <span name="tipo_id_beneficiario_con_7_ce" hidden>CE</span>
+            <span name="tipo_id_beneficiario_con_7_rc" hidden>RC</span>
+          </td>
+          <td><span name="numero_id_beneficiario_con_7"></span></td>
+          <td><span name="parentesco_beneficiario_con_7"></span></td>
+          <td><span name="participacion_beneficiario_con_7"></span></td>
+        </tr>
+        <tr name="octavo_beneficiario_con_n">
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr name="octavo_beneficiario_con_s" hidden>
+          <td><span name="nombres_beneficiario_con_8"></span></td>
+          <td><span name="apellidos_beneficiario_con_8"></span></td>
+          <td>
+            <span name="tipo_id_beneficiario_con_8_cc" hidden>CC</span>
+            <span name="tipo_id_beneficiario_con_8_ce" hidden>CE</span>
+            <span name="tipo_id_beneficiario_con_8_rc" hidden>RC</span>
+          </td>
+          <td><span name="numero_id_beneficiario_con_8"></span></td>
+          <td><span name="parentesco_beneficiario_con_8"></span></td>
+          <td><span name="participacion_beneficiario_con_8"></span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="diligenciamiento">
+    <p class="diligenciamiento_texto">FECHA DILIGENCIAMIENTO</p>
+    <p class="diligenciamiento_campo">
+      <span name="fecha_diligenciamiento">_____________________</span>
+    </p>
+  </div>
+  <br />
+  <br />
+  <div class="extra_info_box">
+    <p>
+      <span>
+        <small>
+          <b>MetLife Colombia Seguros de Vida S.A. Compañia de Seguros</b>
+        </small>
+      </span>
+      <span
+        ><small
+          ><small
+            >Bogotá D.C. Cra7 No. 99-53 Piso 17 (Of. Principal) &verbar; Línea
+            de atención al Cliente: 01 8000 912 200</small
+          ></small
+        ></span
+      >
+      <span
+        ><small
+          ><small
+            >servicio.cliente@metlife.com.co &verbar;
+            <b>www.metlife.com.co</b></small
+          ></small
+        ></span
+      >
+      <br />
+      <span>
+        <small><small> MLNFRCC007/0-COL-ED04/2019 </small></small>
+      </span>
+    </p>
+  </div>
+  <div class="caja_firma">
+    <div
+      style="
+        margin: auto;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        text-align: center;
+      "
+      id="sign"
+    ></div>
+    <hr />
+    <p>
+      Firma <span name="asegurado_genero_m">del asegurado</span>
+      <span name="asegurado_genero_f" hidden>de la asegurada</span>
+    </p>
+  </div>
+</div>

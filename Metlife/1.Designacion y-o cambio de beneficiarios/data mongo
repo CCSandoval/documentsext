@@ -1,0 +1,4100 @@
+{
+    _id: ObjectId('61d45876116f24246c0ad8e5'),
+    config: [
+        {
+            description: 'Ingrese el número de póliza',
+            name: 'num_poliza',
+            type: 'number'
+        },
+        {
+            description: 'Ingrese el nombre de la empresa',
+            name: 'nombre_empresa',
+            type: 'name'
+        },
+        {
+            description: 'Ingrese el nombre del tomador',
+            name: 'nombre_tomador',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el género de la persona asegurada',
+            name: 'asegurado_genero',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: 'Ingrese el nombre de la persona asegurada',
+            name: 'nombre_asegurado',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación de la persona asegurada',
+            name: 'id_asegurado',
+            options: [
+                {
+                    name: 'Cedula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula de la persona asegurada',
+            name: 'numero_id_asegurado',
+            prereq: [
+                {
+                    k: 'id_asegurado',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjería de la persona asegurada',
+            name: 'numero_id_asegurado',
+            prereq: [
+                {
+                    k: 'id_asegurado',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el pasaporte de la persona asegurada',
+            name: 'numero_id_asegurado',
+            prereq: [
+                {
+                    k: 'id_asegurado',
+                    v: 'pa'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha de diligenciamiento',
+            name: 'fecha_diligenciamiento',
+            type: 'date'
+        },
+        {
+            description: 'Ingrese los nombres del primer beneficiario',
+            name: 'nombres_beneficiario_1',
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del primer beneficiario',
+            name: 'apellidos_beneficiario_1',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del primer beneficiario',
+            name: 'tipo_id_beneficiario_1',
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cédula del primer beneficiario',
+            name: 'numero_id_beneficiario_1',
+            prereq: [
+                {
+                    k: 'tipo_id_beneficiario_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cédula de extranjería del primer beneficiario',
+            name: 'numero_id_beneficiario_1',
+            prereq: [
+                {
+                    k: 'tipo_id_beneficiario_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del primer beneficiario',
+            name: 'numero_id_beneficiario_1',
+            prereq: [
+                {
+                    k: 'tipo_id_beneficiario_1',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del primer beneficiario',
+            type: 'text',
+            name: 'parentesco_beneficiario_1'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del primer beneficiario',
+            type: 'number',
+            name: 'participacion_beneficiario_1',
+            help: 'participacion'
+        },
+        {
+            description: '¿Desea ingresar un segundo beneficiario?',
+            name: 'segundo_beneficiario',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del segundo beneficiario',
+            name: 'nombres_beneficiario_2',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del segundo beneficiario',
+            name: 'apellidos_beneficiario_2',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese el tipo de identificación del segundo beneficiario',
+            name: 'tipo_id_beneficiario_2',
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula del segundo beneficiario',
+            name: 'numero_id_beneficiario_2',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_2',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del segundo beneficiario',
+            name: 'numero_id_beneficiario_2',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_2',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el registro civil del segundo beneficiario',
+            name: 'numero_id_beneficiario_2',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_2',
+                    v: 'rc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el parentesco del segundo beneficiario',
+            name: 'parentesco_beneficiario_2',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del segundo beneficiario',
+            type: 'number',
+            name: 'participacion_beneficiario_2',
+            help: 'participacion',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Desea ingresar un tercer beneficiario?',
+            name: 'tercer_beneficiario',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del tercer beneficiario',
+            name: 'nombres_beneficiario_3',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del tercer beneficiario',
+            name: 'apellidos_beneficiario_3',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese el tipo de identificación del tercer beneficiario',
+            name: 'tipo_id_beneficiario_3',
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula del tercer beneficiario',
+            name: 'numero_id_beneficiario_3',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_3',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del tercer beneficiario',
+            name: 'numero_id_beneficiario_3',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_3',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el registro civil del tercer beneficiario',
+            name: 'numero_id_beneficiario_3',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_3',
+                    v: 'rc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el parentesco del tercer beneficiario',
+            name: 'parentesco_beneficiario_3',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del tercer beneficiario',
+            type: 'number',
+            name: 'participacion_beneficiario_3',
+            help: 'participacion',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Desea ingresar un cuarto beneficiario?',
+            name: 'cuarto_beneficiario',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del cuarto beneficiario',
+            name: 'nombres_beneficiario_4',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del cuarto beneficiario',
+            name: 'apellidos_beneficiario_4',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese el tipo de identificación del cuarto beneficiario',
+            name: 'tipo_id_beneficiario_4',
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula del cuarto beneficiario',
+            name: 'numero_id_beneficiario_4',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_4',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del cuarto beneficiario',
+            name: 'numero_id_beneficiario_4',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_4',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el registro civil del cuarto beneficiario',
+            name: 'numero_id_beneficiario_4',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_4',
+                    v: 'rc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el parentesco del cuarto beneficiario',
+            name: 'parentesco_beneficiario_4',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del cuarto beneficiario',
+            type: 'number',
+            name: 'participacion_beneficiario_4',
+            help: 'participacion',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Desea ingresar un quinto beneficiario?',
+            name: 'quinto_beneficiario',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del quinto beneficiario',
+            name: 'nombres_beneficiario_5',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del quinto beneficiario',
+            name: 'apellidos_beneficiario_5',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese el tipo de identificación del quinto beneficiario',
+            name: 'tipo_id_beneficiario_5',
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula del quinto beneficiario',
+            name: 'numero_id_beneficiario_5',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_5',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del quinto beneficiario',
+            name: 'numero_id_beneficiario_5',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_5',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el registro civil del quinto beneficiario',
+            name: 'numero_id_beneficiario_5',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_5',
+                    v: 'rc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el parentesco del quinto beneficiario',
+            name: 'parentesco_beneficiario_5',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del quinto beneficiario',
+            type: 'number',
+            name: 'participacion_beneficiario_5',
+            help: 'participacion',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Desea ingresar un sexto beneficiario?',
+            name: 'sexto_beneficiario',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del sexto beneficiario',
+            name: 'nombres_beneficiario_6',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del sexto beneficiario',
+            name: 'apellidos_beneficiario_6',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese el tipo de identificación del sexto beneficiario',
+            name: 'tipo_id_beneficiario_6',
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula del sexto beneficiario',
+            name: 'numero_id_beneficiario_6',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_6',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del sexto beneficiario',
+            name: 'numero_id_beneficiario_6',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_6',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el registro civil del sexto beneficiario',
+            name: 'numero_id_beneficiario_6',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_6',
+                    v: 'rc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el parentesco del sexto beneficiario',
+            name: 'parentesco_beneficiario_6',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del sexto beneficiario',
+            type: 'number',
+            name: 'participacion_beneficiario_6',
+            help: 'participacion',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Desea ingresar un septimo beneficiario?',
+            name: 'septimo_beneficiario',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del septimo beneficiario',
+            name: 'nombres_beneficiario_7',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del septimo beneficiario',
+            name: 'apellidos_beneficiario_7',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese el tipo de identificación del septimo beneficiario',
+            name: 'tipo_id_beneficiario_7',
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula del septimo beneficiario',
+            name: 'numero_id_beneficiario_7',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_7',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del septimo beneficiario',
+            name: 'numero_id_beneficiario_7',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_7',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el registro civil del septimo beneficiario',
+            name: 'numero_id_beneficiario_7',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_7',
+                    v: 'rc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el parentesco del septimo beneficiario',
+            name: 'parentesco_beneficiario_7',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del septimo beneficiario',
+            type: 'number',
+            name: 'participacion_beneficiario_7',
+            help: 'participacion',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Desea ingresar un octavo beneficiario?',
+            name: 'octavo_beneficiario',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del octavo beneficiario',
+            name: 'nombres_beneficiario_8',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del octavo beneficiario',
+            name: 'apellidos_beneficiario_8',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese el tipo de identificación del octavo beneficiario',
+            name: 'tipo_id_beneficiario_8',
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula del octavo beneficiario',
+            name: 'numero_id_beneficiario_8',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_8',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del octavo beneficiario',
+            name: 'numero_id_beneficiario_8',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_8',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el registro civil del octavo beneficiario',
+            name: 'numero_id_beneficiario_8',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_8',
+                    v: 'rc'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el parentesco del octavo beneficiario',
+            name: 'parentesco_beneficiario_8',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del octavo beneficiario',
+            type: 'number',
+            name: 'participacion_beneficiario_8',
+            help: 'participacion',
+            prereq: [
+                {
+                    k: 'segundo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Desea ingresar beneficiarios contingentes?',
+            name: 'beneficiarios_contingentes',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del primer beneficiario contingente',
+            name: 'nombres_beneficiario_con_1',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del primer beneficiario contingente',
+            name: 'apellidos_beneficiario_con_1',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del primer beneficiario contingente',
+            name: 'tipo_id_beneficiario_con_1',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula del primer beneficiario contingente',
+            name: 'numero_id_beneficiario_con_1',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del primer beneficiario contingente',
+            name: 'numero_id_beneficiario_con_1',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del primer beneficiario contingente',
+            name: 'numero_id_beneficiario_con_1',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_1',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del primer beneficiario contingente',
+            name: 'parentesco_beneficiario_con_1',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del primer beneficiario contingente',
+            name: 'participacion_beneficiario_con_1',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                }
+            ],
+            type: 'number',
+            help: 'participacion'
+        },
+        {
+            description: '¿Desea ingresar un segundo beneficiario contingente?',
+            name: 'segundo_beneficiario_con',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del segundo beneficiario contingente',
+            name: 'nombres_beneficiario_con_2',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del segundo beneficiario contingente',
+            name: 'apellidos_beneficiario_con_2',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del segundo beneficiario contingente',
+            name: 'tipo_id_beneficiario_con_2',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula del segundo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_2',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_2',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del segundo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_2',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_2',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del segundo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_2',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_2',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del segundo beneficiario contingente',
+            name: 'parentesco_beneficiario_con_2',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del segundo beneficiario contingente',
+            name: 'participacion_beneficiario_con_2',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'number',
+            help: 'participacion'
+        },
+        {
+            description: '¿Desea ingresar un tercer beneficiario contingente?',
+            name: 'tercer_beneficiario_con',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del tercer beneficiario contingente',
+            name: 'nombres_beneficiario_con_3',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del tercer beneficiario contingente',
+            name: 'apellidos_beneficiario_con_3',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del tercer beneficiario contingente',
+            name: 'tipo_id_beneficiario_con_3',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula del tercer beneficiario contingente',
+            name: 'numero_id_beneficiario_con_3',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_3',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del tercer beneficiario contingente',
+            name: 'numero_id_beneficiario_con_3',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_3',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del tercer beneficiario contingente',
+            name: 'numero_id_beneficiario_con_3',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_3',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del tercer beneficiario contingente',
+            name: 'parentesco_beneficiario_con_3',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del tercer beneficiario contingente',
+            name: 'participacion_beneficiario_con_3',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'number',
+            help: 'participacion'
+        },
+        {
+            description: '¿Desea ingresar un cuarto beneficiario contingente?',
+            name: 'cuarto_beneficiario_con',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del cuarto beneficiario contingente',
+            name: 'nombres_beneficiario_con_4',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del cuarto beneficiario contingente',
+            name: 'apellidos_beneficiario_con_4',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del cuarto beneficiario contingente',
+            name: 'tipo_id_beneficiario_con_4',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula del cuarto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_4',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_4',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del cuarto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_4',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_4',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del cuarto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_4',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_4',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del cuarto beneficiario contingente',
+            name: 'parentesco_beneficiario_con_4',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del cuarto beneficiario contingente',
+            name: 'participacion_beneficiario_con_4',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'number',
+            help: 'participacion'
+        },
+        {
+            description: '¿Desea ingresar un quinto beneficiario contingente?',
+            name: 'quinto_beneficiario_con',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del quinto beneficiario contingente',
+            name: 'nombres_beneficiario_con_5',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del quinto beneficiario contingente',
+            name: 'apellidos_beneficiario_con_5',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del quinto beneficiario contingente',
+            name: 'tipo_id_beneficiario_con_5',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula del quinto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_5',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_5',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del quinto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_5',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_5',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del quinto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_5',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_5',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del quinto beneficiario contingente',
+            name: 'parentesco_beneficiario_con_5',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del quinto beneficiario contingente',
+            name: 'participacion_beneficiario_con_5',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'number',
+            help: 'participacion'
+        },
+        {
+            description: '¿Desea ingresar un sexto beneficiario contingente?',
+            name: 'sexto_beneficiario_con',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del sexto beneficiario contingente',
+            name: 'nombres_beneficiario_con_6',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del sexto beneficiario contingente',
+            name: 'apellidos_beneficiario_con_6',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del sexto beneficiario contingente',
+            name: 'tipo_id_beneficiario_con_6',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula del sexto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_6',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_6',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del sexto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_6',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_6',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del sexto beneficiario contingente',
+            name: 'numero_id_beneficiario_con_6',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_6',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del sexto beneficiario contingente',
+            name: 'parentesco_beneficiario_con_6',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del sexto beneficiario contingente',
+            name: 'participacion_beneficiario_con_6',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'number',
+            help: 'participacion'
+        },
+        {
+            description: '¿Desea ingresar un septimo beneficiario contingente?',
+            name: 'septimo_beneficiario_con',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del septimo beneficiario contingente',
+            name: 'nombres_beneficiario_con_7',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del septimo beneficiario contingente',
+            name: 'apellidos_beneficiario_con_7',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del septimo beneficiario contingente',
+            name: 'tipo_id_beneficiario_con_7',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula del septimo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_7',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_7',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del septimo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_7',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_7',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del septimo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_7',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_7',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del septimo beneficiario contingente',
+            name: 'parentesco_beneficiario_con_7',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del septimo beneficiario contingente',
+            name: 'participacion_beneficiario_con_7',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'number',
+            help: 'participacion'
+        },
+        {
+            description: '¿Desea ingresar un octavo beneficiario contingente?',
+            name: 'octavo_beneficiario_con',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            description: 'Ingrese los nombres del octavo beneficiario contingente',
+            name: 'nombres_beneficiario_con_8',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Ingrese los apellidos del octavo beneficiario contingente',
+            name: 'apellidos_beneficiario_con_8',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de identificación del octavo beneficiario contingente',
+            name: 'tipo_id_beneficiario_con_8',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Cedula de ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cedula de extranjeria',
+                    value: 'ce'
+                },
+                {
+                    name: 'Registro civil',
+                    value: 'rc'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Ingrese el numero de cedula del octavo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_8',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_8',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el numero de cedula de extranjeria del octavo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_8',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_8',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el registro civil del octavo beneficiario contingente',
+            name: 'numero_id_beneficiario_con_8',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_beneficiario_con_8',
+                    v: 'rc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el parentesco del octavo beneficiario contingente',
+            name: 'parentesco_beneficiario_con_8',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Ingrese el porcentaje de participación del octavo beneficiario contingente',
+            name: 'participacion_beneficiario_con_8',
+            prereq: [
+                {
+                    k: 'beneficiarios_contingentes',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_beneficiario_con',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_beneficiario_con',
+                    v: 's'
+                }
+            ],
+            type: 'number',
+            help: 'participacion'
+        },
+        {
+            name: 'asegurado_correo',
+            description: 'Ingrese el correo de la persona asegurada',
+            type: 'text',
+            help: 'email'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_asegurado',
+        'id_asegurado_cc',
+        'id_asegurado_ce',
+        'id_asegurado_pa',
+        'correo_asegurado',
+        'num_poliza',
+        'nombre_empresa',
+        'nombre_tomador',
+        'numero_id_asegurado',
+        'asegurado_correo',
+        'nombres_beneficiario_1',
+        'nombres_beneficiario_2',
+        'nombres_beneficiario_3',
+        'nombres_beneficiario_4',
+        'nombres_beneficiario_5',
+        'nombres_beneficiario_6',
+        'nombres_beneficiario_7',
+        'nombres_beneficiario_8',
+        'apellidos_beneficiario_1',
+        'apellidos_beneficiario_2',
+        'apellidos_beneficiario_3',
+        'apellidos_beneficiario_4',
+        'apellidos_beneficiario_5',
+        'apellidos_beneficiario_6',
+        'apellidos_beneficiario_7',
+        'apellidos_beneficiario_8',
+        'tipo_id_beneficiario_1_cc',
+        'tipo_id_beneficiario_1_ce',
+        'tipo_id_beneficiario_1_rc',
+        'tipo_id_beneficiario_2_cc',
+        'tipo_id_beneficiario_2_ce',
+        'tipo_id_beneficiario_2_rc',
+        'tipo_id_beneficiario_3_cc',
+        'tipo_id_beneficiario_3_ce',
+        'tipo_id_beneficiario_3_rc',
+        'tipo_id_beneficiario_4_cc',
+        'tipo_id_beneficiario_4_ce',
+        'tipo_id_beneficiario_4_rc',
+        'tipo_id_beneficiario_5_cc',
+        'tipo_id_beneficiario_5_ce',
+        'tipo_id_beneficiario_5_rc',
+        'tipo_id_beneficiario_6_cc',
+        'tipo_id_beneficiario_6_ce',
+        'tipo_id_beneficiario_6_rc',
+        'tipo_id_beneficiario_7_cc',
+        'tipo_id_beneficiario_7_ce',
+        'tipo_id_beneficiario_7_rc',
+        'tipo_id_beneficiario_8_cc',
+        'tipo_id_beneficiario_8_ce',
+        'tipo_id_beneficiario_8_rc',
+        'numero_id_beneficiario_1',
+        'numero_id_beneficiario_2',
+        'numero_id_beneficiario_3',
+        'numero_id_beneficiario_4',
+        'numero_id_beneficiario_5',
+        'numero_id_beneficiario_6',
+        'numero_id_beneficiario_7',
+        'numero_id_beneficiario_8',
+        'parentesco_beneficiario_1',
+        'parentesco_beneficiario_2',
+        'parentesco_beneficiario_3',
+        'parentesco_beneficiario_4',
+        'parentesco_beneficiario_5',
+        'parentesco_beneficiario_6',
+        'parentesco_beneficiario_7',
+        'parentesco_beneficiario_8',
+        'participacion_beneficiario_1',
+        'participacion_beneficiario_2',
+        'participacion_beneficiario_3',
+        'participacion_beneficiario_4',
+        'participacion_beneficiario_5',
+        'participacion_beneficiario_6',
+        'participacion_beneficiario_7',
+        'participacion_beneficiario_8',
+        'nombres_beneficiario_con_1',
+        'nombres_beneficiario_con_2',
+        'nombres_beneficiario_con_3',
+        'nombres_beneficiario_con_4',
+        'nombres_beneficiario_con_5',
+        'nombres_beneficiario_con_6',
+        'nombres_beneficiario_con_7',
+        'nombres_beneficiario_con_8',
+        'apellidos_beneficiario_con_1',
+        'apellidos_beneficiario_con_2',
+        'apellidos_beneficiario_con_3',
+        'apellidos_beneficiario_con_4',
+        'apellidos_beneficiario_con_5',
+        'apellidos_beneficiario_con_6',
+        'apellidos_beneficiario_con_7',
+        'apellidos_beneficiario_con_8',
+        'tipo_id_beneficiario_con_1_cc',
+        'tipo_id_beneficiario_con_1_ce',
+        'tipo_id_beneficiario_con_1_rc',
+        'tipo_id_beneficiario_con_2_cc',
+        'tipo_id_beneficiario_con_2_ce',
+        'tipo_id_beneficiario_con_2_rc',
+        'tipo_id_beneficiario_con_3_cc',
+        'tipo_id_beneficiario_con_3_ce',
+        'tipo_id_beneficiario_con_3_rc',
+        'tipo_id_beneficiario_con_4_cc',
+        'tipo_id_beneficiario_con_4_ce',
+        'tipo_id_beneficiario_con_4_rc',
+        'tipo_id_beneficiario_con_5_cc',
+        'tipo_id_beneficiario_con_5_ce',
+        'tipo_id_beneficiario_con_5_rc',
+        'tipo_id_beneficiario_con_6_cc',
+        'tipo_id_beneficiario_con_6_ce',
+        'tipo_id_beneficiario_con_6_rc',
+        'tipo_id_beneficiario_con_7_cc',
+        'tipo_id_beneficiario_con_7_ce',
+        'tipo_id_beneficiario_con_7_rc',
+        'tipo_id_beneficiario_con_8_cc',
+        'tipo_id_beneficiario_con_8_ce',
+        'tipo_id_beneficiario_con_8_rc',
+        'numero_id_beneficiario_con_1',
+        'numero_id_beneficiario_con_2',
+        'numero_id_beneficiario_con_3',
+        'numero_id_beneficiario_con_4',
+        'numero_id_beneficiario_con_5',
+        'numero_id_beneficiario_con_6',
+        'numero_id_beneficiario_con_7',
+        'numero_id_beneficiario_con_8',
+        'parentesco_beneficiario_con_1',
+        'parentesco_beneficiario_con_2',
+        'parentesco_beneficiario_con_3',
+        'parentesco_beneficiario_con_4',
+        'parentesco_beneficiario_con_5',
+        'parentesco_beneficiario_con_6',
+        'parentesco_beneficiario_con_7',
+        'parentesco_beneficiario_con_8'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_asegurado',
+            identification: 'id_asegurado_cc|id_asegurado_ce|id_asegurado_pa',
+            email: 'correo_asegurado',
+            type: 'sign'
+        }
+    ],
+    preFill: [],
+    preBuildData: [],
+    name: 'Designacion y-o cambio de beneficiarios',
+    price: 0,
+    help: {
+        participacion: 'Los porcentajes de participación de los beneficiarios NO pueden superar el 100%',
+        email: 'Ejemplo: correo@ejemplo.com'
+    },
+    build: 16,
+    preBuild: true
+}
