@@ -16,26 +16,31 @@
     font-size: 13px;
     font-family: sans-serif;
     margin-top: 10px;
+    height: 2rem;
   }
   .box_3 {
     padding: 0px 5px;
     display: inline-block;
-    margin: 0;
-    width: 10rem;
+    margin: auto;
+    width: 15rem;
+    height: 100%;
+    word-break: break-all;
+    word-wrap: break-word;
   }
   .box_4 {
-    border-left: 1px black solid;
-    padding: 5px;
+    outline: 1px solid black;
+    padding: 0px 5px;
     display: inline-block;
-    margin: 0;
-    width: 15rem;
+    margin: auto;
+    width: 10rem;
+    height: 100%;
   }
   .box_5 {
-    border-left: 1px black solid;
-    padding: 5px;
+    padding: 0px 5px;
     display: inline-block;
-    margin: 0;
+    margin: auto;
     width: 22rem;
+    height: 100%;
   }
   .padded {
     margin-right: 20px;
@@ -46,20 +51,21 @@
     border-bottom: 1px black solid;
     font-size: 13px;
     font-family: sans-serif;
+    height: 2.5rem;
   }
   .box_7 {
-    border-right: 1px black solid;
+    border-right: black 1px solid;
     padding: 5px;
     display: inline-block;
     margin: 0;
     width: 28rem;
+    height: 1.9rem;
   }
   .box_8 {
-    /* padding: 5px 0px 2px 5px; */
     padding: 5px;
     display: inline-block;
     margin: 0;
-    width: 19.9rem;
+    width: 19.8rem;
   }
   .table_title {
     background-color: black;
@@ -155,14 +161,12 @@
   }
   .caja_firma {
     position: relative;
-    left: 32.5rem;
+    left: 32rem;
     bottom: 9.5rem;
     border: 1px black solid;
     border-radius: 0 0 10px 10px;
     width: 17rem;
-  }
-  .caja_firma p {
-    text-align: center;
+    padding: 4px;
   }
 </style>
 
@@ -190,7 +194,7 @@
   </div>
   <div class="box_1">
     <p class="box_3">
-      <span>No. DE PÓLIZA: </span>
+      <span>No. DE PÓLIZA:</span>
       <span name="num_poliza"></span>
     </p>
     <p class="box_4">
