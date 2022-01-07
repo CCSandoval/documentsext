@@ -3952,7 +3952,7 @@
         'id_asegurado_cc',
         'id_asegurado_ce',
         'id_asegurado_pa',
-        'correo_asegurado',
+        'asegurado_correo',
         'num_poliza',
         'nombre_empresa',
         'nombre_tomador',
@@ -4083,7 +4083,7 @@
         {
             name: 'nombre_asegurado',
             identification: 'id_asegurado_cc|id_asegurado_ce|id_asegurado_pa',
-            email: 'correo_asegurado',
+            email: 'asegurado_correo',
             type: 'sign'
         }
     ],
@@ -4095,6 +4095,6 @@
         participacion: 'Los porcentajes de participación de los beneficiarios NO pueden superar el 100%',
         email: 'Ejemplo: correo@ejemplo.com'
     },
-    build: 16,
+    build: 17,
     preBuild: true
 }
