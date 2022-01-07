@@ -1,0 +1,214 @@
+{
+    _id: ObjectId('61d6f23c116f24246c0ad8e7'),
+    config: [
+        {
+            name: 'entity_type',
+            description: 'Choose the type of entity',
+            options: [
+                {
+                    name: 'Natural Person',
+                    value: 'nat'
+                },
+                {
+                    name: 'Legal Entity',
+                    value: 'leg'
+                }
+            ],
+            value: 'leg',
+            type: 'clausula'
+        },
+        {
+            name: 'company_name',
+            description: 'Write the name of the company',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'leg'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'company_kind',
+            description: 'Write the type of company',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'leg'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            name: 'num_id_company',
+            description: 'Write the File Number of the company',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'leg'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            name: 'person_name',
+            description: 'Write the full name of the Investor',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'nat'
+                }
+            ],
+            help: 'name'
+        },
+        {
+            name: 'person_id_number',
+            description: 'Write the ID Number of the Investor',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'nat'
+                }
+            ]
+        },
+        {
+            name: 'inversion',
+            description: 'Write the purchase amount',
+            type: 'number'
+        },
+        {
+            name: 'sign_date',
+            description: 'Write the date of signature',
+            type: 'text',
+            help: 'date'
+        },
+        {
+            name: 'legal_rep_company_name',
+            description: 'Write the name of the legal representative for the company',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'leg'
+                }
+            ],
+            type: 'text',
+            help: 'name'
+        },
+        {
+            name: 'legal_rep_company_title',
+            description: 'Write the title of the legal representative for the company',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'leg'
+                }
+            ],
+            type: 'text',
+            help: 'title'
+        },
+        {
+            name: 'legal_rep_company_id',
+            description: 'Write the id of the legal representative for the company',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'leg'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            name: 'legal_rep_company_email',
+            description: 'Write the email of the legal representative for the company',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'leg'
+                }
+            ],
+            type: 'text',
+            help: 'email'
+        },
+        {
+            name: 'person_email',
+            description: 'Write the email of the Investor',
+            prereq: [
+                {
+                    k: 'entity_type',
+                    v: 'nat'
+                }
+            ],
+            type: 'text',
+            help: 'email'
+        }
+    ],
+    operation: [],
+    sign: [
+        'entity_type',
+        'company_name',
+        'company_kind',
+        'num_id_company',
+        'person_name',
+        'person_id_number',
+        'inversion',
+        'sign_date',
+        'legal_rep_company_name',
+        'legal_rep_company_title',
+        'legal_rep_company_email',
+        'person_email',
+        'legal_rep_company_id'
+    ],
+    preFill: [
+        {
+            name: 'ceo_name',
+            value: 'Samuel Urquijo Murillo'
+        },
+        {
+            name: 'ceo_title',
+            value: 'CEO and Co Founder'
+        },
+        {
+            name: 'ceo_email',
+            value: 'samuel@kbe.ai'
+        },
+        {
+            name: 'ceo_id',
+            value: '1036930038'
+        }
+    ],
+    signatureProfile: [
+        {
+            name: 'ceo_name',
+            identification: 'ceo_id',
+            title: 'ceo_title',
+            email: 'ceo_email',
+            type: 'sign_ceo'
+        },
+        {
+            name: 'legal_rep_company_name',
+            identification: 'legal_rep_company_id',
+            title: 'legal_rep_company_title',
+            email: 'legal_rep_company_email',
+            type: 'sign_legal'
+        },
+        {
+            name: 'person_name',
+            identification: 'person_id_number',
+            email: 'person_email',
+            type: 'sign_natural'
+        }
+    ],
+    preBuildData: [],
+    name: 'Simple Agreement For Future Equity',
+    price: 0,
+    help: {
+        email: 'Example: example@email.com',
+        name: 'Example: John Doe',
+        date: 'Example: February 22nd',
+        title: 'Example: Chief Financial Officer'
+    },
+    preBuild: true,
+    build: 10
+}
