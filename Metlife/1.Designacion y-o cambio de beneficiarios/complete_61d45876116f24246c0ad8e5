@@ -13,21 +13,29 @@
   }
   .box_1 {
     border: 1px black solid;
-    padding: 5px 0px;
     font-size: 13px;
     font-family: sans-serif;
     margin-top: 10px;
   }
   .box_3 {
-    padding: 5px;
+    padding: 0px 5px;
+    display: inline-block;
+    margin: 0;
+    width: 10rem;
   }
   .box_4 {
     border-left: 1px black solid;
     padding: 5px;
+    display: inline-block;
+    margin: 0;
+    width: 15rem;
   }
   .box_5 {
     border-left: 1px black solid;
-    padding: 5px 0px 5px 5px;
+    padding: 5px;
+    display: inline-block;
+    margin: 0;
+    width: 22rem;
   }
   .padded {
     margin-right: 20px;
@@ -36,17 +44,22 @@
     border-left: 1px black solid;
     border-right: 1px black solid;
     border-bottom: 1px black solid;
-    padding: 5px 0px;
     font-size: 13px;
     font-family: sans-serif;
   }
   .box_7 {
     border-right: 1px black solid;
     padding: 5px;
-    /* padding: 5px 32em 6px 5px; */
+    display: inline-block;
+    margin: 0;
+    width: 28rem;
   }
   .box_8 {
-    padding: 5px 0px 2px 5px;
+    /* padding: 5px 0px 2px 5px; */
+    padding: 5px;
+    display: inline-block;
+    margin: 0;
+    width: 19.9rem;
   }
   .table_title {
     background-color: black;
@@ -142,12 +155,14 @@
   }
   .caja_firma {
     position: relative;
-    left: 32rem;
+    left: 32.5rem;
     bottom: 9.5rem;
     border: 1px black solid;
     border-radius: 0 0 10px 10px;
     width: 17rem;
-    padding: 4px;
+  }
+  .caja_firma p {
+    text-align: center;
   }
 </style>
 
@@ -174,33 +189,31 @@
     </p>
   </div>
   <div class="box_1">
-    <span class="box_3">
+    <p class="box_3">
       <span>No. DE PÓLIZA: </span>
-      <span name="num_poliza">_________________</span>
-    </span>
-    <span class="box_4">
+      <span name="num_poliza"></span>
+    </p>
+    <p class="box_4">
       <span>EMPRESA:</span>
-      <span name="nombre_empresa">___________________</span>
-    </span>
-    <span class="box_5">
+      <span name="nombre_empresa"></span>
+    </p>
+    <p class="box_5">
       <span>TOMADOR:</span>
-      <span name="nombre_tomador">__________________________________</span>
-    </span>
+      <span name="nombre_tomador"></span>
+    </p>
   </div>
   <div class="box_6">
-    <span class="box_7">
+    <p class="box_7">
       <span name="asegurado_genero_m">ASEGURADO:</span>
       <span name="asegurado_genero_f" hidden>ASEGURADA:</span>
-      <span name="nombre_asegurado"
-        >___________________________________________________</span
-      >
-    </span>
-    <span class="box_8">
+      <span name="nombre_asegurado"></span>
+    </p>
+    <p class="box_8">
       <span name="id_asegurado_cc">C.C. ASEGURADO:</span>
       <span name="id_asegurado_pa" hidden>PAS. DEL ASEGURADO:</span>
       <span name="id_asegurado_ce" hidden>C.E. ASEGURADO:</span>
-      <span name="numero_id_asegurado">______________________</span>
-    </span>
+      <span name="numero_id_asegurado"></span>
+    </p>
   </div>
 
   <p class="table_title">DESIGNACIÓN DE BENEFICIARIOS</p>
@@ -690,15 +703,17 @@
     </p>
   </div>
   <div class="caja_firma">
-    <br /><br /><br /><br /><br />
-    <p>
-      <span
-        >Correo:
-        <span name="asegurado_correo">__________________________</span></span
-      >
-    </p>
+    <div
+      style="
+        margin: auto;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        text-align: center;
+      "
+      id="sign"
+    ></div>
     <hr />
-    <p style="text-align: center">
+    <p>
       Firma <span name="asegurado_genero_m">del asegurado</span>
       <span name="asegurado_genero_f" hidden>de la asegurada</span>
     </p>
