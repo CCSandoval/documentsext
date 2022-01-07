@@ -4,7 +4,7 @@
         {
             description: 'Ingrese el número de póliza',
             name: 'num_poliza',
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Ingrese el nombre de la empresa',
@@ -4095,6 +4095,6 @@
         participacion: 'Los porcentajes de participación de los beneficiarios NO pueden superar el 100%',
         email: 'Ejemplo: correo@ejemplo.com'
     },
-    build: 17,
+    build: 19,
     preBuild: true
 }
