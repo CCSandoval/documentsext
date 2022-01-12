@@ -1,0 +1,1395 @@
+{
+  "build": 1,
+  "category": "CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "config": [
+    {
+      "description": "Digite el número del otrosí para el contrato laboral a modificar",
+      "name": "numero_otrosi",
+      "type": "text"
+    },
+    {
+      "description": "¿El contrato cuenta con un consecutivo o nombre específico?",
+      "help": "identificador",
+      "name": "identificador",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre o número específico del contrato laboral al cual se le anexará el otrosí",
+      "help": "nombre_numero_i",
+      "name": "nombre_numero_i",
+      "prereq": [
+        {
+          "k": "identificador",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "La parte empleadora es",
+      "help": "empleador",
+      "name": "tipo_empleador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa empleadora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona empleadora"
+        }
+      ],
+      "help": "empleador",
+      "name": "nombre_empleador",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa empleadora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte empleadora es:"
+        }
+      ],
+      "help": "empleador",
+      "name": "genero_empleador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa empleadora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona empleadora"
+        }
+      ],
+      "help": "empleador",
+      "name": "tipo_documento_empleador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa empleadora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte empleadora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "empleador",
+      "name": "cedula_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa empleadora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte empleadora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "empleador",
+      "name": "cedulae_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa empleadora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte empleadora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "empleador",
+      "name": "pasaporte_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte empleadora",
+      "help": "empleador",
+      "name": "ciudad_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actua como empleadora",
+      "help": "empleador",
+      "name": "nombre_empresa_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa empleadora",
+      "help": "empleador",
+      "name": "ciudad_empresa",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa empleadora, sin dígito de verificación",
+      "help": "empleador",
+      "name": "identificacion_empresa",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre de la parte trabajadora",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "El sexo de la parte trabajadora es:",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte trabajadora",
+      "help": "trabajador",
+      "name": "ciudad_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte trabajadora",
+      "help": "trabajador",
+      "name": "tipo_documento_trabajador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte trabajadora, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedula_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte trabajadora, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte trabajadora, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de suscripción del contrato laboral al cual se le anexará el otrosí",
+      "name": "fecha_suscripcion",
+      "type": "date"
+    },
+    {
+      "description": "Digite la ciudad en la cual se firmó el contrato laboral al cual se le anexará el otrosí",
+      "name": "ciudad_suscripcion",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione si la presente cláusula va a modificar una cláusula existente en el contrato de trabajo, o si por el contrario va a agregar una nueva cláusula al mismo",
+      "name": "clausula_1",
+      "options": [
+        {
+          "name": "Modificar cláusula",
+          "value": "m"
+        },
+        {
+          "name": "Agregar cláusula",
+          "value": "a"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite la cláusula del contrato laboral que se va a modificar",
+      "help": "modificar_clausula",
+      "name": "modificar_clausula_1",
+      "prereq": [
+        {
+          "k": "clausula_1",
+          "v": "m"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la nueva cláusula a agregar",
+      "help": "nombre_clausula",
+      "name": "nombre_clausula_1",
+      "prereq": [
+        {
+          "k": "clausula_1",
+          "v": "a"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que modificará la cláusula citada anteriormente. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "modificacion_clausula",
+      "name": "modificacion_clausula_1",
+      "prereq": [
+        {
+          "k": "clausula_1",
+          "v": "m"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de la cláusula que se agregará al contrato",
+      "help": "numero_clausula",
+      "name": "numero_clausula_1",
+      "prereq": [
+        {
+          "k": "clausula_1",
+          "v": "a"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que agregará. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "adicion_clausula",
+      "name": "adicion_clausula_1",
+      "prereq": [
+        {
+          "k": "clausula_1",
+          "v": "a"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea modificar o añadir otra nueva cláusula",
+      "name": "otro_si_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione si la presente cláusula va a modificar una cláusula existente en el contrato de trabajo, o si por el contrario va a agregar una nueva cláusula al mismo",
+      "name": "clausula_2",
+      "options": [
+        {
+          "name": "Modificar cláusula",
+          "value": "m"
+        },
+        {
+          "name": "Agregar cláusula",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite la cláusula del contrato laboral que se va a modificar",
+      "help": "modificar_clausula",
+      "name": "modificar_clausula_2",
+      "prereq": [
+        {
+          "k": "clausula_2",
+          "v": "m"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la nueva cláusula a agregar",
+      "help": "nombre_clausula",
+      "name": "nombre_clausula_2",
+      "prereq": [
+        {
+          "k": "clausula_2",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que modificará la cláusula citada anteriormente. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "modificacion_clausula",
+      "name": "modificacion_clausula_2",
+      "prereq": [
+        {
+          "k": "clausula_2",
+          "v": "m"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de la cláusula que se agregará al contrato",
+      "help": "numero_clausula",
+      "name": "numero_clausula_2",
+      "prereq": [
+        {
+          "k": "clausula_2",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que agregará. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "adicion_clausula",
+      "name": "adicion_clausula_2",
+      "prereq": [
+        {
+          "k": "clausula_2",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea modificar o añadir otra nueva cláusula",
+      "name": "otro_si_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione si la presente cláusula va a modificar una cláusula existente en el contrato de trabajo, o si por el contrario va a agregar una nueva cláusula al mismo",
+      "name": "clausula_3",
+      "options": [
+        {
+          "name": "Modificar cláusula",
+          "value": "m"
+        },
+        {
+          "name": "Agregar cláusula",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite la cláusula del contrato laboral que se va a modificar",
+      "help": "modificar_clausula",
+      "name": "modificar_clausula_3",
+      "prereq": [
+        {
+          "k": "clausula_3",
+          "v": "m"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la nueva cláusula a agregar",
+      "help": "nombre_clausula",
+      "name": "nombre_clausula_3",
+      "prereq": [
+        {
+          "k": "clausula_3",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que modificará la cláusula citada anteriormente. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "modificacion_clausula",
+      "name": "modificacion_clausula_3",
+      "prereq": [
+        {
+          "k": "clausula_3",
+          "v": "m"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de la cláusula que se agregará al contrato",
+      "help": "numero_clausula",
+      "name": "numero_clausula_3",
+      "prereq": [
+        {
+          "k": "clausula_3",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que agregará. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "adicion_clausula",
+      "name": "adicion_clausula_3",
+      "prereq": [
+        {
+          "k": "clausula_3",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea modificar o añadir otra nueva cláusula",
+      "name": "otro_si_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione si la presente cláusula va a modificar una cláusula existente en el contrato de trabajo, o si por el contrario va a agregar una nueva cláusula al mismo",
+      "name": "clausula_4",
+      "options": [
+        {
+          "name": "Modificar cláusula",
+          "value": "m"
+        },
+        {
+          "name": "Agregar cláusula",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite la cláusula del contrato laboral que se va a modificar",
+      "help": "modificar_clausula",
+      "name": "modificar_clausula_4",
+      "prereq": [
+        {
+          "k": "clausula_4",
+          "v": "m"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la nueva cláusula a agregar",
+      "help": "nombre_clausula",
+      "name": "nombre_clausula_4",
+      "prereq": [
+        {
+          "k": "clausula_4",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que modificará la cláusula citada anteriormente. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "modificacion_clausula",
+      "name": "modificacion_clausula_4",
+      "prereq": [
+        {
+          "k": "clausula_4",
+          "v": "m"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de la cláusula que se agregará al contrato",
+      "help": "numero_clausula",
+      "name": "numero_clausula_4",
+      "prereq": [
+        {
+          "k": "clausula_4",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que agregará. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "adicion_clausula",
+      "name": "adicion_clausula_4",
+      "prereq": [
+        {
+          "k": "clausula_4",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea modificar o añadir otra nueva cláusula",
+      "name": "otro_si_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione si la presente cláusula va a modificar una cláusula existente en el contrato de trabajo, o si por el contrario va a agregar una nueva cláusula al mismo",
+      "name": "clausula_5",
+      "options": [
+        {
+          "name": "Modificar cláusula",
+          "value": "m"
+        },
+        {
+          "name": "Agregar cláusula",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_5",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite la cláusula del contrato laboral que se va a modificar",
+      "help": "modificar_clausula",
+      "name": "modificar_clausula_5",
+      "prereq": [
+        {
+          "k": "clausula_5",
+          "v": "m"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_5",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la nueva cláusula a agregar",
+      "help": "nombre_clausula",
+      "name": "nombre_clausula_5",
+      "prereq": [
+        {
+          "k": "clausula_5",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_5",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que modificará la cláusula citada anteriormente. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "modificacion_clausula",
+      "name": "modificacion_clausula_5",
+      "prereq": [
+        {
+          "k": "clausula_5",
+          "v": "m"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de la cláusula que se agregará al contrato",
+      "help": "numero_clausula",
+      "name": "numero_clausula_5",
+      "prereq": [
+        {
+          "k": "clausula_5",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_5",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite en palabras cómo quedará redactada la nueva cláusula que agregará. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "adicion_clausula",
+      "name": "adicion_clausula_5",
+      "prereq": [
+        {
+          "k": "clausula_5",
+          "v": "a"
+        },
+        {
+          "k": "otro_si_2",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_3",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_4",
+          "v": "s"
+        },
+        {
+          "k": "otro_si_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa empleadora, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte empleadora se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "empleador",
+      "name": "direccion_empleador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte empleadora",
+      "help": "empleador",
+      "name": "telefono_empleador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte empleadora",
+      "help": "empleador",
+      "name": "correo_empleador",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección completa de la parte trabajadora",
+      "help": "trabajador",
+      "name": "direccion_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la parte trabajadora",
+      "help": "trabajador",
+      "name": "telefono_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del trabajador",
+      "help": "trabajador",
+      "name": "correo_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2021-02-05",
+  "creationUser": "alejo",
+  "description": "Mediante el otrosí al contrato de trabajo, las partes de mutuo acuerdo deciden modificar o añadir cláusulas a un contrato laboral vigente. Debe tenerse en cuenta que bajo ninguna circunstancia, mediante la modificación o adición de cláusulas, se podrán desmejorar las condiciones labores del trabajador o afectar sus derechos mínimos.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Empleador: Quien contrata. Tiene la obligación de remunerar al trabajador por sus servicios. Tiene la facultad de dar órdenes.\n\n- Trabajador: Prestará sus servicios de manera personal, y estará bajo la subordinación y dependencia de la empleadora por el tiempo pactado.\n\n<b>EJEMPLO</b>\n\n Juan, quien cuenta con un contrato laboral a término fijo en la empresa Industrias ABC S.A.S., debido a su gran rendimiento, es contactado por Pedro, su jefe, quien le propone modificar la cláusula segunda de su contrato denominada \"VIGENCIA\", para que pase este a ser un contrato a término indefinido. Al ser esta una propuesta que mejora su estabilidad laboral, acepta, y por ello suscriben un otrosí al contrato de trabajo, en el cual realizan dicho cambio.",
+  "help": {
+    "adicion_clausula": "Ejemplo: Añadir al contrato laboral referido, una cláusula denominada BONIFICACIONES, la cual quedará de la siguiente manera: \nCLÁUSULA - DECIMONOVENA BONIFICACIONES. Por cada venta que logre realizar la parte trabajadora, recibirá una bonificación equivalente al 2% del precio de la venta.",
+    "empleador": "Empleador: Quien contrata. Tiene la obligación de remunerar al trabajador por sus servicios. Tiene la facultad de dar órdenes.",
+    "identificador": "Ejemplo: Si es la primera modificación que se le realiza al contrato, será el otrosí número 01; si es la segunda modificación que se le realiza al contrato será el otrosí número 02, y así sucesivamente",
+    "modificacion_clausula": "Ejemplo: Modificar la clausula TERCERA del contrato laboral referido, la cual quedará de la siguiente manera. \nCLÁUSULA TERCERA VIGENCIA. La presente relación laboral se pacta a término indefinido, y tendrá vigencia a partir del día 5 de marzo del 2021.",
+    "modificar_clausula": "Ejemplo: Modificar la clausula tercera del contrato laboral referido, la cual quedará de la siguiente manera.",
+    "nombre_clausula": "Ejemplo: Añadir al contrato laboral referido, una cláusula denominada BONIFICACIONES, la cual quedará de la siguiente manera:",
+    "nombre_numero_i": "Ejemplo:  Contrato de trabajo número 322",
+    "numero_clausula": "Ejemplo: DECIMONOVENA",
+    "trabajador": "Trabajador: Prestará sus servicios de manera personal, y estará bajo la subordinación y dependencia de la empleadora por el tiempo pactado."
+  },
+  "keywords": [
+    "otro si",
+    "otrosi",
+    "otro sí",
+    "otrosí",
+    "modificación",
+    "modificacion",
+    "actualización",
+    "actualizacion",
+    "añadidura"
+  ],
+  "name": "OTROSÍ AL CONTRATO DE TRABAJO",
+  "PK": "CONTfb9b0150-3fa6-405b-8d69-317a8f3f18f6",
+  "price": 0,
+  "relation1": "LATEST|ACTIVE|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "relation2": "LATEST|2021-02-05",
+  "relation3": "LATEST|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_empleador",
+    "cedula_empleador",
+    "cedulae_empleador",
+    "pasaporte_empleador",
+    "correo_empleador",
+    "telefono_empleador",
+    "nombre_empresa_empleador",
+    "identificacion_empresa_empleador",
+    "nombre_trabajador",
+    "cedula_trabajador",
+    "cedulae_trabajador",
+    "pasaporte_trabajador",
+    "correo_trabajador",
+    "telefono_trabajador",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_empleador",
+      "identification": "cedula_empleador|cedulae_empleador|pasaporte_empleador",
+      "name": "nombre_empleador",
+      "type": "empleador"
+    },
+    {
+      "email": "correo_trabajador",
+      "identification": "cedula_trabajador|cedulae_trabajador|pasaporte_trabajador",
+      "name": "nombre_trabajador",
+      "type": "trabajador"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "otrosi-contrato-trabajo",
+  "status": "ACTIVE",
+  "time": 6,
+  "timesUsed": 0,
+  "youtube": "wEj5LV93bxc"
+}

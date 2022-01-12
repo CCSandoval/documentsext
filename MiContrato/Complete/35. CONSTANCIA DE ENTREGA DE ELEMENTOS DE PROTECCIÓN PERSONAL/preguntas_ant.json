@@ -1,0 +1,691 @@
+{
+  "build": 2,
+  "category": "CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "config": [
+    {
+      "description": "Digite la ciudad en la que se escribe la constancia de entrega de los elementos de protección personal",
+      "name": "ciudad_contrato",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que se escribe la constancia de entrega de los elementos de protección personal",
+      "name": "fecha_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el nombre de la parte trabajadora que recibe los elementos de protección personal",
+      "help": "trabajador",
+      "name": "nombre_empleado",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el sexo de la parte trabajadora",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte trabajadora que recibe los elementos de protección personal",
+      "help": "trabajador",
+      "name": "tipo_documento_empleado",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte trabajadora que recibe los elementos de protección personal, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedula_empleado",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleado",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte trabajadora que recibe los elementos de protección personal, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_empleado",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleado",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte trabajadora que recibe los elementos de protección personal, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_empleado",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleado",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de empleador",
+      "help": "empleador",
+      "name": "tipo_empleador",
+      "options": [
+        {
+          "name": "Persona jurídica",
+          "value": "j"
+        },
+        {
+          "name": "Persona natural",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": "Digite el nombre de la empresa",
+      "name": "nombre_empresa",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la parte empleadora",
+      "name": "nombre_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el primer elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_1",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un segundo elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el segundo elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_2",
+      "prereq": [
+        {
+          "k": "tot_dotacion_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un tercer elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el tercer elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_3",
+      "prereq": [
+        {
+          "k": "tot_dotacion_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un cuarto elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el cuarto elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_4",
+      "prereq": [
+        {
+          "k": "tot_dotacion_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un quinto elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el quinto elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_5",
+      "prereq": [
+        {
+          "k": "tot_dotacion_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un sexto elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_6",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_5",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el sexto elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_6",
+      "prereq": [
+        {
+          "k": "tot_dotacion_5",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_6",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un séptimo elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_7",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_5",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_6",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el séptimo elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_7",
+      "prereq": [
+        {
+          "k": "tot_dotacion_6",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_7",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un octavo elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_8",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_6",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_7",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el octavo elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_8",
+      "prereq": [
+        {
+          "k": "tot_dotacion_7",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_8",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un noveno elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_9",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_7",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_8",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el noveno elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_9",
+      "prereq": [
+        {
+          "k": "tot_dotacion_8",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_9",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un decimo elemento de protección personal a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_10",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_8",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_9",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el decimo elemento de protección personal entregado a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_10",
+      "prereq": [
+        {
+          "k": "tot_dotacion_9",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_10",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que se hace entrega a la parte trabajadora de los elementos de protección personal",
+      "help": "trabajador",
+      "name": "fecha_entrega",
+      "type": "date"
+    },
+    {
+      "description": "Seleccione la fecha en la que se firma la constancia de entrega de los elementos de protección personal",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": "Digite el cargo de la parte trabajadora que recibe los elementos de protección personal",
+      "help": "trabajador",
+      "name": "cargo_empleado",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulac_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2021-01-19",
+  "creationUser": "alejo",
+  "description": "Por medio del presente documento, la parte empleadora, enuncia los elementos de protección personal que se le entregan a la parte trabajadora para que pueda desempeñar sus funciones en un ambiente seguro. Como constancia de ello, la parte trabajadora plasma su firma en señal de aceptación y recepción de la indumentaria a satisfacción.",
+  "entity": "CONT",
+  "example": "Deben entenderse como elementos de protección personal, aquellos indispensables para la ejecución de las funciones del trabajador dentro de la empresa, de una manera segura.\n\n<br/>Debe entenderse que estos elementos continuan siendo propiedad de la parte empleadora y que se entregan temporalmente a la parte trabajadora para el desempeño de sus funciones y mientras haya una relación laboral.\n\n<br/><b>PARTES</b>\n- Trabajador: Es la parte que recibe los elementos de protección personal.\n\n- Empleador: Es la parte que entrega los elementos de protección personal.\n\n<b>EJEMPLO</b>\n\n Juan, empleador, procede a entregar a Pedro, trabajador de su mina, un casco, unas botas puntera de acero y un chaleco reflectivo para el desempeño seguro de sus labores como supervisor de la mina. En virtud de esto, suscriben una constancia de entrega de elementos de protección personal, donde se establece que dichos elementos han sido debidamente entregados.",
+  "help": {
+    "dotacion": "Elementos de protección personal: Son aquellos elementos indispensables para garantizar la seguridad de los trabajadores en la ejecución de sus funciones propias. \nEjemplo: Para los trabajadores de construcción los siguientes: Cascos, botas puntera de acero, chaleco reflectivo, elementos de protección auditiva, arnes de cuerpo, gafas de seguridad, entre otros.",
+    "empleador": "Empleador: Es la parte que entrega los elementos de protección personal.",
+    "trabajador": "Trabajador: Es la parte que recibe los elementos de protección personal."
+  },
+  "keywords": [
+    "dotación",
+    "dotacion",
+    "ropa",
+    "vestimenta",
+    "vestuario",
+    "uniforme"
+  ],
+  "name": "CONSTANCIA DE ENTREGA DE ELEMENTOS DE PROTECCIÓN PERSONAL",
+  "PK": "CONTab9a7991-a0f9-40c1-b4a1-b780d9b2c748",
+  "price": 0,
+  "relation1": "LATEST|ACTIVE|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "relation2": "LATEST|2021-01-19",
+  "relation3": "LATEST|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "slug": "entrega-elemetos-proteccion-personal",
+  "status": "ACTIVE",
+  "time": 3,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "ER0CtMjlAjE"
+}

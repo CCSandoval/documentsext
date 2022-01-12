@@ -1,0 +1,5006 @@
+{
+  "build": 2,
+  "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
+  "config": [
+    {
+      "description": "El arrendador es",
+      "help": "arrendador",
+      "name": "tipo_arrendador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que entrega el ejemplar equino en arrendamiento"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que entrega el ejemplar equino en arrendamiento"
+        }
+      ],
+      "help": "arrendador",
+      "name": "nombre_arrendador",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que entrega el ejemplar equino en arrendamiento es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que entrega el ejemplar equino en arrendamiento es:"
+        }
+      ],
+      "help": "arrendador",
+      "name": "genero_arrendador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que entrega el ejemplar equino en arrendamiento"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que entrega el ejemplar equino en arrendamiento"
+        }
+      ],
+      "help": "arrendador",
+      "name": "tipo_documento_arrendador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que entrega el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que entrega el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendador",
+      "name": "cedula_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que entrega el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que entrega el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendador",
+      "name": "cedulae_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que entrega el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que entrega el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendador",
+      "name": "pasaporte_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del arrendador",
+      "help": "arrendador",
+      "name": "ciudad_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que da el ejemplar equino en arrendamiento",
+      "help": "arrendador",
+      "name": "nombre_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que da el ejemplar equino en arrendamiento, sin dígito de verificación",
+      "help": "arrendador",
+      "name": "identificacion_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que da el ejemplar equino en arrendamiento",
+      "help": "arrendador",
+      "name": "ciudad_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "La parte arrendataria es",
+      "help": "arrendatario",
+      "name": "tipo_arrendatario",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que recibe el ejemplar equino en arrendamiento"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que recibe el ejemplar equino en arrendamiento"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "nombre_arrendatario",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que recibe el ejemplar equino en arrendamiento es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que recibe el ejemplar equino en arrendamiento es:"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "genero_arrendatario",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que recibe el ejemplar equino en arrendamiento"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que recibe el ejemplar equino en arrendamiento"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "tipo_documento_arrendatario",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que recibe el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que recibe el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "cedula_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que recibe el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que recibe el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "cedulae_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que recibe el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que recibe el ejemplar equino en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "pasaporte_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del arrendatario",
+      "help": "arrendatario",
+      "name": "ciudad_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que recibe el ejemplar equino en arrendamiento",
+      "help": "arrendatario",
+      "name": "nombre_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que recibe el ejemplar equino en arrendamiento, sin dígito de verificación",
+      "help": "arrendatario",
+      "name": "identificacion_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que recibe el ejemplar equino en arrendamiento",
+      "help": "arrendatario",
+      "name": "ciudad_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del ejemplar equino",
+      "help": "name",
+      "name": "nombre_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del ejemplar equino",
+      "help": "color",
+      "name": "color_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el aire del ejemplar equino",
+      "help": "aire",
+      "name": "aire_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el sexo del ejemplar equino",
+      "help": "sexo",
+      "name": "sexo_caballo_1",
+      "options": [
+        {
+          "label": " Macho",
+          "name": "Macho",
+          "value": "m"
+        },
+        {
+          "label": " Hembra",
+          "name": "Hembra",
+          "value": "h"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Digite la edad del ejemplar equino",
+      "help": "edad",
+      "name": "edad_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del padre del ejemplar equino",
+      "name": "nombre_padre_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la madre del ejemplar equino",
+      "name": "nombre_madre_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos paternos del ejemplar equino",
+      "name": "abuelos_paternos_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos maternos del ejemplar equino",
+      "name": "abuelos_maternos_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de registro del ejemplar equino",
+      "name": "registro_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la asociación donde está el registro del ejemplar equino",
+      "name": "asociacion_registro_caballo_1",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea arrendar el ejemplar equino con implementos adicionales?",
+      "name": "adiciones_1",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Con qué implementos adicionales se entregará el ejemplar equino?",
+      "name": "elementos_adicionales_1",
+      "prereq": [
+        {
+          "k": "adiciones_1",
+          "v": "s"
+        }
+      ],
+      "select": [],
+      "type": "check",
+      "values": [
+        "Silla de montar",
+        "Apero de cabeza",
+        "Freno",
+        "Enjalma",
+        "Angarilla"
+      ]
+    },
+    {
+      "description": "¿Desea agregar un segundo ejemplar equino?",
+      "name": "tot_vehiculos_2",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del segundo ejemplar equino",
+      "help": "name",
+      "name": "nombre_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del segundo ejemplar equino",
+      "help": "color",
+      "name": "color_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el aire del segundo ejemplar equino",
+      "help": "aire",
+      "name": "aire_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el sexo del segundo ejemplar equino",
+      "help": "sexo",
+      "name": "sexo_caballo_2",
+      "options": [
+        {
+          "label": " Macho",
+          "name": "Macho",
+          "value": "m"
+        },
+        {
+          "label": " Hembra",
+          "name": "Hembra",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Digite la edad del segundo ejemplar equino",
+      "help": "edad",
+      "name": "edad_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del padre del segundo ejemplar equino",
+      "name": "nombre_padre_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la madre del segundo ejemplar equino",
+      "name": "nombre_madre_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos paternos del segundo ejemplar equino",
+      "name": "abuelos_paternos_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos maternos del segundo ejemplar equino",
+      "name": "abuelos_maternos_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de registro del segundo ejemplar equino",
+      "name": "registro_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la asociación donde está el registro del segundo ejemplar equino",
+      "name": "asociacion_registro_caballo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea arrendar el segundo ejemplar equino con implementos adicionales?",
+      "name": "adiciones_2",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Con qué implementos adicionales se entregará el segundo ejemplar equino?",
+      "name": "elementos_adicionales_2",
+      "prereq": [
+        {
+          "k": "adiciones_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "select": [],
+      "type": "check",
+      "values": [
+        "Silla de montar",
+        "Apero de cabeza",
+        "Freno",
+        "Enjalma",
+        "Angarilla"
+      ]
+    },
+    {
+      "description": "¿Desea agregar un tercer ejemplar equino?",
+      "name": "tot_vehiculos_3",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del tercer ejemplar equino",
+      "help": "name",
+      "name": "nombre_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del tercer ejemplar equino",
+      "help": "color",
+      "name": "color_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el aire del tercer ejemplar equino",
+      "help": "aire",
+      "name": "aire_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el sexo del tercer ejemplar equino",
+      "help": "sexo",
+      "name": "sexo_caballo_3",
+      "options": [
+        {
+          "label": " Macho",
+          "name": "Macho",
+          "value": "m"
+        },
+        {
+          "label": " Hembra",
+          "name": "Hembra",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Digite la edad del tercer ejemplar equino",
+      "help": "edad",
+      "name": "edad_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del padre del tercer ejemplar equino",
+      "name": "nombre_padre_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la madre del tercer ejemplar equino",
+      "name": "nombre_madre_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos paternos del tercer ejemplar equino",
+      "name": "abuelos_paternos_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos maternos del tercer ejemplar equino",
+      "name": "abuelos_maternos_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de registro del tercer ejemplar equino",
+      "name": "registro_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la asociación donde está el registro del tercer ejemplar equino",
+      "name": "asociacion_registro_caballo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea arrendar el tercer ejemplar equino con implementos adicionales?",
+      "name": "adiciones_3",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Con qué implementos adicionales se entregará el tercer ejemplar equino?",
+      "name": "elementos_adicionales_3",
+      "prereq": [
+        {
+          "k": "adiciones_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "select": [],
+      "type": "check",
+      "values": [
+        "Silla de montar",
+        "Apero de cabeza",
+        "Freno",
+        "Enjalma",
+        "Angarilla"
+      ]
+    },
+    {
+      "description": "¿Desea agregar un cuarto ejemplar equino?",
+      "name": "tot_vehiculos_4",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del cuarto ejemplar equino",
+      "help": "name",
+      "name": "nombre_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del cuarto ejemplar equino",
+      "help": "color",
+      "name": "color_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el aire del cuarto ejemplar equino",
+      "help": "aire",
+      "name": "aire_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el sexo del cuarto ejemplar equino",
+      "help": "sexo",
+      "name": "sexo_caballo_4",
+      "options": [
+        {
+          "label": " Macho",
+          "name": "Macho",
+          "value": "m"
+        },
+        {
+          "label": " Hembra",
+          "name": "Hembra",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Digite la edad del cuarto ejemplar equino",
+      "help": "edad",
+      "name": "edad_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del padre del cuarto ejemplar equino",
+      "name": "nombre_padre_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la madre del cuarto ejemplar equino",
+      "name": "nombre_madre_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos paternos del cuarto ejemplar equino",
+      "name": "abuelos_paternos_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos maternos del cuarto ejemplar equino",
+      "name": "abuelos_maternos_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de registro del cuarto ejemplar equino",
+      "name": "registro_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la asociación donde está el registro del cuarto ejemplar equino",
+      "name": "asociacion_registro_caballo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea arrendar el cuarto ejemplar equino con implementos adicionales?",
+      "name": "adiciones_4",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Con qué implementos adicionales se entregará el cuarto ejemplar equino?",
+      "name": "elementos_adicionales_4",
+      "prereq": [
+        {
+          "k": "adiciones_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "select": [],
+      "type": "check",
+      "values": [
+        "Silla de montar",
+        "Apero de cabeza",
+        "Freno",
+        "Enjalma",
+        "Angarilla"
+      ]
+    },
+    {
+      "description": "¿Desea agregar un quinto ejemplar equino?",
+      "name": "tot_vehiculos_5",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del quinto ejemplar equino",
+      "help": "name",
+      "name": "nombre_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del quinto ejemplar equino",
+      "help": "color",
+      "name": "color_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el aire del quinto ejemplar equino",
+      "help": "aire",
+      "name": "aire_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el sexo del quinto ejemplar equino",
+      "help": "sexo",
+      "name": "sexo_caballo_5",
+      "options": [
+        {
+          "label": " Macho",
+          "name": "Macho",
+          "value": "m"
+        },
+        {
+          "label": " Hembra",
+          "name": "Hembra",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Digite la edad del quinto ejemplar equino",
+      "help": "edad",
+      "name": "edad_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del padre del quinto ejemplar equino",
+      "name": "nombre_padre_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la madre del quinto ejemplar equino",
+      "name": "nombre_madre_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos paternos del quinto ejemplar equino",
+      "name": "abuelos_paternos_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los nombres de los abuelos maternos del quinto ejemplar equino",
+      "name": "abuelos_maternos_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de registro del quinto ejemplar equino",
+      "name": "registro_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la asociación donde está el registro del quinto ejemplar equino",
+      "name": "asociacion_registro_caballo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea arrendar el quinto ejemplar equino con implementos adicionales?",
+      "name": "adiciones_5",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Con qué implementos adicionales se entregará el quinto ejemplar equino?",
+      "name": "elementos_adicionales_5",
+      "prereq": [
+        {
+          "k": "adiciones_5",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "select": [],
+      "type": "check",
+      "values": [
+        "Silla de montar",
+        "Apero de cabeza",
+        "Freno",
+        "Enjalma",
+        "Angarilla"
+      ]
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el valor de arrendamiento del primer ejemplar equino"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el valor del arrendamiento del ejemplar equino"
+        }
+      ],
+      "help": "precio_vehiculo",
+      "name": "precio_vehiculo_1",
+      "type": "currency"
+    },
+    {
+      "description": "Digite el valor de arrendamiento del segundo ejemplar equino",
+      "help": "precio_vehiculo",
+      "name": "precio_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Digite el valor de arrendamiento del tercer ejemplar equino",
+      "help": "precio_vehiculo",
+      "name": "precio_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Digite el valor de arrendamiento del cuarto ejemplar equino",
+      "help": "precio_vehiculo",
+      "name": "precio_vehiculo_4",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Digite el valor de arrendamiento del quinto ejemplar equino",
+      "help": "precio_vehiculo",
+      "name": "precio_vehiculo_5",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "El pago se hará de manera:",
+      "name": "periodicidad_pago",
+      "options": [
+        {
+          "label": " de manera anticipada",
+          "name": "Anticipada",
+          "value": "a"
+        },
+        {
+          "label": " de manera vencida",
+          "name": "Periodo vencido",
+          "value": "v"
+        }
+      ],
+      "type": "select",
+      "value": "a"
+    },
+    {
+      "description": "Seleccione la periodicidad en la que se pagará el arrendamiento del ejemplar equino",
+      "help": "pago",
+      "name": "pago",
+      "options": [
+        {
+          "name": "Único pago",
+          "value": "u"
+        },
+        {
+          "name": "Pago periódico",
+          "value": "r"
+        }
+      ],
+      "type": "clausula",
+      "value": "u"
+    },
+    {
+      "description": "Seleccione el día en que se deberá hacer el pago del canon de arrendamiento del ejemplar equino",
+      "help": "dia_pagou",
+      "name": "dia_pagou",
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "u"
+        }
+      ],
+      "type": "date"
+    },
+    {
+      "description": "Seleccione con que periodicidad va a realizar el pago de los cánones de arrendamiento del ejemplar equino",
+      "help": "periodo_p",
+      "name": "periodo_p",
+      "options": [
+        {
+          "name": "Diaria",
+          "value": "d"
+        },
+        {
+          "name": "Semanal",
+          "value": "s"
+        },
+        {
+          "name": "Quincenal",
+          "value": "q"
+        },
+        {
+          "name": "Mensual",
+          "value": "m"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "r"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Seleccione el día de la semana en que se deberá realizar a más tardar cada pago del canon de arrendamiento del ejemplar equino",
+      "help": "periodo_p",
+      "name": "dia_semana",
+      "options": [
+        {
+          "label": " lunes",
+          "name": "Lunes",
+          "value": "l"
+        },
+        {
+          "label": " martes",
+          "name": "Martes",
+          "value": "m"
+        },
+        {
+          "label": " miercoles",
+          "name": "Miercoles",
+          "value": "w"
+        },
+        {
+          "label": " jueves",
+          "name": "Jueves",
+          "value": "j"
+        },
+        {
+          "label": " viernes",
+          "name": "Viernes",
+          "value": "v"
+        },
+        {
+          "label": " sabado",
+          "name": "Sabado",
+          "value": "s"
+        },
+        {
+          "label": " domingo",
+          "name": "Domingo",
+          "value": "d"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "r"
+        },
+        {
+          "k": "periodo_p",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "l"
+    },
+    {
+      "description": "Digite en números el día del mes en que se deberá realizar a más tardar cada pago del canon de arrendamiento del ejemplar equino",
+      "name": "dia_pagor",
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "r"
+        },
+        {
+          "k": "periodo_p",
+          "v": "m"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "El arrendamiento se realizará:",
+      "name": "tipo_arrendamiento",
+      "options": [
+        {
+          "name": "Mediante depósito en cuenta bancaria",
+          "value": "c"
+        },
+        {
+          "name": "Mediante pago en efectivo",
+          "value": "e"
+        }
+      ],
+      "type": "clausula",
+      "value": "c"
+    },
+    {
+      "description": "La cuenta es tipo:",
+      "name": "cuenta_tipo",
+      "options": [
+        {
+          "label": " corriente",
+          "name": "Corriente",
+          "value": "c"
+        },
+        {
+          "label": " de ahorros",
+          "name": "Ahorro",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "select",
+      "value": "a"
+    },
+    {
+      "description": "Digite el número de la cuenta bancaria donde se hará el pago del arrendamiento",
+      "name": "numero_cuenta_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el banco al que pertenece la cuenta bancaria",
+      "name": "banco_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre del titular de la cuenta bancaria en la cual se va a realizar el pago del arrendamiento",
+      "name": "nombre_cuenta_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre del municipio donde se realizará el pago del arrendamiento",
+      "name": "lugar_pago",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "e"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Los intereses por la mora en el pago del arrendamiento se cobraran según:",
+      "name": "interes_mora",
+      "options": [
+        {
+          "name": "Lo establecido por la Superintendencia Financiera de Colombia",
+          "value": "s"
+        },
+        {
+          "name": "Un valor definido por las partes",
+          "value": "c"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Seleccione el porcentaje de los intereses en mora",
+      "name": "intereses_pago",
+      "options": [
+        {
+          "label": "0.5% (CERO PUNTO CINCO PORCIENTO)",
+          "name": "0.5%",
+          "value": "05"
+        },
+        {
+          "label": "1.0% (UNO PORCIENTO)",
+          "name": "1.0%",
+          "value": "10"
+        },
+        {
+          "label": "1.5% (UNO PUNTO CINCO PORCIENTO)",
+          "name": "1.5%",
+          "value": "15"
+        },
+        {
+          "label": "2.0% (DOS PORCIENTO)",
+          "name": "2.0%",
+          "value": "20"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "interes_mora",
+          "v": "c"
+        }
+      ],
+      "type": "select",
+      "value": "05"
+    },
+    {
+      "description": "¿Cuál es el término de duración del contrato? Digitelo en números, posteriormente escogerá si es en días, semanas o meses",
+      "name": "duracion_contrato",
+      "type": "number"
+    },
+    {
+      "description": "Seleccione si el término de duración del contrato digitado anteriormente en números es en días, meses o años",
+      "help": "duracion_tiempo",
+      "name": "duracion_tiempo",
+      "options": [
+        {
+          "label": "día, contado",
+          "name": "día",
+          "value": "d"
+        },
+        {
+          "label": "días, contados",
+          "name": "días",
+          "value": "ds"
+        },
+        {
+          "label": "semana, contada",
+          "name": "semana",
+          "value": "s"
+        },
+        {
+          "label": "semanas, contadas",
+          "name": "semanas",
+          "value": "ss"
+        },
+        {
+          "label": "mes, contado",
+          "name": "mes",
+          "value": "m"
+        },
+        {
+          "label": "meses, contados",
+          "name": "meses",
+          "value": "ms"
+        }
+      ],
+      "type": "select",
+      "value": "ds"
+    },
+    {
+      "description": "seleccione la fecha de inicio del contrato",
+      "help": "fecha_inicio_contrato",
+      "name": "fecha_inicio_contrato",
+      "type": "date"
+    },
+    {
+      "description": "seleccione la fecha de terminación del contrato",
+      "help": "fecha_terminacion_contrato",
+      "name": "fecha_terminacion_contrato",
+      "type": "date"
+    },
+    {
+      "description": "¿Desea que el contrato sea prórrogado por un periodo igual al pactado inicialmente?",
+      "name": "prorroga",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite en números los días de anticipación en los cuales se deberá notificar a la otra parte su intención de no prorrogar el contrato de arrendamiento de ejemplar equino",
+      "name": "dias_renovacion_auto",
+      "prereq": [
+        {
+          "k": "prorroga",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Desea realizar un reajuste del precio en caso de renovación del contrato?",
+      "name": "reajuste",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "prorroga",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite en números el porcentaje del incremento del canon de arrendamiento del ejemplar equino",
+      "name": "incremento_fijo",
+      "prereq": [
+        {
+          "k": "prorroga",
+          "v": "s"
+        },
+        {
+          "k": "reajuste",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione la destinación que tendrá el primer ejemplar equino"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione la destinación que tendrá el ejemplar equino"
+        }
+      ],
+      "name": "servicio_1",
+      "options": [
+        {
+          "label": " monta.",
+          "name": "Monta",
+          "value": "m"
+        },
+        {
+          "label": " carga.",
+          "name": "Carga",
+          "value": "c"
+        },
+        {
+          "label": " monta y carga.",
+          "name": "Monta y carga",
+          "value": "mc"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione la destinación que tendrá el segundo ejemplar equino",
+      "name": "servicio_2",
+      "options": [
+        {
+          "label": " monta,",
+          "name": "Monta",
+          "value": "m"
+        },
+        {
+          "label": " carga,",
+          "name": "Carga",
+          "value": "c"
+        },
+        {
+          "label": " monta y carga,",
+          "name": "Monta y carga",
+          "value": "mc"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione la destinación que tendrá el tercer ejemplar equino",
+      "name": "servicio_3",
+      "options": [
+        {
+          "label": " monta,",
+          "name": "Monta",
+          "value": "m"
+        },
+        {
+          "label": " carga,",
+          "name": "Carga",
+          "value": "c"
+        },
+        {
+          "label": " monta y carga,",
+          "name": "Monta y carga",
+          "value": "mc"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione la destinación que tendrá el cuarto ejemplar equino",
+      "name": "servicio_4",
+      "options": [
+        {
+          "label": " monta,",
+          "name": "Monta",
+          "value": "m"
+        },
+        {
+          "label": " carga,",
+          "name": "Carga",
+          "value": "c"
+        },
+        {
+          "label": " monta y carga,",
+          "name": "Monta y carga",
+          "value": "mc"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione la destinación que tendrá el quinto ejemplar equino",
+      "name": "servicio_5",
+      "options": [
+        {
+          "label": " monta,",
+          "name": "Monta",
+          "value": "m"
+        },
+        {
+          "label": " carga,",
+          "name": "Carga",
+          "value": "c"
+        },
+        {
+          "label": " monta y carga,",
+          "name": "Monta y carga",
+          "value": "mc"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_5",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "m"
+    },
+    {
+      "description": "¿Desea definir quienes estarán autorizados para la manipulación del ejemplar equino?",
+      "name": "autorizados",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que se encuentra autorizada para manipular los ejemplares equinos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que se encuentra autorizada para manipular el ejemplar equino"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "nombre_conductor_1",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que se encuentra autorizada para manipular los ejemplares equinos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que se encuentra autorizada para manipular el ejemplar equino"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tipo_documento_conductor_1",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedula_conductor_1",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_1",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedulae_conductor_1",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_1",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de pasaporte de la persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "pasaporte_conductor_1",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_1",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "¿Desea agregar una segunda persona autorizada para la manipulación de los ejemplares equinos?"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "¿Desea agregar una segunda persona autorizada para la manipulación del ejemplar equino?"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tot_conductor_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Si",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el nombre completo de la segunda persona que se encuentra autorizada para manipular los ejemplares equinos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la segunda persona que se encuentra autorizada para manipular el ejemplar equino"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "nombre_conductor_2",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la segunda persona que se encuentra autorizada para manipular los ejemplares equinos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la segunda persona que se encuentra autorizada para manipular el ejemplar equino"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tipo_documento_conductor_2",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la segunda persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la segunda persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedula_conductor_2",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_2",
+          "v": "cc"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la segunda persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la segunda persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedulae_conductor_2",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_2",
+          "v": "ce"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de pasaporte de la segunda persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de pasaporte de la segunda persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "pasaporte_conductor_2",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_2",
+          "v": "pa"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "¿Desea agregar una tercera persona autorizada para la manipulación de los ejemplares equinos?"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "¿Desea agregar una tercera persona autorizada para la manipulación del ejemplar equino?"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tot_conductor_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Si",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el nombre completo de la tercera persona que se encuentra autorizada para manipular los ejemplares equinos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la tercera persona que se encuentra autorizada para manipular el ejemplar equino"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "nombre_conductor_3",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la tercera persona que se encuentra autorizada para manipular los ejemplares equinos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la tercera persona que se encuentra autorizada para manipular el ejemplar equino"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tipo_documento_conductor_3",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la tercera persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la tercera persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedula_conductor_3",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_3",
+          "v": "cc"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la tercera persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la tercera persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedulae_conductor_3",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_3",
+          "v": "ce"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de pasaporte de la tercera persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de pasaporte de la tercera persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "pasaporte_conductor_3",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_3",
+          "v": "pa"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "¿Desea agregar una cuarta persona autorizada para la manipulación de los ejemplares equinoes?"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "¿Desea agregar una cuarta persona autorizada para la manipulación del ejemplar equino?"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tot_conductor_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el nombre completo de la cuarta persona que se encuentra autorizada para manipular los ejemplares equinos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la cuarta persona que se encuentra autorizada para manipular el ejemplar equino"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "nombre_conductor_4",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la cuarta persona que se encuentra autorizada para manipular los ejemplares equinos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la cuarta persona que se encuentra autorizada para manipular el ejemplar equino"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tipo_documento_conductor_4",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la cuarta persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la cuarta persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedula_conductor_4",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_4",
+          "v": "cc"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la cuarta persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la cuarta persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedulae_conductor_4",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_4",
+          "v": "ce"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de pasaporte de la cuarta persona que se encuentra autorizada para manipular los ejemplares equinos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de pasaporte de la cuarta persona que se encuentra autorizada para manipular el ejemplar equino, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "pasaporte_conductor_4",
+      "prereq": [
+        {
+          "k": "autorizados",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_conductor_4",
+          "v": "pa"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones adicionales a la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_1",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación adicional de la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_2",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación adicional de la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_3",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación adicional de la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_4",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación adicional de la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_5",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones adicionales a la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_1",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación adicional de la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_2",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación adicional de la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_3",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación adicional de la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_4",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación adicional de la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_5",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar otras prohíbiciones a la persona que recibe el ejemplar equino en arrendamiento?",
+      "help": "arrendatario",
+      "name": "otras_prohibiciones",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite otras prohibiciones a la persona que recibe el ejemplar equino en arrendamiento",
+      "help": "arrendatario",
+      "name": "prohibiciones_extras",
+      "prereq": [
+        {
+          "k": "otras_prohibiciones",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿La parte arrendataria va a ofrecer garantías para el cumplimiento de sus obligaciones?",
+      "help": "respaldo",
+      "name": "uso_respaldo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿El arrendatario va a respaldar sus obligaciones con?",
+      "help": "respaldo",
+      "name": "respaldo",
+      "options": [
+        {
+          "name": "Fiador",
+          "value": "f"
+        },
+        {
+          "name": "Codeudor o coarrendatario",
+          "value": "c"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "f"
+    },
+    {
+      "description": "El fiador o codeudor es",
+      "help": "respaldo",
+      "name": "tipo_respaldo",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que actúa como codeudor o fiador"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que actúa como codeudor o fiador"
+        }
+      ],
+      "help": "respaldo",
+      "name": "nombre_respaldo",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que actúa como codeudor o fiador es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que actúa como codeudor o fiador es:"
+        }
+      ],
+      "help": "respaldo",
+      "name": "genero_respaldo",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que actúa como codeudor o fiador"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que actúa como codeudor o fiador"
+        }
+      ],
+      "help": "respaldo",
+      "name": "tipo_documento_respaldo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "respaldo",
+      "name": "cedula_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_documento_respaldo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "respaldo",
+      "name": "cedulae_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_documento_respaldo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "respaldo",
+      "name": "pasaporte_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_documento_respaldo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del fiador o codeudor",
+      "help": "respaldo",
+      "name": "ciudad_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que actúa como codeudor o fiador",
+      "help": "respaldo",
+      "name": "nombre_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que actúa como codeudor o fiador, sin dígito de verificación",
+      "help": "respaldo",
+      "name": "identificacion_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que actúa como codeudor o fiador",
+      "help": "respaldo",
+      "name": "ciudad_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "El arrendatario constituirá un codeudor o fiador y",
+      "help": "respaldo",
+      "name": "garantias_clausula",
+      "options": [
+        {
+          "name": "Pagará depósito en efectivo",
+          "value": "cd"
+        },
+        {
+          "name": "No pagará depósito",
+          "value": "sd"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "sd"
+    },
+    {
+      "description": "Digite el valor adicional al pago del primer mes, que dejará en depósito la persona que recibe el ejemplar equino en arrendamiento",
+      "name": "valor_deposito",
+      "prereq": [
+        {
+          "k": "garantias_clausula",
+          "v": "cd"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_2",
+          "v": "n"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Digite el valor adicional al pago del primer mes, que dejará en depósito la persona que recibe los ejemplares equinos en arrendamiento",
+      "name": "valor_deposito",
+      "prereq": [
+        {
+          "k": "garantias_clausula",
+          "v": "cd"
+        },
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿Desea agregar cláusula penal?",
+      "help": "clausula_penal",
+      "name": "clausulas_penal",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "La cláusula penal es aplicable a",
+      "help": "arrendador_arrendatario",
+      "name": "penal_clausula",
+      "options": [
+        {
+          "name": "La parte arrendataria",
+          "value": "a"
+        },
+        {
+          "name": "Ambas partes",
+          "value": "t"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "La cláusula penal por incuplimiento se pagará",
+      "help": "clausula_penal",
+      "name": "clausula_penal",
+      "options": [
+        {
+          "name": "un valor fijo",
+          "value": "f"
+        },
+        {
+          "name": "Número de canones mensuales",
+          "value": "c"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "f"
+    },
+    {
+      "description": "¿cuál es el valor de la multa de incumplimiento?",
+      "help": "clausula_penal",
+      "name": "multa_incumplimiento_f",
+      "prereq": [
+        {
+          "k": "clausula_penal",
+          "v": "f"
+        },
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Seleccione el valor de la multa de incumplimiento en canones mensuales",
+      "help": "clausula_penal",
+      "name": "multa_incumplimiento_c",
+      "options": [
+        {
+          "label": "0.5 (CERO PUNTO CINCO) cánones mensuales de arrendamiento,",
+          "name": "0.5",
+          "value": "05"
+        },
+        {
+          "label": "1.0 (UN) cánon mensuales de arrendamiento,",
+          "name": "1.0",
+          "value": "10"
+        },
+        {
+          "label": "1.5 (UNO PUNTO CINCO) cánones mensuales de arrendamiento,",
+          "name": "1.5",
+          "value": "15"
+        },
+        {
+          "label": "2.0 (DOS) cánones mensuales de arrendamiento,",
+          "name": "2.0",
+          "value": "20"
+        },
+        {
+          "label": "2.5 (DOS PUNTO CINCO) cánones mensuales de arrendamiento,",
+          "name": "2.5",
+          "value": "25"
+        },
+        {
+          "label": "3.0 (TRES) cánones mensuales de arrendamiento,",
+          "name": "3.0",
+          "value": "30"
+        },
+        {
+          "label": "3.5 (TRES PUNTO CINCO) cánones mensuales de arrendamiento,",
+          "name": "3.5",
+          "value": "35"
+        },
+        {
+          "label": "4.0 (CUATRO) cánones mensuales de arrendamiento,",
+          "name": "4.0",
+          "value": "40"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausula_penal",
+          "v": "c"
+        },
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "05"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_1",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que entrega el ejemplar equino en arrendamiento, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte que entrega el ejemplar equino en arrendamiento se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "arrendador",
+      "name": "direccion_arrendador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la pare arrendadora",
+      "help": "arrendador",
+      "name": "telefono_arrendador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte arrendadora",
+      "help": "arrendador",
+      "name": "correo_arrendador",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que recibe el ejemplar equino en arrendamiento, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte que recibe el ejemplar equino en arrendamiento se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "direccion_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la pare arrendataria",
+      "help": "arrendatario",
+      "name": "telefono_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte arrendataria",
+      "help": "arrendatario",
+      "name": "correo_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección donde la parte coarrendataria o fiadora se notificará, indicando la ciudad",
+      "help": "respaldo",
+      "name": "direccion_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la pare coarrendataria o fiadora",
+      "help": "respaldo",
+      "name": "telefono_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte coarrendataria o fiadora",
+      "help": "respaldo",
+      "name": "correo_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2021-02-05",
+  "creationUser": "alejo",
+  "description": "Por medio de este contrato, una de las partes concede a la otra, por determinado tiempo, el goce de un ejemplar equino, y, en virtud de esto, la otra parte, deberá pagar un precio determinado que es conocido habitualmente como canon de arrendamiento.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Arrendador: Es la parte que da en arrendamiento y proporciona el goce del ejemplar equino.\n\n- Arrendatario: Es la parte que recibe el ejemplar equino en arrendamiento y disfruta del goce del mismo.\n\n<b>EJEMPLO</b>\n\n Juan, que desea realizar una cabalgata con sus amigos, habla con Pedro, quien es dueño de un establo, para que le arriende 5 caballos para salir a montar. Por esto, deciden suscribir un contrato de arrendamiento de ejemplar equino, por medio del cual, Pedro brindará a Juan el uso y goce de cinco de sus caballos, y a cambio Juan deberá pagar un precio correspondiente a $500.000 pesos diarios.",
+  "help": {
+    "aire": "Ejemplo: Paso fino colombiano, trocha pura colombiana, trote y galope, trocha y galope",
+    "arrendador": "Arrendador: Es la parte que da en arrendamiento y proporciona el goce del ejemplar equino.",
+    "arrendador_arrendatario": "Arrendador: Es la parte que da en arrendamiento y proporciona el goce del ejemplar equino. \nArrendatario: Es la parte que recibe el ejemplar equino en arrendamiento y disfruta del goce del mismo.",
+    "arrendatario": "Arrendatario: Es la parte que recibe el ejemplar equino en arrendamiento y disfruta del goce del mismo.",
+    "clausula_penal": "Cláusula penal: Por medio de la cláusula penal, se busca asegurar el cumplimiento de las obligaciones contractuales pactadas, al establecerse una posible sanción, generalmente en dinero, para la parte que desconozca sus deberes contractuales.\nArrendador: Es la parte que da en arrendamiento y proporciona el goce del ejemplar equino. \nArrendatario: Es la parte que recibe el ejemplar equino en arrendamiento y disfruta del goce del mismo.",
+    "color": "Ejemplo: Bayo",
+    "conductor_autorizado": "Las personas que indique como autorizadas para la manipulación, serán las únicas facultadas para manipular el(los) ejemplar(es) equinos.",
+    "dia_pagou": "Ejemplo: Se pagará el valor del arrendamiento del ejemplar equino el día 24 de agosto del 2021",
+    "duracion_tiempo": "Ejemplo: 1 día, 2 días, 1 mes, 6 meses, 1 semana, 7 semanas.",
+    "edad": "Ejemplo: 4 años",
+    "fecha_inicio_contrato": "Fecha de inicio del contrato: A partir de cuando se le concederá el goce del ejemplar equino a la parte arrendataria.",
+    "fecha_terminacion_contrato": "Fecha de terminación del contrato: A partir de cuando terminará el goce del ejemplar equino por la parte arrendataria.",
+    "respaldo": "El fiador es un garante de las obligaciones del arrendatario (deudor), pero con algunas diferencias respecto al codeudor: 1. Beneficio de excusión: el fiador puede exigir que se le cobre primero al deudor, y que para ello primero se embarguen y secuestren bienes del deudor, y solo en caso de que este no tenga bienes o estos sean insuficientes para pagar las obligaciones, se le podrá hacer el cobro al fiador. 2. Beneficio de división: es un derecho del fiador, de solicitar que, toda vez que la obligación no es solidaria, se divida entre él y el deudor principal. 3. Solidaridad: el fiador NO ES solidario; el codeudor SÍ LO ES, y por ello, el fiador goza de los dos anteriores derechos. 4. Renovación: cuando se es codeudor, y el contrato se renueva automáticamente al final del término de vigencia, se renueva automáticamente también la obligación del codeudor, pero cuando se es fiador, no se renueva.",
+    "name": "Ejemplo: Sultán",
+    "pago": "Definir si se va a pagar el arrendamiento del ejemplar equino mediante un único pago, o, mediante pagos periódicos que podrán ser semanales o mensuales.",
+    "periodo_p": "Ejemplo 1: Se pagará el canon de arrendamiento semanal, a más tardar los viernes de cada semana. \nEjemplo 2: Se pagará el canon de arrendamiento mensual, a más tardar el día 30 de cada mes.",
+    "precio_vehiculo": "Recuerde que aquí se digita UNICAMENTE el precio de arrendamiento, posteriormente se preguntará la periodicidad del mismo",
+    "sexo": "Macho o hembra"
+  },
+  "keywords": [
+    "campo",
+    "hacienda",
+    "caballerizas",
+    "establo",
+    "corral",
+    "troton",
+    "trotón",
+    "rocin",
+    "rocín",
+    "penco",
+    "jamelgo",
+    "jaco",
+    "bayo",
+    "corcel",
+    "ruano",
+    "percheron",
+    "petiso",
+    "bestia",
+    "caballo",
+    "potra",
+    "potro",
+    "cabalgar",
+    "animal",
+    "carga",
+    "caballería",
+    "potrillo",
+    "potrilla",
+    "redemon",
+    "yegua",
+    "corse",
+    "pachon",
+    "jinete",
+    "finca",
+    "cabalgata",
+    "burro",
+    "alquiler"
+  ],
+  "name": "CONTRATO DE ARRENDAMIENTO DE EJEMPLAR EQUINO",
+  "PK": "CONT1c6091fe-81cf-438b-bcc5-38d8d00f0c08",
+  "price": 29900,
+  "relation1": "LATEST|ACTIVE|CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
+  "relation2": "LATEST|2021-02-05",
+  "relation3": "LATEST|CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_arrendador",
+    "cedula_arrendador",
+    "cedulae_arrendador",
+    "pasaporte_arrendador",
+    "correo_arrendador",
+    "telefono_arrendador",
+    "nombre_empresa_arrendador",
+    "identificacion_empresa_arrendador",
+    "nombre_arrendatario",
+    "cedula_arrendatario",
+    "cedulae_arrendatario",
+    "pasaporte_arrendatario",
+    "correo_arrendatario",
+    "telefono_arrendatario",
+    "nombre_empresa_arrendatario",
+    "identificacion_empresa_arrendatario",
+    "nombre_respaldo",
+    "cedula_respaldo",
+    "cedulae_respaldo",
+    "pasaporte_respaldo",
+    "correo_respaldo",
+    "telefono_respaldo",
+    "nombre_empresa_respaldo",
+    "identificacion_empresa_respaldo",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_arrendador",
+      "identification": "cedula_arrendador|cedulae_arrendador|pasaporte_arrendador",
+      "name": "nombre_arrendador",
+      "type": "arrendador"
+    },
+    {
+      "email": "correo_arrendatario",
+      "identification": "cedula_arrendatario|cedulae_arrendatario|pasaporte_arrendatario",
+      "name": "nombre_arrendatario",
+      "type": "arrendatario"
+    },
+    {
+      "email": "correo_respaldo",
+      "identification": "cedula_respaldo|cedulae_respaldo|pasaporte_respaldo",
+      "name": "nombre_respaldo",
+      "type": "respaldo"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "arrendamiento-ejemplar-equino",
+  "status": "ACTIVE",
+  "time": 10,
+  "timesUsed": 0
+}

@@ -1,0 +1,1901 @@
+{
+  "build": 3,
+  "category": "CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "config": [
+    {
+      "description": "Seleccione el tipo de contrato",
+      "name": "termino",
+      "options": [
+        {
+          "name": "Término Indefinido",
+          "value": "i"
+        },
+        {
+          "name": "Término Fijo",
+          "value": "f"
+        }
+      ],
+      "type": "clausula",
+      "value": "i"
+    },
+    {
+      "description": "El empleador es",
+      "help": "empleador",
+      "name": "tipo_empleador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa empleadora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona empleadora"
+        }
+      ],
+      "help": "empleador",
+      "name": "nombre_empleador",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa empleadora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte empleadora es:"
+        }
+      ],
+      "help": "empleador",
+      "name": "genero_empleador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa empleadora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona empleadora"
+        }
+      ],
+      "help": "empleador",
+      "name": "tipo_documento_empleador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa empleadora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte empleadora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "empleador",
+      "name": "cedula_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa empleadora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte empleadora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "empleador",
+      "name": "cedulae_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa empleadora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte empleadora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "empleador",
+      "name": "pasaporte_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte empleadora",
+      "help": "empleador",
+      "name": "ciudad_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actúa como empleadora",
+      "help": "empleador",
+      "name": "nombre_empresa_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa empleadora",
+      "help": "empleador",
+      "name": "ciudad_empresa_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa empleadora, sin dígito de verificación",
+      "help": "empleador",
+      "name": "identificacion_empresa_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre de la parte trabajadora",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "El sexo de la parte trabajadora es:",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte trabajadora",
+      "help": "trabajador",
+      "name": "ciudad_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte trabajadora",
+      "help": "trabajador",
+      "name": "tipo_documento_trabajador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte trabajadora, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedula_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte trabajadora, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte trabajadora, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la fecha en la que se inicia la relación laboral",
+      "name": "fecha_inicio_contrato_i",
+      "prereq": [
+        {
+          "k": "termino",
+          "v": "i"
+        }
+      ],
+      "type": "date"
+    },
+    {
+      "description": "Digite la duración del contrato de trabajo en meses",
+      "help": "duracion_relacion_laboral",
+      "name": "duracion_relación_laboral",
+      "prereq": [
+        {
+          "k": "termino",
+          "v": "f"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite la fecha en la que se inicia la relación laboral",
+      "name": "fecha_inicio_contrato_f",
+      "prereq": [
+        {
+          "k": "termino",
+          "v": "f"
+        }
+      ],
+      "type": "date"
+    },
+    {
+      "description": "Digite la fecha en la que se termina la relación laboral",
+      "name": "fecha_termino_contrato",
+      "prereq": [
+        {
+          "k": "termino",
+          "v": "f"
+        }
+      ],
+      "type": "date"
+    },
+    {
+      "description": "¿El predio cuenta con piscinas y/o otras zonas humedas?",
+      "name": "piscina",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿El predio cuenta con niños y/o adultos mayores que requieran cuidado?",
+      "name": "hogar_amn",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Desea agregar otras obligaciones a cargo de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "otros_obligaciones_t",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "obligaciones_t_1",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación a cargo de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "t_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "obligaciones_t_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación a cargo de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "t_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "obligaciones_t_3",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación a cargo de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "t_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "obligaciones_t_4",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación a cargo de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "t_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "obligaciones_t_5",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar funciones específicas de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "funciones_especificas",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera función específica de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "funcion_especifica_1",
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda función específica de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "total_funciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda función específica de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "funcion_especifica_2",
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera función específica de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "total_funciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera función específica de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "funcion_especifica_3",
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_2",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta función específica de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "total_funciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_2",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta función específica de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "funcion_especifica_4",
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_2",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_3",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta función específica de la parte trabajadora?",
+      "help": "trabajador",
+      "name": "total_funciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_2",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_3",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta función específica de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "funcion_especifica_5",
+      "prereq": [
+        {
+          "k": "funciones_especificas",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_2",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_3",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_4",
+          "v": "s"
+        },
+        {
+          "k": "total_funciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿La jornada en la cual trabajará el(la) mayordomo(a) será por días, es decir, trabajará solo ciertos días a la semana?",
+      "help": "jornada_laboral",
+      "name": "jornada",
+      "options": [
+        {
+          "name": "No",
+          "value": "m"
+        },
+        {
+          "name": "Sí",
+          "value": "d"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione si el(la) mayordomo(a) trabajará la jornada diaria máxima o medio tiempo",
+      "help": "jornada_laboral",
+      "name": "tiempo",
+      "options": [
+        {
+          "name": "Jornada máxima laboral",
+          "value": "c"
+        },
+        {
+          "name": "Medio tiempo",
+          "value": "m"
+        }
+      ],
+      "type": "clausula",
+      "value": "c"
+    },
+    {
+      "description": "Seleccione el número de días que trabajará semanalmente el(la) mayordomo(a)",
+      "name": "dia_laboral",
+      "options": [
+        {
+          "name": "1 día",
+          "value": "1"
+        },
+        {
+          "name": "2 días",
+          "value": "2"
+        },
+        {
+          "name": "3 días",
+          "value": "3"
+        },
+        {
+          "name": "4 días",
+          "value": "4"
+        },
+        {
+          "name": "5 días",
+          "value": "5"
+        },
+        {
+          "name": "6 días",
+          "value": "6"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "jornada",
+          "v": "d"
+        }
+      ],
+      "type": "clausula",
+      "value": "6"
+    },
+    {
+      "description": "¿Desea agregar nuevas causales de despido?",
+      "name": "otras_causales_despido",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primer causal de despido de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "causales_despido_1",
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda causal de despido?",
+      "help": "trabajador",
+      "name": "t_causales_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda causal de despido de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "causales_despido_2",
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera causal de despido?",
+      "help": "trabajador",
+      "name": "t_causales_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera causal de despido de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "causales_despido_3",
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_2",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta causal de despido?",
+      "help": "trabajador",
+      "name": "t_causales_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_2",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta causal de despido de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "causales_despido_4",
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_2",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_3",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta causal de despido?",
+      "name": "t_causales_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_2",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_3",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta causal de despido de la parte trabajadora que desea agregar",
+      "help": "trabajador",
+      "name": "causales_despido_5",
+      "prereq": [
+        {
+          "k": "otras_causales_despido",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_2",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_3",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_4",
+          "v": "s"
+        },
+        {
+          "k": "t_causales_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Cuál va a ser el salario que percibirá la parte trabajadora?",
+      "help": "trabajador",
+      "name": "salario_minimo",
+      "options": [
+        {
+          "name": "Un salario mínimo",
+          "value": "s"
+        },
+        {
+          "name": "Una cantidad superior pactada por la parte empleadora",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Digite el valor del salario mensual que será pagado a la parte trabajadora",
+      "help": "salario_empleado_u",
+      "name": "salario_empleado",
+      "prereq": [
+        {
+          "k": "salario_minimo",
+          "v": "n"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿Con que periodicidad se pagará el salario?",
+      "help": "salario_empleado_u",
+      "name": "periodo_pago",
+      "options": [
+        {
+          "name": "Diario",
+          "value": "d"
+        },
+        {
+          "name": "Semanal",
+          "value": "s"
+        },
+        {
+          "name": "Quincenal",
+          "value": "q"
+        },
+        {
+          "name": "Mensual",
+          "value": "m"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el día de la semana que se le pagará a más tardar el salario a la parte trabajadora",
+      "help": "salario_empleado_s",
+      "name": "dia_semana",
+      "options": [
+        {
+          "name": "Lunes",
+          "value": "l"
+        },
+        {
+          "name": "Martes",
+          "value": "m"
+        },
+        {
+          "name": "Miercoles",
+          "value": "w"
+        },
+        {
+          "name": "Jueves",
+          "value": "j"
+        },
+        {
+          "name": "Viernes",
+          "value": "v"
+        },
+        {
+          "name": "Sabado",
+          "value": "s"
+        },
+        {
+          "name": "Domingo",
+          "value": "d"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "periodo_pago",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "l"
+    },
+    {
+      "description": "¿Desea pactar salario en especie?",
+      "help": "salario_especie",
+      "name": "salario_especie",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione el porcentaje de salario en especie a pagar a la parte trabajadora",
+      "help": "salario_especie",
+      "name": "porcentaje_especie",
+      "options": [
+        {
+          "name": "10%",
+          "value": "10"
+        },
+        {
+          "name": "20%",
+          "value": "20"
+        },
+        {
+          "name": "30%",
+          "value": "30"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "salario_especie",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "10"
+    },
+    {
+      "description": "Digite las especies que se le entregarán al trabajador como parte de su salario (alimentación, habitación, vestido diferente del de sus labores, y demás)",
+      "help": "salario_especie",
+      "name": "valor_salario_especie",
+      "prereq": [
+        {
+          "k": "salario_especie",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea pactar periodo de prueba?",
+      "help": "periodoP",
+      "name": "periodo_prueba",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, el número de días del periodo de prueba",
+      "help": "periodoP",
+      "name": "tiempo_periodo_prueba",
+      "prereq": [
+        {
+          "k": "periodo_prueba",
+          "v": "s"
+        },
+        {
+          "k": "termino",
+          "v": "f"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas",
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercer cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa empleadora, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_empleador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte empleadora se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "empleador",
+      "name": "direccion_empleador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte empleadora",
+      "help": "empleador",
+      "name": "telefono_empleador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte empleadora",
+      "help": "empleador",
+      "name": "correo_empleador",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección completa de la parte trabajadora",
+      "help": "trabajador",
+      "name": "direccion_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la parte trabajadora",
+      "help": "trabajador",
+      "name": "telefono_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del trabajador",
+      "help": "trabajador",
+      "name": "correo_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2021-02-09",
+  "creationUser": "alejo",
+  "description": "Por medio del presente contrato de trabajo, se establecen las condiciones laborales en las cuales un mayordomo se vinculará a su sitio de trabajo. En caso de que se vincule mediante contrato a término fijo, este no podrá ser por ningún motivo superior a tres (3) años.",
+  "entity": "CONT",
+  "example": "MiContrato te permitirá establecer si el (la) mayordomo (a) cuenta con un contrato a término fijo o indefinido, y definir si trabajará la jornada semanal completa o si trabajará por días. \n\n<b>PARTES</b>\n- Empleador: Quien contrata al (a) mayordomo (a).\n\n- Trabajador: Quien cumplirá las labores de mayordomo(a) y estará bajo subordinación y dependencia de la parte empleadora.\n\n<b>EJEMPLO</b>\n\n Juan en su finca necesita contratar a una persona que se pueda encargar del mantenimiento y cuidado de la misma, por lo que decide contratar a Pedro, para que cumpla estas labores con un contrato laboral para mayordomo.",
+  "help": {
+    "duracion_relacion_laboral": "NOTA: La relación laboral no podrá ser por ningún motivo superior a tres (3) años.",
+    "empleador": "Empleador: Quien contrata al(a) mayordomo(a).",
+    "jornada_laboral": "La jornada laboral máxima permitida en Colombia es de 48 horas semanales, con un máximo de 8 horas diarias.",
+    "periodoP": "Ejemplo: dos meses, treinta días, veinticinco días.\nNota: Nunca el periodo de prueba podrá ser superior a 2 meses. Y en el caso de contrato a término fijo, el periodo de prueba nunca podrá ser superior al 20% del periodo laboral. Así por ejemplo, un contrato celebrado por 180 días, no podrá tener un periodo de prueba superior a 36 días.",
+    "salario_empleado_s": "RECUERDE QUE BAJO NINGUNA CIRCUNSTANCIA, LA PARTE TRABAJADORA PODRÁ DEVENGAR UN SALARIO INFERIOR AL SALARIO MÍNIMO MENSUAL LEGAL VIGENTE, EQUIVALENTE A $908.526 PESOS, EL CUAL CORRESPONDE A $227.131,5 PESOS SEMANALES.",
+    "salario_empleado_u": "RECUERDE QUE BAJO NINGUNA CIRCUNSTANCIA, LA PARTE TRABAJADORA PODRÁ DEVENGAR UN SALARIO INFERIOR AL SALARIO MÍNIMO MENSUAL LEGAL VIGENTE, EQUIVALENTE A $908.526 PESOS, EL CUAL CORRESPONDE A $30.284,2 PESOS DIARIOS, A $227.131,5 PESOS SEMANALES, A $454.263 PESOS QUINCENALES, Y A $908.526 PESOS MENSUALES.",
+    "salario_especie": "El salario en especie es una parte de la remuneración que entrega el patrono a la parte trabajadora en bienes distintos a dinero, tales como alimentación, habitación, vestuario distinto al de trabajo, y demás",
+    "trabajador": "Trabajador: Quien cumplirá las labores de mayordomo(a) y estará bajo subordinación y dependencia de la parte empleadora."
+  },
+  "keywords": [
+    "ayudante",
+    "cuidador",
+    "finquero",
+    "finca",
+    "agregado",
+    "sirviente",
+    "finca",
+    "hacienda",
+    "administrador",
+    "colaborador",
+    "todero"
+  ],
+  "name": "CONTRATO LABORAL PARA MAYORDOMO",
+  "PK": "CONT755d44ec-1ac0-4632-8e0e-fdef25054616",
+  "price": 49900,
+  "relation1": "LATEST|ACTIVE|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "relation2": "LATEST|2021-02-09",
+  "relation3": "LATEST|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_empleador",
+    "cedula_empleador",
+    "cedulae_empleador",
+    "pasaporte_empleador",
+    "correo_empleador",
+    "telefono_empleador",
+    "nombre_empresa_empleador",
+    "identificacion_empresa_empleador",
+    "nombre_trabajador",
+    "cedula_trabajador",
+    "cedulae_trabajador",
+    "pasaporte_trabajador",
+    "correo_trabajador",
+    "telefono_trabajador",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_empleador",
+      "identification": "cedula_empleador|cedulae_empleador|pasaporte_empleador",
+      "name": "nombre_empleador",
+      "type": "empleador"
+    },
+    {
+      "email": "correo_trabajador",
+      "identification": "cedula_trabajador|cedulae_trabajador|pasaporte_trabajador",
+      "name": "nombre_trabajador",
+      "type": "trabajador"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "laboral-mayordomo",
+  "status": "ACTIVE",
+  "time": 7,
+  "timesUsed": 0,
+  "youtube": "SgLVZcbEpIg"
+}

@@ -1,0 +1,2766 @@
+{
+  "category": "CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "config": [
+    {
+      "description": "El arrendador es",
+      "help": "arrendador",
+      "name": "tipo_arrendador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre completo del representante legal de la empresa que da el inmueble en arrendamiento",
+      "help": "arrendador",
+      "name": "nombre_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre completo de la persona que da el inmueble en arrendamiento",
+      "help": "arrendador",
+      "name": "nombre_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "El sexo del representante legal de la empresa que da el inmueble en arrendamiento es:",
+      "help": "arrendador",
+      "name": "genero_arrendador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "El sexo del arrendador es:",
+      "help": "arrendador",
+      "name": "genero_arrendador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la persona arrendadora",
+      "help": "arrendador",
+      "name": "tipo_documento_arrendador_n",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Seleccione el tipo de documento del representante legal de la empresa que da el inmueble en arrendamiento",
+      "help": "arrendador",
+      "name": "tipo_documento_arrendador_j",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento del representante legal de la empresa que da el inmueble en arrendamiento, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "cedula_arrendador_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendador_j",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte arrendadora, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "cedula_arrendador_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendador_n",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento del representante legal de la empresa que da el inmueble en arrendamiento, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "cedulae_arrendador_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendador_j",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte arrendadora, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "cedulae_arrendador_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendador_n",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte del representante legal de la empresa que da el inmueble en arrendamiento, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "pasaporte_arrendador_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendador_j",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte arrendadora, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "pasaporte_arrendador_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendador_n",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del arrendador",
+      "help": "arrendador",
+      "name": "ciudad_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que da el inmueble en arrendamiento",
+      "help": "arrendador",
+      "name": "nombre_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que da el inmueble en arrendamiento, sin dígito de verificación",
+      "help": "arrendador",
+      "name": "identificacion_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que da el inmueble en arrendamiento",
+      "help": "arrendador",
+      "name": "ciudad_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "El arrendatario es",
+      "help": "arrendataria",
+      "name": "tipo_arrendatario",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del representante legal de la empresa que recibe el inmueble en arrendamiento",
+      "help": "arrendataria",
+      "name": "nombre_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la persona que recibe el inmueble en arrendamiento",
+      "help": "arrendataria",
+      "name": "nombre_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "El sexo del arrendatario es:",
+      "help": "arrendataria",
+      "name": "genero_arrendatario",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "El sexo del representante legal de la empresa que recibe el inmueble en arrendamiento es:",
+      "help": "arrendataria",
+      "name": "genero_arrendatario",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la persona arrendataria",
+      "help": "arrendataria",
+      "name": "tipo_documento_arrendatario_n",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de Extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Seleccione el tipo de documento del representante legal de la empresa que recibe el bien en arrendamiento",
+      "help": "arrendataria",
+      "name": "tipo_documento_arrendatario_j",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de Extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento del representante legal de la empresa que recibe el inmueble en arrendamiento, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "cedula_arrendatario_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendatario_j",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte arrendataria, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "cedula_arrendatario_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendatario_n",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento del representante legal de la empresa que recibe el inmueble en arrendamiento, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "cedulae_arrendatario_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendatario_j",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte arrendataria, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "cedulae_arrendatario_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendatario_n",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte del representante legal de la empresa que recibe el inmueble en arrendamiento, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "pasaporte_arrendatario_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendatario_j",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte arrendataria, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "pasaporte_arrendatario_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendatario_n",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del arrendatario",
+      "help": "arrendataria",
+      "name": "ciudad_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que recibe el inmueble en arrendamiento",
+      "help": "arrendataria",
+      "name": "nombre_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que recibe el inmueble en arrendamiento, sin dígito de verificación",
+      "help": "arrendataria",
+      "name": "identificacion_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que recibe el inmueble en arrendamiento",
+      "help": "arrendataria",
+      "name": "ciudad_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el número de predios que desea arrendar",
+      "name": "numero_predios",
+      "options": [
+        {
+          "name": "1",
+          "value": "1"
+        },
+        {
+          "name": "2",
+          "value": "2"
+        },
+        {
+          "name": "3",
+          "value": "3"
+        },
+        {
+          "name": "4",
+          "value": "4"
+        },
+        {
+          "name": "5",
+          "value": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "1"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula_inmobiliaria",
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina_registro_ip",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion_inmueble",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo_catastral",
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos2",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula_inmobiliaria2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina_registro_ip2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo_catastral2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion3_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos32",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion3_linderos2",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula3_inmobiliaria2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina3_registro_ip2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion3_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo3_catastral2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion4_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos42",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion4_linderos2",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula4_inmobiliaria2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina4_registro_ip2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion4_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo4_catastral2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion5_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos52",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion5_linderos2",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula5_inmobiliaria2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina5_registro_ip2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion5_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo5_catastral2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos3",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula_inmobiliaria3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina_registro_ip3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo_catastral3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion4_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos43",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion4_linderos3",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula4_inmobiliaria3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina4_registro_ip3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion4_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo4_catastral3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion5_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos53",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion5_linderos3",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula5_inmobiliaria3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina5_registro_ip3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion5_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo5_catastral3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos4",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula_inmobiliaria4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina_registro_ip4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion_inmueble4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo_catastral4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion5_inmueble4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos54",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion5_linderos4",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula5_inmobiliaria4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina5_registro_ip4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion5_inmueble4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo5_catastral4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos5",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula_inmobiliaria5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmuebele",
+      "name": "oficina_registro_ip5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion_inmueble5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo_catastral5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "El periodo de duración del presente contrato sera pactado en:",
+      "name": "contrato_periodo",
+      "options": [
+        {
+          "name": "Meses",
+          "value": "m"
+        },
+        {
+          "name": "Años",
+          "value": "a"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite el término de duración del presente contrato",
+      "name": "duracion_contrato",
+      "type": "number"
+    },
+    {
+      "description": "Seleccione la fecha de inicio del contrato",
+      "name": "fecha_inicio_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Seleccione la fecha de terminación del contrato",
+      "name": "fecha_terminacion_contrato",
+      "type": "date"
+    },
+    {
+      "description": "¿Con cuántos días de anticipación se debe avisar a la otra parte la intención de no renovar el contrato para que este no se renueve de forma automática?",
+      "name": "preaviso",
+      "type": "text"
+    },
+    {
+      "description": "¿En el caso de renovar el contrato de forma automatica, cómo desea hacerlo?",
+      "name": "renovacion_pactada",
+      "options": [
+        {
+          "name": "Por un termino igual al inicialmente pactado",
+          "value": "i"
+        },
+        {
+          "name": "Por un termino distinto",
+          "value": "d"
+        }
+      ],
+      "type": "clausula",
+      "value": "i"
+    },
+    {
+      "description": "Digite en meses por cuanto tiempo se prorrogará automáticamente el presente contrato",
+      "name": "tiempo_renovacion_auto",
+      "prereq": [
+        {
+          "k": "renovacion_pactada",
+          "v": "d"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "El periodo de pago será:",
+      "name": "periodo_pago",
+      "options": [
+        {
+          "name": "Mensual",
+          "value": "m"
+        },
+        {
+          "name": "Anual",
+          "value": "a"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "Digite en números el valor del canon de arrendamiento",
+      "help": "canon",
+      "name": "canon_arrendamiento",
+      "type": "currency"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde la parte que recibe el bien en arrendamiento deberá pagar el canon de arrendamiento",
+      "name": "ciudad_canon_arrendamiento",
+      "type": "text"
+    },
+    {
+      "description": "El pago se hará de manera",
+      "name": "pago_mensual",
+      "options": [
+        {
+          "name": "anticipada",
+          "value": "a"
+        },
+        {
+          "name": "vencida",
+          "value": "v"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "El arrendamiento se realizará:",
+      "name": "tipo_arrendamiento",
+      "options": [
+        {
+          "name": "Mediante depósito en cuenta bancaria",
+          "value": "c"
+        },
+        {
+          "name": "Mediante pago en efectivo",
+          "value": "e"
+        }
+      ],
+      "type": "clausula",
+      "value": "c"
+    },
+    {
+      "description": "La cuenta es tipo:",
+      "name": "cuenta_tipo",
+      "options": [
+        {
+          "name": "Corriente",
+          "value": "c"
+        },
+        {
+          "name": "Ahorro",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "Ingresa el número de cuenta de la parte arrendadora",
+      "name": "numero_cuenta_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Ingresa el banco de la parte arrendadora",
+      "name": "banco_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Ingresa el nombre del titular de la cuenta a quien se va a realizar el pago",
+      "name": "nombre_cuenta_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Los intereses por la mora en el pago del arrendamiento se cobraran según:",
+      "name": "interes_mora",
+      "options": [
+        {
+          "name": "Lo establecido por la Superintendencia Financiera de Colombia",
+          "value": "s"
+        },
+        {
+          "name": "Un valor definido por las partes",
+          "value": "c"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Seleccione el porcentaje de los intereses en mora",
+      "name": "intereses_pago",
+      "options": [
+        {
+          "name": "0.5%",
+          "value": "05"
+        },
+        {
+          "name": "1.0%",
+          "value": "10"
+        },
+        {
+          "name": "1.5%",
+          "value": "15"
+        },
+        {
+          "name": "2.0%",
+          "value": "20"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "interes_mora",
+          "v": "c"
+        }
+      ],
+      "type": "clausula",
+      "value": "05"
+    },
+    {
+      "description": "¿Quiere realizar un aumento del precio del arrendamiento por encima del IPC?",
+      "help": "ipc",
+      "name": "aumento_reajuste_precio",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el porcentaje adicional al IPC en que se incrementa el precio del arriendo",
+      "help": "ipc",
+      "name": "puntos_reajuste_precio",
+      "prereq": [
+        {
+          "k": "aumento_reajuste_precio",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite detalladamente el uso que la persona que recibe el bien en arrendamiento le puede dar al mismo, indicando si es sólo para cultivo, para pastoreo, para actividades de piscicultura u otras de la manera más precisa posible",
+      "name": "uso_inmueble",
+      "type": "text"
+    },
+    {
+      "description": "¿Está permitido subarrendar sin permiso de la parte arrendadora?",
+      "name": "cesion_subarriendo",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite qué área específica puede subarrendar, y para qué actividades, y todas las condiciones que se le deseen imponer para poder subarrendar",
+      "name": "zona_subarrendar",
+      "prereq": [
+        {
+          "k": "cesion_subarriendo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Se autorizan previamente algunas mejoras?",
+      "name": "autorizacion_mejoras",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite cuales son las mejoras que pueden realizarse",
+      "name": "mejoras_autorizadas",
+      "prereq": [
+        {
+          "k": "autorizacion_mejoras",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Con qué servicios públicos cuenta el inmueble que se da en arrendamiento?",
+      "name": "servicios_publicos",
+      "select": [
+
+      ],
+      "type": "check",
+      "values": [
+        "acueducto",
+        "energía eléctrica",
+        "gas natural"
+      ]
+    },
+    {
+      "description": "¿Quién deberá pagar dichos servicios?",
+      "help": "arrendador_arrendatario",
+      "name": "encargado_pago",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "a"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "ar"
+        }
+      ],
+      "type": "clausula",
+      "value": "ar"
+    },
+    {
+      "description": "El inmueble cuenta con uso conexo",
+      "help": "usos_conexos",
+      "name": "usos_conexos",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Con cuales usos conexos cuenta el inmueble que se da en arrendamiento?",
+      "help": "usos_conexos",
+      "name": "usos_conexos_servicios",
+      "prereq": [
+        {
+          "k": "usos_conexos",
+          "v": "s"
+        }
+      ],
+      "select": [
+
+      ],
+      "type": "check",
+      "values": [
+        "televisión",
+        "internet",
+        "telefonia"
+      ]
+    },
+    {
+      "description": "¿Quién deberá pagar dichos servicios?",
+      "help": "arrendador_arrendatario",
+      "name": "encargado_pago_conexos",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "a"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "ar"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "usos_conexos",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "ar"
+    },
+    {
+      "description": "¿Desea que se puede terminar el contrato unilateralmente por causa de la venta del inmueble?",
+      "name": "terminacion_contrato_vi",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Desea agregar otra justa causa para terminación del contrato por parte de la arrendadora?",
+      "help": "arrendador",
+      "name": "complemento_terminacion",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite otra causa especifica para terminación del contrato de arrendamiento por parte de la arrendadora",
+      "help": "arrendador",
+      "name": "complemento_terminacion_a",
+      "prereq": [
+        {
+          "k": "complemento_terminacion",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Durante las inspecciones la parte arrendadora puede realizar labores especificas en el predio?",
+      "help": "arrendador",
+      "name": "labores_inspeccion",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite cuales son las labores autorizadas a la persona que da el bien en arrendamiento para realizar dentro del predio",
+      "name": "labores_realizar",
+      "prereq": [
+        {
+          "k": "labores_inspeccion",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar cláusula penal?",
+      "name": "clausulas_penal",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿cuál es el valor de la multa de incumplimiento?",
+      "name": "multa_incumplimiento_f",
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿La parte arrendataria va a ofrecer garantías para el cumplimiento de sus obligaciones?",
+      "help": "fiador_codeudor",
+      "name": "uso_respaldo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "El fiador o codeudor es",
+      "help": "fiador_codeudor",
+      "name": "tipo_respaldo",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "El sexo del codeudor o fiador es:",
+      "help": "fiador_codeudor",
+      "name": "genero_respaldo",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "El sexo del representante legal de la empresa que actúa como codeudora o fiadora es:",
+      "help": "fiador_codeudor",
+      "name": "genero_respaldo",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "¿El arrendatario va a respaldar sus obligaciones con?",
+      "help": "fiador_codeudor",
+      "name": "respaldo",
+      "options": [
+        {
+          "name": "Fiador",
+          "value": "f"
+        },
+        {
+          "name": "Codeudor o coarrendatario",
+          "value": "c"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "f"
+    },
+    {
+      "description": "Digite el nombre completo del representante legal de la empresa que actua como codeudor o fiador",
+      "help": "fiador_codeudor",
+      "name": "nombre_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre completo del codeudor o fiador",
+      "help": "fiador_codeudor",
+      "name": "nombre_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la persona codeudora o fiadora",
+      "help": "fiador_codeudor",
+      "name": "tipo_documento_respaldo_n",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cedula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Seleccione el tipo de documento del representante legal de la empresa codeudora o fiadora",
+      "help": "fiador_codeudor",
+      "name": "tipo_documento_respaldo_j",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cedula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de Ciudadanía del representante legal de la empresa que actua como codeudor o fiador, sin comas, puntos, ni guiones",
+      "help": "fiador_codeudor",
+      "name": "cedula_respaldo_j",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_respaldo_j",
+          "v": "cc"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de Ciudadanía de la parte codeudora o fiadora, sin comas, puntos, ni guiones",
+      "help": "fiador_codeudor",
+      "name": "cedula_respaldo_n",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_respaldo_n",
+          "v": "cc"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería del representante legal de la empresa que actua como codeudor o fiador, sin comas, puntos, ni guiones",
+      "help": "fiador_codeudor",
+      "name": "cedulae_respaldo_j",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_respaldo_j",
+          "v": "ce"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte codeudora o fiadora, sin comas, puntos, ni guiones",
+      "help": "fiador_codeudor",
+      "name": "cedulae_respaldo_n",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_respaldo_n",
+          "v": "ce"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte del representante legal de la empresa que actua como codeudor o fiador, sin comas, puntos, ni guiones",
+      "help": "fiador_codeudor",
+      "name": "pasaporte_respaldo_j",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_respaldo_j",
+          "v": "pa"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte codeudora o fiadora, sin comas, puntos, ni guiones",
+      "help": "fiador_codeudor",
+      "name": "pasaporte_respaldo_n",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_respaldo_n",
+          "v": "pa"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del fiador o codeudor",
+      "help": "fiador_codeudor",
+      "name": "ciudad_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que actua como codeudor o fiador",
+      "help": "fiador_codeudor",
+      "name": "nombre_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que actua como codeudor o fiador, sin dígito de verificación",
+      "help": "fiador_codeudor",
+      "name": "identificacion_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que actua como codeudor o fiador",
+      "help": "fiador_codeudor",
+      "name": "ciudad_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clasulas",
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio donde se firma el presente contrato",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la cual se firma el presente contrato",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": "Digite la dirección completa donde la parte arrendadora se notificará, indicando la ciudad",
+      "help": "arrendador",
+      "name": "direccion_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección completa donde se notificará a la empresa que da el bien en arrendamiento, indicando la ciudad",
+      "help": "arrendador",
+      "name": "direccion_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la parte arrendadora",
+      "help": "arrendador",
+      "name": "telefono_arrendador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte arrendadora",
+      "help": "arrendador",
+      "name": "correo_arrendador",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección donde la parte arrendataria se notificará, indicando la ciudad",
+      "help": "arrendataria",
+      "name": "direccion_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la la dirección completa donde se notificará a la empresa que recibe el bien en arrendamiento, indicando la ciudad",
+      "help": "arrendataria",
+      "name": "direccion_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la pare arrendataria",
+      "help": "arrendataria",
+      "name": "telefono_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte arrendataria",
+      "help": "arrendataria",
+      "name": "correo_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección donde la parte coarrendataria o fiadora se notificará, indicando la ciudad",
+      "name": "direccion_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la pare coarrendataria o fiadora",
+      "name": "telefono_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte coarrendataria o fiadora",
+      "name": "correo_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulac_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ]
+}

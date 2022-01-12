@@ -1,0 +1,456 @@
+{
+  "build": 4,
+  "category": "CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "config": [
+    {
+      "description": "Digite la ciudad en la que se escribe la carta de citación de descargos",
+      "name": "ciudad_contrato",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que se escribe la carta",
+      "name": "fecha_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el nombre de la parte trabajadora que se cita a descargos",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el sexo de la parte trabajadora",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la persona que se cita a descargos",
+      "help": "trabajador",
+      "name": "tipo_documento_trabajador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la persona que se cita a descargos, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedula_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la persona que se cita a descargos, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la persona que se cita a descargos, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de empleador",
+      "help": "empleador",
+      "name": "tipo_empleador",
+      "options": [
+        {
+          "name": "Persona jurídica",
+          "value": "j"
+        },
+        {
+          "name": "Persona natural",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": "Digite el nombre de la empresa",
+      "help": "empleador",
+      "name": "nombre_empresa_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la parte empleadora",
+      "help": "empleador",
+      "name": "nombre_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione la fecha en la que se encuentra citada la parte trabajadora para diligenciar descargos",
+      "name": "fecha_descargos",
+      "type": "date"
+    },
+    {
+      "description": "Los descargos son:",
+      "name": "descargos",
+      "options": [
+        {
+          "name": "Antes del medio día",
+          "value": "a"
+        },
+        {
+          "name": "Después del medio día",
+          "value": "p"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "Digite la hora en la que encuentra citada la parte trabajadora para diligenciar descargos",
+      "name": "hora_descargos",
+      "type": "text"
+    },
+    {
+      "description": "Digite de manera clara y precisa los hechos y conductas que originan la citación a descargos.",
+      "name": "hechos_descargos",
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de quien escribe la carta de citación a descargos",
+      "name": "nombre_escritor",
+      "type": "name"
+    },
+    {
+      "description": "Digite el cargo de quien escribe la carta de citación a descargos",
+      "name": "cargo_escritor",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de documento de quien escribe la carta de citación a descargos",
+      "name": "tipo_documento_escritor",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de quien escribe la carta de citación a descargos, sin comas, puntos, ni guiones",
+      "name": "cedula_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de quien escribe la carta de citación a descargos, sin comas, puntos, ni guiones",
+      "name": "cedulae_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de quien escribe la carta de citación a descargos, sin comas, puntos, ni guiones",
+      "name": "pasaporte_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de quien escribe la carta de citación a descargos",
+      "name": "telefono_escritor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de quien escribe la carta de citación a descargos",
+      "name": "correo_escritor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte que se cita a descargos",
+      "name": "telefono_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte que se cita a descargos",
+      "name": "correo_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-12-16",
+  "creationUser": "alejo",
+  "description": "Mediante el presente documento, la parte empleadora notifica a la parte trabajadora que se ha abierto en su contra un proceso disciplinario, y para ello se le notifica que ha sido citado a una diligencia de descargos, donde podrá ejercer su derecho a defensa.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Empleador: Quien cita a la parte trabajadora a descargos.\n\n- Trabajador: Quien es citado a descargos.\n\n<b>EJEMPLO</b>\n\n Juan, lleva 3 días llegando tarde a su trabajo sin justificación aparente; por esto Pedro, su empleador le notifica que se ha abierto un proceso disciplinario en su contra y que deberá acudir a una diligencia de descargos donde deberá justificar los motivos de sus presuntas faltas disciplinarias y ejercer su defensa.",
+  "help": {
+    "empleador": "Empleador: Quien cita a la parte trabajadora a descargos.",
+    "trabajador": "Trabajador: Quien es citado a descargos."
+  },
+  "keywords": [
+    "disculpa",
+    "excusa",
+    "justificación",
+    "justificacion",
+    "amonestación",
+    "amonestacion",
+    "problema",
+    "falta"
+  ],
+  "name": "CARTA DE CITACIÓN A DESCARGOS",
+  "PK": "CONT5a9841b1-c5e5-49ef-9129-88a9a354375a",
+  "price": 0,
+  "relation1": "LATEST|ACTIVE|CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "relation2": "LATEST|2020-12-16",
+  "relation3": "LATEST|CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_escritor",
+    "cedula_escritor",
+    "cedulae_escritor",
+    "pasaporte_escritor",
+    "correo_escritor",
+    "telefono_escritor",
+    "nombre_trabajador",
+    "cedula_trabajador",
+    "cedulae_trabajador",
+    "pasaporte_trabajador",
+    "correo_trabajador",
+    "telefono_trabajador",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_escritor",
+      "identification": "cedula_escritor|cedulae_escritor|pasaporte_escritor",
+      "name": "nombre_escritor",
+      "type": "escritor"
+    },
+    {
+      "email": "correo_trabajador",
+      "identification": "cedula_trabajador|cedulae_trabajador|pasaporte_trabajador",
+      "name": "nombre_trabajador",
+      "type": "trabajador"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "citacion-a-descargos",
+  "status": "ACTIVE",
+  "time": 7,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "OQz692W-7pw"
+}

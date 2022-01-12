@@ -1,0 +1,1968 @@
+{
+  "build": 6,
+  "category": "CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "config": [
+    {
+      "description": "El comprador es",
+      "help": "comprador",
+      "name": "tipo_comprador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que comprará el dispositivo móvil nuevo"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que comprará el dispositivo móvil nuevo"
+        }
+      ],
+      "help": "comprador",
+      "name": "nombre_comprador",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que comprará el dispositivo móvil nuevo es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que comprará el dispositivo móvil nuevo es:"
+        }
+      ],
+      "help": "comprador",
+      "name": "genero_comprador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que comprará el dispositivo móvil nuevo"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que comprará el dispositivo móvil nuevo"
+        }
+      ],
+      "help": "comprador",
+      "name": "tipo_documento_comprador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que comprará el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que comprará el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "cedula_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que comprará el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que comprará el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "cedulae_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que comprará el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que comprará el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "pasaporte_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte compradora",
+      "help": "comprador",
+      "name": "ciudad_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actua como compradora",
+      "help": "comprador",
+      "name": "nombre_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa compradora",
+      "help": "comprador",
+      "name": "ciudad_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa compradora, sin dígito de verificación",
+      "help": "comprador",
+      "name": "identificacion_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "El vendedor es",
+      "help": "vendedor",
+      "name": "tipo_vendedor",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que venderá el dispositivo móvil nuevo"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que venderá el dispositivo móvil nuevo"
+        }
+      ],
+      "help": "vendedor",
+      "name": "nombre_vendedor",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que venderá el dispositivo móvil nuevo es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que venderá el dispositivo móvil nuevo es:"
+        }
+      ],
+      "help": "vendedor",
+      "name": "genero_vendedor",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que venderá el dispositivo móvil nuevo"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que venderá el dispositivo móvil nuevo"
+        }
+      ],
+      "help": "vendedor",
+      "name": "tipo_documento_vendedor",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que venderá el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que venderá el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "vendedor",
+      "name": "cedula_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_vendedor",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que venderá el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que venderá el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "vendedor",
+      "name": "cedulae_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_vendedor",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que venderá el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que venderá el dispositivo móvil nuevo, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "vendedor",
+      "name": "pasaporte_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_vendedor",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte vendedora",
+      "help": "vendedor",
+      "name": "ciudad_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_vendedor",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa  o persona jurídica que actua como vendedora",
+      "help": "vendedor",
+      "name": "nombre_empresa_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_vendedor",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa vendedora",
+      "help": "vendedor",
+      "name": "ciudad_empresa_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_vendedor",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa vendedora, sin dígito de verificación",
+      "help": "vendedor",
+      "name": "identificacion_empresa_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_vendedor",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite la marca del dispositivo móvil",
+      "help": "marca",
+      "name": "marca_celular_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite la referencia del dispositivo móvil",
+      "help": "referencia",
+      "name": "referencia_celular_1",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar información adicional del primer o único dispositivo móvil a vender?",
+      "name": "informacion_adicional_cel_1",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, información adicional del primer o unico dispositivo móvil a vender",
+      "name": "adicional_informacion_1",
+      "prereq": [
+        {
+          "k": "informacion_adicional_cel_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el IMEI del dispositivo móvil",
+      "help": "imei",
+      "name": "imei_celular_1",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar a la venta un segundo dispositivo móvil?",
+      "name": "celular_adicional_1",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la marca del segundo dispositivo móvil",
+      "help": "marca",
+      "name": "marca_celular_2",
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la referencia del segundo dispositivo móvil",
+      "help": "referencia",
+      "name": "referencia_celular_2",
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar información adicional del segundoo dispositivo móvil a vender?",
+      "name": "informacion_adicional_cel_2",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, información adicional del segundo dispositivo móvil a vender",
+      "name": "adicional_informacion_2",
+      "prereq": [
+        {
+          "k": "informacion_adicional_cel_2",
+          "v": "s"
+        },
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el IMEI del segundo dispositivo móvil",
+      "help": "imei",
+      "name": "imei_celular_2",
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar a la venta un tercer dispositivo móvil?",
+      "name": "celular_adicional_2",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la marca del tercer dispositivo móvil a vender",
+      "help": "marca",
+      "name": "marca_celular_3",
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "celular_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la referencia del tercer dispositivo móvil a vender",
+      "help": "referencia",
+      "name": "referencia_celular_3",
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "celular_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar información adicional del tercer dispositivo móvil a vender?",
+      "name": "informacion_adicional_cel_3",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "celular_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, información adicional del tercer dispositivo móvil a vender",
+      "name": "adicional_informacion_3",
+      "prereq": [
+        {
+          "k": "informacion_adicional_cel_3",
+          "v": "s"
+        },
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "celular_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el IMEI del tercer dispositivo móvil",
+      "help": "imei",
+      "name": "imei_celular_3",
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "celular_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "celular_adicional_1",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el precio por el que se venderá el primer dispositivo móvil nuevo"
+        },
+        {
+          "prereq": [
+            {
+              "k": "celular_adicional_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el precio por el que se venderá el dispositivo móvil nuevo"
+        }
+      ],
+      "name": "precio_celular",
+      "type": "currency"
+    },
+    {
+      "description": "Digite el precio por el que se venderá el segundo dispositivo móvil nuevo",
+      "name": "precio_celular_2",
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Digite el precio por el que se venderá el tercer dispositivo móvil nuevo",
+      "name": "precio_celular_3",
+      "prereq": [
+        {
+          "k": "celular_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "celular_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "La venta se realizará:",
+      "name": "tipo_venta",
+      "options": [
+        {
+          "name": "Mediante depósito en cuenta bancaria",
+          "value": "c"
+        },
+        {
+          "name": "Mediante pago en efectivo",
+          "value": "e"
+        },
+        {
+          "name": "Otra forma de pago",
+          "value": "o"
+        }
+      ],
+      "type": "clausula",
+      "value": "c"
+    },
+    {
+      "description": "El método de pago es",
+      "name": "tipo_compra",
+      "options": [
+        {
+          "name": "De contado",
+          "value": "co"
+        },
+        {
+          "name": "A credito",
+          "value": "cr"
+        }
+      ],
+      "type": "clausula",
+      "value": "co"
+    },
+    {
+      "description": "Ingresa el número de cuotas a pagar",
+      "name": "numero_cuotas_pago",
+      "prereq": [
+        {
+          "k": "tipo_compra",
+          "v": "cr"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el valor de las cuotas a pagar",
+      "name": "valor_cuotas_pago",
+      "prereq": [
+        {
+          "k": "tipo_compra",
+          "v": "cr"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Digite el día a realizar las cuotas a pagar",
+      "name": "dia_cuotas_pago",
+      "prereq": [
+        {
+          "k": "tipo_compra",
+          "v": "cr"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "La cuenta es tipo:",
+      "name": "cuenta_tipo",
+      "options": [
+        {
+          "label": " corriente",
+          "name": "Corriente",
+          "value": "c"
+        },
+        {
+          "label": " de ahorros",
+          "name": "Ahorro",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "c"
+        }
+      ],
+      "type": "select",
+      "value": "a"
+    },
+    {
+      "description": "Digite el número de la cuenta bancaria donde se hará el pago del dispositivo móvil",
+      "help": "vendedor",
+      "name": "numero_cuenta_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "c"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el banco al que pertenece la cuenta bancaria",
+      "help": "vendedor",
+      "name": "banco_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre del titular de la cuenta bancaria en la cual se va a realizar el pago del dispositivo móvil",
+      "name": "nombre_cuenta_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre del municipio y dirección donde se realizará el pago",
+      "name": "lugar_pago",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "e"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite de manera clara y precisa cuál será la manera de pago",
+      "help": "otro_tipo_pago",
+      "name": "otro_tipo_pago",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "o"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones adicionales a la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte compradora que desea agregar",
+      "help": "comprador",
+      "name": "obligaciones_comprador_1",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación adicional de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte compradora que desea agregar",
+      "help": "comprador",
+      "name": "obligaciones_comprador_2",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación adicional de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte compradora que desea agregar",
+      "help": "comprador",
+      "name": "obligaciones_comprador_3",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación adicional de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte compradora que desea agregar",
+      "help": "comprador",
+      "name": "obligaciones_comprador_4",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación adicional de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte compradora que desea agregar",
+      "help": "comprador",
+      "name": "obligaciones_comprador_5",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones adicionales a la parte vendedora?",
+      "help": "vendedor",
+      "name": "vendedor_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte vendedora que desea agregar",
+      "help": "vendedor",
+      "name": "obligaciones_vendedor_1",
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación adicional de la vendedoraa?",
+      "help": "vendedor",
+      "name": "vendedor_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte vendedora que desea agregar",
+      "help": "vendedor",
+      "name": "obligaciones_vendedor_2",
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación adicional de la parte vendedora?",
+      "help": "vendedor",
+      "name": "vendedor_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte vendedora que desea agregar",
+      "help": "vendedor",
+      "name": "obligaciones_vendedor_3",
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación adicional de la parte vendedora?",
+      "help": "vendedor",
+      "name": "vendedor_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte vendedora que desea agregar",
+      "help": "vendedor",
+      "name": "obligaciones_vendedor_4",
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación adicional de la parte vendedora?",
+      "help": "vendedor",
+      "name": "vendedor_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte vendedora que desea agregar",
+      "help": "vendedor",
+      "name": "obligaciones_vendedor_5",
+      "prereq": [
+        {
+          "k": "vendedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "vendedor_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los meses de garantía del producto. El valor no podrá ser inferior a un mes.",
+      "name": "meses_garantia",
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_1",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación la segunda cláusula adiconal, incluyendo cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación la tercera cláusula adiconal, incluyendo cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación la cuarta cláusula adiconal, incluyendo cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación la quinta cláusula adiconal, incluyendo cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que comprará el dispositivo móvil nuevo, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte que comprará el dispositivo móvil nuevo se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "comprador",
+      "name": "direccion_comprador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte compradora",
+      "help": "comprador",
+      "name": "telefono_comprador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte compradora",
+      "help": "comprador",
+      "name": "correo_comprador",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que venderá el dispositivo móvil nuevo, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte que venderá el dispositivo móvil nuevo se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "vendedor",
+      "name": "direccion_vendedor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la parte vendedora",
+      "help": "vendedor",
+      "name": "telefono_vendedor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte vendedora",
+      "help": "vendedor",
+      "name": "correo_vendedor",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-09-01",
+  "creationUser": "alejo",
+  "description": "Mediante este contrato, una parte se obliga a transferir a la otra un teléfono celular nuevo, y en contraprestación, la otra parte deberá pagar el valor pactado en dinero.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Vendedora: quien da el celular nuevo.\n\n- Compradora: quien paga el precio por el celular.\n\n<b>EJEMPLO</b>\n\nJuan, que tiene un negocio de venta de celulares, decide vender uno de los nuevos celulares de la última colección a Pedro, por lo cual, suscriben un contrato de compraventa dispositivo móvil nuevo donde Juan entrega a Pedro su celular, y Pedro deberá pagar por este la suma de quinientos mil pesos ($500.000).",
+  "help": {
+    "comprador": "Comprador: Quien paga el precio por el celular.",
+    "imei": "IMEI: Identificador único de cada celular, lo puedes consultar marcando *#06#",
+    "marca": "Ejemplo: Samsung",
+    "otro_tipo_pago": "Ejemplo: un 50% del precio en efectivo, y de manera directa a LA PARTE VENDEDORA en la calle 1 #70-70 de Medellín; el 50% restante se dividirá en dos (2) pagamentos del 25% cada uno, donde el primero, irá a la cuenta de ahorros bancolombia número 12345678901 a nombre de Eliana Ortiz , y el segundo 25% a la cuenta corriente Davivienda número 03135112233 a nombre de Leonardo Botero",
+    "referencia": "Ejemplo: Galaxy S10",
+    "vendedor": "Vendedor: Quien da el celular nuevo"
+  },
+  "keywords": [
+    "celular",
+    "móvil",
+    "movil",
+    "iphone",
+    "android",
+    "cel",
+    "mechita",
+    "teléfono",
+    "telefono",
+    "garantía",
+    "garantia"
+  ],
+  "name": "COMPRAVENTA DE DISPOSITIVO MÓVIL NUEVO",
+  "PK": "CONT228a0edd-e3a0-4fa8-921c-a343e60bac64",
+  "price": 29900,
+  "relation1": "LATEST|ACTIVE|CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "relation2": "LATEST|2020-09-01",
+  "relation3": "LATEST|CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000007",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_comprador",
+    "cedula_comprador",
+    "cedulae_comprador",
+    "pasaporte_comprador",
+    "correo_comprador",
+    "telefono_comprador",
+    "nombre_empresa_comprador",
+    "identificacion_empresa_comprador",
+    "nombre_vendedor",
+    "cedula_vendedor",
+    "cedulae_vendedor",
+    "pasaporte_vendedor",
+    "correo_vendedor",
+    "telefono_vendedor",
+    "nombre_empresa_vendedor",
+    "identificacion_empresa_vendedor",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_comprador",
+      "identification": "cedula_comprador|cedulae_comprador|pasaporte_comprador",
+      "name": "nombre_comprador",
+      "type": "comprador"
+    },
+    {
+      "email": "correo_vendedor",
+      "identification": "cedula_vendedor|cedulae_vendedor|pasaporte_vendedor",
+      "name": "nombre_vendedor",
+      "type": "vendedor"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "compraventa-dispositivo-movil-nuevo",
+  "status": "ACTIVE",
+  "time": 6,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "6VpbmOLU6f0"
+}

@@ -1,0 +1,1940 @@
+{
+  "build": 2,
+  "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
+  "config": [
+    {
+      "description": "El comodante es",
+      "help": "comodante",
+      "name": "tipo_comodante",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que entrega el bien mueble en comodato"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que entrega el bien mueble en comodato"
+        }
+      ],
+      "help": "comodante",
+      "name": "nombre_comodante",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que entrega el bien mueble en comodato es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que entrega el bien mueble en comodato es:"
+        }
+      ],
+      "help": "comodante",
+      "name": "genero_comodante",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que entrega el bien mueble en comodato"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que entrega el bien mueble en comodato"
+        }
+      ],
+      "help": "comodante",
+      "name": "tipo_documento_comodante",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que entrega el bien mueble en comodato, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que entrega el bien mueble en comodato, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comodante",
+      "name": "cedula_comodante",
+      "prereq": [
+        {
+          "k": "tipo_documento_comodante",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que entrega el bien mueble en comodato, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que entrega el bien mueble en comodato, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comodante",
+      "name": "cedulae_comodante",
+      "prereq": [
+        {
+          "k": "tipo_documento_comodante",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que entrega el bien mueble en comodato, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que entrega el bien mueble en comodato, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comodante",
+      "name": "pasaporte_comodante",
+      "prereq": [
+        {
+          "k": "tipo_documento_comodante",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del comodante",
+      "help": "comodante",
+      "name": "ciudad_comodante",
+      "prereq": [
+        {
+          "k": "tipo_comodante",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que entrega el bien mueble en comodato",
+      "help": "comodante",
+      "name": "nombre_empresa_comodante",
+      "prereq": [
+        {
+          "k": "tipo_comodante",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que da el bien mueble en comodato, sin dígito de verificación ",
+      "help": "comodante",
+      "name": "identificacion_empresa_comodante",
+      "prereq": [
+        {
+          "k": "tipo_comodante",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que da el bien mueble en comodato",
+      "help": "comodante",
+      "name": "ciudad_empresa_comodante",
+      "prereq": [
+        {
+          "k": "tipo_comodante",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "El comodatario es",
+      "help": "comodatario",
+      "name": "tipo_comodatario",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que recibe el bien mueble en comodato"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que recibe el bien mueble en comodato"
+        }
+      ],
+      "help": "comodatario",
+      "name": "nombre_comodatario",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que recibe el bien mueble en comodato es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que recibe el bien mueble en comodato es:"
+        }
+      ],
+      "help": "comodatario",
+      "name": "genero_comodatario",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que recibe el bien mueble en comodato"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que recibe el bien mueble en comodato"
+        }
+      ],
+      "help": "comodatario",
+      "name": "tipo_documento_comodatario",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que recibe el bien mueble en comodato, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que recibe el bien mueble en comodato, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comodatario",
+      "name": "cedula_comodatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_comodatario",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que recibe el bien mueble en comodato, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que recibe el bien mueble en comodato, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comodatario",
+      "name": "cedulae_comodatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_comodatario",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que recibe el bien mueble en comodato, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que recibe el bien mueble en comodato, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comodatario",
+      "name": "pasaporte_comodatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_comodatario",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio de la parte comodataria",
+      "help": "comodatario",
+      "name": "ciudad_comodatario",
+      "prereq": [
+        {
+          "k": "tipo_comodatario",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que recibe el bien mueble en comodato",
+      "help": "comodatario",
+      "name": "nombre_empresa_comodatario",
+      "prereq": [
+        {
+          "k": "tipo_comodatario",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que recibe el bien mueble en comodato, sin dígito de verificación",
+      "help": "comodatario",
+      "name": "identificacion_empresa_comodatario",
+      "prereq": [
+        {
+          "k": "tipo_comodatario",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que recibe el bien mueble en comodato",
+      "help": "comodatario",
+      "name": "ciudad_empresa_comodatario",
+      "prereq": [
+        {
+          "k": "tipo_comodatario",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite detalladamente la descripción completa del bien mueble que entregará en comodato la parte comodante",
+      "help": "descripcion_mueble",
+      "name": "descripcion_mueble_1",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un segundo bien mueble en comodato?",
+      "help": "descripcion_mueble",
+      "name": "total_muebles_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite detalladamente la descripción completa del segundo bien mueble que entregará en comodato la parte comodante",
+      "help": "descripcion_mueble",
+      "name": "descripcion_mueble_2",
+      "prereq": [
+        {
+          "k": "total_muebles_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea entregar un tercer bien mueble en comodato?",
+      "help": "descripcion_mueble",
+      "name": "total_muebles_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "total_muebles_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite detalladamente la descripción completa del tercer bien mueble que entregará en comodato la parte comodante",
+      "help": "descripcion_mueble",
+      "name": "descripcion_mueble_3",
+      "prereq": [
+        {
+          "k": "total_muebles_2",
+          "v": "s"
+        },
+        {
+          "k": "total_muebles_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el plazo de días mínimo con el que se debe notificar la restitución del bien mueble",
+      "name": "dias_aviso",
+      "type": "number"
+    },
+    {
+      "description": "Digite el plazo de duración del contrato indicando si son días, años o meses",
+      "help": "duracionC",
+      "name": "duracion_contrato",
+      "type": "text"
+    },
+    {
+      "description": "Digite la fecha en que inicia el contrato",
+      "name": "fecha_inicio_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite la fecha en que termina el contrato.",
+      "name": "fecha_termino_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el uso que la persona que recibe el bien mueble en préstamo le podrá dar",
+      "help": "comodante",
+      "name": "uso_mueble_1",
+      "prereq": [
+        {
+          "k": "total_muebles_2",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el uso que la persona que recibe el primer bien mueble en préstamo le podrá dar",
+      "help": "comodante",
+      "name": "uso_mueble_1",
+      "prereq": [
+        {
+          "k": "total_muebles_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el uso que la persona que recibe el segundo bien mueble en préstamo le podrá dar",
+      "help": "comodante",
+      "name": "uso_mueble_2",
+      "prereq": [
+        {
+          "k": "total_muebles_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el uso que la persona que recibe el tercer bien mueble en préstamo le podrá dar",
+      "help": "comodante",
+      "name": "uso_mueble_3",
+      "prereq": [
+        {
+          "k": "total_muebles_2",
+          "v": "s"
+        },
+        {
+          "k": "total_muebles_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar otras obligaciones a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la obligación adicional de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "obligaciones_comodatario_1",
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "obligaciones_comodatario_2",
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "obligaciones_comodatario_3",
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "obligaciones_comodatario_4",
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "obligaciones_comodatario_5",
+      "prereq": [
+        {
+          "k": "comodatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones a la parte comodante?",
+      "help": "comodante",
+      "name": "comodante_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la obligación de la parte comodante que desea agregar",
+      "help": "comodante",
+      "name": "obligaciones_comodante_1",
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación a la parte comodante?",
+      "help": "comodante",
+      "name": "comodante_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación de la parte comodante que desea agregar",
+      "help": "comodante",
+      "name": "obligaciones_comodante_2",
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación a la parte comodante?",
+      "help": "comodante",
+      "name": "comodante_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación de la parte comodante que desea agregar",
+      "help": "comodante",
+      "name": "obligaciones_comodante_3",
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación a la parte comodante?",
+      "help": "comodante",
+      "name": "comodante_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación de la parte comodante que desea agregar",
+      "help": "comodante",
+      "name": "obligaciones_comodante_4",
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación a la parte comodante?",
+      "help": "comodante",
+      "name": "comodante_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación de la parte comodante que desea agregar",
+      "help": "comodante",
+      "name": "obligaciones_comodante_5",
+      "prereq": [
+        {
+          "k": "comodante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "comodante_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar prohibiciones a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_prohibiciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la prohibición de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "prohibiciones_comodatario_1",
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda prohibición a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_prohibiciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda prohibición de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "prohibiciones_comodatario_2",
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera prohibición a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_prohibiciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera prohibición de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "prohibiciones_comodatario_3",
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta prohibición a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_prohibiciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta prohibición de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "prohibiciones_comodatario_4",
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta prohibición a la parte comodataria?",
+      "help": "comodatario",
+      "name": "comodatario_prohibiciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta prohibición de la parte comodataria que desea agregar",
+      "help": "comodatario",
+      "name": "prohibiciones_comodatario_5",
+      "prereq": [
+        {
+          "k": "comodatario_prohibiciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_4",
+          "v": "s"
+        },
+        {
+          "k": "comodatario_prohibiciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "La entrega del bien mueble al comodatario se hará: ",
+      "help": "comodatario",
+      "name": "entrega_ahora",
+      "options": [
+        {
+          "name": "En fecha posterior a la firma del presente contrato",
+          "value": "n"
+        },
+        {
+          "name": "Ya se ha entregado",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Digite la fecha de entrega del inmuebele en comodato",
+      "name": "fecha_entrega",
+      "prereq": [
+        {
+          "k": "entrega_ahora",
+          "v": "n"
+        }
+      ],
+      "type": "date"
+    },
+    {
+      "description": "¿Desea agregar la cláusula penal?",
+      "name": "clausulas_penal",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Escriba el valor de la cláusula penal o multa por incumplimiento pactada por las partes",
+      "name": "multa_incumplimiento",
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_1",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde el representante legal de la empresa que entrega el bien mueble en comodato se notificará, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte que entrega el bien mueble en comodato se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "comodante",
+      "name": "direccion_comodante",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte que da el bien en comodato",
+      "help": "comodante",
+      "name": "telefono_comodante",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte que da el bien en comodato",
+      "help": "comodante",
+      "name": "correo_comodante",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde el representante legal de la empresa que recibe el bien mueble en comodato se notificará, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comodante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte que recibe el bien mueble en comodato se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "comodatario",
+      "name": "direccion_comodatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del parte que recibe el bien en comodato",
+      "help": "comodatario",
+      "name": "telefono_comodatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte que recibe el bien en comodato",
+      "help": "comodatario",
+      "name": "correo_comodatario",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2021-02-11",
+  "creationUser": "alejo",
+  "description": "Por medio del contrato de comodato precario de bien mueble, una parte entrega gratuitamente a la otra un bien mueble, para que esta la use, pero a diferencia del comodato ordinario, en el precario, la parte que entrega el bien mueble se reserva el derecho a pedir la restitución del mismo en cualquier momento.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Comodante: quien entrega el bien mueble.\n\n- Comodataria: quien recibe y disfruta el bien mueble.\n\n<b>EJEMPLO</b>\n\nJuan decide entregar a Pedro, su hijo, mediante un contrato de comodato precario de bien mueble, su carro para que este lo utilice para su transporte, con la condición de que cuando Juan decida que se le restituya, Pedro deberá hacerlo.",
+  "help": {
+    "comodante": "Comodante: Quien entrega el bien mueble en comodato",
+    "comodatario": "Comodatario: Quien recibe y disfruta el bien mueble en comodato",
+    "descripcion_mueble": "Ejemplo 1: Nissan Versa modelo 2020, color blanco perla, de placas ABC-123 de Cali \nEjemplo 2: Taladro percutor marca bosch de 1 y 1/2\", 650 Watts, 3150 rpm \nComodante: Quien entrega el bien mueble en comodato.",
+    "duracionC": "Ejemplo: 30 días, 6 meses, o 2 años"
+  },
+  "keywords": [
+    "gratis",
+    "préstamo",
+    "prestamo",
+    "entrega",
+    "confianza",
+    "recompensa",
+    "gratuito"
+  ],
+  "name": "CONTRATO DE COMODATO PRECARIO DE BIEN MUEBLE",
+  "PK": "CONT88340436-20b4-4518-8d96-a21853f59b81",
+  "price": 39900,
+  "relation1": "LATEST|ACTIVE|CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
+  "relation2": "LATEST|2021-02-11",
+  "relation3": "LATEST|CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_comodante",
+    "cedula_comodante",
+    "cedulae_comodante",
+    "pasaporte_comodante",
+    "correo_comodante",
+    "telefono_comodante",
+    "nombre_empresa_comodante",
+    "identificacion_empresa_comodante",
+    "nombre_comodatario",
+    "cedula_comodatario",
+    "cedulae_comodatario",
+    "pasaporte_comodatario",
+    "correo_comodatario",
+    "telefono_comodatario",
+    "nombre_empresa_comodatario",
+    "identificacion_empresa_comodatario",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_comodante",
+      "identification": "cedula_comodante|cedulae_comodante|pasaporte_comodante",
+      "name": "nombre_comodante",
+      "type": "comodante"
+    },
+    {
+      "email": "correo_comodatario",
+      "identification": "cedula_comodatario|cedulae_comodatario|pasaporte_comodatario",
+      "name": "nombre_comodatario",
+      "type": "comodatario"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "comodato-precario-bien-mueble",
+  "status": "ACTIVE",
+  "time": 7,
+  "timesUsed": 0,
+  "youtube": "SDUB_r_PnAQ"
+}

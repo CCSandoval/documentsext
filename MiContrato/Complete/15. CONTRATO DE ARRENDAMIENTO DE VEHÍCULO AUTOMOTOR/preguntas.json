@@ -1,0 +1,4135 @@
+{
+  "build": 2,
+  "category": "CATG8fb04fa5-1e87-48db-8e12-c11457c0f60e",
+  "config": [
+    {
+      "description": "El arrendador es",
+      "help": "arrendador",
+      "name": "tipo_arrendador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que entrega el vehículo automotor en arrendamiento"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que entrega el vehículo automotor en arrendamiento"
+        }
+      ],
+      "help": "arrendador",
+      "name": "nombre_arrendador",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que entrega el vehículo automotor en arrendamiento es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que entrega el vehículo automotor en arrendamiento es:"
+        }
+      ],
+      "help": "arrendador",
+      "name": "genero_arrendador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que entrega el vehículo automotor en arrendamiento"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que entrega el vehículo automotor en arrendamiento"
+        }
+      ],
+      "help": "arrendador",
+      "name": "tipo_documento_arrendador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que entrega el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que entrega el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendador",
+      "name": "cedula_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que entrega el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que entrega el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendador",
+      "name": "cedulae_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que entrega el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que entrega el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendador",
+      "name": "pasaporte_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del arrendador",
+      "help": "arrendador",
+      "name": "ciudad_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que da el vehículo automotor en arrendamiento",
+      "help": "arrendador",
+      "name": "nombre_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que da el vehículo automotor en arrendamiento, sin dígito de verificación",
+      "help": "arrendador",
+      "name": "identificacion_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que da el vehículo automotor en arrendamiento",
+      "help": "arrendador",
+      "name": "ciudad_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "El arrendatario es",
+      "help": "arrendatario",
+      "name": "tipo_arrendatario",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que recibe el vehículo automotor en arrendamiento"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que recibe el vehículo automotor en arrendamiento"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "nombre_arrendatario",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que recibe el vehículo automotor en arrendamiento es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que recibe el vehículo automotor en arrendamiento es:"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "genero_arrendatario",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que recibe el vehículo automotor en arrendamiento"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que recibe el vehículo automotor en arrendamiento"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "tipo_documento_arrendatario",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que recibe el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que recibe el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "cedula_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que recibe el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que recibe el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "cedulae_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que recibe el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que recibe el vehículo automotor en arrendamiento, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "pasaporte_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del arrendatario",
+      "help": "arrendatario",
+      "name": "ciudad_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que recibe el vehículo automotor en arrendamiento",
+      "help": "arrendatario",
+      "name": "nombre_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que recibe el vehículo automotor en arrendamiento, sin dígito de verificación",
+      "help": "arrendatario",
+      "name": "identificacion_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que recibe el vehículo automotor en arrendamiento",
+      "help": "arrendatario",
+      "name": "ciudad_empresa_arrendatario",
+      "prereq": [
+        {
+          "k": "tipo_arrendatario",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la placa del vehículo",
+      "help": "placa",
+      "name": "placa_vehiculo_1",
+      "type": "name"
+    },
+    {
+      "description": "Digite la marca del vehículo",
+      "help": "marca",
+      "name": "marca_vehiculo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite la línea del vehículo",
+      "help": "linea",
+      "name": "linea_vehiculo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el modelo del vehículo",
+      "help": "modelo",
+      "name": "modelo_vehiculo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del vehículo",
+      "help": "color",
+      "name": "color_vehiculo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el cilindraje del vehículo",
+      "help": "cilindraje",
+      "name": "cilindraje_vehiculo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el tipo de combustible del vehículo",
+      "help": "combustible",
+      "name": "combustible_vehiculo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite la clase del vehículo",
+      "help": "clase",
+      "name": "clase_vehiculo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite la capacidad del vehículo",
+      "help": "capacidad",
+      "name": "capacidad_vehiculo_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número del motor del vehículo",
+      "help": "numero_motor",
+      "name": "numero_motor_vehiculo_1",
+      "type": "name"
+    },
+    {
+      "description": "Digite el número de chasis del vehículo",
+      "help": "chasis",
+      "name": "numero_chasis_vehiculo_1",
+      "type": "name"
+    },
+    {
+      "description": "Digite el número de puertas del vehículo",
+      "help": "numero_puertas",
+      "name": "numero_puertas_vehiculo_1",
+      "type": "number"
+    },
+    {
+      "description": "Seleccione el tipo de servicio que prestará el vehículo automotor",
+      "help": "servicio",
+      "name": "servicio_1",
+      "options": [
+        {
+          "name": "Particular",
+          "value": "pa"
+        },
+        {
+          "name": "Público de pasajeros",
+          "value": "pu"
+        }
+      ],
+      "type": "clausula",
+      "value": "pa"
+    },
+    {
+      "description": "¿Desea agregar un segundo vehículo automotor?",
+      "name": "tot_vehiculos_2",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la placa del segundo vehículo",
+      "help": "placa",
+      "name": "placa_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite la marca del segundo vehículo",
+      "help": "marca",
+      "name": "marca_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la línea del segundo vehículo",
+      "help": "linea",
+      "name": "linea_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el modelo del segundo vehículo",
+      "help": "modelo",
+      "name": "modelo_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del segundo vehículo",
+      "help": "color",
+      "name": "color_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el cilindraje del segundo vehículo",
+      "help": "cilindraje",
+      "name": "cilindraje_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el tipo de combustible del segundo vehículo",
+      "help": "combustible",
+      "name": "combustible_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la clase del segundo vehículo",
+      "help": "clase",
+      "name": "clase_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la capacidad del segundo vehículo",
+      "help": "capacidad",
+      "name": "capacidad_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número del motor del segundo vehículo",
+      "help": "numero_motor",
+      "name": "numero_motor_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el número de chasis del segundo vehículo",
+      "help": "chasis",
+      "name": "numero_chasis_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el número de puertas del segundo vehículo",
+      "help": "numero_puertas",
+      "name": "numero_puertas_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Seleccione el tipo de servicio que prestará el segundo vehículo automotor",
+      "help": "servicio",
+      "name": "servicio_2",
+      "options": [
+        {
+          "name": "Particular",
+          "value": "pa"
+        },
+        {
+          "name": "Público de pasajeros",
+          "value": "pu"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "pa"
+    },
+    {
+      "description": "¿Desea agregar un tercer vehículo automotor?",
+      "name": "tot_vehiculos_3",
+      "options": [
+        {
+          "name": "Si",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la placa del tercer vehículo",
+      "help": "placa",
+      "name": "placa_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite la marca del tercer vehículo",
+      "help": "marca",
+      "name": "marca_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la línea del tercer vehículo",
+      "help": "linea",
+      "name": "linea_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el modelo del tercer vehículo",
+      "help": "modelo",
+      "name": "modelo_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del tercer vehículo",
+      "help": "color",
+      "name": "color_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el cilindraje del tercer vehículo",
+      "help": "cilindraje",
+      "name": "cilindraje_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el tipo de combustible del tercer vehículo",
+      "help": "combustible",
+      "name": "combustible_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la clase del tercer vehículo",
+      "help": "clase",
+      "name": "clase_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la capacidad del tercer vehículo",
+      "help": "capacidad",
+      "name": "capacidad_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número del motor del tercer vehículo",
+      "help": "numero_motor",
+      "name": "numero_motor_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el número de chasis del tercer vehículo",
+      "help": "chasis",
+      "name": "numero_chasis_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el número de puertas del tercer vehículo",
+      "help": "numero_puertas",
+      "name": "numero_puertas_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Seleccione el tipo de servicio que prestará el tercer vehículo automotor",
+      "help": "servicio",
+      "name": "servicio_3",
+      "options": [
+        {
+          "name": "Particular",
+          "value": "pa"
+        },
+        {
+          "name": "Público de pasajeros",
+          "value": "pu"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "pa"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el valor de arrendamiento del primer vehículo"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el valor del arrendamiento del vehículo"
+        }
+      ],
+      "help": "precio_vehiculo",
+      "name": "precio_vehiculo_1",
+      "type": "currency"
+    },
+    {
+      "description": "Digite el valor de arrendamiento del segundo vehículo",
+      "help": "precio_vehiculo",
+      "name": "precio_vehiculo_2",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Digite el valor de arrendamiento del tercer vehículo",
+      "help": "precio_vehiculo",
+      "name": "precio_vehiculo_3",
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_3",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "El pago se hará de manera:",
+      "name": "periodicidad_pago",
+      "options": [
+        {
+          "name": "Anticipada",
+          "value": "a"
+        },
+        {
+          "name": "Periodo vencido",
+          "value": "v"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "Seleccione la periodicidad en la que se pagará el arrendamiento del vehículo automotor",
+      "help": "pago",
+      "name": "pago",
+      "options": [
+        {
+          "name": "Único pago",
+          "value": "u"
+        },
+        {
+          "name": "Pago periódico",
+          "value": "r"
+        }
+      ],
+      "type": "clausula",
+      "value": "u"
+    },
+    {
+      "description": "Seleccione el día en que se deberá hacer el pago del canon de arrendamiento del vehículo automotor",
+      "help": "dia_pagou",
+      "name": "dia_pagou",
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "u"
+        }
+      ],
+      "type": "date"
+    },
+    {
+      "description": "Seleccione con que periodicidad va a realizar el pago de los cánones de arrendamiento del vehículo automotor",
+      "help": "periodo_p",
+      "name": "periodo_p",
+      "options": [
+        {
+          "name": "Semanal",
+          "value": "s"
+        },
+        {
+          "name": "Mensual",
+          "value": "m"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "r"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Seleccione el día de la semana en que se deberá realizar a más tardar cada pago del canon de arrendamiento del vehículo automotor",
+      "help": "periodo_p",
+      "name": "dia_semana",
+      "options": [
+        {
+          "label": " lunes,",
+          "name": "Lunes",
+          "value": "l"
+        },
+        {
+          "label": " martes,",
+          "name": "Martes",
+          "value": "m"
+        },
+        {
+          "label": " miercoles,",
+          "name": "Miercoles",
+          "value": "w"
+        },
+        {
+          "label": " jueves,",
+          "name": "Jueves",
+          "value": "j"
+        },
+        {
+          "label": " viernes,",
+          "name": "Viernes",
+          "value": "v"
+        },
+        {
+          "label": " sabado,",
+          "name": "Sabado",
+          "value": "s"
+        },
+        {
+          "label": " domingo,",
+          "name": "Domingo",
+          "value": "d"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "r"
+        },
+        {
+          "k": "periodo_p",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "l"
+    },
+    {
+      "description": "Digite en números el día del mes en que se deberá realizar a más tardar cada pago del canon de arrendamiento del vehículo automotor",
+      "name": "dia_pagor",
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "r"
+        },
+        {
+          "k": "periodo_p",
+          "v": "m"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "El arrendamiento se realizará:",
+      "name": "tipo_arrendamiento",
+      "options": [
+        {
+          "name": "Mediante depósito en cuenta bancaria",
+          "value": "c"
+        },
+        {
+          "name": "Mediante pago en efectivo",
+          "value": "e"
+        }
+      ],
+      "type": "clausula",
+      "value": "c"
+    },
+    {
+      "description": "La cuenta es tipo:",
+      "name": "cuenta_tipo",
+      "options": [
+        {
+          "name": "Corriente",
+          "value": "c"
+        },
+        {
+          "name": "Ahorro",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "Digite el número de la cuenta bancaria donde se hará el pago del arrendamiento",
+      "name": "numero_cuenta_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el banco al que pertenece la cuenta bancaria",
+      "name": "banco_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre del titular de la cuenta bancaria en la cual se va a realizar el pago del arrendamiento",
+      "name": "nombre_cuenta_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre del municipio donde se realizará el pago del arrendamiento",
+      "name": "lugar_pago",
+      "prereq": [
+        {
+          "k": "tipo_arrendamiento",
+          "v": "e"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Los intereses por la mora en el pago del arrendamiento se cobraran según:",
+      "name": "interes_mora",
+      "options": [
+        {
+          "name": "Lo establecido por la Superintendencia Financiera de Colombia",
+          "value": "s"
+        },
+        {
+          "name": "Un valor definido por las partes",
+          "value": "c"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Seleccione el porcentaje de los intereses en mora",
+      "name": "intereses_pago",
+      "options": [
+        {
+          "label": "0.5% (CERO PUNTO CINCO PORCIENTO)",
+          "name": "0.5%",
+          "value": "05"
+        },
+        {
+          "label": "1.0% (UNO PORCIENTO)",
+          "name": "1.0%",
+          "value": "10"
+        },
+        {
+          "label": "1.5% (UNO PUNTO CINCO PORCIENTO)",
+          "name": "1.5%",
+          "value": "15"
+        },
+        {
+          "label": "2.0% (DOS PORCIENTO)",
+          "name": "2.0%",
+          "value": "20"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "interes_mora",
+          "v": "c"
+        }
+      ],
+      "type": "select",
+      "value": "05"
+    },
+    {
+      "description": "¿Cuál es el término de duración del contrato? Digitelo en números, posteriormente escogerá si es en días, semanas o meses",
+      "name": "duracion_contrato",
+      "type": "number"
+    },
+    {
+      "description": "Seleccione si el término de duración del contrato digitado anteriormente en números es en días, meses o años",
+      "help": "duracion_tiempo",
+      "name": "duracion_tiempo",
+      "options": [
+        {
+          "label": "día, contado",
+          "name": "día",
+          "value": "d"
+        },
+        {
+          "label": "días, contados",
+          "name": "días",
+          "value": "ds"
+        },
+        {
+          "label": "semana, contada",
+          "name": "semana",
+          "value": "s"
+        },
+        {
+          "label": "semanas, contadas",
+          "name": "semanas",
+          "value": "ss"
+        },
+        {
+          "label": "mes, contado",
+          "name": "mes",
+          "value": "m"
+        },
+        {
+          "label": "meses, contados",
+          "name": "meses",
+          "value": "ms"
+        }
+      ],
+      "type": "select",
+      "value": "ds"
+    },
+    {
+      "description": "seleccione la fecha de inicio del contrato",
+      "help": "fecha_inicio_contrato",
+      "name": "fecha_inicio_contrato",
+      "type": "date"
+    },
+    {
+      "description": "seleccione la fecha de terminación del contrato",
+      "help": "fecha_terminacion_contrato",
+      "name": "fecha_terminacion_contrato",
+      "type": "date"
+    },
+    {
+      "description": "¿Desea que el contrato sea prórrogado por un periodo igual al pactado inicialmente?",
+      "name": "prorroga",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite en números los días de anticipación en los cuales se deberá notificar a la otra parte su intención de no prorrogar el contrato de arrendamiento de vehículo automotor",
+      "name": "dias_renovacion_auto",
+      "prereq": [
+        {
+          "k": "prorroga",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Desea realizar un reajuste del precio en caso de renovación del contrato?",
+      "name": "reajuste",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "prorroga",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite en números el porcentaje del incremento del canon de arrendamiento del vehículo automotor",
+      "name": "incremento_fijo",
+      "prereq": [
+        {
+          "k": "prorroga",
+          "v": "s"
+        },
+        {
+          "k": "reajuste",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que se encuentra autorizada para conducir los vehículos automotores"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que se encuentra autorizada para conducir el vehículo automotor"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "nombre_conductor_1",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que se encuentra autorizada para conducir los vehículos automotores"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que se encuentra autorizada para conducir el vehículo automotor"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tipo_documento_conductor_1",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedula_conductor_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_1",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedulae_conductor_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_1",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "pasaporte_conductor_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_1",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "¿Desea agregar un segundo conductor autorizado para los vehículos automotores?"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "¿Desea agregar un segundo conductor autorizado para el vehículo automotor?"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tot_conductor_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Si",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el nombre completo de la segunda persona que se encuentra autorizada para conducir los vehículos automotores"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la segunda persona que se encuentra autorizada para conducir el vehículo automotor"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "nombre_conductor_2",
+      "prereq": [
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la segunda persona que se encuentra autorizada para conducir los vehículos automotores"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la segunda persona que se encuentra autorizada para conducir el vehículo automotor"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tipo_documento_conductor_2",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la segunda persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la segunda persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedula_conductor_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_2",
+          "v": "cc"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la segunda persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la segunda persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedulae_conductor_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_2",
+          "v": "ce"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la segunda persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la segunda persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "pasaporte_conductor_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_2",
+          "v": "pa"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "¿Desea agregar un tercer conductor autorizado para los vehículos automotores?"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "¿Desea agregar un tercer conductor autorizado para el vehículo automotor?"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tot_conductor_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Si",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el nombre completo de la tercera persona que se encuentra autorizada para conducir los vehículos automotores"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la tercera persona que se encuentra autorizada para conducir el vehículo automotor"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "nombre_conductor_3",
+      "prereq": [
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la tercera persona que se encuentra autorizada para conducir los vehículos automotores"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la tercera persona que se encuentra autorizada para conducir el vehículo automotor"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tipo_documento_conductor_3",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la tercera persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la tercera persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedula_conductor_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_3",
+          "v": "cc"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la tercera persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la tercera persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedulae_conductor_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_3",
+          "v": "ce"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la tercera persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la tercera persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "pasaporte_conductor_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_3",
+          "v": "pa"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "¿Desea agregar un cuarto conductor autorizado para los vehículos automotores?"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "¿Desea agregar un cuarto conductor autorizado para el vehículo automotor?"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tot_conductor_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el nombre completo de la cuarta persona que se encuentra autorizada para conducir los vehículos automotores"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la cuarta persona que se encuentra autorizada para conducir el vehículo automotor"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "nombre_conductor_4",
+      "prereq": [
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la cuarta persona que se encuentra autorizada para conducir los vehículos automotores"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la cuarta persona que se encuentra autorizada para conducir el vehículo automotor"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "tipo_documento_conductor_4",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la cuarta persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la cuarta persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedula_conductor_4",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_4",
+          "v": "cc"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la cuarta persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la cuarta persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "cedulae_conductor_4",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_4",
+          "v": "ce"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "s"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la cuarta persona que se encuentra autorizada para conducir los vehículos automotores, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tot_vehiculos_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la cuarta persona que se encuentra autorizada para conducir el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "conductor_autorizado",
+      "name": "pasaporte_conductor_4",
+      "prereq": [
+        {
+          "k": "tipo_documento_conductor_4",
+          "v": "pa"
+        },
+        {
+          "k": "tot_conductor_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_conductor_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿A cargo de que parte estará el pago de la revisión Ténico Mecánica del vehículo automotor?",
+      "help": "arrendador_arrendatario",
+      "name": "pago_tecno_arrendatario",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "n"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿A cargo de que parte estará el pago de la revisión Técnico Mecánica de los vehículos automotores?",
+      "help": "arrendador_arrendatario",
+      "name": "pago_tecno_arrendatario",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "n"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿A cargo de que parte estará el pago del SOAT de los vehículos automotores?",
+      "help": "arrendador_arrendatario",
+      "name": "pago_soat_arrendatario",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "n"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿A cargo de que parte estará el pago del SOAT del vehículo automotor?",
+      "help": "arrendador_arrendatario",
+      "name": "pago_soat_arrendatario",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "n"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿A cargo de que parte estará el pago del impuesto vehicular?",
+      "help": "arrendador_arrendatario",
+      "name": "pago_impu_arrendatario",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "n"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿A cargo de que parte estará el pago de los impuestos vehiculares?",
+      "help": "arrendador_arrendatario",
+      "name": "pago_impu_arrendatario",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "n"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿A cargo de que parte estará la responsabilidad de tener el kit de carretera del vehículo automotor al día?",
+      "help": "arrendador_arrendatario",
+      "name": "pago_kit_arrendatario",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "n"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿A cargo de que parte estará la responsabilidad de tener el kit de carretera de los vehículos automotores al día?",
+      "help": "arrendador_arrendatario",
+      "name": "pago_kit_arrendatario",
+      "options": [
+        {
+          "name": "La parte arrendadora",
+          "value": "n"
+        },
+        {
+          "name": "La parte arrendataria",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Desea agregar obligaciones adicionales a la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_1",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación adicional de la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_2",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación adicional de la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_3",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación adicional de la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_4",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación adicional de la parte arrendataria?",
+      "help": "arrendatario",
+      "name": "arrendatario_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte arrendataria que desea agregar",
+      "help": "arrendatario",
+      "name": "obligaciones_arrendatario_5",
+      "prereq": [
+        {
+          "k": "arrendatario_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones adicionales a la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_1",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación adicional de la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_2",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación adicional de la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_3",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación adicional de la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_4",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación adicional de la parte arrendadora?",
+      "help": "arrendador",
+      "name": "arrendador_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte arrendadora que desea agregar",
+      "help": "arrendador",
+      "name": "obligaciones_arrendador_5",
+      "prereq": [
+        {
+          "k": "arrendador_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar otras prohíbiciones a la persona que recibe el vehículo automotor en arrendamiento?",
+      "help": "arrendatario",
+      "name": "otras_prohibiciones",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite otras prohibiciones a la persona que recibe el vehículo automotor en arrendamiento",
+      "help": "arrendatario",
+      "name": "prohibiciones_extras",
+      "prereq": [
+        {
+          "k": "otras_prohibiciones",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿La parte arrendataria va a ofrecer garantías para el cumplimiento de sus obligaciones?",
+      "help": "fiador_codeudor",
+      "name": "uso_respaldo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿El arrendatario va a respaldar sus obligaciones con?",
+      "help": "fiador_codeudor",
+      "name": "respaldo",
+      "options": [
+        {
+          "name": "Fiador",
+          "value": "f"
+        },
+        {
+          "name": "Codeudor o coarrendatario",
+          "value": "c"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "f"
+    },
+    {
+      "description": "El fiador o codeudor es",
+      "help": "fiador_codeudor",
+      "name": "tipo_respaldo",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que actúa como codeudor o fiador"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que actúa como codeudor o fiador"
+        }
+      ],
+      "help": "fiador_codeudor",
+      "name": "nombre_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que actúa como codeudor o fiador es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que actúa como codeudor o fiador es:"
+        }
+      ],
+      "help": "fiador_codeudor",
+      "name": "genero_respaldo",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que actúa como codeudor o fiador"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que actúa como codeudor o fiador"
+        }
+      ],
+      "help": "respaldo",
+      "name": "tipo_documento_respaldo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "respaldo",
+      "name": "cedula_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_documento_respaldo",
+          "v": "cc"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "respaldo",
+      "name": "cedulae_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_documento_respaldo",
+          "v": "ce"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que actúa como codeudor o fiador, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "respaldo",
+      "name": "pasaporte_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_documento_respaldo",
+          "v": "pa"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del fiador o codeudor",
+      "help": "respaldo",
+      "name": "ciudad_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "n"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que actúa como codeudor o fiador",
+      "help": "respaldo",
+      "name": "nombre_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que actúa como codeudor o fiador, sin dígito de verificación",
+      "help": "respaldo",
+      "name": "identificacion_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que actúa como codeudor o fiador",
+      "help": "respaldo",
+      "name": "ciudad_empresa_respaldo",
+      "prereq": [
+        {
+          "k": "tipo_respaldo",
+          "v": "j"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "El arrendatario constituirá un codeudor o fiador y",
+      "help": "respaldo",
+      "name": "garantias_clausula",
+      "options": [
+        {
+          "name": "Pagará depósito en efectivo",
+          "value": "cd"
+        },
+        {
+          "name": "No pagará depósito",
+          "value": "sd"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "sd"
+    },
+    {
+      "description": "Digite el valor adicional al pago del primer mes, que dejará en depósito la persona que recibe el vehículo automotor en arrendamiento",
+      "name": "valor_deposito",
+      "prereq": [
+        {
+          "k": "garantias_clausula",
+          "v": "cd"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        },
+        {
+          "k": "tot_vehiculos_2",
+          "v": "n"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Digite el valor adicional al pago del primer mes, que dejará en depósito la persona que recibe los vehículos automotores en arrendamiento",
+      "name": "valor_deposito",
+      "prereq": [
+        {
+          "k": "garantias_clausula",
+          "v": "cd"
+        },
+        {
+          "k": "tot_vehiculos_2",
+          "v": "s"
+        },
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿Desea agregar cláusula penal?",
+      "help": "clausula_penal",
+      "name": "clausulas_penal",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "La cláusula penal es aplicable a",
+      "help": "arrendador_arrendatario",
+      "name": "penal_clausula",
+      "options": [
+        {
+          "name": "La parte arrendataria",
+          "value": "a"
+        },
+        {
+          "name": "Ambas partes",
+          "value": "t"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "La cláusula penal por incuplimiento se pagará",
+      "help": "clausula_penal",
+      "name": "clausula_penal",
+      "options": [
+        {
+          "name": "un valor fijo",
+          "value": "f"
+        },
+        {
+          "name": "Número de canones mensuales",
+          "value": "c"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "f"
+    },
+    {
+      "description": "¿cuál es el valor de la multa de incumplimiento?",
+      "help": "clausula_penal",
+      "name": "multa_incumplimiento_f",
+      "prereq": [
+        {
+          "k": "clausula_penal",
+          "v": "f"
+        },
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "Seleccione el valor de la multa de incumplimiento en canones mensuales",
+      "help": "clausula_penal",
+      "name": "multa_incumplimiento_c",
+      "options": [
+        {
+          "label": "0.5 (CERO PUNTO CINCO) cánones mensuales de arrendamiento,",
+          "name": "0.5",
+          "value": "05"
+        },
+        {
+          "label": "1.0 (UN) cánon mensuales de arrendamiento,",
+          "name": "1.0",
+          "value": "10"
+        },
+        {
+          "label": "1.5 (UNO PUNTO CINCO) cánones mensuales de arrendamiento,",
+          "name": "1.5",
+          "value": "15"
+        },
+        {
+          "label": "2.0 (DOS) cánones mensuales de arrendamiento,",
+          "name": "2.0",
+          "value": "20"
+        },
+        {
+          "label": "2.5 (DOS PUNTO CINCO) cánones mensuales de arrendamiento,",
+          "name": "2.5",
+          "value": "25"
+        },
+        {
+          "label": "3.0 (TRES) cánones mensuales de arrendamiento,",
+          "name": "3.0",
+          "value": "30"
+        },
+        {
+          "label": "3.5 (TRES PUNTO CINCO) cánones mensuales de arrendamiento,",
+          "name": "3.5",
+          "value": "35"
+        },
+        {
+          "label": "4.0 (CUATRO) cánones mensuales de arrendamiento,",
+          "name": "4.0",
+          "value": "40"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausula_penal",
+          "v": "c"
+        },
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "select",
+      "value": "05"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_1",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },    
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que entrega el vehículo automotor en arrendamiento, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la parte que entrega el vehículo automotor en arrendamiento, indicando la ciudad"
+        }
+      ],
+      "help": "arrendador",
+      "name": "direccion_arrendador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la pare arrendadora",
+      "help": "arrendador",
+      "name": "telefono_arrendador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte arrendadora",
+      "help": "arrendador",
+      "name": "correo_arrendador",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que recibe el vehículo automotor en arrendamiento, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_arrendatario",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la parte que recibe el vehículo automotor en arrendamiento, indicando la ciudad"
+        }
+      ],
+      "help": "arrendatario",
+      "name": "direccion_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la pare arrendataria",
+      "help": "arrendatario",
+      "name": "telefono_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte arrendataria",
+      "help": "arrendatario",
+      "name": "correo_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que actúa como codeudor o fiador, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_respaldo",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la parte que actúa como codeudor o fiador, indicando la ciudad"
+        }
+      ],
+      "help": "respaldo",
+      "name": "direccion_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la pare coarrendataria o fiadora",
+      "help": "respaldo",
+      "name": "telefono_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte coarrendataria o fiadora",
+      "help": "respaldo",
+      "name": "correo_respaldo",
+      "prereq": [
+        {
+          "k": "uso_respaldo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2021-01-22",
+  "creationUser": "alejo",
+  "description": "Por medio de este contrato, una de las partes concede a la otra, por determinado tiempo, el goce de un vehículo automotor cuyo uso se hará según lo pactado entre las partes, y, en virtud de esto, la otra parte deberá pagar un precio determinado que es conocido habitualmente como canon de arrendamiento.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Arrendador: Es la parte que da en arrendamiento y proporciona el goce del vehículo automotor.\n\n- Arrendatario: Es la parte que recibe el vehículo automotor en arrendamiento y disfruta del goce del mismo.\n\n<b>EJEMPLO</b>\n\n Juan decide conceder el goce de su vehículo automotor tipo camioneta, para que Pedro, turista que acaba de llegar a la ciudad, pueda desplazarse y conocer los sitios turísticos de la misma, por lo cual este último, por el periodo de dos(2) meses, y pagando un canon de arrendamiento semanal correspondiente a $800.000, celebra un contrato de arrendamiento de vehículo automotor con Juan.",
+  "help": {
+    "arrendador": "Arrendador: Es la parte que arrienda y proporciona el goce del vehículo automotor.",
+    "arrendador_arrendatario": "Arrendador: Es la parte que arrienda y proporciona el goce del vehículo automotor. \nArrendatario: Es la parte que recibe el vehículo automotor en arrendamiento y disfruta del goce del mismo.",
+    "arrendatario": "Arrendatario: Es la parte que recibe el vehículo automotor en arrendamiento y disfruta del goce del mismo.",
+    "capacidad": "Capacidad: 5 pasajeros",
+    "chasis": "Número de chasis: 4M3F5IJYZL252630",
+    "cilindraje": "Cilindraje: 2.000 c.c.",
+    "clase": "Clase de vehículo: Camioneta",
+    "clausula_penal": "Cláusula penal: Por medio de la cláusula penal, se busca asegurar el cumplimiento de las obligaciones contractuales pactadas, al establecerse una posible sanción, generalmente en dinero, para la parte que desconozca sus deberes contractuales.\nArrendador: Es la parte que arrienda y proporciona el goce del vehículo automotor. \nArrendatario: Es la parte que recibe el vehículo automotor en arrendamiento y disfruta del goce del mismo.",
+    "color": "Color: Blanco perlado.",
+    "combustible": "Combustible: Gasolina",
+    "conductor_autorizado": "Las personas que indique como autorizadas para la conducción, serán las únicas facultadas para conducir el vehículo. Dichas personas deberán ser mayores de edad, deberán contar con licencia de conducción vigente y no deberán tener ningún impedimento para realizar esta actividad.",
+    "dia_pagou": "Ejemplo: Se pagará el valor del arrendamiento del vehículo el día 24 de agosto del 2021",
+    "duracion_tiempo": "Ejemplo: 1 día, 2 días, 1 mes, 6 meses, 1 semana, 7 semanas.",
+    "fecha_inicio_contrato": "Fecha de inicio del contrato: A partir de cuando se le concederá el goce del vehículo automotor a la parte arrendataria.",
+    "fecha_terminacion_contrato": "Fecha de terminación del contrato: A partir de cuando terminará el goce del vehículo automotor por la parte arrendataria.",
+    "fiador_codeudor": "El fiador es un garante de las obligaciones del arrendatario (deudor), pero con algunas diferencias respecto al codeudor: 1. Beneficio de excusión: el fiador puede exigir que se le cobre primero al deudor, y que para ello primero se embarguen y secuestren bienes del deudor, y solo en caso de que este no tenga bienes o estos sean insuficientes para pagar las obligaciones, se le podrá hacer el cobro al fiador. 2. Beneficio de división: es un derecho del fiador, de solicitar que, toda vez que la obligación no es solidaria, se divida entre él y el deudor principal. 3. Solidaridad: el fiador NO ES solidario; el codeudor SÍ LO ES, y por ello, el fiador goza de los dos anteriores derechos. 4. Renovación: cuando se es codeudor, y el contrato se renueva automáticamente al final del término de vigencia, se renueva automáticamente también la obligación del codeudor, pero cuando se es fiador, no se renueva.",
+    "linea": "Linea: CX-5",
+    "marca": "Marca: MAZDA",
+    "modelo": "Modelo: 2014",
+    "numero_motor": "Número del motor: PE30578000",
+    "numero_puertas": "Número de puertas: 5",
+    "pago": "Definir si se va a pagar el arrendamiento del vehículo mediante un único pago, o, mediante pagos periódicos que podrán ser semanales o mensuales.",
+    "periodo_p": "Ejemplo 1: Se pagará el canon de arrendamiento semanal, a más tardar los viernes de cada semana. \nEjemplo 2: Se pagará el canon de arrendamiento mensual, a más tardar el día 30 de cada mes.",
+    "placa": "Placa: XXX000",
+    "precio_vehiculo": "Recuerde que aquí se digita UNICAMENTE el precio de arrendamiento, posteriormente se preguntará la periodicidad del mismo",
+    "respaldo": "El fiador es un garante de las obligaciones del arrendatario (deudor), pero con algunas diferencias respecto al codeudor: 1. Beneficio de excusión: el fiador puede exigir que se le cobre primero al deudor, y que para ello primero se embarguen y secuestren bienes del deudor, y solo en caso de que este no tenga bienes o estos sean insuficientes para pagar las obligaciones, se le podrá hacer el cobro al fiador. 2. Beneficio de división: es un derecho del fiador, de solicitar que, toda vez que la obligación no es solidaria, se divida entre él y el deudor principal. 3. Solidaridad: el fiador NO ES solidario; el codeudor SÍ LO ES, y por ello, el fiador goza de los dos anteriores derechos. 4. Renovación: cuando se es codeudor, y el contrato se renueva automáticamente al final del término de vigencia, se renueva automáticamente también la obligación del codeudor, pero cuando se es fiador, no se renueva.",
+    "servicio": "Definir si es de servicio particular (Placa amarilla) o de servicio público (Placa blanca)."
+  },
+  "keywords": [
+    "alquiler",
+    "uber",
+    "didi",
+    "rappi",
+    "cabify",
+    "taxi",
+    "liquidar",
+    "indriver",
+    "tapsi",
+    "picap",
+    "carro",
+    "automóvil",
+    "camioneta",
+    "campero"
+  ],
+  "name": "CONTRATO DE ARRENDAMIENTO DE VEHÍCULO AUTOMOTOR",
+  "PK": "CONT35c2bdce-aa56-4be2-aa20-78e009389676",
+  "price": 29900,
+  "relation1": "LATEST|ACTIVE|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "relation2": "LATEST|2021-01-22",
+  "relation3": "LATEST|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_arrendador",
+    "cedula_arrendador",
+    "cedulae_arrendador",
+    "pasaporte_arrendador",
+    "correo_arrendador",
+    "telefono_arrendador",
+    "nombre_empresa_arrendador",
+    "identificacion_empresa_arrendador",
+    "nombre_arrendatario",
+    "cedula_arrendatario",
+    "cedulae_arrendatario",
+    "pasaporte_arrendatario",
+    "correo_arrendatario",
+    "telefono_arrendatario",
+    "nombre_empresa_arrendatario",
+    "identificacion_empresa_arrendatario",
+    "nombre_respaldo",
+    "cedula_respaldo",
+    "cedulae_respaldo",
+    "pasaporte_respaldo",
+    "correo_respaldo",
+    "telefono_respaldo",
+    "nombre_empresa_respaldo",
+    "identificacion_empresa_respaldo",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_arrendador",
+      "identification": "cedula_arrendador|cedulae_arrendador|pasaporte_arrendador",
+      "name": "nombre_arrendador",
+      "type": "arrendador"
+    },
+    {
+      "email": "correo_arrendatario",
+      "identification": "cedula_arrendatario|cedulae_arrendatario|pasaporte_arrendatario",
+      "name": "nombre_arrendatario",
+      "type": "arrendatario"
+    },
+    {
+      "email": "correo_respaldo",
+      "identification": "cedula_respaldo|cedulae_respaldo|pasaporte_respaldo",
+      "name": "nombre_respaldo",
+      "type": "respaldo"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "arrendamiento-vehiculo-automotor",
+  "status": "ACTIVE",
+  "time": 10,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo"
+}

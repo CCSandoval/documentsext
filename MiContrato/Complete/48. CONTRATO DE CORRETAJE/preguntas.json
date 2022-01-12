@@ -1,0 +1,2305 @@
+{
+  "build": 4,
+  "category": "CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "config": [
+    {
+      "description": "El comitente es",
+      "help": "comitente",
+      "name": "tipo_comitente",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa comitente"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona comitente"
+        }
+      ],
+      "help": "comitente",
+      "name": "nombre_comitente",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa comitente es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte comitente es:"
+        }
+      ],
+      "help": "comitente",
+      "name": "genero_comitente",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa comitente"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona comitente"
+        }
+      ],
+      "help": "comitente",
+      "name": "tipo_documento_comitente",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa comitente, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte comitente, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comitente",
+      "name": "cedula_comitente",
+      "prereq": [
+        {
+          "k": "tipo_documento_comitente",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa comitente, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte comitente, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comitente",
+      "name": "cedulae_comitente",
+      "prereq": [
+        {
+          "k": "tipo_documento_comitente",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa comitente, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte comitente, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comitente",
+      "name": "pasaporte_comitente",
+      "prereq": [
+        {
+          "k": "tipo_documento_comitente",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del comitente",
+      "help": "comitente",
+      "name": "ciudad_comitente",
+      "prereq": [
+        {
+          "k": "tipo_comitente",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa comitente",
+      "help": "comitente",
+      "name": "nombre_empresa_comitente",
+      "prereq": [
+        {
+          "k": "tipo_comitente",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa comitente, sin dígito de verificación",
+      "help": "comitente",
+      "name": "identificacion_empresa_comitente",
+      "prereq": [
+        {
+          "k": "tipo_comitente",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa comitente",
+      "help": "comitente",
+      "name": "ciudad_empresa_comitente",
+      "prereq": [
+        {
+          "k": "tipo_comitente",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "El corredor es",
+      "help": "corredor",
+      "name": "tipo_corredor",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa corredora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona corredora"
+        }
+      ],
+      "help": "corredor",
+      "name": "nombre_corredor",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa corredora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte corredora es:"
+        }
+      ],
+      "help": "corredor",
+      "name": "genero_corredor",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa corredora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona corredora"
+        }
+      ],
+      "help": "corredor",
+      "name": "tipo_documento_corredor",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa corredora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte corredora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "corredor",
+      "name": "cedula_corredor",
+      "prereq": [
+        {
+          "k": "tipo_documento_corredor",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa corredora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte corredora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "corredor",
+      "name": "cedulae_corredor",
+      "prereq": [
+        {
+          "k": "tipo_documento_corredor",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa corredora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte corredora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "corredor",
+      "name": "pasaporte_corredor",
+      "prereq": [
+        {
+          "k": "tipo_documento_corredor",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio de la parte corredora",
+      "help": "corredor",
+      "name": "ciudad_corredor",
+      "prereq": [
+        {
+          "k": "tipo_corredor",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa corredora",
+      "help": "corredor",
+      "name": "nombre_empresa_corredor",
+      "prereq": [
+        {
+          "k": "tipo_corredor",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa corredora, sin dígito de verificación",
+      "help": "corredor",
+      "name": "identificacion_empresa_corredor",
+      "prereq": [
+        {
+          "k": "tipo_corredor",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa corredora",
+      "help": "corredor",
+      "name": "ciudad_empresa_corredor",
+      "prereq": [
+        {
+          "k": "tipo_corredor",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Describa en detalle el tipo de negocio que se pretende realizar, y en el cual la parte corredora va a ser intermediaria",
+      "help": "descripcion_negocio",
+      "name": "descripcion_negocio",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones a la parte corredora?",
+      "help": "corredor",
+      "name": "corredor_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la obligación de la parte corredora que desea agregar",
+      "help": "corredor",
+      "name": "obligaciones_corredor_1",
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación a la parte corredora?",
+      "help": "corredor",
+      "name": "corredor_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación de la parte corredora que desea agregar",
+      "help": "corredor",
+      "name": "obligaciones_corredor_2",
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación a la parte corredora?",
+      "help": "corredor",
+      "name": "corredor_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación de la parte corredora que desea agregar",
+      "help": "corredor",
+      "name": "obligaciones_corredor_3",
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación a la parte corredora?",
+      "help": "corredor",
+      "name": "corredor_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación de la parte corredora que desea agregar",
+      "help": "corredor",
+      "name": "obligaciones_corredor_4",
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación a la parte corredora?",
+      "help": "corredor",
+      "name": "corredor_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación de la parte corredora que desea agregar",
+      "help": "corredor",
+      "name": "obligaciones_corredor_5",
+      "prereq": [
+        {
+          "k": "corredor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "corredor_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones a la parte comitente?",
+      "help": "comitente",
+      "name": "comitente_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la obligación de la parte comitente que desea agregar",
+      "help": "comitente",
+      "name": "obligaciones_comitente_1",
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación a la parte comitente?",
+      "help": "comitente",
+      "name": "comitente_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación de la parte comitente que desea agregar",
+      "help": "comitente",
+      "name": "obligaciones_comitente_2",
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación a la parte comitente?",
+      "help": "comitente",
+      "name": "comitente_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación de la parte comitente que desea agregar",
+      "help": "comitente",
+      "name": "obligaciones_comitente_3",
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación a la parte comitente?",
+      "help": "comitente",
+      "name": "comitente_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación de la parte comitente que desea agregar",
+      "help": "comitente",
+      "name": "obligaciones_comitente_4",
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación a la parte comitente?",
+      "help": "comitente",
+      "name": "comitente_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación de la parte comitente que desea agregar",
+      "help": "comitente",
+      "name": "obligaciones_comitente_5",
+      "prereq": [
+        {
+          "k": "comitente_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "comitente_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la forma de pago de los gastos en que incurra el corredor:",
+      "name": "gastos",
+      "options": [
+        {
+          "name": "Serán asumidos por la parte comitente",
+          "value": "pr"
+        },
+        {
+          "name": "Serán asumidos por la parte corredora",
+          "value": "co"
+        },
+        {
+          "name": "Serán asumidos por un tercero",
+          "value": "te"
+        }
+      ],
+      "type": "clausula",
+      "value": "pr"
+    },
+    {
+      "description": "El tercero que asumira los gastos es",
+      "help": "tercero_g",
+      "name": "tipo_tercero_g",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa tercera que asumira los gastos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona tercera que asumira los gastos"
+        }
+      ],
+      "help": "tercero_g",
+      "name": "nombre_tercero_g",
+      "prereq": [
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa tercera que asumira los gastos es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte tercera que asumira los gastos es:"
+        }
+      ],
+      "help": "tercero_g",
+      "name": "genero_tercero_g",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa tercera que asumira los gastos"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona tercera que asumira los gastos"
+        }
+      ],
+      "help": "tercero_g",
+      "name": "tipo_documento_tercero_g",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa tercera que asumira los gastos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte tercera que asumira los gastos, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "tercero_g",
+      "name": "cedula_tercero_g",
+      "prereq": [
+        {
+          "k": "tipo_documento_tercero_g",
+          "v": "cc"
+        },
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa tercera que asumira los gastos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte tercera que asumira los gastos, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "tercero_g",
+      "name": "cedulae_tercero_g",
+      "prereq": [
+        {
+          "k": "tipo_documento_tercero_g",
+          "v": "ce"
+        },
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa tercera que asumira los gastos, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_g",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte tercera que asumira los gastos, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "tercero_g",
+      "name": "pasaporte_tercero_g",
+      "prereq": [
+        {
+          "k": "tipo_documento_tercero_g",
+          "v": "pa"
+        },
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio de la parte tercera que asumira los gastos",
+      "help": "tercero_g",
+      "name": "ciudad_tercero_g",
+      "prereq": [
+        {
+          "k": "tipo_tercero_g",
+          "v": "n"
+        },
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa tercera que asumira los gastos",
+      "help": "tercero_g",
+      "name": "nombre_empresa_tercero_g",
+      "prereq": [
+        {
+          "k": "tipo_tercero_g",
+          "v": "j"
+        },
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa tercera que asumira los gastos, sin dígito de verificación",
+      "help": "tercero_g",
+      "name": "identificacion_empresa_tercero_g",
+      "prereq": [
+        {
+          "k": "tipo_tercero_g",
+          "v": "j"
+        },
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa tercera que asumira los gastos",
+      "help": "tercero_g",
+      "name": "ciudad_empresa_tercero_g",
+      "prereq": [
+        {
+          "k": "tipo_tercero_g",
+          "v": "j"
+        },
+        {
+          "k": "gastos",
+          "v": "te"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la manera en la que desea pactar la remuneración de la parte corredora:",
+      "name": "remuneracion",
+      "options": [
+        {
+          "name": "Un valor fijo",
+          "value": "f"
+        },
+        {
+          "name": "Un porcentaje del negocio jurídico a realizar",
+          "value": "p"
+        }
+      ],
+      "type": "clausula",
+      "value": "f"
+    },
+    {
+      "description": "Digite en números la suma que se pagará al corredor por su intermediación",
+      "name": "valor_remuneracion",
+      "prereq": [
+        {
+          "k": "remuneracion",
+          "v": "f"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite en números el porcentaje correspondiente que se pagará al corredor por su intermediación",
+      "help": "remuneracion",
+      "name": "porcentaje_remuneracion",
+      "prereq": [
+        {
+          "k": "remuneracion",
+          "v": "p"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione quién pagará la remuneración de la parte corredora:",
+      "name": "pago_remuneracion",
+      "options": [
+        {
+          "name": "La parte comitente",
+          "value": "pr"
+        },
+        {
+          "name": "Un Tercero",
+          "value": "te"
+        }
+      ],
+      "type": "clausula",
+      "value": "pr"
+    },
+    {
+      "description": "El tercero que pagará la remuneración a la parte corredora es:",
+      "help": "tercero_r",
+      "name": "tipo_tercero_r",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa tercera que pagará la remuneración a la parte corredora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona tercera que pagará la remuneración a la parte corredora"
+        }
+      ],
+      "help": "tercero_r",
+      "name": "nombre_tercero_r",
+      "prereq": [
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa tercera que pagará la remuneración a la parte corredora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte tercera que pagará la remuneración a la parte corredora es:"
+        }
+      ],
+      "help": "tercero_r",
+      "name": "genero_tercero_r",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa tercera que pagará la remuneración a la parte corredora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona tercera que pagará la remuneración a la parte corredora"
+        }
+      ],
+      "help": "tercero_r",
+      "name": "tipo_documento_tercero_r",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa tercera que pagará la remuneración a la parte corredora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte tercera que pagará la remuneración a la parte corredora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "tercero_r",
+      "name": "cedula_tercero_r",
+      "prereq": [
+        {
+          "k": "tipo_documento_tercero_r",
+          "v": "cc"
+        },
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa tercera que pagará la remuneración a la parte corredora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte tercera que pagará la remuneración a la parte corredora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "tercero_r",
+      "name": "cedulae_tercero_r",
+      "prereq": [
+        {
+          "k": "tipo_documento_tercero_r",
+          "v": "ce"
+        },
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa tercera que pagará la remuneración a la parte corredora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_tercero_r",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte tercera que pagará la remuneración a la parte corredora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "tercero_r",
+      "name": "pasaporte_tercero_r",
+      "prereq": [
+        {
+          "k": "tipo_documento_tercero_r",
+          "v": "pa"
+        },
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio de la parte tercera que pagará la remuneración a la parte corredora",
+      "help": "tercero_r",
+      "name": "ciudad_tercero_r",
+      "prereq": [
+        {
+          "k": "tipo_tercero_r",
+          "v": "n"
+        },
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa tercera que pagará la remuneración a la parte corredora",
+      "help": "tercero_r",
+      "name": "nombre_empresa_tercero_r",
+      "prereq": [
+        {
+          "k": "tipo_tercero_r",
+          "v": "j"
+        },
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa tercera que pagará la remuneración a la parte corredora, sin dígito de verificación",
+      "help": "tercero_r",
+      "name": "identificacion_empresa_tercero_r",
+      "prereq": [
+        {
+          "k": "tipo_tercero_r",
+          "v": "j"
+        },
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa tercera que pagará la remuneración a la parte corredora",
+      "help": "tercero_r",
+      "name": "ciudad_empresa_tercero_r",
+      "prereq": [
+        {
+          "k": "tipo_tercero_r",
+          "v": "j"
+        },
+        {
+          "k": "pago_remuneracion",
+          "v": "te"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Desea pactar una clausula de exclusividad para el corredor",
+      "help": "exclusividad",
+      "name": "exclusividad",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "¿Por cuanto tiempo desea pactar la exclusividad de la parte corredora?",
+      "name": "tiempo_exlusividad",
+      "options": [
+        {
+          "name": "Por un periodo fijo y determinado",
+          "value": "f"
+        },
+        {
+          "name": "De manera indefinida",
+          "value": "i"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "exclusividad",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "f"
+    },
+    {
+      "description": "Digite el número de meses",
+      "name": "meses_exlusividad",
+      "prereq": [
+        {
+          "k": "exclusividad",
+          "v": "s"
+        },
+        {
+          "k": "tiempo_exlusividad",
+          "v": "f"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Seleccione la fecha de inicio de la exclusividad del presente contrato",
+      "name": "inicio_exlusividad",
+      "prereq": [
+        {
+          "k": "exclusividad",
+          "v": "s"
+        },
+        {
+          "k": "tiempo_exlusividad",
+          "v": "f"
+        }
+      ],
+      "type": "date"
+    },
+    {
+      "description": "Seleccione la fecha de terminación de la exclusividad del presente contrato",
+      "name": "fin_exclusividad",
+      "prereq": [
+        {
+          "k": "exclusividad",
+          "v": "s"
+        },
+        {
+          "k": "tiempo_exlusividad",
+          "v": "f"
+        }
+      ],
+      "type": "date"
+    },
+    {
+      "description": "Digite el número de días de anticipación con que una parte deberá advertirle a la otra la terminación unilateral del contrato.",
+      "name": "terminacion_corretaje",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_1",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa comitente, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comitente",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte comitente se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "comitente",
+      "name": "direccion_comitente",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte comitente",
+      "help": "comitente",
+      "name": "telefono_comitente",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte comitente",
+      "help": "comitente",
+      "name": "correo_comitente",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la la dirección completa donde se notificará a la empresa corredora, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_corredor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección donde la parte corredora se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "corredor",
+      "name": "direccion_corredor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte corredora",
+      "help": "corredor",
+      "name": "telefono_corredor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte corredora",
+      "help": "corredor",
+      "name": "correo_corredor",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-11-19",
+  "creationUser": "alejo",
+  "description": "Contrato por medio del cual, una parte llamada comitente o interesado, contrata con otra llamada corredor, para que esta última intermedie en la realización de un negocio jurídico.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Corredor: Es el nombre jurídico con el que se define a la persona intermediaria en la realización de un negocio. \n\n- Comitente: Es la persona interesada en realizar el negocio en el cual el corredor va a servir de intermediario.\n\n<b>EJEMPLO</b>\n\nMaria celebra un contrato de corretaje con la inmobiliaria Linderos SAS, para que esta intermedie en la venta de un inmueble de su propiedad, a cambio de una comisión equivalente al 3% del precio de venta.",
+  "help": {
+    "comitente": "Comitente: Es la persona interesada en realizar el negocio en el cual el corredor va a servir de intermediario. \nEjemplo: Es comitente el propietario del inmueble que vende un comisionista.",
+    "corredor": "Corredor: Es el nombre jurídico con el que se define a la persona intermediaria en la realización de un negocio. \nEjemplo: Es corredor el comisionista en la venta de bienes raices, es corredor el vendedor de seguros.",
+    "descripcion_negocio": "Ejemplo: Compra y venta del inmueble ubicado en la carrera quinta #5-16 del munucipio de envigado.",
+    "exclusividad": "Si se pacta clausula de exclusividad para la parte corredora significa que solo ella podrá intermediar en la negociación y que no habrá otros corredores intermediando en el mismo negocio. \nEjemplo: Maria celebra un contrato de corretaje con la inmobiliaria Linderos SAS, para que esta intermedie en la venta de un inmueble de su propiedad. Pactan una clausula de exclusividad, de manera que ni terceros, ni particulares, ni otras inmobiliarias, podrán adelantar la promoción y venta del inmueble.",
+    "remuneracion": "En Colombia no existe norma que regule el porcentaje de remuneración de un corredor, sin embargo, es costumbre mercantil remunerarlo con un 3% cuando intermedia con la venta de bienes urbanos, y con un 5% cuando intermedia con la venta de bienes rurales. No obstante, prevalecerá siempre lo que pacten las partes, pudiendo fijar un porcentaje superior o inferior, o inclusive podrán fijar el pago de un valor fijo.",
+    "tercero_g": "Tercero: Es cualquier persona diferente a las partes que esté obligado a asumir los gastos de la parte corredora.",
+    "tercero_r": "Tercero: Es cualquier persona diferente a las partes que esté obligado a realizar el pago \nEjemplo: Puede ser un tercero el comprador de la casa que vende un comisionista."
+  },
+  "keywords": [
+    "comisionista",
+    "corredor",
+    "negocio",
+    "negociación",
+    "negociacion",
+    "intercambio",
+    "unir",
+    "juntar",
+    "vender",
+    "presentar"
+  ],
+  "name": "CONTRATO DE CORRETAJE",
+  "PK": "CONTe85b28f7-824d-496a-9b88-88ccfdf863ad",
+  "price": 29900,
+  "relation1": "LATEST|ACTIVE|CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "relation2": "LATEST|2020-11-19",
+  "relation3": "LATEST|CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000012",
+  "sign": [
+    "nombre_comitente",
+    "cedula_comitente",
+    "cedulae_comitente",
+    "pasaporte_comitente",
+    "correo_comitente",
+    "telefono_comitente",
+    "nombre_empresa_comitente",
+    "identificacion_empresa_comitente",
+    "nombre_corredor",
+    "cedula_corredor",
+    "cedulae_corredor",
+    "pasaporte_corredor",
+    "correo_corredor",
+    "telefono_corredor",
+    "nombre_empresa_corredor",
+    "identificacion_empresa_corredor",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_comitente",
+      "identification": "cedula_comitente|cedulae_comitente|pasaporte_comitente",
+      "name": "nombre_comitente",
+      "type": "comitente"
+    },
+    {
+      "email": "correo_corredor",
+      "identification": "cedula_corredor|cedulae_corredor|pasaporte_corredor",
+      "name": "nombre_corredor",
+      "type": "corredor"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "SK": "VERS1",
+  "slug": "corretaje",
+  "status": "ACTIVE",
+  "time": 10,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "2W3pAsV47nk"
+}

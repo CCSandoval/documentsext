@@ -1,0 +1,1908 @@
+{
+  "build": 3,
+  "category": "CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "config": [
+    {
+      "description": "El comprador es",
+      "help": "comprador",
+      "name": "tipo_comprador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa compradora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona compradora"
+        }
+      ],
+      "help": "comprador",
+      "name": "nombre_comprador",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa compradora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte compradora es:"
+        }
+      ],
+      "help": "comprador",
+      "name": "genero_comprador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa compradora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona compradora"
+        }
+      ],
+      "help": "comprador",
+      "name": "tipo_documento_comprador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa compradora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte compradora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "cedula_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa compradora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte compradora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "cedulae_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa compradora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte compradora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "pasaporte_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte compradora",
+      "help": "comprador",
+      "name": "ciudad_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actua como compradora",
+      "help": "comprador",
+      "name": "nombre_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa compradora",
+      "help": "comprador",
+      "name": "ciudad_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa compradora, sin dígito de verificación",
+      "help": "comprador",
+      "name": "identificacion_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "El proveedor es",
+      "help": "proveedor",
+      "name": "tipo_proveedor",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa proveedora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona proveedora"
+        }
+      ],
+      "help": "proveedor",
+      "name": "nombre_proveedor",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa proveedora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte proveedora es:"
+        }
+      ],
+      "help": "proveedor",
+      "name": "genero_proveedor",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa proveedora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona proveedora"
+        }
+      ],
+      "help": "proveedor",
+      "name": "tipo_documento_proveedor",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa proveedora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte proveedora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "proveedor",
+      "name": "cedula_proveedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_proveedor",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa proveedora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte proveedora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "proveedor",
+      "name": "cedulae_proveedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_proveedor",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa proveedora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte proveedora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "proveedor",
+      "name": "pasaporte_proveedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_proveedor",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte proveedora",
+      "help": "proveedor",
+      "name": "ciudad_proveedor",
+      "prereq": [
+        {
+          "k": "tipo_proveedor",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa  o persona jurídica que actua como proveedora",
+      "help": "proveedor",
+      "name": "nombre_empresa_proveedor",
+      "prereq": [
+        {
+          "k": "tipo_proveedor",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa proveedora",
+      "help": "proveedor",
+      "name": "ciudad_empresa_proveedor",
+      "prereq": [
+        {
+          "k": "tipo_proveedor",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa proveedora, sin dígito de verificación",
+      "help": "proveedor",
+      "name": "identificacion_empresa_proveedor",
+      "prereq": [
+        {
+          "k": "tipo_proveedor",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Describa el primer producto que se va a suministrar",
+      "name": "descripcion_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite las unidades que se van a suministrar del primer producto",
+      "help": "unidades",
+      "name": "unidades_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite en números la cantidad de unidades que se van a a suministrar del primer producto",
+      "name": "cantidad_1",
+      "type": "number"
+    },
+    {
+      "description": "Digite el valor por cada unidad del primer producto que se va a suministrar",
+      "name": "valor_u_1",
+      "type": "number"
+    },
+    {
+      "description": "Digite el valor total del primer producto que se van a suministrar, es el valor resultante de multiplicar el valor de unitario por el total de unidades",
+      "name": "valor_t_1",
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar un segundo producto a suministrar?",
+      "name": "tabla_productos_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Describa el segundo producto que se va a suministrar",
+      "name": "descripcion_2",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite las unidades que se van a suministrar del segundo producto",
+      "help": "unidades",
+      "name": "unidades_2",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite en números la cantidad de unidades que se van a a suministrar del segundo producto",
+      "name": "cantidad_2",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el valor por cada unidad del segundo producto que se va a suministrar",
+      "name": "valor_u_2",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el valor total del segundo producto que se van a suministrar, es el valor resultante de multiplicar el valor de unitario por el total de unidades",
+      "name": "valor_t_2",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+
+    {
+      "description": "¿Desea agregar un tercer producto a suministrar?",
+      "name": "tabla_productos_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Describa el tercer producto que se va a suministrar",
+      "name": "descripcion_3",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        },
+        {
+          "k": "tabla_productos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite las unidades que se van a suministrar del tercer producto",
+      "help": "unidades",
+      "name": "unidades_3",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        },
+        {
+          "k": "tabla_productos_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite en números la cantidad de unidades que se van a a suministrar del tercer producto",
+      "name": "cantidad_3",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        },
+        {
+          "k": "tabla_productos_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el valor por cada unidad del tercer producto que se va a suministrar",
+      "name": "valor_u_3",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        },
+        {
+          "k": "tabla_productos_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el valor total del tercer producto que se van a suministrar, es el valor resultante de multiplicar el valor de unitario por el total de unidades",
+      "name": "valor_t_3",
+      "prereq": [
+        {
+          "k": "tabla_productos_2",
+          "v": "s"
+        },
+        {
+          "k": "tabla_productos_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Los bienes que se van a suministrar están grabados con IVA?",
+      "name": "iva",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "El contrato se va a pactar en",
+      "name": "vigencia_plazos",
+      "options": [
+        {
+          "name": "Días",
+          "value": "d"
+        },
+        {
+          "name": "Meses",
+          "value": "m"
+        }
+      ],
+      "type": "clausula",
+      "value": "d"
+    },
+    {
+      "description": "Digite el número de días por el cual se va a pactar el presente contrato",
+      "name": "dias_plazos",
+      "prereq": [
+        {
+          "k": "vigencia_plazos",
+          "v": "d"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de meses por el cual se va a pactar el presente contrato",
+      "name": "meses_plazos",
+      "prereq": [
+        {
+          "k": "vigencia_plazos",
+          "v": "m"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que se da inicio el presente contrato",
+      "name": "fecha_inicio_plazo",
+      "type": "date"
+    },
+    {
+      "description": "Seleccione la fecha en la que se da terminación el presente contrato",
+      "name": "fecha_final_plazo",
+      "type": "date"
+    },
+    {
+      "description": "Digite en días el plazo para el pago de la factura después de aceptada la misma",
+      "name": "plazo_pago_facturado",
+      "type": "number"
+    },
+    {
+      "description": "¿La parte proveedora entregará muestras de producto para fines publicitarios, de entrenamiento y demás?",
+      "name": "muestras_producto",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿La parte proveedora entregará material publicitario de los productos a suministrar?",
+      "name": "material_publicitario",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Desea agregar otras obligaciones a cargo de la parte proveedora?",
+      "help": "proveedor",
+      "name": "proveedor_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte proveedora que desea agregar",
+      "name": "obligaciones_proveedor_1",
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación a cargo de la parte proveedora?",
+      "help": "proveedor",
+      "name": "proveedor_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte proveedora que desea agregar",
+      "name": "obligaciones_proveedor_2",
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación a cargo de la parte proveedora?",
+      "help": "proveedor",
+      "name": "proveedor_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte proveedora que desea agregar",
+      "name": "obligaciones_proveedor_3",
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación a cargo de la parte proveedora?",
+      "help": "proveedor",
+      "name": "proveedor_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte proveedora que desea agregar",
+      "name": "obligaciones_proveedor_4",
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación a cargo de la parte proveedora?",
+      "help": "proveedor",
+      "name": "proveedor_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte proveedora que desea agregar",
+      "name": "obligaciones_proveedor_5",
+      "prereq": [
+        {
+          "k": "proveedor_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "proveedor_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar otras obligaciones a cargo de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte compradora que desea agregar",
+      "name": "obligaciones_comprador_1",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación a cargo de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte compradora que desea agregar",
+      "name": "obligaciones_comprador_2",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación a cargo de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte compradora que desea agregar",
+      "name": "obligaciones_comprador_3",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación a cargo de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte compradora que desea agregar",
+      "name": "obligaciones_comprador_4",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación a cargo de la parte compradora?",
+      "help": "comprador",
+      "name": "comprador_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte compradora que desea agregar",
+      "name": "obligaciones_comprador_5",
+      "prereq": [
+        {
+          "k": "comprador_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "comprador_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de días después de la fecha de entrega en que se deberá notificar a la parte proveedora los defectos de las mercancías",
+      "name": "dias_devolucion",
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de meses por los cuales se extiende la garantía de los bienes suministrados",
+      "name": "meses_garantia",
+      "type": "number"
+    },
+    {
+      "description": "¿Alguno de los bienes suministrados es consumible?",
+      "help": "bienes_consumibles",
+      "name": "bienes_consumibles",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Si",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione la parte que deberá pagar los fletes y seguros",
+      "name": "pago_fletes",
+      "options": [
+        {
+          "name": "La parte proveedora",
+          "value": "p"
+        },
+        {
+          "name": "La parte compradora",
+          "value": "c"
+        }
+      ],
+      "type": "clausula",
+      "value": "p"
+    },
+    {
+      "description": "Digite el número de días de anticipación con que una parte debe avisarle a otra su intención de dar por terminado el contrato",
+      "name": "dias_terminacion",
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar cláusula penal?",
+      "name": "clausulas_penal",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite en números sin puntos y sin comas el valor de la multa de incumplimiento",
+      "name": "multa_incumplimiento_f",
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿Desea agregar una clausula de preferencia al proveedor? Es decir que en caso de que a futuro la parte compradora desee adquirir los mismos productos, deberá hacerlo con este mismo proveedor",
+      "name": "clausula_preferencia",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el número de meses por los cuales se extenderá el derecho de preferencia de la parte proveedora. Tenga en cuenta que no puede ser superior a 12 meses",
+      "name": "meses_preferencia",
+      "prereq": [
+        {
+          "k": "clausula_preferencia",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de días con que cuenta la parte proveedora para decir si acepta el derecho de preferencia y se obliga a suministrar los bienes",
+      "name": "dias_respuesta",
+      "prereq": [
+        {
+          "k": "clausula_preferencia",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_1",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio donde se firma el presente contrato",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la cual se firma el presente contrato",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa compradora, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte compradora se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "comprador",
+      "name": "direccion_comprador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte compradora",
+      "help": "comprador",
+      "name": "telefono_comprador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte compradora",
+      "help": "comprador",
+      "name": "correo_comprador",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa proveedora, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_proveedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte proveedora se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "proveedor",
+      "name": "direccion_proveedor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la parte proveedora",
+      "help": "proveedor",
+      "name": "telefono_proveedor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte proveedora",
+      "help": "proveedor",
+      "name": "correo_proveedor",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-12-27",
+  "creationUser": "alejo",
+  "description": "En el contrato de suministros una parte, a la que llamamos proveedora, se compromete a suministrarle a otra parte, que llamamos compradora, de forma periódica o continua, unos bienes o unos servicios determinados.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Proveedor: Es la parte que obliga a suministrar los bienes a la parte compradora.\n\n- Comprador: Es la parte que adquiere los bienes que se suministran y se obliga a pagarlos.\n\n<b>EJEMPLO</b>\n\n El señor Carlos Morales suscribe con la empresa importaciones S.A.S. un contrato de suministro de tapabocas N-95. Con este contrato, importaciones S.A.S. se obliga a suministrarle por el periodo de un año un número máximo de diez millones (10.000.000) de tapabocas que serán facturados y pagados mensualmente, según el pedido que haga el señor Morales, quien deberá pagar el precio acordado y en el plazo fijado después de emitida la factura.",
+  "help": {
+    "bienes_consumibles": "Son bienes consumibles, aquellos que se agotan con un único uso, por ejemplo: un banano, un yogurt, un pan.",
+    "comprador": "Comprador: Es la parte que adquiere los bienes que se suministran y se obliga a pagarlos.",
+    "proveedor": "Proveedor: Es la parte que obliga a suministrar los bienes a la parte compradora.",
+    "unidades": "Identifique si son unidades, kilogramos, metros cubicos, metros, metros cuadrados"
+  },
+  "keywords": [
+    "proveedor",
+    "mercancía",
+    "mercancia",
+    "abastecimiento",
+    "tienda",
+    "mercado",
+    "surtido",
+    "entrega"
+  ],
+  "name": "CONTRATO DE SUMINISTRO DE BIENES",
+  "PK": "CONT1807fa7c-84ce-40b2-a12f-e0d293cff823",
+  "price": 49900,
+  "relation1": "LATEST|ACTIVE|CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "relation2": "LATEST|2020-12-27",
+  "relation3": "LATEST|CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_comprador",
+    "cedula_comprador",
+    "cedulae_comprador",
+    "pasaporte_comprador",
+    "correo_comprador",
+    "telefono_comprador",
+    "nombre_empresa_comprador",
+    "identificacion_empresa_comprador",
+    "nombre_proveedor",
+    "cedula_proveedor",
+    "cedulae_proveedor",
+    "pasaporte_proveedor",
+    "correo_proveedor",
+    "telefono_proveedor",
+    "nombre_empresa_proveedor",
+    "identificacion_empresa_proveedor",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_comprador",
+      "identification": "cedula_comprador|cedulae_comprador|pasaporte_comprador",
+      "name": "nombre_comprador",
+      "type": "comprador"
+    },
+    {
+      "email": "correo_proveedor",
+      "identification": "cedula_proveedor|cedulae_proveedor|pasaporte_proveedor",
+      "name": "nombre_proveedor",
+      "type": "proveedor"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "suministro-de-bienes",
+  "status": "ACTIVE",
+  "time": 7,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo"
+}

@@ -1,0 +1,1370 @@
+{
+  "build": 4,
+  "category": "CATG0affe21f-8a25-4849-9203-f9d3c3df5e7d",
+  "config": [
+    {
+      "description": "El comprador es",
+      "help": "comprador",
+      "name": "tipo_comprador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que comprará el vehículo automotor"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que comprará el vehículo automotor"
+        }
+      ],
+      "help": "comprador",
+      "name": "nombre_comprador",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que comprará el vehículo automotor es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que comprará el vehículo automotor es:"
+        }
+      ],
+      "help": "comprador",
+      "name": "genero_comprador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que comprará el vehículo automotor"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que comprará el vehículo automotor"
+        }
+      ],
+      "help": "comprador",
+      "name": "tipo_documento_comprador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que comprará el vehículo automotor, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que comprará el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "cedula_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que comprará el vehículo automotor, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que comprará el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "cedulae_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que comprará el vehículo automotor, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que comprará el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "comprador",
+      "name": "pasaporte_comprador",
+      "prereq": [
+        {
+          "k": "tipo_documento_comprador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte compradora",
+      "help": "comprador",
+      "name": "ciudad_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actúa como compradora",
+      "help": "comprador",
+      "name": "nombre_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa compradora",
+      "help": "comprador",
+      "name": "ciudad_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa compradora, sin dígito de verificación",
+      "help": "comprador",
+      "name": "identificacion_empresa_comprador",
+      "prereq": [
+        {
+          "k": "tipo_comprador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "El vendedor es",
+      "help": "vendedor",
+      "name": "tipo_vendedor",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa que venderá el vehículo automotor"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona que venderá el vehículo automotor"
+        }
+      ],
+      "help": "vendedor",
+      "name": "nombre_vendedor",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa que venderá el vehículo automotor es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte que venderá el vehículo automotor es:"
+        }
+      ],
+      "help": "vendedor",
+      "name": "genero_vendedor",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa que venderá el vehículo automotor"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona que venderá el vehículo automotor"
+        }
+      ],
+      "help": "vendedor",
+      "name": "tipo_documento_vendedor",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa que venderá el vehículo automotor, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte que venderá el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "vendedor",
+      "name": "cedula_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_vendedor",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa que venderá el vehículo automotor, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte que venderá el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "vendedor",
+      "name": "cedulae_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_vendedor",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa que venderá el vehículo automotor, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte que venderá el vehículo automotor, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "vendedor",
+      "name": "pasaporte_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_documento_vendedor",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte vendedora",
+      "help": "vendedor",
+      "name": "ciudad_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_vendedor",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa  o persona jurídica que actúa como vendedora",
+      "help": "vendedor",
+      "name": "nombre_empresa_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_vendedor",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa vendedora",
+      "help": "vendedor",
+      "name": "ciudad_empresa_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_vendedor",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa vendedora, sin dígito de verificación",
+      "help": "vendedor",
+      "name": "identificacion_empresa_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_vendedor",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite la placa del vehículo",
+      "help": "placa",
+      "name": "placa_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite la marca del vehículo",
+      "help": "marca",
+      "name": "marca_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite la línea del vehículo",
+      "help": "linea",
+      "name": "linea_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite el modelo del vehículo",
+      "help": "modelo",
+      "name": "modelo_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite el color del vehículo",
+      "help": "color",
+      "name": "color_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite el cilindraje del vehículo",
+      "help": "cilindraje",
+      "name": "cilindraje_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite el tipo de combustible del vehículo",
+      "help": "combustible",
+      "name": "combustible_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite la clase del vehículo",
+      "help": "clase",
+      "name": "clase_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite la capacidad del vehículo",
+      "help": "capacidad",
+      "name": "capacidad_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite el servicio del vehículo",
+      "help": "servicio",
+      "name": "servicio_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número del motor del vehículo",
+      "help": "numero_motor",
+      "name": "numero_motor_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de chasis del vehículo",
+      "name": "numero_chasis_vehiculo",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de puertas del vehículo",
+      "help": "numero_puertas",
+      "name": "numero_puertas_vehiculo",
+      "type": "number"
+    },
+    {
+      "description": "Digite el precio del vehículo",
+      "name": "precio_vehiculo",
+      "type": "currency"
+    },
+    {
+      "description": "El pago se realizará",
+      "name": "pago",
+      "options": [
+        {
+          "name": "Al momento del traspaso",
+          "value": "t"
+        },
+        {
+          "name": "Una parte con la firma del contrato de compraventa y otra parte con el traspaso",
+          "value": "a"
+        },
+        {
+          "name": "De otra manera",
+          "value": "o"
+        }
+      ],
+      "type": "clausula",
+      "value": "t"
+    },
+    {
+      "description": "Ingrese el porcentaje de pago anticipado",
+      "name": "porcentaje_pago_anticipado",
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "a"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Ingrese el porcentaje de pago restado",
+      "name": "porcentaje_pago_restante",
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "a"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite otra forma de pago. Recuerde que el contenido y la eficacia que sea por usted redactado, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "otra_forma_pago",
+      "prereq": [
+        {
+          "k": "pago",
+          "v": "o"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "La forma de pago se realizará de la siguiente manera:",
+      "name": "tipo_venta",
+      "options": [
+        {
+          "name": "Mediante depósito en cuenta bancaria",
+          "value": "c"
+        },
+        {
+          "name": "Mediante pago en efectivo",
+          "value": "e"
+        },
+        {
+          "name": "Otra forma de pago",
+          "value": "o"
+        }
+      ],
+      "type": "clausula",
+      "value": "c"
+    },
+    {
+      "description": "La cuenta es tipo:",
+      "name": "cuenta_tipo",
+      "options": [
+        {
+          "name": "Corriente",
+          "value": "c"
+        },
+        {
+          "name": "Ahorro",
+          "value": "a"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "c"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "Digite el número de la cuenta bancaria donde se hará el pago del vehículo automotor",
+      "help": "vendedor",
+      "name": "numero_cuenta_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "c"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el banco al que pertenece la cuenta bancaria",
+      "help": "vendedor",
+      "name": "banco_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre del titular de la cuenta bancaria en la cual se va a realizar el pago del vehículo automotor",
+      "name": "nombre_cuenta_vendedor",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "c"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre del municipio y dirección donde se realizará el pago",
+      "name": "lugar_pago",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "e"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite de manera clara y precisa cuál será la manera de pago. Recuerde que el contenido y la eficacia que sea por usted redactado, son de su exclusiva responsabilidad y no de micontrato.co",
+      "help": "otro_tipo_pago",
+      "name": "otro_tipo_pago",
+      "prereq": [
+        {
+          "k": "tipo_venta",
+          "v": "o"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "La entrega del vehículo al comprador se realizará",
+      "name": "entrega",
+      "options": [
+        {
+          "name": "Con el pago y el traspaso",
+          "value": "i"
+        },
+        {
+          "name": "De otra manera pactada por las partes",
+          "value": "o"
+        }
+      ],
+      "type": "clausula",
+      "value": "i"
+    },
+    {
+      "description": "Digite la manera en la que quiere realizar la entrega del vehículo al comprador",
+      "name": "otro_entrega",
+      "prereq": [
+        {
+          "k": "entrega",
+          "v": "o"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Cómo se cubriran los gastos que se deriven del traspaso?",
+      "name": "gastos_pagados",
+      "options": [
+        {
+          "name": "Según lo acostumbrado",
+          "value": "a"
+        },
+        {
+          "name": "De una forma diferente pactada por las partes lo pactado por las partes",
+          "value": "o"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "Digite la manera en la que se cubrirán los gastos del traspaso del vehículo",
+      "name": "otros_gastos_pagados",
+      "prereq": [
+        {
+          "k": "gastos_pagados",
+          "v": "o"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cláusula penal al presente contrato?",
+      "name": "clausulas_penal",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Digite el valor de la cláusula penal",
+      "name": "clausula_penal",
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_1",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercer cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que comprará el vehículo automotor, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_comprador",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte que comprará el vehículo automotor se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "comprador",
+      "name": "direccion_comprador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte compradora",
+      "help": "comprador",
+      "name": "telefono_comprador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte compradora",
+      "help": "comprador",
+      "name": "correo_comprador",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa que venderá el vehículo automotor, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_vendedor",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte que venderá el vehículo automotor se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "vendedor",
+      "name": "direccion_vendedor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la parte vendedora",
+      "help": "vendedor",
+      "name": "telefono_vendedor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte vendedora",
+      "help": "vendedor",
+      "name": "correo_vendedor",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-08-31",
+  "creationUser": "alejo",
+  "description": "Mediante este contrato una parte se obliga a transferir a la otra un vehículo automotor, y en contraprestación, la otra parte deberá pagar el valor pactado en dinero.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Vendedora: quien da el vehículo.\n\n- Compradora: quien paga el precio por el vehículo.\n\n<b>EJEMPLO</b>\n\nJuan decide vender su vehículo a Pedro, por lo cual, suscriben un contrato de compraventa de vehículo automotor donde Juan entrega a Pedro su vehículo, y Pedro deberá pagar por este la suma de veinte millones de pesos ($20.000.000).",
+  "help": {
+    "capacidad": "Capacidad: 5 pasajeros",
+    "cilindraje": "Cilindraje: 1.998",
+    "clase": "Clase de vehículo: Camioneta",
+    "color": "Color: Aluminio metalico",
+    "combustible": "Combustible: Gasolina",
+    "comprador": "Comprador: Quien compra el vehículo automotor.",
+    "linea": "Linea: CX-5",
+    "marca": "Marca: MAZDA",
+    "modelo": "Modelo: 2014",
+    "numero_motor": "Número del motor: PE30578000",
+    "numero_puertas": "Número de puertas: 5",
+    "otro_tipo_pago": "Ejemplo: un 50% del precio en efectivo, y de manera directa a LA PARTE VENDEDORA en la calle 1 #70-70 de Medellín; el 50% restante se dividirá en dos (2) pagamentos del 25% cada uno, donde el primero, irá a la cuenta de ahorros bancolombia número 12345678901 a nombre de Eliana Ortiz , y el segundo 25% a la cuenta corriente Davivienda número 03135112233 a nombre de Leonardo Botero",
+    "placa": "Placa: XXX000",
+    "servicio": "Servicio: Particular o Público",
+    "vendedor": "Vendedor: Quien vende el vehículo automotor."
+  },
+  "keywords": [
+    "taxi",
+    "liquidar",
+    "carro",
+    "automóvil",
+    "automovil",
+    "camioneta",
+    "campero",
+    "coche",
+    "mionca"
+  ],
+  "name": "CONTRATO DE COMPRAVENTA DE VEHÍCULO AUTOMOTOR",
+  "PK": "CONT7e733a89-cca7-4f87-804f-5ea1a9d201b4",
+  "price": 29900,
+  "relation1": "LATEST|ACTIVE|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "relation2": "LATEST|2020-08-31",
+  "relation3": "LATEST|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000006",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_comprador",
+    "cedula_comprador",
+    "cedulae_comprador",
+    "pasaporte_comprador",
+    "correo_comprador",
+    "telefono_comprador",
+    "nombre_empresa_comprador",
+    "identificacion_empresa_comprador",
+    "nombre_vendedor",
+    "cedula_vendedor",
+    "cedulae_vendedor",
+    "pasaporte_vendedor",
+    "correo_vendedor",
+    "telefono_vendedor",
+    "nombre_empresa_vendedor",
+    "identificacion_empresa_vendedor",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_comprador",
+      "identification": "cedula_comprador|cedulae_comprador|pasaporte_comprador",
+      "name": "nombre_comprador",
+      "type": "comprador"
+    },
+    {
+      "email": "correo_vendedor",
+      "identification": "cedula_vendedor|cedulae_vendedor|pasaporte_vendedor",
+      "name": "nombre_vendedor",
+      "type": "vendedor"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "compraventa-vehiculo-automotor",
+  "status": "ACTIVE",
+  "time": 6,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "63QuFIXxpxY"
+}

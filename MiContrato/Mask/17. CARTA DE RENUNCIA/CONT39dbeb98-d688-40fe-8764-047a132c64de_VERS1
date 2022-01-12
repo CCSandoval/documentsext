@@ -1,0 +1,116 @@
+<p>
+  <span name="ciudad_contrato">________</span>, <span name="fecha_contrato">________</span>
+</p>
+<br />
+
+<p>
+  <span name="tipo_empleador_j">
+    Respetados señores <br />
+    <b name="nombre_empresa">________</b>
+  </span>
+  <span name="tipo_empleador_n" hidden>
+    <span name="genero_empleador_m">Respetada señora</span>
+    <span name="genero_empleador_h" hidden>Respetado señor</span><br />
+    <b name="nombre_empleador">________</b>
+  </span>
+</p><br />
+
+<p>
+  <b>ASUNTO: </b>RENUNCIA
+</p><br />
+
+<p><span name="nombre_trabajador">________</span>, mayor de edad,
+  <span name="genero_trabajador_m"> identificada</span>
+  <span name="genero_trabajador_h" hidden> identificado</span> con
+  <span name="tipo_documento_trabajador_cc"> cédula de ciudadanía número
+    <span name="cedula_trabajador">________</span>,
+  </span>
+  <span name="tipo_documento_trabajador_ce" hidden> cédula de extranjería número
+    <span name="cedulae_trabajador">________</span>,
+  </span>
+  <span name="tipo_documento_trabajador_pa" hidden> pasaporte número
+    <span name="pasaporte_trabajador">________</span>,
+  </span> y quien hasta el día de hoy cuento con contrato laboral vigente con
+  <span name="tipo_empleador_j"> la compañía
+    <b name="nombre_empresa">________</b>,
+  </span>
+  <span name="tipo_empleador_n" hidden>
+    <b name="nombre_empleador">________</b>,
+  </span> desempeñando el cargo de
+  <span name="cargo_trabajador">________</span>, por medio de la presente, manifiesto de manera inequívoca mi decisión
+  de
+  renunciar a
+  <span name="tipo_empleador_j">
+    <span name="nombre_empresa">________</span>,
+  </span>
+  <span name="tipo_empleador_n" hidden> mi trabajo con
+    <b name="nombre_empleador">________</b>,
+  </span>
+  <span name="renuncia_empleador_n"> debido a motivos personales.</span>
+  <span name="renuncia_empleador_s" hidden> debido al incumplimiento por parte de la compañía de sus obligaciones como
+    empleador, toda vez que
+    <span name="motivo_renuncia">________</span>.
+  </span>
+</p>
+
+<p>La presente renuncia se hace efectiva desde el día
+  <span name="fin_contrato">________</span>, por lo cual,
+  <span class="filter"> Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus netus condimentum.</span>
+</p>
+
+<p>
+  Agradezco a
+  <span name="tipo_empleador_j">
+    <b name="nombre_empresa">________</b>
+  </span>
+  <span name="tipo_empleador_n" hidden>
+    <b name="nombre_empleador">________</b>
+  </span> por haber
+  <span class="filter"> Lorem ipsum dolor sit amet consectetur adipiscing elit phasellus netus condimentum, venenatis
+    ullamcorper non accumsan fermentum sodales ligula potenti justo diam velit.
+  </span>
+</p>
+
+<p>
+  Atentamente,
+</p>
+
+<p>
+<div id="trabajador" class="sign-margin"></div>
+<b name="nombre_trabajador">________</b><br />
+<span name="tipo_documento_trabajador_cc"><b>C.C.</b>
+  <span name="cedula_trabajador">________</span>
+</span>
+<span name="tipo_documento_trabajador_ce" hidden><b>C.E.</b>
+  <span name="cedulae_trabajador">________</span>
+</span>
+<b name="tipo_documento_trabajador_pa" hidden><b>Pasaporte</b>
+  <span name="pasaporte_trabajador">________</span>
+</b><br/>
+<b>CORREO ELECTRÓNICO:</b>
+<span name="correo_trabajador">________</span>
+</p>
+
+<p>
+<div name="firma_testigo_n"></div>
+<div name="firma_testigo_s" hidden>
+  <div id="testigo" class="sign-margin"></div>
+  <b name="nombre_testigo">________</b><br />
+  <span name="tipo_documento_testigo_cc"><b>C.C.</b>
+    <span name="cedula_testigo">________</span>
+  </span>
+  <span name="tipo_documento_testigo_ce" hidden><b>C.E.</b>
+    <span name="cedulae_testigo">________</span>
+  </span>
+  <span name="tipo_documento_testigo_pa" hidden><b>PASAPORTE</b>
+    <span name="pasaporte_testigo">________</span>
+  </span><br />
+  <b>TESTIGO</b><br />
+  <b>DIRECCIÓN:</b>
+  <span name="direccion_testigo">________</span><br />
+  <b>TELÉFONO:</b>
+  <span name="telefono_testigo">________</span><br />
+  <b>CORREO ELECTRÓNICO:</b>
+  <span name="correo_testigo">________</span>
+</div>
+</p>

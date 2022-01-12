@@ -1,0 +1,1621 @@
+{
+  "build": 2,
+  "category": "CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "config": [
+    {
+      "description": "El contratante es",
+      "help": "contratante",
+      "name": "tipo_contratante",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa contratante"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona contratante"
+        }
+      ],
+      "help": "contratante",
+      "name": "nombre_contratante",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa contratante es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte contratante es:"
+        }
+      ],
+      "help": "contratante",
+      "name": "genero_contratante",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa contratante"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona contratante"
+        }
+      ],
+      "help": "contratante",
+      "name": "tipo_documento_contratante",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa contratante, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte contratante, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "contratante",
+      "name": "cedula_contratante",
+      "prereq": [
+        {
+          "k": "tipo_documento_contratante",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa contratante, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte contratante, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "contratante",
+      "name": "cedulae_contratante",
+      "prereq": [
+        {
+          "k": "tipo_documento_contratante",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa contratante, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte contratante, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "contratante",
+      "name": "pasaporte_contratante",
+      "prereq": [
+        {
+          "k": "tipo_documento_contratante",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte contratante",
+      "help": "contratante",
+      "name": "ciudad_contratante",
+      "prereq": [
+        {
+          "k": "tipo_contratante",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actua como contratante",
+      "help": "contratante",
+      "name": "nombre_empresa_contratante",
+      "prereq": [
+        {
+          "k": "tipo_contratante",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa contratante",
+      "help": "contratante",
+      "name": "ciudad_empresa_contratante",
+      "prereq": [
+        {
+          "k": "tipo_contratante",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa contratante, sin dígito de verificación",
+      "help": "contratante",
+      "name": "identificacion_empresa_contratante",
+      "prereq": [
+        {
+          "k": "tipo_contratante",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "El contratista es",
+      "help": "contratista",
+      "name": "tipo_contratista",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa contratista"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona contratista"
+        }
+      ],
+      "help": "contratista",
+      "name": "nombre_contratista",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa contratista es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la parte contratista es:"
+        }
+      ],
+      "help": "contratista",
+      "name": "genero_contratista",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa contratista"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona contratista"
+        }
+      ],
+      "help": "contratista",
+      "name": "tipo_documento_contratista",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa contratista, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte contratista, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "contratista",
+      "name": "cedula_contratista",
+      "prereq": [
+        {
+          "k": "tipo_documento_contratista",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa contratista, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte contratista, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "contratista",
+      "name": "cedulae_contratista",
+      "prereq": [
+        {
+          "k": "tipo_documento_contratista",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa contratista, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte contratista, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "contratista",
+      "name": "pasaporte_contratista",
+      "prereq": [
+        {
+          "k": "tipo_documento_contratista",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte contratista",
+      "help": "contratista",
+      "name": "ciudad_contratista",
+      "prereq": [
+        {
+          "k": "tipo_contratista",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actua como contratista",
+      "help": "contratista",
+      "name": "nombre_empresa_contratista",
+      "prereq": [
+        {
+          "k": "tipo_contratista",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa contratista",
+      "help": "contratista",
+      "name": "ciudad_empresa_contratista",
+      "prereq": [
+        {
+          "k": "tipo_contratista",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa contratista, sin dígito de verificación",
+      "help": "contratista",
+      "name": "identificacion_empresa_contratista",
+      "prereq": [
+        {
+          "k": "tipo_contratista",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Describa detalladamente la obra contratada, de ser posible anexe planos, propuestas, y demás información que sirva para identificar correctamente la obra",
+      "name": "servicio_prestado",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione quien suministrará los materiales para la construcción de la obra civil",
+      "name": "materiales",
+      "options": [
+        {
+          "name": "La parte contratista",
+          "value": "contratista"
+        },
+        {
+          "name": "La parte contratante",
+          "value": "contratante"
+        }
+      ],
+      "type": "clausula",
+      "value": "contratista"
+    },
+    {
+      "description": "Digite el valor de los honorarios pagados a la parte contratista",
+      "name": "valor_honorarios",
+      "type": "currency"
+    },
+    {
+      "description": "¿Desea agregar actividades específicas a la parte contratista?",
+      "help": "contratista",
+      "name": "contratista_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la actividad específica de la parte contratista que desea agregar",
+      "help": "contratista",
+      "name": "obligaciones_contratista_1",
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda actividad específica a la parte contratista?",
+      "help": "contratista",
+      "name": "contratista_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda actividad específica de la parte contratista que desea agregar",
+      "help": "contratista",
+      "name": "obligaciones_contratista_2",
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera actividad específica a la parte contratista?",
+      "help": "contratista",
+      "name": "contratista_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera actividad específica de la parte contratista que desea agregar",
+      "help": "contratista",
+      "name": "obligaciones_contratista_3",
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta actividad específica a la parte contratista?",
+      "help": "contratista",
+      "name": "contratista_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta actividad específica de la parte contratista que desea agregar",
+      "help": "contratista",
+      "name": "obligaciones_contratista_4",
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta actividad específica a la parte contratista?",
+      "help": "contratista",
+      "name": "contratista_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta actividad específica de la parte contratista que desea agregar",
+      "help": "contratista",
+      "name": "obligaciones_contratista_5",
+      "prereq": [
+        {
+          "k": "contratista_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "contratista_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar obligaciones generales a la parte contratante?",
+      "help": "contratante",
+      "name": "contratante_obligaciones_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la obligación general de la parte contratante que desea agregar",
+      "help": "contratante",
+      "name": "obligaciones_contratante_1",
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación general a la parte contratante?",
+      "help": "contratante",
+      "name": "contratante_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación general de la parte contratante que desea agregar",
+      "help": "contratante",
+      "name": "obligaciones_contratante_2",
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación general a la parte contratante?",
+      "help": "contratante",
+      "name": "contratante_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación general de la parte contratante que desea agregar",
+      "help": "contratante",
+      "name": "obligaciones_contratante_3",
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación general a la parte contratante?",
+      "help": "contratante",
+      "name": "contratante_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación general de la parte contratante que desea agregar",
+      "help": "contratante",
+      "name": "obligaciones_contratante_4",
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación general a la parte contratante?",
+      "help": "contratante",
+      "name": "contratante_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación general de la parte contratante que desea agregar",
+      "help": "contratante",
+      "name": "obligaciones_contratante_5",
+      "prereq": [
+        {
+          "k": "contratante_obligaciones_1",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "contratante_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Cuál es el término de duración del presente contrato? Digítelo en número de días",
+      "name": "duracion_contrato",
+      "type": "number"
+    },
+    {
+      "description": "Seleccione la fecha de inicio del contrato",
+      "name": "fecha_inicio_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Seleccione la fecha de terminación del contrato",
+      "name": "fecha_terminacion_contrato",
+      "type": "date"
+    },
+    {
+      "description": "¿Con cuántos días de anticipación se debe avisar a la otra parte la intención de terminación del presente contrato?",
+      "name": "terminacion_anticipada",
+      "type": "number"
+    },
+    {
+      "description": "Digite el lugar donde se prestará el servicio, identificandolo por dirección y ciudad, o de la forma mas detallada posible",
+      "name": "prestacion_lugar",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar cláusula penal?",
+      "name": "clausulas_penal",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "La cláusula penal es aplicable a",
+      "help": "contratante_contratista",
+      "name": "penal_clausula",
+      "options": [
+        {
+          "name": "La parte contratista",
+          "value": "a"
+        },
+        {
+          "name": "Ambas partes",
+          "value": "t"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "a"
+    },
+    {
+      "description": "¿Cuál es el valor de la multa de incumplimiento?",
+      "name": "multa_incumplimiento_f",
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿Se le va a exigír al contratista póliza de cumplimiento y calidad del servicio?",
+      "name": "poliza",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_1",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_1",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_2",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercer cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_3",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_4",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, la quinta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clausulas_5",
+      "prereq": [
+        {
+          "k": "clausulas_adicional_1",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_2",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_3",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_4",
+          "v": "s"
+        },
+        {
+          "k": "clausulas_adicional_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa contratante, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratante",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte contratante se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "contratante",
+      "name": "direccion_contratante",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte contratante",
+      "help": "contratante",
+      "name": "telefono_contratante",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte contratante",
+      "help": "contratante",
+      "name": "correo_contratante",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa contratista, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_contratista",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte contratista se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "contratista",
+      "name": "direccion_contratista",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte contratista",
+      "help": "contratista",
+      "name": "telefono_contratista",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte contratista",
+      "help": "contratista",
+      "name": "correo_contratista",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-11-26",
+  "creationUser": "alejo",
+  "description": "Es un contrato por medio del cual una parte que llamamos contratista, se compromete a construir, para otra parte que llamamos contratante, una obra civil, como la construcción de una vivienda, de un local comercial, de un edificio, de una carretera, de una central hidroélectrica, de un puente, etc.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Contratante: Es la parte que será propietaria de la obra construida y que paga por ella. \n\n- Contratista: Es la parte que se compromete a construir la obra contratada.\n\n<b>EJEMPLO</b>\n\nPedro estuvo ahorrando su salario durante diez años, con lo obtenido más su pensión decide construir una casa para tener su vivienda propia, por lo que contrata a Juan que es un contratista para la construcción de la misma, para formalizar el proyecto deciden realizar un contrato de construcción de obra civil.",
+  "help": {
+    "contratante": "Contratante: Es la parte que será propietaria de la obra construida y que paga por ella.",
+    "contratista": "Contratista: Es la parte que se compromete a construcir la obra contratada.",
+    "contratante_contratista": "Contratante: Es la parte que será propietaria de la obra construida y que paga por ella. \nContratista: Es la parte que se compromete a construcir la obra contratada."
+  },
+  "keywords": [
+    "edificación",
+    "edificacion",
+    "proyecto",
+    "construcción",
+    "construccion"
+  ],
+  "name": "CONTRATO DE CONSTRUCCIÓN DE OBRA CIVIL",
+  "PK": "CONT7d900875-5b9a-4fe7-a592-c28406831208",
+  "price": 59900,
+  "relation1": "LATEST|ACTIVE|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "relation2": "LATEST|2020-11-26",
+  "relation3": "LATEST|CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_contratante",
+    "cedula_contratante",
+    "cedulae_contratante",
+    "pasaporte_contratante",
+    "correo_contratante",
+    "telefono_contratante",
+    "nombre_empresa_contratante",
+    "identificacion_empresa_contratante",
+    "nombre_contratista",
+    "cedula_contratista",
+    "cedulae_contratista",
+    "pasaporte_contratista",
+    "correo_contratista",
+    "telefono_contratista",
+    "nombre_empresa_contratista",
+    "identificacion_empresa_contratista",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_contratante",
+      "identification": "cedula_contratante|cedulae_contratante|pasaporte_contratante",
+      "name": "nombre_contratante",
+      "type": "contratante"
+    },
+    {
+      "email": "correo_contratista",
+      "identification": "cedula_contratista|cedulae_contratista|pasaporte_contratista",
+      "name": "nombre_contratista",
+      "type": "contratista"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "construccion-obra-civil",
+  "status": "ACTIVE",
+  "time": 10,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "PFli887VH18"
+}

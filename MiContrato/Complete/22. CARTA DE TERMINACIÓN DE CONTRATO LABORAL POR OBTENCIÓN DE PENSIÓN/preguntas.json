@@ -1,0 +1,489 @@
+{
+  "build": 2,
+  "category": "CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "config": [
+    {
+      "description": "Digite la ciudad en la que se escribe la carta de terminación laboral",
+      "name": "ciudad_contrato",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la cual se escribe la carta",
+      "name": "fecha_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el nombre del trabajador al que se le terminará el contrato laboral",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el sexo de la parte trabajadora",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento del trabajador al que se le terminará el contrato laboral.",
+      "help": "trabajador",
+      "name": "tipo_documento_trabajador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento del trabajador al que se le terminará el contrato laboral, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedula_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento del trabajador al que se le terminará el contrato laboral, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte del trabajador al que se le terminará el contrato laboral, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Tiene una organización interna que remita o notifique el despido?",
+      "name": "orgnaizacion_interna",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre de la organización interna que remita o notifique el despido",
+      "name": "nombre_organizacion_interna",
+      "prereq": [
+        {
+          "k": "orgnaizacion_interna",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la persona que notifica el despido",
+      "name": "nombre_terminador",
+      "prereq": [
+        {
+          "k": "orgnaizacion_interna",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el cargo de la persona que notifica el despido",
+      "name": "cargo_terminador",
+      "prereq": [
+        {
+          "k": "orgnaizacion_interna",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa",
+      "name": "nombre_empresa_empleador",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el nombre de la administradora de pensiones que le otorgó la pensión",
+      "name": "fondo_pensiones",
+      "options": [
+        {
+          "label": "Colpensiones",
+          "name": "Colpensiones",
+          "value": "colp"
+        },
+        {
+          "label": "Protección S.A.",
+          "name": "Protección S.A.",
+          "value": "prot"
+        },
+        {
+          "label": "Porvenir S.A.",
+          "name": "Porvenir S.A.",
+          "value": "porv"
+        },
+        {
+          "label": "Colfondos Pensiones y Cesantías",
+          "name": "Colfondos Pensiones y Cesantías",
+          "value": "colf"
+        },
+        {
+          "label": "Old Mutual",
+          "name": "Old Mutual",
+          "value": "old"
+        }
+      ],
+      "type": "select",
+      "value": "colp"
+    },
+    {
+      "description": "Digite el número del acto administrativo mediante el cual se otorgó la pensión",
+      "name": "numero_acto_administrativo",
+      "type": "number"
+    },
+    {
+      "description": "Digite la fecha del acto administrativo donde se reconoce la pensión",
+      "name": "fecha_acto_administrativo",
+      "type": "date"
+    },
+    {
+      "description": "Digite la fecha desde la cual se terminará el contrato",
+      "name": "fecha_final_contrato",
+      "type": "date"
+    },
+    {
+      "description": "¿Se entregarán documentos al trabajador que terminará su relación laboral por obtención de pensión?",
+      "name": "entrega_documentos",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite los documentos pendientes por entregar",
+      "name": "documento_pendiente",
+      "prereq": [
+        {
+          "k": "entrega_documentos",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de quien escribe la carta",
+      "name": "nombre_escritor",
+      "type": "name"
+    },
+    {
+      "description": "Digite el cargo de quien escribe la carta",
+      "name": "cargo_escritor",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de documento de quien escribe la carta de despido",
+      "name": "tipo_documento_escritor",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de quien escribe la carta de despido, sin comas, puntos, ni guiones",
+      "name": "cedula_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de quien escribe la carta de despido, sin comas, puntos, ni guiones",
+      "name": "cedulae_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de quien escribe la carta de despido, sin comas, puntos, ni guiones",
+      "name": "pasaporte_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de quien escribe la carta de despido",
+      "name": "telefono_escritor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de quien escribe la carta de despido",
+      "name": "correo_escritor",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-09-01",
+  "creationUser": "alejo",
+  "description": "Por medio del presente documento, el empleador termina con justa causa la relación laboral existente con el trabajador, debido a que este ha obtenido su pensión de vejez. Lo anterior se realiza conforme a lo dispuesto en el artículo 62, numeral 14, del Código Sustantivo del Trabajo.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Empleadora: quien realiza la carta y termina el contrato.\n\n- Trabajadora: destinatario de la carta, y quien recibe la pensión.\n\n<b>EJEMPLO</b>\n\nPedro, quien ha trabajado y cotizado durante toda su vida en la empresa INDUSTRIAS ABCD S.A.S., ha recibido el día de hoy un mensaje de parte de la entidad estatal de pensiones, en el cual se encuentra el acto administrativo mediante el cual se le reconoce su pensión de vejez, al cumplir todos los requisitos. Juan, empleador, viendo esto, y amparándose en lo dispuesto en las leyes laborales, termina el contrato de Pedro, agradeciéndole por sus servicios.",
+  "help": {
+    "trabajador": "Destinatario de la carta, y quien recibe la pensión."
+  },
+  "keywords": [
+    "vejez",
+    "edad",
+    "culminar",
+    "finalizar",
+    "jubilar",
+    "jubilado",
+    "retiro"
+  ],
+  "name": "CARTA DE TERMINACIÓN DE CONTRATO LABORAL POR OBTENCIÓN DE PENSIÓN",
+  "PK": "CONT69864ce8-732d-4643-a2d3-19cfd7d9d036",
+  "price": 19900,
+  "relation1": "LATEST|ACTIVE|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "relation2": "LATEST|2020-09-01",
+  "relation3": "LATEST|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000010",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_escritor",
+    "cedula_escritor",
+    "cedulae_escritor",
+    "pasaporte_escritor",
+    "correo_escritor",
+    "telefono_escritor",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_escritor",
+      "identification": "cedula_escritor|cedulae_escritor|pasaporte_escritor",
+      "name": "nombre_escritor",
+      "type": "escritor"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "terminacion-contrato-laboral-por-obtencion-pension",
+  "status": "ACTIVE",
+  "time": 3,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "4BPG4U4_kpU"
+}

@@ -1,0 +1,269 @@
+<h2 class="text-center">
+    <b style="font-size: 16pt">CONSENTIMIENTO INFORMADO MÉDICO</b>
+</h2>
+
+<p>
+    <b>Definición de Consentimiento Informado:</b> Es la autorización que el paciente (o su representante) confiere al
+    profesional de la salud para la realización de procedimiento en
+    <b name="nombre_clinica">________</b> y sus sedes integradas en red, previa información oportuna, clara y precisa de
+    lo que se le va a realizar, sus objetivos, alternativas y riesgos. (Es responsabilidad del profesional de salud el
+    correcto diligenciamiento del consentimiento).
+</p>
+
+<p>
+    Feha: <span name="fecha_contrato">________</span>
+</p>
+
+<p>
+    <b>DATOS DEL PACIENTE</b>
+</p>
+
+<p>
+    Nombre: <span name="nombre_paciente">________</span><br />
+    Edad: <span name="edad_paciente">________</span><br />
+    <span name="tipo_documento_paciente_cc">Cédula de ciudadanía</span>
+    <span name="tipo_documento_paciente_ce" hidden>Cédula de extranjería</span>
+    <span name="tipo_documento_paciente_pa" hidden>Pasaporte</span>
+    <span name="tipo_documento_paciente_ti" hidden>Tarjeta de identidad</span>
+    <span name="tipo_documento_paciente_rc" hidden>Registro Civil</span><br />
+    N°.
+    <span name="tipo_documento_paciente_cc">
+        <span name="cedula_paciente">________</span>
+    </span>
+    <span name="tipo_documento_paciente_ce" hidden>
+        <span name="cedulae_paciente">________</span>
+    </span>
+    <span name="tipo_documento_paciente_pa" hidden>
+        <span name="pasaporte_paciente">________</span>
+    </span>
+    <span name="tipo_documento_paciente_ti">
+        <span name="tarjeta_paciente">________</span>
+    </span>
+    <span name="tipo_documento_paciente_rc" hidden>
+        <span name="registro_paciente">________</span>
+    </span><br />
+</p>
+
+<p>
+    <b>Diagnóstico o impresión diagnóstica:</b>
+    <span name="diagnostico_paciente">________</span><br />
+    <b>Descripción del Procedimiento propuesto:</b>
+    <span name="descripcion_procedimiento">________</span><br />
+    <b>Beneficios del procedimiento que se está proponiendo:</b>
+    <span name="beneficios_procedimiento">________</span><br />
+    <b>Posibles alternativas de manejo:</b>
+    <span name="alternativas_procedimiento">________</span><br />
+    <b>Posibles limitaciones o molestias del proceso de recuperación (a criterio del profesional):</b>
+    <span name="posible_limitacion_1">________</span><br />
+    <span name="total_limitacion_2_n"></span>
+    <span name="total_limitacion_2_s" hidden>
+        <span name="posible_limitacion_2">________</span><br />
+        <span name="total_limitacion_3_n"></span>
+        <span name="total_limitacion_3_s" hidden>
+            <span name="posible_limitacion_3">________</span><br />
+            <span name="total_limitacion_4_n"></span>
+            <span name="total_limitacion_4_s" hidden>
+                <span name="posible_limitacion_4">________</span><br />
+                <span name="total_limitacion_5_n"></span>
+                <span name="total_limitacion_5_s" hidden>
+                    <span name="posible_limitacion_5">________</span><br />
+                </span>
+            </span>
+        </span>
+    </span>
+    <b>Posibles complicaciones y riesgos con mayor probabilidad estadística de ocurrencia:</b>
+    <span name="posible_complicacion_1">________</span><br />
+    <span name="total_complicacion_2_n"></span>
+    <span name="total_complicacion_2_s" hidden>
+        <span name="posible_complicacion_2">________</span><br />
+        <span name="total_complicacion_3_n"></span>
+        <span name="total_complicacion_3_s" hidden>
+            <span name="posible_complicacion_3">________</span><br />
+            <span name="total_complicacion_4_n"></span>
+            <span name="total_complicacion_4_s" hidden>
+                <span name="posible_complicacion_4">________</span><br />
+                <span name="total_complicacion_5_n"></span>
+                <span name="total_complicacion_5_s" hidden>
+                    <span name="posible_complicacion_5">________</span><br />
+                </span>
+            </span>
+        </span>
+    </span>
+</p>
+
+
+<p>
+    <span name="rechazo_procedimiento_n">
+        <b>CONSENTIMIENTO DEL PACIENTE</b>
+    </span>
+    <span name="rechazo_procedimiento_s" hidden></span>
+</p>
+
+<p>
+    <span name="rechazo_procedimiento_n">
+        Yo, <span name="nombre_paciente">________</span> identificado con
+        <span name="tipo_documento_paciente_cc"> Cédula de ciudadanía número
+            <span name="cedula_paciente">________</span>,
+        </span>
+        <span name="tipo_documento_paciente_ce" hidden> Cédula de extranjería número
+            <span name="cedulae_paciente">________</span>,
+        </span>
+        <span name="tipo_documento_paciente_pa" hidden> Pasaporte número
+            <span name="pasaporte_paciente">________</span>,
+        </span>
+        <span name="tipo_documento_paciente_ti"> Tarjeta de identidad número
+            <span name="tarjeta_paciente">________</span>,
+        </span>
+        <span name="tipo_documento_paciente_rc" hidden> Registro Civil número
+            <span name="registro_paciente">________</span>,
+        </span> certifico que he sido informado suficientemente sobre el procedimiento o intervención al que voy a
+        ser sometido; conozco sus beneficios, riesgos y complicaciones; las explicaciones dadas por el profesional de
+        salud han sido suficientemente claras y los términos científicos y técnicos me han sido explicados de tal manera
+        que los he comprendido a cabalidad. Por lo tanto, acepto el procedimiento o intervención propuestos con sus
+        riesgos inherentes de mayor ocurrencia y autorizo a Clínica Las Américas, sus sedes integradas en red y al
+        profesional que lo va a realizar para que bajo su responsabilidad lo lleve a cabo y designe a los demás
+        profesionales de la salud cuya participación sea necesaria. Asimismo, autorizo los procedimientos adicionales
+        que puedan requerirse en el momento de su ejecución, para el manejo de complicaciones o hallazgos inesperados
+        que llegaran a presentarse. También puedo retirar este consentimiento cuando lo estime oportuno.
+    </span>
+    <span name="rechazo_procedimiento_s" hidden></span>
+</p>
+
+<p>
+    <span name="rechazo_procedimiento_n">
+        <span name="paciente_diferido_n">
+            <div id="paciente" class="sign-margin"></div><br />
+            <span>___________________</span><br />
+            Firma del paciente<br />
+            <span name="correo_paciente">________</span>
+        </span>
+    </span>
+</p>
+
+<p>
+    <span name="rechazo_procedimiento_n">
+        <span name="paciente_diferido_s" hidden>
+            <b>Nota:</b> Los menores de edad entre 14 y 18 años deben firmar el consentimiento en firma del paciente y
+            se debe soportar con la firma del representante legal, familiar y/o allegado en el siguiente ítem de
+            consentimiento informado diferido.
+        </span>
+    </span>
+</p>
+
+<p>
+    <span name="rechazo_procedimiento_n">
+        <span name="paciente_diferido_n"></span>
+        <span name="paciente_diferido_s" hidden>
+            Este espacio debe ser diligenciado por el representante legal, familiar o allegado del usuario cuando este
+            no tiene la capacidad legal para otorgar su consentimiento (menor de edad, inconsciencia, alteración mental
+            temporal o definitiva).<br />
+            Dado que el beneficiario del procedimiento es considerado incapaz para tomar o rechazar la decisión o dar su
+            consentimiento para ejecutar el procedimiento descrito, el profesional de salud me ha explicado en mi
+            calidad de representante legal familiar o allegado de forma clara, expresa y satisfactoria en que consiste
+            el procedimiento, que es, como se hace para que sirve, igualmente me han explicado los riesgos y
+            complicaciones de mayor ocurrencia que pueden conllevar las actividades programadas. He comprendido todo lo
+            anterior y por ello de manera libre y voluntario yo
+            <span name="nombre_representante">________</span> con el número de identificación
+            <span name="numero_documento_representante">________</span> en mi calidad de
+            <span name="parentesco_representante">________</span>; de
+            <span name="nombre_paciente">________</span>, doy mi consentimiento para que le realicen los procedimientos
+            descritos. También puedo retirar este consentimiento cuando en bien del paciente lo estime oportuno esto
+            siempre y cuando no se hayan adelantado ya acciones destinadas al logro del objetivo.
+        </span>
+    </span>
+    <span name="rechazo_procedimiento_s" hidden></span>
+</p>
+
+<p>
+    <span name="paciente_diferido_n"></span>
+    <span name="paciente_diferido_s" hidden></span>
+</p>
+
+<p>
+<div name="rechazo_procedimiento_n">
+    <div name="paciente_diferido_n"></div>
+    <div name="paciente_diferido_s" hidden>
+        <div id="representante" class="sign-margin"></div><br />
+        <span>___________________</span><br />
+        Firma del representante legal, familiar y/o allegado<br />
+        <span name="correo_representante">________</span>
+    </div>
+</div>
+<div name="rechazo_procedimiento_s" hidden></div>
+</p>
+
+<p>
+    <b>DATOS DEL PROFESIONAL DE SALUD QUE DILIGENCIA EL CONSENTIMIENTO</b>
+</p>
+
+<p>
+    Nombres y apellidos:
+    <span name="nombre_profesional">________</span>
+</p>
+
+<p>
+<div id="profesional" class="sign-margin"></div><br />
+<span>___________________</span><br />
+Firma<br />
+<span name="correo_profesional">________</span>
+</p>
+
+<p>
+    <span name="rechazo_procedimiento_n"></span>
+    <span name="rechazo_procedimiento_s" hidden>
+        <b>RECHAZO DEL PROCEDIMIENTO POR PARTE DEL PACIENTE (representante legal, familiar o allegado)</b>
+    </span>
+</p>
+
+<p>
+    <span name="rechazo_procedimiento_n"></span>
+    <span name="rechazo_procedimiento_s" hidden>
+        Con base en la información anterior, manifiesto que NO ACEPTO el tratamiento médico, procedimiento o
+        intervención propuestos por el profesional de salud tratante. En constancia, firmo aquí.
+    </span>
+</p>
+
+<p>
+    <span name="rechazo_procedimiento_n"></span>
+    <span name="rechazo_procedimiento_s" hidden>
+        Nombre: <span name="nombre_paciente">________</span><br />
+        <span name="tipo_documento_paciente_cc">Cédula de ciudadanía</span>
+        <span name="tipo_documento_paciente_ce" hidden>Cédula de extranjería</span>
+        <span name="tipo_documento_paciente_pa" hidden>Pasaporte</span>
+        <span name="tipo_documento_paciente_ti" hidden>Tarjeta de identidad</span>
+        <span name="tipo_documento_paciente_rc" hidden>Registro Civil</span> N°.
+        <span name="tipo_documento_paciente_cc">
+            <span name="cedula_paciente">________</span>
+        </span>
+        <span name="tipo_documento_paciente_ce" hidden>
+            <span name="cedulae_paciente">________</span>
+        </span>
+        <span name="tipo_documento_paciente_pa" hidden>
+            <span name="pasaporte_paciente">________</span>
+        </span>
+        <span name="tipo_documento_paciente_ti">
+            <span name="tarjeta_paciente">________</span>
+        </span>
+        <span name="tipo_documento_paciente_rc" hidden>
+            <span name="registro_paciente">________</span>
+        </span>
+    </span>
+</p>
+
+<p>
+<div name="rechazo_procedimiento_n"></div>
+<div name="rechazo_procedimiento_s" hidden>
+    <div name="paciente_diferido_n">
+        <div id="paciente" class="sign-margin"></div><br />
+        <span>___________________</span><br />
+        Firma del paciente<br />
+        <span name="correo_paciente">________</span>
+    </div>
+    <div name="paciente_diferido_s" hidden>
+        <div id="representante" class="sign-margin"></div><br />
+        <span>___________________</span><br />
+        <span name="correo_representante">________</span><br />
+        Firma del representante legal, familiar y/o allegado
+    </div>
+</div>
+</p>

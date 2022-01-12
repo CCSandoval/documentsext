@@ -1,0 +1,395 @@
+{
+  "build": 3,
+  "category": "CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "config": [
+    {
+      "description": "Digite la ciudad en la que se escribe la carta de renuncia",
+      "name": "ciudad_contrato",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que se escribe la carta de renuncia",
+      "name": "fecha_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Seleccione el tipo de empleador",
+      "help": "empleador",
+      "name": "tipo_empleador",
+      "options": [
+        {
+          "name": "Persona jurídica",
+          "value": "j"
+        },
+        {
+          "name": "Persona natural",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": "Digite el nombre de la empresa",
+      "name": "nombre_empresa",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el sexo de la parte empleadora",
+      "help": "empleador",
+      "name": "genero_empleador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite el nombre de la parte empleadora",
+      "help": "empleador",
+      "name": "nombre_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la parte trabajadora que renuncia",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el sexo de la parte trabajadora",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la persona que renuncia",
+      "help": "trabajador",
+      "name": "tipo_documento_trabajador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la persona que renuncia",
+      "help": "trabajador",
+      "name": "cedula_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la persona que renuncia, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la persona que renuncia, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el cargo que desempeña el trabajador en la empresa",
+      "help": "trabajador",
+      "name": "cargo_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "¿La renuncia se presenta por causas imputables (por culpa) del empleador?",
+      "help": "empleador",
+      "name": "renuncia_empleador",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el motivo imputable al empleador que causa la renuncia de la parte trabajadora",
+      "help": "motivo_renuncia",
+      "name": "motivo_renuncia",
+      "prereq": [
+        {
+          "k": "renuncia_empleador",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha a partir de la cual el trabajador dejará de prestar sus servicios a la parte empleadora",
+      "name": "fin_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el correo electrónico del trabajador",
+      "help": "trabajador",
+      "name": "correo_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-12-04",
+  "creationUser": "alejo",
+  "description": "Mediante este documento, la parte trabajadora manifiesta a la parte empleadora su decisión inequívoca de renunciar a su empleo",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Empleador: Quien recibe la carta de renuncia y, de quien quedará desvinculada laboralmente la parte trabajadora.\n\n- Trabajador: Quien escribe la carta y toma la decisión inequívoca de renunciar a su empleo.\n\n<b>EJEMPLO</b>\n\n Juan, quien acaba de recibir una oferta laboral irresistible, toma la decisión de renunciar a su actual trabajo, por lo que decide realizar una carta de renuncia a industrias ABCD S.A.S. para aceptar este nuevo empleo.",
+  "help": {
+    "empleador": "Empleador: Quien recibe la carta de renuncia y, de quien quedará desvinculada laboralmente la parte trabajadora.",
+    "trabajador": "Trabajador: Quien escribe la carta y toma la decisión inequívoca de renunciar a su empleo."
+  },
+  "keywords": [
+    "despedir",
+    "renunciar",
+    "desistir",
+    "prescindir",
+    "abandonar",
+    "culminar"
+  ],
+  "name": "CARTA DE RENUNCIA",
+  "PK": "CONT39dbeb98-d688-40fe-8764-047a132c64de",
+  "price": 0,
+  "relation1": "LATEST|ACTIVE|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "relation2": "LATEST|2020-12-04",
+  "relation3": "LATEST|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_trabajador",
+    "cedula_trabajador",
+    "cedulae_trabajador",
+    "pasaporte_trabajador",
+    "correo_trabajador",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_trabajador",
+      "identification": "cedula_trabajador|cedulae_trabajador|pasaporte_trabajador",
+      "name": "nombre_trabajador",
+      "type": "trabajador"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "carta-renuncia",
+  "status": "ACTIVE",
+  "time": 4,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "BZAjDGbrVo0"
+}

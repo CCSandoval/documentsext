@@ -1,0 +1,3313 @@
+{
+  "build": 8,
+  "category": "CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "config": [
+    {
+      "description": "La parte reveladora es",
+      "help": "revelador",
+      "name": "tipo_revelador_1",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa reveladora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona reveladora"
+        }
+      ],
+      "help": "revelador",
+      "name": "nombre_revelador_1",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa reveladora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo del revelador es:"
+        }
+      ],
+      "help": "revelador",
+      "name": "genero_revelador_1",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa reveladora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona reveladora"
+        }
+      ],
+      "help": "revelador",
+      "name": "tipo_documento_revelador_1",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "cedula_revelador_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_1",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "cedulae_revelador_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_1",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "pasaporte_revelador_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_1",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte reveladora",
+      "help": "revelador",
+      "name": "ciudad_revelador_1",
+      "prereq": [
+        {
+          "k": "tipo_revelador_1",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actua como reveladora",
+      "help": "revelador",
+      "name": "nombre_empresa_rev_1",
+      "prereq": [
+        {
+          "k": "tipo_revelador_1",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa reveladora",
+      "help": "revelador",
+      "name": "ciudad_empresa_rev_1",
+      "prereq": [
+        {
+          "k": "tipo_revelador_1",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa reveladora, sin dígito de verificación",
+      "help": "revelador",
+      "name": "identificacion_empresa_rev_1",
+      "prereq": [
+        {
+          "k": "tipo_revelador_1",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar un segundo revelador al presente acuerdo de confidencialidad",
+      "help": "revelador",
+      "name": "reveladores_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "La segunda parte reveladora es",
+      "help": "revelador",
+      "name": "tipo_revelador_2",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del segundo representante legal de la empresa reveladora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la segunda persona reveladora"
+        }
+      ],
+      "help": "revelador",
+      "name": "nombre_revelador_2",
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la segunda empresa reveladora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo del segundo revelador es:"
+        }
+      ],
+      "help": "revelador",
+      "name": "genero_revelador_2",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la segunda empresa reveladora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la segunda persona reveladora"
+        }
+      ],
+      "help": "revelador",
+      "name": "tipo_documento_revelador_2",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la segunda empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la segunda parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "cedula_revelador_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_2",
+          "v": "cc"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la segunda empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la segunda parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "cedulae_revelador_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_2",
+          "v": "ce"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la segunda empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la segunda parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "pasaporte_revelador_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_2",
+          "v": "pa"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la segunda parte reveladora",
+      "help": "revelador",
+      "name": "ciudad_revelador_2",
+      "prereq": [
+        {
+          "k": "tipo_revelador_2",
+          "v": "n"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la segunda empresa o persona jurídica que actua como revelador",
+      "help": "revelador",
+      "name": "nombre_empresa_rev_2",
+      "prereq": [
+        {
+          "k": "tipo_revelador_2",
+          "v": "j"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la segunda empresa reveladora",
+      "help": "revelador",
+      "name": "ciudad_empresa_rev_2",
+      "prereq": [
+        {
+          "k": "tipo_revelador_2",
+          "v": "j"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la segunda empresa reveladora, sin dígito de verificación",
+      "help": "revelador",
+      "name": "identificacion_empresa_rev_2",
+      "prereq": [
+        {
+          "k": "tipo_revelador_2",
+          "v": "j"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar un tercer revelador al presente acuerdo de confidencialidad",
+      "help": "revelador_acuerdo",
+      "name": "reveladores_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "La tercera parte reveladora es",
+      "help": "revelador",
+      "name": "tipo_revelador_3",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la tercera empresa reveladora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la tercera persona reveladora"
+        }
+      ],
+      "help": "revelador",
+      "name": "nombre_revelador_3",
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la tercera empresa reveladora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo del tercer revelador es:"
+        }
+      ],
+      "help": "revelador",
+      "name": "genero_revelador_3",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la tercera empresa reveladora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la tercera persona reveladora"
+        }
+      ],
+      "help": "revelador",
+      "name": "tipo_documento_revelador_3",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la tercera empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la tercera parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "cedula_revelador_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_3",
+          "v": "cc"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la tercera empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la tercera parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "cedulae_revelador_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_3",
+          "v": "ce"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la tercera empresa reveladora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_3",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la tercera parte reveladora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "revelador",
+      "name": "pasaporte_revelador_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_revelador_3",
+          "v": "pa"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la tercera parte reveladora",
+      "help": "revelador",
+      "name": "ciudad_revelador_3",
+      "prereq": [
+        {
+          "k": "tipo_revelador_3",
+          "v": "n"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la tercera empresa o persona jurídica que actua como reveladora",
+      "help": "revelador",
+      "name": "nombre_empresa_rev_3",
+      "prereq": [
+        {
+          "k": "tipo_revelador_3",
+          "v": "j"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la tercera empresa reveladora",
+      "help": "revelador",
+      "name": "ciudad_empresa_rev_3",
+      "prereq": [
+        {
+          "k": "tipo_revelador_3",
+          "v": "j"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la tercera empresa reveladora, sin dígito de verificación",
+      "help": "revelador",
+      "name": "identificacion_empresa_rev_3",
+      "prereq": [
+        {
+          "k": "tipo_revelador_3",
+          "v": "j"
+        },
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "La parte receptora es",
+      "help": "receptor",
+      "name": "tipo_receptor_1",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la empresa receptora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la persona receptora"
+        }
+      ],
+      "help": "receptor",
+      "name": "nombre_receptor_1",
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la empresa receptora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo del receptor es:"
+        }
+      ],
+      "help": "receptor",
+      "name": "genero_receptor_1",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la empresa receptora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la persona receptora"
+        }
+      ],
+      "help": "receptor",
+      "name": "tipo_documento_receptor_1",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "cedula_receptor_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_1",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "cedulae_receptor_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_1",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "pasaporte_receptor_1",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_1",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte receptora",
+      "help": "receptor",
+      "name": "ciudad_receptor_1",
+      "prereq": [
+        {
+          "k": "tipo_receptor_1",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actua como receptora",
+      "help": "receptor",
+      "name": "nombre_empresa_rec_1",
+      "prereq": [
+        {
+          "k": "tipo_receptor_1",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa receptora",
+      "help": "receptor",
+      "name": "ciudad_empresa_rec_1",
+      "prereq": [
+        {
+          "k": "tipo_receptor_1",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa receptora, sin dígito de verificación",
+      "help": "receptor",
+      "name": "identificacion_empresa_rec_1",
+      "prereq": [
+        {
+          "k": "tipo_receptor_1",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar un segundo receptor al presente acuerdo de confidencialidad",
+      "help": "receptor",
+      "name": "receptores_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "La segunda parte receptora es",
+      "help": "receptor",
+      "name": "tipo_receptor_2",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la segunda empresa receptora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la segunda persona receptora"
+        }
+      ],
+      "help": "receptor",
+      "name": "nombre_receptor_2",
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la segunda empresa receptora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo de la segunda persona receptora es:"
+        }
+      ],
+      "help": "receptor",
+      "name": "genero_receptor_2",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "j"
+            }
+          ],
+          "text": "Seleccione el tipo de documento del representante legal de la segunda empresa receptora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la segunda persona receptora"
+        }
+      ],
+      "help": "receptor",
+      "name": "tipo_documento_receptor_2",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la segunda empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la segunda parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "cedula_receptor_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_2",
+          "v": "cc"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la segunda empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la segunda parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "cedulae_receptor_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_2",
+          "v": "ce"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la segunda empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la segunda parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "pasaporte_receptor_2",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_2",
+          "v": "pa"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la segunda parte receptora",
+      "help": "receptor",
+      "name": "ciudad_receptor_2",
+      "prereq": [
+        {
+          "k": "tipo_receptor_2",
+          "v": "n"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la segunda empresa o persona jurídica que actua como receptora",
+      "help": "receptor",
+      "name": "nombre_empresa_rec_2",
+      "prereq": [
+        {
+          "k": "tipo_receptor_2",
+          "v": "j"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la segunda empresa receptora",
+      "help": "receptor",
+      "name": "ciudad_empresa_rec_2",
+      "prereq": [
+        {
+          "k": "tipo_receptor_2",
+          "v": "j"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la segunda empresa receptora, sin dígito de verificación",
+      "help": "receptor",
+      "name": "identificacion_empresa_rec_2",
+      "prereq": [
+        {
+          "k": "tipo_receptor_2",
+          "v": "j"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "¿Desea agregar un tercer receptor al presente acuerdo de confidencialidad",
+      "help": "receptor",
+      "name": "receptores_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "La tercera parte receptora es",
+      "help": "receptor",
+      "name": "tipo_receptor_3",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el nombre completo del representante legal de la tercera empresa receptora"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el nombre completo de la tercera persona receptora"
+        }
+      ],
+      "help": "receptor",
+      "name": "nombre_receptor_3",
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la tercera empresa receptora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "n"
+            }
+          ],
+          "text": "El sexo del tercer receptor es:"
+        }
+      ],
+      "help": "receptor",
+      "name": "genero_receptor_3",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "j"
+            }
+          ],
+          "text": "El sexo del representante legal de la tercera empresa receptora es:"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "n"
+            }
+          ],
+          "text": "Seleccione el tipo de documento de la tercera persona receptora"
+        }
+      ],
+      "help": "receptor",
+      "name": "tipo_documento_receptor_3",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía del representante legal de la tercera empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de ciudadanía de la tercera parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "cedula_receptor_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_3",
+          "v": "cc"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería del representante legal de la tercera empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número de cédula de extranjería de la tercera parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "cedulae_receptor_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_3",
+          "v": "ce"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "j"
+            }
+          ],
+          "text": "Digite el número del pasaporte del representante legal de la tercera empresa receptora, sin comas, puntos, ni guiones"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_receptor_3",
+              "v": "n"
+            }
+          ],
+          "text": "Digite el número del pasaporte de la tercera parte receptora, sin comas, puntos, ni guiones"
+        }
+      ],
+      "help": "receptor",
+      "name": "pasaporte_receptor_3",
+      "prereq": [
+        {
+          "k": "tipo_documento_receptor_3",
+          "v": "pa"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el municipio de domicilio de la parte receptora",
+      "help": "receptor",
+      "name": "ciudad_receptor_3",
+      "prereq": [
+        {
+          "k": "tipo_receptor_3",
+          "v": "n"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa o persona jurídica que actua como receptora",
+      "help": "receptor",
+      "name": "nombre_empresa_rec_3",
+      "prereq": [
+        {
+          "k": "tipo_receptor_3",
+          "v": "j"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la ciudad donde está domiciliada la empresa receptora",
+      "help": "receptor",
+      "name": "ciudad_empresa_rec_3",
+      "prereq": [
+        {
+          "k": "tipo_receptor_3",
+          "v": "j"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el NIT de la empresa receptora, sin dígito de verificación",
+      "help": "receptor",
+      "name": "identificacion_empresa_rec_3",
+      "prereq": [
+        {
+          "k": "tipo_receptor_3",
+          "v": "j"
+        },
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite las actividades a las que se dedica habitualmente la parte reveladora",
+      "help": "revelador",
+      "name": "actividad_reveladora",
+      "type": "text"
+    },
+    {
+      "description": "Digite las actividades a las que se dedica habitualmente la parte receptora",
+      "help": "receptor",
+      "name": "actividad_receptora",
+      "type": "text"
+    },
+    {
+      "description": "Digite la primera información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_1",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_2",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_3",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_4",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_5",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una sexta información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_6",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la sexta información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_6",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una séptima información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_7",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la séptima información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_7",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_7",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una octava información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_8",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_7",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la octava información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_8",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_7",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_8",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una novena información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_9",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_7",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_8",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la novena información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_9",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_7",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_8",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_9",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una décima información y/o elemento a revelar a la parte receptora?",
+      "help": "receptor",
+      "name": "t_informacion_10",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_7",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_8",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_9",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la décima información y/o elemento a revelar a la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "informacion_entregada_10",
+      "prereq": [
+        {
+          "k": "t_informacion_2",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_3",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_4",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_5",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_6",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_7",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_8",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_9",
+          "v": "s"
+        },
+        {
+          "k": "t_informacion_10",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar otras obligaciones a cargo de la parte receptora?",
+      "help": "receptor",
+      "name": "otros_obligaciones_t",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la primera obligación adicional de la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "obligaciones_t_1",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una segunda obligación a cargo de la parte receptora?",
+      "help": "receptor",
+      "name": "t_obligaciones_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la segunda obligación adicional de la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "obligaciones_t_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una tercera obligación a cargo de la parte receptora?",
+      "help": "receptor",
+      "name": "t_obligaciones_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la tercera obligación adicional de la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "obligaciones_t_3",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una cuarta obligación a cargo de la parte receptora?",
+      "help": "receptor",
+      "name": "t_obligaciones_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la cuarta obligación adicional de la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "obligaciones_t_4",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar una quinta obligación a cargo de la parte receptora?",
+      "help": "receptor",
+      "name": "t_obligaciones_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite la quinta obligación adicional de la parte receptora que desea agregar",
+      "help": "receptor",
+      "name": "obligaciones_t_5",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_t",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_2",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_3",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_4",
+          "v": "s"
+        },
+        {
+          "k": "t_obligaciones_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los días en los cuales deberá ser devuelta y/o eliminada la información que se le suminstró a la parte receptora",
+      "name": "tiempo_propiedad",
+      "type": "text"
+    },
+    {
+      "description": "Digite el valor de la cláusula penal",
+      "name": "clausula_penal",
+      "type": "currency"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clasulas",
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la ciudad de firma",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha de firma",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la empresa reveladora, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_1",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la parte reveladora se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "revelador",
+      "name": "direccion_revelador_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la parte reveladora",
+      "help": "revelador",
+      "name": "telefono_revelador_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte reveladora",
+      "help": "revelador",
+      "name": "correo_revelador_1",
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la segunda empresa reveladora, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la segunda parte reveladora se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "revelador",
+      "name": "direccion_revelador_2",
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la segunda parte reveladora",
+      "help": "revelador",
+      "name": "telefono_revelador_2",
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la segunda parte reveladora",
+      "help": "revelador",
+      "name": "correo_revelador_2",
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": [
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "j"
+            }
+          ],
+          "text": "Digite la dirección completa donde se notificará a la tercera empresa reveladora, indicando la ciudad"
+        },
+        {
+          "prereq": [
+            {
+              "k": "tipo_revelador_2",
+              "v": "n"
+            }
+          ],
+          "text": "Digite la dirección completa donde la tercera parte reveladora se notificará, indicando la ciudad"
+        }
+      ],
+      "help": "revelador",
+      "name": "direccion_revelador_3",
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de la tercera parte reveladora",
+      "help": "revelador",
+      "name": "telefono_revelador_3",
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la tercera parte reveladora",
+      "help": "revelador",
+      "name": "correo_revelador_3",
+      "prereq": [
+        {
+          "k": "reveladores_2",
+          "v": "s"
+        },
+        {
+          "k": "reveladores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección completa de la parte receptora",
+      "help": "receptor",
+      "name": "direccion_receptor_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la parte receptora",
+      "help": "receptor",
+      "name": "telefono_receptor_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte receptora",
+      "help": "receptor",
+      "name": "correo_receptor_1",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección completa de la segunda parte receptora",
+      "help": "receptor",
+      "name": "direccion_receptor_2",
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la segunda parte receptora",
+      "help": "receptor",
+      "name": "telefono_receptor_2",
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la segunda parte receptor",
+      "help": "receptor",
+      "name": "correo_receptor_2",
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección completa de la tercera parte receptora",
+      "help": "receptor",
+      "name": "direccion_receptor_3",
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la tercera parte receptora",
+      "help": "receptor",
+      "name": "telefono_receptor_3",
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la tercera parte receptora",
+      "help": "receptor",
+      "name": "correo_receptor_3",
+      "prereq": [
+        {
+          "k": "receptores_2",
+          "v": "s"
+        },
+        {
+          "k": "receptores_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulac_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-12-15",
+  "creationUser": "alejo",
+  "description": "Por medio del presente acuerdo, la parte reveladora entrega información considerada de carácter confidencial, a la parte receptora, donde esta ultima se compromete a guardar bajo estricta reserva y confidencialidad, dicha información.",
+  "entity": "CONT",
+  "example": "<b>NOTA</b>: Se recomienda a la parte reveladora de la información documentar de manera clara y por medio de audio, video, y/o cualquier otro medio idóneo la(s) reunión(es) que adelanten con la parte receptora. \n\n<b>PARTES</b>\n- Revelador: Quien suministra la información de carácter confidencial.\n\n- Receptor: Quien adquiere la obligación de guardar bajo estricta confidencialidad la información que se le suministra.\n\n<b>EJEMPLO</b>\n\n Juan, quien ha desarrollado un novedoso emprendimiento, se encuentra en la búsqueda de inversionista; debido a esto, agenda una reunión con Pedro, potencial inversor de su proyecto, por esta razón suscriben un acuerdo de confidencialidad para que Juan le muestre con tranquilidad su proyecto, asegurando que su información quede protegida.",
+  "help": {
+    "receptor": "Receptor: Quien adquiere la obligación de guardar bajo estricta confidencialidad la información que se le suministra.",
+    "revelador": "Revelador: Quien suministra la información de carácter confidencial."
+  },
+  "keywords": [
+    "secreto",
+    "reservado",
+    "discreción",
+    "discrecion",
+    "idea",
+    "robo",
+    "proteger",
+    "protección",
+    "proteccion"
+  ],
+  "name": "ACUERDO DE CONFIDENCIALIDAD",
+  "PK": "CONT96a0dd9d-08cf-4d3c-bda7-89b4b740f90f",
+  "price": 29900,
+  "relation1": "LATEST|ACTIVE|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "relation2": "LATEST|2020-12-15",
+  "relation3": "LATEST|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "sign": [
+    "nombre_revelador_1",
+    "nombre_revelador_2",
+    "nombre_revelador_3",
+    "cedula_revelador_1",
+    "cedula_revelador_2",
+    "cedula_revelador_3",
+    "cedulae_revelador_1",
+    "cedulae_revelador_2",
+    "cedulae_revelador_3",
+    "pasaporte_revelador_1",
+    "pasaporte_revelador_2",
+    "pasaporte_revelador_3",
+    "correo_revelador_1",
+    "correo_revelador_2",
+    "correo_revelador_3",
+    "telefono_revelador_1",
+    "telefono_revelador_2",
+    "telefono_revelador_3",
+    "nombre_empresa_rev_1",
+    "nombre_empresa_rev_2",
+    "nombre_empresa_rev_3",
+    "identificacion_empresa_rev_1",
+    "identificacion_empresa_rev_2",
+    "identificacion_empresa_rev_3",
+    "nombre_receptor_1",
+    "nombre_receptor_2",
+    "nombre_receptor_3",
+    "cedula_receptor_1",
+    "cedula_receptor_2",
+    "cedula_receptor_3",
+    "cedulae_receptor_1",
+    "cedulae_receptor_2",
+    "cedulae_receptor_3",
+    "pasaporte_receptor_1",
+    "pasaporte_receptor_2",
+    "pasaporte_receptor_3",
+    "correo_receptor_1",
+    "correo_receptor_2",
+    "correo_receptor_3",
+    "telefono_receptor_1",
+    "telefono_receptor_2",
+    "telefono_receptor_3",
+    "nombre_empresa_rec_1",
+    "nombre_empresa_rec_2",
+    "nombre_empresa_rec_3",
+    "identificacion_empresa_rec_1",
+    "identificacion_empresa_rec_2",
+    "identificacion_empresa_rec_3"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_revelador_1",
+      "identification": "cedula_revelador_1|cedulae_revelador_1|pasaporte_revelador_1",
+      "name": "nombre_revelador_1",
+      "type": "revelador_1"
+    },
+    {
+      "email": "correo_revelador_2",
+      "identification": "cedula_revelador_2|cedulae_revelador_2|pasaporte_revelador_2",
+      "name": "nombre_revelador_2",
+      "type": "revelador_2"
+    },
+    {
+      "email": "correo_revelador_3",
+      "identification": "cedula_revelador_3|cedulae_revelador_3|pasaporte_revelador_3",
+      "name": "nombre_revelador_3",
+      "type": "revelador_3"
+    },
+    {
+      "email": "correo_receptor_1",
+      "identification": "cedula_receptor_1|cedulae_receptor_1|pasaporte_receptor_1",
+      "name": "nombre_receptor_1",
+      "type": "receptor_1"
+    },
+    {
+      "email": "correo_receptor_2",
+      "identification": "cedula_receptor_2|cedulae_receptor_2|pasaporte_receptor_2",
+      "name": "nombre_receptor_2",
+      "type": "receptor_2"
+    },
+    {
+      "email": "correo_receptor_3",
+      "identification": "cedula_receptor_3|cedulae_receptor_3|pasaporte_receptor_3",
+      "name": "nombre_receptor_3",
+      "type": "receptor_3"
+    }
+  ],
+  "SK": "VERS1",
+  "slug": "acuerdo-de-confidencialidad",
+  "status": "ACTIVE",
+  "time": 5,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo"
+}

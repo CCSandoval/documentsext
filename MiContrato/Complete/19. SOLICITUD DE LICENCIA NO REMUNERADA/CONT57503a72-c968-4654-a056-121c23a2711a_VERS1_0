@@ -1,0 +1,100 @@
+<p>
+  <span name="ciudad_contrato">________</span>, <span name="fecha_contrato">________</span>
+</p>
+<br />
+
+<p>
+  <span name="tipo_empleador_j">
+    Respetados señores <br />
+    <b name="nombre_empresa">________</b>
+  </span>
+  <span name="tipo_empleador_n" hidden>
+    <span name="genero_empleador_m">Respetada señora</span>
+    <span name="genero_empleador_h" hidden>Respetado señor</span><br />
+    <b name="nombre_empleador">________</b>
+  </span>
+</p><br />
+
+<p>
+  <b>ASUNTO: </b>SOLICITUD DE LICENCIA NO REMUNERADA
+</p><br />
+
+<p><span name="nombre_empleado">________</span>, mayor de edad,
+  <span name="genero_trabajador_m"> identificada</span>
+  <span name="genero_trabajador_h" hidden> identificado</span> con
+  <span name="tipo_documento_empleado_cc"> cédula de ciudadanía número
+    <span name="cedula_empleado">________</span>,
+  </span>
+  <span name="tipo_documento_empleado_ce" hidden> cédula de extranjería número
+    <span name="cedulae_empleado">________</span>,
+  </span>
+  <span name="tipo_documento_empleado_pa" hidden> pasaporte número
+    <span name="pasaporte_empleado">________</span>,
+  </span> quien actualmente cuento con contrato laboral vigente con
+  <span name="tipo_empleador_j">
+    la compañía
+    <b name="nombre_empresa">________</b>,
+  </span>
+  <span name="tipo_empleador_n" hidden>
+    <b name="nombre_empleador">________</b>,
+  </span> desempeñando el cargo de
+  <span name="cargo_empleado">________</span>, por medio de la presente, y según lo dispuesto en
+  <span class="filter"> el artículo 51, numeral 4 del Código Sustantivo del Trabajo, muy respetuosamente me permito
+    solicitarle, de manera libre y voluntaria,
+  </span> me conceda una licencia no remunerada de trabajo por el término de
+  <span name="dias_licencia">________</span> días, contados a partir del día
+  <span name="inicio_licencia">________</span> y hasta el día
+  <span name="fin_licencia">________</span>.
+</p>
+
+<p>La anterior solicitud se da debido a que
+  <span name="motivo_licencia">________</span>.
+</p>
+
+
+<p><span class="filter">Agradezco su comprensión ante esta situación.</span></p>
+
+<p>
+  Atentamente,
+</p>
+
+<p>
+  <br /><br /><br /><br />
+  <b name="nombre_empleado">________</b><br />
+  <span name="tipo_documento_empleado_cc">
+    <b>C.C.</b> <span name="cedula_empleado">________</span>
+  </span>
+  <span name="tipo_documento_empleado_ce" hidden>
+    <b>C.E.</b> <span name="cedulae_empleado">________</span>
+  </span>
+  <b name="tipo_documento_empleado_pa" hidden>
+    <b>Pasaporte</b> <span name="pasaporte_empleado">________</span>
+  </b>
+</p>
+
+<p>
+  <span name="firma_testigo_n"></span>
+  <span name="firma_testigo_s" hidden>
+    <br /><br /><br /><br />
+    <b name="nombre_testigo">________</b><br />
+    <span name="tipo_documento_testigo_cc">
+      <b>C.C.</b>
+      <span name="cedulac_testigo">________</span><br />
+    </span>
+    <span name="tipo_documento_testigo_ce" hidden>
+      <b>C.E.</b>
+      <span name="cedulae_testigo">________</span><br />
+    </span>
+    <span name="tipo_documento_testigo_pa" hidden>
+      <b>PASAPORTE</b>
+      <span name="pasaporte_testigo">________</span><br />
+    </span>
+    <b>TESTIGO</b><br />
+    <b>DIRECCIÓN:</b>
+    <span name="direccion_testigo">________</span><br />
+    <b>TELÉFONO:</b>
+    <span name="telefono_testigo">________</span><br />
+    <b>CORREO ELECTRÓNICO:</b>
+    <span name="correo_testigo">________</span>
+  </span>
+</p>

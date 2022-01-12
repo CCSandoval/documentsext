@@ -1,0 +1,2645 @@
+{
+  "category": "CATG4e6eff89-4743-4552-8bc9-21bcd30c0efd",
+  "config": [
+    {
+      "description": "El socio propietario es",
+      "help": "arrendador",
+      "name": "tipo_arrendador",
+      "options": [
+        {
+          "name": "Persona Natural",
+          "value": "n"
+        },
+        {
+          "name": "Persona Jurídica",
+          "value": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre completo del representante legal de la empresa que aporta el bien",
+      "help": "arrendador",
+      "name": "nombre_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre completo de la persona que aporta el bien",
+      "help": "arrendador",
+      "name": "nombre_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "El sexo del representante legal de la empresa que aporta el bien es:",
+      "help": "arrendador",
+      "name": "genero_arrendador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "El sexo de la persona que aporta el bien es:",
+      "help": "arrendador",
+      "name": "genero_arrendador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la persona que aporta el bien",
+      "help": "arrendador",
+      "name": "tipo_documento_arrendador_n",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Seleccione el tipo de documento del representante legal de la empresa que aporta el bien",
+      "help": "arrendador",
+      "name": "tipo_documento_arrendador_j",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento del representante legal de la empresa que aporta el bien, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "cedula_arrendador_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendador_j",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte que aporta el bien, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "cedula_arrendador_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendador_n",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento del representante legal de la empresa que aporta el bien, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "cedulae_arrendador_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendador_j",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte que aporta el bien, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "cedulae_arrendador_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendador_n",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte del representante legal de la empresa que aporta el bien, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "pasaporte_arrendador_j",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        },
+        {
+          "k": "tipo_documento_arrendador_j",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte que aporta el bien, sin comas, puntos, ni guiones",
+      "help": "arrendador",
+      "name": "pasaporte_arrendador_n",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        },
+        {
+          "k": "tipo_documento_arrendador_n",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio de la parte que aporta el bien",
+      "help": "arrendador",
+      "name": "ciudad_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que aporta el bien",
+      "help": "arrendador",
+      "name": "nombre_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el NIT de la empresa que aporta el bien, sin dígito de verificación",
+      "help": "arrendador",
+      "name": "identificacion_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el nombre del municipio donde está domiciliada la empresa que aporta el bien",
+      "help": "arrendador",
+      "name": "ciudad_empresa_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del socio industrial",
+      "help": "arrendataria",
+      "name": "nombre_arrendatario",
+      "type": "name"
+    },
+    {
+      "description": "El sexo del socio industrial es:",
+      "help": "arrendataria",
+      "name": "genero_arrendatario",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento del socio industrial",
+      "help": "arrendataria",
+      "name": "tipo_documento_arrendatario_n",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de Extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento del socio industrial, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "cedula_arrendatario_n",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario_n",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento del socio industrial, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "cedulae_arrendatario_n",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario_n",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte del socio industrial, sin comas, puntos, ni guiones",
+      "help": "arrendataria",
+      "name": "pasaporte_arrendatario_n",
+      "prereq": [
+        {
+          "k": "tipo_documento_arrendatario_n",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio de domicilio del socio industrial",
+      "help": "arrendataria",
+      "name": "ciudad_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el número de predios que desea explotar en sociedad",
+      "name": "numero_predios",
+      "options": [
+        {
+          "name": "1",
+          "value": "1"
+        },
+        {
+          "name": "2",
+          "value": "2"
+        },
+        {
+          "name": "3",
+          "value": "3"
+        },
+        {
+          "name": "4",
+          "value": "4"
+        },
+        {
+          "name": "5",
+          "value": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "1"
+    },
+    {
+      "description": "Digite, dirección o ubicación del inmueble, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos?",
+      "help": "linderos",
+      "name": "linderos",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del predio, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición",
+      "name": "matricula_inmobiliaria",
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el inmueble",
+      "name": "oficina_registro_ip",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion_inmueble",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del inmueble",
+      "name": "codigo_catastral",
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del segundo predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del segundo predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del segundo predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos2",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del segundo predio que se explotará en sociedad",
+      "name": "matricula_inmobiliaria2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el segundo predio que se explotará en sociedad",
+      "name": "oficina_registro_ip2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del inmueble",
+      "name": "direccion_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del segundo predio que se explotará en sociedad",
+      "name": "codigo_catastral2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del segundo predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion3_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del segundo predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos32",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del segundo predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion3_linderos2",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del segundo predio que se explotará en sociedad",
+      "name": "matricula3_inmobiliaria2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el segundo predio que se explotará en sociedad",
+      "name": "oficina3_registro_ip2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del segundo predio que se explotará en sociedad",
+      "name": "direccion3_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del segundo predio que se explotará en sociedad",
+      "name": "codigo3_catastral2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del segundo predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion4_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del segundo predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos42",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del segundo predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion4_linderos2",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del segundo predio que se explotará en sociedad",
+      "name": "matricula4_inmobiliaria2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el segundo predio que se explotará en sociedad",
+      "name": "oficina4_registro_ip2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del segundo predio que se explotará en sociedad",
+      "name": "direccion4_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del segundo predio que se explotará en sociedad",
+      "name": "codigo4_catastral2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del segundo predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion5_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del segundo predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos52",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del segundo predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion5_linderos2",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del segundo predio que se explotará en sociedad",
+      "name": "matricula5_inmobiliaria2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el segundo predio que se explotará en sociedad",
+      "name": "oficina5_registro_ip2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del segundo predio que se explotará en sociedad",
+      "name": "direccion5_inmueble2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del segundo predio que se explotará en sociedad",
+      "name": "codigo5_catastral2",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del tercer predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del tercer predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del tercer predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos3",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del tercer predio que se explotará en sociedad",
+      "name": "matricula_inmobiliaria3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el tercer predio que se explotará en sociedad",
+      "name": "oficina_registro_ip3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del tercer predio que se explotará en sociedad",
+      "name": "direccion_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del tercer predio que se explotará en sociedad",
+      "name": "codigo_catastral3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del tercer predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion4_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del tercer predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos43",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del tercer predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion4_linderos3",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del tercer predio que se explotará en sociedad",
+      "name": "matricula4_inmobiliaria3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el tercer predio que se explotará en sociedad",
+      "name": "oficina4_registro_ip3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del tercer predio que se explotará en sociedad",
+      "name": "direccion4_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del tercer predio que se explotará en sociedad",
+      "name": "codigo4_catastral3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del tercer predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion5_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del tercer predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos53",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del tercer predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion5_linderos3",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del tercer predio que se explotará en sociedad",
+      "name": "matricula5_inmobiliaria3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el tercer predio que se explotará en sociedad",
+      "name": "oficina5_registro_ip3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del tercer predio que se explotará en sociedad",
+      "name": "direccion5_inmueble3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del tercer predio que se explotará en sociedad",
+      "name": "codigo5_catastral3",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del cuarto predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del cuarto predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del cuarto predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos4",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del cuarto predio que se explotará en sociedad",
+      "name": "matricula_inmobiliaria4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el cuarto predio que se explotará en sociedad",
+      "name": "oficina_registro_ip4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del cuarto predio que se explotará en sociedad",
+      "name": "direccion_inmueble4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del cuarto predio que se explotará en sociedad",
+      "name": "codigo_catastral4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del cuarto predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion5_inmueble4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del cuarto predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos54",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del cuarto predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion5_linderos4",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del cuarto predio que se explotará en sociedad",
+      "name": "matricula5_inmobiliaria4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el cuarto predio que se explotará en sociedad",
+      "name": "oficina5_registro_ip4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del cuarto predio que se explotará en sociedad",
+      "name": "direccion5_inmueble4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del cuarto predio que se explotará en sociedad",
+      "name": "codigo5_catastral4",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite, dirección o ubicación del quinto predio que se explotará en sociedad, tal como aparecen en la escritura pública o en certificado de libertad y tradición",
+      "name": "descripcion_inmueble5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea añadir información acerca de los linderos del quinto predio que se explotará en sociedad?",
+      "help": "linderos",
+      "name": "linderos5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "Describa los linderos del quinto predio que se explotará en sociedad, como conste en la escritura pública, en el folio de matrícula o certificado de tradición",
+      "help": "linderos",
+      "name": "descripcion_linderos5",
+      "prereq": [
+        {
+          "k": "linderos",
+          "v": "s"
+        },
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de folio de matrícula inmobiliaria o certificado de tradición del quinto predio que se explotará en sociedad",
+      "name": "matricula_inmobiliaria5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la oficina de registro de instrumentos públicos donde está registrado el quinto predio que se explotará en sociedad",
+      "name": "oficina_registro_ip5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del quinto predio que se explotará en sociedad",
+      "name": "direccion_inmueble5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número completo del código catastral del quinto predio que se explotará en sociedad",
+      "name": "codigo_catastral5",
+      "prereq": [
+        {
+          "k": "numero_predios",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite detalladamente las actividades de cultivo para las cuales se destinarán los predios",
+      "name": "destinacion_predio",
+      "type": "text"
+    },
+    {
+      "description": "El periodo de duración del presente contrato sera pactado en:",
+      "name": "contrato_periodo",
+      "options": [
+        {
+          "name": "Meses",
+          "value": "m"
+        },
+        {
+          "name": "Años",
+          "value": "a"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Digite el término de duración del presente contrato",
+      "name": "duracion_contrato",
+      "type": "number"
+    },
+    {
+      "description": "Seleccione la fecha de inicio del contrato",
+      "name": "fecha_inicio_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Seleccione la fecha de terminación del contrato",
+      "name": "fecha_terminacion_contrato",
+      "type": "date"
+    },
+    {
+      "description": "¿Con cuántos días de anticipación se debe avisar a la otra parte la intención de no renovar el contrato para que este no se renueve de forma automática?",
+      "name": "preaviso",
+      "type": "text"
+    },
+    {
+      "description": "¿En el caso de renovar el contrato de forma automatica, cómo desea hacerlo?",
+      "name": "renovacion_pactada",
+      "options": [
+        {
+          "name": "Por un termino igual al inicialmente pactado",
+          "value": "i"
+        },
+        {
+          "name": "Por un termino distinto",
+          "value": "d"
+        }
+      ],
+      "type": "clausula",
+      "value": "i"
+    },
+    {
+      "description": "Digite en meses por cuanto tiempo se prorrogará automáticamente el presente contrato",
+      "name": "tiempo_renovacion_auto",
+      "prereq": [
+        {
+          "k": "renovacion_pactada",
+          "v": "d"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea permitir que el socio industrial utilice la casa de habitación de la finca?",
+      "name": "uso_finca_vivienda",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "s"
+    },
+    {
+      "description": "¿Desea agregar otras obligaciones para el socio propietario?",
+      "name": "otros_obligaciones_arrendador",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione el número de obligaciones que desea agregar al socio propietario",
+      "name": "arrendador_obligaciones",
+      "options": [
+        {
+          "name": "1",
+          "value": "1"
+        },
+        {
+          "name": "2",
+          "value": "2"
+        },
+        {
+          "name": "3",
+          "value": "3"
+        },
+        {
+          "name": "4",
+          "value": "4"
+        },
+        {
+          "name": "5",
+          "value": "5"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "1"
+    },
+    {
+      "description": "Digite la obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones_arrendador_1",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones_arrendador_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones3_arrendador_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones4_arrendador_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones5_arrendador_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones_arrendador_3",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones4_arrendador_3",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones5_arrendador_3",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la cuarta obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones_arrendador_4",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la cuarta obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones5_arrendador_4",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la quinta obligacion adicional del socio propietario que desea agregar",
+      "name": "obligaciones_arrendador_5",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendador",
+          "v": "s"
+        },
+        {
+          "k": "arrendador_obligaciones",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar otras obligaciones para el socio industrial?",
+      "name": "otros_obligaciones_arrendatario",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione el número de obligaciones que desea agregar",
+      "name": "arrendatario_obligaciones",
+      "options": [
+        {
+          "name": "1",
+          "value": "1"
+        },
+        {
+          "name": "2",
+          "value": "2"
+        },
+        {
+          "name": "3",
+          "value": "3"
+        },
+        {
+          "name": "4",
+          "value": "4"
+        },
+        {
+          "name": "5",
+          "value": "5"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "1"
+    },
+    {
+      "description": "Digite la obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones_arrendatario_1",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones_arrendatario_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones3_arrendatario_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones4_arrendatario_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones5_arrendatario_2",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones_arrendatario_3",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones4_arrendatario_3",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones5_arrendatario_3",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la cuarta obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones_arrendatario_4",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la cuarta obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones5_arrendatario_4",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la quinta obligacion adicional del socio industrial que desea agregar",
+      "name": "obligaciones_arrendatario_5",
+      "prereq": [
+        {
+          "k": "otros_obligaciones_arrendatario",
+          "v": "s"
+        },
+        {
+          "k": "arrendatario_obligaciones",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite los muebles, maquinarias y equipos con que está dotada la finca que recibe el socio industrial",
+      "name": "maquinaria_bienes_socio",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el porcentaje de utilidad que le corresponderá al socio propietario",
+      "name": "utilidades_propietario",
+      "options": [
+        {
+          "name": "10%",
+          "value": "10"
+        },
+        {
+          "name": "20%",
+          "value": "20"
+        },
+        {
+          "name": "30%",
+          "value": "30"
+        },
+        {
+          "name": "40%",
+          "value": "40"
+        },
+        {
+          "name": "50%",
+          "value": "50"
+        },
+        {
+          "name": "60%",
+          "value": "60"
+        },
+        {
+          "name": "70%",
+          "value": "70"
+        },
+        {
+          "name": "80%",
+          "value": "80"
+        },
+        {
+          "name": "90%",
+          "value": "90"
+        }
+      ],
+      "type": "clausula",
+      "value": "10"
+    },
+    {
+      "description": "Seleccione la periodicidad con la que se repartirán las utilidades los socios",
+      "name": "periodo_reparticion",
+      "options": [
+        {
+          "label": "semanal",
+          "name": "Semanalmente",
+          "value": "se"
+        },
+        {
+          "label": "mensual",
+          "name": "Mensualmente",
+          "value": "m"
+        },
+        {
+          "label": "trimestral",
+          "name": "Trimestralmente",
+          "value": "t"
+        },
+        {
+          "label": "semestral",
+          "name": "Semestralmente",
+          "value": "sm"
+        },
+        {
+          "label": "anual",
+          "name": "Anualmente",
+          "value": "a"
+        }
+      ],
+      "type": "select",
+      "value": "sm"
+    },
+    {
+      "description": "¿Desea agregar otras formas de terminación del presente contrato?",
+      "name": "otros_terminacion_contrato",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Seleccione el número de formas de terminación que desea agregar",
+      "name": "terminacion_contrato",
+      "options": [
+        {
+          "name": "1",
+          "value": "1"
+        },
+        {
+          "name": "2",
+          "value": "2"
+        },
+        {
+          "name": "3",
+          "value": "3"
+        },
+        {
+          "name": "4",
+          "value": "4"
+        },
+        {
+          "name": "5",
+          "value": "5"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "1"
+    },
+    {
+      "description": "Digite la forma de terminación del presente contrato que desea agregar",
+      "name": "term_contrato_1",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la primera forma de terminación del presente contrato que desea agregar",
+      "name": "term2_contrato_1",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la primera forma de terminación del presente contrato que desea agregar",
+      "name": "term3_contrato_1",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la primera forma de terminación del presente contrato que desea agregar",
+      "name": "term4_contrato_1",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la primera forma de terminación del presente contrato que desea agregar",
+      "name": "term5_contrato_1",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda forma de terminación del presente contrato que desea agregar",
+      "name": "term_contrato_2",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "2"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda forma de terminación del presente contrato que desea agregar",
+      "name": "term3_contrato_2",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda forma de terminación del presente contrato que desea agregar",
+      "name": "term4_contrato_2",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la segunda forma de terminación del presente contrato que desea agregar",
+      "name": "term5_contrato_2",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera forma de terminación del presente contrato que desea agregar",
+      "name": "term_contrato_3",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "3"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera forma de terminación del presente contrato que desea agregar",
+      "name": "term4_contrato_3",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la tercera forma de terminación del presente contrato que desea agregar",
+      "name": "term5_contrato_3",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la cuarta forma de terminación del presente contrato que desea agregar",
+      "name": "term_contrato_4",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "4"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la cuarta forma de terminación del presente contrato que desea agregar",
+      "name": "term5_contrato_4",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la quinta forma de terminación del presente contrato que desea agregar",
+      "name": "term_contrato_5",
+      "prereq": [
+        {
+          "k": "otros_terminacion_contrato",
+          "v": "s"
+        },
+        {
+          "k": "terminacion_contrato",
+          "v": "5"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar servicios públicos?",
+      "name": "servicios_p",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Con qué servicios públicos esenciales cuentan los predios que se explotarán en sociedad?",
+      "name": "servicios_publicos",
+      "prereq": [
+        {
+          "k": "servicios_p",
+          "v": "s"
+        }
+      ],
+      "select": [
+
+      ],
+      "type": "check",
+      "values": [
+        "acueducto",
+        "energía eléctrica",
+        "gas natural"
+      ]
+    },
+    {
+      "description": "¿Quién deberá pagar dichos servicios?",
+      "help": "arrendador_arrendatario",
+      "name": "encargado_pago",
+      "options": [
+        {
+          "name": "El socio propietario",
+          "value": "a"
+        },
+        {
+          "name": "El socio industrial",
+          "value": "ar"
+        },
+        {
+          "name": "Entre ambos socios por partes iguales",
+          "value": "i"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "servicios_p",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "ar"
+    },
+    {
+      "description": "Los predios que se explotarán en sociedad cuenta con usos conexos",
+      "help": "usos_conexos",
+      "name": "usos_conexos",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "si"
+        },
+        {
+          "name": "No",
+          "value": "no"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "servicios_p",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "no"
+    },
+    {
+      "description": "¿Con cuales usos conexos cuentan los predios que se explotarán en sociedad?",
+      "help": "usos_conexos",
+      "name": "usos_conexos_servicios",
+      "prereq": [
+        {
+          "k": "usos_conexos",
+          "v": "si"
+        },
+        {
+          "k": "servicios_p",
+          "v": "s"
+        }
+      ],
+      "select": [
+
+      ],
+      "type": "check",
+      "values": [
+        "televisión",
+        "internet",
+        "telefonía"
+      ]
+    },
+    {
+      "description": "¿Quién deberá pagar dichos usos conexos?",
+      "name": "encargado_pago_conexos",
+      "options": [
+        {
+          "name": "El socio propietario",
+          "value": "a"
+        },
+        {
+          "name": "El socio industrial",
+          "value": "ar"
+        },
+        {
+          "name": "Entre ambos socios por partes iguales",
+          "value": "i"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "usos_conexos",
+          "v": "si"
+        },
+        {
+          "k": "servicios_p",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "ar"
+    },
+    {
+      "description": "¿Desea agregar cláusula penal?",
+      "name": "clausulas_penal",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "¿Cuál es el valor de la multa de incumplimiento?",
+      "name": "multa_incumplimiento",
+      "prereq": [
+        {
+          "k": "clausulas_penal",
+          "v": "s"
+        }
+      ],
+      "type": "currency"
+    },
+    {
+      "description": "¿Desea agregar una cláusula adicional al presente contrato?",
+      "name": "clausulas_adicional",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co",
+      "name": "adicional_clasulas",
+      "prereq": [
+        {
+          "k": "clausulas_adicional",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre del municipio donde se firma el presente contrato",
+      "name": "ciudad_firma",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la cual se firma el presente contrato",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": "Digite la dirección completa donde la parte que entrega el bien se notificará, indicando la ciudad",
+      "help": "arrendador",
+      "name": "direccion_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección completa donde se notificará a la empresa que entrega el bien, indicando la ciudad",
+      "help": "arrendador",
+      "name": "direccion_arrendador",
+      "prereq": [
+        {
+          "k": "tipo_arrendador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono de la parte que entrega el bien",
+      "help": "arrendador",
+      "name": "telefono_arrendador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de la parte que entrega el bien",
+      "help": "arrendador",
+      "name": "correo_arrendador",
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección donde el socio industrial se notificará, indicando la ciudad",
+      "help": "arrendataria",
+      "name": "direccion_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el número de teléfono del socio industrial",
+      "help": "arrendataria",
+      "name": "telefono_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del socio industrial",
+      "help": "arrendataria",
+      "name": "correo_arrendatario",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulac_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ]
+}

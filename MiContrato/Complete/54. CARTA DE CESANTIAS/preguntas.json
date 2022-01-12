@@ -1,0 +1,491 @@
+{
+  "build": 3,
+  "category": "CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "config": [
+    {
+      "description": "Digite la ciudad en la que se escribe la carta de cesantias",
+      "name": "ciudad_contrato",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que se escribe la carta de cesantias",
+      "name": "fecha_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el nombre del fondo de cesantias",
+      "name": "nombre_cesantias",
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la parte trabajadora que dejó de laboral en la empresa",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el sexo de la parte trabajadora",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte trabajadora que dejó de laboral en la empresa",
+      "help": "trabajador",
+      "name": "tipo_documento_trabajador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte trabajadora que dejó de laboral en la empresa, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedula_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte trabajadora que dejó de laboral en la empresa, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte trabajadora que dejó de laboral en la empresa, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de empleador",
+      "help": "empleador",
+      "name": "tipo_empleador",
+      "options": [
+        {
+          "name": "Persona jurídica",
+          "value": "j"
+        },
+        {
+          "name": "Persona natural",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": "Digite el nombre de la empresa",
+      "name": "nombre_empresa_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nit de la empresa",
+      "name": "numero_documento_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la parte empleadora",
+      "help": "empleador",
+      "name": "nombre_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte empleadora",
+      "help": "empleador",
+      "name": "tipo_documento_empleador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte empleadora, sin comas, puntos, ni guiones",
+      "help": "empleador",
+      "name": "cedula_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "cc"
+        },
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte empleadora, sin comas, puntos, ni guiones",
+      "help": "empleador",
+      "name": "cedulae_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "ce"
+        },
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte empleadora, sin comas, puntos, ni guiones",
+      "help": "empleador",
+      "name": "pasaporte_empleador",
+      "prereq": [
+        {
+          "k": "tipo_documento_empleador",
+          "v": "pa"
+        },
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que la parte trabajadora dejó de laboral con la parte empleadora",
+      "help": "trabajador",
+      "name": "fecha_fin_relacion_laboral",
+      "type": "date"
+    },
+    {
+      "description": "Digite el nombre de quien escribe la presente carta",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de quien escribe la presente carta",
+      "name": "tipo_documento_escritor",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de quien escribe la presente carta, sin comas, puntos, ni guiones",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de quien escribe la presente carta, sin comas, puntos, ni guiones",
+      "name": "cedulae_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de quien escribe la presente carta, sin comas, puntos, ni guiones",
+      "name": "pasaporte_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el cargo de quien escribe la presente carta",
+      "name": "cargo_escritor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de quien escribe la presente carta",
+      "name": "correo_escritor",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2021-01-21",
+  "creationUser": "alejo",
+  "description": "Por medio del presente documento, la parte empleadora, enuncia los equipos de cómputo y/o dispositivos electrónicos que se le suministran a la parte trabajadora para que pueda desempeñar sus funciones. Como constancia de ello, la parte trabajadora plasma su firma en señal de aceptación y recepción de los dispositivos a satisfacción.",
+  "entity": "CONT",
+  "example": "Debe entenderse que estos equipos continuan siendo propiedad de la parte empleadora y que se entregan temporalmente a la parte trabajadora para el desempeño de sus funciones y mientras haya una relación laboral.\n\n<br/><b>PARTES</b>\n- Trabajador: Es la parte que dejó de laboral en la empresa.\n\n- Empleador: Es la parte que entrega los equipos de cómputo y/o dispositivos electrónicos.\n\n<b>EJEMPLO</b>\n\n Juan, empleador, procede a entregar a Pedro, trabajador de su empresa de desarrollo de software, un computador Asus Y 905 con 16 GB de RAM y número serial I8K5DY69S96026E,  para el desempeño de su labor como programador dentro de la empresa. En vitud de esto, suscriben una constancia de entrega de equipos de cómputo y/o dispositivos electrónicos donde se establece que dicho dispositivo ha sido debidamente entregado.",
+  "help": {
+    "empleador": "Empleador: Es la parte que solicita el pago de cesantías tras la terminación laboral con un empleado.",
+    "trabajador": "Trabajador: Es la parte que recibe las cesantías tras la terminación laboral."
+  },
+  "keywords": [
+    "despido",
+    "renuncia",
+    "compensación",
+    "compensacion",
+    "fondo de cesantias",
+    "fondo de cesantías"
+  ],
+  "name": "CONSTANCIA DE ENTREGA DE EQUIPOS DE CÓMPUTO Y/O DISPOSITIVOS ELECTRÓNICOS",
+  "PK": "CONTbf65a163-ae7d-4b16-985c-76c12938e249",
+  "price": 0,
+  "relation1": "LATEST|ACTIVE|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "relation2": "LATEST|2021-01-21",
+  "relation3": "LATEST|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "sign": [
+    "nombre_escritor",
+    "cedula_escritor  ",
+    "cedulae_escritor ",
+    "pasaporte_escritor ",
+    "correo_escritor  ",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_escritor",
+      "identification": "cedula_escritor|cedulae_escritor|pasaporte_escritor",
+      "name": "nombre_escritor",
+      "type": "escritor"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "SK": "VERS1",
+  "slug": "entrega-equipos-computo-dispositivos-electronicos",
+  "status": "ACTIVE",
+  "time": 3,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "MpYNBUvE0PY"
+}

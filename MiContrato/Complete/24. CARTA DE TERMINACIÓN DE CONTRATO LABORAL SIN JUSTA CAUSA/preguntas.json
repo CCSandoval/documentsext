@@ -1,0 +1,404 @@
+{
+  "build": 2,
+  "category": "CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "config": [
+    {
+      "description": "Digite la ciudad en la que se escribe la carta de terminación laboral",
+      "name": "ciudad_contrato",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que se escribe la carta",
+      "name": "fecha_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el nombre de la parte trabajadora que se despide sin justa causa",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el sexo de la parte trabajadora",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la persona que se despide sin justa causa",
+      "help": "trabajador",
+      "name": "tipo_documento_trabajador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la persona que se despide sin justa causa, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedula_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la persona que se despide sin justa causa, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la persona que se despide sin justa causa, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el nombre de la empresa que despide al trabajador",
+      "help": "empleador",
+      "name": "nombre_empresa_empleador",
+      "type": "name"
+    },
+    {
+      "description": "¿Desea explicarle al trabajador el motivo del despido?",
+      "help": "despido",
+      "name": "especificacion",
+      "options": [
+        {
+          "name": "Sí",
+          "value": "s"
+        },
+        {
+          "name": "No",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el motivo por el cual termina la relación laboral con el trabajador",
+      "name": "justificacion_despido",
+      "prereq": [
+        {
+          "k": "especificacion",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha a partir de la cual el trabajador dejará de prestar sus servicios a la parte empleadora",
+      "name": "fin_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el nombre de quien escribe la carta de despido",
+      "name": "nombre_escritor",
+      "type": "name"
+    },
+    {
+      "description": "Digite el cargo de quien escribe la carta de despido",
+      "name": "cargo_escritor",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de documento de quien escribe la carta de despido",
+      "name": "tipo_documento_escritor",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de quien escribe la carta de despido, sin comas, puntos, ni guiones",
+      "name": "cedula_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de quien escribe la carta de despido, sin comas, puntos, ni guiones",
+      "name": "cedulae_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de quien escribe la carta de despido, sin comas, puntos, ni guiones",
+      "name": "pasaporte_escritor",
+      "prereq": [
+        {
+          "k": "tipo_documento_escritor",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono de quien escribe la carta de despido",
+      "name": "telefono_escritor",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico de quien escribe la carta de despido",
+      "name": "correo_escritor",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de cédula de ciudadanía de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de cédula de extranjería de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2020-12-03",
+  "creationUser": "alejo",
+  "description": "Por medio del presente documento la parte empleadora informa a la parte trabajadora que su contrato laboral ha sido terminado sin justa causa. A partir de este momento la parte empleadora adquiere la obligación de liquidar e indemnizar laboralmente al trabajador.",
+  "entity": "CONT",
+  "example": "<b>PARTES</b>\n- Empleador: Quien terminará la relación laboral de manera unilateral y sin justa causa.\n\n- Trabajador: Quien será desvinculado de la empresa mediante la terminación unilateral del contrato.\n\n<b>EJEMPLO</b>\n\n Debido a la pandemia, Juan y su empresa sufrieron cuantiosas pérdidas económicas que lo obligaron a tener que realizar un recorte de personal; por esto, Juan le entrega a Pedro una carta de terminación de contrato sin justa causa para liquidarlo, indemnizarlo y finalmente desvincularlo de la empresa.",
+  "help": {
+    "despido": "Al ser una terminación de contrato sin justa causa, no es necesario que usted argumente los motivos del despido, no obstante, por motivos de cortesía, puede darle al trabajador una explicación. Un ejemplo puede ser cuando se despide al trabajador por motivos de insolvencia económica.",
+    "empleador": "Empleador: Quien terminará la relación laboral de manera unilateral y sin justa causa.",
+    "trabajador": "Trabajador: Quien será desvinculado de la empresa mediante la terminación unilateral del contrato."
+  },
+  "keywords": [
+    "acabar",
+    "culminar",
+    "terminar",
+    "concluir",
+    "despachar",
+    "expirar",
+    "finalización",
+    "finalizacion",
+    "clausura",
+    "despedir"
+  ],
+  "name": "CARTA DE TERMINACIÓN DE CONTRATO LABORAL SIN JUSTA CAUSA",
+  "PK": "CONT7d29a049-fca6-4be9-8b4a-19cd1d3e6b5b",
+  "price": 0,
+  "relation1": "LATEST|ACTIVE|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "relation2": "LATEST|2020-12-03",
+  "relation3": "LATEST|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_escritor",
+    "cedula_escritor",
+    "cedulae_escritor",
+    "pasaporte_escritor",
+    "correo_escritor",
+    "telefono_escritor",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_escritor",
+      "identification": "cedula_escritor|cedulae_escritor|pasaporte_escritor",
+      "name": "nombre_escritor",
+      "type": "escritor"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "terminacion-contrato-laboral-sin-justa-causa",
+  "status": "ACTIVE",
+  "time": 4,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "9Oa7eZy_utc"
+}

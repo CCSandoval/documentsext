@@ -1,0 +1,106 @@
+<p>
+  <span name="ciudad_contrato">________</span>, <span name="fecha_contrato">________</span>
+</p>
+<br />
+
+<p><span name="tipo_empleador_j">
+    Respetados señores <br />
+    <b name="nombre_empresa">________</b>
+  </span>
+  <span name="tipo_empleador_n" hidden>
+    <span name="genero_empleador_m">Respetada señora</span>
+    <span name="genero_empleador_h" hidden>Respetado señor</span><br />
+    <b name="nombre_empleador">________</b>
+  </span>
+</p><br />
+
+<p>
+  <b>ASUNTO: </b>SOLICITUD DE PERIODO DE VACACIONES
+</p><br />
+
+<p><span name="nombre_empleado">________</span>, mayor de edad,
+  <span name="genero_trabajador_m"> identificada</span>
+  <span name="genero_trabajador_h" hidden> identificado</span> con
+  <span name="tipo_documento_empleado_cc"> cédula de ciudadanía número
+    <span name="cedula_empleado">________</span>,
+  </span>
+  <span name="tipo_documento_empleado_ce" hidden> cédula de extranjería número
+    <span name="cedulae_empleado">________</span>,
+  </span>
+  <span name="tipo_documento_empleado_pa" hidden> pasaporte número
+    <span name="pasaporte_empleado">________</span>,
+  </span> quien actualmente cuento con contrato laboral vigente con
+  <span name="tipo_empleador_j">
+    la compañía
+    <b name="nombre_empresa">________</b>,
+  </span>
+  <span name="tipo_empleador_n" hidden>
+    <b name="nombre_empleador">________</b>,
+  </span> desempeñando el cargo de
+  <span name="cargo_empleado">________</span>, por medio de la presente, y según lo dispuesto en
+  <span class="filter"> Lorem ipsum dolor sit amet consectetur adipiscing elit fusce augue hac, dapibus mauris sapien
+    tempor facilisi leo tempus odio.
+  </span> me conceda el disfrute del periodo de vacaciones al cual ya tengo derecho,
+  <span class="filter"> Lorem ipsum dolor sit amet consectetur adipiscing elit fusce augue hac, dapibus mauris sapien
+    tempor facilisi leo tempus odio.
+  </span>
+</p>
+
+<p>De manera comedida, y
+  <span class="filter"> Lorem ipsum dolor sit amet consectetur adipiscing elit fusce augue hac, dapibus mauris sapien
+    tempor facilisi leo tempus odio.
+  </span> dicho periodo vacacional sea otorgado en el lapso comprendido entre los días
+  <span name="inicio_vacaciones">________</span> y
+  <span name="fin_vacaciones">________</span>.
+</p>
+
+<p>En caso de que no sea posible
+  <span class="filter"> Lorem ipsum dolor sit amet consectetur adipiscing elit fusce augue hac, dapibus mauris sapien
+    tempor facilisi leo tempus odio.
+  </span> disfrutar de mis vacaciones
+</p>
+
+<p>
+  Cordialmente,
+</p>
+
+<p>
+  <br /><br /><br /><br />
+  <b name="nombre_empleado">________</b><br />
+  <span name="tipo_documento_empleado_cc">
+    <b>C.C.</b> <span name="cedula_empleado">________</span>
+  </span>
+  <span name="tipo_documento_empleado_ce" hidden>
+    <b>C.E.</b> <span name="cedulae_empleado">________</span>
+  </span>
+  <b name="tipo_documento_empleado_pa" hidden>
+    <b>Pasaporte</b> <span name="pasaporte_empleado">________</span>
+  </b>
+</p>
+
+<p>
+  <span name="firma_testigo_n"></span>
+  <span name="firma_testigo_s" hidden>
+    <br /><br /><br /><br />
+    <b name="nombre_testigo">________</b><br />
+    <span name="tipo_documento_testigo_cc">
+      <b>C.C.</b>
+      <span name="cedulac_testigo">________</span><br />
+    </span>
+    <span name="tipo_documento_testigo_ce" hidden>
+      <b>C.E.</b>
+      <span name="cedulae_testigo">________</span><br />
+    </span>
+    <span name="tipo_documento_testigo_pa" hidden>
+      <b>PASAPORTE</b>
+      <span name="pasaporte_testigo">________</span><br />
+    </span>
+    <b>TESTIGO</b><br />
+    <b>DIRECCIÓN:</b>
+    <span name="direccion_testigo">________</span><br />
+    <b>TELÉFONO:</b>
+    <span name="telefono_testigo">________</span><br />
+    <b>CORREO ELECTRÓNICO:</b>
+    <span name="correo_testigo">________</span>
+  </span>
+</p>

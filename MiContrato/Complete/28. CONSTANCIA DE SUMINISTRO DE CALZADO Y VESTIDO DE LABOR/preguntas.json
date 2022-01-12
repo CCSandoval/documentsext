@@ -1,0 +1,754 @@
+{
+  "build": 2,
+  "category": "CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "config": [
+    {
+      "description": "Digite la ciudad en la que se escribe la constancia de suministro de calzado y vestido de labor",
+      "name": "ciudad_contrato",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en la que se escribe la constancia de suministro de calzado y vestido de labor",
+      "name": "fecha_contrato",
+      "type": "date"
+    },
+    {
+      "description": "Digite el nombre de la parte trabajadora que recibe el suministro de calzado y vestido de labor",
+      "help": "trabajador",
+      "name": "nombre_trabajador",
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el sexo de la parte trabajadora",
+      "help": "trabajador",
+      "name": "genero_trabajador",
+      "options": [
+        {
+          "name": "Femenino",
+          "value": "m"
+        },
+        {
+          "name": "Masculino",
+          "value": "h"
+        }
+      ],
+      "type": "clausula",
+      "value": "m"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte trabajadora que recibe el suministro de calzado y vestido de labor",
+      "help": "trabajador",
+      "name": "tipo_documento_trabajador",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte trabajadora que recibe el suministro de calzado y vestido de labor, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedula_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte trabajadora que recibe el suministro de calzado y vestido de labor, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "cedulae_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte trabajadora que recibe el suministro de calzado y vestido de labor, sin comas, puntos, ni guiones",
+      "help": "trabajador",
+      "name": "pasaporte_trabajador",
+      "prereq": [
+        {
+          "k": "tipo_documento_trabajador",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione el tipo de empleador",
+      "help": "empleador",
+      "name": "tipo_empleador",
+      "options": [
+        {
+          "name": "Persona jurídica",
+          "value": "j"
+        },
+        {
+          "name": "Persona natural",
+          "value": "n"
+        }
+      ],
+      "type": "clausula",
+      "value": "j"
+    },
+    {
+      "description": "Digite el nombre de la empresa",
+      "name": "nombre_empresa",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "j"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite el nombre de la parte empleadora",
+      "name": "nombre_empleador",
+      "prereq": [
+        {
+          "k": "tipo_empleador",
+          "v": "n"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el primer elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_1",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un segundo elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_2",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el segundo elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_2",
+      "prereq": [
+        {
+          "k": "tot_dotacion_2",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un tercer elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_3",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_2",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el tercer elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_3",
+      "prereq": [
+        {
+          "k": "tot_dotacion_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_3",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un cuarto elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_4",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_2",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_3",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el cuarto elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_4",
+      "prereq": [
+        {
+          "k": "tot_dotacion_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_4",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un quinto elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_5",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_3",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_4",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el quinto elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_5",
+      "prereq": [
+        {
+          "k": "tot_dotacion_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_5",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un sexto elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_6",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_4",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_5",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el sexto elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_6",
+      "prereq": [
+        {
+          "k": "tot_dotacion_5",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_6",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un séptimo elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_7",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_5",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_6",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el séptimo elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_7",
+      "prereq": [
+        {
+          "k": "tot_dotacion_6",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_7",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un octavo elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_8",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_6",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_7",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el octavo elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_8",
+      "prereq": [
+        {
+          "k": "tot_dotacion_7",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_8",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un noveno elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_9",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_7",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_8",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el noveno elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_9",
+      "prereq": [
+        {
+          "k": "tot_dotacion_8",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_9",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "¿Desea agregar un decimo elemento a la dotación entregada a la parte trabajadora?",
+      "help": "dotacion",
+      "name": "tot_dotacion_10",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "tot_dotacion_8",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_9",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite y describa de manera detallada y clara el decimo elemento entregado como dotación a la parte trabajadora",
+      "help": "dotacion",
+      "name": "dotacion_obj_10",
+      "prereq": [
+        {
+          "k": "tot_dotacion_9",
+          "v": "s"
+        },
+        {
+          "k": "tot_dotacion_10",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha del año en la que se suministra el calzado y vestido de labor a la parte trabajadora",
+      "help": "fecha_entrega",
+      "name": "entrega",
+      "options": [
+        {
+          "name": "30 de abril",
+          "value": "1"
+        },
+        {
+          "name": "31 de agosto",
+          "value": "2"
+        },
+        {
+          "name": "20 de diciembre",
+          "value": "3"
+        }
+      ],
+      "type": "clausula",
+      "value": "1"
+    },
+    {
+      "description": "Digite el año en que se suministra el calzado y vestido de labor a la parte trabajadora",
+      "help": "fecha_entrega",
+      "name": "anio_entrega",
+      "type": "text"
+    },
+    {
+      "description": "Seleccione la fecha en que la parte trabajadora firma la presente constancia",
+      "name": "fecha_firma",
+      "type": "date"
+    },
+    {
+      "description": "Digite el cargo de la parte trabajadora que es suministrada con calzado y vestido de labor",
+      "help": "trabajador",
+      "name": "cargo_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del trabajador",
+      "help": "trabajador",
+      "name": "correo_trabajador",
+      "type": "text"
+    },
+    {
+      "description": "¿Desea incluir un testigo?",
+      "name": "firma_testigo",
+      "options": [
+        {
+          "name": "No",
+          "value": "n"
+        },
+        {
+          "name": "Sí",
+          "value": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "n"
+    },
+    {
+      "description": "Digite el nombre del testigo",
+      "name": "nombre_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "name"
+    },
+    {
+      "description": "Seleccione el tipo de documento de la parte testigo",
+      "name": "tipo_documento_testigo",
+      "options": [
+        {
+          "name": "Cédula de Ciudadanía",
+          "value": "cc"
+        },
+        {
+          "name": "Cédula de extranjería",
+          "value": "ce"
+        },
+        {
+          "name": "Pasaporte",
+          "value": "pa"
+        }
+      ],
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "clausula",
+      "value": "cc"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedula_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "cc"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número de documento de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "cedulae_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "ce"
+        }
+      ],
+      "type": "number"
+    },
+    {
+      "description": "Digite el número del pasaporte de la parte testigo, sin comas, puntos, ni guiones",
+      "name": "pasaporte_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        },
+        {
+          "k": "tipo_documento_testigo",
+          "v": "pa"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite la dirección del testigo",
+      "name": "direccion_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el teléfono del testigo",
+      "name": "telefono_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    },
+    {
+      "description": "Digite el correo electrónico del testigo",
+      "name": "correo_testigo",
+      "prereq": [
+        {
+          "k": "firma_testigo",
+          "v": "s"
+        }
+      ],
+      "type": "text"
+    }
+  ],
+  "creationDate": "2021-01-19",
+  "creationUser": "alejo",
+  "description": "Por medio del presente documento, la parte empleadora enuncia los elementos de calzado y vestido de labor que se le suministran a la parte trabajadora según lo exigido en la Ley. Como constancia de ello, la parte trabajadora plasma su firma en señal de aceptación y recepción de la indumentaria a satisfacción.",
+  "entity": "CONT",
+  "example": "Debe recordarse que la dotación de calzado y vestido de labor solo debe entregarse obligatoriamente para aquellos trabajadores que devengan un salario inferior a dos (2) salarios mínimos legales mensuales vigentes.\n\n<br/><b>PARTES</b>\n- Trabajador: Es la parte que recibe el suministro de calzado y vestido de labor.\n\n- Empleador: Es la parte que entrega el suministro de calzado y vestido de labor.\n\n<b>EJEMPLO</b>\n\n Juan, empleador, el día 30 de abril de 2021 procede a entregar a Pedro, su trabajador, unos zapatos, un pantalón y una camisa para el desempeño de sus labores como asesor comercial. En vitud de esto, suscriben una constancia de suministro de calzado y vestido de labor, donde se establece que dichos elementos han sido debidamente entregados.",
+  "help": {
+    "dotacion": "Dotación: Corresponde al calzado y vestido de labor que es suministrado por la parte empleadora a la parte trabajadora.\nEjemplo: Botas puntera de acero, color negro, talla 41, marca TAC.",
+    "empleador": "Empleador: Es la parte que entrega el suministro de calzado y vestido de labor.",
+    "fecha_entrega": "La normatividad colombiana establece que se debe hacer entrega de la dotación del calzado y vestido de labor en tres(3) fechas del año, las cuales son: 30 de abril, 31 de agosto, y 20 de diciembre.",
+    "trabajador": "Trabajador: Es la parte que recibe el suministro de calzado y vestido de labor."
+  },
+  "keywords": [
+    "vestimenta",
+    "zapatos",
+    "seguridad",
+    "profesional",
+    "protección",
+    "proteccion",
+    "industrial",
+    "botas",
+    "dotación",
+    "dotacion",
+    "vestimenta",
+    "ropa",
+    "uniforme",
+    "platina"
+  ],
+  "name": "CONSTANCIA DE SUMINISTRO DE CALZADO Y VESTIDO DE LABOR",
+  "PK": "CONT8f201693-e05c-4df7-9730-5adfe50e5332",
+  "price": 0,
+  "relation1": "LATEST|ACTIVE|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc",
+  "relation2": "LATEST|2021-01-19",
+  "relation3": "LATEST|CATG0a0c7ade-8c6b-40f6-9c43-f0ac15aa13bc|ACTIVE",
+  "relation4": "LATEST|ACTIVE|000000000000000",
+  "SK": "VERS1",
+  "sign": [
+    "nombre_trabajador",
+    "cedula_trabajador",
+    "cedulae_trabajador",
+    "pasaporte_trabajador",
+    "correo_trabajador",
+    "nombre_testigo",
+    "cedula_testigo",
+    "cedulae_testigo",
+    "pasaporte_testigo",
+    "correo_testigo",
+    "telefono_testigo"
+  ],
+  "signatureProfile": [
+    {
+      "email": "correo_trabajador",
+      "identification": "cedula_trabajador|cedulae_trabajador|pasaporte_trabajador",
+      "name": "nombre_trabajador",
+      "type": "trabajador"
+    },
+    {
+      "email": "correo_testigo",
+      "identification": "cedula_testigo|cedulae_testigo|pasaporte_testigo",
+      "name": "nombre_testigo",
+      "type": "testigo"
+    }
+  ],
+  "slug": "suministro-calzado-y-vestido-de-labor",
+  "status": "ACTIVE",
+  "time": 3,
+  "timesUsed": 0,
+  "updateDate": "2021-02-01",
+  "updateUser": "alejo",
+  "youtube": "CqpyWbV2Zps"
+}
