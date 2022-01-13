@@ -1,0 +1,128 @@
+{
+    _id: ObjectId('61df2539116f24246c0ad8eb'),
+    config: [
+        {
+            name: 'nombre_emprendedor',
+            description: 'Ingrese el nombre del emprendedor',
+            type: 'name'
+        },
+        {
+            name: 'cc_emprendedor',
+            description: 'Ingrese el número de cédula del emprendedor',
+            type: 'number'
+        },
+        {
+            name: 'numero_convocatoria',
+            description: 'Ingrese el número de la convocatoria',
+            type: 'text'
+        },
+        {
+            name: 'numero_acta',
+            description: 'Ingrese el número del acta',
+            type: 'text'
+        },
+        {
+            name: 'fecha_acta',
+            description: 'Seleccione la fecha de expedición del acta',
+            type: 'date'
+        },
+        {
+            name: 'id_plan',
+            description: 'Ingrese el id del plan de negocios',
+            type: 'text'
+        },
+        {
+            name: 'nombre_plan',
+            description: 'Ingrese el nombre del plan de negocios',
+            type: 'name'
+        },
+        {
+            name: 'valor_plan',
+            description: 'Ingrese el valor aprobado para el proyecto',
+            type: 'currency'
+        },
+        {
+            name: 'valor_recomendado_plan',
+            description: 'Ingrese el valor recomendado para el proyecto',
+            type: 'currency'
+        },
+        {
+            name: 'correo_emprendedor',
+            description: 'Ingrese el correo del emprendedor',
+            type: 'text',
+            help: 'correo'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_emprendedor',
+        'cc_emprendedor',
+        'numero_convocatoria',
+        'numero_acta',
+        'fecha_acta',
+        'id_plan',
+        'nombre_plan',
+        'valor_plan',
+        'valor_recomendado_plan',
+        'correo_emprendedor'
+    ],
+    preFill: [
+        {
+            name: 'nombre_sena',
+            value: 'HERNAN DARIO FUENTES SALDARRIAGA'
+        },
+        {
+            name: 'cargo_sena',
+            value: 'Director de Empleo y Trabajo SENA'
+        },
+        {
+            name: 'cc_sena',
+            value: '3.349.902'
+        },
+        {
+            name: 'nombre_universidad',
+            value: 'ROBERTO FERRO ESCOBAR'
+        },
+        {
+            name: 'cargo_universidad',
+            value: 'Director IDEXUD'
+        },
+        {
+            name: 'cc_universidad',
+            value: '79.657.603'
+        },
+        {
+            name: 'cargo_emprendedor',
+            value: 'Emprendedor'
+        }
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_sena',
+            title: 'cargo_sena',
+            identification: 'cc_sena',
+            type: 'firma_sena'
+        },
+        {
+            name: 'nombre_universidad',
+            title: 'cargo_universidad',
+            identification: 'cc_universidad',
+            type: 'firma_universidad'
+        },
+        {
+            name: 'nombre_emprendedor',
+            email: 'correo_emprendedor',
+            title: 'cargo_emprendedor',
+            identification: 'cc_emprendedor',
+            type: 'firma_emprendedor'
+        }
+    ],
+    preBuildData: [],
+    name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
+    price: 0,
+    help: {
+        correo: 'ejemplo@dominio.com'
+    },
+    preBuild: true,
+    build: 4
+}
