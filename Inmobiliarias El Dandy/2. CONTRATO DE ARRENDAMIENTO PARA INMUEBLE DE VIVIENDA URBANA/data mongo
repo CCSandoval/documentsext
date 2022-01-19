@@ -995,7 +995,8 @@
             description: 'Digite el valor canon de arrendamiento',
             help: 'valor',
             name: 'valor_c_arrendamiento',
-            type: 'currency'
+            type: 'currency',
+            removeText: true
         },
         {
             description: '¿Desea agregar el valor de la cuota de administración? ',
@@ -1137,6 +1138,93 @@
             prereq: [
                 {
                     k: 'avaluo_comercial',
+                    v: 's'
+                }
+            ],
+            removeText: true,
+            type: 'currency'
+        },
+        {
+            description: '¿Desea agregar un avalúo de apartamento? ',
+            name: 'avaluo_apartamento',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el valor del avalúo de apartamento del inmueble',
+            help: 'valor',
+            name: 'valor_avaluo_apartamento',
+            prereq: [
+                {
+                    k: 'avaluo_apartamento',
+                    v: 's'
+                }
+            ],
+            removeText: true,
+            type: 'currency'
+        },
+        {
+            description: '¿Desea agregar un avalúo de parqueadero? ',
+            name: 'avaluo_parqueadero',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el valor del avalúo de parqueadero del inmueble',
+            help: 'valor',
+            name: 'valor_avaluo_parqueadero',
+            prereq: [
+                {
+                    k: 'avaluo_parqueadero',
+                    v: 's'
+                }
+            ],
+            removeText: true,
+            type: 'currency'
+        },
+        {
+            description: '¿Desea agregar un avalúo de cuarto útil? ',
+            name: 'avaluo_cuarto_u',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el valor del avalúo de cuarto útil del inmueble',
+            help: 'valor',
+            name: 'valor_avaluo_cuarto_u',
+            prereq: [
+                {
+                    k: 'avaluo_cuarto_u',
                     v: 's'
                 }
             ],
@@ -2178,7 +2266,7 @@
         pep: 'Permiso especial de permanencia',
         zona: 'Sur'
     },
-    build: 38,
+    build: 39,
     createdAt: ISODate('2021-09-28T19:07:38.268Z'),
     updatedAt: ISODate('2021-09-28T19:07:38.268Z')
 }
