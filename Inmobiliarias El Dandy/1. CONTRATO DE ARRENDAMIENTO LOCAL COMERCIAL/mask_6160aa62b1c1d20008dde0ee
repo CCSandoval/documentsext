@@ -59,6 +59,8 @@ Itagüí,
     </span><br />
 </span>
 
+<span name="primer_solidario_n"></span>
+<span name="primer_solidario_s" hidden>
 <b name="segundo_solidario_n"><u>Deudor solidario</u></b>
 <b name="segundo_solidario_s" hidden><u>Deudores solidarios</u></b><br />
 
@@ -75,8 +77,9 @@ Itagüí,
 <span name="tipo_documento_deudor_soli_1_pep" hidden> <b>PEP No.</b>
     <span name="pep_deudor_soli_1">__________</span> - <b>PASAPORTE. No.</b>
     <span name="pasaporte_deudor_soli_1_p">__________</span>
-</span><br />
-
+</span>
+</span>
+<br />
 <span name="segundo_solidario_n"></span>
 <span name="segundo_solidario_s" hidden>
     <b>Nombre:</b> <span name="nombre_deudor_soli_2">_______</span><br />
@@ -146,7 +149,7 @@ Itagüí,
     <b>CUOTA DE ADMINISTRACIÓN:</b>
     <span name="cuota_administracion">_______</span> M/L
 </span><br />
-<b>DIRECCIÓN DEL (LOS) INMUEBLES:</b> <span name="direccion_inmueble"></span>
+<b>DIRECCIÓN DEL (LOS) INMUEBLES:</b> <span name="direccion_inmueble">________</span>
 <span name="municipio_inmueble">___________</span><br />
 <b>FOLIO(S) DE MATRÍCULA INMOBILIARIA Nros.</b><span name="numero_matricula"></span>
 <span name="zona_matricula">__________</span> de
@@ -164,7 +167,7 @@ se identifica por su dirección, linderos y el inventario que las partes firman 
 recibir bajo el mismo título y que consta de un área aproximada en metros cuadrados.
 <br />
 
-<b><u>Dirección del inmueble:</u></b> <span name="direccion_inmueble">___________</span>
+<b><u>Dirección del inmueble:</u></b> <span name="direccion_inmueble">___________</span> <span name="municipio_inmueble">___________</span>
 <br />
 
 <b>Linderos:</b>
