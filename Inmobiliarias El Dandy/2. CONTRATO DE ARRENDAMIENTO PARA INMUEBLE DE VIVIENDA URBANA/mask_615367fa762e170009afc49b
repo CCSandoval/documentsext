@@ -212,29 +212,29 @@ arrendatarios, quienes declaran recibir bajo el mismo título.<br />
 ubicado en el municipio de
 <span name="municipio_inmueble">___________</span><br />
 <b>Área aproximada del inmueble en m<sup>2</sup>:</b>
-<span name="area_inmueble">_______</span> -
+<span name="area_inmueble">_______</span> 
 
 <span name="avaluo_catastral_n"></span>
 <span name="avaluo_catastral_s" hidden>
-  <b>Avalúo Catastral:</b> <span name="valor_avaluo_catastral">_______</span>
-  <span style="margin-left: -0.3rem">.00</span> M/L -
+  - <b>Avalúo Catastral:</b> <span name="valor_avaluo_catastral">_______</span>
+  <span style="margin-left: -0.3rem">.00</span> M/L 
 </span>
 
 <span name="avaluo_comercial_n"></span>
 <span name="avaluo_comercial_s" hidden>
-  <b>Avalúo comercial:</b> <span name="valor_avaluo_comercial">_______</span>
+  - <b>Avalúo comercial:</b> <span name="valor_avaluo_comercial">_______</span>
   <span style="margin-left: -0.3rem">.00</span> M/L
 </span>
 
 <span name="avaluo_apartamento_n"></span>
 <span name="avaluo_apartamento_s" hidden>
-  <b>Avalúo de apartamento:</b> <span name="valor_avaluo_apartamento">_______</span>
+  - <b>Avalúo de apartamento:</b> <span name="valor_avaluo_apartamento">_______</span>
   <span style="margin-left: -0.3rem">.00</span> M/L
 </span>
 
 <span name="avaluo_parqueadero_n"></span>
 <span name="avaluo_parqueadero_s" hidden>
-  <b>Avalúo de parqueadero:</b> <span name="valor_avaluo_parqueadero">_______</span>
+  - <b>Avalúo de parqueadero:</b> <span name="valor_avaluo_parqueadero">_______</span>
   <span style="margin-left: -0.3rem">.00</span> M/L
 </span>
 
@@ -719,32 +719,28 @@ y deudores solidarios aquí firmantes, las siguientes:
 >)
 <span name="segundo_arrendatario_n"></span>
 <span name="segundo_arrendatario_s" hidden>
-  -(<span name="correo_arrendatario_2" style="text-transform: lowercase"
-    >__________</span)
-  >
+  - (<span name="correo_arrendatario_2" style="text-transform: lowercase"
+    >__________</span
+  >)
 </span>
 <span name="primer_deudor_soli_n"></span>
 <span name="primer_deudor_soli_s" hidden>
-  -
-  (<span name="correo_deudor_soli_1" style="text-transform: lowercase"
+  - (<span name="correo_deudor_soli_1" style="text-transform: lowercase"
     >__________</span
   >)
   <span name="segundo_deudor_soli_n"></span>
   <span name="segundo_deudor_soli_s" hidden>
-    -
-    (<span name="correo_deudor_soli_2" style="text-transform: lowercase"
+    - (<span name="correo_deudor_soli_2" style="text-transform: lowercase"
       >__________</span
     >)
     <span name="tercer_deudor_soli_n"></span>
     <span name="tercer_deudor_soli_s" hidden>
-      -
-      (<span name="correo_deudor_soli_3" style="text-transform: lowercase"
+      - (<span name="correo_deudor_soli_3" style="text-transform: lowercase"
         >__________</span
       >)
       <span name="cuarto_deudor_soli_n"></span>
       <span name="cuarto_deudor_soli_s" hidden>
-        -
-        (<span name="correo_deudor_soli_4" style="text-transform: lowercase"
+        - (<span name="correo_deudor_soli_4" style="text-transform: lowercase"
           >__________</span
         >)
       </span>
