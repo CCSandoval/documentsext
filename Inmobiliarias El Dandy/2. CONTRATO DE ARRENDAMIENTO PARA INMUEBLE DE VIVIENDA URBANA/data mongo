@@ -242,9 +242,31 @@
             type: 'name'
         },
         {
+            description: '¿Desea agregar un deudor solidario? ',
+            name: 'primer_deudor_soli',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
             description: 'Digite el nombre completo del deudor solidario',
             help: 'nombre',
             name: 'nombre_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                }
+            ],
             type: 'name'
         },
         {
@@ -268,6 +290,12 @@
                     value: 'pep'
                 }
             ],
+            prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                }
+            ],
             type: 'clausula',
             value: 'cc'
         },
@@ -279,6 +307,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_1',
                     v: 'cc'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 }
             ],
             type: 'number'
@@ -291,6 +323,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_1',
                     v: 'ce'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 }
             ],
             type: 'number'
@@ -303,6 +339,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_1',
                     v: 'pa'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 }
             ],
             type: 'name'
@@ -315,6 +355,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_1',
                     v: 'pep'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 }
             ],
             type: 'number'
@@ -327,6 +371,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_1',
                     v: 'pep'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 }
             ],
             type: 'name'
@@ -344,6 +392,12 @@
                     value: 's'
                 }
             ],
+            prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                }
+            ],
             type: 'clausula',
             value: 'n'
         },
@@ -352,6 +406,10 @@
             help: 'nombre',
             name: 'nombre_deudor_soli_2',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -382,6 +440,10 @@
             ],
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 }
@@ -397,6 +459,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_2',
                     v: 'cc'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -415,6 +481,10 @@
                     v: 'ce'
                 },
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 }
@@ -429,6 +499,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_2',
                     v: 'pa'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -447,6 +521,10 @@
                     v: 'pep'
                 },
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 }
@@ -461,6 +539,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_2',
                     v: 'pep'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -484,6 +566,10 @@
             ],
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 }
@@ -496,6 +582,10 @@
             help: 'nombre',
             name: 'nombre_deudor_soli_3',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -530,6 +620,10 @@
             ],
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -549,6 +643,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_3',
                     v: 'cc'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -571,6 +669,10 @@
                     v: 'ce'
                 },
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -589,6 +691,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_3',
                     v: 'pa'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -611,6 +717,10 @@
                     v: 'pep'
                 },
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -629,6 +739,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_3',
                     v: 'pep'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -656,6 +770,10 @@
             ],
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -672,6 +790,10 @@
             help: 'nombre',
             name: 'nombre_deudor_soli_4',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -710,6 +832,10 @@
             ],
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -733,6 +859,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_4',
                     v: 'cc'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -759,6 +889,10 @@
                     v: 'ce'
                 },
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -781,6 +915,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_4',
                     v: 'pa'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -807,6 +945,10 @@
                     v: 'pep'
                 },
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -829,6 +971,10 @@
                 {
                     k: 'tipo_documento_deudor_soli_4',
                     v: 'pep'
+                },
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
                 },
                 {
                     k: 'segundo_deudor_soli',
@@ -1202,12 +1348,24 @@
             description: 'Digite el correo electrónico del deudor solidario',
             help: 'correo',
             name: 'correo_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                }
+            ],
             type: 'text'
         },
         {
             description: 'Digite el número de whatsapp del deudor solidario',
             help: 'celular',
             name: 'celular_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                }
+            ],
             type: 'text'
         },
         {
@@ -1228,6 +1386,10 @@
             name: 'celular_deudor_soli_2',
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 }
@@ -1239,6 +1401,10 @@
             help: 'correo',
             name: 'correo_deudor_soli_3',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -1256,6 +1422,10 @@
             name: 'celular_deudor_soli_3',
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -1271,6 +1441,10 @@
             help: 'correo',
             name: 'correo_deudor_soli_4',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -1291,6 +1465,10 @@
             help: 'celular',
             name: 'celular_deudor_soli_4',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -1652,18 +1830,36 @@
             description: 'Digite la dirección del deudor solidario',
             help: 'direccion',
             name: 'direccion_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                }
+            ],
             type: 'name'
         },
         {
             description: 'Digite el municipio donde esta ubicado el deudor solidario',
             help: 'municipio',
             name: 'municipio_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                }
+            ],
             type: 'name'
         },
         {
             description: 'Digite el número de teléfono del deudor solidario',
             help: 'telefono',
             name: 'telefono_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                }
+            ],
             type: 'text'
         },
         {
@@ -1671,6 +1867,10 @@
             help: 'direccion',
             name: 'direccion_deudor_soli_2',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -1684,6 +1884,10 @@
             name: 'municipio_deudor_soli_2',
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 }
@@ -1696,6 +1900,10 @@
             name: 'telefono_deudor_soli_2',
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 }
@@ -1707,6 +1915,10 @@
             help: 'direccion',
             name: 'direccion_deudor_soli_3',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -1724,6 +1936,10 @@
             name: 'municipio_deudor_soli_3',
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -1740,6 +1956,10 @@
             name: 'telefono_deudor_soli_3',
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -1755,6 +1975,10 @@
             help: 'direccion',
             name: 'direccion_deudor_soli_4',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -1776,6 +2000,10 @@
             name: 'municipio_deudor_soli_4',
             prereq: [
                 {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
+                {
                     k: 'segundo_deudor_soli',
                     v: 's'
                 },
@@ -1795,6 +2023,10 @@
             help: 'telefono',
             name: 'telefono_deudor_soli_4',
             prereq: [
+                {
+                    k: 'primer_deudor_soli',
+                    v: 's'
+                },
                 {
                     k: 'segundo_deudor_soli',
                     v: 's'
@@ -1827,7 +2059,6 @@
     ],
     operation: [],
     sign: [
-        'numero_contrato',
         'fecha_hoy',
         'nombre_arrendatario',
         'tipo_documento_arrendatario',
@@ -1843,37 +2074,6 @@
         'pasaporte_arrendatario_2',
         'pep_arrendatario_2',
         'pasaporte_arrendatario_p_2',
-        'nombre_deudor_soli_1',
-        'tipo_documento_deudor_soli_1',
-        'cedula_deudor_soli_1',
-        'cedulae_deudor_soli_1',
-        'pasaporte_deudor_soli_1',
-        'pep_deudor_soli_1',
-        'pasaporte_deudor_soli_1_p',
-        'segundo_deudor_soli',
-        'nombre_deudor_soli_2',
-        'tipo_documento_deudor_soli_2',
-        'cedula_deudor_soli_2',
-        'cedulae_deudor_soli_2',
-        'pasaporte_deudor_soli_2',
-        'pep_deudor_soli_2',
-        'pasaporte_deudor_soli_2_p',
-        'tercer_deudor_soli',
-        'nombre_deudor_soli_3',
-        'tipo_documento_deudor_soli_3',
-        'cedula_deudor_soli_3',
-        'cedulae_deudor_soli_3',
-        'pasaporte_deudor_soli_3',
-        'pep_deudor_soli_3',
-        'pasaporte_deudor_soli_3_p',
-        'cuarto_deudor_soli',
-        'nombre_deudor_soli_4',
-        'tipo_documento_deudor_soli_4',
-        'cedula_deudor_soli_4',
-        'cedulae_deudor_soli_4',
-        'pasaporte_deudor_soli_4',
-        'pep_deudor_soli_4',
-        'pasaporte_deudor_soli_4_p',
         'valor_c_arrendamiento',
         'valor_c_administracion',
         'cuota_administracion',
@@ -1906,22 +2106,6 @@
         'municipio_arrendatario_2',
         'correo_arrendatario_2',
         'celular_arrendatario_2',
-        'direccion_deudor_soli_1',
-        'municipio_deudor_soli_1',
-        'correo_deudor_soli_1',
-        'celular_deudor_soli_1',
-        'direccion_deudor_soli_2',
-        'municipio_deudor_soli_2',
-        'correo_deudor_soli_2',
-        'celular_deudor_soli_2',
-        'direccion_deudor_soli_3',
-        'municipio_deudor_soli_3',
-        'correo_deudor_soli_3',
-        'celular_deudor_soli_3',
-        'direccion_deudor_soli_4',
-        'municipio_deudor_soli_4',
-        'correo_deudor_soli_4',
-        'celular_deudor_soli_4',
         'adicional_clausulas_1',
         'adicional_clausulas_2',
         'adicional_clausulas_3',
@@ -1994,7 +2178,7 @@
         pep: 'Permiso especial de permanencia',
         zona: 'Sur'
     },
-    build: 37,
+    build: 38,
     createdAt: ISODate('2021-09-28T19:07:38.268Z'),
     updatedAt: ISODate('2021-09-28T19:07:38.268Z')
 }

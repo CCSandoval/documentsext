@@ -56,92 +56,80 @@ Itagüí,
 <span name="segundo_deudor_soli_n"><b><u>Deudor solidario</u></b></span>
 <span name="segundo_deudor_soli_s" hidden><b><u>Deudores solidarios</u></b></span><br />
 
-<span name="primer_deudor_soli_n"></span>
-<span name="primer_deudor_soli_s" hidden>
-    <span name="nombre_deudor_soli_1">_______</span><br />
-    <span name="tipo_documento_deudor_soli_1_cc"> <b>C.C. No</b>
-        <span name="cedula_deudor_soli_1">___________</span>
+<span name="nombre_deudor_soli_1">_______</span><br />
+<span name="tipo_documento_deudor_soli_1_cc"> <b>C.C. No</b>
+    <span name="cedula_deudor_soli_1">___________</span>
+</span>
+<span name="tipo_documento_deudor_soli_1_ce" hidden> <b>C.E. No</b>
+    <span name="cedulae_deudor_soli_1">___________</span>
+</span>
+<span name="tipo_documento_deudor_soli_1_pa" hidden> <b>PASAPORTE. No.</b>
+    <span name="pasaporte_deudor_soli_1">___________</span>
+</span>
+<span name="tipo_documento_deudor_soli_1_pep" hidden> <b>PEP. No.</b>
+    <span name="pep_deudor_soli_1">___________</span> - <b>PASAPORTE Nro.</b>
+    <span name="pasaporte_deudor_soli_1_p">__________</span>
+</span><br />
+
+<span name="segundo_deudor_soli_n"></span>
+<span name="segundo_deudor_soli_s" hidden>
+    <span name="nombre_deudor_soli_2">_______</span><br />
+    <span name="tipo_documento_deudor_soli_2_cc"> <b>C.C. No</b>
+        <span name="cedula_deudor_soli_2">___________</span>
     </span>
-    <span name="tipo_documento_deudor_soli_1_ce" hidden> <b>C.E. No</b>
-        <span name="cedulae_deudor_soli_1">___________</span>
+    <span name="tipo_documento_deudor_soli_2_ce" hidden> <b>C.E. No</b>
+        <span name="cedulae_deudor_soli_2">___________</span>
     </span>
-    <span name="tipo_documento_deudor_soli_1_pa" hidden> <b>PASAPORTE. No.</b>
-        <span name="pasaporte_deudor_soli_1">___________</span>
+    <span name="tipo_documento_deudor_soli_2_pa" hidden> <b>PASAPORTE. No.</b>
+        <span name="pasaporte_deudor_soli_2">___________</span>
     </span>
-    <span name="tipo_documento_deudor_soli_1_pep" hidden> <b>PEP. No.</b>
-        <span name="pep_deudor_soli_1">___________</span> - <b>PASAPORTE Nro.</b>
-        <span name="pasaporte_deudor_soli_1_p">__________</span>
+    <span name="tipo_documento_deudor_soli_2_pep" hidden> <b>PEP. No.</b>
+        <span name="pep_deudor_soli_2">___________</span> - <b>PASAPORTE Nro.</b>
+        <span name="pasaporte_deudor_soli_2_p">__________</span>
     </span><br />
 </span>
 
-<span name="primer_deudor_soli_n"></span>
-<span name="primer_deudor_soli_s" hidden>
-    <span name="segundo_deudor_soli_n"></span>
-    <span name="segundo_deudor_soli_s" hidden>
-        <span name="nombre_deudor_soli_2">_______</span><br />
-        <span name="tipo_documento_deudor_soli_2_cc"> <b>C.C. No</b>
-            <span name="cedula_deudor_soli_2">___________</span>
+<span name="segundo_deudor_soli_n"></span>
+<span name="segundo_deudor_soli_s" hidden>
+    <span name="tercer_deudor_soli_n"></span>
+    <span name="tercer_deudor_soli_s" hidden>
+        <span name="nombre_deudor_soli_3">_______</span><br />
+        <span name="tipo_documento_deudor_soli_3_cc"> <b>C.C. No</b>
+            <span name="cedula_deudor_soli_3">___________</span>
         </span>
-        <span name="tipo_documento_deudor_soli_2_ce" hidden> <b>C.E. No</b>
-            <span name="cedulae_deudor_soli_2">___________</span>
+        <span name="tipo_documento_deudor_soli_3_ce" hidden> <b>C.E. No</b>
+            <span name="cedulae_deudor_soli_3">___________</span>
         </span>
-        <span name="tipo_documento_deudor_soli_2_pa" hidden> <b>PASAPORTE. No.</b>
-            <span name="pasaporte_deudor_soli_2">___________</span>
+        <span name="tipo_documento_deudor_soli_3_pa" hidden> <b>PASAPORTE. No.</b>
+            <span name="pasaporte_deudor_soli_3">___________</span>
         </span>
-        <span name="tipo_documento_deudor_soli_2_pep" hidden> <b>PEP. No.</b>
-            <span name="pep_deudor_soli_2">___________</span> - <b>PASAPORTE Nro.</b>
-            <span name="pasaporte_deudor_soli_2_p">__________</span>
+        <span name="tipo_documento_deudor_soli_3_pep" hidden> <b>PEP. No.</b>
+            <span name="pep_deudor_soli_3">___________</span> - <b>PASAPORTE Nro.</b>
+            <span name="pasaporte_deudor_soli_3_p">__________</span>
         </span><br />
     </span>
 </span>
 
-<span name="primer_deudor_soli_n"></span>
-<span name="primer_deudor_soli_s" hidden>
-    <span name="segundo_deudor_soli_n"></span>
-    <span name="segundo_deudor_soli_s" hidden>
-        <span name="tercer_deudor_soli_n"></span>
-        <span name="tercer_deudor_soli_s" hidden>
-            <span name="nombre_deudor_soli_3">_______</span><br />
-            <span name="tipo_documento_deudor_soli_3_cc"> <b>C.C. No</b>
-                <span name="cedula_deudor_soli_3">___________</span>
+<span name="segundo_deudor_soli_n"></span>
+<span name="segundo_deudor_soli_s" hidden>
+    <span name="tercer_deudor_soli_n"></span>
+    <span name="tercer_deudor_soli_s" hidden>
+        <span name="cuarto_deudor_soli_n"></span>
+        <span name="cuarto_deudor_soli_s" hidden>
+            <span name="nombre_deudor_soli_4">_______</span><br />
+            <span name="tipo_documento_deudor_soli_4_cc"> <b>C.C. No</b>
+                <span name="cedula_deudor_soli_4">___________</span>
             </span>
-            <span name="tipo_documento_deudor_soli_3_ce" hidden> <b>C.E. No</b>
-                <span name="cedulae_deudor_soli_3">___________</span>
+            <span name="tipo_documento_deudor_soli_4_ce" hidden> <b>C.E. No</b>
+                <span name="cedulae_deudor_soli_4">___________</span>
             </span>
-            <span name="tipo_documento_deudor_soli_3_pa" hidden> <b>PASAPORTE. No.</b>
-                <span name="pasaporte_deudor_soli_3">___________</span>
+            <span name="tipo_documento_deudor_soli_4_pa" hidden> <b>PASAPORTE. No.</b>
+                <span name="pasaporte_deudor_soli_4">___________</span>
             </span>
-            <span name="tipo_documento_deudor_soli_3_pep" hidden> <b>PEP. No.</b>
-                <span name="pep_deudor_soli_3">___________</span> - <b>PASAPORTE Nro.</b>
-                <span name="pasaporte_deudor_soli_3_p">__________</span>
+            <span name="tipo_documento_deudor_soli_4_pep" hidden> <b>PEP. No.</b>
+                <span name="pep_deudor_soli_4">___________</span> - <b>PASAPORTE Nro.</b>
+                <span name="pasaporte_deudor_soli_4_p">__________</span>
             </span><br />
-        </span>
-    </span>
-</span>
-
-<span name="primer_deudor_soli_n"></span>
-<span name="primer_deudor_soli_s" hidden>
-    <span name="segundo_deudor_soli_n"></span>
-    <span name="segundo_deudor_soli_s" hidden>
-        <span name="tercer_deudor_soli_n"></span>
-        <span name="tercer_deudor_soli_s" hidden>
-            <span name="cuarto_deudor_soli_n"></span>
-            <span name="cuarto_deudor_soli_s" hidden>
-                <span name="nombre_deudor_soli_4">_______</span><br />
-                <span name="tipo_documento_deudor_soli_4_cc"> <b>C.C. No</b>
-                    <span name="cedula_deudor_soli_4">___________</span>
-                </span>
-                <span name="tipo_documento_deudor_soli_4_ce" hidden> <b>C.E. No</b>
-                    <span name="cedulae_deudor_soli_4">___________</span>
-                </span>
-                <span name="tipo_documento_deudor_soli_4_pa" hidden> <b>PASAPORTE. No.</b>
-                    <span name="pasaporte_deudor_soli_4">___________</span>
-                </span>
-                <span name="tipo_documento_deudor_soli_4_pep" hidden> <b>PEP. No.</b>
-                    <span name="pep_deudor_soli_4">___________</span> - <b>PASAPORTE Nro.</b>
-                    <span name="pasaporte_deudor_soli_4_p">__________</span>
-                </span><br />
-            </span>
         </span>
     </span>
 </span>
@@ -588,45 +576,51 @@ los arrendatarios y deudores solidarios aquí firmantes, las siguientes:
 <b name="direccion_inmueble">___________</b>
 <b name="municipio_inmueble">___________</b> -
 correo electrónico
-(<span name="correo_arrendatario" style="text-transform: lowercase">__________</span>
+(<span name="correo_arrendatario" style="text-transform: lowercase">__________</span>,
 <span name="segundo_arrendatario_n"></span>
 <span name="segundo_arrendatario_s" hidden>
-    -<span name="correo_arrendatario_2" style="text-transform: lowercase">__________</span>
+    <span name="correo_arrendatario_2" style="text-transform: lowercase">__________</span>
 </span>
-<span name="primer_solidario_n"></span>
-<span name="primer_solidario_s" hidden>
-    - <span name="correo_deudor_soli_1" style="text-transform: lowercase">__________</span>
-    <span name="segundo_deudor_soli_n">)</span>
-    <span name="segundo_deudor_soli_s" hidden>
-        - <span name="correo_deudor_soli_2" style="text-transform: lowercase">__________</span>
-        <span name="tercer_deudor_soli_n">)</span>
-        <span name="tercer_deudor_soli_s" hidden>
-            - <span name="correo_deudor_soli_3" style="text-transform: lowercase">__________</span>
-            <span name="cuarto_deudor_soli_n">)</span>
-            <span name="cuarto_deudor_soli_s" hidden>
-                - <span name="correo_deudor_soli_4" style="text-transform: lowercase">__________</span>)
-            </span>
+<span name="segundo_solidario_n">
+    <span name="correo_deudor_soli_1" style="text-transform: lowercase">__________</span>)
+</span>
+<span name="segundo_solidario_s" hidden>
+    <span name="correo_deudor_soli_1" style="text-transform: lowercase">__________</span>,
+    <span name="tercer_solidario_n">
+        <span name="correo_deudor_soli_2" style="text-transform: lowercase">__________</span>)
+    </span>
+    <span name="tercer_solidario_s" hidden>
+        <span name="correo_deudor_soli_2" style="text-transform: lowercase">__________</span>,
+        <span name="cuarto_solidario_n">
+            <span name="correo_deudor_soli_3" style="text-transform: lowercase">__________</span>)
+        </span>
+        <span name="cuarto_solidario_s" hidden>
+            <span name="correo_deudor_soli_3" style="text-transform: lowercase">__________</span>,
+            <span name="correo_deudor_soli_4" style="text-transform: lowercase">__________</span>)
         </span>
     </span>
 </span> y WhatsApp:
-<span name="celular_arrendatario" style="text-transform: lowercase">__________</span>
+<span name="celular_arrendatario" style="text-transform: lowercase">__________</span>,
 <span name="segundo_arrendatario_n"></span>
 <span name="segundo_arrendatario_s" hidden>
-    - <span name="celular_arrendatario_2" style="text-transform: lowercase">__________</span>
+    <span name="celular_arrendatario_2" style="text-transform: lowercase">__________</span>
 </span>
-<span name="primer_deudor_soli_n"></span>
-<span name="primer_deudor_soli_s" hidden>
-    - <span name="celular_deudor_soli_1" style="text-transform: lowercase">__________</span>
-    <span name="segundo_deudor_soli_n"></span>
-    <span name="segundo_deudor_soli_s" hidden>
-        - <span name="celular_deudor_soli_2" style="text-transform: lowercase">__________</span>
-        <span name="tercer_deudor_soli_n"></span>
-        <span name="tercer_deudor_soli_s" hidden>
-            - <span name="celular_deudor_soli_3" style="text-transform: lowercase">__________</span>
-            <span name="cuarto_deudor_soli_n"></span>
-            <span name="cuarto_deudor_soli_s" hidden>
-                - <span name="celular_deudor_soli_3" style="text-transform: lowercase">__________</span>
-            </span>
+<span name="segundo_solidario_n">
+    <span name="celular_deudor_soli_1" style="text-transform: lowercase">__________</span>
+</span>
+<span name="segundo_solidario_s" hidden>
+    <span name="celular_deudor_soli_1" style="text-transform: lowercase">__________</span>,
+    <span name="tercer_solidario_n">
+        <span name="celular_deudor_soli_2" style="text-transform: lowercase">__________</span>
+    </span>
+    <span name="tercer_solidario_s" hidden>
+        <span name="celular_deudor_soli_2" style="text-transform: lowercase">__________</span>,
+        <span name="cuarto_solidario_n">
+            <span name="celular_deudor_soli_3" style="text-transform: lowercase">__________</span>
+        </span>
+        <span name="cuarto_solidario_s" hidden>
+            <span name="celular_deudor_soli_3" style="text-transform: lowercase">__________</span>,
+            <span name="celular_deudor_soli_4" style="text-transform: lowercase">__________</span>
         </span>
     </span>
 </span> respectivamente y para el arrendador la dirección será para los mismos efectos la Calle 49 nro. 49A – 21
@@ -723,7 +717,7 @@ Para constancia y señal de aceptación se firma este documento y sus ejemplares
 a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicados los firmantes al momento de la firma
 <b name="fecha_hoy">___________</b><br />
 
-<b>El Arrendador</b><br />
+<p><b>El Arrendador</b></p>
 
 <p>
     <b>El Dandy Inmobiliaria S.A.S.</b><br />
@@ -733,14 +727,13 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
     <b>Correo electrónico:</b>
     <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=arrendamientos@eldandyinmobiliaria.com"
         target="=" _blank> arrendamientos@eldandyinmobiliaria.com
-    </a>
-<div id="arrendador" class="sign-margin"></div>
-<span>_______________________________________</span><br />
+    </a><br /><br /><br /><br />
+    <b>Firma:</b> <span>_________________</span>
 </p>
 
-<p>
-    <b name="segundo_arrendatario_n">El Arrendatario</b>
-    <b name="segundo_arrendatario_s" hidden>Los Arrendatarios</b>
+<p><br />
+    <span name="segundo_arrendatario_n"><b>El Arrendatario</b></span>
+    <span name="segundo_arrendatario_s" hidden><b>Los Arrendatarios</b></span>
 </p>
 
 <p>
@@ -762,40 +755,38 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
     <b>Ciudad:</b> <span name="municipio_arrendatario">_______</span><br />
     <b>Teléfono:</b> <span name="telefono_arrendatario">___________</span><br />
     <b>Correo electrónico:</b> <span name="correo_arrendatario" style="text-transform: lowercase">________</span><br />
-    <b>Celular/WhatsApp:</b> <span name="celular_arrendatario">___________</span>
-<div id="arrendatario" class="sign-margin"></div>
-<span>_______________________________________</span><br />
+    <b>Celular/WhatsApp:</b> <span name="celular_arrendatario">___________</span><br /><br /><br /><br />
+    <b>Firma:</b> <span>_________________</span>
 </p>
 
 <p>
-<div name="segundo_arrendatario_n"></div>
-<div name="segundo_arrendatario_s" hidden>
-    <b>Nombre:</b> <span name="nombre_arrendatario_2">_______</span><br />
-    <span name="tipo_documento_arrendatario_2_cc"> <b>C.C. No</b>
-        <span name="cedula_arrendatario_2">___________</span>
+    <span name="segundo_arrendatario_n"></span>
+    <span name="segundo_arrendatario_s" hidden>
+        <b>Nombre:</b> <span name="nombre_arrendatario_2">_______</span><br />
+        <span name="tipo_documento_arrendatario_2_cc"> <b>C.C. No</b>
+            <span name="cedula_arrendatario_2">___________</span>
+        </span>
+        <span name="tipo_documento_arrendatario_2_ce" hidden> <b>C.E. No</b>
+            <span name="cedulae_arrendatario_2">___________</span>
+        </span>
+        <span name="tipo_documento_arrendatario_2_pa" hidden> <b>PASAPORTE. No.</b>
+            <span name="pasaporte_arrendatario_2">___________</span>
+        </span>
+        <span name="tipo_documento_arrendatario_2_pep" hidden> <b>PEP. No.</b>
+            <span name="pep_arrendatario_2">___________</span> - <b>PASAPORTE. No.</b>
+            <span name="pasaporte_arrendatario_2_p">__________</span>
+        </span><br />
+        <b>Dirección:</b> <span name="direccion_arrendatario_2">_______</span><br />
+        <b>Ciudad:</b> <span name="municipio_arrendatario_2">_______</span><br />
+        <b>Teléfono:</b> <span name="telefono_arrendatario_2">___________</span><br />
+        <b>Correo electrónico:</b> <span name="correo_arrendatario_2"
+            style="text-transform: lowercase">________</span><br />
+        <b>Celular/WhatsApp:</b> <span name="celular_arrendatario_2">___________</span><br /><br /><br /><br />
+        <b>Firma:</b> <span>_________________</span>
     </span>
-    <span name="tipo_documento_arrendatario_2_ce" hidden> <b>C.E. No</b>
-        <span name="cedulae_arrendatario_2">___________</span>
-    </span>
-    <span name="tipo_documento_arrendatario_2_pa" hidden> <b>PASAPORTE. No.</b>
-        <span name="pasaporte_arrendatario_2">___________</span>
-    </span>
-    <span name="tipo_documento_arrendatario_2_pep" hidden> <b>PEP. No.</b>
-        <span name="pep_arrendatario_2">___________</span> - <b>PASAPORTE. No.</b>
-        <span name="pasaporte_arrendatario_2_p">__________</span>
-    </span><br />
-    <b>Dirección:</b> <span name="direccion_arrendatario_2">_______</span><br />
-    <b>Ciudad:</b> <span name="municipio_arrendatario_2">_______</span><br />
-    <b>Teléfono:</b> <span name="telefono_arrendatario_2">___________</span><br />
-    <b>Correo electrónico:</b> <span name="correo_arrendatario_2"
-        style="text-transform: lowercase">________</span><br />
-    <b>Celular/WhatsApp:</b> <span name="celular_arrendatario_2">___________</span>
-    <div id="arrendatario_2" class="sign-margin"></div>
-    <span>_______________________________________</span><br />
-</div>
 </p>
 
-<p>
+<p><br />
     <span name="segundo_deudor_soli_n">
         <b>Deudor Solidario</b>
     </span>
@@ -805,10 +796,8 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
 </p>
 
 <p>
-<div name="primer_deudor_soli_n"></div>
-<div name="primer_deudor_soli_s" hidden>
     <b>Nombre:</b> <span name="nombre_deudor_soli_1">_______</span><br />
-    <span name="tipo_documento_deudor_soli_1_cc"> <b>C.C. No</b>
+    <span name="tipo_documento_deudor_soli_1_cc"> <b>C.C. Nro</b>
         <span name="cedula_deudor_soli_1">___________</span>
     </span>
     <span name="tipo_documento_deudor_soli_1_ce" hidden> <b>C.E. No</b>
@@ -817,25 +806,22 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
     <span name="tipo_documento_deudor_soli_1_pa" hidden> <b>PASAPORTE. No.</b>
         <span name="pasaporte_deudor_soli_1">___________</span>
     </span>
-    <span name="tipo_documento_deudor_soli_1_pep" hidden> <b>Pep Nro.</b>
-        <span name="pep_deudor_soli_1">___________</span> - <b>PASAPORTE Nro.</b>
+    <span name="tipo_documento_deudor_soli_1_pep" hidden> <b>PEP. No.</b>
+        <span name="pep_deudor_soli_1">___________</span> - <b>PASAPORTE. No.</b>
         <span name="pasaporte_deudor_soli_1_p">__________</span>
     </span><br />
     <b>Dirección:</b> <span name="direccion_deudor_soli_1">_______</span><br />
     <b>Ciudad:</b> <span name="municipio_deudor_soli_1">_______</span><br />
     <b>Teléfono:</b> <span name="telefono_deudor_soli_1">___________</span><br />
     <b>Correo electrónico:</b> <span name="correo_deudor_soli_1" style="text-transform: lowercase">________</span><br />
-    <b>Celular/WhatsApp:</b> <span name="celular_deudor_soli_1">___________</span>
-    <div id="deudor_soli_1" class="sign-margin"></div>
-    <span>_______________________________________</span><br />
-</div>
+    <b>Celular/WhatsApp:</b> <span name="celular_deudor_soli_1">___________</span><br /><br /><br /><br />
+    <b>Firma:</b> <span>_________________</span>
 </p>
 
 <p>
-<div name="primer_deudor_soli_n"></div>
-<div name="primer_deudor_soli_s" hidden>
-    <div name="segundo_deudor_soli_n"></div>
-    <div name="segundo_deudor_soli_s" hidden>
+    <span name="segundo_deudor_soli_n"></span>
+    <span name="segundo_deudor_soli_s" hidden>
+        <br /><br />
         <b>Nombre:</b> <span name="nombre_deudor_soli_2">_______</span><br />
         <span name="tipo_documento_deudor_soli_2_cc"> <b>C.C. No</b>
             <span name="cedula_deudor_soli_2">___________</span>
@@ -846,8 +832,8 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
         <span name="tipo_documento_deudor_soli_2_pa" hidden> <b>PASAPORTE. No.</b>
             <span name="pasaporte_deudor_soli_2">___________</span>
         </span>
-        <span name="tipo_documento_deudor_soli_2_pep" hidden> <b>Pep Nro.</b>
-            <span name="pep_deudor_soli_2">___________</span> - <b>PASAPORTE Nro.</b>
+        <span name="tipo_documento_deudor_soli_2_pep" hidden> <b>PEP. No.</b>
+            <span name="pep_deudor_soli_2">___________</span> - <b>PASAPORTE. No.</b>
             <span name="pasaporte_deudor_soli_2_p">__________</span>
         </span><br />
         <b>Dirección:</b> <span name="direccion_deudor_soli_2">_______</span><br />
@@ -855,20 +841,17 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
         <b>Teléfono:</b> <span name="telefono_deudor_soli_2">___________</span><br />
         <b>Correo electrónico:</b> <span name="correo_deudor_soli_2"
             style="text-transform: lowercase">________</span><br />
-        <b>Celular/WhatsApp:</b> <span name="celular_deudor_soli_2">___________</span>
-        <div id="deudor_soli_2" class="sign-margin"></div>
-        <span>_______________________________________</span><br />
-    </div>
-</div>
+        <b>Celular/WhatsApp:</b> <span name="celular_deudor_soli_2">___________</span><br /><br /><br /><br />
+        <b>Firma:</b> <span>_________________</span>
+    </span>
 </p>
 
 <p>
-<div name="primer_deudor_soli_n"></div>
-<div name="primer_deudor_soli_s" hidden>
-    <div name="segundo_deudor_soli_n"></div>
-    <div name="segundo_deudor_soli_s" hidden>
-        <div name="tercer_deudor_soli_n"></div>
-        <div name="tercer_deudor_soli_s" hidden>
+    <span name="segundo_deudor_soli_n"></span>
+    <span name="segundo_deudor_soli_s" hidden>
+        <span name="tercer_deudor_soli_n"></span>
+        <span name="tercer_deudor_soli_s" hidden>
+            <br /><br />
             <b>Nombre:</b> <span name="nombre_deudor_soli_3">_______</span><br />
             <span name="tipo_documento_deudor_soli_3_cc"> <b>C.C. No</b>
                 <span name="cedula_deudor_soli_3">___________</span>
@@ -879,8 +862,8 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
             <span name="tipo_documento_deudor_soli_3_pa" hidden> <b>PASAPORTE. No.</b>
                 <span name="pasaporte_deudor_soli_3">___________</span>
             </span>
-            <span name="tipo_documento_deudor_soli_3_pep" hidden> <b>Pep Nro.</b>
-                <span name="pep_deudor_soli_3">___________</span> - <b>PASAPORTE Nro.</b>
+            <span name="tipo_documento_deudor_soli_3_pep" hidden> <b>PEP. No.</b>
+                <span name="pep_deudor_soli_3">___________</span> - <b>PASAPORTE. No.</b>
                 <span name="pasaporte_deudor_soli_3_p">__________</span>
             </span><br />
             <b>Dirección:</b> <span name="direccion_deudor_soli_3">_______</span><br />
@@ -888,23 +871,20 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
             <b>Teléfono:</b> <span name="telefono_deudor_soli_3">___________</span><br />
             <b>Correo electrónico:</b> <span name="correo_deudor_soli_3"
                 style="text-transform: lowercase">________</span><br />
-            <b>Celular/WhatsApp:</b> <span name="celular_deudor_soli_3">___________</span><br />
-            <div id="deudor_soli_3" class="sign-margin"></div>
-            <span>_______________________________________</span><br />
-        </div>
-    </div>
-</div>
+            <b>Celular/WhatsApp:</b> <span name="celular_deudor_soli_3">___________</span><br /><br /><br /><br />
+            <b>Firma:</b> <span>_________________</span>
+        </span>
+    </span>
 </p>
 
 <p>
-<div name="primer_deudor_soli_n"></div>
-<div name="primer_deudor_soli_s" hidden>
-    <div name="segundo_deudor_soli_n"></div>
-    <div name="segundo_deudor_soli_s" hidden>
-        <div name="tercer_deudor_soli_n"></div>
-        <div name="tercer_deudor_soli_s" hidden>
-            <div name="cuarto_deudor_soli_n"></div>
-            <div name="cuarto_deudor_soli_s" hidden>
+    <span name="segundo_deudor_soli_n"></span>
+    <span name="segundo_deudor_soli_s" hidden>
+        <span name="tercer_deudor_soli_n"></span>
+        <span name="tercer_deudor_soli_s" hidden>
+            <span name="cuarto_deudor_soli_n"></span>
+            <span name="cuarto_deudor_soli_s" hidden>
+                <br /><br />
                 <b>Nombre:</b> <span name="nombre_deudor_soli_4">_______</span><br />
                 <span name="tipo_documento_deudor_soli_4_cc"> <b>C.C. No</b>
                     <span name="cedula_deudor_soli_4">___________</span>
@@ -915,8 +895,8 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
                 <span name="tipo_documento_deudor_soli_4_pa" hidden> <b>PASAPORTE. No.</b>
                     <span name="pasaporte_deudor_soli_4">___________</span>
                 </span>
-                <span name="tipo_documento_deudor_soli_4_pep" hidden> <b>Pep Nro.</b>
-                    <span name="pep_deudor_soli_4">___________</span> - <b>PASAPORTE Nro.</b>
+                <span name="tipo_documento_deudor_soli_4_pep" hidden> <b>PEP. No.</b>
+                    <span name="pep_deudor_soli_4">___________</span> - <b>PASAPORTE. No.</b>
                     <span name="pasaporte_deudor_soli_4_p">__________</span>
                 </span><br />
                 <b>Dirección:</b> <span name="direccion_deudor_soli_4">_______</span><br />
@@ -924,13 +904,11 @@ a las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubica
                 <b>Teléfono:</b> <span name="telefono_deudor_soli_4">___________</span><br />
                 <b>Correo electrónico:</b> <span name="correo_deudor_soli_4"
                     style="text-transform: lowercase">________</span><br />
-                <b>Celular/WhatsApp:</b> <span name="celular_deudor_soli_4">___________</span>
-                <div id="deudor_soli_4" class="sign-margin"></div>
-                <span>_______________________________________</span><br />
-            </div>
-        </div>
-    </div>
-</div>
+                <b>Celular/WhatsApp:</b> <span name="celular_deudor_soli_4">___________</span><br /><br /><br /><br />
+                <b>Firma:</b> <span>_________________</span>
+            </span>
+        </span>
+    </span>
 </p>
 
 <p>
