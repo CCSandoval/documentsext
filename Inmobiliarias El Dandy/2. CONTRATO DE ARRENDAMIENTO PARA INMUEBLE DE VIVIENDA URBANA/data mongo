@@ -992,11 +992,17 @@
             type: 'name'
         },
         {
-            description: 'Digite el valor canon de arrendamiento',
+            description: 'Digite el valor del canon de arrendamiento en números',
             help: 'valor',
-            name: 'valor_c_arrendamiento',
+            name: 'valor_c_arrendamiento_num',
             type: 'currency',
             removeText: true
+        },
+        {
+            description: 'Digite el valor del canon de arrendamiento en letras',
+            help: 'valor_let',
+            name: 'valor_c_arrendamiento_letras',
+            type: 'name'
         },
         {
             description: '¿Desea agregar el valor de la cuota de administración? ',
@@ -2142,7 +2148,7 @@
         },
         {
             name: 'correo_arrendador',
-            value: 'fery06@me.com'
+            value: 'gerencia@eldandyinmobiliaria.com'
         }
     ],
     operation: [],
@@ -2162,7 +2168,8 @@
         'pasaporte_arrendatario_2',
         'pep_arrendatario_2',
         'pasaporte_arrendatario_p_2',
-        'valor_c_arrendamiento',
+        'valor_c_arrendamiento_num',
+        'valor_c_arrendamiento_letras',
         'valor_c_administracion',
         'cuota_administracion',
         'direccion_inmueble',
@@ -2252,7 +2259,8 @@
     help: {
         nombre: 'Ejemplo: Jaime David Diaz Monte',
         cedula: 'Ejemplo: 1234567890',
-        valor: 'Ejemplo: 900.000.000',
+        valor: 'Ejemplo: 9512000',
+        valor_let: 'Ejemplo: NUEVE MILLONES QUINIENTOS DOCE MIL PESOS',
         direccion: 'Ejemplo: CL 64 B SUR 4',
         numero: 'Ejemplo: 12',
         persona: 'Arrendatario o Propietario',
@@ -2266,7 +2274,7 @@
         pep: 'Permiso especial de permanencia',
         zona: 'Sur'
     },
-    build: 39,
+    build: 43,
     createdAt: ISODate('2021-09-28T19:07:38.268Z'),
     updatedAt: ISODate('2021-09-28T19:07:38.268Z')
 }
