@@ -7733,6 +7733,12 @@
         {
             description: 'Seleccione la fecha en la que se hace la promesa de compraventa',
             help: 'fecha',
+            name: 'fecha_firma_compraventa',
+            type: 'date'
+        },
+        {
+            description: 'Seleccione la fecha de firma',
+            help: 'fecha',
             name: 'fecha_firma',
             type: 'date'
         },
@@ -8111,7 +8117,7 @@
     ],
     preFill: [],
     preBuildData: [],
-    name: 'Acuerdo de negociación - Compras',
+    name: 'Acuerdo de negociación compra/venta',
     price: 5000,
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
@@ -8140,7 +8146,7 @@
         fecha: 'Ejemplo: 27 de Noviembre 2021',
         forma_pago: 'Ejemplo: Consignación'
     },
-    build: 8,
+    build: 12,
     preBuild: true,
     username: '8b62df2f-b613-402c-ae84-690ada65fb2b',
     company: ObjectId('614a3a750aebb000084cbac0'),
