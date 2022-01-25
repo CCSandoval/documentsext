@@ -1,0 +1,1220 @@
+<style type="text/css">
+  p,
+  span {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+
+  .page {
+    width: 21cm;
+  }
+  .document_footer {
+    text-align: center;
+    position: relative;
+    right: 0;
+    bottom: 0;
+    font-family: sans-serif;
+    color: #aaa;
+  }
+  .left {
+    float: left;
+    width: 50%;
+  }
+  .left_2 {
+    float: left;
+    width: 50%;
+    margin-top: 30px;
+  }
+  .right {
+    float: right;
+    width: 50%;
+  }
+  .document_header {
+    width: 100%;
+    border: 1px solid black;
+    height: 100px;
+  }
+  .img {
+    height: 100px;
+    opacity: 0.7;
+    border-left: 1px solid black;
+  }
+  .enterritorio {
+    width: 30%;
+    border-left: 1px solid black;
+  }
+</style>
+
+<div class="page">
+  <div class="document_header">
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      class="img"
+      alt="escudo colombia"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      class="img"
+      alt="sena"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      class="img"
+      alt="texto"
+    />
+    <img
+      class="enterritorio img"
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      alt="enterritorio"
+    />
+  </div>
+  <p>
+    <b>
+      CONTRATO DE COOPERACIÓN EMPRESARIAL No.
+      <span name="numero_contrato">_______</span> DERIVADO DEL CONTRATO
+      INTERADMINISTRATIVO No. 217017, CELEBRADO ENTRE LA EMPRESA NACIONAL
+      PROMOTORA DEL DESARROLLO TERRITORIAL - ENTERRITORIO - EL SERVICIO NACIONAL
+      DE APRENDIZAJE - SENA Y
+      <span name="nombre_primer_beneficiario"
+        >____________________________</span
+      >
+      <span name="segundo_beneficiario_s" hidden
+        >,
+        <span name="nombre_segundo_beneficiario"
+          >____________________________</span
+        ></span
+      >
+      <span name="tercer_beneficiario_s" hidden
+        >,
+        <span name="nombre_tercer_beneficiario"
+          >____________________________</span
+        ></span
+      ></b
+    ><br /><br />
+    Entre los suscritos a saber de una parte
+    <b>HERNAN DARIO FUENTES SALDARRIAGA</b>, identificado con cédula de
+    ciudadanía No. 3.349.902 expedida en Medellín, en su calidad de Director de
+    Área Grado 10 de la Dirección de Empleo y Trabajo de la Dirección General
+    del Servicio Nacional de Aprendizaje - SENA, nombrado mediante Resolución
+    No.1587 del 14 de septiembre de 2018, debidamente posesionado, como consta
+    en el acta No. 179 de la misma fecha, de conformidad con las facultades
+    conferidas, quien actúa en nombre y representación de <b>EL SENA</b>, y
+    <b>ANDREA CAROLINA ÁLVAREZ CASADIEGO</b>, identificada con Cédula de
+    Ciudadanía 52.864.280, expedida en Bogotá D.C., quien actúa en nombre y
+    representación de la
+    <b>EMPRESA NACIONAL PROMOTORA DEL DESARROLLO TERRITORIAL - ENTerritorio</b>,
+    Empresa Industrial y Comercial del Estado, de carácter financiero, del orden
+    nacional, dotada en personería jurídica, autonomía administrativa,
+    patrimoniuo propio, vinculada al Ministerio de Hacienda y Crédito Público
+    (En virtud del decreto 492 de 2020) y vigilada por la Superintendencia
+    Financiera, identificada con NIT. 899.999.316-1, en su calidad de Subgerente
+    de Operaciones (E), encargada mediante Resolución No. 11 de fecha 14 de
+    enero de 2022, en ejercicio de las facultades conferidas mediante Resolución
+    No. 109 del 4 de mayo de 2020, según lo dispuesto por el Artículo 6 del
+    Decreto 495 de 2019, y las Resoluciones 276 del 20 de septiembre de 2019
+    modificada por la Resolución 24 de fecha 3 de febrero de 2021 y 201 del 30
+    de diciembre de 2020, en adelante ENTerritorio, facultada para suscribir la
+    liquidación de los contratos y convenios que celebre ENTerritorio, de una
+    parte, y de otra parte
+    <b
+      ><span name="nombre_primer_beneficiario"
+        >____________________________</span
+      ></b
+    >, identificado(a) con
+    <span name="tipo_id_ben_1_cc"
+      >cédula de ciudadanía número
+      <b><span name="cc_beneficiario_1">___________________</span></b></span
+    >
+    <span name="tipo_id_ben_1_ce"
+      >cédula de extranjería número
+      <b><span name="ce_beneficiario_1">___________________</span></b></span
+    >
+    <span name="tipo_id_ben_1_pa"
+      >pasaporte número
+      <b><span name="pa_beneficiario_1">___________________</span></b></span
+    >
+    <span name="segundo_beneficiario_n"></span>
+    <span name="segundo_beneficiario_s" hidden>
+      <span name="tercer_beneficiario_s"></span>
+      <span name="tercer_beneficiario_n">y</span>,<span
+        name="nombre_segundo_beneficiario"
+        >____________________________</span
+      >, identificado(a) con
+      <span name="tipo_id_ben_2_cc"
+        >cédula de ciudadanía número
+        <b><span name="cc_beneficiario_2">___________________</span></b>
+      </span>
+      <span name="tipo_id_ben_2_ce"
+        >cédula de extranjería número
+        <b><span name="ce_beneficiario_2">___________________</span></b>
+      </span>
+      <span name="tipo_id_ben_2_pa" hidden
+        >pasaporte número
+        <b><span name="pa_beneficiario_2">___________________</span></b>
+      </span>
+      <span name="tercer_beneficiario_n"></span>
+      <span name="tercer_beneficiario_s" hidden>
+        y
+        <span name="nombre_tercer_beneficiario"
+          >____________________________</span
+        >, identificado(a) con
+        <span name="tipo_id_ben_3_cc"
+          >cédula de ciudadanía número
+          <b><span name="cc_beneficiario_3">___________________</span></b>
+        </span>
+        <span name="tipo_id_ben_3_ce"
+          >cédula de extranjería número
+          <b><span name="ce_beneficiario_3">___________________</span></b>
+        </span>
+        <span name="tipo_id_ben_3_pa"
+          >pasaporte número
+          <b><span name="pa_beneficiario_3">___________________</span></b>
+        </span>
+      </span></span
+    >, quien(es) de ahora en adelante se denominará (n) El (LOS)
+    <b>BENEFICIARIO(S)</b>, quien(es) declara(n), bajo gravedad de juramento,
+    que no se encuentra(n) incurso(s) en ninguna causal de inhabilidad e
+    incompatibilidad establecida por ley, la reglamentación vigente del Fondo
+    Emprender y los términos de referencia de la convocatoria, hemos acordado
+    celebrar el presente contrato de cooperación empresarial, previas las
+    siguientes consideraciones: <b>1)</b> Que el artículo 40 de la Ley 789 de
+    2002, creó el <b>FONDO EMPRENDER</b> como una cuenta independiente y
+    especial adscrita al Servicio Nacional de Aprendizaje, <b>SENA</b>, la cuál
+    será administrada por esta entidad, y cuyo objeto exclusivo será financiar
+    iniciativas empresariales que provengan y sean desarrolladas por aprendices
+    o asociaciones entre aprendices, practicantes universitarios o
+    profesionales, que su formación se esté desarrollando o se haya desarrollado
+    en instituciones que para los efectos legales, sean reconocidas por el
+    Estado de conformidad con las Leyes 30 de 1992 y 115 de 1994 y demás que las
+    complementen, modifiquen o adicionen. <b>2)</b> Que el Decreto 934 del 2003,
+    compilado en el capítulo cuarto del Decreto 1072 de 2015, facultó al Consejo
+    Directivo del <b>SENA</b> para establecer las políticas, las estrategias y
+    los proyectos generales bajo los cuales operará administrativa y
+    financieramente el Fondo; definió la calidad y los requisitos que deben
+    acreditar los destinatarios de la financiación y aprobó las modalidades de
+    financiación, los montos, las formas de pago, los plazos, los requisitos,
+    las tasas de interés, las garantías, las condonaciones, los descuentos, las
+    condiciones para cofinanciación, los períodos de gracia, las sanciones, las
+    multas, los nuevos productos y la decisión de inversión en otros fondos de
+    acuerdo con lo presentado por el Director del <b>FONDO EMPRENDER 3)</b> Que
+    así mismo el artículo 4 del citado decreto dispuso que la Administración del
+    <b>FONDO EMPRENDER</b>, estuviera a cargo del Consejo Directivo del Servicio
+    Nacional de Aprendizaje SENA, quien ejercerá las funciones de Administración
+    del mismo, cuya dirección ejecutiva estará a cargo del Director General del
+    Servicio Nacional de Aprendizaje SENA, <b>4)</b>Que el 26 de enero de 2018,
+    en uso de las facultades antes enumeradas el Director General del SENA en
+    representación del Fondo Emprender, celebró con FONADE (Hoy
+    <b>ENTerritorio</b>) el Contrato Interadministrativo de Gestión de Proyectos
+    Nº <b>896</b> (Numeración <b>SENA</b>) No. <b>217017</b> (Numeración
+    <b>ENTerritorio</b>), cuyo objeto es
+    <em
+      >"Realizar las acciones técnicas, jurídicas y financieras necesarias, para
+      la gestión, administración y gestión de recuperación de los recursos
+      destinados al programa Fondo Emprender; comprometidos en el presente
+      contrato contemplando acciones de mejora al sistema de información.".</em
+    >
+    <b>5)</b> Que para dar cumplimiento a la financiación de los planes de
+    negocios <b>EL SENA - FONDO EMPRENDER</b> dio apertura a la Convocatoria
+    Nacional No. 84. por un valor de Nueve Mil Millones de Pesos
+    ($9.000.000.000,00), cuya fecha del primer cierre se extendió hasta el dia
+    06 de septiembre de 2021; apertura que se dio con la publicación de los
+    términos de referencia cuyo contenido, obligaciones y condiciones hace parte
+    integral del presente contrato <b>6)</b> Que como resultado de la
+    convocatoria en comento, y en sesión presencial el Consejo Directivo
+    Nacional según Acta No <span name="numero_acta">_______</span> del
+    <span name="fecha_acta">__________________</span>, dio voto favorable para
+    la financiación del plan de negocio No.
+    <b
+      ><span name="id_plan">______</span> -
+      <span name="nombre_plan">________________________</span></b
+    >
+    <b>7)</b> Que, con fundamento en la normatividad citada anteriormente, se
+    aprobó para el plan de negocios No.
+    <b>
+      <span name="id_plan">___________</span> -
+      <span name="nombre_plan">____________________________</span>
+    </b>
+    el valor de
+    <b> <span name="valor_plan">___________</span> M/L </b>
+    <b>8)</b> Que existe disponibilidad presupuestal para la presente
+    contratación,
+  </p>
+  <p class="document_footer">Página 1 de 8</p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <div class="document_header">
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      class="img"
+      alt="escudo colombia"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      class="img"
+      alt="sena"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      class="img"
+      alt="texto"
+    />
+    <img
+      class="enterritorio img"
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      alt="enterritorio"
+    />
+  </div>
+  <p>
+    según Certificado de Disponibilidad No. 10385 del 25 de octubre de 2021,
+    expedido por el responsable del Grupo de Presupuesto de
+    <b>ENTerritorio</b> <b>9)</b> Que el Consejo Directivo Nacional del Servicio
+    Nacional de Aprendizaje - SENA, expidió el Acuerdo 0010 de 2019 por el cual
+    se establece el reglamento interno del Fondo Emprender, el cual hace parte
+    integral del presente contrato. <b>10)</b> Que de conformidad con las
+    condiciones actuales derivadas de la emergencia sanitaria y económica y las
+    disposiciones decretadas por el Gobierno Nacional, de cara al aislamiento
+    preventivo obligatorio para la población en general, y conforme al protocolo
+    establecido por el SENA, para determinar el nivel de impacto de las actuales
+    condiciones en el modelo y plan de negocios de los emprendedores del SENA;
+    el Coordinador de Emprendimiento solicita en el marco de la nueva vigencia
+    del contrato interadministrativo 217017, que el plazo del presente contrato
+    de cooperación empresarial sea por 11 meses. Lo anterior, tomando como
+    referente la fecha actual que ha definido el Gobierno Nacional para dar fin
+    al aislamiento preventivo obligatorio. <b>11</b>Que dada la incertidumbre
+    sobre el desarrollo de la pandemia en el país, se debe revisar la situación
+    de los proyectos y su inicio, conforme los resultados obtenidos de la
+    aplicación del protocolo y las medidas que tome el Gobierno Nacional sobre
+    el aislamiento y la reactivación económica del tejido empresarial
+    colombiano. <b>12)</b> Teniendo en cuenta las anteriores consideraciones, se
+    procede a la suscripción del presente Contrato de Cooperación Empresarial
+    que se rige por las siguientes clausulas:
+    <b>CLÁUSULA PRIMERA - OBJETO:</b> financiar la iniciativa empresarial
+    contenida en el Plan de Negocios No.
+    <b>
+      <span name="id_plan">___________</span> -
+      <span name="nombre_plan">____________________________</span>
+    </b>
+    presentado por el (los) <b>BENEFICIARIO(S)</b>, y aprobado por el Consejo
+    Directivo Nacional del <b>SENA</b>, mediante la sesión indicada en los
+    considerandos, en los términos y condiciones en los cuales fue evaluado y
+    viabilizado por el administrador de los recursos <b>ENTerritorio</b> y
+    aprobado por el Consejo Directivo Nacional del SENA, así como lo estipulado
+    en el presente documento y sus anexos, los cuales hacen parte integral de
+    este contrato <b>CLÁUSULA SEGUNDA - VALOR Y FORMA DE PAGO:</b> El valor del
+    presente contrato es por la suma de hasta
+    <b> <span name="valor_plan">___________</span></b
+    >, la cual deberá ser entregada por parte del <b>SENA - FONDO EMPRENDER</b>,
+    a través de <b>ENTerritorio</b> a la <b>FIDUCIARIA</b>, y los recursos se
+    entregarán a <b>EL(LOS) BENEFICIARIO(S)</b>, en la forma y condiciones
+    señaladas en el plan operativo del plan de negocio aprobado, en los
+    manuales, instructivos y circulares que se tengan dispuestos para el
+    desarrollo del Fondo Emprender y que hacen parte integral del presente
+    contrato. En todo caso, los desembolsos de los recursos deberán ser avalados
+    previamente por la interventoría designada para hacer seguimiento al
+    presente contrato. <b>PARÁGRAFO PRIMERO:</b> Este valor se encuentra
+    amparado con el Certificado de Disponibilidad No. 10385 del 25 de octubre de
+    2021. <b>PARÁGRAFO SEGUNDO:</b> El valor del presente contrato será afectado
+    de la siguiente manera: del centro de costo <b>217017</b> la suma de
+    <b><span name="valor_plan">___________</span></b
+    >m/l. <b>PARÁGRAFO TERCERO:</b> El primer desembolso, no podrá superar el
+    cincuenta por ciento (50%) del valor total del contrato y se realizará una
+    vez se haya suscrito el presente contrato, así como sus anexos, así:
+    <b>1)</b> Suscripción por parte del (los) beneficiario (s) del pagaré con su
+    carta de instrucciones, documentos de contrapartidas, en calidad de deudores
+    solidarios. Así como el contrato de garantía mobiliaria por parte del
+    representante de la empresa creada para ejecutar el plan de negocios
+    <b>2)</b> Para la primera visita el emprendedor deberá haber realizado la
+    constitución legal de su empresa y demás trámites ante la DIAN, por su
+    propia cuenta y riesgo, sin derecho a ningún tipo de reembolso. Para estos
+    fines el emprendedor presentará para validación y revisión de la
+    interventoría, en la primera visita, los documentos de constitución y el
+    respectivo certificado de existencia y representación legal de la empresa,
+    la cual deberá estar constituida solamente por los beneficiarios del plan de
+    negocio. El término de constitución de la empresa no podrá ser inferior a la
+    duración del presente contrato y doce (12) meses más. De no cumplir con esta
+    obligación se dará anticipadamente la terminación el presente contrato.
+    <b> EL (Los) BENEFICIARIO (S) </b> no podrá(n) modificar la razón social,
+    NIT o actividad económica de la empresa, una vez sea constituida en el marco
+    del presente contrato. <b>3)</b> De considerarlo necesario ENTerritorio /
+    SENA, podrán solicitar los avales técnicos que considere necesarios. 4)
+    Conferir mandato especial en virtud del cual <b>ENTerritorio</b>, suscribirá
+    el encargo fiduciario a nombre de
+    <b>FIDEICOMISO ENTerritorio - FONDO EMPRENDER.</b>
+    <b>PARÁGRAFO CUARTO:</b> La utilización de estos recursos será
+    exclusivamente para la ejecución del Plan de Negocios, sus desembolsos se
+    efectuarán a través de los pagos que realice la <b>FIDUCIARIA</b>, previa
+    aprobación del pago por parte de la Interventoría, a través del sistema de
+    información del <b>FONDO EMPRENDER</b> y no podrán fortalecer
+    financieramente a personas jurídicas diferente a la constituida para la
+    ejecución del plan de negocios. <b>CLÁUSULA TERCERA - PLAZO:</b> El plazo de
+    ejecución será de <b>DOCE (12)</b> meses contados a partir de la firma del
+    acta de inicio, previo cumplimiento de requisitos de perfeccionamiento y
+    ejecución. PARÁGRAFO PRIMERO: Si <b>EL (Los) BENEFICIARIO (S)</b> requiere
+    ampliación del plazo con el fin de lograr los objetivos de su plan de
+    negocios, este plazo podrá ser ampliado, previo concepto técnico favorable
+    de la Unidad de Emprendimiento del SENA correspondiente, así como del
+    concepto de la Interventoría, el cual se encontrará sustentado en el estado
+    de avance del cumplimiento de los indicadores de gestión y de las demás
+    obligaciones contractuales. <b>PARAGRAFO SEGUNDO</b> Para el trámite de
+    ampliación del plazo inicialmente otorgado, se establece el siguiente
+    procedimiento: <b>1) EL(LOS)</b>
+  </p>
+  <p class="document_footer">Página 2 de 8</p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <div class="document_header">
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      class="img"
+      alt="escudo colombia"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      class="img"
+      alt="sena"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      class="img"
+      alt="texto"
+    />
+    <img
+      class="enterritorio img"
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      alt="enterritorio"
+    />
+  </div>
+  <p>
+    <b>BENEFICIARIO(S)</b> deberá(n) presentar a la Unidad de Emprendimiento del
+    SENA en un término no inferior a sesenta (60) días calendario al vencimiento
+    del plazo del contrato, la solicitud debidamente sustentada. <b>2)</b>
+    <b>El(los) BENEFICIARIO(S)</b> deberá(n) cargar en plataforma del Sistema de
+    Información de Fondo Emprender en un término no inferior a cuarenta y cinco
+    (45) días calendario al vencimiento del plazo del contrato, la solicitud y
+    el concepto técnico de la Unidad de Emprendimiento. <b>3)</b>
+    <b>ENTerritorio</b> dará traslado a la INTERVENTORIA de la solicitud que
+    cargue EL (Los) BENEFICIARIO (S) en plataforma del Sistema de Información de
+    Fondo Emprender, para que ésta emita su concepto. <b>4)</b>
+    <b>ENTerritorio</b> y SENA previa verificación y análisis del informe de
+    recomendación de la INTERVENTORIA, aprobarán a través de la plataforma del
+    Sistema de Información de Fondo Emprender la ampliación del plazo,
+    modificando para tal efecto la fecha de terminación, con lo cual se
+    entenderá ampliado el plazo sin que surta ningún trámite adicional.
+    <b>PARÁGRAFO TERCERO</b> <b>ENTerritorio</b> gestionará los trámites
+    administrativos necesarios para actualizar la fecha de terminación del
+    presente contrato en sus sistemas de información y dejará dentro del
+    expediente del contrato el soporte documental de dicha ampliación.
+    <b> PARÁGRAFO CUARTO: </b> En todo caso el plazo del contrato no podrá
+    superar el plazo del Contrato Interadministrativo marco de la convocatoria a
+    la cual se presentó <b>EL (Los) BENEFICIARIO (S).</b>
+    <b
+      >CLÁUSULA CUARTA - OBLIGACIONES DEL (O DE LOS) BENEFICIARIO(S) CON EL
+      FONDO EMPRENDER Y CON ENTERRITORIO:</b
+    ><b>El (o los) BENEFICIARIO (S)</b> se obliga (n) a realizar y ejecutar las
+    siguientes actividades: <b>1)</b> Cumplir con las actividades y acciones
+    necesarias para la debida ejecución del plan de negocio, en los términos y
+    condiciones en los que fue evaluado y aprobado. <b>2)</b>Suscribir por todos
+    y cada uno de <b>EL (Los) BENEFICIARIO (S)</b> del plan de negocios, el
+    pagaré y su carta de instrucciones para diligenciarlo, el contrato de
+    garantía mobiliaria y sus anexos de inventarios de bienes, mediante los
+    cuales se amparan los recursos desembolsados por parte del
+    <b>FONDO EMPRENDER</b>, para que sean utilizados en el evento en que se
+    detecte el incumplimiento de las obligaciones contractuales por parte de
+    <b>EL (Los) BENEFICIARIO (S)</b>. <b>3)</b> Darle a los recursos entregados
+    por el FONDO EMPRENDER, el uso exclusivo y único propuesto en el plan de
+    negocio, aprobado por el Consejo Directivo del SENA. <b>4)</b> Lograr la
+    sostenibilidad en corto, mediano y largo plazo de la empresa. Para esto el
+    (los) BENEFICIARIO(S), deberá adoptar y coordinar todas las acciones
+    tendientes a asegurar la operación y mantenimiento y en general, la
+    sostenibilidad del plan de negocios y su buen servicio. <b>5)</b> Garantizar
+    la contrapartida en especie al <b>SENA</b>, durante la ejecución del plan de
+    negocio, en un monto equivalente al 1,4% del valor total del plan de
+    negocios, en las condiciones establecidas en el Manual de Operaciones para
+    regular este aspecto, de conformidad con lo dispuesto en el anexo N° 4, el
+    cual forma parte integral del presente contrato. <b>6)</b> Materializar e
+    incorporar el aporte al plan de negocios correspondiente al 10% del valor
+    total establecido del plan de negocio. <b>7)</b> Realizar con los recursos
+    del <b>FONDO EMPRENDER</b> y los recursos propios, cuando sea el caso, todas
+    las inversiones previstas en el plan operativo del plan de negocio aprobado
+    por <b>FONDO EMPRENDER.</b> <b>8)</b> MCumplir en su totalidad el plan
+    operativo de conformidad con el presupuesto y el plan de inversiones del
+    plan de negocios presentado para su viabilización incluidos los ajustes
+    avalados por la Interventoría. <b>9)</b> Cumplir con todos los indicadores
+    de gestión establecidos en el plan de negocios y el concepto de evaluación
+    del plan de negocio. <b>10)</b> Presentar todos los informes que le sean
+    solicitados por el interventor del plan de negocios, <b>ENTERRITORIO</b> y
+    el <b>SENA</b> y atender los requerimientos y recomendaciones realizadas
+    durante la ejecución del presente contrato. <b>11)</b>) Atender los
+    requerimientos que para el manejo de la subcuenta realice la FIDUCIARIA
+    encargada de manejar el encargo fiduciario de los recursos financiados por
+    el FONDO EMPRENDER, así como lo estipulado por los manuales e instructivos
+    de pagos <b>12)</b> Obtener la totalidad de los permisos y licencias
+    necesarios, para crear la empresa y desarrollar el Plan de Negocios.
+    <b>13)</b> Aceptar la constitución de un encargo fiduciario a nombre de
+    <b>FIDECOMISO ENTerritorio - FONDO EMPRENDER</b>, que se encargue de manejar
+    los recursos que le fueron aprobados a través de una subcuenta que para
+    estos efectos le será asignada. Así como el otorgamiento de un poder
+    especial a ENTerritorio para la suscripción del encargo fiduciario que
+    manejará los recursos que le fueron aprobados a través de una subcuenta que
+    para estos efectos le será asignada. <b>14)</b> Cumplir con las obligaciones
+    estipuladas en el encargo fiduciario. <b>15)</b> Reportar en el sistema de
+    información de Fondo Emprender, el cumplimiento de las actividades y
+    obligaciones establecidas en el Plan de Negocio, así como a sus asesores de
+    Unidad de Emprendimiento, a la Interventoría, al <b>SENA</b> y
+    <b>ENTerritorio.</b> <b>16)</b> Adoptar las demás medidas que resulten
+    necesarias para desarrollar correctamente el objeto del presente contrato.
+    <b>17)</b> Cumplir con las obligaciones estipuladas en el encargo fiduciario
+    <b>18)</b> Pagar los impuestos que se generen como consecuencia de la
+    suscripción del presente contrato y los que de él se deriven, salvo aquellos
+    que sean asumidos por el <b>FONDO EMPRENDER</b>, con cargo al Contrato
+    Interadministrativo No. 217017. <b>19)</b> Pagar los aportes parafiscales
+    que se deriven de la ejecución del plan de negocio aprobado por el
+    <b> FONDO EMPRENDER </b>, así como reportar y certificar los pagos
+    realizados por estos rubros a la Interventoría. <b>20)</b> Mantener indemne
+    al <b>SENA</b> y a <b>ENTerritorio</b> , por posibles acciones,
+    reclamaciones o demandas de cualquier naturaleza derivadas de daños y/o
+    perjuicios causados a propiedades, a la vida, o integridad personal de
+    terceros, o de cualquiera de los empleados, agentes o contratistas, que
+    surjan como consecuencia directa o indirecta de actos, hechos u omisiones
+    del (o de los) BENEFICIARIO (s), sus empleados, agentes, contratistas o
+    subcontratistas, en la ejecución de este contrato y de los que suscriba con
+    terceros.
+  </p>
+  <p class="document_footer">Página 3 de 8</p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <div class="document_header">
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      class="img"
+      alt="escudo colombia"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      class="img"
+      alt="sena"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      class="img"
+      alt="texto"
+    />
+    <img
+      class="enterritorio img"
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      alt="enterritorio"
+    />
+  </div>
+  <p>
+    <b>21)</b> <b>El (o los) BENEFICIARIO (S)</b> declara (n) y acepta (n) que
+    los recursos otorgados por el <b>FONDO EMPRENDER</b>, tienen el carácter de
+    público y cualquier destinación indebida o incorrecta dará lugar no solo a
+    las sanciones previstas en el presente contrato sino a las sanciones
+    fiscales y penales de Ley, según sea el caso.<b>22)</b> Aceptar la
+    plataforma del sistema de información del <b>FONDO EMPRENDER</b>, como el
+    canal exclusivo para la presentación y registro de toda la información y
+    soportes para la ejecución del plan de negocios, haciéndose responsable,
+    sobre las actuaciones y documentos que se anexen en ella; los cuales serán
+    el único soporte para la emisión por parte de la interventoría de los
+    informes de seguimiento, conceptos técnicos y el concepto de recomendación
+    de condonación o no condonación de recursos. <b>23)</b>
+    <b> EL (LOS) BENEFICIARIOS </b> deberán iniciar el trámite de registro de
+    marca ante la Super Intendencia de Industria y comercio cuando su plan de
+    negocio así lo contemple como una acción necesaria y financiada en dicho
+    plan <b>24)</b> Cumplir con las cláusulas y condiciones estipulados en el
+    contrato de garantía mobiliaria y especialmente las que se refieren al
+    reporte de los bienes adquiridos con los recursos financiados por el Fondo
+    Emprender y lo fijado en el parágrafo tercero del artículo 25 del Acuerdo
+    0010 de 2019. <b>PARÁGRAFO</b>: En la primera visita de interventoría, el
+    emprendedor deberá diligenciar el contrato de garantía mobiliaria o el que
+    cumpla sus veces, sobre los bienes que se adquieran con los recursos del
+    Fondo Emprender. Así mismo, durante la ejecución, el emprendedor deberá
+    suscribir lo anexos a este contrato. <b>25)</b> Las demás que se deriven de
+    la firma del presente contrato, sus anexos y normas regulatorias.
+    <b>CLÁUSULA QUINTA - OBLIGACIONES DE ENTERRITORIO</b>
+    <b> 1)</b> Constituir, previa autorización de
+    <b>EL (Los) BENEFICIARIO (S)</b>, el encargo fiduciario a nombre del
+    <b>FIDEICOMISO ENTerritorio - FONDO EMPRENDER</b>, que manejará los recursos
+    de cada plan de negocios a través de subcuentas. <b>2)</b> Entregar a la
+    <b>FIDUCIARIA</b> seleccionada para administrar el encargo fiduciario, según
+    la forma estipulada en la cláusula segunda del presente contrato, los
+    recursos asignados por el Consejo Directivo del <b>SENA.</b>
+    <b>3)</b> Designar e informar al <b>SENA</b> como al (los)
+    <b>BENEFICIARIO(S)</b>, el nombre de la entidad que realizará(n) la
+    interventoría del plan de negocios. <b>4)</b> <b>ENTerritorio,</b> deberá
+    presentar al <b>SENA</b> y al (los) <b>BENEFICIARIO(S),</b> el informe
+    consolidado emitido por la Interventoría con recomendación de condonación o
+    no condonación de recursos. <b>PARÁGRAFO PRIMERO: ENTerritorio</b> participa
+    en la celebración de este contrato con el propósito de efectuar el giro de
+    los recursos a la <b>FIDUCIARIA</b> y como responsable del seguimiento de la
+    ejecución del plan de negocios aprobado por el <b>FONDO EMPRENDER</b> a El
+    (los) <b>BENEFICIARIO(S)</b>, a través de la interventoría. Por lo tanto, no
+    se hace responsable del uso indebido que el (los) <b>BENEFICIARIO(S)</b> de
+    (n) a los recursos asignados.
+    <b> CLÁUSULA SEXTA - OBLIGACIONES DEL SENA: </b>
+    <b>1)</b> Informar a <b>ENTerritorio</b>, para que inicie las acciones
+    administrativas o judiciales en caso de incumplimiento de las obligaciones
+    por parte del <b>BENEFICIARIO</b> o de la indebida utilización de los
+    recursos públicos entregados. <b>2)</b> Realizar la gestión para que el
+    Consejo Directivo Nacional del SENA, emita la resolución de condonación y no
+    condonación de recursos, a partir de la remisión por parte de ENTerritorio
+    del informe de recomendación de condonación o no condonación de recursos,
+    emitido por la Interventoría. <b>3)</b> Suscribir el contrato de garantía
+    mobiliaria y acuerdo de pagos, y demás documentos o actos administrativos
+    que se requieran para el cumplimiento de lo dispuesto en el presente
+    contrato. <b>4)</b> Suscribir las notificaciones de incumplimiento que se
+    realicen en razón a la ejecución del presente contrato.
+    <b> CLÁUSULA SÉPTIMA - CONDICIONES PARA LA CONDONACIÓN DE LOS RECURSOS: </b>
+    La condonación de los recursos por parte del Consejo Directivo Nacional del
+    SENA, se encuentra condicionada al cumplimiento de las obligaciones
+    contractuales y los indicadores de gestión del plan de negocios obtenidos
+    durante la vigencia del presente contrato.
+    <b> CLÁUSULA OCTAVA - DERECHOS DE AUTOR: MARCAS Y PATENTES:</b> En caso de
+    desarrollar proyectos innovadores y/o actividades que conlleven el registro
+    de derechos de autor o de marcas y patentes, el (los)
+    <b>BENEFICIARIO(S)</b>, los deberá registrar ante las autoridades
+    competentes, de acuerdo con la normatividad aplicable según sea el caso.
+    <b>PARÁGRAFO:</b> Los derechos de autor, en su derecho moral, serán
+    compartidos con el Servicio Nacional de Aprendizaje <b>SENA</b>, según lo
+    establecido por el Manual de Financiamiento y conforme a los parámetros
+    establecidos en la Ley 23 de 1982.
+    <b>CLÁUSULA NOVENA - INCUMPLIMIENTO DEL CONTRATO:</b> Si el (o los)
+    <b>BENEFICIARIO(S)</b> no cumple(n) con cualquiera de las obligaciones
+    establecidas en este contrato y/o con los indicadores de gestión, deberá
+    devolver la totalidad de los recursos entregados por el
+    <b>FONDO EMPRENDER,</b> en las condiciones dispuestas en las siguientes
+    cláusulas. <b>PARAGRAFO: El (o Los) BENEFICIARIO(S)</b>, responderán
+    personal, solidaria e ilimitadamente por las obligaciones adquiridas
+    contenidos en el presente contrato y recursos asignados.
+  </p>
+  <p class="document_footer">Página 4 de 8</p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <div class="document_header">
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      class="img"
+      alt="escudo colombia"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      class="img"
+      alt="sena"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      class="img"
+      alt="texto"
+    />
+    <img
+      class="enterritorio img"
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      alt="enterritorio"
+    />
+  </div>
+  <p>
+    <b>
+      CLÁUSULA DÉCIMA - CONDICIONES FINANCIERAS Y FORMA DE PAGO EN CASO DE
+      INCUMPLIMIENTO DEL CONTRATO:
+    </b>
+    En caso en que el (o los) <b>BENEFICIARIO(S)</b> incumpla (n) las
+    obligaciones contraídas en el presente contrato, deberá (n) reembolsar al
+    <b>SENA - FONDO EMPRENDER</b>, la totalidad del valor del aporte entregado,
+    bajo los parámetros establecidos en el Manual de Financiación vigente del
+    <b>FONDO EMPRENDER</b>
+    <b> PARAGRAFO PRIMERO:</b> La obligación de rembolso de los recursos será
+    exigible a partir de la notificación de incumplimiento que realice
+    <b>ENTerritorio</b> y el <b>SENA</b> al <b>BENEFICIARIO</b>, mediante el
+    sistema de información del Fondo Emprender o cualquier mecanismo autorizado
+    por la ley. <b>PARÁGRAFO SEGUNDO:</b> El (los) BENEFICIARIO(S) acepta(n)
+    como mecanismo de notificación oficial para los efectos del presente
+    contrato la dirección de correo electrónica registrada en el sistema de
+    información del Fondo Emprender.
+    <b>
+      CLÁUSULA DÉCIMA PRIMERA - REPORTE A CENTRALES DE RIESGO: EL (Los)
+      BENEFICIARIO(S)
+    </b>
+    otorga(n) consentimiento en forma libre y voluntariamente, de manera expresa
+    e irrevocable a <b>ENTerritorio</b> y al <b>SENA - FONDO EMPRENDER</b> o a
+    quien represente sus derechos u ostente en el futuro a cualquier título la
+    calidad de acreedor, a consultar, solicitar, suministrar, reportar, procesar
+    y divulgar toda la información que se refiere al comportamiento crediticio,
+    financiero y comercial a las Centrales de Riesgo que administra la
+    Asociación Bancaria y de Entidades Financieras de Colombia o a quien
+    represente sus derechos, previo aval del
+    <b>SENA. EL (LOS) BENEFICIARIO(S)</b> hacen constar que comprende (n) que el
+    alcance de esta autorización implica que el comportamiento frente a las
+    obligaciones presentes y futuras será registrado con el objeto de
+    suministrar información suficiente y adecuada al mercado sobre el estado de
+    las obligaciones financieras, comerciales, crediticias, de servicios y la
+    proveniente de terceros países de la misma naturaleza. En caso de que, en el
+    futuro, ENTerritorio y/o <b> SENA - FONDO EMPRENDER </b> efectúe una venta
+    de cartera o realice una cesión a cualquier título de las obligaciones a
+    cargo de <b>EL (LOS) BENEFICIARIO(S)</b> a favor de un tercero, los efectos
+    de la presente autorización se extenderán a éste, en los mismos términos y
+    condiciones. <b>CLÁUSULA DÉCIMA SEGUNDA - TERMINACIÓN ANTICIPADA:</b> Las
+    partes <b>(ENTerritorio, SENA y BENEFICIARIOS)</b> terminarán
+    anticipadamente este contrato por mutuo acuerdo, previo concepto del
+    interventor del contrato, autorización por parte de <b>ENTerritorio</b>, el
+    <b>SENA</b> y según el estado financiero del plan de negocios y/o los
+    indicadores determinados por el plan de negocios.
+    <b>PARÁGRAFO PRIMERO: EL (LOS) BENEFICIARIO(S)</b>, con la presentación de
+    la renuncia a la ejecución del contrato, acepta (n) el reintegro de los
+    recursos desembolsados, bajo los parámetros establecidos en el Manual de
+    Financiación vigente del <b>FONDO EMPRENDER. PARÁGRAFO SEGUNDO:</b> Se dará
+    también por terminado anticipadamente el contrato, por fallecimiento o
+    muerte presunta de
+    <b>EL (Los) BENEFICIARIO (S). PARÁGRAFO TERCERO:</b> cuando el plan de
+    negocios se encuentre con el cumplimiento total de los indicadores de
+    gestión fijados en el plan, podrá emitirse concepto final de interventoría
+    para condonación y procederse a dar por terminado el contrato de común
+    acuerdo a partir de la fecha de elaboración y notificación del informe final
+    de interventoría a través del sistema de información, cuyos efectos solo
+    entraran en vigencia por la aprobación del Consejo Directivo Nacional del
+    SENA.
+    <b>
+      CLÁUSULA DÉCIMA TERCERA - TERMINACION UNILATERAL: EL (LOS) BENEFICIARIO(S)
+    </b>
+    autoriza (n) expresamente al <b>SENA</b> y a <b>ENTerritorio</b>, para dar
+    por terminado anticipadamente el contrato mediante oficio, que se comunicará
+    al (los) <b>BENEFICIARIO(S)</b>,en los siguientes eventos: <b>1)</b> Cuando
+    el beneficiario no haya dado inicio a la ejecución de los recursos
+    contemplados en el marco del plan de negocios, dentro de los seis (6) meses
+    siguientes a la suscripción del acta de inicio del contrato. <b>2)</b> Por
+    el suministro o presentación de documentos o información inexactos o
+    contrarios a la realidad, en cualquiera de las etapas del proceso del Fondo
+    Emprender <b>3)</b> Cuando las exigencias del servicio o interés público lo
+    requieran o la situación de orden público lo imponga. <b>4)</b> Cuando se
+    configure alguna de las causales de disolución establecidas en la ley o se
+    disuelva la persona jurídica <b>5)</b> Por interdicción judicial de
+    <b>EL (LOS) BENEFICIARIO(S)</b> o inicio de proceso liquidatario en contra
+    de la Persona Jurídica creada para desarrollar el plan de negocios.
+    <b>6)</b> Por cesación de pagos, concurso de acreedores o embargos
+    judiciales del (los) <b>BENEFICIARIO(S)</b>, y/o de la persona jurídica, o
+    cualquier circunstancia jurídica que puedan afectar el cumplimiento del
+    contrato. <b>7)</b> Cuando el (o los) <b>BENEFICIARIO</b> (s), se abstenga
+    de entregar a <b>ENTerritorio</b>, <b>SENA</b> y la interventoría, los
+    documentos requeridos para el seguimiento y ejecución del contrato.
+    <b>8)</b> Cuando se les dé un uso diferente a los recursos otorgados por el
+    Fondo Emprender, contemplados en el presente contrato, la reglamentación
+    vigente y demás normas que regulan el Fondo y en especial a lo determinado
+    en el plan de negocios aprobado por el Consejo Directivo del SENA o cuando
+    los utilice para fortalecer financieramente a personas jurídicas ya
+    constituidas. <b>9)</b> Cuando <b>EL (LOS) BENEFICIARIO(S)</b>, modifique
+    las condiciones de uso, ubicación o disposición de los bienes adquiridos con
+    los recursos del programa, sin autorización previa del <b>SENA</b> y
+    <b>ENTerritorio</b>. <b>10)</b> Cuando del incumplimiento de las
+    obligaciones de <b> EL (LOS) BENEFICIARIO(S) </b> se deriven consecuencias
+    que hagan imposible o dificulten la ejecución del contrato o se pongan en
+    riesgo los recursos públicos invertidos. 11) Cuando
+    <b>EL (LOS) BENEFICIARIO(S)</b> no destine el tiempo de dedicación por él
+    estipulado en el plan de negocio o abandone o suspenda
+  </p>
+  <p class="document_footer">Página 5 de 8</p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <div class="document_header">
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      class="img"
+      alt="escudo colombia"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      class="img"
+      alt="sena"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      class="img"
+      alt="texto"
+    />
+    <img
+      class="enterritorio img"
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      alt="enterritorio"
+    />
+  </div>
+  <p>
+    los trabajos o actividades empresariales total o parcialmente, sin acuerdo o
+    autorización previa y escrita de <b>ENTerritorio</b> y el <b>SENA</b>.
+    <b>12)</b> Cuando <b>EL (LOS) BENEFICIARIO(S)</b> este (n) incurso (s) en
+    una de las causales de inhabilidad o incompatibilidad consagradas en la Ley.
+    <b>13)</b> Cuando <b>EL (LOS) BENEFICIARIO(S)</b> por imposibilidad física,
+    jurídica, financiera o presupuestal, no pueda (n) adelantar el objeto del
+    presente contrato. <b>14)</b> Cuando <b>EL (LOS) BENEFICIARIO(S)</b> incurra
+    (n) en las conductas prohibidas en el artículo 25 de la Ley 40 de 1993, pago
+    de sumas de dinero a extorsionistas u ocultar o colaborar, por parte de
+    <b> EL (LOS) BENEFICIARIO(S) </b> en el pago por la liberación de una
+    persona secuestrada que sea contratista o empleada de
+    <b>EL (LOS) BENEFICIARIO(S)</b>, <b>15)</b> Cuando previa mediación de
+    citación o notificación para la comparecencia de
+    <b>EL (LOS) BENEFICIARIO(S)</b> a las diferentes visitas y reuniones
+    programadas de interventoría, éste no comparezca a dos (2) reuniones, sin
+    que medie justificación legal. <b>16)</b> Cuando se incumpla cualquiera de
+    las condiciones establecidas para la ejecución de la actividad empresarial
+    contemplada en el plan de negocios. <b>17)</b>Por cualquier otra establecida
+    en la ley que impida adelantar el objeto del presente contrato o para
+    continuar con su ejecución. <b>18)</b> La inclusión de terceros a la persona
+    jurídica constituida para la ejecución del plan de negocios, durante el
+    periodo de vigencia del contrato. <b>19)</b> Realizar cualquier negocio
+    jurídico sobre el plan de negocio o la empresa creada a la luz de éste,
+    durante la vigencia del contrato, sin autorización expresa del SENA, que
+    implique la enajenación de los bienes financiados con recursos del Fondo
+    Emprender y que no correspondan al giro normal de la empresa. <b>20)</b> Por
+    cualquiera de las circunstancias previstas en el artículo 14 del Acuerdo 10
+    de 2019 o la norma que lo adicione, modifique o derogue. <b>21)</b> Cuando
+    se viole cualquiera de las prohibiciones estipuladas en el artículo 4 del
+    Acuerdo 10 de 2019. <b>22)</b> Por el incumplimiento de lo estipulado en el
+    contrato y especialmente lo atinente a los documentos necesarios,
+    estipulados en el artículo 25 del Acuerdo 10 de 2019
+    <b>PARÁGRAFO PRIMERO:</b> Las partes acuerdan que el contrato se dará por
+    terminado anticipadamente, a partir de la fecha que señale la comunicación
+    de notificación. <b>PARÁGRAFO SEGUNDO</b> El (los) <b>BENEFICIARIO</b>(S)
+    renuncia (n) a realizar cualquier reclamación o demanda en relación con la
+    terminación anticipada del contrato. <b>PARÁGRAFO TERCERO</b> En todo caso,
+    el acaecimiento de una de las causales de terminación anticipada previstas
+    en la presente cláusula facultará al <b>SENA</b>, a través de
+    <b>ENTerritorio</b>, para abstenerse de continuar realizando los desembolsos
+    y exigir inmediatamente la devolución de los recursos girados al plan de
+    negocios, esto con el fin de cumplir del precepto legal de protección del
+    recurso público. <b>PARÁGRAFO CUARTO</b> El (los)
+    <b>BENEFICIARIO(S) </b>podrá(n) realizar acuerdos de pago con el
+    <b>SENA</b> y <b>ENTerritorio</b>, a través de la gestión que realice el
+    Administrador o Gerente del <b>FONDO EMPRENDER</b>, que permitan la
+    devolución de los recursos que se hayan entregado por el
+    <b> SENA - FONDO EMPRENDER </b>, para la financiación de su plan de
+    negocios. Estos acuerdos de pago serán de estricto cumplimiento so pena de
+    iniciar las acciones judiciales pertinentes.
+    <b> CLÁUSULA DÉCIMA CUARTA - REGIMEN LEGAL APLICABLE: </b> El presente
+    contrato se rige por la Ley 789 de 2002, Decreto 934 de 2003, modificados
+    por los Decretos 3930 de 2006 y 1072 de 2015, y especialmente, con lo
+    determinado en los manuales, acuerdos y resoluciones vigentes que regulan y
+    reglamentan del Fondo Emprender, o aquellas que la derogue, modifiquen,
+    sustituyan o adicionen, así como lo contemplado en los términos de
+    referencia de la convocatoria a la cual postuló su plan de negocio. Marco
+    normativo conocido por el (los) BENEFICIARIO(S), desde el momento de la
+    postulación de su plan de negocio y confirmado con la suscripción del
+    presente contrato. <b>PARÁGRAFO:</b> Su régimen jurídico estará enmarcado en
+    las normas precitadas, y en concordancia con lo establecido por el artículo
+    5 del Acuerdo 10 de 2019 y las normas civiles y comerciales.
+    <b> CLÁUSULA DÉCIMA QUINTA - CESIÓN: El (LOS) BENEFICIARIO(S) </b> no podrá
+    ceder total, ni parcialmente el presente contrato, ni el cumplimiento de sus
+    obligaciones. El incumplimiento de esta cláusula, facultará al
+    <b> SENA Y ENTerritorio </b> para abstenerse de continuar realizando los
+    desembolsos y exigir la devolución de los recursos girados al plan de
+    negocios. <b>CLÁUSULA DÉCIMA SEXTA - CIERRE DEL CONTRATO</b> El informe
+    final de interventoría, aprobado por el <b>SENA</b> Y
+    <b>ENTerritorio</b> será el documento base para proceder al cierre del
+    respectivo contrato. <b>PARÁGRAFO PRIMERO:</b> En caso de que el informe de
+    interventoría contenga recomendación de no condonación de los recursos, y
+    éste sea aprobado por el <b>SENA</b>, el presente contrato se cerrará
+    mediante acta de liquidación bilateral dentro de los seis (6) meses
+    siguientes, contados a partir de la notificación de no condonación de los
+    recursos. En el evento que no se logre la suscripción del documento de
+    liquidación bilateral, dentro de los treinta (30) días siguientes a la
+    notificación de no condonación de los recursos del presente contrato, éste
+    se cerrará mediante el documento ACTA DE CIERRE Y LIBERACIÓN DE SALDOS de
+    que trata el artículo 55 del Manual de Contratación de
+    <b> ENTERRITORIO. PARÁGRAFO SEGUNDO </b>: En el caso en que el informe de
+    interventoría recomiende la condonación de los recursos, y éste sea aprobado
+    por el <b>SENA</b>, el presente contrato se cerrará dentro de los treinta
+    (30) días siguientes a la notificación de condonación de los recursos del
+    presente contrato mediante documento de ACTA DE CIERRE Y LIBERACIÓN DE
+    SALDOS señalada en el artículo 55 del Manual de Contratación de
+    <b>ENTerritorio.</b>
+    <b>CLÁUSULA DÉCIMA SÉPTIMA - AUSENCIA DE VINCULO O RELACIÓN CONTRACTUAL</b>
+    En virtud del presente contrato, los contratistas, proveedores, empleados
+    del (o de
+  </p>
+  <p class="document_footer">Página 6 de 8</p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <div class="document_header">
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      class="img"
+      alt="escudo colombia"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      class="img"
+      alt="sena"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      class="img"
+      alt="texto"
+    />
+    <img
+      class="enterritorio img"
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      alt="enterritorio"
+    />
+  </div>
+  <p>
+    los) <b>BENEFICIARIO (S)</b>, no adquieren vínculo laboral ni contractual
+    alguno con el <b>SENA</b> y
+    <b>ENTerritorio. PARÁGRAFO: El (los) BENEFICIARIO(S)</b>, en virtud del
+    presente contrato no generan relación laboral, ni contractual diferente a la
+    establecida en el presente contrato.
+    <b>
+      CLÁUSULA DÉCIMA OCTAVA - INHABILIDADES, INCOMPATIBILIDADES Y CONFLICTO DE
+      INTERES: El (los) BENEFICIARIO(S)
+    </b>
+    declara(n) bajo la gravedad del juramento, el cual se entiende prestado con
+    la firma del presente documento, que no se halla(n) incurso (s) en ninguna
+    de las causales de inhabilidad o incompatibilidad consagradas en la Ley para
+    la celebración de este contrato, ni existe conflicto de interés alguno. Así
+    como las establecidas por la reglamentación vigente y los términos de la
+    convocatoria
+    <b>
+      CLÁUSULA DÉCIMA NOVENA - DOCUMENTOS INTEGRANTES DEL PRESENTE CONTRATO:
+    </b>
+    Hacen parte integral del presente Contrato de cooperación Empresarial los
+    siguientes documentos: <b>1)</b> El Plan de Negocio presentado por el (los)
+    Emprendedor(es) y avalado por el Evaluador y el Plan Operativo aprobado por
+    el Interventor en Acta de Inicio 2) el poder mediante el cual, el (los)
+    <b>BENEFICIARIO(S)</b> confiere (n) mandato especial en virtud del cual
+    <b>ENTerritorio</b> suscribirá el encargo fiduciario a nombre de FIDEICOMISO
+    <b>ENTERRITORIO FONDO EMPRENDER 3)</b> el contrato de Encargo Fiduciario,
+    <b>4)</b> documento legal de constitución de la empresa <b>5)</b> la
+    asignación presupuestal <b>6)</b> pagaré y la carta de instrucciones firmada
+    y autenticada por el (los) <b>BENEFICIARIO(S) 7)</b> modelo de
+    contrapartidas <b>8)</b> Actas de seguimiento de interventoría al contrato,
+    así como las actas de agendas especiales. <b>9)</b> y los demás documentos
+    que se generen en desarrollo del presente contrato.
+    <b> CLÁUSULA VIGÉSIMA - INTERVENTORIA: EL (LOS) BENEFICIARIO(S) </b>
+    acepta (n) la inspección y vigilancia de la interventoría que designe
+    <b>ENTerritorio</b>, encaminada a cerciorarse de que la inversión se hace o
+    se ha realizado en la forma indicada, acorde con el plan de negocios
+    aprobado por el <b>SENA</b>, dentro del término de vigencia de este
+    contrato, obligándose a suministrar al interventor y a las personas que el
+    INTERVENTOR designe, la información que se requiera, pudiendo incluso
+    inspeccionar las cuentas del (los) <b>BENEFICIARIO (S)</b>. Así mismo se
+    compromete a dar aplicación estricta al destino de las inversiones y a no
+    abandonar las obligaciones, ocultar, enajenar o disponer de los bienes
+    gravados, si los hubiere, cuya tenencia conservare, al tenor de lo dispuesto
+    en los artículos 255 y 311 del Código Penal.
+    <b> CLÁUSULA VIGESIMA PRIMERA - CAUSALES DE VENCIMIENTO DEL CONTRATO: </b>
+    Además de las previstas en el presente contrato, se tendrá por vencido el
+    plazo de pleno derecho del presente contrato, pudiéndose exigir, aún sin
+    vencerse el plazo, el pago de intereses o cuotas o saldos de capital, la
+    cancelación de todo el capital pendiente y de sus intereses a la tasa
+    moratoria, en los siguientes casos y desde el día de su ocurrencia:
+    <b>1)</b> Por mora en el pago del capital cuando sea exigido el reembolso de
+    los recursos o de los intereses, de conformidad con el plan de pagos
+    previsto, como de cualquier otra obligación a cargo del (los)
+    <b>BENEFICIARIO(S). 2)</b> Por haber presentado información inexacta al
+    interventor, al <b>SENA - FONDO EMPRENDER</b> o al administrador de
+    recursos. <b>3)</b> Por falta de cumplimiento total o parcial de la
+    inversión convenida de conformidad con lo establecido en la cláusula primera
+    de este contrato. <b>4)</b> Por falta de cumplimiento de cualquiera de las
+    obligaciones contraídas por <b>EL (LOS) BENEFICIARIO(S)</b>, en la cláusula
+    cuarta de presente contrato. <b>5)</b> Si se abstiene de exhibir las
+    garantías otorgadas cuando la entidad acreedora lo solicite. <b>6)</b> Si
+    los bienes del (los) <b>BENEFICIARIO(S)</b> son perseguidos en ejercicio de
+    cualquier clase de acción. <b>7)</b> Si los bienes que por este contrato se
+    dan en garantía fueren perseguidos por terceros en juicio o en extrajuicio,
+    o sufrieren desmejora o deprecio tales que ya no presten suficiente garantía
+    a juicio del interventor, de las obligaciones contraídas por el (los)
+    <b>BENEFICIARIO (S)</b>. <b>8)</b> Si <b> EL (los) BENEFICIARIO(S) </b> no
+    acepta, durante la ejecución del contrato, la vigilancia de la interventoría
+    designada por <b>ENTerritorio. 9)</b> En los demás casos previstos por la
+    ley. <b>10)</b> El <b>SENA</b> podrá hacer uso de la cláusula aceleratoria
+    de conformidad, con lo previsto en la normatividad para el caso, ante la
+    simple ocurrencia de cualquiera de las causales antes mencionadas, generando
+    los efectos correspondientes, sin necesidad de requerimiento, comunicación o
+    trámite adicional alguno. <b> EL (los) BENEFICIARIO (S) </b> renuncia (n)
+    expresamente a cualquier clase de requerimiento. Tanto en el caso de
+    persecución de terceros como en el de desmejora, deprecio o disminución de
+    la solvencia económica, así como en el caso de la mala o difícil situación
+    económica, el <b>SENA</b> podrá optar por la subsistencia del aporte y del
+    plazo, si <b>EL (los) BENEFICIARIO(S)</b> ofreciere (n) una nueva garantía a
+    satisfacción del
+    <b> CLÁUSULA VIGESIMA SEGUNDA - PUBLICIDAD: EL (LOS) BENEFICIARIO </b> se
+    compromete(n) a mencionar de forma destacada en la publicidad relacionada
+    con el objeto de este contrato, la participación del
+    <b>SENA - FONDO EMPRENDER</b> como entidad aportante.
+    <b>
+      CLÁUSULA VIGESIMA TERCERA - REQUISITOS DE PERFECCIONAMIENTO Y
+      EJECUCIÓN:</b
+    >
+    Este contrato quedará perfeccionado con la suscripción de las partes, para
+    su ejecución se requiere de la expedición del registro presupuestal por
+    parte de <b>ENTerritorio</b> y suscripción acta de inicio del presente
+    contrato. <b>CLÁUSULA VIGESIMA CUARTA - DOMICILIO:</b> Las partes acuerdan
+    para todos los efectos legales la ciudad de Bogotá D.C.
+    <b>
+      CLÁUSULA VIGÉSIMA QUINTA - AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS
+      PERSONALES: EL (LOS) BENEFICIARIO(S)
+    </b>
+  </p>
+  otorga(n) consentimiento al <b>SENA - FONDO EMPRENDER</b> y a
+  <b>ENTERRITORIO</b> para el tratamiento de los datos personales
+  <p class="document_footer">Página 7 de 8</p>
+</div>
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <div class="document_header">
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      class="img"
+      alt="escudo colombia"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      class="img"
+      alt="sena"
+    />
+    <img
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      class="img"
+      alt="texto"
+    />
+    <img
+      class="enterritorio img"
+      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      alt="enterritorio"
+    />
+  </div>
+  <p>
+    suministrados en el desarrollo del presente contrato, de conformidad con la
+    Política General de Seguridad de la Información y Protección de Datos
+    Personales en el SENA, dispuesta por el <b>SENA</b> en el siguiente link:
+    <a
+      href="http://normograma.sena.edu.co/normograma/docs/acuerdo_sena_0013_2019.htm"
+      target="_blank"
+      >http://normograma.sena.edu.co/normograma/docs/acuerdo_sena_0013_2019.htm</a
+    >
+    <br />
+  </p>
+  <p>
+    <b
+      >En constancia se firma a los: <span name="dias_firma">___</span> dias del
+      mes de <span name="mes_firma">__________</span> del año
+      <span name="anio_firma">____</span></b
+    >
+  </p>
+  <div class="left">
+    <b>
+      <br /><br /><br />
+      <span>______________________________________</span> <br />
+      <span><b>HERNAN DARIO FUENTES SALDARRIAGA</b></span
+      ><br />
+      <span>Director de Empleo y Trabajo</span><br />
+    </b>
+  </div>
+  <div class="right">
+    <b>
+      <br /><br /><br />
+      <span>______________________________________</span> <br />
+      <span><b>ANDREA CAROLINA ÁLVAREZ CASADIEGO</b></span
+      ><br />
+      <span>Subgerente de Operaciones (E)</span><br />
+    </b>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+
+    <div class="left">
+      <b>
+        <br /><br /><br />
+        <span>______________________________________</span> <br />
+        <b>
+          <span
+            ><span name="nombre_primer_beneficiario"
+              >____________________________</span
+            ></span
+          > </b
+        ><br />
+        <span><b>EL (LOS) BENEFICIARIO(S)</b></span
+        ><br />
+        <span>
+          <span name="tipo_id_ben_1_cc"
+            >C.C
+            <span name="cc_beneficiario_1">___________________</span>
+          </span>
+          <span name="tipo_id_ben_1_ce" hidden
+            >C.E
+            <span name="ce_beneficiario_1">___________________</span>
+          </span>
+          <span name="tipo_id_ben_1_pa" hidden
+            >PASAPORTE
+            <span name="pa_beneficiario_1">___________________</span></span
+          >
+        </span>
+        <br />
+        <b>
+          <span
+            >Correo:
+            <span name="correo_beneficiario_1">___________________</span></span
+          >
+        </b>
+      </b>
+    </div>
+    <div name="segundo_beneficiario_n"></div>
+    <div name="segundo_beneficiario_s" hidden class="right">
+      <b>
+        <br /><br /><br />
+        <span>______________________________________</span> <br />
+        <b>
+          <span>
+            <span name="nombre_segundo_beneficiario"
+              >____________________________</span
+            >
+          </span>
+        </b>
+        <br />
+        <b
+          ><span><b>EL (LOS) BENEFICIARIO(S)</b></span></b
+        ><br />
+        <span>
+          <span name="tipo_id_ben_2_cc"
+            >C.C
+
+            <span name="cc_beneficiario_2">___________________</span>
+          </span>
+          <span name="tipo_id_ben_2_ce" hidden
+            >C.E
+            <span name="ce_beneficiario_2">___________________</span>
+          </span>
+          <span name="tipo_id_ben_2_pa" hidden
+            >PASAPORTE
+            <span name="pa_beneficiario_2">___________________</span></span
+          >
+        </span>
+        <br />
+        <b>
+          <span
+            >Correo:
+            <span name="correo_beneficiario_2">___________________</span></span
+          >
+        </b>
+      </b>
+    </div>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <div name="tercer_beneficiario_n"></div>
+    <div name="tercer_beneficiario_s" hidden>
+      <b>
+        <br /><br /><br />
+        <span>______________________________________</span> <br />
+        <b>
+          <span name="nombre_tercer_beneficiario"
+            >____________________________</span
+          ></b
+        ><br />
+        <span><b>EL (LOS) BENEFICIARIO(S)</b></span
+        ><br />
+        <span
+          ><span name="tipo_id_ben_3_cc"
+            >C.C
+            <span name="cc_beneficiario_3">___________________</span>
+          </span>
+          <span name="tipo_id_ben_3_ce" hidden
+            >C.E
+            <span name="ce_beneficiario_3">___________________</span>
+          </span>
+          <span name="tipo_id_ben_3_pa" hidden
+            >PASAPORTE
+            <span name="pa_beneficiario_3">___________________</span></span
+          >
+        </span>
+        <br />
+        <span
+          >Correo:
+          <span name="correo_beneficiario_3">___________________</span></span
+        >
+      </b>
+    </div>
+  </div>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <p>
+    <small>
+      <span><b>Por el SENA</b></span
+      ><br />
+      <span>
+        Proyectó &nbsp;&nbsp;&nbsp; Mónica Alejandra Torres Rey, Abogada Fondo
+        Emprender
+      </span>
+      <br />
+      <span>
+        Vo.Bo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carlos Arturo
+        Gamba Castillo, Coordinador Nacional de Emprendimiento
+      </span>
+      <br />
+      <span>
+        Revisó &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Luisa Fernanda
+        Velásquez Giraldo, Abogada Dirección de Empleo y Trabajo
+      </span>
+      <br />
+    </small>
+  </p>
+
+  <br />
+
+  <p>
+    <small>
+      <span><b>Por ENTerritorio</b></span
+      ><br />
+      <span>
+        Elaboró &nbsp;&nbsp;&nbsp; Camilo Fernando Corena Gutiérrez, Gerente de
+        Contratos Interadministrativo 217017
+      </span>
+      <br />
+      <span>
+        Revisó &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ana Catalina Castro Lozano,
+        Gerente de Unidad Grupo de Planeación Contractual
+      </span>
+      <br />
+    </small>
+  </p>
+
+  <br />
+
+  <br />
+  <p class="document_footer">Página 8 de 8</p>
+</div>
