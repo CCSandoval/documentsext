@@ -4,7 +4,8 @@
         {
             description: 'Ingrese el número del contrato',
             name: 'numero_contrato',
-            type: 'number'
+            type: 'text',
+            help: 'number'
         },
         {
             description: 'Ingrese el nombre del primer beneficiario',
@@ -292,7 +293,8 @@
         {
             description: 'Ingrese el número de acta',
             name: 'numero_acta',
-            type: 'number'
+            type: 'text',
+            help: 'number'
         },
         {
             description: 'Seleccione la fecha del acta',
@@ -302,7 +304,8 @@
         {
             description: 'Ingrese el numero del plan de negocios',
             name: 'id_plan',
-            type: 'number'
+            type: 'text',
+            help: 'number'
         },
         {
             description: 'Ingrese el nombre del plan de negocios',
@@ -328,7 +331,8 @@
         {
             description: 'Ingrese el año en que se firma el contrato',
             name: 'anio_firma',
-            type: 'number'
+            type: 'text',
+            help: 'anio'
         },
         {
             description: 'Ingrese el correo del primer beneficiario',
@@ -393,7 +397,9 @@
         'anio_firma'
     ],
     help: {
-        name: 'Ejemplo: Sebastian José Saldarriaga Lopez'
+        name: 'Ejemplo: Sebastian José Saldarriaga Lopez',
+        anio: 'Ejemplo: 2008',
+        number: 'Ejemplo: 15487'
     },
     preFill: [
         {
@@ -462,7 +468,7 @@
     ],
     name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
     price: 0,
-    build: 4,
+    build: 6,
     preBuild: false,
     preBuildData: []
 }

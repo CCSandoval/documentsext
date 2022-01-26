@@ -992,10 +992,17 @@
             type: 'name'
         },
         {
-            description: 'Digite el valor canon de arrendamiento',
+            description: 'Digite el valor canon de arrendamiento en números',
             help: 'valor',
-            name: 'valor_c_arrendamiento',
-            type: 'currency'
+            name: 'valor_c_arrendamiento_num',
+            type: 'currency',
+            removeText: true
+        },
+        {
+            description: 'Digite el valor del canon de arrendamiento en letras',
+            help: 'valor_let',
+            name: 'valor_c_arrendamiento_letras',
+            type: 'name'
         },
         {
             description: '¿Desea agregar el valor de la cuota de administración? ',
@@ -1896,7 +1903,8 @@
     help: {
         nombre: 'Ejemplo: Jaime David Diaz Monte',
         cedula: 'Ejemplo: 1234567890',
-        valor: 'Ejemplo: 90.000.000',
+        valor: 'Ejemplo: 12.480.550',
+        valor_let: 'Ejemplo: DOCE MILLONES CUATROCIENTOS OCHENTA MIL QUINIENTOS CINCUENTA',
         direccion: 'Ejemplo: CL 64 B SUR 4',
         numero: 'Ejemplo: 12',
         persona: 'Arrendatario o Propietario',
@@ -1911,7 +1919,7 @@
         uso: 'Ejemplo: Montacargas',
         porcentaje: 'Ejemplo: 10%'
     },
-    build: 14,
+    build: 15,
     username: '2f3ec4a1-1659-4b93-88eb-12c70236b1a5',
     createdAt: ISODate('2021-10-08T20:30:26.972Z'),
     updatedAt: ISODate('2021-10-08T20:30:26.972Z')
