@@ -3992,6 +3992,12 @@
             type: 'text'
         },
         {
+            description: 'Digite el lindero que se encuentra al lado del inmueble',
+            help: 'linderos',
+            name: 'lindero_lado',
+            type: 'text'
+        },
+        {
             description: 'Digite el lindero que se encuentra al otro lado del inmueble',
             help: 'linderos',
             name: 'lindero_o_lado',
@@ -4303,7 +4309,7 @@
         porcentaje: 'Ejemplo: 15',
         fecha: 'Ejemplo: 13 de Septiembre del 2021'
     },
-    build: 24,
+    build: 26,
     createdAt: ISODate('2021-09-29T18:40:33.337Z'),
     updatedAt: ISODate('2021-09-29T18:40:33.337Z')
 }

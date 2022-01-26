@@ -1764,7 +1764,169 @@
                 }
             ],
             type: 'text'
-        }
+        },
+        {
+            description: '¿Desea agregar una cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_1',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, cualquier aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_1',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una segunda cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la segunda aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_2',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una tercera cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_3',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la tercera aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_3',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar una cuarta cláusula adicional al presente contrato?',
+            name: 'clausulas_adicional_4',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite a continuación, la cuarta aclaración, modificación o disposición especial acordada por las partes. Recuerde que el contenido y la eficacia de las cláusulas por ustedes redactadas, son de su exclusiva responsabilidad y no de micontrato.co',
+            name: 'adicional_clausulas_4',
+            prereq: [
+                {
+                    k: 'clausulas_adicional_1',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_2',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_3',
+                    v: 's'
+                },
+                {
+                    k: 'clausulas_adicional_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
     ],
     preFill: [
         {
@@ -1919,7 +2081,7 @@
         uso: 'Ejemplo: Montacargas',
         porcentaje: 'Ejemplo: 10%'
     },
-    build: 15,
+    build: 16,
     username: '2f3ec4a1-1659-4b93-88eb-12c70236b1a5',
     createdAt: ISODate('2021-10-08T20:30:26.972Z'),
     updatedAt: ISODate('2021-10-08T20:30:26.972Z')
