@@ -467,8 +467,8 @@
         }
     ],
     name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
-    price: 0,
-    build: 6,
+    price: 5000,
+    build: 7,
     preBuild: false,
     preBuildData: []
 }

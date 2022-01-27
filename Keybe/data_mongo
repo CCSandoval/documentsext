@@ -202,7 +202,7 @@
     ],
     preBuildData: [],
     name: 'Simple Agreement For Future Equity',
-    price: 0,
+    price: 5000,
     help: {
         email: 'Example: example@email.com',
         name: 'Example: John Doe',
@@ -210,5 +210,5 @@
         title: 'Example: Chief Financial Officer'
     },
     preBuild: true,
-    build: 10
+    build: 11
 }

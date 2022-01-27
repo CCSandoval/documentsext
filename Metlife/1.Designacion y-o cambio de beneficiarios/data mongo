@@ -4090,11 +4090,11 @@
     preFill: [],
     preBuildData: [],
     name: 'Designacion y-o cambio de beneficiarios',
-    price: 0,
+    price: 5000,
     help: {
         participacion: 'Los porcentajes de participación de los beneficiarios NO pueden superar el 100%',
         email: 'Ejemplo: correo@ejemplo.com'
     },
-    build: 19,
+    build: 20,
     preBuild: true
 }
