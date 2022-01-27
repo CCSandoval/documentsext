@@ -15,6 +15,10 @@
                     value: 'net'
                 },
                 {
+                    name: 'TRIANGULUM BPO S.A.S.',
+                    value: 'tri'
+                },
+                {
                     name: 'NETIA S.A.S.',
                     value: 'nei'
                 }
@@ -376,7 +380,7 @@
         valor: 'Ejemplo: 100.000',
         sexos: 'Ejemplo: Femenino'
     },
-    build: 4,
+    build: 5,
     username: 'dde0a72b-6497-4e96-8fef-1c08c4d33128',
     createdAt: ISODate('2021-10-20T15:58:27.251Z'),
     updatedAt: ISODate('2021-10-20T15:58:27.251Z')
