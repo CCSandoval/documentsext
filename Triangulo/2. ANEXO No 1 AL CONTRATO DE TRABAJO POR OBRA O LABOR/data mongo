@@ -55,6 +55,12 @@
             type: 'name'
         },
         {
+            description: 'Digite el valor correspondiente al cumplimiento de KPI en el mes y reportado por el supervisor',
+            help: 'valor',
+            name: 'valor_kpi',
+            type: 'currency'
+        },
+        {
             description: 'Seleccione el tipo de documento del trabajador',
             help: 'tipo_documento',
             name: 'tipo_documento_trabajador',
@@ -128,6 +134,7 @@
     sign: [
         'fecha_hoy',
         'nombre_trabajador',
+        'valor_kpi',
         'empresa',
         'tipo_documento_trabajador',
         'cedula_trabajador',
@@ -162,13 +169,14 @@
     help: {
         fecha: 'Ejemplo: 12 de Noviembre del 2021',
         nombre: 'Ejemplo: Andrea Sofia Diaz Diaz',
+        valor: 'Ejemplo: 100.000',
         empresas: 'Ejemplo: INTEEGRA S.A.S.',
         tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
         cedula: 'Ejemplo:1234567890',
         pasaporte: 'Ejemplo: AAA1234567',
         correo: 'Ejemplo: ejemplo@inteegra.com'
     },
-    build: 2,
+    build: 4,
     username: 'dde0a72b-6497-4e96-8fef-1c08c4d33128',
     createdAt: ISODate('2021-10-20T15:00:36.541Z'),
     updatedAt: ISODate('2021-10-20T15:00:36.541Z')
