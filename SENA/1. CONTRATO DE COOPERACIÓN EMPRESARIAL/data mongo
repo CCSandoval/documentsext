@@ -2,6 +2,11 @@
     _id: ObjectId('61df2539116f24246c0ad8eb'),
     config: [
         {
+            name: 'numero_contrato',
+            description: 'Ingrese el numero del contrato',
+            type: 'text'
+        },
+        {
             name: 'nombre_emprendedor',
             description: 'Ingrese el nombre del emprendedor',
             type: 'name'
@@ -47,6 +52,38 @@
             type: 'currency'
         },
         {
+            name: 'cdp1_number',
+            description: 'Ingrese el numero del Certificado de Disponibilidad Presupuestal',
+            type: 'number',
+        },
+        {
+            name: 'cdp2',
+            description:'¿Desea ingresar un segundo número de Certificado de Disponibilidad Presupuestal?',
+            options:[
+                {
+                    name:'Si',
+                    value:'s'
+                },
+                {
+                    name:'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            name: 'cdp2_number',
+            description: 'Ingrese el segundo numero del Certificado de Disponibilidad Presupuestal',
+            type: 'number',
+            prereq:[
+                {
+                    k: 'cdp2',
+                    v: 's'
+                }
+            ]
+        },
+        {
             name: 'correo_emprendedor',
             description: 'Ingrese el correo del emprendedor',
             type: 'text',
@@ -64,7 +101,8 @@
         'nombre_plan',
         'valor_plan',
         'valor_recomendado_plan',
-        'correo_emprendedor'
+        'correo_emprendedor',
+        'numero_contrato'
     ],
     preFill: [
         {
@@ -94,17 +132,27 @@
         {
             name: 'cargo_emprendedor',
             value: 'Emprendedor'
+        },
+        {
+            name: 'coreo_prov_sena',
+            value: 'jeyson.agudelo@micontrato.co'
+        },
+        {
+            name: 'correo_prov_uni',
+            value: 'larodriguezr@udistrital.edu.co'
         }
     ],
     signatureProfile: [
         {
             name: 'nombre_sena',
+            email: 'coreo_prov_sena',
             title: 'cargo_sena',
             identification: 'cc_sena',
             type: 'firma_sena'
         },
         {
             name: 'nombre_universidad',
+            email: 'correo_prov_uni',
             title: 'cargo_universidad',
             identification: 'cc_universidad',
             type: 'firma_universidad'
@@ -124,5 +172,5 @@
         correo: 'ejemplo@dominio.com'
     },
     preBuild: true,
-    build: 5
+    build: 11
 }
