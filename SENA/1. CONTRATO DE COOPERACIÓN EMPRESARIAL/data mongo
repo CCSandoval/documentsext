@@ -47,11 +47,6 @@
             type: 'currency'
         },
         {
-            name: 'valor_recomendado_plan',
-            description: 'Ingrese el valor recomendado para el proyecto',
-            type: 'currency'
-        },
-        {
             name: 'cdp1_number',
             description: 'Ingrese el numero del Certificado de Disponibilidad Presupuestal',
             type: 'number',
@@ -100,9 +95,10 @@
         'id_plan',
         'nombre_plan',
         'valor_plan',
-        'valor_recomendado_plan',
         'correo_emprendedor',
-        'numero_contrato'
+        'numero_contrato',
+        'cdp2_number',
+        'cdp1_number'
     ],
     preFill: [
         {
@@ -172,5 +168,5 @@
         correo: 'ejemplo@dominio.com'
     },
     preBuild: true,
-    build: 11
+    build: 12
 }
