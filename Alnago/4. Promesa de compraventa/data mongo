@@ -4304,6 +4304,38 @@
             type: 'text'
         },
         {
+            description: '¿Desea pactar una renuncia reciproca a la condición resolutoria?',
+            name: 'renuncia_reciproca',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: '¿Desea pactar que el promitente comprador se hará responsable del pago del predial después de la venta del inmueble?',
+            name: 'predial_comprador',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
             description: 'Digite el número de la notaria donde se otorgará la escritura Pública de compraventa del inmueble',
             help: 'numero',
             name: 'numero_notaria',
@@ -4430,8 +4462,6 @@
             ],
             type: 'text'
         },
-
-
         {
             description: '¿Se desea pactar colegaje?',
             name: 'colegaje',
@@ -4459,8 +4489,6 @@
             ],
             type: 'name'
         },
-
-
         {
             description: 'Digite el valor de la comisión a cancelar a alnago',
             help: 'valor',
@@ -4471,7 +4499,6 @@
             ],
             type: 'currency'
         },
-
         {
             description: 'Digite el primer porcentaje de pago de comisión a cancelar',
             name: 'p_1_comision',
@@ -4480,7 +4507,7 @@
                 '50_p_1_valor_comision'
             ],
             type: 'number'
-        },   
+        },
         {
             description: 'Digite el primer valor de la comisión a cancelar a alnago',
             help: 'valor',
@@ -4495,49 +4522,21 @@
             name: 'pago_comision_1',
             type: 'text'
         },
-        
-        
-
-
         {
             description: 'Digite el segundo porcentaje de pago de comisión a cancelar',
             name: 'p_2_comision',
-            refer: [
-                'p_2_comision_1'
-            ],
             type: 'number'
-        }, 
+        },
+        {
+            description: 'Digite el segundo valor de la comisión a cancelar a alnago',
+            help: 'valor',
+            name: '50_p_2_valor_comision',
+            type: 'currency'
+        },
         {
             description: 'Digite el método y fecha en la que se hará el segundo pago de la comisión',
             name: 'pago_comision_2',
             type: 'text'
-        },
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        {
-            description: 'Digite el segundo 50% del valor de la comisión a cancelar a alnago',
-            help: 'valor',
-            name: '50_p_2_valor_comision',
-            type: 'currency'
         },
         {
             description: 'Digite el municipio donde se firma el presente contrato',
@@ -4652,10 +4651,9 @@
             refer: [
                 '50_p_2_valor_comision'
             ],
-            scalar: 1,
+            scalar: 0.01,
             type: 'prod'
         },
-
         {
             name: 'p_1_comision_1',
             product: [
@@ -4847,7 +4845,7 @@
         nit: 'Ejemplo: 123456789-0',
         origen_recursos: 'Ejemplo: propios'
     },
-    build: 26,
+    build: 35,
     username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
     company: ObjectId('6179a50cc930d700099c5bd6'),
     createdAt: ISODate('2021-10-06T21:31:43.788Z'),
