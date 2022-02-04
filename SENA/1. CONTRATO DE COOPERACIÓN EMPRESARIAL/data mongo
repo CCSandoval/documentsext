@@ -49,18 +49,18 @@
         {
             name: 'cdp1_number',
             description: 'Ingrese el numero del Certificado de Disponibilidad Presupuestal',
-            type: 'number',
+            type: 'number'
         },
         {
             name: 'cdp2',
-            description:'¿Desea ingresar un segundo número de Certificado de Disponibilidad Presupuestal?',
-            options:[
+            description: '¿Desea ingresar un segundo número de Certificado de Disponibilidad Presupuestal?',
+            options: [
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 },
                 {
-                    name:'No',
+                    name: 'No',
                     value: 'n'
                 }
             ],
@@ -71,7 +71,7 @@
             name: 'cdp2_number',
             description: 'Ingrese el segundo numero del Certificado de Disponibilidad Presupuestal',
             type: 'number',
-            prereq:[
+            prereq: [
                 {
                     k: 'cdp2',
                     v: 's'
@@ -168,5 +168,5 @@
         correo: 'ejemplo@dominio.com'
     },
     preBuild: true,
-    build: 12
+    build: 15
 }
