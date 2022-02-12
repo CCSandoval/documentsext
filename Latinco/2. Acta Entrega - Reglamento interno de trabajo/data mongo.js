@@ -1,6 +1,6 @@
 {
-    _id: ObjectId('61faf135ed0a939e61367488'),
-    config: [
+    _id: ObjectId('62083339ed0a939e6136748a'),
+    config:[
         {
             name: 'nombre',
             description: 'Ingrese el nombre del trabajador',
@@ -12,16 +12,6 @@
             description: 'Ingrese el nombre de la persona que hizo la capacitación',
             type: 'name',
             help: 'nombre'
-        },
-        {
-            name: 'cargo',
-            description: 'Ingrese el cargo',
-            type: 'name'
-        },
-        {
-            name: 'suscrito',
-            description: 'Ingrese ___',
-            type: 'text'
         },
         {
             name: 'fecha_firma',
@@ -39,17 +29,12 @@
             type: 'text'
         }
     ],
-    help: {
-        nombre: 'Ejemplo: Juan David Arango Torres'
-    },
     sign: [
         'nombre',
         'nombre_capacitador',
-        'cargo',
-        'suscrito',
+        'fecha_firma',
         'cc_trabajador',
-        'correo_trabajador',
-        'fecha_firma'
+        'correo_trabajador'
     ],
     preFill: [],
     signatureProfile: [
@@ -61,9 +46,9 @@
         }
     ],
     operation: [],
-    name: 'ACTA DE ENTREGA - MANUAL DE DESCRIPCIÓN Y ANÁLISIS DE CARGO',
+    name: 'ACTA DE ENTREGA - REGLAMENTO INTERNO DE TRABAJO Y CÓDIGO DE ÉTICA Y CONDUCTA EMPRESARIAL',
     preBuildData: [],
     preBuild: false,
     price: 5000,
-    build: 5
+    build: 1
 }

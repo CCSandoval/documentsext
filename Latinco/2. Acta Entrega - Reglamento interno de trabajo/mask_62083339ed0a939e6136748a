@@ -1,0 +1,61 @@
+<style type="text/css">
+  .titulo {
+    text-align: center;
+    font-size: 22;
+  }
+  .page {
+    width: 21cm;
+  }
+  p,
+  span {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+</style>
+
+<div class="page">
+  <p class="titulo">
+    <b>
+      ACTA DE ENTREGA<br />REGLAMENTO INTERNO DE TRABAJO Y CÓDIGO DE ÉTICA Y
+      CONDUCTA EMPRESARIAL
+    </b>
+  </p>
+  <br />
+  <br />
+  <br />
+  <p>
+    Yo <span name="nombre">____________________________</span>, en calidad de
+    trabajador dejo constancia que he recibido de
+    <span name="nombre_capacitador">____________________________</span> la
+    información correspondiente al Reglamento Interno de Trabajo y al Código de
+    Ética y Conducta Empresarial.
+  </p>
+  <p>
+    Mi entendimiento, aceptación y compromiso con dichos documentos regularán
+    mis actuaciones y comportamiento disciplinario.
+  </p>
+  <p>
+    Hago constar que he leído y entendido en su totalidad el Reglamento Interno
+    de Trabajo y el Código de Ética y Conducta Empresarial por lo que en
+    constancia firmo y acepto su contenido el día
+    <span name="fecha_firma">___________________</span>
+  </p>
+  <br />
+  <br />
+  <br />
+  <p>
+    <p>Atentamente,</p>
+    <p>______________________________</p>
+    <p name="nombre">________________</p>  
+    <p><b>C.C</b> <b name="cc_trabajador">________________</b></p>
+    <p><b>Correo</b> <b name="correo_trabajador">________________</b></p>
+  <br />
+  <br />
+    <p>
+        <span>Copia Hoja de Vida</span><br />
+        <small>
+            <b>V.03 <br />20/11/2017</b>
+        </small>
+      </p>
+  </p>
+</div>
