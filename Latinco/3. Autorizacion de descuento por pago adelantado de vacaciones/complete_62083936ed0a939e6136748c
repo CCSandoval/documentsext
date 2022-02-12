@@ -1,0 +1,77 @@
+<style type="text/css">
+  .titulo {
+    text-align: center;
+    font-size: 22;
+  }
+  .page {
+    width: 21cm;
+  }
+  p,
+  span {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+</style>
+
+<div class="page">
+  <p class="titulo">
+    <b>AUTORIZACIÓN DE DESCUENTO POR PAGO ADELANTADO DE VACACIONES.</b>
+  </p>
+  <p>
+    <b>Yo,</b> <b name="nombre">___________________</b>, identificado (a) con
+    cédula de ciudadanía No. <b name="cc_trabajador">___________________</b> en
+    calidad de trabajador de la sociedad
+    <span name="nombre_empresa">______________</span> - informo que me he
+    acogido a la medida de “pago de adelantado de vacaciones” adoptada por
+    <span name="entidad">______________</span>, y por medio del presente
+    documento autorizo a <span name="nombre_empresa">______________</span>
+    para descontar el equivalente en dinero de las vacaciones adelantadas que no
+    hayan sido causadas, es decir, de las vacaciones adeudadas.
+  </p>
+  <p>
+    Asimismo, conforme al contenido de <b>la cláusula quinta</b> de mi contrato
+    individual de trabajo, en correspondencia con el contenido del artículo 87
+    del Reglamento Interno de Trabajo, haciendo uso de las facultades
+    reconocidas por el núm. 1 del artículo 59, y contenido de los artículo 149 y
+    151 del Código Sustantivo del Trabajo, <b>expresamente autorizo a</b>
+    <b name="nombre_empresa">______________</b> para deducir y descontar del
+    pago de mis derechos laborales cualquier suma que llegue a adeudarle por
+    concepto el concepto descrito en el párrafo anterior, incluso al momento de
+    liquidar mi contrato individual de trabajo.
+  </p>
+  <p>
+    En cualquier caso, las deducciones, descuentos y retenciones autorizados por
+    medio del presente documento podrán realizarse en cualquier momento de la
+    vigencia de mi relación laboral con
+    <span name="nombre_empresa">______________</span>, incluyendo la liquidación
+    de mi contrato de trabajo cuando el mismo haya terminado por cualquier
+    causa, el pago de cualquier otro derecho salarial o prestacional periódico.
+  </p>
+  <p>
+    Igualmente, declaro que he sido informado(a) de las anteriores condiciones,
+    así como de los límites legales para efectuar las deducciones y/o descuentos
+    autorizados, conociendo que estas últimas no podrán afectar el salario
+    mínimo, sobrepasar el límite de embargabilidad salarial establecido.
+  </p>
+  <p>
+    <b>Fecha: <b name="fecha_firma">___________________</b>.</b>
+  </p>
+  <br />
+  <br />
+  <br />
+    <p>
+      <div id="firma_trabajador" class="sign_margin"></div>
+      <span>
+        <b name="nombre">____________________</b>  
+      </span><br />
+      <span><b>C.C No.</b> <b name="cc_trabajador">________________</b></span><br />
+      <span><b>Cargo</b> <b name="cargo_trabajador">________________</b></span><br />
+    <br />
+    <br />
+      <p>
+          <small>
+              <b>Versión:</b> 00 <br /> <b>Vigencia:</b> 18/01/2022</b>
+          </small>
+        </p>
+    </p>
+</div>
