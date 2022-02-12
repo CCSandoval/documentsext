@@ -16,16 +16,11 @@
     font-family: sans-serif;
     color: #aaa;
   }
-  .left {
+  .align_left {
     float: left;
     width: 50%;
   }
-  .left_2 {
-    float: left;
-    width: 50%;
-    margin-top: 30px;
-  }
-  .right {
+  .align_right {
     float: right;
     width: 50%;
   }
@@ -48,33 +43,33 @@
 <div class="page">
   <div class="document_header">
     <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
+      src="https://static.micontrato.co/sena/escudo colombia.png"
       class="img"
       alt="escudo colombia"
     />
     <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
+      src="https://static.micontrato.co/sena/sena.png"
       class="img"
       alt="sena"
     />
     <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
+      src="https://static.micontrato.co/sena/textoheader.jpg"
       class="img"
       alt="texto"
     />
     <img
       class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
+      src="https://static.micontrato.co/sena/enterritorio.png"
       alt="enterritorio"
     />
   </div>
   <p>
     <b>
       CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-      <span name="numero_contrato">_______</span> DERIVADO DEL CONTRATO
-      INTERADMINISTRATIVO No. 217017, CELEBRADO ENTRE LA EMPRESA NACIONAL
-      PROMOTORA DEL DESARROLLO TERRITORIAL - ENTERRITORIO - EL SERVICIO NACIONAL
-      DE APRENDIZAJE - SENA Y
+      <b><span name="numero_contrato">_______</span></b>
+      DERIVADO DEL CONTRATO INTERADMINISTRATIVO No. 217017, CELEBRADO ENTRE LA
+      EMPRESA NACIONAL PROMOTORA DEL DESARROLLO TERRITORIAL - ENTERRITORIO - EL
+      SERVICIO NACIONAL DE APRENDIZAJE - SENA Y
       <span name="nombre_primer_beneficiario"
         >____________________________</span
       >
@@ -125,26 +120,26 @@
       >cédula de ciudadanía número
       <b><span name="cc_beneficiario_1">___________________</span></b></span
     >
-    <span name="tipo_id_ben_1_ce"
+    <span name="tipo_id_ben_1_ce" hidden
       >cédula de extranjería número
       <b><span name="ce_beneficiario_1">___________________</span></b></span
     >
-    <span name="tipo_id_ben_1_pa"
+    <span name="tipo_id_ben_1_pa" hidden
       >pasaporte número
       <b><span name="pa_beneficiario_1">___________________</span></b></span
     >
     <span name="segundo_beneficiario_n"></span>
     <span name="segundo_beneficiario_s" hidden>
       <span name="tercer_beneficiario_s"></span>
-      <span name="tercer_beneficiario_n">y</span>,<span
-        name="nombre_segundo_beneficiario"
+      <span name="tercer_beneficiario_n"> y </span>,
+      <span name="nombre_segundo_beneficiario"
         >____________________________</span
       >, identificado(a) con
       <span name="tipo_id_ben_2_cc"
         >cédula de ciudadanía número
         <b><span name="cc_beneficiario_2">___________________</span></b>
       </span>
-      <span name="tipo_id_ben_2_ce"
+      <span name="tipo_id_ben_2_ce" hidden
         >cédula de extranjería número
         <b><span name="ce_beneficiario_2">___________________</span></b>
       </span>
@@ -162,11 +157,11 @@
           >cédula de ciudadanía número
           <b><span name="cc_beneficiario_3">___________________</span></b>
         </span>
-        <span name="tipo_id_ben_3_ce"
+        <span name="tipo_id_ben_3_ce" hidden
           >cédula de extranjería número
           <b><span name="ce_beneficiario_3">___________________</span></b>
         </span>
-        <span name="tipo_id_ben_3_pa"
+        <span name="tipo_id_ben_3_pa" hidden
           >pasaporte número
           <b><span name="pa_beneficiario_3">___________________</span></b>
         </span>
@@ -238,36 +233,6 @@
     <b> <span name="valor_plan">___________</span> M/L </b>
     <b>8)</b> Que existe disponibilidad presupuestal para la presente
     contratación,
-  </p>
-  <p class="document_footer">Página 1 de 8</p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     según Certificado de Disponibilidad No. 10385 del 25 de octubre de 2021,
     expedido por el responsable del Grupo de Presupuesto de
     <b>ENTerritorio</b> <b>9)</b> Que el Consejo Directivo Nacional del Servicio
@@ -361,36 +326,7 @@
     obligaciones contractuales. <b>PARAGRAFO SEGUNDO</b> Para el trámite de
     ampliación del plazo inicialmente otorgado, se establece el siguiente
     procedimiento: <b>1) EL(LOS)</b>
-  </p>
-  <p class="document_footer">Página 2 de 8</p>
-</div>
 
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     <b>BENEFICIARIO(S)</b> deberá(n) presentar a la Unidad de Emprendimiento del
     SENA en un término no inferior a sesenta (60) días calendario al vencimiento
     del plazo del contrato, la solicitud debidamente sustentada. <b>2)</b>
@@ -485,36 +421,7 @@
     del (o de los) BENEFICIARIO (s), sus empleados, agentes, contratistas o
     subcontratistas, en la ejecución de este contrato y de los que suscriba con
     terceros.
-  </p>
-  <p class="document_footer">Página 3 de 8</p>
-</div>
 
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     <b>21)</b> <b>El (o los) BENEFICIARIO (S)</b> declara (n) y acepta (n) que
     los recursos otorgados por el <b>FONDO EMPRENDER</b>, tienen el carácter de
     público y cualquier destinación indebida o incorrecta dará lugar no solo a
@@ -595,36 +502,6 @@
     cláusulas. <b>PARAGRAFO: El (o Los) BENEFICIARIO(S)</b>, responderán
     personal, solidaria e ilimitadamente por las obligaciones adquiridas
     contenidos en el presente contrato y recursos asignados.
-  </p>
-  <p class="document_footer">Página 4 de 8</p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     <b>
       CLÁUSULA DÉCIMA - CONDICIONES FINANCIERAS Y FORMA DE PAGO EN CASO DE
       INCUMPLIMIENTO DEL CONTRATO:
@@ -721,36 +598,6 @@
     riesgo los recursos públicos invertidos. 11) Cuando
     <b>EL (LOS) BENEFICIARIO(S)</b> no destine el tiempo de dedicación por él
     estipulado en el plan de negocio o abandone o suspenda
-  </p>
-  <p class="document_footer">Página 5 de 8</p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     los trabajos o actividades empresariales total o parcialmente, sin acuerdo o
     autorización previa y escrita de <b>ENTerritorio</b> y el <b>SENA</b>.
     <b>12)</b> Cuando <b>EL (LOS) BENEFICIARIO(S)</b> este (n) incurso (s) en
@@ -840,38 +687,7 @@
     <b>ENTerritorio.</b>
     <b>CLÁUSULA DÉCIMA SÉPTIMA - AUSENCIA DE VINCULO O RELACIÓN CONTRACTUAL</b>
     En virtud del presente contrato, los contratistas, proveedores, empleados
-    del (o de
-  </p>
-  <p class="document_footer">Página 6 de 8</p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
-    los) <b>BENEFICIARIO (S)</b>, no adquieren vínculo laboral ni contractual
+    del (o de los) <b>BENEFICIARIO (S)</b>, no adquieren vínculo laboral ni contractual
     alguno con el <b>SENA</b> y
     <b>ENTerritorio. PARÁGRAFO: El (los) BENEFICIARIO(S)</b>, en virtud del
     presente contrato no generan relación laboral, ni contractual diferente a la
@@ -967,37 +783,9 @@
       CLÁUSULA VIGÉSIMA QUINTA - AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS
       PERSONALES: EL (LOS) BENEFICIARIO(S)
     </b>
-  </p>
   otorga(n) consentimiento al <b>SENA - FONDO EMPRENDER</b> y a
   <b>ENTERRITORIO</b> para el tratamiento de los datos personales
-  <p class="document_footer">Página 7 de 8</p>
-</div>
-<div style="page-break-after: always"></div>
 
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     suministrados en el desarrollo del presente contrato, de conformidad con la
     Política General de Seguridad de la Información y Protección de Datos
     Personales en el SENA, dispuesta por el <b>SENA</b> en el siguiente link:
@@ -1007,15 +795,14 @@
       >http://normograma.sena.edu.co/normograma/docs/acuerdo_sena_0013_2019.htm</a
     >
     <br />
-  </p>
-  <p>
+    <br />
     <b
       >En constancia se firma a los: <span name="dias_firma">___</span> dias del
       mes de <span name="mes_firma">__________</span> del año
       <span name="anio_firma">____</span></b
     >
   </p>
-  <div class="left">
+  <div class="align_left">
     <b>
       <br /><br /><br />
       <span>______________________________________</span> <br />
@@ -1024,7 +811,7 @@
       <span>Director de Empleo y Trabajo</span><br />
     </b>
   </div>
-  <div class="right">
+  <div class="align_right">
     <b>
       <br /><br /><br />
       <span>______________________________________</span> <br />
@@ -1045,7 +832,7 @@
   <br />
   <br />
 
-    <div class="left">
+    <div class="align_left">
       <b>
         <br /><br /><br />
         <span>______________________________________</span> <br />
@@ -1170,8 +957,6 @@
 
   <br />
   <br />
-  <br />
-  <br />
   <p>
     <small>
       <span><b>Por el SENA</b></span
@@ -1216,5 +1001,4 @@
   <br />
 
   <br />
-  <p class="document_footer">Página 8 de 8</p>
 </div>

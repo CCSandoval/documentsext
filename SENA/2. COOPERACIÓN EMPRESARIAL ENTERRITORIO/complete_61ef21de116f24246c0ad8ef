@@ -16,16 +16,11 @@
     font-family: sans-serif;
     color: #aaa;
   }
-  .left {
+  .align_left {
     float: left;
     width: 50%;
   }
-  .left_2 {
-    float: left;
-    width: 50%;
-    margin-top: 30px;
-  }
-  .right {
+  .align_right {
     float: right;
     width: 50%;
   }
@@ -46,28 +41,6 @@
 </style>
 
 <div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
   <p>
     <b>
       CONTRATO DE COOPERACIÓN EMPRESARIAL No.
@@ -238,36 +211,6 @@
     <b> <span name="valor_plan">___________</span> M/L </b>
     <b>8)</b> Que existe disponibilidad presupuestal para la presente
     contratación,
-  </p>
-  <p class="document_footer">Página 1 de 8</p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     según Certificado de Disponibilidad No. 10385 del 25 de octubre de 2021,
     expedido por el responsable del Grupo de Presupuesto de
     <b>ENTerritorio</b> <b>9)</b> Que el Consejo Directivo Nacional del Servicio
@@ -361,37 +304,7 @@
     obligaciones contractuales. <b>PARAGRAFO SEGUNDO</b> Para el trámite de
     ampliación del plazo inicialmente otorgado, se establece el siguiente
     procedimiento: <b>1) EL(LOS)</b>
-  </p>
-  <p class="document_footer">Página 2 de 8</p>
-</div>
 
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p></p>
-  <p>
     <b>BENEFICIARIO(S)</b> deberá(n) presentar a la Unidad de Emprendimiento del
     SENA en un término no inferior a sesenta (60) días calendario al vencimiento
     del plazo del contrato, la solicitud debidamente sustentada. <b>2)</b>
@@ -486,36 +399,7 @@
     del (o de los) BENEFICIARIO (s), sus empleados, agentes, contratistas o
     subcontratistas, en la ejecución de este contrato y de los que suscriba con
     terceros.
-  </p>
-  <p class="document_footer">Página 3 de 8</p>
-</div>
 
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     <b>21)</b> <b>El (o los) BENEFICIARIO (S)</b> declara (n) y acepta (n) que
     los recursos otorgados por el <b>FONDO EMPRENDER</b>, tienen el carácter de
     público y cualquier destinación indebida o incorrecta dará lugar no solo a
@@ -596,36 +480,6 @@
     cláusulas. <b>PARAGRAFO: El (o Los) BENEFICIARIO(S)</b>, responderán
     personal, solidaria e ilimitadamente por las obligaciones adquiridas
     contenidos en el presente contrato y recursos asignados.
-  </p>
-  <p class="document_footer">Página 4 de 8</p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     <b>
       CLÁUSULA DÉCIMA - CONDICIONES FINANCIERAS Y FORMA DE PAGO EN CASO DE
       INCUMPLIMIENTO DEL CONTRATO:
@@ -722,36 +576,6 @@
     riesgo los recursos públicos invertidos. 11) Cuando
     <b>EL (LOS) BENEFICIARIO(S)</b> no destine el tiempo de dedicación por él
     estipulado en el plan de negocio o abandone o suspenda
-  </p>
-  <p class="document_footer">Página 5 de 8</p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     los trabajos o actividades empresariales total o parcialmente, sin acuerdo o
     autorización previa y escrita de <b>ENTerritorio</b> y el <b>SENA</b>.
     <b>12)</b> Cuando <b>EL (LOS) BENEFICIARIO(S)</b> este (n) incurso (s) en
@@ -841,38 +665,7 @@
     <b>ENTerritorio.</b>
     <b>CLÁUSULA DÉCIMA SÉPTIMA - AUSENCIA DE VINCULO O RELACIÓN CONTRACTUAL</b>
     En virtud del presente contrato, los contratistas, proveedores, empleados
-    del (o de
-  </p>
-  <p class="document_footer">Página 6 de 8</p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
-    los) <b>BENEFICIARIO (S)</b>, no adquieren vínculo laboral ni contractual
+    del (o de los) <b>BENEFICIARIO (S)</b>, no adquieren vínculo laboral ni contractual
     alguno con el <b>SENA</b> y
     <b>ENTerritorio. PARÁGRAFO: El (los) BENEFICIARIO(S)</b>, en virtud del
     presente contrato no generan relación laboral, ni contractual diferente a la
@@ -968,37 +761,9 @@
       CLÁUSULA VIGÉSIMA QUINTA - AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS
       PERSONALES: EL (LOS) BENEFICIARIO(S)
     </b>
-  </p>
   otorga(n) consentimiento al <b>SENA - FONDO EMPRENDER</b> y a
   <b>ENTERRITORIO</b> para el tratamiento de los datos personales
-  <p class="document_footer">Página 7 de 8</p>
-</div>
-<div style="page-break-after: always"></div>
 
-<div class="page">
-  <div class="document_header">
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/escudo colombia.png"
-      class="img"
-      alt="escudo colombia"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/sena.png"
-      class="img"
-      alt="sena"
-    />
-    <img
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/textoheader.jpg"
-      class="img"
-      alt="texto"
-    />
-    <img
-      class="enterritorio img"
-      src="https://mi-contrato-static.s3.amazonaws.com/sena/enterritorio.png"
-      alt="enterritorio"
-    />
-  </div>
-  <p>
     suministrados en el desarrollo del presente contrato, de conformidad con la
     Política General de Seguridad de la Información y Protección de Datos
     Personales en el SENA, dispuesta por el <b>SENA</b> en el siguiente link:
@@ -1008,8 +773,6 @@
       >http://normograma.sena.edu.co/normograma/docs/acuerdo_sena_0013_2019.htm</a
     >
     <br />
-  </p>
-  <p>
     <b
       >En constancia se firma a los: <span name="dias_firma">___</span> dias del
       mes de <span name="mes_firma">__________</span> del año
@@ -1020,17 +783,17 @@
   <br />
   <br />
   <br />
-  <div class="left">
+  <div class="align_left">
     <b>
-      <div id="firma_sena">__________________________________________</div>
+      <div class="sign_margin" id="firma_sena">__________________________________________</div>
       <span><b>HERNAN DARIO FUENTES SALDARRIAGA</b></span
       ><br />
       <span>Director de Empleo y Trabajo</span><br />
     </b>
   </div>
-  <div class="right">
+  <div class="align_right">
     <b>
-      <div id="firma_enterritorio">
+      <div class="sign_margin" id="firma_enterritorio">
         __________________________________________
       </div>
       <span><b>ANDREA CAROLINA ÁLVAREZ CASADIEGO</b></span
@@ -1050,9 +813,9 @@
   <br />
   <br />
 
-  <div class="left">
+  <div class="align_left">
     <b>
-      <div id="firma_beneficiario_1">
+      <div class="sign_margin" id="firma_beneficiario_1">
         __________________________________________
       </div>
       <span
@@ -1082,7 +845,7 @@
   <div name="segundo_beneficiario_n"></div>
   <div name="segundo_beneficiario_s" hidden class="right">
     <b>
-      <div id="firma_beneficiario_2">
+      <div class="sign_margin" id="firma_beneficiario_2">
         __________________________________________
       </div>
       <span
@@ -1124,7 +887,7 @@
     <div name="tercer_beneficiario_n"></div>
     <div name="tercer_beneficiario_s" hidden>
       <b>
-        <div id="firma_beneficiario_3">
+        <div class="sign_margin" id="firma_beneficiario_3">
           __________________________________________
         </div>
         <b>
@@ -1153,26 +916,25 @@
 
   <br />
   <br />
-  <br />
-  <br />
   <p>
     <small>
       <span><b>Por el SENA</b></span
       ><br />
-      <span>
+      <div>
+        <div id="proyecto_sena" class="sign_margin"></div>
         Proyectó &nbsp;&nbsp;&nbsp; Mónica Alejandra Torres Rey, Abogada Fondo
         Emprender
-      </span>
-      <br />
-      <span>
+      </div>
+      <div>
+        <div id="vobo_sena" class="sign_margin"></div>
         Vo.Bo &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Carlos Arturo
         Gamba Castillo, Coordinador Nacional de Emprendimiento
-      </span>
-      <br />
-      <span>
+      </div>
+      <div>
+        <div id="reviso_sena" class="sign_margin"></div>
         Revisó &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Luisa Fernanda
         Velásquez Giraldo, Abogada Dirección de Empleo y Trabajo
-      </span>
+      </div>
       <br />
     </small>
   </p>
@@ -1183,22 +945,21 @@
     <small>
       <span><b>Por ENTerritorio</b></span
       ><br />
-      <span>
+      <div>
+        <div id="elaboro_enterritorio" class="sign_margin"></div>
         Elaboró &nbsp;&nbsp;&nbsp; Camilo Fernando Corena Gutiérrez, Gerente de
         Contratos Interadministrativo 217017
-      </span>
-      <br />
-      <span>
+      </div>
+      <div>
+        <div id="reviso_enterritorio" class="sign_margin"></div>
         Revisó &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ana Catalina Castro Lozano,
         Gerente de Unidad Grupo de Planeación Contractual
-      </span>
-      <br />
+      </div>
     </small>
   </p>
 
   <br />
 
   <br />
-  <p class="document_footer">Página 8 de 8</p>
 </div>
 </div>

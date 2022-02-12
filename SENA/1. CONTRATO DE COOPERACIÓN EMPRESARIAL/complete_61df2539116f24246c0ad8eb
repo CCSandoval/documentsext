@@ -8,9 +8,7 @@
   .page {
     width: 21cm;
   }
-  .page_text {
-    padding-top: 50px;
-  }
+
   .document_footer {
     text-align: right;
     position: relative;
@@ -18,35 +16,30 @@
     bottom: 0;
     font-family: serif;
     color: #aaa;
+    font-size: 12px !important;
   }
-  .left {
+
+  .align_left {
     float: left;
     width: 50%;
   }
-  .left_2 {
-    float: left;
-    width: 50%;
-    margin-top: 30px;
-  }
-  .right {
+
+  .align_right {
     float: right;
     width: 50%;
   }
+
   .textheader {
+    font-size: 12px !important;
     text-align: right;
     position: relative;
     right: 0;
-    bottom: 0;
     font-family: serif;
     color: #aaa;
   }
 </style>
 
 <div class="page">
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
   <p class="page_text">
     <b>
       CONTRATO DE COOPERACIÓN EMPRESARIAL No.
@@ -54,8 +47,8 @@
       INTERADMINISTRATIVO SENA-UD CO1.PCCNTR.2564825 DE 2021 CELEBRADO ENTRE LA
       UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS-EL SERVICIO NACIONAL DE
       APRENDIZAJE - SENA Y
-      <span name="nombre_emprendedor">____________________________</span> </b
-    ><br /><br />
+      <span name="nombre_emprendedor">____________________________</span>
+    </b>
     Entre los suscritos a saber de una parte
     <b>HERNAN DARIO FUENTES SALDARRIAGA</b>, identificado con cédula de
     ciudadanía No. 3.349.902 expedida en Medellín, en su calidad de Director de
@@ -73,10 +66,10 @@
     contratar según Acuerdo No. 002 del 29 de febrero de 2000, Artículo 10
     Literal i, quien en lo sucesivo se denominará <b>LA UNIVERSIDAD</b> con NIT
     899999230-7 y de la otra parte
-    <b><span name="nombre_emprendedor">____________________________</span></b
-    >, identificado(a) con cédula de ciudadanía número
-    <b><span name="cc_emprendedor">___________________</span></b
-    >, quien(es) de ahora en adelante se denominará (n) El (LOS)
+    <b><span name="nombre_emprendedor">____________________________</span></b>, identificado(a) con cédula de ciudadanía
+    número
+    <b><span name="cc_emprendedor">___________________</span></b>, quien(es) de ahora en adelante se denominará (n) El
+    (LOS)
     <b>BENEFICIARIO(S)</b>, quien(es) declara(n), bajo gravedad de juramento,
     que no se encuentra(n) incurso(s) en ninguna causal de inhabilidad e
     incompatibilidad establecida por ley, la reglamentación vigente del Fondo
@@ -162,35 +155,23 @@
     </b>
     <b>9)</b> Que, existe disponibilidad presupuestal para la presente
     contratación, derivada de la convocatoria Fondo Emprender y según
-    Certificado (s) de Disponibilidad presupuestal Numero<span name="cdp2_s"
-      >(s)</span
-    >
+    Certificado (s) de Disponibilidad presupuestal Numero<span name="cdp2_s">(s)</span>
     <span name="cdp1_number">_______</span><span name="cdp2_n"></span>
     <span name="cdp2_s" hidden>, <span name="cdp2_number">_______</span></span>
     expedido por la <b>UNIVERSIDAD</b> de los recursos a gestionar
     <b>10)</b> Que el Servicio Nacional de Aprendizaje- SENA, expidió el Acuerdo
     0010 de 2019 por el cual se establece el reglamento interno del Fondo
     Emprender, de esta normatividad hace parte integral los manuales de
-    operación y financiación del Fondo Emprender.
-  </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 1 de 7 </small>
-  </p>
-  <br /><br />
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
-    <b>11)</b> Que mediante concepto jurídico emitido por la Oficina Asesora
-    Jurídica de la Universidad Distrital Francisco José de Caldas, a través de
-    oficio del 21 de octubre de 2021, el Director del Idexud es competente para
-    la suscripción de los contratos de cooperación empresarial en el marco del
-    presente contrato interadministrativo <b>12)</b> Teniendo en cuenta las
-    anteriores consideraciones, se procede a la suscripción del presente
-    Contrato de Cooperación Empresarial que se rige por las siguientes
-    clausulas: <b>CLÁUSULA PRIMERA - OBJETO:</b> financiar la iniciativa
-    empresarial contenida en el Plan de Negocios No.
+    operación y financiación del Fondo Emprender. <b>11)</b> Que mediante
+    concepto jurídico emitido por la Oficina Asesora Jurídica de la Universidad
+    Distrital Francisco José de Caldas, a través de oficio del 21 de octubre de
+    2021, el Director del Idexud es competente para la suscripción de los
+    contratos de cooperación empresarial en el marco del presente contrato
+    interadministrativo <b>12)</b> Teniendo en cuenta las anteriores
+    consideraciones, se procede a la suscripción del presente Contrato de
+    Cooperación Empresarial que se rige por las siguientes clausulas:
+    <b>CLÁUSULA PRIMERA - OBJETO:</b> financiar la iniciativa empresarial
+    contenida en el Plan de Negocios No.
     <b>
       <span name="id_plan">___________</span> -
       <span name="nombre_plan">____________________________</span>
@@ -203,8 +184,8 @@
     estipulado en el presente documento y sus anexos, los cuales hacen parte
     integral de este contrato.
     <b>CLÁUSULA SEGUNDA - VALOR Y FORMA DE PAGO:</b> El valor del presente
-    contrato es por la suma de <b> <span name="valor_plan">___________</span></b
-    >, la cual deberá ser entregada por parte del <b>SENA - FONDO EMPRENDER</b>,
+    contrato es por la suma de <b> <span name="valor_plan">___________</span></b>, la cual deberá ser entregada por
+    parte del <b>SENA - FONDO EMPRENDER</b>,
     a través de <b>LA UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS</b> a la
     <b>FIDUCIARIA</b>, y los recursos se entregarán a
     <b>EL(LOS) BENEFICIARIO(S)</b>, en la forma y condiciones señaladas en el
@@ -236,10 +217,8 @@
     ejecución del plan de negocios. <b>PARÁGRAFO TERCERO:</b> El valor del
     presente contrato será afectado de la subcuenta del encargo fiduciario a
     nombre de
-    <em
-      >Fideicomiso Universidad Distrital Francisco José De Caldas - Fondo
-      Emprender</em
-    >, y seguimiento del centro de costo en el IDEXUD.
+    <em>Fideicomiso Universidad Distrital Francisco José De Caldas - Fondo
+      Emprender</em>, y seguimiento del centro de costo en el IDEXUD.
     <b>CLÁUSULA TERCERA - PLAZO:</b> El plazo de ejecución será de doce (12)
     meses contados a partir de la firma del acta de inicio, previo cumplimiento
     de requisitos de perfeccionamiento y ejecución.
@@ -277,23 +256,13 @@
     ampliación. <b>PARÁGRAFO TERCERO</b> En todo caso el plazo del contrato no
     podrá superar el plazo del Contrato Interadministrativo marco de la
     convocatoria a la cual se presentó el BENEFICIARIO(S).
-    <b
-      >CLÁUSULA CUARTA - OBLIGACIONES DEL (O DE LOS) BENEFICIARIO(S) CON EL
-      FONDO EMPRENDER Y CON UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS:</b
-    >El (o los) BENEFICIARIO (S) se obliga (n) a realizar y ejecutar las
+    <b>CLÁUSULA CUARTA - OBLIGACIONES DEL (O DE LOS) BENEFICIARIO(S) CON EL
+      FONDO EMPRENDER Y CON UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS:</b>El (o los) BENEFICIARIO (S) se obliga (n)
+    a realizar y ejecutar las
     siguientes actividades: <b>1)</b> Cumplir con las actividades y acciones
     necesarias para la debida ejecución del plan de negocio, en los términos y
     condiciones en los que fue evaluado y aprobado.
-  </p>
-  <br /><br />
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 2 de 7 </small>
-  </p>
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
+
     <b>2)</b> Suscribir un pagaré y carta de instrucciones en blanco, junto con
     todos y cada uno de los BENEFICIARIOS del plan de negocios, con el cual se
     ampare los recursos aprobados por parte del FONDO EMPRENDER, para que sea
@@ -387,15 +356,11 @@
     anexos y normas regulatorias. <b>PARÁGRAFO</b> La autorización que habla el
     numeral 16 de la presente cláusula se entenderá surtida con la aceptación y
     firma del presente contrato de cooperación empresarial.
-    <b
-      >CLÁUSULA QUINTA - OBLIGACIONES DE UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE
-      CALDAS:</b
-    >
+    <b>CLÁUSULA QUINTA - OBLIGACIONES DE UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE
+      CALDAS:</b>
     <b> 1)</b> Constituir, el encargo fiduciario a nombre del
-    <b
-      >FIDEICOMISO UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS - FONDO
-      EMPRENDER,</b
-    >
+    <b>FIDEICOMISO UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS - FONDO
+      EMPRENDER,</b>
     que manejará los recursos de cada plan de negocios a través de subcuentas.
     <b>2)</b> Entregar a la <b>FIDUCIARIA</b> seleccionada para administrar el
     encargo fiduciario, según la forma estipulada en la cláusula segunda del
@@ -403,16 +368,7 @@
     <b>SENA.</b> <b>3)</b> Designar e informar al <b>SENA</b> como al (los)
     <b>BENEFICIARIO(S)</b>, el nombre de la entidad que realizará(n) la
     interventoría del proyecto.
-  </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 3 de 7 </small>
-  </p>
-  <br />
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
+
     <b>4)</b> <b>LA UNIVERSIDAD,</b> deberá presentar al <b>SENA</b> y al (los)
     <b>BENEFICIARIO(S),</b> el informe consolidado emitido por la Interventoría
     con recomendación de condonación o no condonación de recursos.
@@ -519,15 +475,6 @@
     manera anticipada, por incumplimiento de las partes de acuerdo a los
     procesos y procedimientos contemplados para declarar el incumplimiento
     contractual.
-  </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 4 de 7 </small>
-  </p>
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
     <b>
       CLÁUSULA DÉCIMA TERCERA - TERMINACION UNILATERAL: EL (LOS) BENEFICIARIO(S)
     </b>
@@ -634,17 +581,8 @@
     (o de los) <b>BENEFICIARIO(S)</b>, no adquieren vínculo laboral ni
     contractual alguno con el <b>SENA</b> y
     <b> LA UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS.</b>
-  </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 5 de 7 </small>
-  </p>
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
-    <b
-      >CLÁUSULA DÉCIMA SEPTIMA - INHABILIDADES, INCOMPATIBILIDADES Y CONFLICTO
+
+    <b>CLÁUSULA DÉCIMA SEPTIMA - INHABILIDADES, INCOMPATIBILIDADES Y CONFLICTO
       DE INTERES: El (los) BENEFICIARIO(S)
     </b>
     declara(n) bajo la gravedad del juramento, el cual se entiende prestado con
@@ -706,11 +644,9 @@
     tratamiento de los datos personales suministrados en el desarrollo del
     presente contrato, de conformidad con la Política de Tratamiento de datos
     personales dispuesta por el SENA en el siguiente link:
-    <a
-      href="http://normograma.sena.edu.co/normograma/docs/acuerdo_sena_0013_2019.htm"
-      target="_blank"
-      >http://normograma.sena.edu.co/normograma/docs/acuerdo_sena_0013_2019.htm</a
-    >. <b>CLÁUSULA VIGESIMA TERCERA - REQUISITOS DE PERFECCIONAMIENTO:</b> Este
+    <a href="http://normograma.sena.edu.co/normograma/docs/acuerdo_sena_0013_2019.htm"
+      target="_blank">http://normograma.sena.edu.co/normograma/docs/acuerdo_sena_0013_2019.htm</a>. <b>CLÁUSULA VIGESIMA
+      TERCERA - REQUISITOS DE PERFECCIONAMIENTO:</b> Este
     contrato quedará perfeccionado con la suscripción de las partes, aprobación
     del pagaré en blanco, carta de instrucciones y modelo de contrapartidas
     PARAGRÁFO: En caso de que el emprendedor no remita el contrato en el término
@@ -738,39 +674,28 @@
     los dineros ejecutados. <b>CLÁUSULA VIGESIMA SEPTIMA - DOMICILIO:</b> Las
     partes acuerdan para todos los efectos legales la ciudad de Bogotá D.C.
   </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 6 de 7 </small>
-  </p>
-  <br /><br /><br />
-  <br /><br /><br />
-  <br /><br /><br />
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
+  <br /><br />
   <p class="page_text">
-    <b
-      >Este documento fue firmado digitalmente el dia __________________________
-      por:</b
-    >
+    <b>Este documento fue firmado digitalmente el dia 
+      <b name="firma_contrato">___________________</b>
+      por:
+    </b>
   </p>
-  <div class="left">
-    <b>
-      <span>POR EL SENA</span>
-      <div id="firma_sena">__________________________________________</div>
-      <span>HERNAN DARIO FUENTES SALDARRIAGA</span><br />
-      <span>Director de Empleo y Trabajo SENA</span><br />
-    </b>
+  <div class="align_left">
+    <span>
+      <b>POR EL SENA</b>
+      <div id="firma_sena" class="sign-margin"></div>
+      <b>HERNAN DARIO FUENTES SALDARRIAGA</b><br />
+      <b>Director de Empleo y Trabajo SENA</b><br />
+    </span>
   </div>
-  <div class="right">
-    <b>
-      <span>POR LA UNIVERSIDAD</span>
-      <div id="firma_universidad">
-        __________________________________________
-      </div>
-      <span>ROBERTO FERRO ESCOBAR</span><br />
-      <span>Director IDEXUD</span><br />
-    </b>
+  <div class="align_right">
+    <span>
+      <b>POR LA UNIVERSIDAD</b>
+      <div id="firma_universidad" class="sign-margin"></div>
+      <b>ROBERTO FERRO ESCOBAR</b><br />
+      <b>Director IDEXUD</b><br />
+    </span>
   </div>
 
   <br />
@@ -783,14 +708,12 @@
   <br />
 
   <div>
-    <b>
-      <span>POR EL BENEFICIARIO</span>
-      <div id="firma_emprendedor">
-        __________________________________________
-      </div>
-      <span name="nombre_emprendedor">____________________________</span><br />
-      <span>Emprendedor</span><br />
-    </b>
+    <span>
+      <b>POR EL BENEFICIARIO</b>
+      <div id="firma_emprendedor" class="sign-margin"></div>
+      <b name="nombre_emprendedor">____________________________</b><br />
+      <b>Emprendedor</b><br />
+    </span>
   </div>
 
   <br />
@@ -800,23 +723,22 @@
 
   <p>
     <small>
-      <span><b>Por SENA</b></span
-      ><br /><br />
-      <span>
+      <span><b>Por SENA</b></span><br /><br />
+      <div>
+        <div id="proyecto_sena" class="sign-margin"></div>
         Proyectó &nbsp;&nbsp;&nbsp; Mónica Alejandra Torres Rey, Abogada Fondo
-        Emprender
-      </span>
-      <br /><br />
-      <span>
+        Emprender  &nbsp;&nbsp;&nbsp;
+      </div> <br />
+      <div>
+        <div id="vobo_sena" class="sign-margin"></div>
         Vo.Bo &nbsp;&nbsp;&nbsp; Carlos Arturo Gamba Castillo, Coordinador
         Nacional de Emprendimiento
-      </span>
-      <br /><br />
-      <span>
+      </div> <br />
+      <div>
+        <div id="reviso_sena" class="sign-margin"></div>
         Revisó &nbsp;&nbsp;&nbsp; Luisa Fernanda Velásquez Giraldo, Abogada
         Dirección de Empleo y Trabajo SENA
-      </span>
-      <br /><br />
+      </div> <br />
     </small>
   </p>
 
@@ -824,17 +746,16 @@
 
   <p>
     <small>
-      <span><b>Por UNIVERSIDAD</b></span
-      ><br /><br />
-      <span>
+      <span><b>Por UNIVERSIDAD</b></span><br /><br />
+      <div>
+        <div id="proyecto_universidad" class="sign-margin"></div>
         Proyectó &nbsp;&nbsp;&nbsp; Nelson Eduardo Rodríguez, Supervisor
         UDistrital
-      </span>
-      <br />
-      <br />
-      <span>
+      </div> <br />
+      <div>
+        <div id="reviso_universidad" class="sign-margin"></div>
         Revisó &nbsp;&nbsp;&nbsp; Ana María Chavarro Méndez, Abogada IDEXUD
-      </span>
+      </div>
       <br />
     </small>
   </p>
@@ -855,7 +776,4 @@
   </p>
 
   <br />
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 7 de 7 </small>
-  </p>
 </div>

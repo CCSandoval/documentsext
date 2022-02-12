@@ -407,12 +407,12 @@
             value: 'HERNAN DARIO FUENTES SALDARRIAGA'
         },
         {
-            name: 'cargo_sena',
-            value: 'Director de Empleo y Trabajo SENA'
-        },
-        {
             name: 'cc_sena',
             value: '3.349.902'
+        },
+        {
+            name: 'correo_sena',
+            value: 'alejosotodiaz@hotmail.com'
         },
         {
             name: 'nombre_enterritorio',
@@ -423,52 +423,166 @@
             value: '52.864.280'
         },
         {
-            name: 'cargo_enterritorio',
-            value: 'Subgerente de Operaciones (E)'
+            name: 'correo_enterritorio',
+            value: 'alejosotodiaz@gmail.com'
         },
         {
-            name: 'cargo_beneficiario',
-            value: 'EL (LOS) BENEFICIARIO(S)'
+            name: 'nombre_reviso_sena',
+            value: 'Luisa Fernanda Velásquez Giraldo'
+        },
+        {
+            name: 'nombre_proyecto_sena',
+            value: 'Mónica Alejandra Torres Rey'
+        },
+        {
+            name: 'nombre_vobo_sena',
+            value: 'Carlos Arturo Gamba Castillo'
+        },
+        {
+            name: 'nombre_elaboro_enterritorio',
+            value: 'Camilo Fernando Corena Gutiérrez'
+        },
+        {
+            name: 'nombre_reviso_enterritorio',
+            value: 'Ana Catalina Castro Lozano'
+        },
+        {
+            name: 'proyecto_sena_cc',
+            value: '1.234.567'
+        },
+        {
+            name: 'proyecto_sena_email',
+            value: 'correoalejandrotest@gmail.com'
+        },
+        {
+            name: 'vobo_sena_cc',
+            value: '1.234.567'
+        },
+        {
+            name: 'vobo_sena_email',
+            value: 'jeyson.agudelo@micontrato.co'
+        },
+        {
+            name: 'reviso_sena_cc',
+            value: '1.234.567'
+        },
+        {
+            name: 'reviso_sena_email',
+            value: 'jeyson.a9607@gmail.com'
+        },
+        {
+            name: 'elaboro_enterritorio_cc',
+            value: '1.234.567'
+        },
+        {
+            name: 'elaboro_enterritorio_email',
+            value: 'zapataguillermo096@gmail.com'
+        },
+        {
+            name: 'reviso_enterritorio_cc',
+            value: '1.234.567'
+        },
+        {
+            name: 'reviso_enterritorio_email',
+            value: 'ariasjuan0796@gmail.com'
         }
     ],
     signatureProfile: [
         {
-            name: 'nombre_sena',
-            title: 'cargo_sena',
-            identification: 'cc_sena',
-            type: 'firma_sena'
-        },
-        {
-            name: 'nombre_enterritorio',
-            title: 'cargo_enterritorio',
-            identification: 'cc_enterritorio',
-            type: 'firma_enterritorio'
-        },
-        {
             name: 'nombre_primer_beneficiario',
-            title: 'cargo_beneficiario',
             email: 'correo_beneficiario_1',
             identification: 'cc_beneficiario_1|ce_beneficiario_1|pa_beneficiario_1',
-            type: 'firma_beneficiario_1'
+            type: 'firma_beneficiario_1',
+            order: 0,
+            role: 'SIGN'
         },
         {
             name: 'nombre_segundo_beneficiario',
-            title: 'cargo_beneficiario',
             email: 'correo_beneficiario_2',
             identification: 'cc_beneficiario_2|ce_beneficiario_2|pa_beneficiario_2',
-            type: 'firma_beneficiario_2'
+            type: 'firma_beneficiario_2',
+            order: 0,
+            role: 'SIGN'
         },
         {
             name: 'nombre_tercer_beneficiario',
-            title: 'cargo_beneficiario',
             email: 'correo_beneficiario_3',
             identification: 'cc_beneficiario_3|ce_beneficiario_3|pa_beneficiario_3',
-            type: 'firma_beneficiario_3'
+            type: 'firma_beneficiario_3',
+            order: 0,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_elaboro_enterritorio',
+            identification: 'elaboro_enterritorio_cc',
+            email: 'elaboro_enterritorio_email',
+            type: 'elaboro_enterritorio',
+            order: 1,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_reviso_enterritorio',
+            identification: 'reviso_enterritorio_cc',
+            email: 'reviso_enterritorio_email',
+            type: 'reviso_enterritorio',
+            order: 2,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_proyecto_sena',
+            identification: 'proyecto_sena_cc',
+            email: 'proyecto_sena_email',
+            type: 'proyecto_sena',
+            order: 3,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_vobo_sena',
+            identification: 'vobo_sena_cc',
+            email: 'vobo_sena_email',
+            type: 'vobo_sena',
+            order: 4,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_reviso_sena',
+            identification: 'reviso_sena_cc',
+            email: 'reviso_sena_email',
+            type: 'reviso_sena',
+            order: 5,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_enterritorio',
+            identification: 'cc_enterritorio',
+            email: 'correo_enterritorio',
+            type: 'firma_enterritorio',
+            order: 6,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_sena',
+            identification: 'cc_sena',
+            email: 'correo_sena',
+            type: 'firma_sena',
+            order: 7,
+            role: 'SIGN'
         }
     ],
+    company: ObjectId('61f08e3d69634500090350d4'),
     name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
     price: 5000,
-    build: 7,
+    build: 18,
     preBuild: false,
+    custom: {
+        footer: {
+            contents: '<div class="document_footer">Página {{page}} de {{pages}}</div>',
+            height: '5mm'
+        },
+        header: {
+            contents: '',
+            height: '10mm'
+        }
+    },
     preBuildData: []
 }

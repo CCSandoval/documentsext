@@ -4,12 +4,8 @@
     font-family: sans-serif;
     text-align: justify;
   }
-
   .page {
     width: 21cm;
-  }
-  .page_text {
-    padding-top: 50px;
   }
   .document_footer {
     text-align: right;
@@ -18,21 +14,18 @@
     bottom: 0;
     font-family: serif;
     color: #aaa;
+    font-size: 12px !important;
   }
-  .left {
+  .align_left {
     float: left;
     width: 50%;
   }
-  .left_2 {
-    float: left;
-    width: 50%;
-    margin-top: 30px;
-  }
-  .right {
+  .align_right {
     float: right;
     width: 50%;
   }
   .textheader {
+    font-size: 12px !important;
     text-align: right;
     position: relative;
     right: 0;
@@ -43,10 +36,6 @@
 </style>
 
 <div class="page">
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
   <p class="page_text">
     <b>
       CONTRATO DE COOPERACIÓN EMPRESARIAL No.
@@ -172,16 +161,7 @@
     0010 de 2019 por el cual se establece el reglamento interno del Fondo
     Emprender, de esta normatividad hace parte integral los manuales de
     operación y financiación del Fondo Emprender.
-  </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 1 de 7 </small>
-  </p>
-  <br /><br />
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
+
     <b>11)</b> Que mediante concepto jurídico emitido por la Oficina Asesora
     Jurídica de la Universidad Distrital Francisco José de Caldas, a través de
     oficio del 21 de octubre de 2021, el Director del Idexud es competente para
@@ -284,16 +264,7 @@
     siguientes actividades: <b>1)</b> Cumplir con las actividades y acciones
     necesarias para la debida ejecución del plan de negocio, en los términos y
     condiciones en los que fue evaluado y aprobado.
-  </p>
-  <br /><br />
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 2 de 7 </small>
-  </p>
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
+
     <b>2)</b> Suscribir un pagaré y carta de instrucciones en blanco, junto con
     todos y cada uno de los BENEFICIARIOS del plan de negocios, con el cual se
     ampare los recursos aprobados por parte del FONDO EMPRENDER, para que sea
@@ -403,16 +374,7 @@
     <b>SENA.</b> <b>3)</b> Designar e informar al <b>SENA</b> como al (los)
     <b>BENEFICIARIO(S)</b>, el nombre de la entidad que realizará(n) la
     interventoría del proyecto.
-  </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 3 de 7 </small>
-  </p>
-  <br />
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
+
     <b>4)</b> <b>LA UNIVERSIDAD,</b> deberá presentar al <b>SENA</b> y al (los)
     <b>BENEFICIARIO(S),</b> el informe consolidado emitido por la Interventoría
     con recomendación de condonación o no condonación de recursos.
@@ -519,15 +481,7 @@
     manera anticipada, por incumplimiento de las partes de acuerdo a los
     procesos y procedimientos contemplados para declarar el incumplimiento
     contractual.
-  </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 4 de 7 </small>
-  </p>
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
+
     <b>
       CLÁUSULA DÉCIMA TERCERA - TERMINACION UNILATERAL: EL (LOS) BENEFICIARIO(S)
     </b>
@@ -634,15 +588,7 @@
     (o de los) <b>BENEFICIARIO(S)</b>, no adquieren vínculo laboral ni
     contractual alguno con el <b>SENA</b> y
     <b> LA UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS.</b>
-  </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 5 de 7 </small>
-  </p>
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
-  <p class="page_text">
+
     <b
       >CLÁUSULA DÉCIMA SEPTIMA - INHABILIDADES, INCOMPATIBILIDADES Y CONFLICTO
       DE INTERES: El (los) BENEFICIARIO(S)
@@ -738,23 +684,17 @@
     los dineros ejecutados. <b>CLÁUSULA VIGESIMA SEPTIMA - DOMICILIO:</b> Las
     partes acuerdan para todos los efectos legales la ciudad de Bogotá D.C.
   </p>
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 6 de 7 </small>
-  </p>
   <br /><br /><br />
-  <br /><br /><br />
-  <br /><br /><br />
-  <p class="textheader">
-    CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-    <span name="numero_contrato">___________</span>
-  </p>
+  <br />
+
   <p class="page_text">
     <b
-      >Este documento fue firmado digitalmente el dia __________________________
+      >Este documento fue firmado digitalmente el dia 
+      <b name="firma_contrato">___________________</b>
       por:</b
     >
   </p>
-  <div class="left">
+  <div class="align_left">
     <b>
       <span>POR EL SENA</span> <br /><br /><br /><br /><br />
       <span>__________________________________________</span><br />
@@ -762,7 +702,7 @@
       <span>Director de Empleo y Trabajo SENA</span><br />
     </b>
   </div>
-  <div class="right">
+  <div class="align_right">
     <b>
       <span>POR LA UNIVERSIDAD</span> <br /><br /><br /><br /><br />
       <span>__________________________________________</span><br />
@@ -855,7 +795,4 @@
   </p>
 
   <br />
-  <p class="document_footer">
-    <small> CONTRATO DE COOPERACIÓN EMPRESARIAL Página 7 de 7 </small>
-  </p>
 </div>

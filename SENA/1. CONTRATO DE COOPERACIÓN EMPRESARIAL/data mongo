@@ -83,6 +83,11 @@
             description: 'Ingrese el correo del emprendedor',
             type: 'text',
             help: 'correo'
+        },
+        {
+            name: 'firma_contrato',
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            type: 'date'
         }
     ],
     operation: [],
@@ -106,10 +111,6 @@
             value: 'HERNAN DARIO FUENTES SALDARRIAGA'
         },
         {
-            name: 'cargo_sena',
-            value: 'Director de Empleo y Trabajo SENA'
-        },
-        {
             name: 'cc_sena',
             value: '3.349.902'
         },
@@ -118,47 +119,142 @@
             value: 'ROBERTO FERRO ESCOBAR'
         },
         {
-            name: 'cargo_universidad',
-            value: 'Director IDEXUD'
-        },
-        {
             name: 'cc_universidad',
             value: '79.657.603'
         },
         {
-            name: 'cargo_emprendedor',
-            value: 'Emprendedor'
-        },
-        {
-            name: 'coreo_prov_sena',
-            value: 'jeyson.agudelo@micontrato.co'
+            name: 'correo_prov_sena',
+            value: 'hernan.fuentes@sena.edu.co'
         },
         {
             name: 'correo_prov_uni',
-            value: 'larodriguezr@udistrital.edu.co'
+            value: 'rferro@udistrital.edu.co'
+        },
+        {
+            name: 'nombre_proyecto_sena',
+            value: 'MÓNICA ALEJANDRA TORRES REY'
+        },
+        {
+            name: 'cc_proyecto_sena',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_proyecto_sena',
+            value: 'malejat@sena.edu.co'
+        },
+        {
+            name: 'nombre_vobo_sena',
+            value: 'CARLOS ARTURO GAMBA CASTILLO'
+        },
+        {
+            name: 'cc_vobo_sena',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_vobo_sena',
+            value: 'cgamba@sena.edu.co'
+        },
+        {
+            name: 'nombre_reviso_sena',
+            value: 'LUISA FERNANDA VELÁSQUEZ GIRALDO'
+        },
+        {
+            name: 'cc_reviso_sena',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_reviso_sena',
+            value: 'lfvelasquezg@sena.edu.co'
+        },
+        {
+            name: 'nombre_proyecto_universidad',
+            value: 'NELSON EDUARDO RODRÍGUEZ'
+        },
+        {
+            name: 'cc_proyecto_universidad',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_proyecto_universidad',
+            value: 'supervision.udfe@udistrital.edu.co'
+        },
+        {
+            name: 'nombre_reviso_universidad',
+            value: 'ANA MARÍA CHAVARRO MÉNDEZ'
+        },
+        {
+            name: 'cc_reviso_universidad',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_reviso_universidad',
+            value: 'juridico1idexud@udistrital.edu.co'
         }
     ],
     signatureProfile: [
         {
-            name: 'nombre_sena',
-            email: 'coreo_prov_sena',
-            title: 'cargo_sena',
-            identification: 'cc_sena',
-            type: 'firma_sena'
+            name: 'nombre_emprendedor',
+            email: 'correo_emprendedor',
+            identification: 'cc_emprendedor',
+            type: 'firma_emprendedor',
+            order: 0,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_proyecto_universidad',
+            email: 'correo_proyecto_universidad',
+            identification: 'cc_proyecto_universidad',
+            type: 'proyecto_universidad',
+            order: 1,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_reviso_universidad',
+            email: 'correo_reviso_universidad',
+            identification: 'cc_reviso_universidad',
+            type: 'reviso_universidad',
+            order: 2,
+            role: 'SIGN'
         },
         {
             name: 'nombre_universidad',
             email: 'correo_prov_uni',
-            title: 'cargo_universidad',
             identification: 'cc_universidad',
-            type: 'firma_universidad'
+            type: 'firma_universidad',
+            order: 3,
+            role: 'SIGN'
         },
         {
-            name: 'nombre_emprendedor',
-            email: 'correo_emprendedor',
-            title: 'cargo_emprendedor',
-            identification: 'cc_emprendedor',
-            type: 'firma_emprendedor'
+            name: 'nombre_proyecto_sena',
+            email: 'correo_proyecto_sena',
+            identification: 'cc_proyecto_sena',
+            type: 'proyecto_sena',
+            order: 4,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_vobo_sena',
+            email: 'correo_vobo_sena',
+            identification: 'cc_vobo_sena',
+            type: 'vobo_sena',
+            order: 5,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_reviso_sena',
+            email: 'correo_reviso_sena',
+            identification: 'cc_reviso_sena',
+            type: 'reviso_sena',
+            order: 6,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_sena',
+            email: 'correo_prov_sena',
+            identification: 'cc_sena',
+            type: 'firma_sena',
+            order: 7,
+            role: 'SIGN'
         }
     ],
     preBuildData: [],
@@ -168,5 +264,18 @@
         correo: 'ejemplo@dominio.com'
     },
     preBuild: true,
-    build: 15
+    custom: {
+        footer: {
+            contents: '<div class="document_footer">CONTRATO DE COOPERACIÓN EMPRESARIAL Página {{page}} de {{pages}}</div>',
+            height: '10mm'
+        },
+        header: {
+            contents: {
+                '1': '<span/>',
+                'default': '<div class="textheader">CONTRATO DE COOPERACIÓN EMPRESARIAL No.</div>'
+            },
+            height: '10mm'
+        }
+    },
+    build: 19
 }
