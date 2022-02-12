@@ -284,6 +284,12 @@
             type: 'text'
         },
         {
+            description: 'Digite el municipio en el que se encuentra la parte contratante',
+            help: 'municipio',
+            name: 'municipio_emp_contratante',
+            type: 'text'
+        },
+        {
             description: 'Digite el número de teléfono de la parte contratante',
             help: 'telefono',
             name: 'telefono_contratante',
@@ -388,7 +394,8 @@
         fecha: '01 de Enero del 2022',
         correo: 'Ejemplo: ejemplo@gmail.com'
     },
-    build: 4,
+    build: 5,
+    company: ObjectId('61ef21c4d762a10009460bba'),
     createdAt: ISODate('2021-12-02T00:52:01.378Z'),
     updatedAt: ISODate('2021-12-02T00:52:01.378Z')
 }
