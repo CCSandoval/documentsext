@@ -1,0 +1,98 @@
+<style type="text/css">
+  .page {
+    width: 21cm;
+  }
+  p,
+  span {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+  table {
+    width: 100%;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  td {
+    padding: 5px;
+    text-align: center;
+  }
+  td > p {
+    text-align: center;
+  }
+</style>
+
+<div class="page">
+  <table>
+    <tr>
+      <td rowspan="2">
+        <p>
+          <b
+            >AUTORIZACIÓN PARA EL CONOCIMIENTO DE LA HISTORIA CLÍNICA
+            OCUPACIONAL</b
+          >
+        </p>
+      </td>
+      <td>CÓDIGO: FO-S-62-6</td>
+    </tr>
+    <tr>
+      <td>
+        <p>VERSIÓN: 02</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>SEGURIDAD Y SALUD EN EL TRABAJO</p>
+      </td>
+      <td>VIGENCIA: 02-AGO-2017</td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <p>
+    Yo,
+    <span name="nombre">________________________________________________</span>
+    identificado(a) con la cédula de ciudadanía No.
+    <span name="cc_trabajador">______________</span> de
+    <span name="municipio_expedicion">_________________</span>, en mi calidad de
+    trabajador de la empresa
+    <span name="nombre_empresa">________________</span>, autorizo expresamente
+    al médico laboral de la empresa para acceder a la información relacionada
+    con mi estado de salud, así como a mi historia clínica y a los datos que en
+    ella se registren con el fin de revisar las condiciones físico psíquicas
+    para mi perfil de cargo.
+  </p>
+  <p>
+    Adicionalmente, autorizo acceder a la información relacionada con mi
+    historia clínica y a los datos que en ella se registren para el trámite de
+    radicación, cobro y recobro de mis incapacidades ante las entidades de
+    seguridad social (EPS, ARL y AFP).
+  </p>
+  <br />
+  <br />
+  <p>
+    Autorizo: SI<span name="autoriza_n"> ___ </span>
+    <u name="autoriza_s" hidden>&nbsp;X&nbsp;</u> NO
+    <span name="autoriza_s" hidden> ___ </span>
+    <u name="autoriza_n">&nbsp;X&nbsp;</u>
+  </p>
+
+  <br />
+  <br />
+  <br />
+  <p>
+    <span>Firma trabajador: <br /><span>___________________</span></span>
+    <br />
+    <br />
+    <span>C.C. <span name="cc_trabajador">___________________</span></span>
+    <br />
+    <br />
+    <span>Cargo: <span name="cargo_trabajador">___________________</span></span>
+    <br />
+    <br />
+    <span>Correo: <span name="correo_trabajador">___________________</span></span>
+  </p>
+</div>
