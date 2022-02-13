@@ -1,0 +1,324 @@
+<style type="text/css">
+  .page {
+    width: 21cm;
+  }
+  p,
+  span {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+  table {
+    width: 100%;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  td {
+    font-family: sans-serif;
+    padding: 5px;
+  }
+  td > p {
+    text-align: center;
+  }
+  .table_header {
+    background-color: #f4f4f4;
+  }
+</style>
+
+<div class="page">
+  <table>
+    <tr>
+      <td rowspan="2">
+        <p>
+          <b>
+            ENTREGA DE EQUIPO DE PROTECCION PERSONAL Y EQUIPO DE PROTECCIÓN
+            CONTRA CAÍDAS
+          </b>
+        </p>
+      </td>
+      <td><p>CÓDIGO: FO-S-09-1</p></td>
+    </tr>
+    <tr>
+      <td>
+        <p>VERSIÓN: 04</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>SEGURIDAD Y SALUD EN EL TRABAJO</p>
+      </td>
+      <td><p>VIGENCIA: 05-ABR-2017</p></td>
+    </tr>
+  </table>
+  <br />
+  <table>
+    <tr>
+      <td>
+        <b>NOMBRE TRABAJADOR:</b>
+      </td>
+      <td>
+        <b name="nombre_trabajador">______________________</b>
+      </td>
+      <td>
+        <b>CEDULA:</b>
+      </td>
+      <td>
+        <b name="cedula_trabajador">______________________</b>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>CARGO:</b>
+      </td>
+      <td>
+        <b name="cargo_trabajador">______________________</b>
+      </td>
+      <td>
+        <b>PROYECTO:</b>
+      </td>
+      <td>
+        <b name="nombre_proyecto">______________________</b>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>FUNCIÓN:</b>
+      </td>
+      <td colspan="3">
+        <span name="funcion">____________________________________________</span>
+      </td>
+    </tr>
+  </table>
+  <br />
+  <p style="border: 2px solid black; padding: 3px">
+    <b>
+      DECLARO HABER RECIBIDO GRATUITAMENTE EL MATERIAL ABAJO DESCRITO, PARA USO
+      EXCLUSIVO EN LAS TAREAS QUE ME FUERON ASIGNADAS. DECLARO TAMBIÉN ESTAR
+      CONCIENTE DE LAS NORMAS DE UTILIZACION, LIMPIEZA, CONSERVACION, CUIDADO Y
+      RESTITUCION EN CASO DE PERDIDA O NO USO DE ESTOS ELEMENTOS DE PROTECCIÓN
+      PERSONAL.
+    </b>
+  </p>
+  <table>
+    <tr class="table_header">
+      <td>
+        <p><b>FECHA</b></p>
+      </td>
+      <td>
+        <p><b>CANT.</b></p>
+      </td>
+      <td>
+        <p><b>DESCRIPCIÓN DEL E.P.P Y/O EPCC</b></p>
+      </td>
+      <td>
+        <p><b>FIRMA</b></p>
+      </td>
+      <td>
+        <p>
+          <b>
+            NOMBRE DE <br />
+            QUIEN ENTREGA:
+          </b>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_1">___</p></td>
+      <td>
+        <p name="desc_1">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_2">___</p></td>
+      <td>
+        <p name="desc_2">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_3">___</p></td>
+      <td>
+        <p name="desc_3">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_4">___</p></td>
+      <td>
+        <p name="desc_4">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_5">___</p></td>
+      <td>
+        <p name="desc_5">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_6_n"></tr>
+    <tr name="elemento_6_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_6">___</p></td>
+      <td>
+        <p name="desc_6">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_7_n"></tr>
+    <tr name="elemento_7_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_7">___</p></td>
+      <td>
+        <p name="desc_7">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_8_n"></tr>
+    <tr name="elemento_8_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_8">___</p></td>
+      <td>
+        <p name="desc_8">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_9_n"></tr>
+    <tr name="elemento_9_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_9">___</p></td>
+      <td>
+        <p name="desc_9">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_10_n"></tr>
+    <tr name="elemento_10_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_10">___</p></td>
+      <td>
+        <p name="desc_10">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_11_n"></tr>
+    <tr name="elemento_11_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_11">___</p></td>
+      <td>
+        <p name="desc_11">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_12_n"></tr>
+    <tr name="elemento_12_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_12">___</p></td>
+      <td>
+        <p name="desc_12">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_13_n"></tr>
+    <tr name="elemento_13_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_13">___</p></td>
+      <td>
+        <p name="desc_13">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_14_n"></tr>
+    <tr name="elemento_14_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_14">___</p></td>
+      <td>
+        <p name="desc_14">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_15_n"></tr>
+    <tr name="elemento_15_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_15">___</p></td>
+      <td>
+        <p name="desc_15">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_16_n"></tr>
+    <tr name="elemento_16_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_16">___</p></td>
+      <td>
+        <p name="desc_16">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_17_n"></tr>
+    <tr name="elemento_17_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_17">___</p></td>
+      <td>
+        <p name="desc_17">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_18_n"></tr>
+    <tr name="elemento_18_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_18">___</p></td>
+      <td>
+        <p name="desc_18">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_19_n"></tr>
+    <tr name="elemento_19_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_19">___</p></td>
+      <td>
+        <p name="desc_19">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+    <tr name="elemento_20_n"></tr>
+    <tr name="elemento_20_s" hidden>
+      <td><p name="fecha">_________</p></td>
+      <td><p name="cant_20">___</p></td>
+      <td>
+        <p name="desc_20">____________________________________</p>
+      </td>
+      <td><div id="firma" class="sign_margin"></div></td>
+      <td><p name="entregante">__________________</p></td>
+    </tr>
+  </table>
+</div>

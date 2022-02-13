@@ -48,12 +48,11 @@
             identification: 'cedula_trabajador'
         }
     ],
-    custom:{
-        header:{
-            contents: '<table><tr><td rowspan="2"><p><b>FUNCIONES Y RESPONSABILIDADES AMBIENTALES</b></p></td><td><p>CÓDIGO: DA-S-37-9</p></td></tr><tr><td><p>VERSIÓN: 01</p></td></tr><tr><td><p>AMBIENTE Y ENTORNO</p></td><td><p>VIGENCIA: 16-JUL-2018</p></td></tr></table>',
-            height: '10mm'
+    custom: {
+        header: {
+            contents: '<table><tr><td rowspan="2"><p><b>FUNCIONES Y RESPONSABILIDADES AMBIENTALES</b></p></td><td><p>CÓDIGO: DA-S-37-9</p></td></tr><tr><td><p>VERSIÓN: 01</p></td></tr><tr><td><p>AMBIENTE Y ENTORNO</p></td><td><p>VIGENCIA: 16-JUL-2018</p></td></tr></table>'
         },
-        footer:{
+        footer: {
             contents: '<div><p style="text-align: center; font-family: serif">{{page}}</p></div>',
             height: '5mm'
         }
@@ -62,6 +61,6 @@
     name: 'FUNCIONES Y RESPONSABILIDADES AMBIENTALES',
     preBuildData: [],
     preBuild: false,
-    price: 0,
-    build: 1
+    price: 5000,
+    build: 2
 }
