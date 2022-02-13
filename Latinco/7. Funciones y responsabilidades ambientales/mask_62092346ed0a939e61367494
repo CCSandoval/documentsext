@@ -1,0 +1,109 @@
+<style type="text/css">
+  :root {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+  .page {
+    width: 21cm;
+  }
+  table {
+    width: 100%;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid;
+    font-size: 12px;
+    border-collapse: collapse;
+  }
+  td {
+    padding: 5px;
+    text-align: center;
+  }
+  td > p {
+    text-align: center;
+  }
+</style>
+
+<div class="page">
+  <p style="text-align: center">
+    <b>ACTA DE CONOCIMIENTO: TODAS LAS ÁREAS</b>
+  </p>
+  <br />
+  <p>
+    <span name="nombre_empresa">___________________</span>, ha establecido unas
+    funciones y responsabilidades Ambientales con el propósito de prevenir los
+    impactos y riesgos socio-ambientales, minimizar los efectos sobre el
+    <b>cambio climático</b>, el uso eficiente del <b>recurso hídrico</b>, el
+    respeto por la <b>biodiversidad</b>, el cumplimiento de los
+    <b>requisitos legales</b> y el mejoramiento continuo del
+    <b>desempeño ambiental</b>. Por esta razón lo invitamos a tener presente:
+  </p>
+  <ol style="padding: 10px">
+    <li>
+      <p>
+        Cumplir y hacer cumplir las disposiciones o actividades ambientales,
+        campañas de manejo de residuos sólidos, líquidos, uso racional de
+        recursos (agua, energía, papel, etc.), reciclaje, disposición de
+        residuos y otros que apliquen a sus labores. (Hacer uso consciente y
+        racional de los recursos naturales).
+      </p>
+    </li>
+    <li>
+      <p>
+        Cumplir la Política de Sustentabilidad, normas aplicables e
+        instrucciones de los planes de manejo ambiental y/o Gestión ambiental de
+        la empresa y procurar el cuidado integral del ambiente.
+      </p>
+    </li>
+    <li>
+      <p>
+        Reportar inmediatamente a su jefe inmediato, representante de gestión
+        SST y ambiental todos los accidentes, incidentes, que puedan afectar
+        negativamente el ambiente del área de influencia directa.
+      </p>
+    </li>
+    <li>
+      <p>
+        Ajustar su puesto de trabajo de manera que se minimicen los impactos
+        ambientales asociados a sus actividades laborales.
+      </p>
+    </li>
+    <li>
+      <p>
+        Ser ejemplo y líder dentro y fuera de la empresa, generando siempre una
+        actitud de conservación del ambiente.
+      </p>
+    </li>
+    <li>
+      <p>
+        Participar en las Investigaciones de Incidentes, Accidentes ambientales
+        e Inspecciones de Seguridad.
+      </p>
+    </li>
+  </ol>
+  <p>
+    <b
+      >Nombre empleado:
+      <b name="nombre_trabajador">_______________________</b></b
+    >
+    <b>Cedula N.º: <b name="cedula_trabajador">___________________</b></b>
+    <br />
+    <b
+      >Cargo:
+      <b name="cargo_trabajador">__________________________________</b></b
+    >
+    <b>Fecha: <b name="fecha_firma">___________________</b></b>
+  </p>
+  <p>
+    Recibí el documento Funciones y Responsabilidades Ambientales, lo entendí y
+    me comprometo a darle estricto cumplimiento.
+  </p>
+  <br/>
+  <br/>
+  <p>
+    <span>Firma empleado: </span><br /><br /><br />
+    <span>_________________________</span><br /><br />
+    <span>Correo: </span> <span name="correo_trabajador">________________</span>
+  </p>
+</div>
