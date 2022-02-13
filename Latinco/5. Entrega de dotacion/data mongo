@@ -1,0 +1,225 @@
+{
+    _id: ObjectId("620862cded0a939e61367490"),
+    config: [{
+            name: "nombre_entregante",
+            description: "Ingrese el nombre del entregante",
+            type: "name",
+        },
+        {
+            name: "numero_dotacion",
+            description: "Ingrese el número de la dotación",
+            type: "number",
+        },
+        {
+            name: "nombre_trabajador",
+            description: "Ingrese el nombre del trabajador",
+            type: "name",
+        },
+        {
+            name: "cedula_trabajador",
+            description: "Ingrese el número de cédula del trabajador",
+            type: "number",
+        },
+        {
+            name: "periodo",
+            description: "Escriba el periodo de la dotación",
+            type: "text",
+        },
+        {
+            name: "cantidad_1",
+            description: "Ingrese la cantidad del primer elemento de la dotación",
+            type: "number",
+        },
+        {
+            name: "descripcion_1",
+            description: "Ingrese la descripción del primer elemento de la dotación",
+            type: "text",
+        },
+        {
+            name: "talla_1",
+            description: "Ingrese la talla del primer elemento de la dotación",
+            type: "text",
+        },
+        {
+            name: "cantidad_2",
+            description: "Ingrese la cantidad del segundo elemento de la dotación",
+            type: "number",
+        },
+        {
+            name: "descripcion_2",
+            description: "Ingrese la descripción del segundo elemento de la dotación",
+            type: "text",
+        },
+        {
+            name: "talla_2",
+            description: "Ingrese la talla del segundo elemento de la dotación",
+            type: "text",
+        },
+        {
+            name: "cantidad_3",
+            description: "Ingrese la cantidad del tercer elemento de la dotación",
+            type: "number",
+        },
+        {
+            name: "descripcion_3",
+            description: "Ingrese la descripción del tercer elemento de la dotación",
+            type: "text",
+        },
+        {
+            name: "talla_3",
+            description: "Ingrese la talla del tercer elemento de la dotación",
+            type: "text",
+        },
+        {
+            name: 'elemento_4',
+            description: '¿Desea ingresar un cuarto elemento?',
+            options: [{
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            name: "cantidad_4",
+            description: "Ingrese la cantidad del cuarto elemento de la dotación",
+            type: "number",
+            prereq: [{
+                k: 'elemento_4',
+                v: 's'
+            }]
+        },
+        {
+            name: "descripcion_4",
+            description: "Ingrese la descripción del cuarto elemento de la dotación",
+            type: "text",
+            prereq: [{
+                k: 'elemento_4',
+                v: 's'
+            }]
+        },
+        {
+            name: "talla_4",
+            description: "Ingrese la talla del cuarto elemento de la dotación",
+            type: "text",
+            prereq: [{
+                k: 'elemento_4',
+                v: 's'
+            }]
+        },
+        {
+            name: 'elemento_5',
+            description: '¿Desea ingresar un quinto elemento?',
+            options: [{
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n',
+            prereq: [{
+                k: 'elemento_4',
+                v: 's'
+            }]
+        },
+        {
+            name: "cantidad_5",
+            description: "Ingrese la cantidad del quinto elemento de la dotación",
+            type: "number",
+            prereq: [{
+                    k: 'elemento_4',
+                    v: 's'
+                },
+                {
+                    k: 'elemento_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: "descripcion_5",
+            description: "Ingrese la descripción del quinto elemento de la dotación",
+            type: "text",
+            prereq: [{
+                    k: 'elemento_4',
+                    v: 's'
+                },
+                {
+                    k: 'elemento_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: "talla_5",
+            description: "Ingrese la talla del quinto elemento de la dotación",
+            type: "text",
+            prereq: [{
+                    k: 'elemento_4',
+                    v: 's'
+                },
+                {
+                    k: 'elemento_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fecha_firma',
+            description: 'Seleccione la fecha en la que se firma el documento',
+            type: 'date'
+        },
+        {
+            name: 'correo_trabajador',
+            description: 'Ingrese el correo del trabajador',
+            type: 'text'
+        }
+    ],
+    sign: [
+        "nombre_entregante",
+        "numero_dotacion",
+        "nombre_trabajador",
+        "cedula_trabajador",
+        "periodo",
+        "cantidad_1",
+        "descripcion_1",
+        "talla_1",
+        "cantidad_2",
+        "descripcion_2",
+        "talla_2",
+        "cantidad_3",
+        "descripcion_3",
+        "talla_3",
+        "cantidad_4",
+        "descripcion_4",
+        "talla_4",
+        "cantidad_5",
+        "descripcion_5",
+        "talla_5",
+        'correo_trabajador'
+    ],
+    preFill: [],
+    signatureProfile: [
+        {
+            type: 'firma_trabajador',
+            email: 'correo_trabajador',
+            name: 'nombre_trabajador',
+            identification: 'cedula_trabajador'
+        }
+    ],
+    operation: [],
+    name:'AUTORIZACIÓN PARA EL CONOCIMIENTO DE LA HISTORIA CLÍNICA OCUPACIONAL',
+    preBuildData: [],
+    preBuild: false,
+    price: 5000,
+    build: 1
+}

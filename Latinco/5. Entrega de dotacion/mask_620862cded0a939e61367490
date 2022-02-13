@@ -1,0 +1,168 @@
+<style type="text/css">
+  .page {
+    width: 21cm;
+  }
+
+  p,
+  span {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+
+  table {
+    width: 100%;
+  }
+
+  table,
+  th,
+  td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+
+  td {
+    padding: 5px;
+    /* text-align: center; */
+  }
+
+  td > p {
+    text-align: center;
+  }
+</style>
+
+<div class="page">
+  <table>
+    <tr>
+      <td rowspan="2">
+        <p>
+          <b
+            >AUTORIZACIÓN PARA EL CONOCIMIENTO DE LA HISTORIA CLÍNICA
+            OCUPACIONAL</b
+          >
+        </p>
+      </td>
+      <td>CÓDIGO: FO-S-62-6</td>
+    </tr>
+    <tr>
+      <td>
+        <p>VERSIÓN: 02</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>SEGURIDAD Y SALUD EN EL TRABAJO</p>
+      </td>
+      <td>VIGENCIA: 02-AGO-2017</td>
+    </tr>
+  </table>
+  <br />
+  <p>
+    De acuerdo con los artículos 230 al 234 del Código Sustantivo del Trabajo,
+    <span name="nombre_entregante">______________</span>, hace entrega oficial
+    de la siguiente dotación compuesta por los elementos que más adelante se
+    describen:
+  </p>
+  <p><b>EL TRABAJADOR con su firma manifiesta y acepta que:</b></p>
+  <ul>
+    <li>
+      <p>
+        Se compromete a hacer buen uso de la dotación que se le entrega,
+        utilizándola exclusivamente en la labor desempeñada, en los horarios de
+        trabajo acordados y en el cumplimiento de sus funciones y obligaciones.
+      </p>
+    </li>
+    <li>
+      <p>
+        Acepta a conformidad la dotación aquí descrita, verificando que las
+        prendas sean funcionales con su cargo y desempeño laboral.
+      </p>
+    </li>
+  </ul>
+  <br />
+  <table>
+    <tr>
+      <td>
+        <span><b>DOTACIÓN Nº DEL AÑO:</b></span>
+      </td>
+      <td><span name="numero_dotacion">______________</span></td>
+    </tr>
+    <tr>
+      <td>
+        <span><b>RECIBE:</b></span>
+      </td>
+      <td><span name="nombre_trabajador">______________</span></td>
+    </tr>
+    <tr>
+      <td>
+        <span><b>CEDULA Nº:</b></span>
+      </td>
+      <td><span name="cedula_trabajador">______________</span></td>
+    </tr>
+    <tr>
+      <td>
+        <span><b>PERIODO:</b></span>
+      </td>
+      <td><span name="periodo">______________</span></td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <table>
+    <tr>
+      <td>
+        <p><b>CANT.:</b></p>
+      </td>
+      <td>
+        <p>
+          <b> DESCRIPCIÓN: </b>
+        </p>
+      </td>
+      <td>
+        <p>
+          <b>TALLA:</b>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td name="cantidad_1">_____</td>
+      <td name="descripcion_1">___________________________</td>
+      <td name="talla_1">_____</td>
+    </tr>
+    <tr>
+      <td name="cantidad_2">_____</td>
+      <td name="descripcion_2">___________________________</td>
+      <td name="talla_2">_____</td>
+    </tr>
+    <tr>
+      <td name="cantidad_3">_____</td>
+      <td name="descripcion_3">___________________________</td>
+      <td name="talla_3">_____</td>
+    </tr>
+    <span name="elemento_4_n"></span>
+    <tr name="elemento_4_s" hidden>
+      <td name="cantidad_4">_____</td>
+      <td name="descripcion_4">___________________________</td>
+      <td name="talla_4">_____</td>
+    </tr>
+    <span name="elemento_5_n"></span>
+    <tr name="elemento_5_s" hidden>
+      <td name="cantidad_5">_____</td>
+      <td name="descripcion_5">___________________________</td>
+      <td name="talla_5">_____</td>
+    </tr>
+  </table>
+  <p>
+    Para constancia se firma por las partes que intervienen, el dia
+    <span name="fecha_firma">_______________</span>
+  </p>
+  <p>
+    <span>___________________________</span><br />
+    <span><b>TRABAJADOR (A)</b></span>
+    <br />
+    <span><b name="nombre_trabajador">_____________________</b></span> <br />
+    <span><b>C.C.</b> <b name="cedula_trabajador"></b></span> <br />
+    <span><b>Correo: </b> <b name="correo_trabajador"></b></span> <br />
+  </p>
+  <br />
+  <span><small>Copia: Hoja de vida.</small></span>
+</div>
