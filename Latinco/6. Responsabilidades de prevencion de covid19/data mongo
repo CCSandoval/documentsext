@@ -1,0 +1,57 @@
+{
+    _id: ObjectId('62086a9ded0a939e61367492'),
+    config: [
+        {
+            name: 'nombre_empresa',
+            description: 'Ingrese el nombre de la empresa',
+            type: 'name'
+        },
+        {
+            name: 'nombre_colaborador',
+            description: 'Ingrese el nombre del colaborador',
+            type: 'name'
+        },
+        {
+            name: 'cedula_colaborador',
+            description: 'Ingrese el número de cédula del colaborador',
+            type: 'number'
+        },
+        {
+            name: 'cargo_colaborador',
+            description: 'Ingrese el cargo del colaborador',
+            type: 'text'
+        },
+        {
+            name: 'fecha_firma',
+            description: 'Seleccione la fecha en la que se firma el documento',
+            type: 'date'
+        },
+        {
+            name: 'correo_colaborador',
+            description: 'Ingrese el correo del colaborador',
+            type: 'text'
+        }
+    ],
+    preFill: [],
+    sign: [
+        'nombre_empresa',
+        'nombre_colaborador',
+        'cedula_colaborador',
+        'cargo_colaborador',
+        'correo_colaborador'
+    ],
+    signatureProfile: [
+        {
+            type: 'firma',
+            email: 'correo_colaborador',
+            name: 'nombre_colaborador',
+            identification: 'cedula_colaborador'
+        }
+    ],
+    operation: [],
+    name: 'RESPONSABILIDADES PREVENCION COVID 19',
+    preBuildData: [],
+    preBuild: false,
+    price: 5000,
+    build: 2
+}
