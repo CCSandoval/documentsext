@@ -1,0 +1,143 @@
+<style type="text/css">
+  .page {
+    width: 21cm;
+  }
+  p,
+  span {
+    font-family: sans-serif;
+    text-align: justify;
+  }
+  table {
+    width: 100%;
+  }
+  table,
+  th,
+  td {
+    border: 1px solid;
+    border-collapse: collapse;
+  }
+  td {
+    font-family: sans-serif;
+    padding: 5px;
+  }
+  td > p {
+    text-align: center;
+  }
+</style>
+
+<div class="page">
+  <table>
+    <tr>
+      <td rowspan="2">
+        <p>
+          <b> CONSENTIMIENTO INFORMADO </b>
+        </p>
+      </td>
+      <td><p>CÓDIGO: FO-S-02-42</p></td>
+    </tr>
+    <tr>
+      <td>
+        <p>VERSIÓN: 03</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <p>TALENTO HUMANO</p>
+      </td>
+      <td><p>VIGENCIA: 20-ABR-2017</p></td>
+    </tr>
+  </table>
+  <p style="text-align: center">
+    <b>CONSENTIMIENTO INFORMADO</b>
+  </p>
+  <p>
+    Yo <span name="nombre_trabajador">_________________________</span>, mayor de
+    edad, identificado(a) con documento de identidad No.
+    <span name="cedula_trabajador">______________</span> de
+    <span name="municipio_expedicion">_________________</span>, en condición de
+    candidato(a) y/o empleado(a)
+    <span name="cargo_trabajador">_______________</span> de la Sociedad
+    <span name="nombre_empresa">______________</span>., autorizo de manera libre
+    y voluntaria, para que verifique directamente, toda aquella información que
+    considere pertinente en materia de datos personales, entre otras, durante el
+    proceso de selección y/o de control rutinario; dichas verificaciones serán
+    denominadas estudio de confiabilidad y lo integrarán los siguientes
+    subprocesos: consulta en páginas públicas (Procuraduría, Policía Nacional,
+    Copnia, Simit), referencias académicas, laborales, personales; igualmente
+    toma de registros grafológicos, decadactilares y fotográficos, entrevistas,
+    aplicación de polígrafo, entre otras, en caso de requerirse.
+  </p>
+  <p>
+    Así mismo, autorizo la realización de los exámenes médicos de ingreso y
+    periódicos y aquellos que la empresa considere pertinentes dentro del
+    ejercicio de mi labor, con el fin de dar cumplimiento a la Política de
+    Seguridad y Salud en el Trabajo de la compañía y al Reglamento Interno de
+    Trabajo de la misma.
+  </p>
+  <p>
+    Conociendo mis derechos y mis deberes y, las normas sobre tratamiento de
+    datos personales autorizo a
+    <span name="nombre_empresa">______________</span> para la recolección y
+    tratamiento de mis datos personales (fotos tomadas en eventos y actividades
+    de la sociedad, fecha y lugar de nacimiento, cargo, formación académica,
+    estado civil, número de hijos, grupo sanguíneo, correo electrónico,
+    acontecimientos relevantes del grupo familiar primario: nacimientos,
+    fallecimientos, matrimonios, fecha de inicio y finalización de la actividad)
+    en los siguientes casos:
+  </p>
+  <ul>
+    <li>
+      <p>
+        Publicaciones internas y externas (intranet, boletines, carteleras).
+      </p>
+    </li>
+    <li>
+      <p>Plataformas tecnológicas propias de la organización.</p>
+    </li>
+    <li>
+      <p>
+        Brindar información a empresas que solicitan verificar datos laborales
+        de los empleados para autorización de créditos de dinero o de créditos
+        comerciales.
+      </p>
+    </li>
+    <li>
+      <p>Procesos de elección y formación.</p>
+    </li>
+    <li>
+      <p>
+        Encuestas relacionadas con Medición de factores psicosociales, estudios
+        de clima organizacional, Mediciones de SST.
+      </p>
+    </li>
+  </ul>
+  <p>
+    Como titular de datos personales, en cualquier momento puedo solicitar al
+    responsable o encargado, la supresión de mis datos personales y/o revocar la
+    autorización otorgada para el tratamiento de los mismos, mediante la
+    presentación de una solicitud, de conformidad con lo establecido en el
+    artículo 15 de la ley 1581 de 2012 y en el decreto 1377 de 2013. Lo
+    anterior, salvo en aquellos casos en los que tenga el deber legal o
+    contractual de permanecer en la base de datos. Así mismo tengo derecho a
+    conocer, actualizar y rectificar mis datos ante la empresa y acceder de
+    forma gratuita a mis datos personales objeto de tratamiento.
+  </p>
+  <p>
+    Firma digital: Autorizo expresamente la firma digital, la cual tendrá la
+    misma fuerza y efecto que el uso de una firma manuscrita, definida en el
+    literal C) del artículo segundo de la ley 527 de 1999: de esta manera estoy
+    de acuerdo, que documentos como contrato de trabajo, otro si, clausulas
+    adicionales y cualquier tipo de documento que se derive de mi relación
+    laboral se realice de esta manera.
+  </p>
+  <p>
+    Hago constar que he leído y entendido en su totalidad este documento, por lo
+    que en constancia firmo y acepto su contenido el
+    <span name="fecha_firma">______________</span>
+  </p>
+  <br />
+  <br />
+  <span>Firma:</span>
+  <div id="firma" class="sign_margin"></div>
+  <span>C.C: <span name="cedula_trabajador">______________________</span></span>
+</div>
