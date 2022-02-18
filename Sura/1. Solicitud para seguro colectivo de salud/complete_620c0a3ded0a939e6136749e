@@ -1,0 +1,2255 @@
+<style type="text/css">
+    p,
+    span,
+    h2 {
+        font-family: sans-serif;
+    }
+
+    .main_title {
+        font-family: sans-serif;
+        color: #174285;
+        margin: 0;
+        font-size: 18px;
+        font-weight: normal;
+    }
+
+    .subtitle {
+        font-family: sans-serif;
+        color: #174285;
+        margin: 0;
+    }
+
+    .title_container {
+        width: fit-content;
+        margin: 0;
+        float: left;
+    }
+
+    .square {
+        position: relative;
+        width: 1rem;
+        height: 1rem;
+        border: 1px solid #174285;
+        margin-right: 5px;
+        background-color: #f1f4ff;
+    }
+
+    .table_class {
+        width: 100%;
+        border: 1px solid #174285;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-collapse: collapse;
+    }
+
+    .small_text p,
+    span {
+        font-size: 10px;
+    }
+
+    .border_right {
+        border-right: 1px solid #174285;
+    }
+
+    .border_bottom {
+        border-bottom: 1px solid #174285;
+    }
+
+    .border_top {
+        border-top: 1px solid #174285;
+    }
+
+    .input_field {
+        height: 2em;
+        background-color: #f1f4ff;
+    }
+
+    .table_title {
+        color: #174285;
+        font-size: 14px;
+        margin: 5px 0px;
+    }
+
+    .align_left {
+        float: left;
+        width: 50%;
+    }
+
+    .align_right {
+        float: right;
+        width: 50%;
+    }
+</style>
+<div style="width: 21cm;">
+    <div>
+        <img style="position: absolute; right: 0; top: 0" src="https://mi-contrato-static.s3.amazonaws.com/sura/sura_logo.jpg" alt="sura" />
+        <div style="margin-bottom: 30px">
+            <p class="main_title">SOLICITUD PARA SEGURO COLECTIVO DE SALUD</p>
+            <p class="subtitle">SEGUROS DE VIDA SURAMERICANA S.A</p>
+        </div>
+        <hr style="border-top: 3px dotted #174285" />
+    </div>
+    <br />
+    <table class="table_class">
+        <tr class="border_bottom">
+            <td>
+                <span class="square">
+                    <span name="salud_clasico">x</span>
+                    <span name="salud_global" hidden>&nbsp;</span>
+                    <span name="salud_evoluciona" hidden>&nbsp;</span>
+                </span>
+                <span>Salud Clásico</span>
+            </td>
+            <td>
+                <span class="square">
+                    <span name="salud_clasico">&nbsp;</span>
+                    <span name="salud_global" hidden>x</span>
+                    <span name="salud_evoluciona" hidden>&nbsp;</span>
+                </span>
+                <span>Salud Global</span>
+            </td>
+            <td class="border_right">
+                <span class="square">
+                    <span name="salud_clasico">&nbsp;</span>
+                    <span name="salud_global" hidden>&nbsp;</span>
+                    <span name="salud_evoluciona" hidden>x</span>
+                </span>
+                <span>Salud Evoluciona &nbsp;&nbsp;&nbsp;</span>
+            </td>
+            <td>
+                <span class="square">
+                    <span name="tipo_nueva">x</span>
+                    <span name="tipo_ingreso" hidden>&nbsp;</span>
+                    <span name="tipo_modificacion" hidden>&nbsp;</span>
+                    <span name="tipo_renovacion" hidden>&nbsp;</span>
+                </span>
+                <span>Nueva</span>
+            </td>
+            <td>
+                <span class="square">
+                    <span name="tipo_ingreso" hidden>x</span>
+                    <span name="tipo_nueva">&nbsp;</span>
+                    <span name="tipo_modificacion" hidden>&nbsp;</span>
+                    <span name="tipo_renovacion" hidden>&nbsp;</span>
+                </span>
+                <span>Ingreso</span>
+            </td>
+            <td>
+                <span class="square">
+                    <span name="tipo_modificacion" hidden>x</span>
+                    <span name="tipo_nueva">&nbsp;</span>
+                    <span name="tipo_ingreso" hidden>&nbsp;</span>
+                    <span name="tipo_renovacion" hidden>&nbsp;</span>
+                </span>
+                <span>Modificación</span>
+            </td>
+            <td>
+                <span class="square">
+                    <span name="tipo_renovacion" hidden>x</span>
+                    <span name="tipo_nueva">&nbsp;</span>
+                    <span name="tipo_ingreso" hidden>&nbsp;</span>
+                    <span name="tipo_modificacion" hidden>&nbsp;</span>
+                </span>
+                <span>Renovación &nbsp;&nbsp;&nbsp;</span>
+            </td>
+        </tr>
+        <tr>
+            <td class="small_text border_right" colspan="2">
+                <p>Número de Formato / Solicitud</p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p>Número de Póliza</p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p>Oficina de Radicación</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Código Asesor</p>
+            </td>
+            <td class="small_text">
+                <p>Fecha Diligenciamiento Formato (AAAAMMDD)</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="small_text border_right" colspan="2">
+                <p class="input_field"><span name="num_formato"></span></p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p class="input_field"><span name="num_poliza"></p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p class="input_field"><span name="oficina_radicacion"></span></p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field"><span name="codigo_asesor"></span></p>
+            </td>
+            <td class="small_text">
+                <p class="input_field"><span name="fecha_diligenciamiento"></span></p>
+            </td>
+        </tr>
+    </table>
+    <h2 class="table_title">INFORMACIÓN DEL TOMADOR</h2>
+    <table class="table_class">
+        <tr>
+            <td class="small_text border_right" colspan="3">
+                <p>Tipo de identificación</p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p>Número de Identificación</p>
+            </td>
+            <td class="small_text" colspan="2">
+                <p>Razón Social y/o Nombres y Apellidos (Primero Nombres, luego Apellidos)</p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td colspan="3" class="small_text border_right">
+                <p>
+                    <span class="square">
+                        <span name="tipo_id_tomador_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_cc">x</span>
+                        <span name="tipo_id_tomador_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>C.C</span>
+                    <span class="square">
+                        <span name="tipo_id_tomador_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_cc">&nbsp;</span>
+                        <span name="tipo_id_tomador_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_ti" hidden>x</span>
+                    </span>
+                    <span>T.I</span>
+                    <span class="square">
+                        <span name="tipo_id_tomador_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_cc">&nbsp;</span>
+                        <span name="tipo_id_tomador_ce" hidden>x</span>
+                        <span name="tipo_id_tomador_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>C.E</span>
+                    <span class="square">
+                        <span name="tipo_id_tomador_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_nit" hidden>x</span>
+                        <span name="tipo_id_tomador_cc">&nbsp;</span>
+                        <span name="tipo_id_tomador_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>NIT</span>
+                    <span class="square">
+                        <span name="tipo_id_tomador_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_pa" hidden>x</span>
+                        <span name="tipo_id_tomador_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_cc">&nbsp;</span>
+                        <span name="tipo_id_tomador_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>P.A</span>
+                    <span class="square">
+                        <span name="tipo_id_tomador_ife" hidden>x</span>
+                        <span name="tipo_id_tomador_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_cc">&nbsp;</span>
+                        <span name="tipo_id_tomador_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_tomador_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>IFE</span>
+                </p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p class="input_field">
+                    <span name="tipo_id_tomador_ife" hidden>
+                        <span name="num_id_tomador_ife"></span>
+                    </span>
+                    <span name="tipo_id_tomador_pa" hidden>
+                        <span name="num_id_tomador_pa"></span>
+                    </span>
+                    <span name="tipo_id_tomador_nit" hidden>
+                        <span name="num_id_tomador_nit"></span>
+                    </span>
+                    <span name="tipo_id_tomador_cc">
+                        <span name="num_id_tomador_cc"></span>
+                    </span>
+                    <span name="tipo_id_tomador_ce" hidden>
+                        <span name="num_id_tomador_ce"></span>
+                    </span>
+                    <span name="tipo_id_tomador_ti" hidden>
+                        <span name="num_id_tomador_ti"></span>
+                    </span>
+                </p>
+            </td>
+            <td class="small_text " colspan="2">
+                <p class="input_field"><span name="razon_social_tomador"></span></p>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding: 7px 0px;" colspan="2"><span>Enviar correspondencia de producto a</span></td>
+            <td>
+                <span class="square">
+                    <span name="enviar_a_rep">x</span>
+                    <span name="enviar_a_trabajo" hidden>&nbsp;</span>
+                    <span name="enviar_a_otro" hidden>&nbsp;</span>
+                </span>
+                <span>Residencia / Representante legal</span>
+            </td>
+            <td>
+                <span class="square">
+                    <span name="enviar_a_rep">&nbsp;</span>
+                    <span name="enviar_a_trabajo" hidden>x</span>
+                    <span name="enviar_a_otro" hidden>&nbsp;</span>
+                </span>
+                <span>Trabajo / Oficina Principal</span>
+            </td>
+            <td>
+                <span class="square">
+                    <span name="enviar_a_rep">&nbsp;</span>
+                    <span name="enviar_a_trabajo" hidden>&nbsp;</span>
+                    <span name="enviar_a_otro" hidden>x</span>
+                </span>
+                <span>Otra / Persona Contacto</span>
+            </td>
+        </tr>
+    </table>
+    <h2 class="table_title">INFORMACIÓN DEL SEGURO</h2>
+    <table class="table_class">
+        <tr>
+            <td class="small_text border_right" colspan="2">
+                <p>Número de Cotización</p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p>Inicio Vigencia A A A A M M D D</p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p>Porcentaje de Comisión</p>
+            </td>
+            <td class="small_text">
+                <p>
+                    Forma de Pago
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td colspan="2" class="small_text border_right">
+                <p class="input_field">
+                    <span name="num_cotizacion"></span>
+                </p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p class="input_field"><span name="inicio_vigencia"></p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p class="input_field"><span name="porc_comision"></span></p>
+            </td>
+            <td class="small_text" colspan="2">
+                <span class="square">
+                    <span name="forma_pago_mensual">x</span>
+                    <span name="forma_pago_trimestral" hidden>&nbsp;</span>
+                    <span name="forma_pago_semestral" hidden>&nbsp;</span>
+                    <span name="forma_pago_anual" hidden>&nbsp;</span>
+                </span>
+                <span>Mensual</span>
+                <span class="square">
+                    <span name="forma_pago_mensual">&nbsp;</span>
+                    <span name="forma_pago_trimestral" hidden>x</span>
+                    <span name="forma_pago_semestral" hidden>&nbsp;</span>
+                    <span name="forma_pago_anual" hidden>&nbsp;</span>
+                </span>
+                <span>Trimestral</span>
+                <span class="square">
+                    <span name="forma_pago_mensual">&nbsp;</span>
+                    <span name="forma_pago_trimestral" hidden>&nbsp;</span>
+                    <span name="forma_pago_semestral" hidden>x</span>
+                    <span name="forma_pago_anual" hidden>&nbsp;</span>
+                </span>
+                <span>Semestral</span>
+                <span class="square">
+                    <span name="forma_pago_mensual">&nbsp;</span>
+                    <span name="forma_pago_trimestral" hidden>&nbsp;</span>
+                    <span name="forma_pago_semestral" hidden>&nbsp;</span>
+                    <span name="forma_pago_anual" hidden>x</span>
+                </span>
+                <span>Anual</span>
+            </td>
+        </tr>
+    </table>
+    <h2 class="table_title">INFORMACIÓN DEL AFILIADO (Sólo si es Diferente al Tomador)</h2>
+    <table class="table_class">
+        <tr>
+            <td class="small_text border_right" colspan="2">
+                <p>Tipo de identificación</p>
+            </td>
+            <td class="small_text border_right" colspan="3">
+                <p>Número de Identificación</p>
+            </td>
+            <td class="small_text" colspan="2">
+                <p>Razón Social y/o Nombres y Apellidos (Primero Nombres, luego Apellidos)</p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td colspan="2" class="small_text border_right">
+                <p>
+                    <span class="square">
+                        <span name="tipo_id_afiliado_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_cc">x</span>
+                        <span name="tipo_id_afiliado_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>C.C</span>
+                    <span class="square">
+                        <span name="tipo_id_afiliado_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_cc">&nbsp;</span>
+                        <span name="tipo_id_afiliado_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_ti" hidden>x</span>
+                    </span>
+                    <span>T.I</span>
+                    <span class="square">
+                        <span name="tipo_id_afiliado_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_cc">&nbsp;</span>
+                        <span name="tipo_id_afiliado_ce" hidden>x</span>
+                        <span name="tipo_id_afiliado_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>C.E</span>
+                    <span class="square">
+                        <span name="tipo_id_afiliado_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_nit" hidden>x</span>
+                        <span name="tipo_id_afiliado_cc">&nbsp;</span>
+                        <span name="tipo_id_afiliado_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>NIT</span>
+                    <span class="square">
+                        <span name="tipo_id_afiliado_ife" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_pa" hidden>x</span>
+                        <span name="tipo_id_afiliado_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_cc">&nbsp;</span>
+                        <span name="tipo_id_afiliado_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>P.A</span>
+                    <span class="square">
+                        <span name="tipo_id_afiliado_ife" hidden>x</span>
+                        <span name="tipo_id_afiliado_pa" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_nit" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_cc">&nbsp;</span>
+                        <span name="tipo_id_afiliado_ce" hidden>&nbsp;</span>
+                        <span name="tipo_id_afiliado_ti" hidden>&nbsp;</span>
+                    </span>
+                    <span>IFE</span>
+                </p>
+            </td>
+            <td class="small_text border_right" colspan="3">
+                <p class="input_field">
+                    <span name="tipo_id_afiliado_ife" hidden>
+                        <span name="num_id_afiliado_ife"></span>
+                    </span>
+                    <span name="tipo_id_afiliado_pa" hidden>
+                        <span name="num_id_afiliado_pa"></span>
+                    </span>
+                    <span name="tipo_id_afiliado_nit" hidden>
+                        <span name="num_id_afiliado_nit"></span>
+                    </span>
+                    <span name="tipo_id_afiliado_cc">
+                        <span name="num_id_afiliado_cc"></span>
+                    </span>
+                    <span name="tipo_id_afiliado_ce" hidden>
+                        <span name="num_id_afiliado_ce"></span>
+                    </span>
+                    <span name="tipo_id_afiliado_ti" hidden>
+                        <span name="num_id_afiliado_ti"></span>
+                    </span>
+                </p>
+            </td>
+            <td class="small_text " colspan="2">
+                <p class="input_field"><span name="razon_social_afiliado"></span></p>
+            </td>
+        </tr>
+    </table>
+    <table class="table_class">
+        <tr>
+            <td class="small_text border_right">
+                <p>Sexo</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Estado civil</p>
+            </td>
+            <td class="small_text border_right" colspan="2">
+                <p>Número de hijos</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Ciudad Correspondencia</p>
+            </td>
+            <td class="small_text">
+                <p>Departamento Correspondencia</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span class="square">
+                        <span name="sexo_afiliado_f">x</span>
+                        <span name="sexo_afiliado_m" hidden>&nbsp;</span>
+                    </span>
+                    <span>F</span>
+                    <span class="square">
+                        <span name="sexo_afiliado_f">&nbsp;</span>
+                        <span name="sexo_afiliado_m" hidden>x</span>
+                    </span>
+                    <span>M</span>
+                </p>
+            </td>
+            <td colspan="2" class="small_text border_right">
+                <p class="input_field">
+                    <span class="square">
+                        <span name="estado_civil_afiliado_soltero">x</span>
+                        <span name="estado_civil_afiliado_casado" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_separado" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_union" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_viudo" hidden>&nbsp;</span>
+                    </span>
+                    <span>Soltero(a)</span>
+                    <span class="square">
+                        <span name="estado_civil_afiliado_soltero">&nbsp;</span>
+                        <span name="estado_civil_afiliado_casado" hidden>x</span>
+                        <span name="estado_civil_afiliado_separado" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_union" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_viudo" hidden>&nbsp;</span>
+                    </span>
+                    <span>Casado(a)</span>
+                    <span class="square">
+                        <span name="estado_civil_afiliado_soltero">&nbsp;</span>
+                        <span name="estado_civil_afiliado_casado" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_separado" hidden>x</span>
+                        <span name="estado_civil_afiliado_union" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_viudo" hidden>&nbsp;</span>
+                    </span>
+                    <span>Separado(a)</span>
+                    <span class="square">
+                        <span name="estado_civil_afiliado_soltero">&nbsp;</span>
+                        <span name="estado_civil_afiliado_casado" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_separado" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_union" hidden>x</span>
+                        <span name="estado_civil_afiliado_viudo" hidden>&nbsp;</span>
+                    </span>
+                    <span>Unión Libre</span>
+                    <span class="square">
+                        <span name="estado_civil_afiliado_soltero">&nbsp;</span>
+                        <span name="estado_civil_afiliado_casado" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_separado" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_union" hidden>&nbsp;</span>
+                        <span name="estado_civil_afiliado_viudo" hidden>x</span>
+                    </span>
+                    <span>Viudo(a)</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field"><span name="num_hijos_afiliado"></span></p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field"><span name="ciudad_afiliado"></span></p>
+            </td>
+            <td class="small_text">
+                <p class="input_field"><span name="departamento_afiliado"></span></p>
+            </td>
+        </tr>
+    </table>
+    <table class="table_class">
+        <tr>
+            <td class="small_text border_right">
+                <p>Teléfono (Sin indicativo)</p>
+            </td>
+            <td colspan="3" class="small_text border_right">
+                <p>Dirección Correspondencia</p>
+            </td>
+            <td class="small_text ">
+                <p>Tipo Dirección</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr class="border_bottom">
+            <td class="small_text border_right">
+                <p class="small_text input_field"><span name="telefono_afiliado"></span></p>
+            </td>
+            <td colspan="3" class="small_text border_right">
+                <p class="small_text input_field"><span name="direccion_afiliado"></span></p>
+            </td>
+            <td class="small_text">
+                <p class="small_text">
+                    <span class="square">
+                        <span name="tipo_direccion_afiliado_res">x</span>
+                        <span name="tipo_direccion_afiliado_trabajo" hidden>&nbsp;</span>
+                        <span name="tipo_direccion_afiliado_otra" hidden>&nbsp;</span>
+                    </span>
+                    <span>Residencia</span>
+                    <span class="square">
+                        <span name="tipo_direccion_afiliado_res">&nbsp;</span>
+                        <span name="tipo_direccion_afiliado_trabajo" hidden>x</span>
+                        <span name="tipo_direccion_afiliado_otra" hidden>&nbsp;</span>
+                    </span>
+                    <span>Trabajo</span>
+                    <span class="square">
+                        <span name="tipo_direccion_afiliado_res">&nbsp;</span>
+                        <span name="tipo_direccion_afiliado_trabajo" hidden>&nbsp;</span>
+                        <span name="tipo_direccion_afiliado_otra" hidden>x</span>
+                    </span>
+                    <span>Otra</span>
+                </p>
+            </td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="small_text border_right">
+                <p>Fecha de ingreso a la Empresa (AAAAMMDD)</p>
+            </td>
+            <td colspan="2" class="small_text border_right">
+                <p>Plan</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Urgencias por Enfermedad *</p>
+            </td>
+            <td class="small_text">
+                <p>Consulta Externa *</p>
+            </td>
+            <td></td>
+        </tr>
+        <tr>
+            <td class="small_text border_right">
+                <p class="small_text input_field"><span name="fecha_ingreso_empresa"></span></p>
+            </td>
+            <td colspan="2" class="small_text border_right">
+                <p class="small_text input_field"><span name="plan_afiliado"></span></p>
+            </td>
+            <td class="small_text border_right">
+                <p class="small_text">
+                    <span class="square">
+                        <span name="urgencias_s">x</span>
+                        <span name="urgencias_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="urgencias_s">&nbsp;</span>
+                        <span name="urgencias_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </p>
+            </td>
+            <td>
+                <p class="small_text">
+                    <span class="square">
+                        <span name="consulta_externa_s">x</span>
+                        <span name="consulta_externa_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="consulta_externa_s">&nbsp;</span>
+                        <span name="consulta_externa_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </p>
+            </td>
+            <td></td>
+        </tr>
+    </table>
+    <span class="small_text">*Si se toman estos amparos opcionales, se entenderán para todo el grupo asegurado</span>
+    <h2 class="table_title">INFORMACIÓN DEL ASEGURADO PRINCIPAL Y SOLICITANTES <small>(Si el empleado desea asegurarse
+            debe relacionarse en el cuadro que aparece a continuación)</small></h2>
+    <table class="table_class">
+        <tr class="border_top border_bottom">
+            <td></td>
+            <td class="small_text border_right">
+                <p>Tipo de identificación</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Número de identificación</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Nombres y Apellidos (Primero Nombres, luego Apellidos)</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Parentesco con afiliado</p>
+            </td>
+            <td class="small_text">
+                <p>Fecha Nacimiento (AAAAMMDD)</p>
+            </td>
+        </tr>
+        <!-- solicitantes -->
+        <tr class="border_bottom">
+            <td>
+                <p>1.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_1_cc">C.C.</span>
+                    <span name="tipo_id_solicitante_1_ce" hidden>C.E.</span>
+                    <span name="tipo_id_solicitante_1_ti" hidden>T.I</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_1_cc">
+                        <span name="numero_cc_solicitante_1"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_1_ce" hidden>
+                        <span name="numero_ce_solicitante_1"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_1_ti" hidden>
+                        <span name="numero_ti_solicitante_1"></span>
+                    </span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="nombre_solicitante_1"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="parentesco_solicitante_1"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="nacimiento_solicitante_1"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>2.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_2_cc">C.C.</span>
+                    <span name="tipo_id_solicitante_2_ce" hidden>C.E.</span>
+                    <span name="tipo_id_solicitante_2_ti" hidden>T.I</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_2_cc">
+                        <span name="numero_cc_solicitante_2"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_2_ce" hidden>
+                        <span name="numero_ce_solicitante_2"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_2_ti" hidden>
+                        <span name="numero_ti_solicitante_2"></span>
+                    </span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="nombre_solicitante_2"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="parentesco_solicitante_2"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="nacimiento_solicitante_2"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>3.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_3_cc">C.C.</span>
+                    <span name="tipo_id_solicitante_3_ce" hidden>C.E.</span>
+                    <span name="tipo_id_solicitante_3_ti" hidden>T.I</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_3_cc">
+                        <span name="numero_cc_solicitante_3"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_3_ce" hidden>
+                        <span name="numero_ce_solicitante_3"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_3_ti" hidden>
+                        <span name="numero_ti_solicitante_3"></span>
+                    </span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="nombre_solicitante_3"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="parentesco_solicitante_3"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="nacimiento_solicitante_3"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>4.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_4_cc">C.C.</span>
+                    <span name="tipo_id_solicitante_4_ce" hidden>C.E.</span>
+                    <span name="tipo_id_solicitante_4_ti" hidden>T.I</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_4_cc">
+                        <span name="numero_cc_solicitante_4"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_4_ce" hidden>
+                        <span name="numero_ce_solicitante_4"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_4_ti" hidden>
+                        <span name="numero_ti_solicitante_4"></span>
+                    </span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="nombre_solicitante_4"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="parentesco_solicitante_4"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="nacimiento_solicitante_4"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>5.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_5_cc">C.C.</span>
+                    <span name="tipo_id_solicitante_5_ce" hidden>C.E.</span>
+                    <span name="tipo_id_solicitante_5_ti" hidden>T.I</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_5_cc">
+                        <span name="numero_cc_solicitante_5"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_5_ce" hidden>
+                        <span name="numero_ce_solicitante_5"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_5_ti" hidden>
+                        <span name="numero_ti_solicitante_5"></span>
+                    </span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="nombre_solicitante_5"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="parentesco_solicitante_5"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="nacimiento_solicitante_5"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>6.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_6_cc">C.C.</span>
+                    <span name="tipo_id_solicitante_6_ce" hidden>C.E.</span>
+                    <span name="tipo_id_solicitante_6_ti" hidden>T.I</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="tipo_id_solicitante_6_cc">
+                        <span name="numero_cc_solicitante_6"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_6_ce" hidden>
+                        <span name="numero_ce_solicitante_6"></span>
+                    </span>
+                    <span name="tipo_id_solicitante_6_ti" hidden>
+                        <span name="numero_ti_solicitante_6"></span>
+                    </span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="nombre_solicitante_6"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="parentesco_solicitante_6"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="nacimiento_solicitante_6"></span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <table class="table_class">
+        <tr class="border_bottom">
+            <td></td>
+            <td style="padding:5px 0px;" class="small_text border_right">
+                <p>Sexo</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Estado civil</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Peso en Kg</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Estatura en Cms.</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Ocupación/Cargo/Oficio.</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Nombre de la eps a la que está afiliado</p>
+            </td>
+            <td class="small_text border_right">
+                <p>
+                    Cotizante (C) o Beneficiario (B) para su Renta
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p>
+                    Valor asegurado de su renta ideal
+                </p>
+            </td>
+            <td class="small_text">
+                <p>Emergencia médica (Emi)</p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>1.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="sexo_solicitante_1_f">Femenino</span>
+                    <span name="sexo_solicitante_1_m" hidden>Masculino</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estado_civil_solicitante_1"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="peso_solicitante_1"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estatura_solicitante_1"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="cargo_solicitante_1"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="eps_solicitante_1"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p>
+                    <span class="square">
+                        <span name="cotizante_solicitante_1_c">x</span>
+                        <span name="cotizante_solicitante_1_b" hidden>&nbsp;</span>
+                    </span>
+                    <span>C</span>
+                    <span class="square">
+                        <span name="cotizante_solicitante_1_c">&nbsp;</span>
+                        <span name="cotizante_solicitante_1_b" hidden>x</span>
+                    </span>
+                    <span>B</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="valor_renta_solicitante_1"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p>
+                    <span class="square">
+                        <span name="emergencia_medica_1_s">x</span>
+                        <span name="emergencia_medica_1_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="emergencia_medica_1_s">&nbsp;</span>
+                        <span name="emergencia_medica_1_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>2.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="sexo_solicitante_2_f">Femenino</span>
+                    <span name="sexo_solicitante_2_m" hidden>Masculino</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estado_civil_solicitante_2"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="peso_solicitante_2"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estatura_solicitante_2"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="cargo_solicitante_2"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="eps_solicitante_2"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p>
+                    <span class="square">
+                        <span name="cotizante_solicitante_2_c">x</span>
+                        <span name="cotizante_solicitante_2_b" hidden>&nbsp;</span>
+                    </span>
+                    <span>C</span>
+                    <span class="square">
+                        <span name="cotizante_solicitante_2_c">&nbsp;</span>
+                        <span name="cotizante_solicitante_2_b" hidden>x</span>
+                    </span>
+                    <span>B</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="valor_renta_solicitante_2"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p>
+                    <span class="square">
+                        <span name="emergencia_medica_2_s">x</span>
+                        <span name="emergencia_medica_2_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="emergencia_medica_2_s">&nbsp;</span>
+                        <span name="emergencia_medica_2_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>3.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="sexo_solicitante_3_f">Femenino</span>
+                    <span name="sexo_solicitante_3_m" hidden>Masculino</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estado_civil_solicitante_3"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="peso_solicitante_3"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estatura_solicitante_3"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="cargo_solicitante_3"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="eps_solicitante_3"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p>
+                    <span class="square">
+                        <span name="cotizante_solicitante_3_c">x</span>
+                        <span name="cotizante_solicitante_3_b" hidden>&nbsp;</span>
+                    </span>
+                    <span>C</span>
+                    <span class="square">
+                        <span name="cotizante_solicitante_3_c">&nbsp;</span>
+                        <span name="cotizante_solicitante_3_b" hidden>x</span>
+                    </span>
+                    <span>B</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="valor_renta_solicitante_3"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p>
+                    <span class="square">
+                        <span name="emergencia_medica_3_s">x</span>
+                        <span name="emergencia_medica_3_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="emergencia_medica_3_s">&nbsp;</span>
+                        <span name="emergencia_medica_3_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>4.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="sexo_solicitante_4_f">Femenino</span>
+                    <span name="sexo_solicitante_4_m" hidden>Masculino</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estado_civil_solicitante_4"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="peso_solicitante_4"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estatura_solicitante_4"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="cargo_solicitante_4"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="eps_solicitante_4"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p>
+                    <span class="square">
+                        <span name="cotizante_solicitante_4_c">x</span>
+                        <span name="cotizante_solicitante_4_b" hidden>&nbsp;</span>
+                    </span>
+                    <span>C</span>
+                    <span class="square">
+                        <span name="cotizante_solicitante_4_c">&nbsp;</span>
+                        <span name="cotizante_solicitante_4_b" hidden>x</span>
+                    </span>
+                    <span>B</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="valor_renta_solicitante_4"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p>
+                    <span class="square">
+                        <span name="emergencia_medica_4_s">x</span>
+                        <span name="emergencia_medica_4_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="emergencia_medica_4_s">&nbsp;</span>
+                        <span name="emergencia_medica_4_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>5.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="sexo_solicitante_5_f">Femenino</span>
+                    <span name="sexo_solicitante_5_m" hidden>Masculino</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estado_civil_solicitante_5"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="peso_solicitante_5"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estatura_solicitante_5"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="cargo_solicitante_5"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="eps_solicitante_5"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p>
+                    <span class="square">
+                        <span name="cotizante_solicitante_5_c">x</span>
+                        <span name="cotizante_solicitante_5_b" hidden>&nbsp;</span>
+                    </span>
+                    <span>C</span>
+                    <span class="square">
+                        <span name="cotizante_solicitante_5_c">&nbsp;</span>
+                        <span name="cotizante_solicitante_5_b" hidden>x</span>
+                    </span>
+                    <span>B</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="valor_renta_solicitante_5"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p>
+                    <span class="square">
+                        <span name="emergencia_medica_5_s">x</span>
+                        <span name="emergencia_medica_5_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="emergencia_medica_5_s">&nbsp;</span>
+                        <span name="emergencia_medica_5_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <td>
+                <p>6.</p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="sexo_solicitante_6_f">Femenino</span>
+                    <span name="sexo_solicitante_6_m" hidden>Masculino</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estado_civil_solicitante_6"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="peso_solicitante_6"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="estatura_solicitante_6"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="cargo_solicitante_6"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="eps_solicitante_6"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p>
+                    <span class="square">
+                        <span name="cotizante_solicitante_6_c">x</span>
+                        <span name="cotizante_solicitante_6_b" hidden>&nbsp;</span>
+                    </span>
+                    <span>C</span>
+                    <span class="square">
+                        <span name="cotizante_solicitante_6_c">&nbsp;</span>
+                        <span name="cotizante_solicitante_6_b" hidden>x</span>
+                    </span>
+                    <span>B</span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="valor_renta_solicitante_6"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p>
+                    <span class="square">
+                        <span name="emergencia_medica_6_s">x</span>
+                        <span name="emergencia_medica_6_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="emergencia_medica_6_s">&nbsp;</span>
+                        <span name="emergencia_medica_6_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <span>SEGUROS DE VIDA SURAMERICANA S.A. ADVIERTE QUE EL ASEGURADO DEBE CUMPLIR LO DISPUESTO POR EL ARTICULO 14,
+        NUMERAL 12 DEL DECRETO 1485 DE 1994.</span>
+
+        <p style="padding: 5px 0px;" class="small_text border_bottom border_top">
+            <span>Solicita continuidad</span>
+            <span class="square">
+                <span name="solicita_continuacion_s">x</span>
+                <span name="solicita_continuacion_n" hidden>&nbsp;</span>
+            </span>
+            <span>Si</span>
+            <span class="square">
+                <span name="solicita_continuacion_s" >&nbsp;</span>
+                <span name="solicita_continuacion_n" hidden>x</span>
+            </span>
+            <span>No</span>
+            <span>Entidad / Póliza / Contrato. (SURAMERICANA sólo estudiará la continuidad a partir del momento en que se
+                presente la certificación de la Compañía anterior)</span>
+        </p>
+
+    <h2 class="table_title">DECLARACIÓN DE ASEGURABILIDAD</h2>
+    <p style="padding: 5px 0px;" class="border_top small_text">
+        <span>
+            1. Si alguno de los solicitantes ha tenido alguno
+            de los siguientes síntomas y/o le han diagnosticado y/o padecido alguna enfermedad, subraye el padecimiento
+            y el nombre del médico tratante y la fecha
+        </span>
+    </p>
+
+    <table class="table_class">
+        <span name="afectado_1_n"></span>
+        <span name="afectado_1_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>A. Enfermedad o insuficiencia del corazón, Presión arterial alta o baja, Trombosis arterial o venosa,
+                        Aneurismas, Várices, Arterioesclerosis</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_1">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_1"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_1"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+        <span name="afectado_2_n"></span>
+        <span name="afectado_2_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>B. Enfermedades de los pulmones, Enfisema, Neumonía, Asma, Tuberculosis, Tos crónica, Gripas
+                        frecuentes.</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_2">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_2"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_2"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+        <span name="afectado_3_n"></span>
+        <span name="afectado_3_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>C. Enfermedades gastrointestinales, Reflujo gastroesofágico, Esófago, Gastritis, Ulcera péptica,
+                        Enfermedades del colon, Duodeno, Recto, Hemorroides, Hígado, Vesícula o Páncreas</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_3">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_3"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_3"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+        <span name="afectado_4_n"></span>
+        <span name="afectado_4_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>D. Enfermedades genitourinarias, de la vejiga, Riñones, Uréteres, Próstata, Testículos, Útero,
+                        Ovarios, Cálculos, Infecciones, Albúmina o Sangre en orina, Incontinencia urinaria, Quistes.</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_4">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_4"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_4"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+        <span name="afectado_5_n"></span>
+        <span name="afectado_5_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>E. Diabetes, Enfermedades de la Tiroides, Cáncer, Linfoma, Leucemia, SIDA, Inmunodeficiencia o
+                        cualquier enfermedad de la sangre.</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_5">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_5"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_5"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+        <span name="afectado_6_n"></span>
+        <span name="afectado_6_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>F. Enfermedades neurológicas, Derrame cerebral, Esclerosis Múltiple, Convulsiones, Meningitis, Trauma
+                        craneano, Enfermedad o retardo mental.</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_6">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_6"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_6"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+        <span name="afectado_7_n"></span>
+        <span name="afectado_7_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>G. Enfermedades óseas, Musculares, Articulares, Artritis, Gota, Afecciones de la columna, Juanetes,
+                        Fracturas.</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_7">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_7"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_7"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+        <span name="afectado_8_n"></span>
+        <span name="afectado_8_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>H. Otitis o Amigdalitis frecuentes, Rinitis, Sinusitis, Enfermedades de los ojos, de la piel, de los
+                        senos</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_8">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_8"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_8"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+        <span name="afectado_9_n"></span>
+        <span name="afectado_9_s">
+            <tr class="border_top border_bottom small_text">
+                <td colspan="2" style="padding: 5px 0px;">
+                    <p>I. Cualquier otra enfermedad, síntoma o padecimiento diferente a los anteriormente definidos o en el
+                        último mes ha tenido signos o síntomas como: Secreciones, dolor de garganta, tos, fiebre, dificultad
+                        para respirar, o existe sospecha de contagio o infección o le han diagnosticado el COVID-19
+                        (Coronavirus).</p>
+                </td>
+                <td></td>
+            </tr>
+            <tr class="border_bottom">
+                <td class="small_text border_right" rowspan="2">
+                    <p>
+                        Número de solicitante afectado
+                        <span class="square">
+                            <span name="num_solicitante_afectado_9">&nbsp;&nbsp;</span>
+                        </span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Nombre del Médico Tratante</p>
+                </td>
+                <td class="small_text">
+                    <p>Fecha AAAAMMDD</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field">
+                        <span name="nombre_medico_tratante_9"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fecha_diag_9"></span>
+                    </p>
+                </td>
+            </tr>
+        </span>
+    </table>
+
+    <p style="padding: 5px 0px;" class="small_text">
+        <span>
+            2. ¿Alguno de los Solicitantes practica como aficionado o profesional, ocasional o regularmente alguno de
+            estos
+            deportes: toreo automovilismo, motociclismo, vuelo en cometa, Paracaidismo,
+            boxeo, montañismo, vuelo en ultralivianos, planeadores, cometas y/o similares, bungee jumping, puenting,
+            rafting, downhill, buceo o otros deportes denominados de alto riesgo y/o extremos?.
+            En caso afirmativo detalle.
+        </span>
+    </p>
+
+    <table class="table_class">
+        <span name="deporte_n"></span>
+            <span name="deporte_s">
+            <tr class="border_top">
+                <td class="small_text border_right">
+                    <p>Quien</p>
+                </td>
+                <td class="small_text border_right">
+                    <p>Deporte</p>
+                </td>
+                <td class="small_text">
+                    <p>Frecuencia</p>
+                </td>
+            </tr>
+            <tr>
+                <td class="small_text border_right">
+                    <p class="input_field"><span name="quien_deporte"></span></p>
+                </td>
+                <td class="small_text border_right">
+                    <p class="input_field"><span name="que_deporte"></span></p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field"><span name="frecuencia_deporte"></span></p>
+                </td>
+            </tr>
+        </span>
+        </table>
+
+    <table class="table_class">
+        <tr class="border_top">
+            <td colspan="3" class="small_text border_right">
+                <p style="padding: 5px 0px;" class="small_text">
+                    <span>
+                        3. Subraye si alguno de los solicitantes es fumador y/o consume bebidas embriagantes
+                    </span>
+                </p>
+            </td>
+            <td colspan="3" class="small_text">
+                <p style="padding: 5px 0px;" class="small_text">
+                    <span>
+                        4. ¿Alguno de los solicitantes ha consumido o consume marihuana, cocaína u otra droga narcótica?
+                    </span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+            <span name="fumador_n"></span>
+            <span name="fumador_s">
+                <td class="small_text">
+                    <p>Nombres, Cantidad, Frecuencia</p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="fumador_info"></span>
+                    </p>
+                </td>
+                <td class="small_text border_right">
+                    <span class="square">
+                        <span name="fumador_s">x</span>
+                        <span name="fumador_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="fumador_s">&nbsp;</span>
+                        <span name="fumador_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </td>
+            </span>
+            <span name="drogas_n"></span>
+            <span name="drogas_s">
+                <td class="small_text">
+                    <p>Nombre</p>
+                </td>
+                <td class="small_text">
+                    <p class="input_field">
+                        <span name="drogas_nombre"></span>
+                    </p>
+                </td>
+                <td class="small_text">
+                    <span class="square">
+                        <span name="drogas_s">x</span>
+                        <span name="drogas_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="drogas_s">&nbsp;</span>
+                        <span name="drogas_n" hidden>x</span>
+                    </span>
+                    <span>No</span>
+                </td>
+            </span>
+        </tr>
+        <tr>
+            <td class="small_text" colspan="3">
+                <p><span>5. ¿Alguna de las solicitantes se encuentra en estado de embarazo?</span></p>
+            </td>
+        </tr>
+        <tr class="border_bottom">
+                <td colspan="2" class="small_text">
+                    <p>Nombre</p>
+                </td>
+                <td colspan="2" class="small_text">
+                    <p class="input_field">
+                        <span name="embarazada_1_nombre"></span>
+                    </p>
+                </td>
+                <td colspan="2" class="small_text">
+                    <span class="square">
+                        <span name="embarazo_1_s">x</span>
+                        <span name="embarazo_1_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="embarazo_1_s" hidden>x</span>
+                        <span name="embarazo_1_n">&nbsp;</span>
+                    </span>
+                    <span>No</span>
+                </td>
+        </tr>
+        <tr>
+                <td colspan="2" class="small_text">
+                    <p>Nombre</p>
+                </td>
+                <td colspan="2" class="small_text">
+                    <p class="input_field">
+                        <span name="embarazada_2_nombre"></span>
+                    </p>
+                </td>
+                <td colspan="2" class="small_text">
+                    <span class="square">
+                        <span name="embarazo_2_s">x</span>
+                        <span name="embarazo_2_n" hidden>&nbsp;</span>
+                    </span>
+                    <span>Si</span>
+                    <span class="square">
+                        <span name="embarazo_2_s" hidden>x</span>
+                        <span name="embarazo_2_n">&nbsp;</span>
+                    </span>
+                    <span>No</span>
+                </td>
+        </tr>
+    </table>
+    <br />
+    <table class="table_class">
+        <tr class="border_top border_bottom">
+            <td class="small_text border_right">
+                <p>Fecha Última Citología AAAAMMDD</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Nombre Médico Tratante (Ginecólogo) (Primero Nombres luego Apellidos)</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Fecha Última Citología AAAAMMDD</p>
+            </td>
+            <td class="small_text">
+                <p>Nombre Médico Tratante (Ginecólogo) (Primero Nombres luego Apellidos)</p>
+            </td>
+        </tr>
+        <tr>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="fecha_ultima_citologia_1"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="medico_ultima_citologia_1"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="fecha_ultima_citologia_2"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="medico_ultima_citologia_2"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_top">
+            <td colspan="2" class="small_text border_right">
+                <p>Explique Resultados Citología o Padecimiento</p>
+            </td>
+            <td colspan="2" class="small_text">
+                <p>Explique Resultados Citología o Padecimiento</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="small_text border_right">
+                <p class="input_field">
+                    <span name="explicacion_ultima_citologia_1"></span>
+                </p>
+            </td>
+            <td colspan="2" class="small_text">
+                <p class="input_field">
+                    <span name="explicacion_ultima_citologia_2"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_top">
+            <td colspan="2" class="small_text border_right">
+                <p>Indique Centro Médico de Citología</p>
+            </td>
+            <td colspan="2" class="small_text">
+                <p>Indique Centro Médico de Citología</p>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" class="small_text border_right">
+                <p class="input_field">
+                    <span name="centro_ultima_citologia_1"></span>
+                </p>
+            </td>
+            <td colspan="2" class="small_text">
+                <p class="input_field">
+                    <span name="centro_ultima_citologia_2"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_top">
+            <td colspan="4" class="small_text">
+                <p>Observaciones:</p>
+            </td>
+        </tr>
+        <tr class="border_top">
+            <td colspan="4" class="small_text">
+                <p class="input_field">
+                    <span name="observaciones"></span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <h2 class="table_title">HISTORIA DEL GRUPO FAMILIAR</h2>
+    <hr style="border-top: 1px solid #174285; margin: 5px 0px;" />
+    <p style="margin: 0;">
+        Alguno de sus hermanos (as), padre o madre sufre o ha sufrido alguno de los siguientes padecimientos:
+        Enfermedades del corazón, hipertensión, enfermedad cerebrovascular, cáncer, enfermedades renales,
+        hiperlipidemias, diabetes o cualquier enfermedad hereditaria? en caso afirmativo favor diligenciar el siguiente
+        espacio:
+    </p>
+    <span class="square">
+        <span name="historia_familiar_s">x</span>
+        <span name="historia_familiar_n" hidden>&nbsp;</span>
+    </span>
+    <span>Si</span>
+    <span class="square">
+        <span name="historia_familiar_s" hidden>x</span>
+        <span name="historia_familiar_n">&nbsp;</span>
+    </span>
+    <span>No</span>
+    <br />
+    <br />
+    <table class="table_class">
+        <tr class="border_top">
+            <td class="small_text border_right">
+                <p>Parentesco</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Con Cuál Asegurado? (Indique Nro del Asegurado)</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Enfermedad</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Edad al Diagnóstico Enfermedad</p>
+            </td>
+            <td class="small_text border_right">
+                <p>Causa de la muerte (Si Aplica)</p>
+            </td>
+            <td class="small_text">
+                <p>Edad al Morir</p>
+            </td>
+        </tr>
+        <tr class="border_top">
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_1_parentesco"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_1_nro_asegurado"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_1_enfermedad"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_1_edad_diagnostico"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_1_causa_muerte"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="familiar_1_edad_muerte"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_top">
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_2_parentesco"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_2_nro_asegurado"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_2_enfermedad"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_2_edad_diagnostico"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_2_causa_muerte"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="familiar_2_edad_muerte"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_top">
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_3_parentesco"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_3_nro_asegurado"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_3_enfermedad"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_3_edad_diagnostico"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_3_causa_muerte"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="familiar_3_edad_muerte"></span>
+                </p>
+            </td>
+        </tr>
+        <tr class="border_top">
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_4_parentesco"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_4_nro_asegurado"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_4_enfermedad"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_4_edad_diagnostico"></span>
+                </p>
+            </td>
+            <td class="small_text border_right">
+                <p class="input_field">
+                    <span name="familiar_4_causa_muerte"></span>
+                </p>
+            </td>
+            <td class="small_text">
+                <p class="input_field">
+                    <span name="familiar_4_edad_muerte"></span>
+                </p>
+            </td>
+        </tr>
+    </table>
+    <br />
+    <p style="text-align: justify;">
+        CLÁUSULA DE GARANTIA:<br />
+        Como asegurado principal garantizo que las declaraciones sobre mi estado de salud y el de mi grupo familiar son
+        exactas y verídicas, acepto que serán parte integrante del contrato de seguro, igualmente si existiera
+        reticencia sobre los hechos o circunstancias que de ser conocidas por la Suramericana la hubieran retraído de
+        celebrar el contrato, acepto la nulidad del contrato de seguro.
+    </p>
+    <p style="text-align: justify;">
+        AUTORIZACIÓN PARA SOLICITUD DE HISTORIA CLÍNICA Y OTROS:<br />
+        En cumplimiento de las previsiones de la ley 23 de 1981, de la resolución 1995 de 1999 del Ministerio de
+        Protección Social y demás normatividad sobre la materia, autorizo de manera particular a cualquier institución
+        hospitalaria, médico, empleado de hospital o cualquier otra persona que nos haya atendido a mí o a cualquiera de
+        los integrantes del grupo asegurado o haya sido consultada por nosotros para que suministre a
+        SEGUROS DE VIDA SURAMERICANA S.A. copia de nuestra historia clínica o de cualquier información que ella
+        considere necesaria para la contratación del presente seguro o para la atención de cualquier reclamación
+        que afecte cualquiera de los amparos del mismo.
+    </p>
+    <p style="text-align: justify;">
+        Autorizo(amos) a SEGUROS DE VIDA SURAMERICANA S.A. para que con fines estadísticos de información entre las
+        compañías aseguradoras, consulte o transfiera datos con cualquiera de ellas o con otra entidad a que
+        me encuentre afiliado(s), que lo requiera en Colombia o en el exterior.<br />
+        Igualmente, autorizo(amos) para que consulte, informe y reporte a las centrales de riesgo que considere
+        necesarias o con cualquier otra entidad autorizada, nuestra información confidencial que resulte de todas las
+        operaciones que lleve(mos) a cabo con la póliza, bajo cualquier modalidad y de los demás servicios que surjan de
+        esta relación comercial o contrato que declaro(amos) conocer y aceptar en todas sus partes.
+    </p>
+    <p style="text-align: justify;">La presente solicitud no constituye aceptación de riesgo por parte de SEGUROS DE
+        VIDA SURAMERICANA S.A. hasta
+        tanto la Compañía se manifieste de manera expresa y en documento escrito.</p>
+    <p style="text-align: justify;">La no veracidad de la información consignada en este formulario, o el no
+        diligenciamiento del mismo en su
+        totalidad, producirá la nulidad del contrato de seguro y por lo tanto la no indemnización en caso de siniestro.
+    </p>
+    <p style="text-align: justify;">Declaro que mi ocupación y la del resto de los solicitantes está permitida por la
+        ley y que ni yo ni ninguno de
+        los solicitantes nos dedicamos a actividades ilícitas ni a la indigencia.</p>
+    <p style="text-align: justify;">Autorizo descuento de la prima del presente seguro por nómina</p>
+    <br />
+    <br />
+    <div class="align_left">
+        <p style="padding:5px; font-size:14px; width: 350px; border:1px solid #174285; color: #aaa">
+            Certifico(amos) que el Asesor me(nos) explico coberturas y exclusiones
+            del contrato, y la información contenida en la Solicitud.
+            Ademas haber leído, entendido y aceptado los textos incorporados en
+            esta Solicitud de Seguro.
+        </p>
+            <span name="afiliado_n"></span>
+            <span name="afiliado_s"></span>
+            <div id="firma_tomador" class="sign_margin"></div>
+        <p>
+            <span style="font-size: 14px;">Firma del Afiliado</span>
+            <br />
+        </p>
+    </div>
+    <br />
+    <div class="align_right">
+        <p class="input_field" style="border-bottom: 1px solid;">
+                <span name="tipo_id_tomador_ife" hidden>
+                    <span name="num_id_tomador_ife"></span>
+                </span>
+                <span name="tipo_id_tomador_pa" hidden>
+                    <span name="num_id_tomador_pa"></span>
+                </span>
+                <span name="tipo_id_tomador_nit" hidden>
+                    <span name="num_id_tomador_nit"></span>
+                </span>
+                <span name="tipo_id_tomador_cc">
+                    <span name="num_id_tomador_cc"></span>
+                </span>
+                <span name="tipo_id_tomador_ce" hidden>
+                    <span name="num_id_tomador_ce"></span>
+                </span>
+                <span name="tipo_id_tomador_ti" hidden>
+                    <span name="num_id_tomador_ti"></span>
+                </span>
+        </p>
+        <span style="font-size: 14px;">Número de Identificación Afiliado</span>
+        <p style="border-bottom: 1px solid;" class="input_field">
+            <span style="font-size: 14px;" name="fecha_diligenciamiento"></span>
+        </p>
+        <span style="font-size: 14px;">Fecha diligenciamiento formato</span>
+    </div>
+
+</div>

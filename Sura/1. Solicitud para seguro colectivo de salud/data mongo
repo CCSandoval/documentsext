@@ -1,0 +1,2536 @@
+{
+    _id: ObjectId('620c0a3ded0a939e6136749e'),
+    config: [
+        {
+            name: 'salud',
+            description: 'Seleccione el tipo de plan de salud',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Clásico',
+                    value: 'clasico'
+                },
+                {
+                    name: 'Global',
+                    value: 'global'
+                },
+                {
+                    name: 'Evoluciona',
+                    value: 'evoluciona'
+                }
+            ],
+            value: 'clasico'
+        },
+        {
+            name: 'tipo',
+            description: 'Seleccione el tipo de solicitud',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Nueva',
+                    value: 'nueva'
+                },
+                {
+                    name: 'Ingreso',
+                    value: 'ingreso'
+                },
+                {
+                    name: 'Modificación',
+                    value: 'modificacion'
+                },
+                {
+                    name: 'Renovación',
+                    value: 'renovacion'
+                }
+            ],
+            value: 'nueva'
+        },
+        {
+            name: 'num_formato',
+            description: 'Ingrese el numero de solicitud',
+            type: 'text'
+        },
+        {
+            name: 'num_poliza',
+            description: 'Ingrese el numero de póliza',
+            type: 'text'
+        },
+        {
+            name: 'oficina_radicacion',
+            description: 'Ingrese la oficina de radicación',
+            type: 'text'
+        },
+        {
+            name: 'codigo_asesor',
+            description: 'Ingrese el código del asesor',
+            type: 'text'
+        },
+        {
+            name: 'fecha_diligenciamiento',
+            description: 'Ingrese la fecha de diligenciamiento (AAAA/MM/DD)',
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'tipo_id_tomador',
+            description: 'Seleccione el tipo documento de identidad del tomador',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de Identidad',
+                    value: 'ti'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'NIT',
+                    value: 'nit'
+                },
+                {
+                    name: 'IFE',
+                    value: 'ife'
+                }
+            ],
+            value: 'cc'
+        },
+        {
+            name: 'num_id_tomador_cc',
+            description: 'Ingrese la cédula de ciudadanía del tomador',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_tomador',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'num_id_tomador_ce',
+            description: 'Ingrese la cédula de extranjería del tomador',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_tomador',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'num_id_tomador_ti',
+            description: 'Ingrese la tarjeta de identidad del tomador',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_tomador',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'num_id_tomador_pa',
+            description: 'Ingrese el pasaporte del tomador',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_id_tomador',
+                    v: 'pa'
+                }
+            ]
+        },
+        {
+            name: 'num_id_tomador_nit',
+            description: 'Ingrese el NIT del tomador',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_id_tomador',
+                    v: 'nit'
+                }
+            ]
+        },
+        {
+            name: 'num_id_tomador_ife',
+            description: 'Ingrese el IFE del tomador',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_id_tomador',
+                    v: 'ife'
+                }
+            ]
+        },
+        {
+            name: 'razon_social_tomador',
+            description: 'Ingrese el nombre o Razón Social del Tomador',
+            type: 'name'
+        },
+        {
+            name: 'enviar_a',
+            description: 'Seleccione a donde desea enviar la correspondencia del producto',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Residencia / Representante legal',
+                    value: 'rep'
+                },
+                {
+                    name: 'Trabajo / Oficina Principal',
+                    value: 'trabajo'
+                },
+                {
+                    name: 'Otra / Persona Contacto',
+                    value: 'otro'
+                }
+            ],
+            value: 'rep'
+        },
+        {
+            name: 'num_cotizacion',
+            description: 'Ingrese el número de cotización',
+            type: 'number'
+        },
+        {
+            name: 'inicio_vigencia',
+            description: 'Ingrese la fecha de inicio de la vigencia del seguro',
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'porc_comision',
+            description: 'Ingrese el porcentaje de comisión',
+            type: 'text'
+        },
+        {
+            name: 'forma_pago',
+            description: 'Seleccione la forma de pago del seguro',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Mensual',
+                    value: 'mensual'
+                },
+                {
+                    name: 'Trimestral',
+                    value: 'trimestral'
+                },
+                {
+                    name: 'Semestral',
+                    value: 'semestral'
+                },
+                {
+                    name: 'Anual',
+                    value: 'anual'
+                }
+            ],
+            value: 'mensual'
+        },
+        {
+            description: '¿El afiliado es una persona diferente al tomador?',
+            name: 'afiliado',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'tipo_id_afiliado',
+            description: 'Seleccione el tipo documento de identidad del afiliado',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadania',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de Identidad',
+                    value: 'ti'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'NIT',
+                    value: 'nit'
+                },
+                {
+                    name: 'IFE',
+                    value: 'ife'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_id_afiliado_cc',
+            description: 'Ingrese la cédula de ciudadanía del tomador',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_afiliado',
+                    v: 'cc'
+                },
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_id_afiliado_ce',
+            description: 'Ingrese la cédula de extranjería del tomador',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_afiliado',
+                    v: 'ce'
+                },
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_id_afiliado_ti',
+            description: 'Ingrese la tarjeta de identidad del tomador',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_afiliado',
+                    v: 'ti'
+                },
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_id_afiliado_pa',
+            description: 'Ingrese el pasaporte del tomador',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_id_afiliado',
+                    v: 'pa'
+                },
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_id_afiliado_nit',
+            description: 'Ingrese el NIT del tomador',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_id_afiliado',
+                    v: 'nit'
+                },
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_id_afiliado_ife',
+            description: 'Ingrese el IFE del tomador',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_id_afiliado',
+                    v: 'ife'
+                },
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_social_afiliado',
+            description: 'Ingrese el nombre o Razón Social del afiliado',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_afiliado',
+            description: 'Seleccione el sexo del afiliado',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f'
+        },
+        {
+            name: 'estado_civil_afiliado',
+            description: 'Seleccione el estado civil del afiliado',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Soltero',
+                    value: 'soltero'
+                },
+                {
+                    name: 'Casado',
+                    value: 'casado'
+                },
+                {
+                    name: 'Separado',
+                    value: 'separado'
+                },
+                {
+                    name: 'Union libre',
+                    value: 'union'
+                },
+                {
+                    name: 'Viudo',
+                    value: 'viudo'
+                }
+            ],
+            value: 'soltero'
+        },
+        {
+            name: 'num_hijos_afiliado',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            description: 'Ingrese el numero de hijos que tiene el afiliado'
+        },
+        {
+            name: 'ciudad_afiliado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            description: 'Ingrese la ciudad de correspondencia del afiliado'
+        },
+        {
+            name: 'departamento_afiliado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            description: 'Ingrese el departamento de correspondencia del afiliado'
+        },
+        {
+            name: 'telefono_afiliado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            description: 'Ingrese el numero de teléfono del afiliado'
+        },
+        {
+            name: 'direccion_afiliado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            description: 'Ingrese la dirección del afiliado'
+        },
+        {
+            name: 'tipo_direccion_afiliado',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Residencia',
+                    value: 'res'
+                },
+                {
+                    name: 'Trabajo',
+                    value: 'trabajo'
+                },
+                {
+                    name: 'Otra',
+                    value: 'otra'
+                }
+            ],
+            description: 'Ingrese la dirección del afiliado',
+            value: 'res'
+        },
+        {
+            name: 'fecha_ingreso_empresa',
+            description: 'Ingrese la fecha de ingreso a la empresa del afiliado (AAAA/MM/DD)',
+            type: 'text',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'plan_afiliado',
+            description: 'Ingrese el nombre del plan del afiliado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'urgencias',
+            description: '¿El afiliado aplica a urgencias por enfermedad?',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'consulta_externa',
+            description: '¿El afiliado aplica a consulta externa?',
+            type: 'clausula',
+            prereq: [
+                {
+                    k: 'afiliado',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'tipo_id_solicitante_1',
+            description: 'Seleccione el tipo de documento de identidad del primer solicitante',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula'
+        },
+        {
+            name: 'numero_cc_solicitante_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del primer solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_1',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'numero_ce_solicitante_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjeria del primer solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_1',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'numero_ti_solicitante_1',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del primer solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_1',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'nombre_solicitante_1',
+            type: 'name',
+            description: 'Ingrese el nombre del primer solicitante'
+        },
+        {
+            name: 'parentesco_solicitante_1',
+            type: 'name',
+            description: 'Ingrese el parentesco del primer solicitante'
+        },
+        {
+            name: 'nacimiento_solicitante_1',
+            type: 'name',
+            description: 'Ingrese la fecha de nacimiento del primer solicitante (AAAA/MM/DD)',
+            help: 'fecha'
+        },
+        {
+            name: 'tipo_id_solicitante_2',
+            description: 'Seleccione el tipo de documento de identidad del segundo solicitante',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula'
+        },
+        {
+            name: 'numero_cc_solicitante_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del segundo solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_2',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'numero_ce_solicitante_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjeria del segundo solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_2',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'numero_ti_solicitante_2',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del segundo solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_2',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'nombre_solicitante_2',
+            type: 'name',
+            description: 'Ingrese el nombre del segundo solicitante'
+        },
+        {
+            name: 'parentesco_solicitante_2',
+            type: 'name',
+            description: 'Ingrese el parentesco del segundo solicitante'
+        },
+        {
+            name: 'nacimiento_solicitante_2',
+            type: 'name',
+            description: 'Ingrese la fecha de nacimiento del segundo solicitante (AAAA/MM/DD)',
+            help: 'fecha'
+        },
+        {
+            name: 'tipo_id_solicitante_3',
+            description: 'Seleccione el tipo de documento de identidad del tercer solicitante',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula'
+        },
+        {
+            name: 'numero_cc_solicitante_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del tercer solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_3',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'numero_ce_solicitante_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjeria del tercer solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_3',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'numero_ti_solicitante_3',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del tercer solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_3',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'nombre_solicitante_3',
+            type: 'name',
+            description: 'Ingrese el nombre del tercer solicitante'
+        },
+        {
+            name: 'parentesco_solicitante_3',
+            type: 'name',
+            description: 'Ingrese el parentesco del tercer solicitante'
+        },
+        {
+            name: 'nacimiento_solicitante_3',
+            type: 'name',
+            description: 'Ingrese la fecha de nacimiento del tercer solicitante (AAAA/MM/DD)',
+            help: 'fecha'
+        },
+        {
+            name: 'tipo_id_solicitante_4',
+            description: 'Seleccione el tipo de documento de identidad del cuarto solicitante',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula'
+        },
+        {
+            name: 'numero_cc_solicitante_4',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del cuarto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_4',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'numero_ce_solicitante_4',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjeria del cuarto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_4',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'numero_ti_solicitante_4',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del cuarto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_4',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'nombre_solicitante_4',
+            type: 'name',
+            description: 'Ingrese el nombre del cuarto solicitante'
+        },
+        {
+            name: 'parentesco_solicitante_4',
+            type: 'name',
+            description: 'Ingrese el parentesco del cuarto solicitante'
+        },
+        {
+            name: 'nacimiento_solicitante_4',
+            type: 'name',
+            description: 'Ingrese la fecha de nacimiento del cuarto solicitante (AAAA/MM/DD)',
+            help: 'fecha'
+        },
+        {
+            name: 'tipo_id_solicitante_5',
+            description: 'Seleccione el tipo de documento de identidad del quinto solicitante',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula'
+        },
+        {
+            name: 'numero_cc_solicitante_5',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del quinto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_5',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'numero_ce_solicitante_5',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjeria del quinto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_5',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'numero_ti_solicitante_5',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del quinto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_5',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'nombre_solicitante_5',
+            type: 'name',
+            description: 'Ingrese el nombre del quinto solicitante'
+        },
+        {
+            name: 'parentesco_solicitante_5',
+            type: 'name',
+            description: 'Ingrese el parentesco del quinto solicitante'
+        },
+        {
+            name: 'nacimiento_solicitante_5',
+            type: 'name',
+            description: 'Ingrese la fecha de nacimiento del quinto solicitante (AAAA/MM/DD)',
+            help: 'fecha'
+        },
+        {
+            name: 'tipo_id_solicitante_6',
+            description: 'Seleccione el tipo de documento de identidad del sexto solicitante',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            type: 'clausula'
+        },
+        {
+            name: 'numero_cc_solicitante_6',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del sexto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_6',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'numero_ce_solicitante_6',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjeria del sexto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_6',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'numero_ti_solicitante_6',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del sexto solicitante',
+            prereq: [
+                {
+                    k: 'tipo_id_solicitante_6',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'nombre_solicitante_6',
+            type: 'name',
+            description: 'Ingrese el nombre del sexto solicitante'
+        },
+        {
+            name: 'parentesco_solicitante_6',
+            type: 'name',
+            description: 'Ingrese el parentesco del sexto solicitante'
+        },
+        {
+            name: 'nacimiento_solicitante_6',
+            type: 'name',
+            description: 'Ingrese la fecha de nacimiento del sexto solicitante (AAAA/MM/DD)',
+            help: 'fecha'
+        },
+        {
+            name: 'sexo_solicitante_1',
+            description: 'Seleccione el sexo del primer solicitante',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f',
+            type: 'clausula'
+        },
+        {
+            name: 'estado_civil_solicitante_1',
+            type: 'name',
+            description: 'Ingrese el estado civil del primer solicitante'
+        },
+        {
+            name: 'peso_solicitante_1',
+            type: 'number',
+            description: 'Ingrese el peso del primer solicitante en kilogramos'
+        },
+        {
+            name: 'estatura_solicitante_1',
+            type: 'number',
+            description: 'Ingrese la estatura del primer solicitante en centimetros'
+        },
+        {
+            name: 'cargo_solicitante_1',
+            type: 'text',
+            description: 'Ingrese el cargo del primer solicitante'
+        },
+        {
+            name: 'eps_solicitante_1',
+            type: 'text',
+            description: 'Ingrese la eps del primer solicitante'
+        },
+        {
+            name: 'cotizante_solicitante_1',
+            description: '¿El solicitante es beneficiario o cotizante?',
+            options: [
+                {
+                    name: 'Cotizante',
+                    value: 'c'
+                },
+                {
+                    name: 'Beneficiario',
+                    value: 'b'
+                }
+            ],
+            value: 'c',
+            type: 'clausula'
+        },
+        {
+            name: 'valor_renta_solicitante_1',
+            type: 'text',
+            description: 'Ingrese el valor asegurado de su renta ideal'
+        },
+        {
+            name: 'emergencia_medica_1',
+            description: '¿El solicitante aplica para Emergencia médica?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            type: 'clausula'
+        },
+        {
+            name: 'sexo_solicitante_2',
+            description: 'Seleccione el sexo del segundo solicitante',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f',
+            type: 'clausula'
+        },
+        {
+            name: 'estado_civil_solicitante_2',
+            type: 'name',
+            description: 'Ingrese el estado civil del segundo solicitante'
+        },
+        {
+            name: 'peso_solicitante_2',
+            type: 'number',
+            description: 'Ingrese el peso del segundo solicitante en kilogramos'
+        },
+        {
+            name: 'estatura_solicitante_2',
+            type: 'number',
+            description: 'Ingrese la estatura del segundo solicitante en centimetros'
+        },
+        {
+            name: 'cargo_solicitante_2',
+            type: 'text',
+            description: 'Ingrese el cargo del segundo solicitante'
+        },
+        {
+            name: 'eps_solicitante_2',
+            type: 'text',
+            description: 'Ingrese la eps del segundo solicitante'
+        },
+        {
+            name: 'cotizante_solicitante_2',
+            description: '¿El solicitante es beneficiario o cotizante?',
+            options: [
+                {
+                    name: 'Cotizante',
+                    value: 'c'
+                },
+                {
+                    name: 'Beneficiario',
+                    value: 'b'
+                }
+            ],
+            value: 'c',
+            type: 'clausula'
+        },
+        {
+            name: 'valor_renta_solicitante_2',
+            type: 'text',
+            description: 'Ingrese el valor asegurado de su renta ideal'
+        },
+        {
+            name: 'emergencia_medica_2',
+            description: '¿El solicitante aplica para Emergencia médica?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            type: 'clausula'
+        },
+        {
+            name: 'sexo_solicitante_3',
+            description: 'Seleccione el sexo del tercer solicitante',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f',
+            type: 'clausula'
+        },
+        {
+            name: 'estado_civil_solicitante_3',
+            type: 'name',
+            description: 'Ingrese el estado civil del tercer solicitante'
+        },
+        {
+            name: 'peso_solicitante_3',
+            type: 'number',
+            description: 'Ingrese el peso del tercer solicitante en kilogramos'
+        },
+        {
+            name: 'estatura_solicitante_3',
+            type: 'number',
+            description: 'Ingrese la estatura del tercer solicitante en centimetros'
+        },
+        {
+            name: 'cargo_solicitante_3',
+            type: 'text',
+            description: 'Ingrese el cargo del tercer solicitante'
+        },
+        {
+            name: 'eps_solicitante_3',
+            type: 'text',
+            description: 'Ingrese la eps del tercer solicitante'
+        },
+        {
+            name: 'cotizante_solicitante_3',
+            description: '¿El solicitante es beneficiario o cotizante?',
+            options: [
+                {
+                    name: 'Cotizante',
+                    value: 'c'
+                },
+                {
+                    name: 'Beneficiario',
+                    value: 'b'
+                }
+            ],
+            value: 'c',
+            type: 'clausula'
+        },
+        {
+            name: 'valor_renta_solicitante_3',
+            type: 'text',
+            description: 'Ingrese el valor asegurado de su renta ideal'
+        },
+        {
+            name: 'emergencia_medica_3',
+            description: '¿El solicitante aplica para Emergencia médica?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            type: 'clausula'
+        },
+        {
+            name: 'sexo_solicitante_4',
+            description: 'Seleccione el sexo del cuarto solicitante',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f',
+            type: 'clausula'
+        },
+        {
+            name: 'estado_civil_solicitante_4',
+            type: 'name',
+            description: 'Ingrese el estado civil del cuarto solicitante'
+        },
+        {
+            name: 'peso_solicitante_4',
+            type: 'number',
+            description: 'Ingrese el peso del cuarto solicitante en kilogramos'
+        },
+        {
+            name: 'estatura_solicitante_4',
+            type: 'number',
+            description: 'Ingrese la estatura del cuarto solicitante en centimetros'
+        },
+        {
+            name: 'cargo_solicitante_4',
+            type: 'text',
+            description: 'Ingrese el cargo del cuarto solicitante'
+        },
+        {
+            name: 'eps_solicitante_4',
+            type: 'text',
+            description: 'Ingrese la eps del cuarto solicitante'
+        },
+        {
+            name: 'cotizante_solicitante_4',
+            description: '¿El solicitante es beneficiario o cotizante?',
+            options: [
+                {
+                    name: 'Cotizante',
+                    value: 'c'
+                },
+                {
+                    name: 'Beneficiario',
+                    value: 'b'
+                }
+            ],
+            value: 'c',
+            type: 'clausula'
+        },
+        {
+            name: 'valor_renta_solicitante_4',
+            type: 'text',
+            description: 'Ingrese el valor asegurado de su renta ideal'
+        },
+        {
+            name: 'emergencia_medica_4',
+            description: '¿El solicitante aplica para Emergencia médica?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            type: 'clausula'
+        },
+        {
+            name: 'sexo_solicitante_5',
+            description: 'Seleccione el sexo del quinto solicitante',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f',
+            type: 'clausula'
+        },
+        {
+            name: 'estado_civil_solicitante_5',
+            type: 'name',
+            description: 'Ingrese el estado civil del quinto solicitante'
+        },
+        {
+            name: 'peso_solicitante_5',
+            type: 'number',
+            description: 'Ingrese el peso del quinto solicitante en kilogramos'
+        },
+        {
+            name: 'estatura_solicitante_5',
+            type: 'number',
+            description: 'Ingrese la estatura del quinto solicitante en centimetros'
+        },
+        {
+            name: 'cargo_solicitante_5',
+            type: 'text',
+            description: 'Ingrese el cargo del quinto solicitante'
+        },
+        {
+            name: 'eps_solicitante_5',
+            type: 'text',
+            description: 'Ingrese la eps del quinto solicitante'
+        },
+        {
+            name: 'cotizante_solicitante_5',
+            description: '¿El solicitante es beneficiario o cotizante?',
+            options: [
+                {
+                    name: 'Cotizante',
+                    value: 'c'
+                },
+                {
+                    name: 'Beneficiario',
+                    value: 'b'
+                }
+            ],
+            value: 'c',
+            type: 'clausula'
+        },
+        {
+            name: 'valor_renta_solicitante_5',
+            type: 'text',
+            description: 'Ingrese el valor asegurado de su renta ideal'
+        },
+        {
+            name: 'emergencia_medica_5',
+            description: '¿El solicitante aplica para Emergencia médica?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            type: 'clausula'
+        },
+        {
+            name: 'sexo_solicitante_6',
+            description: 'Seleccione el sexo del sexto solicitante',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f',
+            type: 'clausula'
+        },
+        {
+            name: 'estado_civil_solicitante_6',
+            type: 'name',
+            description: 'Ingrese el estado civil del sexto solicitante'
+        },
+        {
+            name: 'peso_solicitante_6',
+            type: 'number',
+            description: 'Ingrese el peso del sexto solicitante en kilogramos'
+        },
+        {
+            name: 'estatura_solicitante_6',
+            type: 'number',
+            description: 'Ingrese la estatura del sexto solicitante en centimetros'
+        },
+        {
+            name: 'cargo_solicitante_6',
+            type: 'text',
+            description: 'Ingrese el cargo del sexto solicitante'
+        },
+        {
+            name: 'eps_solicitante_6',
+            type: 'text',
+            description: 'Ingrese la eps del sexto solicitante'
+        },
+        {
+            name: 'cotizante_solicitante_6',
+            description: '¿El solicitante es beneficiario o cotizante?',
+            options: [
+                {
+                    name: 'Cotizante',
+                    value: 'c'
+                },
+                {
+                    name: 'Beneficiario',
+                    value: 'b'
+                }
+            ],
+            value: 'c',
+            type: 'clausula'
+        },
+        {
+            name: 'valor_renta_solicitante_6',
+            type: 'text',
+            description: 'Ingrese el valor asegurado de su renta ideal'
+        },
+        {
+            name: 'emergencia_medica_6',
+            description: '¿El solicitante aplica para Emergencia médica?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            type: 'clausula'
+        },
+        {
+            name: 'solicita_continuacion',
+            description: '¿Se solicita continuidad?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            type: 'clausula'
+        },
+        {
+            name: 'afectado_1',
+            description: '¿Alguno de los solicitantes padece de Enfermedad o insuficiencia del corazón, Presión arterial alta o baja, Trombosis arterial o venosa, Aneurismas, Várices, Arterioesclerosis?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            type: 'clausula'
+        },
+        {
+            name: 'num_solicitante_afectado_1',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_1',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_1',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+                {
+                    k: 'afectado_1',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_1',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_1',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'afectado_2',
+            description: '¿Alguno de los solicitantes padece de Enfermedades de los pulmones, Enfisema, Neumonía, Asma, Tuberculosis, Tos crónica, Gripas frecuentes.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+        },
+        {
+            name: 'num_solicitante_afectado_2',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_2',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_2',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+                {
+                    k: 'afectado_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_2',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_2',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'afectado_3',
+            description: '¿Alguno de los solicitantes padece de Enfermedades gastrointestinales, Reflujo gastroesofágico, Esófago, Gastritis, Ulcera péptica, Enfermedades del colon, Duodeno, Recto, Hemorroides, Hígado, Vesícula o Páncreas?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+        },
+        {
+            name: 'num_solicitante_afectado_3',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_3',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_3',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+                {
+                    k: 'afectado_3',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_3',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_3',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'afectado_4',
+            description: '¿Alguno de los solicitantes padece de Enfermedades genitourinarias, de la vejiga, Riñones, Uréteres, Próstata, Testículos, Útero, Ovarios, Cálculos, Infecciones, Albúmina o Sangre en orina, Incontinencia urinaria, Quistes.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+        },
+        {
+            name: 'num_solicitante_afectado_4',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_4',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_4',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+                {
+                    k: 'afectado_4',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_4',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_4',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'afectado_5',
+            description: '¿Alguno de los solicitantes padece de Diabetes, Enfermedades de la Tiroides, Cáncer, Linfoma, Leucemia, SIDA, Inmunodeficiencia o cualquier enfermedad de la sangre.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+        },
+        {
+            name: 'num_solicitante_afectado_5',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_5',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_5',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+                {
+                    k: 'afectado_5',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_5',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_5',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'afectado_6',
+            description: '¿Alguno de los solicitantes padece de Enfermedades neurológicas, Derrame cerebral, Esclerosis Múltiple, Convulsiones, Meningitis, Trauma craneano, Enfermedad o retardo mental.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+        },
+        {
+            name: 'num_solicitante_afectado_6',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_6',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_6',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+            
+                {
+                    k: 'afectado_6',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_6',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_6',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'afectado_7',
+            description: '¿Alguno de los solicitantes padece de Enfermedades óseas, Musculares, Articulares, Artritis, Gota, Afecciones de la columna, Juanetes, Fracturas.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+        },
+        {
+            name: 'num_solicitante_afectado_7',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_7',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_7',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+                {
+                    k: 'afectado_7',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_7',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_7',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'afectado_8',
+            description: '¿Alguno de los solicitantes padece de Otitis o Amigdalitis frecuentes, Rinitis, Sinusitis, Enfermedades de los ojos, de la piel, de los senos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+        },
+        {
+            name: 'num_solicitante_afectado_8',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_8',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_8',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+                {
+                    k: 'afectado_8',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_8',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_8',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'afectado_9',
+            description: '¿Alguno de los solicitantes padece de Cualquier otra enfermedad, síntoma o padecimiento diferente a los anteriormente definidos o en el último mes ha tenido signos o síntomas como: Secreciones, dolor de garganta, tos, fiebre, dificultad para respirar, o existe sospecha de contagio o infección o le han diagnosticado el COVID-19 (Coronavirus).?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+        },
+        {
+            name: 'num_solicitante_afectado_9',
+            description: 'Ingrese el número correspondiente al solicitante afectado',
+            prereq: [
+                {
+                    k: 'afectado_9',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            name: 'nombre_medico_tratante_9',
+            description: 'Ingrese el nombre del médico tratante',
+            prereq: [
+                {
+                    k: 'afectado_9',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            name: 'fecha_diag_9',
+            description: 'Ingrese la fecha de diagnóstico (AAAA/MM/DD)',
+            prereq: [
+                {
+                    k: 'afectado_9',
+                    v: 's'
+                }
+            ],
+            type: 'text',
+            help: 'fecha'
+        },
+        {
+            name: 'deporte',
+            description: '¿Alguno de los Solicitantes practica como aficionado o profesional, ocasional o regularmente alguno de estos deportes: toreo automovilismo, motociclismo, vuelo en cometa, Paracaidismo, boxeo, montañismo, vuelo en ultralivianos, planeadores, cometas y/o similares, bungee jumping, puenting, rafting, downhill, buceo o otros deportes denominados de alto riesgo y/o extremos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'quien_deporte',
+            description: 'Ingrese el solicitante que practica el deporte',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'deporte',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'que_deporte',
+            description: 'Ingrese el deporte que practica el solicitante',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'deporte',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'frecuencia_deporte',
+            description: 'Ingrese la frecuencia con la que el solicitante practica el deporte indicado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'deporte',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fumador',
+            description: '¿Alguno de los Solicitantes es fumador y/o consume bebidas embriagantes?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'fumador_info',
+            description: 'Ingrese el nombre del solicitante, la cantidad en la que consume las sustancias indicadas y la frecuencia con la que las consume',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'fumador',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'drogas',
+            description: '¿Alguno de los solicitantes ha consumido o consume marihuana, cocaína u otra droga narcótica?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'drogas_nombre',
+            description: 'Ingrese el nombre del solicitante que consume o ha consumido las sustancias indicadas',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'drogas',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'embarazo_1',
+            description: '¿Alguna de las solicitantes se encuentra en estado de embarazo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'embarazada_1_nombre',
+            type: 'text',
+            description: 'Ingrese el nombre de la solicitante en estado de embarazo',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fecha_ultima_citologia_1',
+            type: 'text',
+            description: 'Ingrese la fecha de la última citologia (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'medico_ultima_citologia_1',
+            type: 'text',
+            description: 'Ingrese el nombre del medico tratante',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'explicacion_ultima_citologia_1',
+            type: 'text',
+            description: 'Ingrese una breve explicación de los resultados de la ultima citologia',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'centro_ultima_citologia_1',
+            type: 'text',
+            description: 'Ingrese el centro medico donde se llevó a cabo la ultima citologia',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'embarazo_2',
+            description: '¿Alguna de las solicitantes se encuentra en estado de embarazo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'embarazada_2_nombre',
+            type: 'text',
+            description: 'Ingrese el nombre de la solicitante en estado de embarazo',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                },
+                {
+                    k: 'embarazo_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fecha_ultima_citologia_2',
+            type: 'text',
+            description: 'Ingrese la fecha de la última citologia (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                },
+                {
+                    k: 'embarazo_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'medico_ultima_citologia_2',
+            type: 'text',
+            description: 'Ingrese el nombre del medico tratante',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                },
+                {
+                    k: 'embarazo_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'explicacion_ultima_citologia_2',
+            type: 'text',
+            description: 'Ingrese una breve explicación de los resultados de la ultima citologia',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                },
+                {
+                    k: 'embarazo_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'centro_ultima_citologia_2',
+            type: 'text',
+            description: 'Ingrese el centro medico donde se llevó a cabo la ultima citologia',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                },
+                {
+                    k: 'embarazo_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'observaciones',
+            type: 'text',
+            description: 'Ingrese las observaciones que tenga referente a la(s) solicitante(s) en estado de embarazo',
+            prereq: [
+                {
+                    k: 'embarazo_1',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'historia_familiar',
+            description: '¿Alguno de sus hermanos (as), padre o madre sufre o ha sufrido alguno de los siguientes padecimientos: Enfermedades del corazón, hipertensión, enfermedad cerebrovascular, cáncer, enfermedades renales, hiperlipidemias, diabetes o cualquier enfermedad hereditaria?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'familiar_1_parentesco',
+            description: 'Ingrese el parentesco del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_nro_asegurado',
+            description: 'Indique el numero de asegurado del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_enfermedad',
+            description: 'Indique la enfermedad de la que padece el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_edad_diagnostico',
+            description: 'Indique la edad en la que fue diagnosticado el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_causa_muerte',
+            description: 'Indique la causa de muerte del familiar (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_edad_muerte',
+            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_parentesco',
+            description: 'Ingrese el parentesco del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_nro_asegurado',
+            description: 'Indique el numero de asegurado del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_enfermedad',
+            description: 'Indique la enfermedad de la que padece el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_edad_diagnostico',
+            description: 'Indique la edad en la que fue diagnosticado el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_causa_muerte',
+            description: 'Indique la causa de muerte del familiar (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_edad_muerte',
+            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_parentesco',
+            description: 'Ingrese el parentesco del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_nro_asegurado',
+            description: 'Indique el numero de asegurado del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_enfermedad',
+            description: 'Indique la enfermedad de la que padece el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_edad_diagnostico',
+            description: 'Indique la edad en la que fue diagnosticado el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_causa_muerte',
+            description: 'Indique la causa de muerte del familiar (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_edad_muerte',
+            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_parentesco',
+            description: 'Ingrese el parentesco del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_nro_asegurado',
+            description: 'Indique el numero de asegurado del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_enfermedad',
+            description: 'Indique la enfermedad de la que padece el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_edad_diagnostico',
+            description: 'Indique la edad en la que fue diagnosticado el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_causa_muerte',
+            description: 'Indique la causa de muerte del familiar (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_edad_muerte',
+            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'correo_tomador',
+            type: 'text',
+            description: 'Ingrese el correo del afiliado',
+        },
+    ],
+    help: {
+        fecha: 'Ejemplo: 2022/02/16'
+    },
+    preFill: [],
+    sign: [
+        ''
+    ],
+signatureProfile: [
+        {
+            type: 'firma_tomador',
+            email: 'correo_tomador',
+            name: 'razon_social_tomador',
+            identification: 'num_id_tomador_ife|num_id_tomador_pa|num_id_tomador_nit|num_id_tomador_cc|num_id_tomador_ce|num_id_tomador_ti'
+        },
+    ],
+    operation: [],
+    name: 'SOLICITUD PARA SEGURO COLECTIVO DE SALUD',
+    preBuildData: [],
+    preBuild: false,
+    price: 0,
+    build: 9
+}
