@@ -1,0 +1,135 @@
+{
+  _id: ObjectId('620ad877ed0a939e6136749a'),
+  config: [
+      {
+          name: 'representante_legal',
+          description: 'Ingrese el nombre del representante legal de la suscriptora',
+          type: 'name'
+      },
+      {
+          name: 'domicilio_rep',
+          description: 'Ingrese el domicilio del representante legal de la suscriptora',
+          type: 'text'
+      },
+      {
+          name: 'cedula_rep',
+          description: 'Ingrese el número de cédula del representante legal de la suscriptora',
+          type: 'number'
+      },
+      {
+          name: 'empresa',
+          description: 'Ingrese el nombre de la empresa suscriptora',
+          type: 'name'
+      },
+      {
+          name: 'nit_empresa',
+          description: 'Ingrese el NIT de la empresa suscriptora',
+          type: 'text'
+      },
+      {
+          name: 'domicilio_empresa',
+          description: 'Ingrese el domicilio de la empresa suscriptora',
+          type: 'name'
+      },
+      {
+          name: 'otra_opcion_ans',
+          description: '¿Desea añadir otro elemento?',
+          options: [
+              {
+                  name: 'No',
+                  value: 'n'
+              },
+              {
+                  name: 'Si',
+                  value: 's'
+              }
+          ],
+          value: 'n',
+          type: 'clausula'
+      },
+      {
+          name: 'otra_opcion_ans_texto',
+          description: 'Escriba el elemento que desea agregar al ANS',
+          type: 'text',
+          prereq: [
+              {
+                  k: 'otra_opcion_ans',
+                  v: 's'
+              }
+          ]
+      },
+      {
+          name: 'municipio_empresa',
+          description: 'Ingrese el municipio donde se encuentra la empresa suscriptora',
+          type: 'text'
+      },
+      {
+          name: 'telefono_noti',
+          description: 'Ingrese el número de teléfono dónde deben llegar las notificaciones',
+          type: 'text'
+      },
+      {
+          name: 'correo_rep',
+          description: 'Ingrese el correo electrónico dónde deben llegar las notificaciones',
+          type: 'text'
+      },
+      {
+          name: 'fecha_firma',
+          description: 'Seleccione la fecha de firma',
+          type: 'date'
+      }
+  ],
+  sign: [
+      'representante_legal',
+      'domicilio_rep',
+      'cedula_rep',
+      'empresa',
+      'nit_empresa',
+      'domicilio_empresa',
+      'otra_opcion_ans_texto',
+      'municipio_empresa',
+      'telefono_noti',
+      'correo_rep',
+      'fecha_firma'
+  ],
+  preFill: [
+      {
+          name: 'correo_mico',
+          value: 'juan.rincon@micontrato.co'
+      },
+      {
+          name: 'nombre_mico',
+          value: 'JUAN JOSÉ RINCÓN ESCOBAR'
+      },
+      {
+          name: 'cedula_mico',
+          value: '1.017.234.101'
+      }
+  ],
+  signatureProfile: [
+      {
+          type: 'firma_rep',
+          email: 'correo_rep',
+          name: 'representante_legal',
+          identification: 'cedula_rep'
+      },
+      {
+          type: 'firma_mico',
+          email: 'correo_mico',
+          name: 'nombre_mico',
+          identification: 'cedula_mico'
+      }
+  ],
+  custom: {
+      header: {
+          contents: '<div><p style="font-family: serif; color:#aaa">{{page}}</p></div>',
+          height: '5mm'
+      }
+  },
+  operation: [],
+  name: 'CONTRATO DE SUSCRIPCIÓN A LA PLATAFORMA MICONTRATO.CO - Mensual',
+  preBuildData: [],
+  preBuild: false,
+  price: 0,
+  build: 2
+}
