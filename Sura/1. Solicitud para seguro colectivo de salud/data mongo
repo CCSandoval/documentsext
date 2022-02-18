@@ -2517,7 +2517,14 @@
     },
     preFill: [],
     sign: [
-        ''
+        'correo_tomador',
+        'razon_social_tomador',
+        'num_id_tomador_ife',
+        'num_id_tomador_pa',
+        'num_id_tomador_nit',
+        'num_id_tomador_cc',
+        'num_id_tomador_ce',
+        'num_id_tomador_ti'
     ],
 signatureProfile: [
         {
@@ -2532,5 +2539,5 @@ signatureProfile: [
     preBuildData: [],
     preBuild: false,
     price: 0,
-    build: 9
+    build: 10
 }
