@@ -67,230 +67,6 @@
             type: 'text'
         },
         {
-            description: '¿Desea ingresar un segundo beneficiario?',
-            name: 'segundo_beneficiario',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Si',
-                    value: 's'
-                }
-            ],
-            value: 'n',
-            type: 'clausula'
-        },
-        {
-            description: 'Ingrese el nombre del segundo beneficiario',
-            name: 'nombre_segundo_beneficiario',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                }
-            ],
-            type: 'name',
-            help: 'name'
-        },
-        {
-            description: 'Seleccione el tipo de documento de identidad del segundo beneficiario',
-            name: 'tipo_id_ben_2',
-            options: [
-                {
-                    name: 'Cédula de Ciudadanía',
-                    value: 'cc'
-                },
-                {
-                    name: 'Cédula de Extranjería',
-                    value: 'ce'
-                },
-                {
-                    name: 'Pasaporte',
-                    value: 'pa'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                }
-            ],
-            value: 'cc',
-            type: 'clausula'
-        },
-        {
-            description: 'Ingrese el número de cédula de ciudadanía del segundo beneficiario',
-            name: 'cc_beneficiario_2',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tipo_id_ben_2',
-                    v: 'cc'
-                }
-            ],
-            type: 'number'
-        },
-        {
-            description: 'Ingrese el número de cédula de extranjería del segundo beneficiario',
-            name: 'ce_beneficiario_2',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tipo_id_ben_2',
-                    v: 'ce'
-                }
-            ],
-            type: 'number'
-        },
-        {
-            description: 'Ingrese el pasaporte del segundo beneficiario',
-            name: 'pa_beneficiario_2',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tipo_id_ben_2',
-                    v: 'pa'
-                }
-            ],
-            type: 'text'
-        },
-        {
-            description: '¿Desea ingresar un tercer beneficiario?',
-            name: 'tercer_beneficiario',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Si',
-                    value: 's'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
-        },
-        {
-            description: 'Ingrese el nombre del tercer beneficiario',
-            name: 'nombre_tercer_beneficiario',
-            type: 'name',
-            help: 'name',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tercer_beneficiario',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            description: 'Seleccione el tipo de documento de identidad del tercer beneficiario',
-            name: 'tipo_id_ben_3',
-            options: [
-                {
-                    name: 'Cédula de Ciudadanía',
-                    value: 'cc'
-                },
-                {
-                    name: 'Cédula de Extranjería',
-                    value: 'ce'
-                },
-                {
-                    name: 'Pasaporte',
-                    value: 'pa'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tercer_beneficiario',
-                    v: 's'
-                }
-            ],
-            value: 'cc',
-            type: 'clausula'
-        },
-        {
-            description: 'Ingrese el número de cédula de ciudadanía del tercer beneficiario',
-            name: 'cc_beneficiario_3',
-            type: 'number',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tercer_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tipo_id_ben_3',
-                    v: 'cc'
-                }
-            ]
-        },
-        {
-            description: 'Ingrese el número de cédula de extranjería del tercer beneficiario',
-            name: 'ce_beneficiario_3',
-            type: 'number',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tercer_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tipo_id_ben_3',
-                    v: 'ce'
-                }
-            ]
-        },
-        {
-            description: 'Ingrese el pasaporte del tercer beneficiario',
-            name: 'pa_beneficiario_3',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tercer_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tipo_id_ben_3',
-                    v: 'pa'
-                }
-            ]
-        },
-        {
             description: 'Ingrese el número de acta',
             name: 'numero_acta',
             type: 'text',
@@ -339,54 +115,16 @@
             name: 'correo_beneficiario_1',
             type: 'text'
         },
-        {
-            description: 'Ingrese el correo del segundo beneficiario',
-            name: 'correo_beneficiario_2',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            description: 'Ingrese el correo del tercer beneficiario',
-            name: 'correo_beneficiario_3',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'segundo_beneficiario',
-                    v: 's'
-                },
-                {
-                    k: 'tercer_beneficiario',
-                    v: 's'
-                }
-            ]
-        }
     ],
     operation: [],
     sign: [
         'correo_beneficiario_1',
-        'correo_beneficiario_2',
-        'correo_beneficiario_3',
         'numero_contrato',
         'nombre_primer_beneficiario',
-        'nombre_segundo_beneficiario',
-        'nombre_tercer_beneficiario',
         'tipo_id_ben_1',
-        'tipo_id_ben_2',
-        'tipo_id_ben_3',
         'cc_beneficiario_1',
         'ce_beneficiario_1',
         'pa_beneficiario_1',
-        'cc_beneficiario_2',
-        'ce_beneficiario_2',
-        'pa_beneficiario_2',
-        'cc_beneficiario_3',
-        'ce_beneficiario_3',
-        'pa_beneficiario_3',
         'numero_acta',
         'fecha_acta',
         'id_plan',
@@ -416,15 +154,15 @@
         },
         {
             name: 'nombre_enterritorio',
-            value: 'ANDREA CAROLINA ÁLVAREZ CASADIEGO'
+            value: 'CAROLINA OTILIA MONTEALEGRE CASTILLO'
         },
         {
             name: 'cc_enterritorio',
-            value: '52.864.280'
+            value: '20.928.128'
         },
         {
             name: 'correo_enterritorio',
-            value: 'alejosotodiaz@gmail.com'
+            value: 'cmonteal@enterritorio.gov.co'
         },
         {
             name: 'nombre_reviso_sena',
@@ -444,7 +182,7 @@
         },
         {
             name: 'nombre_reviso_enterritorio',
-            value: 'Ana Catalina Castro Lozano'
+            value: 'José Chinchilla Lemus'
         },
         {
             name: 'proyecto_sena_cc',
@@ -452,7 +190,7 @@
         },
         {
             name: 'proyecto_sena_email',
-            value: 'correoalejandrotest@gmail.com'
+            value: 'malejat@sena.edu.co'
         },
         {
             name: 'vobo_sena_cc',
@@ -460,7 +198,7 @@
         },
         {
             name: 'vobo_sena_email',
-            value: 'jeyson.agudelo@micontrato.co'
+            value: 'cgamba@sena.edu.co'
         },
         {
             name: 'reviso_sena_cc',
@@ -468,7 +206,7 @@
         },
         {
             name: 'reviso_sena_email',
-            value: 'jeyson.a9607@gmail.com'
+            value: 'ifvelazques@gmail.com'
         },
         {
             name: 'elaboro_enterritorio_cc',
@@ -476,7 +214,7 @@
         },
         {
             name: 'elaboro_enterritorio_email',
-            value: 'zapataguillermo096@gmail.com'
+            value: 'ccorena@enterritorio.gov.co'
         },
         {
             name: 'reviso_enterritorio_cc',
@@ -484,7 +222,7 @@
         },
         {
             name: 'reviso_enterritorio_email',
-            value: 'ariasjuan0796@gmail.com'
+            value: 'jchinchi@enterritorio.gov.co'
         }
     ],
     signatureProfile: [
@@ -493,22 +231,6 @@
             email: 'correo_beneficiario_1',
             identification: 'cc_beneficiario_1|ce_beneficiario_1|pa_beneficiario_1',
             type: 'firma_beneficiario_1',
-            order: 0,
-            role: 'SIGN'
-        },
-        {
-            name: 'nombre_segundo_beneficiario',
-            email: 'correo_beneficiario_2',
-            identification: 'cc_beneficiario_2|ce_beneficiario_2|pa_beneficiario_2',
-            type: 'firma_beneficiario_2',
-            order: 0,
-            role: 'SIGN'
-        },
-        {
-            name: 'nombre_tercer_beneficiario',
-            email: 'correo_beneficiario_3',
-            identification: 'cc_beneficiario_3|ce_beneficiario_3|pa_beneficiario_3',
-            type: 'firma_beneficiario_3',
             order: 0,
             role: 'SIGN'
         },
@@ -572,7 +294,7 @@
     company: ObjectId('61f08e3d69634500090350d4'),
     name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
     price: 5000,
-    build: 18,
+    build: 19,
     preBuild: false,
     custom: {
         footer: {

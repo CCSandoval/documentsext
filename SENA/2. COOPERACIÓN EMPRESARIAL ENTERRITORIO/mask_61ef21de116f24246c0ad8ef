@@ -41,7 +41,7 @@
 </style>
 
 <div class="page">
-  <div class="document_header">
+  <!-- <div class="document_header">
     <img
       src="https://static.micontrato.co/sena/escudo colombia.png"
       class="img"
@@ -62,7 +62,7 @@
       src="https://static.micontrato.co/sena/enterritorio.png"
       alt="enterritorio"
     />
-  </div>
+  </div> -->
   <p>
     <b>
       CONTRATO DE COOPERACIÓN EMPRESARIAL No.
@@ -70,22 +70,7 @@
       DERIVADO DEL CONTRATO INTERADMINISTRATIVO No. 217017, CELEBRADO ENTRE LA
       EMPRESA NACIONAL PROMOTORA DEL DESARROLLO TERRITORIAL - ENTERRITORIO - EL
       SERVICIO NACIONAL DE APRENDIZAJE - SENA Y
-      <span name="nombre_primer_beneficiario"
-        >____________________________</span
-      >
-      <span name="segundo_beneficiario_s" hidden
-        >,
-        <span name="nombre_segundo_beneficiario"
-          >____________________________</span
-        ></span
-      >
-      <span name="tercer_beneficiario_s" hidden
-        >,
-        <span name="nombre_tercer_beneficiario"
-          >____________________________</span
-        ></span
-      ></b
-    ><br /><br />
+      <b name="nombre_primer_beneficiario">____________________________</b></b><br /><br />
     Entre los suscritos a saber de una parte
     <b>HERNAN DARIO FUENTES SALDARRIAGA</b>, identificado con cédula de
     ciudadanía No. 3.349.902 expedida en Medellín, en su calidad de Director de
@@ -94,8 +79,8 @@
     No.1587 del 14 de septiembre de 2018, debidamente posesionado, como consta
     en el acta No. 179 de la misma fecha, de conformidad con las facultades
     conferidas, quien actúa en nombre y representación de <b>EL SENA</b>, y
-    <b>ANDREA CAROLINA ÁLVAREZ CASADIEGO</b>, identificada con Cédula de
-    Ciudadanía 52.864.280, expedida en Bogotá D.C., quien actúa en nombre y
+    <b>CAROLINA OTILIA MONTEALEGRE CASTILLO</b>, identificada con Cédula de
+    Ciudadanía 20.928.128, expedida en Bogotá D.C., quien actúa en nombre y
     representación de la
     <b>EMPRESA NACIONAL PROMOTORA DEL DESARROLLO TERRITORIAL - ENTerritorio</b>,
     Empresa Industrial y Comercial del Estado, de carácter financiero, del orden
@@ -111,62 +96,11 @@
     de diciembre de 2020, en adelante ENTerritorio, facultada para suscribir la
     liquidación de los contratos y convenios que celebre ENTerritorio, de una
     parte, y de otra parte
-    <b
-      ><span name="nombre_primer_beneficiario"
-        >____________________________</span
-      ></b
-    >, identificado(a) con
-    <span name="tipo_id_ben_1_cc"
-      >cédula de ciudadanía número
-      <b><span name="cc_beneficiario_1">___________________</span></b></span
-    >
-    <span name="tipo_id_ben_1_ce" hidden
-      >cédula de extranjería número
-      <b><span name="ce_beneficiario_1">___________________</span></b></span
-    >
-    <span name="tipo_id_ben_1_pa" hidden
-      >pasaporte número
-      <b><span name="pa_beneficiario_1">___________________</span></b></span
-    >
-    <span name="segundo_beneficiario_n"></span>
-    <span name="segundo_beneficiario_s" hidden>
-      <span name="tercer_beneficiario_s"></span>
-      <span name="tercer_beneficiario_n"> y </span>,
-      <span name="nombre_segundo_beneficiario"
-        >____________________________</span
-      >, identificado(a) con
-      <span name="tipo_id_ben_2_cc"
-        >cédula de ciudadanía número
-        <b><span name="cc_beneficiario_2">___________________</span></b>
-      </span>
-      <span name="tipo_id_ben_2_ce" hidden
-        >cédula de extranjería número
-        <b><span name="ce_beneficiario_2">___________________</span></b>
-      </span>
-      <span name="tipo_id_ben_2_pa" hidden
-        >pasaporte número
-        <b><span name="pa_beneficiario_2">___________________</span></b>
-      </span>
-      <span name="tercer_beneficiario_n"></span>
-      <span name="tercer_beneficiario_s" hidden>
-        y
-        <span name="nombre_tercer_beneficiario"
-          >____________________________</span
-        >, identificado(a) con
-        <span name="tipo_id_ben_3_cc"
-          >cédula de ciudadanía número
-          <b><span name="cc_beneficiario_3">___________________</span></b>
-        </span>
-        <span name="tipo_id_ben_3_ce" hidden
-          >cédula de extranjería número
-          <b><span name="ce_beneficiario_3">___________________</span></b>
-        </span>
-        <span name="tipo_id_ben_3_pa" hidden
-          >pasaporte número
-          <b><span name="pa_beneficiario_3">___________________</span></b>
-        </span>
-      </span></span
-    >, quien(es) de ahora en adelante se denominará (n) El (LOS)
+    <b name="nombre_primer_beneficiario">____________________________</b>, identificado(a) con
+    <b name="tipo_id_ben_1_cc">cédula de ciudadanía número <b name="cc_beneficiario_1">___________________</b></b>
+    <b name="tipo_id_ben_1_ce" hidden>cédula de extranjería número <b name="ce_beneficiario_1">___________________</b></b>
+    <b name="tipo_id_ben_1_pa" hidden>pasaporte número <b name="pa_beneficiario_1">___________________</b></b>,
+    quien(es) de ahora en adelante se denominará (n) El (LOS)
     <b>BENEFICIARIO(S)</b>, quien(es) declara(n), bajo gravedad de juramento,
     que no se encuentra(n) incurso(s) en ninguna causal de inhabilidad e
     incompatibilidad establecida por ley, la reglamentación vigente del Fondo
@@ -815,7 +749,7 @@
     <b>
       <br /><br /><br />
       <span>______________________________________</span> <br />
-      <span><b>ANDREA CAROLINA ÁLVAREZ CASADIEGO</b></span
+      <span><b>CAROLINA OTILIA MONTEALEGRE CASTILLO</b></span
       ><br />
       <span>Subgerente de Operaciones (E)</span><br />
     </b>
@@ -868,7 +802,7 @@
         </b>
       </b>
     </div>
-    <div name="segundo_beneficiario_n"></div>
+    <!-- <div name="segundo_beneficiario_n"></div>
     <div name="segundo_beneficiario_s" hidden class="right">
       <b>
         <br /><br /><br />
@@ -952,9 +886,19 @@
           <span name="correo_beneficiario_3">___________________</span></span
         >
       </b>
+    </div> -->
     </div>
-  </div>
 
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
+  <br />
   <br />
   <br />
   <p>
@@ -991,8 +935,8 @@
       </span>
       <br />
       <span>
-        Revisó &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Ana Catalina Castro Lozano,
-        Gerente de Unidad Grupo de Planeación Contractual
+        Revisó &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; José Chinchilla Lemus,
+        Gerente de Unidad Grupo de Gestión Contractual
       </span>
       <br />
     </small>
