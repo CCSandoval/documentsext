@@ -55,7 +55,7 @@
     ],
     custom: {
         header: {
-            contents: '<table><tr><td rowspan="2"><p><b>CONSENTIMIENTO INFORMADO</b></p></td><td><p>CÓDIGO: FO-S-02-42</p></td></tr><tr><td><p>VERSIÓN: 03</p></td></tr><tr><td><p>TALENTO HUMANO</p></td><td><p>VIGENCIA: 20-ABR-2017</p></td></tr></table>'
+            contents: '<table class="table_class"><tr><td rowspan="2"><p><b>CONSENTIMIENTO INFORMADO</b></p></td><td><p>CÓDIGO: FO-S-02-42</p></td></tr><tr><td><p>VERSIÓN: 03</p></td></tr><tr><td><p>TALENTO HUMANO</p></td><td><p>VIGENCIA: 20-ABR-2017</p></td></tr></table>'
         },
         footer: {
             contents: '<div><p style="text-align: center; font-family: serif">{{page}}</p></div>',

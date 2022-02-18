@@ -6,21 +6,17 @@
   .page {
     width: 21cm;
   }
-  table {
+  .table_class {
     width: 100%;
-  }
-  table,
-  th,
-  td {
     border: 1px solid;
     border-collapse: collapse;
-    font-size: 12px;
   }
-  td {
+  .table_class td{
+    border: 1px solid;
     padding: 5px;
     text-align: center;
   }
-  td > p {
+  .table_class td > p {
     text-align: center;
   }
 </style>

@@ -10,43 +10,22 @@
   table {
     width: 100%;
   }
-  table,
-  th,
-  td {
+  .table_class {
+    width: 100%;
     border: 1px solid;
     border-collapse: collapse;
   }
-  td {
-    font-family: sans-serif;
+  .table_class td {
+    border: 1px solid;
     padding: 5px;
+    text-align: center;
   }
-  td > p {
+  .table_class td > p {
     text-align: center;
   }
 </style>
 
 <div class="page">
-  <table>
-    <tr>
-      <td rowspan="2">
-        <p>
-          <b> CONSENTIMIENTO INFORMADO </b>
-        </p>
-      </td>
-      <td><p>CÓDIGO: FO-S-02-42</p></td>
-    </tr>
-    <tr>
-      <td>
-        <p>VERSIÓN: 03</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <p>TALENTO HUMANO</p>
-      </td>
-      <td><p>VIGENCIA: 20-ABR-2017</p></td>
-    </tr>
-  </table>
   <p style="text-align: center">
     <b>CONSENTIMIENTO INFORMADO</b>
   </p>

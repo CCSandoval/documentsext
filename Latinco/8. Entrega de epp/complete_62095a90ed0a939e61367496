@@ -3,24 +3,25 @@
     width: 21cm;
   }
   p,
-  span {
+  span,
+  b {
     font-family: sans-serif;
     text-align: justify;
   }
   table {
     width: 100%;
   }
-  table,
-  th,
-  td {
+  .table_class {
+    width: 100%;
     border: 1px solid;
     border-collapse: collapse;
   }
-  td {
-    font-family: sans-serif;
+  .table_class td {
+    border: 1px solid;
     padding: 5px;
+    text-align: center;
   }
-  td > p {
+  .table_class td > p {
     text-align: center;
   }
   .table_header {
@@ -29,7 +30,7 @@
 </style>
 
 <div class="page">
-  <table>
+  <table class="table_class">
     <tr>
       <td rowspan="2">
         <p>
@@ -54,7 +55,7 @@
     </tr>
   </table>
   <br />
-  <table>
+  <table class="table_class">
     <tr>
       <td>
         <b>NOMBRE TRABAJADOR:</b>
@@ -102,7 +103,7 @@
       PERSONAL.
     </b>
   </p>
-  <table>
+  <table class="table_class">
     <tr class="table_header">
       <td>
         <p><b>FECHA</b></p>

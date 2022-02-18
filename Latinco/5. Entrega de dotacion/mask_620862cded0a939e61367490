@@ -9,35 +9,27 @@
     text-align: justify;
   }
 
-  table {
+  .table_class {
     width: 100%;
-  }
-
-  table,
-  th,
-  td {
     border: 1px solid;
     border-collapse: collapse;
   }
-
-  td {
+  .table_class td{
+    border: 1px solid;
     padding: 5px;
-    /* text-align: center; */
+    text-align: center;
   }
-
-  td > p {
+  .table_class td > p {
     text-align: center;
   }
 </style>
 
 <div class="page">
-  <table>
+  <table class="table_class">
     <tr>
       <td rowspan="2">
         <p>
-          <b
-            >ENTREGA DE DOTACIÓN</b
-          >
+          <b>ENTREGA DE DOTACIÓN</b>
         </p>
       </td>
       <td>CÓDIGO: FO-S-02-12</td>
@@ -51,7 +43,7 @@
       <td>
         <p>TALENTO HUMANO</p>
       </td>
-      <td>VIGENCIA: 22-ENE-2022</td>
+      <td><p>VIGENCIA: 22-ENE-2022</p></td>
     </tr>
   </table>
   <br />
