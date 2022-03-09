@@ -95,26 +95,15 @@
             removeText: true
         },
         {
-            description: 'Ingrese el dia del mes en que se firma el contrato',
-            name: 'dias_firma',
-            type: 'number'
-        },
-        {
-            description: 'Ingrese el mes en que se firma el contrato',
-            name: 'mes_firma',
-            type: 'text'
-        },
-        {
-            description: 'Ingrese el año en que se firma el contrato',
-            name: 'anio_firma',
-            type: 'text',
-            help: 'anio'
+            description: 'Seleccione la fecha en la que se firma el contrato',
+            name: 'fecha_firma',
+            type: 'date'
         },
         {
             description: 'Ingrese el correo del primer beneficiario',
             name: 'correo_beneficiario_1',
             type: 'text'
-        },
+        }
     ],
     operation: [],
     sign: [
@@ -150,7 +139,7 @@
         },
         {
             name: 'correo_sena',
-            value: 'alejosotodiaz@hotmail.com'
+            value: 'hernan.fuentes@sena.edu.co'
         },
         {
             name: 'nombre_enterritorio',
@@ -182,7 +171,7 @@
         },
         {
             name: 'nombre_reviso_enterritorio',
-            value: 'José Chinchilla Lemus'
+            value: 'Mónica Duarte Ortiz'
         },
         {
             name: 'proyecto_sena_cc',
@@ -206,7 +195,7 @@
         },
         {
             name: 'reviso_sena_email',
-            value: 'ifvelazques@gmail.com'
+            value: 'lfvelazques@gmail.com'
         },
         {
             name: 'elaboro_enterritorio_cc',
@@ -222,7 +211,7 @@
         },
         {
             name: 'reviso_enterritorio_email',
-            value: 'jchinchi@enterritorio.gov.co'
+            value: 'mduarte1@enterritorio.gov.co'
         }
     ],
     signatureProfile: [
@@ -294,17 +283,14 @@
     company: ObjectId('61f08e3d69634500090350d4'),
     name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
     price: 5000,
-    build: 19,
+    build: 24,
     preBuild: false,
     custom: {
         footer: {
             contents: '<div class="document_footer">Página {{page}} de {{pages}}</div>',
             height: '5mm'
         },
-        header: {
-            contents: '',
-            height: '10mm'
-        }
+        noShowHeader: true
     },
     preBuildData: []
 }

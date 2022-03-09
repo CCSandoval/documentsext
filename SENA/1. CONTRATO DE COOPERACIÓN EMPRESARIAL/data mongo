@@ -101,7 +101,6 @@
         'nombre_plan',
         'valor_plan',
         'correo_emprendedor',
-        'numero_contrato',
         'cdp2_number',
         'cdp1_number'
     ],
@@ -277,5 +276,5 @@
             height: '10mm'
         }
     },
-    build: 19
+    build: 20
 }
