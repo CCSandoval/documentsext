@@ -2,16 +2,112 @@
     _id: ObjectId('619ce092ab5eb9000843b513'),
     config: [
         {
+            description: 'Seleccione el tipo de persona del contratante',
+            name: 'tipo_persona',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'nat'
+                },
+                {
+                    name: 'Persona Juridica',
+                    value: 'jur'
+                }
+            ],
+            type: 'clausula',
+            value: 'nat'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            name: 'nombre_empresa',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'jur'
+                }
+            ]
+        },
+        {
+            description: 'Digite el nit de la empresa',
+            name: 'nit_empresa',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'jur'
+                }
+            ]
+        },
+        {
+            description: 'Digite el nombre del representante legal de la empresa',
+            name: 'rep_empresa',
+            type: 'name',
+            help: 'nombre',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'jur'
+                }
+            ]
+        },
+        {
+            description: 'Digite la ciudad de domicilio del representante legal de la empresa',
+            name: 'docimicilio_rep',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'jur'
+                }
+            ]
+        },
+        {
+            description: 'Digite la cédula de ciudadanía del representante legal de la empresa',
+            name: 'cedula_rep',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'jur'
+                }
+            ]
+        },
+        {
+            description: 'Digite el número de telefono del representante legal de la empresa',
+            name: 'celular_rep',
+            help: 'celular',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'jur'
+                }
+            ]
+        },
+        {
             description: 'Digite el nombre del contratante',
             help: 'nombre',
             name: 'nombre_propietario',
-            type: 'name'
+            type: 'name',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
+                }
+            ]
         },
         {
             description: 'Digite el municipio donde está ubicado el contratante',
             help: 'municipio',
             name: 'municipio_propietario',
-            type: 'text'
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
+                }
+            ]
         },
         {
             description: 'Seleccione el sexo del contratante',
@@ -27,7 +123,13 @@
                 }
             ],
             type: 'clausula',
-            value: 'h'
+            value: 'h',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
+                }
+            ]
         },
         {
             description: 'Seleccione el tipo de documento del contratante',
@@ -48,7 +150,13 @@
                 }
             ],
             type: 'clausula',
-            value: 'cc'
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
+                }
+            ]
         },
         {
             description: 'Digite el número de cédula de ciudadanía del contratante',
@@ -58,6 +166,10 @@
                 {
                     k: 'tipo_documento_propietario',
                     v: 'cc'
+                },
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
                 }
             ],
             type: 'text'
@@ -70,6 +182,10 @@
                 {
                     k: 'tipo_documento_propietario',
                     v: 'ce'
+                },
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
                 }
             ],
             type: 'text'
@@ -82,6 +198,10 @@
                 {
                     k: 'tipo_documento_propietario',
                     v: 'pa'
+                },
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
                 }
             ],
             type: 'name'
@@ -90,7 +210,13 @@
             description: 'Digite el municipio de expedición del documento de identificación del contratante',
             help: 'municipio',
             name: 'lugar_exp_documento_propietario',
-            type: 'text'
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
+                }
+            ]
         },
         {
             description: 'Digite el coreo electrónico del contratante',
@@ -102,7 +228,13 @@
             description: 'Digite el número de teléfono del contratante',
             help: 'celular',
             name: 'celular_propietario',
-            type: 'text'
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'nat'
+                }
+            ]
         },
         {
             description: 'Digite la cantidad de metros',
@@ -143,7 +275,13 @@
         'celular_propietario',
         'metros',
         'valor_contrato',
-        'municipio_firma'
+        'municipio_firma',
+        'nombre_empresa',
+'nit_empresa',
+'rep_empresa',
+'docimicilio_rep',
+'cedula_rep',
+'celular_rep',
     ],
     signatureProfile: [
         {
@@ -190,7 +328,7 @@
         valor: 'Ejemplo: 100.000',
         fecha: 'Ejemplo: 22 de Diciembre del 2021'
     },
-    build: 2,
+    build: 5,
     createdAt: ISODate('2021-11-23T12:37:38.886Z'),
     updatedAt: ISODate('2021-11-23T12:37:38.886Z')
 }
