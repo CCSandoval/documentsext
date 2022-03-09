@@ -12,7 +12,8 @@
     width: 50%;
   }
   p,
-  span {
+  span,
+  li {
     font-family: sans-serif;
     text-align: justify;
   }
@@ -21,17 +22,18 @@
 <div>
   <p class="titulo">CONTRATO DE SUSCRIPCIÓN A LA PLATAFORMA MICONTRATO.CO</p>
   <p>
-    Entre los suscritos, a saber, <b>JUAN JOSÉ RINCÓN ESCOBAR,</b> persona mayor
+    Entre los suscritos, a saber, <b>JUAN JOSÉ RINCÓN ESCOBAR</b>, persona mayor
     de edad, domiciliada en la ciudad de Medellín - Antioquia, identificada, con
     cédula de ciudadanía número 1.017.234.101, actuando calidad de Representante
     Legal de MICONTRATO S.A.S, persona jurídica de derecho privado, identificada
     con NIT. 901.431.536 y con domicilio social en la ciudad de Medellín, y
-    quien para los efectos del presente contrato se denominará LA OPERADORA; y,
+    quien para los efectos del presente contrato se denominará
+    <b>LA OPERADORA</b>; y,
     <b name="representante_legal">______________________</b>, persona mayor de
     edad, domiciliado en la ciudad de
     <b name="domicilio_rep">______________________</b>, identificado con cédula
     de ciudadanía número <b name="cedula_rep">___________</b>, actuando calidad
-    de Representante Legal de <b name="empresa">______________________</b>,
+    de Representante Legal de <b name="empresa">______________________</b>.,
     persona jurídica de derecho privado, identificada con Nit
     <b name="nit_empresa">___________</b> y con domicilio social en la ciudad de
     <b name="domicilio_empresa">___________</b>, y quien para efectos de este
@@ -40,7 +42,8 @@
     el cual se regirá por las normas civiles y mercantiles vigentes en Colombia,
     y en especial por las siguientes:
   </p>
-  <p class="titulo">CLÁUSULAS</p>
+
+  <p class="titulo">CLÁUSULA</p>
 
   <p>
     <b>PRIMERA. OBJETO.</b> Por medio del presente documento la OPERADORA y LA
@@ -70,6 +73,7 @@
     Podrán firmarse electrónicamente, y almacenarse, documentos jurídicos y
     contratos distintos a los ofertados por la plataforma micontrato.co.
   </p>
+
   <p>
     Podrán también los usuarios registrados o visitantes adicionar cláusulas e
     información adicional, pero para ello deberán asesorarse de un abogado, de
@@ -79,6 +83,7 @@
     cláusulas e informaciones que inserte en los documentos que elija elaborar y
     generar con la asistencia de la plataforma micontrato.co.
   </p>
+
   <p>
     Ofrece la plataforma, además, herramientas para la trazabilidad de los
     documentos, el almacenamiento de los mismos, bien sean generados y/o
@@ -86,6 +91,7 @@
     formato PDF, enviarlos masivamente y generar alertas para su adecuada
     gestión.
   </p>
+
   <p>
     <b>TERCERA. PROPIEDAD INTELECTUAL.</b> La marca mi contrato.co, y todos las
     enseñas y elementos de la plataforma, tales como imágenes, gráficos,
@@ -93,6 +99,7 @@
     encuentran protegidos por las normas civiles y mercantiles que regulan los
     derechos de autor en general, y por la ley 23 de 1982 en especial.
   </p>
+
   <p>
     MICONTRATO S.A.S concede a la SUSCRIPTORA una licencia para su utilización
     con todas las funcionalidades para la creación y gestión de documentos,
@@ -107,276 +114,199 @@
     expresa y escrita de MICONTRATO S.A.S., so pena de las sanciones civiles,
     penales, administrativas.
   </p>
-  <p>
-    <b>CUARTA. DERECHOS DE LA SUSCRIPTORA.</b><br />
-    <span>LA SUSCRIPTORA, tendrá los siguientes derechos: </span>
-  </p>
+  <p><b>CUARTA. DERECHOS DE LA SUSCRIPTORA.</b></p>
+  <p>LA SUSCRIPTORA, tendrá los siguientes derechos:</p>
   <ol>
     <li>
-      <p>
-        1. Seleccionar cualquier documento jurídico, elaborarlo, adquirirlo y
-        firmarlo electrónica y/o digitalmente (en caso de que compre la
-        respectiva firma), con la asistencia que para el efecto presta la
-        plataforma micontrato.co, además de poder subir documentos en PDF no
-        generados en la plataforma, para adelantar el proceso de firma digital o
-        electrónica, en un número de hasta 10 documentos, sin importar el número
-        de firmas electrónicas que en él se estampen. El total de documentos
-        generados en la plataforma podrá ser ilimitado si el cliente lo desea,
-        cobrando un valor especial por documento adicional.
-      </p>
+      Seleccionar cualquier documento jurídico, elaborarlo, adquirirlo y
+      firmarlo electrónica y/o digitalmente (en caso de que compre la respectiva
+      firma), con la asistencia que para el efecto presta la plataforma
+      micontrato.co, además de poder subir documentos en PDF no generados en la
+      plataforma, para adelantar el proceso de firma digital o electrónica, en
+      un número de hasta 10 documentos, sin importar el número de firmas
+      electrónicas que en él se estampen. El total de documentos generados en la
+      plataforma podrá ser ilimitado si el cliente lo desea, cobrando un valor
+      especial por documento adicional.
     </li>
     <li>
-      <p>
-        Firmarlo electrónicamente por todas las partes que intervienen en la
-        celebración del negocio, y/o, digitalmente (en caso de que compre la
-        respectiva firma) por LA SUSCRIPTORA, utilizando una combinación de dos
-        factores de autenticación de los disponibilizados por la plataforma
-        según las descripciones de seguridad del presente contrato.
-      </p>
+      Firmarlo electrónicamente por todas las partes que intervienen en la
+      celebración del negocio, y/o, digitalmente (en caso de que compre la
+      respectiva firma) por LA SUSCRIPTORA, utilizando una combinación de dos
+      factores de autenticación de los disponibilizados por la plataforma según
+      las descripciones de seguridad del presente contrato.
     </li>
     <li>
-      <p>
-        Seleccionar aprobadores de documentos y/o, orden de firmantes de cada
-        documento.
-      </p>
+      Seleccionar aprobadores de documentos y/o, orden de firmantes de cada
+      documento.
     </li>
     <li>
-      <p>
-        Almacenar en la plataforma de micontrato.co todos los documentos que
-        haya elaborado históricamente, o cualquier otro documento que desee en
-        formato PDF. El almacenamiento es ilimitado.
-      </p>
+      Almacenar en la plataforma de micontrato.co todos los documentos que haya
+      elaborado históricamente, o cualquier otro documento que desee en formato
+      PDF. El almacenamiento es ilimitado.
     </li>
     <li>
-      <p>
-        Enviar notificaciones vía correo electrónico y/o vía mensaje de texto
-        (SMS), sobre contratos iniciados y no terminados o no firmados dentro de
-        la plataforma.
-      </p>
+      Enviar notificaciones vía correo electrónico y/o vía mensaje de texto
+      (SMS), sobre contratos iniciados y no terminados o no firmados dentro de
+      la plataforma.
     </li>
     <li>
-      <p>
-        Enviar recordatorios automáticos mediante correo electrónico y VoiceBot.
-      </p>
+      Enviar recordatorios automáticos mediante correo electrónico y VoiceBot.
+    </li>
+    <li>Recibir código OTP vía correo electrónico y/o SMS</li>
+    <li>Observar métricas y estadísticas de los documentos en tiempo real</li>
+    <li>Generar usuarios ilimitados dentro de la plataforma.</li>
+    <li>
+      Cargar múltiples archivos de manera simultánea en cualquiera de los
+      siguientes formatos y transformarlos a PDF: .bib, .doc, .xml, .docx,
+      .fodt, .html, .ltx, .txt, .odt, .ott, .pdb, .pdf, .psw, .rtf, .sdw, .stw,
+      .sxw, .uot, .vor, .wps, .epub, .png, .bmp, .emf, .eps, .fodg, .gif, .jpg,
+      .met, .odd, .otg, .pbm, .pct, .pgm, .ppm, .ras, .std, .svg, .svm, .swf,
+      .sxd, .sxw, .tiff, .xhtml, .xpm, .fodp, .potm, .pot, .pptx, .pps, .ppt,
+      .pwp, .sda, .sdd, .sti, .sxi, .uop, .wmf, .csv, .dbf, .dif, .fods, .ods,
+      .ots, .pxl, .sdc, .slk, .stc, .sxc, .uos, .xls, .xlt, .xlsx, .tif, .jpeg,
+      .odp.
     </li>
     <li>
-      <p>Recibir código OTP vía correo electrónico y/o SMS.</p>
+      Modificar los correos electrónicos en caso de que posean errores o que el
+      remitido lo haya cambiado.
     </li>
     <li>
-      <p>Observar métricas y estadísticas de los documentos en tiempo real.</p>
+      Personalizar con el logo, colores corporativos y nombre empresarial la
+      plataforma para los firmantes, permitiendo que reciban estos, un correo
+      bajo el nombre de la empresa, con sus colores y logos corporativos, al
+      igual que la plataforma.
     </li>
     <li>
-      <p>Generar usuarios ilimitados dentro de la plataforma.</p>
+      Utilizar su propio logo y enseñas empresariales en los correos
+      electrónicos que se generen desde la plataforma micontrato.co y durante el
+      proceso de firma digital y/o electrónica, como, por ejemplo, al enviar los
+      contratos a su contraparte para el proceso de firma digital o electrónica.
     </li>
     <li>
-      <p>
-        Cargar múltiples archivos de manera simultánea en cualquiera de los
-        siguientes formatos y transformarlos a PDF: .bib, .doc, .xml, .docx,
-        .fodt, .html, .ltx, .txt, .odt, .ott, .pdb, .pdf, .psw, .rtf, .sdw,
-        .stw, .sxw, .uot, .vor, .wps, .epub, .png, .bmp, .emf, .eps, .fodg,
-        .gif, .jpg, .met, .odd, .otg, .pbm, .pct, .pgm, .ppm, .ras, .std, .svg,
-        .svm, .swf, .sxd, .sxw, .tiff, .xhtml, .xpm, .fodp, .potm, .pot, .pptx,
-        .pps, .ppt, .pwp, .sda, .sdd, .sti, .sxi, .uop, .wmf, .csv, .dbf, .dif,
-        .fods, .ods, .ots, .pxl, .sdc, .slk, .stc, .sxc, .uos, .xls, .xlt,
-        .xlsx, .tif, .jpeg, .odp.
-      </p>
+      Utilizar la (API) desarrollada por MiContrato S.A.S, pudiendo integrar el
+      software de las aplicaciones del SUSCRIPTOR con el software de las
+      aplicaciones de la OPERADORA.
     </li>
     <li>
-      <p>
-        Modificar los correos electrónicos en caso de que posean errores o que
-        el remitido lo haya cambiado.
-      </p>
+      Generar y obtener información sobre todos los procesos de trazabilidad
+      documental ofrecidos por la plataforma, tales como fecha y hora y de
+      apertura del documento, tiempo invertido en la elaboración y en la lectura
+      de cada página, tiempo invertido en la elaboración y lectura total del
+      documento, firmantes faltantes, y la fecha y hora de la firma digital o
+      electrónica.
     </li>
     <li>
-      <p>
-        Personalizar con el logo, colores corporativos y nombre empresarial la
-        plataforma para los firmantes, permitiendo que reciban estos, un correo
-        bajo el nombre de la empresa, con sus colores y logos corporativos, al
-        igual que la plataforma.
-      </p>
+      Solicitar al equipo de mi contrato.co, la automatización de documentos
+      propios de EL SUSCRIPTOR, previo pago por dicho servicio. Dichos
+      documentos se automatizarán según los parámetros de la plataforma
+      micontrato.co; una vez automatizados, EL SUSCRIPTOR podrá generarlos y
+      sumarán en cuanto al número de documentos realizados en la plataforma.
+      Cada documento que se desee automatizar, tendrá un costo individual, y
+      deberá ser cancelado de manera anticipada.
     </li>
     <li>
-      <p>
-        Utilizar su propio logo y enseñas empresariales en los correos
-        electrónicos que se generen desde la plataforma micontrato.co y durante
-        el proceso de firma digital y/o electrónica, como, por ejemplo, al
-        enviar los contratos a su contraparte para el proceso de firma digital o
-        electrónica.
-      </p>
+      Que se guarde automáticamente en la plataforma el progreso en la
+      elaboración de los documentos jurídicos que ya haya iniciado.
     </li>
     <li>
-      <p>
-        Utilizar la (API) desarrollada por MiContrato S.A.S, pudiendo integrar
-        el software de las aplicaciones del SUSCRIPTOR con el software de las
-        aplicaciones de la OPERADORA.
-      </p>
+      Gestionar la información depositada para la creación de su cuenta de
+      usuario.
     </li>
     <li>
-      <p>
-        Generar y obtener información sobre todos los procesos de trazabilidad
-        documental ofrecidos por la plataforma, tales como fecha y hora y de
-        apertura del documento, tiempo invertido en la elaboración y en la
-        lectura de cada página, tiempo invertido en la elaboración y lectura
-        total del documento, firmantes faltantes, y la fecha y hora de la firma
-        digital o electrónica.
-      </p>
+      Modificar la contraseña de acceso a su perfil en la plataforma
+      micontrato.co cuantas veces lo desee, pero será de su exclusiva
+      responsabilidad mantener a salvo dicha contraseña para evitar el acceso de
+      terceros.
     </li>
     <li>
-      <p>
-        Solicitar al equipo de micontrato.co, la automatización de documentos
-        propios de EL SUSCRIPTOR, previo pago por dicho servicio. Dichos
-        documentos se automatizarán según los parámetros de la plataforma
-        micontrato.co; una vez automatizados, EL SUSCRIPTOR podrá generarlos y
-        sumarán en cuanto al número de documentos realizados en la plataforma.
-        Cada documento que se desee automatizar, tendrá un costo individual, y
-        deberá ser cancelado de manera anticipada.
-      </p>
+      Cancelar cuando así lo desee su cuenta de suscriptor, y continuar como
+      usuario registrado conforme con el CONTRATO DE CONDICIONES DE USO, o
+      continuar utilizando los servicios de la plataforma en calidad de
+      visitante, pero observando las previsiones con respecto a las
+      cancelaciones contempladas en la cláusula novena del presente contrato.
     </li>
     <li>
-      <p>
-        Que se guarde automáticamente en la plataforma el progreso en la
-        elaboración de los documentos jurídicos que ya haya iniciado.
-      </p>
+      A que los documentos generados y/o firmados a través de la plataforma, y
+      los que en formato PDF decida almacenar en la misma, se mantengan allí por
+      un plazo máximo de 3 meses después de terminada la suscripción, debiendo
+      observar las previsiones sobre procedimientos y costos para tener acceso a
+      los mismos.
     </li>
     <li>
-      <p>
-        Gestionar la información depositada para la creación de su cuenta de
-        usuario.
-      </p>
+      Actualizar, rectificar y suprimir los datos personales que haya depositado
+      en la plataforma micontrato.co con ocasión de la creación de su cuenta de
+      usuario, de pagos realizados, o de la gestión, elaboración, firmado
+      digital o electrónico, y almacenamiento de sus documentos.
     </li>
     <li>
-      <p>
-        Modificar la contraseña de acceso a su perfil en la plataforma
-        micontrato.co cuantas veces lo desee, pero será de su exclusiva
-        responsabilidad mantener a salvo dicha contraseña para evitar el acceso
-        de terceros.
-      </p>
-    </li>
-    <li>
-      <p>
-        Cancelar cuando así lo desee su cuenta de suscriptor, y continuar como
-        usuario registrado conforme con el CONTRATO DE CONDICIONES DE USO, o
-        continuar utilizando los servicios de la plataforma en calidad de
-        visitante, pero observando las previsiones con respecto a las
-        cancelaciones contempladas en la cláusula novena del presente contrato.
-      </p>
-    </li>
-    <li>
-      <p>
-        A que los documentos generados y/o firmados a través de la plataforma, y
-        los que en formato PDF decida almacenar en la misma, se mantengan allí
-        por un plazo máximo de 3 meses después de terminada la suscripción,
-        debiendo observar las previsiones sobre procedimientos y costos para
-        tener acceso a los mismos.
-      </p>
-    </li>
-    <li>
-      <p>
-        Actualizar, rectificar y suprimir los datos personales que haya
-        depositado en la plataforma micontrato.co con ocasión de la creación de
-        su cuenta de usuario, de pagos realizados, o de la gestión, elaboración,
-        firmado digital o electrónico, y almacenamiento de sus documentos.
-      </p>
-    </li>
-    <li>
-      <p>
-        Contactarse vía correo electrónico, y demás canales digitales
-        establecidos por la plataforma e indicados en el presente documento, con
-        los operadores de la plataforma micontrato.co, con el objetivo de
-        esclarecer dudas con respecto a las funcionalidades ofrecidas por la
-        misma plataforma.
-      </p>
-    </li>
-    <span name="otra_opcion_derechos_n"></span>
-    <li name="otra_opcion_derechos_s" hidden>
-      <p name="otra_opcion_derechos_texto">
-        _______________________________________________________
-      </p>
+      Contactarse vía correo electrónico, y demás canales digitales establecidos
+      por la plataforma e indicados en el presente documento, con los operadores
+      de la plataforma micontrato.co, con el objetivo de esclarecer dudas con
+      respecto a las funcionalidades ofrecidas por la misma plataforma.
     </li>
   </ol>
-  <p><b>QUINTA. DESCRIPCIONES DE LA SEGURIDAD DE LA PLATAFORMA</b></p>
+  <p><b>QUINTA. DESCRIPCIONES DE SEGURIDAD DE LA PLATAFORMA </b></p>
   <ol>
     <li>
-      <p>
-        CIFRADO SIMÉTRICO. La plataforma micontrato.co protege el acceso a los
-        documentos generados y/o firmados electrónicamente en la misma a través
-        de un servicio de cifrado simétrico, consistente en una clave o código
-        que sólo se le disponibiliza a las partes que lo generan y / o
-        suscriben, y a los operadores de la plataforma, y que no permite la
-        visualización del documento por personas diferentes a estos,
-        dificultando la transmisión de información del mismo documento,
-        protegiendo los derechos de autor e impidiendo que terceros se valgan de
-        la información contenida en el mismo documento.
-      </p>
+      CIFRADO SIMÉTRICO. La plataforma micontrato.co protege el acceso a los
+      documentos generados y/o firmados electrónicamente en la misma a través de
+      un servicio de cifrado simétrico, consistente en una clave o código que
+      sólo se le disponibiliza a las partes que lo generan y / o suscriben, y a
+      los operadores de la plataforma, y que no permite la visualización del
+      documento por personas diferentes a estos, dificultando la transmisión de
+      información del mismo documento, protegiendo los derechos de autor e
+      impidiendo que terceros se valgan de la información contenida en el mismo
+      documento.
     </li>
-
     <li>
-      <p>
-        CIFRADO SHA256. Para garantizar, además, la inalterabilidad e integridad
-        de los documentos generados y / o firmados electrónicamente a través de
-        la plataforma micontrato.co, esta los protege con un cifrado denominado
-        SHA256, algoritmo de hash seguro, o Secure Hash Algorithm, por su nombre
-        en inglés, que consiste en la generación de un código de 64 dígitos que
-        imprime una huella en el documento, haciendo que este sea único, y por
-        ello, inmodificable, garantizando los efectos probatorios del mismo.
-      </p>
+      CIFRADO SHA256. Para garantizar, además, la inalterabilidad e integridad
+      de los documentos generados y / o firmados electrónicamente a través de la
+      plataforma micontrato.co, esta los protege con un cifrado denominado
+      SHA256, algoritmo de hash seguro, o Secure Hash Algorithm, por su nombre
+      en inglés, que consiste en la generación de un código de 64 dígitos que
+      imprime una huella en el documento, haciendo que este sea único, y por
+      ello, inmodificable, garantizando los efectos probatorios del mismo.
     </li>
-
     <li>
-      <p>
-        ALMACENAMIENTO SEGURO DE LA INFORMACIÓN. La información recolectada por
-        la plataforma micontrato.co, y los documentos generados, firmados y
-        almacenados por los suscriptores y por los demás usuarios, es almacenada
-        en servidores ubicados en diferentes zonas de alta disponibilidad,
-        garantizando que una copia de cada documento se almacene en 5 servidores
-        diferentes dando un 99.999999999% de disponibilidad, de manera que
-        siempre haya disponibilidad de acceso a los documentos por parte de los
-        usuarios y suscriptores.
-      </p>
+      ALMACENAMIENTO SEGURO DE LA INFORMACIÓN. La información recolectada por la
+      plataforma micontrato.co, y los documentos generados, firmados y
+      almacenados por los suscriptores y por los demás usuarios, es almacenada
+      en servidores ubicados en diferentes zonas de alta disponibilidad,
+      garantizando que una copia de cada documento se almacene en 5 servidores
+      diferentes dando un 99.999999999% de disponibilidad, de manera que siempre
+      haya disponibilidad de acceso a los documentos por parte de los usuarios y
+      suscriptores.
     </li>
-
     <li>
-      <p>
-        CLAVE DINÁMICA O CÓDIGO OTP POR APLICATIVO PARA ACCESO A CARPETAS. La
-        plataforma micontrato.co disponibilizará un aplicativo celular que podrá
-        ser descargado por los usuarios y suscriptores, y donde estos últimos
-        podrán generar una clave dinámica tipo OTP (One time Password), por sus
-        siglas en inglés, consistente en un código de seis (6) dígitos que podrá
-        ser utilizado por una única vez, en una única transacción, y sólo
-        durante el tiempo en que esta sea visible en el mismo aplicativo, clave
-        esta que permitirá que a aquellas carpetas que sean seleccionadas por el
-        suscriptor, sólo se puede acceder previo suministro de dicha clave,
-        garantizando la seguridad de los documentos allí contenidos.
-      </p>
+      CLAVE DINÁMICA O CÓDIGO OTP POR APLICATIVO PARA ACCESO A CARPETAS. La
+      plataforma micontrato.co disponibilizará un aplicativo celular que podrá
+      ser descargado por los usuarios y suscriptores, y donde estos últimos
+      podrán generar una clave dinámica tipo OTP (One time Password), por sus
+      siglas en inglés, consistente en un código de seis (6) dígitos que podrá
+      ser utilizado por una única vez, en una única transacción, y sólo durante
+      el tiempo en que esta sea visible en el mismo aplicativo, clave esta que
+      permitirá que a aquellas carpetas que sean seleccionadas por el
+      suscriptor, sólo se puede acceder previo suministro de dicha clave,
+      garantizando la seguridad de los documentos allí contenidos.
     </li>
-
     <li>
-      <p>
-        CLAVE DINÁMICA O CÓDIGO OTP POR CORREO ELECTRÓNICO Y/O SMS PARA LA FIRMA
-        DE LOS DOCUMENTOS. Los suscriptores de la plataforma tendrán la
-        posibilidad de que esta envíe un mensaje con una clave OTP (One Time
-        Password), por sus siglas en inglés, a través de mensaje de texto, o a
-        través del correo electrónico a los demás firmantes del documento, de
-        manera que con ello se logre garantizar la autenticidad de los
-        documentos.
-      </p>
+      CLAVE DINÁMICA O CÓDIGO OTP POR CORREO ELECTRÓNICO Y/O SMS PARA LA FIRMA
+      DE LOS DOCUMENTOS. Los suscriptores de la plataforma tendrán la
+      posibilidad de que esta envíe un mensaje con una clave OTP (One Time
+      Password), por sus siglas en inglés, a través de mensaje de texto, o a
+      través del correo electrónico a los demás firmantes del documento, de
+      manera que con ello se logre garantizar la autenticidad de los documentos.
     </li>
-
     <li>
-      <p>
-        DOBLE FACTOR DE AUTENTICACIÓN. La plataforma micontrato.co permite la
-        combinación de diversos factores de autenticación a través de la clave
-        de acceso, de la clave dinámica tipo OTP y de la posibilidad de cargar
-        una fotografía adherida el documento, tomada en tiempo real al momento
-        de la firma, generando así un doble factor de autenticación de los
-        documentos firmados electrónicamente a través de la plataforma.
-      </p>
+      DOBLE FACTOR DE AUTENTICACIÓN. La plataforma micontrato.co permite la
+      combinación de diversos factores de autenticación a través de la clave de
+      acceso, de la clave dinámica tipo OTP y de la posibilidad de cargar una
+      fotografía adherida el documento, tomada en tiempo real al momento de la
+      firma, generando así un doble factor de autenticación de los documentos
+      firmados electrónicamente a través de la plataforma.
     </li>
-
   </ol>
-  <p>
-    <b>SEXTA. CONTINGENCIAS DE SEGURIDAD</b>
-  </p>
+  <p><b>SEXTA. CONTINGENCIAS DE SEGURIDAD.</b></p>
   <p>
     La plataforma micontrato.co garantiza al SUSCRIPTOR la seguridad de sus
     documentos y de su información, utilizando los cifrados y procedimientos
@@ -387,198 +317,139 @@
     protocolos de seguridad.
   </p>
   <p>
-    <b>SÉPTIMA. ACUERDO DE NIVEL DE SERVICIO - ANS</b> En virtud del presente
+    <b>SÉPTIMA. ACUERDO DE NIVEL DE SERVICIO - ANS.</b> En virtud del presente
     acuerdo, la OPERADORA asume las siguientes obligaciones de garantía:
   </p>
   <ol>
     <li>
-      <p>
-        Garantizar al SUSCRIPTOR el acceso a todas las herramientas y
-        funcionalidades que la plataforma ofrece según el perfil y tipo de
-        suscripción, y según los derechos que para este se derivan conforme a lo
-        pactado en la cláusula segunda del CONTRATO DE SUSCRIPCIÓN.
-      </p>
+      Garantizar al SUSCRIPTOR el acceso a todas las herramientas y
+      funcionalidades que la plataforma ofrece según el perfil y tipo de
+      suscripción, y según los derechos que para este se derivan conforme a lo
+      pactado en la cláusula segunda del CONTRATO DE SUSCRIPCIÓN.
     </li>
     <li>
-      <p>
-        Disponibilizar y comunicar al SUSCRIPTOR todos los canales digitales y
-        telefónicos de comunicación para atender sus dudas, quejas, reclamos, y
-        muy especialmente para brindarle asesoría y soporte en la utilización de
-        la plataforma.
-      </p>
+      Disponibilizar y comunicar al SUSCRIPTOR todos los canales digitales y
+      telefónicos de comunicación para atender sus dudas, quejas, reclamos, y
+      muy especialmente para brindarle asesoría y soporte en la utilización de
+      la plataforma.
     </li>
     <li>
-      <p>
-        Brindar capacitación inicial al SUSCRIPTOR sobre la operatividad,
-        funcionamiento y utilización de la plataforma.
-      </p>
+      Brindar capacitación inicial al SUSCRIPTOR sobre la operatividad,
+      funcionamiento y utilización de la plataforma.
     </li>
     <li>
-      <p>
-        Prestar soporte para la utilización de la plataforma a través de los
-        canales digitales o telefónicos de lunes a sábado en horario de 8 am a 7
-        pm, excluyendo domingos y días feriados.
-      </p>
+      Prestar soporte para la utilización de la plataforma a través de los
+      canales digitales o telefónicos de lunes a sábado en horario de 8 am a 7
+      pm, excluyendo domingos y días feriados.
     </li>
     <li>
-      <p>
-        Automatizar y disponibilizar los documentos que el SUSCRIPTOR solicite,
-        en un número no superior al pactado en el CONTRATO DE SUSCRIPCIÓN, en un
-        plazo máximo de 10 días hábiles por documento, siempre y cuando el
-        SUSCRIPTOR haya pagado anticipadamente por el mismo.
-      </p>
+      Automatizar y disponibilizar los documentos que el SUSCRIPTOR solicite, en
+      un número no superior al pactado en el CONTRATO DE SUSCRIPCIÓN, en un
+      plazo máximo de 10 días hábiles por documento, siempre y cuando el
+      SUSCRIPTOR haya pagado anticipadamente por el mismo.
     </li>
     <li>
-      <p>
-        Recepcionar de manera inmediata los reclamos, dudas e inquietudes del
-        SUSCRIPTOR.
-      </p>
+      Recepcionar de manera inmediata los reclamos, dudas e inquietudes del
+      SUSCRIPTOR.
     </li>
     <li>
-      <p>
-        Resolver de manera inmediata aquellas inquietudes, dudas o reclamos que
-        así lo permitan dada su complejidad e informar por correo electrónico o
-        de manera personal, en qué plazo se resolverán aquella cuya complejidad
-        sea más elevada, atendiendo siempre los derechos del SUSCRIPTOR y
-        especialmente la regulación del derecho petición en las leyes
-        colombianas.
-      </p>
+      Resolver de manera inmediata aquellas inquietudes, dudas o reclamos que
+      así lo permitan dada su complejidad e informar por correo electrónico o de
+      manera personal, en qué plazo se resolverán aquella cuya complejidad sea
+      más elevada, atendiendo siempre los derechos del SUSCRIPTOR y
+      especialmente la regulación del derecho petición en las leyes colombianas.
     </li>
     <li>
-      <p>
-        Realizar el mantenimiento y actualizaciones de la plataforma
-        micontrato.co, manteniendo la operatividad y funcionalidad de la misma.
-        Sin embargo, es posible que al realizar estas labores se presente
-        intermitencia en los servicios por no más de 10 minutos por proceso.
-      </p>
+      Realizar el mantenimiento y actualizaciones de la plataforma
+      micontrato.co, manteniendo la operatividad y funcionalidad de la misma.
+      Sin embargo, es posible que al realizar estas labores se presente
+      intermitencia en los servicios por no más de 10 minutos por proceso.
     </li>
     <li>
-      <p>
-        Notificar previamente al SUSCRIPTOR, cuando por necesidad de
-        mantenimientos o actualizaciones, la plataforma vaya a estar por fuera
-        del aire por un periodo de tiempo superior al mencionado en el numeral
-        anterior.
-      </p>
+      Notificar previamente al SUSCRIPTOR, cuando por necesidad de
+      mantenimientos o actualizaciones, la plataforma vaya a estar por fuera del
+      aire por un periodo de tiempo superior al mencionado en el numeral
+      anterior.
     </li>
     <li>
-      <p>
-        Realizar videos explicativos para solucionar dudas recurrentes de los
-        usuarios y SUSCRIPTORES.
-      </p>
-    </li>
-    <span name="otra_opcion_ans_n"></span>
-    <li name="otra_opcion_ans_s" hidden>
-      <p name="otra_opcion_ans_texto">
-        _______________________________________________________
-      </p>
+      Realizar videos explicativos para solucionar dudas recurrentes de los
+      usuarios y SUSCRIPTORES
     </li>
   </ol>
   <p>
-    <b>OCTAVA. VALORES Y PROCEDIMIENTO DE COBRO Y PAGO</b> Por la utilización de
-    la plataforma conforme al presente contrato, LA SUSCRIPTORA pagará a
-    MICONTRATO.CO la suma de CUARENTA Y NUEVE MIL NOVECIENTOS PESOS MLC
-    ($49.900,00), suma que le permitirá acceder a todas las funcionalidades de
-    la plataforma, al almacenamiento y carga para contratos o documentos con
-    seguridad Blockchain en la nube, y que permitirá a LA SUSCRIPTORA crear,
-    mediante los contratos preestablecidos de la plataforma, o a través de los
-    documentos que se le hayan automatizado, o, utilizando la opción de “Cargar
-    PDF para firma digital”, un número de hasta DIEZ (10) documentos
-    mensuales.<br />
-    La suscripción a la plataforma por parte de LA SUSCRIPTORA, deberá hacerse a
-    través del sitio web
-    <a href="https://www.micontrato.co" target="_blank">www.micontrato.co</a>,
-    diligenciando allí los datos solicitados e ingresando una tarjeta de Crédito
-    válida, de la cual se debitará automáticamente los valores causados en cada
-    mes.
+    <b>OCTAVA. VALORES Y PROCEDIMENTO DE COBRO Y PAGO.</b> EL SUSCRIPTOR
+    comprará y pagará por una bolsa de
+    <span name="cant_docs">__________</span> documentos, donde el valor unitario
+    de cada uno será de
+    <span name="precio_individual_2000">DOS MIL PESOS M.L.C. ($2.000)</span>
+    <span name="precio_individual_2200" hidden
+      >DOS MIL DOSCIENTOS PESOS M.L.C. ($2.200)</span
+    >
+    <span name="precio_individual_2400" hidden
+      >DOS MIL CUATROSCIENTOS PESOS M.L.C. ($2.400)</span
+    >, para un total de <span name="precio_total">__________________</span>,
+    suma que le permitirá acceder a todas las funcionalidades de la plataforma,
+    al almacenamiento y carga para contratos o documentos con seguridad
+    Blockchain en la nube, y que permitirá a LA SUSCRIPTORA crear, mediante los
+    contratos preestablecidos de la plataforma, o a través de los documentos que
+    se le hayan automatizado, o, utilizando la opción de “Cargar PDF para firma
+    digital”, un número de hasta
+    <span name="cant_docs">__________</span> documentos anuales.
   </p>
   <p>
-    <b>PARÁGRAFO 1.</b> La automatización de contratos o documentos de uso
-    frecuente no se encuentra incluida en el pago de la mensualidad. El precio
-    por la automatización de documentos será establecido por LA OPERADORA,
-    atendiendo su complejidad. El pago de cada automatización se realizará de
-    manera anticipada a LA OPERADORA, y deberá cancelarse en a la cuenta de
-    ahorros Bancolombia número 005-000013-71, a nombre de MICONTRATO S.A.S.;
-    solo a partir de la cancelación del valor correspondiente, empezarán a
-    correr los DIEZ (10) días hábiles para la entrega del documento
-    automatizado.
+    Dicha suma deberá cancelarse de manera anticipada, en a la cuenta de ahorros
+    Bancolombia número 005-000013-71, a nombre de MICONTRATO S.A.S.; solo a
+    partir de la cancelación del valor correspondiente, se dará inicio a la
+    ejecución del presente contrato y se dará acceso
   </p>
   <p>
-    <b>PARÁGRAFO 2.</b> Al precio que se pacta por cada automatización, deberá
+    <b>PARÁGRAFO 1.</b> EL SUSCRIPTOR tendrá un término de UN (1) año contado a
+    partir del pago anticipado de la bolsa de documentos, para usar los MIL
+    (1.000) documentos adquiridos. Una vez expirado dicho plazo, los documentos
+    que no hayan sido utilizados se perderán.
+  </p>
+  <p>
+    <b>PARÁGRAFO 2.</b> La automatización de contratos no se encuentra incluida
+    en el pago de la mensualidad. El precio por la automatización de documentos
+    será establecido por LA OPERADORA, atendiendo su complejidad. El pago de
+    cada automatización se realizará de manera anticipada a LA OPERADORA, y
+    deberá cancelarse en a la cuenta de ahorros Bancolombia número
+    005-000013-71, a nombre de MICONTRATO S.A.S.; solo a partir de la
+    cancelación del valor correspondiente, empezarán a correr los DIEZ (10) días
+    hábiles para la entrega del documento automatizado.
+  </p>
+  <p>
+    <b>PARÁGRAFO 3.</b> Al precio que se pacta por cada automatización, deberá
     adicionársele el IVA.
   </p>
   <p>
-    <b>PARÁGRAFO 3.</b> Todos los precios de toda LA PLATAFORMA y que se
+    <b>PARÁGRAFO 4.</b> Todos los precios de toda LA PLATAFORMA y que se
     establezcan en este contrato, se actualizarán anualmente, conforme al
     aumento del IPC de cada año.
   </p>
-  <p>
-    <b>NOVENO. VALORES ADICIONALES DE DOCUMENTOS.</b> En caso de que el
-    SUSCRIPTOR requiera exceder el valor contratado mensual, es decir, exceder
-    los diez (10) contratos o documentos que puede generar y/o firmar
-    mensualmente, ya sean propios de micontrato.co, automatizados del usuario o
-    subidos en PDF, los precios por cada documento adicional se someterán a las
-    siguientes reglas:
-  </p>
-  <ol>
-    <li>
-      <p>
-        Si LA SUCRIPTORA realiza de ONCE (11) a CIEN (100) documentos
-        adicionales mensuales (es decir, a partir del primer documento adicional
-        a los que tiene derecho por el pago de la tarifa básica), se le cobrará
-        por cada documento transado durante la totalidad del mes la suma de TRES
-        MIL PESOS MLC ($3.000).
-      </p>
-    </li>
 
-    <li>
-      <p>
-        Si LA SUCRIPTORA realiza de CIENTO UN (101) a QUINIENTOS (500)
-        documentos adicionales mensuales (es decir, a partir del primer
-        documento adicional a los CIEN que realizó previamente), se le cobrará
-        por cada documento transado durante la totalidad del mes la suma de DOS
-        MIL OCHOCIENTOS PESOS MLC ($2.800).
-      </p>
-    </li>
-
-    <li>
-      <p>
-        Si LA SUCRIPTORA realiza más de QUINIENTOS (500) documentos adicionales
-        mensuales (es decir, a partir del primer documento adicional a los
-        QUINIENTOS que realizó previamente), se le cobrará por cada documento
-        transado durante la totalidad del mes suma de DOS MIL SEISCIENTOS PESOS
-        MLC ($2.600).
-      </p>
-    </li>
-
-  </ol>
   <p>
-    Los anteriores valores, se entregan sin importar el número de firmas que se
-    incorporen en cada documento.
-  </p>
-  <p>
-    Para el efecto, las sumas referentes a los excedentes de los que habla la
-    presente cláusula serán facturadas por LA OPERADORA al final de cada periodo
-    mensual, y los valores correspondientes a dichos excedentes, serán debitados
-    automáticamente de la tarjeta de crédito suministrada por LA SUSCRIPTORA.
+    <b>NOVENA. VALORES ADICIONALES DE DOCUMENTOS.</b> En caso de que el
+    SUSCRIPTOR requiera exceder el valor contratado por la bolsa de documentos,
+    es decir, exceder los MIL (1.000) contratos o documentos que puede generar
+    y/o firmar mensualmente, ya sean propios de micontrato.co, automatizados del
+    usuario o subidos en PDF, se podrá continuar con los servicios de la
+    plataforma, bien sea adquiriendo una nueva bolsa de documentos, o,
+    suscribiéndose al plan “On Demand”, que se encuentra publicado en el sitio
+    web de LA OPERADORA.
   </p>
   <p>
     <b>DÉCIMA. VIGENCIA Y RENOVACIONES.</b> El presente contrato tendrá vigencia
     a partir de la suscripción del mismo por ambas partes y de que el SUSCRIPTOR
-    cancele de manera anticipada el valor de la mensualidad.
-  </p>
-  <p>
-    El presente contrato tiene una periodicidad mensual, la cual se contará
-    desde el día en que se realice el primer pago al interior de la plataforma,
-    y hasta el mismo día del mes siguiente, y se entenderá renovado con cada
-    pago mensual realizado por EL SUSCRIPTOR.
+    cancele de manera anticipada el valor de la bolsa de documentos.
   </p>
   <p>
     <b>PARÁGRAFO.</b> En caso de que el SUSCRIPTOR no realice el pago de la
-    mensualidad correspondiente, se suspenderá (hasta que realice el pago) el
-    acceso a los servicios y funcionalidades pactados en este contrato, pudiendo
-    continuar utilizando los servicios de la plataforma como USUARIO REGISTRADO
-    NO SUSCRIPTOR, y regulándose tal utilización conforme al contrato de
-    condiciones de uso vigente y publicado en la plataforma.
+    bolsa de documentos correspondiente, se suspenderá (hasta que realice el
+    pago) el acceso a los servicios y funcionalidades pactados en este contrato,
+    pudiendo continuar utilizando los servicios de la plataforma como USUARIO
+    REGISTRADO NO SUSCRIPTOR, y regulándose tal utilización conforme al contrato
+    de condiciones de uso vigente y publicado en la plataforma.
   </p>
   <p>
     <b>DECIMOPRIMERA. CANCELACIONES.</b> El SUSCRIPTOR podrá cancelar su
@@ -605,85 +476,60 @@
     terminación, debiendo únicamente LA OPERADORA avisar por escrito al correo
     suministrado por EL SUSCRIPTOR en la plataforma, su intención de terminar el
     contrato; dicho aviso, deberá hacerse un término que no podrá ser inferior a
-    TREINTA (30) días calendario.
+    TREINTA (30) días calendario
   </p>
   <p>
-    <b>DECIMOSEGUNDA. OBLIGACIONES DEL SUSCRIPTIOR.</b>El SUSCRIPTOR se
+    <b>DECIMOSEGUNDA. OBLIGACIONES DEL SUSCRIPTOR.</b> El SUSCRIPTOR se
     compromete por virtud del presente contrato a:
   </p>
   <ol>
+    <li>Leer cuidadosamente y entender el presente contrato.</li>
     <li>
-      <p>Leer cuidadosamente y entender el presente contrato.</p>
+      Leer y entender las descripciones generales de los documentos ofertados,
+      para así poder elegir el adecuado para las necesidades propias del usuario
+      o visitante.
     </li>
     <li>
-      <p>
-        Leer y entender las descripciones generales de los documentos ofertados,
-        para así poder elegir el adecuado para las necesidades propias del
-        usuario o visitante.
-      </p>
+      Leer y seguir atentamente las instrucciones de cada uno de los pasos para
+      elaborar, adquirir, firmar y almacenar el documento elegido.
     </li>
     <li>
-      <p>
-        Leer y seguir atentamente las instrucciones de cada uno de los pasos
-        para elaborar, adquirir, firmar y almacenar el documento elegido.
-      </p>
+      En caso de redactar obligaciones o cláusulas adicionales en los documentos
+      elegidos para elaborar con la asistencia de la plataforma micontrato.co,
+      asesorarse de un abogado que le indique la mejor manera, pues el
+      suscriptor entiende, y así lo declara, que el servicio prestado por la
+      plataforma no es un servicio de asesoría jurídica, sino de asistencia para
+      la elaboración de documentos.
     </li>
     <li>
-      <p>
-        En caso de redactar obligaciones o cláusulas adicionales en los
-        documentos elegidos para elaborar con la asistencia de la plataforma
-        micontrato.co, asesorarse de un abogado que le indique la mejor manera,
-        pues el suscriptor entiende, y así lo declara, que el servicio prestado
-        por la plataforma no es un servicio de asesoría jurídica, sino de
-        asistencia para la elaboración de documentos.
-      </p>
+      Revisar la información por ellos escrita en cada documento jurídico que
+      elijan, antes de la generación del documento en formato PDF.
+    </li>
+    <li>Pagar su suscripción conforme a la periodicidad pactada.</li>
+    <li>Pagar la automatización de documentos de manera anticipada.</li>
+    <li>
+      Entregar con antelación los documentos que deban ser automatizados para su
+      uso conforme con la usanza de la propia plataforma, pues el plazo para su
+      automatización dependerá de la extensión, complejidad y variantes del
+      mismo, y deberá ser pactado por las partes en cada caso.
     </li>
     <li>
-      <p>
-        Revisar la información por ellos escrita en cada documento jurídico que
-        elijan, antes de la generación del documento en formato PDF.
-      </p>
+      No modificar en todo o en parte la plataforma, sin consentimiento de LA
+      OPERADORA.
     </li>
     <li>
-      <p>Pagar su suscripción conforme a la periodicidad pactada.</p>
+      No utilizar la plataforma para la realización de actividades ilícitas, o
+      que atenten contra las buenas costumbres.
     </li>
     <li>
-      <p>Pagar la automatización de documentos de manera anticipada.</p>
+      Observar siempre el debido respeto en sus comunicaciones con la operadora
+      de la plataforma, bien sea habladas o escritas.
     </li>
     <li>
-      <p>
-        Entregar con antelación los documentos que deban ser automatizados para
-        su uso conforme con la usanza de la propia plataforma, pues el plazo
-        para su automatización dependerá de la extensión, complejidad y
-        variantes del mismo, y deberá ser pactado por las partes en cada caso.
-      </p>
-    </li>
-    <li>
-      <p>
-        No modificar en todo o en parte la plataforma, sin consentimiento de LA
-        OPERADORA.
-      </p>
-    </li>
-    <li>
-      <p>
-        No utilizar la plataforma para la realización de actividades ilícitas, o
-        que atenten contra las buenas costumbres.
-      </p>
-    </li>
-    <li>
-      <p>
-        Observar siempre el debido respeto en sus comunicaciones con la
-        operadora de la plataforma, bien sea habladas o escritas.
-      </p>
-    </li>
-    <li>
-      <p>
-        Dirigir cualquier reclamación o inquietud derivada de la utilización de
-        la plataforma, o de la elaboración, adquisición, firma digital o
-        electrónico y almacenamiento de un documento jurídico, o del manejo de
-        sus datos o información, primero a la operadora de la plataforma
-        micontrato.co.
-      </p>
+      Dirigir cualquier reclamación o inquietud derivada de la utilización de la
+      plataforma, o de la elaboración, adquisición, firma digital o electrónico
+      y almacenamiento de un documento jurídico, o del manejo de sus datos o
+      información, primero a la operadora de la plataforma micontrato.co.
     </li>
   </ol>
   <p>
@@ -819,7 +665,7 @@
   </p>
   <p>
     <b>DÉCIMOCTAVA. ASPECTOS NO REGULADOS.</b> Los asuntos no regulados por las
-    partes en el presente contrato deberán resolverse conforme con las normas
+    partes en el presente contrato, deberán resolverse conforme con las normas
     civiles y mercantiles vigentes en Colombia, y especialmente por lo dispuesto
     en el CONTRATO DE TÉRMINOS Y CONDICIONES DE USO de la plataforma
     MICONTRATO.CO y en la POLÍTICA DE TRATAMIENTO DE DATOS PERSONALES de la
@@ -889,15 +735,14 @@
   <p>
     Las notificaciones que deban realizarse al SUSCRIPTOR, se harán en la
     dirección informada al momento de la creación en su cuenta de usuario en la
-    plataforma, o en la dirección
-    <span name="direccion_noti">______________________</span>, de la ciudad de
-    <span name="municipio_noti">___________</span>. Teléfono:
+    plataforma, o en la dirección <span name="direccion_noti">__________</span>,
+    de la ciudad de <span name="municipio_noti">___________</span>. Teléfono:
     <span name="telefono_noti">___________</span>. Correo electrónico
     <span name="correo_rep">___________</span>.
   </p>
   <p>
     Para constancia se firma en la ciudad de Medellín el
-    <span name="fecha_firma">___________</span>
+    <span name="fecha_firma">______________</span>
   </p>
   <br />
   <br />

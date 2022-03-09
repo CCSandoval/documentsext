@@ -32,6 +32,33 @@
           type: 'name'
       },
       {
+          name: 'otra_opcion_derechos',
+          description: '¿Desea añadir otro elemento?',
+          options: [
+              {
+                  name: 'No',
+                  value: 'n'
+              },
+              {
+                  name: 'Si',
+                  value: 's'
+              }
+          ],
+          value: 'n',
+          type: 'clausula'
+      },
+      {
+          name: 'otra_opcion_derechos_texto',
+          description: 'Escriba el elemento que desea agregar a los derechos de la suscriptora',
+          type: 'text',
+          prereq: [
+              {
+                  k: 'otra_opcion_derechos',
+                  v: 's'
+              }
+          ]
+      },
+      {
           name: 'otra_opcion_ans',
           description: '¿Desea añadir otro elemento?',
           options: [
@@ -131,5 +158,5 @@
   preBuildData: [],
   preBuild: false,
   price: 0,
-  build: 2
+  build: 3
 }
