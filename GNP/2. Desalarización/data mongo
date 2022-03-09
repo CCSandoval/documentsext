@@ -1,0 +1,71 @@
+{
+    _id: ObjectId('6218d9d2ed0a939e613674b0'),
+    config: [
+        {
+            name: 'nombre_trabajador',
+            description: 'Ingrese el nombre del trabajador',
+            type: 'name'
+        },
+        {
+            name: 'cedula_trabajador',
+            description: 'Ingrese el número de cédula del trabajador',
+            type: 'number'
+        },
+        {
+            name: 'expedicion_cedula',
+            description: 'Ingrese el municipio de expedición de la cédula del trabajador',
+            type: 'name'
+        },
+        {
+            name: 'fecha_firma',
+            description: 'Seleccione la fecha en la que se firma el presente documento',
+            type: 'date'
+        },
+        {
+            name: 'correo_trabajador',
+            description: 'Ingrese el número de cédula del trabajador',
+            type: 'text'
+        }
+    ],
+    preFill: [
+        {
+            name: 'correo_gnp',
+            value: 'cristian.sandoval@micontrato.co'
+        },
+        {
+            name: 'cc_gnp',
+            value: '53159805'
+        },
+        {
+            name: 'nombre_gnp',
+            value: 'Milena Castillo'
+        }
+    ],
+    sign: [
+        'nombre_trabajador',
+        'cedula_trabajador',
+        'expedicion_cedula',
+        'fecha_firma',
+        'correo_trabajador'
+    ],
+    signatureProfile: [
+        {
+            type: 'firma_trabajador',
+            email: 'correo_trabajador',
+            name: 'nombre_trabajador',
+            identification: 'cedula_trabajador'
+        },
+        {
+            type: 'firma_gnp',
+            email: 'correo_gnp',
+            name: 'nombre_gnp',
+            identification: 'cc_gnp'
+        }
+    ],
+    operation: [],
+    name: 'PACTO DE DESALARIZACIÓN',
+    preBuild: false,
+    preBuildData: [],
+    price: 5000,
+    build: 3
+}

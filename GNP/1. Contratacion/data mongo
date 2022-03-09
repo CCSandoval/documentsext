@@ -1,0 +1,1641 @@
+{
+    _id: ObjectId('6213dd41ed0a939e613674ac'),
+    config: [
+        {
+            name: 'nombre_trabajador',
+            help: 'nombre',
+            description: 'Ingrese el nombre del trabajador',
+            type: 'name'
+        },
+        {
+            name: 'dir_dom_trabajador',
+            description: 'Ingrese la dirección de residencia del trabajador',
+            type: 'text'
+        },
+        {
+            name: 'campania',
+            description: 'Ingrese la campaña de contratación',
+            type: 'text'
+        },
+        {
+            name: 'cargo',
+            description: 'Ingrese el cargo del trabajador',
+            type: 'text'
+        },
+        {
+            name: 'ccf',
+            description: 'Ingrese el CCF',
+            type: 'text'
+        },
+        {
+            name: 'salario',
+            description: 'Ingrese el salario del trabajador',
+            type: 'currency'
+        },
+        {
+            name: 'centro_costos',
+            description: 'Ingrese el centro de costos',
+            type: 'number'
+        },
+        {
+            name: 'fecha_inicio_labores',
+            description: 'Seleccione la fecha de inicio de las labores del trabajador',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'tel_celular_trabajador',
+            description: 'Ingrese el celular de contacto del Trabajador',
+            type: 'text',
+            help: 'celular'
+        },
+        {
+            name: 'ciudad_firma',
+            description: 'Ingrese la ciudad en la que se firma el presente documento',
+            type: 'name'
+        },
+        {
+            name: 'fecha_firma',
+            description: 'Seleccione la fecha en la que se firma el presente documento',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'cedula_trabajador',
+            description: 'Ingrese el número de cédula del trabajador',
+            type: 'number'
+        },
+        {
+            name: 'expedicion_cedula_trabajador',
+            description: 'Ingrese el lugar de expedición del documento del trabajador',
+            type: 'text'
+        },
+        {
+            name: 'descripcion_cargo',
+            description: 'Ingrese la descripción de las responsabilidades y funciones del trabajador',
+            type: 'text'
+        },
+        {
+            name: 'jerarquia_superior',
+            description: 'Describa la jerarquía superior del trabajador',
+            type: 'text'
+        },
+        {
+            name: 'jerarquia_inferior',
+            description: 'Describa la jerarquía inferior del trabajador',
+            type: 'name'
+        },
+        {
+            name: 'niveles_cord_int',
+            description: '¿Desea ingresar niveles de coordinación internos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'niveles_cord_int_text',
+            description: 'Ingrese los niveles de coordinación internos',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'niveles_cord_int',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'niveles_cord_ext',
+            description: '¿Desea ingresar niveles de coordinación externos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'niveles_cord_ext_text',
+            description: 'Ingrese los niveles de coordinación externos',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'niveles_cord_ext',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'correo_continuar_trabajador',
+            description: 'Ingrese el correo del trabajador',
+            type: 'text'
+        },
+        {
+            name: 'barrio_trabajador',
+            description: 'Ingrese el nombre del barrio donde reside',
+            type: 'text'
+        },
+        {
+            name: 'estrato_trabajador',
+            description: 'Ingrese su estrato socioeconomico',
+            type: 'number'
+        },
+        {
+            name: 'tipo_vivienda',
+            description: 'Seleccione el tipo de vivienda',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Propia',
+                    value: 'propia'
+                },
+                {
+                    name: 'Familiar',
+                    value: 'familiar'
+                },
+                {
+                    name: 'Arrendada',
+                    value: 'arrendada'
+                }
+            ],
+            value: 'propia'
+        },
+        {
+            name: 'tel_fijo_trabajador',
+            description: 'Ingrese su teléfono fijo',
+            type: 'text'
+        },
+        {
+            name: 'fecha_nacimiento_trab',
+            description: 'Seleccione su fecha de nacimiento',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'lugar_nacimiento_trab',
+            description: 'Digite su ciudad de nacimiento',
+            type: 'text'
+        },
+        {
+            name: 'estado_civil_trab',
+            description: 'Ingrese su estado civil',
+            type: 'text'
+        },
+        {
+            name: 'rh_trab',
+            description: 'Ingrese su RH',
+            type: 'text'
+        },
+        {
+            name: 'raza',
+            description: 'Seleccione su raza',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Mestizo',
+                    value: 'mestizo'
+                },
+                {
+                    name: 'Blanco',
+                    value: 'blanco'
+                },
+                {
+                    name: 'Indio',
+                    value: 'indio'
+                },
+                {
+                    name: 'Mulato',
+                    value: 'mulato'
+                },
+                {
+                    name: 'Negro',
+                    value: 'negro'
+                },
+                {
+                    name: 'otra',
+                    value: 'otra'
+                }
+            ],
+            value: 'mestizo'
+        },
+        {
+            name: 'cual_raza',
+            description: 'Ingrese su raza',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'raza',
+                    v: 'otra'
+                }
+            ]
+        },
+        {
+            name: 'genero',
+            description: 'Seleccione su genero',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                },
+                {
+                    name: 'Otro',
+                    value: 'otro'
+                }
+            ],
+            value: 'f'
+        },
+        {
+            name: 'cual_genero',
+            description: 'Ingrese su genero',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'genero',
+                    v: 'otro'
+                }
+            ]
+        },
+        {
+            name: 'enf_meds',
+            description: '¿Tiene alguna enfermedad que requiera medicamentos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'cual_enfermedad',
+            description: 'Ingrese la enfermedad',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'enf_meds',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'alergias',
+            description: '¿Tiene alguna alergia?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'cual_alergias',
+            description: 'Ingrese qué alergia tiene',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'alergias',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fecha_inicio_capacitacion',
+            description: 'Seleccione la fecha de inicio de la capacitación',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'fecha_vinculacion',
+            description: 'Seleccione la fecha de vinculación',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'eps',
+            description: 'Ingrese la eps a la que pertenece',
+            type: 'text'
+        },
+        {
+            name: 'fondo_pensiones',
+            description: 'Ingrese el fondo de pensiones al que pertenece',
+            type: 'text'
+        },
+        {
+            name: 'beneficiarios',
+            description: '¿Desea ingresar beneficiarios?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'nombres_beneficiario_1',
+            description: 'Ingrese el nombre del primer beneficiario',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'edad_beneficiario_1',
+            description: 'Ingrese la edad del primer beneficiario',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'identidad_beneficiario_1',
+            description: 'Ingrese el documento de identidad del primer beneficiario',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_beneficiario_1',
+            description: 'Seleccione la fecha de nacimiento del primer beneficiario',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_beneficiario_1',
+            description: 'Ingrese el parentesco del primer beneficiario',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'afiliacion_beneficiario_1',
+            description: 'Seleccione el tipo de afiliación del primer beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'EPS',
+                    value: 'eps'
+                },
+                {
+                    name: 'CCF',
+                    value: 'ccf'
+                }
+            ],
+            value: 'eps',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'beneficiario_2',
+            description: '¿Desea ingresar un segundo beneficiario?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombres_beneficiario_2',
+            description: 'Ingrese el nombre del segundo beneficiario',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'edad_beneficiario_2',
+            description: 'Ingrese la edad del segundo beneficiario',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'identidad_beneficiario_2',
+            description: 'Ingrese el documento de identidad del segundo beneficiario',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_beneficiario_2',
+            description: 'Seleccione la fecha de nacimiento del segundo beneficiario',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_beneficiario_2',
+            description: 'Ingrese el parentesco del segundo beneficiario',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'afiliacion_beneficiario_2',
+            description: 'Seleccione el tipo de afiliación del segundo beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'EPS',
+                    value: 'eps'
+                },
+                {
+                    name: 'CCF',
+                    value: 'ccf'
+                }
+            ],
+            value: 'eps',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'beneficiario_3',
+            description: '¿Desea ingresar un tercer beneficiario?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombres_beneficiario_3',
+            description: 'Ingrese el nombre del tercer beneficiario',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'edad_beneficiario_3',
+            description: 'Ingrese la edad del tercer beneficiario',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'identidad_beneficiario_3',
+            description: 'Ingrese el documento de identidad del tercer beneficiario',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_beneficiario_3',
+            description: 'Seleccione la fecha de nacimiento del tercer beneficiario',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_beneficiario_3',
+            description: 'Ingrese el parentesco del tercer beneficiario',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'afiliacion_beneficiario_3',
+            description: 'Seleccione el tipo de afiliación del tercer beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'EPS',
+                    value: 'eps'
+                },
+                {
+                    name: 'CCF',
+                    value: 'ccf'
+                }
+            ],
+            value: 'eps',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_2',
+                    v: 's'
+                },
+                {
+                    k: 'beneficiario_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_mama',
+            help: 'nombre',
+            description: 'Ingrese el nombre de la mamá',
+            type: 'name'
+        },
+        {
+            name: 'fijo_mama',
+            description: 'Ingrese el número de telefono fijo de la mamá',
+            type: 'text'
+        },
+        {
+            name: 'celular_mama',
+            description: 'Ingrese el número de telefono celular de la mamá',
+            type: 'text'
+        },
+        {
+            name: 'nombre_papa',
+            help: 'nombre',
+            description: 'Ingrese el nombre del papá',
+            type: 'name'
+        },
+        {
+            name: 'fijo_papa',
+            description: 'Ingrese el número de telefono fijo del papá',
+            type: 'text'
+        },
+        {
+            name: 'celular_papa',
+            description: 'Ingrese el número de telefono celular del papá',
+            type: 'text'
+        },
+        {
+            name: 'hermanos',
+            description: '¿Desea ingresar información de hermanos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'nombre_hermanos',
+            help: 'nombre',
+            description: 'Ingrese el nombre del/la hermano/a',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'hermanos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fijo_hermanos',
+            description: 'Ingrese el número de telefono fijo del/la hermano/a',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'hermanos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'celular_hermanos',
+            description: 'Ingrese el número de telefono celular del/la hermano/a',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'hermanos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'otros_familiares',
+            description: '¿Desea ingresar información de otro familiar?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'nombre_otro',
+            help: 'nombre',
+            description: 'Ingrese el nombre del otro familiar',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'otros_familiares',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fijo_otro',
+            description: 'Ingrese el número de telefono fijo del otro familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'otros_familiares',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'celular_otro',
+            description: 'Ingrese el número de telefono celular del otro familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'otros_familiares',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'emergencia_1_nombre',
+            description: 'Ingrese el nombre del primer contacto de emergencia',
+            type: 'name'
+        },
+        {
+            name: 'emergencia_1_telefono',
+            description: 'Ingrese el número de teléfono del primer contacto de emergencia',
+            type: 'number'
+        },
+        {
+            name: 'emergencia_1_celular',
+            description: 'Ingrese el número de celular del primer contacto de emergencia',
+            type: 'text'
+        },
+        {
+            name: 'emergencia_1_parentesco',
+            description: 'Ingrese el parentesco del primer contacto de emergencia',
+            type: 'text'
+        },
+        {
+            name: 'emergencia_2',
+            description: '¿Desea ingresar un segundo contacto de emergencia?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'emergencia_2_nombre',
+            description: 'Ingrese el nombre del segundo contacto de emergencia',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'emergencia_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'emergencia_2_telefono',
+            description: 'Ingrese el número de teléfono del segundo contacto de emergencia',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'emergencia_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'emergencia_2_celular',
+            description: 'Ingrese el número de celular del segundo contacto de emergencia',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'emergencia_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'emergencia_2_parentesco',
+            description: 'Ingrese el parentesco del segundo contacto de emergencia',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'emergencia_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'institucion_primaria',
+            description: 'Ingrese el nombre de la institución donde cursó primaria',
+            type: 'name'
+        },
+        {
+            name: 'inicio_primaria',
+            description: 'Seleccione la fecha en la que inició primaria',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'fin_primaria',
+            description: 'Seleccione la fecha en la que finalizó primaria',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'titulo_primaria',
+            description: 'Ingrese el último grado que cursó en primaria',
+            type: 'name'
+        },
+        {
+            name: 'institucion_secundaria',
+            description: 'Ingrese el nombre de la institución donde cursó secundaria',
+            type: 'name'
+        },
+        {
+            name: 'inicio_secundaria',
+            description: 'Seleccione la fecha en la que inició secundaria',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'fin_secundaria',
+            description: 'Seleccione la fecha en la que finalizó secundaria',
+            type: 'date',
+            help: 'fecha'
+        },
+        {
+            name: 'titulo_secundaria',
+            description: 'Ingrese el último grado que cursó en secundaria',
+            type: 'name'
+        },
+        {
+            name: 'tecnico',
+            description: '¿Desea ingresar información académica de técnico o tecnólogo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'institucion_tecnico',
+            description: 'Ingrese el nombre de la institución donde cursó el técnico/tecnologo',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'tecnico',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'inicio_tecnico',
+            description: 'Seleccione la fecha en la que inició el técnico/tecnologo',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'tecnico',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fin_tecnico',
+            description: 'Seleccione la fecha en la que finalizó el técnico/tecnologo',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'tecnico',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'titulo_tecnico',
+            description: 'Ingrese el titulo que consiguió en el técnico/tecnologo',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'tecnico',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'universidad',
+            description: '¿Desea ingresar información académica de carrera universitaria?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'institucion_universidad',
+            description: 'Ingrese el nombre de la institución donde hizo la carrera universitaria',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'universidad',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'inicio_universidad',
+            description: 'Seleccione la fecha en la que inició la carrera universitaria',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'universidad',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fin_universidad',
+            description: 'Seleccione la fecha en la que finalizó la carrera universitaria',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'universidad',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'titulo_universidad',
+            description: 'Ingrese el titulo que consiguió en la carrera universitaria',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'universidad',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral',
+            description: '¿Desea ingresar información de historia laboral?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'info_laboral_empresa_1',
+            description: 'Ingrese el nombre de la empresa donde trabajó',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_cargo_1',
+            description: 'Ingrese el cargo que desarrolló',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_inicio_1',
+            description: 'Seleccione la fecha en la que ingresó a la empresa previamente ingresada',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_fin_1',
+            description: 'Seleccione la fecha en la que salió de la empresa previamente ingresada',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_funciones_1',
+            description: 'Ingrese las principales funciones que desarrolló en su tiempo en la empresa previamente ingresada',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_2',
+            description: '¿Desea ingresar una segunda entrada en la información de historia laboral?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_empresa_2',
+            description: 'Ingrese el nombre de la empresa donde trabajó',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                },
+                {
+                    k: 'info_laboral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_cargo_2',
+            description: 'Ingrese el cargo que desarrolló',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                },
+                {
+                    k: 'info_laboral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_inicio_2',
+            description: 'Seleccione la fecha en la que ingresó a la empresa previamente ingresada',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                },
+                {
+                    k: 'info_laboral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_fin_2',
+            description: 'Seleccione la fecha en la que salió de la empresa previamente ingresada',
+            type: 'date',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                },
+                {
+                    k: 'info_laboral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_laboral_funciones_2',
+            description: 'Ingrese las principales funciones que desarrolló en su tiempo en la empresa previamente ingresada',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'info_laboral',
+                    v: 's'
+                },
+                {
+                    k: 'info_laboral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'confirm_reg_interno',
+            description: '¿Confirma haber leido el reglamento interno de trabajo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'confirm_pol_int',
+            description: '¿Confirma haber leido las politicas internas de gnp?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'confirm_carnet',
+            description: '¿Confirma haber recibido el carnet de identificación institucional?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_gestiones',
+            description: 'Habeas data: ¿Autoriza efectuar las gestiones pertinentes para el desarrollo del objeto social de la compañía en lo que tiene que ver con el cumplimiento del objeto del contrato celebrado con el Titular de la información.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_contactar_correo',
+            description: 'Habeas data: ¿Autoriza contactar al Titular a través de correo electrónico para el envío de extractos, estados de cuenta o facturas en relación con las obligaciones derivadas del contrato celebrado entre las partes.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_suministrar',
+            description: 'Habeas data: ¿Autoriza suministrar información de contacto a la fuerza comercial y/o red de distribución, telemercadeo, investigación de mercados, etc.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_dar_cumplimiento',
+            description: 'Habeas data: ¿Autoriza dar cumplimiento a las obligaciones contraídas por GNP con el Titular de la Información, con relación al pago de salarios, prestaciones sociales y demás retribuciones consagradas en el contrato de trabajo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_contactar_sms',
+            description: 'Habeas data: ¿Autoriza contactar al Titular a través de medios electrónicos - SMS o chat para el envío de noticias relacionadas con campañas de fidelización o mejora de servicio.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_ofrecer',
+            description: 'Habeas data: ¿Autoriza ofrecer programas de bienestar corporativo y planificar actividades empresariales, para el titular y sus beneficiarios (hijos, cónyuge, compañero permanente).?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_encuestas',
+            description: 'Habeas data: ¿Autoriza efectuar encuestas de satisfacción respecto de los bienes y servicios ofrecidos por GNP?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_trans_datos',
+            description: 'Habeas data: ¿Autoriza transferir datos personales fuera del país a la compañía matriz de GNP?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_contactar_tel',
+            description: 'Habeas data: ¿Autoriza contactar al Titular a través de medios telefónicos para realizar encuestas, estudios y/o confirmación de datos personales necesarios para la ejecución de una relación contractual.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_trans_datos_terceros',
+            description: 'Habeas data: ¿Autoriza transmitir los datos personales fuera del país a terceros con los cuales GNP haya suscrito un contrato de procesamiento de datos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_sum_info',
+            description: 'Habeas data: ¿Autoriza suministrar la información a terceros con los cuales GNP tenga relación contractual y que sea necesario entregársela para el cumplimiento del objeto contratado.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_prestar_servicios',
+            description: 'Habeas data: ¿Autoriza prestar los servicios ofrecidos por GNP y aceptados en el contrato suscrito.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_invitaciones',
+            description: 'Habeas data: ¿Autoriza realizar invitaciones a eventos y ofrecer nuevos productos y servicios.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'autoriza_gest_tramites',
+            description: 'Habeas data: ¿Autoriza gestionar trámites (solicitudes, quejas, reclamos).?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'correo_trabajador',
+            description: 'Digite el correo electrónico que usará para firmar',
+            type: 'text'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_trabajador',
+        'dir_dom_trabajador',
+        'campania',
+        'cargo',
+        'ccf',
+        'salario',
+        'centro_costos',
+        'fecha_inicio_labores',
+        'tel_celular_trabajador',
+        'ciudad_firma',
+        'fecha_firma',
+        'cedula_trabajador',
+        'expedicion_cedula_trabajador',
+        'descripcion_cargo',
+        'jerarquia_superior',
+        'jerarquia_inferior',
+        'niveles_cord_int',
+        'niveles_cord_int_text',
+        'niveles_cord_ext',
+        'niveles_cord_ext_text',
+        'correo_continuar_trabajador',
+        'correo_trabajador'
+    ],
+    preFill: [
+        {
+            name: 'correo_gnp',
+            value: 'cristian.sandoval@micontrato.co'
+        },
+        {
+            name: 'nombre_gnp',
+            value: 'MILENA CASTILLO'
+        },
+        {
+            name: 'cc_gnp',
+            value: '53159805'
+        }
+    ],
+    signatureProfile: [
+        {
+            type: 'firma_trabajador',
+            identification: 'cedula_trabajador',
+            name: 'nombre_trabajador',
+            email: 'correo_trabajador'
+        },
+        {
+            type: 'firma_castillo',
+            identification: 'cc_gnp',
+            name: 'nombre_gnp',
+            email: 'correo_gnp'
+        }
+    ],
+    preBuildData: [
+        'nombre_trabajador',
+        'dir_dom_trabajador',
+        'campania',
+        'cargo',
+        'ccf',
+        'salario',
+        'centro_costos',
+        'fecha_inicio_labores',
+        'tel_celular_trabajador',
+        'ciudad_firma',
+        'fecha_firma',
+        'cedula_trabajador',
+        'expedicion_cedula_trabajador',
+        'descripcion_cargo',
+        'jerarquia_superior',
+        'jerarquia_inferior',
+        'niveles_cord_int',
+        'niveles_cord_int_text',
+        'niveles_cord_ext',
+        'niveles_cord_ext_text',
+        'correo_continuar_trabajador'
+    ],
+    name: 'Contratación GNP',
+    username: 'a87afee8-4e11-462b-9b34-4ef90cc7fc8e',
+    preBuild: true,
+    price: 5000,
+    help: {
+        cel: 'Ejemplo: 3156466183',
+        fijo: 'Ejemplo: 2672921',
+        fecha: 'Ejemplo: 23 de febrero de 2022',
+        nombre: 'Ejemplo: Juan David Saenz Lopez',
+        celular: 'Ejemplo: 3027091713'
+    },
+    build: 21
+}
