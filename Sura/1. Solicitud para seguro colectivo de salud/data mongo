@@ -1555,7 +1555,7 @@
                     value: 'n'
                 }
             ],
-            value: 's',
+            value: 's'
         },
         {
             name: 'num_solicitante_afectado_2',
@@ -1605,7 +1605,7 @@
                     value: 'n'
                 }
             ],
-            value: 's',
+            value: 's'
         },
         {
             name: 'num_solicitante_afectado_3',
@@ -1655,7 +1655,7 @@
                     value: 'n'
                 }
             ],
-            value: 's',
+            value: 's'
         },
         {
             name: 'num_solicitante_afectado_4',
@@ -1705,7 +1705,7 @@
                     value: 'n'
                 }
             ],
-            value: 's',
+            value: 's'
         },
         {
             name: 'num_solicitante_afectado_5',
@@ -1755,7 +1755,7 @@
                     value: 'n'
                 }
             ],
-            value: 's',
+            value: 's'
         },
         {
             name: 'num_solicitante_afectado_6',
@@ -1772,7 +1772,6 @@
             name: 'nombre_medico_tratante_6',
             description: 'Ingrese el nombre del médico tratante',
             prereq: [
-            
                 {
                     k: 'afectado_6',
                     v: 's'
@@ -1806,7 +1805,7 @@
                     value: 'n'
                 }
             ],
-            value: 's',
+            value: 's'
         },
         {
             name: 'num_solicitante_afectado_7',
@@ -1856,7 +1855,7 @@
                     value: 'n'
                 }
             ],
-            value: 's',
+            value: 's'
         },
         {
             name: 'num_solicitante_afectado_8',
@@ -1906,7 +1905,7 @@
                     value: 'n'
                 }
             ],
-            value: 's',
+            value: 's'
         },
         {
             name: 'num_solicitante_afectado_9',
@@ -2509,8 +2508,8 @@
         {
             name: 'correo_tomador',
             type: 'text',
-            description: 'Ingrese el correo del afiliado',
-        },
+            description: 'Ingrese el correo del afiliado'
+        }
     ],
     help: {
         fecha: 'Ejemplo: 2022/02/16'
@@ -2526,18 +2525,18 @@
         'num_id_tomador_ce',
         'num_id_tomador_ti'
     ],
-signatureProfile: [
+    signatureProfile: [
         {
             type: 'firma_tomador',
             email: 'correo_tomador',
             name: 'razon_social_tomador',
             identification: 'num_id_tomador_ife|num_id_tomador_pa|num_id_tomador_nit|num_id_tomador_cc|num_id_tomador_ce|num_id_tomador_ti'
-        },
+        }
     ],
     operation: [],
     name: 'SOLICITUD PARA SEGURO COLECTIVO DE SALUD',
     preBuildData: [],
     preBuild: false,
-    price: 0,
-    build: 10
+    price: 5000,
+    build: 11
 }

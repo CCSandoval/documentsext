@@ -1,0 +1,1913 @@
+<style type="text/css">
+  p,
+  span,
+  h2 {
+    font-family: sans-serif;
+  }
+
+  .main_title {
+    font-family: sans-serif;
+    color: #174285;
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+  }
+
+  .subtitle {
+    font-family: sans-serif;
+    color: #174285;
+    margin: 0;
+  }
+
+  .title_container {
+    width: fit-content;
+    margin: 0;
+    float: left;
+  }
+
+  .square {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid #174285;
+    margin-right: 5px;
+    background-color: #f1f4ff;
+  }
+
+  .table_class {
+    width: 100%;
+    border: 1px solid #174285;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-collapse: collapse;
+  }
+
+  .small_text {
+    padding: 5px;
+  }
+
+  .small_text p,
+  span {
+    font-size: 10px;
+    color: #174285;
+  }
+
+  .border_right {
+    border-right: 1px solid #174285;
+  }
+
+  .border_bottom {
+    border-bottom: 1px solid #174285;
+  }
+
+  .border_top {
+    border-top: 1px solid #174285;
+  }
+
+  .clear_bg {
+    background-color: #f1f4ff;
+  }
+
+  .table_title {
+    color: #174285;
+    font-size: 14px;
+    margin: 5px 0px;
+  }
+
+  .align_left {
+    float: left;
+    width: 50%;
+  }
+
+  .align_right {
+    float: right;
+    width: 50%;
+  }
+</style>
+
+<div style="width: 21cm">
+  <div>
+    <img
+      style="position: absolute; right: 0; top: 0"
+      src="https://mi-contrato-static.s3.amazonaws.com/sura/sura_logo.jpg"
+      alt="sura"
+    />
+    <div style="margin-bottom: 30px">
+      <p class="main_title">SOLICITUD PARA SEGURO DE VIDA GRUPO</p>
+      <p class="subtitle"><small>SEGUROS DE VIDA SURAMERICANA S.A</small></p>
+    </div>
+    <hr style="border-top: 3px solid #174285" />
+  </div>
+  <h2
+    style="background-color: #f1f4ff; margin: 0; padding: 5px"
+    class="table_title"
+  >
+    INFORMACIÓN DE LA PÓLIZA (ESPACIO EXCLUSIVO PARA ASESOR Y/O GESTOR)
+  </h2>
+  <table style="background-color: #f1f4ff" class="table_class">
+    <tr>
+      <td class="small_text border_right">
+        <span>Tomador</span>
+      </td>
+      <td class="small_text border_right">
+        <span>Póliza No.</span>
+      </td>
+      <td class="small_text border_right">
+        <span>Fecha Inicio de Vigencia</span>
+      </td>
+      <td class="small_text border_right">
+        <span>Fecha Fin de Vigencia</span>
+      </td>
+      <td class="small_text border_right">
+        <span>Fecha de Diligenciamiento</span>
+      </td>
+      <td class="small_text">
+        <span>Número de solicitud</span>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text border_right">
+        <p><span name="nombre_tomador">&nbsp;</span></p>
+      </td>
+      <td class="small_text border_right">
+        <p><span name="num_poliza">&nbsp;</span></p>
+      </td>
+      <td class="small_text border_right">
+        <p><span name="inicio_vigencia">&nbsp;</span></p>
+      </td>
+      <td class="small_text border_right">
+        <p><span name="fin_vigencia">&nbsp;</span></p>
+      </td>
+      <td class="small_text border_right">
+        <p><span name="fecha_diligenciamiento">&nbsp;</span></p>
+      </td>
+      <td class="small_text">
+        <p><span name="num_solicitud">&nbsp;</span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="small_text" colspan="6">
+        <p>Ofc Radicación</p>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text" colspan="6">
+        <p><span name="oficina_radicacion">&nbsp;</span></p>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text">
+        <span class="square">
+          <span name="plan_vida_int_cont">x</span>
+          <span name="plan_vida_int_no_cont" hidden>&nbsp;</span>
+          <span name="plan_vida_clas_cont" hidden>&nbsp;</span>
+          <span name="plan_vida_clas_no_cont" hidden>&nbsp;</span>
+        </span>
+        <span>Plan Vida Integral Contributivo</span>
+      </td>
+      <td class="small_text">
+        <span class="square">
+          <span name="plan_vida_int_cont">&nbsp;</span>
+          <span name="plan_vida_int_no_cont" hidden>x</span>
+          <span name="plan_vida_clas_cont" hidden>&nbsp;</span>
+          <span name="plan_vida_clas_no_cont" hidden>&nbsp;</span>
+        </span>
+        <span>Plan Vida Integral No Contributivo</span>
+      </td>
+      <td class="small_text">
+        <span class="square">
+          <span name="plan_vida_int_cont">&nbsp;</span>
+          <span name="plan_vida_int_no_cont" hidden>&nbsp;</span>
+          <span name="plan_vida_clas_cont" hidden>x</span>
+          <span name="plan_vida_clas_no_cont" hidden>&nbsp;</span>
+        </span>
+        <span>Plan Vida Clásico Contributivo</span>
+      </td>
+      <td class="small_text border_right">
+        <span class="square">
+          <span name="plan_vida_int_cont">&nbsp;</span>
+          <span name="plan_vida_int_no_cont" hidden>&nbsp;</span>
+          <span name="plan_vida_clas_cont" hidden></span>
+          <span name="plan_vida_clas_no_cont" hidden>x</span>
+        </span>
+        <span>Plan Vida Clásico No Contributivo</span>
+      </td>
+      <td class="small_text">
+        <span class="square">
+          <span name="tipo_proc_ingreso">x</span>
+          <span name="tipo_proc_modificacion" hidden>&nbsp;</span>
+        </span>
+        <span>Ingreso</span>
+      </td>
+      <td class="small_text">
+        <span class="square">
+          <span name="tipo_proc_ingreso">&nbsp;</span>
+          <span name="tipo_proc_modificacion" hidden>x</span>
+        </span>
+        <span>Modificación</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="6">
+        <span><b>Continuidad de vida Individual Sura</b></span>
+        <span class="square">
+          <span name="cont_vida_ind_s">x</span>
+          <span name="cont_vida_ind_n" hidden>&nbsp</span>
+        </span>
+        <span>Si</span>
+        <span class="square">
+          <span name="cont_vida_ind_s">&nbsp;</span>
+          <span name="cont_vida_ind_n" hidden>x</span>
+        </span>
+        <span>No</span>
+        &nbsp; &nbsp; &nbsp;
+        <span>No. Póliza Vida Individual Sura:</span>
+        <span name="num_poliza_vida_ind"></span>
+      </td>
+    </tr>
+  </table>
+  <h2
+    style="background-color: #f1f4ff; margin: 0; padding: 5px"
+    class="table_title"
+  >
+    INFORMACIÓN DE INTERMEDIACIÓN (ESPACIO EXCLUSIVO PARA ASESOR Y/O GESTOR)
+  </h2>
+  <table style="background-color: #f1f4ff" class="table_class">
+    <tr>
+      <td class="small_text border_right">
+        <span>Nombre del asesor o razón social</span>
+      </td>
+      <td class="small_text border_right">
+        <span>Código asesor</span>
+      </td>
+      <td class="small_text border_right">
+        <span>% Participación</span>
+      </td>
+      <td class="small_text border_right">
+        <span>Nombre del asesor o razón social</span>
+      </td>
+      <td class="small_text border_right">
+        <span>Código asesor</span>
+      </td>
+      <td class="small_text">
+        <span>% Participación</span>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small text border_right">
+        <span name="nombre_asesor_1">&nbsp;</span>
+      </td>
+      <td class="small text border_right">
+        <span name="codigo_asesor_1">&nbsp;</span>
+      </td>
+      <td class="small text border_right">
+        <span name="porcentaje_asesor_1">&nbsp;</span>
+      </td>
+      <span name="asesor_2_n"></span>
+      <span name="asesor_2_s">
+        <td class="small text border_right">
+          <span name="nombre_asesor_2">&nbsp;</span>
+        </td>
+        <td class="small text border_right">
+          <span name="codigo_asesor_2">&nbsp;</span>
+        </td>
+        <td class="small text">
+          <span name="porcentaje_asesor_2">&nbsp;</span>
+        </td>
+      </span>
+    </tr>
+  </table>
+  <table style="background-color: #f1f4ff" class="table_class">
+    <tr>
+      <td class="small_text border_right">
+        <h2 class="table_title">
+          INFORMACIÓN GESTOR
+          <small><small>Gestores que participan en el seguro</small></small>
+        </h2>
+      </td>
+      <td class="small_text"><span>Código Gestor</span></td>
+    </tr>
+    <tr>
+      <td class="small_text border_right">
+        <p><span name="nombre_gestor">&nbsp;</span></p>
+      </td>
+      <td class="small_text">
+        <p><span name="codigo_gestor">&nbsp;</span></p>
+      </td>
+    </tr>
+  </table>
+
+  <h2 class="table_title">INFORMACIÓN DEL ASEGURADO PRINCIPAL</h2>
+  <table class="table_class">
+    <tr>
+      <td class="small_text border_right"><p>Tipo de Identificación</p></td>
+      <td class="small_text border_right"><p>Número de Identificación</p></td>
+      <td colspan="2" class="small_text border_right">
+        <p>
+          Nombres y Apellidos del Asegurado Principal (Primero Nombres, luego
+          Apellidos)
+        </p>
+      </td>
+      <td class="small_text border_right"><p>Sexo</p></td>
+      <td class="small_text"><p>Fecha de nacimiento</p></td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text border_right">
+        <span class="square">
+          <span name="tipo_id_asegurado_cc">x</span>
+          <span name="tipo_id_asegurado_ce" hidden>&nbsp;</span>
+          <span name="tipo_id_asegurado_pa" hidden>&nbsp;</span>
+        </span>
+        <span>C.C.</span>
+        <span class="square">
+          <span name="tipo_id_asegurado_cc">&nbsp;</span>
+          <span name="tipo_id_asegurado_ce" hidden>x</span>
+          <span name="tipo_id_asegurado_pa" hidden>&nbsp;</span>
+        </span>
+        <span>C.E.</span>
+        <span class="square">
+          <span name="tipo_id_asegurado_cc">&nbsp;</span>
+          <span name="tipo_id_asegurado_ce" hidden>&nbsp;</span>
+          <span name="tipo_id_asegurado_pa" hidden>x</span>
+        </span>
+        <span>PA.</span>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p>
+          <span name="tipo_id_asegurado_cc">
+            <span name="num_cc_asegurado"></span>
+          </span>
+          <span name="tipo_id_asegurado_ce" hidden>
+            <span name="num_ce_asegurado"></span>
+          </span>
+          <span name="tipo_id_asegurado_pa" hidden>
+            <span name="num_pa_asegurado"></span>
+          </span>
+        </p>
+      </td>
+      <td colspan="2" class="small_text border_right clear_bg">
+        <p>
+          <span name="nombre_asegurado"></span>
+        </p>
+      </td>
+      <td class="small_text border_right">
+        <p>
+          <span class="square">
+            <span name="sexo_asegurado_f">x</span>
+            <span name="sexo_asegurado_m" hidden>&nbsp;</span>
+          </span>
+          <span>F</span>
+          <span class="square">
+            <span name="sexo_asegurado_f">&nbsp;</span>
+            <span name="sexo_asegurado_m" hidden>x</span>
+          </span>
+          <span>M</span>
+        </p>
+      </td>
+      <td class="small_text clear_bg">
+        <p>
+          <span name="nacimiento_asegurado"></span>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td class="small_text border_right">
+        <p>Peso (Kg)</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Estatura (en cms)</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Ciudad de residencia</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Departamento</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Teléfono (Sin indicativo)</p>
+      </td>
+      <td class="small_text">
+        <p>Celular</p>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text border_right clear_bg">
+        <p><span name="peso_asegurado">&nbsp;</span></p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p><span name="estatura_asegurado"></span></p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p><span name="ciudad_asegurado"></span></p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p><span name="departamento_asegurado"></span></p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p><span name="telefono_asegurado"></span></p>
+      </td>
+      <td class="small_text clear_bg">
+        <p><span name="celular_asegurado"></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="small_text border_right">
+        <p>Dirección Correspondencia</p>
+      </td>
+      <td colspan="2" class="small_text border_right clear_bg">
+        <p><span name="correspondencia_asegurado">&nbsp;</span></p>
+      </td>
+      <td class="small_text">
+        <p>Correo Electrónico</p>
+      </td>
+      <td colspan="2" class="small_text clear_bg">
+        <p><span name="correo_asegurado">&nbsp;</span></p>
+      </td>
+    </tr>
+  </table>
+  <h2 class="table_title">
+    INFORMACIÓN DEL SEGURO
+    <small style="font-weight: normal"
+      >(*El valor asegurado por cobertura de cada uno de los integrantes del
+      grupo familiar, no puede ser superior al valor asegurado por cobertura del
+      Asegurado Principal)</small
+    >
+  </h2>
+  <table class="table_class">
+    <tr class="border_top border_bottom">
+      <td colspan="2" class="small_text border_right">
+        <p><b>Valor Solicitado Cobertura de Vida</b></p>
+      </td>
+      <td colspan="2" class="small_text border_right">
+        <p><b>Coberturas Vida Grupo</b></p>
+      </td>
+      <td colspan="2" class="small_text">
+        <p><b>Coberturas Adicionales</b></p>
+      </td>
+    </tr>
+    <tr>
+      <td class="small_text"><span>Asegurado Principal</span></td>
+      <td class="small_text clear_bg border_right">
+        <p>$<span name="valor_asegurado_principal">________</span></p>
+      </td>
+      <td colspan="2" class="small_text border_right">
+        <p>
+          <span class="square">
+            <span name="invalidez_n">&nbsp;</span>
+            <span name="invalidez_s" hidden>x</span>
+          </span>
+          <span>
+            Invalidez, pérdida o inutilización por enfermedad o accidente
+          </span>
+        </p>
+      </td>
+      <span name="accidentes_personales_n"></span>
+      <span name="accidentes_personales_s">
+        <td class="small_text">
+          <p>
+            <b>Accidentes Personales</b> <br /><br />
+            <span class="square">
+              <span name="muerte_accidente_adicional_n">&nbsp;</span>
+              <span name="muerte_accidente_adicional_s" hidden>x</span>
+            </span>
+            <span> Muerte accidental adicional </span>
+          </p>
+        </td>
+      </span>
+      <td class="small_text">
+        <p style="border: 1px solid; padding: 3px">
+          Valor asegurado<br />
+          $<span class="clear_bg" name="valor_asegurado_accidentes_personales"
+            >_____________</span
+          >
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-top: 1px" class="small_text"><span>Cónyugue</span></td>
+      <td class="small_text border_right clear_bg">
+        <p>$<span name="valor_asegurado_conyugue">________</span></p>
+      </td>
+      <td class="small_text">
+        <p>
+          <span class="square">
+            <span name="muerte_accidente_n">&nbsp;</span>
+            <span name="muerte_accidente_s" hidden>x</span>
+          </span>
+          <span> Muerte en un accidente </span>
+          <br />
+          <br />
+          <span>Lesiones con armas</span>
+          <span class="square">
+            <span name="lesiones_con_armas_n">&nbsp;</span>
+            <span name="lesiones_con_armas_s" hidden>x</span>
+          </span>
+          <span>Si</span>
+          <span class="square">
+            <span name="lesiones_con_armas_n">x</span>
+            <span name="lesiones_con_armas_s" hidden>&nbsp;</span>
+          </span>
+          <span>No</span>
+        </p>
+      </td>
+      <td class="small_text border_right">
+        <p style="border: 1px solid; padding: 3px">
+          Valor asegurado<br />
+          $<span class="clear_bg" name="valor_asegurado_muerte_accidente"
+            >_____________</span
+          >
+        </p>
+      </td>
+      <td class="small_text border_bottom">
+        <span class="square">
+          <span name="invalidez_accidental_adicional_n">&nbsp;</span>
+          <span name="invalidez_accidental_adicional_s" hidden>x</span>
+        </span>
+        <span>Invalidez accidental adicional</span>
+      </td>
+      <td class="small_text border_bottom">
+        <span>Lesiones con armas</span><br />
+        <span class="square">
+          <span name="lesiones_con_armas_adicional_n">&nbsp;</span>
+          <span name="lesiones_con_armas_adicional_s" hidden>x</span>
+        </span>
+        <span><b>Si</b></span>
+        <span class="square">
+          <span name="lesiones_con_armas_adicional_n">x</span>
+          <span name="lesiones_con_armas_adicional_s" hidden>&nbsp;</span>
+        </span>
+        <span><b>No</b></span>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-top: 1px" class="small_text"><span>Hijos</span></td>
+      <td class="small_text border_right clear_bg">
+        <p>$<span name="valor_asegurado_hijos">________</span></p>
+      </td>
+      <td colspan="2" class="small_text border_right">
+        <span class="square">
+          <span name="enfermedades_graves_n">&nbsp;</span>
+          <span name="enfermedades_graves_s" hidden>x</span>
+        </span>
+        <span>Enfermedades Graves</span>
+        &nbsp; &nbsp; &nbsp;
+        <span name="enfermedades_graves_n"></span>
+        <span name="enfermedades_graves_s">
+          <span class="clear_bg" name="porcentaje_enfermedades_graves">
+            ____
+          </span>
+          %
+        </span>
+      </td>
+      <td class="small_text">
+        <p>
+          <b>Renta</b> <br /><br />
+          <span class="square">
+            <span name="renta_hospitalizacion_n">&nbsp;</span>
+            <span name="renta_hospitalizacion_s" hidden>x</span>
+          </span>
+          <span>Renta por hospitalización</span>
+        </p>
+      </td>
+      <td class="small_text">
+        <p style="border: 1px solid; padding: 3px">
+          Valor asegurado<br />
+          $<span class="clear_bg" name="valor_asegurado_renta"
+            >_____________</span
+          >
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-top: 1px" class="small_text"><span>Hermanos</span></td>
+      <td class="small_text border_right clear_bg">
+        <p>$<span name="valor_asegurado_hermanos">________</span></p>
+      </td>
+      <td style="padding: 0px 5px" class="small_text">
+        <span class="square">
+          <span name="aux_funerario_n">&nbsp;</span>
+          <span name="aux_funerario_s" hidden>x</span>
+        </span>
+        <span>Auxilio funerario</span>
+      </td>
+      <td style="padding: 0px 5px" class="small_text border_right">
+        <p style="border: 1px solid; padding: 3px">
+          Valor asegurado<br />
+          $<span class="clear_bg" name="valor_asegurado_aux_funerario"
+            >_____________</span
+          >
+        </p>
+      </td>
+      <td class="small_text" colspan="2">
+        <p>
+          <span>
+            Tipo de Renta &nbsp; &nbsp; &nbsp;
+            <span class="square">
+              <span name="tipo_renta_abierta">&nbsp;</span>
+              <span name="tipo_renta_cerrada" hidden>x</span>
+            </span>
+            <span>Cerrada</span>
+            &nbsp; &nbsp; &nbsp;
+            <span class="square">
+              <span name="tipo_renta_abierta">x</span>
+              <span name="tipo_renta_cerrada" hidden>&nbsp;</span>
+            </span>
+            <span>Abierta</span>
+          </span>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td style="padding-top: 1px" class="small_text"><span>Otros</span></td>
+      <span name="valor_otros_n"></span>
+      <span name="valor_otros_s">
+        <td class="small_text border_right clear_bg">
+          <p>$<span name="valor_asegurado_otros">________</span></p>
+        </td>
+      </span>
+      <td style="padding: 0px 5px" class="small_text">
+        <span class="square">
+          <span name="bono_canasta_n">&nbsp;</span>
+          <span name="bono_canasta_s" hidden>x</span>
+        </span>
+        <span>Bono canasta (pago único)</span>
+      </td>
+      <td style="padding: 0px 5px" class="small_text border_right">
+        <p style="border: 1px solid; padding: 3px; border-top: none">
+          $<span class="clear_bg" name="valor_asegurado_bono_canasta"
+            >_____________</span
+          >
+        </p>
+      </td>
+      <td class="small_text">
+        <p>EPS</p>
+      </td>
+      <td class="clear_bg small_text">
+        <span name="eps_renta">________________</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="small_text border_right">
+        <span>Parentescos de otros con el Asegurado Principal</span>
+      </td>
+      <td colspan="2" style="padding: 0px 5px" class="small_text border_right">
+        <span class="square">
+          <span name="perdida_parcial_cap_lab_n">&nbsp;</span>
+          <span name="perdida_parcial_cap_lab_s" hidden>x</span>
+        </span>
+        <span>Pérdida parcial de la capacidad laboral</span>
+      </td>
+      <td colspan="2" class="small_text">
+        <p>
+          Renta adicional por hospitalización en cuidados intensivos<br /><br />
+          <span class="square">
+            <span name="renta_adi_hosp_uci_n">x</span>
+            <span name="renta_adi_hosp_uci_s" hidden>&nbsp;</span>
+          </span>
+          <b>Si</b>
+          <span class="square">
+            <span name="renta_adi_hosp_uci_n">&nbsp;</span>
+            <span name="renta_adi_hosp_uci_s" hidden>x</span>
+          </span>
+          <b>No</b>
+        </p>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2" class="small_text border_right">
+        <p style="padding: 3px; margin: 0" class="clear_bg">
+          <span name="parentesco_otros">&nbsp;</span>
+        </p>
+      </td>
+      <td style="padding: 0px 5px" class="small_text">
+        <span class="square">
+          <span name="renta_incapacidad_n">&nbsp;</span>
+          <span name="renta_incapacidad_s" hidden>x</span>
+        </span>
+        <span>Renta por Incapacidad</span>
+      </td>
+      <td style="padding: 0px 5px" class="small_text border_right">
+        <span class="square">
+          <span name="auxilio_repatriacion_n">&nbsp;</span>
+          <span name="auxilio_repatriacion_s" hidden>x</span>
+        </span>
+        <span>Auxilio de Repatriación</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" class="border_right"></td>
+      <td style="padding: 5px" class="small_text">
+        <span class="square">
+          <span name="aux_maternidad_n">&nbsp;</span>
+          <span name="aux_maternidad_s" hidden>x</span>
+        </span>
+        <span>Auxilio de maternidad/paternidad</span>
+      </td>
+      <td style="padding: 5px" class="small_text border_right">
+        <span class="square">
+          <span name="bono_educacion_n">&nbsp;</span>
+          <span name="bono_educacion_s" hidden>x</span>
+        </span>
+        <span>Bono para educación</span>
+      </td>
+    </tr>
+  </table>
+  <p style="color: #174285; text-align: center">
+    <b>VALOR PRIMA</b> <small>(según forma de pago pactada)</small> $
+    <span class="clear_bg" style="font-size: 16px" name="valor_prima"
+      >__________________</span
+    >
+  </p>
+  <h2
+    style="font-size: 16px; border-top: 2px #174285 solid; padding-top: 7px"
+    class="table_title"
+  >
+    INFORMACIÓN DE OTROS ASEGURADOS (GRUPO FAMILIAR)
+  </h2>
+  <span name="grupo_familiar_n"></span>
+  <span name="grupo_familiar_s"></span>
+  <table class="table_class">
+    <tr class="border_top border_bottom">
+      <td></td>
+      <td class="small_text border_right">
+        <p>Tipo de Identificación</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Número de Identificación</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Nombres y Apellidos (Primero Nombres, luego Apellidos)</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Parentesco con el Asegurado Principal</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Fecha Nacimiento AAAA MM DD</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Sexo</p>
+      </td>
+      <td class="small_text">
+        <p>Peso (Kg.)</p>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text">
+        <p>1.</p>
+      </td>
+      <td class="small_text clear_bg border_right">
+        <p>
+          <span name="tipo_id_gf_1_cc"> C.C </span>
+          <span name="tipo_id_gf_1_ce" hidden> C.E </span>
+          <span name="tipo_id_gf_1_ti" hidden> T.I </span>
+        </p>
+      </td>
+      <td class="small_text clear_bg border_right">
+        <p>
+          <span name="tipo_id_gf_1_cc">
+            <span name="num_cc_gf_1"></span>
+          </span>
+          <span name="tipo_id_gf_1_ce" hidden>
+            <span name="num_ce_gf_1"></span>
+          </span>
+          <span name="tipo_id_gf_1_ti" hidden>
+            <span name="num_ti_gf_1"></span>
+          </span>
+        </p>
+      </td>
+      <td class="small_text clear_bg border_right">
+        <span name="nombres_gf_1"></span>
+      </td>
+      <td class="small_text clear_bg border_right">
+        <span name="parentesco_gf_1"></span>
+      </td>
+      <td class="small_text clear_bg border_right">
+        <span name="nacimiento_gf_1"></span>
+      </td>
+      <td class="small_text clear_bg border_right">
+        <span name="sexo_gf_1"></span>
+      </td>
+      <td class="small_text clear_bg">
+        <span name="peso_gf_1"></span>
+      </td>
+    </tr>
+    <span name="familiar_2_n"></span>
+    <span name="familiar_2_s">
+      <tr class="border_bottom">
+        <td class="small_text">
+          <p>2.</p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <p>
+            <span name="tipo_id_gf_2_cc"> C.C </span>
+            <span name="tipo_id_gf_2_ce" hidden> C.E </span>
+            <span name="tipo_id_gf_2_ti" hidden> T.I </span>
+          </p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <p>
+            <span name="tipo_id_gf_2_cc">
+              <span name="num_cc_gf_2"></span>
+            </span>
+            <span name="tipo_id_gf_2_ce" hidden>
+              <span name="num_ce_gf_2"></span>
+            </span>
+            <span name="tipo_id_gf_2_ti" hidden>
+              <span name="num_ti_gf_2"></span>
+            </span>
+          </p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="nombres_gf_2"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="parentesco_gf_2"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="nacimiento_gf_2"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="sexo_gf_2"></span>
+        </td>
+        <td class="small_text clear_bg">
+          <span name="peso_gf_2"></span>
+        </td>
+      </tr>
+    </span>
+    <span name="familiar_3_n"></span>
+    <span name="familiar_3_s">
+      <tr class="border_bottom">
+        <td class="small_text">
+          <p>3.</p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <p>
+            <span name="tipo_id_gf_3_cc"> C.C </span>
+            <span name="tipo_id_gf_3_ce" hidden> C.E </span>
+            <span name="tipo_id_gf_3_ti" hidden> T.I </span>
+          </p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <p>
+            <span name="tipo_id_gf_3_cc">
+              <span name="num_cc_gf_3"></span>
+            </span>
+            <span name="tipo_id_gf_3_ce" hidden>
+              <span name="num_ce_gf_3"></span>
+            </span>
+            <span name="tipo_id_gf_3_ti" hidden>
+              <span name="num_ti_gf_3"></span>
+            </span>
+          </p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="nombres_gf_3"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="parentesco_gf_3"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="nacimiento_gf_3"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="sexo_gf_3"></span>
+        </td>
+        <td class="small_text clear_bg">
+          <span name="peso_gf_3"></span>
+        </td>
+      </tr>
+    </span>
+    <span name="familiar_4_n"></span>
+    <span name="familiar_4_s">
+      <tr>
+        <td class="small_text">
+          <p>4.</p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <p>
+            <span name="tipo_id_gf_4_cc"> C.C </span>
+            <span name="tipo_id_gf_4_ce" hidden> C.E </span>
+            <span name="tipo_id_gf_4_ti" hidden> T.I </span>
+          </p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <p>
+            <span name="tipo_id_gf_4_cc">
+              <span name="num_cc_gf_4"></span>
+            </span>
+            <span name="tipo_id_gf_4_ce" hidden>
+              <span name="num_ce_gf_4"></span>
+            </span>
+            <span name="tipo_id_gf_4_ti" hidden>
+              <span name="num_ti_gf_4"></span>
+            </span>
+          </p>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="nombres_gf_4"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="parentesco_gf_4"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="nacimiento_gf_4"></span>
+        </td>
+        <td class="small_text clear_bg border_right">
+          <span name="sexo_gf_4"></span>
+        </td>
+        <td class="small_text clear_bg">
+          <span name="peso_gf_4"></span>
+        </td>
+      </tr>
+    </span>
+  </table>
+  <span name="beneficiarios_n"></span>
+  <span name="beneficiarios_s"></span>
+
+  <h2 class="table_title">
+    INFORMACIÓN DE LOS BENEFICIARIOS DEL ASEGURADO PRINCIPAL &nbsp;&nbsp;&nbsp;
+    <small>(*La suma de los porcentajes debe ser igual al 100%)</small>
+    <br />
+    <small>
+      (**Otros asegurados deben diligenciar el formato especifico F-02-83-125)
+      &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+      &nbsp; &nbsp; &nbsp;
+      <span style="font-weight: normal">Con derecho a Acrecimiento</span>
+      <span class="square">
+        <span name="derecho_acrecimiento_s">x</span>
+        <span name="derecho_acrecimiento_n" hidden>&nbsp;</span>
+      </span>
+      <span>SI</span>
+      <span class="square">
+        <span name="derecho_acrecimiento_s">&nbsp;</span>
+        <span name="derecho_acrecimiento_n" hidden>x</span>
+      </span>
+      <span>NO</span>
+    </small>
+  </h2>
+  <table class="table_class">
+    <tr class="border_top">
+      <td colspan="2" class="small_text border_right">
+        <p style="text-align: center">Identificación</p>
+      </td>
+      <td rowspan="2" class="small_text border_right">
+        <p>Nombres y Apellidos (Primero Nombres, luego Apellidos)</p>
+      </td>
+      <td rowspan="2" class="small_text border_right">
+        <p>Parentesco con el Asegurado Principal</p>
+      </td>
+      <td rowspan="2" class="small_text border_right">
+        <p>Fecha Nacimiento AAAA MM DD</p>
+      </td>
+      <td rowspan="2" class="small_text border_right">
+        <p>Sexo</p>
+      </td>
+      <td rowspan="2" class="small_text">
+        <p>Peso (Kg.)</p>
+      </td>
+    </tr>
+    <tr class="border_top border_bottom">
+      <td class="small_text border_right">
+        <p>Tipo</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Número</p>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text border_right clear_bg">
+        <p>
+          <span name="tipo_id_ben_principal_1_cc">C.C</span>
+          <span name="tipo_id_ben_principal_1_ce" hidden>C.E</span>
+          <span name="tipo_id_ben_principal_1_ti" hidden>TI</span>
+        </p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p>
+          <span name="tipo_id_ben_principal_1_cc">
+            <span name="num_cc_ben_principal_1"></span>
+          </span>
+          <span name="tipo_id_ben_principal_1_ce" hidden>
+            <span name="num_ce_ben_principal_1"></span>
+          </span>
+          <span name="tipo_id_ben_principal_1_ti" hidden>
+            <span name="num_ti_ben_principal_1"></span>
+          </span>
+        </p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p>
+          <span name="nombre_ben_principal_1"></span>
+        </p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p>
+          <span name="parentesco_ben_principal_1"></span>
+        </p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p>
+          <span name="nacimiento_ben_principal_1"></span>
+        </p>
+      </td>
+      <td class="small_text border_right clear_bg">
+        <p>
+          <span name="sexo_ben_principal_1"></span>
+        </p>
+      </td>
+      <td class="small_text clear_bg">
+        <p>
+          <span name="peso_ben_principal_1"></span>
+        </p>
+      </td>
+    </tr>
+    <span name="ben_principal_2_n"></span>
+    <span name="ben_principal_2_s">
+      <tr class="border_bottom">
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_2_cc">C.C</span>
+            <span name="tipo_id_ben_principal_2_ce" hidden>C.E</span>
+            <span name="tipo_id_ben_principal_2_ti" hidden>TI</span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_2_cc">
+              <span name="num_cc_ben_principal_2"></span>
+            </span>
+            <span name="tipo_id_ben_principal_2_ce" hidden>
+              <span name="num_ce_ben_principal_2"></span>
+            </span>
+            <span name="tipo_id_ben_principal_2_ti" hidden>
+              <span name="num_ti_ben_principal_2"></span>
+            </span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nombre_ben_principal_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="parentesco_ben_principal_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nacimiento_ben_principal_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="sexo_ben_principal_2"></span>
+          </p>
+        </td>
+        <td class="small_text clear_bg">
+          <p>
+            <span name="peso_ben_principal_2"></span>
+          </p>
+        </td>
+      </tr>
+    </span>
+    <span name="ben_principal_3_n"></span>
+    <span name="ben_principal_3_s">
+      <tr class="border_bottom">
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_3_cc">C.C</span>
+            <span name="tipo_id_ben_principal_3_ce" hidden>C.E</span>
+            <span name="tipo_id_ben_principal_3_ti" hidden>TI</span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_3_cc">
+              <span name="num_cc_ben_principal_3"></span>
+            </span>
+            <span name="tipo_id_ben_principal_3_ce" hidden>
+              <span name="num_ce_ben_principal_3"></span>
+            </span>
+            <span name="tipo_id_ben_principal_3_ti" hidden>
+              <span name="num_ti_ben_principal_3"></span>
+            </span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nombre_ben_principal_3"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="parentesco_ben_principal_3"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nacimiento_ben_principal_3"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="sexo_ben_principal_3"></span>
+          </p>
+        </td>
+        <td class="small_text clear_bg">
+          <p>
+            <span name="peso_ben_principal_3"></span>
+          </p>
+        </td>
+      </tr>
+    </span>
+    <span name="ben_principal_4_n"></span>
+    <span name="ben_principal_4_s">
+      <tr class="border_bottom">
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_4_cc">C.C</span>
+            <span name="tipo_id_ben_principal_4_ce" hidden>C.E</span>
+            <span name="tipo_id_ben_principal_4_ti" hidden>TI</span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_4_cc">
+              <span name="num_cc_ben_principal_4"></span>
+            </span>
+            <span name="tipo_id_ben_principal_4_ce" hidden>
+              <span name="num_ce_ben_principal_4"></span>
+            </span>
+            <span name="tipo_id_ben_principal_4_ti" hidden>
+              <span name="num_ti_ben_principal_4"></span>
+            </span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nombre_ben_principal_4"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="parentesco_ben_principal_4"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nacimiento_ben_principal_4"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="sexo_ben_principal_4"></span>
+          </p>
+        </td>
+        <td class="small_text clear_bg">
+          <p>
+            <span name="peso_ben_principal_4"></span>
+          </p>
+        </td>
+      </tr>
+    </span>
+    <span name="ben_principal_5_n"></span>
+    <span name="ben_principal_5_s">
+      <tr class="border_bottom">
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_5_cc">C.C</span>
+            <span name="tipo_id_ben_principal_5_ce" hidden>C.E</span>
+            <span name="tipo_id_ben_principal_5_ti" hidden>TI</span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_5_cc">
+              <span name="num_cc_ben_principal_5"></span>
+            </span>
+            <span name="tipo_id_ben_principal_5_ce" hidden>
+              <span name="num_ce_ben_principal_5"></span>
+            </span>
+            <span name="tipo_id_ben_principal_5_ti" hidden>
+              <span name="num_ti_ben_principal_5"></span>
+            </span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nombre_ben_principal_5"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="parentesco_ben_principal_5"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nacimiento_ben_principal_5"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="sexo_ben_principal_5"></span>
+          </p>
+        </td>
+        <td class="small_text clear_bg">
+          <p>
+            <span name="peso_ben_principal_5"></span>
+          </p>
+        </td>
+      </tr>
+    </span>
+    <span name="ben_principal_6_n"></span>
+    <span name="ben_principal_6_s">
+      <tr class="border_bottom">
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_6_cc">C.C</span>
+            <span name="tipo_id_ben_principal_6_ce" hidden>C.E</span>
+            <span name="tipo_id_ben_principal_6_ti" hidden>TI</span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="tipo_id_ben_principal_6_cc">
+              <span name="num_cc_ben_principal_6"></span>
+            </span>
+            <span name="tipo_id_ben_principal_6_ce" hidden>
+              <span name="num_ce_ben_principal_6"></span>
+            </span>
+            <span name="tipo_id_ben_principal_6_ti" hidden>
+              <span name="num_ti_ben_principal_6"></span>
+            </span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nombre_ben_principal_6"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="parentesco_ben_principal_6"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="nacimiento_ben_principal_6"></span>
+          </p>
+        </td>
+        <td class="small_text border_right clear_bg">
+          <p>
+            <span name="sexo_ben_principal_6"></span>
+          </p>
+        </td>
+        <td class="small_text clear_bg">
+          <p>
+            <span name="peso_ben_principal_6"></span>
+          </p>
+        </td>
+      </tr>
+    </span>
+  </table>
+  <br />
+  <h2 class="table_title">DECLARACIÓN DE ASEGURABILIDAD</h2>
+  <span>
+    Responde sinceramente las siguientes preguntas. Si alguna de tus respuestas
+    no es verdadera o dejas de responder alguna pregunta, el seguro será nulo y
+    por lo tanto Sura no pagará ninguna reclamación que tú o los beneficiarios
+    presenten
+  </span>
+
+  <p style="text-align: justify">
+    <span>
+      <b>
+        1. Marca con una equis si a ti o alguno de los asegurados se les han
+        diagnosticado alguna de las siguientes enfermedades:
+      </b>
+    </span>
+    <br />
+    <br />
+    <span class="square">
+      <span name="enf_card_n">&nbsp;</span>
+      <span name="enf_card_s" hidden>x</span>
+    </span>
+    <span>Enfermedades cardiovasculares</span>
+    &nbsp;
+    <span class="square">
+      <span name="infarto_n">&nbsp;</span>
+      <span name="infarto_s" hidden>x</span>
+    </span>
+    <span>Infarto del corazón</span>
+    &nbsp;
+    <span class="square">
+      <span name="arritmia_n">&nbsp;</span>
+      <span name="arritmia_s" hidden>x</span>
+    </span>
+    <span>Arritmias</span>
+    &nbsp;
+    <span class="square">
+      <span name="hiper_arterial_n">&nbsp;</span>
+      <span name="hiper_arterial_s" hidden>x</span>
+    </span>
+    <span>Hipertensión arterial</span>
+    &nbsp;
+    <span class="square">
+      <span name="colesterol_n">&nbsp;</span>
+      <span name="colesterol_s" hidden>x</span>
+    </span>
+    <span>Colesterol (Tratado con medicamentos)</span>
+    &nbsp;
+    <span class="square">
+      <span name="trigliceridos_n">&nbsp;</span>
+      <span name="trigliceridos_s" hidden>x</span>
+    </span>
+    <span>Triglicéridos altos (Tratado con medicamentos)</span>
+    &nbsp;
+    <span class="square">
+      <span name="lupus_n">&nbsp;</span>
+      <span name="lupus_s" hidden>x</span>
+    </span>
+    <span>Lupus</span>
+    &nbsp;
+    <span class="square">
+      <span name="isquemia_n">&nbsp;</span>
+      <span name="isquemia_s" hidden>x</span>
+    </span>
+    <span>Isquemia o trombosis cerebral</span>
+    &nbsp;
+    <span class="square">
+      <span name="epilepsia_n">&nbsp;</span>
+      <span name="epilepsia_s" hidden>x</span>
+    </span>
+    <span>Epilepsia</span>
+    &nbsp;
+    <span class="square">
+      <span name="enfisema_n">&nbsp;</span>
+      <span name="enfisema_s" hidden>x</span>
+    </span>
+    <span>Enfisema (EPOC)</span>
+    &nbsp;
+    <span class="square">
+      <span name="bronquitis_n">&nbsp;</span>
+      <span name="bronquitis_s" hidden>x</span>
+    </span>
+    <span>Bronquitis Crónica</span>
+    &nbsp;
+    <span class="square">
+      <span name="cancer_metastasis_n">&nbsp;</span>
+      <span name="cancer_metastasis_s" hidden>x</span>
+    </span>
+    <span>Cáncer con metástasis (Afecta otros órganos)</span>
+    &nbsp;
+    <span class="square">
+      <span name="cancer_n">&nbsp;</span>
+      <span name="cancer_s" hidden>x</span>
+    </span>
+    <span>Cáncer sin metástasis (No afecta otros órganos)</span>
+    &nbsp;
+    <span class="square">
+      <span name="cirrosis_n">&nbsp;</span>
+      <span name="cirrosis_s" hidden>x</span>
+    </span>
+    <span>Cirrosis</span>
+    &nbsp;
+    <span class="square">
+      <span name="derrames_n">&nbsp;</span>
+      <span name="derrames_s" hidden>x</span>
+    </span>
+    <span>Derrames</span>
+    &nbsp;
+    <span class="square">
+      <span name="leucemia_n">&nbsp;</span>
+      <span name="leucemia_s" hidden>x</span>
+    </span>
+    <span>Leucemia</span>
+    &nbsp;
+    <span class="square">
+      <span name="tumores_n">&nbsp;</span>
+      <span name="tumores_s" hidden>x</span>
+    </span>
+    <span>Tumores malignos</span>
+    &nbsp;
+    <span class="square">
+      <span name="sida_n">&nbsp;</span>
+      <span name="sida_s" hidden>x</span>
+    </span>
+    <span>SIDA o VIH positivo</span>
+    &nbsp;
+    <span class="square">
+      <span name="insuficiencia_renal_n">&nbsp;</span>
+      <span name="insuficiencia_renal_s" hidden>x</span>
+    </span>
+    <span>Insuficiencia Renal</span>
+    &nbsp;
+    <span class="square">
+      <span name="esclerosis_n">&nbsp;</span>
+      <span name="esclerosis_s" hidden>x</span>
+    </span>
+    <span>Esclerosis múltiple</span>
+    &nbsp;
+    <span class="square">
+      <span name="artritis_n">&nbsp;</span>
+      <span name="artritis_s" hidden>x</span>
+    </span>
+    <span>Artritis reumatoidea</span>
+    &nbsp;
+    <span class="square">
+      <span name="diabetes_n">&nbsp;</span>
+      <span name="diabetes_s" hidden>x</span>
+    </span>
+    <span>Diabetes</span>
+    &nbsp;
+    <span class="square">
+      <span name="pancreatitis_n">&nbsp;</span>
+      <span name="pancreatitis_s" hidden>x</span>
+    </span>
+    <span>Pancreatitis</span>
+    &nbsp;
+    <span class="square">
+      <span name="psiquiatrico_n">&nbsp;</span>
+      <span name="psiquiatrico_s" hidden>x</span>
+    </span>
+    <span>Transtornos Psiquiátricos</span>
+    &nbsp;
+    <span class="square">
+      <span name="hepatitis_n">&nbsp;</span>
+      <span name="hepatitis_s" hidden>x</span>
+    </span>
+    <span>Hepatitis B o C</span>
+    &nbsp;
+    <span class="square">
+      <span name="retardo_n">&nbsp;</span>
+      <span name="retardo_s" hidden>x</span>
+    </span>
+    <span>Retardo mental</span>
+    <br />
+    <span class="square">
+      <span name="colitis_n">&nbsp;</span>
+      <span name="colitis_s" hidden>x</span>
+    </span>
+    <span>Colitis ulcerativa</span>
+    &nbsp;
+    <span class="square">
+      <span name="hipertiroidismo_n">&nbsp;</span>
+      <span name="hipertiroidismo_s" hidden>x</span>
+    </span>
+    <span>Hipertiroidismo</span>
+    &nbsp;
+    <span class="square">
+      <span name="paralisis_n">&nbsp;</span>
+      <span name="paralisis_s" hidden>x</span>
+    </span>
+    <span>Parálisis diferente a facial</span>
+    &nbsp;
+    <span class="square">
+      <span name="deformidades_n">&nbsp;</span>
+      <span name="deformidades_s" hidden>x</span>
+    </span>
+    <span>Deformidades corporales</span>
+    &nbsp;
+    <span class="square">
+      <span name="ceguera_n">&nbsp;</span>
+      <span name="ceguera_s" hidden>x</span>
+    </span>
+    <span>Ceguera</span>
+    &nbsp;
+    <span class="square">
+      <span name="sordera_n">&nbsp;</span>
+      <span name="sordera_s" hidden>x</span>
+    </span>
+    <span>Sordera total o parcial</span>
+    &nbsp;
+    <span class="square">
+      <span name="hernia_n">&nbsp;</span>
+      <span name="hernia_s" hidden>x</span>
+    </span>
+    <span>Hernia de columna</span>
+    <br />
+    <span class="square">
+      <span name="perdida_funcional_n">&nbsp;</span>
+      <span name="perdida_funcional_s" hidden>x</span>
+    </span>
+    <span>Perdida funcional o anatómica</span>
+  </p>
+  <p style="text-align: justify">
+    <span>
+      ¿Han recibido tratamiento por alcoholismo o drogadicción en los últimos
+      cinco años?
+    </span>
+    <span class="square">
+      <span name="tratamiento_adiccion_5_anios_n">x</span>
+      <span name="tratamiento_adiccion_5_anios_s" hidden>&nbsp;</span>
+    </span>
+    <span><b>NO</b></span>
+    <span class="square">
+      <span name="tratamiento_adiccion_5_anios_n">&nbsp;</span>
+      <span name="tratamiento_adiccion_5_anios_s" hidden>x</span>
+    </span>
+    <span><b>SI</b></span>
+    &nbsp; &nbsp;
+    <span>¿Reciben tratamiento por alcoholismo o drogadicción?</span>
+    <span class="square">
+      <span name="tratamiento_adiccion_n">x</span>
+      <span name="tratamiento_adiccion_s" hidden>&nbsp;</span>
+    </span>
+    <span><b>NO</b></span>
+    <span class="square">
+      <span name="tratamiento_adiccion_n">&nbsp;</span>
+      <span name="tratamiento_adiccion_s" hidden>x</span>
+    </span>
+    <span><b>SI</b></span>
+    <br />
+    <span>¿Consume Marihuana hasta 3 veces por mes?</span>
+    <span class="square">
+      <span name="marihuana_3_veces_n">x</span>
+      <span name="marihuana_3_veces_s" hidden>&nbsp;</span>
+    </span>
+    <span><b>NO</b></span>
+    <span class="square">
+      <span name="marihuana_3_veces_n">&nbsp;</span>
+      <span name="marihuana_3_veces_s" hidden>x</span>
+    </span>
+    <span><b>SI</b></span>
+    &nbsp; &nbsp;
+    <span>¿Consume Marihuana mas de 3 veces por mes?</span>
+    <span class="square">
+      <span name="marihuana_mas_veces_n">x</span>
+      <span name="marihuana_mas_veces_s" hidden>&nbsp;</span>
+    </span>
+    <span><b>NO</b></span>
+    <span class="square">
+      <span name="marihuana_mas_veces_n">&nbsp;</span>
+      <span name="marihuana_mas_veces_s" hidden>x</span>
+    </span>
+    <span><b>SI</b></span>
+    <br />
+    <span>
+      ¿Son consumidores de otro tipo de drogas estimulantes o adictivas?
+    </span>
+    <span class="square">
+      <span name="otras_drogas_n">x</span>
+      <span name="otras_drogas_s" hidden>&nbsp;</span>
+    </span>
+    <span><b>NO</b></span>
+    <span class="square">
+      <span name="otras_drogas_n">&nbsp;</span>
+      <span name="otras_drogas_s" hidden>x</span>
+    </span>
+    <span><b>SI</b></span>
+  </p>
+  <p style="text-align: justify">
+    <span>
+      <b>
+        2. En caso que hayas marcado alguna enfermedad o contestado de manera
+        afirmativa una de las preguntas, diligencia la siguiente información:
+      </b>
+    </span>
+  </p>
+  <table class="table_class">
+    <tr class="border_bottom">
+      <td class="small_text border_right">
+        <p>No. de identificacion del Asegurado</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Nombre del Médico tratante</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Nombre de la Institución Médica</p>
+      </td>
+      <td class="small_text border_right">
+        <p>EPS</p>
+      </td>
+      <td class="small_text">
+        <p>Enfermedad / Especificar Padecimiento</p>
+      </td>
+    </tr>
+    <span name="numeral_2_n"></span>
+    <span name="numeral_2_s">
+      <tr class="border_bottom">
+        <td class="small_text border_right">
+          <p>
+            <span name="num_id_asegurado_enfermad_1"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="nombre_tratante_asegurado_enfermad_1"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="inst_medica_asegurado_enfermad_1"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="eps_asegurado_enfermad_1"></span>
+          </p>
+        </td>
+        <td class="small_text">
+          <p>
+            <span name="enf_asegurado_enfermad_1"></span>
+          </p>
+        </td>
+      </tr>
+    </span>
+    <span name="numeral_2_segundo_asegurado_n"></span>
+    <span name="numeral_2_segundo_asegurado_n">
+      <tr class="border_bottom">
+        <td class="small_text border_right">
+          <p>
+            <span name="num_id_asegurado_enfermad_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="nombre_tratante_asegurado_enfermad_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="inst_medica_asegurado_enfermad_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="eps_asegurado_enfermad_2"></span>
+          </p>
+        </td>
+        <td class="small_text">
+          <p>
+            <span name="enf_asegurado_enfermad_2"></span>
+          </p>
+        </td>
+      </tr>
+    </span>
+  </table>
+  <p style="text-align: justify">
+    <span>
+      <b>
+        3. ¿Alguno de los solicitantes ha tenido enfermedades diferentes a las
+        enunciadas en el numeral 1, accidentes o cualquier otra condición por
+        las que haya recibido o esté recibiendo tratamiento; y/o tiene
+        programada alguna intervención quirúrgica y/o se encuentra en la
+        actualidad bajo estudio médico para el diagnóstico de alguna enfermedad?
+        o en el último mes ha tenido signos o síntomas como: Secreciones, dolor
+        de garganta, tos, fiebre, dificultad para respirar, o sospecha de
+        contagio o infección o le han diagnosticado el COVID-19 (Coronavirus)?
+      </b>
+    </span>
+  </p>
+  <span name="numeral_3_n"></span>
+  <span name="numeral_3_s"> </span>
+  <table class="table_class">
+    <tr class="border_bottom">
+      <td class="small_text border_right">
+        <p>No. de identificacion del Asegurado</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Nombre del Médico tratante</p>
+      </td>
+      <td class="small_text border_right">
+        <p>Nombre de la Institución Médica</p>
+      </td>
+      <td class="small_text border_right">
+        <p>EPS</p>
+      </td>
+      <td class="small_text">
+        <p>Enfermedad / Especificar Padecimiento</p>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text border_right">
+        <p>
+          <span name="num_id_asegurado_otra_enfermad_1"></span>
+        </p>
+      </td>
+      <td class="small_text border_right">
+        <p>
+          <span name="nombre_tratante_asegurado_otra_enfermad_1"></span>
+        </p>
+      </td>
+      <td class="small_text border_right">
+        <p>
+          <span name="inst_medica_asegurado_otra_enfermad_1"></span>
+        </p>
+      </td>
+      <td class="small_text border_right">
+        <p>
+          <span name="eps_asegurado_otra_enfermad_1"></span>
+        </p>
+      </td>
+      <td class="small_text">
+        <p>
+          <span name="enf_asegurado_otra_enfermad_1"></span>
+        </p>
+      </td>
+    </tr>
+    <span name="numeral_3_segundo_asegurado_n"></span>
+    <span name="numeral_3_segundo_asegurado_s">
+      <tr class="border_bottom">
+        <td class="small_text border_right">
+          <p>
+            <span name="num_id_asegurado_otra_enfermad_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="nombre_tratante_asegurado_otra_enfermad_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="inst_medica_asegurado_otra_enfermad_2"></span>
+          </p>
+        </td>
+        <td class="small_text border_right">
+          <p>
+            <span name="eps_asegurado_otra_enfermad_2"></span>
+          </p>
+        </td>
+        <td class="small_text">
+          <p>
+            <span name="enf_asegurado_otra_enfermad_2"></span>
+          </p>
+        </td>
+      </tr>
+    </span>
+  </table>
+  <p style="text-align: justify">
+    <span>
+      <b>
+        4. En caso de haber tenido COVID o haber sido diagnosticado con dicha
+        infección, responda: El diagnóstico fue hace menos de 30 días o requirió
+        algún tipo de tratamiento hospitalario (Hospitalización), UCI o manejo
+        al interior de alguna clínica o institución. (En caso de NO haber tenido
+        COVID responda NO).
+      </b>
+    </span>
+  </p>
+  <table class="table_class">
+    <tr class="border_bottom">
+      <td class="small_text">
+        <p>En caso positivo indique el número de asegurado:</p>
+      </td>
+      <td colspan="2" class="small_text clear_bg">
+        <p><span name="num_asegurado_diag_covid"></span></p>
+      </td>
+      <td class="small_text">
+        <p>
+          <span class="square">
+            <span name="diag_covid_s">x</span>
+            <span name="diag_covid_n" hidden>&nbsp;</span>
+          </span>
+          <span>SI</span>
+          <span class="square">
+            <span name="diag_covid_s">&nbsp;</span>
+            <span name="diag_covid_n" hidden>x</span>
+          </span>
+          <span>NO</span>
+        </p>
+      </td>
+    </tr>
+    <tr class="border_bottom">
+      <td class="small_text">
+        <p>
+          5. ¿Ha sido vacunado contra la COVID-19 y tiene el esquema completo?
+        </p>
+      </td>
+      <td class="small_text">
+        <p>
+          <span class="square">
+            <span name="vac_covid_s">x</span>
+            <span name="vac_covid_n" hidden>&nbsp;</span>
+          </span>
+          <span>SI</span>
+          <span class="square">
+            <span name="vac_covid_s">&nbsp;</span>
+            <span name="vac_covid_n" hidden>x</span>
+          </span>
+          <span>NO</span>
+        </p>
+      </td>
+      <td class="small_text">
+        <p>En caso negativo indique el número de asegurado:</p>
+      </td>
+      <td class="small_text clear_bg">
+        <p><span name="num_asegurado_unvac_covid"></span></p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="small_text">
+        <p>¿Tienes información relevante adicional para declarar?</p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4" class="small_text clear_bg">
+        <p>
+          <span name="info_relevante_n"></span>
+          <span name="info_relevante_s">
+            <span name="info_relevante_texto">&nbsp;</span>
+          </span>
+        </p>
+      </td>
+    </tr>
+  </table>
+  <p style="text-align: justify">
+    <span>
+      En adición a la anteriores respuestas ten en cuenta que con tu firma estás
+      declarando que tú y los otros asegurados gozan de buena salud, que toda la
+      información que suministraste en esta solicitud es verdadera, que su
+      ocupación está permitida por la ley, que no ejercen actividades ilícitas
+      ni de alto riesgo y que no han cometido delitos.
+    </span>
+  </p>
+  <h2 class="table_title">COBERTURA INMEDIATA</h2>
+  <p style="text-align: justify; margin: 0px">
+    <span>
+      Después de analizar tu solicitud Sura te informará si te puede asegurar.
+      Si Sura acepta hacerlo, tendrás cobertura inmediata sin cobro de prima,
+      desde la fecha de diligenciamiento de la solicitud, hasta la fecha de
+      corte del seguro. Esta cobertura inmediata sin cobro de prima en ningún
+      caso podrá darse por un perdiodo por un periodo superior a 30 dias.
+    </span>
+  </p>
+  <h2 class="table_title">TRATAMIENTO DE DATOS PERSONALES</h2>
+  <p style="text-align: justify; margin: 0px">
+    <span>
+      Con tu firma también estás autorizando a SURAMERICANA S.A para la
+      recolección, almacenamiento y uso de tus datos personales con la finalidad
+      de vincularte como cliente de SEGUROS DE VIDA SURAMERICANA S.A. Para el
+      tratamiento de tus datos, incluso biométricos, que es un dato sensible,
+      para los fines que sean necesarios para la prestación de los servicios
+      encargados particularmente para ejecutar y cumplir el contrato. Estás
+      autorizando a SURAMERICANA S.A a entregar o compartir tu información con
+      FASECOLDA e INVERFAS S.A; con la finalidad de adelantar actividades y
+      proyectos del sector asegurador, con personas jurídicas que administran
+      bases de datos; para efectos de prevención y control de fraudes y
+      selección de riesgos, con Centrales de Información y Riesgo; con la
+      finalidad de reportar los datos positivos o negativos de tu comportamiento
+      crediticio y financiero; con aliados estratégicos, Intermediarios de
+      Seguros, Compañía matriz, filiales y subsidiarias; con el fin de ser
+      contactado para el ofrecimiento de productos, envío de información,
+      ofertas comerciales y publicitarias. Autorizas a SURAMERICANA S.A para
+      consultar y obtener copia de tu historia clínica, que es un dato sensible,
+      para la suscripción y proceso de reclamación del seguro. Te en cuenta que
+      las respuestas a las preguntas sobre el tratamiento de datos sensibles son
+      facultativas. Como Titular de la información tienes derecho a conocer,
+      actualizar y rectificar tus datos personales, solicitar prueba de la
+      autorización otorgada para el tratamiento, informarte sobre el uso que se
+      ha dado a los mismos, revocar la autorización y solicitar la supresión de
+      tus datos cuando sea procedente y acceder en forma gratuita a los mismos.
+      <br />
+      <br />
+      El responsable del tratamiento de la informaciónes SURAMERICANA S.A, para
+      ejercer los derechos sobre tus datos personales, comunícate a la línea de
+      Atención al4378888 desde Medellín, Bogotá y Cali o al 01 8000518888 en el
+      resto del país. Para conocer nuestra política de privacidad visita
+      <b>www.sura.com.</b>
+    </span>
+  </p>
+
+  <br />
+  <h2 class="table_title">
+    CERTIFICACIÓN Y ACEPTACIÓN DEL ASEGURADO PRINCIPAL
+  </h2>
+  <div>
+    <p
+      style="
+        padding: 5px;
+        font-size: 12px;
+        width: 350px;
+        border: 1px solid #174285;
+        color: #5274ac;
+      "
+    >
+      Declaro que he sido informado de las coberturas, exclusiones y garantías
+      del producto y también que se me ha hecho entrega de las condiciones del
+      mismo y que podrán ser consultadas en la página web.
+    </p>
+    <p>
+      <span style="font-size: 14px">______________________________</span><br />
+      <span style="font-size: 14px">Firma del Asegurado Principal</span>
+      <br />
+      <span style="font-size: 14px">Número de Identificación</span>
+      <span name="" class="clear_bg">
+        <span name="tipo_id_asegurado_cc">
+          <span name="num_cc_asegurado">_____________</span>
+        </span>
+        <span name="tipo_id_asegurado_ce" hidden>
+          <span name="num_ce_asegurado">_____________</span>
+        </span>
+        <span name="tipo_id_asegurado_pa" hidden>
+          <span name="num_pa_asegurado">_____________</span>
+        </span>
+      </span>
+    </p>
+  </div>
+</div>

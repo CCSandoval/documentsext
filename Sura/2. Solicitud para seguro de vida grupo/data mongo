@@ -1,0 +1,4131 @@
+{
+    _id: ObjectId('620fa019ed0a939e613674a8'),
+    config: [
+        {
+            name: 'nombre_tomador',
+            description: 'Ingrese el nombre del tomador de la póliza',
+            type: 'name'
+        },
+        {
+            name: 'num_poliza',
+            description: 'Ingrese el número de la póliza',
+            type: 'text'
+        },
+        {
+            name: 'inicio_vigencia',
+            description: 'Ingrese la fecha de inicio la vigencia de la póliza (AAAA/MM/DD)',
+            help: 'fecha',
+            type: 'text'
+        },
+        {
+            name: 'fin_vigencia',
+            description: 'Ingrese la fecha de finalización de la vigencia de la póliza (AAAA/MM/DD)',
+            help: 'fecha',
+            type: 'text'
+        },
+        {
+            name: 'fecha_diligenciamiento',
+            description: 'Ingrese la fecha de diligenciamiento del formulario (AAAA/MM/DD)',
+            help: 'fecha',
+            type: 'text'
+        },
+        {
+            name: 'num_solicitud',
+            description: 'Ingrese el número de la solicitud',
+            type: 'number'
+        },
+        {
+            name: 'oficina_radicacion',
+            description: 'Ingrese la oficina de radicación',
+            type: 'text'
+        },
+        {
+            name: 'plan_vida',
+            description: 'Seleccione el tipo de plan',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Plan Vida Integral Contributivo',
+                    value: 'int_cont'
+                },
+                {
+                    name: 'Plan Vida Integral No Contributivo',
+                    value: 'int_no_cont'
+                },
+                {
+                    name: 'Plan Vida Clásico Contributivo',
+                    value: 'clas_cont'
+                },
+                {
+                    name: 'Plan Vida Clásico No Contributivo',
+                    value: 'clas_no_cont'
+                }
+            ],
+            value: 'int_cont'
+        },
+        {
+            name: 'tipo_proc',
+            description: 'Seleccione el tipo de procedimiento',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Ingreso',
+                    value: 'ingreso'
+                },
+                {
+                    name: 'Modificacion',
+                    value: 'modificacion'
+                }
+            ],
+            value: 'ingreso'
+        },
+        {
+            name: 'cont_vida_ind',
+            description: '¿Tiene continuidad de Vida Individual Sura?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'num_poliza_vida_ind',
+            description: 'Ingrese el número de la poliza de vida individual sura',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'cont_vida_ind',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_asesor_1',
+            description: 'Ingrese el nombre del primer asesor',
+            type: 'name'
+        },
+        {
+            name: 'codigo_asesor_1',
+            description: 'Ingrese el código del primer asesor',
+            type: 'number'
+        },
+        {
+            name: 'porcentaje_asesor_1',
+            description: 'Ingrese el porcentaje de participación del primer asesor',
+            type: 'number'
+        },
+        {
+            name: 'asesor_2',
+            description: '¿Desea ingresar un segundo asesor?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'nombre_asesor_2',
+            description: 'Ingrese el nombre del primer asesor',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'asesor_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'codigo_asesor_2',
+            description: 'Ingrese el código del segundo asesor',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'asesor_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'porcentaje_asesor_2',
+            description: 'Ingrese el porcentaje de participación del segundo asesor',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'asesor_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_gestor',
+            description: 'Ingrese el nombre del gestor',
+            type: 'name'
+        },
+        {
+            name: 'codigo_gestor',
+            description: 'Ingrese el código del gestor',
+            type: 'number'
+        },
+        {
+            name: 'tipo_id_asegurado',
+            description: 'Seleccione el tipo de documento de identidad del asegurado principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            value: 'cc'
+        },
+        {
+            name: 'num_cc_asegurado',
+            description: 'Ingrese el número de cédula de ciudadanía del asegurado principal',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_asegurado',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_asegurado',
+            description: 'Ingrese el número de cédula de extranjería del asegurado principal',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_asegurado',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'num_pa_asegurado',
+            description: 'Ingrese el pasaporte del asegurado principal',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_id_asegurado',
+                    v: 'pa'
+                }
+            ]
+        },
+        {
+            name: 'nombre_asegurado',
+            description: 'Ingrese el nombre completo del asegurado principal',
+            type: 'name'
+        },
+        {
+            name: 'sexo_asegurado',
+            description: 'Seleccione el genero del asegurado principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f'
+        },
+        {
+            name: 'nacimiento_asegurado',
+            description: 'Ingrese la fecha de nacimiento del asegurado principal (AAAA/MM/DD)',
+            help: 'fecha',
+            type: 'text'
+        },
+        {
+            name: 'peso_asegurado',
+            description: 'Ingrese el peso del asegurado principal en kilogramos',
+            type: 'number'
+        },
+        {
+            name: 'estatura_asegurado',
+            description: 'Ingrese la estatura del asegurado principal en centimetros',
+            type: 'number'
+        },
+        {
+            name: 'ciudad_asegurado',
+            description: 'Ingrese la ciudad de residencia del asegurado principal',
+            type: 'text'
+        },
+        {
+            name: 'departamento_asegurado',
+            description: 'Ingrese el departamento de residencia del asegurado principal',
+            type: 'text'
+        },
+        {
+            name: 'telefono_asegurado',
+            description: 'Ingrese el número de teléfono del asegurado principal sin indicativo',
+            type: 'number'
+        },
+        {
+            name: 'celular_asegurado',
+            description: 'Ingrese el número de celular del asegurado principal',
+            type: 'number'
+        },
+        {
+            name: 'correspondencia_asegurado',
+            description: 'Ingrese la dirección de correspondencia del asegurado principal',
+            type: 'text'
+        },
+        {
+            name: 'correo_asegurado',
+            description: 'Ingrese el correo del asegurado principal',
+            type: 'text'
+        },
+        {
+            name: 'valor_asegurado_principal',
+            description: 'Ingrese el valor asegurado de cobertura de vida del asegurado principal',
+            type: 'number'
+        },
+        {
+            name: 'valor_asegurado_conyugue',
+            description: 'Ingrese el valor asegurado de cobertura de vida del conyugue',
+            type: 'number'
+        },
+        {
+            name: 'valor_asegurado_hijos',
+            description: 'Ingrese el valor asegurado de cobertura de vida de los hijos',
+            type: 'number'
+        },
+        {
+            name: 'valor_asegurado_hermanos',
+            description: 'Ingrese el valor asegurado de cobertura de vida de los hermanos',
+            type: 'number'
+        },
+        {
+            name: 'valor_otros',
+            description: '¿Desea ingresar un valor asegurado de cobertura de vida para otros?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'valor_asegurado_otros',
+            description: 'Ingrese el valor asegurado de cobertura de vida de los otros',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'valor_otros',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_otros',
+            description: 'Ingrese los parentescos con el asegurado principal de los otros',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'valor_otros',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'invalidez',
+            description: '¿Desea incluir Invalidez en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'muerte_accidente',
+            description: '¿Desea incluir muerte accidental en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'lesiones_con_armas',
+            description: '¿Desea incluir lesiones con armas en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'valor_asegurado_muerte_accidente',
+            description: 'Ingrese el valor asegurado para muerte accidental en las coberturas de vida del grupo',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'muerte_accidente',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'enfermedades_graves',
+            description: '¿Desea incluir enfermedades graves en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'porcentaje_enfermedades_graves',
+            description: 'Ingrese el porcentaje correspondiente a las enfermedades graves en las coberturas de vida del grupo',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'enfermedades_graves',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'aux_funerario',
+            description: '¿Desea incluir auxilio funerario en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'valor_asegurado_aux_funerario',
+            description: 'Ingrese el valor asegurado para el auxilio funerario en las coberturas de vida del grupo',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'aux_funerario',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'bono_canasta',
+            description: '¿Desea incluir un bono canasta en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'valor_asegurado_bono_canasta',
+            description: 'Ingrese el valor asegurado para el bono canasta en las coberturas de vida del grupo',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'bono_canasta',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'perdida_parcial_cap_lab',
+            description: '¿Desea incluir perdida parcial de la capacidad laboral en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'renta_incapacidad',
+            description: '¿Desea incluir renta por incapacidad en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'auxilio_repatriacion',
+            description: '¿Desea incluir auxilio de repatriación en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'aux_maternidad',
+            description: '¿Desea incluir auxilio de maternidad/paternidad en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'bono_educacion',
+            description: '¿Desea incluir un bono de educación en las coberturas de vida del grupo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'accidentes_personales',
+            description: '¿Desea incluir accidentes personales a las coberturas adicionales?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'muerte_accidente_adicional',
+            description: '¿Desea incluir muerte accidental adicional en la cobertura de accidentes personales?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'accidentes_personales',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'invalidez_accidental_adicional',
+            description: '¿Desea incluir invalidez accidental adicional en la cobertura de accidentes personales?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'accidentes_personales',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'lesiones_con_armas_adicional',
+            description: '¿Desea incluir lesiones con armas en la cobertura de accidentes personales?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'accidentes_personales',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'valor_asegurado_accidentes_personales',
+            type: 'number',
+            description: 'Ingrese el valor asegurado para accidentes personales',
+            prereq: [
+                {
+                    k: 'accidentes_personales',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'renta_hospitalizacion',
+            description: '¿Desea incluir renta por hospitalización a las coberturas adicionales?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'tipo_renta',
+            type: 'number',
+            description: 'Seleccione el tipo de renta',
+            options: [
+                {
+                    name: 'Abierta',
+                    value: 'abierta'
+                },
+                {
+                    name: 'Cerrada',
+                    value: 'cerrada'
+                }
+            ],
+            value: 'abierta',
+            prereq: [
+                {
+                    k: 'renta_hospitalizacion',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'eps_renta',
+            type: 'text',
+            description: 'Ingrese la eps de la renta',
+            prereq: [
+                {
+                    k: 'renta_hospitalizacion',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'renta_adi_hosp_uci',
+            type: 'clausula',
+            description: '¿Desea incluir renta adicional por hospitalización en cudiados intensivos?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 's',
+            prereq: [
+                {
+                    k: 'renta_hospitalizacion',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'valor_prima',
+            type: 'number',
+            description: 'Ingrese el valor de la prima'
+        },
+        {
+            name: 'grupo_familiar',
+            type: 'clausula',
+            description: '¿Desea ingresar información de otros asegurados (Grupo Familiar)?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'tipo_id_gf_1',
+            description: 'Seleccione el tipo de documento de identidad del primer integrante del grupo familiar',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_gf_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del primer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_1',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_gf_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del primer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_1',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_gf_1',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del primer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_1',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'nombres_gf_1',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del primer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_gf_1',
+            type: 'text',
+            description: 'Ingrese el parentesco con el asegurado principal del primer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_gf_1',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del primer integrante del grupo familiar (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_gf_1',
+            type: 'text',
+            description: 'Ingrese el sexo del primer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_gf_1',
+            type: 'text',
+            description: 'Ingrese el peso del primer integrante del grupo familiar (en kilogramos)',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2',
+            type: 'clausula',
+            description: '¿Desea ingresar un segundo familiar al grupo familiar?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_gf_2',
+            description: 'Seleccione el tipo de documento de identidad del segundo integrante del grupo familiar',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_gf_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del segundo integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_gf_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del segundo integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_gf_2',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del segundo integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_2',
+                    v: 'ti'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombres_gf_2',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del segundo integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_gf_2',
+            type: 'text',
+            description: 'Ingrese el parentesco con el asegurado principal del segundo integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_gf_2',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del segundo integrante del grupo familiar (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_gf_2',
+            type: 'text',
+            description: 'Ingrese el sexo del segundo integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_gf_2',
+            type: 'text',
+            description: 'Ingrese el peso del segundo integrante del grupo familiar (en kilogramos)',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3',
+            type: 'clausula',
+            description: '¿Desea ingresar un tercer familiar al grupo familiar?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_gf_3',
+            description: 'Seleccione el tipo de documento de identidad del tercer integrante del grupo familiar',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_gf_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del tercer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_gf_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del tercer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_gf_3',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del tercer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_3',
+                    v: 'ti'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombres_gf_3',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del tercer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_gf_3',
+            type: 'text',
+            description: 'Ingrese el parentesco con el asegurado principal del tercer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_gf_3',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del tercer integrante del grupo familiar (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_gf_3',
+            type: 'text',
+            description: 'Ingrese el sexo del tercer integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_gf_3',
+            type: 'text',
+            description: 'Ingrese el peso del tercer integrante del grupo familiar (en kilogramos)',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4',
+            type: 'clausula',
+            description: '¿Desea ingresar un cuarto familiar al grupo familiar?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_gf_4',
+            description: 'Seleccione el tipo de documento de identidad del cuarto integrante del grupo familiar',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_gf_4',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del cuarto integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_4',
+                    v: 'cc'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_gf_4',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del cuarto integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_4',
+                    v: 'ce'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_gf_4',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del cuarto integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_gf_4',
+                    v: 'ti'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombres_gf_4',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del cuarto integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_gf_4',
+            type: 'text',
+            description: 'Ingrese el parentesco con el asegurado principal del cuarto integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_gf_4',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del cuarto integrante del grupo familiar (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_gf_4',
+            type: 'text',
+            description: 'Ingrese el sexo del cuarto integrante del grupo familiar',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_gf_4',
+            type: 'text',
+            description: 'Ingrese el peso del cuarto integrante del grupo familiar (en kilogramos)',
+            prereq: [
+                {
+                    k: 'grupo_familiar',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_2',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_3',
+                    v: 's'
+                },
+                {
+                    k: 'familiar_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'beneficiarios',
+            description: '¿Desea agregar beneficiarios del asegurado principal?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'no'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'derecho_acrecimiento',
+            type: 'clausula',
+            description: '¿Los beneficiarios del asegurado principal tienen derecho a Acrecimiento?',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ],
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 's'
+        },
+        {
+            name: 'tipo_id_ben_principal_1',
+            description: 'Seleccione el tipo de documento de identidad del primer beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_ben_principal_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del primer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_1',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_ben_principal_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del primer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_1',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_ben_principal_1',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del primer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_1',
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'nombre_ben_principal_1',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del primer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_ben_principal_1',
+            type: 'name',
+            description: 'Ingrese el parentesco del primer beneficiario con el asegurado principal',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_ben_principal_1',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del primer beneficiario (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_ben_principal_1',
+            type: 'text',
+            description: 'Ingrese el sexo del primer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_ben_principal_1',
+            type: 'text',
+            description: 'Ingrese el peso del primer beneficiario en kilogramos',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'ben_principal_2',
+            description: '¿Desea ingresar un segundo beneficiario?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_ben_principal_2',
+            description: 'Seleccione el tipo de documento de identidad del segundo beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_ben_principal_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del segundo beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_ben_principal_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del segundo beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_ben_principal_2',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del segundo beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_2',
+                    v: 'ti'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_ben_principal_2',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del segundo beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_ben_principal_2',
+            type: 'name',
+            description: 'Ingrese el parentesco del segundo beneficiario con el asegurado principal',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_ben_principal_2',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del segundo beneficiario (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_ben_principal_2',
+            type: 'text',
+            description: 'Ingrese el sexo del segundo beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_ben_principal_2',
+            type: 'text',
+            description: 'Ingrese el peso del segundo beneficiario en kilogramos',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'ben_principal_3',
+            description: '¿Desea ingresar un tercer beneficiario?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_ben_principal_3',
+            description: 'Seleccione el tipo de documento de identidad del tercer beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_ben_principal_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del tercer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_ben_principal_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del tercer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_ben_principal_3',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del tercer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_3',
+                    v: 'ti'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_ben_principal_3',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del tercer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_ben_principal_3',
+            type: 'name',
+            description: 'Ingrese el parentesco del tercer beneficiario con el asegurado principal',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_ben_principal_3',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del tercer beneficiario (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_ben_principal_3',
+            type: 'text',
+            description: 'Ingrese el sexo del tercer beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_ben_principal_3',
+            type: 'text',
+            description: 'Ingrese el peso del tercer beneficiario en kilogramos',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'ben_principal_4',
+            description: '¿Desea ingresar un cuarto beneficiario?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_ben_principal_4',
+            description: 'Seleccione el tipo de documento de identidad del cuarto beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_ben_principal_4',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del cuarto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_4',
+                    v: 'cc'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_ben_principal_4',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del cuarto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_4',
+                    v: 'ce'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_ben_principal_4',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del cuarto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_4',
+                    v: 'ti'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_ben_principal_4',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del cuarto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_ben_principal_4',
+            type: 'name',
+            description: 'Ingrese el parentesco del cuarto beneficiario con el asegurado principal',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_ben_principal_4',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del cuarto beneficiario (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_ben_principal_4',
+            type: 'text',
+            description: 'Ingrese el sexo del cuarto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_ben_principal_4',
+            type: 'text',
+            description: 'Ingrese el peso del cuarto beneficiario en kilogramos',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'ben_principal_5',
+            description: '¿Desea ingresar un quinto beneficiario?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_ben_principal_5',
+            description: 'Seleccione el tipo de documento de identidad del quinto beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_ben_principal_5',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_5',
+                    v: 'cc'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_ben_principal_5',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_5',
+                    v: 'ce'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_ben_principal_5',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_5',
+                    v: 'ti'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_ben_principal_5',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_ben_principal_5',
+            type: 'name',
+            description: 'Ingrese el parentesco del quinto beneficiario con el asegurado principal',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_ben_principal_5',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del quinto beneficiario (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_ben_principal_5',
+            type: 'text',
+            description: 'Ingrese el sexo del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_ben_principal_5',
+            type: 'text',
+            description: 'Ingrese el peso del quinto beneficiario en kilogramos',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'ben_principal_6',
+            description: '¿Desea ingresar un quinto beneficiario?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_ben_principal_6',
+            description: 'Seleccione el tipo de documento de identidad del quinto beneficiario',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                }
+            ],
+            value: 'cc',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cc_ben_principal_6',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_6',
+                    v: 'cc'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_ben_principal_6',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_6',
+                    v: 'ce'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_ti_ben_principal_6',
+            type: 'number',
+            description: 'Ingrese el número de tarjeta de identidad del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_id_ben_principal_6',
+                    v: 'ti'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_ben_principal_5',
+            type: 'name',
+            description: 'Ingrese los nombres y apellidos del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'parentesco_ben_principal_5',
+            type: 'name',
+            description: 'Ingrese el parentesco del quinto beneficiario con el asegurado principal',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nacimiento_ben_principal_5',
+            type: 'text',
+            description: 'Ingrese la fecha de nacimiento del quinto beneficiario (AAAA/MM/DD)',
+            help: 'fecha',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexo_ben_principal_5',
+            type: 'text',
+            description: 'Ingrese el sexo del quinto beneficiario',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'peso_ben_principal_5',
+            type: 'text',
+            description: 'Ingrese el peso del quinto beneficiario en kilogramos',
+            prereq: [
+                {
+                    k: 'beneficiarios',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_2',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_3',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_4',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_5',
+                    v: 's'
+                },
+                {
+                    k: 'ben_principal_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'enf_card',
+            description: '¿Alguno de los asegurados padece de enfermedades cardiovasculares?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'infarto',
+            description: '¿Alguno de los asegurados ha tenido un infarto del corazón?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'arritmia',
+            description: '¿Alguno de los asegurados padece de Arritmias?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'hiper_arterial',
+            description: '¿Alguno de los asegurados padece de hipertensión arterial?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'colesterol',
+            description: '¿Alguno de los asegurados padece de Colesterol?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'trigliceridos',
+            description: '¿Alguno de los asegurados padece de trigliceridos altos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'lupus',
+            description: '¿Alguno de los asegurados padece de lupus?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'isquemia',
+            description: '¿Alguno de los asegurados padece de isquemia o trombosis cerebral?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'epilepsia',
+            description: '¿Alguno de los asegurados padece de epilepsia?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'enfisema',
+            description: '¿Alguno de los asegurados padece de Enfisema (EPOC)?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'bronquitis',
+            description: '¿Alguno de los asegurados padece de bronquitis crónica?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'cancer_metastasis',
+            description: '¿Alguno de los asegurados padece de cáncer con metástasis (Afecta otros órganos)?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'cancer',
+            description: '¿Alguno de los asegurados padece de cáncer sin metástasis (No afecta otros órganos)?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'cirrosis',
+            description: '¿Alguno de los asegurados padece de cirrosis?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'derrames',
+            description: '¿Alguno de los asegurados padece de derrames?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'leucemia',
+            description: '¿Alguno de los asegurados padece de leucemia?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'tumores',
+            description: '¿Alguno de los asegurados padece de tumores malignos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'sida',
+            description: '¿Alguno de los asegurados padece de SIDA o VIH?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'insuficiencia_renal',
+            description: '¿Alguno de los asegurados padece de insuficiencia renal?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'esclerosis',
+            description: '¿Alguno de los asegurados padece de esclerosis múltiple?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'artritis',
+            description: '¿Alguno de los asegurados padece de atritis reumatoidea?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'diabetes',
+            description: '¿Alguno de los asegurados padece de diabetes?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'pancreatitis',
+            description: '¿Alguno de los asegurados padece de pancreatitis?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'psiquiatrico',
+            description: '¿Alguno de los asegurados padece de transtornos psiquiátricos?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'hepatitis',
+            description: '¿Alguno de los asegurados padece de hepatitis B o C?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'retardo',
+            description: '¿Alguno de los asegurados padece de retardo mental?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'colitis',
+            description: '¿Alguno de los asegurados padece de colitis ulcerativa?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'hipertiroidismo',
+            description: '¿Alguno de los asegurados padece de hipertiroidismo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'paralisis',
+            description: '¿Alguno de los asegurados padece de parálisis diferente a facial?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'deformidades',
+            description: '¿Alguno de los asegurados padece de deformidades corporales?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'ceguera',
+            description: '¿Alguno de los asegurados padece de ceguera?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'sordera',
+            description: '¿Alguno de los asegurados padece de sordera total o parcial?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'hernia',
+            description: '¿Alguno de los asegurados padece de hernia de columna?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'perdida_funcional',
+            description: '¿Alguno de los asegurados padece de perdida funcional o anatómica?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'tratamiento_adiccion_5_anios',
+            description: '¿Alguno de los asegurados ha recibido tratamiento por alcoholismo o drogadicción en los últimos cinco años?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'tratamiento_adiccion',
+            description: '¿Alguno de los asegurados recibe tratamiento por alcoholismo o drogadicción?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'marihuana_3_veces',
+            description: '¿Alguno de los asegurados consume marihuana hasta 3 veces por mes?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'marihuana_mas_veces',
+            description: '¿Alguno de los asegurados consume marihuana mas de 3 veces por mes?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'otras_drogas',
+            description: '¿Alguno de los asegurados consume otro tipo de drogas estimulantes o adictivas?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'numeral_2',
+            description: '¿Seleccionaste "Si" en alguna de las preguntas del numeral 1.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'num_id_asegurado_enfermad_1',
+            description: 'Ingrese el numero de identificación del asegurado que padece de la enfermedad que seleccionaste',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_tratante_asegurado_enfermad_1',
+            description: 'Ingrese el nombre del médico tratante del asegurado que padece de la enfermedad que seleccionaste',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'inst_medica_asegurado_enfermad_1',
+            description: 'Ingrese la institución medica donde fue tratado el asegurado que padece de la enfermedad que seleccionaste',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'eps_asegurado_enfermad_1',
+            description: 'Ingrese la eps del asegurado que padece de la enfermedad que seleccionaste',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'enf_asegurado_enfermad_1',
+            description: 'Ingrese la enfermedad/Especifique el padecimiento del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'numeral_2_segundo_asegurado',
+            description: '¿Deseas ingresar otro asegurado padeciente de alguna de las enfermedades mencionadas anteriormente?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_id_asegurado_enfermad_2',
+            description: 'Ingrese el numero de identificación del asegurado que padece de la enfermedad que seleccionaste',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'numeral_2_segundo_asegurado',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_tratante_asegurado_enfermad_2',
+            description: 'Ingrese el nombre del médico tratante del asegurado que padece de la enfermedad que seleccionaste',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_2_segundo_asegurado',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'inst_medica_asegurado_enfermad_2',
+            description: 'Ingrese la institución medica donde fue tratado el asegurado que padece de la enfermedad que seleccionaste',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_2_segundo_asegurado',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'eps_asegurado_enfermad_2',
+            description: 'Ingrese la eps del asegurado que padece de la enfermedad que seleccionaste',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_2_segundo_asegurado',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'enf_asegurado_enfermad_2',
+            description: 'Ingrese la enfermedad/Especifique el padecimiento del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_2_segundo_asegurado',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'numeral_3',
+            description: '¿Alguno de los solicitantes ha tenido enfermedades diferentes a las enunciadas en el numeral 1, accidentes o cualquier otra condición por las que haya recibido o esté recibiendo tratamiento; y/o tiene programada alguna intervención quirúrgica y/o se encuentra en la actualidad bajo estudio médico para el diagnóstico de alguna enfermedad? o en el último mes ha tenido signos o síntomas como: Secreciones, dolor de garganta, tos, fiebre, dificultad para respirar, o sospecha de contagio o infección o le han diagnosticado el COVID-19 (Coronavirus)?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'num_id_asegurado_otra_enfermad_1',
+            description: 'Ingrese el número de identificación del asegurado',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_tratante_asegurado_otra_enfermad_1',
+            description: 'Ingrese el nombre del médico tratante del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'inst_medica_asegurado_otra_enfermad_1',
+            description: 'Ingrese el nombre de la institucion medica donde fue tratado del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'eps_asegurado_otra_enfermad_1',
+            description: 'Ingrese la eps donde fue tratado del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'enf_asegurado_otra_enfermad_1',
+            description: 'Ingrese la el padecimiento por el cual fue tratado del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'numeral_3_segundo_asegurado',
+            description: '¿Desea ingresar un segundo asegurado que clasifique bajo el numeral 3.?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_id_asegurado_otra_enfermad_2',
+            description: 'Ingrese el número de identificación del asegurado',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_3_segundo_asegurado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_tratante_asegurado_otra_enfermad_2',
+            description: 'Ingrese el nombre del médico tratante del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_3_segundo_asegurado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'inst_medica_asegurado_otra_enfermad_2',
+            description: 'Ingrese el nombre de la institucion medica donde fue tratado del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_3_segundo_asegurado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'eps_asegurado_otra_enfermad_2',
+            description: 'Ingrese la eps donde fue tratado del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_3_segundo_asegurado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'enf_asegurado_otra_enfermad_2',
+            description: 'Ingrese la el padecimiento por el cual fue tratado del asegurado',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'numeral_3',
+                    v: 's'
+                },
+                {
+                    k: 'numeral_3_segundo_asegurado',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'diag_covid',
+            description: '¿Ha tenido COVID o ha sido diagnosticado con dicha infección?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'num_asegurado_diag_covid',
+            description: 'Ingrese el numero del asegurado diagnosticado con COVID',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'diag_covid',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vac_covid',
+            description: '¿Ha sido vacunado contra la COVID-19 y tiene el esquema completo?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'num_asegurado_unvac_covid',
+            description: 'Indique el número de asegurado:',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'vac_covid',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'info_relevante',
+            description: '¿Tienes información relevante adicional para declarar?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'info_relevante_texto',
+            description: 'Ingrese la información que quieres declarar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'info_relevante',
+                    v: 's'
+                }
+            ]
+        }
+    ],
+    help: {
+        fecha: 'Ejemplo: 2022/02/16'
+    },
+    preFill: [],
+    sign: [
+        'firma_asegurado',
+        'correo_asegurado',
+        'nombre_asegurado',
+        'num_cc_asegurado',
+        'num_ce_asegurado',
+        'num_pa_asegurado'
+    ],
+    signatureProfile: [
+        {
+            type: 'firma_asegurado',
+            email: 'correo_asegurado',
+            name: 'nombre_asegurado',
+            identification: 'num_cc_asegurado|num_ce_asegurado|num_pa_asegurado'
+        }
+    ],
+    operation: [],
+    name: 'SOLICITUD PARA SEGURO DE VIDA GRUPO',
+    preBuildData: [],
+    preBuild: false,
+    price: 0,
+    build: 7,
+    custom: {
+        footer: {
+            contents: '<div><span><small><b>TIPO DE IDENTIFICACIÓN: T.I:</b>Tarjeta de Identidad - <b>C.C: </b>Cédula de Ciudadanía - <b>C.D: </b>Carné Diplomático - <b>C.E: </b>Cédula de Extranjería - <b>PA: </b>Pasaporte - <b>NIT: </b>Número de Identificación Tributaria - <b>PARENTESCO: PR: </b>Progenitor(Padre-Madre) <b>CP: </b>Compañero(a) Permanente - <b>HI: </b>Hijo - <b>FA: </b> Familiar <b>Am: </b>Amigo - <b>AF: </b>Afiliado - <b>SEXO: F: </b>Femenino - <b>M: </b>Masculino - <b>ESTADO CIVIL: S: </b>Soltero - <b>C: </b>Casado - <b>V: </b>Viudo - <b>U: </b>Unión Libre - <b>D: </b>Divorciado <br/> F-02-83-320<br/> Fecha a partir de la cual se utiliza: 01/09/2016</small></span><p style="color: red; text-align: center; margin: 0;"><small>- SURAMERICANA -</small></p></div>'
+        }
+    }
+}
