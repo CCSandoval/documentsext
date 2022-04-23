@@ -39,7 +39,12 @@ Itagüí,
 <span name="tipo_documento_arrendatario_1_pep" hidden> <b>PEP No.</b>
     <span name="pep_arrendatario_1">__________</span> - <b>PASAPORTE. No.</b>
     <span name="pasaporte_arrendatario_1_p">__________</span>
-</span><br />
+</span>
+<span name="tipo_documento_arrendatario_1_nit" hidden>
+    <b>NIT No.</b>
+    <span name="nit_arrendatario_1">__________</span>
+</span>
+<br />
 
 <span name="segundo_arrendatario_n"></span>
 <span name="segundo_arrendatario_s" hidden>
@@ -56,7 +61,11 @@ Itagüí,
     <span name="tipo_documento_arrendatario_2_pep" hidden> <b>PEP No.</b>
         <span name="pep_arrendatario_2">__________</span> - <b>PASAPORTE. No.</b>
         <span name="pasaporte_arrendatario_2_p">__________</span>
-    </span><br />
+    </span>
+<span name="tipo_documento_arrendatario_2_nit" hidden> <b>NIT No.</b>
+    <span name="nit_arrendatario_2">__________</span>
+</span>
+<br />
 </span>
 
 <span name="primer_solidario_n"></span>
@@ -78,6 +87,9 @@ Itagüí,
     <span name="pep_deudor_soli_1">__________</span> - <b>PASAPORTE. No.</b>
     <span name="pasaporte_deudor_soli_1_p">__________</span>
 </span>
+<span name="tipo_documento_deudor_soli_1_nit" hidden> <b>NIT No.</b>
+    <span name="nit_deudor_soli_1">__________</span>
+</span>
 </span>
 <br />
 <span name="segundo_solidario_n"></span>
@@ -95,7 +107,11 @@ Itagüí,
     <span name="tipo_documento_deudor_soli_2_pep" hidden> <b>PEP No.</b>
         <span name="pep_deudor_soli_2">__________</span> - <b>PASAPORTE. No.</b>
         <span name="pasaporte_deudor_soli_2_p">__________</span>
-    </span><br />
+    </span>
+    <span name="tipo_documento_deudor_soli_2_nit" hidden> <b>NIT No.</b>
+        <span name="nit_deudor_soli_2">__________</span>
+    </span>
+    <br />
 </span>
 
 <span name="segundo_solidario_n"></span>
@@ -115,6 +131,9 @@ Itagüí,
         <span name="tipo_documento_deudor_soli_3_pep" hidden> <b>PEP No.</b>
             <span name="pep_deudor_soli_3">__________</span> - <b>PASAPORTE. No.</b>
             <span name="pasaporte_deudor_soli_3_p">__________</span>
+        </span>
+        <span name="tipo_documento_deudor_soli_3_nit" hidden> <b>NIT No.</b>
+            <span name="nit_deudor_soli_3">__________</span>
         </span><br />
     </span>
 </span>
@@ -138,6 +157,9 @@ Itagüí,
             <span name="tipo_documento_deudor_soli_4_pep" hidden> <b>PEP No.</b>
                 <span name="pep_deudor_soli_4">__________</span> - <b>PASAPORTE. No.</b>
                 <span name="pasaporte_deudor_soli_4_p">__________</span>
+            </span>
+            <span name="tipo_documento_deudor_soli_4_nit" hidden> <b>NIT No.</b>
+                <span name="nit_deudor_soli_4">__________</span>
             </span><br />
         </span>
     </span>
@@ -775,7 +797,7 @@ Calle 49 No. 49A – 21 Itagüí.
 
 Para constancia y señal de aceptación se firma este documento y sus ejemplares del mismo tenor literal destinado a
 las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicados los firmantes al momento de la firma
-<b name="fecha_hoy">__________</b>
+<b name="fecha_hoy">__________</b> y aceptamos la información plasmada en este documento.
 
 <b>El Arrendador</b>
 
@@ -810,7 +832,12 @@ las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicado
     <span name="tipo_documento_arrendatario_1_pep" hidden> <b>PEP. No.</b>
         <span name="pep_arrendatario_1">___________</span> - <b>PASAPORTE. No.</b>
         <span name="pasaporte_arrendatario_1_p">__________</span>
-    </span><br />
+    </span>
+    <span name="tipo_documento_arrendatario_1_nit" hidden>
+        <b>NIT No.</b>
+        <span name="nit_arrendatario_1">__________</span>
+    </span>
+    <br />
     <b>Dirección:</b> <span name="direccion_arrendatario_1">_______</span><br />
     <b>Ciudad:</b> <span name="municipio_arrendatario_1">_______</span><br />
     <b>Teléfono:</b> <span name="telefono_arrendatario_1">___________</span><br />
@@ -836,7 +863,12 @@ las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicado
         <span name="tipo_documento_arrendatario_2_pep" hidden> <b>PEP. No.</b>
             <span name="pep_arrendatario_2">___________</span> - <b>PASAPORTE. No.</b>
             <span name="pasaporte_arrendatario_2_p">__________</span>
-        </span><br />
+        </span>
+        <span name="tipo_documento_arrendatario_2_nit" hidden>
+            <b>NIT No.</b>
+            <span name="nit_arrendatario_2">__________</span>
+        </span>
+        <br />
         <b>Dirección:</b> <span name="direccion_arrendatario_2">_______</span><br />
         <b>Ciudad:</b> <span name="municipio_arrendatario_2">_______</span><br />
         <b>Teléfono:</b> <span name="telefono_arrendatario_2">___________</span><br />
@@ -870,7 +902,12 @@ las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicado
     <span name="tipo_documento_deudor_soli_1_pep" hidden> <b>PEP. No.</b>
         <span name="pep_deudor_soli_1">___________</span> - <b>PASAPORTE. No.</b>
         <span name="pasaporte_deudor_soli_1_p">__________</span>
-    </span><br />
+    </span>
+    <span name="tipo_documento_deudor_soli_1_nit" hidden>
+        <b>NIT No.</b>
+        <span name="nit_deudor_soli_1">__________</span>
+    </span>
+    <br />
     <b>Dirección:</b> <span name="direccion_deudor_soli_1">_______</span><br />
     <b>Ciudad:</b> <span name="municipio_deudor_soli_1">_______</span><br />
     <b>Teléfono:</b> <span name="telefono_deudor_soli_1">___________</span><br />
@@ -896,7 +933,12 @@ las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicado
         <span name="tipo_documento_deudor_soli_2_pep" hidden> <b>PEP. No.</b>
             <span name="pep_deudor_soli_2">___________</span> - <b>PASAPORTE. No.</b>
             <span name="pasaporte_deudor_soli_2_p">__________</span>
-        </span><br />
+        </span>
+        <span name="tipo_documento_deudor_soli_2_nit" hidden>
+            <b>NIT No.</b>
+            <span name="nit_deudor_soli_2">__________</span>
+        </span>
+        <br />
         <b>Dirección:</b> <span name="direccion_deudor_soli_2">_______</span><br />
         <b>Ciudad:</b> <span name="municipio_deudor_soli_2">_______</span><br />
         <b>Teléfono:</b> <span name="telefono_deudor_soli_2">___________</span><br />
@@ -926,7 +968,12 @@ las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicado
             <span name="tipo_documento_deudor_soli_3_pep" hidden> <b>PEP. No.</b>
                 <span name="pep_deudor_soli_3">___________</span> - <b>PASAPORTE. No.</b>
                 <span name="pasaporte_deudor_soli_3_p">__________</span>
-            </span><br />
+            </span>
+            <span name="tipo_documento_deudor_soli_3_nit" hidden>
+                <b>NIT No.</b>
+                <span name="nit_deudor_soli_3">__________</span>
+            </span>
+            <br />
             <b>Dirección:</b> <span name="direccion_deudor_soli_3">_______</span><br />
             <b>Ciudad:</b> <span name="municipio_deudor_soli_3">_______</span><br />
             <b>Teléfono:</b> <span name="telefono_deudor_soli_3">___________</span><br />
@@ -959,7 +1006,12 @@ las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicado
                 <span name="tipo_documento_deudor_soli_4_pep" hidden> <b>PEP. No.</b>
                     <span name="pep_deudor_soli_4">___________</span> - <b>PASAPORTE. No.</b>
                     <span name="pasaporte_deudor_soli_4_p">__________</span>
-                </span><br />
+                </span>
+                <span name="tipo_documento_deudor_soli_4_nit" hidden>
+                    <b>NIT No.</b>
+                    <span name="nit_deudor_soli_4">__________</span>
+                </span>
+                <br />
                 <b>Dirección:</b> <span name="direccion_deudor_soli_4">_______</span><br />
                 <b>Ciudad:</b> <span name="municipio_deudor_soli_4">_______</span><br />
                 <b>Teléfono:</b> <span name="telefono_deudor_soli_4">___________</span><br />
@@ -970,10 +1022,4 @@ las partes en la ciudad de Itagüí y/o en la ciudad donde se encuentren ubicado
             </span>
         </span>
     </span>
-</p>
-
-<p>
-    <b>
-        Aceptamos la información plasmada en este documento.
-    </b>
 </p>

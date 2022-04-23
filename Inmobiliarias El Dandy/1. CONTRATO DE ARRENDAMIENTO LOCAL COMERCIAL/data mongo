@@ -38,6 +38,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             type: 'clausula',
@@ -104,6 +108,17 @@
             type: 'name'
         },
         {
+            description: 'Digite el nit del arrendatario',
+            name: 'nit_arrendatario_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_1',
+                    v: 'nit'
+                }
+            ],
+            type: 'text'
+        },
+        {
             description: '¿Desea agregar un segundo arrendatario?',
             name: 'segundo_arrendatario',
             options: [
@@ -150,6 +165,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -242,6 +261,21 @@
             type: 'name'
         },
         {
+            description: 'Digite el nit del segundo arrendatario',
+            name: 'nit_arrendatario_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_arrendatario_2',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_arrendatario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
             description: '¿Desea agregar un deudor solidario? ',
             name: 'primer_solidario',
             options: [
@@ -288,6 +322,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -380,6 +418,21 @@
             type: 'name'
         },
         {
+            description: 'Digite el nit del deudor solidario',
+            name: 'nit_deudor_soli_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_1',
+                    v: 'nit'
+                },
+                {
+                    k: 'primer_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
             description: '¿Desea agregar un segundo deudor solidario? ',
             name: 'segundo_solidario',
             options: [
@@ -436,6 +489,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -450,6 +507,25 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del segundo deudor solidario',
+            name: 'nit_deudor_soli_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_2',
+                    v: 'nit'
+                },
+                {
+                    k: 'primer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del segundo deudor solidario',
@@ -616,6 +692,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -634,6 +714,29 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del tercer deudor solidario',
+            name: 'nit_deudor_soli_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_3',
+                    v: 'nit'
+                },
+                {
+                    k: 'primer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del tercer deudor solidario',
@@ -828,6 +931,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -850,6 +957,33 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del cuarto deudor solidario',
+            name: 'nit_deudor_soli_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_deudor_soli_4',
+                    v: 'nit'
+                },
+                {
+                    k: 'primer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'segundo_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_solidario',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_solidario',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del cuarto deudor solidario',
@@ -1926,7 +2060,7 @@
                 }
             ],
             type: 'text'
-        },
+        }
     ],
     preFill: [
         {
@@ -1998,65 +2132,49 @@
             name: 'nombre_arrendador',
             identification: 'cedula_arrendador',
             email: 'correo_arrendador',
-            type: 'arrendador',
-            role: 'SIGN',
-            order: 0
+            type: 'arrendador'
         },
         {
             name: 'nombre_arrendatario_1',
-            identification: 'cedula_arrendatario_1|cedulae_arrendatario_1|pasaporte_arrendatario_1|pep_arrendatario_1',
+            identification: 'cedula_arrendatario_1|cedulae_arrendatario_1|pasaporte_arrendatario_1|pep_arrendatario_1|nit_arrendatario_1',
             email: 'correo_arrendatario_1',
-            type: 'arrendatario_1',
-            role: 'SIGN',
-            order: 0
+            type: 'arrendatario_1'
         },
         {
             name: 'nombre_arrendatario_2',
-            identification: 'cedula_arrendatario_2|cedulae_arrendatario_2|pasaporte_arrendatario_2|pep_arrendatario_2',
+            identification: 'cedula_arrendatario_2|cedulae_arrendatario_2|pasaporte_arrendatario_2|pep_arrendatario_2|nit_arrendatario_2',
             email: 'correo_arrendatario_2',
-            type: 'arrendatario_2',
-            role: 'SIGN',
-            order: 0
+            type: 'arrendatario_2'
         },
         {
             name: 'nombre_arrendatario_2',
-            identification: 'cedula_arrendatario_2|cedulae_arrendatario_2|pasaporte_arrendatario_2|pep_arrendatario_2',
+            identification: 'cedula_arrendatario_2|cedulae_arrendatario_2|pasaporte_arrendatario_2|pep_arrendatario_2|nit_arrendatario_2',
             email: 'correo_arrendatario_2',
-            type: 'arrendatario_2',
-            role: 'SIGN',
-            order: 0
+            type: 'arrendatario_2'
         },
         {
             name: 'nombre_deudor_soli_1',
-            identification: 'cedula_deudor_soli_1|cedulae_deudor_soli_1|pasaporte_deudor_soli_1|pep_deudor_soli_1',
+            identification: 'cedula_deudor_soli_1|cedulae_deudor_soli_1|pasaporte_deudor_soli_1|pep_deudor_soli_1|nit_deudor_soli_1',
             email: 'correo_deudor_soli_1',
-            type: 'deudor_soli_1',
-            role: 'SIGN',
-            order: 0
+            type: 'deudor_soli_1'
         },
         {
             name: 'nombre_deudor_soli_2',
-            identification: 'cedula_deudor_soli_2|cedulae_deudor_soli_2|pasaporte_deudor_soli_2|pep_deudor_soli_2',
+            identification: 'cedula_deudor_soli_2|cedulae_deudor_soli_2|pasaporte_deudor_soli_2|pep_deudor_soli_2|nit_deudor_soli_2',
             email: 'correo_deudor_soli_2',
-            type: 'deudor_soli_2',
-            role: 'SIGN',
-            order: 0
+            type: 'deudor_soli_2'
         },
         {
             name: 'nombre_deudor_soli_3',
-            identification: 'cedula_deudor_soli_3|cedulae_deudor_soli_3|pasaporte_deudor_soli_3|pep_deudor_soli_3',
+            identification: 'cedula_deudor_soli_3|cedulae_deudor_soli_3|pasaporte_deudor_soli_3|pep_deudor_soli_3|nit_deudor_soli_3',
             email: 'correo_deudor_soli_3',
-            type: 'deudor_soli_3',
-            role: 'SIGN',
-            order: 0
+            type: 'deudor_soli_3'
         },
         {
             name: 'nombre_deudor_soli_4',
-            identification: 'cedula_deudor_soli_4|cedulae_deudor_soli_4|pasaporte_deudor_soli_4|pep_deudor_soli_4',
+            identification: 'cedula_deudor_soli_4|cedulae_deudor_soli_4|pasaporte_deudor_soli_4|pep_deudor_soli_4|nit_deudor_soli_4',
             email: 'correo_deudor_soli_4',
-            type: 'deudor_soli_4',
-            role: 'SIGN',
-            order: 0
+            type: 'deudor_soli_4'
         }
     ],
     preBuildData: [],
@@ -2081,8 +2199,8 @@
         uso: 'Ejemplo: Montacargas',
         porcentaje: 'Ejemplo: 10%'
     },
-    build: 16,
-    username: '2f3ec4a1-1659-4b93-88eb-12c70236b1a5',
+    build: 18,
+    username: 'fef63f10-02fc-49aa-9d64-db5f24da0391',
     createdAt: ISODate('2021-10-08T20:30:26.972Z'),
     updatedAt: ISODate('2021-10-08T20:30:26.972Z')
 }

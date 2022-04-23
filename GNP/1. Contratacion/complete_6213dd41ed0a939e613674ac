@@ -92,11 +92,11 @@
     </tr>
     <tr>
       <td>NOMBRE COMPLETO</td>
-      <td class="border_bottom">
+      <td colspan="2" class="border_bottom">
         <span name="nombre_trabajador">_____________________________</span>
       </td>
       <td class="border_bottom">FECHA:</td>
-      <td class="border_bottom">
+      <td class="border_bottom border_right">
         <span name="fecha_firma"> _______________ </span>
       </td>
     </tr>
@@ -108,7 +108,7 @@
     </tr>
     <tr>
       <td>LUGAR DE EXPEDICIÓN</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5" >
         <span name="expedicion_cedula_trabajador"
           >_____________________________</span
         >
@@ -116,19 +116,19 @@
     </tr>
     <tr>
       <td>DIRECCIÓN DOMICILIO</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="dir_dom_trabajador">_____________________________</span>
       </td>
     </tr>
     <tr>
       <td>BARRIO</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="barrio_trabajador">_____________________________</span>
       </td>
     </tr>
     <tr>
       <td>ESTRATO</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="estrato_trabajador">_____________________________</span>
       </td>
     </tr>
@@ -150,7 +150,7 @@
           <span name="tipo_vivienda_arrendada" hidden>_</span>
         </span>
       </td>
-      <td class="border_bottom">
+      <td class="border_bottom border_right">
         <span>Arrendada</span>
         <span class="square">
           <span name="tipo_vivienda_propia">_</span>
@@ -161,43 +161,43 @@
     </tr>
     <tr>
       <td>TELEFONO FIJO</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="tel_fijo_trabajador">_____________________________</span>
       </td>
     </tr>
     <tr>
       <td>TELEFONO CELULAR</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="tel_celular_trabajador">_____________________________</span>
       </td>
     </tr>
     <tr>
       <td>CORREO ELECTRÓNICO</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="correo_trabajador">_____________________________</span>
       </td>
     </tr>
     <tr>
       <td>FECHA DE NACIMIENTO</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="fecha_nacimiento_trab">_____________________________</span>
       </td>
     </tr>
     <tr>
       <td>LUGAR DE NACIMIENTO</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="lugar_nacimiento_trab">_____________________________</span>
       </td>
     </tr>
     <tr>
       <td>ESTADO CIVIL</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="estado_civil_trab">_____________________________</span>
       </td>
     </tr>
     <tr>
       <td>RH</td>
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <span name="rh_trab">_____________________________</span>
       </td>
     </tr>
@@ -226,7 +226,7 @@
           <span name="raza_otra" hidden>_</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <span>Indio</span>
         <span class="square">
           <span name="raza_mestizo">_</span>
@@ -262,7 +262,7 @@
           <span name="raza_otra" hidden>_</span>
         </span>
       </td>
-      <td colspan="2">
+      <td class="border_right" colspan="2">
         <span>Otra</span>
         <span class="square">
           <span name="raza_mestizo">_</span>
@@ -296,7 +296,7 @@
           <span name="genero_otro" hidden>_</span>
         </span>
       </td>
-      <td class="border_top" colspan="2">
+      <td class="border_top border_right" colspan="2">
         <span>Otro</span>
         <span class="square">
           <span name="genero_f">_</span>
@@ -307,47 +307,47 @@
     </tr>
     <tr name="genero_otro" hidden>
       <td></td>
-      <td colspan="5">
+      <td class="border_right" colspan="5">
         Cual: <span name="cual_genero">_________________</span>
       </td>
     </tr>
     <tr>
       <td>ENFERMEDADES QUE REQUIERAN MEDICAMENTOS</td>
-      <td class="border_top">
+      <td style="padding:10px" class="border_top">
         <span>Si</span>
         <span class="square">
           <span name="enf_meds_s" hidden>x</span>
           <span name="enf_meds_n">_</span>
         </span>
       </td>
-      <td class="border_top">
+      <td style="padding:10px" class="border_top">
         <span>No</span>
         <span class="square">
           <span name="enf_meds_s" hidden>_</span>
           <span name="enf_meds_n">x</span>
         </span>
       </td>
-      <td class="border_top" colspan="2">
+      <td class="border_top border_right" colspan="2">
         Cual: <span name="cual_enfermedad">_________________</span>
       </td>
     </tr>
     <tr>
       <td>ALERGIAS</td>
-      <td class="border_top">
+      <td style="padding:10px" class="border_top">
         <span>Si</span>
         <span class="square">
           <span name="alergias_s" hidden>x</span>
           <span name="alergias_n">_</span>
         </span>
       </td>
-      <td class="border_top">
+      <td style="padding:10px" class="border_top">
         <span>No</span>
         <span class="square">
           <span name="alergias_s" hidden>_</span>
           <span name="alergias_n">x</span>
         </span>
       </td>
-      <td class="border_top" colspan="2">
+      <td class="border_top border_right" colspan="2">
         Cual: <span name="cual_alergias">_________________</span>
       </td>
     </tr>
@@ -438,11 +438,13 @@
       <td>
         <span name="afiliacion_beneficiario_1_eps">x</span>
         <span name="afiliacion_beneficiario_1_ccf" hidden>_</span>
+        <span name="afiliacion_beneficiario_1_ambas" hidden>x</span>
       </td>
       <td>CCF</td>
       <td>
         <span name="afiliacion_beneficiario_1_eps">_</span>
         <span name="afiliacion_beneficiario_1_ccf" hidden>x</span>
+        <span name="afiliacion_beneficiario_1_ambas" hidden>x</span>
       </td>
     </tr>
     <tr name="beneficiario_2_n">
@@ -466,11 +468,13 @@
       <td>
         <span name="afiliacion_beneficiario_2_eps">x</span>
         <span name="afiliacion_beneficiario_2_ccf" hidden>_</span>
+        <span name="afiliacion_beneficiario_2_ambas" hidden>x</span>
       </td>
       <td>CCF</td>
       <td>
         <span name="afiliacion_beneficiario_2_eps">_</span>
         <span name="afiliacion_beneficiario_2_ccf" hidden>x</span>
+        <span name="afiliacion_beneficiario_2_ambas" hidden>x</span>
       </td>
     </tr>
     <tr name="beneficiario_3_n">
@@ -494,11 +498,13 @@
       <td>
         <span name="afiliacion_beneficiario_3_eps">x</span>
         <span name="afiliacion_beneficiario_3_ccf" hidden>_</span>
+        <span name="afiliacion_beneficiario_3_ambas" hidden>x</span>
       </td>
       <td>CCF</td>
       <td>
         <span name="afiliacion_beneficiario_3_eps">_</span>
         <span name="afiliacion_beneficiario_3_ccf" hidden>x</span>
+        <span name="afiliacion_beneficiario_3_ambas" hidden>x</span>
       </td>
     </tr>
     <tr>
@@ -515,7 +521,7 @@
         <b><small>FIRMA:</small></b>
       </td>
       <td style="border-left: none" colspan="4">
-        <div id="firma_trabajador" class="sign_margin"></div>
+        <div name="firma_trabajador" id="trabajador_1" class="sign_margin"></div>
       </td>
     </tr>
   </table>
@@ -610,13 +616,7 @@
         <span name="emergencia_1_parentesco">_______________</span>
       </td>
     </tr>
-    <tr name="emergencia_2_n">
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr name="emergencia_2_s" hidden>
+    <tr>
       <td>
         <span name="emergencia_2_nombre">_______________</span>
       </td>
@@ -1413,14 +1413,14 @@
   <div class="align_left">
     <span>
       <b>EL EMPLEADOR</b>
-      <div id="firma_castillo" class="sign_margin"></div>
+      <div name="firma_gnp" id="gnp_1" class="sign_margin"></div>
       <b>MILENA CASTILLO</b><br />
     </span>
   </div>
   <div class="align_right">
     <span>
       <b>EL TRABAJADOR</b>
-      <div id="firma_trabajador" class="sign_margin"></div>
+      <div name="firma_trabajador" id="trabajador_2" class="sign_margin"></div>
       <b name="nombre_trabajador">_________________</b><br />
       C.C <b name="cedula_trabajador">___________</b> de
       <b name="expedicion_cedula_trabajador">____________</b><br />
@@ -1463,89 +1463,84 @@
   </table>
   <table class="tabla_cv">
     <tr class="dark_background">
-      <td class="border_bottom" colspan="5">
+      <td class="border_bottom border_right" colspan="5">
         <p style="text-align: center">RESPONSABILIDAD, FUNCIONES Y AUTORIDAD</p>
       </td>
     </tr>
     <tr class="border_bottom">
       <td>CARGO:</td>
-      <td>
+      <td class="border_right">
         <span name="cargo">_____________________________</span>
       </td>
     </tr>
     <tr>
-      <td colspan="2">A. DEL CARGO</td>
+      <td colspan="2" class="border_right">A. DEL CARGO</td>
     </tr>
-    <tr class="border_bottom">
+    <tr class="border_bottom border_right">
       <td colspan="2">
         <span name="descripcion_cargo">_____________________________</span>
       </td>
     </tr>
     <tr>
-      <td colspan="2">B. DE SEGURIDAD Y SALUD EN EL TRABAJO</td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        <ul>
-          <li>
-            Conocer, entender y aplicar la política de Seguridad y Salud en el
-            Trabajo.
-          </li>
-          <li>Procurar el cuidado integral de su salud.</li>
-          <li>
-            Suministrar información clara, completa y veraz sobre su estado de
-            salud.
-          </li>
-          <li>
-            Cumplir las normas de Seguridad y Salud en el Trabajo y reglamentos
-            propios de la empresa.
-          </li>
-          <li>
-            Reportar inmediatamente todo accidente de trabajo o incidente.
-          </li>
-          <li>
-            Asistir y participar activamente en el programa de inducción y en
-            los cursos de entrenamiento.
-          </li>
-          <li>Mantener limpio y ordenado el lugar de trabajo.</li>
-          <li>
-            Conocer y utilizar adecuadamente los procedimientos para las tareas
-            asignadas.
-          </li>
-          <li>
-            Conocer y aplicar normas básicas de seguridad de las herramientas de
-            uso común.
-          </li>
-          <li>
-            Aplicar normas y políticas para asegurar un sitio de trabajo libre
-            de tabaco, alcohol y drogas.
-          </li>
-          <li>
-            Conocer y aplicar el procedimiento de emergencias del sitio de
-            trabajo, incluidas alarmas, sistemas de protección, sistemas de
-            emergencia y comunicaciones.
-          </li>
-          <li>
-            Participar en las actividades de capacitación en Seguridad y Salud
-            en el Trabajo definidas en el plan de capacitación.
-          </li>
-          <li>
-            Participar y contribuir al cumplimiento de los objetivos del Sistema
-            de Gestión de la Seguridad y Salud en el Trabajo.
-          </li>
-          <li>
-            Participar activamente en la elección del comité paritario de
-            seguridad y salud en el trabajo COPASST y en la elección del comité
-            de convivencia
-          </li>
-        </ul>
+      <td colspan="2" class="border_right">
+        B. DE SEGURIDAD Y SALUD EN EL TRABAJO
+          <ul>
+            <li>
+              Conocer, entender y aplicar la política de Seguridad y Salud en el
+              Trabajo.
+            </li>
+            <li>Procurar el cuidado integral de su salud.</li>
+            <li>
+              Suministrar información clara, completa y veraz sobre su estado de
+              salud.
+            </li>
+            <li>
+              Cumplir las normas de Seguridad y Salud en el Trabajo y reglamentos
+              propios de la empresa.
+            </li>
+            <li>
+              Reportar inmediatamente todo accidente de trabajo o incidente.
+            </li>
+            <li>
+              Asistir y participar activamente en el programa de inducción y en
+              los cursos de entrenamiento.
+            </li>
+            <li>Mantener limpio y ordenado el lugar de trabajo.</li>
+            <li>
+              Conocer y utilizar adecuadamente los procedimientos para las tareas
+              asignadas.
+            </li>
+            <li>
+              Conocer y aplicar normas básicas de seguridad de las herramientas de
+              uso común.
+            </li>
+            <li>
+              Aplicar normas y políticas para asegurar un sitio de trabajo libre
+              de tabaco, alcohol y drogas.
+            </li>
+            <li>
+              Conocer y aplicar el procedimiento de emergencias del sitio de
+              trabajo, incluidas alarmas, sistemas de protección, sistemas de
+              emergencia y comunicaciones.
+            </li>
+            <li>
+              Participar en las actividades de capacitación en Seguridad y Salud
+              en el Trabajo definidas en el plan de capacitación.
+            </li>
+            <li>
+              Participar y contribuir al cumplimiento de los objetivos del Sistema
+              de Gestión de la Seguridad y Salud en el Trabajo.
+            </li>
+            <li>
+              Participar activamente en la elección del comité paritario de
+              seguridad y salud en el trabajo COPASST y en la elección del comité
+              de convivencia
+            </li>
+          </ul>
       </td>
     </tr>
     <tr>
-      <td colspan="2">B. DE GESTIÓN AMBIENTAL</td>
-    </tr>
-    <tr>
-      <td colspan="2">
+      <td colspan="2" class="border_right">C. DE GESTIÓN AMBIENTAL
         <ul>
           <li>
             Cumplir con las politicas de manejo de residuos y desechos que la
@@ -1635,8 +1630,8 @@
   <table class="tabla_cv bordered_table">
     <tr>
       <td style="text-align: center"><b>FIRMA</b></td>
-      <td><div id="firma_castillo" class="sign_margin"></td>
-      <td><div id="firma_trabajador" class="sign_margin"></div></td>
+      <td><div name="firma_gnp" id="gnp_2" class="sign_margin"></td>
+      <td><div name="firma_trabajador" id="trabajador_3" class="sign_margin"></div></td>
     </tr>
     <tr>
       <td style="text-align: center"><b>NOMBRE</b></td>
@@ -1723,7 +1718,7 @@
   </p>
 
   <div class="align_left">
-    <div id="firma_trabajador" class="sign_margin"></div>
+    <div name="firma_trabajador" id="trabajador_4" class="sign_margin"></div>
     <span>
       <b>Trabajador</b><br />
       <b>Nombre: <b name="nombre_trabajador">__________</b></b
@@ -1732,7 +1727,7 @@
     </span>
   </div>
   <div class="align_right">
-    <div id="firma_castillo" class="sign_margin"></div>
+    <div name="firma_gnp" id="gnp_3" class="sign_margin"></div>
     <span>
       <b>GNP - La empresa</b><br />
       <b>Nombre: MILENA CASTILLO</b><br />
@@ -1871,7 +1866,7 @@
   </ol>
   <br />
   <div class="align_left">
-    <div id="firma_trabajador" class="sign_margin"></div>
+    <div name="firma_trabajador" id="trabajador_5" class="sign_margin"></div>
     <span>
       <b>Trabajador</b><br />
       <b>Nombre: <b name="nombre_trabajador">__________</b></b
@@ -1880,7 +1875,7 @@
     </span>
   </div>
   <div class="align_right">
-    <div id="firma_castillo" class="sign_margin"></div>
+    <div name="firma_gnp" id="gnp_4" class="sign_margin"></div>
     <span>
       <b>GNP - La empresa</b><br />
       <b>Nombre: MILENA CASTILLO</b><br />
@@ -1983,7 +1978,7 @@
   <br />
   <p>
     <span>Firma:</span>
-    <div id="firma_trabajador" class="sign_margin"></div>
+    <div name="firma_trabajador" id="trabajador_6" class="sign_margin"></div>
     <span>Nombre: <span name="nombre_trabajador">_________________</span></span>
     <br />
     <span>
@@ -2001,8 +1996,7 @@
     <li>
       <p>
         <span class="square">
-          <span name="confirm_reg_interno_n">&nbsp;</span>
-          <span name="confirm_reg_interno_s" hidden>x</span>
+          <span name="confirm_reg_interno_s">x</span>
         </span>
         <span>
           <b>
@@ -2015,8 +2009,7 @@
     <li>
       <p>
         <span class="square">
-          <span name="confirm_pol_int_n">&nbsp;</span>
-          <span name="confirm_pol_int_s" hidden>x</span>
+          <span name="confirm_pol_int_s">x</span>
         </span>
         <span>
           <b>
@@ -2029,8 +2022,7 @@
     <li>
       <p>
         <span class="square">
-          <span name="confirm_carnet_n">&nbsp;</span>
-          <span name="confirm_carnet_s" hidden>x</span>
+          <span name="confirm_carnet_s">x</span>
         </span>
         <span>
           <b> Confirmo que recibí carnet de identificación institucional* </b>
@@ -2090,9 +2082,9 @@
   >
     AUTORIZO
   </p>
-  <table class="tabla_cv bordered_table">
+  <table class="tabla_cv">
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Efectuar las gestiones pertinentes para el desarrollo del objeto
           social de la compañía en lo que tiene que ver con el cumplimiento del
@@ -2102,20 +2094,22 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_gestiones_n">&nbsp;</span>
           <span name="autoriza_gestiones_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_gestiones_n">x</span>
           <span name="autoriza_gestiones_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Contactar al Titular a través de correo electrónico para el envío de
           extractos, estados de cuenta o facturas en relación con las
@@ -2125,22 +2119,24 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_correo_n">&nbsp;</span>
           <span name="autoriza_contactar_correo_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_correo_n">x</span>
           <span name="autoriza_contactar_correo_s" hidden>&nbsp;</span>
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Suministrar información de contacto a la fuerza comercial y/o red de
           distribución, telemercadeo, investigación de mercados y cualquier
@@ -2154,21 +2150,23 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           
           <span name="autoriza_suministrar_n">&nbsp;</span>
           <span name="autoriza_suministrar_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_suministrar_n">x</span>
           <span name="autoriza_suministrar_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Dar cumplimiento a las obligaciones contraídas por
           <b> GNP Grupo Nacional de Proyectos S.A.S </b> con el Titular de la
@@ -2181,15 +2179,17 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_dar_cumplimiento_n">&nbsp;</span>
           <span name="autoriza_dar_cumplimiento_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_dar_cumplimiento_n">x</span>
           <span name="autoriza_dar_cumplimiento_s" hidden>&nbsp;</span>
           
@@ -2197,7 +2197,7 @@
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Contactar al Titular a través de medios electrónicos - SMS o chat para
           el envío de noticias relacionadas con campañas de fidelización o
@@ -2207,21 +2207,23 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_sms_n">&nbsp;</span>
           <span name="autoriza_contactar_sms_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_sms_n">x</span>
           <span name="autoriza_contactar_sms_s" hidden>&nbsp;</span>
           
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Ofrecer programas de bienestar corporativo y planificar actividades
           empresariales, para el titular y sus beneficiarios (hijos, cónyuge,
@@ -2231,15 +2233,17 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_ofrecer_n">&nbsp;</span>
           <span name="autoriza_ofrecer_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_ofrecer_n">x</span>
           <span name="autoriza_ofrecer_s" hidden>&nbsp;</span>
          
@@ -2247,7 +2251,7 @@
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Efectuar encuestas de satisfacción respecto de los bienes y servicios
           ofrecidos por <b>GNP Grupo Nacional de Proyectos S.A.S</b>
@@ -2256,21 +2260,23 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           
           <span name="autoriza_encuestas_n">&nbsp;</span>
           <span name="autoriza_encuestas_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_encuestas_n">x</span>
           <span name="autoriza_encuestas_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Transferir datos personales fuera del país a la compañía matriz de
           <b> GNP Grupo Nacional de Proyectos S.A.S </b> para cumplir con las
@@ -2280,15 +2286,17 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_trans_datos_n">&nbsp;</span>
           <span name="autoriza_trans_datos_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_trans_datos_n">x</span>
           <span name="autoriza_trans_datos_s" hidden>&nbsp;</span>
           
@@ -2296,7 +2304,7 @@
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Contactar al Titular a través de medios telefónicos para realizar
           encuestas, estudios y/o confirmación de datos personales necesarios
@@ -2306,20 +2314,22 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_tel_n">&nbsp;</span>
           <span name="autoriza_contactar_tel_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
-          <span name="autoriza_contactar_tel_n">x;</span>
+        <br />
+        <span style="padding:3px" class="square">
+          <span name="autoriza_contactar_tel_n">x</span>
           <span name="autoriza_contactar_tel_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Transmitir los datos personales fuera del país a terceros con los
           cuales GNP Grupo Nacional de Proyectos S.AS haya suscrito un contrato
@@ -2330,23 +2340,25 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
         
           <span name="autoriza_trans_datos_terceros_n">&nbsp;</span>
           <span name="autoriza_trans_datos_terceros_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_trans_datos_terceros_n">x</span>
           <span name="autoriza_trans_datos_terceros_s" hidden>&nbsp;</span>
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Suministrar la información a terceros con los cuales
           <b> GNP Grupo Nacional de Proyectos S.A.S </b> tenga relación
@@ -2357,21 +2369,23 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           
           <span name="autoriza_sum_info_n">&nbsp;</span>
           <span name="autoriza_sum_info_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_sum_info_n">x</span>
           <span name="autoriza_sum_info_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Prestar los servicios ofrecidos por
           <b>GNP Grupo Nacional de Proyectos S.A.S</b> y aceptados en el
@@ -2381,23 +2395,25 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           
           <span name="autoriza_prestar_servicios_n">&nbsp;</span>
           <span name="autoriza_prestar_servicios_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_prestar_servicios_n">x</span>
           <span name="autoriza_prestar_servicios_s" hidden>&nbsp;</span>
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Realizar invitaciones a eventos y ofrecer nuevos productos y
           servicios.
@@ -2406,36 +2422,40 @@
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           
           <span name="autoriza_invitaciones_n">&nbsp;</span>
           <span name="autoriza_invitaciones_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_invitaciones_n">x</span>
           <span name="autoriza_invitaciones_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>Gestionar trámites (solicitudes, quejas, reclamos).</li>
       </td>
       <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           
           <span name="autoriza_gest_tramites_n">&nbsp;</span>
           <span name="autoriza_gest_tramites_s" hidden>x</span>
         </span>
       </td>
-      <td style="border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_gest_tramites_n">x</span>
           <span name="autoriza_gest_tramites_s" hidden>&nbsp;</span>
         </span>
@@ -2618,6 +2638,6 @@
     <br/>
     <br/>
     <b>Firma:</b>
-    <div id="firma_trabajador" class="sign_margin"></div>
+    <div name="firma_trabajador" id="trabajador_7" class="sign_margin"></div>
   </p>
 </div>

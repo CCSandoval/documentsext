@@ -1,0 +1,511 @@
+<style type="text/css">
+  .page {
+    width: 21cm;
+  }
+
+  .tableClass {
+    border-collapse: separate;
+    border: solid black 1px;
+    border-radius: 6px;
+    border-spacing: 0px;
+    width: 100%;
+  }
+
+  .tableClass th {
+    background-color: #343332;
+    border-top: none;
+    color: white;
+    text-align: left;
+    padding: 5px;
+  }
+
+  .tableClass td {
+    padding: 10px;
+  }
+
+  .inputField {
+    padding: 5px;
+    margin: 0px;
+    background-color: #dee5ff;
+  }
+</style>
+
+<div class="page">
+  <img
+    src="data:image/jpeg;base64,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"
+    alt="logo"
+  />
+  <p style="text-align: center">
+    <b>Crédito documentario irrevocable solicitud y Convenio de apertura</b>
+  </p>
+
+  <table class="tableClass">
+    <thead>
+      <tr>
+        <th colspan="4">
+          <p>I. Datos del ordenante (Comprador de la mercancia)</p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">
+          <span>Nombre</span>
+          <p class="inputField">
+            <span name="nombre_emp_ordenante">_______</span>
+          </p>
+        </td>
+        <td>
+          <span>NIT</span>
+          <p class="inputField"><span name="nit_ordenante">_______</span></p>
+        </td>
+        <td>
+          <span>Dirección</span>
+          <p class="inputField">
+            <span name="direccion_ordenante">_______</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ciudad
+          <p class="inputField">
+            <span name="ciudad_ordenante">_______</span>
+          </p>
+        </td>
+        <td>
+          Pais
+          <p class="inputField"><span name="pais_ordenante">_______</span></p>
+        </td>
+        <td>
+          Telefono
+          <p class="inputField">
+            <span name="tel_ordenante">_______</span>
+          </p>
+        </td>
+        <td>
+          Email
+          <p class="inputField"><span name="email_ordenante">_______</span></p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Tipo de cuenta
+          <p class="inputField">
+            <span name="cuenta_ordenante_aho">Cuenta de Ahorros</span>
+            <span name="cuenta_ordenante_corr" hidden>Cuenta Corriente</span>
+          </p>
+        </td>
+        <td>
+          Cuenta No.
+          <p class="inputField">
+            <span name="num_cuenta_ordenante">_______</span>
+          </p>
+        </td>
+        <td>
+          Tipo de entidad
+          <p class="inputField">
+            <span name="tipo_entidad_ordenante_pub">Pública</span>
+            <span name="tipo_entidad_ordenante_priv" hidden>Privada</span>
+            <span name="tipo_entidad_ordenante_mix" hidden>Mixta</span>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <table class="tableClass">
+    <thead>
+      <tr>
+        <th colspan="5">
+          <p>II. Datos del beneficiario (Vendedor de la mercancía)</p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="2">
+          Nombre
+          <p class="inputField">
+            <span name="nombre_emp_beneficiario">_______</span>
+          </p>
+        </td>
+        <td>
+          Id. Beneficiario
+          <p class="inputField">
+            <span name="id_beneficiario">_______</span>
+          </p>
+        </td>
+        <td>
+          Dirección
+          <p class="inputField">
+            <span name="direccion_beneficiario">_______</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          Ciudad
+          <p class="inputField">
+            <span name="ciudad_beneficiario">_______</span>
+          </p>
+        </td>
+
+        <td>
+          Pais
+          <p class="inputField">
+            <span name="pais_beneficiario">_______</span>
+          </p>
+        </td>
+        <td>
+          Telefono
+          <p class="inputField">
+            <span name="tel_beneficiario">_______</span>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <table class="tableClass">
+    <thead>
+      <tr>
+        <th colspan="6">
+          <p>III. Valor de la operación</p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Moneda
+          <p class="inputField">
+            <span name="moneda_usd">USD</span>
+            <span name="moneda_eur" hidden>EUR</span>
+            <span name="moneda_gbp" hidden>GBP</span>
+            <span name="moneda_jpy" hidden>JPY</span>
+            <span name="moneda_chf" hidden>CHF</span>
+            <span name="moneda_cad" hidden>CAD</span>
+            <span name="moneda_mxn" hidden>MXN</span>
+            <span name="moneda_pen" hidden>PEN</span>
+          </p>
+        </td>
+        <td>
+          Valor
+          <p class="inputField"><span name="valor">_______</span></p>
+        </td>
+        <td>
+          Vigencia (En dias)
+          <p class="inputField"><span name="vigencia">_______</span></p>
+        </td>
+        <td>
+          Con tolerancia del <br />
+          (En valor y cantidad)
+        </td>
+        <td>
+          +
+          <p class="inputField"><span name="mas">_</span>%</p>
+        </td>
+        <td>
+          / -
+          <p class="inputField"><span name="menos">_</span>%</p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          Comisiones y gastos bancarios por fuera de Colombia a cargo de
+        </td>
+        <td colspan="2">
+          <p class="inputField">
+            <span name="encargado_comisiones_ext_ord">Ordenante</span>
+            <span name="encargado_comisiones_ext_ben" hidden>Beneficiario</span>
+          </p>
+        </td>
+        <td>Actuación del corresponsal</td>
+        <td>
+          <p class="inputField">
+            <span name="actuacion_corresponsal">_______</span>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <table class="tableClass">
+    <thead>
+      <tr>
+        <th colspan="3">
+          <p>IV. Forma de utilización (Pago al beneficiario)</p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="1">
+          Seleccione una opción
+          <p class="inputField">
+            <span name="forma_utilizacion_vista">A la vista</span>
+            <span name="forma_utilizacion_neg_vista" hidden>
+              Por negociación (Letras a la vista)
+            </span>
+            <span name="forma_utilizacion_neg_plazos" hidden>
+              Por negociación (Letras a Plazos)
+            </span>
+          </p>
+        </td>
+        <td name="forma_utilizacion_neg_plazos" hidden>
+          A
+          <p class="inputField">
+            <span name="utilizacion_num_dias">_______</span>
+          </p>
+        </td>
+        <td name="forma_utilizacion_neg_plazos" hidden>
+          Dias de
+          <p class="inputField">
+            <span name="utilizacion_inicio_fac_comer">Factura Comercial</span>
+            <span name="utilizacion_inicio_doc_transp" hidden>
+              Documento de Transporte
+            </span>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <table class="tableClass">
+    <thead>
+      <tr>
+        <th colspan="3">
+          <p>V. Condiciones de Embarque de la Mercancía</p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Embarques parciales
+          <p class="inputField">
+            <span name="embarques_parciales_s">Permitidos</span>
+            <span name="embarques_parciales_n" hidden>Prohibidos</span>
+          </p>
+        </td>
+        <td>
+          Transbordos
+          <p class="inputField">
+            <span name="transbordos_s">Permitidos</span>
+            <span name="transbordos_n" hidden>Prohibidos</span>
+          </p>
+        </td>
+        <td>
+          Fecha máxima de embarque
+          <p class="inputField">
+            <span name="fecha_max_exacta">Fecha exacta</span>
+            <span name="fecha_max_validez" hidden>
+              Dentro de la validez de la carta de crédito
+            </span>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <table class="tableClass">
+    <thead>
+      <tr>
+        <th colspan="2">
+          <p>Puerto/Aeropuerto/Lugar de Embarque</p>
+        </th>
+        <th colspan="3">
+          <p>Puerto/Aeropuerto/Lugar de Destino</p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          Ciudad
+          <p class="inputField">
+            <span name="ciudad_embarque">_______</span>
+          </p>
+        </td>
+        <td>
+          Pais
+          <p class="inputField">
+            <span name="pais_embarque">_______</span>
+          </p>
+        </td>
+        <td>
+          Ciudad
+          <p class="inputField">
+            <span name="ciudad_destino">_______</span>
+          </p>
+        </td>
+        <td>
+          Pais
+          <p class="inputField">
+            <span name="pais_destino">_______</span>
+          </p>
+        </td>
+        <td>
+          Zona franca
+          <p class="inputField">
+            <span name="zona_franca_s">Si</span>
+            <span name="zona_franca_n" hidden>No</span>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <br />
+  <table class="tableClass">
+    <thead>
+      <tr>
+        <th colspan="6">
+          <p>Firma</p>
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td colspan="3">
+          <div id="firma_ordenante" class="sign_margin"></div>
+        </td>
+        <td colspan="3">
+          <div id="firma_beneficiario" class="sign_margin"></div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <b>Calidad en la que se suscribe el presente documento</b>
+          <p class="inputField">
+            <span name="calidad_ord_propio">En nombre propio</span>
+            <span name="calidad_ord_tercero" hidden>
+              En representación de un tercero
+            </span>
+            <span name="calidad_ord_avalista" hidden>Avalista</span>
+          </p>
+        </td>
+        <td colspan="3">
+          <b>Calidad en la que se suscribe el presente documento</b>
+          <p class="inputField">
+            <span name="calidad_ben_propio">En nombre propio</span>
+            <span name="calidad_ben_tercero" hidden>
+              En representación de un tercero
+            </span>
+            <span name="calidad_ben_avalista" hidden>Avalista</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <b>
+            Diligenciar la siguiente información con sus datos personales o los
+            datos de la persona a quien representa
+          </b>
+        </td>
+        <td colspan="3">
+          <b>
+            Diligenciar la siguiente información con sus datos personales o los
+            datos de la persona a quien representa
+          </b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <b>Nombre</b>
+          <p class="inputField">
+            <span name="nombre_ordenante">_______</span>
+          </p>
+        </td>
+        <td colspan="3">
+          <b>Nombre</b>
+          <p class="inputField">
+            <span name="nombre_beneficiario">_______</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <b>Nombre empresa</b>
+          <p class="inputField">
+            <span name="nombre_emp_ordenante">_______</span>
+          </p>
+        </td>
+        <td colspan="3">
+          <b>Nombre empresa</b>
+          <p class="inputField">
+            <span name="nombre_emp_beneficiario">_______</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <b>Cedula</b>
+          <p class="inputField">
+            <span name="cedula_ordenante">_______</span>
+          </p>
+        </td>
+        <td>
+          <b>Nit</b>
+          <p class="inputField">
+            <span name="nit_ordenante">_______</span>
+          </p>
+        </td>
+        <td>
+          <b>Teléfono</b>
+          <p class="inputField">
+            <span name="tel_ordenante">_______</span>
+          </p>
+        </td>
+        <td>
+          <b>Cedula</b>
+          <p class="inputField">
+            <span name="cedula_beneficiario">_______</span>
+          </p>
+        </td>
+        <td>
+          <b>Nit</b>
+          <p class="inputField">
+            <span name="nit_beneficiario">_______</span>
+          </p>
+        </td>
+        <td>
+          <b>Teléfono</b>
+          <p class="inputField">
+            <span name="tel_beneficiario">_______</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="3">
+          <b>Dirección</b>
+          <p class="inputField">
+            <span name="direccion_ordenante">_______</span>
+          </p>
+        </td>
+        <td colspan="3">
+          <b>Dirección</b>
+          <p class="inputField">
+            <span name="direccion_beneficiario">_______</span>
+          </p>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="6">
+          <p>
+            <b>
+              Autorizo al Banco para debitar de las cuentas corrientes o de
+              ahorros, las sumas de dinero por conceptos tales como comisiones,
+              tarifas por productos y servicios, impuestos, gravámenes y
+              contribuciones. Certifico que como representante legal tengo las
+              atribuciones necesarias para la firma de la presente solicitud y
+              el débito de las sumas de dinero de las cuentas corrientes o de
+              ahorros. Manifiesto que he leído las condiciones incluidas en la
+              presente solicitud y convenio de apertura.
+            </b>
+          </p>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>

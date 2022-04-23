@@ -42,10 +42,25 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del mandante',
+            name: 'nit_mandante_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_1',
+                    v: 'nit'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del mandante',
@@ -200,6 +215,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -210,6 +229,21 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del segundo mandante',
+            name: 'nit_mandante_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_2',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del segundo mandante',
@@ -406,6 +440,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -420,6 +458,25 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del tercer mandante',
+            name: 'nit_mandante_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_3',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del tercer mandante',
@@ -680,6 +737,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -698,6 +759,29 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del cuarto mandante',
+            name: 'nit_mandante_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_4',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del cuarto mandante',
@@ -1006,6 +1090,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -1028,6 +1116,33 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del quinto mandante',
+            name: 'nit_mandante_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_5',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del quinto mandante',
@@ -1384,6 +1499,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -1410,6 +1529,37 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del sexto mandante',
+            name: 'nit_mandante_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_6',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del sexto mandante',
@@ -1814,6 +1964,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -1844,6 +1998,41 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del septimo mandante',
+            name: 'nit_mandante_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_7',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del septimo mandante',
@@ -2296,6 +2485,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -2330,6 +2523,45 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del octavo mandante',
+            name: 'nit_mandante_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_8',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del octavo mandante',
@@ -2830,6 +3062,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -2868,6 +3104,49 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del noveno mandante',
+            name: 'nit_mandante_9',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_9',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del noveno mandante',
@@ -3416,6 +3695,10 @@
                 {
                     name: 'Permiso especial de permanencia',
                     value: 'pep'
+                },
+                {
+                    name:'NIT',
+                    value:'nit'
                 }
             ],
             prereq: [
@@ -3458,6 +3741,53 @@
             ],
             type: 'clausula',
             value: 'cc'
+        },
+        {
+            description: 'Digite el nit del decimo mandante',
+            name: 'nit_mandante_10',
+            prereq: [
+                {
+                    k: 'tipo_documento_mandante_10',
+                    v: 'nit'
+                },
+                {
+                    k: 'segundo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'noveno_mandante',
+                    v: 's'
+                },
+                {
+                    k: 'decimo_mandante',
+                    v: 's'
+                }
+            ],
+            type: 'text'
         },
         {
             description: 'Digite el número de cédula de ciudadanía del decimo mandante',
@@ -4352,61 +4682,61 @@
         },
         {
             name: 'nombre_mandante_1',
-            identification: 'cedula_mandante_1|cedulae_mandante_1|pasaporte_mandante_1|pep_mandante_1|pasaporte_mandante_p_1',
+            identification: 'cedula_mandante_1|cedulae_mandante_1|pasaporte_mandante_1|pep_mandante_1|pasaporte_mandante_p_1|nit_mandante_1',
             email: 'correo_mandante_1',
             type: 'mandante_1'
         },
         {
             name: 'nombre_mandante_2',
-            identification: 'cedula_mandante_2|cedulae_mandante_2|pasaporte_mandante_2|pep_mandante_2|pasaporte_mandante_p_2',
+            identification: 'cedula_mandante_2|cedulae_mandante_2|pasaporte_mandante_2|pep_mandante_2|pasaporte_mandante_p_2|nit_mandante_2',
             email: 'correo_mandante_2',
             type: 'mandante_2'
         },
         {
             name: 'nombre_mandante_3',
-            identification: 'cedula_mandante_3|cedulae_mandante_3|pasaporte_mandante_3|pep_mandante_3|pasaporte_mandante_p_3',
+            identification: 'cedula_mandante_3|cedulae_mandante_3|pasaporte_mandante_3|pep_mandante_3|pasaporte_mandante_p_3|nit_mandante_3',
             email: 'correo_mandante_3',
             type: 'mandante_3'
         },
         {
             name: 'nombre_mandante_4',
-            identification: 'cedula_mandante_4|cedulae_mandante_4|pasaporte_mandante_4|pep_mandante_4|pasaporte_mandante_p_4',
+            identification: 'cedula_mandante_4|cedulae_mandante_4|pasaporte_mandante_4|pep_mandante_4|pasaporte_mandante_p_4|nit_mandante_4',
             email: 'correo_mandante_4',
             type: 'mandante_4'
         },
         {
             name: 'nombre_mandante_5',
-            identification: 'cedula_mandante_5|cedulae_mandante_5|pasaporte_mandante_5|pep_mandante_5|pasaporte_mandante_p_5',
+            identification: 'cedula_mandante_5|cedulae_mandante_5|pasaporte_mandante_5|pep_mandante_5|pasaporte_mandante_p_5|nit_mandante_5',
             email: 'correo_mandante_5',
             type: 'mandante_5'
         },
         {
             name: 'nombre_mandante_6',
-            identification: 'cedula_mandante_6|cedulae_mandante_6|pasaporte_mandante_6|pep_mandante_6|pasaporte_mandante_p_6',
+            identification: 'cedula_mandante_6|cedulae_mandante_6|pasaporte_mandante_6|pep_mandante_6|pasaporte_mandante_p_6|nit_mandante_6',
             email: 'correo_mandante_6',
             type: 'mandante_6'
         },
         {
             name: 'nombre_mandante_7',
-            identification: 'cedula_mandante_7|cedulae_mandante_7|pasaporte_mandante_7|pep_mandante_7|pasaporte_mandante_p_7',
+            identification: 'cedula_mandante_7|cedulae_mandante_7|pasaporte_mandante_7|pep_mandante_7|pasaporte_mandante_p_7|nit_mandante_7',
             email: 'correo_mandante_7',
             type: 'mandante_7'
         },
         {
             name: 'nombre_mandante_8',
-            identification: 'cedula_mandante_8|cedulae_mandante_8|pasaporte_mandante_8|pep_mandante_8|pasaporte_mandante_p_8',
+            identification: 'cedula_mandante_8|cedulae_mandante_8|pasaporte_mandante_8|pep_mandante_8|pasaporte_mandante_p_8|nit_mandante_8',
             email: 'correo_mandante_8',
             type: 'mandante_8'
         },
         {
             name: 'nombre_mandante_9',
-            identification: 'cedula_mandante_9|cedulae_mandante_9|pasaporte_mandante_9|pep_mandante_9|pasaporte_mandante_p_9',
+            identification: 'cedula_mandante_9|cedulae_mandante_9|pasaporte_mandante_9|pep_mandante_9|pasaporte_mandante_p_9|nit_mandante_9',
             email: 'correo_mandante_9',
             type: 'mandante_9'
         },
         {
             name: 'nombre_mandante_10',
-            identification: 'cedula_mandante_10|cedulae_mandante_10|pasaporte_mandante_10|pep_mandante_10|pasaporte_mandante_p_10',
+            identification: 'cedula_mandante_10|cedulae_mandante_10|pasaporte_mandante_10|pep_mandante_10|pasaporte_mandante_p_1|nit_mandante_10',
             email: 'correo_mandante_10',
             type: 'mandante_10'
         }
@@ -4422,12 +4752,12 @@
         },
         {
             name: 'correo_mandatario',
-            value: 'mercadeo@eldandyinmobiliaria.com'
+            value: 'gerencia@eldandyinmobiliaria.com'
         }
     ],
     preBuildData: [],
     name: 'CONTRATO DE MANDATO PARA ADMINISTRACION DE INMUEBLE CON DESTINACION COMERCIAL DE EL DANDY S.A.S.',
-    username: '2f3ec4a1-1659-4b93-88eb-12c70236b1a5',
+    username: 'fef63f10-02fc-49aa-9d64-db5f24da0391',
     price: 5000,
     help: {
         sexo: 'Ejemplo: Femenino',
@@ -4445,7 +4775,7 @@
         porcentaje: 'Ejemplo: 15',
         fecha: 'Ejemplo: 13 de Septiembre del 2021'
     },
-    build: 20,
+    build: 21,
     createdAt: ISODate('2021-09-28T16:47:36.942Z'),
     updatedAt: ISODate('2021-09-28T16:47:36.942Z')
 }

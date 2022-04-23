@@ -1,0 +1,314 @@
+{
+    _id: ObjectId('625dacc0ed0a939e613674fa'),
+    config: [
+        {
+            name: 'numero_contrato',
+            description: 'Ingrese el numero del contrato',
+            type: 'text'
+        },
+        {
+            name: 'nombre_emprendedor',
+            description: 'Ingrese el nombre del emprendedor',
+            type: 'name'
+        },
+        {
+            name: 'cc_emprendedor',
+            description: 'Ingrese el número de cédula del emprendedor',
+            type: 'number'
+        },
+        {
+            name: 'numero_convocatoria',
+            description: 'Ingrese el número de la convocatoria',
+            type: 'text'
+        },
+        {
+            name: 'numero_acta',
+            description: 'Ingrese el número del acta',
+            type: 'text'
+        },
+        {
+            name: 'fecha_acta',
+            description: 'Seleccione la fecha de expedición del acta',
+            type: 'date'
+        },
+        {
+            name: 'id_plan',
+            description: 'Ingrese el id del plan de negocios',
+            type: 'text'
+        },
+        {
+            name: 'nombre_plan',
+            description: 'Ingrese el nombre del plan de negocios',
+            type: 'name'
+        },
+        {
+            name: 'valor_plan',
+            description: 'Ingrese el valor aprobado para el proyecto',
+            type: 'currency'
+        },
+        {
+            name: 'cdp1_number',
+            description: 'Ingrese el numero del Certificado de Disponibilidad Presupuestal',
+            type: 'number'
+        },
+        {
+            name: 'cdp1_value',
+            description: 'Ingrese el valor del Certificado de Disponibilidad Presupuestal',
+            type: 'currency'
+        },
+        {
+            name: 'cdp1_date',
+            description: 'Selecciona la fecha del Certificado de Disponibilidad Presupuestal',
+            type: 'date'
+        },
+        {
+            name: 'cdp2',
+            description: '¿Desea ingresar un segundo número de Certificado de Disponibilidad Presupuestal?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            name: 'cdp2_number',
+            description: 'Ingrese el segundo numero del Certificado de Disponibilidad Presupuestal',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'cdp2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cdp2_value',
+            description: 'Ingrese el segundo valor del Certificado de Disponibilidad Presupuestal',
+            type: 'currency',
+            prereq: [
+                {
+                    k: 'cdp2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cdp1_date',
+            description: 'Selecciona la fecha del segundo Certificado de Disponibilidad Presupuestal',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'cdp2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'correo_emprendedor',
+            description: 'Ingrese el correo del emprendedor',
+            type: 'text',
+            help: 'correo'
+        },
+        {
+            name: 'firma_contrato',
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            type: 'date'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_emprendedor',
+        'cc_emprendedor',
+        'numero_convocatoria',
+        'numero_acta',
+        'fecha_acta',
+        'id_plan',
+        'nombre_plan',
+        'valor_plan',
+        'correo_emprendedor',
+        'cdp2_number',
+        'cdp1_number'
+    ],
+    preFill: [
+        {
+            name: 'nombre_sena',
+            value: 'HERNAN DARIO FUENTES SALDARRIAGA'
+        },
+        {
+            name: 'cc_sena',
+            value: '3.349.902'
+        },
+        {
+            name: 'nombre_universidad',
+            value: 'ROBERTO FERRO ESCOBAR'
+        },
+        {
+            name: 'cc_universidad',
+            value: '79.657.603'
+        },
+        {
+            name: 'correo_prov_sena',
+            value: 'hernan.fuentes@sena.edu.co'
+        },
+        {
+            name: 'correo_prov_uni',
+            value: 'rferro@udistrital.edu.co'
+        },
+        {
+            name: 'nombre_proyecto_sena',
+            value: 'MÓNICA ALEJANDRA TORRES REY'
+        },
+        {
+            name: 'cc_proyecto_sena',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_proyecto_sena',
+            value: 'malejat@sena.edu.co'
+        },
+        {
+            name: 'nombre_vobo_sena',
+            value: 'CARLOS ARTURO GAMBA CASTILLO'
+        },
+        {
+            name: 'cc_vobo_sena',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_vobo_sena',
+            value: 'cgamba@sena.edu.co'
+        },
+        {
+            name: 'nombre_reviso_sena',
+            value: 'LUISA FERNANDA VELÁSQUEZ GIRALDO'
+        },
+        {
+            name: 'cc_reviso_sena',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_reviso_sena',
+            value: 'lfvelasquezg@sena.edu.co'
+        },
+        {
+            name: 'nombre_proyecto_universidad',
+            value: 'NELSON EDUARDO RODRÍGUEZ'
+        },
+        {
+            name: 'cc_proyecto_universidad',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_proyecto_universidad',
+            value: 'supervision.udfe@udistrital.edu.co'
+        },
+        {
+            name: 'nombre_reviso_universidad',
+            value: 'ANA MARÍA CHAVARRO MÉNDEZ'
+        },
+        {
+            name: 'cc_reviso_universidad',
+            value: '1.234.567'
+        },
+        {
+            name: 'correo_reviso_universidad',
+            value: 'juridico1idexud@udistrital.edu.co'
+        }
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_emprendedor',
+            email: 'correo_emprendedor',
+            identification: 'cc_emprendedor',
+            type: 'firma_emprendedor',
+            order: 0,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_proyecto_universidad',
+            email: 'correo_proyecto_universidad',
+            identification: 'cc_proyecto_universidad',
+            type: 'proyecto_universidad',
+            order: 1,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_reviso_universidad',
+            email: 'correo_reviso_universidad',
+            identification: 'cc_reviso_universidad',
+            type: 'reviso_universidad',
+            order: 2,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_universidad',
+            email: 'correo_prov_uni',
+            identification: 'cc_universidad',
+            type: 'firma_universidad',
+            order: 3,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_proyecto_sena',
+            email: 'correo_proyecto_sena',
+            identification: 'cc_proyecto_sena',
+            type: 'proyecto_sena',
+            order: 4,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_vobo_sena',
+            email: 'correo_vobo_sena',
+            identification: 'cc_vobo_sena',
+            type: 'vobo_sena',
+            order: 5,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_reviso_sena',
+            email: 'correo_reviso_sena',
+            identification: 'cc_reviso_sena',
+            type: 'reviso_sena',
+            order: 6,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_sena',
+            email: 'correo_prov_sena',
+            identification: 'cc_sena',
+            type: 'firma_sena',
+            order: 7,
+            role: 'SIGN'
+        }
+    ],
+    preBuildData: [],
+    name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
+    price: 5000,
+    help: {
+        correo: 'ejemplo@dominio.com'
+    },
+    company: ObjectId('614cc577580d130009ce2dd5'),
+    preBuild: true,
+    custom: {
+        footer: {
+            contents: '<div class="document_footer">CONTRATO DE COOPERACIÓN EMPRESARIAL Página {{page}} de {{pages}}</div>',
+            height: '10mm'
+        },
+        header: {
+            contents: {
+                '1': '<span/>',
+                'default': '<div class="textheader">CONTRATO DE COOPERACIÓN EMPRESARIAL No.</div>'
+            },
+            height: '10mm'
+        },
+        noShowHeader: true
+    },
+    build: 22
+}

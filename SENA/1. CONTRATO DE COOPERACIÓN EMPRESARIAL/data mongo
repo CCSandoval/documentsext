@@ -262,6 +262,7 @@
     help: {
         correo: 'ejemplo@dominio.com'
     },
+    company: ObjectId('614cc577580d130009ce2dd5'),
     preBuild: true,
     custom: {
         footer: {
@@ -274,7 +275,8 @@
                 'default': '<div class="textheader">CONTRATO DE COOPERACIÓN EMPRESARIAL No.</div>'
             },
             height: '10mm'
-        }
+        },
+        noShowHeader: true
     },
-    build: 20
+    build: 23
 }

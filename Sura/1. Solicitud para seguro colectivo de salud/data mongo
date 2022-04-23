@@ -251,6 +251,291 @@
             value: 'n'
         },
         {
+            name: 'historia_familiar',
+            description: '¿Alguno de sus hermanos (as), padre o madre sufre o ha sufrido alguno de los siguientes padecimientos: Enfermedades del corazón, hipertensión, enfermedad cerebrovascular, cáncer, enfermedades renales, hiperlipidemias, diabetes o cualquier enfermedad hereditaria?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'familiar_1_parentesco',
+            description: 'Ingrese el parentesco del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_nro_asegurado',
+            description: 'Indique el numero de asegurado del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_enfermedad',
+            description: 'Indique la enfermedad de la que padece el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_edad_diagnostico',
+            description: 'Indique la edad en la que fue diagnosticado el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_causa_muerte',
+            description: 'Indique la causa de muerte del familiar (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_1_edad_muerte',
+            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_parentesco',
+            description: 'Ingrese el parentesco del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_nro_asegurado',
+            description: 'Indique el numero de asegurado del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_enfermedad',
+            description: 'Indique la enfermedad de la que padece el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_edad_diagnostico',
+            description: 'Indique la edad en la que fue diagnosticado el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_causa_muerte',
+            description: 'Indique la causa de muerte del familiar (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_2_edad_muerte',
+            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_parentesco',
+            description: 'Ingrese el parentesco del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_nro_asegurado',
+            description: 'Indique el numero de asegurado del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_enfermedad',
+            description: 'Indique la enfermedad de la que padece el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_edad_diagnostico',
+            description: 'Indique la edad en la que fue diagnosticado el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_causa_muerte',
+            description: 'Indique la causa de muerte del familiar (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_3_edad_muerte',
+            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_parentesco',
+            description: 'Ingrese el parentesco del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_nro_asegurado',
+            description: 'Indique el numero de asegurado del familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_enfermedad',
+            description: 'Indique la enfermedad de la que padece el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_edad_diagnostico',
+            description: 'Indique la edad en la que fue diagnosticado el familiar',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_causa_muerte',
+            description: 'Indique la causa de muerte del familiar (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'familiar_4_edad_muerte',
+            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'historia_familiar',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'correo_preb',
+            type: 'text',
+            description: 'Ingrese el correo del afiliado'
+        },
+        {
             name: 'tipo_id_afiliado',
             description: 'Seleccione el tipo documento de identidad del afiliado',
             type: 'clausula',
@@ -2226,286 +2511,6 @@
             ]
         },
         {
-            name: 'historia_familiar',
-            description: '¿Alguno de sus hermanos (as), padre o madre sufre o ha sufrido alguno de los siguientes padecimientos: Enfermedades del corazón, hipertensión, enfermedad cerebrovascular, cáncer, enfermedades renales, hiperlipidemias, diabetes o cualquier enfermedad hereditaria?',
-            type: 'clausula',
-            options: [
-                {
-                    name: 'Si',
-                    value: 's'
-                },
-                {
-                    name: 'No',
-                    value: 'n'
-                }
-            ],
-            value: 'n'
-        },
-        {
-            name: 'familiar_1_parentesco',
-            description: 'Ingrese el parentesco del familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_1_nro_asegurado',
-            description: 'Indique el numero de asegurado del familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_1_enfermedad',
-            description: 'Indique la enfermedad de la que padece el familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_1_edad_diagnostico',
-            description: 'Indique la edad en la que fue diagnosticado el familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_1_causa_muerte',
-            description: 'Indique la causa de muerte del familiar (si aplica)',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_1_edad_muerte',
-            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_2_parentesco',
-            description: 'Ingrese el parentesco del familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_2_nro_asegurado',
-            description: 'Indique el numero de asegurado del familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_2_enfermedad',
-            description: 'Indique la enfermedad de la que padece el familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_2_edad_diagnostico',
-            description: 'Indique la edad en la que fue diagnosticado el familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_2_causa_muerte',
-            description: 'Indique la causa de muerte del familiar (si aplica)',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_2_edad_muerte',
-            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_3_parentesco',
-            description: 'Ingrese el parentesco del familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_3_nro_asegurado',
-            description: 'Indique el numero de asegurado del familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_3_enfermedad',
-            description: 'Indique la enfermedad de la que padece el familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_3_edad_diagnostico',
-            description: 'Indique la edad en la que fue diagnosticado el familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_3_causa_muerte',
-            description: 'Indique la causa de muerte del familiar (si aplica)',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_3_edad_muerte',
-            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_4_parentesco',
-            description: 'Ingrese el parentesco del familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_4_nro_asegurado',
-            description: 'Indique el numero de asegurado del familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_4_enfermedad',
-            description: 'Indique la enfermedad de la que padece el familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_4_edad_diagnostico',
-            description: 'Indique la edad en la que fue diagnosticado el familiar',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_4_causa_muerte',
-            description: 'Indique la causa de muerte del familiar (si aplica)',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'familiar_4_edad_muerte',
-            description: 'Indique la edad que tenia el familiar al momento de su muerte (si aplica)',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'historia_familiar',
-                    v: 's'
-                }
-            ]
-        },
-        {
             name: 'correo_tomador',
             type: 'text',
             description: 'Ingrese el correo del afiliado'
@@ -2535,8 +2540,57 @@
     ],
     operation: [],
     name: 'SOLICITUD PARA SEGURO COLECTIVO DE SALUD',
-    preBuildData: [],
-    preBuild: false,
+    company: ObjectId('62155b797154db0009178d9e'),
+    preBuildData: [
+        'salud',
+        'tipo',
+        'num_formato',
+        'num_poliza',
+        'oficina_radicacion',
+        'codigo_asesor',
+        'fecha_diligenciamiento',
+        'tipo_id_tomador',
+        'num_id_tomador_cc',
+        'num_id_tomador_ce',
+        'num_id_tomador_ti',
+        'num_id_tomador_pa',
+        'num_id_tomador_nit',
+        'num_id_tomador_ife',
+        'razon_social_tomador',
+        'enviar_a',
+        'num_cotizacion',
+        'inicio_vigencia',
+        'porc_comision',
+        'forma_pago',
+        'afiliado',
+        'historia_familiar',
+        'familiar_1_parentesco',
+        'familiar_1_nro_asegurado',
+        'familiar_1_enfermedad',
+        'familiar_1_edad_diagnostico',
+        'familiar_1_causa_muerte',
+        'familiar_1_edad_muerte',
+        'familiar_2_parentesco',
+        'familiar_2_nro_asegurado',
+        'familiar_2_enfermedad',
+        'familiar_2_edad_diagnostico',
+        'familiar_2_causa_muerte',
+        'familiar_2_edad_muerte',
+        'familiar_3_parentesco',
+        'familiar_3_nro_asegurado',
+        'familiar_3_enfermedad',
+        'familiar_3_edad_diagnostico',
+        'familiar_3_causa_muerte',
+        'familiar_3_edad_muerte',
+        'familiar_4_parentesco',
+        'familiar_4_nro_asegurado',
+        'familiar_4_enfermedad',
+        'familiar_4_edad_diagnostico',
+        'familiar_4_causa_muerte',
+        'familiar_4_edad_muerte',
+        'correo_preb'
+    ],
+    preBuild: true,
     price: 5000,
-    build: 11
+    build: 12
 }

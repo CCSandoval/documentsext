@@ -1,0 +1,138 @@
+{
+    _id: ObjectId('622fa45ced0a939e613674ce'),
+    config: [{
+            name: 'numero_otrosi',
+            description: 'Ingrese el número del Otrosí',
+            type: 'number'
+        },
+        {
+            name: 'termino',
+            description: 'Seleccione el tipo de contrato',
+            type: 'clausula',
+            options: [{
+                    name: 'Término fijo',
+                    value: 'fijo'
+                },
+                {
+                    name: 'Término indefinido',
+                    value: 'indefinido'
+                },
+            ],
+            value: 'fijo'
+        },
+        {
+            name: 'nombre_trabajador',
+            type: 'name',
+            description: 'Ingrese el nombre del trabajador'
+        },
+        {
+            name: "cedula_trabajador",
+            type: 'number',
+            description: 'Ingrese el número de cédula del trabajador'
+        },
+        {
+            name: 'exp_cedula',
+            type: 'text',
+            description: 'Ingrese el lugar de expedición de la cédula del trabajador'
+        },
+        {
+            name: 'fecha_contrato',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se firmó el contrato inicialmente'
+        },
+        {
+            name: 'cargo',
+            type: 'text',
+            description: 'Ingrese el cargo del trabajador'
+        },
+        {
+            name: 'salario_actual',
+            type: 'currency',
+            description: 'Ingrese el salario actual del trabajador'
+        },
+        {
+            name: 'fecha_inicial',
+            type: 'date',
+            description: 'Seleccione la fecha desde la cual se acuerda modificar la Cláusula Sexta del Contrato'
+        },
+        {
+            name: 'salario_modificado',
+            type: 'currency',
+            description: 'Ingrese la cantidad a la cual se modificó el salario del trabajador'
+        },
+        {
+            name: 'fecha_cambio',
+            type: 'date',
+            description: 'Seleccione la fecha desde la cual el empleador le reconocerá al trabajador como contraprestanción por sus servicios la suma anteriormente indicada'
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se firma el presente Otrosí'
+        },
+        {
+            name: 'cel_trabajador',
+            type: 'text',
+            description: 'Ingrese el número de celular del trabajador'
+        },
+        {
+            name: 'correo_trabajador',
+            type: 'text',
+            description: 'Ingrese el correo del trabajador'
+        },
+        {
+            name: 'direccion_trabajador',
+            type: 'text',
+            description: 'Ingrese la dirección del trabajador'
+        }
+    ],
+    operation: [],
+    preFill: [{
+            name: 'nombre_gimnasio',
+            value: 'JOSÉ MIGUEL MARTÍN BOTERO'
+        },
+        {
+            name: 'cedula_gimnasio',
+            value: '79751421'
+        },
+        {
+            name: 'correo_gimnasio',
+            value: 'josemmartin@gimnasiodelnorte.edu.co'
+        }
+    ],
+    signatureProfile: [{
+            type: 'firma_gimnasio',
+            identification: "cedula_gimnasio",
+            email: 'correo_gimnasio',
+            name: 'nombre_gimnasio'
+        },
+        {
+            type: 'firma_trabajador',
+            identification: "cedula_trabajador",
+            email: 'correo_trabajador',
+            name: 'nombre_trabajador'
+        }
+    ],
+    sign: [
+        'numero_otrosi',
+        'termino',
+        'nombre_trabajador',
+        "cedula_trabajador",
+        'exp_cedula',
+        'fecha_contrato',
+        'cargo',
+        'salario_actual',
+        'fecha_inicial',
+        'salario_modificado',
+        'fecha_cambio',
+        'fecha_firma',
+        'cel_trabajador',
+        'correo_trabajador',
+        'direccion_trabajador',
+    ],
+    name: 'Otrosí al Contrato Laboral - Aumento al Salario',
+    preBuildData: [],
+    preBuild: false,
+    price: 5000,
+    build: 2
+}

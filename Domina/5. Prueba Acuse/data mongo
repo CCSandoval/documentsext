@@ -1,21 +1,31 @@
 {
-    _id: ObjectId('6220089aed0a939e613674b8'),
+    _id: ObjectId('6220089aed0a939e613674b8 '),
     config:[
         {
             name:'numero_guia',
-            description:'Seleccione el número de la guía',
-            type: 'clausula',
-            options:[
-                {
-                    name:'-',
-                    value:'0'
-                },
-                {
-                    name:'15643',
-                    value:'1'
-                },
-            ],
-            value:'0'
+            description:'Ingrese el número de la guía',
+            type: 'number',
+        },
+        {
+            name:'nombre_cliente',
+            description:'Ingrese el nombre del cliente',
+            type: 'name',
+        },
+        {
+            name:'cel_cliente',
+            description:'Ingrese el telefono del cliente',
+            type: 'text',
+        },
+        {
+            name:'cc_cliente',
+            description:'Ingrese el numero de cedula del cliente',
+            type: 'number',
+        },
+        {
+            name:'prod_1',
+            description:'Ingrese el primer producto que recibió',
+            type:'name',
+            help:'prod'
         },
         {
             name:'prod_2',
@@ -62,21 +72,11 @@
         'prod_2',
         'observaciones_text'
     ],
-    preFill:[
-        {
-            name:'nombre',
-            value:'CRISTIAN CAMILO SANDOVAL TORRES'
-        },
-        {
-            name:'identidad',
-            value:'1115448153'
-        }
-    ],
     signatureProfile:[
         {
         type:'firma',
-        name:'nombre',
-        identification:'identidad',
+        name:'nombre_cliente',
+        identification:'cc_cliente',
         email:'correo'
         }
     ],

@@ -2,25 +2,8 @@
     _id: ObjectId('620fa019ed0a939e613674a8'),
     config: [
         {
-            name: 'nombre_tomador',
-            description: 'Ingrese el nombre del tomador de la póliza',
-            type: 'name'
-        },
-        {
             name: 'num_poliza',
             description: 'Ingrese el número de la póliza',
-            type: 'text'
-        },
-        {
-            name: 'inicio_vigencia',
-            description: 'Ingrese la fecha de inicio la vigencia de la póliza (AAAA/MM/DD)',
-            help: 'fecha',
-            type: 'text'
-        },
-        {
-            name: 'fin_vigencia',
-            description: 'Ingrese la fecha de finalización de la vigencia de la póliza (AAAA/MM/DD)',
-            help: 'fecha',
             type: 'text'
         },
         {
@@ -107,70 +90,6 @@
             ]
         },
         {
-            name: 'nombre_asesor_1',
-            description: 'Ingrese el nombre del primer asesor',
-            type: 'name'
-        },
-        {
-            name: 'codigo_asesor_1',
-            description: 'Ingrese el código del primer asesor',
-            type: 'number'
-        },
-        {
-            name: 'porcentaje_asesor_1',
-            description: 'Ingrese el porcentaje de participación del primer asesor',
-            type: 'number'
-        },
-        {
-            name: 'asesor_2',
-            description: '¿Desea ingresar un segundo asesor?',
-            type: 'clausula',
-            options: [
-                {
-                    name: 'Si',
-                    value: 's'
-                },
-                {
-                    name: 'No',
-                    value: 'n'
-                }
-            ],
-            value: 'n'
-        },
-        {
-            name: 'nombre_asesor_2',
-            description: 'Ingrese el nombre del primer asesor',
-            type: 'name',
-            prereq: [
-                {
-                    k: 'asesor_2',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'codigo_asesor_2',
-            description: 'Ingrese el código del segundo asesor',
-            type: 'number',
-            prereq: [
-                {
-                    k: 'asesor_2',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'porcentaje_asesor_2',
-            description: 'Ingrese el porcentaje de participación del segundo asesor',
-            type: 'number',
-            prereq: [
-                {
-                    k: 'asesor_2',
-                    v: 's'
-                }
-            ]
-        },
-        {
             name: 'nombre_gestor',
             description: 'Ingrese el nombre del gestor',
             type: 'name'
@@ -180,126 +99,7 @@
             description: 'Ingrese el código del gestor',
             type: 'number'
         },
-        {
-            name: 'tipo_id_asegurado',
-            description: 'Seleccione el tipo de documento de identidad del asegurado principal',
-            type: 'clausula',
-            options: [
-                {
-                    name: 'Cédula de Ciudadanía',
-                    value: 'cc'
-                },
-                {
-                    name: 'Cédula de Extranjería',
-                    value: 'ce'
-                },
-                {
-                    name: 'Pasaporte',
-                    value: 'pa'
-                }
-            ],
-            value: 'cc'
-        },
-        {
-            name: 'num_cc_asegurado',
-            description: 'Ingrese el número de cédula de ciudadanía del asegurado principal',
-            type: 'number',
-            prereq: [
-                {
-                    k: 'tipo_id_asegurado',
-                    v: 'cc'
-                }
-            ]
-        },
-        {
-            name: 'num_ce_asegurado',
-            description: 'Ingrese el número de cédula de extranjería del asegurado principal',
-            type: 'number',
-            prereq: [
-                {
-                    k: 'tipo_id_asegurado',
-                    v: 'ce'
-                }
-            ]
-        },
-        {
-            name: 'num_pa_asegurado',
-            description: 'Ingrese el pasaporte del asegurado principal',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'tipo_id_asegurado',
-                    v: 'pa'
-                }
-            ]
-        },
-        {
-            name: 'nombre_asegurado',
-            description: 'Ingrese el nombre completo del asegurado principal',
-            type: 'name'
-        },
-        {
-            name: 'sexo_asegurado',
-            description: 'Seleccione el genero del asegurado principal',
-            type: 'clausula',
-            options: [
-                {
-                    name: 'Femenino',
-                    value: 'f'
-                },
-                {
-                    name: 'Masculino',
-                    value: 'm'
-                }
-            ],
-            value: 'f'
-        },
-        {
-            name: 'nacimiento_asegurado',
-            description: 'Ingrese la fecha de nacimiento del asegurado principal (AAAA/MM/DD)',
-            help: 'fecha',
-            type: 'text'
-        },
-        {
-            name: 'peso_asegurado',
-            description: 'Ingrese el peso del asegurado principal en kilogramos',
-            type: 'number'
-        },
-        {
-            name: 'estatura_asegurado',
-            description: 'Ingrese la estatura del asegurado principal en centimetros',
-            type: 'number'
-        },
-        {
-            name: 'ciudad_asegurado',
-            description: 'Ingrese la ciudad de residencia del asegurado principal',
-            type: 'text'
-        },
-        {
-            name: 'departamento_asegurado',
-            description: 'Ingrese el departamento de residencia del asegurado principal',
-            type: 'text'
-        },
-        {
-            name: 'telefono_asegurado',
-            description: 'Ingrese el número de teléfono del asegurado principal sin indicativo',
-            type: 'number'
-        },
-        {
-            name: 'celular_asegurado',
-            description: 'Ingrese el número de celular del asegurado principal',
-            type: 'number'
-        },
-        {
-            name: 'correspondencia_asegurado',
-            description: 'Ingrese la dirección de correspondencia del asegurado principal',
-            type: 'text'
-        },
-        {
-            name: 'correo_asegurado',
-            description: 'Ingrese el correo del asegurado principal',
-            type: 'text'
-        },
+        
         {
             name: 'valor_asegurado_principal',
             description: 'Ingrese el valor asegurado de cobertura de vida del asegurado principal',
@@ -1580,6 +1380,131 @@
                 }
             ],
             value: 's'
+        },
+        {
+            name:'correo_preb',
+            description:'Ingrese el correo del asegurado',
+            type:'text',
+        },
+        {
+            name: 'tipo_id_asegurado',
+            description: 'Seleccione el tipo de documento de identidad del asegurado principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            value: 'cc'
+        },
+        {
+            name: 'num_cc_asegurado',
+            description: 'Ingrese el número de cédula de ciudadanía del asegurado principal',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_asegurado',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_asegurado',
+            description: 'Ingrese el número de cédula de extranjería del asegurado principal',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'tipo_id_asegurado',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'num_pa_asegurado',
+            description: 'Ingrese el pasaporte del asegurado principal',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_id_asegurado',
+                    v: 'pa'
+                }
+            ]
+        },
+        {
+            name: 'nombre_asegurado',
+            description: 'Ingrese el nombre completo del asegurado principal',
+            type: 'name'
+        },
+        {
+            name: 'sexo_asegurado',
+            description: 'Seleccione el genero del asegurado principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'f'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'm'
+                }
+            ],
+            value: 'f'
+        },
+        {
+            name: 'nacimiento_asegurado',
+            description: 'Ingrese la fecha de nacimiento del asegurado principal (AAAA/MM/DD)',
+            help: 'fecha',
+            type: 'text'
+        },
+        {
+            name: 'peso_asegurado',
+            description: 'Ingrese el peso del asegurado principal en kilogramos',
+            type: 'number'
+        },
+        {
+            name: 'estatura_asegurado',
+            description: 'Ingrese la estatura del asegurado principal en centimetros',
+            type: 'number'
+        },
+        {
+            name: 'ciudad_asegurado',
+            description: 'Ingrese la ciudad de residencia del asegurado principal',
+            type: 'text'
+        },
+        {
+            name: 'departamento_asegurado',
+            description: 'Ingrese el departamento de residencia del asegurado principal',
+            type: 'text'
+        },
+        {
+            name: 'telefono_asegurado',
+            description: 'Ingrese el número de teléfono del asegurado principal sin indicativo',
+            type: 'number'
+        },
+        {
+            name: 'celular_asegurado',
+            description: 'Ingrese el número de celular del asegurado principal',
+            type: 'number'
+        },
+        {
+            name: 'correspondencia_asegurado',
+            description: 'Ingrese la dirección de correspondencia del asegurado principal',
+            type: 'text'
+        },
+        {
+            name: 'correo_asegurado',
+            description: 'Ingrese el correo del asegurado principal',
+            type: 'text'
         },
         {
             name: 'derecho_acrecimiento',
@@ -4119,10 +4044,96 @@
     ],
     operation: [],
     name: 'SOLICITUD PARA SEGURO DE VIDA GRUPO',
-    preBuildData: [],
-    preBuild: false,
-    price: 0,
-    build: 7,
+    preBuildData: [
+        'num_poliza',
+        'fecha_diligenciamiento',
+        'num_solicitud',
+        'oficina_radicacion',
+        'plan_vida',
+        'tipo_proc',
+        'cont_vida_ind',
+        'num_poliza_vida_ind',
+        'nombre_gestor',
+        'codigo_gestor',
+        'valor_asegurado_principal',
+        'valor_asegurado_conyugue',
+        'valor_asegurado_hijos',
+        'valor_asegurado_hermanos',
+        'valor_otros',
+        'valor_asegurado_otros',
+        'parentesco_otros',
+        'invalidez',
+        'muerte_accidente',
+        'lesiones_con_armas',
+        'valor_asegurado_muerte_accidente',
+        'enfermedades_graves',
+        'porcentaje_enfermedades_graves',
+        'aux_funerario',
+        'valor_asegurado_aux_funerario',
+        'bono_canasta',
+        'valor_asegurado_bono_canasta',
+        'perdida_parcial_cap_lab',
+        'renta_incapacidad',
+        'auxilio_repatriacion',
+        'aux_maternidad',
+        'bono_educacion',
+        'accidentes_personales',
+        'muerte_accidente_adicional',
+        'invalidez_accidental_adicional',
+        'lesiones_con_armas_adicional',
+        'valor_asegurado_accidentes_personales',
+        'renta_hospitalizacion',
+        'tipo_renta',
+        'eps_renta',
+        'renta_adi_hosp_uci',
+        'valor_prima',
+        'grupo_familiar',
+        'tipo_id_gf_1',
+        'num_cc_gf_1',
+        'num_ce_gf_1',
+        'num_ti_gf_1',
+        'nombres_gf_1',
+        'parentesco_gf_1',
+        'nacimiento_gf_1',
+        'sexo_gf_1',
+        'peso_gf_1',
+        'familiar_2',
+        'tipo_id_gf_2',
+        'num_cc_gf_2',
+        'num_ce_gf_2',
+        'num_ti_gf_2',
+        'nombres_gf_2',
+        'parentesco_gf_2',
+        'nacimiento_gf_2',
+        'sexo_gf_2',
+        'peso_gf_2',
+        'familiar_3',
+        'tipo_id_gf_3',
+        'num_cc_gf_3',
+        'num_ce_gf_3',
+        'num_ti_gf_3',
+        'nombres_gf_3',
+        'parentesco_gf_3',
+        'nacimiento_gf_3',
+        'sexo_gf_3',
+        'peso_gf_3',
+        'familiar_4',
+        'tipo_id_gf_4',
+        'num_cc_gf_4',
+        'num_ce_gf_4',
+        'num_ti_gf_4',
+        'nombres_gf_4',
+        'parentesco_gf_4',
+        'nacimiento_gf_4',
+        'sexo_gf_4',
+        'peso_gf_4',
+        'beneficiarios',
+        'correo_preb',
+    ],
+    preBuild: true,
+    price: 5000,
+    build: 11,
+    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
     custom: {
         footer: {
             contents: '<div><span><small><b>TIPO DE IDENTIFICACIÓN: T.I:</b>Tarjeta de Identidad - <b>C.C: </b>Cédula de Ciudadanía - <b>C.D: </b>Carné Diplomático - <b>C.E: </b>Cédula de Extranjería - <b>PA: </b>Pasaporte - <b>NIT: </b>Número de Identificación Tributaria - <b>PARENTESCO: PR: </b>Progenitor(Padre-Madre) <b>CP: </b>Compañero(a) Permanente - <b>HI: </b>Hijo - <b>FA: </b> Familiar <b>Am: </b>Amigo - <b>AF: </b>Afiliado - <b>SEXO: F: </b>Femenino - <b>M: </b>Masculino - <b>ESTADO CIVIL: S: </b>Soltero - <b>C: </b>Casado - <b>V: </b>Viudo - <b>U: </b>Unión Libre - <b>D: </b>Divorciado <br/> F-02-83-320<br/> Fecha a partir de la cual se utiliza: 01/09/2016</small></span><p style="color: red; text-align: center; margin: 0;"><small>- SURAMERICANA -</small></p></div>'

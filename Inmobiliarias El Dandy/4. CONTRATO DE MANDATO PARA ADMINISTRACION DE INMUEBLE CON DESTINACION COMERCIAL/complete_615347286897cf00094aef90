@@ -30,7 +30,13 @@
 <span name="tipo_documento_mandante_1_pep" hidden> <b>PEP. No.</b>
     <span name="pep_mandante_1">__________</span> - <b>PASAPORTE. No.</b>
     <span name="pasaporte_mandante_p_1">__________</span>
-</span><br />
+</span>
+<span name="tipo_documento_mandante_1_nit" hidden>
+    <b>NIT No.</b>
+    <span name="nit_mandante_1">__________</span>
+</span>
+
+<br />
 <b>Dirección del mandante:</b> <span name="direccion_mandante_1">_________________________</span> <br />
 <b>e-mail:</b> <span name="correo_mandante_1"
     style="text-transform: lowercase">______________________________________</span><br />
@@ -54,7 +60,12 @@
     <span name="tipo_documento_mandante_2_pep" hidden> <b>PEP. No.</b>
         <span name="pep_mandante_2">__________</span> - <b>PASAPORTE. No.</b>
         <span name="pasaporte_mandante_p_2">__________</span>
-    </span><br />
+    </span>
+    <span name="tipo_documento_mandante_2_nit" hidden>
+        <b>NIT No.</b>
+        <span name="nit_mandante_2">__________</span>
+    </span>
+    <br />
     <b>Dirección del mandante:</b> <span name="direccion_mandante_2">_________________________</span> <br />
     <b>e-mail:</b> <span name="correo_mandante_2"
         style="text-transform: lowercase">______________________________________</span><br />
@@ -80,7 +91,13 @@
         <span name="tipo_documento_mandante_3_pep" hidden> <b>PEP. No.</b>
             <span name="pep_mandante_3">__________</span> - <b>PASAPORTE. No.</b>
             <span name="pasaporte_mandante_p_3">__________</span>
-        </span><br />
+        </span>
+        <span name="tipo_documento_mandante_3_nit" hidden>
+            <b>NIT No.</b>
+            <span name="nit_mandante_3">__________</span>
+        </span>
+        
+        <br />
         <b>Dirección del mandante:</b> <span name="direccion_mandante_3">_________________________</span> <br />
         <b>e-mail:</b> <span name="correo_mandante_3"
             style="text-transform: lowercase">______________________________________</span><br />
@@ -109,7 +126,12 @@
             <span name="tipo_documento_mandante_4_pep" hidden> <b>PEP. No.</b>
                 <span name="pep_mandante_4">__________</span> - <b>PASAPORTE. No.</b>
                 <span name="pasaporte_mandante_p_4">__________</span>
-            </span><br />
+            </span>
+            <span name="tipo_documento_mandante_4_nit" hidden>
+                <b>NIT No.</b>
+                <span name="nit_mandante_4">__________</span>
+            </span>            
+            <br />
             <b>Dirección del mandante:</b> <span name="direccion_mandante_4">_________________________</span> <br />
             <b>e-mail:</b> <span name="correo_mandante_4"
                 style="text-transform: lowercase">______________________________________</span><br />
@@ -141,7 +163,12 @@
                 <span name="tipo_documento_mandante_5_pep" hidden> <b>PEP. No.</b>
                     <span name="pep_mandante_5">__________</span> - <b>PASAPORTE. No.</b>
                     <span name="pasaporte_mandante_p_5">__________</span>
-                </span><br />
+                </span>
+                <span name="tipo_documento_mandante_5_nit" hidden>
+                    <b>NIT No.</b>
+                    <span name="nit_mandante_5">__________</span>
+                </span>
+                <br />
                 <b>Dirección del mandante:</b> <span name="direccion_mandante_5">_________________________</span>
                 <br />
                 <b>e-mail:</b> <span name="correo_mandante_5"
@@ -177,7 +204,12 @@
                     <span name="tipo_documento_mandante_6_pep" hidden> <b>PEP. No.</b>
                         <span name="pep_mandante_6">__________</span> - <b>PASAPORTE. No.</b>
                         <span name="pasaporte_mandante_p_6">__________</span>
-                    </span><br />
+                    </span>
+                    <span name="tipo_documento_mandante_6_nit" hidden>
+                        <b>NIT No.</b>
+                        <span name="nit_mandante_6">__________</span>
+                    </span>
+                    <br />
                     <b>Dirección del mandante:</b> <span name="direccion_mandante_6">_________________________</span>
                     <br />
                     <b>e-mail:</b> <span name="correo_mandante_6"
@@ -216,7 +248,12 @@
                         <span name="tipo_documento_mandante_7_pep" hidden> <b>PEP. No.</b>
                             <span name="pep_mandante_7">__________</span> - <b>PASAPORTE. No.</b>
                             <span name="pasaporte_mandante_p_7">__________</span>
-                        </span><br />
+                        </span>
+                        <span name="tipo_documento_mandante_7_nit" hidden>
+                            <b>NIT No.</b>
+                            <span name="nit_mandante_7">__________</span>
+                        </span>
+                        <br />
                         <b>Dirección del mandante:</b> <span
                             name="direccion_mandante_7">_________________________</span>
                         <br />
@@ -259,7 +296,12 @@
                             <span name="tipo_documento_mandante_8_pep" hidden> <b>PEP. No.</b>
                                 <span name="pep_mandante_8">__________</span> - <b>PASAPORTE. No.</b>
                                 <span name="pasaporte_mandante_p_8">__________</span>
-                            </span><br />
+                            </span>
+                            <span name="tipo_documento_mandante_8_nit" hidden>
+                                <b>NIT No.</b>
+                                <span name="nit_mandante_8">__________</span>
+                            </span>
+                            <br />
                             <b>Dirección del mandante:</b> <span
                                 name="direccion_mandante_8">_________________________</span>
                             <br />
@@ -305,7 +347,12 @@
                                 <span name="tipo_documento_mandante_9_pep" hidden> <b>PEP. No.</b>
                                     <span name="pep_mandante_9">__________</span> - <b>PASAPORTE. No.</b>
                                     <span name="pasaporte_mandante_p_9">__________</span>
-                                </span><br />
+                                </span>
+                                <span name="tipo_documento_mandante_9_nit" hidden>
+                                    <b>NIT No.</b>
+                                    <span name="nit_mandante_9">__________</span>
+                                </span>
+                                <br />
                                 <b>Dirección del mandante:</b> <span
                                     name="direccion_mandante_9">_________________________</span>
                                 <br />
@@ -354,7 +401,12 @@
                                     <span name="tipo_documento_mandante_10_pep" hidden> <b>PEP. No.</b>
                                         <span name="pep_mandante_10">__________</span> - <b>PASAPORTE. No.</b>
                                         <span name="pasaporte_mandante_p_10">__________</span>
-                                    </span><br />
+                                    </span>
+                                    <span name="tipo_documento_mandante_10_nit" hidden>
+                                        <b>NIT No.</b>
+                                        <span name="nit_mandante_10">__________</span>
+                                    </span>                                    
+                                    <br />
                                     <b>Dirección del mandante:</b> <span
                                         name="direccion_mandante_10">_________________________</span>
                                     <br />
@@ -918,7 +970,7 @@ serán por cuenta
 
 El presente contrato se firma en el municipio de Itagüí el día
 <span name="fecha_firma">_____</span>
-Destinándose copia para cada una de las partes contratantes.
+Destinándose copia para cada una de las partes contratantes y aceptamos la información plasmada en este documento.
  
 <p>
 <div id="mandatario" class="sign-margin"></div>
@@ -944,6 +996,10 @@ Destinándose copia para cada una de las partes contratantes.
     <span name="pep_mandante_1">__________</span> - <b>PASAPORTE. No.</b>
     <span name="pasaporte_mandante_p_1">__________</span>
 </span>
+<span name="tipo_documento_mandante_1_nit" hidden>
+    <b>NIT No.</b>
+    <span name="nit_mandante_1">__________</span>
+</span> 
 </p>
 
 <p>
@@ -965,6 +1021,10 @@ Destinándose copia para cada una de las partes contratantes.
         <span name="pep_mandante_2">__________</span> - <b>PASAPORTE. No.</b>
         <span name="pasaporte_mandante_p_2">__________</span>
     </span>
+    <span name="tipo_documento_mandante_2_nit" hidden>
+        <b>NIT No.</b>
+        <span name="nit_mandante_2">__________</span>
+    </span> 
 </div>
 </p>
 
@@ -989,6 +1049,10 @@ Destinándose copia para cada una de las partes contratantes.
             <span name="pep_mandante_3">__________</span> - <b>PASAPORTE. No.</b>
             <span name="pasaporte_mandante_p_3">__________</span>
         </span>
+        <span name="tipo_documento_mandante_3_nit" hidden>
+            <b>NIT No.</b>
+            <span name="nit_mandante_3">__________</span>
+        </span> 
     </div>
 </div>
 </p>
@@ -1016,6 +1080,10 @@ Destinándose copia para cada una de las partes contratantes.
                 <span name="pep_mandante_4">__________</span> - <b>PASAPORTE. No.</b>
                 <span name="pasaporte_mandante_p_4">__________</span>
             </span>
+            <span name="tipo_documento_mandante_4_nit" hidden>
+                <b>NIT No.</b>
+                <span name="nit_mandante_4">__________</span>
+            </span> 
         </div>
     </div>
 </div>
@@ -1046,6 +1114,10 @@ Destinándose copia para cada una de las partes contratantes.
                     <span name="pep_mandante_5">__________</span> - <b>PASAPORTE. No.</b>
                     <span name="pasaporte_mandante_p_5">__________</span>
                 </span>
+                <span name="tipo_documento_mandante_5_nit" hidden>
+                    <b>NIT No.</b>
+                    <span name="nit_mandante_5">__________</span>
+                </span> 
             </div>
         </div>
     </div>
@@ -1079,6 +1151,10 @@ Destinándose copia para cada una de las partes contratantes.
                         <span name="pep_mandante_6">__________</span> - <b>PASAPORTE. No.</b>
                         <span name="pasaporte_mandante_p_6">__________</span>
                     </span>
+                    <span name="tipo_documento_mandante_6_nit" hidden>
+                        <b>NIT No.</b>
+                        <span name="nit_mandante_6">__________</span>
+                    </span> 
                 </div>
             </div>
         </div>
@@ -1115,6 +1191,10 @@ Destinándose copia para cada una de las partes contratantes.
                             <span name="pep_mandante_7">__________</span> - <b>PASAPORTE. No.</b>
                             <span name="pasaporte_mandante_p_7">__________</span>
                         </span>
+                        <span name="tipo_documento_mandante_7_nit" hidden>
+                            <b>NIT No.</b>
+                            <span name="nit_mandante_7">__________</span>
+                        </span>     
                     </div>
                 </div>
             </div>
@@ -1154,6 +1234,10 @@ Destinándose copia para cada una de las partes contratantes.
                                 <span name="pep_mandante_8">__________</span> - <b>PASAPORTE. No.</b>
                                 <span name="pasaporte_mandante_p_8">__________</span>
                             </span>
+                            <span name="tipo_documento_mandante_8_nit" hidden>
+                                <b>NIT No.</b>
+                                <span name="nit_mandante_8">__________</span>
+                            </span>     
                         </div>
                     </div>
                 </div>
@@ -1196,6 +1280,10 @@ Destinándose copia para cada una de las partes contratantes.
                                     <span name="pep_mandante_9">__________</span> - <b>PASAPORTE. No.</b>
                                     <span name="pasaporte_mandante_p_9">__________</span>
                                 </span>
+                                <span name="tipo_documento_mandante_9_nit" hidden>
+                                    <b>NIT No.</b>
+                                    <span name="nit_mandante_9">__________</span>
+                                </span>                                         
                             </div>
                         </div>
                     </div>
@@ -1241,6 +1329,10 @@ Destinándose copia para cada una de las partes contratantes.
                                         <span name="pep_mandante_10">__________</span> - <b>PASAPORTE. No.</b>
                                         <span name="pasaporte_mandante_p_10">__________</span>
                                     </span>
+                                    <span name="tipo_documento_mandante_10_nit" hidden>
+                                        <b>NIT No.</b>
+                                        <span name="nit_mandante_10">__________</span>
+                                    </span>                                    
                                 </div>
                             </div>
                         </div>
@@ -1251,7 +1343,3 @@ Destinándose copia para cada una de las partes contratantes.
     </div>
 </div>
 </p>
-
-<b>
-    Aceptamos la información plasmada en este documento.
-</b>

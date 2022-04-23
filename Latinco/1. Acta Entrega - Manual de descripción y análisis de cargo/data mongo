@@ -20,8 +20,8 @@
         },
         {
             name: 'suscrito',
-            description: 'Ingrese ___',
-            type: 'text'
+            description: 'Ingrese el nombre de la empresa',
+            type: 'name'
         },
         {
             name: 'fecha_firma',
@@ -65,5 +65,5 @@
     preBuildData: [],
     preBuild: false,
     price: 5000,
-    build: 5
+    build: 6
 }

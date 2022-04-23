@@ -1,0 +1,100 @@
+{
+    "_id": "625486a1ed0a939e613674f6",
+    "config": [
+        {
+            "name": "nombre_vendor",
+            "description": "Ingrese el nombre del corredor",
+            "type": "name",
+            "help": "nombre"
+        },
+        {
+            "name": "ciudad_vendor",
+            "description": "Ingrese la ciudad de residencia del corredor",
+            "type": "text",
+            "help": "ciudad"
+        },
+        {
+            "name": "cc_vendor",
+            "description": "Ingrese la cédula de ciudadanía del corredor",
+            "type": "number"
+        },
+        {
+            "name": "correo_contratante",
+            "description": "Ingrese el correo del contratante",
+            "type": "text"
+        },
+        {
+            "name": "correo_vendor",
+            "description": "Ingrese el correo del corredor",
+            "type": "text"
+        },
+        {
+            "name": "package_name",
+            "description": "Digite el nombre con el que desea guardar el paquete de anexos",
+            "type": "text",
+            "help": "packageName"
+        }
+    ],
+    "operation": [],
+    "preFill": [
+        {
+            "name": "nombre_contratante",
+            "value": "MANUEL ALEJANDRO ZABALETA NEIRA"
+        },
+        {
+            "name": "cc_contratante",
+            "value": "1.032.379.108"
+        }
+    ],
+    "signatureProfile": [
+        {
+            "type": "firma_contratante",
+            "name": "nombre_contratante",
+            "identification": "cc_contratante",
+            "email": "correo_contratante"
+        },
+        {
+            "type": "firma_vendor",
+            "name": "nombre_vendor",
+            "identification": "cc_vendor",
+            "email": "correo_vendor",
+            "package": true
+        }
+    ],
+    "sign": [
+        "nombre_vendor",
+        "correo_vendor",
+        "cc_vendor"
+    ],
+    "help": {
+        "ciudad": "Ejemplo: Ibagué",
+        "nombre": "Ejemplo: David Alejandro Martinez Guerra",
+        "packageName": "Ejemplo: Nuevo paquete"
+    },
+    "files": [
+        {
+            "name": "Cedula de ciudadanía",
+            "approve": "pending",
+            "required": true
+        },
+        {
+            "name": "CV actualizado",
+            "approve": "pending",
+            "required": true
+        },
+        {
+            "name": "Rut",
+            "approve": "pending",
+            "required": true
+        },
+        {
+            "name": "Certificado cuenta bancaria",
+            "approve": "pending"
+        }
+    ],
+    "preBuild": false,
+    "preBuildData": [],
+    "price": 5000,
+    "name": "ACUERDO DE COLABORACIÓN EMPRESARIAL-LQN",
+    "build": 1
+}

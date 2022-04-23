@@ -128,16 +128,16 @@
     </tr>
     <tr class="border_bottom">
       <td class="small_text border_right">
-        <p><span name="nombre_tomador">&nbsp;</span></p>
+        <p><span>RV HOLDINGS</span></p>
       </td>
       <td class="small_text border_right">
         <p><span name="num_poliza">&nbsp;</span></p>
       </td>
       <td class="small_text border_right">
-        <p><span name="inicio_vigencia">&nbsp;</span></p>
+        <p><span>01/02/2022</span></p>
       </td>
       <td class="small_text border_right">
-        <p><span name="fin_vigencia">&nbsp;</span></p>
+        <p><span>01/02/2023</span></p>
       </td>
       <td class="small_text border_right">
         <p><span name="fecha_diligenciamiento">&nbsp;</span></p>
@@ -153,7 +153,7 @@
     </tr>
     <tr class="border_bottom">
       <td class="small_text" colspan="6">
-        <p><span name="oficina_radicacion">&nbsp;</span></p>
+        <p><span>Promotora Villaser</span></p>
       </td>
     </tr>
     <tr class="border_bottom">
@@ -256,26 +256,14 @@
     </tr>
     <tr class="border_bottom">
       <td class="small text border_right">
-        <span name="nombre_asesor_1">&nbsp;</span>
+        <span>Juan Camilo Arredondo Mora</span>
       </td>
       <td class="small text border_right">
-        <span name="codigo_asesor_1">&nbsp;</span>
+        <span>46141</span>
       </td>
       <td class="small text border_right">
-        <span name="porcentaje_asesor_1">&nbsp;</span>
+        <span>100</span>
       </td>
-      <span name="asesor_2_n"></span>
-      <span name="asesor_2_s">
-        <td class="small text border_right">
-          <span name="nombre_asesor_2">&nbsp;</span>
-        </td>
-        <td class="small text border_right">
-          <span name="codigo_asesor_2">&nbsp;</span>
-        </td>
-        <td class="small text">
-          <span name="porcentaje_asesor_2">&nbsp;</span>
-        </td>
-      </span>
     </tr>
   </table>
   <table style="background-color: #f1f4ff" class="table_class">

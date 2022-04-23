@@ -2,6 +2,85 @@
     _id: ObjectId('6150cea316f05200081d123e'),
     config: [
         {
+            description:'Seleccione el tipo de persona del primer vendedor',
+            type:'clausula',
+            name:'tipo_vendedor_1',
+            options:[
+                {
+                    name:'Natural',
+                    value:'nat'
+                },
+                {
+                    name:'Juridica',
+                    value:'jur'
+                },
+            ],
+            value:'nat'
+        },
+        {
+            description:'Ingrese la razón social de la empresa vendedora',
+            name:'empresa_vendedor_1',
+            type:'name',
+            prereq:[
+                {
+                    k:'tipo_vendedor_1',
+                    v:'jur'
+                }
+            ],
+        },
+        {
+            description:'Ingrese el nit de la empresa vendedora',
+            name:'nit_vendedor_1',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_1',
+                    v:'jur'
+                }
+            ],
+        },
+        {
+            description:'Ingrese la ciudad donde se encuentra la camara de comercio donde fue registrada la empresa vendedora',
+            name:'ciudad_comerc_ven_1',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_1',
+                    v:'jur'
+                }
+            ],
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_rep_vendedor_1',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs',
+            prereq:[
+                {
+                    k:'tipo_vendedor_1',
+                    v:'jur'
+                }
+            ],
+        },
+        {
             description: 'Digite el nombre del vendedor',
             help: 'nombre',
             name: 'nombre_vendedor_1',
@@ -68,6 +147,12 @@
             description: 'Digite el municipio donde fue expedido el documento de identificación del vendedor',
             help: 'lugar',
             name: 'lugar_expe_cedula_vendedor_1',
+            prereq: [
+                {
+                    k:'tipo_vendedor_1',
+                    v:'nat'
+                },
+            ],            
             type: 'text'
         },
         {
@@ -150,6 +235,107 @@
             ],
             type: 'clausula',
             value: 'n'
+        },
+        {
+            description:'Seleccione el tipo de persona del segundo vendedor',
+            type:'clausula',
+            name:'tipo_vendedor_2',
+            options:[
+                {
+                    name:'Natural',
+                    value:'nat'
+                },
+                {
+                    name:'Juridica',
+                    value:'jur'
+                },
+            ],
+            value:'nat',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            description:'Ingrese la razón social de la segunda empresa vendedora',
+            name:'empresa_vendedor_2',
+            type:'name',
+            prereq:[
+                {
+                    k:'tipo_vendedor_2',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            description:'Ingrese el nit de la empresa vendedora',
+            name:'nit_vendedor_2',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_2',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            description:'Ingrese la ciudad donde se encuentra la camara de comercio donde fue registrada la segunda empresa vendedora',
+            name:'ciudad_comerc_ven_2',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_2',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            description: '¿Cuál es el tipo de representante de la segunda empresa vendedora?',
+            help: 'tipo_repre',
+            name: 'tipo_rep_vendedor_3',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs',
+            prereq:[
+                {
+                    k:'tipo_vendedor_2',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                }
+            ],
         },
         {
             description: 'Digite el nombre del segundo vendedor',
@@ -246,7 +432,11 @@
                 {
                     k: 'vendedor_2',
                     v: 's'
-                }
+                },
+                {
+                    k: 'tipo_vendedor_2',
+                    v: 'nat'
+                },
             ],
             type: 'text'
         },
@@ -374,6 +564,127 @@
             value: 'n'
         },
         {
+            description:'Seleccione el tipo de persona del tercer vendedor',
+            type:'clausula',
+            name:'tipo_vendedor_3',
+            options:[
+                {
+                    name:'Natural',
+                    value:'nat'
+                },
+                {
+                    name:'Juridica',
+                    value:'jur'
+                },
+            ],
+            value:'nat',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese la razón social de la tercera empresa vendedora',
+            name:'empresa_vendedor_3',
+            type:'name',
+            prereq:[
+                {
+                    k:'tipo_vendedor_3',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese el nit de la empresa vendedora',
+            name:'nit_vendedor_3',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_3',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese la ciudad donde se encuentra la camara de comercio donde fue registrada la tercera empresa vendedora',
+            name:'ciudad_comerc_ven_3',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_3',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_rep_vendedor_3',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs',
+            prereq:[
+                {
+                    k:'tipo_vendedor_3',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+            ],
+        },
+        {
             description: 'Digite el nombre del tercer vendedor',
             help: 'nombre',
             name: 'nombre_vendedor_3',
@@ -492,7 +803,11 @@
                 {
                     k: 'vendedor_3',
                     v: 's'
-                }
+                },
+                {
+                    k: 'tipo_vendedor_3',
+                    v: 'nat'
+                },
             ],
             type: 'text'
         },
@@ -648,6 +963,147 @@
             value: 'n'
         },
         {
+            description:'Seleccione el tipo de persona del cuarto vendedor',
+            type:'clausula',
+            name:'tipo_vendedor_4',
+            options:[
+                {
+                    name:'Natural',
+                    value:'nat'
+                },
+                {
+                    name:'Juridica',
+                    value:'jur'
+                },
+            ],
+            value:'nat',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese la razón social de la cuarta empresa vendedora',
+            name:'empresa_vendedor_4',
+            type:'name',
+            prereq:[
+                {
+                    k:'tipo_vendedor_4',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese el nit de la cuarta empresa vendedora',
+            name:'nit_vendedor_4',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_4',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese la ciudad donde se encuentra la camara de comercio donde fue registrada la cuarta empresa vendedora',
+            name:'ciudad_comerc_ven_4',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_4',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_rep_vendedor_4',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs',
+            prereq:[
+                {
+                    k:'tipo_vendedor_4',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
             description: 'Digite el nombre del cuarto vendedor',
             help: 'nombre',
             name: 'nombre_vendedor_4',
@@ -790,7 +1246,11 @@
                 {
                     k: 'vendedor_4',
                     v: 's'
-                }
+                },
+                {
+                    k: 'tipo_vendedor_4',
+                    v: 'nat'
+                },
             ],
             type: 'text'
         },
@@ -974,6 +1434,167 @@
             value: 'n'
         },
         {
+            description:'Seleccione el tipo de persona del quinto vendedor',
+            type:'clausula',
+            name:'tipo_vendedor_5',
+            options:[
+                {
+                    name:'Natural',
+                    value:'nat'
+                },
+                {
+                    name:'Juridica',
+                    value:'jur'
+                },
+            ],
+            value:'nat',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese la razón social de la quinta empresa vendedora',
+            name:'empresa_vendedor_5',
+            type:'name',
+            prereq:[
+                {
+                    k:'tipo_vendedor_5',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese el nit de la quinta empresa vendedora',
+            name:'nit_vendedor_5',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_5',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description:'Ingrese la ciudad donde se encuentra la camara de comercio donde fue registrada la quinta empresa vendedora',
+            name:'ciudad_comerc_ven_5',
+            type:'text',
+            prereq:[
+                {
+                    k:'tipo_vendedor_5',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_rep_vendedor_5',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs',
+            prereq:[
+                {
+                    k:'tipo_vendedor_5',
+                    v:'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+            ],
+        },
+        {
             description: 'Digite el nombre del quinto vendedor',
             help: 'nombre',
             name: 'nombre_vendedor_5',
@@ -1140,7 +1761,11 @@
                 {
                     k: 'vendedor_5',
                     v: 's'
-                }
+                },
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'nat'
+                },
             ],
             type: 'text'
         },
@@ -2700,23 +3325,6 @@
             type: 'name'
         },
         {
-            description: 'Seleccione el sexo del anterior dueño del inmueble',
-            help: 'sexo',
-            name: 'sexo_anterior_dueno',
-            options: [
-                {
-                    name: 'Femenino',
-                    value: 'm'
-                },
-                {
-                    name: 'Masculino',
-                    value: 'h'
-                }
-            ],
-            type: 'clausula',
-            value: 'm'
-        },
-        {
             description: 'Digite el número de la escritura pública de la anterior compra del inmueble',
             help: 'numero',
             name: 'numero_escritura_publica_anterior_dueno',
@@ -2738,6 +3346,16 @@
             description: 'Digite la ciudad donde está domiciliada la notaria de la escritura pública de la anterior compra del inmueble',
             help: 'ciudad_notaria',
             name: 'ciudad_notaria_escritura_publica_anterior_dueno',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número matrícula inmobiliaria del inmueble en el momento de la anterior compra del inmueble',
+            name: 'matricula_adquisicion',
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad donde se encuentra ubicada la Oficina de Registro de Instrumentos Públicos donde se registró el inmueble',
+            name: 'oficina_reg_pub_adquisicion',
             type: 'text'
         },
         {
@@ -2763,6 +3381,33 @@
             help: 'forma_pago',
             name: 'f_pago_cuota_inicial',
             type: 'text'
+        },
+        {
+            description: '¿Desea ingresar una condición particular?',
+            name: 'condicion_particular',
+            type: 'clausula',
+            options:[
+                {
+                    name:'No',
+                    value:'n'
+                },
+                {
+                    name:'Si',
+                    value:'s'
+                }
+            ],
+            value:'n'
+        },
+        {
+            description: 'Digite la condición particular',
+            name: 'condicion_particular_texto',
+            type: 'text',
+            prereq:[
+                {
+                    k:'condicion_particular',
+                    v:'s'
+                }
+            ]
         },
         {
             description: 'Digite el valor del segundo pago',
@@ -3370,6 +4015,33 @@
             value: '48'
         },
         {
+            description: '¿Desea ingresar limitaciones del inmueble?',
+            name: 'limitaciones_propiedad',
+            type: 'clausula',
+            options:[
+                {
+                    name:'No',
+                    value:'n'
+                },
+                {
+                    name:'Si',
+                    value:'s'
+                }
+            ],
+            value:'n'
+        },
+        {
+            description: 'Digite las limitaciones del inmueble',
+            name: 'limitaciones_propiedad_texto',
+            type: 'text',
+            prereq:[
+                {
+                    k:'limitaciones_propiedad',
+                    v:'s'
+                }
+            ]
+        },
+        {
             description: 'Seleccione la fecha de la entrega de los inmuebles',
             help: 'fecha',
             name: 'fecha_entrega_inmu',
@@ -3403,6 +4075,31 @@
             ],
             type: 'clausula',
             value: 'am'
+        },
+        {
+            description: 'Seleccione la ciudad',
+            name: 'decima',
+            options: [
+                {
+                    name: 'Medellin',
+                    value: 'med'
+                },
+                {
+                    name: 'Bogotá',
+                    value: 'bog'
+                },
+                {
+                    name: 'Otra',
+                    value: 'otra'
+                },
+            ],
+            type: 'clausula',
+            value: 'med'
+        },
+        {
+            description: 'Digite las especificaciones correspondientes a la Décima Cláusula en la ciudad en la que se encuentra.',
+            name: 'decima_otra_texto',
+            type: 'text'
         },
         {
             description: 'Digite el nombre de la persona que va a realizar todo lo relacionado con la obtención de certificaciones.',
@@ -3715,7 +4412,6 @@
         'lugar_escritura_pub',
         'adquirio_inmuble',
         'nombre_anterior_dueno',
-        'sexo_anterior_dueno',
         'numero_escritura_publica_anterior_dueno',
         'fecha_escritura_publica_anterior_dueno',
         'nombre_notaria_escritura_publica_anterior_dueno',
@@ -3809,7 +4505,7 @@
         }
     ],
     preBuildData: [],
-    name: 'Promesa de compraventa home capital',
+    name: 'Promesa de compra',
     price: 5000,
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
@@ -3847,7 +4543,7 @@
         tipo_repre: 'Ejemplo: representante legal suplente',
         horas_celebracion: 'Ejemplo: 06:00'
     },
-    build: 20,
+    build: 21,
     preBuild: true,
     company: ObjectId('614a3a750aebb000084cbac0'),
     username: '8b62df2f-b613-402c-ae84-690ada65fb2b',

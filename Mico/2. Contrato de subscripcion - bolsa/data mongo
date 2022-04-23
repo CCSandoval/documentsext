@@ -83,6 +83,236 @@
             type: 'text'
         },
         {
+            name: 'vig_quinta',
+            description: '¿Desea ingresar una cláusula adicional?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'vig_quinta_titulo',
+            description: 'Ingrese el nombre de la cláusula',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_quinta_texto',
+            description: 'Ingrese el contenido de la cláusula',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_sexta',
+            description: '¿Desea ingresar una segunda cláusula adicional?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_sexta_titulo',
+            description: 'Ingrese el nombre de la cláusula',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_sexta',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_sexta_texto',
+            description: 'Ingrese el contenido de la cláusula',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_sexta',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_septima',
+            description: '¿Desea ingresar una tercera cláusula adicional?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_sexta',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_septima_titulo',
+            description: 'Ingrese el nombre de la cláusula',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_sexta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_septima',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_septima_texto',
+            description: 'Ingrese el contenido de la cláusula',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_sexta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_septima',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_octava',
+            description: '¿Desea ingresar una cuarta cláusula adicional?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_sexta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_septima',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_octava_titulo',
+            description: 'Ingrese el nombre de la cláusula',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_sexta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_septima',
+                    v: 's'
+                },
+                {
+                    k: 'vig_octava',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vig_octava_texto',
+            description: 'Ingrese el contenido de la cláusula',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'vig_quinta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_sexta',
+                    v: 's'
+                },
+                {
+                    k: 'vig_septima',
+                    v: 's'
+                },
+                {
+                    k: 'vig_octava',
+                    v: 's'
+                }   
+            ]
+        },
+        {
             name: 'fecha_firma',
             description: 'Seleccione la fecha de firma',
             type: 'date'
@@ -103,7 +333,7 @@
     preFill: [
         {
             name: 'correo_mico',
-            value: 'cristian.sandoval@micontrato.co'
+            value: 'juan.rincon@micontrato.co'
         },
         {
             name: 'nombre_mico',
@@ -154,6 +384,7 @@
     name: 'CONTRATO DE SUSCRIPCIÓN A LA PLATAFORMA MICONTRATO.CO - BOLSA',
     preBuildData: [],
     preBuild: false,
-    price: 0,
-    build: 7
+    price: 5000,
+    company: ObjectId('618c876340e2d3000815c7fc'),
+    build: 13
 }

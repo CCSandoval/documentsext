@@ -434,6 +434,10 @@
                 {
                     name: 'CCF',
                     value: 'ccf'
+                },
+                {
+                    name: 'Ambas',
+                    value: 'ambas'
                 }
             ],
             value: 'eps',
@@ -554,6 +558,10 @@
                 {
                     name: 'CCF',
                     value: 'ccf'
+                },
+                {
+                    name: 'Ambas',
+                    value: 'ambas'
                 }
             ],
             value: 'eps',
@@ -702,6 +710,10 @@
                 {
                     name: 'CCF',
                     value: 'ccf'
+                },
+                {
+                    name: 'Ambas',
+                    value: 'ambas'
                 }
             ],
             value: 'eps',
@@ -873,64 +885,24 @@
             type: 'text'
         },
         {
-            name: 'emergencia_2',
-            description: '¿Desea ingresar un segundo contacto de emergencia?',
-            type: 'clausula',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Si',
-                    value: 's'
-                }
-            ],
-            value: 'n'
-        },
-        {
             name: 'emergencia_2_nombre',
             description: 'Ingrese el nombre del segundo contacto de emergencia',
-            type: 'name',
-            prereq: [
-                {
-                    k: 'emergencia_2',
-                    v: 's'
-                }
-            ]
+            type: 'name'
         },
         {
             name: 'emergencia_2_telefono',
             description: 'Ingrese el número de teléfono del segundo contacto de emergencia',
-            type: 'number',
-            prereq: [
-                {
-                    k: 'emergencia_2',
-                    v: 's'
-                }
-            ]
+            type: 'number'
         },
         {
             name: 'emergencia_2_celular',
             description: 'Ingrese el número de celular del segundo contacto de emergencia',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'emergencia_2',
-                    v: 's'
-                }
-            ]
+            type: 'text'
         },
         {
             name: 'emergencia_2_parentesco',
             description: 'Ingrese el parentesco del segundo contacto de emergencia',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'emergencia_2',
-                    v: 's'
-                }
-            ]
+            type: 'text'
         },
         {
             name: 'institucion_primaria',
@@ -1278,10 +1250,6 @@
             type: 'clausula',
             options: [
                 {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
                     name: 'Si',
                     value: 's'
                 }
@@ -1293,10 +1261,6 @@
             description: '¿Confirma haber leido las politicas internas de gnp?',
             type: 'clausula',
             options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
                 {
                     name: 'Si',
                     value: 's'
@@ -1310,10 +1274,6 @@
             type: 'clausula',
             options: [
                 {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
                     name: 'Si',
                     value: 's'
                 }
@@ -1322,7 +1282,7 @@
         },
         {
             name: 'autoriza_gestiones',
-            description: 'Habeas data: ¿Autoriza efectuar las gestiones pertinentes para el desarrollo del objeto social de la compañía en lo que tiene que ver con el cumplimiento del objeto del contrato celebrado con el Titular de la información.?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza efectuar las gestiones pertinentes para el desarrollo del objeto social de la compañía en lo que tiene que ver con el cumplimiento del objeto del contrato celebrado con el Titular de la información.?',
             type: 'clausula',
             options: [
                 {
@@ -1338,7 +1298,7 @@
         },
         {
             name: 'autoriza_contactar_correo',
-            description: 'Habeas data: ¿Autoriza contactar al Titular a través de correo electrónico para el envío de extractos, estados de cuenta o facturas en relación con las obligaciones derivadas del contrato celebrado entre las partes.?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza contactar al Titular a través de correo electrónico para el envío de extractos, estados de cuenta o facturas en relación con las obligaciones derivadas del contrato celebrado entre las partes.?',
             type: 'clausula',
             options: [
                 {
@@ -1354,7 +1314,7 @@
         },
         {
             name: 'autoriza_suministrar',
-            description: 'Habeas data: ¿Autoriza suministrar información de contacto a la fuerza comercial y/o red de distribución, telemercadeo, investigación de mercados, etc.?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza suministrar información de contacto a la fuerza comercial y/o red de distribución, telemercadeo, investigación de mercados, etc.?',
             type: 'clausula',
             options: [
                 {
@@ -1370,7 +1330,7 @@
         },
         {
             name: 'autoriza_dar_cumplimiento',
-            description: 'Habeas data: ¿Autoriza dar cumplimiento a las obligaciones contraídas por GNP con el Titular de la Información, con relación al pago de salarios, prestaciones sociales y demás retribuciones consagradas en el contrato de trabajo?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza dar cumplimiento a las obligaciones contraídas por GNP con el Titular de la Información, con relación al pago de salarios, prestaciones sociales y demás retribuciones consagradas en el contrato de trabajo?',
             type: 'clausula',
             options: [
                 {
@@ -1386,7 +1346,7 @@
         },
         {
             name: 'autoriza_contactar_sms',
-            description: 'Habeas data: ¿Autoriza contactar al Titular a través de medios electrónicos - SMS o chat para el envío de noticias relacionadas con campañas de fidelización o mejora de servicio.?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza contactar al Titular a través de medios electrónicos - SMS o chat para el envío de noticias relacionadas con campañas de fidelización o mejora de servicio.?',
             type: 'clausula',
             options: [
                 {
@@ -1402,7 +1362,7 @@
         },
         {
             name: 'autoriza_ofrecer',
-            description: 'Habeas data: ¿Autoriza ofrecer programas de bienestar corporativo y planificar actividades empresariales, para el titular y sus beneficiarios (hijos, cónyuge, compañero permanente).?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza ofrecer programas de bienestar corporativo y planificar actividades empresariales, para el titular y sus beneficiarios (hijos, cónyuge, compañero permanente).?',
             type: 'clausula',
             options: [
                 {
@@ -1418,7 +1378,7 @@
         },
         {
             name: 'autoriza_encuestas',
-            description: 'Habeas data: ¿Autoriza efectuar encuestas de satisfacción respecto de los bienes y servicios ofrecidos por GNP?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza efectuar encuestas de satisfacción respecto de los bienes y servicios ofrecidos por GNP?',
             type: 'clausula',
             options: [
                 {
@@ -1434,7 +1394,7 @@
         },
         {
             name: 'autoriza_trans_datos',
-            description: 'Habeas data: ¿Autoriza transferir datos personales fuera del país a la compañía matriz de GNP?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza transferir datos personales fuera del país a la compañía matriz de GNP?',
             type: 'clausula',
             options: [
                 {
@@ -1450,7 +1410,7 @@
         },
         {
             name: 'autoriza_contactar_tel',
-            description: 'Habeas data: ¿Autoriza contactar al Titular a través de medios telefónicos para realizar encuestas, estudios y/o confirmación de datos personales necesarios para la ejecución de una relación contractual.?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza contactar al Titular a través de medios telefónicos para realizar encuestas, estudios y/o confirmación de datos personales necesarios para la ejecución de una relación contractual.?',
             type: 'clausula',
             options: [
                 {
@@ -1466,7 +1426,7 @@
         },
         {
             name: 'autoriza_trans_datos_terceros',
-            description: 'Habeas data: ¿Autoriza transmitir los datos personales fuera del país a terceros con los cuales GNP haya suscrito un contrato de procesamiento de datos?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza transmitir los datos personales fuera del país a terceros con los cuales GNP haya suscrito un contrato de procesamiento de datos?',
             type: 'clausula',
             options: [
                 {
@@ -1482,7 +1442,7 @@
         },
         {
             name: 'autoriza_sum_info',
-            description: 'Habeas data: ¿Autoriza suministrar la información a terceros con los cuales GNP tenga relación contractual y que sea necesario entregársela para el cumplimiento del objeto contratado.?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza suministrar la información a terceros con los cuales GNP tenga relación contractual y que sea necesario entregársela para el cumplimiento del objeto contratado.?',
             type: 'clausula',
             options: [
                 {
@@ -1498,7 +1458,7 @@
         },
         {
             name: 'autoriza_prestar_servicios',
-            description: 'Habeas data: ¿Autoriza prestar los servicios ofrecidos por GNP y aceptados en el contrato suscrito.?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza prestar los servicios ofrecidos por GNP y aceptados en el contrato suscrito.?',
             type: 'clausula',
             options: [
                 {
@@ -1514,7 +1474,7 @@
         },
         {
             name: 'autoriza_invitaciones',
-            description: 'Habeas data: ¿Autoriza realizar invitaciones a eventos y ofrecer nuevos productos y servicios.?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza realizar invitaciones a eventos y ofrecer nuevos productos y servicios.?',
             type: 'clausula',
             options: [
                 {
@@ -1530,7 +1490,7 @@
         },
         {
             name: 'autoriza_gest_tramites',
-            description: 'Habeas data: ¿Autoriza gestionar trámites (solicitudes, quejas, reclamos).?',
+            description: 'Política de Tratamiento de Datos Personales: ¿Autoriza gestionar trámites (solicitudes, quejas, reclamos).?',
             type: 'clausula',
             options: [
                 {
@@ -1573,7 +1533,23 @@
         'niveles_cord_ext',
         'niveles_cord_ext_text',
         'correo_continuar_trabajador',
-        'correo_trabajador'
+        'correo_trabajador',
+        'emergencia_1_nombre',
+        'emergencia_1_telefono',
+        'emergencia_1_celular',
+        'emergencia_1_parentesco',
+        'emergencia_2_nombre',
+        'emergencia_2_telefono',
+        'emergencia_2_celular',
+        'emergencia_2_parentesco',
+        'institucion_primaria',
+        'inicio_primaria',
+        'fin_primaria',
+        'titulo_primaria',
+        'institucion_secundaria',
+        'inicio_secundaria',
+        'fin_secundaria',
+        'titulo_secundaria'
     ],
     preFill: [
         {
@@ -1597,7 +1573,7 @@
             email: 'correo_trabajador'
         },
         {
-            type: 'firma_castillo',
+            type: 'firma_gnp',
             identification: 'cc_gnp',
             name: 'nombre_gnp',
             email: 'correo_gnp'
@@ -1627,7 +1603,17 @@
         'correo_continuar_trabajador'
     ],
     name: 'Contratación GNP',
-    username: 'a87afee8-4e11-462b-9b34-4ef90cc7fc8e',
+    files: [
+        {
+            name: 'cedula de ciudadania',
+            approve: 'pending'
+        },
+        {
+            name: 'carnet de vacunacion',
+            approve: 'pending'
+        }
+    ],
+    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
     preBuild: true,
     price: 5000,
     help: {
@@ -1637,5 +1623,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 21
+    build: 25
 }
