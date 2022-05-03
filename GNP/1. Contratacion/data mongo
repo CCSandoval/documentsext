@@ -19,8 +19,151 @@
         },
         {
             name: 'cargo',
-            description: 'Ingrese el cargo del trabajador',
-            type: 'text'
+            description: 'Seleccione el cargo del trabajador',
+            type: 'clausula',
+            value:"call_c_cnd",
+            options:[
+                {
+                    name:'Agente Call Center CND',
+                    value:'call_c_cnd'
+                },
+                {
+                    name:'Agente Call Center',
+                    value:'call_c'
+                },
+                {
+                    name:'Jefe Nacional de Redes y Soporte',
+                    value:'jefe_nal'
+                },
+                {
+                    name:'Soporte Redes',
+                    value:'sop_redes'
+                },
+                {
+                    name:'Coordinador de soporte Help desk',
+                    value:'coord_hd'
+                },
+                {
+                    name:'Auxiliares de soporte Nivel I',
+                    value:'aux_soporte'
+                },
+                {
+                    name:'Jefe Digital',
+                    value:'jefe_dig'
+                },
+                {
+                    name:'Jefe de diseño',
+                    value:'jefe_design'
+                },
+                {
+                    name:'Diseñador Web',
+                    value:'web_design'
+                },
+                {
+                    name:"Diseñador Digital y Audiovisual",
+                    value:"dig_design"
+                },
+                {
+                    name:"Analista Digital",
+                    value:"dig_analist"
+                },
+                {
+                    name:"Backoffice CND",
+                    value:"backoffice_cnd"
+                },
+                {
+                    name:'Supervisor Call Center CND',
+                    value:'call_c_sup_cnd'
+                },
+                {
+                    name:'Jefe de Cuenta CND',
+                    value:'jefe_cuenta_cnd'
+                },
+                {
+                    name:'Data Marshall CND',
+                    value:'data_marshall_cnd'
+                },
+                {
+                    name:'Coordinador Data Marshall CND',
+                    value:'data_marshall_coord_cnd'
+                },
+                {
+                    name:'Analista de pruebas y automatización',
+                    value:'test_analist'
+                },
+                {
+                    name:'Jefe de formación en calidad',
+                    value:'jefe_calidad'
+                },
+                {
+                    name:'Formador CND',
+                    value:'formador_cnd'
+                },
+                {
+                    name:'Quality CND',
+                    value:'quality_cnd'
+                },
+                {
+                    name:'Asesor Servicio al Cliente',
+                    value:'asesor_cliente'
+                },
+                {
+                    name:'Pusher',
+                    value:'pusher'
+                },
+                {
+                    name:'Team Leader',
+                    value:'team_leader'
+                },
+                {
+                    name:'Coordinador Call Center',
+                    value:'coord_c_center'
+                },
+                {
+                    name:'Jefe de Operaciones',
+                    value:'jefe_operaciones'
+                },
+                {
+                    name:'Jefe de Cuenta',
+                    value:'jefe_cuenta'
+                },
+                {
+                    name:'Formador',
+                    value:'formador'
+                },
+                {
+                    name:'Gestor de Aprendizaje',
+                    value:'gestor_aprendizaje'
+                },
+                {
+                    name:'Quality',
+                    value:'quality'
+                },
+                {
+                    name:'Coordinador de Formación',
+                    value:'coord_form'
+                },
+                {
+                    name:'Lider de Formación',
+                    value:'lider_form'
+                },
+                {
+                    name:'Gestor Nacional de Operaciones',
+                    value:'gestor_nal_op'
+                },
+                {
+                    name:'Lider de Calidad',
+                    value:'lider_calidad'
+                },
+                {
+                    name:'Coordinador Servicio al Cliente y Calidad',
+                    value:'coord_serv_cliente'
+                },
+                {
+                    name:'Coordinador Data Marshall',
+                    value:'coord_data_marshall'
+                },
+            ]
         },
         {
             name: 'ccf',
@@ -35,7 +178,7 @@
         {
             name: 'centro_costos',
             description: 'Ingrese el centro de costos',
-            type: 'number'
+            type: 'text'
         },
         {
             name: 'fecha_inicio_labores',
@@ -68,11 +211,6 @@
         {
             name: 'expedicion_cedula_trabajador',
             description: 'Ingrese el lugar de expedición del documento del trabajador',
-            type: 'text'
-        },
-        {
-            name: 'descripcion_cargo',
-            description: 'Ingrese la descripción de las responsabilidades y funciones del trabajador',
             type: 'text'
         },
         {
@@ -138,6 +276,11 @@
                     v: 's'
                 }
             ]
+        },
+        {
+            name: 'package_name',
+            description: 'Digita el nombre con que deseas que esta carpeta aprezca en tus archivos',
+            type: 'text'
         },
         {
             name: 'correo_continuar_trabajador',
@@ -436,7 +579,7 @@
                     value: 'ccf'
                 },
                 {
-                    name: 'Ambas',
+                    name: 'EPS y CCF',
                     value: 'ambas'
                 }
             ],
@@ -560,7 +703,7 @@
                     value: 'ccf'
                 },
                 {
-                    name: 'Ambas',
+                    name: 'EPS y CCF',
                     value: 'ambas'
                 }
             ],
@@ -712,7 +855,7 @@
                     value: 'ccf'
                 },
                 {
-                    name: 'Ambas',
+                    name: 'EPS y CCF',
                     value: 'ambas'
                 }
             ],
@@ -872,7 +1015,7 @@
         {
             name: 'emergencia_1_telefono',
             description: 'Ingrese el número de teléfono del primer contacto de emergencia',
-            type: 'number'
+            type: 'text'
         },
         {
             name: 'emergencia_1_celular',
@@ -892,7 +1035,7 @@
         {
             name: 'emergencia_2_telefono',
             description: 'Ingrese el número de teléfono del segundo contacto de emergencia',
-            type: 'number'
+            type: 'text'
         },
         {
             name: 'emergencia_2_celular',
@@ -1525,13 +1668,13 @@
         'fecha_firma',
         'cedula_trabajador',
         'expedicion_cedula_trabajador',
-        'descripcion_cargo',
         'jerarquia_superior',
         'jerarquia_inferior',
         'niveles_cord_int',
         'niveles_cord_int_text',
         'niveles_cord_ext',
         'niveles_cord_ext_text',
+        'package_name',
         'correo_continuar_trabajador',
         'correo_trabajador',
         'emergencia_1_nombre',
@@ -1549,12 +1692,16 @@
         'institucion_secundaria',
         'inicio_secundaria',
         'fin_secundaria',
-        'titulo_secundaria'
+        'titulo_secundaria',
+        'celular_mama',
+        'celular_papa',
+        'celular_hermanos',
+        'celular_otro'
     ],
     preFill: [
         {
             name: 'correo_gnp',
-            value: 'cristian.sandoval@micontrato.co'
+            value: 'j.reina@gnpsa.com'
         },
         {
             name: 'nombre_gnp',
@@ -1570,7 +1717,8 @@
             type: 'firma_trabajador',
             identification: 'cedula_trabajador',
             name: 'nombre_trabajador',
-            email: 'correo_trabajador'
+            email: 'correo_trabajador',
+            'package': true
         },
         {
             type: 'firma_gnp',
@@ -1593,27 +1741,76 @@
         'fecha_firma',
         'cedula_trabajador',
         'expedicion_cedula_trabajador',
-        'descripcion_cargo',
         'jerarquia_superior',
         'jerarquia_inferior',
         'niveles_cord_int',
         'niveles_cord_int_text',
         'niveles_cord_ext',
         'niveles_cord_ext_text',
+        'package_name',
         'correo_continuar_trabajador'
     ],
     name: 'Contratación GNP',
     files: [
         {
-            name: 'cedula de ciudadania',
+            name: 'Hoja de Vida',
             approve: 'pending'
         },
         {
-            name: 'carnet de vacunacion',
+            name: 'Antecedente Procuraduría',
             approve: 'pending'
+        },
+        {
+            name: 'Antecedente Policía',
+            approve: 'pending'
+        },
+        {
+            name: 'Antecedente contraloría',
+            approve: 'pending'
+        },
+        {
+            name: 'Antecedente Registro Nacional de Medidas Correctivas',
+            approve: 'pending'
+        },
+        {
+            name: 'Certificados de estudio',
+            approve: 'pending'
+        },
+        {
+            name: 'Certificados laborales',
+            approve: 'pending'
+        },
+        {
+            name: 'Fotocopia de la cedula',
+            approve: 'pending'
+        },
+        {
+            name: 'Certificado de cuenta bancaria',
+            approve: 'pending'
+        },
+        {
+            name: 'Certificado de EPS (no mayor a 30 días)(No Ruaf-Fosyga)',
+            approve: 'pending'
+        },
+        {
+            name: 'Certificado de Fondo de pensión(No mayor a 30 Días)',
+            approve: 'pending'
+        },
+        {
+            name: 'FOTO 3x4',
+            approve: 'pending'
+        },
+        {
+            name: 'Copia carnet de vacunación',
+            approve: 'pending'
+        },
+        {
+            name:'Documentos de beneficiarios',
+            approve:'pending'
         }
     ],
-    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
+    username: '495390c0-06f8-4a87-aab0-27b2218dbdc1',
+    company: ObjectId('623099c6d9a7ac3bbc96b943'),
     preBuild: true,
     price: 5000,
     help: {
@@ -1623,5 +1820,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 25
+    build: 35
 }
