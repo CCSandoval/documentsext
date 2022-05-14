@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('61a8f94d75b327000828fb14'),
+    _id: ObjectId('62799d0751fc27d23d929145'),
     config: [
         {
             description: 'Seleccione el tipo de persona',
@@ -281,59 +281,6 @@
             help: 'municipio',
             name: 'municipio_expe_documento_vendedor_1',
             type: 'text'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_1',
-                            v: 'ju'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa vendedora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_1',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte vendedora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_vendedor_1',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
         },
         {
             description: [
@@ -814,65 +761,6 @@
                 }
             ],
             type: 'text'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_2',
-                            v: 'ju'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa vendedora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_2',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte vendedora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_vendedor_2',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'vendedor_2',
-                    v: 's'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
         },
         {
             description: [
@@ -1437,69 +1325,6 @@
                 }
             ],
             type: 'text'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_3',
-                            v: 'ju'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa vendedora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_3',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte vendedora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_vendedor_3',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'vendedor_2',
-                    v: 's'
-                },
-                {
-                    k: 'vendedor_3',
-                    v: 's'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
         },
         {
             description: [
@@ -2136,73 +1961,6 @@
                 }
             ],
             type: 'text'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_4',
-                            v: 'ju'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa vendedora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_4',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte vendedora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_vendedor_4',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'vendedor_2',
-                    v: 's'
-                },
-                {
-                    k: 'vendedor_3',
-                    v: 's'
-                },
-                {
-                    k: 'vendedor_4',
-                    v: 's'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
         },
         {
             description: [
@@ -2921,77 +2679,6 @@
                             v: 'ju'
                         }
                     ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa vendedora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_5',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte vendedora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_vendedor_5',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'vendedor_2',
-                    v: 's'
-                },
-                {
-                    k: 'vendedor_3',
-                    v: 's'
-                },
-                {
-                    k: 'vendedor_4',
-                    v: 's'
-                },
-                {
-                    k: 'vendedor_5',
-                    v: 's'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_v_5',
-                            v: 'ju'
-                        }
-                    ],
                     text: 'Digite la dirección de la persona encargada como representante de la empresa vendedora'
                 },
                 {
@@ -3484,59 +3171,6 @@
                             v: 'ju'
                         }
                     ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa compradora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_1',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte compradora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_comprador_1',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_1',
-                            v: 'ju'
-                        }
-                    ],
                     text: 'Digite la dirección de la persona encargada como representante de la empresa compradora'
                 },
                 {
@@ -4007,65 +3641,6 @@
                 }
             ],
             type: 'text'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_2',
-                            v: 'ju'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa compradora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_2',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte compradora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_comprador_2',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'comprador_2',
-                    v: 's'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
         },
         {
             description: [
@@ -4630,69 +4205,6 @@
                 }
             ],
             type: 'text'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_3',
-                            v: 'ju'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa compradora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_3',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte compradora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_comprador_3',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'comprador_2',
-                    v: 's'
-                },
-                {
-                    k: 'comprador_3',
-                    v: 's'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
         },
         {
             description: [
@@ -5329,73 +4841,6 @@
                 }
             ],
             type: 'text'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_4',
-                            v: 'ju'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa compradora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_4',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte compradora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_comprador_4',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'comprador_2',
-                    v: 's'
-                },
-                {
-                    k: 'comprador_3',
-                    v: 's'
-                },
-                {
-                    k: 'comprador_4',
-                    v: 's'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
         },
         {
             description: [
@@ -6114,77 +5559,6 @@
                             v: 'ju'
                         }
                     ],
-                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa compradora'
-                },
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_5',
-                            v: 'na'
-                        }
-                    ],
-                    text: 'Seleccione el estado civil de la parte compradora'
-                }
-            ],
-            help: 'estado_civil',
-            name: 'estado_comprador_5',
-            options: [
-                {
-                    label: ' Casado, con sociedad conyugal vigente',
-                    name: 'Casado con sociedad conyugal vigente',
-                    value: 'cv'
-                },
-                {
-                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
-                    name: 'Casado con sociedad conyugal disuelta y liquidada',
-                    value: 'cd'
-                },
-                {
-                    label: ' Soltero, sin unión marital de hecho',
-                    name: 'Soltero sin unión marital de hecho',
-                    value: 'ss'
-                },
-                {
-                    label: ' Soltero, con unión marital de hecho',
-                    name: 'Soltero con unión marital de hecho',
-                    value: 'sc'
-                },
-                {
-                    label: ' Soltero, por efecto de viudez',
-                    name: 'Soltero por efecto de viudez',
-                    value: 'sv'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'comprador_2',
-                    v: 's'
-                },
-                {
-                    k: 'comprador_3',
-                    v: 's'
-                },
-                {
-                    k: 'comprador_4',
-                    v: 's'
-                },
-                {
-                    k: 'comprador_5',
-                    v: 's'
-                }
-            ],
-            type: 'select',
-            value: 'cv'
-        },
-        {
-            description: [
-                {
-                    prereq: [
-                        {
-                            k: 'tipo_persona_c_5',
-                            v: 'ju'
-                        }
-                    ],
                     text: 'Digite la dirección de la persona encargada como representante de la empresa compradora'
                 },
                 {
@@ -6436,6 +5810,16 @@
             type: 'name'
         },
         {
+            description: 'Digite el código catastral del inmueble',
+            name: 'cod_catastral_inmueble',
+            type: 'text'
+        },
+        {
+            description: 'Digite el area del inmueble',
+            name: 'area_unidad',
+            type: 'number'
+        },
+        {
             description: 'Digite el nombre de la unidad donde está ubicado el inmuble',
             help: 'unidad_nombre',
             name: 'nombre_unidad',
@@ -6500,6 +5884,28 @@
             type: 'name'
         },
         {
+            description: 'Digite el código catrastal del parqueadero',
+            name: 'cod_catastral_parq_1',
+            prereq: [
+                {
+                    k: 'parqueadero_1',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el area del parqueadero',
+            name: 'area_parq_1',
+            prereq: [
+                {
+                    k: 'parqueadero_1',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
             description: '¿Desea agregar otro parqueadero?',
             name: 'parqueadero_2',
             options: [
@@ -6552,6 +5958,36 @@
                 }
             ],
             type: 'name'
+        },
+        {
+            description: 'Digite el código catrastal del parqueadero',
+            name: 'cod_catastral_parq_2',
+            prereq: [
+                {
+                    k: 'parqueadero_1',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el area del parqueadero',
+            name: 'area_parq_2',
+            prereq: [
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                }
+            ],
+            type: 'number'
         },
         {
             description: '¿Desea agregar otro parqueadero?',
@@ -6618,6 +6054,44 @@
                 }
             ],
             type: 'name'
+        },
+        {
+            description: 'Digite el código catrastal del parqueadero',
+            name: 'cod_catastral_parq_3',
+            prereq: [
+                {
+                    k: 'parqueadero_1',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_3',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el area del parqueadero',
+            name: 'area_parq_3',
+            prereq: [
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_3',
+                    v: 's'
+                }
+            ],
+            type: 'number'
         },
         {
             description: '¿Desea agregar otro parqueadero?',
@@ -6696,6 +6170,52 @@
                 }
             ],
             type: 'name'
+        },
+        {
+            description: 'Digite el código catrastal del parqueadero',
+            name: 'cod_catastral_parq_4',
+            prereq: [
+                {
+                    k: 'parqueadero_1',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_3',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_4',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el area del parqueadero',
+            name: 'area_parq_4',
+            prereq: [
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_3',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_4',
+                    v: 's'
+                }
+            ],
+            type: 'number'
         },
         {
             description: '¿Desea agregar otro parqueadero?',
@@ -6788,6 +6308,60 @@
             type: 'name'
         },
         {
+            description: 'Digite el código catrastal del parqueadero',
+            name: 'cod_catastral_parq_5',
+            prereq: [
+                {
+                    k: 'parqueadero_1',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_3',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_4',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_5',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el area del parqueadero',
+            name: 'area_parq_5',
+            prereq: [
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_2',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_3',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_4',
+                    v: 's'
+                },
+                {
+                    k: 'parqueadero_5',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
             description: '¿Desea agregar un cuarto útil/deposito?',
             name: 'cuarto_1',
             options: [
@@ -6826,6 +6400,28 @@
                 }
             ],
             type: 'name'
+        },
+        {
+            description: 'Digite el código catastral del cuarto útil/deposito',
+            name: 'cod_catastral_cuarto_1',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el area del cuarto útil/deposito',
+            name: 'area_cuarto_1',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                }
+            ],
+            type: 'number'
         },
         {
             description: '¿Desea agregar otro cuarto útil/deposito?',
@@ -6880,6 +6476,36 @@
                 }
             ],
             type: 'name'
+        },
+        {
+            description: 'Digite el código catastral del cuarto útil/deposito',
+            name: 'cod_catastral_cuarto_2',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el area del cuarto útil/deposito',
+            name: 'area_cuarto_2',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_2',
+                    v: 's'
+                }
+            ],
+            type: 'number'
         },
         {
             description: '¿Desea agregar otro cuarto útil/deposito?',
@@ -6946,6 +6572,44 @@
                 }
             ],
             type: 'name'
+        },
+        {
+            description: 'Digite el código catastral del cuarto útil/deposito',
+            name: 'cod_catastral_cuarto_3',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_2',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el area del cuarto útil/deposito',
+            name: 'area_cuarto_3',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_2',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_3',
+                    v: 's'
+                }
+            ],
+            type: 'number'
         },
         {
             description: '¿Desea agregar otro cuarto útil/deposito?',
@@ -7024,6 +6688,52 @@
                 }
             ],
             type: 'name'
+        },
+        {
+            description: 'Digite el código catastral del cuarto útil/deposito',
+            name: 'cod_catastral_cuarto_4',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_2',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_3',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el area del cuarto útil/deposito',
+            name: 'area_cuarto_4',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_2',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_3',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_4',
+                    v: 's'
+                }
+            ],
+            type: 'number'
         },
         {
             description: '¿Desea agregar otro cuarto útil/deposito?',
@@ -7116,16 +6826,80 @@
             type: 'name'
         },
         {
+            description: 'Digite el código catastral del cuarto útil/deposito',
+            name: 'cod_catastral_cuarto_5',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_2',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_3',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_4',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el area del cuarto útil/deposito',
+            name: 'area_cuarto_5',
+            prereq: [
+                {
+                    k: 'cuarto_1',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_2',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_3',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_4',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_5',
+                    v: 's'
+                }
+            ],
+            type: 'number'
+        },
+        {
             description: 'Digite el número de la escritura donde se encuentran descritos La Cabida y Linderos de los inmuebles',
             help: 'numero',
             name: 'numero_escritura',
             type: 'name'
         },
         {
+            description: 'Digite el número de la notaría en donde se registró la escritura donde se encuentran descritos La Cabida y Linderos de los inmuebles',
+            name: 'notaria_escritura',
+            type: 'text'
+        },
+        {
             description: 'Seleccione la fecha de la escritura donde se encuentran descritos La Cabida y Linderos de los inmuebles',
             help: 'fecha',
             name: 'fecha_escritura',
             type: 'date'
+        },
+        {
+            description: 'Digite el departamento de la notaria donde se encuentran descritos La Cabida y Linderos de los inmuebles',
+            name: 'departamento_escritura',
+            type: 'name'
         },
         {
             description: 'Digite el municipio de la notaria donde se encuentran descritos La Cabida y Linderos de los inmuebles',
@@ -7176,10 +6950,56 @@
             type: 'date'
         },
         {
-            description: 'Digite la forma en la que se hará el pago inicial',
+            description: 'Seleccione la forma de pago del pago inicial',
             help: 'forma_pago',
             name: 'f_pago_cuota_inicial',
-            type: 'text'
+            type: 'select',
+            value: 'trans',
+            options: [
+                {
+                    label: 'transferencia',
+                    name: 'Transferencia',
+                    value: 'trans'
+                },
+                {
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
+                }
+            ]
+        },
+        {
+            description: 'Seleccione el tipo de cuenta bancaria del segundo pago',
+            name: 'tipo_cuenta_1',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ]
+        },
+        {
+            name: 'num_cuenta_1',
+            type: 'text',
+            description: 'Digite el número de la cuenta'
+        },
+        {
+            name: 'nombre_banco_1',
+            type: 'text',
+            description: 'Digite el nombre del banco'
+        },
+        {
+            name: 'nombre_receptor_1',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero'
         },
         {
             description: 'Digite el valor del segundo pago',
@@ -7194,62 +7014,120 @@
             type: 'date'
         },
         {
-            description: 'Digite la forma en la que se hará el segundo pago',
+            description: 'Seleccione la forma de pago del segundo pago',
             help: 'forma_pago',
             name: 'f_pago_segundo_pago',
-            type: 'text'
-        },
-        {
-            description: '¿Desea agregar un tercer pago?',
-            name: 'pago_1',
+            type: 'select',
+            value: 'trans',
             options: [
                 {
-                    name: 'No',
-                    value: 'n'
+                    label: 'transferencia',
+                    name: 'Transferencia',
+                    value: 'trans'
                 },
                 {
-                    name: 'Sí',
-                    value: 's'
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
                 }
-            ],
-            type: 'clausula',
-            value: 'n'
+            ]
+        },
+        {
+            description: 'Seleccione el tipo de cuenta bancaria del segundo pago',
+            name: 'tipo_cuenta_2',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ]
+        },
+        {
+            name: 'num_cuenta_2',
+            type: 'text',
+            description: 'Digite el número de la cuenta'
+        },
+        {
+            name: 'nombre_banco_2',
+            type: 'text',
+            description: 'Digite el nombre del banco'
+        },
+        {
+            name: 'nombre_receptor_2',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero'
         },
         {
             description: 'Digite el valor del tercer pago',
             help: 'cuota',
             name: 'tercer_pago',
-            prereq: [
-                {
-                    k: 'pago_1',
-                    v: 's'
-                }
-            ],
             type: 'currency'
         },
         {
             description: 'Seleccione la fecha en la que se realizará el tercer pago',
             help: 'fecha',
             name: 'fecha_tercer_pago',
-            prereq: [
-                {
-                    k: 'pago_1',
-                    v: 's'
-                }
-            ],
             type: 'date'
         },
         {
-            description: 'Digite la forma en la que se hará el tercer pago',
+            description: 'Seleccione la forma de pago del tercer pago',
             help: 'forma_pago',
             name: 'f_pago_tercer_pago',
-            prereq: [
+            type: 'select',
+            value: 'trans',
+            options: [
                 {
-                    k: 'pago_1',
-                    v: 's'
+                    label: 'transferencia',
+                    name: 'Transferencia',
+                    value: 'trans'
+                },
+                {
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
                 }
-            ],
-            type: 'text'
+            ]
+        },
+        {
+            description: 'Seleccione el tipo de cuenta bancaria del segundo pago',
+            name: 'tipo_cuenta_3',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ]
+        },
+        {
+            name: 'num_cuenta_3',
+            type: 'text',
+            description: 'Digite el número de la cuenta'
+        },
+        {
+            name: 'nombre_banco_3',
+            type: 'text',
+            description: 'Digite el nombre del banco'
+        },
+        {
+            name: 'nombre_receptor_3',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero'
         },
         {
             description: '¿Desea agregar un cuarto pago?',
@@ -7264,12 +7142,6 @@
                     value: 's'
                 }
             ],
-            prereq: [
-                {
-                    k: 'pago_1',
-                    v: 's'
-                }
-            ],
             type: 'clausula',
             value: 'n'
         },
@@ -7278,10 +7150,6 @@
             help: 'cuota',
             name: 'cuarto_pago',
             prereq: [
-                {
-                    k: 'pago_1',
-                    v: 's'
-                },
                 {
                     k: 'pago_2',
                     v: 's'
@@ -7295,10 +7163,6 @@
             name: 'fecha_cuarto_pago',
             prereq: [
                 {
-                    k: 'pago_1',
-                    v: 's'
-                },
-                {
                     k: 'pago_2',
                     v: 's'
                 }
@@ -7306,20 +7170,86 @@
             type: 'date'
         },
         {
-            description: 'Digite la forma en la que se hará el cuarto pago',
+            description: 'Seleccione la forma de pago del cuarto pago',
             help: 'forma_pago',
             name: 'f_pago_cuarto_pago',
-            prereq: [
+            type: 'select',
+            value: 'trans',
+            options: [
                 {
-                    k: 'pago_1',
-                    v: 's'
+                    label: 'transferencia',
+                    name: 'Transferencia',
+                    value: 'trans'
                 },
+                {
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
+                }
+            ],
+            prereq: [
                 {
                     k: 'pago_2',
                     v: 's'
                 }
             ],
-            type: 'text'
+        },
+        {
+            description: 'Seleccione el tipo de cuenta bancaria del cuarto pago',
+            name: 'tipo_cuenta_4',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            name: 'num_cuenta_4',
+            type: 'text',
+            description: 'Digite el número de la cuenta',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            name: 'nombre_banco_4',
+            type: 'text',
+            description: 'Digite el nombre del banco',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            name: 'nombre_receptor_4',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                }
+            ],
         },
         {
             description: '¿Desea agregar un quinto pago?',
@@ -7336,10 +7266,6 @@
             ],
             prereq: [
                 {
-                    k: 'pago_1',
-                    v: 's'
-                },
-                {
                     k: 'pago_2',
                     v: 's'
                 }
@@ -7352,10 +7278,6 @@
             help: 'cuota',
             name: 'quinto_pago',
             prereq: [
-                {
-                    k: 'pago_1',
-                    v: 's'
-                },
                 {
                     k: 'pago_2',
                     v: 's'
@@ -7373,10 +7295,6 @@
             name: 'fecha_quinto_pago',
             prereq: [
                 {
-                    k: 'pago_1',
-                    v: 's'
-                },
-                {
                     k: 'pago_2',
                     v: 's'
                 },
@@ -7388,14 +7306,24 @@
             type: 'date'
         },
         {
-            description: 'Digite la forma en la que se hará el quinto pago',
+            description: 'Seleccione la forma de pago del quinto pago',
             help: 'forma_pago',
-            name: 'f_pago_quinto_pago',
-            prereq: [
+            name: 'f_pago_cuarto_pago',
+            type: 'select',
+            value: 'trans',
+            options: [
                 {
-                    k: 'pago_1',
-                    v: 's'
+                    label: 'transferencia',
+                    name: 'Transferencia',
+                    value: 'trans'
                 },
+                {
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
+                }
+            ],
+            prereq: [
                 {
                     k: 'pago_2',
                     v: 's'
@@ -7403,9 +7331,81 @@
                 {
                     k: 'pago_3',
                     v: 's'
+                },
+            ],
+        },
+        {
+            description: 'Seleccione el tipo de cuenta bancaria del quinto pago',
+            name: 'tipo_cuenta_5',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
                 }
             ],
-            type: 'text'
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            name: 'num_cuenta_5',
+            type: 'text',
+            description: 'Digite el número de la cuenta',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            name: 'nombre_banco_5',
+            type: 'text',
+            description: 'Digite el nombre del banco',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            name: 'nombre_receptor_5',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+            ],
         },
         {
             description: '¿Desea agregar un sexto pago?',
@@ -7421,10 +7421,6 @@
                 }
             ],
             prereq: [
-                {
-                    k: 'pago_1',
-                    v: 's'
-                },
                 {
                     k: 'pago_2',
                     v: 's'
@@ -7442,10 +7438,6 @@
             help: 'cuota',
             name: 'sexto_pago',
             prereq: [
-                {
-                    k: 'pago_1',
-                    v: 's'
-                },
                 {
                     k: 'pago_2',
                     v: 's'
@@ -7467,10 +7459,6 @@
             name: 'fecha_sexto_pago',
             prereq: [
                 {
-                    k: 'pago_1',
-                    v: 's'
-                },
-                {
                     k: 'pago_2',
                     v: 's'
                 },
@@ -7486,14 +7474,24 @@
             type: 'date'
         },
         {
-            description: 'Digite la forma en la que se hará el sexto pago',
+            description: 'Seleccione la forma de pago del sexto pago',
             help: 'forma_pago',
-            name: 'f_pago_sexto_pago',
-            prereq: [
+            name: 'f_pago_cuarto_pago',
+            type: 'select',
+            value: 'trans',
+            options: [
                 {
-                    k: 'pago_1',
-                    v: 's'
+                    label: 'transferencia',
+                    name: 'Transferencia',
+                    value: 'trans'
                 },
+                {
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
+                }
+            ],
+            prereq: [
                 {
                     k: 'pago_2',
                     v: 's'
@@ -7505,23 +7503,113 @@
                 {
                     k: 'pago_4',
                     v: 's'
-                }
+                },
             ],
-            type: 'text'
         },
         {
-            name:"pago_credito",
-            type:'clausula',
-            description:"¿El pago se hará con crédito?",
-            options:[
-                {name:"No",
-                value:"n"},
+            description: 'Seleccione el tipo de cuenta bancaria del sexto pago',
+            name: 'tipo_cuenta_6',
+            type: 'select',
+            value: 'aho',
+            options: [
                 {
-                    name:'Si',
-                    value:'s'
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
                 }
             ],
-            value:'n'
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            name: 'num_cuenta_6',
+            type: 'text',
+            description: 'Digite el número de la cuenta',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            name: 'nombre_banco_6',
+            type: 'text',
+            description: 'Digite el nombre del banco',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            name: 'nombre_receptor_6',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+            ],
+        },
+        {
+            name: 'pago_credito',
+            type: 'clausula',
+            description: '¿El pago se hará con crédito?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
         },
         {
             description: 'Digite el número de la notaria del proceso de la escritura púbica',
@@ -7588,10 +7676,25 @@
                 {
                     name: 'Bogotá',
                     value: 'bo'
+                },
+                {
+                    name:'Otra',
+                    value:'otra'
                 }
             ],
             type: 'clausula',
             value: 'me'
+        },
+        {
+            description: 'Digite las especificaciones correspondientes a la Novena Cláusula en la ciudad en la que se encuentra.',
+            name: 'ubicacion_negocio_texto',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'ubicacion_negocio',
+                    v: 'otra'
+                }
+            ]
         },
         {
             description: 'Digite el valor correspondiente al arras',
@@ -7653,7 +7756,6 @@
         'cedulae_vendedor_1',
         'pasaporte_vendedor_1',
         'municipio_expe_documento_vendedor_1',
-        'estado_vendedor_1',
         'direccion_vendedor_1',
         'municipio_vendedor_1',
         'depart_vendedor_1',
@@ -7672,7 +7774,6 @@
         'cedulae_vendedor_2',
         'pasaporte_vendedor_2',
         'municipio_expe_documento_vendedor_2',
-        'estado_vendedor_2',
         'direccion_vendedor_2',
         'municipio_vendedor_2',
         'depart_vendedor_2',
@@ -7691,7 +7792,6 @@
         'cedulae_vendedor_3',
         'pasaporte_vendedor_3',
         'municipio_expe_documento_vendedor_3',
-        'estado_vendedor_3',
         'direccion_vendedor_3',
         'municipio_vendedor_3',
         'depart_vendedor_3',
@@ -7710,7 +7810,6 @@
         'cedulae_vendedor_4',
         'pasaporte_vendedor_4',
         'municipio_expe_documento_vendedor_4',
-        'estado_vendedor_4',
         'direccion_vendedor_4',
         'municipio_vendedor_4',
         'depart_vendedor_4',
@@ -7729,7 +7828,6 @@
         'cedulae_vendedor_5',
         'pasaporte_vendedor_5',
         'municipio_expe_documento_vendedor_5',
-        'estado_vendedor_5',
         'direccion_vendedor_5',
         'municipio_vendedor_5',
         'depart_vendedor_5',
@@ -7747,7 +7845,6 @@
         'cedulae_comprador_1',
         'pasaporte_comprador_1',
         'municipio_expe_documento_comprador_1',
-        'estado_comprador_1',
         'direccion_comprador_1',
         'municipio_comprador_1',
         'depart_comprador_1',
@@ -7766,7 +7863,6 @@
         'cedulae_comprador_2',
         'pasaporte_comprador_2',
         'municipio_expe_documento_comprador_2',
-        'estado_comprador_2',
         'direccion_comprador_2',
         'municipio_comprador_2',
         'depart_comprador_2',
@@ -7785,7 +7881,6 @@
         'cedulae_comprador_3',
         'pasaporte_comprador_3',
         'municipio_expe_documento_comprador_3',
-        'estado_comprador_3',
         'direccion_comprador_3',
         'municipio_comprador_3',
         'depart_comprador_3',
@@ -7804,7 +7899,6 @@
         'cedulae_comprador_4',
         'pasaporte_comprador_4',
         'municipio_expe_documento_comprador_4',
-        'estado_comprador_4',
         'direccion_comprador_4',
         'municipio_comprador_4',
         'depart_comprador_4',
@@ -7823,7 +7917,6 @@
         'cedulae_comprador_5',
         'pasaporte_comprador_5',
         'municipio_expe_documento_comprador_5',
-        'estado_comprador_5',
         'direccion_comprador_5',
         'municipio_comprador_5',
         'depart_comprador_5',
@@ -7834,7 +7927,6 @@
         'casa_numero',
         'numero_matricula_inmueble',
         'nombre_unidad',
-        'direccion_unidad',
         'municipio_unidad',
         'departamento_unidad',
         'parqueadero_1',
@@ -7981,7 +8073,7 @@
     ],
     preFill: [],
     preBuildData: [],
-    name: 'Promesa de venta',
+    name: 'Promesa de venta v2',
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
         tipo_documento: 'Ejemplo: Cédula de ciudadanía',
@@ -8014,7 +8106,7 @@
     price: 5000,
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
-    build: 1,
+    build: 4,
     createdAt: ISODate('2021-12-02T16:50:21.143Z'),
     updatedAt: ISODate('2021-12-02T16:50:21.143Z')
 }

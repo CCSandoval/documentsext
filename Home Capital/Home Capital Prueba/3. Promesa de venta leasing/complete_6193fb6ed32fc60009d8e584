@@ -421,17 +421,24 @@
     <li>Se pacta un pago inicial o anticipo, por valor de
         <span name="cuota_inicial">________</span> el
         <span name="fecha_cuota_inicial">_______</span>, que serán cancelados
-        <span name="f_pago_cuota_inicial">_________________</span>, 
-        <span name="condicion_particular_n"></span>
+        <span name="f_pago_cuota_inicial">_________________</span>,
+        siempre y cuando se cumpla con todas las condiciones expuestas en la clausula cuarta de la presente promesa
+        <span name="condicion_particular_n">.</span>
         <span name="condicion_particular_s" hidden>
-            siempre y cuando se cumpla con
-            <span name="condicion_particular_texto">______________________</span> y todas las condiciones expuestas en la clausula cuarta de la presente promesa
+            y 
+            <span name="condicion_particular_texto">______________________</span>.
         </span>
     </li>
     <li>Se pacta un segundo pago, por valor de
         <span name="valor_2">_______</span> el
         <span name="fecha_pago_2">_______</span>, que serán cancelados
         <span name="detalle_pago_2">_______</span>.
+        Pago sujeto a la entrega material del bien inmueble
+        <span name="condicion_particular_n">.</span>
+        <span name="condicion_particular_s" hidden>
+            y 
+            <span name="condicion_particular_texto">______________________</span>.
+        </span>
     </li>
     <span name="otra_opcion_n"></span>
     <span name="otra_opcion_s" hidden>
@@ -537,7 +544,7 @@
 
 <p>
     <b>PARÁGRAFO: <b name="vendedor_2_n">EL PROMITENTE VENDEDOR</b><b name="vendedor_2_s" hidden>LOS PROMITENTES VENDEDORES</b></b> se obligan, igualmente, al saneamiento del bien prometido en venta, en
-    los casos de la ley, bien sea por evicción o por vicios redhibitorios.En especial a la mencionada en la cláusula quinta literal d.
+    los casos de la ley, bien sea por evicción o por vicios redhibitorios. <span name="limitaciones_propiedad_s">En especial a la mencionada en la cláusula quinta literal d<span name="limitaciones_propiedad_n"></span>.
 </p>
 
 <p>

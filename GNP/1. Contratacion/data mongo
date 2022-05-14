@@ -163,6 +163,126 @@
                     name:'Coordinador Data Marshall',
                     value:'coord_data_marshall'
                 },
+                {
+                    name:'Data Marshall Junior',
+                    value:'junior_data_marshall'
+                },
+                {
+                    name:'Data Marshall',
+                    value:'data_marshall'
+                },
+                {
+                    name:'Backoffice',
+                    value:'backoffice'
+                },
+                {
+                    name:'Backoffice',
+                    value:'coord_backoffice'
+                },
+                {
+                    name:'Analista de Legalización',
+                    value:'analista_legal'
+                },
+                {
+                    name:'Desarrollador Senior',
+                    value:'senior_dev'
+                },
+                {
+                    name:'Supervisor Técnico',
+                    value:'supervisor_tecnico'
+                },
+                {
+                    name:'Coordinador Técnico',
+                    value:'coordinador_tecnico'
+                },
+                {
+                    name:'Jefe Regional',
+                    value:'jefe_regional'
+                },
+                {
+                    name:'Controller Financiero',
+                    value:'controller_financiero'
+                },
+                {
+                    name:'Gerente de Talento Humano',
+                    value:'gerente_th'
+                },
+                {
+                    name:'Jefe de Nómina',
+                    value:'jefe_nomina'
+                },
+                {
+                    name:'Tesorero',
+                    value:'tesorero'
+                },
+                {
+                    name:'Contador Junior',
+                    value:'contador_junior'
+                },
+                {
+                    name:'Coordinador Nomina',
+                    value:'coordinador_nomina'
+                },
+                {
+                    name:'Analista Nomina',
+                    value:'analista_nomina'
+                },
+                {
+                    name:'Auxiliar contable',
+                    value:'auxiliar_contable'
+                },
+                {
+                    name:'Lider de Gestión Documental',
+                    value:'lider_g_documental'
+                },
+                {
+                    name:'Auxiliar Enfermeria',
+                    value:'auxiliar_enfermeria'
+                },
+                {
+                    name:'Auxiliar HSEQ',
+                    value:'auxiliar_hseq'
+                },
+                {
+                    name:'Auxiliar Gestion Documental',
+                    value:'auxiliar_g_documental'
+                },
+                {
+                    name:'Jefe Administrativo Nacional',
+                    value:'jefe_admin_nal'
+                },
+                {
+                    name:'Jefe Administrativo',
+                    value:'jefe_admin'
+                },
+                {
+                    name:'Lider de Compras',
+                    value:'lider_compras'
+                },
+                {
+                    name:'Administrador de sede',
+                    value:'admin_sede'
+                },
+                {
+                    name:'Auxiliar Servicios Generales',
+                    value:'aux_serv_gen'
+                },
+                {
+                    name:'Coordinador de selección',
+                    value:'coord_selec'
+                },
+                {
+                    name:'Analista de Selección',
+                    value:'analista_selec'
+                },
+                {
+                    name:'Auxiliar de selección',
+                    value:'aux_selec'
+                },
+                {
+                    name:'Ejecutiva de Datos y Recursos Comerciales',
+                    value:'ejec_datos'
+                }
             ]
         },
         {
@@ -1820,5 +1940,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 35
+    build: 40
 }

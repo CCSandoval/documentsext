@@ -17,29 +17,29 @@
             type: 'name'
         },
         {
-            name:'vendedor_2',
-            description:'Desea ingresar un segundo comprador',
-            type:'clausula',
-            options:[
+            name: 'vendedor_2',
+            description: 'Desea ingresar un segundo comprador',
+            type: 'clausula',
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
-                },
+                    name: 'Si',
+                    value: 's'
+                }
             ],
-            value:'n'
+            value: 'n'
         },
         {
             name: 'nombre_comprador_2',
             description: 'Ingrese el nombre del primer comprador',
             type: 'name',
-            prereq:[
+            prereq: [
                 {
-                    k:'vendedor_2',
-                    v:'s'
+                    k: 'vendedor_2',
+                    v: 's'
                 }
             ]
         },
@@ -52,10 +52,10 @@
             name: 'domicilio_comprador_2',
             description: 'Ingrese el municipio donde reside el segundo comprador',
             type: 'text',
-            prereq:[
+            prereq: [
                 {
-                    k:'vendedor_2',
-                    v:'s'
+                    k: 'vendedor_2',
+                    v: 's'
                 }
             ]
         },
@@ -68,10 +68,10 @@
             name: 'doc_id_comprador_2',
             description: 'Ingrese el numero de documento de identidad del segundo comprador',
             type: 'number',
-            prereq:[
+            prereq: [
                 {
-                    k:'vendedor_2',
-                    v:'s'
+                    k: 'vendedor_2',
+                    v: 's'
                 }
             ]
         },
@@ -84,10 +84,10 @@
             name: 'ciudad_exp_id_comprador_2',
             description: 'Ingrese el municipio donde se expidió el documento de identidad del segundo comprador',
             type: 'text',
-            prereq:[
+            prereq: [
                 {
-                    k:'vendedor_2',
-                    v:'s'
+                    k: 'vendedor_2',
+                    v: 's'
                 }
             ]
         },
@@ -100,10 +100,10 @@
             name: 'est_civil_comprador_2',
             description: 'Ingrese el estado civil del segundo comprador',
             type: 'text',
-            prereq:[
+            prereq: [
                 {
-                    k:'vendedor_2',
-                    v:'s'
+                    k: 'vendedor_2',
+                    v: 's'
                 }
             ]
         },
@@ -128,102 +128,26 @@
             type: 'currency'
         },
         {
-            name: 'fecha_pago_1',
-            description: 'Seleccione la fecha del primer pago',
-            type: 'date'
-        },
-        {
-            name: 'valor_pago_1',
-            description: 'Ingrese el valor del primer pago',
-            type: 'currency',
-            removeText: true
-        },
-        {
-            name: 'fecha_pago_2',
-            description: 'Seleccione la fecha del segundo pago',
-            type: 'date'
-        },
-        {
-            name: 'valor_pago_2',
-            description: 'Ingrese el valor del segundo pago',
-            type: 'currency',
-            removeText: true
-        },
-        {
-            name: 'fecha_pago_3',
-            description: 'Seleccione la fecha del tercer pago',
-            type: 'date'
-        },
-        {
-            name: 'valor_pago_3',
-            description: 'Ingrese el valor del tercer pago',
-            type: 'currency',
-            removeText: true
-        },
-        {
-            name: 'fecha_pago_4',
-            description: 'Seleccione la fecha del cuarto pago',
-            type: 'date'
-        },
-        {
-            name: 'valor_pago_4',
-            description: 'Ingrese el valor del cuarto pago',
-            type: 'currency',
-            removeText: true
-        },
-        {
-            name: 'fecha_pago_5',
-            description: 'Seleccione la fecha del quinto pago',
-            type: 'date'
-        },
-        {
-            name: 'valor_pago_5',
-            description: 'Ingrese el valor del quinto pago',
-            type: 'currency',
-            removeText: true
-        },
-        {
-            name: 'fecha_pago_6',
-            description: 'Seleccione la fecha del sexto pago',
-            type: 'date'
-        },
-        {
-            name: 'valor_pago_6',
-            description: 'Ingrese el valor del sexto pago',
-            type: 'currency',
-            removeText: true
-        },
-        {
-            name: 'fecha_pago_7',
-            description: 'Seleccione la fecha del septimo pago',
-            type: 'date'
-        },
-        {
-            name: 'valor_pago_7',
-            description: 'Ingrese el valor del septimo pago',
-            type: 'currency',
-            removeText: true
-        },
-        {
-            name: 'fecha_pago_8',
-            description: 'Seleccione la fecha del octavo pago',
-            type: 'date'
-        },
-        {
-            name: 'valor_pago_8',
-            description: 'Ingrese el valor del octavo pago',
-            type: 'currency',
-            removeText: true
+            name: 'pago_contado',
+            description: '¿El pago es por contado?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
         },
         {
             name: 'pago_sub_cred',
             description: '¿Tiene crédito o subsidio?',
             type: 'clausula',
             options: [
-                {
-                    name: 'Ninguno',
-                    value: 'no'
-                },
                 {
                     name: 'Crédito',
                     value: 'cred'
@@ -233,7 +157,197 @@
                     value: 'sub'
                 }
             ],
-            value: 'no'
+            value: 'cred',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_1',
+            description: 'Seleccione la fecha del primer pago',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_1',
+            description: 'Ingrese el valor del primer pago',
+            type: 'currency',
+            removeText: true,
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_2',
+            description: 'Seleccione la fecha del segundo pago',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_2',
+            description: 'Ingrese el valor del segundo pago',
+            type: 'currency',
+            removeText: true,
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_3',
+            description: 'Seleccione la fecha del tercer pago',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_3',
+            description: 'Ingrese el valor del tercer pago',
+            type: 'currency',
+            removeText: true,
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_4',
+            description: 'Seleccione la fecha del cuarto pago',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_4',
+            description: 'Ingrese el valor del cuarto pago',
+            type: 'currency',
+            removeText: true,
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_5',
+            description: 'Seleccione la fecha del quinto pago',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_5',
+            description: 'Ingrese el valor del quinto pago',
+            type: 'currency',
+            removeText: true,
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_6',
+            description: 'Seleccione la fecha del sexto pago',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_6',
+            description: 'Ingrese el valor del sexto pago',
+            type: 'currency',
+            removeText: true,
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_7',
+            description: 'Seleccione la fecha del septimo pago',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_7',
+            description: 'Ingrese el valor del septimo pago',
+            type: 'currency',
+            removeText: true,
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_8',
+            description: 'Seleccione la fecha del octavo pago',
+            type: 'date',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_8',
+            description: 'Ingrese el valor del octavo pago',
+            type: 'currency',
+            removeText: true,
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
         },
         {
             name: 'saldo_cuota_inicial_letra_sin_sub_s',
@@ -243,6 +357,10 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'sub'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
@@ -254,6 +372,10 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'cred'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
@@ -270,6 +392,10 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'sub'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
@@ -281,6 +407,10 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'sub'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
@@ -292,6 +422,10 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'sub'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
@@ -303,6 +437,10 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'sub'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
@@ -314,6 +452,10 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'sub'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
@@ -325,6 +467,10 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'sub'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
@@ -336,13 +482,23 @@
                 {
                     k: 'pago_sub_cred',
                     v: 'sub'
+                },
+                {
+                    k: 'pago_contado',
+                    v: 'n'
                 }
             ]
         },
         {
             name: 'banco_credito',
             description: 'Ingrese el banco del credito',
-            type: 'text'
+            type: 'text',
+            prereq: [
+                {
+                    k: 'pago_contado',
+                    v: 'n'
+                }
+            ]
         },
         {
             name: 'valor_pacto_arras',
@@ -442,6 +598,6 @@
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 7,
-    name: 'CONTRATO DE PROMESA DE COMPRAVENTA DE VIVIENDA DE INTERÉS SOCIAL'
+    build: 9,
+    name: 'CONTRATO DE PROMESA DE COMPRAVENTA DE VIVIENDA'
 }

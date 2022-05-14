@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('61ef21de116f24246c0ad8ef'),
+    _id: ObjectId('62683d3551fc27d23d929135'),
     config: [
         {
             description: 'Ingrese el número del contrato',
@@ -67,14 +67,40 @@
             type: 'text'
         },
         {
-            description: 'Ingrese el número de acta',
-            name: 'numero_acta',
-            type: 'text',
-            help: 'number'
+            name: 'cdp1_number',
+            description: 'Ingrese el numero del Certificado de Disponibilidad Presupuestal',
+            type: 'number'
         },
         {
-            description: 'Seleccione la fecha del acta',
-            name: 'fecha_acta',
+            name: 'cdp2',
+            description: '¿Desea ingresar un segundo número de Certificado de Disponibilidad Presupuestal?',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ],
+            value: 'n',
+            type: 'clausula'
+        },
+        {
+            name: 'cdp2_number',
+            description: 'Ingrese el segundo numero del Certificado de Disponibilidad Presupuestal',
+            type: 'number',
+            prereq: [
+                {
+                    k: 'cdp2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cdp_date',
+            description: 'Selecciona la fecha del Certificado de Disponibilidad Presupuestal',
             type: 'date'
         },
         {
@@ -138,6 +164,14 @@
             value: '3.349.902'
         },
         {
+            name: 'nombre_reviso_sena',
+            value: 'Luisa Fernanda Velásquez Giraldo'
+        },
+        {
+            name: 'nombre_proyecto_sena',
+            value: 'Mónica Alejandra Torres Rey'
+        },
+        {
             name: 'correo_sena',
             value: 'hernan.fuentes@sena.edu.co'
         },
@@ -152,14 +186,6 @@
         {
             name: 'correo_enterritorio',
             value: 'cmonteal@enterritorio.gov.co'
-        },
-        {
-            name: 'nombre_reviso_sena',
-            value: 'Luisa Fernanda Velásquez Giraldo'
-        },
-        {
-            name: 'nombre_proyecto_sena',
-            value: 'Mónica Alejandra Torres Rey'
         },
         {
             name: 'nombre_vobo_sena',
@@ -224,27 +250,11 @@
             role: 'SIGN'
         },
         {
-            name: 'nombre_elaboro_enterritorio',
-            identification: 'elaboro_enterritorio_cc',
-            email: 'elaboro_enterritorio_email',
-            type: 'elaboro_enterritorio',
-            order: 1,
-            role: 'SIGN'
-        },
-        {
-            name: 'nombre_reviso_enterritorio',
-            identification: 'reviso_enterritorio_cc',
-            email: 'reviso_enterritorio_email',
-            type: 'reviso_enterritorio',
-            order: 2,
-            role: 'SIGN'
-        },
-        {
             name: 'nombre_proyecto_sena',
             identification: 'proyecto_sena_cc',
             email: 'proyecto_sena_email',
             type: 'proyecto_sena',
-            order: 3,
+            order: 1,
             role: 'SIGN'
         },
         {
@@ -252,7 +262,7 @@
             identification: 'vobo_sena_cc',
             email: 'vobo_sena_email',
             type: 'vobo_sena',
-            order: 4,
+            order: 2,
             role: 'SIGN'
         },
         {
@@ -260,15 +270,7 @@
             identification: 'reviso_sena_cc',
             email: 'reviso_sena_email',
             type: 'reviso_sena',
-            order: 5,
-            role: 'SIGN'
-        },
-        {
-            name: 'nombre_enterritorio',
-            identification: 'cc_enterritorio',
-            email: 'correo_enterritorio',
-            type: 'firma_enterritorio',
-            order: 6,
+            order: 3,
             role: 'SIGN'
         },
         {
@@ -276,14 +278,38 @@
             identification: 'cc_sena',
             email: 'correo_sena',
             type: 'firma_sena',
-            order: 7,
+            order: 4,
             role: 'SIGN'
         }
+        {
+            name: 'nombre_elaboro_enterritorio',
+            identification: 'elaboro_enterritorio_cc',
+            email: 'elaboro_enterritorio_email',
+            type: 'elaboro_enterritorio',
+            order: 5,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_reviso_enterritorio',
+            identification: 'reviso_enterritorio_cc',
+            email: 'reviso_enterritorio_email',
+            type: 'reviso_enterritorio',
+            order: 6,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_enterritorio',
+            identification: 'cc_enterritorio',
+            email: 'correo_enterritorio',
+            type: 'firma_enterritorio',
+            order: 7,
+            role: 'SIGN'
+        },
     ],
     company: ObjectId('61f08e3d69634500090350d4'),
     name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
     price: 5000,
-    build: 26,
+    build: 1,
     preBuild: false,
     custom: {
         footer: {

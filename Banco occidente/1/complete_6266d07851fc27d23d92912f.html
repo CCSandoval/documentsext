@@ -1,0 +1,217 @@
+<style type="text/css">
+  .square {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    border: 1px solid;
+    margin-right: 5px;
+  }
+</style>
+
+<div>
+  <h2 style="text-align: center">
+    Comprobante de retiro, Cambio de clave, Entrega y/o Devolución de
+    Tarjeta/NIP.
+  </h2>
+  <span name="tipo_tarjeta_cred">
+    <p><b>Tarjeta de Crédito</b></p>
+    <span>
+      Visa
+      <span class="square">
+        <span name="credito_visa">x</span>
+        <span name="credito_mc" hidden>_</span>
+      </span>
+    </span>
+    <br />
+    <span>
+      Master Card
+      <span class="square">
+        <span name="credito_visa">_</span>
+        <span name="credito_mc" hidden>x</span>
+      </span>
+    </span>
+  </span>
+  <span name="tipo_tarjeta_deb" hidden>
+    <p><b>Tarjeta de débito</b></p>
+    <span>
+      Cuenta de Ahorro
+      <span class="square">
+        <span name="debito_ahorro">x</span>
+        <span name="debito_corriente" hidden>_</span>
+      </span>
+    </span>
+    <br />
+    <span>
+      Cuenta Corriente
+      <span class="square">
+        <span name="debito_ahorro">_</span>
+        <span name="debito_corriente" hidden>x</span>
+      </span>
+    </span>
+  </span>
+  <span>
+    <p><b>Oficina</b></p>
+    <span name="oficina">________________</span>
+  </span>
+  <table>
+    <tr>
+      <td>
+        <span>
+          <span class="square">
+            <span name="entrega_n">_</span>
+            <span name="entrega_s" hidden>x</span>
+          </span>
+          Entrega*
+        </span>
+      </td>
+      <td>
+        <span>
+          <span class="square">
+            <span name="cambio_clave_n">_</span>
+            <span name="cambio_clave_s" hidden>x</span>
+          </span>
+          Cambio de clave
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          <span class="square">
+            <span name="devolucion_n">_</span>
+            <span name="devolucion_s" hidden>x</span>
+          </span>
+          Devolución
+        </span>
+      </td>
+      <td>
+        <span>
+          <span class="square">
+            <span name="retiro_db_n">_</span>
+            <span name="retiro_db_s" hidden>x</span>
+          </span>
+          Retiro Efectivo con Nota DB
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          <span class="square">
+            <span name="reexpedicion_n">_</span>
+            <span name="reexpedicion_s" hidden>x</span>
+          </span>
+          Reexpedición
+        </span>
+      </td>
+      <td>
+        <span>
+          <span class="square">
+            <span name="carton_alo_n">_</span>
+            <span name="carton_alo_s" hidden>x</span>
+          </span>
+          Cartón Alo
+        </span>
+      </td>
+    </tr>
+  </table>
+  <span>
+    <p><b>Entregó Tarjeta Anterior</b></p>
+    <span>
+      Si &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="square">
+        <span name="entrego_anterior_n" hidden>_</span>
+        <span name="entrego_anterior_s">x</span>
+      </span>
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+      No &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="square">
+        <span name="entrego_anterior_n" hidden>x</span>
+        <span name="entrego_anterior_s">_</span>
+      </span>
+    </span>
+  </span>
+  <span>
+    <p><b>Recibido NIP (Clave Personal)</b></p>
+    <span>
+      Si &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="square">
+        <span name="recibido_nip_n" hidden>_</span>
+        <span name="recibido_nip_s">x</span>
+      </span>
+    </span>
+    &nbsp;&nbsp;&nbsp;&nbsp;
+    <span>
+      No &nbsp;&nbsp;&nbsp;&nbsp;
+      <span class="square">
+        <span name="recibido_nip_n" hidden>x</span>
+        <span name="recibido_nip_s">_</span>
+      </span>
+    </span>
+  </span>
+  <br />
+  <br />
+  <span>
+    <b>Nombre del cliente</b>
+    <span name="nombre_cliente">___________________________</span>
+  </span>
+  <br />
+  <br />
+  <span>
+    <b>Número de producto 1:</b>
+    <span name="numero_prod_1">________________</span>
+  </span>
+  <br />
+  <br />
+  <span>
+    <b>Número de producto 2:</b>
+    <span name="numero_prod_2">________________</span>
+  </span>
+  <br />
+  <br />
+  <span>
+    <b>Observaciones:</b>
+    <span name="observaciones">________________</span>
+  </span>
+  <br />
+  <br />
+  <span>
+    <b>Fecha:</b>
+    <span name="fecha_entrega">________________</span>
+  </span>
+  <br />
+  <br />
+  <span>
+    <b>Fecha Habilitación</b>
+    <span name="fecha_habilitacion">________________</span>
+  </span>
+  <br />
+  <br />
+  <small>
+    *Certifico que he recibido a conformidad la clave de Acceso en sobre cerrado
+    y la Tarjeta del Banco de Occidente, cuyo número aparece en este
+    comprobante.
+    <br />
+    Declaro que conozco y acepto todas y cada una de las condiciones,
+    obligaciones y términos para el uso de la Tarjeta que recibo conforme a los
+    reglamentos y contratos del Banco de Occidente
+  </small>
+  <br />
+  <br />
+  <br />
+
+  <span>Valor retiro <span name="valor_retiro">________________</span></span>
+  <br />
+  <br />
+
+  <span>
+    Firma:
+    <br />
+    <div id="firma_cliente" class="sign_margin"></div>
+    <span>C.C <span name="cc_cliente">________________</span></span>
+    <br />
+    <span>Teléfono <span name="telefono_cliente">________________</span></span>
+  </span>
+</div>
