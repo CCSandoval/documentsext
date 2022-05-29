@@ -21,267 +21,271 @@
             name: 'cargo',
             description: 'Seleccione el cargo del trabajador',
             type: 'clausula',
-            value:"call_c_cnd",
-            options:[
+            value: 'call_c_cnd',
+            options: [
                 {
-                    name:'Agente Call Center CND',
-                    value:'call_c_cnd'
+                    name: 'Agente Call Center CND',
+                    value: 'call_c_cnd'
                 },
                 {
-                    name:'Agente Call Center',
-                    value:'call_c'
+                    name: 'Agente Call Center',
+                    value: 'call_c'
                 },
                 {
-                    name:'Jefe Nacional de Redes y Soporte',
-                    value:'jefe_nal'
+                    name: 'Jefe Nacional de Redes y Soporte',
+                    value: 'jefe_nal'
                 },
                 {
-                    name:'Soporte Redes',
-                    value:'sop_redes'
+                    name: 'Soporte Redes',
+                    value: 'sop_redes'
                 },
                 {
-                    name:'Coordinador de soporte Help desk',
-                    value:'coord_hd'
+                    name: 'Coordinador de soporte Help desk',
+                    value: 'coord_hd'
                 },
                 {
-                    name:'Auxiliares de soporte Nivel I',
-                    value:'aux_soporte'
+                    name: 'Auxiliares de soporte Nivel I',
+                    value: 'aux_soporte'
                 },
                 {
-                    name:'Jefe Digital',
-                    value:'jefe_dig'
+                    name: 'Jefe Digital',
+                    value: 'jefe_dig'
                 },
                 {
-                    name:'Jefe de diseño',
-                    value:'jefe_design'
+                    name: 'Jefe de diseño',
+                    value: 'jefe_design'
                 },
                 {
-                    name:'Diseñador Web',
-                    value:'web_design'
+                    name: 'Diseñador Web',
+                    value: 'web_design'
                 },
                 {
-                    name:"Diseñador Digital y Audiovisual",
-                    value:"dig_design"
+                    name: 'Diseñador Digital y Audiovisual',
+                    value: 'dig_design'
                 },
                 {
-                    name:"Analista Digital",
-                    value:"dig_analist"
+                    name: 'Analista Digital',
+                    value: 'dig_analist'
                 },
                 {
-                    name:"Backoffice CND",
-                    value:"backoffice_cnd"
+                    name: 'Backoffice CND',
+                    value: 'backoffice_cnd'
                 },
                 {
-                    name:'Supervisor Call Center CND',
-                    value:'call_c_sup_cnd'
+                    name: 'Supervisor Call Center CND',
+                    value: 'call_c_sup_cnd'
                 },
                 {
-                    name:'Jefe de Cuenta CND',
-                    value:'jefe_cuenta_cnd'
+                    name: 'Jefe de Cuenta CND',
+                    value: 'jefe_cuenta_cnd'
                 },
                 {
-                    name:'Data Marshall CND',
-                    value:'data_marshall_cnd'
+                    name: 'Data Marshall CND',
+                    value: 'data_marshall_cnd'
                 },
                 {
-                    name:'Coordinador Data Marshall CND',
-                    value:'data_marshall_coord_cnd'
+                    name: 'Coordinador Data Marshall CND',
+                    value: 'data_marshall_coord_cnd'
                 },
                 {
-                    name:'Analista de pruebas y automatización',
-                    value:'test_analist'
+                    name: 'Analista de pruebas y automatización',
+                    value: 'test_analist'
                 },
                 {
-                    name:'Jefe de formación en calidad',
-                    value:'jefe_calidad'
+                    name: 'Jefe de formación en calidad',
+                    value: 'jefe_calidad'
                 },
                 {
-                    name:'Formador CND',
-                    value:'formador_cnd'
+                    name: 'Formador CND',
+                    value: 'formador_cnd'
                 },
                 {
-                    name:'Quality CND',
-                    value:'quality_cnd'
+                    name: 'Quality CND',
+                    value: 'quality_cnd'
                 },
                 {
-                    name:'Asesor Servicio al Cliente',
-                    value:'asesor_cliente'
+                    name: 'Asesor Servicio al Cliente',
+                    value: 'asesor_cliente'
                 },
                 {
-                    name:'Pusher',
-                    value:'pusher'
+                    name: 'Pusher',
+                    value: 'pusher'
                 },
                 {
-                    name:'Team Leader',
-                    value:'team_leader'
+                    name: 'Team Leader',
+                    value: 'team_leader'
                 },
                 {
-                    name:'Coordinador Call Center',
-                    value:'coord_c_center'
+                    name: 'Coordinador Call Center',
+                    value: 'coord_c_center'
                 },
                 {
-                    name:'Jefe de Operaciones',
-                    value:'jefe_operaciones'
+                    name: 'Jefe de Operaciones',
+                    value: 'jefe_operaciones'
                 },
                 {
-                    name:'Jefe de Cuenta',
-                    value:'jefe_cuenta'
+                    name: 'Jefe de Cuenta',
+                    value: 'jefe_cuenta'
                 },
                 {
-                    name:'Formador',
-                    value:'formador'
+                    name: 'Formador',
+                    value: 'formador'
                 },
                 {
-                    name:'Gestor de Aprendizaje',
-                    value:'gestor_aprendizaje'
+                    name: 'Gestor de Aprendizaje',
+                    value: 'gestor_aprendizaje'
                 },
                 {
-                    name:'Quality',
-                    value:'quality'
+                    name: 'Quality',
+                    value: 'quality'
                 },
                 {
-                    name:'Coordinador de Formación',
-                    value:'coord_form'
+                    name: 'Coordinador de Formación',
+                    value: 'coord_form'
                 },
                 {
-                    name:'Lider de Formación',
-                    value:'lider_form'
+                    name: 'Lider de Formación',
+                    value: 'lider_form'
                 },
                 {
-                    name:'Gestor Nacional de Operaciones',
-                    value:'gestor_nal_op'
+                    name: 'Gestor Nacional de Operaciones',
+                    value: 'gestor_nal_op'
                 },
                 {
-                    name:'Lider de Calidad',
-                    value:'lider_calidad'
+                    name: 'Lider de Calidad',
+                    value: 'lider_calidad'
                 },
                 {
-                    name:'Coordinador Servicio al Cliente y Calidad',
-                    value:'coord_serv_cliente'
+                    name: 'Coordinador Servicio al Cliente y Calidad',
+                    value: 'coord_serv_cliente'
                 },
                 {
-                    name:'Coordinador Data Marshall',
-                    value:'coord_data_marshall'
+                    name: 'Coordinador Data Marshall',
+                    value: 'coord_data_marshall'
                 },
                 {
-                    name:'Data Marshall Junior',
-                    value:'junior_data_marshall'
+                    name: 'Data Marshall Junior',
+                    value: 'junior_data_marshall'
                 },
                 {
-                    name:'Data Marshall',
-                    value:'data_marshall'
+                    name: 'Data Marshall',
+                    value: 'data_marshall'
                 },
                 {
-                    name:'Backoffice',
-                    value:'backoffice'
+                    name: 'Backoffice',
+                    value: 'backoffice'
                 },
                 {
-                    name:'Backoffice',
-                    value:'coord_backoffice'
+                    name: 'Backoffice',
+                    value: 'coord_backoffice'
                 },
                 {
-                    name:'Analista de Legalización',
-                    value:'analista_legal'
+                    name: 'Analista de Legalización',
+                    value: 'analista_legal'
                 },
                 {
-                    name:'Desarrollador Senior',
-                    value:'senior_dev'
+                    name: 'Desarrollador Senior',
+                    value: 'senior_dev'
                 },
                 {
-                    name:'Supervisor Técnico',
-                    value:'supervisor_tecnico'
+                    name: 'Supervisor Técnico',
+                    value: 'supervisor_tecnico'
                 },
                 {
-                    name:'Coordinador Técnico',
-                    value:'coordinador_tecnico'
+                    name: 'Coordinador Técnico',
+                    value: 'coordinador_tecnico'
                 },
                 {
-                    name:'Jefe Regional',
-                    value:'jefe_regional'
+                    name: 'Jefe Regional',
+                    value: 'jefe_regional'
                 },
                 {
-                    name:'Controller Financiero',
-                    value:'controller_financiero'
+                    name: 'Controller Financiero',
+                    value: 'controller_financiero'
                 },
                 {
-                    name:'Gerente de Talento Humano',
-                    value:'gerente_th'
+                    name: 'Gerente de Talento Humano',
+                    value: 'gerente_th'
                 },
                 {
-                    name:'Jefe de Nómina',
-                    value:'jefe_nomina'
+                    name: 'Jefe de Nómina',
+                    value: 'jefe_nomina'
                 },
                 {
-                    name:'Tesorero',
-                    value:'tesorero'
+                    name: 'Tesorero',
+                    value: 'tesorero'
                 },
                 {
-                    name:'Contador Junior',
-                    value:'contador_junior'
+                    name: 'Contador Junior',
+                    value: 'contador_junior'
                 },
                 {
-                    name:'Coordinador Nomina',
-                    value:'coordinador_nomina'
+                    name: 'Coordinador Nomina',
+                    value: 'coordinador_nomina'
                 },
                 {
-                    name:'Analista Nomina',
-                    value:'analista_nomina'
+                    name: 'Analista Nomina',
+                    value: 'analista_nomina'
                 },
                 {
-                    name:'Auxiliar contable',
-                    value:'auxiliar_contable'
+                    name: 'Auxiliar contable',
+                    value: 'auxiliar_contable'
                 },
                 {
-                    name:'Lider de Gestión Documental',
-                    value:'lider_g_documental'
+                    name: 'Lider de Gestión Documental',
+                    value: 'lider_g_documental'
                 },
                 {
-                    name:'Auxiliar Enfermeria',
-                    value:'auxiliar_enfermeria'
+                    name: 'Auxiliar Enfermeria',
+                    value: 'auxiliar_enfermeria'
                 },
                 {
-                    name:'Auxiliar HSEQ',
-                    value:'auxiliar_hseq'
+                    name: 'Auxiliar HSEQ',
+                    value: 'auxiliar_hseq'
                 },
                 {
-                    name:'Auxiliar Gestion Documental',
-                    value:'auxiliar_g_documental'
+                    name: 'Auxiliar Gestion Documental',
+                    value: 'auxiliar_g_documental'
                 },
                 {
-                    name:'Jefe Administrativo Nacional',
-                    value:'jefe_admin_nal'
+                    name: 'Jefe Administrativo Nacional',
+                    value: 'jefe_admin_nal'
                 },
                 {
-                    name:'Jefe Administrativo',
-                    value:'jefe_admin'
+                    name: 'Jefe Administrativo',
+                    value: 'jefe_admin'
                 },
                 {
-                    name:'Lider de Compras',
-                    value:'lider_compras'
+                    name: 'Lider de Compras',
+                    value: 'lider_compras'
                 },
                 {
-                    name:'Administrador de sede',
-                    value:'admin_sede'
+                    name: 'Administrador de sede',
+                    value: 'admin_sede'
                 },
                 {
-                    name:'Auxiliar Servicios Generales',
-                    value:'aux_serv_gen'
+                    name: 'Auxiliar Servicios Generales',
+                    value: 'aux_serv_gen'
                 },
                 {
-                    name:'Coordinador de selección',
-                    value:'coord_selec'
+                    name: 'Coordinador de selección',
+                    value: 'coord_selec'
                 },
                 {
-                    name:'Analista de Selección',
-                    value:'analista_selec'
+                    name: 'Analista de Selección',
+                    value: 'analista_selec'
                 },
                 {
-                    name:'Auxiliar de selección',
-                    value:'aux_selec'
+                    name: 'Auxiliar de selección',
+                    value: 'aux_selec'
                 },
                 {
-                    name:'Ejecutiva de Datos y Recursos Comerciales',
-                    value:'ejec_datos'
+                    name: 'Ejecutiva de Datos y Recursos Comerciales',
+                    value: 'ejec_datos'
+                },
+                {
+                    name: 'Soporte de Usuarios',
+                    value: 'sop_usuarios'
                 }
             ]
         },
@@ -1821,7 +1825,7 @@
     preFill: [
         {
             name: 'correo_gnp',
-            value: 'j.reina@gnpsa.com'
+            value: 'milena.castillo@gnpsa.com'
         },
         {
             name: 'nombre_gnp',
@@ -1838,13 +1842,17 @@
             identification: 'cedula_trabajador',
             name: 'nombre_trabajador',
             email: 'correo_trabajador',
-            'package': true
+            'package': true,
+            order: 0,
+            role: 'SIGN'
         },
         {
             type: 'firma_gnp',
             identification: 'cc_gnp',
             name: 'nombre_gnp',
-            email: 'correo_gnp'
+            email: 'correo_gnp',
+            order: 1,
+            role: 'SIGN'
         }
     ],
     preBuildData: [
@@ -1925,8 +1933,8 @@
             approve: 'pending'
         },
         {
-            name:'Documentos de beneficiarios',
-            approve:'pending'
+            name: 'Documentos de beneficiarios',
+            approve: 'pending'
         }
     ],
     username: '495390c0-06f8-4a87-aab0-27b2218dbdc1',
@@ -1940,5 +1948,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 40
+    build: 41
 }

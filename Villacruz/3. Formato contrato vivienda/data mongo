@@ -1,0 +1,327 @@
+{
+    _id: ObjectId('6285247251fc27d23d929151'),
+    config: [
+        {
+            name: 'nombre_arrend_sol_1',
+            type: 'name',
+            description: 'Ingrese el nombre del primer arrendatario solidario'
+        },
+        {
+            name: 'cedula_arrend_sol_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del primer arrendatario solidario'
+        },
+        {
+            name: 'domi_arrend_sol_1',
+            type: 'text',
+            description: 'Ingrese el domicilio del primer arrendatario solidario'
+        },
+        {
+            name: 'tel_arrend_sol_1',
+            type: 'text',
+            description: 'Ingres el número de teléfono del primer arrendatario solidario'
+        },
+        {
+            name: 'correo_arrend_sol_1',
+            type: 'text',
+            description: 'Ingres el correo del primer arrendatario solidario'
+        },
+        {
+            name: 'arrend_sol_2',
+            type: 'clausula',
+            description: '¿Desea ingresar un segundo arrendatario solidario?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_arrend_sol_2',
+            type: 'name',
+            description: 'Ingrese el nombre del segundo arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cedula_arrend_sol_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del segundo arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'domi_arrend_sol_2',
+            type: 'text',
+            description: 'Ingrese el domicilio del segundo arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tel_arrend_sol_2',
+            type: 'text',
+            description: 'Ingres el número de teléfono del segundo arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'correo_arrend_sol_2',
+            type: 'text',
+            description: 'Ingres el correo del segundo arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'arrend_sol_3',
+            type: 'clausula',
+            description: '¿Desea ingresar un tercer arrendatario solidario?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_arrend_sol_3',
+            type: 'name',
+            description: 'Ingrese el nombre del tercer arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                },
+                {
+                    k: 'arrend_sol_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cedula_arrend_sol_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del tercer arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                },
+                {
+                    k: 'arrend_sol_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'domi_arrend_sol_3',
+            type: 'text',
+            description: 'Ingrese el domicilio del tercer arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                },
+                {
+                    k: 'arrend_sol_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tel_arrend_sol_3',
+            type: 'text',
+            description: 'Ingres el número de teléfono del tercer arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                },
+                {
+                    k: 'arrend_sol_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'correo_arrend_sol_3',
+            type: 'text',
+            description: 'Ingres el correo del tercer arrendatario solidario',
+            prereq: [
+                {
+                    k: 'arrend_sol_2',
+                    v: 's'
+                },
+                {
+                    k: 'arrend_sol_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'direccion_inmueble',
+            type: 'text',
+            description: 'Ingrese la dirección del inmueble dado en arrendamiento'
+        },
+        {
+            name: 'municipio_inmueble',
+            type: 'text',
+            description: 'Ingrese el municipio donde se encuentra el inmueble dado en arrendamiento'
+        },
+        {
+            name: 'duracion_contrato',
+            type: 'text',
+            description: 'Ingrese el término de duración del contrato'
+        },
+        {
+            name: 'canon_arrendamiento',
+            type: 'currency',
+            description: 'Ingrese el canon de arrendamiento'
+        },
+        {
+            name: 'dia_pago',
+            type: 'number',
+            description: 'Ingrese el dia del mes en el que se pagará el canon de arrendamiento'
+        },
+        {
+            name: 'incremento_canon',
+            type: 'text',
+            description: 'Ingrese el incremento del canon de arrendamiento'
+        },
+        {
+            name: 'destinacion',
+            type: 'text',
+            description: 'Ingrese la desitnación'
+        },
+        {
+            name: 'fecha_inicacion',
+            type: 'date',
+            description: 'Seleccione la fecha de iniciación del contrato de arrendamiento'
+        },
+        {
+            name: 'fecha_terminacion',
+            type: 'date',
+            description: 'Seleccione la fecha de terminación del contrato de arrendamiento'
+        },
+        {
+            name: 'clasulas_adicionales',
+            type: 'clausula',
+            description: '¿Desea ingresar clausulas adicionales?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'texto_clausula_adicional',
+            type: 'text',
+            description: 'Ingrese la información referente a las clausulas adicionales',
+            prereq: [
+                {
+                    k: 'clasulas_adicionales',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se firma el presente contrato'
+        }
+    ],
+    operation: [],
+    signatureProfile: [
+        {
+            type: 'firma_arrend_1',
+            name: 'nombre_arrend_sol_1',
+            identification: 'cedula_arrend_sol_1',
+            email: 'correo_arrend_sol_1'
+        },
+        {
+            type: 'firma_arrend_2',
+            name: 'nombre_arrend_sol_2',
+            identification: 'cedula_arrend_sol_2',
+            email: 'correo_arrend_sol_2'
+        },
+        {
+            type: 'firma_arrend_3',
+            name: 'nombre_arrend_sol_3',
+            identification: 'cedula_arrend_sol_3',
+            email: 'correo_arrend_sol_3'
+        }
+    ],
+    sign: [
+        'nombre_arrend_sol_1',
+        'cedula_arrend_sol_1',
+        'domi_arrend_sol_1',
+        'tel_arrend_sol_1',
+        'correo_arrend_sol_1',
+        'nombre_arrend_sol_2',
+        'cedula_arrend_sol_2',
+        'domi_arrend_sol_2',
+        'tel_arrend_sol_2',
+        'correo_arrend_sol_2',
+        'nombre_arrend_sol_3',
+        'cedula_arrend_sol_3',
+        'domi_arrend_sol_3',
+        'tel_arrend_sol_3',
+        'correo_arrend_sol_3',
+        'direccion_inmueble',
+        'municipio_inmueble',
+        'duracion_contrato',
+        'canon_arrendamiento',
+        'dia_pago',
+        'destinacion',
+        'fecha_inicacion',
+        'fecha_terminacion',
+        'incremento_canon'
+    ],
+    name: 'CONTRATO DE ARRENDAMIENTO DE VIVIENDA URBANA',
+    preBuild: false,
+    preBuildData: [],
+    price: 5000,
+    build: 0
+}

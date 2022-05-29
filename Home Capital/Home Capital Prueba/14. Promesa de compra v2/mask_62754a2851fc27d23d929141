@@ -490,86 +490,95 @@
         <span name="f_pago_cuota_inicial">transferidos</span> en la cuenta de <span name="tipo_cuenta_1">ahorros</span>
         número <span name="num_cuenta_1">_______</span> del banco <span name="nombre_banco_1">_______</span> a nombre de
         <span name="nombre_receptor_1">_______</span>
-        siempre y cuando se cumpla con todas las condiciones expuestas en la clausula cuarta
         <span name="condicion_particular_n">.</span>
         <span name="condicion_particular_s" hidden>
             y
             <span name="condicion_particular_texto">______________________</span>.
         </span>
     </li>
-    <li>Se pacta un pago, por valor de
+    <span name="tercer_pago_n"></span>
+    <li name="tercer_pago_s" hidden>Se pacta un pago, por valor de
         <span name="valor_2">_______</span> que serán cancelados el día
         <span name="fecha_pago_2">_______</span>,
         <span name="f_pago_cuota_2">transferidos</span> en la cuenta de <span name="tipo_cuenta_2">ahorros</span>
         número <span name="num_cuenta_2">_______</span> del banco <span name="nombre_banco_2">_______</span> a nombre de
         <span name="nombre_receptor_2">_______</span>
-        siempre y cuando se cumpla con todas las condiciones expuestas en la clausula cuarta
         <span name="condicion_particular_2_n">.</span>
         <span name="condicion_particular_2_s" hidden>
             y
             <span name="condicion_particular_2_texto">______________________</span>.
         </span>
     </li>
-    <span name="otra_opcion_n"></span>
-    <span name="otra_opcion_s" hidden>
-        <li><span name="otra_opcion_texto">_________________________</span></li>
-    </span>
-    <span name="pago_3_n"></span>
-    <span name="pago_3_s" hidden>
-        <li>
-            Se pacta un tercer pago, por valor de
-            <span name="valor_3">_______</span> el
-            <span name="fecha_pago_3">_______</span>, que serán cancelados
-            <span name="detalle_pago_3">_______</span>.
-        </li>
-        <span name="pago_4_n"></span>
-        <span name="pago_4_s" hidden>
-            <li>Se pacta un cuarto pago, por valor de
-                <span name="valor_4">_______</span> el
-                <span name="fecha_pago_4">_______</span>, que serán cancelados
-                <span name="detalle_pago_4">_______</span>
-            </li>
-            <span name="pago_5_n"></span>
-            <span name="pago_5_s" hidden>
-                <li>Se pacta un quinto pago, por valor de
-                    <span name="valor_5">_______</span> el
-                    <span name="fecha_pago_5">_______</span>, que serán cancelados
-                    <span name="detalle_pago_5">_______</span>
-                </li>
-                <span name="pago_6_n"></span>
-                <span name="pago_6_s" hidden>
-                    <li>Se pacta un sexto pago, por valor de
-                        <span name="valor_6">_______</span> el
-                        <span name="fecha_pago_6">_______</span>, que serán cancelados
-                        <span name="detalle_pago_6">_______</span>
-                    </li>
-                    <span name="pago_7_n"></span>
-                    <span name="pago_7_s" hidden>
-                        <li>Se pacta un séptimo pago, por valor de
-                            <span name="valor_7">_______</span> el
-                            <span name="fecha_pago_7">_______</span>, que serán cancelados
-                            <span name="detalle_pago_7">_______</span>
-                        </li>
-                        <span name="pago_8_n"></span>
-                        <span name="pago_8_s" hidden>
-                            <li>Se pacta un octavo pago, por valor de
-                                <span name="valor_8">_______</span> el
-                                <span name="fecha_pago_8">_______</span>, que serán cancelados
-                                <span name="detalle_pago_8">_______</span>
-                            </li>
-                        </span>
-                    </span>
-                </span>
-            </span>
+    <span name="cuarto_pago_n"></span>
+    <li name="cuarto_pago_s" hidden>Se pacta un pago, por valor de
+        <span name="valor_3">_______</span> que serán cancelados el día
+        <span name="fecha_pago_3">_______</span>,
+        <span name="f_pago_cuota_3">transferidos</span> en la cuenta de <span name="tipo_cuenta_3">ahorros</span>
+        número <span name="num_cuenta_3">_______</span> del banco <span name="nombre_banco_3">_______</span> a nombre de
+        <span name="nombre_receptor_3">_______</span>
+        <span name="condicion_particular_3_n">.</span>
+        <span name="condicion_particular_3_s" hidden>
+            y
+            <span name="condicion_particular_3_texto">______________________</span>.
         </span>
-    </span>
-    <li>Se pacta un pago pinal, un por valor de
+    </li>
+    <span name="quinto_pago_n"></span>
+    <li name="quinto_pago_s" hidden>Se pacta un pago, por valor de
+        <span name="valor_4">_______</span> que serán cancelados el día
+        <span name="fecha_pago_4">_______</span>,
+        <span name="f_pago_cuota_4">transferidos</span> en la cuenta de <span name="tipo_cuenta_4">ahorros</span>
+        número <span name="num_cuenta_4">_______</span> del banco <span name="nombre_banco_4">_______</span> a nombre de
+        <span name="nombre_receptor_4">_______</span>
+        <span name="condicion_particular_4_n">.</span>
+        <span name="condicion_particular_4_s" hidden>
+            y
+            <span name="condicion_particular_4_texto">______________________</span>.
+        </span>
+    </li>
+    <span name="sexto_pago_n"></span>
+    <li name="sexto_pago_s" hidden>Se pacta un pago, por valor de
+        <span name="valor_5">_______</span> que serán cancelados el día
+        <span name="fecha_pago_5">_______</span>,
+        <span name="f_pago_cuota_5">transferidos</span> en la cuenta de <span name="tipo_cuenta_5">ahorros</span>
+        número <span name="num_cuenta_5">_______</span> del banco <span name="nombre_banco_5">_______</span> a nombre de
+        <span name="nombre_receptor_5">_______</span>
+        <span name="condicion_particular_5_n">.</span>
+        <span name="condicion_particular_5_s" hidden>
+            y
+            <span name="condicion_particular_5_texto">______________________</span>.
+        </span>
+    </li>
+    <span name="septimo_pago_n"></span>
+    <li name="septimo_pago_s" hidden>Se pacta un pago, por valor de
+        <span name="valor_6">_______</span> que serán cancelados el día
+        <span name="fecha_pago_6">_______</span>,
+        <span name="f_pago_cuota_6">transferidos</span> en la cuenta de <span name="tipo_cuenta_6">ahorros</span>
+        número <span name="num_cuenta_6">_______</span> del banco <span name="nombre_banco_6">_______</span> a nombre de
+        <span name="nombre_receptor_6">_______</span>
+        <span name="condicion_particular_6_n">.</span>
+        <span name="condicion_particular_6_s" hidden>
+            y
+            <span name="condicion_particular_6_texto">______________________</span>.
+        </span>
+    </li>
+    <span name="octavo_pago_n"></span>
+    <li name="octavo_pago_s" hidden>Se pacta un pago, por valor de
+        <span name="valor_7">_______</span> que serán cancelados el día
+        <span name="fecha_pago_7">_______</span>,
+        <span name="f_pago_cuota_7">transferidos</span> en la cuenta de <span name="tipo_cuenta_7">ahorros</span>
+        número <span name="num_cuenta_7">_______</span> del banco <span name="nombre_banco_7">_______</span> a nombre de
+        <span name="nombre_receptor_7">_______</span>
+        <span name="condicion_particular_7_n">.</span>
+        <span name="condicion_particular_7_s" hidden>
+            y
+            <span name="condicion_particular_7_texto">______________________</span>.
+        </span>
+    </li>
+    <li>Se pacta un pago final, un por valor de
         <span name="valor_pago_final">_______</span> que serán cancelados con recursos producto de un crédito financiero
-        solicitado por <b>EL PROMITENTE COMPRADOR</b>, una vez se presente la boleta de ingreso a registro <b>[o una vez
-            se encuentre registrada]</b> de la escritura pública que perfecciona la presente promesa de compraventa.
+        solicitado por <b>EL PROMITENTE COMPRADOR</b>. <span name="ingreso_registro_n">El desembolso se hará una vez se encuentre la escritura pública que perfecciona la presente promesa registrada.</span><span name="ingreso_registro_s" hidden>El desembolso se hará contra entrega de ingreso a registro.</span>
     </li>
 </ol>
-
 <p>
     <span name="agregar_campo_2_n"></span>
     <span name="agregar_campo_2_s" hidden><br />
@@ -756,7 +765,7 @@
 </ol>
 
 <p>
-    <b>DECIMA QUINTA. CLAUSULA COMPROMISORIA:</b> Las diferencias que ocurrieren entre las partes con motivo de la interpretación, ejecución y cumplimiento del presente contrato de promesa de compraventa, serán sometidas a la decisión de un árbitro designado por el(la)
+    <b>DECIMA QUINTA. CLÁUSULA COMPROMISORIA:</b> Las diferencias que ocurrieren entre las partes con motivo de la interpretación, ejecución y cumplimiento del presente contrato de promesa de compraventa, serán sometidas a la decisión de un árbitro designado por el(la)
     <span name="conciliador_1">________</span>, a solicitud de cualquiera de las partes, según el procedimiento previsto en las normas vigentes sobre la materia.
 </p>
 

@@ -3746,16 +3746,44 @@
             ]
         },
         {
+            name:'tercer_pago',
+            type:'clausula',
+            description:'¿Desea anexar un tercer pago?',
+            value:'n',
+            options:[
+                {
+                    name:'No',
+                    value:'n'
+                },
+                {
+                    name:'Si',
+                    value:'s'
+                },
+            ]
+        },
+        {
             description: 'Digite el valor del segundo pago',
             help: 'valor',
             name: 'valor_2',
-            type: 'currency'
+            type: 'currency',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                }
+            ]
         },
         {
             description: 'Seleccione la fecha del segundo pago',
             help: 'fecha',
             name: 'fecha_pago_2',
-            type: 'date'
+            type: 'date',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                }
+            ]
         },
         {
             description: 'Seleccione la forma de pago del segundo pago',
@@ -3773,6 +3801,12 @@
                     label: 'consignados',
                     name: 'Consignación',
                     value: 'cons'
+                }
+            ],
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
                 }
             ]
         },
@@ -3792,22 +3826,46 @@
                     name: 'Corriente',
                     value: 'cor'
                 }
+            ],
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                }
             ]
         },
         {
             name: 'num_cuenta_2',
             type: 'text',
-            description: 'Digite el número de la cuenta'
+            description: 'Digite el número de la cuenta',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                }
+            ]
         },
         {
             name: 'nombre_banco_2',
             type: 'text',
-            description: 'Digite el nombre del banco'
+            description: 'Digite el nombre del banco',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                }
+            ]
         },
         {
             name: 'nombre_receptor_2',
             type: 'text',
-            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero'
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                }
+            ]
         },
         {
             description: '¿Desea ingresar una condición particular?',
@@ -3823,591 +3881,1454 @@
                     value: 's'
                 }
             ],
-            value: 'n'
+            value: 'n',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                }
+            ]
         },
         {
             description: 'Digite la condición particular',
-            name: 'condicion_particular_texto',
+            name: 'condicion_particular_2_texto',
             type: 'text',
             prereq: [
                 {
                     k: 'condicion_particular_2',
                     v: 's'
+                },
+                {
+                    k:'tercer_pago',
+                    v:'s'
                 }
             ]
         },
         {
-            description: '¿Desea agregar una tercera forma de pago?',
-            help: 'agregar',
-            name: 'pago_3',
-            options: [
+            name:'cuarto_pago',
+            type:'clausula',
+            description:'¿Desea anexar un tercer pago?',
+            value:'n',
+            options:[
                 {
-                    name: 'No',
-                    value: 'n'
+                    name:'No',
+                    value:'n'
                 },
                 {
-                    name: 'Sí',
-                    value: 's'
-                }
+                    name:'Si',
+                    value:'s'
+                },
             ],
-            type: 'clausula',
-            value: 'n'
+            prereq: [
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                }
+            ]
         },
         {
-            description: 'Digite el valor del tercera pago',
+            description: 'Digite el valor del tercer pago',
             help: 'valor',
             name: 'valor_3',
-            prereq: [
+            type: 'currency',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
-                }
-            ],
-            type: 'currency'
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: 'Seleccione la fecha del tercera pago',
+            description: 'Seleccione la fecha del tercer pago',
             help: 'fecha',
             name: 'fecha_pago_3',
-            prereq: [
+            type: 'date',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
-                }
-            ],
-            type: 'date'
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: 'Digite los detalles del tercera pago',
-            help: 'detalles',
-            name: 'detalle_pago_3',
-            prereq: [
+            description: 'Seleccione la forma de pago del tercer pago',
+            help: 'forma_pago',
+            name: 'f_pago_cuota_3',
+            type: 'select',
+            value: 'trans',
+            options: [
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    label: 'transferidos',
+                    name: 'Transferencia',
+                    value: 'trans'
+                },
+                {
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
                 }
             ],
-            type: 'text'
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: '¿Desea agregar una cuarta forma de pago?',
-            help: 'agregar',
-            name: 'pago_4',
+            description: 'Seleccione el tipo de cuenta bancaria del tercer pago',
+            name: 'tipo_cuenta_3',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ],
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'num_cuenta_3',
+            type: 'text',
+            description: 'Digite el número de la cuenta',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_banco_3',
+            type: 'text',
+            description: 'Digite el nombre del banco',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_receptor_3',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: '¿Desea ingresar una condición particular?',
+            name: 'condicion_particular_3',
+            type: 'clausula',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sí',
+                    name: 'Si',
                     value: 's'
                 }
             ],
+            value: 'n',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: 'Digite la condición particular',
+            name: 'condicion_particular_3_texto',
+            type: 'text',
             prereq: [
                 {
-                    k: 'pago_3',
+                    k: 'condicion_particular_3',
                     v: 's'
-                }
+                },
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name:'quinto_pago',
+            type:'clausula',
+            description:'¿Desea anexar un cuarto pago?',
+            value:'n',
+            options:[
+                {
+                    name:'No',
+                    value:'n'
+                },
+                {
+                    name:'Si',
+                    value:'s'
+                },
             ],
-            type: 'clausula',
-            value: 'n'
+            prereq: [
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
             description: 'Digite el valor del cuarto pago',
             help: 'valor',
             name: 'valor_4',
-            prereq: [
+            type: 'currency',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
-                }
-            ],
-            type: 'currency'
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
             description: 'Seleccione la fecha del cuarto pago',
             help: 'fecha',
             name: 'fecha_pago_4',
-            prereq: [
+            type: 'date',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
-                }
-            ],
-            type: 'date'
-        },
-        {
-            description: 'Digite los detalles del cuarto pago',
-            help: 'detalles',
-            name: 'detalle_pago_4',
-            prereq: [
-                {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
-                }
-            ],
-            type: 'text'
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: '¿Desea agregar una quinta forma de pago?',
-            help: 'agregar',
-            name: 'pago_5',
+            description: 'Seleccione la forma de pago del cuarto pago',
+            help: 'forma_pago',
+            name: 'f_pago_cuota_4',
+            type: 'select',
+            value: 'trans',
+            options: [
+                {
+                    label: 'transferidos',
+                    name: 'Transferencia',
+                    value: 'trans'
+                },
+                {
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
+                }
+            ],
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: 'Seleccione el tipo de cuenta bancaria del cuarto pago',
+            name: 'tipo_cuenta_4',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ],
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'num_cuenta_4',
+            type: 'text',
+            description: 'Digite el número de la cuenta',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_banco_4',
+            type: 'text',
+            description: 'Digite el nombre del banco',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_receptor_4',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: '¿Desea ingresar una condición particular?',
+            name: 'condicion_particular_4',
+            type: 'clausula',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sí',
+                    name: 'Si',
                     value: 's'
                 }
             ],
+            value: 'n',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: 'Digite la condición particular',
+            name: 'condicion_particular_4_texto',
+            type: 'text',
             prereq: [
                 {
-                    k: 'pago_3',
+                    k: 'condicion_particular_4',
                     v: 's'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
-                }
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name:'sexto_pago',
+            type:'clausula',
+            description:'¿Desea anexar un quinto pago?',
+            value:'n',
+            options:[
+                {
+                    name:'No',
+                    value:'n'
+                },
+                {
+                    name:'Si',
+                    value:'s'
+                },
             ],
-            type: 'clausula',
-            value: 'n'
+            prereq: [
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
             description: 'Digite el valor del quinto pago',
             help: 'valor',
             name: 'valor_5',
-            prereq: [
+            type: 'currency',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
-                }
-            ],
-            type: 'currency'
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
             description: 'Seleccione la fecha del quinto pago',
             help: 'fecha',
             name: 'fecha_pago_5',
-            prereq: [
+            type: 'date',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
-                }
-            ],
-            type: 'date'
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: 'Digite los detalles del quinto pago',
-            help: 'detalles',
-            name: 'detalle_pago_5',
-            prereq: [
+            description: 'Seleccione la forma de pago del quinto pago',
+            help: 'forma_pago',
+            name: 'f_pago_cuota_5',
+            type: 'select',
+            value: 'trans',
+            options: [
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    label: 'transferidos',
+                    name: 'Transferencia',
+                    value: 'trans'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
-                },
-                {
-                    k: 'pago_5',
-                    v: 's'
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
                 }
             ],
-            type: 'text'
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: '¿Desea agregar una sexta forma de pago?',
-            help: 'agregar',
-            name: 'pago_6',
+            description: 'Seleccione el tipo de cuenta bancaria del quinto pago',
+            name: 'tipo_cuenta_5',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ],
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'num_cuenta_5',
+            type: 'text',
+            description: 'Digite el número de la cuenta',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_banco_5',
+            type: 'text',
+            description: 'Digite el nombre del banco',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_receptor_5',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: '¿Desea ingresar una condición particular?',
+            name: 'condicion_particular_5',
+            type: 'clausula',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sí',
+                    name: 'Si',
                     value: 's'
                 }
             ],
+            value: 'n',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: 'Digite la condición particular',
+            name: 'condicion_particular_5_texto',
+            type: 'text',
             prereq: [
                 {
-                    k: 'pago_3',
+                    k: 'condicion_particular_5',
                     v: 's'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
-                }
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name:'septimo_pago',
+            type:'clausula',
+            description:'¿Desea anexar un sexto pago?',
+            value:'n',
+            options:[
+                {
+                    name:'No',
+                    value:'n'
+                },
+                {
+                    name:'Si',
+                    value:'s'
+                },
             ],
-            type: 'clausula',
-            value: 'n'
+            prereq: [
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+            ]
         },
         {
             description: 'Digite el valor del sexto pago',
             help: 'valor',
             name: 'valor_6',
-            prereq: [
+            type: 'currency',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
+                    k:'quinto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_6',
-                    v: 's'
-                }
-            ],
-            type: 'currency'
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
         },
         {
             description: 'Seleccione la fecha del sexto pago',
             help: 'fecha',
             name: 'fecha_pago_6',
-            prereq: [
+            type: 'date',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
+                    k:'quinto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_6',
-                    v: 's'
-                }
-            ],
-            type: 'date'
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: 'Digite los detalles del sexto pago',
-            help: 'detalles',
-            name: 'detalle_pago_6',
-            prereq: [
+            description: 'Seleccione la forma de pago del sexto pago',
+            help: 'forma_pago',
+            name: 'f_pago_cuota_6',
+            type: 'select',
+            value: 'trans',
+            options: [
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    label: 'transferidos',
+                    name: 'Transferencia',
+                    value: 'trans'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
-                },
-                {
-                    k: 'pago_5',
-                    v: 's'
-                },
-                {
-                    k: 'pago_6',
-                    v: 's'
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
                 }
             ],
-            type: 'text'
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: '¿Desea agregar una septima forma de pago?',
-            help: 'agregar',
-            name: 'pago_7',
+            description: 'Seleccione el tipo de cuenta bancaria del sexto pago',
+            name: 'tipo_cuenta_6',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ],
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'num_cuenta_6',
+            type: 'text',
+            description: 'Digite el número de la cuenta',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_banco_6',
+            type: 'text',
+            description: 'Digite el nombre del banco',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_receptor_6',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: '¿Desea ingresar una condición particular?',
+            name: 'condicion_particular_6',
+            type: 'clausula',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sí',
+                    name: 'Si',
                     value: 's'
                 }
             ],
-            prereq: [
+            value: 'n',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
+                    k:'quinto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_6',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: 'Digite el valor del septimo pago',
+            description: 'Digite la condición particular',
+            name: 'condicion_particular_6_texto',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'condicion_particular_6',
+                    v: 's'
+                },
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name:'octavo_pago',
+            type:'clausula',
+            description:'¿Desea anexar un séptimo pago?',
+            value:'n',
+            options:[
+                {
+                    name:'No',
+                    value:'n'
+                },
+                {
+                    name:'Si',
+                    value:'s'
+                },
+            ],
+            prereq: [
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: 'Digite el valor del séptimo pago',
             help: 'valor',
             name: 'valor_7',
-            prereq: [
+            type: 'currency',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
+                    k:'quinto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_6',
-                    v: 's'
+                    k:'sexto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_7',
-                    v: 's'
-                }
-            ],
-            type: 'currency'
+                    k:'septimo_pago',
+                    v:'s'
+                },
+                {
+                    k:'octavo_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: 'Seleccione la fecha del septimo pago',
+            description: 'Seleccione la fecha del séptimo pago',
             help: 'fecha',
             name: 'fecha_pago_7',
-            prereq: [
+            type: 'date',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
+                    k:'quinto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_6',
-                    v: 's'
+                    k:'sexto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_7',
-                    v: 's'
-                }
-            ],
-            type: 'date'
+                    k:'septimo_pago',
+                    v:'s'
+                },
+                {
+                    k:'octavo_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: 'Digite los detalles del septimo pago',
-            help: 'detalles',
-            name: 'detalle_pago_7',
-            prereq: [
+            description: 'Seleccione la forma de pago del séptimo pago',
+            help: 'forma_pago',
+            name: 'f_pago_cuota_7',
+            type: 'select',
+            value: 'trans',
+            options: [
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    label: 'transferidos',
+                    name: 'Transferencia',
+                    value: 'trans'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
-                },
-                {
-                    k: 'pago_5',
-                    v: 's'
-                },
-                {
-                    k: 'pago_6',
-                    v: 's'
-                },
-                {
-                    k: 'pago_7',
-                    v: 's'
+                    label: 'consignados',
+                    name: 'Consignación',
+                    value: 'cons'
                 }
             ],
-            type: 'text'
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+                {
+                    k:'octavo_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: '¿Desea agregar una octava forma de pago?',
-            help: 'agregar',
-            name: 'pago_8',
+            description: 'Seleccione el tipo de cuenta bancaria del sexto pago',
+            name: 'tipo_cuenta_7',
+            type: 'select',
+            value: 'aho',
+            options: [
+                {
+                    label: 'ahorros',
+                    name: 'Ahorros',
+                    value: 'aho'
+                },
+                {
+                    label: 'corriente',
+                    name: 'Corriente',
+                    value: 'cor'
+                }
+            ],
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+                {
+                    k:'octavo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'num_cuenta_7',
+            type: 'text',
+            description: 'Digite el número de la cuenta',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+                {
+                    k:'octavo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_banco_7',
+            type: 'text',
+            description: 'Digite el nombre del banco',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+                {
+                    k:'octavo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'nombre_receptor_7',
+            type: 'text',
+            description: 'Digite el nombre de la persona que recibirá el desembolso del dinero',
+            prereq:[
+                {
+                    k:'tercer_pago',
+                    v:'s'
+                },
+                {
+                    k:'cuarto_pago',
+                    v:'s'
+                },
+                {
+                    k:'quinto_pago',
+                    v:'s'
+                },
+                {
+                    k:'sexto_pago',
+                    v:'s'
+                },
+                {
+                    k:'septimo_pago',
+                    v:'s'
+                },
+                {
+                    k:'octavo_pago',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            description: '¿Desea ingresar una condición particular?',
+            name: 'condicion_particular_7',
+            type: 'clausula',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sí',
+                    name: 'Si',
                     value: 's'
                 }
             ],
-            prereq: [
+            value: 'n',
+            prereq:[
                 {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
+                    k:'quinto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_6',
-                    v: 's'
+                    k:'sexto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_7',
-                    v: 's'
-                }
-            ],
-            type: 'clausula',
-            value: 'n'
+                    k:'septimo_pago',
+                    v:'s'
+                },
+                {
+                    k:'octavo_pago',
+                    v:'s'
+                },
+            ]
         },
         {
-            description: 'Digite el valor del octavo pago',
-            help: 'valor',
-            name: 'valor_8',
+            description: 'Digite la condición particular',
+            name: 'condicion_particular_7_texto',
+            type: 'text',
             prereq: [
                 {
-                    k: 'pago_3',
+                    k: 'condicion_particular_7',
                     v: 's'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'tercer_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_5',
-                    v: 's'
+                    k:'cuarto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_6',
-                    v: 's'
+                    k:'quinto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_7',
-                    v: 's'
+                    k:'sexto_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_8',
-                    v: 's'
-                }
-            ],
-            type: 'currency'
-        },
-        {
-            description: 'Seleccione la fecha del octavo pago',
-            help: 'fecha',
-            name: 'fecha_pago_8',
-            prereq: [
-                {
-                    k: 'pago_3',
-                    v: 's'
+                    k:'septimo_pago',
+                    v:'s'
                 },
                 {
-                    k: 'pago_4',
-                    v: 's'
+                    k:'octavo_pago',
+                    v:'s'
                 },
-                {
-                    k: 'pago_5',
-                    v: 's'
-                },
-                {
-                    k: 'pago_6',
-                    v: 's'
-                },
-                {
-                    k: 'pago_7',
-                    v: 's'
-                },
-                {
-                    k: 'pago_8',
-                    v: 's'
-                }
-            ],
-            type: 'date'
-        },
-        {
-            description: 'Digite los detalles del octavo pago',
-            help: 'detalles',
-            name: 'detalle_pago_8',
-            prereq: [
-                {
-                    k: 'pago_3',
-                    v: 's'
-                },
-                {
-                    k: 'pago_4',
-                    v: 's'
-                },
-                {
-                    k: 'pago_5',
-                    v: 's'
-                },
-                {
-                    k: 'pago_6',
-                    v: 's'
-                },
-                {
-                    k: 'pago_7',
-                    v: 's'
-                },
-                {
-                    k: 'pago_8',
-                    v: 's'
-                }
-            ],
-            type: 'text'
+            ]
         },
         {
             name: 'valor_pago_final',
             type: 'currency',
             description: 'Ingrese el valor del pago final'
+        },
+        {
+            description: '¿Presenta boleta de ingreso a registro?',
+            name: 'ingreso_registro',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
         },
         {
             description: '¿Desea ingresar limitaciones del inmueble?',
@@ -4884,5 +5805,5 @@
         horas_celebracion: 'Ejemplo: 06:00'
     },
     company: ObjectId('614a3a750aebb000084cbac0'),
-    build: 4
+    build: 7
 }

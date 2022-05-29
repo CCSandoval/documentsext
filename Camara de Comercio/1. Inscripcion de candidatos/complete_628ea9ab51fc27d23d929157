@@ -1,0 +1,258 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #d9d9d9;
+  }
+</style>
+
+<h2 style="text-align: center">
+  <b>
+    ACTA No <b name="num_acta">____</b> DE INSCRIPCIÓN DE LISTAS DE CANDIDATOS
+    JUNTA DIRECTIVA CÁMARA DE COMERCIO DE MEDELLÍN PARA ANTIOQUIA
+    <br />
+    PERIODO 2023-2026
+  </b>
+</h2>
+
+<p>
+  En Medellín, el <span name="fecha_envio">____________________</span>, siendo
+  las <span name="hora_envio">________</span>, enviaron al canal virtual
+  de la Secretaria General de la Cámara de Comercio de Medellín para Antioquia,
+  la solicitud de inscripción de
+  <span name="modificacion_s" hidden>modificación de la listas</span
+  ><span name="modificacion_n">listas</span> No
+  <span name="numero_lista">________</span> <span name="genero_candidato_m">el señor</span><span name="genero_candidato_f" hidden>la señora</span> <span name="nombre_candidato">____________________</span>, con el fin de
+  inscribir la lista de candidatos a la Junta Directiva de la Cámara de Comercio
+  de Medellín para Antioquia para el período 2023-2026, en las elecciones que
+  deben celebrarse el día 1 de diciembre del año en curso.
+</p>
+
+<p>
+  La Cámara de Comercio de Medellín para Antioquia constató y verificó los
+  siguientes requisitos y documentación:
+</p>
+
+<table class="table_class">
+  <tr>
+    <th rowspan="2">Nº</th>
+    <th rowspan="2">REQUISITOS</th>
+    <th colspan="2">VERIFICACIÓN</th>
+    <th rowspan="2">CONSECUENCIA "NO CUMPLE"</th>
+  </tr>
+  <tr>
+    <th>CUMPLE</th>
+    <th>NO CUMPLE</th>
+  </tr>
+  <tr>
+    <td><b>1</b></td>
+    <td>La lista debe contener como máximo 8 renglones.</td>
+    <td><span name="cumple_maximo_s">x</span></td>
+    <td><span name="cumple_maximo_n" hidden>x</span></td>
+    <td>Se rechaza <i>la lista.</i></td>
+  </tr>
+  <tr>
+    <td><b>2</b></td>
+    <td>Cada renglón debe contener un miembro principal y uno suplente.</td>
+    <td><span name="cumple_prin_sup_s">x</span></td>
+    <td><span name="cumple_prin_sup_n" hidden>x</span></td>
+    <td>Se rechaza <i>el renglón.</i></td>
+  </tr>
+  <tr>
+    <td><b>3</b></td>
+    <td>Ningún candidato podrá aparecer en más de una lista.</td>
+    <td><span name="cumple_no_rep_s">x</span></td>
+    <td><span name="cumple_no_rep_n" hidden>x</span></td>
+    <td>
+      Se rechazan las inscripciones del candidato en
+      <i>todas las listas y renglones.</i>
+    </td>
+  </tr>
+  <tr>
+    <td rowspan="5"><b>4</b></td>
+    <td>
+      En la lista, los candidatos deben identificarse de la siguiente manera:
+    </td>
+    <td></td>
+    <td></td>
+    <td rowspan="5">
+      Se rechaza el renglón donde no sea posible individualizar al candidato.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>Persona natural.</b><br />
+      Nombre completo:
+    </td>
+    <td><span name="cumple_nombre_nat_s">x</span></td>
+    <td><span name="cumple_nombre_nat_n" hidden>x</span></td>
+  </tr>
+  <tr>
+    <td>Cédula de ciudadanía:</td>
+    <td><span name="cumple_cc_nat_s">x</span></td>
+    <td><span name="cumple_cc_nat_n" hidden>x</span></td>
+  </tr>
+  <tr>
+    <td>
+      <b>Persona Juridica.</b><br />
+      Razón social:
+    </td>
+    <td><span name="cumple_razon_jur_s">x</span></td>
+    <td><span name="cumple_razon_jur_n" hidden>x</span></td>
+  </tr>
+  <tr>
+    <td>NIT:</td>
+    <td><span name="cumple_nit_s">x</span></td>
+    <td><span name="cumple_nit_n" hidden>x</span></td>
+  </tr>
+  <tr>
+    <td><b>5</b></td>
+    <td>
+      Adjunta aceptación de la postulación de los candidatos principales y
+      suplentes.
+    </td>
+    <td><span name="cumple_adjunta_aceptacion_s">x</span></td>
+    <td><span name="cumple_adjunta_aceptacion_n" hidden>x</span></td>
+    <td>Se rechaza la inscripción y el renglón correspondiente.</td>
+  </tr>
+  <tr>
+    <td><b>6</b></td>
+    <td>
+      Los candidatos indican si se inscriben en calidad de personas naturales o
+      jurídicas.
+    </td>
+    <td><span name="cumple_calidad_nat_jur_s">x</span></td>
+    <td><span name="cumple_calidad_nat_jur_n" hidden>x</span></td>
+    <td>Se rechaza la inscripción y el renglón correspondiente.</td>
+  </tr>
+  <tr>
+    <td><b>7</b></td>
+    <td>
+      Con la suscripción de la presente acta, el candidato que inscribe la lista
+      declara bajo la gravedad juramento que validaron que todos los candidatos
+      de la lista cumplen los requisitos exigidos y los demás establecidos en
+      las normas correspondientes, incluido no encontrarse incurso en causal de
+      inhabilidad e incompatibilidad. Artículo 9 de la Ley 1727 de 2014*
+    </td>
+    <td><span name="cumple_juramento_s">x</span></td>
+    <td><span name="cumple_juramento_n" hidden>x</span></td>
+    <td>Se rechaza la inscripción y el renglón correspondiente.</td>
+  </tr>
+</table>
+
+<small>
+  *Los Candidatos deberán validar que cumplen con las condiciones y requisitos
+  para ser afiliados establecidos en la Ley 1727 de 2014 y su Decreto
+  reglamentario, la CCMA podrá validar dicho cumplimiento y en caso de encontrar
+  algún impedimento en los candidatos inscritos para aspirar al cargo de miembro
+  de JD informará al candidato que inscribe la lista. Artículo 12 y 13 de la Ley
+  1727.
+</small>
+
+<span name="modificacion_n"></span>
+
+<p name="modificacion_s" hidden>
+  La modificación se hace al candidato principal del renglón No
+  <span name="num_renglon">____</span>: Sale como principal/suplente
+  <span name="nombre_sale">_____________</span> ingresa como principal/suplente
+  <span name="nombre_entra">_____________</span>, así:
+</p>
+
+<p>
+  La lista que se inscribe es la siguiente y se continúa con el consecutivo No
+  <span name="num_consecutivo">____</span>
+</p>
+
+<table class="table_class">
+  <tr>
+    <th>PRINCIPALES</th>
+    <th>SUPLENTES</th>
+  </tr>
+  <tr>
+    <td><span name="info_principal_1">_____________</span></td>
+    <td><span name="info_suplente_1">_____________</span></td>
+  </tr>
+  <tr>
+    <td><span name="info_principal_2">_____________</span></td>
+    <td><span name="info_suplente_2">_____________</span></td>
+  </tr>
+  <tr>
+    <td><span name="info_principal_3">_____________</span></td>
+    <td><span name="info_suplente_3">_____________</span></td>
+  </tr>
+  <tr>
+    <td><span name="info_principal_4">_____________</span></td>
+    <td><span name="info_suplente_4">_____________</span></td>
+  </tr>
+  <span name="mas_candidatos_n"></span>
+  <tbody name="mas_candidatos_s" hidden>
+    <tr>
+      <td><span name="info_principal_5">_____________</span></td>
+      <td><span name="info_suplente_5">_____________</span></td>
+    </tr>
+    <tr>
+      <td><span name="info_principal_6">_____________</span></td>
+      <td><span name="info_suplente_6">_____________</span></td>
+    </tr>
+    <tr>
+      <td><span name="info_principal_7">_____________</span></td>
+      <td><span name="info_suplente_7">_____________</span></td>
+    </tr>
+    <tr>
+      <td><span name="info_principal_8">_____________</span></td>
+      <td><span name="info_suplente_8">_____________</span></td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Se adjuntan <span name="num_constancias">_____________</span> constancias de
+  aceptación de los candidatos ingresados.
+</p>
+
+<p>
+  <b>Datos para notificaciones para efectos electorales.</b> <br />
+  Nombre: <span name="nombre_candidato">_____________</span><br />
+  Correo electrónico: <span name="correo_candidato">_____________</span><br />
+  Teléfono: <span name="tel_candidato">_____________</span>
+</p>
+
+<p>
+  <b>Observaciones:</b>
+  <br />
+  La presente acta de inscripción se firma por las personas que intervinieron en
+  la diligencia de inscripción, previa validación y aceptación de su contenido.
+</p>
+
+<br />
+
+<p>
+  <div id="sec_general" class="sign_margin"></div>
+  <b>JORGE VILLEGAS BETANCUR</b> <br />
+  Secretario General
+</p>
+
+<br />
+
+<p>
+  <div id="dir_juridica" class="sign_margin"></div>
+  <b>LILIANA MARÍA CASTILLO RESTREPO</b> <br />
+  Directora Jurídica
+</p>
+
+<br />
+
+<p>
+  <div id="candidato" class="sign_margin"></div>
+  <b name="nombre_candidato">____________________</b> <br />
+  <b>C.C. <b name="cc_candidato">_____________</b></b> <br />
+  <b>Candidato que inscribe la lista</b>
+</p>

@@ -1,0 +1,92 @@
+{
+    _id:ObjectId("6285009c51fc27d23d92914d"),
+    config:[
+        {
+            name:'nombre_propietario',
+            type:'name',
+            description:'Ingrese los nombres y apellidos del propietario'
+        },
+        {
+            name:'cc_propietario',
+            type:'number',
+            description:'Ingrese la cédula de ciudadanía del propietario'
+        },
+        {
+            name:'domicilio_propietario',
+            type:'text',
+            description:'Ingrese el domicilio del propietario'
+        },
+        {
+            name:'telefono_propietario',
+            type:'text',
+            description:'Ingrese el número de teléfono del propietario'
+        },
+        {
+            name:'correo_propietario',
+            type:'text',
+            description:'Ingrese el correo electrónico del propietario'
+        },
+        {
+            name:'encargado',
+            type:'text',
+            description:'Ingrese la información sobre el encargado'
+        },
+        {
+            name:'dir_inmueble',
+            type:'text',
+            description:'Ingrese la direcciíon del inmueble a administrar'
+        },
+        {
+            name:'muni_inmueble',
+            type:'text',
+            description:'Ingrese el municipio del inmueble a administrar'
+        },
+        {
+            name:'canon_inmueble',
+            type:'currency',
+            description:'Ingrese el canon de arrendamiento del inmueble a administrar'
+        },
+        {
+            name:'fecha_inicio',
+            type:'date',
+            description:'Seleccione la fecha de inicio del contrato'
+        },
+        {
+            name:'fecha_suscripcion',
+            type:'date',
+            description:'Seleccione la fecha de suscripción del contrato'
+        },
+        {
+            name:'clausula_adicional_texto',
+            type:'text',
+            description:'Ingrese la información de la cláusula adicional'
+        },
+    ],
+    operation:[],
+    signatureProfile:[
+        {
+            name:'nombre_propietario',
+            identification: 'cc_propietario',
+            email:'correo_propietario',
+            type:'firma_propietario'
+        }
+    ],
+    sign:[
+        'nombre_propietario',
+        'cc_propietario',
+        'domicilio_propietario',
+        'telefono_propietario',
+        'correo_propietario',
+        'encargado',
+        'dir_inmueble',
+        'muni_inmueble',
+        'canon_inmueble',
+        'fecha_inicio',
+        'fecha_suscripcion',
+    ],
+    name:'CONTRATO DE ADMINISTRACIÓN DE INMUEBLES',
+    preBuild:false,
+    preBuildData:[],
+    build:0,
+    price:5000,
+}

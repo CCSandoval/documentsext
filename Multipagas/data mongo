@@ -1,0 +1,170 @@
+{
+    _id: ObjectId('627d7a1e51fc27d23d92914b'),
+    config: [
+        {
+            name: 'nombre_punto',
+            description: 'Ingrese el nombre del punto',
+            type: 'text',
+            help:'punto'
+        },
+        {
+            name: 'correo_continuar',
+            description: 'Ingrese el correo del prospecto',
+            type: 'text',
+            help:'correo'
+        },
+        {
+            name: 'departamento',
+            description: 'Ingrese el departamento',
+            type: 'text',
+            help:'departamento'
+        },
+        {
+            name: 'ciudad',
+            description: 'Ingrese la ciudad',
+            type: 'text',
+            help:'ciudad'
+        },
+        {
+            name: 'nit',
+            description: '¿Desea ingresar el nit?',
+            type: 'clausula',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_text',
+            description: 'Ingrese el nit',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'nit',
+                    v: 's'
+                }
+            ],
+            help:'nit'
+        },
+        {
+            name: 'nombres',
+            description: 'Ingrese los nombres y apellidos del prospecto',
+            type: 'name',
+            help:'nombres'
+        },
+        {
+            name: 'cel_contacto',
+            description: 'Ingrese el celular de contacto del prospecto',
+            type: 'text',
+            help:'cel'
+        },
+        {
+            name: 'otro_cel',
+            description: '¿Desea ingresar otro celular de contacto?',
+            type: 'clausula',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'otro_cel_text',
+            description: 'Ingrese el otro celular de contacto del prospecto',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'otro_cel',
+                    v: 's'
+                }
+            ],
+            help:'cel'
+        },
+        {
+            name: 'email',
+            description: 'Ingrese el email del prospecto',
+            type: 'text',
+            help:'correo'
+        },
+        {
+            name: 'nombre_establecimiento',
+            description: 'Ingrese el nombre del establecimiento',
+            type: 'text',
+            help:'establecimiento'
+        },
+        {
+            name: 'cedula_prospecto',
+            description: 'Ingrese la cedula de ciudadanía del prospecto',
+            type: 'number',
+            help:'cedula'
+        },
+        {
+            name: 'horario_servicio',
+            description: 'Ingrese el horario de servicio',
+            type: 'text',
+            help:'horario'
+        },
+        {
+            name: 'direccion',
+            description: 'Ingrese la dirección',
+            type: 'text',
+            help:'direccion'
+        }
+    ],
+    operation: [],
+    signatureProfile: [
+        {
+            name: 'nombres',
+            identification: 'cedula_prospecto',
+            email: 'email',
+            type: 'firma_prospecto'
+        }
+    ],
+    sign: [
+        'departamento',
+        'ciudad',
+        'nit_text',
+        'nombres',
+        'cel_contacto',
+        'email',
+        'cedula_prospecto',
+        'horario_servicio',
+        'direccion'
+    ],
+    help:{
+        departamento:"Ejemplo: Antioquia",
+        ciudad:"Ejemplo: Medellín",
+        nombre_punto:"Ejemplo",
+        nit:"Ejemplo: 800.197.268-4",
+        correo:'Ejemplo: correo@dominio.com',
+        nombres:"Ejemplo: David Mauricio Martinez López",
+        cel:'Ejemplo: 3156466172',
+        cedula:"Ejemplo: 1115448153",
+        horario:"Ejemplo: 8AM a 5PM",
+        direccion:"Ejemplo: Calle 58 #2a-74",
+        punto:'Ejemplo: ',
+        establecimiento:"Ejemplo: "
+    },
+    preBuild: true,
+    preBuildData: [
+        'nombre_punto',
+        'correo_continuar'
+    ],
+    name: 'FORMULARIO DE REGISTRO MULTIPAGAS',
+    build: 3,
+    price: 5000,
+    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916'
+}

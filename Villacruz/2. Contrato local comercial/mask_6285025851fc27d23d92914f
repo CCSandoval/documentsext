@@ -1,0 +1,593 @@
+<style type="text/css">
+  .table_class {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+  }
+</style>
+
+<h2 style="text-align: center">
+  <b>CONTRATO DE ARRENDAMIENTO DE LOCAL COMERCIAL</b>
+</h2>
+
+<table class="table_class">
+  <tr>
+    <th colspan="2">
+      <b>ARRENDADOR</b>
+    </th>
+  </tr>
+  <tr>
+    <td><b>ARRENDAMIENTOS VILLA CRUZ S.A.S.</b></td>
+    <td><b>000086 SGM</b></td>
+  </tr>
+  <tr>
+    <td>
+      <b>
+        NIT <br />
+        890.918.082-4
+      </b>
+    </td>
+    <td>
+      <b>
+        Dirección - Teléfono: <br />
+        CALLE 44 No. 78 - 29 Medellín - teléfono 2506000
+      </b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>
+        Nombre del Representante Legal: <br />
+        JUAN ESTEBAN RAMÍREZ GÓMEZ
+      </b>
+    </td>
+    <td>
+      <b>
+        Identificación del Representante Legal: <br />
+        C.C. 71.788.327
+      </b>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2">
+      <b>ARRENDATARIO SOLIDARIO</b>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      <b>
+        Nombre y Apellido / Razón Social <br />
+        <b name="nombre_arrend_sol_1">_______________________</b>
+      </b>
+    </td>
+    <td>
+      <b>
+        Cédula / NIT: <br />
+        <b name="cedula_arrend_sol_1">_______________________</b>
+      </b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>
+        Domicilio: <br />
+        <b name="domi_arrend_sol_1">_______________________</b>
+      </b>
+    </td>
+    <td>
+      <b>
+        Teléfono: <br />
+        <b name="tel_arrend_sol_1">_______________________</b>
+      </b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>
+        Correo Electrónico: <br />
+        <b name="correo_arrend_sol_1">_______________________</b>
+      </b>
+    </td>
+    <td></td>
+  </tr>
+  <span name="arrend_sol_2_n"></span>
+  <tr name="arrend_sol_2_s" hidden>
+    <th colspan="2"><b>ARRENDATARIO SOLIDARIO 2</b></th>
+  </tr>
+  <tr name="arrend_sol_2_s" hidden>
+    <td>
+      <b>
+        Nombre y Apellido / Razón Social <br />
+        <b name="nombre_arrend_sol_2">_______________________</b>
+      </b>
+    </td>
+    <td>
+      <b>
+        Cédula / NIT: <br />
+        <b name="cedula_arrend_sol_2">_______________________</b>
+      </b>
+    </td>
+  </tr>
+  <tr name="arrend_sol_2_s" hidden>
+    <td>
+      <b>
+        Domicilio: <br />
+        <b name="domi_arrend_sol_2">_______________________</b>
+      </b>
+    </td>
+    <td>
+      <b>
+        Teléfono: <br />
+        <b name="tel_arrend_sol_2">_______________________</b>
+      </b>
+    </td>
+  </tr>
+  <tr name="arrend_sol_2_s" hidden>
+    <td>
+      <b>
+        Correo Electrónico: <br />
+        <b name="correo_arrend_sol_2">_______________________</b>
+      </b>
+    </td>
+    <td></td>
+  </tr>
+  <span name="arrend_sol_3_n"></span>
+  <tr name="arrend_sol_3_s" hidden>
+    <th colspan="2"><b>ARRENDATARIO SOLIDARIO 3</b></th>
+  </tr>
+  <tr name="arrend_sol_3_s" hidden>
+    <td>
+      <b>
+        Nombre y Apellido / Razón Social <br />
+        <b name="nombre_arrend_sol_3">_______________________</b>
+      </b>
+    </td>
+    <td>
+      <b>
+        Cédula / NIT: <br />
+        <b name="cedula_arrend_sol_3">_______________________</b>
+      </b>
+    </td>
+  </tr>
+  <tr name="arrend_sol_3_s" hidden>
+    <td>
+      <b>
+        Domicilio: <br />
+        <b name="domi_arrend_sol_3">_______________________</b>
+      </b>
+    </td>
+    <td>
+      <b>
+        Teléfono: <br />
+        <b name="tel_arrend_sol_3">_______________________</b>
+      </b>
+    </td>
+  </tr>
+  <tr name="arrend_sol_3_s" hidden>
+    <td>
+      <b>
+        Correo Electrónico: <br />
+        <b name="correo_arrend_sol_3">_______________________</b>
+      </b>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <th colspan="2">
+      <b>CONDICIONES ESPECIALES</b>
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Dirección inmueble dado en arrendamiento <br />
+      <span name="direccion_inmueble">_______________________</span> <br />
+      Municipio <span name="municipio_inmueble">_______________________</span>
+    </td>
+    <td>
+      Término de duración del contrato <br />
+      <span name="duracion_contrato">_______________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Canon de arrendamiento:
+      <span name="canon_arrendamiento">_______________________</span>
+      <br />
+      Que se pagaran el dia
+      <span name="dia_pago">__</span>
+      de cada mes anticipadamente
+    </td>
+    <td>
+      <b>MULTA: DOS CANONES DE ARRENDAMIENTO</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Destinación <br />
+      <span name="destinacion">_______________________</span>
+    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      Fecha de Iniciación Contrato de Arrendamiento: <br />
+      <span name="fecha_inicacion">_______________________</span>
+    </td>
+    <td>
+      Fecha de terminación del contrato <br />
+      <span name="fecha_terminacion">_______________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Autorización <br />
+      Autoriza él envío de la facturación a través de correo electrónico
+    </td>
+    <td>
+      Incremento canon de arrendamiento Anual <br />
+      <span name="incremento_canon">____</span>% Anual
+    </td>
+  </tr>
+</table>
+
+<p>
+  Entre las partes arriba mencionadas, mayores de edad, domiciliados y
+  residentes como se indicó antes, se ha celebrado un contrato de ARRENDAMIENTO,
+  contenido en las cláusulas siguientes: 1) “EL ARRENDADOR” da en arrendamiento
+  a los “ARRENDATARIOS” y estos declaran haberlo recibido al mismo título y en
+  forma solidaria, con los implementos que de él forman parte y los cuales se
+  detallan en hoja separada y que se considera vinculado, para efectos legales,
+  a este contrato, el descrito en la parte superior y cuyos linderos son: 2) El
+  término de este contrato será el indicado en parte superior. Si al vencimiento
+  del término anterior ninguna de las partes ha manifestado su interés de
+  terminar el contrato, este se entenderá prorrogado por un término igual al
+  inicialmente pactado y así sucesivamente. Lo anterior sin perjuicio del
+  derecho a la renovación consagrada en el artículo 518 del C. de Cio.
+  <b>
+    Los arrendatarios quedan obligados a avisar la entrega del inmueble por
+    escrito, con un plazo no menor de tres meses de anticipación
+  </b>
+  3) El precio del arrendamiento es el pactado e indicado anteriormente, que se
+  pagara por cada periodo de treinta días, en forma anticipada, en las oficinas
+  del arrendador, y no solo durante el plazo pactado, sino por todo el tiempo
+  que los arrendatarios tengan el inmueble a cualquier título. El arrendador no
+  aceptará en ningún caso pago de cánones parciales o pago de cánones por días,
+  ni pagos con descuentos no autorizados por el arrendador. En caso de que el
+  cheque mediante el cual se pretende hacer el pago del canon de arrendamiento
+  fuere devuelto por el banco, por causa imputable al librador, el girador
+  incurrirá en la sanción establecida en el artículo 731 del Código de Comercio,
+  es decir el 20% de su valor. 4.) El canon se reajusta anualmente. 5.) Los
+  arrendatarios declaran haber recibido el inmueble en buen estado, mediante
+  inventario que forma parte de este contrato, y se obliga a mantenerlo en su
+  mismo estado, salvo deterioro normal y tendrá a su cargo las reparaciones
+  locativas a que se refiere la ley (artículos 2028, 2029 y 2030 del C.C ). Y
+  aquellas que sean necesarias por hechos de él o de su dependiente y no podrán,
+  sin permiso escrito del arrendador, efectuar mejoras de ninguna clase y en
+  caso de que las hiciere, ellas quedaran de propiedad del dueño del inmueble,
+  sin derecho por parte de aquellos a retirarlas, ni a cobrar su valor. En este
+  ni en ningún otro caso podrán alegar en contra del arrendador o del dueño del
+  inmueble, el derecho de retención que en algunos casos establecen las leyes
+  colombianas pues desde ahora renuncia a esos derechos. Así mismo renuncian a
+  los vicios redhibitorios y de evicción que tenga el inmueble Corresponde a los
+  arrendatarios la limpieza de los techos, bajantes, canoas y desagües, en
+  consecuencia, los arrendatarios asumen todas las responsabilidades inherentes
+  el buen mantenimiento de la red hidrosanitaria. Si en la fachada o en el
+  interior del inmueble arrendado se pintaren emblemas o slogan, estos deberán
+  ser borrados y pintados a satisfacción del arrendador a la entrega del
+  inmueble. En el evento de dejar daños en el inmueble, se denunciará penalmente
+  por el delito de daño en cosa ajena (delito tipificado en el código penal y el
+  Art. 58 constitución nacional), tendrá el arrendatario a su cargo CUMPLIR A
+  CABALIDAD LAS NORMAS CONSAGRADAS EN EL REGLAMENTO DE PROPIEDAD HORIZONTAL. Los
+  arrendatarios renuncian expresamente a exigir indemnización o prestación
+  alguna en razón de las reparaciones y/o mejoras realizadas en el inmueble sin
+  consentimiento expreso del arrendador. 6.) INSPECCIÓN: El arrendatario
+  permitirá las visitas del arrendador o sus representantes, tengan a bien
+  realizar para constatar el estado y conservación del inmueble u otras
+  circunstancias que sean de su interés. 7.) SEGUROS: El arrendatario pagará el
+  valor del seguro de incendio del local, en el evento de no adquirirlo
+  responderá al propietario por cualquier siniestro, debiendo de entregar el
+  inmueble en la misma forma que lo recibió. 8.) El Arrendatario restituirá el
+  inmueble al Arrendador a la terminación del contrato en el mismo estado en que
+  lo recibe. Salvo deterioro natural. 9.) Los arrendatarios se obligan a pagar
+  los servicios de agua, luz, alcantarillado, teléfono y tasa de aseo, Internet,
+  gas. El arrendador no se hace responsable en ningún caso por las deficiencias
+  en la prestación de tales servicios. El no pago de estos servicios, dará
+  derecho al Arrendador para exigir sus derechos por la vía ejecutiva, bastando
+  para establecerlo la presentación de las constancias de pagos expedidas por
+  las EE.PP.MM o la entidad encargada de estos servicios. Será obligación
+  expresa de los arrendatarios el estricto cumplimiento de todas las
+  disposiciones y reglamentos de las empresas de servicios públicos, así como el
+  lleno de los requisitos exigidos o que en adelante exijan las autoridades de
+  Policía e higiene. El no pago de estos servicios, dará derecho al Arrendador
+  para exigir sus derechos por la vía ejecutiva, bastando para establecerlo la
+  presentación de las constancias de pagos expedidas por las EMPRESAS PUBLICAS
+  DE MEDELLIN o la entidad encargada de estos servicios. Los arrendatarios
+  manifiestan que han recibido las instalaciones eléctricas y de acueducto con
+  los contadores instalados por las Empresas Públicas de Medellín debidamente
+  calibrados y con todos los sellos de seguridad y en perfecto estado, en
+  consecuencia, los arrendatarios asumen todas las responsabilidades inherentes
+  al buen mantenimiento de dichos contadores según las normas vigentes al
+  respecto. En el evento de encontrarse por parte de Empresas Públicas un fraude
+  en el inmueble arrendado serán responsables de la cancelación de dicha
+  multa.10.) La mora en el pago de un sólo período mensual, o la violación de
+  cualquier de las estipulaciones aquí consignadas dará derecho al Arrendador
+  para dar por terminado este contrato y pedir la inmediata restitución del
+  inmueble. 11.) La mora En el pago de los arrendamientos y el incumplimiento de
+  cualquiera de las cláusulas de este contrato, dará derecho a “EL ARRENDADOR”,
+  para cobrar a los “ARRENDATARIOS”, a título de pena, la suma estipulada al
+  inicio del contrato y gastos de abogado que se generen, cantidad que se podrá
+  exigir inmediatamente, aparte del cobro de los arrendamientos pendientes y los
+  que faltaren hasta la terminación del contrato de arrendamiento y las costas
+  judiciales si fuere el caso, así como el cumplimiento de las demás
+  obligaciones estipuladas, sin exonerarlo del pago de los cánones de
+  arrendamiento que debiere a la fecha y que le faltaren para el cumplimiento
+  del contrato o de la prórroga, se entenderá en todo caso que el pago de la
+  pena no extingue la obligación principal y que el arrendador podrá pedir a la
+  vez el pago de esta y la indemnización de perjuicios, si es el caso. Este
+  contrato será prueba suficiente para el cobro de esta pena. Los arrendatarios
+  renuncian expresamente a cualquier requerimiento privado o judicial para
+  constituirlos en mora del pago de esta o cualquier otra obligación derivada
+  del contrato 12.). Los arrendatarios renuncian al derecho a que se les
+  requiera judicial o privadamente para dar por terminado el contrato, sin
+  necesidad del desahucio del que trata el artículo 2011 del C.C. ni de los
+  requerimientos previstos en el artículo 2035 del C.C Y 424 numeral 2 del C de
+  PC. 13). “LOS ARRENDATARIOS” así mismo renuncian al beneficio de excusión y
+  además renuncian al favor de “EL ARRENDADOR” el derecho a nombrar depositario
+  de bienes en caso de que se presentare la necesidad de actuar judicialmente.
+  14). Los arrendatarios renuncian a oponerse a la cesación parcial o total del
+  arriendo mediante la caución establecida en el artículo 2035 del C.C. 15). Los
+  arrendatarios aceptan desde ahora cualquier cesión parcial o total que haga el
+  Arrendador de este contrato. 16). Sin previo permiso escrito del Arrendador no
+  podrán los Arrendatarios subarrendar, ni ceder, total o parcialmente ni
+  cambiar la destinación del inmueble que será la indicada en la parte superior
+  de este documento. El incumplimiento de esta cláusula da derecho al Arrendador
+  para dar por terminado el contrato y exigir la entrega del inmueble. Estipulan
+  expresamente los contratantes que este contrato no formará parte integral de
+  ningún establecimiento de comercio y que por lo tanto la enajenación del que
+  eventualmente se establezca en el inmueble, no solo no transfiere ningún
+  derecho de arrendamiento al adquiriente, sino que constituye causal de
+  terminación del contrato, toda vez que los arrendatarios se obligan
+  expresamente a no ceder, a no subarrendar el inmueble, ni transferir su
+  tenencia- Para los efectos legales, esta estipulación equivale a la oposición
+  a que se refiere el numeral 3 del artículo 528 del Código de Comercio, de tal
+  suerte que la responsabilidad de los arrendatarios no cesara con la
+  enajenación del establecimiento, ni con el aviso de transferencia, ni aún con
+  la inscripción de la enajenación en el Registro Mercantil. Él incumplimiento
+  de esta cláusula da derecho al Arrendador para dar por terminado el contrato y
+  exigir la entrega del inmueble. 17.) Los arrendatarios solidarios y fiadores
+  solidarios se constituyen en deudores solidarios, por el monto total de los
+  arrendamientos, por las cuentas de servicios públicos, cuotas de
+  administración y daños que se quedaren a deber a la fecha de la entrega del
+  inmueble, cuentas de industria y comercio, por la pena establecida en la
+  cláusula 11 de este contrato, por los honorarios de abogado y costas
+  judiciales, si hubiere lugar a ello. Para la determinación del monto de lo que
+  quedará a deber bastará la simple afirmación jurada del Arrendador, sin
+  necesidad de constituirlo en mora, o de hacerle requerimiento o notificación
+  alguna, para lo cual renuncian desde ahora art. 2035 y 424 C.P.C. 18.) Los
+  arrendatarios declaran haber recibido el inmueble sin haber pagado suma alguna
+  por concepto de prima comercial o goodwill, etc. por lo tanto a la entrega del
+  inmueble no podrá exigir al arrendador reconocimiento alguno por estos
+  conceptos. Tampoco podrán exigir prima por cesión del inmueble, a terceras
+  personas. 19.) A la muerte de alguno de los arrendatarios, el arrendador podrá
+  acogerse al artículo 1434 del C.C. Respecto de uno cualquiera de los
+  herederos, a su elección y seguir juicio con el sin necesidad de notificar ni
+  demandar a los demás. 20.) <b>Para efectos jurídicos</b> el arrendador queda
+  facultado para dirigir la acción conjunta o separadamente contra los
+  <b>Arrendatarios y/o fiadores solidarios.</b> 21.) Los arrendatarios autorizan
+  al arrendador para determinar los linderos y llenar los espacios vacíos que
+  hayan quedado en este documento, y pagarán derechos fiscales del mismo. 22.)
+  La prórroga del contrato incluye el valor de la fianza en su totalidad. Para
+  garantizar al ARRENDADOR el cumplimiento de sus obligaciones, el ARRENDATARIO
+  tiene como fiadores a los señores que se indicaron al inicio del contrato,
+  personas mayores de edad, domiciliados y residentes como se indicó
+  anteriormente, quienes se declaran que se obligan solidariamente con su fiado,
+  conforme a las obligaciones que este contrae, durante el termino de duración
+  del contrato y por todo el tiempo que durase el inmueble en poder de este,
+  renunciando al beneficio de excusión. En caso de abandono del inmueble
+  cualquiera de los fiadores solidarios puede hacer entrega del inmueble al
+  arrendador o a quien éste señale, bien sea Judicial o extrajudicialmente. Para
+  este exclusivo efecto el arrendatario otorga poder amplio y suficiente a los
+  fiadores solidarios en este mismo acto y al suscribirse el presente contrato
+  23) LUGAR PARA RECIBIR NOTIFICACIONES: La dirección suministrada en la parte
+  superior conservara plena validez para todos los efectos legales, hasta tanto
+  no sea informado al arrendador del cambio de la misma. 24.) Los gastos,
+  impuestos y derechos que cause este contrato estarán a cargo del arrendatario.
+  25) <b>IMPUTACION PARA EL PAGO</b>- En caso de que el arrendatario pague
+  varias cuentas pendientes al arrendador, la imputación se hará así-:Primero-
+  Intereses- Segundo- Facturas de Empresas Públicas- Tercero-Administraciones o
+  cuotas de sostenimiento- Cuarto- Impuesto de Timbre – Quinto cánones de
+  arrendamientos atrasados más el IVA en orden cronológico .26) El arrendatario
+  y los fiadores autorizan expresamente al arrendador y a su eventual cesionario
+  o sub-rogatorio para incorporar, reportar, procesar y consultar en banco de
+  datos, la información que se relacione con este contrato o que de él se derive
+  durante la vigencia de este contrato como también de su terminación. 27.) los
+  arrendatarios solidarios pagaran lo correspondiente a industria y comercio 28)
+  Arrendamientos Villa Cruz S.A.S., no se responsabiliza por el trámite del
+  certificado de ubicación y la no obtención de este por parte del arrendatario
+  solidario, no lo exoneran del cumplimiento de este contrato.29) será por
+  cuenta de los arrendatarios las cuotas diferidas en las cuentas de empresas
+  públicas por concepto de contratos con publicar (avisos directorios
+  telefónicos), las cuales serán cobradas al momento de la entrega del inmueble
+  y de manera anticipada. 30) las partes contratantes dejan expresa constancia
+  de que el beneficiario directo de los pagos por concepto de cánones de
+  arrendamiento es el propietario del inmueble arrendado, en consecuencia la
+  retención en la fuente será practicada al propietario.31) el arrendatario
+  pagara también por cada mes al arrendador por concepto de impuesto a las
+  ventas (IVA) el monto que la ley tributaria determine, pago que hará en el
+  mismo plazo y condiciones convenidas para el precio del arrendamiento, pago
+  que hará en el mismo plazo y Condiciones convenidas para el precio del
+  arrendamiento. En caso de que el inmueble objeto de este contrato sea
+  adquirido a título de compra por los arrendatarios o sus deudores solidarios,
+  el propietario cancelará AL ARRENDADOR el 3% de comisión, por el valor real de
+  dicha compraventa.
+</p>
+<span name="clasulas_adicionales_n"></span>
+<p name="clasulas_adicionales_s" hidden>
+  <b>CLAUSULAS ADICIONALES: </b>
+  <span name="texto_clausula_adicional">__________________________________________</span>
+</p>
+
+<p>
+  <b>AUTORIZACIÓN</b> <br />
+  En ejercicio de mi Derecho a la Libertad y Autodeterminación Informática,
+  autorizo a ARRENDAMIENTOS VILLA CRUZ S.A.S., con domicilio en Medellín,
+  (afiliado o usuario de FENALCO) o a la entidad que mi acreedor delegue para
+  representarlo o a su cesionario, endosatario o a quien ostente en el futuro la
+  calidad de acreedor, previo a la relación contractual y de manera irrevocable,
+  escrita, expresa, concreta, suficiente, voluntaria e informada, con la
+  finalidad que la información comercial, crediticia, financiera y de servicios
+  de la cual soy titular, referida al nacimiento, ejecución y extinción de
+  obligaciones dinerarias (independientemente de la naturaleza del contrato que
+  les dé origen), a mi comportamiento e historial crediticio, incluida la
+  información positiva y negativa de mis hábitos de pago, y aquella que se
+  refiera a la información personal necesaria para el estudio, análisis y
+  eventual otorgamiento de un crédito o celebración de un contrato, sea en
+  general administrada y en especial: capturada, tratada, procesada, operada,
+  verificada, transmitida, transferida, usada o puesta en circulación y
+  consultada por terceras personas autorizadas expresamente por la ley 1266 de
+  2008, incluidos los Usuarios de la Información. Con estos mismos alcances,
+  atributos y finalidad autorizo expresamente para que tal información sea
+  concernida y reportada en la Base de Datos PROCRÉDITO operada por FENALCO.
+  <br />
+  De la misma manera autorizo a FENALCO, como Operador de la Base de Datos
+  PROCRÉDITO que tiene una finalidad estrictamente comercial, financiera,
+  crediticia y de servicios, para que procese, opere y administre la información
+  de la cual soy titular, y para que la misma sea transferida y transmitida a
+  Usuarios, lo mismo que a otros operadores nacionales o extranjeros que tengan
+  la misma finalidad o una finalidad que comprenda la que tiene PROCREDITO.
+</p>
+
+<p>
+  <b>AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES.</b><br />
+  Para proceder a dar cumplimiento a la Ley 1581 de 2012 y el Decreto 1377 de
+  2013, le manifestamos que sus datos personales se encuentran incluidos en
+  nuestras bases de datos. Con la firma de este documento manifiesto que he sido
+  informado por ARRENDAMIENTOS VILLACRUZ S.A.S. de que:
+</p>
+
+<ol>
+  <li>
+    ARRENDAMIENTOS VILLACRUZ S.A.S. como responsable del tratamiento de datos
+    podrán recolectar, usar y tratar mis datos personales conforme la Política
+    de Tratamiento de Datos Personales de la sociedad disponible en
+    www.villacruz.co1. ARRENDAMIENTOS VILLACRUZ S.A.S. como responsable del
+    tratamiento de datos podrán recolectar, usar y tratar mis datos personales
+    conforme la Política de Tratamiento de Datos Personales de la sociedad
+    disponible en www.villacruz.co
+  </li>
+  <li>
+    Mis derechos como titular de los datos son los previstos en la Constitución
+    y la ley, especialmente el derecho a conocer, actualizar, rectificar y
+    suprimir mi información personal, así como el derecho a revocar el
+    consentimiento otorgado para el tratamiento de datos personales.2. Mis
+    derechos como titular de los datos son los previstos en la Constitución y la
+    ley, especialmente el derecho a conocer, actualizar, rectificar y suprimir
+    mi información personal, así como el derecho a revocar el consentimiento
+    otorgado para el tratamiento de datos personales.
+  </li>
+  <li>
+    Para el ejercicio de mis derechos puedo contactarme al correo electrónico
+    info@arrendamientosvillacruz.com.co3. Para el ejercicio de mis derechos
+    puedo contactarme al correo electrónico info@arrendamientosvillacruz.com.co
+  </li>
+  <li>
+    La compañía garantiza la confidencialidad, libertad, seguridad, veracidad,
+    transparencia, acceso y circulación restringida de mis datos y se reservan
+    el derecho de modificar su Política de Tratamiento de Datos Personales en
+    cualquier momento.4. La compañía garantiza la confidencialidad, libertad,
+    seguridad, veracidad, transparencia, acceso y circulación restringida de mis
+    datos y se reservan el derecho de modificar su Política de Tratamiento de
+    Datos Personales en cualquier momento.
+  </li>
+</ol>
+
+<p>
+  Certifico que los datos personales suministrados por mí, son veraces,
+  completos, exactos, actualizados, reales y comprobables. Por tanto, cualquier
+  error en la información suministrada será de mi única y exclusiva
+  responsabilidad, lo que exonera a FENALCO de su responsabilidad ante las
+  autoridades judiciales y/o administrativas.
+</p>
+
+<p>
+  Consiento y autorizo de manera expresa e inequívoca a ARRENDAMIENTOS VILLACRUZ
+  S.A.S. para tratar mis datos personales de acuerdo con la Política de
+  Tratamiento de Datos Personales de la sociedad, para el cumplimiento de los
+  fines descritos en la Política de Tratamiento de Datos Personal de la
+  compañía. La información obtenida para el Tratamiento de mis datos personales
+  la he suministrado de forma voluntaria y es verídica.
+</p>
+
+<p>
+  Declaro que he leído y comprendido a cabalidad el contenido de la presente
+  Autorización, y acepto la finalidad en ella descrita y las consecuencias que
+  se derivan de ella.
+</p>
+
+<p>
+  Para constancia y en señal de aceptación se firma este documento en la ciudad
+  de Medellín, <span name="fecha_firma">_______________________</span>, por las
+  partes que en el intervienen:
+</p>
+
+<br /><br /><br />
+
+<p>
+  __________________________________________ <br />
+  <b>ARRENDADOR</b> <br />
+  <b>ARRENDAMIENTOS VILLACRUZ</b> <br />
+  <b>JUAN ESTEBAN RAMIREZ GÓMEZ</b>
+</p>
+
+<br /><br /><br />
+
+<p>
+  <b>
+    __________________________________________ <br />
+    ARRENDATARIO SOLIDARIO / REPRESENTANTE LEGAL<br />
+    NOMBRE: <b name="nombre_arrend_sol_1">_______________________</b><br />
+    C.C./NIT: <b name="cedula_arrend_sol_1">_______________________</b><br />
+    DIRECCION: <b name="domi_arrend_sol_1">_______________________</b><br />
+    TELÉFONO: <b name="tel_arrend_sol_1">_______________________</b><br />
+    CORREO ELECTRÓNICO: <b name="correo_arrend_sol_1">_______________________</b
+    ><br />
+  </b>
+</p>
+
+<span name="arrend_sol_2_n"></span>
+<p name="arrend_sol_2_s" hidden>
+  <br /><br /><br />
+  <b>
+    __________________________________________ <br />
+    ARRENDATARIO SOLIDARIO / REPRESENTANTE LEGAL<br />
+    NOMBRE: <b name="nombre_arrend_sol_2">_______________________</b><br />
+    C.C./NIT: <b name="cedula_arrend_sol_2">_______________________</b><br />
+    DIRECCION: <b name="domi_arrend_sol_2">_______________________</b><br />
+    TELÉFONO: <b name="tel_arrend_sol_2">_______________________</b><br />
+    CORREO ELECTRÓNICO: <b name="correo_arrend_sol_2">_______________________</b
+    ><br />
+  </b>
+  <span name="arrend_sol_3_n"></span>
+  <p name="arrend_sol_3_s" hidden>
+    <br /><br /><br />
+    <b>
+      __________________________________________ <br />
+      ARRENDATARIO SOLIDARIO / REPRESENTANTE LEGAL<br />
+      NOMBRE: <b name="nombre_arrend_sol_3">_______________________</b><br />
+      C.C./NIT: <b name="cedula_arrend_sol_3">_______________________</b><br />
+      DIRECCION: <b name="domi_arrend_sol_3">_______________________</b><br />
+      TELÉFONO: <b name="tel_arrend_sol_3">_______________________</b><br />
+      CORREO ELECTRÓNICO: <b name="correo_arrend_sol_3">_______________________</b
+      ><br />
+    </b>
+  </p>
+</p>
+

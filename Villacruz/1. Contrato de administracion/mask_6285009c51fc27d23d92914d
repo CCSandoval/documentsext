@@ -1,0 +1,562 @@
+<style type="text/css">
+  .imgHeader {
+    width: fit-content;
+    margin: auto;
+  }
+  .table_class {
+    width: 80%;
+    border-collapse: collapse;
+    margin: auto;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+  }
+</style>
+
+<table class="table_class">
+  <tr>
+    <th colspan="2">ADMINISTRADOR</th>
+  </tr>
+  <tr>
+    <td>
+      Nombre o razón social <br />
+      <b>ARRENDAMIENTOS VILLA CRUZ S.A.S.</b>
+    </td>
+    <td>
+      Matrícula Arrendador
+      <b>000086 S.G.M.</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      NIT <br />
+      <b>890.918.082 -4</b>
+    </td>
+    <td>
+      Dirección - Teléfono <br />
+      <b>CL 44 No. 78 - 29 Medellín - teléfono 2506000</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Nombre del Representante legal <br />
+      <b>JUAN ESTEBAN RAMÍREZ GÓMEZ</b>
+    </td>
+    <td>
+      Identificación <br />
+      <b>CC. 71.788.327</b>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2"><b>PROPIETARIO</b></th>
+  </tr>
+  <tr>
+    <td>
+      Nombres y Apellidos: <br />
+      <b name="nombre_propietario">_____________________</b>
+    </td>
+    <td>
+      Identificación: <br />
+      <b name="cc_propietario">_____________________</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Domicilio: <br />
+      <b name="domicilio_propietario">_____________________</b>
+    </td>
+    <td>
+      Teléfono: <br />
+      <b name="telefono_propietario">_____________________</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Correo Electrónico <br />
+      <b name="correo_propietario">_____________________</b>
+    </td>
+    <td>
+      Encargado: <br />
+      <b name="encargado">_____________________</b>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2"><b>CONDICIONES ESPECIALES</b></th>
+  </tr>
+  <tr>
+    <td>
+      Dirección de inmueble a administrar: <br />
+      <b name="dir_inmueble">_____________________</b>
+    </td>
+    <td>
+      Municipio: <br />
+      <b name="muni_inmueble">_____________________</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Canon de arrendamiento: <br />
+      <b name="canon_inmueble">_____________________</b>
+    </td>
+    <td>
+      Fecha de inicio del contrato:<br />
+      <b name="fecha_inicio">_____________________</b>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Fecha de suscripción del contrato:<br />
+      <b name="fecha_suscripcion">_____________________</b>
+    </td>
+    <td>
+      Clausula adicional:<br />
+      <b name="clausula_adicional_texto">_____________________</b>
+    </td>
+  </tr>
+</table>
+
+<p>
+  Entre las partes arriba mencionadas, se ha celebrado el presente contrato de
+  ADMINISTRACIÓN DE INMUEBLE, en virtud del cual el PROPIETARIO(A) encargara a
+  la ADMINISTRADORA las gestiones de arrendar y administrar el bien inmueble
+  descrito anteriormente y el cual se regirá bajo las siguientes cláusulas:
+</p>
+
+<b>1. LA ADMINISTRADORA se compromete a:</b>
+
+<ol type="a">
+  <li>
+    Asesorar al PROPIETARIO(A) en la publicidad y el mercadeo del inmueble
+    vinculado a este contrato de acuerdo con la oferta y la demanda, fijando el
+    canon de arrendamiento de conformidad con el articulo 18 de la Ley 820 de
+    2003.
+  </li>
+  <li>
+    Ofertar, promocionar, publicitar el inmueble durante el tiempo que
+    permanezca desocupado sin costo alguno para el PROPIETARIO, excepto cuando
+    este solicite publicidad especial.
+  </li>
+  <li>
+    Celebrar a nombre propio, pero por cuenta del PROPIETARIO, los contratos de
+    arrendamiento, con los arrendatarios que llenen las condiciones y requisitos
+    que en efecto tenga LA ADMINISTRADORA, así como fijar el canon de
+    arrendamiento y los reajustes de arrendamiento teniendo en cuenta los
+    vigentes para inmuebles similares en el medio y las limitaciones de las
+    normas legales
+  </li>
+  <li>
+    Cobrar directamente, judicial, extrajudicialmente o por apoderado el canon
+    de arrendamiento.
+  </li>
+  <li>
+    Pagar por cuenta del PROPIETARIO, si este lo autorizara, las cuentas de
+    catastro municipal, servicios públicos, administración, reparaciones etc.;
+    las cuales se descontaran del extracto de cuenta mensual donde se relacionan
+    los cánones de arrendamiento y los cobros a cargo del PROPIETARIO.
+  </li>
+  <li>
+    Solicitar en forma judicial o extrajudicial a los arrendatarios la entrega
+    del inmueble, cuando a juicio de LA ADMINISTRADORA lo considere necesario,
+    siempre que se hayan cumplido los trámites de Ley cuando a ello haya lugar
+  </li>
+  <li>
+    En caso de iniciar proceso de restitución de Inmueble (lanzamiento) a los
+    arrendatarios por la causal de MORA en el pago de los arrendamientos, LA
+    ADMINISTRADORA pagará los honorarios del abogado y los arrendamientos serán
+    cancelados vencidos mensualmente. En el evento de ser solicitado el inmueble
+    por el PROPIETARIO para ocuparlo personalmente u otra causal estipulada en
+    la ley 820 de 2003, se deberá dar cumplimiento a lo allí estipulado, los
+    gastos de abogado e indemnización estarán a cargo del PROPIETARIO y los
+    pagos se harán por periodos vencidos. Cualquier otro proceso será por cuenta
+    del PROPIETARIO(A).
+  </li>
+  <li>
+    Rendir un informe mensual de cuentas AL PROPIETARIO en las oficinas del
+    mandatario, a más tardar el día 10 de cada periodo donde constaran los
+    movimientos y el desarrollo de la administración
+  </li>
+
+  <li>
+    Efectuar por cuenta de EL PROPIETARIO las reparaciones necesarias para la
+    conservación y uso del inmueble, como también los ordenados por las
+    autoridades competentes, previa la autorización del monto por parte del
+    propietario.j. Entregar a los arrendatarios el inmueble con el inventario
+    detallado, el cual deberá ser firmado por uno de los arrendatarios o por su
+    delegado.
+  </li>
+  <li>
+    Recaudar la renta que produzca el inmueble y deducir el valor convenido por
+    la administración, el IVA sobre la administración y los gastos aprobados por
+    el PROPIETARIO. El saldo lo entregara al PROPIETARIO o en su defecto se
+    consignara en la cuenta corriente o cuenta de ahorros que el designe.
+  </li>
+  <li>
+    Pagar al PROPIETARIO del inmueble una suma igual al canon de arrendamiento
+    acordado con los arrendatarios de acuerdo con el periodo regulador de pago,
+    obligación que se cumplirá durante todo el tiempo y hasta la entrega del
+    inmueble por parte de los arrendatarios independiente de que los
+    arrendatarios hayan pagado o no, a la suma anterior se le deducirá la cuota
+    de administración de la copropiedad, si el propietario asi lo autorizo y se
+    deducirá los servicios públicos que correspondan por los dias que este
+    desocupado el inmueble, los que quede adeudando el arrendatario serán
+    cancelados una vez el arrendatario haya cancelado, o en su defecto se dará
+    aplicación al artículo 15 de la Ley 820 de 2003, siempre y cuando el
+    arrendatario cumpla con los requisitos exigidos para el otorgamiento de la
+    expedición de la garantía
+  </li>
+</ol>
+
+<p>
+  <b>PARÁGRAFO:</b> EL PROPIETARIO autoriza desde ahora a realizar la cesión del
+  contrato de arrendamiento a un nuevo arrendatario y o deudor solidario, en
+  caso de que la ADMINISTRADORA, lo considere necesario, previo el estudio de la
+  nueva documentación, lo anterior con el fin de que el propietario no se
+  perjudique con la desocupación del inmueble.
+</p>
+
+<ol type="a" start="13">
+  <li>
+    Definir libremente la vigencia de las prorrogas y renovaciones cuando no se
+    logre consultar a el PROPIETARIO.
+  </li>
+  <li>
+    LA ADMINISTRADORA se obliga a informar al propietario en forma inmediata
+    sobre la ocurrencia de algún daño o peligro que ocurra en el inmueble, con
+    el fin de que este se encargue de la reparación o de la autorización expresa
+    para que la administradora tome las medidas preventivas o correctivas que
+    sean indispensables para evitar el deterioro o destrucción del inmueble.
+  </li>
+</ol>
+
+<p>
+  <b>PARÁGRAFO 1: MANTENIMIENTO DE LOS INMUEBLES:</b> Cuando sea necesario
+  efectuar reparaciones en el (los) inmueble(s) arrendado(s) se le solicitara
+  autorización a el PROPIETARIO o a su apoderado; dichas autorizaciones pueden
+  ser escritas, verbales, o por e-mail o por cualquier otro medio. LA
+  ADMINISTRADORA podrá realizar los trabajos pertinentes sin consulta, siempre y
+  cuando el costo de los mismos no exceda del valor de un canon de
+  arrendamiento, con el fin de evitar que los arrendatarios y o deudores
+  solidarios hagan uso de las facultades legales que le otorga el articulo 1993
+  del Código Civil, en los siguientes casos: a) Cuando ocurran hechos que
+  generen un incumplimiento contractualmente grave frente a el arrendatario y o
+  deudores solidarios, en caso de fuerza mayor o caso fortuito que afecten el
+  normal uso y disfrute del inmueble o de los servicios, cosas, y usos conexos o
+  adicionales, como un corto circuito, asonada, incendio, terremoto inundación,
+  actos terroristas, rotura de tubos o de instalaciones hidráulicas,
+  taponamientos hidrosanitarios, etc.- b) Cuando el PROPIETARIO o el apoderado
+  decidan efectuar directamente las reparaciones y no las ha iniciado en el
+  termino de 5 días hábiles contados a partir de la notificación del Área de
+  Mantenimiento. c) Cuando el PROPIETARIO o el apoderado efectúen(n) los
+  trabajos de forma parcial la ADMINISTRADORA podrá complementar las
+  reparaciones faltantes.
+</p>
+
+<p>
+  <b>PARAGRAFO 2:</b> Para la administradora realizar el mantenimiento de los
+  inmuebles, y cuando estos superen medio canon de arrendamiento, el propietario
+  deberá de aportar copia de la cedula y el certificado de libertad del inmueble
+  actualizado.
+</p>
+
+<ol start="15" type="a">
+  <li>
+    LA ADMINISTRADORA responderá por los servicios públicos domiciliarios
+    básicos hasta la suma de UN MILLON DE PESOS M/l, no responderá por llamadas
+    nacionales e internacionales, celulares, o multa por fraude, Publicar S.A.
+    (directorio telefónico). En tal caso la sociedad ARRENDAMIENTOS VILLA CRUZ
+    S.A.S. le sugiere la compra de una póliza por los conceptos de servicios
+    públicos, administración. No obstante la ADMINISTRADORA vigilara que los
+    arrendatarios paguen oportunamente las cuentas de servicios.
+  </li>
+  <li>
+    La administradora recuperara el valor de los servicios públicos, daños o
+    faltante del inmueble según inventario que se hará al momento de hacer
+    entrega del inmueble al inquilino, suma que será cancelada al propietario,
+    una vez hayan pagado los arrendatarios y/o fiadores solidarios.
+  </li>
+  <li>
+    Efectuar toda la gestión tendiente a la recuperación de los dineros
+    adeudados por los arrendatarios, por las cuentas de servicios públicos, T.V.
+    cable o satelital, administración y daños, cobrando el mismo porcentaje por
+    los dineros recuperados que se cobran por la administración.
+  </li>
+  <li>
+    Atender los requerimientos o exigencias de las distintas autoridades
+    relacionadas con el inmueble arrendado debiendo informar inmediatamente
+    tales eventos al propietario.
+  </li>
+</ol>
+
+<p>
+  <b>
+    SEGUNDA: El PROPIETARIO(A) del inmueble se compromete con la ADMINISTRADORA:
+  </b>
+</p>
+
+<ol type="a">
+  <li>
+    Proveer a la ADMINISTRADORA de lo necesario para la ejecución del mandato
+    tales como dar la información sobre el inmueble a saber: la dirección del
+    inmueble, entregar las llaves o facilitar el acceso a este, decidir el
+    precio o canon dentro del marco legal, esto es conforme a lo establecido en
+    el articulo 18 de la Ley 820 de 2003, informar sobre las comodidades del
+    inmueble, a suministrar los bienes o usos adicionales o conexos que se
+    comprometió a entregar etc., así mismo se compromete el propietario a
+    presentarse a las entidades publicas o privadas cuando estas lo requieran,
+    como son EMPRESAS PUBLICAS DE MEDELLÍN. Se prohíbe al propietario autorizar
+    la financiación de servicios públicos, en el evento de que autorice
+    financiar será por cuenta y riesgo del propietario, sin que el administrador
+    este obligado a responder por suma alguna por este concepto
+  </li>
+  <li>
+    El evento de solicitar el PROPIETARIO la restitución del inmueble, este se
+    compromete a enviar por escrito en los términos de la ley 820 de 2003, la
+    solicitud para vivienda se debe de solicitar con un termino no inferior a
+    tres meses en tal caso el canon de arrendamiento será entregado por LA
+    ADMINISTRADORA mensualmente por periodos vencidos.
+  </li>
+</ol>
+
+<p>
+  <b>PARAGRAFO:</b> Cuando el propietario solicite el inmueble por cualquiera de
+  las causales establecidas en el artículo 7 y los numerales del artículo 8 de
+  la Ley 820 de 2003, deberán dar cumplimiento a los requisitos allí exigidos
+  (póliza expedida por aseguradora) o indemnización equivalente a tres cánones
+  de arrendamiento según la causal que se indique, la causal solicitada debe ser
+  debidamente comprobada en el caso de proceder a una demanda.
+</p>
+
+<ol type="a" start="3">
+  <li>
+    Pagar a la ADMINISTRADORA por la cesión del contrato de arrendamiento, el
+    20% del canon mensual vigente a la fecha de la cesión, siempre y cuando el
+    inmueble este arrendado, mas la comisión del 10% mensual del tiempo que
+    falta para el vencimiento del contrato
+  </li>
+  <li>
+    Pagar a la ADMINISTRADORA por cada periodo, la remuneración estipulada por
+    la ejecución del contrato, que es el equivalente al 10% (DIEZ POR CIENTO)
+    del canon vigente del arrendamiento. Para tal efecto, EL PROPIETARIO
+    autoriza desde ahora a descontar la comisión de la empresa del pago mensual
+    de canon.
+  </li>
+  <li>
+    Rembolsar a la ADMINISTRADORA los anticipos de dinero que este hubiere
+    entregado por la ejecución del mandato, sea porque se entrego dinero
+    adicional o el inmueble fue desocupado con la autorización del PROPIETARIO,
+    antes del vencimiento del contrato, la prorroga o el mes, constituyendo el
+    comprobante de egreso titulo ejecutivo de conformidad con el artículo 422 de
+    C.G.P., asimilándose dicho documento a la factura de que trata el articulo
+    772 y siguientes del C.Cio
+  </li>
+  <li>
+    A indemnizar a la ADMINISTRADORA por las pérdidas en que haya incurrido sin
+    su culpa y por causa del propietario.
+  </li>
+  <li>
+    Asumir la responsabilidad por causa de reclamaciones, juicios, devoluciones
+    o indemnizaciones que se originen en la disposiciones legales que regulan la
+    actividad de arrendamientos y en caso de responsabilidad civil contractual o
+    extracontractual por perjuicios o incidentes que sobrevengan en razón del
+    mal estado o deficiente funcionamiento del inmueble o de alguna de sus
+    instalaciones , si por cualquier circunstancia la administradora fuera
+    demandada por causa de este contrato deberá denunciar el pleito al
+    propietario de inmediato para que este asuma la defensa.
+  </li>
+  <li>
+    Si por razón de la gestión desarrollada por la ADMINISTRADORA, los
+    arrendatarios compran el inmueble arrendado dentro del periodo de vigencia
+    inicial del presente contrato de arrendamiento y sus posteriores prorrogas y
+    renovaciones si las hubiere, es obligación del propietario notificar dicha
+    intensión, con el fin de proceder la administradora a la legalización y
+    asesoramiento para la venta, el propietario le reconocerá a la
+    administradora la comisión aceptada por la intermediaron en la compraventa
+    correspondiente al 3% del valor de la venta mas el impuesto al valor
+    agregado IVA sobre dicha comisión, la no información a la administradora de
+    la venta, no lo exonera del pago antes indicado.
+  </li>
+</ol>
+
+<p>
+  <b>TERCERA:</b> El término de duración de este contrato será igual a la
+  permanencia del arrendatario en el inmueble objeto de este contrato. En el
+  evento de que al arrendatario se le inicie proceso de restitución de inmueble,
+  por la causal de mora en el pago de los cánones de arrendamiento, el contrato
+  termina cuando el arrendatario haya entregado el inmueble, sin que el
+  propietario pueda exigir los cánones de arrendamientos futuros, pues desde
+  ahora renuncia a exigir el cumplimiento del contrato, por esta causal. Este
+  podrá darse por terminado unilateralmente por cualquiera de las partes previo
+  aviso a la otra con una antelación no inferior a un mes, para lo cual se hará
+  la correspondiente cesión del contrato de arrendamiento al PROPIETARIO, previa
+  la cancelación de la comisión pactada hasta el vencimiento del contrato, así
+  como las sumas pactadas en el literal c) de la cláusula segunda.
+</p>
+
+<p>
+  <b>CUARTA:</b> EL PROPIETARIO faculta al administrador en los casos en que los
+  arrendatarios quieran dar por terminado el contrato unilateralmente durante el
+  plazo del presente contrato a negociar en su nombre el pago total o parcial de
+  la penalización pactada en dicho contrato hasta por un 50% de la misma.
+  Parágrafo: Sobre el valor realmente obtenido como parte de la penalización la
+  administradora tendrá derecho al mismo porcentaje de comisión establecido
+  anteriormente.
+</p>
+
+<p>
+  <b>QUINTA:</b> De conformidad con la cláusula 18 de la Ley 820 de 2003, para
+  los inmuebles destinados a vivienda urbana, el canon de arrendamiento no podrá
+  exceder del uno por ciento (1%) del valor comercial del inmueble. La
+  estimación comercial para los efectos de la anterior disposición, no podrá
+  exceder el equivalente a dos veces el avalúo catastral vigente, por lo tanto
+  si el inmueble se da en arrendamiento por un valor superior, el propietario se
+  obliga desde ahora a pagar y a asumir los riesgos que esto con lleva, como son
+  las devoluciones del mayor valor pagado, con sus correspondientes multas y
+  sanciones, así como los demás perjuicios que se reclamen por parte de las
+  entidades administrativas y policivas.
+</p>
+
+<p>
+  <b>SEXTA:</b> En el evento de que se llegare a presentar otra persona
+  diferente a quien suscribe el presente contrato a reclamar el canon de
+  arrendamiento alegando mejor derecho, se dará preferencia a quien demuestre
+  ser propietario inscrito ante la oficina de instrumentos públicos , exonerando
+  desde ahora a la administradora a cumplir el presente contrato de
+  administración, pues se debe tener en cuenta el artículo 1602 del Código Civil
+  que establece “Todo contrato legalmente celebrado es una ley para los
+  contratantes, y no puede ser invalidado sino por su consentimiento mutuo o por
+  causas legales”. Siendo una causa legal el reconocimiento del propietario
+  inscrito, ya que conforme al artículo 1603, los contratos se celebran de buena
+  fe.
+</p>
+
+<p>
+  <b>SEPTIMA:</b> En el evento de que ocurra un caso fortuito o fuerza mayor,
+  pandemia, o fenómenos de la naturaleza tales como inundaciones, terremotos o
+  los que tuviesen origen o fuera una consecuencia directa o indirecta de
+  guerra, guerra civil, conﬂictos armados, rebelión huelga, desorden popular,
+  terrorismo y otros hechos que alteren la seguridad interior de la ciudad, el
+  estado o el orden ciudadano, el pago del canon de arrendamiento se realizara
+  una vez la compañía de seguros realice el pago o en su defecto cuando el
+  arrendatario lo cancele, en estos eventos desde ahora se autoriza al
+  administrador para dar por terminado el contrato de arrendamiento sin ningún
+  tipo de sanción.
+</p>
+
+<p>
+  <b>OCTAVA:</b> Para el pago del canon de arrendamiento el propietario debe de
+  suscribir el presente contrato, si el propietario no firmara el contrato de
+  administración antes de 30 días a la fecha de inicio del contrato de
+  arrendamiento este se enviara por correo y se entenderá que el propietario lo
+  acepto
+</p>
+
+<p>
+  <b>AUTORIZACIÓN</b> <br />
+  En ejericicio de mi Derecho a la Libertad y Autodeterminación Informática,
+  <b>autorizo</b> a ARRENDAMIENTOS VILLA CRUZ S.A.S., con domicilio en Medellin,
+  (afiliado o usuario de FENALCO) o la entidad que mi acreedor delegue para
+  representarlo o a su cesionario, endosatario o a quien se ostente en el futuro
+  la calidad de acreedor, previo a la relación contractual y de manera
+  irrevocable, escrita, expresa, concreta, suficiente, voluntaria e informada,
+  con la <b>finalidad</b> que la información comercial, crediticia, financiera y
+  de servicios de la cual soy titular, referida al nacimiento, ejecución y
+  extinción de obligaciones dinerarias (independientemente de la naturaleza del
+  contrato que les dé origen), a mi comportamiento e historial crediticio,
+  incluida la información positiva y negativa de mis hábitos ed pago, y aquella
+  que se refiera a la información personal necesaria para el estudio, análisis y
+  eventual otorgamiento de un crédito o celebración de un contrato, sea en
+  general administrada y en especial: capturada, tratada, procesada, operada,
+  verificada, transmitida, transferida, usada o puesta en circulación y
+  consultada por terceras personas autorizadas expresamente por la ley 1266 de
+  2008, incluidos los Usuarios de la información. Con estos mismos alcances,
+  atributos y finalidad autorizo expresamente para que tal información sea
+  concernida y reportada en la Base de Datos PROCRÉDITO operada por FENALCO.
+</p>
+
+<p>
+  <b>AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES.</b> Para proceder a
+  dar cumplimiento a la Ley 1581 de 2012 y el Decreto 1377 de 2013, le
+  manifestamos que sus datos personales se encuentran incluidos en nuestras
+  bases de datos. Con la firma de este documento manifiesto que he sido
+  informado por ARRENDAMIENTOS VILLACRUZ S.A.S. de que:
+</p>
+
+<p>
+  1. ARRENDAMIENTOS VILLACRUZ S.A.S. como responsable del tratamiento de datos
+  podrán recolectar, usar y tratar mis datos personales conforme la Política de
+  Tratamiento de Datos Personales de la sociedad disponible en
+  <a href="http://www.villacruz.co">www.villacruz.co</a>
+</p>
+<p>
+  2. Mis derechos como titular de los datos son los previstos en la Constitución
+  y la ley, especialmente el derecho a conocer, actualizar, rectificar y
+  suprimir mi información personal, así como el derecho a revocar el
+  consentimiento otorgado para el tratamiento de datos personales.
+</p>
+<p>
+  3. Para el ejercicio de mis derechos puedo contactarme al correo electrónico
+  <a href="mailto:info@arrendamientosvillacruz.com.co"
+    >info@arrendamientosvillacruz.com.co</a
+  >
+</p>
+<p>
+  4. La compañía garantiza la confidencialidad, libertad, seguridad, veracidad,
+  transparencia, acceso y circulación restringida de mis datos y se reservan el
+  derecho de modificar su Política de Tratamiento de Datos Personales en
+  cualquier momento.
+</p>
+
+<p>
+  Certifico que los datos personales suministrados por mí, son veraces,
+  completos, exactos, actualizados, reales y comprobables. Por tanto, cualquier
+  error en la información suministrada será de mi única y exclusiva
+  responsabilidad, lo que exonera a FENALCO de su responsabilidad ante las
+  autoridades judiciales y/o administrativas.
+</p>
+
+<p>
+  Consiento y autorizo de manera expresa e inequívoca a ARRENDAMIENTOS VILLACRUZ
+  S.A.S. para tratar mis datos personales de acuerdo con la Política de
+  Tratamiento de Datos Personales de la sociedad, para el cumplimiento de los
+  fines descritos en la Política de Tratamiento de Datos Personal de la
+  compañía. La información obtenida para el Tratamiento de mis datos personales
+  la he suministrado de forma voluntaria y es verídica.
+</p>
+
+<p>
+  Declaro que he leído y comprendido a cabalidad el contenido de la presente
+  Autorización, y acepto la finalidad en ella descrita y las consecuencias que
+  se derivan de ella.
+</p>
+
+<p>
+  Los abajo firmantes declaramos que hemos recibido copia del contrato con las
+  firmas originales.
+</p>
+
+<p>
+  Para constancia y en señal de aceptación, se firma este documento en la ciudad
+  de Medellín, por las partes
+</p>
+
+<br /><br /><br /><br />
+
+<p>
+  __________________________________________ <br />
+  <b>ARRENDAMIENTOS VILLA CRUZ S.A.S</b> <br />
+  <b>LA ADMINISTRADORA</b>
+</p>
+
+<br /><br /><br />
+
+<p>
+  __________________________________________ <br />
+  <b>PROPIETARIO</b> <br />
+  <b name="nombre_propietario">_____________________</b><br />
+  <b>C.C. <b name="cc_propietario">_____________________</b></b>
+</p>

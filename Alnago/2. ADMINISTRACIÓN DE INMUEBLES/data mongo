@@ -692,21 +692,7 @@
         'canon_inmueble',
         'duracion_contrato_inmueble',
         'lugar_firma',
-        'fecha_firma',
-    ],
-    preFill: [
-        {
-            name: 'nombre_administradora',
-            value: 'Aracelly Del Socorro Naranjo Aristizábal'
-        },
-        {
-            name: 'cedula_administradora',
-            value: '43.095.952'
-        },
-        {
-            name: 'correo_administradora',
-            value: 'hans.palominon@gmail.com'
-        }
+        'fecha_firma'
     ],
     signatureProfile: [
         {
@@ -714,19 +700,16 @@
             identification: 'cedula_propietario|cedulae_propietario|pasaporte_propietario',
             name: 'nombre_propietario',
             type: 'propietario'
-        },
-        {
-            email: 'correo_administradora',
-            identification: 'cedula_administradora',
-            name: 'nombre_administradora',
-            type: 'administradora'
         }
     ],
     preBuildData: [],
-    company: ObjectId('614a3a750aebb000084cbac0'),
+    custom: {
+        noShowHeader: true
+    },
     name: 'CONTRATO DE ADMINISTRACIÓN DE INMUEBLES',
     price: 0,
-    build: 6,
+    build: 11,
+    company: ObjectId('6179a50cc930d700099c5bd6'),
     username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
     createdAt: ISODate('2021-08-26T14:53:00.657Z'),
     updatedAt: ISODate('2021-08-26T14:53:00.657Z')

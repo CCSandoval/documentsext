@@ -1,0 +1,495 @@
+{
+    _id: ObjectId('628ea9ab51fc27d23d929157'),
+    config: [
+        {
+            name: 'num_acta',
+            type: 'number',
+            description: 'Ingrese el número de la presente acta de inscripcion de listas de candidatos'
+        },
+        {
+            name: 'fecha_envio',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se realizó el envío'
+        },
+        {
+            name: 'hora_envio',
+            type: 'text',
+            description: 'Ingrese la hora en la que se realizó el envío'
+        },
+        {
+            name: 'modificacion',
+            type: 'clausula',
+            description: '¿El presente documento se diligencia con propósito de modificación?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'numero_lista',
+            type: 'text',
+            description: 'Ingrese el número de la lista'
+        },
+        {
+            name:'genero_candidato',
+            type:'clausula',
+            description:'Seleccione el género del candidato que inscribe la lista',
+            options:[
+                {
+                    name:'Masculino',
+                    value:'m'
+                },
+                {
+                    name:'Femenino',
+                    value:'f'
+                },
+            ],
+            value:'m'
+        },
+        {
+            name: 'nombre_candidato',
+            type: 'name',
+            description: 'Ingrese el nombre del candidato que inscribe la lista'
+        },
+        {
+            name: 'cumple_maximo',
+            type: 'clausula',
+            description: '¿La lista debe contener como máximo 8 renglones?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_prin_sup',
+            type: 'clausula',
+            description: '¿Cada renglón contiene un miembro principal y uno suplente?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_no_rep',
+            type: 'clausula',
+            description: '¿Ningún candidato aparece en más de una lista?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_nombre_nat',
+            type: 'clausula',
+            description: '¿Los candidatos en calidad de persona natural están listados con su nombre completo?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_cc_nat',
+            type: 'clausula',
+            description: '¿Los candidatos en calidad de persona natural están listados con su cedula de ciudadanía?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_razon_jur',
+            type: 'clausula',
+            description: '¿Los candidatos en calidad de persona jurídica están listados con su razón social?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_nit',
+            type: 'clausula',
+            description: '¿Los candidatos en calidad de persona jurídica están listados con su NIT?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_adjunta_aceptacion',
+            type: 'clausula',
+            description: '¿Se adjunta aceptación de la postulación de los candidatos principales y suplentes.?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_calidad_nat_jur',
+            type: 'clausula',
+            description: '¿Los candidatos indican si se inscriben en calidad de personas naturales o jurídicas.?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cumple_juramento',
+            type: 'clausula',
+            description: '¿Todos los candidatos de la lista cumplen los requisitos exigidos y los demás establecidos en las normas correspondientes, incluido no encontrarse incurso en causal de inhabilidad e incompatibilidad.?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'num_renglon',
+            type: 'number',
+            description: 'Ingrese el número del renglón que se desea editar',
+            prereq: [
+                {
+                    k: 'modificacion',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_sale',
+            type: 'name',
+            description: 'Ingrese el nombre del candidato que sale',
+            prereq: [
+                {
+                    k: 'modificacion',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_entra',
+            type: 'name',
+            description: 'Ingrese el nombre del candidato que entra',
+            prereq: [
+                {
+                    k: 'modificacion',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_consecutivo',
+            type: 'number',
+            description: 'Ingrese el número del consecutivo'
+        },
+        {
+            name: 'info_principal_1',
+            type: 'text',
+            description: 'Ingrese la información del primer candidato principal'
+        },
+        {
+            name: 'info_suplente_1',
+            type: 'text',
+            description: 'Ingrese la información del primer candidato suplente'
+        },
+        {
+            name: 'info_principal_2',
+            type: 'text',
+            description: 'Ingrese la información del segundo candidato principal'
+        },
+        {
+            name: 'info_suplente_2',
+            type: 'text',
+            description: 'Ingrese la información del segundo candidato suplente'
+        },
+        {
+            name: 'info_principal_3',
+            type: 'text',
+            description: 'Ingrese la información del tercer candidato principal'
+        },
+        {
+            name: 'info_suplente_3',
+            type: 'text',
+            description: 'Ingrese la información del tercer candidato suplente'
+        },
+        {
+            name: 'info_principal_4',
+            type: 'text',
+            description: 'Ingrese la información del cuarto candidato principal'
+        },
+        {
+            name: 'info_suplente_4',
+            type: 'text',
+            description: 'Ingrese la información del cuarto candidato suplente'
+        },
+        {
+            name: 'mas_candidatos',
+            type: 'clausula',
+            description: 'Desea ingresar más candidatos.?',
+            value: 'n',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'info_principal_5',
+            type: 'text',
+            description: 'Ingrese la información del quinto candidato principal',
+            prereq: [
+                {
+                    k: 'mas_candidatos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_suplente_5',
+            type: 'text',
+            description: 'Ingrese la información del quinto candidato suplente',
+            prereq: [
+                {
+                    k: 'mas_candidatos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_principal_6',
+            type: 'text',
+            description: 'Ingrese la información del sexto candidato principal',
+            prereq: [
+                {
+                    k: 'mas_candidatos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_suplente_6',
+            type: 'text',
+            description: 'Ingrese la información del sexto candidato suplente',
+            prereq: [
+                {
+                    k: 'mas_candidatos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_principal_7',
+            type: 'text',
+            description: 'Ingrese la información del séptimo candidato principal',
+            prereq: [
+                {
+                    k: 'mas_candidatos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_suplente_7',
+            type: 'text',
+            description: 'Ingrese la información del séptimo candidato suplente',
+            prereq: [
+                {
+                    k: 'mas_candidatos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_principal_8',
+            type: 'text',
+            description: 'Ingrese la información del octavo candidato principal',
+            prereq: [
+                {
+                    k: 'mas_candidatos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'info_suplente_8',
+            type: 'text',
+            description: 'Ingrese la información del octavo candidato suplente',
+            prereq: [
+                {
+                    k: 'mas_candidatos',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_constancias',
+            type: 'text',
+            description: 'Ingrese la cantidad de constancias de aceptación que se adjuntan'
+        },
+        {
+            name: 'correo_candidato',
+            type: 'text',
+            description: 'Ingrese el correo del candidato que inscribe la lista'
+        },
+        {
+            name: 'tel_candidato',
+            type: 'text',
+            description: 'Ingrese el numero de teléfono del candidato que inscribe la lista'
+        },
+        {
+            name: 'cc_candidato',
+            type: 'text',
+            description: 'Ingrese el numero de cédula del candidato que inscribe la lista'
+        }
+    ],
+    operation: [],
+    sign: [
+        'num_acta',
+        'fecha_envio',
+        'hora_envio',
+        'numero_lista',
+        'num_renglon',
+        'nombre_sale',
+        'nombre_entra',
+        'num_consecutivo',
+        'info_principal_1',
+        'info_suplente_1',
+        'info_principal_5',
+        'info_suplente_5',
+        'num_constancias',
+        'nombre_candidato',
+        'correo_candidato',
+        'tel_candidato',
+        'cc_candidato'
+    ],
+    preFill: [
+        {
+            name: 'nombre_sec_general',
+            value: 'JORGE VILLEGAS BETANCUR'
+        },
+        {
+            name: 'cc_sec_general',
+            value: '11111111'
+        },
+        {
+            name: 'correo_sec_general',
+            value: 'ccsandovalt@gmail.com'
+        },
+        {
+            name: 'nombre_dir_juridica',
+            value: 'LILIANA MARIA CASTILLO RESTREPO'
+        },
+        {
+            name: 'cc_dir_juridica',
+            value: '11111112'
+        },
+        {
+            name: 'correo_dir_juridica',
+            value: 'krcamilo0417@gmail.com'
+        }
+    ],
+    signatureProfile: [
+        {
+            type: 'candidato',
+            identification: 'cc_candidato',
+            name: 'nombre_candidato',
+            email: 'correo_candidato'
+        },
+        {
+            type: 'sec_general',
+            identification: 'cc_sec_general',
+            name: 'nombre_sec_general',
+            email: 'correo_sec_general'
+        },
+        {
+            type: 'dir_juridica',
+            identification: 'cc_dir_juridica',
+            name: 'nombre_dir_juridica',
+            email: 'correo_dir_juridica'
+        }
+    ],
+    name: 'INSCRIPCIÓN DE LISTAS DE CANDIDATOS JUNTA DIRECTIVA',
+    preBuild: false,
+    preBuildData: [],
+    price: 5000,
+    build: 1
+}
