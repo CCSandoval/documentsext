@@ -377,6 +377,47 @@
       <td><span name="valor_pago_8">_________________</span></td>
     </tr>
   </table>
+  <div name="pago_contado_s">
+    <span name="debe_cuotas_n"></span>
+    <table name="debe_cuotas_s" class="table_class">
+    <tr>
+      <td><b>FECHA DE PAGO</b></td>
+      <td><b>VALOR</b></td>
+    </tr>
+    <tr>
+      <td><span name="fecha_pago_1">_________________</span></td>
+      <td><span name="valor_pago_1">_________________</span></td>
+    </tr>
+    <tr>
+      <td><span name="fecha_pago_2">_________________</span></td>
+      <td><span name="valor_pago_2">_________________</span></td>
+    </tr>
+    <tr>
+      <td><span name="fecha_pago_3">_________________</span></td>
+      <td><span name="valor_pago_3">_________________</span></td>
+    </tr>
+    <tr>
+      <td><span name="fecha_pago_4">_________________</span></td>
+      <td><span name="valor_pago_4">_________________</span></td>
+    </tr>
+    <tr>
+      <td><span name="fecha_pago_5">_________________</span></td>
+      <td><span name="valor_pago_5">_________________</span></td>
+    </tr>
+    <tr>
+      <td><span name="fecha_pago_6">_________________</span></td>
+      <td><span name="valor_pago_6">_________________</span></td>
+    </tr>
+    <tr>
+      <td><span name="fecha_pago_7">_________________</span></td>
+      <td><span name="valor_pago_7">_________________</span></td>
+    </tr>
+    <tr>
+      <td><span name="fecha_pago_8">_________________</span></td>
+      <td><span name="valor_pago_8">_________________</span></td>
+    </tr>
+  </table>
+  </div>
   <p name="pago_contado_s">
     La suma de <span name="saldo_total">_________________</span>,
     correspondiente al saldo total del inmueble.

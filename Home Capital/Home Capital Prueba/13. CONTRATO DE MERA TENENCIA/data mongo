@@ -2,6 +2,16 @@
     _id: ObjectId('6227cf77ed0a939e613674c4'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             name: 'tipo_persona_ven_1',
             description: 'Seleccione el tipo de persona del primer vendedor',
             type: 'clausula',
@@ -2290,10 +2300,11 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
+    username:'0f03fff6-2122-4373-bd12-69fa58592bc7',
     name: 'CONTRATO DE MERA TENENCIA',
     help: {},
     price: 5000,
-    preBuild: false,
-    build: 2
+    preBuild: true,
+    build: 3
 }

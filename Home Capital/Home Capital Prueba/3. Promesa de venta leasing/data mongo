@@ -2,6 +2,16 @@
     _id: ObjectId('6193fb6ed32fc60009d8e584'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description:'Seleccione el tipo de persona del primer vendedor',
             type:'clausula',
             name:'tipo_vendedor_1',
@@ -4505,7 +4515,7 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'Promesa de compra',
     price: 5000,
     preBuild: true,
@@ -4545,7 +4555,7 @@
         tipo_repre: 'Ejemplo: representante legal suplente',
         horas_celebracion: 'Ejemplo: 06:00'
     },
-    build: 4,
+    build: 5,
     company: ObjectId('618d299c3b775300099e6214'),
     createdAt: ISODate('2021-11-16T18:41:50.098Z'),
     updatedAt: ISODate('2021-11-16T18:41:50.098Z')

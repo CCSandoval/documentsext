@@ -2,6 +2,16 @@
     _id: ObjectId('61a8f6a24a11ef0009880576'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Seleccione el tipo de persona',
             name: 'tipo_persona_1',
             options: [
@@ -7980,7 +7990,7 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'Cesión promesa de venta TEST',
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
@@ -8013,7 +8023,8 @@
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
     price: 5000,
-    build: 0,
+    username:'0f03fff6-2122-4373-bd12-69fa58592bc7',
+    build: 1,
     createdAt: ISODate('2021-12-02T16:38:58.099Z'),
     updatedAt: ISODate('2021-12-02T16:38:58.099Z')
 }

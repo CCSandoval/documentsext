@@ -2,6 +2,16 @@
     _id: ObjectId('6148a856b0b19e000804f8c5'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Digite el nombre completo del poderdante',
             help: 'poderdante',
             name: 'nombre_poderdante_1',
@@ -1777,7 +1787,8 @@
         'correo_poderdante_5',
         'correo_apoderado_1',
         'correo_apoderado_2',
-        'correo_apoderado_3'
+        'correo_apoderado_3',
+        "document_code"
     ],
     signatureProfile: [
         {
@@ -1829,7 +1840,7 @@
             type: 'apoderado_3'
         }
     ],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     preBuild: true,
     name: 'PODER ESPECIAL CANCELACIÓN AFECTACIÓN A VIVIENDA FAMILIAR',
     price: 5000,

@@ -2,6 +2,16 @@
     _id: ObjectId('61a8f7c94a11ef0009880577'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Seleccione el tipo de persona',
             name: 'tipo_persona_v_1',
             options: [
@@ -8008,7 +8018,7 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'Promesa de venta leasing TEST',
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
@@ -8042,7 +8052,7 @@
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
     price: 5000,
-    build: 0,
+    build: 1,
     createdAt: ISODate('2021-12-02T16:43:53.660Z'),
     updatedAt: ISODate('2021-12-02T16:43:53.660Z')
 }

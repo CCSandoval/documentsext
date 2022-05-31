@@ -2,6 +2,16 @@
     _id: ObjectId('61a8f4944f6f7000094df988'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: '¿Cuál es el tipo de representante?',
             help: 'tipo_repre',
             name: 'tipo_representante',
@@ -3648,7 +3658,7 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'Acuerdo privado entre las partes OVMT TEST',
     help: {
         tipo_repre: 'Ejemplo: Inversionista',
@@ -3672,7 +3682,7 @@
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
     price: 5000,
-    build: 0,
+    build: 1,
     createdAt: ISODate('2021-12-02T16:30:12.167Z'),
     updatedAt: ISODate('2021-12-02T16:30:12.167Z')
 }

@@ -2,6 +2,16 @@
     _id: ObjectId('61a8e68fe3c7d10009e99a88'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Digite el nombre del juzgado',
             help: 'juzgado_nombre',
             name: 'nombre_juzgado',
@@ -1730,57 +1740,79 @@
     ],
     signatureProfile: [
         {
+            name: 'Luis Santa',
+            email: 'l.santa@homecapital.com.co',
+            role: 'APPROVER',
+            order: 0
+        },
+        {
             email: 'correo_poderdante_1',
             identification: 'cedula_poderdante_1|cedulae_poderdante_1|pasaporte_poderdante_1',
             name: 'nombre_poderdante_1',
-            type: 'poderdante_1'
+            type: 'poderdante_1',
+            role: 'SIGN',
+            order: 0
         },
         {
             email: 'correo_poderdante_2',
             identification: 'cedula_poderdante_2|cedulae_poderdante_2|pasaporte_poderdante_2',
             name: 'nombre_poderdante_2',
-            type: 'poderdante_2'
+            type: 'poderdante_2',
+            role: 'SIGN',
+            order: 0
         },
         {
             email: 'correo_poderdante_3',
             identification: 'cedula_poderdante_3|cedulae_poderdante_3|pasaporte_poderdante_3',
             name: 'nombre_poderdante_3',
-            type: 'poderdante_3'
+            type: 'poderdante_3',
+            role: 'SIGN',
+            order: 0
         },
         {
             email: 'correo_poderdante_4',
             identification: 'cedula_poderdante_4|cedulae_poderdante_4|pasaporte_poderdante_4',
             name: 'nombre_poderdante_4',
-            type: 'poderdante_4'
+            type: 'poderdante_4',
+            role: 'SIGN',
+            order: 0
         },
         {
             email: 'correo_poderdante_5',
             identification: 'cedula_poderdante_5|cedulae_poderdante_5|pasaporte_poderdante_5',
             name: 'nombre_poderdante_5',
-            type: 'poderdante_5'
+            type: 'poderdante_5',
+            role: 'SIGN',
+            order: 0
         },
         {
             email: 'correo_apoderado_1',
             identification: 'cedula_apoderado_1|cedulae_apoderado_1|pasaporte_apoderado_1',
             name: 'nombre_apoderado_1',
-            type: 'apoderado_1'
+            type: 'apoderado_1',
+            role: 'SIGN',
+            order: 0
         },
         {
             email: 'correo_apoderado_2',
             identification: 'cedula_apoderado_2|cedulae_apoderado_2|pasaporte_apoderado_2',
             name: 'nombre_apoderado_2',
-            type: 'apoderado_2'
+            type: 'apoderado_2',
+            role: 'SIGN',
+            order: 0
         },
         {
             email: 'correo_apoderado_3',
             identification: 'cedula_apoderado_3|cedulae_apoderado_3|pasaporte_apoderado_3',
             name: 'nombre_apoderado_3',
-            type: 'apoderado_3'
+            type: 'apoderado_3',
+            role: 'SIGN',
+            order: 0
         }
     ],
     preFill: [],
-    preBuildData: [],
-    name: 'PODER JUZGADOS TEST',
+    preBuildData: ['document_code','correo_enviar'],
+    name: 'Poder de juzgados',
     help: {
         juzgado_nombre: 'Juez 5to Civil Municipal',
         poderdante: 'Persona que da poder a otra persona para que la represente en un juicio o actuar en su nombre en cualquier situación',
@@ -1796,7 +1828,7 @@
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
     price: 5000,
-    build: 0,
+    build: 4,
     createdAt: ISODate('2021-12-02T15:30:23.218Z'),
-    updatedAt: ISODate('2021-12-02T15:30:23.218Z')
+    updatedAt: ISODate('2022-03-28T20:59:08.415Z')
 }

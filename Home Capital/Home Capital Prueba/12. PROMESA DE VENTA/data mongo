@@ -2,6 +2,16 @@
     _id: ObjectId('61a8f94d75b327000828fb14'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Seleccione el tipo de persona',
             name: 'tipo_persona_v_1',
             options: [
@@ -7980,7 +7990,7 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'Promesa de venta',
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
@@ -8014,7 +8024,7 @@
     price: 5000,
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
-    build: 1,
+    build: 2,
     createdAt: ISODate('2021-12-02T16:50:21.143Z'),
     updatedAt: ISODate('2021-12-02T16:50:21.143Z')
 }

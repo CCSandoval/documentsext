@@ -2,6 +2,16 @@
     _id: ObjectId('61a8e5aae3c7d10009e99a87'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Digite el nombre completo del poderdante',
             help: 'poderdante',
             name: 'nombre_poderdante_1',
@@ -1762,7 +1772,7 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'PODER ESPECIAL PARA ENTIDADES FINANCIERAS TEST',
     help: {
         poderdante: 'Poderdante: Quien otorga poder a otra persona para que pueda cancelar el patrimonio de familia',
@@ -1778,7 +1788,7 @@
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
     price: 5000,
-    build: 0,
+    build: 1,
     createdAt: ISODate('2021-12-02T15:26:34.857Z'),
     updatedAt: ISODate('2021-12-02T15:26:34.857Z')
 }

@@ -29,7 +29,7 @@
         {
             name: 'arrend_sol_2',
             type: 'clausula',
-            description: '¿Desea ingresar un segundo arrendatario solidario?',
+            description: '¿Desea ingresar un Deudor Solidario?',
             value: 'n',
             options: [
                 {
@@ -45,7 +45,7 @@
         {
             name: 'nombre_arrend_sol_2',
             type: 'name',
-            description: 'Ingrese el nombre del segundo arrendatario solidario',
+            description: 'Ingrese el nombre del Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -56,7 +56,7 @@
         {
             name: 'cedula_arrend_sol_2',
             type: 'number',
-            description: 'Ingrese el número de cédula de ciudadanía del segundo arrendatario solidario',
+            description: 'Ingrese el número de cédula de ciudadanía del Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -67,7 +67,7 @@
         {
             name: 'domi_arrend_sol_2',
             type: 'text',
-            description: 'Ingrese el domicilio del segundo arrendatario solidario',
+            description: 'Ingrese el domicilio del Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -78,7 +78,7 @@
         {
             name: 'tel_arrend_sol_2',
             type: 'text',
-            description: 'Ingres el número de teléfono del segundo arrendatario solidario',
+            description: 'Ingres el número de teléfono del Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -89,7 +89,7 @@
         {
             name: 'correo_arrend_sol_2',
             type: 'text',
-            description: 'Ingres el correo del segundo arrendatario solidario',
+            description: 'Ingres el correo del Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -220,11 +220,6 @@
             description: 'Ingrese el dia del mes en el que se pagará el canon de arrendamiento'
         },
         {
-            name: 'incremento_canon',
-            type: 'text',
-            description: 'Ingrese el incremento del canon de arrendamiento'
-        },
-        {
             name: 'destinacion',
             type: 'text',
             description: 'Ingrese la desitnación'
@@ -323,5 +318,5 @@
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 0
+    build: 1
 }

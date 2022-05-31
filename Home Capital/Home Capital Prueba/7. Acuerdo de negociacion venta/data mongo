@@ -2,6 +2,16 @@
     _id: ObjectId('61a8e83ce3c7d10009e99a8a'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Seleccione el tipo de persona',
             name: 'tipo_persona_1',
             options: [
@@ -8145,10 +8155,10 @@
     company: ObjectId('618d299c3b775300099e6214'),
     preBuild: true,
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'Acuerdo de negociación compra/venta',
     price: 5000,
-    build: 2,
+    build: 3,
     createdAt: ISODate('2021-12-02T15:37:32.695Z'),
     updatedAt: ISODate('2021-12-02T15:37:32.695Z')
 }

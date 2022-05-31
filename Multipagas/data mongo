@@ -8,6 +8,11 @@
             help:'punto'
         },
         {
+            name: 'package_name',
+            description: 'Digita el nombre con que deseas que esta carpeta aprezca en tus archivos',
+            type: 'text'
+        },
+        {
             name: 'correo_continuar',
             description: 'Ingrese el correo del prospecto',
             type: 'text',
@@ -130,7 +135,8 @@
             name: 'nombres',
             identification: 'cedula_prospecto',
             email: 'email',
-            type: 'firma_prospecto'
+            type: 'firma_prospecto',
+            'package':true
         }
     ],
     sign: [
@@ -161,10 +167,29 @@
     preBuild: true,
     preBuildData: [
         'nombre_punto',
+        'package_name',
         'correo_continuar'
     ],
     name: 'FORMULARIO DE REGISTRO MULTIPAGAS',
-    build: 3,
+    files:[
+        {
+            name:'Cédula de ciudadanía',
+            approve:'pending'
+        },
+        {
+            name:'RUT',
+            approve:'pending'
+        },
+        {
+            name:'Certificado de procuraduría',
+            approve:'pending'
+        },
+        {
+            name:'Certificado de contraloría',
+            approve:'pending'
+        },
+    ],
+    build: 4,
     price: 5000,
-    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916'
+    username: '0f03fff6-2122-4373-bd12-69fa58592bc7'
 }

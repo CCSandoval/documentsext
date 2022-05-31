@@ -1,6 +1,16 @@
 {
-    _id: ObjectId('627565c851fc27d23d929143'),
+    _id: ObjectId('62799d0751fc27d23d929145'),
     config: [
+        {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
         {
             description: 'Seleccione el tipo de persona',
             name: 'tipo_persona_v_1',
@@ -7192,7 +7202,7 @@
                     k: 'pago_2',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             description: 'Seleccione el tipo de cuenta bancaria del cuarto pago',
@@ -7216,7 +7226,7 @@
                     k: 'pago_2',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'num_cuenta_4',
@@ -7227,7 +7237,7 @@
                     k: 'pago_2',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'nombre_banco_4',
@@ -7238,7 +7248,7 @@
                     k: 'pago_2',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'nombre_receptor_4',
@@ -7249,7 +7259,7 @@
                     k: 'pago_2',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             description: '¿Desea agregar un quinto pago?',
@@ -7331,8 +7341,8 @@
                 {
                     k: 'pago_3',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             description: 'Seleccione el tipo de cuenta bancaria del quinto pago',
@@ -7359,8 +7369,8 @@
                 {
                     k: 'pago_3',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             name: 'num_cuenta_5',
@@ -7374,8 +7384,8 @@
                 {
                     k: 'pago_3',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             name: 'nombre_banco_5',
@@ -7389,8 +7399,8 @@
                 {
                     k: 'pago_3',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             name: 'nombre_receptor_5',
@@ -7404,8 +7414,8 @@
                 {
                     k: 'pago_3',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             description: '¿Desea agregar un sexto pago?',
@@ -7503,8 +7513,8 @@
                 {
                     k: 'pago_4',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             description: 'Seleccione el tipo de cuenta bancaria del sexto pago',
@@ -7535,8 +7545,8 @@
                 {
                     k: 'pago_4',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             name: 'num_cuenta_6',
@@ -7554,8 +7564,8 @@
                 {
                     k: 'pago_4',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             name: 'nombre_banco_6',
@@ -7573,8 +7583,8 @@
                 {
                     k: 'pago_4',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             name: 'nombre_receptor_6',
@@ -7592,8 +7602,8 @@
                 {
                     k: 'pago_4',
                     v: 's'
-                },
-            ],
+                }
+            ]
         },
         {
             name: 'pago_credito',
@@ -7678,8 +7688,8 @@
                     value: 'bo'
                 },
                 {
-                    name:'Otra',
-                    value:'otra'
+                    name: 'Otra',
+                    value: 'otra'
                 }
             ],
             type: 'clausula',
@@ -8072,8 +8082,8 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
-    name: 'Promesa de venta v2',
+    preBuildData: ['document_code','correo_enviar'],
+    name: 'Promesa de venta v2 test',
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
         tipo_documento: 'Ejemplo: Cédula de ciudadanía',
@@ -8106,7 +8116,8 @@
     price: 5000,
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
-    build: 4,
+    username:'0f03fff6-2122-4373-bd12-69fa58592bc7',
+    build: 5,
     createdAt: ISODate('2021-12-02T16:50:21.143Z'),
     updatedAt: ISODate('2021-12-02T16:50:21.143Z')
 }

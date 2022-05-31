@@ -2,6 +2,16 @@
     _id: ObjectId('61a8e37e9764de000951f7ab'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Digite el nombre completo del poderdante',
             help: 'poderdante',
             name: 'nombre_poderdante_1',
@@ -2100,7 +2110,7 @@
     ],
     preFill: [],
     preBuild: true,
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'PODER ESPECIAL PARA CANCELACIÓN DE PATRIMONIO DE FAMILIA TEST',
     help: {
         matricula: 'Ejemplo: 50S23434 \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
@@ -2118,7 +2128,7 @@
     },
     company: ObjectId('618d299c3b775300099e6214'),
     price: 5000,
-    build: 0,
+    build: 1,
     createdAt: ISODate('2021-12-02T15:17:18.411Z'),
     updatedAt: ISODate('2021-12-02T15:17:18.411Z')
 }

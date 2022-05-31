@@ -2,6 +2,16 @@
     _id: ObjectId('61a8e77ae3c7d10009e99a89'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Digite el nombre completo del poderdante',
             help: 'poderdante',
             name: 'nombre_poderdante_1',
@@ -3034,7 +3044,7 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
+    preBuildData: ['document_code','correo_enviar'],
     name: 'PODER ESPECIAL PARA VENTA DE INMUEBLE (NOTARÍA, RENTAS Y REGISTRO) TEST',
     help: {
         poderdante: 'Persona que da poder a otra persona para que la represente en un juicio o actuar en su nombre en cualquier situación',
@@ -3055,7 +3065,7 @@
     preBuild: true,
     company: ObjectId('618d299c3b775300099e6214'),
     price: 5000,
-    build: 0,
+    build: 1,
     createdAt: ISODate('2021-12-02T15:34:18.459Z'),
     updatedAt: ISODate('2021-12-02T15:34:18.459Z')
 }
