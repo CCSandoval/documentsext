@@ -2,6 +2,11 @@
     _id: ObjectId('628bc9de51fc27d23d929155'),
     config: [
         {
+            description: 'Ingresa el código del documento',
+            type: 'text',
+            name: 'document_code'
+        },
+        {
             name: 'correo_envio',
             type: 'text',
             description: 'Ingrese el correo electrónico de la persona que diligenciará este contrato'
@@ -32,6 +37,11 @@
             description: 'Ingrese el correo electrónico del agente inmobiliario'
         },
         {
+            name: 'ciudad_firma',
+            type: 'name',
+            description: 'Ingrese la ciudad donde se firma el presente acuerdo'
+        },
+        {
             name: 'fecha_firma',
             type: 'date',
             description: 'Seleccione la fecha de firma'
@@ -55,10 +65,13 @@
     ],
     preFill: [],
     preBuildData: [
-        "correo_envio"
+        'document_code',
+        'correo_envio'
     ],
     preBuild: true,
     name: 'CONTRATO DE CORRETAJE',
+    company: ObjectId('614a3a750aebb000084cbac0'),
+    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916',
     price: 5000,
-    build: 2
+    build: 5
 }

@@ -1,0 +1,2609 @@
+<style type="text/css">
+  .page {
+    width: 21cm;
+  }
+  .table_class {
+    width: 21cm;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  .table_class td {
+    border: 1px solid black;
+    color: #002060;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    color: #002060;
+    padding: 5px;
+  }
+  .table_class_2 {
+    width: 21cm;
+    border-collapse: collapse;
+    border: 1px solid black;
+  }
+  .table_class_2 td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class_2 th {
+    background-color: #d9d9d9;
+    border: 1px solid black;
+    padding: 5px;
+  }
+</style>
+<div class="page">
+  <table class="table_class">
+    <tr>
+      <td rowspan="4">
+        <div style="margin: auto; width: fit-content">
+          <img
+            src="https://mi-contrato-static.s3.amazonaws.com/futesa/logo.jpeg"
+            alt="Futesa logo"
+          />
+        </div>
+      </td>
+      <td rowspan="4">
+        <h1 style="margin: 0px; text-align: center"><b>HOJA DE VIDA</b></h1>
+      </td>
+      <td>Proceso</td>
+      <td>Contratación</td>
+    </tr>
+    <tr>
+      <td>Código</td>
+      <td>FR-HV-01</td>
+    </tr>
+    <tr>
+      <td>Versión</td>
+      <td>001</td>
+    </tr>
+    <tr>
+      <td>Fecha</td>
+      <td>16/09/2021</td>
+    </tr>
+  </table>
+  <br />
+  <table class="table_class">
+    <tr>
+      <td colspan="4">
+        <h2 style="margin: 0px; text-align: center">
+          <b>INFORMACIÓN PERSONAL</b>
+        </h2>
+      </td>
+      <td>
+        Fecha <br />
+        Diligenciamiento
+      </td>
+      <td><span name="fecha_diligenciamiento">__________</span></td>
+    </tr>
+    <tr>
+      <td><b>Nombres y Apellidos</b></td>
+      <td colspan="2"><span name="nombres_apellidos">__________</span></td>
+      <td><b>Identificación</b></td>
+      <td colspan="2"><span name="num_id_trabajador">__________</span></td>
+    </tr>
+    <tr>
+      <td><b>Fecha de nacimiento</b></td>
+      <td><span name="fecha_nacimiento">__________</span></td>
+      <td><b>Ciudad de nacimiento</b></td>
+      <td><span name="ciudad_nacimiento">__________</span></td>
+      <td>RH</td>
+      <td><span name="rh">__________</span></td>
+    </tr>
+    <tr>
+      <td>Dirección</td>
+      <td><span name="direccion">__________</span></td>
+      <td>Barrio</td>
+      <td><span name="barrio">__________</span></td>
+      <td>Ciudad</td>
+      <td><span name="ciudad">__________</span></td>
+    </tr>
+    <tr>
+      <td>Estrato Socioeconomico</td>
+      <td><span name="estrato">__________</span></td>
+      <td>Tel. Fijo 1</td>
+      <td><span name="tel_fijo">__________</span></td>
+      <td>Tel. Celular</td>
+      <td>
+        <span name="tel_cel_1">__________</span>
+        <span name="cel_2_n"></span>
+        <span hidden name="cel_2_s">
+          <br />
+          Y <span name="tel_cel_2">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Estado civil</td>
+      <td><span name="estado_civil">__________</span></td>
+      <td>Nº de hijos</td>
+      <td><span name="num_hijos">__________</span></td>
+      <td>Nº de personas a cargo</td>
+      <td><span name="num_personas_cargo">__________</span></td>
+    </tr>
+    <tr>
+      <td>Estatura</td>
+      <td><span name="estatura">__________</span></td>
+      <td>Peso</td>
+      <td><span name="peso">__________</span></td>
+      <td><b>Eps</b></td>
+      <td><span name="eps">__________</span></td>
+    </tr>
+    <tr>
+      <td><b>Fondo de Pensiones</b></td>
+      <td colspan="2"><span name="fondo_pensiones">__________</span></td>
+      <td><b>E-mail</b></td>
+      <td colspan="2"><span name="correo_empleado">__________</span></td>
+    </tr>
+    <tr>
+      <td>Enfermedades padecidas</td>
+      <td><span name="enfermedades_pad">__________</span></td>
+      <td>Nº Libreta militar</td>
+      <td><span name="num_libreta_militar">__________</span></td>
+      <td colspan="2">
+        Distrito: <span name="distrito">__________</span> <br />
+        Clase: <span name="clase">__________</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2" rowspan="2"><b>Tallas</b></td>
+      <td><b>Camisa</b></td>
+      <td colspan="2"><b>Pantalon</b></td>
+      <td><b>Zapatos</b></td>
+    </tr>
+    <tr>
+      <td><span name="talla_camisa">__________</span></td>
+      <td colspan="2"><span name="talla_pantalon">__________</span></td>
+      <td><span name="talla_zapato">__________</span></td>
+    </tr>
+    <tr>
+      <td rowspan="2"><b>Licencia</b></td>
+      <td>
+        <b
+          >Moto: <b name="licencia_moto_s">Si</b
+          ><b name="licencia_moto_n" hidden>No</b></b
+        >
+      </td>
+      <td>Categoria</td>
+      <td>
+        <span name="categoria_moto">__________</span>
+      </td>
+      <td>Posee Moto</td>
+      <td>
+        <span name="posee_moto">__________</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>
+          Carro: <b name="licencia_carro_s">Si</b>
+          <b name="licencia_carro_n" hidden>No</b>
+        </b>
+      </td>
+      <td>Categoria</td>
+      <td>
+        <span name="categoria_carro">__________</span>
+      </td>
+      <td>Posee carro</td>
+      <td>
+        <span name="posee_carro">__________</span>
+      </td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <table class="table_class">
+    <tr>
+      <td colspan="7">
+        <h2 style="margin: 0px; text-align: center">
+          <b>INFORMACIÓN PERSONAL</b>
+        </h2>
+      </td>
+    </tr>
+    <tr>
+      <th>NOMBRE Y APELLIDO</th>
+      <th>PARENTESCO</th>
+      <th>EDAD</th>
+      <th>ESCOLARIDAD</th>
+      <th>OCUPACIÓN</th>
+      <th>TELÉFONO</th>
+      <th>CONVIVE CON USTED</th>
+    </tr>
+    <tr>
+      <td><span name="nombres_fam_1">__________</span></td>
+      <td><span name="parentesco_fam_1">__________</span></td>
+      <td><span name="edad_fam_1">__________</span></td>
+      <td><span name="escolar_fam_1">__________</span></td>
+      <td><span name="ocupac_fam_1">__________</span></td>
+      <td><span name="tel_fam_1">__________</span></td>
+      <td><span name="convive_fam_1">__________</span></td>
+    </tr>
+    <tr>
+      <td><span name="nombres_fam_2">__________</span></td>
+      <td><span name="parentesco_fam_2">__________</span></td>
+      <td><span name="edad_fam_2">__________</span></td>
+      <td><span name="escolar_fam_2">__________</span></td>
+      <td><span name="ocupac_fam_2">__________</span></td>
+      <td><span name="tel_fam_2">__________</span></td>
+      <td><span name="convive_fam_2">__________</span></td>
+    </tr>
+    <tr>
+      <td><span name="nombres_fam_3">__________</span></td>
+      <td><span name="parentesco_fam_3">__________</span></td>
+      <td><span name="edad_fam_3">__________</span></td>
+      <td><span name="escolar_fam_3">__________</span></td>
+      <td><span name="ocupac_fam_3">__________</span></td>
+      <td><span name="tel_fam_3">__________</span></td>
+      <td><span name="convive_fam_3">__________</span></td>
+    </tr>
+    <tr>
+      <td><span name="nombres_fam_4">__________</span></td>
+      <td><span name="parentesco_fam_4">__________</span></td>
+      <td><span name="edad_fam_4">__________</span></td>
+      <td><span name="escolar_fam_4">__________</span></td>
+      <td><span name="ocupac_fam_4">__________</span></td>
+      <td><span name="tel_fam_4">__________</span></td>
+      <td><span name="convive_fam_4">__________</span></td>
+    </tr>
+    <tr>
+      <td><span name="nombres_fam_5">__________</span></td>
+      <td><span name="parentesco_fam_5">__________</span></td>
+      <td><span name="edad_fam_5">__________</span></td>
+      <td><span name="escolar_fam_5">__________</span></td>
+      <td><span name="ocupac_fam_5">__________</span></td>
+      <td><span name="tel_fam_5">__________</span></td>
+      <td><span name="convive_fam_5">__________</span></td>
+    </tr>
+  </table>
+  <br />
+  <table class="table_class">
+    <tr>
+      <td colspan="4">
+        <h2 style="margin: 0px; text-align: center">
+          <b>INFORMACIÓN PERSONAL</b>
+        </h2>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        <p style="margin: 0px; text-align: center">
+          Favor indicar desde las mas reciente a las más antigua
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2"><b>EMPRESA 1</b></td>
+      <td colspan="2"><b>EMPRESA 2</b></td>
+    </tr>
+    <tr>
+      <td>Cargo</td>
+      <td><span name="cargo_emp_1">__________</span></td>
+      <td>Cargo</td>
+      <td><span name="cargo_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Salario</td>
+      <td><span name="salario_emp_1">__________</span></td>
+      <td>Salario</td>
+      <td><span name="salario_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Principales funciones</td>
+      <td><span name="funciones_emp_1">__________</span></td>
+      <td>Principales funciones</td>
+      <td><span name="funciones_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Programas manejados</td>
+      <td><span name="programas_emp_1">__________</span></td>
+      <td>Programas manejados</td>
+      <td><span name="programas_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Fecha ingreso</td>
+      <td><span name="fecha_ing_emp_1">__________</span></td>
+      <td>Fecha ingreso</td>
+      <td><span name="fecha_ing_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Fecha retiro</td>
+      <td><span name="fecha_ret_emp_1">__________</span></td>
+      <td>Fecha retiro</td>
+      <td><span name="fecha_ret_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Motivo retiro</td>
+      <td><span name="motivo_ret_emp_1">__________</span></td>
+      <td>Motivo retiro</td>
+      <td><span name="motivo_ret_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Jefe inmediato</td>
+      <td><span name="jefe_inmediato_emp_1">__________</span></td>
+      <td>Jefe inmediato</td>
+      <td><span name="jefe_inmediato_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Teléfono</td>
+      <td><span name="tel_emp_1">__________</span></td>
+      <td>Teléfono</td>
+      <td><span name="tel_emp_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Celular</td>
+      <td><span name="cel_emp_1">__________</span></td>
+      <td>Celular</td>
+      <td><span name="cel_emp_2">__________</span></td>
+    </tr>
+  </table>
+  <br />
+  <table class="table_class">
+    <tr>
+      <td colspan="8">
+        <h2 style="margin: 0px; text-align: center">
+          <b>REFERENCIA PERSONAL Y/O FAMILIAR</b>
+        </h2>
+      </td>
+    </tr>
+    <tr>
+      <td>Nombre completo</td>
+      <td><span name="nombre_ref_1">__________</span></td>
+      <td>Parentesco</td>
+      <td><span name="parentesco_ref_1">__________</span></td>
+      <td>Ocupación</td>
+      <td><span name="ocupacion_ref_1">__________</span></td>
+      <td>Teléfono</td>
+      <td><span name="tel_ref_1">__________</span></td>
+    </tr>
+    <tr>
+      <td>Correo</td>
+      <td colspan="3"><span name="correo_ref_1">__________</span></td>
+      <td>Celular</td>
+      <td colspan="3"><span name="cel_ref_1">__________</span></td>
+    </tr>
+    <tr>
+      <td>Nombre completo</td>
+      <td><span name="nombre_ref_2">__________</span></td>
+      <td>Parentesco</td>
+      <td><span name="parentesco_ref_2">__________</span></td>
+      <td>Ocupación</td>
+      <td><span name="ocupacion_ref_2">__________</span></td>
+      <td>Teléfono</td>
+      <td><span name="tel_ref_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Correo</td>
+      <td colspan="3"><span name="correo_ref_2">__________</span></td>
+      <td>Celular</td>
+      <td colspan="3"><span name="cel_ref_2">__________</span></td>
+    </tr>
+    <tr>
+      <td>Nombre completo</td>
+      <td><span name="nombre_ref_3">__________</span></td>
+      <td>Parentesco</td>
+      <td><span name="parentesco_ref_3">__________</span></td>
+      <td>Ocupación</td>
+      <td><span name="ocupacion_ref_3">__________</span></td>
+      <td>Teléfono</td>
+      <td><span name="tel_ref_3">__________</span></td>
+    </tr>
+    <tr>
+      <td>Correo</td>
+      <td colspan="3"><span name="correo_ref_3">__________</span></td>
+      <td>Celular</td>
+      <td colspan="3"><span name="cel_ref_3">__________</span></td>
+    </tr>
+  </table>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <table class="table_class">
+    <tr>
+      <td rowspan="4">
+        <div style="margin: auto; width: fit-content">
+          <img
+            src="https://mi-contrato-static.s3.amazonaws.com/futesa/logo.jpeg"
+            alt="Futesa logo"
+          />
+        </div>
+      </td>
+      <td rowspan="4">
+        <p style="margin: 0px; text-align: center">
+          <b>
+            RECOMENDACIONES MEDICAS <br />
+            OCUPACIONALES
+          </b>
+        </p>
+      </td>
+      <td>Proceso</td>
+      <td>SG-SST</td>
+    </tr>
+    <tr>
+      <td>Código</td>
+      <td>FRt-RMC</td>
+    </tr>
+    <tr>
+      <td>Versión</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Fecha</td>
+      <td>27/10/2020</td>
+    </tr>
+  </table>
+  <p>
+    <span name="fecha">__________</span>
+    <br />
+    <br />
+    Señor(a):
+    <span name="nombres_apellidos">__________</span><br />
+    <span name="cargo">__________</span><br />
+    Empresa usuaria: <span name="empresa_usuaria">__________</span><br />
+    Medellín, Antioquía <br />
+    Cordial saludo,
+  </p>
+  <p>
+    Para <b>FUTESA S.A.S</b> y su área de
+    <b>Seguridad y Salud en el Trabaj</b>o, es muy importante velar por mantener
+    las mejores condiciones de su estado de salud durante la colaboración en
+    misión con nuestra empresa usuaria.
+  </p>
+  <p>
+    Dando cumplimiento a la Resolución 2346 de 2007 donde se reglamenta la
+    práctica y contenido de las evaluaciones médicas ocupacionales. El día 2 de
+    marzo del 2022, se ordena la realización de los exámenes médicos de ingreso
+    en el laboratorio IPS realizados estos se le dan las siguientes;
+  </p>
+  <ol>
+    <li>
+      <b>Recomendaciones generales:</b>
+      <ul>
+        <li>
+          <span name="recomendaciones_gen">______________________________</span>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <b>Recomendaciones específicas:</b>
+      <ul>
+        <li>
+          <span name="recomendaciones_esp">______________________________</span>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <b>Recomendaciones para la prevención del COVID-19.</b>
+      <ul>
+        <li>Lavar bien las manos regularmente con abundante agua y jabón.</li>
+        <li>
+          En el transporte masivo usar siempre tapabocas y lavarse las manos
+          después de usarlo.
+        </li>
+        <li>
+          Evitar tocarse la cara, especialmente después de tener contacto con
+          superficies contaminadas o personas enfermas.
+        </li>
+        <li>
+          Mantener una distancia no inferior a un metro y medio con otras
+          personas en la medida de lo posible: No salude de beso ni de mano y
+          evite el contacto físico.
+        </li>
+        <li>
+          Fiebre, Tos, Dificultad para respirar, dolor para tragar, pérdida del
+          gusto o del olfato, cansancio, dolor muscular. Notifíquelo a su
+          empleador y su EPS, No vaya a lugares públicos, es ideal que se aísle
+          preventivamente.
+        </li>
+        <li>
+          Cumplir a cabalidad los protocolos de bioseguridad establecidos por la
+          empresa usuaria donde desarrollara sus actividades en misión.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <b>Compromisos EST - Empresa usuaria</b>
+      <ul>
+        <li>
+          La empresa Futesa (EST) desde el área de Salud y Seguridad en el
+          trabajo, en conjunto con la empresa usuaria hará seguimiento al
+          cumplimiento de dichas recomendaciones.
+        </li>
+      </ul>
+    </li>
+    <li>
+      <b>Compromisos del trabajador</b>
+      <br />
+      Cumplir estrictamente las recomendaciones de conformidad con lo
+      establecido en el Decreto 1072 del 26 de mayo de 2015, por medio del cual
+      se expide el Decreto Único Reglamentario del0. Sector Trabajo: que señala:
+      <br />
+      <br />
+      “Artículo 2.2.4.6.10. Responsabilidades de los trabajadores. Los
+      trabajadores, de conformidad con la normatividad vigente tendrán entre
+      otras, las siguientes responsabilidades:
+      <ul>
+        <li>Procurar el cuidado integral de su salud;</li>
+        <li>
+          Suministrar información clara, veraz y completa sobre su estado de
+          salud;
+        </li>
+        <li>
+          Cumplir las normas, reglamentos e instrucciones del Sistema de Gestión
+          de la Seguridad y Salud en el Trabajo de la empresa;
+        </li>
+        <li>
+          Informar oportunamente al empleador o contratante acerca de los
+          peligros y riesgos latentes en su sitio de trabajo;
+        </li>
+        <li>
+          Participar en las actividades de capacitación en seguridad y salud en
+          el trabajo definido en el plan de capacitación del SG-SST; y
+        </li>
+        <li>
+          Participar y contribuir al cumplimiento de los objetivos del Sistema
+          de Gestión de la Seguridad y Salud en el Trabajo SG-SST”
+        </li>
+      </ul>
+    </li>
+    <li>
+      <b>Canales de comunicación</b>
+      <ul>
+        <li>
+          Canales de comunicación dispuestos para él envió de los soportes:
+          correos electrónicos:
+          <a href="mailto:lidersst@futes.com.co">lidersst@futes.com.co</a>
+          –
+          <a href="mailto:auxiliarsst@futes.com">auxiliarsst@futes.com</a>
+          Numero de contacto: 3213095304.
+        </li>
+      </ul>
+    </li>
+  </ol>
+  <br />
+  <br />
+  <p>
+    ______________________________ <br />
+    <span name="tipo_doc_trabajador_cc">C.C.</span>
+    <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+    <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+    <span name="num_id_trabajador">__________</span>
+  </p>
+  <br />
+  <p>
+    ______________________________ <br />
+    Yiwer Africano Torres <br />
+    <b>Director SST Futesa</b>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <table class="table_class">
+    <tr>
+      <td rowspan="4">
+        <div style="margin: auto; width: fit-content">
+          <img
+            src="https://mi-contrato-static.s3.amazonaws.com/futesa/logo.jpeg"
+            alt="Futesa logo"
+          />
+        </div>
+      </td>
+      <td rowspan="4">
+        <p style="margin: 0px; text-align: center">
+          <b>
+            Declaratoria de seguridad social, inducción y compromisos de
+            documentación
+          </b>
+        </p>
+      </td>
+      <td>Proceso</td>
+      <td>Contratación</td>
+    </tr>
+    <tr>
+      <td>Código</td>
+      <td>FRDSI-01</td>
+    </tr>
+    <tr>
+      <td>Versión</td>
+      <td>02</td>
+    </tr>
+    <tr>
+      <td>Fecha</td>
+      <td>25/06/2021</td>
+    </tr>
+  </table>
+  <p>
+    <b>1. Datos personales.</b><br />
+    <span>
+      <b>1.1</b> Nombres y apellidos:
+      <span name="nombres_apellidos">__________</span>
+    </span>
+    <br />
+    <span>
+      <b>1.2</b> Número de identificación:
+      <span name="tipo_doc_trabajador_cc">C.C.</span>
+      <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+      <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+      <span name="num_id_trabajador">__________</span>
+      <span name="num_id_trabajador">__________</span>
+    </span>
+    <br />
+    <span>
+      <b>1.3</b> Empresa usuaria <span name="empresa_usuaria">__________</span>
+    </span>
+  </p>
+  <p><b>2. Compromiso Futesta S.A.S. - EST</b></p>
+  <p>
+    <b>2.1 Futesa S.A.S</b> como parte empleadora dando cumplimiento al articulo
+    161 de la ley 100 de 1993 realiza la respectiva afiliación de sus
+    trabajadores al sistema general de Seguridad Social.
+  </p>
+  <p>
+    <b>2.2 Futesa S.A.S</b> cumpliendo con su responsabilidad como empleador
+    procede a afiliar a los beneficiarios de EL TRABAJADOR a la Caja de
+    Compensación Familiar.
+  </p>
+  <p>
+    <b>3. Compromisos del trabjador</b>
+  </p>
+  <p>
+    <b>3.1 El Trabajador</b> se compromete a realizar la afiliación de su grupo
+    de beneficiarios a la EPS conforme lo que establece la ley y el
+    procedimiento respectivo de cada EPS a la cual se encuentre afiliado el
+    <b>trabajador</b> en su calidad de cotizante.
+  </p>
+  <p>
+    <b>3.2 El Trabajador</b> se compromete a validar si, su EPS cuenta con
+    cobertura geográfica en su ciudad o municipio de residencia y de no contar
+    con dicha cobertura solicitar la portabilidad o traslado de EPS según los
+    lineamientos establecidos por el gobierno nacional.
+  </p>
+
+  <p><b>4. Firmas</b></p>
+  <p>
+    <b>Aspirante</b>
+    <br />
+    <br />
+    ______________________________ <br />
+    <span name="tipo_doc_trabajador_cc">C.C.</span>
+    <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+    <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+    <span name="num_id_trabajador">__________</span><br />
+    <span name="fecha_diligenciamiento">__________</span>
+  </p>
+  <br />
+  <p>
+    <b>Analista de contratación</b>
+    <br />
+    <br />
+    ______________________________ <br />
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <table class="table_class">
+    <tr>
+      <td rowspan="4">
+        <div style="margin: auto; width: fit-content">
+          <img
+            src="https://mi-contrato-static.s3.amazonaws.com/futesa/logo.jpeg"
+            alt="Futesa logo"
+          />
+        </div>
+      </td>
+      <td rowspan="4">
+        <p style="margin: 0px; text-align: center">
+          <b>ENCUESTA PERFIL SOCIODEMOGRÁFICO Y MORBILIDAD SENTIDA</b>
+        </p>
+      </td>
+      <td>Proceso</td>
+      <td>SG-SST</td>
+    </tr>
+    <tr>
+      <td>Código</td>
+      <td>FT-SST-02</td>
+    </tr>
+    <tr>
+      <td>Versión</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Fecha</td>
+      <td>Diciembre 2020</td>
+    </tr>
+  </table>
+  <p>
+    <b>Datos personales.</b><br />
+    <span>
+      <b>Nombres y apellidos:</b>
+      <span name="nombres_apellidos">__________</span>
+    </span>
+    <br />
+    <span>
+      <b>Número de identificación:</b>
+      <span name="tipo_doc_trabajador_cc">C.C.</span>
+      <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+      <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+      <span name="num_id_trabajador">__________</span>
+    </span>
+    <br />
+    <span> <b>CARGO:</b> <span name="cargo">__________</span> </span>
+    <br />
+    <span>
+      <b>CENTRO DE TRABAJO:</b> <span name="empresa_usuaria">__________</span>
+    </span>
+  </p>
+  <p>
+    <b>1. EDAD</b><br />
+    <span name="perfil_edad">Menor de 18 años</span>
+  </p>
+  <p>
+    <b>2. ESTADO CIVIL</b><br />
+    <span name="perfil_estado_civil">Soltero(a)</span>
+  </p>
+  <p>
+    <b>3. SEXO</b><br />
+    <span name="perfil_sexo">Hombre</span>
+  </p>
+  <p>
+    <b>4. NÚMERO DE PERSONAS A CARGO</b><br />
+    <span name="perfil_num_per_cargo">1 - 3 personas</span>
+  </p>
+  <p>
+    <b>5. NIVEL DE ESCOLARIDAD</b><br />
+    <span name="perfil_escolaridad">Primaria</span>
+  </p>
+  <p>
+    <b>6. TENENCIA DE VIVIENDA</b><br />
+    <span name="perfil_tenencia_viv">Propia</span>
+  </p>
+  <p>
+    <b>7. USO DEL TIEMPO LIBRE</b><br />
+    <span name="perfil_tiempo_libre">Otro trabajo</span>
+  </p>
+  <p>
+    <b>8. PROMEDIO DE INGRESOS (S.M.L.)</b><br />
+    <span name="perfil_ingresos">Mínimo Legal (S.M.L.)</span>
+  </p>
+  <p>
+    <b>9. ANTIGÜEDAD EN LA EMPRESA</b><br />
+    <span name="perfil_antiguedad">Menos de 1 año</span>
+  </p>
+  <p>
+    <b>10. ANTIGÜEDAD EN EL CARGO ACTUAL</b><br />
+    <span name="perfil_antiguedad_CARGO">Menos de 1 año</span>
+  </p>
+  <p>
+    <b>11. TIPO DE CONTRATACIÓN</b><br />
+    <span name="perfil_tipo_cont">Termino fijo</span>
+  </p>
+  <p>
+    <b>12. HA PARTICIPADO EN ACTIVIDADES DE SALUD REALIZADAS POR LA EMPRESA</b
+    ><br />
+    <span name="perfil_act_salud">Vacunación</span>
+  </p>
+  <p>
+    <b>13. LE HAN DIAGNOSTICADO ALGUNA ENFERMEDAD</b><br />
+    <span name="perfil_diagnostico_s" hidden>
+      Si <br />
+      Cual: <span name="diagnostico_cual">__________</span>
+    </span>
+    <span name="perfil_diagnostico_n">No</span>
+  </p>
+  <p>
+    <b>14. FUMA</b><br />
+    <span name="perfil_fuma_s" hidden>
+      Si <br />
+      Promedio diario: <span name="fuma_cuanto">__________</span>
+    </span>
+    <span name="perfil_fuma_n">No</span>
+  </p>
+  <p>
+    <b>15. CONSUME BEBIDAS ALCOHOLICAS</b><br />
+    <span name="perfil_alcohol_s" hidden>
+      Si <br />
+      Frecuencia: <span name="alcohol_frecuencia">Semanal</span>
+    </span>
+    <span name="perfil_alcohol_n">No</span>
+  </p>
+  <p>
+    <b>16. PRACTICA ALGUN DEPORTE</b><br />
+    <span name="perfil_deporte_s" hidden>
+      Si <br />
+      Cual: <span name="deporte_cual">__________</span><br />
+      Frecuencia: <span name="deporte_frecuencia">__________</span>
+    </span>
+    <span name="perfil_deporte_n">No</span>
+  </p>
+  <p>
+    <b>17.</b> En caso de emergencia a qué número podemos informar, relacione
+    número y parentesco:
+    <br />
+    Nombre y apellido: <span name="nombre_cont_emerg">__________</span><br />
+    Número de célular: <span name="cel_cont_emerg">__________</span><br />
+    Parentesco: <span name="parentesco_cont_emerg">__________</span><br />
+  </p>
+  <p>
+    <b>18.</b> Tipo de sangre <b>(RH).</b>
+    <span name="tipo_sangre">__________</span>
+  </p>
+  <p>
+    <b>19.</b> A continuación relacione: <br />
+    <b>EPS:</b> <span name="perfil_eps">__________</span>, <b>AFP:</b>
+    <span name="perfil_afp">__________</span>
+  </p>
+  <p>
+    <b>20.</b> Marque con una X cuáles de las siguientes molestias a
+    experimentado con frecuencia los últimos seis (6) meses.
+  </p>
+  <table class="table_class">
+    <tr>
+      <th>SINTOMA</th>
+      <th>SI</th>
+      <th>NO</th>
+      <th>EXPLIQUE</th>
+    </tr>
+    <tr>
+      <td>Dolor de cabeza</td>
+      <td>
+        <span name="molestia_cabeza_n">__________</span>
+        <span name="molestia_cabeza_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_cabeza_n">x</span>
+        <span name="molestia_cabeza_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_cabeza_s">
+          <span name="dolor_cabeza_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Dolor de cuello, espalda y cintura</td>
+      <td>
+        <span name="molestia_cuello_n">__________</span>
+        <span name="molestia_cuello_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_cuello_n">x</span>
+        <span name="molestia_cuello_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_cuello_s">
+          <span name="cuello_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Dolores musculares</td>
+      <td>
+        <span name="molestia_muscular_n">__________</span>
+        <span name="molestia_muscular_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_muscular_n">x</span>
+        <span name="molestia_muscular_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_muscular_s">
+          <span name="muscular_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Dificultad para algún movimiento</td>
+      <td>
+        <span name="molestia_movimiento_n">__________</span>
+        <span name="molestia_movimiento_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_movimiento_n">x</span>
+        <span name="molestia_movimiento_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_movimiento_s">
+          <span name="movimiento_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Tos frecuente</td>
+      <td>
+        <span name="molestia_tos_n">__________</span>
+        <span name="molestia_tos_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_tos_n">x</span>
+        <span name="molestia_tos_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_tos_s">
+          <span name="tos_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Dificultad respiratoria</td>
+      <td>
+        <span name="molestia_dif_resp_n">__________</span>
+        <span name="molestia_dif_resp_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_dif_resp_n">x</span>
+        <span name="molestia_dif_resp_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_dif_resp_s">
+          <span name="dif_resp_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Gastritis, ulcera</td>
+      <td>
+        <span name="molestia_gastritis_n">__________</span>
+        <span name="molestia_gastritis_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_gastritis_n">x</span>
+        <span name="molestia_gastritis_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_gastritis_s">
+          <span name="gastritis_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Otras alteraciones del funcionamiento digestivo</td>
+      <td>
+        <span name="molestia_digestivo_n">__________</span>
+        <span name="molestia_digestivo_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_digestivo_n">x</span>
+        <span name="molestia_digestivo_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_digestivo_s">
+          <span name="digestivo_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Alteraciones del sueño (insomnio, somnolencia)</td>
+      <td>
+        <span name="molestia_sueno_n">__________</span>
+        <span name="molestia_sueno_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_sueno_n">x</span>
+        <span name="molestia_sueno_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_sueno_s">
+          <span name="sueno_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Dificultad para concentrarse</td>
+      <td>
+        <span name="molestia_concentracion_n">__________</span>
+        <span name="molestia_concentracion_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_concentracion_n">x</span>
+        <span name="molestia_concentracion_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_concentracion_s">
+          <span name="concentracion_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Mal genio y/o cambios abruptos emocionales</td>
+      <td>
+        <span name="molestia_mal_genio_n">__________</span>
+        <span name="molestia_mal_genio_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_mal_genio_n">x</span>
+        <span name="molestia_mal_genio_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_mal_genio_s">
+          <span name="mal_genio_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Nerviosismo</td>
+      <td>
+        <span name="molestia_nervios_n">__________</span>
+        <span name="molestia_nervios_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_nervios_n">x</span>
+        <span name="molestia_nervios_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_nervios_s">
+          <span name="nervios_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Cansancio mental</td>
+      <td>
+        <span name="molestia_cans_mental_n">__________</span>
+        <span name="molestia_cans_mental_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_cans_mental_n">x</span>
+        <span name="molestia_cans_mental_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_cans_mental_s">
+          <span name="cans_mental_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Palpitaciones</td>
+      <td>
+        <span name="molestia_palpitaciones_n">__________</span>
+        <span name="molestia_palpitaciones_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_palpitaciones_n">x</span>
+        <span name="molestia_palpitaciones_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_palpitaciones_s">
+          <span name="palpitaciones_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Dolor en el pecho (angina)</td>
+      <td>
+        <span name="molestia_dolor_pecho_n">__________</span>
+        <span name="molestia_dolor_pecho_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_dolor_pecho_n">x</span>
+        <span name="molestia_dolor_pecho_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_dolor_pecho_s">
+          <span name="dolor_pecho_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Cambios visuales</td>
+      <td>
+        <span name="molestia_camb_visual_n">__________</span>
+        <span name="molestia_camb_visual_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_camb_visual_n">x</span>
+        <span name="molestia_camb_visual_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_camb_visual_s">
+          <span name="camb_visual_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Cansancio, fatiga, ardor o dis confort visual</td>
+      <td>
+        <span name="molestia_cansancio_n">__________</span>
+        <span name="molestia_cansancio_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_cansancio_n">x</span>
+        <span name="molestia_cansancio_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_cansancio_s">
+          <span name="cansancio_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Pitos o ruidos continuos o intermitentes en los oídos</td>
+      <td>
+        <span name="molestia_ruido_n">__________</span>
+        <span name="molestia_ruido_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_ruido_n">x</span>
+        <span name="molestia_ruido_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_ruido_s">
+          <span name="ruido_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Dificultad para oír</td>
+      <td>
+        <span name="molestia_oido_n">__________</span>
+        <span name="molestia_oido_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_oido_n">x</span>
+        <span name="molestia_oido_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_oido_s">
+          <span name="oido_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Sensación permanente de cansancio</td>
+      <td>
+        <span name="molestia_cansancio_perm_n">__________</span>
+        <span name="molestia_cansancio_perm_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_cansancio_perm_n">x</span>
+        <span name="molestia_cansancio_perm_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_cansancio_perm_s">
+          <span name="cansancio_perm_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Alteraciones en la piel</td>
+      <td>
+        <span name="molestia_piel_n">__________</span>
+        <span name="molestia_piel_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_piel_n">x</span>
+        <span name="molestia_piel_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_piel_s">
+          <span name="piel_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>Otras alteraciones no notadas</td>
+      <td>
+        <span name="molestia_otras_n">__________</span>
+        <span name="molestia_otras_s" hidden>x</span>
+      </td>
+      <td>
+        <span name="molestia_otras_n">x</span>
+        <span name="molestia_otras_s" hidden>__________</span>
+      </td>
+      <td>
+        <span name="molestia_otras_s">
+          <span name="otras_exp">__________</span>
+        </span>
+      </td>
+    </tr>
+  </table>
+  <p>
+    Con la firma de este documento manifiesto que he sido informado por la
+    empresa <b>FUTESA S.A.S</b> de que:
+  </p>
+  <ol>
+    <li>
+      La empresa actuará como Responsable del Tratamiento de datos personales de
+      los cuáles soy titular y que, podrán recolectar, usar y tratar mis datos
+      personales conforme la Política de Tratamiento de Datos Personales de la
+      empresa.
+    </li>
+    <li>
+      Es de carácter facultativo responder preguntas que versen sobre Datos
+      Sensibles o sobre menores de edad.
+    </li>
+    <li>
+      Mis derechos como titular de los datos son los previstos en la
+      Constitución y la ley, especialmente el derecho a conocer, actualizar,
+      rectificar y suprimir mi información personal, así como el derecho a
+      revocar el consentimiento otorgado para el tratamiento de datos
+      personales.
+    </li>
+    <li>
+      Los derechos pueden ser ejercidos a través de los encargados por la
+      empresa y observando la Política de Tratamiento de Datos Personales de la
+      empresa.
+    </li>
+    <li>
+      Para cualquier inquietud o información adicional relacionada con el
+      tratamiento de datos personales, puedo contactarme al correo electrónico.
+      <a href="mailto:lidersst@futesa.com">lidersst@futesa.com</a>
+    </li>
+    <li>
+      La empresa garantiza la confidencialidad, libertadad, seguridad,
+      veracidad, transparencia, acceso y circulación restringida de mis datos y
+      se reservan el derecho de modificar su Política de Tratamient de Datos
+      Personales en cualquier momento. Cualquier cambio será informado y
+      publicado oportunamente.
+    </li>
+  </ol>
+  <p>
+    teniendo en cuenta lo anterior, autorizo de manera voluntaria, previa,
+    explícita, informada e inequívoca a la empresa <b>FUTESA S.A.S.</b> para
+    tratar mis datos personales de acuerdo con la Política de Tratamiento de
+    Datos Personales de la empresa y para los fines relacionados con su objeto
+    social y en especial cumplimiento del decreto 1072 de 2015 en al
+    implementación del SG-SST. La información obtenida para el Tratamiento de
+    mis datos personales la he suministrado de forma voluntaria y es verídica.
+  </p>
+  <p>
+    Se firma en <span name="ciudad_firma">__________</span>, el
+    <span name="fecha_diligenciamiento">__________</span>
+  </p>
+  <p>
+    <b>FIRMA:</b><br /><br />______________________________ <br />
+    <span name="tipo_doc_trabajador_cc">C.C.</span>
+    <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+    <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+    <span name="num_id_trabajador">__________</span>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <table class="table_class">
+    <tr>
+      <td rowspan="4">
+        <div style="margin: auto; width: fit-content">
+          <img
+            src="https://mi-contrato-static.s3.amazonaws.com/futesa/logo.jpeg"
+            alt="Futesa logo"
+          />
+        </div>
+      </td>
+      <td rowspan="4">
+        <p style="margin: 0px; text-align: center">
+          <b>
+            Acta y evaluación de inducción, reinducción en seguridad y salud en
+            el trabajo y medio ambiente
+          </b>
+        </p>
+      </td>
+      <td>Proceso</td>
+      <td>SG-SST</td>
+    </tr>
+    <tr>
+      <td>Código</td>
+      <td>AEIR-01</td>
+    </tr>
+    <tr>
+      <td>Versión</td>
+      <td>001</td>
+    </tr>
+    <tr>
+      <td>Fecha</td>
+      <td>10/10/2020</td>
+    </tr>
+  </table>
+  <p>
+    <b>1. Datos personales.</b><br />
+    <span>
+      <b>Nombres y apellidos:</b>
+      <span name="nombres_apellidos">__________</span>
+    </span>
+    <br />
+    <span>
+      <b>Número de identificación:</b>
+      <span name="tipo_doc_trabajador_cc">C.C.</span>
+      <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+      <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+      <span name="num_id_trabajador">__________</span>
+    </span>
+    <br />
+    <span> <b>Cargo:</b> <span name="cargo">__________</span> </span>
+    <br />
+    <span>
+      <b>Empresa usuaria:</b> <span name="empresa_usuaria">__________</span>
+    </span>
+  </p>
+  <p>
+    <b>2. Objetivo</b>
+    <br /><br />
+    Garantizar la aplicación y la observación de las normas legales vigentes y
+    la reglamentación de la compañía en
+    <b>SEGURIDAD Y SALUD EN EL TRABAJO Y MEDIO AMBIENTE;</b> asegurar la
+    identificación de peligros y la prevención de incidentes y accidentes
+    laborales para el cargo específico que desempeñará el trabajador (De planta,
+    en misión, contratistas, subcontratista, proveedores y visitantes; y los
+    daños e impactos ambientales que se puedan generar durante las actividades a
+    realizar.
+  </p>
+  <p>
+    <b>
+      3. Temas expuestos en el video de inducción, re inducción y/o capacitación
+    </b>
+  </p>
+  <ol style="list-style: decimal">
+    <li>Generalidades de la empresa.</li>
+    <li>Aspectos generales y legales en Seguridad y Salud en el Trabajo.</li>
+    <li>Aspectos de Medio Ambiente.</li>
+    <li>Comité paritario de la Seguridad y Salud en el Trabajo.</li>
+    <li>Comité de Convivencia Laboral.</li>
+    <li>Funcionamiento del Plan y Brigadas de Emergencias.</li>
+    <li>Políticas del SST.</li>
+    <li>Responsabilidades generales en SST.</li>
+    <li>
+      Reporte e investigación de incidentes, accidentes y enfermedad laboral.
+    </li>
+    <li>Reporte de actos y condiciones inseguras.</li>
+    <li>Reglamento de Higiene y Seguridad Industrial.</li>
+    <li>
+      Obligaciones del trabajador en la Seguridad y Salud en Trabajo y medio
+      ambiente.
+    </li>
+    <li>Obligatoriedad del uso de elementos de protección personal.</li>
+    <li>
+      Sistema de Seguridad Social Integral (EPS, ARL, AFP, CCF, SENA, ICBF).
+    </li>
+    <li>
+      Notificación de Riesgos acorde a la labor y áreas de trabajo (Condiciones
+      de Seguridad, Psicosociales, Biomecánicos, Naturales, Químicos,
+      Biológicos, y Físicos).
+    </li>
+    <li>
+      Exámenes Laborales de ingreso, periódicos, egreso, con énfasis en alturas
+      y espacios confinados.
+    </li>
+    <li>
+      Permisos de trabajo para actividades de alto riesgo (Alturas, Temperaturas
+      extremas, espacios confinados).
+    </li>
+    <li>Programas de gestión y tareas de alto riesgo.</li>
+    <li>Sanciones económicas, disciplinarias, y pedagógicas.</li>
+    <li>Manejo y clasificación de Residuos.</li>
+    <li>Orden, Aseo y Horarios de trabajo.</li>
+  </ol>
+  <p>
+    <b>
+      4. Evaluación de la inducción (Marque verdadero o falso según considere
+      sea la respuesta más adecuada a cada pregunta)
+    </b>
+  </p>
+  <table class="table_class">
+    <tr>
+      <th>No.</th>
+      <th>Pregunta</th>
+      <th>V</th>
+      <th>F</th>
+    </tr>
+    <tr>
+      <td><b>1</b></td>
+      <td>
+        El Reglamento de Higiene, Seguridad Industrial y el Comité de
+        Convivencia Laboral de la Empresa es solo para conocimiento de la
+        Gerencia?
+      </td>
+      <td>
+        <span name="pregunta_1_s">x</span>
+        <span name="pregunta_1_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_1_s">____</span>
+        <span name="pregunta_1_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>2</b></td>
+      <td>
+        La política de Seguridad y Salud en el Trabajo, refleja el Compromiso,
+        Mejoramiento Continuo y Cumplimiento de la ley buscando mantener la
+        salud de sus trabajadores?
+      </td>
+      <td>
+        <span name="pregunta_2_s">x</span>
+        <span name="pregunta_2_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_2_s">____</span>
+        <span name="pregunta_2_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>3</b></td>
+      <td>
+        La Política de prevención de consumo de alcohol, drogas y tabaquismo,
+        busca mejorar la calidad de vida del trabajador por medio de su
+        autocuidado?
+      </td>
+      <td>
+        <span name="pregunta_3_s">x</span>
+        <span name="pregunta_3_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_3_s">____</span>
+        <span name="pregunta_3_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>4</b></td>
+      <td>
+        El Sistema de Gestión de la Seguridad y Salud en el trabajo se compone
+        de tres programas: Higiente Industrial, Seguridad Industrial y Medicina
+        preventiva y del Trabajo?
+      </td>
+      <td>
+        <span name="pregunta_4_s">x</span>
+        <span name="pregunta_4_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_4_s">____</span>
+        <span name="pregunta_4_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>5</b></td>
+      <td>
+        Un acto inseguro es la violación por parte del trabajador de las normas
+        que han sido establecidas y dadas a conocer como seguras para la
+        realización de cualquier actividad laboral?
+      </td>
+      <td>
+        <span name="pregunta_5_s">x</span>
+        <span name="pregunta_5_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_5_s">____</span>
+        <span name="pregunta_5_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>6</b></td>
+      <td>
+        Los elementos de protección personal son barreras que ayudan a proteger
+        y disminuir las consecuencias de un accidente de trabajo y la enfermedad
+        laboral si hago un buen uso de ellos?
+      </td>
+      <td>
+        <span name="pregunta_6_s">x</span>
+        <span name="pregunta_6_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_6_s">____</span>
+        <span name="pregunta_6_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>7</b></td>
+      <td>
+        El Copasst está compuesto únicamente por el personal administrativo y de
+        oficinas?
+      </td>
+      <td>
+        <span name="pregunta_7_s">x</span>
+        <span name="pregunta_7_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_7_s">____</span>
+        <span name="pregunta_7_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>8</b></td>
+      <td>
+        Uno de los objetivos SST de FUTESA S.A.S. es "Conservar y proteger la
+        salud de los trabajadores"
+      </td>
+      <td>
+        <span name="pregunta_8_s">x</span>
+        <span name="pregunta_8_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_8_s">____</span>
+        <span name="pregunta_8_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>9</b></td>
+      <td>
+        Según el programa de disposición final de residuos sólidos establecidos
+        por la empresa, Como trabajador puedo botar cualquier tipo de residuo en
+        una misma caneca?
+      </td>
+      <td>
+        <span name="pregunta_9_s">x</span>
+        <span name="pregunta_9_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_9_s">____</span>
+        <span name="pregunta_9_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>10</b></td>
+      <td>
+        El documento donde se analizan y valoran los riesgos a los que están
+        expuestos los trabajadores se llama matriz de Identificación de
+        Peligros, Evaluación, y Valoración de los Riesgos?
+      </td>
+      <td>
+        <span name="pregunta_10_s">x</span>
+        <span name="pregunta_10_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_10_s">____</span>
+        <span name="pregunta_10_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>11</b></td>
+      <td>
+        Es un accidente de trabajo cuando un señor contratado como conductor, se
+        encuentra apoyando por voluntad propia activdades en instalaciónd e
+        redes y repentinamente se hace una cortada en la mano derecha?
+      </td>
+      <td>
+        <span name="pregunta_11_s">x</span>
+        <span name="pregunta_11_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_11_s">____</span>
+        <span name="pregunta_11_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>12</b></td>
+      <td>
+        Como trabajdor es mi obligación reportar al responsable SST, al jefe
+        inmediato y a la Gerencia todas las condiciones inseguras que estén
+        presentes en mi puesto de trabajo?
+      </td>
+      <td>
+        <span name="pregunta_12_s">x</span>
+        <span name="pregunta_12_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_12_s">____</span>
+        <span name="pregunta_12_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>13</b></td>
+      <td>
+        Cuando se presenta un incidente o accidente de Trabajo, debo reportarlo
+        inmediatamente al responsable SST y a mi jefe inmediato y ser parte de
+        la investigación si es necesario?
+      </td>
+      <td>
+        <span name="pregunta_13_s">x</span>
+        <span name="pregunta_13_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_13_s">____</span>
+        <span name="pregunta_13_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>14</b></td>
+      <td>
+        El cumplimiento en el diligenciamiento y entrega de los permisos de
+        trabajo para actividades de Alto Riesgo (alturas, confinados y
+        temperaturas extremas) es responsabilidad del trabajador que va a
+        desempeñar a actividad antes del inicio de la labor?
+      </td>
+      <td>
+        <span name="pregunta_14_s">x</span>
+        <span name="pregunta_14_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_14_s">____</span>
+        <span name="pregunta_14_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>15</b></td>
+      <td>
+        Una de las actividades del programa de Medicina preventiva y del trabajo
+        es la realización de exámenes médicos los cuales pueden ser de ingreso,
+        periódico, retiro y con énfasis en alturas.
+      </td>
+      <td>
+        <span name="pregunta_15_s">x</span>
+        <span name="pregunta_15_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_15_s">____</span>
+        <span name="pregunta_15_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>16</b></td>
+      <td>
+        Cualquier trabajador puede operar los equipos y maquinaria sin tener
+        capacitación o formación para el manejo de los mismos?
+      </td>
+      <td>
+        <span name="pregunta_16_s">x</span>
+        <span name="pregunta_16_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_16_s">____</span>
+        <span name="pregunta_16_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>17</b></td>
+      <td>
+        En caso de presentarse una emergencia y evacuación, el sitio o sitios
+        específicos y seguros donde se reúnen los trabajadores para tener
+        control del personal se llama punto de encuentro?
+      </td>
+      <td>
+        <span name="pregunta_17_s">x</span>
+        <span name="pregunta_17_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_17_s">____</span>
+        <span name="pregunta_17_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>18</b></td>
+      <td>
+        Los sonidos de alarma que me indican que hay una emergencia son los
+        pitos y sirenas?
+      </td>
+      <td>
+        <span name="pregunta_18_s">x</span>
+        <span name="pregunta_18_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_18_s">____</span>
+        <span name="pregunta_18_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>19</b></td>
+      <td>
+        Mi puesto de trabajod ebe encontrarse en buenas condiciones de orden y
+        aseo a diario?
+      </td>
+      <td>
+        <span name="pregunta_19_s">x</span>
+        <span name="pregunta_19_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_19_s">____</span>
+        <span name="pregunta_19_n" hidden>x</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>20</b></td>
+      <td>
+        Una de las sanciones a las que puede estar expuesta la Empresa por el
+        incumplimiento de la legislación vigente en matera de Seguridad y Salud
+        en el trabajo es de tipo pedagógico?
+      </td>
+      <td>
+        <span name="pregunta_20_s">x</span>
+        <span name="pregunta_20_n" hidden>____</span>
+      </td>
+      <td>
+        <span name="pregunta_20_s">____</span>
+        <span name="pregunta_20_n" hidden>x</span>
+      </td>
+    </tr>
+  </table>
+  <br />
+  <table class="table_class">
+    <tr>
+      <th colspan="2"><b>TABLA DE CALIFICACIÓN</b></th>
+    </tr>
+    <tr>
+      <td>16 a 20 preguntas correctas</td>
+      <td>Aprobado [ __ ]</td>
+    </tr>
+    <tr>
+      <td>1 a 15 preguntas correctas</td>
+      <td>No aprobado [ __ ]</td>
+    </tr>
+  </table>
+  <p>
+    Yo, manifiesto que el contenido y divulgación de esta inducción en Seguridad
+    y Salud en el Trabajo y Medio Ambiente ha sido claro, objetivo y comprendido
+    en cada uno de sus puntos.
+  </p>
+  <p>
+    <b>Firma del Trabajador:</b>
+    <br />
+    <br />
+    <span>______________________________ </span>
+  </p>
+  <p>
+    <b>Firma SST:</b>
+    <br />
+    <br />
+    <span>______________________________</span>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <h2>ENCUESTA PATRONES DE MOVILIDAD</h2>
+  <p>
+    Apreciado trabajador, de acuerdo a nuestro programa de seguridad vial lo
+    invitamos que conteste la siguiente encuesta con el objetivo de identificar
+    los riesgos viales que se pueden presentar durante los desplazamientos,
+    teniendo en cuenta el actor vial que usted representa.
+    <br />
+    <span style="color: red">*Obligatorio</span>
+  </p>
+  <ol>
+    <li>
+      Toda la información se recoge con fines estrictamente de interés privado,
+      con el fin de dar cumplimiento al marco normativo legal vigente en materia
+      de seguridad y salud en el trabajo.En consecuencia autorizo a FUTESA S.A.S
+      para el manejo de la información aquí aportada en esta encuesta de
+      patrones de movilidad que le permita desarrollar acciones de promoción y
+      prevención frente al desarrollo e implementación del plan estratégico de
+      seguridad vial. <br />
+      AUTORIZO:
+      <span style="color: red">
+        <u name="encuesta_1_s">SI</u><u hidden name="encuesta_1_n">NO</u>
+      </span>
+    </li>
+  </ol>
+  <p>
+    FICHA DE DATOS (La información solicitada a continuación deberá ser
+    diligenciada en su totalidad)
+  </p>
+  <ol start="2">
+    <li>Ciudad: <span name="ciudad_firma">__________</span></li>
+    <li>Empresa usuaria: <span name="empresa_usuaria">__________</span></li>
+    <li>
+      Nombres y Apellidos: <span name="nombres_apellidos">__________</span>
+    </li>
+    <li>
+      Tipo de documento:
+      <span>
+        <span name="tipo_doc_trabajador_cc">Cedula de Ciudadania</span>
+        <span name="tipo_doc_trabajador_ce" hidden>Cedula de Extranjeria</span>
+        <span name="tipo_doc_trabajador_pa" hidden>Pasaporte</span>
+      </span>
+    </li>
+    <li>
+      Numero de documento:
+      <span name="num_id_trabajador">__________</span>
+    </li>
+    <li>
+      Edad:
+      <span name="edad">__________</span>
+    </li>
+    <li>
+      Grupo de trabajo al que pertenece:
+      <span name="grupo_trabajo">Administrativo</span>
+    </li>
+    <li>
+      Cargo:
+      <span name="cargo">__________</span>
+    </li>
+    <li>
+      Tipo de contrato con la empresa:
+      <span name="tipo_contrato">Indefinido</span>
+    </li>
+    <li>
+      Qué tipos de vehículos conduce:
+      <span name="vehiculos_conduce">__________</span>
+    </li>
+    <li>
+      Cuenta con licencia de conducción:
+      <span name="licencia_s">Si</span><span name="licencia_n" hidden>No</span>
+    </li>
+    <li name="licencia_s">
+      Indique el tipo de licencia: <span name="tipo_licencia">A1</span>
+    </li>
+    <li>Tipo de jornada laboral: <span name="tipo_jornada">Diurna</span></li>
+    <li>
+      ¿En los últimos cinco años se ha visto involucrado en alguno o varios de
+      los siguientes eventos?,sin importar si es conductor o no.
+      <br />
+      <br />
+      <span>
+        Accidente solo daños: <span name="accidente_solo_danos_s">Si</span>
+        <span name="accidente_solo_danos_n" hidden>No</span>
+      </span>
+      <br />
+      <span>
+        Accidente con muertos: <span name="accidente_muertos_s">Si</span>
+        <span name="accidente_muertos_n" hidden>No</span>
+      </span>
+      <br />
+      <span>
+        Accidente con heridos: <span name="accidente_heridos_s">Si</span>
+        <span name="accidente_heridos_n" hidden>No</span>
+      </span>
+      <br />
+      <span>
+        Le han impuesto comparendos: <span name="comparendos_s">Si</span>
+        <span name="comparendos_n" hidden>No</span>
+      </span>
+    </li>
+    <li>
+      Para desplazarse hacia y desde su lugar de trabajo el medio de transporte
+      que más frecuenta es: <span name="medio_transporte_preferido">A pie</span>
+    </li>
+    <li>
+      El tiempo promedio diario para realizar estos desplazamientos (ida y
+      vuelta) es: <span name="tiempo_transporte">A pie</span>
+    </li>
+    <li>
+      Realiza desplazamientos dentro de su jornada laboral?
+      <span name="desp_en_jornada_s">Si</span>
+      <span name="desp_en_jornada_n" hidden>No</span>
+    </li>
+    <li name="desp_en_jornada_s">
+      Con que frecuencia realiza los desplazamientos relacionados con su
+      actividad laboral:
+      <span name="frecuencia_desp">6 a 7 días en la semana</span>
+    </li>
+    <li name="desp_en_jornada_s">
+      Que tiempo de su jornada laboral le toma estos desplazamientos:
+      <span name="tiempo_toma_desp">2 horas de su jornada laboral</span>
+    </li>
+    <li>
+      Si realiza desplazamientos estos son planificados por:
+      <span name="quien_plan_desp">La empresa usuaria</span>
+    </li>
+    <li>
+      La planificación de estos desplazamientos laborales se realiza:
+      <span name="plan_desp_tiempo">Diario</span>
+    </li>
+    <li>
+      Si realiza desplazamientos, durante la jornada laboral la mayoría de estos
+      los realiza en: <span name="desp_medio">A pie</span>
+    </li>
+    <li>
+      Conduce su propio vehículo para realizar los desplazamientos laborales:
+      <span name="vehiculo_propio_s">Si</span>
+      <span name="vehiculo_propio_n" hidden>No</span>
+    </li>
+    <li>
+      Factor humano Selecciona (1) acto y clasifica su nivel de riesgo
+      <table style="width: auto" class="table_class">
+        <tr>
+          <td></td>
+          <td>Riesgo</td>
+        </tr>
+        <tr>
+          <td>Mi propia conducción</td>
+          <td><span name="riesgo_hum_conduc_propia">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Sueño / Fatiga</td>
+          <td><span name="riesgo_hum_sueno">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Velocidad</td>
+          <td><span name="riesgo_hum_veloc">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>No respetar señales</td>
+          <td><span name="riesgo_hum_senales">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Distracción</td>
+          <td><span name="riesgo_hum_distraccion">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Intolerancia</td>
+          <td><span name="riesgo_hum_intolerancia">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Conducción de los demás</td>
+          <td><span name="riesgo_hum_conduc_demas">Bajo</span></td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      Factor vías y entorno Selecciona (1) Condición y clasifica su nivel de
+      riesgo
+      <table style="width: auto" class="table_class">
+        <tr>
+          <td></td>
+          <td>Riesgo</td>
+        </tr>
+        <tr>
+          <td>Mal estado de la vía</td>
+          <td><span name="riesgo_via_mal_estado">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Ausencia de señales</td>
+          <td><span name="riesgo_via_senales">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Clima</td>
+          <td><span name="riesgo_via_clima">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Condiciones adversas</td>
+          <td><span name="riesgo_via_cond_advers">Bajo</span></td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      Factor Vehículo Selecciona (1) Condición y clasifica su nivel de riesgo
+      <table style="width: auto" class="table_class">
+        <tr>
+          <td></td>
+          <td>Riesgo</td>
+        </tr>
+        <tr>
+          <td>Mal estado</td>
+          <td><span name="riesgo_vehic_malo">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Falta Mantenimiento</td>
+          <td><span name="riesgo_vehic_manten">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Deficiencia sistemas de seguridad</td>
+          <td><span name="riesgo_vehic_seguridad">Bajo</span></td>
+        </tr>
+        <tr>
+          <td>Modelo del vehículo</td>
+          <td><span name="riesgo_vehic_modelo">Bajo</span></td>
+        </tr>
+      </table>
+    </li>
+    <li>
+      Indique sus propuestas para reducir el riesgo de accidente:
+      <span name="propuestas_riesgo_acc">__________</span>
+    </li>
+  </ol>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <table class="table_class">
+    <tr>
+      <td rowspan="4">
+        <div style="margin: auto; width: fit-content">
+          <img
+            src="https://mi-contrato-static.s3.amazonaws.com/futesa/logo.jpeg"
+            alt="Futesa logo"
+          />
+        </div>
+      </td>
+      <td rowspan="4">
+        <p style="margin: 0px; text-align: center">
+          <b>
+            CONTRATO INDIVIDUAL DE TRABAJO POR DURACIÓN DE LA OBRA O LABOR
+            CONTRATADA
+          </b>
+        </p>
+      </td>
+      <td>Proceso</td>
+      <td>FTGH-01</td>
+    </tr>
+  </table>
+  <br />
+  <br />
+  <table class="table_class_2">
+    <tr>
+      <th colspan="2">EMPLEADOR</th>
+    </tr>
+    <tr>
+      <td>
+        <b>NOMBRE O RAZÓN SOCIAL Y NIT</b><br />
+        FUTESA S.A.S <br />
+        NIT 811.027.292
+      </td>
+      <td>
+        <b>REPRESENTANTE LEGAL</b><br />
+        SERGIO ALONSO ARANGO TOBON
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>DOMICILIO</b> <br />
+        MEDELLIN, ANTIOQUIA
+      </td>
+      <td>
+        <b>DIRECCIÓN</b> <br />
+        Transversal 5 A # 45 – 189 Medellín.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p style="text-align: center">
+          <b>OFICINA ADMINISTRATIVA</b><br />
+          MEDELLÍN, ANTIOQUIA.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">TRABAJADOR</th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p style="text-align: center">
+          <b>NOMBRE E IDENTIFICACIÓN</b><br />
+          <span>
+            <span name="nombres_apellidos">__________</span>
+            <span name="tipo_doc_trabajador_cc">C.C.</span>
+            <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+            <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+            <span name="num_id_trabajador">__________</span>
+          </span>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <th colspan="2">CONDICIONES ESPECIALES</th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p style="text-align: center">
+          <b>REGIÓN Y MUNICIPIO DONDE HA SIDO CONTRATADO EL TRABAJADOR:</b>
+          <br />
+          <b name="ciudad_firma">__________</b>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p style="text-align: center">
+          <b>LUGAR DE PRESTACIÓN DEL SERVICIO:</b>
+          <b name="ciudad_firma">__________</b> <br />
+          <b>EMPRESA CLIENTE: </b><b name="empresa_usuaria">__________</b>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p style="text-align: center">
+          <b>CARGO U OFICIO A DESEMPEÑAR</b><br />
+          <b name="cargo">__________</b><br />
+          <b name="tipo_horario">Tiempo completo</b>
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>SALARIO BÁSICO MENSUAL</b>
+        <br />
+        <span name="salario_mensual">__________</span>
+      </td>
+      <td>
+        <b>PERIODO DE PAGO</b>
+        <br />
+        <span name="periodo_pago">QUINCENAL</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>FECHA DE INICIACIÓN DE LABORES</b>
+        <br />
+        <span name="fecha_inicio">__________</span>
+      </td>
+      <td>
+        <b>AUXILIO DE TRANSPORTE</b>
+        <br />
+        <span name="aux_transporte">__________</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <p style="text-align: center"><b>OBRA CONTRATADA</b></p>
+        EL trabajador se contrata para prestar servicios en misión, orientado en
+        la prestación del servicio para la empresa (<span name="empresa_usuaria"
+          >__________</span
+        >) en el cargo de <span name="cargo">__________</span>. EL CUAL ESTA
+        LIGADO AL CONTRATO DE SERVICIOS SUSCRITO ENTRE EL EMPLEADOR Y LA EMPRESA
+        CLIENTE, su labor culminará una vez terminen las actividades respectivas
+        de su cargo y sus funciones en dicha misión y contrato.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <b>LUGAR Y FECHA DE CELEBRACIÓN DEL CONTRATO</b>
+        <br />
+        <span name="fecha_inicio">__________</span>
+      </td>
+    </tr>
+  </table>
+  <p>
+    Entre el <b>EMPLEADOR</b> y <b>EL TRABAJADOR</b> de las condiciones Arriba
+    descritas, identificados como aparece al pie de sus firmas, se ha celebrado
+    el presente contrato individual de trabajo, regido además por las cláusulas:
+  </p>
+  <p>
+    <b>PRIMERA: OBJETO. EL EMPLEADOR</b> contrata los servicios personales del
+    <b>TRABAJADOR</b>, y éste se obliga a poner al servicio del
+    <b>EMPLEADOR</b> toda su capacidad normal de trabajo, en el desempeño de las
+    funciones propias del oficio mencionado y en las labores anexas y
+    complementarias del mismo, de conformidad con las órdenes e instrucciones
+    que le imparta <b>EL EMPLEADOR</b> directamente o a través de sus
+    representantes en la empresa para la cual fue contratado en misión, para
+    coadyuvar al <b>EMPLEADOR</b> en la prestación de los servicios misionales,
+    de conformidad con el CONTRATO suscrito entre el <b>EMPLEADOR</b> y la
+    empresa cliente, <u>contrato que justifica y origina</u> la presente
+    contratación del <b>TRABAJADOR</b> y hace parte integral del presente
+    contrato.
+  </p>
+  <p>
+    <b>SEGUNDA: OBLIGACIONES DEL TRABAJADOR. EL TRABAJADOR</b> tendrá derecho a
+    las mismas condiciones y prestaciones que tiene por ley un trabajador en
+    cualquier otra modalidad, como lo son: prestaciones, descansos, vacaciones y
+    afiliación al sistema de seguridad social integral. Asimismo, el trabajador
+    tendrá las mismas obligaciones laborales que los demás empleados contenidas
+    en el reglamento interno de trabajo y demás normas, además de las
+    obligaciones determinadas en la ley y en los reglamentos,
+    <b>EL TRABAJADOR</b> se compromete a cumplir con las siguientes obligaciones
+    especiales:
+  </p>
+  <ol type="a">
+    <li>
+      Guardar estricta reserva de todo cuanto llegue a su conocimiento por razón
+      de su oficio y cuya comunicación a otras personas puede causar perjuicio a
+      <b>EL EMPLEADOR</b>.
+    </li>
+    <li>
+      Prestar el servicio antes dicho personalmente, en el lugar del territorio
+      de la República de Colombia que indicare <b>EL EMPLEADOR</b>, y
+      excepcionalmente, fuera de dicho territorio cuando las necesidades del
+      servicio así lo exigieren.
+    </li>
+    <li>Asistir a reuniones y comités programados por <b>EL EMPLEADOR</b>.</li>
+    <li>
+      A Prestar el servicio personalmente, en el cargo o funciones que el
+      empleador asigne, quien se reserva el derecho a variarlas por necesidad
+      del servicio o requerimientos extraordinarios, así mismo estará a su cargo
+      la ejecución de las tareas ordinarias y anexas al mencionado cargo, de
+      conformidad con los reglamentos, órdenes e instrucciones que le imparta EL
+      EMPLEADOR o el representante de la empresa cliente facultado por el mismo,
+      observando en su cumplimiento la diligencia y cuidados necesarios.
+    </li>
+    <li>
+      <b>EL TRABAJADOR</b> se obliga a garantizar en cada una de sus actuaciones
+      el cumplimiento de sus obligaciones contractuales, presentar informes,
+      escritos o verbales cuando sea solicitado.
+    </li>
+    <li>
+      Si en el desarrollo del contrato de trabajo <b>EL TRABAJADOR</b> con
+      ocasión de su cargo o funciones debe asumir el liderazgo, supervisión o
+      similares, de la conformación de propuestas debe reportarlo a
+      <b>EL EMPLEADOR</b>;
+    </li>
+    <li>
+      <b>EL TRABAJADOR</b> se obliga a responder durante la ejecución del
+      contrato y por detrimentos patrimoniales presentados contra
+      <b>EL EMPLEADOR</b> o la empresa cliente por malas praxis en el desarrollo
+      de sus funciones, por los perjuicios que pudiere causar por no realizar la
+      supervisión o control encomendado, para lo cual acepta con la suscripción
+      del contrato a reparar los perjuicios correspondientes, previo
+      requerimiento del <b>EMPLEADOR</b>, sin perjuicio de su derecho de
+      contradicción y defensa, en el que podrá presentar las explicaciones,
+      justificaciones, aclaraciones, retractaciones o indemnizaciones.
+    </li>
+    <li>
+      Asistir a las esporádicas y eventuales reuniones presenciales a las que se
+      le requiera por parte de <b>EL EMPLEADOR</b> o la empresa cliente.
+    </li>
+    <li>
+      <b>EL TRABAJADOR</b> se compromete a respetar la legislación en materia de
+      protección de datos, las políticas de privacidad y de seguridad de la
+      información, como también a:
+    </li>
+    <ul>
+      <li>
+        Utilizar los datos de carácter personal a los que tenga acceso única y
+        exclusivamente para cumplir con sus obligaciones para con
+        <b>EL EMPLEADOR</b> y la empresa cliente.
+      </li>
+      <li>
+        Cumplir con las medidas de seguridad que el Empleador o la empresa
+        cliente haya implementado para asegurar la confidencialidad, secreto e
+        integridad de los datos de carácter personal o privilegiado a los que
+        tenga acceso, así como a no ceder en ningún caso a terceras personas los
+        datos de carácter personal, secretos industriales o información
+        privilegiada a los que tenga acceso, ni tan siquiera a efectos de su
+        conservación.
+      </li>
+    </ul>
+    <li>
+      Si el trabajador en su tiempo libre decide con otras entidades o personas
+      naturales celebrar contratos de tiempo parcial, por horas, asesorías o
+      trabajos independientes, dichos contratos o trabajos no pueden
+      desarrollarse utilizando la propiedad intelectual o industrial de su cargo
+      actual y estarán sometidos a las prohibiciones del reglamento interno de
+      trabajo.
+    </li>
+    <li>
+      Actualizar su hoja de vida empresarial y entregar todos los soportes
+      requeridos, así como notificar cualquier cambio de domicilio y similares.
+    </li>
+    <li>
+      Cumplir con las obligaciones derivadas del SGSST (Seguridad y Salud en el
+      trabajo)
+    </li>
+    <li>
+      Cumplir con las indicaciones impartidas por <b>EL EMPLEADOR</b> o por la
+      empresa cliente en el desarrollo de sus funciones.
+    </li>
+  </ol>
+  <p>
+    <b>TERCERA: FUNCIONES DEL TRABAJADOR:</b> Son funciones específicas del
+    <b>TRABAJADOR</b> según su cargo, las siguientes:
+    <br />
+    Las funciones de cada trabajador serán las encomendadas directamente por la
+    empresa usuaria contratante de los servicios en misión para el cargo
+    descrito en dicho contrato.
+  </p>
+  <p>
+    <b>CUARTA: PROHIBICIONES ESPECIALES.</b> Además de las prohibiciones de
+    orden legal y reglamentario, las partes estipulan que las siguientes son
+    prohibiciones especiales de <b>EL TRABAJADOR:</b> <b>a)</b> Retener o
+    disponer del dinero o hacer efectivos títulos valores recibidos con destino
+    a <b>EL EMPLEADOR</b> o a la empresa cliente y que en virtud a sus funciones
+    reciba; <b>b)</b> Cualquier actitud en los compromisos comerciales,
+    personales o en las relaciones sociales, que pueda afectar en forma nociva
+    la reputación de <b>EL EMPLEADOR</b> o la empresa cliente; <b>c)</b> Omitir
+    dar aviso a <b>EL EMPLEADOR</b> o la empresa cliente sobre conductas de
+    trabajadores a su cargo que atenten contra el Reglamento Interno de Trabajo
+    y/o la prestación adecuada del servicio; <b>d)</b> No dar aviso oportuno al
+    <b>EMPLEADOR</b>, o a otros trabajadores con los que se deba comunicar,
+    informaciones que deba conocer en razón de su cargo, como incapacidades
+    médicas, permisos, modificación de turnos, disponibilidad de los
+    trabajadores del punto de venta y autorización para asistencia de citas
+    médicas del personal a su cargo. Para demostrar que cualquiera de las
+    presentes conductas ha sido cometida, bastará prueba sumaria del hecho que
+    obtenga <b>EL EMPLEADOR</b>.
+  </p>
+  <p>
+    <b>PARÁGRAFO: EL EMPLEADOR</b> o sus representantes, tienen autoridad y
+    facultades para exigir el cumplimiento de las obligaciones contraídas por EL
+    TRABAJADOR con fundamento en la evaluación de las áreas asignadas.
+  </p>
+  <p>
+    <b>QUINTA. CONTROL Y SUPERVISIÓN: El EMPLEADOR</b> controlará y supervisará
+    la actividad del TRABAJADOR en misión mediante medios telemáticos,
+    informáticos y electrónicos. Si por motivos de trabajo fuese necesaria la
+    presencia física de representantes de la compañía en el lugar de trabajo del
+    TRABAJADOR y éste lugar fuera su propio domicilio, se realizará la visita
+    siempre previa notificación al correo electrónico.
+    <b>EL TRABAJADOR</b> consiente libremente realizar reuniones a través de
+    videoconferencias con el empleador y/o sus representantes y que en ningún
+    caso se entiende como violación del domicilio privado.
+  </p>
+  <p>
+    <b>
+      PARÁGRAFO. MEDIDAS DE SEGURIDAD Y PREVENCIÓN DE RIESGOS EN EL TRABAJO. EL
+      TRABAJADOR
+    </b>
+    autoriza a la ARL y al Empleador visitas periódicas u ocasionales que
+    permitan comprobar si el lugar de trabajo es seguro y está libre de riesgos,
+    de igual forma autoriza las visitas para efectos de actividades de seguridad
+    y salud en el trabajo.
+  </p>
+  <p>
+    No obstante, el Trabajador, debe cumplir las indicaciones sobre la
+    prevención de riesgos laborales que se encuentran definidas en el Reglamento
+    Interno de Trabajo.
+  </p>
+  <p>
+    <b>SEXTA: REMUNERACIÓN. EL EMPLEADOR</b> pagará al TRABAJADOR por la
+    prestación de sus servicios el salario indicado, pagadero en las
+    oportunidades también indicadas en este contrato. Dentro de este pago se
+    encuentra incluida la remuneración de los descansos dominicales y festivos
+    de que tratan los capítulos I, II y III del título VII del C.S.T. Se aclara
+    y se conviene que en los casos en los que <b>EL TRABAJADOR</b> devengue
+    comisiones o cualquiera otra modalidad de salario variable, el 82.5% de
+    dichos ingresos, constituye remuneración de labor realizada, y el 17.5%
+    restante está destinado a remunerar el descanso en los días dominicales y
+    festivos de que tratan los capítulos I y II del título VIII del C.S.T.
+    <b>PARÁGRAFO PRIMERO:</b> <b>EL EMPLEADOR</b> no suministra ninguna clase de
+    salario en especie a EL TRABAJADOR, Cuando los clientes y/o proveedores del
+    EMPLEADOR implementen por estrategia comercial y de cualquier índole
+    incentivos, propinas o donaciones de cualquier clase,
+    <u>
+      <b>El TRABAJADOR</b> conoce y acepta que las mismas por provenir de un
+      tercero ajeno a la relación laboral no constituyen salario, ni
+      remuneración alguna a cargo del EMPLEADOR, ni mucho menos le genera
+      responsabilidad alguna por su cumplimiento a <b>EL EMPLEADOR</b>.
+    </u>
+    <b>PARÁGRAFO SEGUNDO.</b> Cuando por causa emanada directa o indirectamente
+    de la relación contractual existan obligaciones de tipo económico a cargo de
+    <b>EL TRABAJADOR</b> y a favor de <b>EL EMPLEADOR</b>, éste procederá a
+    efectuar las deducciones a que hubiere lugar en cualquier tiempo y, más
+    concretamente, a la terminación del presente contrato sobre el valor
+    liquidado por concepto de salario y/o indemnizaciones que por cualquier
+    motivo perciba, así lo autoriza desde ahora <b>EL TRABAJADOR</b>,
+    entendiendo expresamente las partes que la presente autorización cumple las
+    condiciones de orden escrita previa, aplicable para cada caso.
+    <b>PARÁGRAFO TERCERO:</b> De conformidad con lo prescrito del artículo 15 de
+    la Ley 50 de 1990, las partes convienen que no constituyen salario, en la
+    relación laboral que se regula por el presente contrato, las sumas que
+    ocasionalmente y por mera liberalidad recibe <b>EL TRABAJADOR</b>, como
+    primas, bonificaciones o gratificaciones, y lo que reciba en dinero o en
+    especie, no para su beneficio, ni para enriquecer su patrimonio, sino para
+    desempeñar a cabalidad sus funciones, como gastos de representación, auxilio
+    de rodamiento, elementos de trabajo, auxilio de internet y energía y auxilio
+    o subsidio por equipos o mobiliario y otros semejantes, propios del
+    teletrabajo. <b>PARÁGRAFO CUARTO:</b> Los pagos del salario realizados al
+    trabajador, serán efectuados a la cuenta bancaria indicada por el mismo en
+    su hoja de vida, sin embargo, si el trabajador desea, puede solicitar
+    apertura de cuenta de nómina con el banco pagador del empleador, sin tener
+    que estar obligado a ello; en todo caso las partes acuerdan que el pago se
+    realizará mediante transferencia electrónica a la cuenta informada por el
+    trabajador.
+  </p>
+  <p>
+    <b>SEPTIMA: DURACION DEL CONTRATO.</b> El presente contrato tiene una
+    duración determinada por la obra o labor contratada para la empresa cliente
+    y la iniciación de labores se da en la fecha indicada en el encabezado.
+  </p>
+  <p>
+    <b>OCTAVA: TRABAJO NOCTURNO, SUPLEMENTARIO, DOMINICAL Y/O FESTIVO.</b> Todo
+    trabajo suplementario o en horas extras y todo trabajo en día domingo o
+    festivo en los que legalmente debe concederse descanso, se remunerará
+    conforme a la ley, así como los correspondientes recargos nocturnos. Para el
+    reconocimiento y pago del trabajo suplementario, nocturno, dominical o
+    festivo, <b>EL EMPLEADOR</b> o sus representantes deberán haberlo autorizado
+    previamente y por escrito. Cuando la necesidad de este trabajo se presente
+    de manera imprevista o inaplazable, deberá ejecutarse y darse cuenta de él
+    por escrito, a la mayor brevedad, al <b>EMPLEADOR</b>, o a sus
+    representantes para su aprobación. <b>EL EMPLEADOR</b>, en consecuencia, no
+    reconocerá ningún trabajo suplementario, o trabajo nocturno en días de
+    descanso legalmente obligatorio que no haya sido autorizado previamente o
+    que habiendo sido avisado inmediatamente, no haya sido aprobado como queda
+    dicho.
+  </p>
+  <p>
+    <b>NOVENA: JORNADA DE TRABAJO. EL TRABAJADOR</b> se obliga a laborar la
+    jornada máxima legal, salvo estipulación expresa y escrita en contrario, en
+    los turnos y dentro de las horas señaladas por <b>EL EMPLEADOR</b>, pudiendo
+    hacer éste ajustes o cambios de horario cuando lo estime conveniente. Por el
+    acuerdo expreso o tácito de las partes, podrán repartirse las horas de
+    jornada ordinaria en la forma prevista en el artículo 164 del C.S.T.,
+    modificado por el artículo 23 de la ley 50/90, teniendo en cuenta que los
+    tiempos de descanso entre las secciones de la jornada no se computan dentro
+    de las mismas, según el artículo 167 ibídem.
+  </p>
+  <p>
+    <b>PARÁGRAFO:</b> Si el trabajador en misión desempeña cargos como
+    Director(a), Coordinador(a) o labora en cargos administrativos de alto rango
+    para la empresa cliente, debido a que en el desarrollo de sus funciones
+    están en juego los intereses fundamentales de la empresa cliente, su éxito,
+    su prosperidad y el orden entre los trabajadores será considerado trabajador
+    de confianza y manejo; por tanto <b>EL TRABAJADOR</b> queda automáticamente
+    excluido de la regulación sobre jornada máxima legal y deberá trabajar el
+    número de horas necesarias para el cabal desempeño de sus funciones, por lo
+    cual no habrá lugar al reconocimiento de horas extras cuando sobrepasen el
+    límite legal, ello sin perjuicio de cumplir los horarios mínimos señalados
+    por <b>EL EMPLEADOR</b>.
+  </p>
+  <p>
+    <b>DECIMA: PERIODO DE PRUEBA.</b> Las partes acuerdan como periodo de prueba
+    el máximo legal vigente. En caso de otrosí, se entenderá que no hay nuevo
+    periodo de prueba, de acuerdo con lo dispuesto por el artículo 78 del
+    C.S.T., modificado por el artículo 7 de la ley 50/90. Durante este periodo
+    tanto <b>EL EMPLEADOR</b> como <b>EL TRABAJADOR</b> podrán terminar el
+    contrato en cualquier tiempo, sin que cause el pago de indemnización alguna,
+    en forma unilateral, de conformidad con el artículo 80 del C.S.T.,
+    modificado por el artículo 3 del decreto 617/54.
+  </p>
+  <p>
+    <b>DÉCIMA PRIMERA: JUSTAS CAUSAS DE TERMINACIÓN.</b> Son justas causas para
+    dar por terminado unilateralmente este contrato por parte del EMPLEADOR
+    cuando el TRABAJADOR incurra en las siguientes faltas o se presenten las
+    siguientes situaciones:
+  </p>
+  <ol type="a">
+    <li>
+      <b>
+        <u>
+          El presente contrato termina una vez culminada la obra o labor
+          asignada para la cual fue contratado el trabajador o presentándose el
+          evento en que la empresa cliente termine el contrato comercial
+          celebrado con el empleador para la prestación de los servicios, sin
+          necesidad de avisos, ni requerimientos previos de ninguna índole.
+        </u>
+      </b>
+    </li>
+    <li>
+      No entregar en las fechas que se señalen, los informes y reportes que le
+      solicite el empleador o la empresa que contrato en misión.
+    </li>
+    <li>
+      Cualquier tipo de maltrato comprobado con algún compañero, bien sea verbal
+      o escrito o físico, tanto en la empresa cliente, como con empleados del
+      EMPLEADOR.
+    </li>
+    <li>La falta injustificada a laborar hasta por primera vez.</li>
+    <li>
+      No cumplir con los objetivos y tiempos encomendados en sus funciones,
+      generando retraso o traumatismos en el buen funcionamiento de la empresa
+      cliente.
+    </li>
+    <li>
+      Se entienden justas causas las enumeradas en el artículo 7º del Decreto
+      2351 de 1965.
+    </li>
+    <li>
+      por parte de <b>EL EMPLEADOR</b>, el incumplimiento de
+      <b>EL TRABAJADOR</b> de cualquier de las obligaciones y prohibiciones
+      previstas en las cláusulas Segunda y Cuarta, y las demás faltas que para
+      el efecto se califiquen como graves por la ley o el reglamento interno de
+      trabajo.
+    </li>
+  </ol>
+  <p>
+    Para invocar cualquiera de estas justas causas bastará prueba tan siquiera
+    sumaria del hecho y se entenderá probada la causal.
+  </p>
+  <p>
+    <b>
+      DECIMA SEGUNDA: RESPONSABILIDAD POR LA VULNERACIÓN DE LAS NORMAS DE
+      PROPIEDAD INTELECTUAL E INDUSTRIAL. EL TRABAJADOR
+    </b>
+    al firmar el presente contrato acepta que sin perjuicio de la
+    responsabilidad penal en la cual pudiere incurrir por la inobservancia de
+    las normas que regulan y reglamentan la propiedad intelectual e indusrtrial,
+    es responsable civilmente por los perjuicios que pudiere causarle a Futesa
+    S.A.S o a la empresa cliente para la cual fue contratado en misión, quien
+    podrá intentar las acciones legales correspondientes, las cuales son
+    independientes a las que pudiere intentar el titular de los derechos morales
+    o el cotitular de los derechos patrimoniales de autor o propiedad
+    industrial. Las responsabilidades antes descritas, no sustituyen la
+    aplicación del reglamento interno de trabajo por vulneración a la propiedad
+    intelectual o industrial que en todo caso generará las consecuencias
+    jurídicas pertinentes y conducentes, previa observancia del debido proceso
+    conforme a las normas vigentes.
+  </p>
+  <p>
+    <b>
+      DECIMA TERCERA: MODIFICACIÓN DE LAS CONDICIONES LABORALES. EL TRABAJADOR
+    </b>
+    acepta desde ahora expresamente todas las modificaciones determinadas por
+    <b>EL EMPLEADOR</b>, en ejercicio de su poder subordinante, de sus
+    condiciones laborales, tales como la jornada de trabajo, el lugar de
+    prestación del servicio, el cargo y/o funciones y la forma de remuneración,
+    siempre que tales modificaciones no afecten su honor, dignidad o sus
+    derechos mínimos, ni impliquen desmejoras sustanciales o graves perjuicios
+    para él, de conformidad con lo dispuesto por el artículo 23 del C.S.T.
+    modificado por el artículo 1 de la ley 50/90. Los gastos que se originen con
+    el traslado de lugar de prestación del servicio serán cubiertos por
+    <b>EL EMPLEADOR</b> de conformidad con el numeral 8 del artículo 57 del
+    C.S.T., quien a su vez repetirá contra la empresa cliente para el
+    reconocimiento de los mismos en los casos que se considere prudente.
+  </p>
+  <p>
+    <b>DECIMA CUARTA: BUENA FE.</b> Este contrato ha sido redactado
+    estrictamente de acuerdo con la ley y la jurisprudencia y será interpretado
+    de buena fe y en consonancia con el código sustantivo del trabajo cuyo
+    objeto, definido en su artículo 1º es lograr la justicia en las relaciones
+    entre empleadores y trabajadores dentro de un espíritu de coordinación
+    económica y equilibrio social.
+  </p>
+  <p>
+    <b>DÉCIMA QUINTA. INFORMACIÓN RESERVADA: El TRABAJADOR</b> no comunicará a
+    persona alguna u otra entidad ajena al <b>EMPLEADOR</b> o la empresa
+    cliente, la información reservada o confidencial que llegue a su
+    conocimiento en razón del desarrollo de sus actividades y labor, salvo que
+    sus deberes legales lo hagan necesario, previa autorización del
+    <b>EMPLEADOR</b> o persona facultada por la empresa cliente. Esta
+    disposición seguirá vigente después de la expiración o terminación
+    anticipada del presente Contrato durante 10 años más.
+  </p>
+  <p>
+    <b>PARÁGRAFO PRIMERO:</b> Dicha información podrá comprender a modo
+    enunciativo por parte del <b>EMPLEADOR</b> o la empresa cliente: los planes
+    de trabajo y operaciones, información técnica, académica y administrativa,
+    esquemas, datos, “know-how”, base de datos de clientes actuales, potenciales
+    y antiguos, secretos industriales, procesos, ideas, invenciones (ya sean
+    patentables o no), información de mercadeo empresarial y planes de
+    expansión, toda la información relativa a clientes y las operaciones
+    llevadas a cabo con ellos, información relativa a productos, tecnología y
+    software, las propiedades, composición, estructura, uso o procesamiento de
+    los mismos, o de los sistemas de los mismos, programas de cómputo de su
+    propiedad o licenciados, nombres y experiencia de los trabajadores y
+    prestadores de servicios, información de estrategias de operación
+    financiera, planes de desarrollo para clientes, productos, estudios,
+    estrategias e información similar y toda aquella que contenga el rótulo de
+    confidencial, reservado y similares.
+  </p>
+  <p>
+    <b>PARÁGRAFO SEGUNDO: EL TRABAJADOR</b> conoce y acepta expresamente que
+    como trabajador del <b>EMPLEADOR</b> y prestador de sus servicios personales
+    en misión para la empresa cliente, los compradores, clientes, usuarios a los
+    cuales se les venden y ofrecen los productos, servicios y demás pertenecen a
+    la base de datos del <b>EMPLEADOR</b> o de la empresa cliente, por tanto
+    todo lo referente a ellos; identificación, dirección, perfil, cuantía de las
+    compras que realiza, de productos que consume, de servicios que solicita y
+    los demás asuntos concernientes no son propiedad de EL TRABAJADOR, por lo
+    anterior, EL TRABAJADOR al momento de terminar su contrato de trabajo con
+    <b>EL EMPLEADOR</b>, está obligado a entregar todos y cada uno de los
+    archivos, información, contratos y demás documentos a que tuvo acceso en
+    razón de su cargo a EL <b>EMPLEADOR</b> o a la empresa cliente (legítimo
+    propietario de la información).
+  </p>
+  <p>
+    <b>DECIMA SEXTA: INHABILIDADES E INCOMPATIBILIDADES: EL TRABAJADOR</b>
+    declara, bajo la gravedad del juramento, no encontrarse afectado por ninguna
+    de las inhabilidades e incompatibilidades establecidas en la constitución y
+    la ley.
+  </p>
+  <p>
+    <b>DECIMA SEPTIMA: EFECTOS.</b> El presente contrato reemplaza en su
+    integridad y deja sin efecto cualquier otro contrato, verbal o escrito,
+    celebrado entre las partes con anterioridad, pudiendo las partes convenir
+    por escrito modificaciones al mismo, las que formaran parte integrante de
+    este contrato.
+  </p>
+  <p>
+    <b>DECIMA OCTAVA:</b> Como empresa respetuosa del ordenamiento jurídico
+    vigente, esto es, la Constitución Política, la Ley 1581 de 2013 y el Decreto
+    1377 de junio 2013, por medio de la presente el <b>TRABAJADOR</b> autoriza a
+    la FUTESA S.A.S a la recolección, manejo y uso de sus datos personales con
+    ocasión de su vinculación laboral, nuestra actividad de contratar
+    trabajadores en misión para empresas clientes, todo con la finalidad de
+    prestar un mejor y oportuno servicio a nuestros clientes y la comunidad en
+    general, en especial todo lo contenido en su hoja de vida.
+  </p>
+  <p>
+    <b>DECIMA NOVENA: EL TRABAJADOR</b> acepta expresamente que
+    <b>EL EMPLEADOR</b> realice notificación de cualquier acto por medio de
+    mensaje de datos enviado a traves de correo electrónico o numero celular
+    suministrado en la hoja de vida. La notificación quedará surtida a partir
+    del día hábil siguiente a que sea enviada.
+  </p>
+  <p>
+    Para constancia se firma en dos ejemplares del mismo tenor y valor, un
+    ejemplar de los cuales recibe <b>EL TRABAJADOR</b> en este acto, en el
+    municipio de Medellin, Departamento de Antioquia, República de Colombia,
+    <span name="fecha_diligenciamiento">__________</span>
+  </p>
+  <br />
+  <br />
+  <br />
+  <br />
+  <p>
+    <b>
+      ______________________________ <br />
+      SERGIO ALONSO ARANGO TOBON<br />
+      REPRESENTANTE LEGAL <br />
+      FUTESA S.A.S <br />
+      NIT 811.027.292 <br />
+    </b>
+  </p>
+  <br />
+  <br />
+  <br />
+  <br />
+  <p>
+    ______________________________ <br />
+    <b name="nombres_apellidos">__________</b> <br />
+    <b>EL TRABAJADOR</b> <br />
+    <b name="tipo_doc_trabajador_cc">C.C.</b>
+    <b name="tipo_doc_trabajador_ce" hidden>C.E.</b>
+    <b name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</b>
+    <b name="num_id_trabajador">__________</b>
+  </p>
+</div>

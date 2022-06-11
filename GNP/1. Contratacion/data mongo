@@ -409,7 +409,7 @@
         {
             name: 'correo_continuar_trabajador',
             description: 'Ingrese el correo del trabajador',
-            type: 'text'
+            type: 'email'
         },
         {
             name: 'barrio_trabajador',
@@ -1774,7 +1774,7 @@
         {
             name: 'correo_trabajador',
             description: 'Digite el correo electrónico que usará para firmar',
-            type: 'text'
+            type: 'email'
         }
     ],
     operation: [],
@@ -1937,7 +1937,7 @@
             approve: 'pending'
         }
     ],
-    username: '495390c0-06f8-4a87-aab0-27b2218dbdc1',
+    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916',
     company: ObjectId('623099c6d9a7ac3bbc96b943'),
     preBuild: true,
     price: 5000,
@@ -1948,5 +1948,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 41
+    build: 42
 }

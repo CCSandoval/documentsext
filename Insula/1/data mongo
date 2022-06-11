@@ -110,7 +110,34 @@
         {
             name: 'area_construida',
             description: 'Ingrese el area construida',
-            type: 'number'
+            type: 'text'
+        },
+        {
+            name: 'area_2',
+            description: 'Desea ingresar el area de un segundo inmueble',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'area_construida_2',
+            description: 'Ingrese el area del segundo inmueble',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'area_2',
+                    v: 's'
+                }
+            ]
         },
         {
             name: 'valor_unidad',
@@ -748,6 +775,6 @@
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 12,
+    build: 15,
     name: 'CONTRATO DE PROMESA DE COMPRAVENTA DE VIVIENDA'
 }
