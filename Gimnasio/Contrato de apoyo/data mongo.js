@@ -1,0 +1,135 @@
+{
+    _id: ObjectId('62a8dbf251fc27d23d929167'),
+    config: [
+        {
+            name: 'nombre_papa',
+            type: 'name',
+            description: 'Ingrese el nombre del papa'
+        },
+        {
+            name: 'cedula_papa',
+            type: 'number',
+            description: 'Ingrese la cédula de ciudadanía del papa'
+        },
+        {
+            name: 'nombre_mama',
+            type: 'name',
+            description: 'Ingrese el nombre de la mama'
+        },
+        {
+            name: 'cedula_mama',
+            type: 'number',
+            description: 'Ingrese la cédula de ciudadanía de la mama'
+        },
+        {
+            name: 'nombre_estudiante',
+            type: 'name',
+            description: 'Ingrese el nombre del estudiante'
+        },
+        {
+            name: 'grado',
+            type: 'text',
+            description: 'Grado al que ingresa el estudiante'
+        },
+        {
+            name: 'fecha_inicio',
+            type: 'date',
+            description: 'Fecha de inicio del contrato'
+        },
+        {
+            name: 'fecha_fin',
+            type: 'date',
+            description: 'Fecha de fin del contrato'
+        },
+        {
+            name: 'suma_anual',
+            type: 'currency',
+            description: 'Ingrese el valor de la suma anual'
+        },
+        {
+            name: 'suma_matricula',
+            type: 'currency',
+            description: 'Ingrese el valor de la suma de la matricula'
+        },
+        {
+            name: 'fecha_matricula_ordinaria_inicio',
+            type: 'date',
+            description: 'Fecha de inicio de la matricula ordinaria'
+        },
+        {
+            name: 'fecha_matricula_ordinaria_fin',
+            type: 'date',
+            description: 'Fecha de fin de la matricula ordinaria'
+        },
+        {
+            name: 'fecha_matricula_extraordinaria',
+            type: 'date',
+            description: 'Fecha de matricula extraordinaria'
+        },
+        {
+            name: 'suma_pension',
+            type: 'currency',
+            description: 'Ingrese el valor de la suma de pension'
+        },
+        {
+            name: 'suma_pension_mensual',
+            type: 'currency',
+            description: 'Ingrese el valor de la suma de pension mensual'
+        },
+        {
+            name: 'dir_acudiente',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia de los acudientes'
+        },
+        {
+            name: 'ciudad_acudiente',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia de los acudientes'
+        },
+        {
+            name: 'tel_papa',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono del papa'
+        },
+        {
+            name: 'email_papa',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del papa'
+        },
+        {
+            name: 'tel_mama',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono de la mama'
+        },
+        {
+            name: 'email_mama',
+            type: 'email',
+            description: 'Ingrese el correo electrónico de la mama'
+        },
+    ],
+    operation: [],
+    sign: [],
+    preFill: [],
+    signatureProfile: [
+        {
+            name: 'nombre_papa',
+            identification: 'cedula_papa',
+            phone: 'tel_papa',
+            email: 'email_papa',
+            type: 'firma_papa'
+        },
+        {
+            name: 'nombre_mama',
+            identification: 'cedula_mama',
+            phone: 'tel_mama',
+            email: 'email_mama',
+            type: 'firma_mama'
+        },
+    ],
+    preBuild: false,
+    preBuildData: [],
+    company: ObjectId('624b9d001e9c670009968025'),
+    build: 3,
+    name: 'CONTRATO DE APOYO Y COOPERACIÓN EDUCATIVA',
+    price: 5000
+}

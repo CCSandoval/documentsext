@@ -4,9 +4,12 @@
 
 <p><b>CIUDAD:</b> <b name="ciudad">__________________</b></p>
 
-<p><b>NOMBRE PUNTO: </b> <b name="nombre_punto">____________________</b></p>
-
 <span name="nit_n"></span>
+<p name="nit_s" hidden>
+  <b>NOMBRE ESTABLECIMIENTO O PROSPECTO:</b>
+  <b name="nombre_establecimiento">________________________________</b>
+</p>
+
 <p name="nit_s" hidden><b>NIT</b> <b name="nit_text">____________</b></p>
 
 <p>
@@ -24,18 +27,24 @@
 <p><b>EMAIL:</b> <b name="email">____________________</b></p>
 
 <p>
-  <b>NOMBRE ESTABLECIMIENTO O PROSPECTO:</b>
-  <b name="nombre_establecimiento">________________________________</b>
-</p>
-
-<p>
-  <b>CEDULA PROSPECTO:</b> <b name="cedula_prospecto">___________________</b>
+  <b>CEDULA:</b> <b name="cedula_prospecto">___________________</b>
 </p>
 
 <p><b>HORARIO DE SERVICIO:</b> <b name="horario_servicio">____________</b></p>
 
 <p>
   <b>DIRECCIÓN:</b> <b name="direccion">________________________________</b>
+</p>
+
+<p>
+  <b
+    >Acepto los términos y condiciones expuestos en
+    <a href="https://www.multipagas.com/multipagas/"
+      >https://www.multipagas.com/multipagas/</a
+    >
+    :
+  </b>
+  <b name="tyc_s">Si</b>
 </p>
 
 <br />

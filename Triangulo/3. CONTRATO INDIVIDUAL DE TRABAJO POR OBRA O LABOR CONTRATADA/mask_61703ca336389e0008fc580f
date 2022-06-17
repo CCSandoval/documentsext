@@ -6,32 +6,24 @@
 </style>
 
 <p class="text-center" style="font-size: 12pt">
-    <b>CONTRATO INDIVIDUAL DE TRABAJO TÉRMINO FIJO</b>
+    <b>CONTRATO INDIVIDUAL DE TRABAJO POR OBRA O LABOR CONTRATADA</b>
     <b name="empresa_int">INTEEGRA S.A.S.</b>
     <b name="empresa_net" hidden>NETCOL INGENIERIA S.A.S.</b>
-    <b name="empresa_ple" hidden>PLEX S.A.S.</b>
-    <b name="empresa_tri" hidden>TRIANGULUM S.A.S.</b>
     <b name="empresa_nei" hidden>NETIA S.A.S.</b>
-    <b name="empresa_tsg" hidden>TSG S.A.S.</b>
-    <b name="empresa_it4" hidden>IT4U S.A.S.</b>
-    <b name="empresa_inn" hidden>INNOVA S.A.S.</b>
+    <b name="empresa_tri" hidden>TRIANGULUM BPO S.A.S.</b>
 </p>
 
 <table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #808080">
     <tr>
-        <th colspan="2" class="main_title" style="width: 18cm; color: #000086">DATOS DEL EMPLEADOR</th>
+        <th colspan="2" class="main_title" style="width: 18cm; color:#000086">DATOS DEL EMPLEADOR</th>
     </tr>
     <tr>
         <td>Razón Social</td>
         <td>
             <span name="empresa_int">INTEEGRA S.A.S.</span>
             <span name="empresa_net" hidden>NETCOL INGENIERIA S.A.S.</span>
-            <span name="empresa_ple" hidden>PLEX S.A.S.</span>
-            <span name="empresa_tri" hidden>TRIANGULUM S.A.S.</span>
             <span name="empresa_nei" hidden>NETIA S.A.S.</span>
-            <span name="empresa_tsg" hidden>TSG S.A.S.</span>
-            <span name="empresa_it4" hidden>IT4U S.A.S.</span>
-            <span name="empresa_inn" hidden>INNOVA S.A.S.</span>
+            <span name="empresa_tri" hidden>TRIANGULUM BPO S.A.S.</span>
         </td>
     </tr>
     <tr>
@@ -39,38 +31,26 @@
         <td>
             <span name="empresa_int">NIT No. 900.550.189-7</span>
             <span name="empresa_net" hidden>NIT No. 901.193.667-8</span>
-            <span name="empresa_ple" hidden>NIT No. 901.261.185-1</span>
-            <span name="empresa_tri" hidden>NIT No. 900.265.286-1</span>
             <span name="empresa_nei" hidden>NIT No. 901.259.735-6</span>
-            <span name="empresa_tsg" hidden>NIT No. 900.994.724-3</span>
-            <span name="empresa_it4" hidden>NIT No. 901.157.678-6</span>
-            <span name="empresa_inn" hidden>NIT No. 901.206.305-5</span>
+            <span name="empresa_tri" hidden>NIT No. 900.265.286-1</span>
         </td>
     </tr>
     <tr>
         <td>Representante Legal</td>
         <td>
-            <span name="empresa_int">Diego Javier Gaitán Montero</span>
+            <span name="empresa_int">William Roberto Gutiérrez Botero</span>
             <span name="empresa_net" hidden>William Roberto Gutiérrez Botero</span>
-            <span name="empresa_ple" hidden>Kevin Niño Carvajal</span>
-            <span name="empresa_tri" hidden>Oscar Fernando Gonzales Alayón</span>
             <span name="empresa_nei" hidden>Kevin Niño Carvajal</span>
-            <span name="empresa_tsg" hidden>Edwin Castillo Ortiz</span>
-            <span name="empresa_it4" hidden>Juan David Rodriguez Duarte</span>
-            <span name="empresa_inn" hidden>Juan David Rodriguez Duarte</span>
+            <span name="empresa_tri" hidden>Oscar Fernando Gonzales Alayón</span>
         </td>
     </tr>
     <tr>
         <td>Id. del Representante Legal</td>
         <td>
-            <span name="empresa_int">C.C. 79.796.299</span>
+            <span name="empresa_int">C.C. 79.949.624</span>
             <span name="empresa_net" hidden>C.C. 79.949.624</span>
-            <span name="empresa_ple" hidden>C.C. 1.014.296.721</span>
-            <span name="empresa_tri" hidden>C.C. 1.022.931.573</span>
             <span name="empresa_nei" hidden>C.C. 1.014.296.721</span>
-            <span name="empresa_tsg" hidden>C.C. 75.084.509</span>
-            <span name="empresa_it4" hidden>C.C. 1.030.526.683</span>
-            <span name="empresa_inn" hidden>C.C. 1.030.526.683</span>
+            <span name="empresa_tri" hidden>C.C. 1.022.931.573</span>
         </td>
     </tr>
     <tr>
@@ -78,25 +58,17 @@
         <td>
             <span name="empresa_int">Nelly Pinto Sandoval</span>
             <span name="empresa_net" hidden>Nelly Pinto Sandoval</span>
-            <span name="empresa_ple" hidden>Nelly Pinto Sandoval</span>
-            <span name="empresa_tri" hidden>Nelly Pinto Sandoval</span>
             <span name="empresa_nei" hidden>Nelly Pinto Sandoval</span>
-            <span name="empresa_tsg" hidden>Nelly Pinto Sandoval</span>
-            <span name="empresa_it4" hidden>Nelly Pinto Sandoval</span>
-            <span name="empresa_inn" hidden>Nelly Pinto Sandoval</span>
+            <span name="empresa_tri" hidden>Nelly Pinto Sandoval</span>
         </td>
     </tr>
     <tr>
         <td>Domicilio y Dirección</td>
         <td>
-            <span name="empresa_int">Cra 49b N 91-90 Bogotá</span>
-            <span name="empresa_net" hidden>Cra 49b N 91-90 Bogotá</span>
-            <span name="empresa_ple" hidden>Cra 49b N 91-90 Bogotá</span>
-            <span name="empresa_tri" hidden>Cra 49b N 91-90 Bogotá</span>
-            <span name="empresa_nei" hidden>Cra 49b N 91-90 Bogotá</span>
-            <span name="empresa_tsg" hidden>Avenida Calle 26 Nº 96J - 90 Edificio OPTIMUS, Oficina 215 Bogotá</span>
-            <span name="empresa_it4" hidden>Avenida Calle 26 Nº 96J - 90 Edificio OPTIMUS, Oficina 215 Bogotá</span>
-            <span name="empresa_inn" hidden>Avenida Calle 26 Nº 96J - 90 Edificio OPTIMUS, Oficina 215 Bogotá</span>
+            <span name="empresa_int">Cra 49B N 91-90 Bogotá</span>
+            <span name="empresa_net" hidden>Cra 49B N 91-90 Bogotá</span>
+            <span name="empresa_nei" hidden>Cra 49B N 91-90 Bogotá</span>
+            <span name="empresa_tri" hidden>Cra 49B N 91-90 Bogotá</span>
         </td>
     </tr>
     <tr>
@@ -129,20 +101,20 @@
         <td>
             <span name="tipo_documento_trabajador_cc"> Cédula de ciudadania.</span>
             <span name="tipo_documento_trabajador_ce" hidden> Cédula de extranjería.</span>
-            <span name="tipo_documento_trabajador_pa" hidden> PASAPORTE.</span>
+            <span name="tipo_documento_trabajador_pa" hidden> Pasaporte.</span>
         </td>
     </tr>
     <tr>
         <td>Número de Identificación</td>
         <td>
             <span name="tipo_documento_trabajador_cc">
-                <span name="cedula_trabajador">_______</span>
+                <b name="cedula_trabajador">_______</b>
             </span>
             <span name="tipo_documento_trabajador_ce" hidden>
-                <span name="cedulae_trabajador">_______</span>
+                <b name="cedulae_trabajador">_______</b>
             </span>
             <span name="tipo_documento_trabajador_pa" hidden>
-                <span name="pasaporte_trabajador">_______</span>
+                <b name="pasaporte_trabajador">_______</b>
             </span>
         </td>
     </tr>
@@ -197,15 +169,9 @@
         </td>
     </tr>
     <tr>
-        <td>Período de pago</td>
+        <td>Períodos de pago</td>
         <td>
             <span name="periodo_pago">_______</span>
-        </td>
-    </tr>
-    <tr>
-        <td>Duración del contrato</td>
-        <td>
-            <span name="duracion_contrato">_______</span> meses
         </td>
     </tr>
     <tr>
@@ -215,26 +181,156 @@
         </td>
     </tr>
     <tr>
-        <td>Fecha de finalización de Labores</td>
-        <td>
-            <span name="fecha_f_labores">_______</span>
-        </td>
-    </tr>
-    <tr>
         <td>Lugar base de contratación</td>
         <td>
             <span name="lugar_contrato">_______</span>
         </td>
     </tr>
 </table>
-
 <p>
     Entre el EMPLEADOR y EL TRABAJADOR, como antes quedó estipulado, identificados como aparece al pie de sus firmas, se
-    ha celebrado el presente CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO, regido además por las siguientes cláusulas:
+    ha celebrado el presente CONTRATO INDIVIDUAL DE TRABAJO POR OBRA O LABOR, regido además por las siguientes
+    cláusulas:
+</p>
+
+<p>
+    <span name="empresa_int">
+        <span name="servicio_cla">
+            <b>LABOR CONTRATADA:</b> Teniendo en cuenta la suscripción del Contrato 34518-2018 entre COMCEL S.A.
+            (antes TELMEX COLOMBIA S.A.) y INTEEGRA S.A.S., en adelante CONTRATO I, que tiene como objeto "Suministro de
+            servicios de interventoría, de acuerdo a los proyectos de construcción, instalación, mejoramiento y
+            mantenimiento tanto preventivo como correctivo, de las redes de telecomunicaciones y obras civiles para las
+            redes de telecomunicaciones, que a nivel nacional TELMEX viene adelantando y que incluye la interventoría a
+            las actividades de levantamiento, digitalización, diseño, construcción, empalmes y a las pruebas de
+            aceptación de acuerdo a los criterios establecidos por TELMEX".
+        </span>
+        <span name="servicio_zte" hidden>
+            <b>LABOR CONTRATADA:</b> Teniendo en cuenta la suscripción del Framework Subcontract Agreement
+            No.S5CO2020071401WBF2 entre ZTE CORPORATION SUCURSAL COLOMBIA y INTEEGRA S.A.S., en adelante CONTRATO I, que
+            tiene como objeto "Ejecutar tareas relacionadas con la puesta en marcha, monitoreo, resolución de problemas
+            y soporte de productos ZTE DWDM, sobre los equipos C300, C320, C600, C650, MSNA, seguir todos los requisitos
+            relacionados con los proyectos DWDM de ZTE según el director técnico y el gerente de proyectos técnicos de
+            ZTE, lo requieran".
+        </span>
+        <span name="servicio_dir" hidden>
+            <b>LABOR CONTRATADA:</b> Teniendo en cuenta la suscripción del Contrato de prestación y/o suministro y/o
+            servicios entre DIRECTV COLOMBIA LTDA y INTEEGRA S.A.S., en adelante CONTRATO I, que tiene como objeto "En
+            virtud del presente contrato el CONTRATISTA se compromete a prestar servicio total de Operación y
+            Mantenimiento el cual tiene como alcance el mantenimiento preventivo, mantenimiento correctivo, atención a
+            fallas, emergencias y acompañamientos requeridos de las estaciones radio bases LTE de DIRECTV ubicadas a
+            nivel nacional, exceptuando las ciudades y zonas que defina DTV y bajo los lineamientos y ANS detallados y
+            definidos en los anexos"
+        </span>
+        <span name="servicio_ita" hidden>
+            <b>LABOR CONTRATADA:</b> Teniendo en cuenta la suscripción del Contrato de Aporte No. 861 de 2019 entre
+            FONDO ÚNICO DE TEGNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES y EL EMPLEADOR, en adelante CONTRATO I,
+            que tiene como objeto "Ejecutar el proyecto de incentivos a la oferta de internet fijo en la región CARIBE
+            obligándose a realizar planeación, instalación, operación y mantenimiento de la infraestructura para prestar
+            el servicio bajo las condiciones establecidas en el Anexo Técnico"
+        </span>
+        <span name="servicio_clase" hidden>
+            <b>LABOR CONTRATADA:</b> Teniendo en cuenta la suscripción del OTROSÍ No. 01 AL CONTRATO No. 34518-2018
+            entre COMCEL S.A. (antes TELMEX COLOMBIA S.A.) y INTEEGRA S.A.S., en adelante CONTRATO I, que tiene como
+            objeto:<br /><br />
+            "<b>1.</b> Suministro de servicios de interventoría, de acuerdo a los proyectos de construcción,
+            instalación, mejoramiento y mantenimiento tanto preventivo como correctivo, de las redes de
+            telecomunicaciones y obras civiles para la redes de telecomunicaciones, que a nivel nacional COMCEL viene
+            adelantando y que incluye la interventoría a las actividades de levantamiento, digitalización, diseño,
+            construcción, empalmes y a las pruebas de aceptación de acuerdo a los criterios establecidos por COMCEL para
+            cierre de proyectos a cargo del contratista ejecutor (…). <b>2.</b> Prestación de Servicios Especializados,
+            los cuales consistirán en Servicios de administración de y gestión de órdenes de trabajo de instalaciones y
+            novedades para servicios de conectividad."
+        </span>
+    </span>
+    <span name="empresa_net" hidden>
+        <span name="net_tel">
+            <b>LABOR CONTRATADA:</b> Teniendo en cuenta el la suscripción del Contrato de Suministro de Servicios No.
+            71.1.0621.2018 entre COLOMBIA TELECOMUNICACIONES S.A. ESP (Telefónica) y NETCOL INGENIERIA S.A.S., en
+            adelante CONTRATO I, que tiene como objeto "Suministrar con la periodicidad, en el lugar y la cantidad que
+            se le indique, los servicios de mantenimiento integral, soporte nivel 1, planta interna, que comprende entre
+            otras las siguientes actividades: mantenimiento preventivo y correctivo, mano de obra especializada, gestión
+            de repuestos, gestión de recursos informáticos y herramientas básicas, servicios de campo, los cuales
+            permitan tener la continuidad del servicio en la red"
+        </span>
+        <span name="net_cla" hidden>
+            <b>LABOR CONTRATADA:</b> Teniendo en cuenta la suscripción del Contrato de suministro de ACPM entre
+            COMUNICACIÓN CELULAR S.A.- COMCEL S.A. y NETCOL INGENIERIA S.A.S., en adelante CONTRATO I, que tiene como
+            objeto "EL PROVEEDOR de acuerdo con los términos y condiciones se compromete a prestar el servicio de
+            Suministro de combustible ACPM necesario para el correcto funcionamiento de las plantas eléctricas de
+            propiedad de COMCEL, al igual que a realizar el transporte del mismo hasta su destino final ya sean para
+            sus Estaciones Base (EB), Centrales de Conmutación (CCM), Centros de Atención y Ventas (CAV), Sedes
+            Administrativas de Claro (Comcel S.A., Infracel S.A. y Global Hitss) a nivel nacional, Salones de
+            Distribución de Servicios (SDS), Cabeceras Submarinas, Cabeceras Unidireccionales, bodegas y Datacenter; y
+            en general lo sitios que COMCEL defina para el efecto (en adelante los "Servicios")".
+        </span>
+        <span name="net_wom" hidden>
+            <b>LABOR CONTRATADA:</b> De conformidad con lo señalado en la cláusula primera de este documento, EL
+            <b>CONTRATISTA</b> prestará sus servicios a Nivel Nacional, para la Instalación de equipos de Radio
+            Frecuencia (RF), Transmisión (Tx) y de Fibra Óptica (F.O) en los lugares y en las condiciones requeridas por
+            <b>WNS</b>.<br /><br />
+            El servicio incluye, entre otras actividades necesarias para el cumplimiento de su objeto, las siguientes
+            actividades:<br /><br />
+            <b>1.</b> Las pruebas necesarias para el buen funcionamiento del equipo y la incorporación de la estación a
+            la red comprendiendo: la base de datos, alarmas y colindancias, carga de datos, calibración, ajustes de
+            potencia, pruebas de alarmas, test de aceptación (ATP’s), etc.<br /><br />
+            <b>2.</b> Entrega de Equipos en estado On Air, de acuerdo con los parámetros de calidad y funcionamiento
+            estipulados por WNS Telecom Colombia S.A.S.<br /><br />
+            <b>3.</b> Instalación, comisionamiento, integración y puesta en servicio de equipos de radio frecuencia,
+            transmisión y fibra Óptica.Entrega del Inventario de equipos instalados y formato de aceptación de
+            instalación.
+        </span>
+    </span>
+    <span name="empresa_nei" hidden>
+        <b>LABOR CONTRATADA:</b> diseño, mapping, gestión de permisos, servicios búsqueda de sitios, construcción,
+        instalación, supervisión y tendido de redes sobre infraestructura existente, obra civiles, eléctricas,
+        acometida así como la instalación, traslado y/o reubicación de equipos Networking, puesta en servicio,
+        verificación, configuración, integración, entrega a satisfacción del servicio, comisionamiento,
+        optimización, operación y mantenimiento de redes de comunicaciones, de conformidad con los Anexos técnicos
+        adjuntos denominados así: ANEXO No.1 Construcción,  ANEXO No 2 Instalación Clientes, Anexo No 3 Lista de
+        Precios, ANEXO No 4 Gestión de Materiales ANEXO No 5 Protocolo de logística ANEXO No 6 Políticas de Bodega y
+        Consumos ANEXO No 7 Obligaciones en Materia HSEQ, los cuales hacen parte integral del presente contrato.
+        ANEXO 8 Evaluación Desempeño Contratista del contrato No. 20200308 establecido con la Cia TSG THE IT EXPERT
+        SAS, identificada con Nit 900.994.724-3, Proyecto Incentivos a la oferta Región Caribe.
+    </span>
+    <span name="empresa_tri" hidden>
+     <b>LABOR CONTRATADA:</b> Teniendo en cuenta en la suscripción del Contrato de TRIANGULUM BPO S.A.S. en adelante CONTRATO I, que tiene como objeto "Liderazgo, optimización y administración eficiente de todos los procesos administrativos como son: Financiera, HSEQ, Contabilidad, Auditoria, Talento Humano, Logística, Transporte y seguridad fisica y riesgos compras y Abastecimiento, entre otros."
+    </span><br /><br />
+    El TRABAJADOR se vinculará con el EMPLEADOR exclusivamente para la ejecución del CONTRATO I, por lo tanto,
+    la labor está determinada de acuerdo a los siguientes criterios:
+</p>
+
+<ol type="i">
+    <li>La duración del CONTRATO I.</li>
+    <li>Las actividades o requerimientos que se necesiten para la ejecución del CONTRATO I.</li>
+    <li>
+        Las ordenes respecto los trabajadores que imparta
+        <span name="empresa_int">
+            <span name="servicio_cla">COMCEL S.A.</span>
+            <span name="servicio_zte" hidden>ZTE CORPORATION SUCURSAL COLOMBIA</span>
+            <span name="servicio_dir" hidden>DIRECTV COLOMBIA LTDA</span>
+            <span name="servicio_ita" hidden>FONDO ÚNICO DE TEGNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES</span>
+            <span name="servicio_clase">COMCEL S.A.</span>
+        </span>
+        <span name="empresa_net">
+            <span name="net_tel">COLOMBIA TELECOMUNICACIONES S.A. ESP</span>
+            <span name="net_cla" hidden>COMCEL S.A.</span>
+            <span name="net_wom" hidden>WOM</span>
+        </span>
+        <span name="empresa_nei">Cia TSG THE IT EXPERT S.A.S.</span> al EMPLEADOR, de acuerdo a la ejecución del
+        CONTRATO I.
+    </li>
+    </span>
+</ol>
+
+<p>
+    En virtud del objeto descrito, EL EMPLEADOR contrata los servicios del EMPLEADO bajo esta modalidad contractual
+    teniendo en cuenta que el término de duración del presente contrato depende única y exclusivamente del cumplimiento
+    del CONTRATO I, los requerimientos del CONTRATO I y del tiempo de ejecución que esta tome.
 </p>
 <p>
     <b>PRIMERA- OBJETO:</b> EL EMPLEADOR contrata los servicios personales de EL TRABAJADOR para desempeñar el cargo
-    indicado en las condiciones particulares del Contrato y actividades afines.
+    descrito en las condiciones particulares. EL TRABAJADOR realizará los oficios descritos en el documento anexo que
+    hace parte integral de este contrato.
 </p>
 <p>
     <b>Parágrafo 1:</b> Independientemente del estricto cumplimiento de las funciones descritas en esta cláusula el
@@ -242,9 +338,8 @@
     parte integral del contrato.
 </p>
 <p>
-    <b>SEGUNDA- TÉRMINO:</b> La duración del presente contrato corresponde a la naturaleza jurídica de un contrato
-    término fijo. La determinación del tiempo del contrato estará en las condiciones particulares de este documento
-    descritos en la primera parte de este escrito.
+    <b>SEGUNDA- TÉRMINO:</b> La duración del presente contrato corresponde al tiempo que dura la realización de la obra
+    o labor contratada, señalada en este documento, de conformidad con el artículo 45 del Código Sustantivo del Trabajo.
 </p>
 <p>
     <b>TERCERA- OBLIGACIONES:</b> además de las obligaciones determinadas en la ley y en los reglamentos, EL TRABAJADOR
@@ -252,15 +347,14 @@
 </p>
 <ol>
     <li>
-        Realizar sus labores de acuerdo con las atribuciones y limitaciones que precise EL EMPLEADOR. Por lo
-        tanto, EL TRABAJADOR realizará sus funciones con sujeción a las disposiciones del Reglamento Interno de
-        Trabajo, Reglamento de Seguridad y Salud en el Trabajo, Manuales Internos de funciones, comunicados
-        corporativos, procedimientos, directrices generales de conducta de negocios, circulares y demás documentos
-        análogos.
+        Realizar sus labores de acuerdo con las atribuciones y limitaciones que precise EL EMPLEADOR. Por lo tanto,
+        EL TRABAJADOR realizará sus funciones con sujeción a las disposiciones del Reglamento Interno de Trabajo,
+        Reglamento de Seguridad y Salud en el Trabajo, Manuales Internos de funciones, comunicados corporativos,
+        procedimientos, directrices generales de conducta de negocios, circulares y demás documentos análogos.
     </li>
     <li>
         A dar estricto cumplimiento a las políticas de independencia y el convenio de conocimientos compartidos,
-        copia de las cuales declara haber recibido y leído.
+        copia de las cuales declara haber recibido y leído
     </li>
     <li>
         A poner al servicio del EMPLEADOR toda su capacidad de trabajo, en forma exclusiva en el desempeño de las
@@ -290,9 +384,9 @@
         Abstenerse de propiciar serias desavenencias con sus compañeros de trabajo.
     </li>
     <li>
-        Abstenerse de llegar embriagado o de ingerir bebidas embriagantes o drogas enervantes en el sitio de trabajo o
-        mientras se encuentre realizando actividades propias de sus funciones en cualquier lugar, aun por la primera
-        vez.
+        Abstenerse de llegar embriagado o de ingerir bebidas embriagantes o drogas enervantes en el sitio de
+        trabajo o mientras se encuentre realizando actividades propias de sus funciones en cualquier lugar, aun por la
+        primera vez.
     </li>
     <li>
         Abstenerse de disponer de información o material de trabajo de EL EMPLEADOR sin permiso de éste, así mismo
@@ -302,8 +396,8 @@
         Abstenerse de reportar informes falsos en relación con las gestiones efectuadas.
     </li>
     <li>
-        Responder por la integridad y el buen orden de los elementos de trabajo que se confíen para la realización de
-        sus labores, así como responder por los daños o pérdidas de estos. En caso de retiro, EL TRABAJADOR deberá
+        Responder por la integridad y el buen orden de los elementos de trabajo que se confíen para la realización
+        de sus labores, así como responder por los daños o pérdidas de estos. En caso de retiro, EL TRABAJADOR deberá
         entregar un paz y salvo a la compañía por las herramientas, insumos o equipos entregados o confiados para la
         realización de sus funciones.
     </li>
@@ -314,10 +408,10 @@
         (E.P.S) que se encuentre afiliado EL TRABAJADOR.
     </li>
     <li>
-        Usar de manera adecuada y en todo momento los elementos de protección personal asignados para el desarrollo de
-        su actividad laboral, de acuerdo con la matriz de riesgos y la matriz de EPP de la compañía, quien el trabajador
-        afirma conocer de antemano. Para estos efectos SE CONSTITUYE EN FALTA GRAVE cuando el trabajador no utiliza o
-        utiliza inadecuadamente los elementos de protección personal.
+        Usar de manera adecuada y en todo momento los elementos de protección personal asignados para el
+        desarrollo de su actividad laboral, de acuerdo con la matriz de riesgos y la matriz de EPP de la compañía, quien
+        el trabajador afirma conocer de antemano. Para estos efectos SE CONSTITUYE EN FALTA GRAVE cuando el trabajador
+        no utiliza o utiliza inadecuadamente los elementos de protección personal.
     </li>
     <li>
         El TRABAJADOR se compromete a retribuir en el ejercicio de sus labores todos los conocimientos adquiridos
@@ -333,8 +427,8 @@
         enfermedades profesionales, en el caso de incumplirlas esta se constituye en FALTA GRAVE.
     </li>
     <li>
-        Responder ante EL EMPLEADOR por cualquier perjuicio que éste pueda recibir como consecuencia de su proceder
-        negligente o imprudente o por incumplimiento de sus deberes y obligaciones.
+        Responder ante EL EMPLEADOR por cualquier perjuicio que éste pueda recibir como consecuencia de su
+        proceder negligente o imprudente o por incumplimiento de sus deberes y obligaciones.
     </li>
     <li>
         Cumplir con los estándares de calidad y cumplimiento de las campañas que el gerente determine.
@@ -343,7 +437,7 @@
         Calificar la gestión realizada a cada uno de los datos asignados en forma veraz y real.
     </li>
     <li>
-        <b>TECNOLOGÌA E INFORMÁTICA</b> los equipos de computación y software propiedad de la empresa, están destinados
+        <b>TECNOLOGÍA E INFORMÁTICA:</b> Los equipos de computación y software propiedad de la empresa, están destinados
         para propósitos propios de la organización. Bajo ninguna circunstancia se permite a los empleados instalen
         software aplicativo personal en los equipos de la entidad. Aquellos requerimientos especiales para aplicaciones
         no estándares, deben ser acompañados de una justificación de negocio y deben ser manejados solo por el personal
@@ -360,7 +454,7 @@
         asignado los recursos, el tiempo, dirigido y determinado las necesidades de los mismos.
     </li>
     <li>
-        <b>CONFIDENCIALIDAD</b> En concordancia con lo establecido en el numeral 2 del art. 58 de código sustantivo del
+        <b>CONFIDENCIALIDAD:</b> En concordancia con lo establecido en el numeral 2 del art. 58 de código sustantivo del
         trabajo, durante la vigencia del presente contrato y con posterioridad a su terminación, EL TRABAJADOR se obliga
         y se compromete a no comunicar a terceros, ni usar en su propio provecho, las informaciones de naturaleza
         reservada o cuya divulgación pueda ocasionar perjuicios a la empresa que tengan o lleguen a conocer en razón de
@@ -374,16 +468,18 @@
         TRABAJADOR se encuentra retirado el EMPLEADOR podrá reclamar las indemnizaciones correspondientes.
     </li><br />
     <b>Parágrafo 1:</b> EL TRABAJADOR se compromete a que, una vez terminado el contrato de trabajo por cualquier causa,
-    no utilizará información confidencial adquirida en razón del oficio desempeñado en la EMPRESA., especialmente sobre
+    no utilizará información confidencial adquirida en razón del oficio desempeñado en la empresa, especialmente sobre
     los asuntos que sean de naturaleza reservada y cuya divulgación pueda ocasionar perjuicios a la EMPRESA so pena de
-    tener que indemnizar perjuicios.<br /><br />
+    tener que indemnizar perjuicios.
+    <br /><br />
     <b>Parágrafo 2:</b> La buena fe y la lealtad son principios esenciales en las relaciones entre las personas, más aún
     cuando surgen de las relaciones de trabajo entre empleadores y trabajadores. En consecuencia de conformidad con lo
     previsto en los artículos 55 y 250 del C.S.T. se pacta expresamente que mientras EL TRABAJADOR ejerza funciones en
     la empresa y/o como ex trabajador desarrolle actividades independientes o se vincule con otro empleador, no podrá
     utilizar ni divulgar la información confidencial, secreta y reservada, comercial o técnica que haya podido llegar a
     su conocimiento con ocasión de la capacitación y el desarrollo de sus funciones para su beneficio o el de terceros
-    ya sean estas personas naturales o jurídicas.<br /><br />
+    ya sean estas personas naturales o jurídicas.
+    <br /><br />
     <li>
         Si en las funciones inherentes al cargo se manejan dineros de la Empresa o Anticipos que esta entregue con
         ocasión del trabajo, se deberá entregar un informe detallado de los gastos que justifiquen los mismos, soportado
@@ -393,17 +489,18 @@
     En caso que EL TRABAJADOR, no llegue a legalizar la totalidad de los dineros entregados por la Empresa, autoriza que
     se descuente de su nómina los dineros no legalizados. Así mismo, en el momento de su desvinculación, deberá
     presentar conciliación de cuentas y paz y salvo del área administrativa, haciéndose de antemano responsable en el
-    respectivo proceso disciplinario de las diferencias que no pueda justificar.<br /><br />
+    respectivo proceso disciplinario de las diferencias que no pueda justificar.
+    <br /><br />
     <li>
-        Cuando EL TRABAJADOR realice trabajos para los clientes, debe garantizar la calidad de estos trabajos, y en caso
-        de que existan no conformidades o errores en los trabajos, EL EMPLEADOR podrá iniciar respectivos procesos
-        disciplinarios en contra EL TRABAJADOR con la finalidad de comprobar errores o negligencias de parte de éste y
-        tomar las medidas necesarias.
+        Cuando EL TRABAJADOR realice trabajos para los clientes, debe garantizar la calidad de estos trabajos, y
+        en caso de que existan no conformidades o errores en los trabajos, EL EMPLEADOR podrá iniciar respectivos
+        procesos disciplinarios en contra EL TRABAJADOR con la finalidad de comprobar errores o negligencias de parte de
+        éste y tomar las medidas necesarias.
     </li>
     <li>
-        EL EMPLEADOR, entregara herramientas de trabajo, las cuales EL TRABAJADOR se compromete a cuidar y custodiar
-        adecuadamente; en caso de pérdidas o desgaste por mala utilización del trabajador se iniciarán los procesos
-        disciplinarios pertinentes.
+        EL EMPLEADOR, entregara herramientas de trabajo, las cuales EL TRABAJADOR se compromete a cuidar y
+        custodiar adecuadamente; en caso de pérdidas o desgaste por mala utilización del trabajador se iniciarán los
+        procesos disciplinarios pertinentes y podrá hacer los descuentos respectivos.
     </li>
     <li>
         Entregar oportunamente al EMPLEADOR, dentro de las 24 horas siguientes a su recibo todas las sumas de dinero,
@@ -417,46 +514,82 @@
         retiro de cualquier suma de dinero que resulte liquidada a su favor por cualquier derecho.
     </li>
     <li>
-        Demás aspectos que tengan que ver con la naturaleza del cargo de acuerdo a las instrucciones, reglamentos
-        y normas de empresa y las especiales obligaciones que por su importancia se mencionan a continuación.
+        Demás aspectos que tengan que ver con la naturaleza del cargo de acuerdo a las instrucciones, reglamentos y
+        normas de empresa y las especiales obligaciones que por su importancia se mencionan a continuación.
     </li>
 </ol>
 <p>
-    <b>Parágrafo 1:</b> INFORMACIÓN EXPRESA, <b>El TRABAJADOR</b> ha manifestado expresamente como
-    <u>condición esencial</u>, que no ha tenido vínculos directos ni indirectos con actividades tales como el
-    terrorismo, la subversión, el tráfico de estupefacientes o la delincuencia común. En caso que la información
-    suministrada no se ajuste a la verdad, el EMPLEADOR podrá dar por terminado su contrato de trabajo por el hecho de
-    no facilitar información clara y veraz, sin limitarse a las actividades descritas.
+    <b>Parágrafo 1:</b>INFORMACIÓN EXPRESA, El TRABAJADOR ha manifestado expresamente como <u>condición esencial</u>,
+    que no ha tenido vínculos directos ni indirectos con actividades tales como el terrorismo, la subversión, el tráfico
+    de estupefacientes o la delincuencia común. En caso que la información suministrada no se ajuste a la verdad, el
+    EMPLEADOR podrá dar por terminado su contrato de trabajo por el hecho de no facilitar información clara y veraz, sin
+    limitarse a las actividades descritas.
 </p>
 <p>
     Así mismo, cualquier hecho de que <b>EL TRABAJADOR</b> oculte o no haya suministrado información verídica al
-    respecto, como también información exacta en la hoja de datos personales o en la solicitud de empleo,
-    diligenciadas previamente a la firma del contrato, documentos que hacen parte integral del mismo.
+    respecto, como también información exacta en la hoja de datos personales o en la solicitud de empleo, diligenciadas
+    previamente a la firma del contrato, documentos que hacen parte integral del mismo.
 </p>
 <p>
     <b>Parágrafo 2:</b> CAUSAL DE TERMINACIÓN DEL CONTRATO, Son causales de terminación del contrato con justa causa, el
     incumplimiento de cualquiera de las obligaciones contenidas en esta cláusula y en sus parágrafos, por una sola vez,
-    será considerada como VIOLACIÓN GRAVE para todos los efectos legales, en especial para el previsto en el literal a)
-    artículo 7 del Decreto 2351 de 1965 y además de las prescritas en el Reglamento Interno de Trabajo, Reglamentos o
-    Manuales de la Compañía y el Código Sustantivo de Trabajo.
+    será considerada como VIOLACIÓN GRAVE para todos los efectos legales, en especial para el previsto en el
+    literal
+<ol type="a">
+    <li>
+        Artículo 7 del Decreto 2351 de 1965 y además de las prescritas en el Reglamento Interno de Trabajo,
+        Reglamentos o Manuales de la Compañía y el Código Sustantivo de Trabajo.
+    </li>
+</ol>
 </p>
 <p>
-    <b>CUARTA-REMUNERACIÓN:</b> EL EMPLEADOR pagará a EL TRABAJADOR por la prestación de sus servicios lo siguiente
+    <b>Parágrafo 3:</b> El reglamento de trabajo, higiene y seguridad industrial de la empresa forma parte del
+    presente contrato, de acuerdo con lo prescrito en el artículo 107 del CST.
+</p>
+<p>
+    <b>Parágrafo 4:</b> Además de las prohibiciones determinadas en la ley y en los reglamentos y políticas internas
+    de EL EMPLEADOR, se prohíbe especialmente al TRABAJADOR:
+</p>
+<ol type="a">
+    <li>
+        Atender durante la jornada de trabajo asuntos u ocupaciones laborales distintos a los que EL EMPLEADOR le
+        encomiende, a menos que éste lo haga saber a sus superiores.
+    </li>
+    <li>
+        Prestar directamente o indirectamente servicios laborales a otros empleadores, salvo autorización expresa de EL
+        EMPLEADOR.
+    </li>
+    <li>
+        Ofrecer a los clientes servicios o beneficios que no estén expresamente autorizados por EL EMPLEADOR.
+    </li>
+    <li>
+        Adulterar información de los empleados, e) Adulterar información sobre las llamadas que se realizan a los
+        clientes.
+    </li>
+    <li>
+        Reportar llamadas como realizadas sin haberlo hecho de esa manera.
+    </li>
+</ol>
+<p>
+    <b>CUARTA-REMUNERACIÓN:</b> EL EMPLEADOR pagará a EL TRABAJADOR por la prestación de sus servicios
     <span name="valor_p_servicios">_______</span> m/te
 </p>
 <p>
-    <b>Parágrafo 1:</b> Las partes hacen constar que Dentro de este pago se encuentra incluida la remuneración de los
+    <b>Parágrafo 1:</b> EL EMPLEADOR tiene organizados los pagos por quincenas vencidas.
+</p>
+<p>
+    <b>Parágrafo 2:</b> Las partes hacen constar que Dentro de este pago se encuentra incluida la remuneración de los
     descansos dominicales y festivos que tratan en los Capítulos I, II y III del Título VII del Código Sustantivo del
     Trabajo. Se aclara y se conviene que en los casos en los que EL TRABAJADOR devengue comisiones o cualquier otra
     modalidad de salario variable, el 82,5% de dichos ingresos, constituye remuneración ordinaria, y el 17.5% restante
     está destinado a remunerar el descanso en los días dominicales y festivos.
 </p>
 <p>
-    <b>Parágrafo 2:</b> Únicamente se reconocerá las labores especiales de trabajo cuando estén previamente autorizadas
+    <b>Parágrafo 3:</b> Únicamente se reconocerá las labores especiales de trabajo cuando estén previamente autorizadas
     por EL EMPLEADOR y por escrito pues de lo contrario no se reconocerá.
 </p>
 <p>
-    <b>Parágrafo 3:</b> Las partes expresamente acuerdan que lo que reciba EL TRABAJADOR o llegue a recibir en el
+    <b>Parágrafo 4:</b> Las partes expresamente acuerdan que lo que reciba EL TRABAJADOR o llegue a recibir en el
     futuro, adicional a su salario ordinario, ya sean beneficios o auxilios habituales u ocasionales, tales como auxilio
     de alimentación, habitación o vestuario, celular, bonificaciones ocasionales, no constituyen salario para ningún
     efecto laboral ni prestacional de conformidad con el artículo 15 de la ley 50 de 1990 y el artículo 30 de la Ley
@@ -474,18 +607,18 @@
     salario de acuerdo a lo establecido en el artículo 128 de la Ley 50/90 Art. 15, artículo 30 de la Ley 1392 de 2010.
 </p>
 <p>
-    <b>QUINTA- TRABAJO SUPLEMENTARIO O EN HORAS EXTRAS:</b> y todo trabajo en día domingo o festivo en los que
-    legalmente debe concederse descanso, se remunerara conforme a la ley, así como los correspondientes recargos
-    nocturnos. Para el reconocimiento y pago del trabajo suplementario, dominical o festivo EL EMPLEADOR o sus
-    representantes deben autorizarlo previamente por escrito. Cuando la necesidad de este trabajo se presente de manera
-    imprevista o inaplazable, deberá ejecutarse y darse cuenta de él por escrito, con la mayor brevedad, al EMPLEADOR o
-    a sus representantes. EL EMPLEADOR, en consecuencia, no reconocerá ningún trabajo suplementario o en días de
-    descanso legalmente obligatorio que no haya autorizado previamente o avisado inmediatamente, como queda dicho.
+    QUINTA- TRABAJO SUPLEMENTARIO O EN HORAS EXTRAS: Y todo trabajo en día domingo o festivo en los que legalmente debe
+    concederse descanso, se remunerara conforme a la ley, así como los correspondientes recargos nocturnos. Para el
+    reconocimiento y pago del trabajo suplementario, dominical o festivo EL EMPLEADOR o sus representantes deben
+    autorizarlo previamente por escrito. Cuando la necesidad de este trabajo se presente de manera imprevista o
+    inaplazable, deberá ejecutarse y darse cuenta de él por escrito, con la mayor brevedad, al EMPLEADOR o a sus
+    representantes. EL EMPLEADOR, en consecuencia, no reconocerá ningún trabajo suplementario o en días de descanso
+    legalmente obligatorio que no haya autorizado previamente o avisado inmediatamente, como queda dicho.
 </p>
 <p>
     <b>SEXTA- JORNADA DE TRABAJO:</b> EL TRABAJADOR se obliga a laborar la jornada ordinaria en los turnos y dentro de
     las horas señaladas por EL EMPLEADOR, pudiendo hacer éste ajustes o cambios de horario cuando lo estime conveniente.
-    Por el acuerdo expreso o tácito de la partes, podrán repartirse las horas de la jornada ordinaria en la forma
+    Por el acuerdo expreso o tácito de las partes, podrán repartirse las horas de la jornada ordinaria en la forma
     prevista en el artículo 164 del Código Sustantivo del Trabajo, modificado por el artículo 23 de la ley 50/90,
     teniendo en cuenta que los tiempos de descanso entre las secciones de la jornada no se computan dentro de la misma,
     según el artículo 167 ibídem.
@@ -499,13 +632,10 @@
     ocho (8) horas de trabajo, cada día.
 </p>
 <p>
-    <b>SÉPTIMA-PERIODO DE PRUEBA:</b> El periodo de prueba será la quinta parte del término que se defina en el contrato
-    hasta por dos (2) meses. Durante este período, tanto EL EMPLEADOR como EL TRABAJADOR podrán terminar el contrato en
-    cualquier tiempo, sin que se cause el pago de indemnización alguna, en forma unilateral, de conformidad con el
-    Art.80 del C. S. T., modificado por el artículo 3 del Decreto 617/54. En caso de prórrogas, se entenderá que no hay
-    nuevo período de prueba, de acuerdo con lo dispuesto por el artículo 78 del C. S. T., modificado por el artículo 7
-    de la Ley 50/90, en cualquier momento durante dicho período, sin que por este hecho se cause el pago de
-    indemnización alguna.
+    <b>SÉPTIMA-PERIODO DE PRUEBA:</b> El periodo de prueba será por dos (2) meses y por consiguiente, cualquiera de las
+    partes podrá terminar el contrato unilateralmente, en cualquier momento durante dicho periodo, sin que cause el pago
+    de indemnización alguna. Vencido este, la duración del contrato será la establecida en la cláusula segunda, mientras
+    subsistan las causas que le dieron origen y la materia del trabajo.
 </p>
 <p>
     <b>OCTAVA-TERMINACIÓN UNILATERAL:</b> Son justas causas para dar por terminado unilateralmente este contrato por
@@ -515,15 +645,15 @@
 <ol>
     <li>
         Que el trabajador revele los secretos técnicos o comerciales o de a conocer asuntos de carácter reservado a los
-        que haya tenido acceso con ocasión de su trabajo, ya sean de LA EMPRESA o de sus clientes que causen perjuicio a
+        que haya tenido acceso con ocasión de su trabajo, ya sean de la empresa o de sus clientes que causen perjuicio a
         los mismos, así como la violación de las políticas y declaraciones de independencia y del convenio de
-        conocimientos compartidos;
+        conocimientos compartidos.
     </li>
     <li>
         La ineptitud del trabajador para realizar la labor encomendada.
     </li>
     <li>
-        El reconociendo al trabajador de la pensión de jubilación de invalidez, estando al servicio de LA EMPRESA y
+        El reconociendo al trabajador de la pensión de jubilación de invalidez, estando al servicio de la empresa y
         además las faltas que para el efecto se califiquen como graves en reglamentos y demás documentos que contengan
         reglamentaciones, ordenes, instrucciones o prohibiciones de carácter general o particular, pactos, laudos
         arbítrales y las que expresamente convengan calificar así en escritos que formaran parte íntegramente del
@@ -593,8 +723,8 @@
         Las desavenencias con sus compañeros de trabajo y subordinados.
     </li>
     <li>
-        La renuencia del TRABAJADOR a asistir puntualmente y a emplear todas sus capacidades o aptitudes en los
-        cursos o programas de capacitación, entrenamiento o actualización que implante EL EMPLEADOR.
+        La renuencia del TRABAJADOR a asistir puntualmente y a emplear todas sus capacidades o aptitudes en los cursos o
+        programas de capacitación, entrenamiento o actualización que implante EL EMPLEADOR.
     </li>
     <li>
         Negociar la información o material de propiedad de EL EMPLEADOR con intención personal de lucro, evento en el
@@ -670,7 +800,7 @@
     mismo deberá constar por escrito.
 </p>
 <p>
-    <b>DÉCIMA SEGUNDA- LIQUIDACIÓN Y ENTREGA DE ACREENCIAS LABORALES:</b> En consideración a que toda liquidación y pago
+    <b>DÉCIMA SEGUNDA- LIQUIDACIÓN Y ENTREGA DE ACREENCIAS LABORALES:</b> en consideración a que toda liquidación y pago
     de salarios y prestaciones sociales exige varios días para poder obtener los datos e informes necesarios así mismo
     implica su revisión, realizar, la liquidación definitiva, girar los cheques correspondientes, etc., y en algunos
     casos es necesario hacer entrega del cargo mediante acta, las partes de común acuerdo manifiestan que EL EMPLEADOR
@@ -684,7 +814,7 @@
     económicas a cargo de EL TRABAJADOR y a favor del EMPLEADOR, como por ejemplo, prestamos o anticipos para gastos
     pendientes de justificar conforme a las políticas del EMPLEADOR, EL TRABAJADOR autoriza de manera expresa y
     voluntaria desde ya el descuento de dichos valores de las sumas que correspondan por concepto de salario,
-    prestaciones sociales o indemnizaciones según sea el caso
+    prestaciones sociales o indemnizaciones según sea el caso.
 </p>
 <p>
     <b>DÉCIMA TERCERA-EQUIPOS, INSTALACIONES, CONSUMIBLES, INSUMOS, MAQUINARIAS Y DEMÁS MATERIALES DE USO:</b>
@@ -713,7 +843,6 @@
         con la presente clausula podrá ser justa causa para terminar el contrato.
     </li>
 </ol>
-
 <p>
     <b>DÉCIMA CUARTA:</b> EL cumplimiento con lo dispuesto en el artículo 6º de la ley 311/96, EL TRABAJADOR declara
     bajo la gravedad de juramento que no tiene conocimiento alguno de la existencia de procesos pendientes de carácter
@@ -738,7 +867,13 @@
     numeral 5º y 6º del Código Sustantivo del Trabajo.
 </p>
 <p>
-    <b>DÉCIMA SÉPTIMA- GENERALES:</b>
+    <b>DÉCIMA SÉPTIMA:</b> Si al finalizar la obra contratada, el EMPLEADOR desea continuar con el trabajador en otra
+    obra distinta a la aquí contratada o vincularlo mediante un periodo fijo o término indefinido, se deberá hacer un
+    nuevo contrato de trabajo y no se entenderá como prorroga por desaparecer las causas contractuales que dieron origen
+    a este contrato.
+</p>
+<p>
+    <b>DÉCIMA OCTAVA- GENERALES:</b>
 </p>
 <ol type="i">
     <li>
@@ -757,11 +892,10 @@
     </li>
 </ol>
 <p>
-    Para constancia se firma en dos (2) ejemplares del mismo tenor y valor, ante testigos en la ciudad de Bogotá D.C.,
-    el
+    Para constancia se firma en dos (2) ejemplares del mismo tenor y valor, ante testigos en la ciudad de
+    <span name="municipio_firma">_______</span>, el
     <span name="fecha_firma">_______</span>
 </p>
-
 <table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #808080">
     <tr>
         <th class="main_title" style="width: 9cm; color: #000086">EMPLEADOR</th>
@@ -771,16 +905,12 @@
         <td style="height: 5rem"></td>
         <td></td>
     </tr>
-<tr>
+    <tr>
         <td>
-            <b name="empresa_int">Diego Javier Gaitán Montero</b>
+            <b name="empresa_int">William Roberto Gutiérrez Botero</b>
             <b name="empresa_net" hidden>William Roberto Gutiérrez Botero</b>
-            <b name="empresa_ple" hidden>Kevin Niño Carvajal</b>
-            <b name="empresa_tri" hidden>Oscar Fernando Gonzales Alayón</b>
             <b name="empresa_nei" hidden>Kevin Niño Carvajal</b>
-            <b name="empresa_tsg" hidden>Edwin Castillo Ortiz</b>
-            <b name="empresa_it4" hidden>Juan David Rodriguez Duarte</b>
-            <b name="empresa_inn" hidden>Juan David Rodriguez Duarte</b>
+            <b name="empresa_tri" hidden>Oscar Fernando Gonzales Alayón</b>
         </td>
         <td>
             <b name="nombre_trabajador">_______</b>
@@ -788,14 +918,10 @@
     </tr>
     <tr>
         <td>
-            <b name="empresa_int">C.C. 79.796.299</b>
-            <b name="empresa_net" hidden>C.C. 79.949.624</b>
-            <b name="empresa_ple" hidden>C.C. 1.014.296.721</b>
-            <b name="empresa_tri" hidden>C.C. 1.022.931.573</b>
+            <b name="empresa_int">C.C. 79.949.624</b>
+            <b name="empresa_net" hidden>C.C. 79.949.624   </b>
             <b name="empresa_nei" hidden>C.C. 1.014.296.721</b>
-            <b name="empresa_tsg" hidden>C.C. 75.084.509</b>
-            <b name="empresa_it4" hidden>C.C. 1.030.526.683</b>
-            <b name="empresa_inn" hidden>C.C. 1.030.526.683</b>
+            <b name="empresa_tri" hidden>C.C. 1.022.931.573</b>
         </td>
         <td>
             <span name="tipo_documento_trabajador_cc"> <b>C.C. N°</b>
@@ -813,27 +939,16 @@
         <td>
             <b name="empresa_int">INTEEGRA S.A.S.</b>
             <b name="empresa_net" hidden>NETCOL INGENIERIA S.A.S.</b>
-            <b name="empresa_ple" hidden>PLEX S.A.S.</b>
-            <b name="empresa_tri" hidden>TRIANGULUM S.A.S.</b>
             <b name="empresa_nei" hidden>NETIA S.A.S.</b>
-            <b name="empresa_tsg" hidden>TSG S.A.S.</b>
-            <b name="empresa_it4" hidden>IT4U S.A.S.</b>
-            <b name="empresa_inn" hidden>INNOVA S.A.S.</b>
-        </td>
-        <td>
-            <b>correo:</b> <b name="correo_trabajador" style="text-transform: lowercase">_______</b>
+            <b name="empresa_tri" hidden>TRIANGULUM S.A.S.</b>
         </td>
     </tr>
     <tr>
         <td>
             <b name="empresa_int">NIT No. 900.550.189-7</b>
             <b name="empresa_net" hidden>NIT No. 901.193.667-8</b>
-            <b name="empresa_ple" hidden>NIT No. 901.261.185-1</b>
-            <b name="empresa_tri" hidden>NIT No. 900.265.286-1</b>
             <b name="empresa_nei" hidden>NIT No. 901.259.735-6</b>
-            <b name="empresa_tsg" hidden>NIT No. 900.994.724-3</b>
-            <b name="empresa_it4" hidden>NIT No. 901.157.678-6</b>
-            <b name="empresa_inn" hidden>NIT No. 901.206.305-5</b>
+            <b name="empresa_tri" hidden>NIT No. 900.265.286-1</b>
         </td>
     </tr>
     <tr>
@@ -842,7 +957,6 @@
         </td>
     </tr>
 </table>
-
 <p class="text-center" style="font-size: 12pt"><b>AUTORIZACIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES</b></p>
 
 <p>
@@ -861,21 +975,11 @@
     actuando como titular de mis datos personales AUTORIZO de manera previa, expresa e informada, a
     <b name="empresa_int">INTEEGRA S.A.S.</b>
     <b name="empresa_net" hidden>NETCOL INGENIERIA S.A.S.</b>
-    <b name="empresa_ple" hidden>PLEX S.A.S.</b>
-    <b name="empresa_tri" hidden>TRIANGULUM S.A.S.</b>
     <b name="empresa_nei" hidden>NETIA S.A.S.</b>
-    <b name="empresa_tsg" hidden>TSG S.A.S.</b>
-    <b name="empresa_it4" hidden>IT4U S.A.S.</b>
-    <b name="empresa_inn" hidden>INNOVA S.A.S.</b>
     con
     <b name="empresa_int">NIT 900.550.189-7,</b>
     <b name="empresa_net" hidden>NIT 901.193.667-8,</b>
-    <b name="empresa_ple" hidden>NIT 901.261.185-1,</b>
-    <b name="empresa_tri" hidden>NIT 900.265.286-1,</b>
     <b name="empresa_nei" hidden>NIT 901.259.735-6,</b>
-    <b name="empresa_tsg" hidden>NIT 900.994.724-3,</b>
-    <b name="empresa_it4" hidden>NIT 901.157.678-6,</b>
-    <b name="empresa_inn" hidden>NIT 901.206.305-5,</b>
     en su calidad de <b>RESPONSABLE;</b> para que los datos personales contenidos en mi hoja de vida y aquellos que con
     posterioridad pueda suministrar, sean tratados en los términos de la Ley 1581 de 2012, el Decretos 1377 de 2013, el
     Decreto1443 de 2014 y las normas que modifiquen o regulen la materia, con las finalidades que a continuación se
@@ -947,12 +1051,7 @@
 <p>
     <b name="empresa_int">INTEEGRA S.A.S.</b>
     <b name="empresa_net" hidden>NETCOL INGENIERIA S.A.S.</b>
-    <b name="empresa_ple" hidden>PLEX S.A.S.</b>
-    <b name="empresa_tri" hidden>TRIANGULUM S.A.S.</b>
     <b name="empresa_nei" hidden>NETIA S.A.S.</b>
-    <b name="empresa_tsg" hidden>TSG S.A.S.</b>
-    <b name="empresa_it4" hidden>IT4U S.A.S.</b>
-    <b name="empresa_inn" hidden>INNOVA S.A.S.</b>
     informa de manera expresa, explícita y previa al titular que no está obligado a suministrar y por tanto no tiene la
     imposición de autorizar el tratamiento de datos personales sensibles. Se entiende para este efecto por dato
     sensible:

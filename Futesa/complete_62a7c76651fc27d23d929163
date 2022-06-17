@@ -191,12 +191,11 @@
     </tr>
   </table>
   <br />
-  <br />
   <table class="table_class">
     <tr>
       <td colspan="7">
         <h2 style="margin: 0px; text-align: center">
-          <b>INFORMACIÓN PERSONAL</b>
+          <b>INFORMACIÓN FAMILIAR</b>
         </h2>
       </td>
     </tr>
@@ -218,7 +217,8 @@
       <td><span name="tel_fam_1">__________</span></td>
       <td><span name="convive_fam_1">__________</span></td>
     </tr>
-    <tr>
+    <span name="fam_2_n"></span>
+    <tr name="fam_2_s" hidden>
       <td><span name="nombres_fam_2">__________</span></td>
       <td><span name="parentesco_fam_2">__________</span></td>
       <td><span name="edad_fam_2">__________</span></td>
@@ -227,7 +227,8 @@
       <td><span name="tel_fam_2">__________</span></td>
       <td><span name="convive_fam_2">__________</span></td>
     </tr>
-    <tr>
+    <span name="fam_3_n"></span>
+    <tr name="fam_3_s" hidden>
       <td><span name="nombres_fam_3">__________</span></td>
       <td><span name="parentesco_fam_3">__________</span></td>
       <td><span name="edad_fam_3">__________</span></td>
@@ -236,7 +237,8 @@
       <td><span name="tel_fam_3">__________</span></td>
       <td><span name="convive_fam_3">__________</span></td>
     </tr>
-    <tr>
+    <span name="fam_4_n"></span>
+    <tr name="fam_4_s" hidden>
       <td><span name="nombres_fam_4">__________</span></td>
       <td><span name="parentesco_fam_4">__________</span></td>
       <td><span name="edad_fam_4">__________</span></td>
@@ -245,7 +247,8 @@
       <td><span name="tel_fam_4">__________</span></td>
       <td><span name="convive_fam_4">__________</span></td>
     </tr>
-    <tr>
+    <span name="fam_5_n"></span>
+    <tr name="fam_5_s" hidden>
       <td><span name="nombres_fam_5">__________</span></td>
       <td><span name="parentesco_fam_5">__________</span></td>
       <td><span name="edad_fam_5">__________</span></td>
@@ -260,7 +263,7 @@
     <tr>
       <td colspan="4">
         <h2 style="margin: 0px; text-align: center">
-          <b>INFORMACIÓN PERSONAL</b>
+          <b>INFORMACIÓN LABORAL</b>
         </h2>
       </td>
     </tr>
@@ -434,7 +437,7 @@
     </tr>
   </table>
   <p>
-    <span name="fecha">__________</span>
+    <span name="fecha_diligenciamiento">__________</span>
     <br />
     <br />
     Señor(a):
@@ -564,6 +567,7 @@
   <br />
   <br />
   <p>
+    <div id="trabajador_1" name="trabajador" class="sign_margin"></div>
     ______________________________ <br />
     <span name="tipo_doc_trabajador_cc">C.C.</span>
     <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
@@ -572,6 +576,7 @@
   </p>
   <br />
   <p>
+    <div name="dir_sst_fut" id="dir_sst_fut_1" class="sign_margin"></div>
     ______________________________ <br />
     Yiwer Africano Torres <br />
     <b>Director SST Futesa</b>
@@ -635,6 +640,163 @@
       <b>1.3</b> Empresa usuaria <span name="empresa_usuaria">__________</span>
     </span>
   </p>
+  <p>
+    <b>2. Declaro bajo juramento de gravedad que:</b> <br />
+    <span>
+      <b>2.1</b> Estoy afiliado a la empresa promotra de salud (EPS), ¿Cuál?:
+      <br />
+      <span name="eps">__________</span>
+    </span>
+    <br />
+    <br />
+    <span>
+      <b>2.2</b> Estoy afiliado a la administradora de pension
+      <br />
+      <span name="perfil_afp">__________</span>
+    </span>
+    <br />
+    <br />
+    <span>
+      <b>2.3</b> Me han solicitado la documentación requerida para mi
+      afiliación, mis beneficiarios a la EPS y caja de compensación (CCF)?
+      <br />
+      <u name="solicitud_documentacion">Si</u>
+    </span>
+    <br />
+    <br />
+    <span>
+      <b>2.4</b> Recibí información sobre la administradora de riesgos
+      laborales, (ARL, sura)?
+      <br />
+      <u name="info_arl">Si</u>
+    </span>
+    <br />
+    <br />
+    <span>
+      <b>2.5</b> Recibí y visualice el video de induccion corporativo de Futesa
+      S.A.S.?
+      <br />
+      <u name="vio_video">Si</u>
+    </span>
+    <br />
+    <br />
+    <span>
+      <b>2.6</b> Recibí socialización sodel reglamento interno de trabajo?
+      <br />
+      <u name="info_rit">Si</u>
+    </span>
+    <br />
+    <br />
+    <span>
+      <b>2.7</b> Recibí socialización de la ley 1010 de 2006 sobre acoso
+      laboral?
+      <br />
+      <u name="info_acoso">Si</u>
+    </span>
+    <br />
+    <br />
+    <span>
+      <b>2.8</b> Recibí inducción sobre el reglamento único sector trabajo
+      decreto 1072 de 2015?
+      <br />
+      <u name="reglamento_unico">Si</u>
+    </span>
+  </p>
+  <p>
+    <small>
+      Así mismo exonero de toda responsabilidad a la empresa
+      <b>Futesa S.A.S. - EST</b> por los errores que se generen debido al no
+      suministro de la información, no entrega de documentos o incumplimientos
+      de los puntos citados en esta.
+    </small>
+  </p>
+  <p>
+    <b>3. Observaciones</b> <br />
+    <span name="observaciones">______________________________</span>
+  </p>
+  <p>
+    <b>4. Compromiso</b> <br />
+    Me comprometo a la entrega de la siguiente documentación faltante para la
+    legalización de mi contratación para el dia
+    <span name="fecha_entrega_faltante">__________</span> <br />
+    <span name="docs_faltantes">______________________________</span>
+  </p>
+  <p><b>5. Firmas</b></p>
+  <p>
+    <b>Aspirante</b>
+    <div id="trabajador_4" name="trabajador" class="sign_margin"></div>
+    ______________________________ <br />
+    <span name="tipo_doc_trabajador_cc">C.C.</span>
+    <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+    <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+    <span name="num_id_trabajador">__________</span><br />
+    <span name="fecha_diligenciamiento">__________</span>
+  </p>
+  <br />
+  
+  <p>
+    <b>Analista de contratación</b>
+    <div id="analista_cont_fut_1" name="analista_cont_fut" class="sign_margin"></div>
+    ______________________________ <br />
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <table class="table_class">
+    <tr>
+      <td rowspan="4">
+        <div style="margin: auto; width: fit-content">
+          <img
+            src="https://mi-contrato-static.s3.amazonaws.com/futesa/logo.jpeg"
+            alt="Futesa logo"
+          />
+        </div>
+      </td>
+      <td rowspan="4">
+        <p style="margin: 0px; text-align: center">
+          <b>
+            Comprmiso de afiliación beneficiarios, Portabilidad y/o Cambio ed EPS
+          </b>
+        </p>
+      </td>
+      <td>Proceso</td>
+      <td>Contratación</td>
+    </tr>
+    <tr>
+      <td>Código</td>
+      <td>FRCAB-01</td>
+    </tr>
+    <tr>
+      <td>Versión</td>
+      <td>02</td>
+    </tr>
+    <tr>
+      <td>Fecha</td>
+      <td>25/06/2021</td>
+    </tr>
+  </table>
+  <p>
+    <b>1. Datos personales.</b><br />
+    <span>
+      <b>1.1</b> Nombres y apellidos:
+      <span name="nombres_apellidos">__________</span>
+    </span>
+    <br />
+    <span>
+      <b>1.2</b> Número de identificación:
+      <span name="tipo_doc_trabajador_cc">C.C.</span>
+      <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
+      <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
+      <span name="num_id_trabajador">__________</span>
+      <span name="num_id_trabajador">__________</span>
+    </span>
+    <br />
+    <span>
+      <b>1.3</b> Empresa usuaria <span name="empresa_usuaria">__________</span>
+    </span>
+  </p>
   <p><b>2. Compromiso Futesta S.A.S. - EST</b></p>
   <p>
     <b>2.1 Futesa S.A.S</b> como parte empleadora dando cumplimiento al articulo
@@ -665,8 +827,7 @@
   <p><b>4. Firmas</b></p>
   <p>
     <b>Aspirante</b>
-    <br />
-    <br />
+    <div id="trabajador_2" name="trabajador" class="sign_margin"></div>
     ______________________________ <br />
     <span name="tipo_doc_trabajador_cc">C.C.</span>
     <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
@@ -677,8 +838,7 @@
   <br />
   <p>
     <b>Analista de contratación</b>
-    <br />
-    <br />
+    <div id="analista_cont_fut_2" name="analista_cont_fut" class="sign_margin"></div>
     ______________________________ <br />
   </p>
 </div>
@@ -776,7 +936,7 @@
   </p>
   <p>
     <b>10. ANTIGÜEDAD EN EL CARGO ACTUAL</b><br />
-    <span name="perfil_antiguedad_CARGO">Menos de 1 año</span>
+    <span name="perfil_antiguedad_cargo">Menos de 1 año</span>
   </p>
   <p>
     <b>11. TIPO DE CONTRATACIÓN</b><br />
@@ -830,11 +990,11 @@
   </p>
   <p>
     <b>18.</b> Tipo de sangre <b>(RH).</b>
-    <span name="tipo_sangre">__________</span>
+    <span name="rh">__________</span>
   </p>
   <p>
     <b>19.</b> A continuación relacione: <br />
-    <b>EPS:</b> <span name="perfil_eps">__________</span>, <b>AFP:</b>
+    <b>EPS:</b> <span name="eps">__________</span>, <b>AFP:</b>
     <span name="perfil_afp">__________</span>
   </p>
   <p>
@@ -1255,7 +1415,9 @@
     <span name="fecha_diligenciamiento">__________</span>
   </p>
   <p>
-    <b>FIRMA:</b><br /><br />______________________________ <br />
+    <b>FIRMA:</b>
+    <div id="trabajador_3" name="trabajador" class="sign_margin"></div>
+    ______________________________ <br />
     <span name="tipo_doc_trabajador_cc">C.C.</span>
     <span name="tipo_doc_trabajador_ce" hidden>C.E.</span>
     <span name="tipo_doc_trabajador_pa" hidden>PASAPORTE.</span>
@@ -1553,7 +1715,7 @@
       <td><b>11</b></td>
       <td>
         Es un accidente de trabajo cuando un señor contratado como conductor, se
-        encuentra apoyando por voluntad propia activdades en instalaciónd e
+        encuentra apoyando por voluntad propia activdades en instalación de
         redes y repentinamente se hace una cortada en la mano derecha?
       </td>
       <td>
@@ -1679,7 +1841,7 @@
     <tr>
       <td><b>19</b></td>
       <td>
-        Mi puesto de trabajod ebe encontrarse en buenas condiciones de orden y
+        Mi puesto de trabajo debe encontrarse en buenas condiciones de orden y
         aseo a diario?
       </td>
       <td>
@@ -1729,14 +1891,12 @@
   </p>
   <p>
     <b>Firma del Trabajador:</b>
-    <br />
-    <br />
+    <div id="trabajador_6" name="trabajador" class="sign_margin"></div>
     <span>______________________________ </span>
   </p>
   <p>
     <b>Firma SST:</b>
-    <br />
-    <br />
+    <div name="dir_sst_fut" id="dir_sst_fut_2" class="sign_margin"></div>
     <span>______________________________</span>
   </p>
 </div>
@@ -1804,7 +1964,7 @@
     </li>
     <li>
       Tipo de contrato con la empresa:
-      <span name="tipo_contrato">Indefinido</span>
+      <span name="perfil_tipo_cont">Indefinido</span>
     </li>
     <li>
       Qué tipos de vehículos conduce:
@@ -1823,25 +1983,7 @@
       los siguientes eventos?,sin importar si es conductor o no.
       <br />
       <br />
-      <span>
-        Accidente solo daños: <span name="accidente_solo_danos_s">Si</span>
-        <span name="accidente_solo_danos_n" hidden>No</span>
-      </span>
-      <br />
-      <span>
-        Accidente con muertos: <span name="accidente_muertos_s">Si</span>
-        <span name="accidente_muertos_n" hidden>No</span>
-      </span>
-      <br />
-      <span>
-        Accidente con heridos: <span name="accidente_heridos_s">Si</span>
-        <span name="accidente_heridos_n" hidden>No</span>
-      </span>
-      <br />
-      <span>
-        Le han impuesto comparendos: <span name="comparendos_s">Si</span>
-        <span name="comparendos_n" hidden>No</span>
-      </span>
+      <span name="lista_accidentes">__________</span>
     </li>
     <li>
       Para desplazarse hacia y desde su lugar de trabajo el medio de transporte
@@ -1849,7 +1991,7 @@
     </li>
     <li>
       El tiempo promedio diario para realizar estos desplazamientos (ida y
-      vuelta) es: <span name="tiempo_transporte">A pie</span>
+      vuelta) es: <span name="tiempo_transporte">Entre 1 y 20 minutos</span>
     </li>
     <li>
       Realiza desplazamientos dentro de su jornada laboral?
@@ -2586,6 +2728,7 @@
   <br />
   <p>
     <b>
+      <div id="rep_futesa" class="sign_margin"></div>
       ______________________________ <br />
       SERGIO ALONSO ARANGO TOBON<br />
       REPRESENTANTE LEGAL <br />
@@ -2598,6 +2741,7 @@
   <br />
   <br />
   <p>
+    <div id="trabajador_6" name="trabajador" class="sign_margin"></div>
     ______________________________ <br />
     <b name="nombres_apellidos">__________</b> <br />
     <b>EL TRABAJADOR</b> <br />

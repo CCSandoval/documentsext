@@ -1,15 +1,18 @@
 <h1 style="text-align: center">Formulario de registro Multipagas</h1>
 
+<p><b>NOMBRE DEL PAQUETE DE ANEXOS: <span name="package_name">___________________</span></b></p>
+
 <p><b>DEPARTAMENTO:</b> <b name="departamento">___________________</b></p>
 
 <p><b>CIUDAD:</b> <b name="ciudad">__________________</b></p>
 
-<p><b>NOMBRE PUNTO: </b> <b name="nombre_punto">____________________</b></p>
-
-
 <span name="nit_n"></span>
-<p name="nit_s" hidden><b>NIT</b> <b name="nit_text">____________</b></p>
+<p name="nit_s" hidden>
+  <b>NOMBRE ESTABLECIMIENTO O PROSPECTO:</b>
+  <b name="nombre_establecimiento">________________________________</b>
+</p>
 
+<p name="nit_s" hidden><b>NIT</b> <b name="nit_text">____________</b></p>
 
 <p>
   <b>NOMBRES Y APELLIDOS:</b> <b name="nombres">__________________________</b>
@@ -26,12 +29,7 @@
 <p><b>EMAIL:</b> <b name="email">____________________</b></p>
 
 <p>
-  <b>NOMBRE ESTABLECIMIENTO O PROSPECTO:</b>
-  <b name="nombre_establecimiento">________________________________</b>
-</p>
-
-<p>
-  <b>CEDULA PROSPECTO:</b> <b name="cedula_prospecto">___________________</b>
+  <b>CEDULA:</b> <b name="cedula_prospecto">___________________</b>
 </p>
 
 <p><b>HORARIO DE SERVICIO:</b> <b name="horario_servicio">____________</b></p>
@@ -40,11 +38,20 @@
   <b>DIRECCIÓN:</b> <b name="direccion">________________________________</b>
 </p>
 
-<br />
-<br />
-<br />
+<p>
+  <b
+    >Acepto los términos y condiciones expuestos en
+    <a href="https://www.multipagas.com/multipagas/"
+      >https://www.multipagas.com/multipagas/</a
+    >
+    :
+  </b>
+  <b name="tyc_s">Si</b>
+</p>
 
-<p>Carpeta: <span name="package_name">____________</span></p>
+<br />
+<br />
+<br />
 
 <p>
   <b>Prospecto:</b>

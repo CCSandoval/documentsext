@@ -2,37 +2,31 @@
     _id: ObjectId('627d7a1e51fc27d23d92914b'),
     config: [
         {
-            name: 'nombre_punto',
-            description: 'Ingrese el nombre del punto',
-            type: 'text',
-            help:'punto'
-        },
-        {
             name: 'package_name',
-            description: 'Digita el nombre con que deseas que esta carpeta aprezca en tus archivos',
+            description: 'Ingrese el nombre del paquete de anexos',
             type: 'text'
         },
         {
             name: 'correo_continuar',
             description: 'Ingrese el correo del prospecto',
             type: 'text',
-            help:'correo'
+            help: 'correo'
         },
         {
             name: 'departamento',
             description: 'Ingrese el departamento',
             type: 'text',
-            help:'departamento'
+            help: 'departamento'
         },
         {
             name: 'ciudad',
             description: 'Ingrese la ciudad',
             type: 'text',
-            help:'ciudad'
+            help: 'ciudad'
         },
         {
             name: 'nit',
-            description: '¿Desea ingresar el nit?',
+            description: '¿Tiene establecimiento?',
             type: 'clausula',
             value: 'n',
             options: [
@@ -47,6 +41,18 @@
             ]
         },
         {
+            name: 'nombre_establecimiento',
+            description: 'Ingrese el nombre del establecimiento',
+            type: 'text',
+            help: 'establecimiento',
+            prereq: [
+                {
+                    k: 'nit',
+                    v: 's'
+                }
+            ]
+        },
+        {
             name: 'nit_text',
             description: 'Ingrese el nit',
             type: 'text',
@@ -56,19 +62,19 @@
                     v: 's'
                 }
             ],
-            help:'nit'
+            help: 'nit'
         },
         {
             name: 'nombres',
             description: 'Ingrese los nombres y apellidos del prospecto',
             type: 'name',
-            help:'nombres'
+            help: 'nombres'
         },
         {
             name: 'cel_contacto',
             description: 'Ingrese el celular de contacto del prospecto',
             type: 'text',
-            help:'cel'
+            help: 'cel'
         },
         {
             name: 'otro_cel',
@@ -96,37 +102,44 @@
                     v: 's'
                 }
             ],
-            help:'cel'
+            help: 'cel'
         },
         {
             name: 'email',
             description: 'Ingrese el email del prospecto',
             type: 'text',
-            help:'correo'
-        },
-        {
-            name: 'nombre_establecimiento',
-            description: 'Ingrese el nombre del establecimiento',
-            type: 'text',
-            help:'establecimiento'
+            help: 'correo'
         },
         {
             name: 'cedula_prospecto',
             description: 'Ingrese la cedula de ciudadanía del prospecto',
             type: 'number',
-            help:'cedula'
+            help: 'cedula'
         },
         {
             name: 'horario_servicio',
             description: 'Ingrese el horario de servicio',
             type: 'text',
-            help:'horario'
+            help: 'horario'
         },
         {
             name: 'direccion',
             description: 'Ingrese la dirección',
             type: 'text',
-            help:'direccion'
+            help: 'direccion'
+        },
+        {
+            name: 'tyc',
+            description: '¿Acepta los términos y condiciones de Multipagas?',
+            type: 'clausula',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            help: 'tyc'
         }
     ],
     operation: [],
@@ -136,7 +149,7 @@
             identification: 'cedula_prospecto',
             email: 'email',
             type: 'firma_prospecto',
-            'package':true
+            'package': true
         }
     ],
     sign: [
@@ -148,48 +161,49 @@
         'email',
         'cedula_prospecto',
         'horario_servicio',
-        'direccion'
+        'direccion',
+        'package_name'
     ],
-    help:{
-        departamento:"Ejemplo: Antioquia",
-        ciudad:"Ejemplo: Medellín",
-        nombre_punto:"Ejemplo",
-        nit:"Ejemplo: 800.197.268-4",
-        correo:'Ejemplo: correo@dominio.com',
-        nombres:"Ejemplo: David Mauricio Martinez López",
-        cel:'Ejemplo: 3156466172',
-        cedula:"Ejemplo: 1115448153",
-        horario:"Ejemplo: 8AM a 5PM",
-        direccion:"Ejemplo: Calle 58 #2a-74",
-        punto:'Ejemplo: ',
-        establecimiento:"Ejemplo: "
+    help: {
+        departamento: 'Ejemplo: Antioquia',
+        ciudad: 'Ejemplo: Medellín',
+        nombre_punto: 'Ejemplo',
+        nit: 'Ejemplo: 800.197.268-4',
+        correo: 'Ejemplo: correo@dominio.com',
+        nombres: 'Ejemplo: David Mauricio Martinez López',
+        cel: 'Ejemplo: 3156466172',
+        cedula: 'Ejemplo: 1115448153',
+        horario: 'Ejemplo: 8AM a 5PM',
+        direccion: 'Ejemplo: Calle 58 #2a-74',
+        punto: 'Ejemplo: ',
+        tyc: 'Accede a los términos y condiciones por este enlace: https://www.multipagas.com/multipagas/'
     },
     preBuild: true,
     preBuildData: [
-        'nombre_punto',
         'package_name',
-        'correo_continuar'
+        'correo_continuar',
     ],
     name: 'FORMULARIO DE REGISTRO MULTIPAGAS',
-    files:[
+    files: [
         {
-            name:'Cédula de ciudadanía',
-            approve:'pending'
+            name: 'Cédula de ciudadanía',
+            approve: 'pending'
         },
         {
-            name:'RUT',
-            approve:'pending'
+            name: 'RUT',
+            approve: 'pending'
         },
         {
-            name:'Certificado de procuraduría',
-            approve:'pending'
+            name: 'Certificado de procuraduría',
+            approve: 'pending'
         },
         {
-            name:'Certificado de contraloría',
-            approve:'pending'
-        },
+            name: 'Certificado de contraloría',
+            approve: 'pending'
+        }
     ],
-    build: 4,
+    build: 11,
     price: 5000,
-    username: '0f03fff6-2122-4373-bd12-69fa58592bc7'
+    company: ObjectId('61942036889b8f0009db9812'),
+    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916'
 }

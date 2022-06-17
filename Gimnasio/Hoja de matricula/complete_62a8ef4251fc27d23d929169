@@ -1,0 +1,129 @@
+<h2 style="text-align: center">
+  <b>HOJA DE MATRICULA PERIODO <b name="periodo">__________________</b></b>
+</h2>
+
+<p>
+  <b>Fecha de matricula</b>
+  <b name="fecha_matricula">_________________________</b> Matriculado para el
+  grado <b name="grado_matricula">__________________</b>
+</p>
+
+<p style="border-bottom: 1px dotted black; padding-bottom: 10px">
+  Nombre del (la) alumno (a):
+  <u name="nombre_estudiante">_________________________</u>
+  Fecha de nacimiento:
+  <u name="fecha_nacimiento">_________________________</u>
+  Nacionalidad: <u name="nacionalidad">__________________</u> Dpto.:
+  <u name="departamento">__________________</u> Municipio:
+  <u name="municipio">__________________</u>
+  Documento de Identidad: <u name="tipo_id_estudiante_cc">C.C.</u>
+  <u name="tipo_id_estudiante_ti" hidden>T.I.</u>
+  <u name="tipo_id_estudiante_rc" hidden>Registro Civil</u>
+  <u name="tipo_id_estudiante_otro" hidden>Otro</u>, Nº:
+  <u name="tipo_id_estudiante_cc">
+    <u name="cedula_estudiante">__________________</u>
+  </u>
+  <u name="tipo_id_estudiante_ti" hidden>
+    <u name="tarjeta_estudiante">__________________</u>
+  </u>
+  <u name="tipo_id_estudiante_rc" hidden>
+    <u name="registro_estudiante">__________________</u>
+  </u>
+  <u name="tipo_id_estudiante_otro" hidden>
+    <u name="otro_id_estudiante">__________________</u>
+  </u>
+  Dirección de residencia:
+  <u name="dir_residencia">_________________________</u> Teléfono:
+  <u name="tel_residencia">__________________</u>
+  Celular alumno: <u name="cel_estudiante">__________________</u> Correo
+  electrónico alumno: <u name="email_estudiante">__________________</u>
+  Barrio:
+  <u name="barrio_estudiante">_________________________</u> Colegio anterior:
+  <u name="colegio_anterior">_________________________</u>
+</p>
+
+<p style="border-bottom: 1px dotted black; padding-bottom: 10px">
+  Nombre del padre o acudiente:
+  <u name="nombre_papa">_________________________</u> Responsable de pago:
+  <u name="responsable_pago">_____________</u> Dir. Residencia:
+  <u name="dir_residencia">__________________</u> Teléfono residencia:
+  <u name="tel_residencia">__________________</u> Profesión:
+  <u name="profesion_papa">_________________________</u> C.C.
+  <u name="cedula_papa">__________________</u> de:
+  <u name="exp_cedula_papa">__________________</u> Teléfono:
+  <u name="tel_residencia">__________________</u> Fax:
+  <u name="fax_papa">__________________</u> Celular:
+  <u name="cel_papa">__________________</u> Correo electrónico:
+  <u name="email_papa">__________________</u>
+</p>
+
+<p style="border-bottom: 1px dotted black; padding-bottom: 10px">
+  Nombre de la madre o acudiente:
+  <u name="nombre_mama">_________________________</u> Responsable de pago:
+  <u name="responsable_pago">_____________</u> Dir. Residencia:
+  <u name="dir_residencia">__________________</u> Teléfono residencia:
+  <u name="tel_residencia">__________________</u> Profesión:
+  <u name="profesion_mama">_________________________</u> C.C.
+  <u name="cedula_mama">__________________</u> de:
+  <u name="exp_cedula_mama">__________________</u> Teléfono:
+  <u name="tel_residencia">__________________</u> Fax:
+  <u name="fax_mama">__________________</u> Celular:
+  <u name="cel_mama">__________________</u> Correo electrónico:
+  <u name="email_mama">__________________</u>
+</p>
+
+<p>
+  Otro contacto en caso de emergencia:
+  <u name="nombre_otro_contacto">_________________________</u> Parentesco:
+  <u name="parentesco_otro">_________________________</u> Profesión:
+  <u name="profesion_otro">_________________________</u> C.C.
+  <u name="cedula_otro">__________________</u> de:
+  <u name="exp_cedula_otro">__________________</u> Empresa:
+  <u name="empresa_otro"></u> Fax:
+  <u name="fax_otro">__________________</u> Celular:
+  <u name="cel_otro">__________________</u> Correo electrónico:
+  <u name="email_otro">__________________</u>
+</p>
+
+<p>
+  <b>Observaciones:</b> Nosotros, padres o acudientes, garantizamos que todos
+  los acontecimientos sociales que se celebren en nuestra casa con los jóvenes
+  en edad escolar, serán vigilados por nosotros o por otras personas adultas que
+  asuman dicha responsabilidad, y estarán libres de alcohol y drogas.
+</p>
+
+<p>
+  Aceptamos los planes, programas, normas y el Manual de Convivencia del
+  Gimnasio del Norte. Asistiremos puntualmente a las reuniones de padres de
+  familia y a las demás establecidas por el colegio.
+</p>
+
+<p>
+  <div class="sign_class" id="firma_papa"></div>
+  _________________________________ <br />
+  Firma del padre o acudiente
+</p>
+
+<p>
+  <div class="sign_class" id="firma_mama"></div>
+  _________________________________ <br />
+  Firma de la madre o acudiente
+</p>
+
+<p>
+  <div class="sign_class" id="firma_rector"></div>
+  _________________________________ <br />
+  Rector
+</p>
+
+<p>
+  <div class="sign_class" id="firma_sec_ac"></div>
+  _________________________________ <br />
+  Secretario académico
+</p>
+
+<p>
+  <div class="sign_class" id="firma_estudiante"></div>
+  _________________________________ <br />
+  Firma del estudiante
+</p>

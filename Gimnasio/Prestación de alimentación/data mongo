@@ -1,94 +1,94 @@
 {
     _id: ObjectId('62a1235a51fc27d23d929161'),
-    config:[
+    config: [
         {
-            name:'nombre_acudiente',
-            type:'name',
-            description:'Ingrese el nombre del acudiente del estudiante'
+            name: 'nombre_papa',
+            type: 'name',
+            description: 'Ingrese el nombre del papa del estudiante'
         },
         {
-            name:'nombre_estudiante',
-            type:'name',
-            description:'Ingrese el nombre del estudiante'
+            name: 'nombre_mama',
+            type: 'name',
+            description: 'Ingrese el nombre de la mama del estudiante'
         },
         {
-            name:'suma_anual',
-            type:'currency',
-            description:'Ingrese la suma anual que pagará el acudiente del estudiante'
+            name: 'nombre_estudiante',
+            type: 'name',
+            description: 'Ingrese el nombre del estudiante'
         },
         {
-            name:'cuota_mensual',
-            type:'currency',
-            description:'Ingrese la cuota mensual que pagará el acudiente del estudiante'
+            name: 'suma_anual',
+            type: 'currency',
+            description: 'Ingrese la suma anual que pagará el acudiente del estudiante'
         },
         {
-            name:'dir_padres',
-            type:'text',
-            description:'Ingrese la dirección de residencia del acudiente del estudiante'
+            name: 'cuota_mensual',
+            type: 'currency',
+            description: 'Ingrese la cuota mensual que pagará el acudiente del estudiante'
         },
         {
-            name:'ciudad_padres',
-            type:'text',
-            description:'Ingrese la ciudad de residencia del acudiente del estudiante'
+            name: 'dir_padres',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia de los acudientes del estudiante'
         },
         {
-            name:'tel_acudiente',
-            type:'phone',
-            description:'Ingrese el teléfono del acudiente del estudiante'
+            name: 'ciudad_padres',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia de los acudientes del estudiante'
         },
         {
-            name:'email_acudiente',
-            type:'email',
-            description:'Ingrese el correo del acudiente del estudiante'
+            name: 'tel_papa',
+            type: 'phone',
+            description: 'Ingrese el teléfono del papa del estudiante'
         },
         {
-            name:'cc_acudiente',
-            type:'number',
-            description:'Ingrese la cédula de ciudadanía del acudiente del estudiante'
+            name: 'email_papa',
+            type: 'email',
+            description: 'Ingrese el correo del papa del estudiante'
+        },
+        {
+            name: 'cc_papa',
+            type: 'number',
+            description: 'Ingrese la cédula de ciudadanía del papa del estudiante'
+        },
+        {
+            name: 'tel_mama',
+            type: 'phone',
+            description: 'Ingrese el teléfono de la mama del estudiante'
+        },
+        {
+            name: 'email_mama',
+            type: 'email',
+            description: 'Ingrese el correo de la mama del estudiante'
+        },
+        {
+            name: 'cc_mama',
+            type: 'number',
+            description: 'Ingrese la cédula de ciudadanía de la mama del estudiante'
         }
     ],
-    operation:[],
-    sign:[
-        'nombre_acudiente',
-        'tel_acudiente',
-        'tel_madre',
-        'email_acudiente',
-        'email_madre',
-        'cc_acudiente',
-        'cc_madre',
-    ],
-    preFill: [{
-        name: 'nombre_gimn',
-        value: 'JOSÉ MIGUEL MARTÍN BOTERO'
-    },
-    {
-        name: 'id_gimn',
-        value: '79751421'
-    },
-    {
-        name: 'email_gimnasio',
-        value: 'josemmartin@gimnasiodelnorte.edu.co'
-    }
-],
-    signatureProfile:[
+    operation: [],
+    sign: [],
+    signatureProfile: [
         {
-            name:'nombre_acudiente',
-            identification:'cc_acudiente',
-            phone:'tel_acudiente',
-            email:'email_acudiente',
-            type:'firma_acudiente'
+            name: 'nombre_papa',
+            identification: 'cc_papa',
+            phone: 'tel_papa',
+            email: 'email_papa',
+            type: 'firma_papa'
         },
         {
-            name:'nombre_gimn',
-            identification:'id_gimn',
-            email:'email_gimnasio',
-            type:'firma_colegio'
+            name: 'nombre_mama',
+            identification: 'cc_mama',
+            phone: 'tel_mama',
+            email: 'email_mama',
+            type: 'firma_mama'
         }
     ],
-    preBuild:false,
+    preBuild: false,
     company: ObjectId('624b9d001e9c670009968025'),
-    preBuildData:[],
-    build:1,
-    name:'CONTRATO DE PRESTACION DE SERVICIO DE ALIMENTACIÓN',
-    price:5000
+    preBuildData: [],
+    build: 2,
+    name: 'CONTRATO DE PRESTACION DE SERVICIO DE ALIMENTACIÓN',
+    price: 5000
 }

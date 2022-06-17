@@ -26,10 +26,11 @@
 </p>
 
 <p>
-  Por otra parte, <span name="nombre_acudiente">___________________</span> ,
-  mayor de edad, domiciliado en la ciudad de Bogotá, identificado como aparece
-  al pie de su firma (en adelante los “<b>PADRES</b>” o “<b>ACUDIENTES</b>”),
-  quien actúa de manera conjunta en su condición de representante legal de
+  Por otra parte, <span name="nombre_papa">___________________</span> y
+  <span name="nombre_mama">___________________</span> , mayores de edad,
+  domiciliados en la ciudad de Bogotá, identificados como aparece al pie de sus
+  firmas (en adelante los “<b>PADRES</b>” o “<b>ACUDIENTES</b>”), quienes actúan
+  de manera conjunta en su condición de representantes legales de
   <span name="nombre_estudiante">___________________</span>, identificado(a)
   como aparece al pie de su firma (en adelante el “<b>ESTUDIANTE</b>” y
   juntamente con el <b>COLEGIO</b> y los <b>PADRES</b> o <b>ACUDIENTES</b>, las
@@ -566,11 +567,11 @@
   <br />
   <b>Ciudad: </b><span name="ciudad_padres">___________________</span>
   <br />
-  <b>Teléfono: </b><span name="tel_acudiente">___________________</span>
+  <b>Teléfono: </b><span name="tel_papa">___________________</span> y <span name="tel_mama">___________________</span>
   <br />
-  <b>E-mail: </b><span name="email_acudiente">___________________</span>
+  <b>E-mail: </b><span name="email_papa">___________________</span> y <span name="email_mama">___________________</span>
   <br />
-  <b>Cédula: </b><span name="cc_acudiente">___________________</span>
+  <b>Cédula: </b><span name="cc_papa">___________________</span> y <span name="cc_mama">___________________</span>
   <br />
 </p>
 
