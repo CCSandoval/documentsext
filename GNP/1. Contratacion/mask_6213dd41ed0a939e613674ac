@@ -458,6 +458,11 @@
         <span name="cargo_anal_bi" hidden>Analista BI</span>
         <span name="cargo_anal_inf_fin" hidden>Analista Información Financiera</span>
         <span name="cargo_jefe_procesos" hidden>Jefe de Calidad y Procesos</span>
+        <span name="cargo_jefe_nal_inf" hidden>Jefe Nacional de Infraestructura</span>
+        <span name="cargo_jefe_seg_inf" hidden>Jefe de Seguridad de la Información</span>
+        <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
+        <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
+        <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
       </td>
       <td colspan="2">EPS <span name="eps">_______________</span></td>
@@ -1002,6 +1007,11 @@
         <b name="cargo_anal_bi" hidden>Analista BI</b>
         <b name="cargo_anal_inf_fin" hidden>Analista Información Financiera</b>
         <b name="cargo_jefe_procesos" hidden>Jefe de Calidad y Procesos</b>
+        <b name="cargo_jefe_nal_inf" hidden>Jefe Nacional de Infraestructura</b>
+        <b name="cargo_jefe_seg_inf" hidden>Jefe de Seguridad de la Información</b>
+        <b name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</b>
+        <b name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</b>
+        <b name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</b>
         <b name="cargo_call_c" hidden>AGENTE CALL CENTER</b>
       </td>
     </tr>
@@ -1696,6 +1706,11 @@
         <span name="cargo_anal_bi" hidden>Analista BI</span>
         <span name="cargo_anal_inf_fin" hidden>Analista Información Financiera</span>
         <span name="cargo_jefe_procesos" hidden>Jefe de Calidad y Procesos</span>
+        <span name="cargo_jefe_nal_inf" hidden>Jefe Nacional de Infraestructura</span>
+        <span name="cargo_jefe_seg_inf" hidden>Jefe de Seguridad de la Información</span>
+        <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
+        <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
+        <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
       </td>
     </tr>
     <tr>
@@ -1726,6 +1741,75 @@
           con lo establecido en los procedimientos. <br />>Asumir y ejecutar
           las demás funciones que le sean asignadas en cumplimiento de la
           misión del cargo.
+        </span>
+        <span name="cargo_jefe_nal_inf" hidden>
+          Coordinar el equipo de ingenieros a cargo y el cumplimiento de sus funciones
+          <br/>Coordinar el seguimiento, control y mantenimiento a la infraestructura de redes, telefonía y servidores
+          <br/>Coordinar el seguimiento y control de: firewall, antivirus, LAN, WLAN y Proxy
+          <br/>Coordinar que se aplique el control y la gestión de autorizaciones de acceso a la red privada VPN de GNP
+          <br/>Cumplir con las políticas de seguridad enfocadas a la infraestructura
+          <br/>Garantizar la atención del soporte de segundo y tercer nivel a la red
+          <br/>Garantizar la funcionalidad de la Infraestructura y la disponibilidad de los servicios
+          <br/>Coordinar el seguimiento al comportamiento de la infraestructura
+          <br/>Coordinar que se realice el respaldo de los equipos de infraestructura
+          <br/>Coordinar que se realice el monitoreo los enlaces de datos y troncales telefónicas
+          <br/>Garantizar que se apliquen las acciones preventivas y correctivas ante anomalias en la infraestructura
+          <br/>Generar los informes de las actividades realizadas por los ingenieros
+          <br/>Garantizar la continuidad y disponibilidad de la infraestructura
+          <br/>Garantizar el apropiado diseño y mantenimiento de la infraestructura
+        </span>
+        <span name="cargo_jefe_seg_inf" hidden>
+          Coordinar el desarrollo y la actualización de las normas, procedimientos y formatos de hacen parte de los controles relacionados con el SGI
+          <br/>Facilitar la administración y desarrollo de iniciativas sobre el SGSI al interior de la organización
+          <br/>Dirigir las pruebas necesarias para evaluar el cumplimiento del SGSI
+          <br/>Proponer y coordinar la realización de un análisis de riesgos formal en el SGSI que abarque toda la organización
+          <br/>Dirigir los estudios de penetración y pruebas de seguridad en la infraestructura tecnológica
+          <br/>Gestionar la respuesta a incidentes del SGSI
+          <br/>Coordinar la difusión, entrenamiento y concienciación en toda la organización acerca del SGSI
+          <br/>Apoyar las reuniones de CSI
+          <br/>Plantear mejoras o actualizaciones al SGSI
+          <br/>Auditar los procedimientos de todas las áreas de la organización referentes al SGSI de la infraestructura TI
+          <br/>Llevar el control de la seguridad física como acceso dentro de las sedes, lugares restringidos y el manejo del CCTV
+          <br/>Realizar seguimiento al plan del SGSI
+        </span>
+        <span name="cargo_ing_nal_tel" hidden>
+          Realizar seguimiento, control y mantenimiento de las plantas telefónicas
+          <br/>Realizar seguimiento y control de las troncales telefónicas
+          <br/>Realizar monitoreo del almacenamiento y rendimiento de las plantas telefónicas
+          <br/>Realizar monitoreo del consumo de los canales de voz
+          <br/>Atender soporte de segundo nivel y tercer nivel a la telefonía
+          <br/>Realizar monitoreo del funcionamiento de los DIDs de las troncales distribuidas
+          <br/>Realizar seguimiento al comportamiento de la infraestructura de telefonía
+          <br/>Realizar respaldo de las llamadas de los aplicativos de telefonía y de los principales archivos de configuración
+          <br/>Administrar los accesos a los aplicativos de telefonía
+          <br/>Comunicarse con el outsourcing de telefonía para solicitar soporte y con los proveedores de los aplicativos de telefonía
+        </span>
+        <span name="cargo_ing_nal_redes" hidden>
+          Realizar seguimiento, control y mantenimiento a la infraestructura de redes
+          <br/>Realizar seguimiento y control de: firewall, antivirus, LAN, WLAN y Proxy
+          <br/>Realizar control y gestionar autorizaciones de acceso a la red privada VPN de GNP
+          <br/>Cumplir con las políticas de seguridad enfocadas a la infraestructura
+          <br/>Atender soporte de segundo y tercer nivel a la red
+          <br/>Garantizar la funcionalidad de la Infraestructura y la disponibilidad de los servicios
+          <br/>Realizar seguimiento al comportamiento de la infraestructura de redes
+          <br/>Realizar respaldo de los equipos de infraestructura
+          <br/>Monitorear los enlaces de datos
+          <br/>Dirigir y coordinar las acciones preventivas y correctivas ante anomalias en la infraestructura
+          <br/>Garantizar la continuidad y disponibilidad de la infraestructura
+          <br/>Garantizar el apropiado diseño y mantenimiento de la infraestructura
+        </span>
+        <span name="cargo_ing_nal_servidores" hidden>
+          Realizar seguimiento, control y mantenimiento de los servidores (físicos, virtuales y de almacenamiento)
+          <br/>Realizar monitoreo del almacenamiento de los servidores (físicos, virtuales y de almacenamiento)
+          <br/>Realizar monitoreo del procesamiento de los servidores (físicos, virtuales y de almacenamiento)
+          <br/>Realizar monitoreo de los logs centralizados de los servidores (físicos, virtuales y de almacenamiento)
+          <br/>Realizar monitoreo del despliegue de las actualizaciones de windows con WSUS
+          <br/>Realizar el monitoreo y diagnóstico continuo de los servidores (físicos, virtuales y de almacenamiento)
+          <br/>Realizar seguimiento de los servidores mediante las herramientas implementadas
+          <br/>Realizar respaldo a diario de servidores y actualizaciones
+          <br/>Administrar el almacenamiento de los servidores y NAS
+          <br/>Realizar hardening y running de servidores
+          <br/>Administrar el acceso a los servidores y servicios
         </span>
         <span name="cargo_call_c" hidden>
           Atender las llamadas entrantes y salientes de los clientes,
@@ -2985,6 +3069,11 @@
         <span name="cargo_anal_bi" hidden>Analista BI</span>
         <span name="cargo_anal_inf_fin" hidden>Analista Información Financiera</span>
         <span name="cargo_jefe_procesos" hidden>Jefe de Calidad y Procesos</span>
+        <span name="cargo_jefe_nal_inf" hidden>Jefe Nacional de Infraestructura</span>
+        <span name="cargo_jefe_seg_inf" hidden>Jefe de Seguridad de la Información</span>
+        <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
+        <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
+        <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
       </td>
     </tr>
@@ -3958,3 +4047,87 @@
     <b>Firma: <b>_________________________________</b> </b>
   </p>
 </div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <img
+    style="width: 100%; opacity: 0.7"
+    src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg"
+    alt="banner"
+  />
+  <p style="text-align: right; color: #666"><b>GNP-TH-D-04</b></p>
+  <p style="text-align: center">
+    <b>
+      PACTO DE DESALARIZACIÓN <br />
+      CELEBRADO ENTRE GNP GRUPO NACIONAL DE PROYECTOS S.A Y
+      <b name="nombre_trabajador">___________________</b>
+    </b>
+  </p>
+  <p>
+    Conste por el presente documento que entre <b>CONSUELO PERDOMO GUARNIZO</b>,
+    mayor de edad, identificada con cedula de ciudadanía número 37.228.213 de
+    Cúcuta, actuando en mi calidad de representante legal de la sociedad
+    <b> GNP GRUPO NACIONAL DE PROYECTOS S.A.S. </b>, con domicilio principal en
+    la ciudad de Bogotá, número de identificación tributaria 900.230.578 - 6, en
+    adelante EL EMPLEADOR, por una parte, y por la otra,
+    <b name="nombre_trabajador">___________________</b>, mayor de edad, vecino
+    de la ciudad de Bogotá, identificado con cedula de ciudadanía número
+    <b name="cedula_trabajador">_____________</b> de
+    <b name="expedicion_cedula_trabajador">___________________</b>, en adelante
+    <b> EL TRABAJADOR </b>, por medio del presente documento celebramos pacto de
+    desalarización en virtud al contrato de Trabajo celebrado entre las partes:
+  </p>
+  <p>
+    A partir de la firma del presente documento que hará parte integrante del
+    contrato individual de trabajo suscrito, las partes acuerdan:
+  </p>
+  <ul>
+    <li>
+      Para todos los efectos legales, se deja expresa constancia entre las
+      partes aquí firmantes que de los ingresos mensuales percibidos por el
+      trabajador se tomaran como base para el pago de las prestaciones sociales,
+      incluidas, primas, vacaciones, cesantías, intereses de cesantías e
+      indemnizaciones el sesenta por ciento (60%) de lo que reciba el
+      trabajador, el cuarenta por ciento (40%) restante no será tenido en cuenta
+      como factor salarial, todo lo anterior, en concordancia con lo expresado
+      por el artículo 30 de la Ley 1393 de 2010 y el ordenamiento legal vigente
+      específicamente el artículo 128 del Código Sustantivo del Trabajo
+      permitiendo dicha norma pactar convencional o contractualmente
+      expresamente que no constituyen salario.
+    </li>
+    <li>
+      El valor desalarizado correspondiente será tenido en cuenta como
+      bonificación no constitutiva de salario.
+    </li>
+    <li>
+      Queda expresa constancia que la suma que se pacta como exclusión salarial
+      no constituyente base para la liquidación de prestaciones sociales ni
+      serán tenidas en cuenta para los aportes a la Seguridad Social.
+    </li>
+  </ul>
+  <p>
+    Para constancia se firma en dos (2) ejemplares del mismo tenor y valor, en
+    la ciudad de Bogotá D.C. el
+    <span name="fecha_firma">___________________</span>
+  </p>
+  <div>
+    <b>___________________</b><br />
+    <p>
+      <b>Nombre: <b name="nombre_trabajador">_____________</b></b>
+      <br />
+      <b>C.C. <b name="cedula_trabajador">_____________</b></b>
+      <br />
+      <b>Correo: <b name="correo_trabajador">_____________</b></b>
+    </p>
+  </div>
+  <div>
+    <b>___________________</b><br />
+    <p>
+      <b>Nombre: MILENA CASTILLO</b>
+      <br />
+      <b>C.C. 53159805</b>
+    </p>
+  </div>
+</div>
+

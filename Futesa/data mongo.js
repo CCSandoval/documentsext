@@ -1088,16 +1088,6 @@
             description: 'Ingrese el teléfono célular de la tercer referencia personal'
         },
         {
-            name: 'recomendaciones_gen',
-            type: 'text',
-            description: 'Ingrese las recomendaciones generales'
-        },
-        {
-            name: 'recomendaciones_esp',
-            type: 'text',
-            description: 'Ingrese las recomendaciones específicas'
-        },
-        {
             name: 'solicitud_documentacion',
             type: 'select',
             description: 'Me han solicitado la documentación requerida para mi afiliación, mis beneficiarios a la EPS y caja de compensación (CCF)?',
@@ -3507,6 +3497,16 @@
             value: 's'
         },
         {
+            name: 'recomendaciones_gen',
+            type: 'text',
+            description: 'Ingrese las recomendaciones generales'
+        },
+        {
+            name: 'recomendaciones_esp',
+            type: 'text',
+            description: 'Ingrese las recomendaciones específicas'
+        },
+        {
             name: 'email_enviar',
             type: 'email',
             description: 'Ingrese el correo del candidato'
@@ -3540,7 +3540,7 @@
         },
         {
             name: 'email_dir_sst',
-            value: 'ccsandovalt@gmail.com'
+            value: 'lidersst@futesa.com'
         },
         {
             name: 'nombre_cont_fut',
@@ -3552,7 +3552,7 @@
         },
         {
             name: 'email_cont_fut',
-            value: 'krcamilo0417@gmail.com'
+            value: 'contratacion@futesa.com'
         },
         {
             name: 'nombre_rep_futesa',
@@ -3564,7 +3564,7 @@
         },
         {
             name: 'email_rep_futesa',
-            value: 'cristian.sandoval@auco.ai'
+            value: 'gerencia@futesa.com'
         }
     ],
     signatureProfile: [
@@ -3607,10 +3607,13 @@
         'salario_mensual',
         'fecha_inicio',
         'aux_transporte',
-        'email_enviar'
+        'recomendaciones_gen',
+        'recomendaciones_esp',
+        'email_enviar',
     ],
     name: 'Futesa',
+    company: ObjectId('61314b343debf400095991fc'),
     price: 5000,
-    build: 4,
+    build: 5,
     username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916'
 }

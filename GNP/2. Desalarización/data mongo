@@ -23,14 +23,14 @@
         },
         {
             name: 'correo_trabajador',
-            description: 'Ingrese el número de cédula del trabajador',
-            type: 'text'
+            description: 'Ingrese el correo electrónico del trabajador',
+            type: 'email'
         }
     ],
     preFill: [
         {
             name: 'correo_gnp',
-            value: 'cristian.sandoval@micontrato.co'
+            value: 'milena.castillo@gnpsa.com'
         },
         {
             name: 'cc_gnp',
@@ -64,8 +64,9 @@
     ],
     operation: [],
     name: 'PACTO DE DESALARIZACIÓN',
+    company: ObjectId('623099c6d9a7ac3bbc96b943'),
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 3
+    build: 5
 }

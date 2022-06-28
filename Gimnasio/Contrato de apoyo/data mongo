@@ -77,12 +77,12 @@
             description: 'Ingrese el valor de la suma de pension mensual'
         },
         {
-            name: 'dir_acudiente',
+            name: 'dir_padres',
             type: 'text',
             description: 'Ingrese la dirección de residencia de los acudientes'
         },
         {
-            name: 'ciudad_acudiente',
+            name: 'ciudad_padres',
             type: 'text',
             description: 'Ingrese la ciudad de residencia de los acudientes'
         },
@@ -105,7 +105,7 @@
             name: 'email_mama',
             type: 'email',
             description: 'Ingrese el correo electrónico de la mama'
-        },
+        }
     ],
     operation: [],
     sign: [],
@@ -124,12 +124,12 @@
             phone: 'tel_mama',
             email: 'email_mama',
             type: 'firma_mama'
-        },
+        }
     ],
     preBuild: false,
     preBuildData: [],
     company: ObjectId('624b9d001e9c670009968025'),
-    build: 3,
+    build: 4,
     name: 'CONTRATO DE APOYO Y COOPERACIÓN EDUCATIVA',
     price: 5000
 }

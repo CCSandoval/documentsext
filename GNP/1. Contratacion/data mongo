@@ -24,12 +24,12 @@
             value: 'call_c_cnd',
             options: [
                 {
-                    name:'Analista BI',
-                    value:'anal_bi'
+                    name: 'Analista BI',
+                    value: 'anal_bi'
                 },
                 {
-                    name:'Analista Información Financiera',
-                    value:'anal_inf_fin'
+                    name: 'Analista Información Financiera',
+                    value: 'anal_inf_fin'
                 },
                 {
                     name: 'Administrador de sede',
@@ -63,7 +63,6 @@
                     name: 'Analista de Legalización',
                     value: 'analista_legal'
                 },
-
                 {
                     name: 'Analista Nomina',
                     value: 'analista_nomina'
@@ -72,7 +71,6 @@
                     name: 'Auxiliar contable',
                     value: 'auxiliar_contable'
                 },
-
                 {
                     name: 'Auxiliar Enfermeria',
                     value: 'auxiliar_enfermeria'
@@ -101,7 +99,6 @@
                     name: 'Backoffice CND',
                     value: 'backoffice_cnd'
                 },
-
                 {
                     name: 'Backoffice',
                     value: 'backoffice'
@@ -110,12 +107,10 @@
                     name: 'Coordinador Backoffice',
                     value: 'coord_backoffice'
                 },
-                
                 {
                     name: 'Coordinador de soporte Help desk',
                     value: 'coord_hd'
                 },
-
                 {
                     name: 'Coordinador Data Marshall CND',
                     value: 'data_marshall_coord_cnd'
@@ -205,8 +200,28 @@
                     value: 'gerente_th'
                 },
                 {
+                    name:'Ingeniero Nacional de Telefonía',
+                    value:'ing_nal_tel'
+                },
+                {
+                    name:'Ingeniero Nacional de Redes y Comunicaciones',
+                    value:'ing_nal_redes'
+                },
+                {
+                    name:'Ingeniero Nacional de Servidores y Almacenamiento',
+                    value:'ing_nal_servidores'
+                },
+                {
                     name: 'Jefe Nacional de Redes y Soporte',
                     value: 'jefe_nal'
+                },
+                {
+                    name: 'Jefe Nacional de Infraestructura',
+                    value: 'jefe_nal_inf'
+                },
+                {
+                    name: 'Jefe de Seguridad de la Información',
+                    value: 'jefe_seg_inf'
                 },
                 {
                     name: 'Jefe de Calidad y Procesos',
@@ -220,17 +235,14 @@
                     name: 'Jefe de diseño',
                     value: 'jefe_design'
                 },
-
                 {
                     name: 'Jefe de Cuenta CND',
                     value: 'jefe_cuenta_cnd'
                 },
-                
                 {
                     name: 'Jefe de formación en calidad',
                     value: 'jefe_calidad'
                 },
-
                 {
                     name: 'Jefe de Operaciones',
                     value: 'jefe_operaciones'
@@ -239,7 +251,6 @@
                     name: 'Jefe de Cuenta',
                     value: 'jefe_cuenta'
                 },
-
                 {
                     name: 'Jefe Regional',
                     value: 'jefe_regional'
@@ -248,7 +259,6 @@
                     name: 'Jefe de Nómina',
                     value: 'jefe_nomina'
                 },
-
                 {
                     name: 'Jefe Administrativo Nacional',
                     value: 'jefe_admin_nal'
@@ -265,7 +275,6 @@
                     name: 'Lider de Calidad',
                     value: 'lider_calidad'
                 },
-
                 {
                     name: 'Lider de Gestión Documental',
                     value: 'lider_g_documental'
@@ -309,7 +318,7 @@
                 {
                     name: 'Tesorero',
                     value: 'tesorero'
-                },
+                }
             ]
         },
         {
@@ -1971,5 +1980,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 46
+    build: 48
 }
