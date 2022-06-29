@@ -15,7 +15,7 @@
                     value: 'net'
                 },
                 {
-                    name: 'PLEX S.A.S.',
+                    name: 'PLEX DE COLOMBIA S.A.S.',
                     value: 'ple'
                 },
                 {
@@ -187,7 +187,9 @@
         fecha: 'Ejemplo: 12 de Noviembre del 2021',
         correo: 'Ejemplo: ejemplo@tsg.com'
     },
-    build: 3,
+    build: 4,
+    username: 'bdcbe399-2380-4309-bc8e-ddf6e81eac57',
+    company: ObjectId('618c31703fe94c00095fe61e'),
     createdAt: ISODate('2021-10-20T17:30:55.675Z'),
     updatedAt: ISODate('2021-10-20T17:30:55.675Z')
 }

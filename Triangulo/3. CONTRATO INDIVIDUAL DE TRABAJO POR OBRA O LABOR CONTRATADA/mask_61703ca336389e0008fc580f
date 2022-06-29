@@ -11,6 +11,7 @@
     <b name="empresa_net" hidden>NETCOL INGENIERIA S.A.S.</b>
     <b name="empresa_nei" hidden>NETIA S.A.S.</b>
     <b name="empresa_tri" hidden>TRIANGULUM BPO S.A.S.</b>
+    <b name="empresa_ple" hidden>PLEX DE COLOMBIA S.A.S.</b>
 </p>
 
 <table class="text-center" id="table_1" border="1px" style="border: 0.5px solid #808080">
@@ -22,6 +23,7 @@
         <td>
             <span name="empresa_int">INTEEGRA S.A.S.</span>
             <span name="empresa_net" hidden>NETCOL INGENIERIA S.A.S.</span>
+            <span name="empresa_ple" hidden>PLEX DE COLOMBIA S.A.S.</span>
             <span name="empresa_nei" hidden>NETIA S.A.S.</span>
             <span name="empresa_tri" hidden>TRIANGULUM BPO S.A.S.</span>
         </td>
@@ -31,6 +33,7 @@
         <td>
             <span name="empresa_int">NIT No. 900.550.189-7</span>
             <span name="empresa_net" hidden>NIT No. 901.193.667-8</span>
+            <span name="empresa_ple" hidden>NIT No. 901.261.185-1</span>
             <span name="empresa_nei" hidden>NIT No. 901.259.735-6</span>
             <span name="empresa_tri" hidden>NIT No. 900.265.286-1</span>
         </td>
@@ -40,7 +43,8 @@
         <td>
             <span name="empresa_int">William Roberto Gutiérrez Botero</span>
             <span name="empresa_net" hidden>William Roberto Gutiérrez Botero</span>
-            <span name="empresa_nei" hidden>Kevin Niño Carvajal</span>
+            <span name="empresa_nei" hidden>Kevin Fernando Niño Carvajal</span>
+            <span name="empresa_ple" hidden>Kevin Fernando Niño Carvajal</span>
             <span name="empresa_tri" hidden>Oscar Fernando Gonzales Alayón</span>
         </td>
     </tr>
@@ -49,6 +53,7 @@
         <td>
             <span name="empresa_int">C.C. 79.949.624</span>
             <span name="empresa_net" hidden>C.C. 79.949.624</span>
+            <span name="empresa_ple" hidden>C.C. 1.014.296.721</span>
             <span name="empresa_nei" hidden>C.C. 1.014.296.721</span>
             <span name="empresa_tri" hidden>C.C. 1.022.931.573</span>
         </td>
@@ -58,6 +63,7 @@
         <td>
             <span name="empresa_int">Nelly Pinto Sandoval</span>
             <span name="empresa_net" hidden>Nelly Pinto Sandoval</span>
+            <span name="empresa_ple" hidden>Nelly Pinto Sandoval</span>
             <span name="empresa_nei" hidden>Nelly Pinto Sandoval</span>
             <span name="empresa_tri" hidden>Nelly Pinto Sandoval</span>
         </td>
@@ -67,6 +73,7 @@
         <td>
             <span name="empresa_int">Cra 49B N 91-90 Bogotá</span>
             <span name="empresa_net" hidden>Cra 49B N 91-90 Bogotá</span>
+            <span name="empresa_ple" hidden>Cra 49B N 91-90 Bogotá</span>
             <span name="empresa_nei" hidden>Cra 49B N 91-90 Bogotá</span>
             <span name="empresa_tri" hidden>Cra 49B N 91-90 Bogotá</span>
         </td>
@@ -293,7 +300,25 @@
         SAS, identificada con Nit 900.994.724-3, Proyecto Incentivos a la oferta Región Caribe.
     </span>
     <span name="empresa_tri" hidden>
-     <b>LABOR CONTRATADA:</b> Teniendo en cuenta en la suscripción del Contrato de TRIANGULUM BPO S.A.S. en adelante CONTRATO I, que tiene como objeto "Liderazgo, optimización y administración eficiente de todos los procesos administrativos como son: Financiera, HSEQ, Contabilidad, Auditoria, Talento Humano, Logística, Transporte y seguridad fisica y riesgos compras y Abastecimiento, entre otros."
+        <b>LABOR CONTRATADA:</b> Teniendo en cuenta en la suscripción del Contrato de TRIANGULUM BPO S.A.S. en adelante
+        CONTRATO I, que tiene como objeto "Liderazgo, optimización y administración eficiente de todos los procesos
+        administrativos como son: Financiera, HSEQ, Contabilidad, Auditoria, Talento Humano, Logística, Transporte y
+        seguridad fisica y riesgos compras y Abastecimiento, entre otros."
+    </span>
+    <span name="empresa_ple" hidden>
+        <b>LABOR CONTRATADA:</b> Teniendo en cuenta el la suscripción del Contrato TPE 30 2022 entre el empleador y TPE
+        COMUNICACIONES COLOMBIA S.A.S., en adelante CONTRATO I, que tiene como objeto “Asumir en forma independiente y
+        de manera estable, el encargo de promover la comercialización de los Productos y Servicios a terceras personas
+        actuando como agente TPE.”
+        <br>
+        El TRABAJADOR se vinculará con el EMPLEADOR exclusivamente para la ejecución del CONTRATO I, por lo tanto, la
+        labor está determinada de acuerdo a los siguientes criterios: i) la duración del CONTRATO I, ii) las actividades
+        o requerimientos que se necesiten para la ejecución del CONTRATO I, iii) las ordenes respecto los trabajadores
+        que imparta TPE COMUNICACIONES COLOMBIA S.A.S al EMPLEADOR, de acuerdo a la ejecución del CONTRATO I.
+        <br>
+        En virtud del objeto descrito, EL EMPLEADOR contrata los servicios del EMPLEADO bajo esta modalidad contractual
+        teniendo en cuenta que el término de duración del presente contrato depende única y exclusivamente del
+        cumplimiento del CONTRATO I, los requerimientos del CONTRATO I y del tiempo de ejecución que esta tome.
     </span><br /><br />
     El TRABAJADOR se vinculará con el EMPLEADOR exclusivamente para la ejecución del CONTRATO I, por lo tanto,
     la labor está determinada de acuerdo a los siguientes criterios:
@@ -902,14 +927,19 @@
         <th class="main_title" style="width: 9cm; color: #000086">TRABAJADOR</th>
     </tr>
     <tr>
-        <td style="height: 5rem"></td>
-        <td></td>
+        <td style="height: 5rem">
+            <div id="repre_empresa" class="sign-margin"></div>
+        </td>
+        <td>
+            <div id="trabajador_1" name="trabajador" class="sign-margin"></div>
+        </td>
     </tr>
     <tr>
         <td>
             <b name="empresa_int">William Roberto Gutiérrez Botero</b>
             <b name="empresa_net" hidden>William Roberto Gutiérrez Botero</b>
-            <b name="empresa_nei" hidden>Kevin Niño Carvajal</b>
+            <b name="empresa_nei" hidden>Kevin Fernando Niño Carvajal</b>
+            <b name="empresa_ple" hidden>Kevin Fernando Niño Carvajal</b>
             <b name="empresa_tri" hidden>Oscar Fernando Gonzales Alayón</b>
         </td>
         <td>
@@ -919,8 +949,9 @@
     <tr>
         <td>
             <b name="empresa_int">C.C. 79.949.624</b>
-            <b name="empresa_net" hidden>C.C. 79.949.624   </b>
+            <b name="empresa_net" hidden>C.C. 79.949.624</b>
             <b name="empresa_nei" hidden>C.C. 1.014.296.721</b>
+            <b name="empresa_ple" hidden>C.C. 1.014.296.721</b>
             <b name="empresa_tri" hidden>C.C. 1.022.931.573</b>
         </td>
         <td>
@@ -938,6 +969,7 @@
     <tr>
         <td>
             <b name="empresa_int">INTEEGRA S.A.S.</b>
+            <b name="empresa_ple" hidden>PLEX DE COLOMBIA S.A.S.</b>
             <b name="empresa_net" hidden>NETCOL INGENIERIA S.A.S.</b>
             <b name="empresa_nei" hidden>NETIA S.A.S.</b>
             <b name="empresa_tri" hidden>TRIANGULUM S.A.S.</b>
@@ -948,6 +980,7 @@
             <b name="empresa_int">NIT No. 900.550.189-7</b>
             <b name="empresa_net" hidden>NIT No. 901.193.667-8</b>
             <b name="empresa_nei" hidden>NIT No. 901.259.735-6</b>
+            <b name="empresa_ple" hidden>NIT No. 901.261.185-1</b>
             <b name="empresa_tri" hidden>NIT No. 900.265.286-1</b>
         </td>
     </tr>

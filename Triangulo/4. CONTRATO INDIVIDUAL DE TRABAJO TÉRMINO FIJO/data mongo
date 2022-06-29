@@ -15,7 +15,7 @@
                     value: 'net'
                 },
                 {
-                    name: 'PLEX S.A.S.',
+                    name: 'PLEX DE COLOMBIA S.A.S.',
                     value: 'ple'
                 },
                 {
@@ -342,8 +342,9 @@
         valor: 'Ejemplo: 100.000',
         sexos: 'Ejemplo: Femenino'
     },
-    build: 1,
-    username: 'dde0a72b-6497-4e96-8fef-1c08c4d33128',
+    build: 2,
+    username: 'bdcbe399-2380-4309-bc8e-ddf6e81eac57',
+    company: ObjectId('618c31703fe94c00095fe61e'),
     createdAt: ISODate('2021-10-20T16:50:32.296Z'),
     updatedAt: ISODate('2021-10-20T16:50:32.296Z')
 }

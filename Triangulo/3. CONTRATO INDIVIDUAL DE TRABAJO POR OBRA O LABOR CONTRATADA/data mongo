@@ -21,6 +21,10 @@
                 {
                     name: 'NETIA S.A.S.',
                     value: 'nei'
+                },
+                {
+                    name: 'PLEX DE COLOMBIA S.A.S.',
+                    value: 'ple'
                 }
             ],
             type: 'clausula',
@@ -90,7 +94,7 @@
             description: 'Digite el número de teléfono del representante',
             help: 'telefono',
             name: 'telefono_representante',
-            type: 'name'
+            type: 'phone'
         },
         {
             description: '¿Desea agregar otro número de teléfono?',
@@ -119,7 +123,7 @@
                     v: 's'
                 }
             ],
-            type: 'name'
+            type: 'phone'
         },
         {
             description: 'Digite el nombre del trabajador',
@@ -194,7 +198,7 @@
             description: 'Digite el número de teléfono del trabajador',
             help: 'telefono',
             name: 'telefono_trabajador',
-            type: 'name'
+            type: 'phone'
         },
         {
             description: '¿Desea agregar otro número de teléfono?',
@@ -223,13 +227,13 @@
                     v: 's'
                 }
             ],
-            type: 'name'
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del trabajador',
             help: 'correo',
             name: 'correo_trabajador',
-            type: 'text'
+            type: 'email'
         },
         {
             description: 'Digite el cargo que tendrá el trabajador',
@@ -289,7 +293,7 @@
             description: 'Digite el correo electrónico del representante',
             help: 'correo',
             name: 'correo_representante',
-            type: 'text'
+            type: 'email'
         },
         {
             description: 'Seleccione el sexo del trabajador',
@@ -380,8 +384,9 @@
         valor: 'Ejemplo: 100.000',
         sexos: 'Ejemplo: Femenino'
     },
-    build: 5,
-    username: 'dde0a72b-6497-4e96-8fef-1c08c4d33128',
+    build: 7,
+    username: 'bdcbe399-2380-4309-bc8e-ddf6e81eac57',
+    company: ObjectId('618c31703fe94c00095fe61e'),
     createdAt: ISODate('2021-10-20T15:58:27.251Z'),
     updatedAt: ISODate('2021-10-20T15:58:27.251Z')
 }
