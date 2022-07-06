@@ -2,17 +2,6 @@
     _id: ObjectId('627d7a1e51fc27d23d92914b'),
     config: [
         {
-            name: 'package_name',
-            description: 'Ingrese el nombre del paquete de anexos',
-            type: 'text'
-        },
-        {
-            name: 'correo_continuar',
-            description: 'Ingrese el correo del prospecto',
-            type: 'text',
-            help: 'correo'
-        },
-        {
             name: 'departamento',
             description: 'Ingrese el departamento',
             type: 'text',
@@ -73,7 +62,7 @@
         {
             name: 'cel_contacto',
             description: 'Ingrese el celular de contacto del prospecto',
-            type: 'text',
+            type: 'phone',
             help: 'cel'
         },
         {
@@ -95,7 +84,7 @@
         {
             name: 'otro_cel_text',
             description: 'Ingrese el otro celular de contacto del prospecto',
-            type: 'text',
+            type: 'phone',
             prereq: [
                 {
                     k: 'otro_cel',
@@ -107,7 +96,7 @@
         {
             name: 'email',
             description: 'Ingrese el email del prospecto',
-            type: 'text',
+            type: 'email',
             help: 'correo'
         },
         {
@@ -137,9 +126,29 @@
                 {
                     name: 'Si',
                     value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
                 }
             ],
             help: 'tyc'
+        },
+        {
+            name: 'machetazo',
+            type: 'text:',
+            description: 'Pregunta falsa para romper el avance',
+            prereq: [
+                {
+                    k: 'tyc',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha de firma'
         }
     ],
     operation: [],
@@ -178,11 +187,8 @@
         punto: 'Ejemplo: ',
         tyc: 'Accede a los términos y condiciones por este enlace: https://www.multipagas.com/multipagas/'
     },
-    preBuild: true,
-    preBuildData: [
-        'package_name',
-        'correo_continuar',
-    ],
+    preBuild: false,
+    preBuildData: [],
     name: 'FORMULARIO DE REGISTRO MULTIPAGAS',
     files: [
         {
@@ -202,7 +208,7 @@
             approve: 'pending'
         }
     ],
-    build: 11,
+    build: 17,
     price: 5000,
     company: ObjectId('61942036889b8f0009db9812'),
     username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916'

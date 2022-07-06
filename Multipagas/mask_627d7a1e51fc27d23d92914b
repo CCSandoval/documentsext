@@ -1,65 +1,733 @@
-<h1 style="text-align: center">Formulario de registro Multipagas</h1>
+<div>
+  <h1 style="text-align: center">Formulario de registro Multipagas</h1>
 
-<p><b>NOMBRE DEL PAQUETE DE ANEXOS: <span name="package_name">___________________</span></b></p>
-
-<p><b>DEPARTAMENTO:</b> <b name="departamento">___________________</b></p>
-
-<p><b>CIUDAD:</b> <b name="ciudad">__________________</b></p>
-
-<span name="nit_n"></span>
-<p name="nit_s" hidden>
-  <b>NOMBRE ESTABLECIMIENTO O PROSPECTO:</b>
-  <b name="nombre_establecimiento">________________________________</b>
-</p>
-
-<p name="nit_s" hidden><b>NIT</b> <b name="nit_text">____________</b></p>
-
-<p>
-  <b>NOMBRES Y APELLIDOS:</b> <b name="nombres">__________________________</b>
-</p>
-
-<p><b>CELULAR DE CONTACTO:</b> <b name="cel_contacto">____________</b></p>
-
-<span name="otro_cel_n"></span>
-<p name="otro_cel_s" hidden>
-  <b>OTROS NUMEROS DE TELÉFONO:</b>
-  <b name="otro_cel_text">________________________</b>
-</p>
-
-<p><b>EMAIL:</b> <b name="email">____________________</b></p>
-
-<p>
-  <b>CEDULA:</b> <b name="cedula_prospecto">___________________</b>
-</p>
-
-<p><b>HORARIO DE SERVICIO:</b> <b name="horario_servicio">____________</b></p>
-
-<p>
-  <b>DIRECCIÓN:</b> <b name="direccion">________________________________</b>
-</p>
-
-<p>
-  <b
-    >Acepto los términos y condiciones expuestos en
-    <a href="https://www.multipagas.com/multipagas/"
-      >https://www.multipagas.com/multipagas/</a
+  <p>
+    <b
+      >NOMBRE DEL PAQUETE DE ANEXOS:
+      <span name="package_name">___________________</span></b
     >
-    :
-  </b>
-  <b name="tyc_s">Si</b>
-</p>
+  </p>
 
-<br />
-<br />
-<br />
+  <p><b>DEPARTAMENTO:</b> <b name="departamento">___________________</b></p>
 
-<p>
-  <b>Prospecto:</b>
+  <p><b>CIUDAD:</b> <b name="ciudad">__________________</b></p>
+
+  <span name="nit_n"></span>
+  <p name="nit_s" hidden>
+    <b>NOMBRE ESTABLECIMIENTO O PROSPECTO:</b>
+    <b name="nombre_establecimiento">________________________________</b>
+  </p>
+
+  <p name="nit_s" hidden><b>NIT</b> <b name="nit_text">____________</b></p>
+
+  <p>
+    <b>NOMBRES Y APELLIDOS:</b> <b name="nombres">__________________________</b>
+  </p>
+
+  <p><b>CELULAR DE CONTACTO:</b> <b name="cel_contacto">____________</b></p>
+
+  <span name="otro_cel_n"></span>
+  <p name="otro_cel_s" hidden>
+    <b>OTROS NUMEROS DE TELÉFONO:</b>
+    <b name="otro_cel_text">________________________</b>
+  </p>
+
+  <p><b>EMAIL:</b> <b name="email">____________________</b></p>
+
+  <p><b>CEDULA:</b> <b name="cedula_prospecto">___________________</b></p>
+
+  <p><b>HORARIO DE SERVICIO:</b> <b name="horario_servicio">____________</b></p>
+
+  <p>
+    <b>DIRECCIÓN:</b> <b name="direccion">________________________________</b>
+  </p>
+
+  <p>
+    <b
+      >Acepto los términos y condiciones expuestos en
+      <a href="https://www.multipagas.com/multipagas/"
+        >https://www.multipagas.com/multipagas/</a
+      >
+      :
+    </b>
+    <b name="tyc_s">Si</b>
+  </p>
+
   <br />
   <br />
   <br />
-  ________________________________ <br />
-  <b>Nombre:</b> <b name="nombres">__________________________</b> <br />
-  <b>C.C.</b> <b name="cedula_prospecto">___________________</b> <br />
-  <b>Email:</b> <b name="email">____________________</b>
-</p>
+
+  <p>
+    <b>Prospecto:</b>
+    <br />
+    <br />
+    <br />
+    ________________________________ <br />
+    <b>Nombre:</b> <b name="nombres">__________________________</b> <br />
+    <b>C.C.</b> <b name="cedula_prospecto">___________________</b> <br />
+    <b>Email:</b> <b name="email">____________________</b>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p style="text-align: center">
+    CONTRATO DE COLABORACION CORRESPONSALÍA BANCARIA DIGITAL MÓVIL.
+  </p>
+  <p>Entre los suscritos</p>
+  <ol type="i">
+    <li>
+      William Garces Castro, mayor de edad, domiciliado (a) en Palmira,
+      identificado (a) como aparece al pie de su firma, quien obra en nombre y
+      representación de MULTIPAGAS S.A.S. sociedad legalmente constituida con
+      domicilio principal en la ciudad de Palmira., debidamente facultado por
+      ______________, circunstancias que acredita con certificado expedido por
+      la Cámara de Comercio correspondiente que se acompaña, en adelante
+      “MULTIPAGAS” y,
+    </li>
+    <li>
+      <span name="nombres">_______________</span>, mayor de edad, domiciliado
+      (a) en <span name="ciudad">________</span>, identificado (a) como aparece
+      al pie de su firma, quien obra en su propio nombre y representación, en
+      adelante el “ALIADO”,
+    </li>
+  </ol>
+  <p>
+    Se celebra un CONTRATO DE COLABORACION EMPRESARIAL para la ejecución de la
+    operación de corresponsalía bancaria digital y móvil de “MULTIPAGAS”, de
+    acuerdo con las condiciones, lineamientos y requisitos estipulados en el
+    documento que se regirá por las siguientes estipulaciones, previos los
+    siguientes:
+  </p>
+  <p style="text-align: center">ANTECEDENTES</p>
+  <ol>
+    <li>
+      MULTIPAGAS, es una sociedad que dentro de las actividades que ejecuta en
+      desarrollo de su objeto social, presta servicios de corresponsalía
+      bancaria digital móvil a través de un aplicativo digital.
+    </li>
+    <li>
+      ALIADO, es una persona natural que prestará sus servicios como facilitador
+      de las actividades ejecutadas por “MULTIPAGAS” , a través de la
+      corresponsalía digital móvil.
+    </li>
+    <li>
+      Las partes, en razón a sus conocimientos y especialidades, han decidido
+      unir esfuerzos en orden a desarrollar las actividades descritas en el
+      objeto del presente contrato.
+    </li>
+    <li>
+      En virtud de todo lo anterior y teniendo en cuenta que la alianza se
+      predica exclusivamente para los asuntos de los que trata el presente
+      documento, las partes manifiestan que no es su voluntad crear o configurar
+      ningún tipo de sociedad, bien sea de hecho, irregular o regular y
+      manifiestan su intención expresa de suscribir un contrato de colaboración
+      que se regulará por las siguientes:
+    </li>
+  </ol>
+  <p style="text-align: center">CLÁUSULAS</p>
+  <p>
+    <b>PRIMERA.</b> - OBJETO. - En virtud del presente contrato las partes
+    convienen unir esfuerzos para ejecutar la operación de corresponsalía
+    bancaria digital móvil a favor de MULTIPAGAS utilizando la plataforma
+    tecnológica suministrada por este, de acuerdo con las condiciones,
+    lineamientos y requisitos estipulados en el Contrato suscrito entre ALIADO y
+    MULTIPAGAS.
+  </p>
+  <p>
+    LAS PARTES para lograr el objeto del presente contrato aportan lo siguiente:
+  </p>
+  <ul>
+    MULTIPAGAS:
+    <li>
+      La consecución del Contrato de corresponsalía Bancaria con las entidades
+      financieras.
+    </li>
+    <li>
+      La conexión con los diferentes clientes para la prestación del servicio.
+    </li>
+    <li>
+      Toda la información, instrucciones y demás documentos para el cabal
+      cumplimiento de la operación de corresponsalía bancaria digital móvil.
+    </li>
+    <li>Su conocimiento, experiencia y trayectoria en el sector.</li>
+    <li>El Aplicativo digital que permiten las transacciones.</li>
+  </ul>
+  <ul>
+    ALIADO:
+    <li>
+      Capacidad de relacionamiento y gestión para ejecutar la operación de
+      corresponsalía bancaria digital móvil
+    </li>
+    <li>
+      Habilitar el dispositivo tecnológico (smartphone y/o Tablet) con conexión
+      a internet (datos)
+    </li>
+    <li>Impulsar cada una de las transacciones habilitadas en la aplicación</li>
+    <li>
+      Velar por el buen nombre de la aplicación, prestando el servicio de manera
+      correcta, según los lineamientos establecidos
+    </li>
+    <li>
+      Dar el uso correcto de los recursos recibidos de los clientes, teniendo en
+      cuenta las políticas de servicio y montos aprobados.
+    </li>
+    <li>
+      Operar de manera transparente con los usuarios, prestando el servicio a
+      todos los usuarios que lo requieran
+    </li>
+    <li>
+      Hacer bueno uso del material publicitario entregado por MULTIPAGAS o sus
+      Aliados, que permitirá incrementar la transaccionalidad
+    </li>
+  </ul>
+  <p>
+    <b>SEGUNDA.</b> - OBLIGACIONES: LAS PARTES acuerdan las siguientes
+    obligaciones y actividades a ejecutar por cada una, en aras de cumplir con
+    los requerimientos exigidos en el contrato de Corresponsalía bancaria
+    suscrito con MULTIPAGAS.
+  </p>
+  <ol type="a">
+    MULTIPAGAS :
+    <li>
+      Suministrar toda la información, instrucciones y demás documentos para el
+      cabal cumplimiento de lo establecido en este documento, y los que se
+      requieran para ser puestos a disposición de los clientes y usuarios.
+      Adicionalmente; instruirlo sobre el control de lavado de activos y
+      financiación del terrorismo.
+    </li>
+    <li>
+      Suministrar el material publicitario que permita apoyar la gestión
+      comercial del ALIADO.
+    </li>
+    <li>
+      Suministrar el aplicativo tecnológico mediante el cual el ALIADO prestara
+      sus servicios.
+    </li>
+    <li>
+      Monitorear de manera permanente el cumplimiento de cada una de las
+      obligaciones que se encuentran en cabeza de ALIADO.
+    </li>
+    <li>
+      Solicitar al ALIADO las autorizaciones necesarias para el tratamiento de
+      sus datos cuando, en virtud de la naturaleza de los mismos, estas sean
+      necesarias. Dichas autorizaciones deberán contener de forma expresa el
+      tratamiento que se le podrá dar a la información y la finalidad del mismo.
+      Igualmente, conservar las autorizaciones para los eventos en que las
+      mismas sean requeridas.
+    </li>
+  </ol>
+  <ol type="a">
+    ALIADO:
+    <li>
+      Atender en forma diligente, amable y oportuna a los clientes o usuarios
+      que requieran la prestación de las labores encomendadas, garantizando
+      estándares de calidad adecuados y dando cumplimiento en todo, a las
+      instrucciones dadas sobre los productos o servicios.
+    </li>
+    <li>
+      Atender las observaciones de MULTIPAGAS en lo relacionado con la
+      promoción, publicidad e información sobre los productos y servicios
+      vinculados con la ejecución de la operación de corresponsalía bancaria
+      digital móvil, obligándose a no entregar información diferente a aquella
+      que le ha sido previamente suministrada.
+    </li>
+    <li>
+      Ejecutar la operación de corresponsalía bancaria digital móvil en el rango
+      de horario establecido por MULTIPAGAS.
+    </li>
+    <li>
+      Mantener en un sitio visible, el material publicitario suministrado por
+      MULTIPAGAS para promover y publicitar los productos y servicios
+      relacionados con dicha operación.
+    </li>
+    <li>
+      Poner a disposición de los clientes y usuarios la constancia de la
+      transacción realizada a través del aplicativo tecnológico facilitado por
+      MULTIPAGAS, en virtud de la ejecución de la operación de corresponsalía.
+    </li>
+    <li>
+      Guardar debida reserva de la información de los clientes y usuarios que,
+      derivada de la operación de corresponsalía, sea conocida por él. Así
+      mismo, dar las instrucciones pertinentes a sus empleados y/o colaboradores
+      para que se abstengan de comentar con terceros la información acerca de
+      las operaciones y transacciones que se realizaron en desarrollo de la
+      corresponsalía; conducta que, en caso de presentarse, será objeto de las
+      acciones legales que puedan adelantarse por parte de MULTIPAGAS.
+    </li>
+    <li>
+      Velar por un adecuado manejo del efectivo atendiendo las instrucciones
+      dadas para este efecto por MULTIPAGAS, en el desarrollo de las labores
+      propias y las inherentes o conexas a la corresponsalía bancaria digital
+      móvil
+    </li>
+    <li>
+      Informar a los clientes y usuarios, cuando hubiere lugar a ello, que las
+      operaciones y transacciones requeridas, no pueden realizarse, por alguna
+      de las siguientes razones: i) Porque el tipo de operación y/o transacción
+      no es de aquellas que se encuentran previamente autorizadas; ii) Por
+      insuficiencia de efectivo; iii) Porque excede el cupo para la operación
+      asignado por MULTIPAGAS; iv) Porque se encuentra fuera de línea; 5) Porque
+      se presentan inconvenientes tecnológicos.
+    </li>
+    <li>
+      Suministrar a MULTIPAGAS la información y reportes que le fueren
+      solicitados.
+    </li>
+    <li>
+      Permitir a los funcionarios de MULTIPAGAS o a quien este designe, la
+      realización de controles de inspección, auditoría y verificación del
+      aplicativo tecnológico, con el fin de comprobar el cumplimiento de los
+      deberes y obligaciones que adquiere en virtud del presente contrato.
+    </li>
+    <li>
+      Informar a MULTIPAGAS y a las autoridades de policía sobre hechos que
+      atenten contra la seguridad del personal, o los dispositivos y pongan en
+      riesgo la operación de corresponsalía para la cual fue contratado.
+      Igualmente, informar a MULTIPAGAS sobre cualquier operación extraña o que
+      pueda ser considerada como fuente de lavado de activos.
+    </li>
+    <li>
+      Devolver a MULTIPAGAS a la terminación del contrato todo el material
+      publicitario recibido para la prestación de los servicios.
+    </li>
+    <li>
+      Realizar diariamente el cuadre de caja de acuerdo con las operaciones de
+      corresponsalía realizadas.
+    </li>
+    <li>
+      Verificar que el dinero recibido en efectivo sea autentico y destruir el
+      dinero falsificado que llegue a sus manos en virtud de la operación.
+    </li>
+    <li>
+      hacer correcto uso del material publicitario que le entregue para el apoyo
+      de la gestión comercial.
+    </li>
+    <li>
+      Todas las demás obligaciones contenidas en los documentos que regulen la
+      relación entre MULTIPAGAS y ALIADO para la prestación del servicio de
+      corresponsalía.
+    </li>
+  </ol>
+  <p>
+    <b>TERCERA.</b> - RESPONSABILIDAD DE LAS PARTES: El ALIADO será responsable
+    frente a MULTIPAGAS por las obligaciones que adquiere en virtud del presente
+    contrato, y por tanto responderá frente a éste por los daños y perjuicios
+    que le ocasione a MULTIPAGAS y que sean consecuencia de incumplimiento del
+    contrato, o de dolo, negligencia, fallas o errores en la prestación de los
+    servicios imputables a ALIADO o por actos deshonestos o fraudulentos de sus
+    empleados o mal intencionados de terceros, pérdida, daño, dinero falsificado
+    o hurto de los dineros y/o dispositivos cuando estos últimos hayan sido
+    suministrados por MULTIPAGAS o por un tercero por él designado, que se
+    encuentren en el establecimiento de ALIADO o durante su transporte y demás
+    riesgos inherentes a la operación propia y como ALIADO de MULTIPAGAS.
+  </p>
+  <p>
+    Se entiende que son daños reparables por ALIADO, el daño emergente y lucro
+    cesante que le hubieren sido causados a MULTIPAGAS o que éste a su vez
+    hubiere tenido que pagar a un tercero como consecuencia de la actuación de
+    ALIADO o sus dependientes.
+  </p>
+  <p>
+    ALIADO será responsable frente a MULTIPAGAS por los daños y perjuicios
+    directos, causados por acciones u omisiones imputables a ALIADO, sus
+    empleados, contratistas y subcontratistas hasta por culpa leve, en la
+    prestación de los servicios objeto del presente Contrato o con ocasión a los
+    mismos.
+  </p>
+  <p>
+    <b>CUARTA.</b> - MODIFICACIONES AL SERVICIO DE CORRESPONSALIA: Las PARTES
+    acuerdan que MULTIPAGAS se reserva el derecho de ampliar, modificar, reducir
+    y restringir el tipo de labor desempeñada por ALIADO en ejercicio de la
+    corresponsalía bancaria digital móvil.
+  </p>
+  <p>
+    <b>QUINTA.</b> – VIGENCIA. - LAS PARTES acuerdan que el presente contrato de
+    colaboración tendrá una vigencia indefinida; atada a la duración o
+    modificación de las condiciones del contrato suscrito con MULTIPAGAS, el
+    cual corresponde al objeto del presente.
+  </p>
+  <p>
+    <b>SEXTA.</b> - PROHIBICIONES. LAS PARTES acuerdan las siguientes
+    prohibiciones en la labor que cada una asume, para el cabal cumplimiento de
+    la operación de corresponsalía bancaria digital móvil con MULTIPAGAS:
+  </p>
+  <p>
+    EL ALIADO se abstendrá de realizar, entre otras, las malas prácticas que a
+    continuación se detallan:
+  </p>
+  <ol type="a">
+    <li>
+      Inobservancia reiterada del procedimiento establecido por MULTIPAGAS para
+      la correcta prestación del servicio de corresponsalía.
+    </li>
+    <li>
+      Cobrar para sí mismo, tarifas o comisiones a los clientes o usuarios por
+      la prestación del servicio de corresponsalía digital y móvil.
+    </li>
+    <li>
+      Efectuar las operaciones encomendadas por MULTIPAGAS cuando los
+      dispositivos electrónicos se encuentren fuera de servicio, situación que
+      deberá ser informada a los clientes o usuarios.
+    </li>
+    <li>
+      Limitar o condicionar por parte de ALIADO la ejecución de las labores
+      encomendadas por MULTIPAGAS, a la adquisición por parte de los clientes
+      y/o usuarios, de bienes o servicios propios de este, ofrecidos en el
+      aplicativo tecnológico.
+    </li>
+    <li>
+      Realizar operaciones de corresponsalía que no hayan sido previamente
+      autorizadas y acordadas.
+    </li>
+    <li>
+      Fraccionar transacciones que por sus características (montos y destino)
+      podrían haber sido realizadas de forma más sencilla (menos transacciones)
+    </li>
+    <li>
+      Realizar operaciones a cuentas propias o relacionadas que se consideren
+      circulares y que no generen ningún beneficio de corresponsalía.
+    </li>
+  </ol>
+  <p>
+    <b>SÉPTIMA.</b> - PARTICIPACIÓN/ UTILIDADES- LAS PARTES acuerdan que su
+    participación en la ejecución de la operación de Corresponsalía bancaria
+    digital móvil se determinará periódicamente y se dejará constancia de éstas
+    en el aplicativo tecnológico.
+  </p>
+  <p>
+    PARÁGRAFO: Los excedentes sobre los cuales pueda llegar a ser responsable EL
+    ALIADO, podrán ser descontados por MULTIPAGAS de conformidad a lo
+    establecido en el presente contrato.
+  </p>
+  <p>
+    <b>OCTAVA.</b> - HORARIOS Y LUGAR PARA REALIZACIÓN DE LA OPERACIÓN DE
+    CORRESPONSALÍA: El ALIADO se compromete a hacer uso del aplicativo
+    únicamente en los horarios de funcionamiento informados por MULTIPAGAS,
+    inicialmente se establece que el aplicativo funcionaría únicamente de lunes
+    a domingo DE 7:00am A 9:00pm.
+  </p>
+  <p>
+    <b>NOVENA.</b> - ENTREGA DE EFECTIVO: LAS PARTES acuerdan que el dinero
+    recaudado en la ejecución de la labor desempeñada por el ALIADO en virtud de
+    la operación de corresponsalía bancaria digital móvil, será entregado a
+    MULTIPAGAS.
+  </p>
+  <p>
+    La entrega del efectivo se realizará atendiendo los siguientes lineamientos:
+  </p>
+  <ol>
+    <li>
+      Periodicidad: ALIADO deberá, por lo menos una vez a la semana, entregar
+      los recursos que tiene acumulados producto de la ejecución de la operación
+      del presente contrato, en aquellos casos donde Multipagas ha asignado un
+      cupo para la operación del Aliado.
+    </li>
+    <li>
+      Forma de entrega del efectivo recaudado: Mediante transferencia y/o
+      consignación a la cuenta definida e informada por Multipagas a sus Aliados
+      para este proceso.
+    </li>
+  </ol>
+  <p>
+    En caso de incumplimiento de lo anterior, se podrá bloquear el dispositivo
+    de operación por parte de MULTIPAGAS y en aquellos casos que se superen 15
+    días calendario sin dar cumplimiento a este requerimiento se realizará el
+    inicio al proceso de cobro pre jurídico (aplica solo para Aliados con cupo
+    asignado por Multipagas).
+  </p>
+  <p>
+    No obstante, EL ALIADO podrá prepagar su cupo asignado siempre y cuando se
+    cumplan los lineamientos y condiciones establecidos por MULTIPAGAS para
+    tales efectos.
+  </p>
+  <p>
+    <b>DÉCIMA.</b> - CUPO DE OPERACIÓN. En caso de aplicar y con el fin de
+    mitigar el riesgo del manejo de efectivo, LAS PARTES acuerdan que EL ALIADO
+    no podrá acumular un valor mayor al 100% del cupo asignado. En el caso en el
+    cual llegue a acumular dicho valor, MULTIPAGAS bloqueará el dispositivo de
+    operación, habilitándolo nuevamente una vez se haya registrado la entrega
+    del efectivo acumulado producto de la operación.
+  </p>
+  <p>
+    En cualquier caso y sin necesidad de aviso previo, MULTIPAGAS podrá efectuar
+    visitas de auditoría a las instalaciones de EL ALIADO con el fin de
+    constatar el cumplimiento en materia de manejo de efectivo.
+  </p>
+  <p>
+    <b>DÉCIMA PRIMERA:</b> - OBLIGACION DE REPORTE. ALIADO -, pondrá en
+    conocimiento de MULTIPAGAS, cualquier situación anormal o sospechosa de
+    clientes que, a su juicio, puedan estar adelantando, encubriendo o de alguna
+    forma, estén relacionados con actividades ilícitas, incluido, pero no
+    limitado a narcotráfico, terrorismo o lavado de activos.
+  </p>
+  <p>
+    <b>DÉCIMA SEGUNDA</b> - DILIGENCIA. LAS PARTES se comprometen a actuar con
+    toda la diligencia al momento de ejecutar la operación de corresponsalía
+    bancaria digital móvil.
+  </p>
+  <p>
+    <b>DÉCIMA TERCERA.</b> - CAUSALES DE TERMINACIÓN. Además de las causales
+    contempladas en la Ley, el presente contrato terminará:
+  </p>
+  <ul>
+    <li>Por mutuo acuerdo entre las partes</li>
+    <li>
+      Por la imposibilidad de continuar el presente convenio de colaboración
+      empresarial.
+    </li>
+    <li>Por incumplimiento de las obligaciones de alguna de las partes.</li>
+    <li>
+      Por decisión unilateral de alguna de las partes, para lo cual la parte que
+      desee dar por terminado deberá avisar con por lo menos quince (15) días de
+      antelación a la fecha en que pretenda hacer efectiva la terminación.
+    </li>
+    <li>
+      Por cumplimiento/ terminación del (los) contrato(s) de Corresponsalía
+      bancaria suscrito(s)por MULTIPAGAS con las diferentes entidades
+      financieras y por el cual se celebra el presente convenio, dejando de
+      existir el objeto del presente.
+    </li>
+    <li>
+      Unilateralmente por parte de MULTIPAGAS mediando comunicación con cinco
+      (05) días calendario de antelación al ALIADO.
+    </li>
+  </ul>
+  <p>
+    Una vez terminada la relación de colaboración por cualquiera de las causales
+    antes mencionadas ALIADO deberá realizar la devolución de todos los insumos
+    entregados para la operación de corresponsalía.
+  </p>
+  <p>
+    <b>DÉCIMA CUARTA</b> - SARLAFT. LAS PARTES se obligan a implementar las
+    medidas tendientes a evitar que las operaciones puedan ser utilizadas como
+    instrumentos para el ocultamiento, manejo, inversión o aprovechamiento en
+    cualquier forma de dinero u otros bienes provenientes de actividades
+    ilícitas o para dar apariencia de legalidad a estas actividades. El
+    incumplimiento de esta obligación da lugar a la terminación del presente
+    contrato de colaboración empresarial, de manera unilateral e inmediata, sin
+    que haya lugar al pago de indemnización alguna cuando en cualquier tiempo
+    hayan sido o llegaren a ser:
+  </p>
+  <ul>
+    <li>
+      Condenados por parte de las autoridades competentes por el delito de,
+      lavado de activos, los delitos fuente de éste, o por el delito de
+      financiación del terrorismo o administración de recursos relacionados con
+      dichas actividades.
+    </li>
+    <li>
+      Incluidos en listas para el control de lavado de activos y financiación
+      del terrorismo administradas por cualquier autoridad nacional o
+      extranjera.
+    </li>
+    <li>
+      Vinculados con requerimientos, investigaciones, procesos judiciales,
+      administrativos o fiscales por la presunta comisión de delitos de lavado
+      de activos, delitos fuente de lavado de activos y/o financiación del
+      terrorismo o administración de recursos relacionados con dichas
+      actividades, ante la Fiscalía General de la Nación, Juez de la República,
+      DIAN, Coljuegos, alguna de las Superintendencias de Colombia, Contraloría
+      General de la Nación, Autorregulador del Mercado de Valores, Policía
+      Nacional y otras autoridades competentes de orden nacional o extranjero
+      que tengan por oficio investigar este tipo de delitos.
+    </li>
+  </ul>
+  <p>
+    <b>DÉCIMA QUINTA</b> - DECLARACIÓN. LAS PARTES declaran que no han sido
+    condenadas, ni cursa contra sí mismas o contra sus representantes legales,
+    investigación judicial o administrativa, o se encuentra en trámite proceso
+    ante cualquier autoridad, ni que se ha declarado en su contra sentencia o
+    fallo en relación con los siguientes:
+  </p>
+  <ul>
+    <li>
+      Delitos contra el patrimonio económico, o financiación del terrorismo
+    </li>
+    <li>Delito del lavado de activos o sus delitos fuente.</li>
+    <li>Procesos de extinción de dominio.</li>
+  </ul>
+  <p>
+    LAS PARTES garantiza la adopción de todas las medidas y controles necesarios
+    para efectos de abstenerse, mientras estuviere en vigencia el presente
+    contrato de colaboración, de nombrar como representante legal a personas
+    respecto de las cuales no se cumplan las declaraciones de la presente
+    cláusula y procederá a remover del cargo a cualquier persona que no cumpla
+    con tales características, una vez tenga conocimiento de ello.
+  </p>
+  <p>
+    La inexactitud o inconsistencias frente a la declaración contenida en la
+    presente cláusula será causal para dar por terminado, de manera unilateral e
+    inmediata, el presente contrato sin que haya lugar al pago de indemnización
+    alguna a favor de quien incumpla.
+  </p>
+  <p>
+    <b>DÉCIMA SEXTA</b> - CONFIDENCIALIDAD: Toda la información técnica,
+    financiera, comercial, jurídica y en general cualquier información que se
+    revele en desarrollo del presente convenio tendrá el carácter de
+    confidencial. En consecuencia, LAS PARTES se comprometen a mantener bajo
+    confidencialidad y reserva, todos los datos e informaciones, procedimientos,
+    ideas, precios y detalles relacionados con el objeto de éste, a no
+    divulgarlos a terceras personas y a no usar la información para ningún
+    propósito distinto al relacionado con el objeto del mismo. La presente
+    obligación subsistirá a la terminación del convenio por cualquier causa. LAS
+    PARTES informarán a sus empleados las obligaciones descritas en la presente
+    cláusula.
+  </p>
+  <p>
+    <b>DÉCIMA SEPTIMA</b> - CESION: Las obligaciones derivadas del presente
+    acuerdo no podrán ser cedidas total o parcialmente sin la aceptación previa,
+    expresa y escrita de la otra parte.
+  </p>
+  <p>
+    <b>DÉCIMA OCTAVA</b> - SOLUCIÓN DE CONTROVERSIAS: Toda controversia o
+    diferencia que surja entre las partes con ocasión de la celebración,
+    ejecución o terminación del presente convenio, se resolverá según las reglas
+    que se indican a continuación:
+  </p>
+  <ul>
+    Arreglo directo:
+    <li>
+      Las partes deberán presentar sus alegatos y los documentos que los
+      sustenten en el término de cinco (5) días, contados desde la fecha de
+      aviso a la contraparte.
+    </li>
+    <li>
+      Las partes tendrán un plazo de diez (10) días para resolver la disputa,
+      los cuales se contarán a partir del día siguiente al del vencimiento del
+      término previsto en el literal anterior.
+    </li>
+  </ul>
+  <p>
+    Los alegatos deberán contener una explicación de los fundamentos técnicos,
+    financieros y legales que sustenten la petición de la respectiva Parte. En
+    caso de no llegar a ningún acuerdo, las partes dirimirán el conflicto ante
+    la justicia ordinaria pertinente.
+  </p>
+  <p>
+    <b>DÉCIMA NOVENA</b> - AUTORIZACIÓN TRATAMIENTO DE DATOS PERSONALES: el
+    ALIADO Autoriza a MULTIPAGAS S.A.S, de manera voluntaria, previa, explícita,
+    informada e inequívoca para que los datos de carácter personal captados por
+    sus diferentes sistemas de información sean tratados bajo los siguientes
+    términos.
+  </p>
+  <ul>
+    Finalidad:
+    <li>
+      Almacenar los datos personales que me sean solicitados en las diferentes
+      operaciones y que de manera voluntaria he compartido, para que sean
+      utilizados por MULTIPAGAS S.A.S, o sus respectivos bancos clientes con
+      fines exclusivos de mercadeo
+    </li>
+    <li>
+      A consultar o en su defecto reportar mi información ante centrales de
+      riesgo.
+    </li>
+    <li>
+      Diligenciar, complementar y/o actualizar las bases de datos internas de
+      MULTIPAGAS S.A.S
+    </li>
+  </ul>
+  <p>
+    Igualmente, el ALIADO manifiesta que ha sido informado(a) en forma clara y
+    previa a la entrega voluntaria de la información considerada personal,
+    acerca de lo siguiente:
+  </p>
+  <ol>
+    <li>
+      Que la información personal suministrada se entiende como datos personales
+      sensibles, razón por la cual se requiere de mi autorización explícita para
+      el tratamiento de las mismas de conformidad con lo regulado en los
+      artículos 5 y 6 de la ley 1581 de 2012 y en el artículo 6 del Decreto 1377
+      de 2013.
+    </li>
+    <li>
+      Que he sido informado(a) clara y expresamente sobre los derechos que me
+      asisten como titular de la información, entre otros, a revocar la presente
+      autorización, solicitar la supresión de mis datos personales en los casos
+      en que sea procedente y ejercer en forma gratuita mis derechos y garantías
+      constitucionales, según consta en la Política de Tratamiento de Datos
+      Personales disponible en www.Multipagas.com.co.
+    </li>
+    <li>
+      La Compañía habilito la dirección electrónica: cbdigital@Multipagas.co,
+      con el fin de atender las peticiones, consultas, quejas y reclamos
+      relacionados con Datos Personales y las atenderá dentro de los plazos
+      establecidos en la ley.
+    </li>
+  </ol>
+  <p>
+    <b>VIGÉSIMA</b> - NOTIFICACIONES. Cualquier comunicación que deba dirigirse
+    entre las partes en relación con el presente convenio, deberá dirigirse a
+    las siguientes direcciones:
+  </p>
+  <ul>
+    <li>MULTIPAGAS: CBDIGITAL@Multipagas.co</li>
+    <li>ALIADO: <span name="correo">___________________________</span></li>
+  </ul>
+  <p>
+    <b>VIGÉSIMA PRIMERA</b> – EXCLUSIÓN DEL VÍNCULO LABORAL: El presente
+    contrato regula la relación de colaboración empresarial para la prestación
+    de los servicios de corresponsalía bancaria, por lo tanto, LAS PARTES dejan
+    expresa constancia que entre ambas partes existe una relación de carácter
+    exclusivamente comercial que para ningún efecto constituye una relación
+    laboral.
+  </p>
+  <p>
+    Por lo tanto, LAS PARTES gozan de plena autonomía e independencia técnica,
+    financiera y administrativa para desarrollar las obligaciones objeto del
+    presente contrato.
+  </p>
+  <p>
+    <b>VIGÉSIMA SEGUNDA</b> - UNIDAD NEGOCIAL E INTERPRETACIÓN: El presente
+    convenio constituye el único y total acuerdo de las partes sobre las
+    materias aquí reguladas. En consecuencia, dejará sin efecto cualquier
+    acuerdo verbal o escrito que sobre el mismo asunto hayan tenido las partes
+    con anterioridad.
+  </p>
+  <p>
+    Los términos y condiciones del presente convenio y sus anexos deberán
+    interpretarse de manera armónica. Cualquier diferencia entre los términos de
+    este convenio y los de cualquiera de sus anexos se resolverá a favor de lo
+    previsto en este documento.
+  </p>
+  <p>
+    <b>VIGÉSIMA TERCERA</b> - NULIDAD PARCIAL: Si cualquier disposición de este
+    contrato fuese prohibida, resultare nula, ineficaz o no pudiere hacerse
+    exigible de conformidad con las leyes de la República de Colombia, las demás
+    estipulaciones contenidas en el presente documento le sobrevivirán con sus
+    plenos efectos vinculantes y obligatorios para LAS PARTES a menos que la
+    disposición prohibida, nula, ineficaz o inexigible fuese esencial al propio
+    contrato de manera que la interpretación o cumplimiento del mismo en
+    ausencia de tal disposición no fuese posible.
+  </p>
+  <p>
+    <b>VIGÉSIMA CUARTA</b> - LEGISLACIÓN APLICABLE: El presente contrato se
+    regulará por lo dispuesto en la legislación colombiana.
+  </p>
+  <p>
+    En constancia de lo anterior, se suscribe el presente documento en 2
+    ejemplares del mismo contenido el <span name="fecha_firma">_________________</span>
+  </p>
+  <p>
+    <b>ALIADO,</b>
+    <br />
+    <br />
+    <br />
+    <b>Firma:</b> ________________________________ <br />
+    <b>Nombre:</b> <b name="nombres">__________________________</b> <br />
+    <b>Cédula:</b> <b name="cedula_prospecto">___________________</b> <br />
+    <b>Direccion:</b> <b name="direccion">___________________</b> <br />
+    <b>Ciudad:</b> <b name="ciudad">____________________</b>
+  </p>
+  <p>
+    <b>MULTIPAGAS,</b>
+    <br />
+    <br />
+    <br />
+    <b>Firma:</b> ________________________________ <br />
+    <b>Representante Legal:</b> William Garces Castro <br />
+    <b>NIT:</b> 830.097.673-4
+  </p>
+</div>

@@ -1,0 +1,109 @@
+{
+    _id: ObjectId('62c472bd51fc27d23d92917d'),
+    config: [
+        {
+            name: 'name_comprador',
+            type: 'name',
+            help: 'comprador',
+            description: 'Digite el valor para Nombre'
+        },
+        {
+            description: 'Seleccione el tipo de documento de la parte comprador',
+            name: 'document_type_comprador',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc',
+            help: 'comprador'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía de la parte comprador',
+            name: 'cedula_comprador',
+            prereq: [
+                {
+                    k: 'document_type_comprador',
+                    v: 'cc'
+                }
+            ],
+            type: 'number',
+            help: 'comprador'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería de la parte comprador',
+            name: 'cedulae_comprador',
+            prereq: [
+                {
+                    k: 'document_type_comprador',
+                    v: 'ce'
+                }
+            ],
+            type: 'number',
+            help: 'comprador'
+        },
+        {
+            description: 'Digite el número del pasaporte de la parte comprador',
+            name: 'pasaporte_comprador',
+            prereq: [
+                {
+                    k: 'document_type_comprador',
+                    v: 'pa'
+                }
+            ],
+            type: 'text',
+            help: 'comprador'
+        },
+        {
+            name: 'email_comprador',
+            type: 'email',
+            help: 'comprador',
+            description: 'Digite el valor para Correo electrónico'
+        },
+        {
+            name: 'telefono_comprador',
+            type: 'phone',
+            help: 'comprador',
+            description: 'Digite el valor para telefono.'
+        }
+    ],
+    operation: [],
+    help: {
+        comprador: 'Comprador: Persona que adquiere el producto o servicio y paga el precio por este'
+    },
+    name: 'Documento de prueba',
+    sign: [
+        'name_comprador',
+        'cedula_comprador',
+        'cedulae_comprador',
+        'pasaporte_comprador',
+        'email_comprador'
+    ],
+    signatureProfile: [
+        {
+            email: 'email_comprador',
+            phone: 'telefono_comprador',
+            identification: 'cedula_comprador|cedulae_comprador|pasaporte_comprador',
+            name: 'name_comprador',
+            type: 'comprador'
+        }
+    ],
+    build: 0,
+    price: 5000,
+    preFill: [],
+    preBuildData: [],
+    custom: {
+        noShowHeader: true
+    },
+    company: ObjectId('61942036889b8f0009db9812')
+}

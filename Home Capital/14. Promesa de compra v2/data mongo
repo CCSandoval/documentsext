@@ -2,6 +2,16 @@
     _id: ObjectId('627565c851fc27d23d929143'),
     config: [
         {
+            description:'Ingresa el código del documento',
+            type:'text',
+            name:'document_code'
+        },
+        {
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+            type:'text',
+            name:'correo_enviar'
+        },
+        {
             description: 'Seleccione el tipo de persona del primer vendedor',
             type: 'clausula',
             name: 'tipo_vendedor_1',
@@ -1936,6 +1946,2054 @@
                 },
                 {
                     k: 'vendedor_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un sexto vendedor?',
+            help: 'agregar',
+            name: 'vendedor_6',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona del sexto vendedor',
+            type: 'clausula',
+            name: 'tipo_vendedor_6',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'nat'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'jur'
+                }
+            ],
+            value: 'nat',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese la razón social de la sexta empresa vendedora',
+            name: 'empresa_vendedor_6',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el nit de la sexta empresa vendedora',
+            name: 'nit_vendedor_6',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese la ciudad donde se encuentra la camara de comercio donde fue registrada la sexta empresa vendedora',
+            name: 'ciudad_comerc_ven_6',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_rep_vendedor_6',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Digite el nombre del sexto vendedor',
+            help: 'nombre',
+            name: 'nombre_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del sexto vendedor',
+            help: 'tipo_documento',
+            name: 'tipo_documento_vendedor_6',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del sexto vendedor',
+            help: 'cedula',
+            name: 'cedula_vendedor_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_6',
+                    v: 'cc'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del sexto vendedor',
+            help: 'cedula',
+            name: 'cedulae_vendedor_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_6',
+                    v: 'ce'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte del sexto vendedor',
+            help: 'pasaporte',
+            name: 'pasaporte_vendedor_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_6',
+                    v: 'pa'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del sexto vendedor',
+            help: 'lugar',
+            name: 'lugar_expe_cedula_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'nat'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'selecione el estado civil del sexto vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_6',
+            options: [
+                {
+                    label: ' casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cc'
+                },
+                {
+                    label: ' casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cs'
+                },
+                {
+                    label: ' soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cc'
+        },
+        {
+            description: 'Digite la dirección de residencia del sexto vendedor',
+            help: 'direccion',
+            name: 'direccion_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio de domicilio del sexto vendedor',
+            help: 'lugar',
+            name: 'lugar_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el departamento donde esta ubicado el sexto vendedor',
+            help: 'departamento',
+            name: 'depart_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },{
+            description: 'Digite el número de teléfono del sexto vendedor',
+            help: 'telefono',
+            name: 'telefono_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del sexto vendedor',
+            help: 'correo',
+            name: 'correo_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un septimo vendedor?',
+            help: 'agregar',
+            name: 'vendedor_7',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona del septimo vendedor',
+            type: 'clausula',
+            name: 'tipo_vendedor_7',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'nat'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'jur'
+                }
+            ],
+            value: 'nat',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese la razón social de la septima empresa vendedora',
+            name: 'empresa_vendedor_7',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el nit de la septima empresa vendedora',
+            name: 'nit_vendedor_7',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese la ciudad donde se encuentra la camara de comercio donde fue registrada la septima empresa vendedora',
+            name: 'ciudad_comerc_ven_7',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_rep_vendedor_7',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Digite el nombre del septimo vendedor',
+            help: 'nombre',
+            name: 'nombre_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del septimo vendedor',
+            help: 'tipo_documento',
+            name: 'tipo_documento_vendedor_7',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del septimo vendedor',
+            help: 'cedula',
+            name: 'cedula_vendedor_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_7',
+                    v: 'cc'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del septimo vendedor',
+            help: 'cedula',
+            name: 'cedulae_vendedor_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_7',
+                    v: 'ce'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte del septimo vendedor',
+            help: 'pasaporte',
+            name: 'pasaporte_vendedor_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_7',
+                    v: 'pa'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del septimo vendedor',
+            help: 'lugar',
+            name: 'lugar_expe_cedula_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'nat'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'selecione el estado civil del septimo vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_7',
+            options: [
+                {
+                    label: ' casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cc'
+                },
+                {
+                    label: ' casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cs'
+                },
+                {
+                    label: ' soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cc'
+        },
+        {
+            description: 'Digite la dirección de residencia del septimo vendedor',
+            help: 'direccion',
+            name: 'direccion_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio de domicilio del septimo vendedor',
+            help: 'lugar',
+            name: 'lugar_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el departamento donde esta ubicado el septimo vendedor',
+            help: 'departamento',
+            name: 'depart_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del septimo vendedor',
+            help: 'telefono',
+            name: 'telefono_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del septimo vendedor',
+            help: 'correo',
+            name: 'correo_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar un octavo vendedor?',
+            help: 'agregar',
+            name: 'vendedor_8',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona del octavo vendedor',
+            type: 'clausula',
+            name: 'tipo_vendedor_8',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'nat'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'jur'
+                }
+            ],
+            value: 'nat',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese la razón social de la octava empresa vendedora',
+            name: 'empresa_vendedor_8',
+            type: 'name',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese el nit de la octava empresa vendedora',
+            name: 'nit_vendedor_8',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingrese la ciudad donde se encuentra la camara de comercio donde fue registrada la octava empresa vendedora',
+            name: 'ciudad_comerc_ven_8',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_rep_vendedor_8',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs',
+            prereq: [
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'jur'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Digite el nombre del octavo vendedor',
+            help: 'nombre',
+            name: 'nombre_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del octavo vendedor',
+            help: 'tipo_documento',
+            name: 'tipo_documento_vendedor_8',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del octavo vendedor',
+            help: 'cedula',
+            name: 'cedula_vendedor_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_8',
+                    v: 'cc'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del octavo vendedor',
+            help: 'cedula',
+            name: 'cedulae_vendedor_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_8',
+                    v: 'ce'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte del octavo vendedor',
+            help: 'pasaporte',
+            name: 'pasaporte_vendedor_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_8',
+                    v: 'pa'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde fue expedido el documento de identificación del octavo vendedor',
+            help: 'lugar',
+            name: 'lugar_expe_cedula_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_vendedor_5',
+                    v: 'nat'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'selecione el estado civil del octavo vendedor',
+            help: 'estado_civil',
+            name: 'estado_vendedor_8',
+            options: [
+                {
+                    label: ' casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cc'
+                },
+                {
+                    label: ' casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cs'
+                },
+                {
+                    label: ' soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cc'
+        },
+        {
+            description: 'Digite la dirección de residencia del octavo vendedor',
+            help: 'direccion',
+            name: 'direccion_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio de domicilio del octavo vendedor',
+            help: 'lugar',
+            name: 'lugar_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el departamento donde esta ubicado el octavo vendedor',
+            help: 'departamento',
+            name: 'depart_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del octavo vendedor',
+            help: 'telefono',
+            name: 'telefono_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del octavo vendedor',
+            help: 'correo',
+            name: 'correo_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
                     v: 's'
                 }
             ],
@@ -5757,6 +7815,24 @@
             type: 'vendedor_5'
         },
         {
+            email: 'correo_vendedor_6',
+            identification: 'cedula_vendedor_6|cedulae_vendedor_6|pasaporte_vendedor_6',
+            name: 'nombre_vendedor_6',
+            type: 'vendedor_6'
+        },
+        {
+            email: 'correo_vendedor_7',
+            identification: 'cedula_vendedor_7|cedulae_vendedor_7|pasaporte_vendedor_7',
+            name: 'nombre_vendedor_7',
+            type: 'vendedor_7'
+        },
+        {
+            email: 'correo_vendedor_8',
+            identification: 'cedula_vendedor_8|cedulae_vendedor_8|pasaporte_vendedor_8',
+            name: 'nombre_vendedor_8',
+            type: 'vendedor_8'
+        },
+        {
             email: 'correo_representante',
             identification: 'cedula_representante|cedulae_representante|pasaporte_representante',
             name: 'nombre_representante',
@@ -5764,8 +7840,11 @@
         }
     ],
     preFill: [],
-    preBuildData: [],
-    name: 'Promesa de compra v2',
+    preBuildData: [
+        'document_code',
+        'correo_enviar'
+    ],
+    name: 'Promesa de compra v2 test',
     price: 5000,
     preBuild: true,
     help: {
@@ -5804,6 +7883,7 @@
         tipo_repre: 'Ejemplo: representante legal suplente',
         horas_celebracion: 'Ejemplo: 06:00'
     },
-    company: ObjectId('618d299c3b775300099e6214'),
-    build: 4
+    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
+    company: ObjectId('614a3a750aebb000084cbac0'),
+    build: 7
 }

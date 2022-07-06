@@ -1,30 +1,31 @@
 {
     _id: ObjectId('6285247251fc27d23d929151'),
+    company: ObjectId('6222753320feefb54ab1892a'),
     config: [
         {
             name: 'nombre_arrend_sol_1',
             type: 'name',
-            description: 'Ingrese el nombre del primer arrendatario solidario'
+            description: 'Ingrese el nombre del arrendatario'
         },
         {
             name: 'cedula_arrend_sol_1',
             type: 'number',
-            description: 'Ingrese el número de cédula de ciudadanía del primer arrendatario solidario'
+            description: 'Ingrese el número de cédula de ciudadanía del arrendatario'
         },
         {
             name: 'domi_arrend_sol_1',
             type: 'text',
-            description: 'Ingrese el domicilio del primer arrendatario solidario'
+            description: 'Ingrese el domicilio del arrendatario'
         },
         {
             name: 'tel_arrend_sol_1',
-            type: 'text',
-            description: 'Ingres el número de teléfono del primer arrendatario solidario'
+            type: 'phone',
+            description: 'Ingres el número de teléfono del arrendatario'
         },
         {
             name: 'correo_arrend_sol_1',
-            type: 'text',
-            description: 'Ingres el correo del primer arrendatario solidario'
+            type: 'email',
+            description: 'Ingres el correo del arrendatario'
         },
         {
             name: 'arrend_sol_2',
@@ -77,7 +78,7 @@
         },
         {
             name: 'tel_arrend_sol_2',
-            type: 'text',
+            type: 'phone',
             description: 'Ingres el número de teléfono del Deudor Solidario',
             prereq: [
                 {
@@ -88,7 +89,7 @@
         },
         {
             name: 'correo_arrend_sol_2',
-            type: 'text',
+            type: 'email',
             description: 'Ingres el correo del Deudor Solidario',
             prereq: [
                 {
@@ -100,7 +101,7 @@
         {
             name: 'arrend_sol_3',
             type: 'clausula',
-            description: '¿Desea ingresar un tercer arrendatario solidario?',
+            description: '¿Desea ingresar un segundo Deudor Solidario?',
             value: 'n',
             options: [
                 {
@@ -122,7 +123,7 @@
         {
             name: 'nombre_arrend_sol_3',
             type: 'name',
-            description: 'Ingrese el nombre del tercer arrendatario solidario',
+            description: 'Ingrese el nombre del segundo Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -137,7 +138,7 @@
         {
             name: 'cedula_arrend_sol_3',
             type: 'number',
-            description: 'Ingrese el número de cédula de ciudadanía del tercer arrendatario solidario',
+            description: 'Ingrese el número de cédula de ciudadanía del segundo Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -152,7 +153,7 @@
         {
             name: 'domi_arrend_sol_3',
             type: 'text',
-            description: 'Ingrese el domicilio del tercer arrendatario solidario',
+            description: 'Ingrese el domicilio del segundo Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -166,8 +167,8 @@
         },
         {
             name: 'tel_arrend_sol_3',
-            type: 'text',
-            description: 'Ingres el número de teléfono del tercer arrendatario solidario',
+            type: 'phone',
+            description: 'Ingres el número de teléfono del segundo Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -181,8 +182,8 @@
         },
         {
             name: 'correo_arrend_sol_3',
-            type: 'text',
-            description: 'Ingres el correo del tercer arrendatario solidario',
+            type: 'email',
+            description: 'Ingres el correo del segundo Deudor Solidario',
             prereq: [
                 {
                     k: 'arrend_sol_2',
@@ -316,7 +317,8 @@
     ],
     name: 'CONTRATO DE ARRENDAMIENTO DE VIVIENDA URBANA',
     preBuild: false,
+    username: '779fdcde-bdda-4aa1-9be8-1d148e151edc',
     preBuildData: [],
     price: 5000,
-    build: 1
+    build: 3
 }

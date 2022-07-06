@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('6213dd41ed0a939e613674ac'),
+    _id: ObjectId('62c445db51fc27d23d92917b'),
     config: [
         {
             name: 'nombre_trabajador',
@@ -204,16 +204,16 @@
                     value: 'gest_oper'
                 },
                 {
-                    name: 'Ingeniero Nacional de Telefonía',
-                    value: 'ing_nal_tel'
+                    name:'Ingeniero Nacional de Telefonía',
+                    value:'ing_nal_tel'
                 },
                 {
-                    name: 'Ingeniero Nacional de Redes y Comunicaciones',
-                    value: 'ing_nal_redes'
+                    name:'Ingeniero Nacional de Redes y Comunicaciones',
+                    value:'ing_nal_redes'
                 },
                 {
-                    name: 'Ingeniero Nacional de Servidores y Almacenamiento',
-                    value: 'ing_nal_servidores'
+                    name:'Ingeniero Nacional de Servidores y Almacenamiento',
+                    value:'ing_nal_servidores'
                 },
                 {
                     name: 'Jefe Nacional de Redes y Soporte',
@@ -1914,7 +1914,7 @@
         'package_name',
         'correo_continuar_trabajador'
     ],
-    name: 'Contratación GNP',
+    name: 'Contratación GNP con Pacto de Desalarización',
     files: [
         {
             name: 'Hoja de Vida',
@@ -1973,7 +1973,7 @@
             approve: 'pending'
         }
     ],
-    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
+    username: 'f2e39773-5db1-4b93-8cc6-bb1c09495bd2',
     company: ObjectId('623099c6d9a7ac3bbc96b943'),
     preBuild: true,
     price: 5000,
@@ -1984,5 +1984,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 49
+    build: 1
 }

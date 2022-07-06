@@ -3529,44 +3529,7 @@
         'correo_empleado',
         'tel_cel_1'
     ],
-    preFill: [
-        {
-            name: 'nombre_dir_sst',
-            value: 'Yiwer Africano Torres'
-        },
-        {
-            name: 'id_dir_sst',
-            value: '1123513576'
-        },
-        {
-            name: 'email_dir_sst',
-            value: 'lidersst@futesa.com'
-        },
-        {
-            name: 'nombre_cont_fut',
-            value: 'Analista de contratación futesa'
-        },
-        {
-            name: 'id_cont_fut',
-            value: '1123512133'
-        },
-        {
-            name: 'email_cont_fut',
-            value: 'contratacion@futesa.com'
-        },
-        {
-            name: 'nombre_rep_futesa',
-            value: 'SERGIO ALONSO ARANGO TOBON'
-        },
-        {
-            name: 'id_rep_futesa',
-            value: '1123513087'
-        },
-        {
-            name: 'email_rep_futesa',
-            value: 'gerencia@futesa.com'
-        }
-    ],
+    preFill: [],
     signatureProfile: [
         {
             name: 'nombres_apellidos',
@@ -3574,24 +3537,6 @@
             email: 'correo_empleado',
             phone: 'tel_cel_1',
             type: 'trabajador'
-        },
-        {
-            name: 'nombre_dir_sst',
-            identification: 'id_dir_sst',
-            email: 'email_dir_sst',
-            type: 'dir_sst_fut'
-        },
-        {
-            name: 'nombre_cont_fut',
-            identification: 'id_cont_fut',
-            email: 'email_cont_fut',
-            type: 'analista_cont_fut'
-        },
-        {
-            name: 'nombre_rep_futesa',
-            identification: 'id_rep_futesa',
-            email: 'email_rep_futesa',
-            type: 'rep_futesa'
         }
     ],
     preBuild: true,
@@ -3609,11 +3554,11 @@
         'aux_transporte',
         'recomendaciones_gen',
         'recomendaciones_esp',
-        'email_enviar',
+        'email_enviar'
     ],
     name: 'Futesa',
     company: ObjectId('61314b343debf400095991fc'),
     price: 5000,
-    build: 5,
+    build: 6,
     username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916'
 }

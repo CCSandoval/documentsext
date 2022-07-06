@@ -2,14 +2,14 @@
     _id: ObjectId('61a8e83ce3c7d10009e99a8a'),
     config: [
         {
-            description:'Ingresa el código del documento',
-            type:'text',
-            name:'document_code'
+            description: 'Ingresa el código del documento',
+            type: 'text',
+            name: 'document_code'
         },
         {
-            description:'Ingresa el correo de la persona que diligenciará éste documento',
-            type:'text',
-            name:'correo_enviar'
+            description: 'Ingresa el correo de la persona que diligenciará éste documento',
+            type: 'text',
+            name: 'correo_enviar'
         },
         {
             description: 'Seleccione el tipo de persona',
@@ -3303,6 +3303,2919 @@
                 },
                 {
                     k: 'comprador_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro comprador?',
+            name: 'comprador_6',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_6',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_6',
+            prereq: [
+                {
+                    k: 'tipo_persona_6',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_6',
+            prereq: [
+                {
+                    k: 'tipo_persona_6',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'lugar',
+            name: 'camara_comercio_empresa_6',
+            prereq: [
+                {
+                    k: 'tipo_persona_6',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_representante',
+            name: 'tipo_representante_empresa_6',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_persona_6',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte compradora'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_comprador_6',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte compradora'
+                }
+            ],
+            help: 'sexo',
+            name: 'sexo_comprador_6',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte compradora'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_comprador_6',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte compradora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_comprador_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_6',
+                    v: 'cc'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte compradora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_comprador_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_6',
+                    v: 'ce'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte compradora'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_comprador_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_6',
+                    v: 'pa'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte compradora'
+                }
+            ],
+            help: 'lugar',
+            name: 'lugar_expe_documento_comprador_6',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte compradora'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_comprador_6',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte compradora'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_comprador_6',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte compradora'
+                }
+            ],
+            help: 'lugar',
+            name: 'municipio_comprador_6',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte compradora'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_comprador_6',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte compradora'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_comprador_6',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte compradora'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_comprador_6',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro comprador?',
+            name: 'comprador_7',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_7',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_7',
+            prereq: [
+                {
+                    k: 'tipo_persona_7',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_7',
+            prereq: [
+                {
+                    k: 'tipo_persona_7',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'lugar',
+            name: 'camara_comercio_empresa_7',
+            prereq: [
+                {
+                    k: 'tipo_persona_7',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_representante',
+            name: 'tipo_representante_empresa_7',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_persona_7',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte compradora'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_comprador_7',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte compradora'
+                }
+            ],
+            help: 'sexo',
+            name: 'sexo_comprador_7',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte compradora'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_comprador_7',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte compradora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_comprador_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_7',
+                    v: 'cc'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte compradora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_comprador_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_7',
+                    v: 'ce'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte compradora'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_comprador_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_7',
+                    v: 'pa'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte compradora'
+                }
+            ],
+            help: 'lugar',
+            name: 'lugar_expe_documento_comprador_7',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte compradora'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_comprador_7',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte compradora'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_comprador_7',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte compradora'
+                }
+            ],
+            help: 'lugar',
+            name: 'municipio_comprador_7',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte compradora'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_comprador_7',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte compradora'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_comprador_7',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte compradora'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_comprador_7',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro comprador?',
+            name: 'comprador_8',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_8',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_8',
+            prereq: [
+                {
+                    k: 'tipo_persona_8',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_8',
+            prereq: [
+                {
+                    k: 'tipo_persona_8',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'lugar',
+            name: 'camara_comercio_empresa_8',
+            prereq: [
+                {
+                    k: 'tipo_persona_8',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_representante',
+            name: 'tipo_representante_empresa_8',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_persona_8',
+                    v: 'ju'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte compradora'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_comprador_8',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte compradora'
+                }
+            ],
+            help: 'sexo',
+            name: 'sexo_comprador_8',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte compradora'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_comprador_8',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte compradora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_comprador_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_8',
+                    v: 'cc'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte compradora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_comprador_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_8',
+                    v: 'ce'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte compradora'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_comprador_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_comprador_8',
+                    v: 'pa'
+                },
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte compradora'
+                }
+            ],
+            help: 'lugar',
+            name: 'lugar_expe_documento_comprador_8',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte compradora'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_comprador_8',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte compradora'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_comprador_8',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte compradora'
+                }
+            ],
+            help: 'lugar',
+            name: 'municipio_comprador_8',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte compradora'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_comprador_8',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte compradora'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_comprador_8',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa compradora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte compradora'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_comprador_8',
+            prereq: [
+                {
+                    k: 'comprador_2',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_3',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_4',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_5',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_6',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_7',
+                    v: 's'
+                },
+                {
+                    k: 'comprador_8',
                     v: 's'
                 }
             ],
@@ -6606,6 +9519,2919 @@
             type: 'text'
         },
         {
+            description: '¿Desea agregar otro vendedor?',
+            name: 'vendedor_6',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_v_6',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_v_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_6',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_v_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_6',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'lugar',
+            name: 'camara_comercio_empresa_v_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_6',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_representante',
+            name: 'tipo_representante_empresa_v_6',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_6',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte vendedora'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte vendedora'
+                }
+            ],
+            help: 'sexo',
+            name: 'sexo_vendedor_6',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte vendedora'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_vendedor_6',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte vendedora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_vendedor_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_6',
+                    v: 'cc'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte vendedora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_vendedor_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_6',
+                    v: 'ce'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte vendedora'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_vendedor_6',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_6',
+                    v: 'pa'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte vendedora'
+                }
+            ],
+            help: 'lugar',
+            name: 'lugar_expe_documento_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte vendedora'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_vendedor_6',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte vendedora'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte vendedora'
+                }
+            ],
+            help: 'lugar',
+            name: 'municipio_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte vendedora'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte vendedora'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_6',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte vendedora'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_vendedor_6',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro vendedor?',
+            name: 'vendedor_7',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_v_7',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_v_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_7',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_v_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_7',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'lugar',
+            name: 'camara_comercio_empresa_v_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_7',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_representante',
+            name: 'tipo_representante_empresa_v_7',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_7',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte vendedora'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte vendedora'
+                }
+            ],
+            help: 'sexo',
+            name: 'sexo_vendedor_7',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte vendedora'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_vendedor_7',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte vendedora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_vendedor_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_7',
+                    v: 'cc'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte vendedora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_vendedor_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_7',
+                    v: 'ce'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte vendedora'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_vendedor_7',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_7',
+                    v: 'pa'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte vendedora'
+                }
+            ],
+            help: 'lugar',
+            name: 'lugar_expe_documento_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte vendedora'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_vendedor_7',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte vendedora'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte vendedora'
+                }
+            ],
+            help: 'lugar',
+            name: 'municipio_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte vendedora'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte vendedora'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_7',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte vendedora'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_vendedor_7',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro vendedor?',
+            name: 'vendedor_8',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_v_8',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_v_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_8',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_v_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_8',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'lugar',
+            name: 'camara_comercio_empresa_v_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_8',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_representante',
+            name: 'tipo_representante_empresa_v_8',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'tipo_persona_v_8',
+                    v: 'ju'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte vendedora'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte vendedora'
+                }
+            ],
+            help: 'sexo',
+            name: 'sexo_vendedor_8',
+            options: [
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                },
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'm'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte vendedora'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_vendedor_8',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte vendedora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_vendedor_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_8',
+                    v: 'cc'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte vendedora'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_vendedor_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_8',
+                    v: 'ce'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte vendedora'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_vendedor_8',
+            prereq: [
+                {
+                    k: 'tipo_documento_vendedor_8',
+                    v: 'pa'
+                },
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte vendedora'
+                }
+            ],
+            help: 'lugar',
+            name: 'lugar_expe_documento_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte vendedora'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_vendedor_8',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte vendedora'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte vendedora'
+                }
+            ],
+            help: 'lugar',
+            name: 'municipio_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                },
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte vendedora'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte vendedora'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa vendedora'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_v_8',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte vendedora'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_vendedor_8',
+            prereq: [
+                {
+                    k: 'vendedor_2',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_3',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_4',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_5',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_6',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_7',
+                    v: 's'
+                },
+                {
+                    k: 'vendedor_8',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
             description: 'Seleccione el tipo de inmueble',
             name: 'tipo_inmueble',
             options: [
@@ -8085,6 +13911,30 @@
             order: 0
         },
         {
+            name: 'nombre_comprador_6',
+            identification: 'cedula_comprador_6|cedulae_comprador_6|pasaporte_comprador_6',
+            email: 'correo_comprador_6',
+            type: 'comprador_6',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_comprador_7',
+            identification: 'cedula_comprador_7|cedulae_comprador_7|pasaporte_comprador_7',
+            email: 'correo_comprador_7',
+            type: 'comprador_7',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_comprador_8',
+            identification: 'cedula_comprador_8|cedulae_comprador_8|pasaporte_comprador_8',
+            email: 'correo_comprador_8',
+            type: 'comprador_8',
+            role: 'SIGN',
+            order: 0
+        },
+        {
             name: 'nombre_vendedor_1',
             identification: 'cedula_vendedor_1|cedulae_vendedor_1|pasaporte_vendedor_1',
             email: 'correo_vendedor_1',
@@ -8123,7 +13973,31 @@
             type: 'vendedor_5',
             role: 'SIGN',
             order: 0
-        }
+        },
+        {
+            name: 'nombre_vendedor_6',
+            identification: 'cedula_vendedor_6|cedulae_vendedor_6|pasaporte_vendedor_6',
+            email: 'correo_vendedor_6',
+            type: 'vendedor_6',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_vendedor_7',
+            identification: 'cedula_vendedor_7|cedulae_vendedor_7|pasaporte_vendedor_7',
+            email: 'correo_vendedor_7',
+            type: 'vendedor_7',
+            role: 'SIGN',
+            order: 0
+        },
+        {
+            name: 'nombre_vendedor_8',
+            identification: 'cedula_vendedor_8|cedulae_vendedor_8|pasaporte_vendedor_8',
+            email: 'correo_vendedor_8',
+            type: 'vendedor_8',
+            role: 'SIGN',
+            order: 0
+        },
     ],
     help: {
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
@@ -8155,10 +14029,13 @@
     company: ObjectId('618d299c3b775300099e6214'),
     preBuild: true,
     preFill: [],
-    preBuildData: ['document_code','correo_enviar'],
+    preBuildData: [
+        'document_code',
+        'correo_enviar'
+    ],
     name: 'Acuerdo de negociación compra/venta',
     price: 5000,
-    build: 3,
+    build: 4,
     createdAt: ISODate('2021-12-02T15:37:32.695Z'),
     updatedAt: ISODate('2021-12-02T15:37:32.695Z')
 }

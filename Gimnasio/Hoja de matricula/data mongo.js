@@ -1,319 +1,287 @@
 {
-    _id: ObjectId("62a8ef4251fc27d23d929169"),
-    config:[
+    _id: ObjectId('62a8ef4251fc27d23d929169'),
+    config: [
         {
-            name:'periodo',
-            type:'text',
-            description:'Ingrese el periodo escolar'
+            name: 'periodo',
+            type: 'text',
+            description: 'Ingrese el periodo escolar'
         },
         {
-            name:'fecha_matricula',
-            type:'date',
-            description:'Seleccione la fecha de matricula'
+            name: 'fecha_matricula',
+            type: 'date',
+            description: 'Seleccione la fecha de matricula'
         },
         {
-            name:'grado_matricula',
-            type:'text',
-            description:'Ingrese el grado al que se matricula'
+            name: 'grado_matricula',
+            type: 'text',
+            description: 'Ingrese el grado al que se matricula'
         },
         {
-            name:'nombre_estudiante',
-            type:'name',
-            description:'Ingrese el nombre del estudiante'
+            name: 'nombre_estudiante',
+            type: 'name',
+            description: 'Ingrese el nombre del estudiante'
         },
         {
-            name:'fecha_nacimiento',
-            type:'date',
-            description:'Seleccione la fecha de nacimiento del estudiante'
+            name: 'fecha_nacimiento',
+            type: 'date',
+            description: 'Seleccione la fecha de nacimiento del estudiante'
         },
         {
-            name:'nacionalidad',
-            type:'text',
-            description:'Ingrese la nacionalidad del estudiante'
+            name: 'nacionalidad',
+            type: 'text',
+            description: 'Ingrese la nacionalidad del estudiante'
         },
         {
-            name:'departamento',
-            type:'text',
-            description:'Ingrese el departamento del estudiante'
+            name: 'departamento',
+            type: 'text',
+            description: 'Ingrese el departamento del estudiante'
         },
         {
-            name:'municipio',
-            type:'text',
-            description:'Ingrese el municipio del estudiante'
+            name: 'municipio',
+            type: 'text',
+            description: 'Ingrese el municipio del estudiante'
         },
         {
-            name:'tipo_id_estudiante',
-            type:'clausula',
-            description:'Seleccione el tipo de documento de identificación del estudiante',
-            options:[
+            name: 'tipo_id_estudiante',
+            type: 'clausula',
+            description: 'Seleccione el tipo de documento de identificación del estudiante',
+            options: [
                 {
-                    name:'Tarjeta de identidad',
-                    value:'ti'
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
                 },
                 {
-                    name:'Cédula de ciudadanía',
-                    value:'cc'
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
                 },
                 {
-                    name:'Otro',
-                    value:'otro'
+                    name: 'NUIP',
+                    value: 'nuip'
+                },
+                {
+                    name: 'Otro',
+                    value: 'otro'
                 }
             ],
-            value:'ti'
+            value: 'ti'
         },
         {
-            name:'cedula_estudiante',
-            type:'number',
-            description:'Ingrese la cédula de ciudadanía del estudiante',
-            prereq:[
+            name: 'cedula_estudiante',
+            type: 'number',
+            description: 'Ingrese la cédula de ciudadanía del estudiante',
+            prereq: [
                 {
-                    k:'tipo_id_estudiante',
-                    v:'cc'
+                    k: 'tipo_id_estudiante',
+                    v: 'cc'
                 }
             ]
         },
         {
-            name:'tarjeta_estudiante',
-            type:'number',
-            description:'Ingrese la tarjeta de identidad del estudiante',
-            prereq:[
+            name: 'tarjeta_estudiante',
+            type: 'number',
+            description: 'Ingrese la tarjeta de identidad del estudiante',
+            prereq: [
                 {
-                    k:'tipo_id_estudiante',
-                    v:'ti'
+                    k: 'tipo_id_estudiante',
+                    v: 'ti'
                 }
             ]
         },
         {
-            name:'otro_id_estudiante',
-            type:'text',
-            description:'Ingrese el número de identidad del estudiante',
-            prereq:[
+            name: 'nuip_estudiante',
+            type: 'text',
+            description: 'Ingrese el número de NUIP del estudiante',
+            prereq: [
                 {
-                    k:'tipo_id_estudiante',
-                    v:'otro'
+                    k: 'tipo_id_estudiante',
+                    v: 'nuip'
                 }
             ]
         },
         {
-            name:'dir_residencia',
-            type:'text',
-            description:'Ingrese la dirección de residencia'
-        },
-        {
-            name:'tel_residencia',
-            type:'text',
-            description:'Ingrese el número de teléfono fijo'
-        },
-        {
-            name:'cel_estudiante',
-            type:'phone',
-            description:'Ingrese el número de teléfono celular del estudiante'
-        },
-        {
-            name:'email_estudiante',
-            type:'email',
-            description:'Ingrese el correo electrónico del estudiante'
-        },
-        {
-            name:'barrio_estudiante',
-            type:'text',
-            description:'Ingrese el barrio de residencia'
-        },
-        {
-            name:'colegio_anterior',
-            type:'text',
-            description:'Ingrese el colegio anterior del estudiante'
-        },
-        {
-            name:'nombre_papa',
-            type:'name',
-            description:'Ingrese el nombre del padre'
-        },
-        {
-            name:'responsable_pago_papa',
-            type:'select',
-            description:'¿Es el padre el responsable del pago?',
-            options:[
+            name: 'otro_id_estudiante',
+            type: 'text',
+            description: 'Ingrese el número de identidad del estudiante',
+            prereq: [
                 {
-                    name:'Si',
-                    label:'si',
-                    value:'s'
+                    k: 'tipo_id_estudiante',
+                    v: 'otro'
+                }
+            ]
+        },
+        {
+            name: 'dir_residencia',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia'
+        },
+        {
+            name: 'tel_residencia',
+            type: 'text',
+            description: 'Ingrese el número de teléfono fijo'
+        },
+        {
+            name: 'cel_estudiante',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono celular del estudiante'
+        },
+        {
+            name: 'email_estudiante',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del estudiante'
+        },
+        {
+            name: 'barrio_estudiante',
+            type: 'text',
+            description: 'Ingrese el barrio de residencia'
+        },
+        {
+            name: 'colegio_anterior',
+            type: 'text',
+            description: 'Ingrese el colegio anterior del estudiante'
+        },
+        {
+            name: 'responsable_pago',
+            type: 'select',
+            description: 'Seleccione cuál de los acudientes es el encargado del pago',
+            options: [
+                {
+                    name: 'El padre',
+                    label: 'El padre',
+                    value: 'padre'
                 },
                 {
-                    name:'No',
-                    label:'no',
-                    value:'n'
-                },
+                    name: 'La madre',
+                    label: 'La madre',
+                    value: 'madre'
+                }
             ],
-            value:'s'
+            value: 'padre'
         },
         {
-            name:'profesion_papa',
-            type:'text',
-            description:'Ingrese la profesión del padre'
+            name: 'nombre_papa',
+            type: 'name',
+            description: 'Ingrese el nombre del papa'
         },
         {
-            name:'cedula_papa',
-            type:'text',
-            description:'Ingrese la cédula de ciudadanía del padre'
+            name: 'profesion_papa',
+            type: 'text',
+            description: 'Ingrese la profesión del papa'
         },
         {
-            name:'exp_cedula_papa',
-            type:'text',
-            description:'Ingrese el lugar de expedición de la cédula del padre'
+            name: 'cedula_papa',
+            type: 'number',
+            description: 'Ingrese la cédula de ciudadanía del papa'
         },
         {
-            name:'fax_papa',
-            type:'text',
-            description:'Ingrese el fax del padre'
+            name: 'exp_cedula_papa',
+            type: 'text',
+            description: 'Ingrese el lugar de expedición de la cédula del papa'
         },
         {
-            name:'cel_papa',
-            type:'phone',
-            description:'Ingrese el teléfono celular del padre'
+            name: 'cel_papa',
+            type: 'phone',
+            description: 'Ingrese el teléfono celular del papa'
         },
         {
-            name:'email_papa',
-            type:'email',
-            description:'Ingrese el correo electrónico del padre'
+            name: 'email_papa',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del papa'
         },
         {
-            name:'nombre_mama',
-            type:'name',
-            description:'Ingrese el nombre del madre'
+            name: 'nombre_mama',
+            type: 'name',
+            description: 'Ingrese el nombre de la mama'
         },
         {
-            name:'responsable_pago_mama',
-            type:'select',
-            description:'¿Es el madre el responsable del pago?',
-            options:[
-                {
-                    name:'Si',
-                    label:'si',
-                    value:'s'
-                },
-                {
-                    name:'No',
-                    label:'no',
-                    value:'n'
-                },
-            ],
-            value:'s'
+            name: 'profesion_mama',
+            type: 'text',
+            description: 'Ingrese la profesión de la mama'
         },
         {
-            name:'profesion_mama',
-            type:'text',
-            description:'Ingrese la profesión del madre'
+            name: 'cedula_mama',
+            type: 'number',
+            description: 'Ingrese la cédula de ciudadanía de la mama'
         },
         {
-            name:'cedula_mama',
-            type:'text',
-            description:'Ingrese la cédula de ciudadanía del madre'
+            name: 'exp_cedula_mama',
+            type: 'text',
+            description: 'Ingrese el lugar de expedición de la cédula de la mama'
         },
         {
-            name:'exp_cedula_mama',
-            type:'text',
-            description:'Ingrese el lugar de expedición de la cédula del madre'
+            name: 'cel_mama',
+            type: 'phone',
+            description: 'Ingrese el teléfono celular de la mama'
         },
         {
-            name:'fax_mama',
-            type:'text',
-            description:'Ingrese el fax del madre'
+            name: 'email_mama',
+            type: 'email',
+            description: 'Ingrese el correo electrónico de la mama'
         },
         {
-            name:'cel_mama',
-            type:'phone',
-            description:'Ingrese el teléfono celular del madre'
+            name: 'nombre_otro_contacto',
+            type: 'name',
+            description: 'Ingrese el nombre del otro contacto'
         },
         {
-            name:'email_mama',
-            type:'email',
-            description:'Ingrese el correo electrónico del madre'
+            name: 'parentesco_otro',
+            type: 'text',
+            description: 'Ingrese el parentesco del otro contacto'
         },
         {
-            name:'nombre_otro_contacto',
-            type:'name',
-            description:'Ingrese el nombre del otro contacto'
+            name: 'profesion_otro',
+            type: 'text',
+            description: 'Ingrese la profesión del otro contacto'
         },
         {
-            name:'parentesco_otro',
-            type:'text',
-            description:'Ingrese el parentesco del otro contacto'
+            name: 'cedula_otro',
+            type: 'text',
+            description: 'Ingrese la cédula de ciudadanía del otro contacto'
         },
         {
-            name:'profesion_otro',
-            type:'text',
-            description:'Ingrese la profesión del otro contacto'
+            name: 'exp_cedula_otro',
+            type: 'text',
+            description: 'Ingrese el lugar de expedición de la cédula del otro contacto'
         },
         {
-            name:'cedula_otro',
-            type:'text',
-            description:'Ingrese la cédula de ciudadanía del otro contacto'
+            name: 'cel_otro',
+            type: 'phone',
+            description: 'Ingrese el teléfono celular del otro contacto'
         },
         {
-            name:'exp_cedula_otro',
-            type:'text',
-            description:'Ingrese el lugar de expedición de la cédula del otro contacto'
-        },
-        {
-            name:'fax_otro',
-            type:'text',
-            description:'Ingrese el fax del otro contacto'
-        },
-        {
-            name:'cel_otro',
-            type:'phone',
-            description:'Ingrese el teléfono celular del otro contacto'
-        },
-        {
-            name:'email_otro',
-            type:'email',
-            description:'Ingrese el correo electrónico del otro contacto'
-        },
+            name: 'email_otro',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del otro contacto'
+        }
     ],
-    operation:[],
-    sign:[
-        'nombre_estudiante',
-        'cedula_estudiante',
-        'tarjeta_estudiante',
-        'otro_id_estudiante',
-        'cel_estudiante',
-        'email_estudiante',
-        'nombre_papa',
-        'cedula_papa',
-        'cel_papa',
-        'email_papa',
-        'nombre_mama',
-        'cedula_mama',
-        'cel_mama',
-        'email_mama',
+    operation: [],
+    sign: [],
+    signatureProfile: [
+        {
+            name: 'nombre_estudiante',
+            identification: 'cedula_estudiante|tarjeta_estudiante|otro_id_estudiante|nuip_estudiante',
+            phone: 'cel_estudiante',
+            email: 'email_estudiante',
+            type: 'firma_estudiante'
+        },
+        {
+            name: 'nombre_papa',
+            identification: 'cedula_papa',
+            phone: 'cel_papa',
+            email: 'email_papa',
+            type: 'firma_papa'
+        },
+        {
+            name: 'nombre_mama',
+            identification: 'cedula_mama',
+            phone: 'cel_mama',
+            email: 'email_mama',
+            type: 'firma_mama'
+        }
     ],
-    signatureProfile:[
-        {
-            name:'nombre_estudiante',
-            identification:'cedula_estudiante|tarjeta_estudiante|otro_id_estudiante',
-            phone:'cel_estudiante',
-            email:'email_estudiante',
-            type:'firma_estudiante'
-        },
-        {
-            name:'nombre_papa',
-            identification:'cedula_papa',
-            phone:'cel_papa',
-            email:'email_papa',
-            type:'firma_padre'
-        },
-        {
-            name:'nombre_mama',
-            identification:'cedula_mama',
-            phone:'cel_mama',
-            email:'email_mama',
-            type:'firma_padre'
-        },
-    ],
-    preBuild:false,
-    preBuildData:[],
-    name:'HOJA DE MATRICULA',
-    price:5000,
-    build:0
+    preBuild: false,
+    preBuildData: [],
+    name: 'HOJA DE MATRICULA',
+    company: ObjectId('624b9d001e9c670009968025'),
+    price: 5000,
+    build: 7
 }
