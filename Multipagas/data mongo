@@ -137,7 +137,7 @@
         {
             name: 'machetazo',
             type: 'text:',
-            description: 'Pregunta falsa para romper el avance',
+            description: '',
             prereq: [
                 {
                     k: 'tyc',
@@ -182,7 +182,7 @@
         nombres: 'Ejemplo: David Mauricio Martinez López',
         cel: 'Ejemplo: 3156466172',
         cedula: 'Ejemplo: 1115448153',
-        horario: 'Ejemplo: 8AM a 5PM',
+        horario: 'Ejemplo: Lunes a Domingo 7:00am a 8:00pm',
         direccion: 'Ejemplo: Calle 58 #2a-74',
         punto: 'Ejemplo: ',
         tyc: 'Accede a los términos y condiciones por este enlace: https://www.multipagas.com/multipagas/'

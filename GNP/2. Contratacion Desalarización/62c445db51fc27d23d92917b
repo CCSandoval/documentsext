@@ -459,11 +459,11 @@
         <span name="cargo_anal_inf_fin" hidden>Analista Información Financiera</span>
         <span name="cargo_jefe_procesos" hidden>Jefe de Calidad y Procesos</span>
         <span name="cargo_jefe_nal_inf" hidden>Jefe Nacional de Infraestructura</span>
+        <span name="cargo_jefe_nal_mesa" hidden>Jefe Nacional de Mesa de Ayuda</span>
         <span name="cargo_jefe_seg_inf" hidden>Jefe de Seguridad de la Información</span>
         <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
         <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
         <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
-        <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
       </td>
       <td colspan="2">EPS <span name="eps">_______________</span></td>
@@ -1009,11 +1009,11 @@
         <b name="cargo_anal_inf_fin" hidden>Analista Información Financiera</b>
         <b name="cargo_jefe_procesos" hidden>Jefe de Calidad y Procesos</b>
         <b name="cargo_jefe_nal_inf" hidden>Jefe Nacional de Infraestructura</b>
+        <b name="cargo_jefe_nal_mesa" hidden>Jefe Nacional de Mesa de Ayuda</b>
         <b name="cargo_jefe_seg_inf" hidden>Jefe de Seguridad de la Información</b>
         <b name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</b>
         <b name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</b>
         <b name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</b>
-        <b name="cargo_gest_oper" hidden>Gestor Operativo</b>
         <b name="cargo_call_c" hidden>AGENTE CALL CENTER</b>
       </td>
     </tr>
@@ -1564,9 +1564,6 @@
       sus partes.
     </em>
   </p>
-  <p>
-    <em><b>DÉCIMA NOVENA.</b> Este acuerdo contiene la total voluntad alcanzada entre las partes intervinientes y reemplaza cualquiera y todas las comunicaciones, opiniones, entendimientos o acuerdos previos, verbales o escritos de cualquier tipo, entre las partes intervinientes en relación con el objeto de este acuerdo. Si alguna de las cláusulas de este contrato de alguna manera violare la ley, tal cláusula se tendrá por no escrita pero no afectará el cumplimiento de las demás obligaciones derivadas de este contrato. Las partes acuerdan que intentarán sustituir cualquier cláusula inválida por una que legalmente cumpla con los objetivos económicos, legales y comerciales de la que se tuvo por no escrita.</em>
-  </p>
   <p style="text-align: justify">
     <em>
       Para constancia se firma en dos (2) ejemplares del mismo tenor y valor,
@@ -1712,11 +1709,11 @@
         <span name="cargo_anal_inf_fin" hidden>Analista Información Financiera</span>
         <span name="cargo_jefe_procesos" hidden>Jefe de Calidad y Procesos</span>
         <span name="cargo_jefe_nal_inf" hidden>Jefe Nacional de Infraestructura</span>
+        <span name="cargo_jefe_nal_mesa" hidden>Jefe Nacional de Mesa de Ayuda</span>
         <span name="cargo_jefe_seg_inf" hidden>Jefe de Seguridad de la Información</span>
         <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
         <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
         <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
-        <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
       </td>
     </tr>
     <tr>
@@ -1789,18 +1786,6 @@
           <br/>Realizar respaldo de las llamadas de los aplicativos de telefonía y de los principales archivos de configuración
           <br/>Administrar los accesos a los aplicativos de telefonía
           <br/>Comunicarse con el outsourcing de telefonía para solicitar soporte y con los proveedores de los aplicativos de telefonía
-        </span>
-        <span name="cargo_gest_oper" hidden>
-          Escucha, analisis y seguimiento de todas las Pqrs dirigidas a GNP (Hogar,Móvil y Tecnología)
-          <br/>Seguimiento, retroalimentación y mejoras en la operación.
-          <br/>Refuerzos comerciales y de manejo de llamada para evitar pqrs.
-          <br/>Elaboración de informes de Pqrs.
-          <br/>Resolución de pqrs Bogotá-Cali.
-          <br/>Actividades comerciales y motivacionales enfocadas al mejoramiento de resultados.
-          <br/>Tareas administrativas de calidad.
-          <br/>Habilidades interpersonasles.
-          <br/>Indicadores comerciales y de pqrs.
-          <br/>Creación de informes, Planificación de Monitoreos. Auditar y supervisar todas las ventas y aleatoriamente las no ventas.
         </span>
         <span name="cargo_ing_nal_redes" hidden>
           Realizar seguimiento, control y mantenimiento a la infraestructura de redes
@@ -1924,6 +1909,20 @@
           <br/> Desarrollo y edición de piezas para redes sociales.
           <br/> Desarrollo y diseño de Landing Page.
           <br/>Asumir y ejecutar las demás funciones que le sean asignadas en cumplimiento de la misión del cargo
+        </span>
+        <span name="cargo_jefe_nal_mesa" hidden>
+          Coordinar el equipo de coordinadores de mesa de ayuda y auxiliares de soporte nivel 1 y el cumplimiento de sus funciones
+          <br/>Coordinar el seguimiento, control y mantenimiento preventivo y correctivo de los equipos de las operaciones
+          <br/>Coordinar las mallas de horarios del área
+          <br/>Coordinar las tareas solicitadas por los ingenieros que necesiten apoyo de los auxiliares
+          <br/>Cumplir con las políticas de seguridad enfocadas a la infraestructura
+          <br/>Garantizar la atención del soporte solicitado en la mesa de ayuda
+          <br/>Coordinar las solicitudes de permisos, incapacidades, retardos y descargos de área
+          <br/>Apoyar la implementación y cumplimiento de la ISO 27001
+          <br/>Realizar reuniones con el personal a cargo  
+          <br/>Garantizar que se apliquen los ANS de la mesa de ayuda
+          <br/>Garantizar que se apliquen las acciones preventivas y correctivas
+          <br/>Generar los informes de las tareas realizadas en la mesa de ayuda
         </span>
         <span name="cargo_web_design" hidden>
           Diseño de páginas web
@@ -3088,11 +3087,11 @@
         <span name="cargo_anal_inf_fin" hidden>Analista Información Financiera</span>
         <span name="cargo_jefe_procesos" hidden>Jefe de Calidad y Procesos</span>
         <span name="cargo_jefe_nal_inf" hidden>Jefe Nacional de Infraestructura</span>
+        <span name="cargo_jefe_nal_mesa" hidden>Jefe Nacional de Mesa de Ayuda</span>
         <span name="cargo_jefe_seg_inf" hidden>Jefe de Seguridad de la Información</span>
         <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
         <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
         <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
-        <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
       </td>
     </tr>

@@ -59,6 +59,10 @@
                     value: 'nuip'
                 },
                 {
+                    name: 'Pasaporte',
+                    value: 'pasaporte'
+                },
+                {
                     name: 'Otro',
                     value: 'otro'
                 }
@@ -95,6 +99,17 @@
                 {
                     k: 'tipo_id_estudiante',
                     v: 'nuip'
+                }
+            ]
+        },
+        {
+            name: 'pasaporte_estudiante',
+            type: 'text',
+            description: 'Ingrese el número de Pasaporte del estudiante',
+            prereq: [
+                {
+                    k: 'tipo_id_estudiante',
+                    v: 'pasaporte'
                 }
             ]
         },
@@ -283,5 +298,5 @@
     name: 'HOJA DE MATRICULA',
     company: ObjectId('624b9d001e9c670009968025'),
     price: 5000,
-    build: 7
+    build: 8
 }

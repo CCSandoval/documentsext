@@ -19,6 +19,7 @@
   Documento de Identidad: <u name="tipo_id_estudiante_cc">C.C.</u>
   <u name="tipo_id_estudiante_ti" hidden>T.I.</u>
   <u name="tipo_id_estudiante_nuip" hidden>NUIP</u>
+  <u name="tipo_id_estudiante_pasaporte" hidden>Pasaporte</u>
   <u name="tipo_id_estudiante_otro" hidden>Otro</u>, Nº:
   <u name="tipo_id_estudiante_cc">
     <u name="cedula_estudiante">__________________</u>
@@ -28,6 +29,9 @@
   </u>
   <u name="tipo_id_estudiante_nuip" hidden>
     <u name="nuip_estudiante">__________________</u>
+  </u>
+  <u name="tipo_id_estudiante_pasaporte" hidden>
+    <u name="pasaporte_estudiante">__________________</u>
   </u>
   <u name="tipo_id_estudiante_otro" hidden>
     <u name="otro_id_estudiante">__________________</u>

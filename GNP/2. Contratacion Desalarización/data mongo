@@ -204,16 +204,16 @@
                     value: 'gest_oper'
                 },
                 {
-                    name:'Ingeniero Nacional de Telefonía',
-                    value:'ing_nal_tel'
+                    name: 'Ingeniero Nacional de Telefonía',
+                    value: 'ing_nal_tel'
                 },
                 {
-                    name:'Ingeniero Nacional de Redes y Comunicaciones',
-                    value:'ing_nal_redes'
+                    name: 'Ingeniero Nacional de Redes y Comunicaciones',
+                    value: 'ing_nal_redes'
                 },
                 {
-                    name:'Ingeniero Nacional de Servidores y Almacenamiento',
-                    value:'ing_nal_servidores'
+                    name: 'Ingeniero Nacional de Servidores y Almacenamiento',
+                    value: 'ing_nal_servidores'
                 },
                 {
                     name: 'Jefe Nacional de Redes y Soporte',
@@ -222,6 +222,10 @@
                 {
                     name: 'Jefe Nacional de Infraestructura',
                     value: 'jefe_nal_inf'
+                },
+                {
+                    name: 'Jefe Nacional de Mesa de Ayuda',
+                    value: 'jefe_nal_mesa'
                 },
                 {
                     name: 'Jefe de Seguridad de la Información',
@@ -1973,7 +1977,7 @@
             approve: 'pending'
         }
     ],
-    username: 'f2e39773-5db1-4b93-8cc6-bb1c09495bd2',
+    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916',
     company: ObjectId('623099c6d9a7ac3bbc96b943'),
     preBuild: true,
     price: 5000,
@@ -1984,5 +1988,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 1
+    build: 2
 }
