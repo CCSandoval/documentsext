@@ -106,16 +106,320 @@
             help: 'cedula'
         },
         {
-            name: 'horario_servicio',
-            description: 'Ingrese el horario de servicio',
-            type: 'text',
-            help: 'horario'
+            name: 'dia_ingreso',
+            description: 'Seleccione el dia de apertura',
+            type: 'select',
+            help: 'horario',
+            value: 'Lunes',
+            options: [
+                {
+                    name: 'Lunes',
+                    label: 'Lunes',
+                    value: 'Lunes'
+                },
+                {
+                    name: 'Martes',
+                    label: 'Martes',
+                    value: 'Martes'
+                },
+                {
+                    name: 'Miércoles',
+                    label: 'Miércoles',
+                    value: 'Miercoles'
+                },
+                {
+                    name: 'Jueves',
+                    label: 'Jueves',
+                    value: 'Jueves'
+                },
+                {
+                    name: 'Viernes',
+                    label: 'Viernes',
+                    value: 'Viernes'
+                }
+            ]
         },
         {
-            name: 'direccion',
-            description: 'Ingrese la dirección',
-            type: 'text',
-            help: 'direccion'
+            name: 'dia_salida',
+            description: 'Seleccione el dia de cierre',
+            type: 'select',
+            help: 'horario',
+            value: 'Lunes',
+            options: [
+                {
+                    name: 'Lunes',
+                    label: 'Lunes',
+                    value: 'Lunes'
+                },
+                {
+                    name: 'Martes',
+                    label: 'Martes',
+                    value: 'Martes'
+                },
+                {
+                    name: 'Miércoles',
+                    label: 'Miércoles',
+                    value: 'Miercoles'
+                },
+                {
+                    name: 'Jueves',
+                    label: 'Jueves',
+                    value: 'Jueves'
+                },
+                {
+                    name: 'Viernes',
+                    label: 'Viernes',
+                    value: 'Viernes'
+                }
+            ]
+        },
+        {
+            name: 'hora_ingreso',
+            description: 'Seleccione la hora de apertura',
+            type: 'select',
+            help: 'horario',
+            value: '00',
+            options: [
+                {
+                    name: '00:01 AM',
+                    label: '00:01 AM',
+                    value: '00'
+                },
+                {
+                    name: '01:00 AM',
+                    label: '01:00 AM',
+                    value: '01'
+                },
+                {
+                    name: '02:00 AM',
+                    label: '02:00 AM',
+                    value: '02'
+                },
+                {
+                    name: '03:00 AM',
+                    label: '03:00 AM',
+                    value: '03'
+                },
+                {
+                    name: '04:00 AM',
+                    label: '04:00 AM',
+                    value: '04'
+                },
+                {
+                    name: '05:00 AM',
+                    label: '05:00 AM',
+                    value: '05'
+                },
+                {
+                    name: '06:00 AM',
+                    label: '06:00 AM',
+                    value: '06'
+                },
+                {
+                    name: '07:00 AM',
+                    label: '07:00 AM',
+                    value: '07'
+                },
+                {
+                    name: '08:00 AM',
+                    label: '08:00 AM',
+                    value: '08'
+                },
+                {
+                    name: '09:00 AM',
+                    label: '09:00 AM',
+                    value: '09'
+                },
+                {
+                    name: '10:00 AM',
+                    label: '10:00 AM',
+                    value: '10'
+                },
+                {
+                    name: '11:00 AM',
+                    label: '11:00 AM',
+                    value: '11'
+                },
+                {
+                    name: '12:00 M',
+                    label: '12:00 M',
+                    value: '12'
+                },
+                {
+                    name: '01:00 PM',
+                    label: '01:00 PM',
+                    value: '13'
+                },
+                {
+                    name: '02:00 PM',
+                    label: '02:00 PM',
+                    value: '14'
+                },
+                {
+                    name: '03:00 PM',
+                    label: '03:00 PM',
+                    value: '15'
+                },
+                {
+                    name: '04:00 PM',
+                    label: '04:00 PM',
+                    value: '16'
+                },
+                {
+                    name: '05:00 PM',
+                    label: '05:00 PM',
+                    value: '17'
+                },
+                {
+                    name: '06:00 PM',
+                    label: '06:00 PM',
+                    value: '18'
+                },
+                {
+                    name: '07:00 PM',
+                    label: '07:00 PM',
+                    value: '19'
+                },
+                {
+                    name: '08:00 PM',
+                    label: '08:00 PM',
+                    value: '20'
+                },
+                {
+                    name: '09:00 PM',
+                    label: '09:00 PM',
+                    value: '21'
+                },
+                {
+                    name: '10:00 PM',
+                    label: '10:00 PM',
+                    value: '22'
+                }
+            ]
+        },
+        {
+            name: 'hora_salida',
+            description: 'Seleccione la hora de cierre',
+            type: 'select',
+            help: 'horario',
+            value: '00',
+            options: [
+                {
+                    name: '00:01 AM',
+                    label: '00:01 AM',
+                    value: '00'
+                },
+                {
+                    name: '01:00 AM',
+                    label: '01:00 AM',
+                    value: '01'
+                },
+                {
+                    name: '02:00 AM',
+                    label: '02:00 AM',
+                    value: '02'
+                },
+                {
+                    name: '03:00 AM',
+                    label: '03:00 AM',
+                    value: '03'
+                },
+                {
+                    name: '04:00 AM',
+                    label: '04:00 AM',
+                    value: '04'
+                },
+                {
+                    name: '05:00 AM',
+                    label: '05:00 AM',
+                    value: '05'
+                },
+                {
+                    name: '06:00 AM',
+                    label: '06:00 AM',
+                    value: '06'
+                },
+                {
+                    name: '07:00 AM',
+                    label: '07:00 AM',
+                    value: '07'
+                },
+                {
+                    name: '08:00 AM',
+                    label: '08:00 AM',
+                    value: '08'
+                },
+                {
+                    name: '09:00 AM',
+                    label: '09:00 AM',
+                    value: '09'
+                },
+                {
+                    name: '10:00 AM',
+                    label: '10:00 AM',
+                    value: '10'
+                },
+                {
+                    name: '11:00 AM',
+                    label: '11:00 AM',
+                    value: '11'
+                },
+                {
+                    name: '12:00 M',
+                    label: '12:00 M',
+                    value: '12'
+                },
+                {
+                    name: '01:00 PM',
+                    label: '01:00 PM',
+                    value: '13'
+                },
+                {
+                    name: '02:00 PM',
+                    label: '02:00 PM',
+                    value: '14'
+                },
+                {
+                    name: '03:00 PM',
+                    label: '03:00 PM',
+                    value: '15'
+                },
+                {
+                    name: '04:00 PM',
+                    label: '04:00 PM',
+                    value: '16'
+                },
+                {
+                    name: '05:00 PM',
+                    label: '05:00 PM',
+                    value: '17'
+                },
+                {
+                    name: '06:00 PM',
+                    label: '06:00 PM',
+                    value: '18'
+                },
+                {
+                    name: '07:00 PM',
+                    label: '07:00 PM',
+                    value: '19'
+                },
+                {
+                    name: '08:00 PM',
+                    label: '08:00 PM',
+                    value: '20'
+                },
+                {
+                    name: '09:00 PM',
+                    label: '09:00 PM',
+                    value: '21'
+                },
+                {
+                    name: '10:00 PM',
+                    label: '10:00 PM',
+                    value: '22'
+                }
+            ]
         },
         {
             name: 'tyc',
@@ -146,9 +450,10 @@
             ]
         },
         {
-            name: 'fecha_firma',
-            type: 'date',
-            description: 'Seleccione la fecha de firma'
+            name: 'direccion',
+            description: 'Ingrese la dirección',
+            type: 'text',
+            help: 'direccion'
         }
     ],
     operation: [],
@@ -208,7 +513,7 @@
             approve: 'pending'
         }
     ],
-    build: 17,
+    build: 22,
     price: 5000,
     company: ObjectId('61942036889b8f0009db9812'),
     username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916'

@@ -100,7 +100,7 @@
             ]
         },
         {
-            name: 'cdp1_date',
+            name: 'cdp2_date',
             description: 'Selecciona la fecha del segundo Certificado de Disponibilidad Presupuestal',
             type: 'date',
             prereq: [
@@ -228,7 +228,7 @@
             email: 'correo_emprendedor',
             identification: 'cc_emprendedor',
             type: 'firma_emprendedor',
-            order: 0,
+            order: 7,
             role: 'SIGN'
         },
         {
@@ -236,7 +236,7 @@
             email: 'correo_proyecto_universidad',
             identification: 'cc_proyecto_universidad',
             type: 'proyecto_universidad',
-            order: 1,
+            order: 0,
             role: 'SIGN'
         },
         {
@@ -244,7 +244,7 @@
             email: 'correo_reviso_universidad',
             identification: 'cc_reviso_universidad',
             type: 'reviso_universidad',
-            order: 2,
+            order: 1,
             role: 'SIGN'
         },
         {
@@ -252,7 +252,7 @@
             email: 'correo_prov_uni',
             identification: 'cc_universidad',
             type: 'firma_universidad',
-            order: 3,
+            order: 2,
             role: 'SIGN'
         },
         {
@@ -260,7 +260,7 @@
             email: 'correo_proyecto_sena',
             identification: 'cc_proyecto_sena',
             type: 'proyecto_sena',
-            order: 4,
+            order: 3,
             role: 'SIGN'
         },
         {
@@ -268,7 +268,7 @@
             email: 'correo_vobo_sena',
             identification: 'cc_vobo_sena',
             type: 'vobo_sena',
-            order: 5,
+            order: 4,
             role: 'SIGN'
         },
         {
@@ -276,7 +276,7 @@
             email: 'correo_reviso_sena',
             identification: 'cc_reviso_sena',
             type: 'reviso_sena',
-            order: 6,
+            order: 5,
             role: 'SIGN'
         },
         {
@@ -284,12 +284,12 @@
             email: 'correo_prov_sena',
             identification: 'cc_sena',
             type: 'firma_sena',
-            order: 7,
+            order: 6,
             role: 'SIGN'
         }
     ],
     preBuildData: [],
-    name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
+    name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL V2',
     price: 5000,
     help: {
         correo: 'ejemplo@dominio.com'
@@ -310,5 +310,5 @@
         },
         noShowHeader: true
     },
-    build: 22
+    build: 4
 }

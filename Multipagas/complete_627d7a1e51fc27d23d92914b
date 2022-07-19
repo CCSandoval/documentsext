@@ -31,8 +31,15 @@
     <b>CEDULA:</b> <b name="cedula_prospecto">___________________</b>
   </p>
   
-  <p><b>HORARIO DE SERVICIO:</b> <b name="horario_servicio">____________</b></p>
-  
+  <p>
+    <b>
+      HORARIO DE SERVICIO: <b name="dia_ingreso">____________</b> a
+      <b name="dia_salida">____________</b> de
+      <b name="hora_ingreso">____________</b> a
+      <b name="hora_salida">____________</b>
+    </b>
+  </p>
+
   <p>
     <b>DIRECCIÓN:</b> <b name="direccion">________________________________</b>
   </p>
@@ -75,7 +82,7 @@
       identificado (a) como aparece al pie de su firma, quien obra en nombre y
       representación de MULTIPAGAS S.A.S. sociedad legalmente constituida con
       domicilio principal en la ciudad de Palmira., debidamente facultado por
-      ______________, circunstancias que acredita con certificado expedido por
+      la Junta de accionistas, circunstancias que acredita con certificado expedido por
       la Cámara de Comercio correspondiente que se acompaña, en adelante
       “MULTIPAGAS” y,
     </li>
@@ -701,7 +708,7 @@
   </p>
   <p>
     En constancia de lo anterior, se suscribe el presente documento en 2
-    ejemplares del mismo contenido el <span name="fecha_firma">_________________</span>
+    ejemplares del mismo contenido
   </p>
   <p>
     <b>ALIADO,</b>

@@ -1,91 +1,92 @@
 {
-    _id:ObjectId("628eb32851fc27d23d929159"),
-    config:[
+    _id: ObjectId('628eb32851fc27d23d929159'),
+    config: [
         {
-            name:'fecha',
-            type:'date',
-            description:"Seleccione la fecha en la que se diligencia el presente documento"
+            name: 'fecha',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se diligencia el presente documento'
         },
         {
-            name:'nombre_miembro',
-            type:'name',
-            description:"Ingrese el nombre del miembro"
+            name: 'nombre_miembro',
+            type: 'name',
+            description: 'Ingrese el nombre del miembro'
         },
         {
-            name:'cc_miembro',
-            type:'number',
-            description:"Ingrese el número de cédula de ciudadanía del miembro"
+            name: 'cc_miembro',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del miembro'
         },
         {
-            name:'ciudad_miembro',
-            type:'text',
-            description:"Ingrese la ciudad de residencia del miembro"
+            name: 'ciudad_miembro',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia del miembro'
         },
         {
-            name:'tipo_persona',
-            type:'clausula',
-            description:"Seleccione el tipo de persona del miembro",
-            value:'n',
-            options:[
+            name: 'tipo_persona',
+            type: 'clausula',
+            description: 'Seleccione el tipo de persona del miembro',
+            value: 'n',
+            options: [
                 {
-                    name:'Persona Natural',
-                    value:'n'
+                    name: 'Persona Natural',
+                    value: 'n'
                 },
                 {
-                    name:'Persona Jurídica',
-                    value:'j'
+                    name: 'Persona Jurídica',
+                    value: 'j'
                 }
             ]
         },
         {
-            name:'empresa_miembro',
-            type:'name',
-            description:"Ingrese el nombre de la sociedad",
-            prereq:[
+            name: 'empresa_miembro',
+            type: 'name',
+            description: 'Ingrese el nombre de la sociedad',
+            prereq: [
                 {
-                    k:'tipo_persona',
-                    v:'j'
+                    k: 'tipo_persona',
+                    v: 'j'
                 }
             ]
         },
         {
-            name:'nit_empresa',
-            type:'text',
-            description:"Ingrese el NIT de la sociedad",
-            prereq:[
+            name: 'nit_empresa',
+            type: 'text',
+            description: 'Ingrese el NIT de la sociedad',
+            prereq: [
                 {
-                    k:'tipo_persona',
-                    v:'j'
+                    k: 'tipo_persona',
+                    v: 'j'
                 }
             ]
         },
         {
-            name:'correo_miembro',
-            type:'text',
-            description:"Ingrese el correo electrónico del miembro"
-        },
+            name: 'correo_candidato',
+            type: 'text',
+            description: 'Ingrese el correo electrónico del miembro'
+        }
     ],
-    operation:[],
-    sign:[
+    operation: [],
+    sign: [
         'fecha',
         'nombre_miembro',
         'cc_miembro',
         'ciudad_miembro',
         'empresa_miembro',
         'nit_empresa',
-        'correo_miembro',
+        'correo_candidato'
     ],
-    signatureProfile:[
+    signatureProfile: [
         {
-            type:'miembro',
-            identification:'cc_miembro',
-            name:'nombre_miembro',
-            email:'correo_miembro'
-        },
+            type: 'miembro',
+            identification: 'cc_miembro',
+            name: 'nombre_miembro',
+            email: 'correo_candidato'
+        }
     ],
-    name:'ACEPTACIÓN DE CANDIDATO JUNTA DIRECTIVA',
-    preBuild:false,
-    preBuildData:[],
-    price:5000,
-    build:0
+    name: 'ACEPTACIÓN DE CANDIDATO JUNTA DIRECTIVA',
+    username: 'b21716df-8b65-47a9-8044-6d62dd5493d2',
+    preBuild: false,
+    preBuildData: [],
+    price: 5000,
+    build: 4
 }

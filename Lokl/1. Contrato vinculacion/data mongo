@@ -1,79 +1,79 @@
 {
-    _id: ObjectId("62cdc5f451fc27d23d92918f"),
-    config:[
+    _id: ObjectId('62cdc5f451fc27d23d92918f'),
+    config: [
         {
-            name:'nombre_rep_lokl',
-            type:'name',
-            description:'Ingrese el nombre del representante legal de LOKL'
+            name: 'nombre_rep_lokl',
+            type: 'name',
+            description: 'Ingrese el nombre del representante legal de LOKL'
         },
         {
-            name:'cc_rep_lokl',
-            type:'number',
-            description:'Ingrese el número de cédula del representante legal de LOKL'
+            name: 'cc_rep_lokl',
+            type: 'number',
+            description: 'Ingrese el número de cédula del representante legal de LOKL'
         },
         {
-            name:'nit_lokl',
-            type:'text',
-            description:'Ingrese el NIT de LOKL'
+            name: 'nit_lokl',
+            type: 'text',
+            description: 'Ingrese el NIT de LOKL'
         },
         {
-            name:'nombre_cliente',
-            type:'name',
-            description:'Ingrese el nombre del cliente'
+            name: 'nombre_cliente',
+            type: 'name',
+            description: 'Ingrese el nombre del cliente'
         },
         {
-            name:'cc_cliente',
-            type:'number',
-            description:'Ingrese el número de cédula del cliente'
+            name: 'cc_cliente',
+            type: 'number',
+            description: 'Ingrese el número de cédula del cliente'
         },
         {
-            name:'ciudad_cc_cliente',
-            type:'number',
-            description:'Ingrese la ciudad de ex número de cédula del cliente'
+            name: 'ciudad_cc_cliente',
+            type: 'text',
+            description: 'Ingrese la ciudad de expedición de la cédula del cliente'
         },
         {
-            name:'direccion_lokl',
-            type:'text',
-            description:'Ingrese la dirección de LOKL',
+            name: 'direccion_lokl',
+            type: 'text',
+            description: 'Ingrese la dirección de LOKL'
         },
         {
-            name:'ciudad_lokl',
-            type:'text',
-            description:'Ingrese la ciudad donde se encuentra LOKL',
+            name: 'ciudad_lokl',
+            type: 'text',
+            description: 'Ingrese la ciudad donde se encuentra LOKL'
         },
         {
-            name:'tel_lokl',
-            type:'text',
-            description:'Ingrese el teléfono del representante legal de LOKL',
+            name: 'tel_lokl',
+            type: 'phone',
+            description: 'Ingrese el teléfono del representante legal de LOKL'
         },
         {
-            name:'email_lokl',
-            type:'text',
-            description:'Ingrese el correo electrónico del representante legal de LOKL',
+            name: 'email_lokl',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del representante legal de LOKL'
         },
         {
-            name:'direccion_cliente',
-            type:'text',
-            description:'Ingrese la dirección del cliente',
+            name: 'direccion_cliente',
+            type: 'text',
+            description: 'Ingrese la dirección del cliente'
         },
         {
-            name:'ciudad_cliente',
-            type:'text',
-            description:'Ingrese la ciudad donde se encuentra el cliente',
+            name: 'ciudad_cliente',
+            type: 'text',
+            description: 'Ingrese la ciudad donde se encuentra el cliente'
         },
         {
-            name:'tel_cliente',
-            type:'text',
-            description:'Ingrese el teléfono del cliente',
+            name: 'tel_cliente',
+            type: 'phone',
+            description: 'Ingrese el teléfono del cliente'
         },
         {
-            name:'email_cliente',
-            type:'text',
-            description:'Ingrese el correo electrónico del cliente',
-        },
+            name: 'email_cliente',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del cliente'
+        }
     ],
-    operation:[],
-    sign:[
+    operation: [],
+    sign: [
         'email_lokl',
         'tel_lokl',
         'cc_rep_lokl',
@@ -81,29 +81,29 @@
         'email_cliente',
         'tel_cliente',
         'cc_cliente',
-        'nombre_cliente',
+        'nombre_cliente'
     ],
-    signatureProfile:[
+    signatureProfile: [
         {
-            email:'email_lokl',
-            phone:'tel_lokl',
-            identification:'cc_rep_lokl',
-            name:'nombre_rep_lokl',
-            type:'firma_lokl'
+            email: 'email_lokl',
+            phone: 'tel_lokl',
+            identification: 'cc_rep_lokl',
+            name: 'nombre_rep_lokl',
+            type: 'firma_lokl'
         },
         {
-            email:'email_cliente',
-            phone:'tel_cliente',
-            identification:'cc_cliente',
-            name:'nombre_cliente',
-            type:'firma_cliente'
-        },
+            email: 'email_cliente',
+            phone: 'tel_cliente',
+            identification: 'cc_cliente',
+            name: 'nombre_cliente',
+            type: 'firma_cliente'
+        }
     ],
-    name:'CONTRATO DE VINCULACIÓN A LA PLATAFORMA Y COMPRAVENTA DE LIVING SHARES',
-    build:0,
-    price:5000,
-    preFill:[],
-    preBuildData:[],
-    preBuild:false,
-    preBuildSign:true
+    name: 'CONTRATO DE VINCULACIÓN A LA PLATAFORMA Y COMPRAVENTA DE LIVING SHARES',
+    build: 1,
+    price: 5000,
+    preFill: [],
+    preBuildData: [],
+    preBuild: false,
+    username: '72c13b90-3699-4bf9-adfb-72a0f7488e73'
 }

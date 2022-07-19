@@ -67,9 +67,26 @@
             type: 'text'
         },
         {
+            description: 'Ingrese el número de la convocatoria',
+            name: 'numero_convocatoria',
+            type: 'text',
+            help: 'number'
+        },
+        {
+            description: 'Ingrese el número de acta',
+            name: 'numero_acta',
+            type: 'text',
+            help: 'number'
+        },
+        {
+            description: 'Seleccione la fecha del acta',
+            name: 'fecha_acta',
+            type: 'date'
+        },
+        {
             name: 'cdp1_number',
             description: 'Ingrese el numero del Certificado de Disponibilidad Presupuestal',
-            type: 'number'
+            type: 'text'
         },
         {
             name: 'cdp2',
@@ -90,7 +107,7 @@
         {
             name: 'cdp2_number',
             description: 'Ingrese el segundo numero del Certificado de Disponibilidad Presupuestal',
-            type: 'number',
+            type: 'text',
             prereq: [
                 {
                     k: 'cdp2',
@@ -177,7 +194,7 @@
         },
         {
             name: 'nombre_enterritorio',
-            value: 'CAROLINA OTILIA MONTEALEGRE CASTILLO'
+            value: 'Juan Guillermo Ortiz Juliao'
         },
         {
             name: 'cc_enterritorio',
@@ -185,7 +202,7 @@
         },
         {
             name: 'correo_enterritorio',
-            value: 'cmonteal@enterritorio.gov.co'
+            value: 'jortiz4@enterritorio.gov.co'
         },
         {
             name: 'nombre_vobo_sena',
@@ -197,7 +214,7 @@
         },
         {
             name: 'nombre_reviso_enterritorio',
-            value: 'Mónica Duarte Ortiz'
+            value: 'Lina Alejandra Carreño Arias'
         },
         {
             name: 'proyecto_sena_cc',
@@ -237,56 +254,16 @@
         },
         {
             name: 'reviso_enterritorio_email',
-            value: 'mduarte1@enterritorio.gov.co'
+            value: 'lcarreno@enterritorio.gov.co'
         }
     ],
     signatureProfile: [
-        {
-            name: 'nombre_primer_beneficiario',
-            email: 'correo_beneficiario_1',
-            identification: 'cc_beneficiario_1|ce_beneficiario_1|pa_beneficiario_1',
-            type: 'firma_beneficiario_1',
-            order: 0,
-            role: 'SIGN'
-        },
-        {
-            name: 'nombre_proyecto_sena',
-            identification: 'proyecto_sena_cc',
-            email: 'proyecto_sena_email',
-            type: 'proyecto_sena',
-            order: 1,
-            role: 'SIGN'
-        },
-        {
-            name: 'nombre_vobo_sena',
-            identification: 'vobo_sena_cc',
-            email: 'vobo_sena_email',
-            type: 'vobo_sena',
-            order: 2,
-            role: 'SIGN'
-        },
-        {
-            name: 'nombre_reviso_sena',
-            identification: 'reviso_sena_cc',
-            email: 'reviso_sena_email',
-            type: 'reviso_sena',
-            order: 3,
-            role: 'SIGN'
-        },
-        {
-            name: 'nombre_sena',
-            identification: 'cc_sena',
-            email: 'correo_sena',
-            type: 'firma_sena',
-            order: 4,
-            role: 'SIGN'
-        }
         {
             name: 'nombre_elaboro_enterritorio',
             identification: 'elaboro_enterritorio_cc',
             email: 'elaboro_enterritorio_email',
             type: 'elaboro_enterritorio',
-            order: 5,
+            order: 0,
             role: 'SIGN'
         },
         {
@@ -294,7 +271,7 @@
             identification: 'reviso_enterritorio_cc',
             email: 'reviso_enterritorio_email',
             type: 'reviso_enterritorio',
-            order: 6,
+            order: 1,
             role: 'SIGN'
         },
         {
@@ -302,14 +279,54 @@
             identification: 'cc_enterritorio',
             email: 'correo_enterritorio',
             type: 'firma_enterritorio',
-            order: 7,
+            order: 2,
             role: 'SIGN'
         },
+        {
+            name: 'nombre_proyecto_sena',
+            identification: 'proyecto_sena_cc',
+            email: 'proyecto_sena_email',
+            type: 'proyecto_sena',
+            order: 3,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_vobo_sena',
+            identification: 'vobo_sena_cc',
+            email: 'vobo_sena_email',
+            type: 'vobo_sena',
+            order: 4,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_reviso_sena',
+            identification: 'reviso_sena_cc',
+            email: 'reviso_sena_email',
+            type: 'reviso_sena',
+            order: 5,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_sena',
+            identification: 'cc_sena',
+            email: 'correo_sena',
+            type: 'firma_sena',
+            order: 6,
+            role: 'SIGN'
+        },
+        {
+            name: 'nombre_primer_beneficiario',
+            email: 'correo_beneficiario_1',
+            identification: 'cc_beneficiario_1|ce_beneficiario_1|pa_beneficiario_1',
+            type: 'firma_beneficiario_1',
+            order: 7,
+            role: 'SIGN'
+        }
     ],
     company: ObjectId('61f08e3d69634500090350d4'),
-    name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL',
+    name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL V2',
     price: 5000,
-    build: 1,
+    build: 2,
     preBuild: false,
     custom: {
         footer: {
