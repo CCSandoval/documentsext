@@ -31,40 +31,6 @@
             value: 'int'
         },
         {
-            description: 'Seleccione la obra o labor contratada para INTEEGRA S.A.S.',
-            name: 'servicio',
-            options: [
-                {
-                    name: 'COMCEL S.A. (antes TELMEX COLOMBIA S.A.)',
-                    value: 'cla'
-                },
-                {
-                    name: 'ZTE CORPORATION SUCURSAL COLOMBIA',
-                    value: 'zte'
-                },
-                {
-                    name: 'DIRECTV COLOMBIA LTDA',
-                    value: 'dir'
-                },
-                {
-                    name: 'FONDO ÚNICO DE TEGNOLOGÍAS DE LA INFORMACIÓN Y LAS COMUNICACIONES',
-                    value: 'ita'
-                },
-                {
-                    name: 'Otro Si COMCEL S.A. (antes TELMEX COLOMBIA S.A.)',
-                    value: 'clase'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'empresa',
-                    v: 'int'
-                }
-            ],
-            type: 'clausula',
-            value: 'cla'
-        },
-        {
             description: 'Seleccione la obra o labor contratada para NETCOL S.A.S.',
             name: 'net',
             options: [

@@ -68,9 +68,20 @@
         },
         {
             description: 'Ingrese el número de la convocatoria',
-            name: 'numero_convocatoria',
+            name: 'num_convocatoria',
             type: 'text',
             help: 'number'
+        },
+        {
+            description: 'Ingrese el valor de la convocatoria',
+            name: 'valor_convocatoria',
+            type: 'currency',
+            help: 'number'
+        },
+        {
+            description: 'Seleccione la fecha de cierre de la convocatoria',
+            name: 'fecha_cierre_convocatoria',
+            type: 'date',
         },
         {
             description: 'Ingrese el número de acta',
@@ -326,7 +337,7 @@
     company: ObjectId('61f08e3d69634500090350d4'),
     name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL V2',
     price: 5000,
-    build: 2,
+    build: 6,
     preBuild: false,
     custom: {
         footer: {

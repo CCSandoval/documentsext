@@ -1,0 +1,109 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #e7e6e6;
+  }
+</style>
+
+<p>
+  <span name="ciudad">___________</span> <span name="fecha">____________</span>
+</p>
+
+<p>
+  Señores <br />
+  <b>CÁMARA DE COMERCIO DE MEDELLÍN PARA ANTIOQUIA</b>
+</p>
+
+<p>
+  Asunto: <b>Solicitud de modificación de lista Junta Directiva 2023 - 2026</b>
+</p>
+
+<p>
+  <span name="nombres_presentante">___________</span> identificado(a) con la
+  cédula de ciudadanía <span name="cc_presentante">___________</span>, solicito
+  ante el canal virtual de la Secretaría General de la Cámara de Comercio de
+  Medellín para Antioquia, la modificación de la lista de candidatos a la Junta
+  Directiva de la Cámara de Comercio de Medellín para Antioquia, para el periodo
+  2023 – 2026, presentada previamente.
+</p>
+
+<table class="table_class">
+  <tr>
+    <th>Número de renglón a modificar</th>
+    <th>PRINCIPAL</th>
+    <th>SUPLENTE</th>
+  </tr>
+  <tr>
+    <td><span name="renglon_modificado_1">____________</span></td>
+    <td><span name="info_principal_1">___________</span></td>
+    <td><span name="info_suplente_1">___________</span></td>
+  </tr>
+  <tr>
+    <td><span name="renglon_modificado_2">____________</span></td>
+    <td><span name="info_principal_2">___________</span></td>
+    <td><span name="info_suplente_2">___________</span></td>
+  </tr>
+  <tr>
+    <td><span name="renglon_modificado_3">____________</span></td>
+    <td><span name="info_principal_3">___________</span></td>
+    <td><span name="info_suplente_3">___________</span></td>
+  </tr>
+  <span name="info_4_n" hidden></span>
+  <span name="info_4_s">
+    <tr>
+      <td><span name="renglon_modificado_4">____________</span></td>
+      <td><span name="info_principal_4">___________</span></td>
+      <td><span name="info_suplente_4">___________</span></td>
+    </tr>
+    <span name="info_5_n" hidden></span>
+    <span name="info_5_s">
+      <tr>
+        <td><span name="renglon_modificado_5">____________</span></td>
+        <td><span name="info_principal_5">___________</span></td>
+        <td><span name="info_suplente_5">___________</span></td>
+      </tr>
+      <span name="info_6_n" hidden></span>
+      <span name="info_6_s">
+        <tr>
+          <td><span name="renglon_modificado_6">____________</span></td>
+          <td><span name="info_principal_6">___________</span></td>
+          <td><span name="info_suplente_6">___________</span></td>
+        </tr>
+        <span name="info_7_n" hidden></span>
+        <span name="info_7_s">
+          <tr>
+            <td><span name="renglon_modificado_7">____________</span></td>
+            <td><span name="info_principal_7">___________</span></td>
+            <td><span name="info_suplente_7">___________</span></td>
+          </tr>
+          <span name="info_8_n" hidden></span>
+          <span name="info_8_s">
+            <tr>
+              <td><span name="renglon_modificado_8">____________</span></td>
+              <td><span name="info_principal_8">___________</span></td>
+              <td><span name="info_suplente_8">___________</span></td>
+            </tr>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</table>
+
+<p>
+  Nombre de quien presenta la lista
+  <span name="nombres_presentante">___________</span> <br />
+  C.C. <span name="cc_presentante">___________</span> <br />
+  Correo Electrónico: <span name="correo_presentante">___________</span> <br />
+  Número de contacto: <span name="cell_presentante">___________</span><br />
+  Nombre del paquete <span name="package_name">___________</span>
+</p>

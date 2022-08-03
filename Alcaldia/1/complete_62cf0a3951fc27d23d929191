@@ -1,0 +1,597 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+  .red_text {
+    color: red;
+    font-size: 1.3rem;
+  }
+</style>
+
+<table class="table_class">
+  <tr>
+    <th><img src="bello" alt="Municipio de bello" /></th>
+    <th class="red_text">
+      DECLARACIÓN BIMESTRAL DE RETENCIÓN Y AUTORETENCIÓN DEL IMPUESTO DE
+      RETENCIÓN EN LA FUENTE DE INDUSTRIA Y COMERCIO <br />
+      NIT: 890980112-1
+    </th>
+    <th><img src="certificados" alt="certificados" /></th>
+  </tr>
+</table>
+
+<table class="table_class">
+  <tr style="text-align: center">
+    <td rowspan="2">Señale el Bimestre declarado</td>
+    <td>ENE-FEB.</td>
+    <td>MAR-ABR.</td>
+    <td>MAY-JUN.</td>
+    <td>JUL-AGOS.</td>
+    <td>SEPT-OCT.</td>
+    <td>NOV-DIC.</td>
+  </tr>
+  <tr style="text-align: center">
+    <td>
+      <span name="bimestre_declarado_ene-feb">[x]</span>
+      <span name="bimestre_declarado_mar-abr" hidden>[_]</span>
+      <span name="bimestre_declarado_may-jun" hidden>[_]</span>
+      <span name="bimestre_declarado_jul-agos" hidden>[_]</span>
+      <span name="bimestre_declarado_sept-oct" hidden>[_]</span>
+      <span name="bimestre_declarado_nov-dic" hidden>[_]</span>
+    </td>
+    <td>
+      <span name="bimestre_declarado_ene-feb">[_]</span>
+      <span name="bimestre_declarado_mar-abr" hidden>[x]</span>
+      <span name="bimestre_declarado_may-jun" hidden>[_]</span>
+      <span name="bimestre_declarado_jul-agos" hidden>[_]</span>
+      <span name="bimestre_declarado_sept-oct" hidden>[_]</span>
+      <span name="bimestre_declarado_nov-dic" hidden>[_]</span>
+    </td>
+    <td>
+      <span name="bimestre_declarado_ene-feb">[_]</span>
+      <span name="bimestre_declarado_mar-abr" hidden>[_]</span>
+      <span name="bimestre_declarado_may-jun" hidden>[x]</span>
+      <span name="bimestre_declarado_jul-agos" hidden>[_]</span>
+      <span name="bimestre_declarado_sept-oct" hidden>[_]</span>
+      <span name="bimestre_declarado_nov-dic" hidden>[_]</span>
+    </td>
+    <td>
+      <span name="bimestre_declarado_ene-feb">[_]</span>
+      <span name="bimestre_declarado_mar-abr" hidden>[_]</span>
+      <span name="bimestre_declarado_may-jun" hidden>[_]</span>
+      <span name="bimestre_declarado_jul-agos" hidden>[x]</span>
+      <span name="bimestre_declarado_sept-oct" hidden>[_]</span>
+      <span name="bimestre_declarado_nov-dic" hidden>[_]</span>
+    </td>
+    <td>
+      <span name="bimestre_declarado_ene-feb">[_]</span>
+      <span name="bimestre_declarado_mar-abr" hidden>[_]</span>
+      <span name="bimestre_declarado_may-jun" hidden>[_]</span>
+      <span name="bimestre_declarado_jul-agos" hidden>[_]</span>
+      <span name="bimestre_declarado_sept-oct" hidden>[x]</span>
+      <span name="bimestre_declarado_nov-dic" hidden>[_]</span>
+    </td>
+    <td>
+      <span name="bimestre_declarado_ene-feb">[_]</span>
+      <span name="bimestre_declarado_mar-abr" hidden>[_]</span>
+      <span name="bimestre_declarado_may-jun" hidden>[_]</span>
+      <span name="bimestre_declarado_jul-agos" hidden>[_]</span>
+      <span name="bimestre_declarado_sept-oct" hidden>[_]</span>
+      <span name="bimestre_declarado_nov-dic" hidden>[x]</span>
+    </td>
+  </tr>
+</table>
+
+<table class="table_class">
+  <tr>
+    <th colspan="3">INFORMACIÓN GENERAL</th>
+  </tr>
+  <tr>
+    <td>
+      1. Declaración Inicial
+      <span name="dec_inic_n">[_]</span>
+      <span name="dec_inic_s" hidden>[x]</span>
+    </td>
+    <td>
+      Antes de emplazamiento
+      <span name="dec_inic_n">[_]</span>
+      <span name="dec_inic_s" hidden>
+        <span name="emplazamiento_antes" hidden>[x]</span>
+        <span name="emplazamiento_despues" hidden>[_]</span>
+      </span>
+      &nbsp; &nbsp; &nbsp; Después de emplazamiento
+      <span name="dec_inic_n">[_]</span>
+      <span name="dec_inic_s" hidden>
+        <span name="emplazamiento_antes" hidden>[_]</span>
+        <span name="emplazamiento_despues" hidden>[x]</span>
+      </span>
+    </td>
+    <td>
+      2. Año
+      <span name="año">____________________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="2">
+      Corrección
+      <span name="correccion_n">[_]</span>
+      <span name="correccion_s" hidden>[x]</span>
+    </td>
+    <td name="correccion_s" hidden>
+      Código de la declaración a corregir
+      <span name="codigo">____________________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      3. Nombres y Apellidos ó Razón Social
+      <span name="nombres_razon"> ____________________________ </span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      4. Identificación
+      <span name="tipo_id_cc">
+        <span name="numero_cc">____________________________</span>
+      </span>
+      <span name="tipo_id_ti" hidden>
+        <span name="numero_ti">____________________________</span>
+      </span>
+      <span name="tipo_id_nit" hidden>
+        <span name="numero_nit">____________________________</span>
+      </span>
+    </td>
+  </tr>
+  <tr style="text-align: center">
+    <td>
+      C.C.:
+      <span name="tipo_id_cc">[x]</span>
+      <span name="tipo_id_ti" hidden>[_]</span>
+      <span name="tipo_id_nit" hidden>[_]</span>
+    </td>
+    <td>
+      T.I.:
+      <span name="tipo_id_cc">[_]</span>
+      <span name="tipo_id_ti" hidden>[x]</span>
+      <span name="tipo_id_nit" hidden>[_]</span>
+    </td>
+    <td>
+      NIT:
+      <span name="tipo_id_cc">[_]</span>
+      <span name="tipo_id_ti" hidden>[_]</span>
+      <span name="tipo_id_nit" hidden>[x]</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      5. Teléfono
+      <span name="telefono">____________________________</span>
+    </td>
+    <td colspan="2">
+      6. Correo electrónico
+      <span name="email">____________________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td colspan="3">
+      7. Dirección del Retenedor
+      <span name="dir_retenedor">____________________________</span>
+    </td>
+  </tr>
+</table>
+
+<table class="table_class">
+  <tr>
+    <th colspan="5">
+      RETENCIONES A TÍTULO DE IMPUESTO <br />
+      DE INDUSTRIA Y COMERCIO
+    </th>
+  </tr>
+  <tr>
+    <td style="text-align: center"><b>ACTIVIDAD</b></td>
+    <td style="text-align: center"><b>BASE</b></td>
+    <td style="text-align: center"><b>TARIFA (MILLAJE)</b></td>
+    <td style="text-align: center"><b>VALOR</b></td>
+  </tr>
+  <tr>
+    <td>
+      <span name="tipo_actividad_1_rete">
+        <span name="rete_actividad_1_7">
+          0520 - Extracción de carbón lignito.
+        </span>
+        <span name="rete_actividad_1_10" hidden>
+          0910 - Actividades de apoyo para la extracción de petróleo y de gas
+          natural.
+        </span>
+        <span name="rete_actividad_1_6" hidden>
+          1011 - Procesamiento y conservación de carne y productos cárnicos.
+        </span>
+        <span name="rete_actividad_1_3" hidden>
+          1311 - Preparación e hilatura de fibras textiles.
+        </span>
+        <span name="rete_actividad_1_5" hidden>
+          1312 - Tejeduría de productos textiles.
+        </span>
+        <span name="rete_actividad_1_8" hidden>
+          4520 - Mantenimiento y reparación de vehículos automotores.
+        </span>
+      </span>
+      <span name="tipo_actividad_1_auto" hidden>
+        <span name="auto_actividad_1_7">
+          0520 - Extracción de carbón lignito.
+        </span>
+        <span name="auto_actividad_1_10" hidden>
+          0910 - Actividades de apoyo para la extracción de petróleo y de gas
+          natural.
+        </span>
+        <span name="auto_actividad_1_6" hidden>
+          1011 - Procesamiento y conservación de carne y productos cárnicos.
+        </span>
+        <span name="auto_actividad_1_3" hidden>
+          1311 - Preparación e hilatura de fibras textiles.
+        </span>
+        <span name="auto_actividad_1_5" hidden>
+          1312 - Tejeduría de productos textiles.
+        </span>
+        <span name="auto_actividad_1_8" hidden>
+          4520 - Mantenimiento y reparación de vehículos automotores.
+        </span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_actividad_1_rete">
+        <span name="rete_base_act_1">____________________________</span>
+      </span>
+      <span name="tipo_actividad_1_auto" hidden>
+        <span name="auto_base_act_1">____________________________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_actividad_1_rete">
+        <span name="rete_actividad_1_7">7</span>
+        <span name="rete_actividad_1_10" hidden>10</span>
+        <span name="rete_actividad_1_6" hidden>6</span>
+        <span name="rete_actividad_1_3" hidden>3</span>
+        <span name="rete_actividad_1_5" hidden>5</span>
+        <span name="rete_actividad_1_8" hidden>8</span>
+      </span>
+      <span name="tipo_actividad_1_auto" hidden>
+        <span name="auto_actividad_1_7">7</span>
+        <span name="auto_actividad_1_10" hidden>10</span>
+        <span name="auto_actividad_1_6" hidden>6</span>
+        <span name="auto_actividad_1_3" hidden>3</span>
+        <span name="auto_actividad_1_5" hidden>5</span>
+        <span name="auto_actividad_1_8" hidden>8</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_actividad_1_rete">
+        <span name="valor_act_1_rete">____________________________</span>
+      </span>
+      <span name="tipo_actividad_1_auto" hidden>
+        <span name="valor_act_1_auto">____________________________</span>
+      </span>
+    </td>
+    <td>
+      <p>
+        <span name="tipo_actividad_1_rete">[x]</span>
+        <span name="tipo_actividad_1_auto" hidden>[_]</span> Rete
+      </p>
+      <p>
+        <span name="tipo_actividad_1_rete">[_]</span>
+        <span name="tipo_actividad_1_auto" hidden>[x]</span>
+        Auto
+      </p>
+    </td>
+  </tr>
+  <span name="segunda_actividad_n"></span>
+  <tr name="segunda_actividad_s" hidden>
+    <td>
+      <span name="tipo_actividad_2_rete">
+        <span name="rete_actividad_2_7">
+          0520 - Extracción de carbón lignito.
+        </span>
+        <span name="rete_actividad_2_10" hidden>
+          0910 - Actividades de apoyo para la extracción de petróleo y de gas
+          natural.
+        </span>
+        <span name="rete_actividad_2_6" hidden>
+          1011 - Procesamiento y conservación de carne y productos cárnicos.
+        </span>
+        <span name="rete_actividad_2_3" hidden>
+          1311 - Preparación e hilatura de fibras textiles.
+        </span>
+        <span name="rete_actividad_2_5" hidden>
+          1312 - Tejeduría de productos textiles.
+        </span>
+        <span name="rete_actividad_2_8" hidden>
+          4520 - Mantenimiento y reparación de vehículos automotores.
+        </span>
+      </span>
+      <span name="tipo_actividad_2_auto">
+        <span name="auto_actividad_2_7">
+          0520 - Extracción de carbón lignito.
+        </span>
+        <span name="auto_actividad_2_10" hidden>
+          0910 - Actividades de apoyo para la extracción de petróleo y de gas
+          natural.
+        </span>
+        <span name="auto_actividad_2_6" hidden>
+          1011 - Procesamiento y conservación de carne y productos cárnicos.
+        </span>
+        <span name="auto_actividad_2_3" hidden>
+          1311 - Preparación e hilatura de fibras textiles.
+        </span>
+        <span name="auto_actividad_2_5" hidden>
+          1312 - Tejeduría de productos textiles.
+        </span>
+        <span name="auto_actividad_2_8" hidden>
+          4520 - Mantenimiento y reparación de vehículos automotores.
+        </span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_actividad_2_rete">
+        <span name="rete_base_act_2">____________________________</span>
+      </span>
+      <span name="tipo_actividad_2_auto" hidden>
+        <span name="auto_base_act_2">____________________________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_actividad_2_rete">
+        <span name="rete_actividad_2_7">7</span>
+        <span name="rete_actividad_2_10" hidden>10</span>
+        <span name="rete_actividad_2_6" hidden>6</span>
+        <span name="rete_actividad_2_3" hidden>3</span>
+        <span name="rete_actividad_2_5" hidden>5</span>
+        <span name="rete_actividad_2_8" hidden>8</span>
+      </span>
+      <span name="tipo_actividad_2_auto" hidden>
+        <span name="auto_actividad_2_7">7</span>
+        <span name="auto_actividad_2_10" hidden>10</span>
+        <span name="auto_actividad_2_6" hidden>6</span>
+        <span name="auto_actividad_2_3" hidden>3</span>
+        <span name="auto_actividad_2_5" hidden>5</span>
+        <span name="auto_actividad_2_8" hidden>8</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_actividad_2_rete">
+        <span name="valor_act_2_rete">____________________________</span>
+      </span>
+      <span name="tipo_actividad_2_auto" hidden>
+        <span name="valor_act_2_auto">____________________________</span>
+      </span>
+    </td>
+    <td>
+      <p>
+        <span name="tipo_actividad_2_rete">[x]</span>
+        <span name="tipo_actividad_2_auto" hidden>[_]</span> Rete
+      </p>
+      <p>
+        <span name="tipo_actividad_2_rete">[_]</span>
+        <span name="tipo_actividad_2_auto" hidden>[x]</span>
+        Auto
+      </p>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>
+        TOTAL RETENCIONES A TÍTULO DEL IMPUESTO DE RETENCIÓN EN LA FUENTE DE
+        INDUSTRIA Y COMERCIO
+      </b>
+    </td>
+    <td><span name="base_retenciones">____________________________</span></td>
+    <td></td>
+    <td><span name="valor_retenciones">____________________________</span></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>
+      <b>
+        TOTAL AUTORRETENCIONES A TÍTULO DEL IMPUESTO DE RETENCIÓN EN LA FUENTE
+        DE INDUSTRIA Y COMERCIO
+      </b>
+    </td>
+    <td>
+      <span name="base_autorretenciones">____________________________</span>
+    </td>
+    <td></td>
+    <td>
+      <span name="valor_autorretenciones">____________________________</span>
+    </td>
+    <td></td>
+  </tr>
+</table>
+
+<table class="table_class">
+  <tr>
+    <th colspan="2">LIQUIDACIÓN</th>
+  </tr>
+  <tr>
+    <th colspan="2">APROXIME LOS VALORES AL MÚLTIPLO DE MIL MÁS CERCANO</th>
+  </tr>
+  <tr>
+    <td><b>Base de las Retenciones:</b></td>
+    <td><span name="base_retenciones">____________________________</span></td>
+  </tr>
+  <tr>
+    <td>Total Retenciones Practicadas:</td>
+    <td><span name="valor_retenciones">____________________________</span></td>
+  </tr>
+  <tr>
+    <td><b>Base de las Autoretenciones:</b></td>
+    <td>
+      <span name="base_autorretenciones">____________________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Autorretencion de Industria y Comercio:</td>
+    <td>
+      <span name="valor_autorretenciones">____________________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Autorretencion Avisos y Tableros: ¿TIENE AVISOS?
+      <span name="tiene_avisos_s" hidden>[x]</span>
+      <span name="tiene_avisos_n">[_]</span>SI
+      <span name="tiene_avisos_n">[x]</span>
+      <span name="tiene_avisos_s" hidden>[_]</span>NO
+    </td>
+    <td>
+      <span name="tiene_avisos_s" hidden>
+        <span name="valor_avisos">____________________________</span>
+      </span>
+      <span name="tiene_avisos_n">0</span>
+    </td>
+  </tr>
+  <tr>
+    <td>Autorretencion Sobretasa Bomberil:</td>
+    <td>
+      <span name="tiene_avisos_s" hidden>
+        <span name="sobretasa_con_avisos">____________________________</span>
+      </span>
+      <span name="tiene_avisos_n">
+        <span name="sobretasa_sin_avisos">____________________________</span>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td>Total retenciones y/o autorretenciones practicadas:</td>
+    <td>
+      <span name="tiene_avisos_s" hidden>
+        <span name="total_auto_rete_con_avisos">
+          ____________________________
+        </span>
+      </span>
+      <span name="tiene_avisos_n">
+        <span name="total_auto_rete_sin_avisos">
+          ____________________________
+        </span>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Total a pagar:</b></td>
+    <td>
+      <span name="tiene_avisos_s" hidden>
+        <span name="total_auto_rete_con_avisos">
+          ____________________________
+        </span>
+      </span>
+      <span name="tiene_avisos_n">
+        <span name="total_auto_rete_sin_avisos">
+          ____________________________
+        </span>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td><b>Sanciones:</b></td>
+    <td><span>____________________________</span></td>
+  </tr>
+  <tr>
+    <td>Total saldo a cargo:</td>
+    <td><span>____________________________</span></td>
+  </tr>
+  <tr>
+    <td>Valor a pagar:</td>
+    <td><span>____________________________</span></td>
+  </tr>
+  <tr>
+    <td><b>Interes de mora:</b></td>
+    <td><span>____________________________</span></td>
+  </tr>
+  <tr>
+    <td><b>Total a pagar:</b></td>
+    <td><span>____________________________</span></td>
+  </tr>
+</table>
+
+<table class="table_class">
+  <tr>
+    <th colspan="2">
+      DECLARO QUE LA INFORMACIÓN CONSIGNADA <br />
+      ES CORRECTA Y AJUSTADA A LA NORMATIVIDAD LEGAL
+    </th>
+  </tr>
+  <tr>
+    <td>
+      Firma del Representante Legal:
+      <div id="firma_rep_1" name="firma_rep" class="sign_margin"></div>
+    </td>
+    <td>
+      Fecha de presentación
+      <br />
+      <span name="fecha_presentacion">____________________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Nombres y Apellidos
+      <br />
+      <span name="nombres_razon">____________________________</span>
+    </td>
+    <td>
+      Nombre del Funcionario: <br />
+      <span name="">____________________________</span>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      C.C. O T.I No:
+      <br />
+      <span name="tipo_id_cc">
+        <span name="numero_cc">____________________________</span>
+      </span>
+      <span name="tipo_id_ti" hidden>
+        <span name="numero_ti">____________________________</span>
+      </span>
+    </td>
+    <td>
+      Firma del Representante Legal:
+      <div id="firma_rep_2" name="firma_rep" class="sign_margin"></div>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      Firma del Representante Legal:
+      <div id="firma_rep_3" name="firma_rep" class="sign_margin"></div>
+    </td>
+    <td rowspan="2">Espacio Reservado Para Tesorería</td>
+  </tr>
+  <tr>
+    <td>
+      Nombre Completo:
+      <span name="nombres_razon">____________________________</span><br />
+      C.C. O C.E. No. <span name="">____________________________</span><br />
+      T.P. No. <span name="">____________________________</span><br />
+    </td>
+  </tr>
+  <tr>
+    <td style="text-align: center" colspan="3">
+      1. Si requiere de espacios adicionales, utilice anexos con los mismos
+      datos del formulario.
+      <br />2. Este formulario es de distribución gratuita, debe ser presentado
+      en la Tesorería Municipal. <br />3. Este formulario debe ser radicado en
+      la Dirección Administrativa de Rentas <br />4. Los agentes retenedores
+      deberán expedir anualmente un certificado de retención, de conformidad con
+      el Artículo 381 del Estatuto Tributario Nacional. <br />5.Cuenta donde se
+      debe consignar RETEICA - BANCO DA VIVIENDA: N?0375 70218901 (CUENTA DE
+      AHORROS).
+    </td>
+  </tr>
+</table>

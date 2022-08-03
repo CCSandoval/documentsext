@@ -1,0 +1,127 @@
+{
+    _id: ObjectId('62ddbf7851fc27d23d92919b'),
+    config: [
+        {
+            name: 'nombre_trabajador',
+            type: 'name',
+            description: 'Ingrese el nombre del trabajador'
+        },
+        {
+            name: 'ciudad_domicilio',
+            type: 'name',
+            description: 'Ingrese la ciudad de domicilio del trabajador'
+        },
+        {
+            name: 'cc_trabajador',
+            type: 'number',
+            description: 'Ingrese la cédula de ciudadanía del trabajador'
+        },
+        {
+            name: 'cargo_viejo',
+            type: 'text',
+            description: 'Ingrese el cargo anterior del trabajador'
+        },
+        {
+            name: 'cargo_nuevo',
+            type: 'text',
+            description: 'Ingrese el cargo nuevo del trabajador'
+        },
+        {
+            name: 'salario_viejo',
+            type: 'currency',
+            description: 'Ingrese el salario anterior del trabajador'
+        },
+        {
+            name: 'salario_nuevo',
+            type: 'currency',
+            description: 'Ingrese el salario nuevo del trabajador'
+        },
+        {
+            name: 'bono_prestacional',
+            type: 'currency',
+            description: 'Ingrese el valor del bono no prestacional'
+        },
+        {
+            name: 'valor_quincenas',
+            type: 'currency',
+            description: 'Ingrese el valor de las quincenas para el bono no prestacional'
+        },
+        {
+            name: 'fecha_bono',
+            type: 'date',
+            description: 'Seleccione la fecha a partir de la cual el bono no prestacional será efectivo'
+        },
+        {
+            name: 'ciudad_firma',
+            type: 'text',
+            description: 'Ingrese la ciudad de firma'
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha de firma'
+        },
+        {
+            name: 'correo_trabajador',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del trabajador'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_trabajador',
+        'cc_trabajador',
+        'correo_trabajador'
+    ],
+    preFill: [
+        {
+            name: 'nombre_empleador',
+            value: 'MILENA CASTILLO'
+        },
+        {
+            name: 'cc_empleador',
+            value: '53159805'
+        },
+        {
+            name: 'correo_empleador',
+            value: 'ccsandovalt@gmail.com'
+        },
+        {
+            name: 'nombre_jefe',
+            value: 'JEFE AREA'
+        },
+        {
+            name: 'cc_jefe',
+            value: '1111234123'
+        },
+        {
+            name: 'correo_jefe',
+            value: 'cristian@auco.ai'
+        }
+    ],
+    signatureProfile: [
+        {
+            type: 'firma_trabajador',
+            name: 'nombre_trabajador',
+            identification: 'cc_trabajador',
+            email: 'correo_trabajador'
+        },
+        {
+            type: 'firma_empleador',
+            name: 'nombre_empleador',
+            identification: 'cc_empleador',
+            email: 'correo_empleador'
+        },
+        {
+            type: 'firma_jefe',
+            name: 'nombre_jefe',
+            identification: 'cc_jefe',
+            email: 'correo_jefe'
+        }
+    ],
+    name: 'OTROSÍ AL CONTRATO',
+    preBuild: false,
+    preBuildData: [],
+    price: 5000,
+    build: 2
+}

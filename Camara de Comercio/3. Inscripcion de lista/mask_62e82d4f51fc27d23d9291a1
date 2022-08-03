@@ -1,0 +1,297 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+    background-color: #e7e6e6;
+  }
+</style>
+
+<p>
+  <span name="ciudad">___________</span> <span name="fecha">____________</span>
+</p>
+
+<p>
+  Señores <br />
+  <b>CÁMARA DE COMERCIO DE MEDELLÍN PARA ANTIOQUIA</b>
+</p>
+
+<p>
+  Asunto: <b>Solicitud de inscripción de lista Junta Directiva 2023 - 2026</b>
+</p>
+
+<p>
+  <span name="nombres_presentante">___________</span> identificado(a) con la
+  cédula de ciudadanía <span name="cc_presentante">___________</span>, solicito
+  ante el canal virtual de la Secretaría General de la Cámara de Comercio de
+  Medellín para Antioquia, la inscripción de la siguiente lista de candidatos a
+  la Junta Directiva de la Cámara de Comercio de Medellín para Antioquia, para
+  el periodo 2023 – 2026.
+</p>
+
+<table class="table_class">
+  <tr>
+    <th>Número de renglón</th>
+    <th>PRINCIPALES</th>
+    <th>SUPLENTES</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td>
+      <span name="tipo_persona_principal_1_n">
+        Nombre <span name="nombre_principal_1">_____________</span> <br />
+        C.C. <span name="cc_principal_1">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_1_j" hidden>
+        Razón Social <span name="razon_principal_1">_____________</span> <br />
+        NIT <span name="nit_principal_1">_____________</span> <br />
+        Representante Legal
+        <span name="nombre_principal_1">_____________</span> <br />
+        C.C. <span name="cc_principal_1">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_1_n">
+        Nombre <span name="nombre_suplente_1">_____________</span> <br />
+        C.C. <span name="cc_suplente_1">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_1_j" hidden>
+        Razón Social <span name="razon_suplente_1">_____________</span> <br />
+        NIT <span name="nit_suplente_1">_____________</span> <br />
+        Representante Legal <span name="nombre_suplente_1">_____________</span>
+        <br />
+        C.C. <span name="cc_suplente_1">_____________</span>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td>2</td>
+    <td>
+      <span name="tipo_persona_principal_2_n">
+        Nombre <span name="nombre_principal_2">_____________</span> <br />
+        C.C. <span name="cc_principal_2">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_2_j" hidden>
+        Razón Social <span name="razon_principal_2">_____________</span> <br />
+        NIT <span name="nit_principal_2">_____________</span> <br />
+        Representante Legal
+        <span name="nombre_principal_2">_____________</span> <br />
+        C.C. <span name="cc_principal_2">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_2_n">
+        Nombre <span name="nombre_suplente_2">_____________</span> <br />
+        C.C. <span name="cc_suplente_2">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_2_j" hidden>
+        Razón Social <span name="razon_suplente_2">_____________</span> <br />
+        NIT <span name="nit_suplente_2">_____________</span> <br />
+        Representante Legal <span name="nombre_suplente_2">_____________</span>
+        <br />
+        C.C. <span name="cc_suplente_2">_____________</span>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td>3</td>
+    <td>
+      <span name="tipo_persona_principal_3_n">
+        Nombre <span name="nombre_principal_3">_____________</span> <br />
+        C.C. <span name="cc_principal_3">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_3_j" hidden>
+        Razón Social <span name="razon_principal_3">_____________</span> <br />
+        NIT <span name="nit_principal_3">_____________</span> <br />
+        Representante Legal
+        <span name="nombre_principal_3">_____________</span> <br />
+        C.C. <span name="cc_principal_3">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_3_n">
+        Nombre <span name="nombre_suplente_3">_____________</span> <br />
+        C.C. <span name="cc_suplente_3">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_3_j" hidden>
+        Razón Social <span name="razon_suplente_3">_____________</span> <br />
+        NIT <span name="nit_suplente_3">_____________</span> <br />
+        Representante Legal <span name="nombre_suplente_3">_____________</span>
+        <br />
+        C.C. <span name="cc_suplente_3">_____________</span>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td>4</td>
+    <td>
+      <span name="tipo_persona_principal_4_n">
+        Nombre <span name="nombre_principal_4">_____________</span> <br />
+        C.C. <span name="cc_principal_4">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_4_j" hidden>
+        Razón Social <span name="razon_principal_4">_____________</span> <br />
+        NIT <span name="nit_principal_4">_____________</span> <br />
+        Representante Legal
+        <span name="nombre_principal_4">_____________</span> <br />
+        C.C. <span name="cc_principal_4">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_4_n">
+        Nombre <span name="nombre_suplente_4">_____________</span> <br />
+        C.C. <span name="cc_suplente_4">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_4_j" hidden>
+        Razón Social <span name="razon_suplente_4">_____________</span> <br />
+        NIT <span name="nit_suplente_4">_____________</span> <br />
+        Representante Legal <span name="nombre_suplente_4">_____________</span>
+        <br />
+        C.C. <span name="cc_suplente_4">_____________</span>
+      </span>
+    </td>
+  </tr>
+  <span name="mas_candidatos_n"></span>
+  <tbody name="mas_candidatos_s" hidden>
+    <tr>
+      <td>5</td>
+      <td>
+        <span name="tipo_persona_principal_5_n">
+          Nombre <span name="nombre_principal_5">_____________</span> <br />
+          C.C. <span name="cc_principal_5">_____________</span>
+        </span>
+        <span name="tipo_persona_principal_5_j" hidden>
+          Razón Social <span name="razon_principal_5">_____________</span>
+          <br />
+          NIT <span name="nit_principal_5">_____________</span> <br />
+          Representante Legal
+          <span name="nombre_principal_5">_____________</span> <br />
+          C.C. <span name="cc_principal_5">_____________</span>
+        </span>
+      </td>
+      <td>
+        <span name="tipo_persona_suplente_5_n">
+          Nombre <span name="nombre_suplente_5">_____________</span> <br />
+          C.C. <span name="cc_suplente_5">_____________</span>
+        </span>
+        <span name="tipo_persona_suplente_5_j" hidden>
+          Razón Social <span name="razon_suplente_5">_____________</span> <br />
+          NIT <span name="nit_suplente_5">_____________</span> <br />
+          Representante Legal
+          <span name="nombre_suplente_5">_____________</span>
+          <br />
+          C.C. <span name="cc_suplente_5">_____________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>
+        <span name="tipo_persona_principal_6_n">
+          Nombre <span name="nombre_principal_6">_____________</span> <br />
+          C.C. <span name="cc_principal_6">_____________</span>
+        </span>
+        <span name="tipo_persona_principal_6_j" hidden>
+          Razón Social <span name="razon_principal_6">_____________</span>
+          <br />
+          NIT <span name="nit_principal_6">_____________</span> <br />
+          Representante Legal
+          <span name="nombre_principal_6">_____________</span> <br />
+          C.C. <span name="cc_principal_6">_____________</span>
+        </span>
+      </td>
+      <td>
+        <span name="tipo_persona_suplente_6_n">
+          Nombre <span name="nombre_suplente_6">_____________</span> <br />
+          C.C. <span name="cc_suplente_6">_____________</span>
+        </span>
+        <span name="tipo_persona_suplente_6_j" hidden>
+          Razón Social <span name="razon_suplente_6">_____________</span> <br />
+          NIT <span name="nit_suplente_6">_____________</span> <br />
+          Representante Legal
+          <span name="nombre_suplente_6">_____________</span>
+          <br />
+          C.C. <span name="cc_suplente_6">_____________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>
+        <span name="tipo_persona_principal_7_n">
+          Nombre <span name="nombre_principal_7">_____________</span> <br />
+          C.C. <span name="cc_principal_7">_____________</span>
+        </span>
+        <span name="tipo_persona_principal_7_j" hidden>
+          Razón Social <span name="razon_principal_7">_____________</span>
+          <br />
+          NIT <span name="nit_principal_7">_____________</span> <br />
+          Representante Legal
+          <span name="nombre_principal_7">_____________</span> <br />
+          C.C. <span name="cc_principal_7">_____________</span>
+        </span>
+      </td>
+      <td>
+        <span name="tipo_persona_suplente_7_n">
+          Nombre <span name="nombre_suplente_7">_____________</span> <br />
+          C.C. <span name="cc_suplente_7">_____________</span>
+        </span>
+        <span name="tipo_persona_suplente_7_j" hidden>
+          Razón Social <span name="razon_suplente_7">_____________</span> <br />
+          NIT <span name="nit_suplente_7">_____________</span> <br />
+          Representante Legal
+          <span name="nombre_suplente_7">_____________</span>
+          <br />
+          C.C. <span name="cc_suplente_7">_____________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>
+        <span name="tipo_persona_principal_8_n">
+          Nombre <span name="nombre_principal_8">_____________</span> <br />
+          C.C. <span name="cc_principal_8">_____________</span>
+        </span>
+        <span name="tipo_persona_principal_8_j" hidden>
+          Razón Social <span name="razon_principal_8">_____________</span>
+          <br />
+          NIT <span name="nit_principal_8">_____________</span> <br />
+          Representante Legal
+          <span name="nombre_principal_8">_____________</span> <br />
+          C.C. <span name="cc_principal_8">_____________</span>
+        </span>
+      </td>
+      <td>
+        <span name="tipo_persona_suplente_8_n">
+          Nombre <span name="nombre_suplente_8">_____________</span> <br />
+          C.C. <span name="cc_suplente_8">_____________</span>
+        </span>
+        <span name="tipo_persona_suplente_8_j" hidden>
+          Razón Social <span name="razon_suplente_8">_____________</span> <br />
+          NIT <span name="nit_suplente_8">_____________</span> <br />
+          Representante Legal
+          <span name="nombre_suplente_8">_____________</span>
+          <br />
+          C.C. <span name="cc_suplente_8">_____________</span>
+        </span>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<p>
+  Nombre de quien presenta la lista
+  <span name="nombres_presentante">___________</span> <br />
+  C.C. <span name="cc_presentante">___________</span> <br />
+  Correo Electrónico: <span name="correo_presentante">___________</span> <br />
+  Número de contacto: <span name="cell_presentante">___________</span><br />
+  Nombre del paquete <span name="package_name">___________</span>
+</p>

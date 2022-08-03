@@ -1812,6 +1812,21 @@
             value: 's'
         },
         {
+            name: 'num_pagare',
+            description: 'Ingrese el número del pagaré',
+            type: 'text',
+        },
+        {
+            name: 'oficinas_pago',
+            description: 'Ingrese las oficinas de pago para el pagaré',
+            type: 'text',
+        },
+        {
+            name: 'vencimiento_pagare',
+            description: 'Seleccione la fecha de vencimiento del pagaré',
+            type: 'date',
+        },
+        {
             name: 'correo_trabajador',
             description: 'Digite el correo electrónico que usará para firmar',
             type: 'email'
@@ -1988,5 +2003,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 2
+    build: 3
 }
