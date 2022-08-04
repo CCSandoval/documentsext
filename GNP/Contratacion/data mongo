@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('6213dd41ed0a939e613674ac'),
+    _id: ObjectId('62eaf46351fc27d23d9291ab'),
     config: [
         {
             name: 'nombre_trabajador',
@@ -222,6 +222,10 @@
                 {
                     name: 'Jefe Nacional de Infraestructura',
                     value: 'jefe_nal_inf'
+                },
+                {
+                    name: 'Jefe Nacional de Mesa de Ayuda',
+                    value: 'jefe_nal_mesa'
                 },
                 {
                     name: 'Jefe de Seguridad de la Información',
@@ -1808,6 +1812,26 @@
             value: 's'
         },
         {
+            name: 'valor_pagare',
+            description: 'Ingrese el valor del pagaré',
+            type: 'currency',
+        },
+        {
+            name: 'num_pagare',
+            description: 'Ingrese el número del pagaré',
+            type: 'text',
+        },
+        {
+            name: 'oficinas_pago',
+            description: 'Ingrese las oficinas de pago para el pagaré',
+            type: 'text',
+        },
+        {
+            name: 'vencimiento_pagare',
+            description: 'Seleccione la fecha de vencimiento del pagaré',
+            type: 'date',
+        },
+        {
             name: 'correo_trabajador',
             description: 'Digite el correo electrónico que usará para firmar',
             type: 'email'
@@ -1914,7 +1938,7 @@
         'package_name',
         'correo_continuar_trabajador'
     ],
-    name: 'Contratación GNP',
+    name: 'Contratación GNP con Pacto de Desalarización',
     files: [
         {
             name: 'Hoja de Vida',
@@ -1973,7 +1997,7 @@
             approve: 'pending'
         }
     ],
-    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
+    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916',
     company: ObjectId('623099c6d9a7ac3bbc96b943'),
     preBuild: true,
     price: 5000,
@@ -1984,5 +2008,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 49
+    build: 0
 }

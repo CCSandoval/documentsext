@@ -1,0 +1,64 @@
+{
+    _id: ObjectId('62ea9d7a51fc27d23d9291a9'),
+    config: [
+        
+        {
+            name: 'nombre_cliente',
+            type: 'name',
+            description: 'Ingrese el nombre del cliente'
+        },
+        {
+            name: 'cc_cliente',
+            type: 'number',
+            description: 'Ingrese el número de cédula del cliente'
+        },
+        {
+            name: 'ciudad_cc_cliente',
+            type: 'text',
+            description: 'Ingrese la ciudad de expedición de la cédula del cliente'
+        },
+        {
+            name: 'direccion_cliente',
+            type: 'text',
+            description: 'Ingrese la dirección del cliente'
+        },
+        {
+            name: 'ciudad_cliente',
+            type: 'text',
+            description: 'Ingrese la ciudad donde se encuentra el cliente'
+        },
+        {
+            name: 'tel_cliente',
+            type: 'phone',
+            description: 'Ingrese el teléfono del cliente'
+        },
+        {
+            name: 'email_cliente',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del cliente'
+        }
+    ],
+    operation: [],
+    sign: [
+        'email_cliente',
+        'tel_cliente',
+        'cc_cliente',
+        'nombre_cliente'
+    ],
+    signatureProfile: [
+        {
+            email: 'email_cliente',
+            phone: 'tel_cliente',
+            identification: 'cc_cliente',
+            name: 'nombre_cliente',
+            type: 'firma_cliente'
+        }
+    ],
+    name: 'CONTRATO DE VINCULACIÓN A LA PLATAFORMA Y COMPRAVENTA DE LIVING SHARES - V2',
+    build: 0,
+    price: 5000,
+    preFill: [],
+    preBuildData: [],
+    preBuild: false,
+    username: '72c13b90-3699-4bf9-adfb-72a0f7488e73'
+}

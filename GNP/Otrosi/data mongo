@@ -84,20 +84,8 @@
         },
         {
             name: 'correo_empleador',
-            value: 'ccsandovalt@gmail.com'
+            value: 'milena.castillo@gnpsa.com'
         },
-        {
-            name: 'nombre_jefe',
-            value: 'JEFE AREA'
-        },
-        {
-            name: 'cc_jefe',
-            value: '1111234123'
-        },
-        {
-            name: 'correo_jefe',
-            value: 'cristian@auco.ai'
-        }
     ],
     signatureProfile: [
         {
@@ -112,12 +100,6 @@
             identification: 'cc_empleador',
             email: 'correo_empleador'
         },
-        {
-            type: 'firma_jefe',
-            name: 'nombre_jefe',
-            identification: 'cc_jefe',
-            email: 'correo_jefe'
-        }
     ],
     name: 'OTROSÍ AL CONTRATO',
     preBuild: false,

@@ -16,22 +16,7 @@
   Nacionalidad: <u name="nacionalidad">__________________</u> Dpto.:
   <u name="departamento">__________________</u> Municipio:
   <u name="municipio">__________________</u>
-  Documento de Identidad: <u name="tipo_id_estudiante_cc">C.C.</u>
-  <u name="tipo_id_estudiante_ti" hidden>T.I.</u>
-  <u name="tipo_id_estudiante_rc" hidden>Registro Civil</u>
-  <u name="tipo_id_estudiante_otro" hidden>Otro</u>, Nº:
-  <u name="tipo_id_estudiante_cc">
-    <u name="cedula_estudiante">__________________</u>
-  </u>
-  <u name="tipo_id_estudiante_ti" hidden>
-    <u name="tarjeta_estudiante">__________________</u>
-  </u>
-  <u name="tipo_id_estudiante_rc" hidden>
-    <u name="registro_estudiante">__________________</u>
-  </u>
-  <u name="tipo_id_estudiante_otro" hidden>
-    <u name="otro_id_estudiante">__________________</u>
-  </u>
+  Numero de Documento de Identidad: <u name="numero_documento">_____________</u>
   Dirección de residencia:
   <u name="dir_residencia">_________________________</u> Teléfono:
   <u name="tel_residencia">__________________</u>

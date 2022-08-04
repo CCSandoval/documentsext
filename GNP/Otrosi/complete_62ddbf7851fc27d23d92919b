@@ -73,7 +73,8 @@
 
 <p>
   <b>
-    EL EMPLEADOR <br /><br /><br /><br /><br />
+    EL EMPLEADOR
+    <div id="firma_empleador"></div>
     ____________________________________
   </b>
 </p>
@@ -82,18 +83,10 @@
 
 <p>
   <b>
-    EL TRABAJADOR <br /><br /><br /><br /><br />
+    EL TRABAJADOR
+    <div id="firma_trabajador"></div>
     ____________________________________
     <br />
     Correo: <b name="correo_trabajador">__________________</b>
-  </b>
-</p>
-
-<br /><br />
-
-<p>
-  <b>
-    JEFE DEL ÁREA <br /><br /><br /><br /><br />
-    ____________________________________
   </b>
 </p>

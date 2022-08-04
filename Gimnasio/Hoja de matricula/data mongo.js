@@ -42,87 +42,9 @@
             description: 'Ingrese el municipio del estudiante'
         },
         {
-            name: 'tipo_id_estudiante',
-            type: 'clausula',
-            description: 'Seleccione el tipo de documento de identificación del estudiante',
-            options: [
-                {
-                    name: 'Tarjeta de identidad',
-                    value: 'ti'
-                },
-                {
-                    name: 'Cédula de ciudadanía',
-                    value: 'cc'
-                },
-                {
-                    name: 'NUIP',
-                    value: 'nuip'
-                },
-                {
-                    name: 'Pasaporte',
-                    value: 'pasaporte'
-                },
-                {
-                    name: 'Otro',
-                    value: 'otro'
-                }
-            ],
-            value: 'ti'
-        },
-        {
-            name: 'cedula_estudiante',
-            type: 'number',
-            description: 'Ingrese la cédula de ciudadanía del estudiante',
-            prereq: [
-                {
-                    k: 'tipo_id_estudiante',
-                    v: 'cc'
-                }
-            ]
-        },
-        {
-            name: 'tarjeta_estudiante',
-            type: 'number',
-            description: 'Ingrese la tarjeta de identidad del estudiante',
-            prereq: [
-                {
-                    k: 'tipo_id_estudiante',
-                    v: 'ti'
-                }
-            ]
-        },
-        {
-            name: 'nuip_estudiante',
+            name: 'numero_documento',
             type: 'text',
-            description: 'Ingrese el número de NUIP del estudiante',
-            prereq: [
-                {
-                    k: 'tipo_id_estudiante',
-                    v: 'nuip'
-                }
-            ]
-        },
-        {
-            name: 'pasaporte_estudiante',
-            type: 'text',
-            description: 'Ingrese el número de Pasaporte del estudiante',
-            prereq: [
-                {
-                    k: 'tipo_id_estudiante',
-                    v: 'pasaporte'
-                }
-            ]
-        },
-        {
-            name: 'otro_id_estudiante',
-            type: 'text',
-            description: 'Ingrese el número de identidad del estudiante',
-            prereq: [
-                {
-                    k: 'tipo_id_estudiante',
-                    v: 'otro'
-                }
-            ]
+            description: 'Ingrese el número de documento de identidad del estudiante'
         },
         {
             name: 'dir_residencia',
@@ -273,7 +195,7 @@
     signatureProfile: [
         {
             name: 'nombre_estudiante',
-            identification: 'cedula_estudiante|tarjeta_estudiante|otro_id_estudiante|nuip_estudiante',
+            identification: 'numero_documento',
             phone: 'cel_estudiante',
             email: 'email_estudiante',
             type: 'firma_estudiante'
@@ -298,5 +220,5 @@
     name: 'HOJA DE MATRICULA',
     company: ObjectId('624b9d001e9c670009968025'),
     price: 5000,
-    build: 8
+    build: 9
 }

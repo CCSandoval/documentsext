@@ -171,10 +171,10 @@
             value: 'n'
         },
         {
-            name:'debe_cuotas',
-            description:'¿Se deben cuotas del pago?',
-            type:'clausula',
-            options:[
+            name: 'debe_cuotas',
+            description: '¿Se deben cuotas del pago?',
+            type: 'clausula',
+            options: [
                 {
                     name: 'No',
                     value: 'n'
@@ -224,11 +224,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -244,11 +244,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -263,11 +263,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -283,11 +283,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -302,11 +302,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -322,11 +322,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -341,11 +341,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -361,11 +361,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -380,11 +380,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -400,11 +400,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -419,11 +419,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -439,11 +439,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -458,11 +458,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -478,11 +478,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -497,11 +497,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -517,11 +517,11 @@
                     v: 'n'
                 },
                 {
-                    k:'debe_cuotas',
-                    v:'s'
+                    k: 'debe_cuotas',
+                    v: 's'
                 }
             ],
-            prereqOptionals:[
+            prereqOptionals: [
                 'pago_contado_n',
                 'debe_cuotas_s'
             ]
@@ -559,7 +559,7 @@
         {
             name: 'numero_encargo_fiduciario',
             description: 'Ingrese el numero de encargo fiduciario',
-            type: 'number'
+            type: 'text'
         },
         {
             name: 'valor_subsidio',
@@ -775,6 +775,6 @@
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 15,
+    build: 16,
     name: 'CONTRATO DE PROMESA DE COMPRAVENTA DE VIVIENDA'
 }
