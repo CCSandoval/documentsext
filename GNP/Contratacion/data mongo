@@ -9,7 +9,7 @@
         },
         {
             name: 'dir_dom_trabajador',
-            description: 'Ingrese la dirección de residencia del trabajador',
+            description: 'Digite la ciudad, seguido de la dirección de residencia del trabajador',
             type: 'text'
         },
         {
@@ -74,6 +74,10 @@
                 {
                     name: 'Auxiliar Enfermeria',
                     value: 'auxiliar_enfermeria'
+                },
+                {
+                    name: 'Auxiliar de compras e inventarios.',
+                    value: 'auxiliar_compras'
                 },
                 {
                     name: 'Auxiliar HSEQ',
@@ -1812,26 +1816,6 @@
             value: 's'
         },
         {
-            name: 'valor_pagare',
-            description: 'Ingrese el valor del pagaré',
-            type: 'currency',
-        },
-        {
-            name: 'num_pagare',
-            description: 'Ingrese el número del pagaré',
-            type: 'text',
-        },
-        {
-            name: 'oficinas_pago',
-            description: 'Ingrese las oficinas de pago para el pagaré',
-            type: 'text',
-        },
-        {
-            name: 'vencimiento_pagare',
-            description: 'Seleccione la fecha de vencimiento del pagaré',
-            type: 'date',
-        },
-        {
             name: 'correo_trabajador',
             description: 'Digite el correo electrónico que usará para firmar',
             type: 'email'
@@ -2008,5 +1992,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 0
+    build: 3
 }

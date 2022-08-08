@@ -282,7 +282,88 @@
             name: 'observaciones',
             type: 'text',
             description: 'Ingrese sus observaciones'
-        }
+        },
+        {
+            name: 'acepta_1',
+            type: 'clausula',
+            description: '¿Ha leído el presente documento, es conocedor de la política de protección de datos de VERTICAL LABS S.A.S y autoriza de forma expresa el tratamiento de sus datos personales para los fines aquí descritos?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'stop_progress',
+            type: 'name',
+            description: 'para si escoje no',
+            prereq: [
+                {
+                    k: 'acepta_1',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'acepta_2',
+            type: 'clausula',
+            description: '¿Autoriza el tratamiento de sus datos biométricos para fines de control de acceso al Coworking de VERTICAL LABS S.A.S a sabiendas de que no esta obligado a ello por existir otros métodos alternativos para controlar el acceso.?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'stop_progress',
+            type: 'name',
+            description: 'para si escoje no',
+            prereq: [
+                {
+                    k: 'acepta_2',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'acepta_3',
+            type: 'clausula',
+            description: '¿Autoriza el tratamiento de sus datos para que le sean remitidas comunicaciones comerciales provenientes de VERTICAL LABS S.A.S o de terceros, cuando estas puedan ser potencialmente de su interés.?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'stop_progress',
+            type: 'name',
+            description: 'para si escoje no',
+            prereq: [
+                {
+                    k: 'acepta_3',
+                    v: 'n'
+                }
+            ]
+        },
     ],
     operation: [],
     name: 'TÉRMINOS Y CONDICIONES GENERALES PARA LA PRESTACIÓN DE SERVICIOS DE COWORKING',
@@ -325,5 +406,5 @@
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 2
+    build: 3
 }

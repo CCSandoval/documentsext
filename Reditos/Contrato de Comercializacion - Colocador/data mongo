@@ -1,0 +1,171 @@
+{
+    _id: ObjectId('62effbf751fc27d23d9291ad'),
+    config: [
+        {
+            name: 'num_contrato',
+            type: 'number',
+            description: 'Ingrese el número del contrato'
+        },
+        {
+            name: 'nombre_rep_legal',
+            type: 'name',
+            description: 'Ingrese el nombre del representante legal de RÉDITOS EMPRESARIALES S.A.'
+        },
+        {
+            name: 'cc_rep_legal',
+            type: 'number',
+            description: 'Ingrese el número de cédula del representante legal de RÉDITOS EMPRESARIALES S.A.'
+        },
+        {
+            name: 'nombre_comercializador',
+            type: 'name',
+            description: 'Ingrese el nombre del comercializador'
+        },
+        {
+            name: 'cc_comercializador',
+            type: 'number',
+            description: 'Ingrese el número de cédula del comercializador'
+        },
+        {
+            name: 'actividad_comercial_a',
+            type: 'text',
+            description: 'Ingrese la primer actividad comercial',
+        },
+        {
+            name: 'actividad_comercial_b',
+            type: 'text',
+            description: 'Ingrese la segunda actividad comercial',
+        },
+        {
+            name: 'actividad_comercial_c',
+            type: 'text',
+            description: 'Ingrese la tercera actividad comercial',
+        },
+        {
+            name: 'actividad_comercial_4',
+            type: 'clausula',
+            description: '¿Desea ingresar una cuarta actividad comercial?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+            ]
+        },
+        {
+            name: 'actividad_comercial_d',
+            type: 'text',
+            description: 'Ingrese la cuarta actividad comercial',
+            prereq:[
+                {
+                    k:'actividad_comercial_4',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name: 'actividad_comercial_5',
+            type: 'clausula',
+            description: '¿Desea ingresar una quinta actividad comercial?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+            ],
+            prereq:[
+                {
+                    k:'actividad_comercial_4',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name: 'actividad_comercial_e',
+            type: 'text',
+            description: 'Ingrese la quinta actividad comercial',
+            prereq:[
+                {
+                    k:'actividad_comercial_4',
+                    v:'s'
+                },
+                {
+                    k:'actividad_comercial_5',
+                    v:'s'
+                },
+            ]
+        },
+        {
+            name: 'ciudad_firma',
+            type: 'name',
+            description: 'Ingrese la ciudad dónde se firma el documento'
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se firma el documento'
+        },
+        {
+            name: 'correo_rep_legal',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del representante legal de RÉDITOS EMPRESARIALES S.A.'
+        },
+        {
+            name: 'tel_rep_legal',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono del representante legal de RÉDITOS EMPRESARIALES S.A.'
+        },
+        {
+            name: 'correo_comercializador',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del comercializador'
+        },
+        {
+            name: 'tel_comercializador',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono del comercializador'
+        }
+    ],
+    operation: [],
+    name: 'CONTRATO DE COMERCIALIZACIÓN DE PRODUCTOS Y SERVICIOS - COLOCADOR',
+    price: 5000,
+    build: 0,
+    sign: [
+        'nombre_comercializador',
+        'tel_comercializador',
+        'correo_comercializador',
+        'cc_comercializador',
+        'nombre_rep_legal',
+        'tel_rep_legal',
+        'correo_rep_legal',
+        'cc_rep_legal'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_comercializador',
+            phone: 'tel_comercializador',
+            email: 'correo_comercializador',
+            identification: 'cc_comercializador',
+            type: 'firma_comercializador'
+        },
+        {
+            name: 'nombre_rep_legal',
+            phone: 'tel_rep_legal',
+            email: 'correo_rep_legal',
+            identification: 'cc_rep_legal',
+            type: 'firma_rep_legal'
+        }
+    ],
+    preBuild: false,
+    preBuildData: []
+}

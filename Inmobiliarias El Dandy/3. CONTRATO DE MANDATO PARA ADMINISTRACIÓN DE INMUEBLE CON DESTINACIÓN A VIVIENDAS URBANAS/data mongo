@@ -44,8 +44,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             type: 'clausula',
@@ -84,7 +84,7 @@
                     v: 'ce'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del mandante',
@@ -217,8 +217,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -275,7 +275,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del segundo mandante',
@@ -458,8 +458,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -490,7 +490,7 @@
                 {
                     k: 'tercer_mandante',
                     v: 's'
-                },
+                }
             ],
             type: 'text'
         },
@@ -532,7 +532,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del tercer mandante',
@@ -755,8 +755,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -795,7 +795,7 @@
                 {
                     k: 'cuarto_mandante',
                     v: 's'
-                },
+                }
             ],
             type: 'text'
         },
@@ -845,7 +845,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del cuarto mandante',
@@ -1108,8 +1108,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -1214,7 +1214,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del quinto mandante',
@@ -1517,8 +1517,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -1639,7 +1639,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del sexto mandante',
@@ -1982,8 +1982,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -2120,7 +2120,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del septimo mandante',
@@ -2503,8 +2503,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -2575,7 +2575,7 @@
                 {
                     k: 'octavo_mandante',
                     v: 's'
-                },
+                }
             ],
             type: 'text'
         },
@@ -2657,7 +2657,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del octavo mandante',
@@ -3080,8 +3080,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -3160,7 +3160,7 @@
                 {
                     k: 'noveno_mandante',
                     v: 's'
-                },
+                }
             ],
             type: 'text'
         },
@@ -3250,7 +3250,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del noveno mandante',
@@ -3713,8 +3713,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -3805,7 +3805,7 @@
                 {
                     k: 'decimo_mandante',
                     v: 's'
-                },
+                }
             ],
             type: 'text'
         },
@@ -3903,7 +3903,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del decimo mandante',
@@ -4621,7 +4621,7 @@
         porcentaje: 'Ejemplo: 15',
         fecha: 'Ejemplo: 13 de Septiembre del 2021'
     },
-    build: 28,
+    build: 30,
     createdAt: ISODate('2021-09-29T18:40:33.337Z'),
     updatedAt: ISODate('2021-09-29T18:40:33.337Z')
 }
