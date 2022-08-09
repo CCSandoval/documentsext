@@ -1,0 +1,209 @@
+{
+    _id: ObjectId('61f2d4dced0a939e61367486'),
+    config: [
+        {
+            name: 'tipo_persona',
+            type: 'clausula',
+            description: 'Seleccione el tipo de persona del PARTNER',
+            value: 'n',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ]
+        },
+        {
+            name: 'nombre_empresa',
+            type: 'name',
+            description: 'Ingrese el nombre de la empresa',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'j'
+                }
+            ]
+        },
+        {
+            name: 'nit_empresa',
+            type: 'text',
+            description: 'Ingrese el NIT de la empresa',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'j'
+                }
+            ]
+        },
+        {
+            name: 'nombre_partner',
+            type: 'name',
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Ingrese el nombre del representante legal'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Ingrese el nombre del PARTNER'
+                }
+            ]
+        },
+        {
+            name: 'cc_partner',
+            type: 'number',
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Ingrese el número de cédula del representante legal'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Ingrese el número de cédula del PARTNER'
+                }
+            ]
+        },
+        {
+            name: 'pais_cc_partner',
+            type: 'name',
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Ingrese el país de expedición de la cédula del representante legal'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Ingrese el país de expedición de la cédula del PARTNER'
+                }
+            ]
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha de firma'
+        },
+        {
+            name: 'correo_partner',
+            type: 'email',
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Ingrese el correo electrónico del representante legal'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Ingrese el correo electrónico del PARTNER'
+                }
+            ]
+        },
+        {
+            name: 'tel_partner',
+            type: 'phone',
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Ingrese el teléfono del representante legal'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Ingrese el teléfono del PARTNER'
+                }
+            ]
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_partner',
+        'cc_partner',
+        'correo_partner',
+        'tel_partner'
+    ],
+    preFill: [
+        {
+            name: 'ceo_name',
+            value: 'Samuel Urquijo Murillo'
+        },
+        {
+            name: 'ceo_email',
+            value: 'samuel@kbe.ai'
+        },
+        {
+            name: 'ceo_id',
+            value: '1036930038'
+        }
+    ],
+    signatureProfile: [
+        {
+            name: 'ceo_name',
+            identification: 'ceo_id',
+            email: 'ceo_email',
+            type: 'firma_keybe'
+        },
+        {
+            name: 'nombre_partner',
+            identification: 'cc_partner',
+            email: 'correo_partner',
+            phone: 'tel_partner',
+            type: 'firma_partner'
+        }
+    ],
+    preBuild: false,
+    preBuildData: [],
+    price: 5000,
+    build: 0,
+    name: 'ACUERDO DE PARTNERS'
+}

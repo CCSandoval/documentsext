@@ -1,941 +1,796 @@
-<style type="text/css">
-  p,
-  span {
-    font-family: sans-serif;
-    text-align: justify;
-  }
-  .page {
-    width: 21cm;
-    position: relative;
-  }
-  .image {
-    width: 100%;
-  }
-  .titulo {
-    text-align: center;
-    font-weight: bold;
-  }
-  .customFooter {
-    margin: auto;
-    margin-top: 30px;
-    text-align: center;
-    color: #aaa;
-  }
-  ol > li {
-    font-weight: bold;
-  }
-  li > p {
-    font-weight: normal;
-  }
-  .left {
-    float: left;
-    width: 50%;
-  }
-  .right {
-    float: right;
-    width: 50%;
-  }
-</style>
+<div>
+  <h2 style="text-align: center">ACUERDO DE PARTNERS</h2>
 
-<div class="page">
-  <img
-    class="image"
-    src="https://mi-contrato-static.s3.amazonaws.com/Keybe/acuerdo_partners.jpg"
-  />
-  <br /><br /><br />
+  <p>Entre:</p>
+
   <p>
-    Entre <b>KEYBE S.A.S</b>, sociedad comercial identificada con
-    <b>EIN. 85-2498949</b>, quien en adelante se llamará la
-    <b>COMPAÑÍA</b> representada legalmente por <b>SAMUEL URQUIJO MURILLO</b>,
-    mayor de edad, residente en la ciudad de Medellín, identificado con cédula
-    de ciudadanía <b>No. 1.036.930.038</b> y por el otro lado, la empresa
-    <b><span name="nombre_empresa">_____________________</span></b> con número
-    de identificación tributario (NIT)
-    <b><span name="nit_empresa">______________</span></b> representada
-    legalmente por
-    <b><span name="nombre_rep">____________________________</span></b
-    >, identificado con número de cédula de ciudadanía
-    <b><span name="cedula_rep">________________</span></b
-    >, mayor de edad y domiciliado en la ciudad de
-    <b><span name="residencia_rep">________________</span></b
-    >, actuando en nombre propio y quien para efectos del presente contrato se
-    denominará el <b>PARTNER</b>, quienes conjuntamente se denominará las
-    <b>PARTES</b>. Entre los anteriores se ha celebrado un contrato de
-    <b>CORRETAJE</b> que se regirá por las siguientes:
+    - KEYBE INC., sociedad comercial, legalmente constituida bajo las normas del
+    Estado de Delaware, Estados Unidos, identificada con EIN 30-1280531,
+    representada por Samuel Urquijo Murillo, mayor de edad, identificado con
+    cédula de ciudadanía colombiana No. 1.036.930.038, obrando en su calidad de
+    Representante Legal de KEYBE INC, (que en adelante se denominará la
+    “<b>KEYBE</b>”), y, por otra parte,
   </p>
-  <br />
-  <p class="titulo">CONSIDERACIONES</p>
-  <br />
+
   <p>
-    <span>
-      <b>PRIMERA.</b> Que la <b>COMPAÑÍA</b> es una entidad dedicada a la
-      producción de soluciones mediante herramientas de software, para la
-      automatización de procesos de servicio al cliente, mediante machine
-      learning, inteligencia artificial y diversos productos similares
+    -
+    <span name="tipo_persona_n"></span>
+    <span name="tipo_persona_j" hidden>
+      <span name="nombre_empresa">_________________</span>, sociedad comercial,
+      constituida y existente de conformidad con las leyes de Colombia, con NIT
+      No. <span name="nit_empresa">_________________</span>, representada en
+      este acto por
     </span>
-    <br /><br /><br />
-    <span>
-      <b>SEGUNDA.</b> Que el <b>PARTNER</b> es un participe del mercado, que
-      cuenta con diversas relaciones comerciales y empresariales, con muchos
-      otros miembros de la economía, razón por la cual, cuenta con la
-      posibilidad de servir de puente entre los servicios de la
-      <b>COMPAÑÍA</b> con potenciales clientes para esta
+    <span name="nombre_partner">_________________</span>, mayor de edad,
+    identificado/a con cédula de ciudadanía No.
+    <span name="cc_partner">_________________</span> de
+    <span name="pais_cc_partner">_________________</span>,
+    <span name="tipo_persona_n"></span>
+    <span name="tipo_persona_j" hidden>
+      en su carácter de representante legal
     </span>
-    <br /><br /><br />
-    <span>
-      <b>TERCERA.</b> Que es la intención de las <b>PARTES</b> que la gestión
-      anterior, sea remunerado por parte de la <b>COMPAÑÍA</b> a favor del
-      <b>PARTNER</b>, con fundamento en lo anterior, se presenta el siguiente
-      instrumento contractual.
-    </span>
+    (jurídicamente “el corredor”, quien en adelante se denominará el
+    “<b>PARTNER</b>”), y de forma conjunta las “<b>PARTES</b>”, han acordado
+    celebrar el presente contrato de corretaje, (en adelante el
+    “<b>CONTRATO</b>”), que consta de las cláusulas contenidos en este
+    documento, previas las siguientes:
   </p>
-  <br />
-  <p class="titulo">CLÁUSULAS</p>
-  <br />
+
+  <p style="text-align: center">
+    <b>CONSIDERACIONES</b>
+  </p>
+
   <p>
-    <span>
-      <b>PRIMERA. -IDONEIDAD DEL PARTNER:</b> el <b>PARTNER</b> es un participe
-      del mercado con un especial conocimiento de mercado y habilidades
-      sobresalientes en relaciones corportaivas, las cuales pueden conllevar a
-      la contratacion de los servicios de la <b>COMPAÑÍA</b>.
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>SEGUNDA. -OBJETO:</b> el presente contrato tiene como objeto que el
-      <b>PARTNER</b> asuma el encargo de gestionar, promover y facilitar la
-      contratación por parte de terceros los Servicios de la <b>COMPAÑÍA,</b> en
-      adelante estos terceros serán denominados individualmente como el
-      <b>"CLIENTE"</b>.
-    </span>
+    <b>PRIMERA.</b> Que <b>KEYBE</b> es una entidad dedicada a la producción de
+    soluciones mediante herramientas de software, para la automatización de
+    procesos de ventas, servicio al cliente, mediante machine learning,
+    inteligencia artificial y diversos productos similares.
   </p>
-  <br /><br /><br />
-  <p class="customFooter">
-    <span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEYBE INC. EIN
-      30-1280531 &nbsp; KEYBE AI CORP EIN. 85-2498949<br />
-      &nbsp;&nbsp;Medellín, Colombia, CO. &nbsp; West New York, NJ. USA<br /><br />
-      &nbsp;<u>www.keybe.ai</u> | <u>hello@kbe.ai</u>
-    </span>
-  </p>
-</div>
 
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <img
-    class="image"
-    src="https://mi-contrato-static.s3.amazonaws.com/Keybe/acuerdo_partners.jpg"
-  />
-  <br /><br /><br />
   <p>
-    <span>
-      <b>PARÁGRAFO PRIMERO:</b> Para esta cláusula y en adelante para el
-      presente contrato entiéndase como <b><em>"CLIENTE"</em></b> todas aquellas
-      personas jurídicas o naturales que por medio de la gestión estratégica,
-      comercial y relacional del <b>PARTNER</b> suscriban o bien un convenio y/o
-      alianza o un contrato de prestación de servicios y en virtud de estos se
-      genere una o varias facturas de venta a favor de la <b>COMPAÑÍA</b>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>TERCERA. -OBLIGACIONES DEL PARTNER:</b> son obligaciones del
-      <b>PARTNER</b>, las siguientes: <br /><br />
-      <ol type="a">
-        <li>
-          <p>
-            El <b>PARTNER</b> se obliga a poner todo su empeño y conocimiento,
-            para buscar la celebración de contratos de Prestación de Servicios.
-          </p>
-        </li>
-        <li>
-          <p>
-            El <b>PARTNER</b> se obliga a comunicar a la <b>COMPAÑÍA</b> la
-            información que tenga a su disposición sobre los <b>CLIENTES</b> y
-            que resulte importante par la celebración del negocio entre este y
-            la <b>COMPAÑÍA.</b>
-          </p>
-        </li>
-        <li>
-          <p>
-            Mantener la reserva de la información o documentos que llegare a
-            tener conocimiento con ocasión de los servicios contratados, los
-            cuales no podrán ser usados para fines diferentes a la ejecución del
-            presente documento. Asimismo, se abstendrá de divulgar por cualquier
-            medio, el contenido total o parcial de los documentos e información
-            que le sean encomendados para el desarrollo de los servicios, salvo
-            expresa autorización escrita de la <b>COMPAÑÍA.</b>
-          </p>
-        </li>
-      </ol>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>CUARTA. -OBLIGACIONES DE LA COMPAÑÍA:</b> la <b>COMPAÑÍA</b> se obliga:
-      <ol type="a">
-        <li>
-          <p>
-            A suministrar al <b>PARTNER</b>
-            toda la información que sea relevante e importante para el
-            desarrollo y ejecución de este contrato.
-          </p>
-        </li>
-        <li>
-          <p>Mantener comunicación abierta con el <b>PARTNER.</b></p>
-        </li>
-        <li>
-          <p>
-            Pagar, en los términos del presente contrato, la comisión
-            correspondiente por cada negocio que se contrete con el
-            <b>CLIENTE</b> que gestionó el <b>PARTNER.</b>
-          </p>
-        </li>
-      </ol>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>QUINTA. -VALOR DE LA COMISIÓN O BENEFICIO Y FORMA DE PAGO:</b> La
-      <b>COMPAÑÍA</b> se compromete a pagar una comisión u otros beneficios,
-      sobre los negocios que se logren pactar con cada nuevo <b>CLIENTE</b>,
-      siempre y cuando cumpla con lo siguiente: <br /><br />
-      <ol type="a">
-        <li>
-          <p>
-            Que ésta contratación se genere gracias a la intermediación
-            exclusiva del <b>PARNTER</b>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Que este <b>CLIENTE</b> nuevo no hubiera sido contactado y enviado
-            una propuesta comercial previamiente por parte de la
-            <b>COMPAÑÍA</b> o de otro <b>PARTNER</b> y se tenga una negociación
-            activa.
-          </p>
-        </li>
-        <li>
-          <p>
-            Que sea una negociación con el alcance, rentabilidad y capacidad de
-            ejecución de la <b>COMPAÑÍA.</b>
-          </p>
-        </li>
-      </ol>
-    </span>
+    <b>SEGUNDA.</b> Que el <b>PARTNER</b> es un partícipe del mercado, que
+    cuenta con diversas relaciones comerciales y empresariales, con muchos otros
+    miembros de la economía, razón por la cual, cuenta con la posibilidad de
+    servir de puente entre los servicios de la <b>KEYBE</b> con potenciales
+    clientes para esta.
   </p>
-  <br /><br /><br />
-  <p class="customFooter">
-    <span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEYBE INC. EIN
-      30-1280531 &nbsp; KEYBE AI CORP EIN. 85-2498949<br />
-      &nbsp;&nbsp;Medellín, Colombia, CO. &nbsp; West New York, NJ. USA<br /><br />
-      &nbsp;<u>www.keybe.ai</u> | <u>hello@kbe.ai</u>
-    </span>
-  </p>
-</div>
 
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <img
-    class="image"
-    src="https://mi-contrato-static.s3.amazonaws.com/Keybe/acuerdo_partners.jpg"
-  />
-  <br /><br /><br />
   <p>
-    <span name="anexos_n"></span>
-    <span name="anexos_s" hidden>
-      El valor de ésta comisión y/o los beneficios ofrecidos por
-      <b>COMPAÑÍA</b> será el pactado por las partes en el <b>ANEXO 1</b>
-      <br /><br /><br />
-    </span>
-    <span>
-      El valor anteriormente mencionado se liquidará por el valor antes de
-      impuestos de venta adjudicados según el territorio. El pago de dicha
-      comisión se realizará al <b>PARTNER</b> dentro de los quince (15) días
-      calendario siguientes, al mes vencido luego que la factura emitida por la
-      <b>COMPAÑÍA</b> sea efectivamente pagada por el <b>CLIENTE</b>, igualmente
-      el pago se realizará en la moneda de la negociación con el cliente y por
-      medio pactado de mutuo acuerdo entre las <b>PARTES</b>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>PARÁGRAFO PRIMERO:</b> El <b>PARTNER</b> asumirá el valor de la
-      seguridad social como independiente por el valor de la comisión. Si es el
-      caso.
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>PARÁGRAFO SEGUNDO:</b> El <b>PARTNER</b> deberá presentar una factura o
-      una cuenta de cobro cada que el monto a pagar por comisiones supere el
-      valor mínimo de <b>UN SALARIO MÍNIMO MENSUAL LEGAL VIGENTE M/L.</b>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>PARÁGRAFO TERCERO:</b> El porcentaje de comisión incluye todos los
-      servicios en la nube prestados por la <b>COMPAÑÍA</b> excluyendo
-      completamente una comisión por los costos fijos de línea de WhatsApp
-      business y si incluyendo la comisión por los costos de consumo de dicha
-      línea.
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>PARÁGRAFO CUARTO:</b> El valor que el <b>PARTNER</b> cobrará a la
-      <b>COMPAÑÍA</b> deberá incluir el impuesto del IVA incluido y otros
-      impuestos asociados, en ningún caso el monto cobrado podrá superar el
-      porcentaje del valor pactado.
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>SEXTA. -NATURALEZA DEL CONTRATO:</b> las <b>PARTES</b> dejan constancia
-      que la relación que las vincula es de carácter estrictamente comercial, y
-      que, por tanto, ni el <b>PARTNER</b>, ni sus dependientes, colaboradores,
-      proveedores, asesores o contratistas tendrán ningún tipo de vinculación
-      laboral con la <b>COMPAÑÍA</b>, ni podrán exigir de ella pagos por
-      concepto de salarios, vacaciones legales a extralegales que pudieran
-      corresponder a una relación laboral.
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>PARÁGRAFO:</b> el <b>PARTNER</b> no podrá actuar en nombre o por cuenta
-      de la <b>COMPAÑÍA</b>, salvo que exista expresa autorización para ello
-      conferida por escrita por la otra parte.
-    </span>
+    <b>TERCERA.</b> Que es la intención de las <b>PARTES</b> que la gestión
+    anterior, sea remunerado por parte de <b>KEYBE</b> a favor del
+    <b>PARTNER</b>, con fundamento en lo anterior, se presenta el siguiente
+    instrumento contractual.
   </p>
-  <br /><br /><br />
-  <p class="customFooter">
-    <span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEYBE INC. EIN
-      30-1280531 &nbsp; KEYBE AI CORP EIN. 85-2498949<br />
-      &nbsp;&nbsp;Medellín, Colombia, CO. &nbsp; West New York, NJ. USA<br /><br />
-      &nbsp;<u>www.keybe.ai</u> | <u>hello@kbe.ai</u>
-    </span>
+
+  <p style="text-align: center">
+    <b>CLÁUSULAS</b>
   </p>
-</div>
 
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <img
-    class="image"
-    src="https://mi-contrato-static.s3.amazonaws.com/Keybe/acuerdo_partners.jpg"
-  />
-  <br /><br /><br />
   <p>
-    <span>
-      <b>SÉPTIMA. -DURACIÓN:</b> El presente contrato es de vigencia de un (1)
-      año. No obstante, lo anterior, la <b>COMPAÑÍA</b> podrá dar por terminados
-      todos o alguno de los servicios en cualquier tiempo, bastando para ello,
-      comunicación verbal o escrita con una antelación de treinta (30) días, a
-      la fecha en la cual se pretende dar por terminado el servicio, teniendo en
-      cuenta la cláusula (“TERMINACIÓN”) aquí establecida, sin que ello sea
-      causal de sanción o pago de indemnización alguna para la <b>COMPAÑÍA.</b>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>OCTAVA. -TERMINACIÓN:</b> El presente contrato terminará:
-      <ol type="a">
-        <li>
-          <p>Por común acuerdo entre las <b>PARTES.</b></p>
-        </li>
-        <li>
-          <p>Por decisión unilateral de alguna de las partes.</p>
-        </li>
-        <li>
-          <p>
-            Por incumplimiento de cualquiera de una de las <b>PARTES</b> a sus
-            obligaciones legales o contractuales.
-          </p>
-        </li>
-        <li>
-          <p>Por solicitud expresa del <b>CLIENTE.</b></p>
-        </li>
-      </ol>
-    </span>
-    <br /><br />
+    <b>PRIMERA. -IDONEIDAD DEL PARTNER:</b> el <b>PARTNER</b> es un partícipe
+    del mercado con un especial conocimiento de mercado y habilidades
+    sobresalientes en relaciones corporativas, las cuales pueden conllevar a la
+    contratación de los servicios de <b>KEYBE</b>.
+  </p>
 
-    <span>
-      <b>NOVENA. -CLÁUSULA COMPROMISORIA:</b> El presente contrato se regirá
-      para todos los efectos legales y procesales por las leyes de la República
-      de Colombia. Durante la ejecución del mismo o con ocasión o a la
-      terminación del contrato, todas las controversias, diferencias, disputas o
-      reclamos que pudieran derivarse durante la ejecución del contrato, con
-      ocasión o a la terminación del mismo, se resolverán en primera instancia a
-      través de negociación directa entre los funcionarios que designe cada
-      parte. De no lograrse un acuerdo directo entre las <b>PARTES</b>, el
-      conflicto se someterá a conciliación extrajudicial en derecho ante un
-      conciliador designado por el
-      <b
-        >CENTRO DE ARBITRAJE Y CONCILIACIÓN DE LA CÁMARA DE COMERCIO DE
-        MEDELLÍN.</b
+  <p>
+    <b>SEGUNDA. -OBJETO:</b> el presente <b>CONTRATO</b> tiene como objeto que
+    el <b>PARTNER</b> asuma el encargo de gestionar, promover y facilitar la
+    contratación por parte de terceros los Servicios de <b>KEYBE</b>, (en
+    adelante estos terceros serán denominados individualmente como el
+    “<b>CLIENTE</b>”).
+  </p>
+
+  <p>
+    <b>PARÁGRAFO PRIMERO:</b> para esta cláusula y en adelante para el presente
+    <b>CONTRATO</b> entiéndase como “<b>CLIENTE</b>” todas aquellas personas
+    jurídicas o naturales que por medio de la gestión estratégica, comercial y
+    relacional del PARTNER suscriban o bien un convenio y/o alianza o un
+    <b>contrato</b> de prestación de servicios y en virtud de estos se genere
+    una o varias facturas de venta a favor de <b>KEYBE</b>.
+  </p>
+
+  <p>
+    <b>TERCERA. -OBLIGACIONES DEL PARTNER:</b> son obligaciones del PARTNER, las
+    siguientes:
+  </p>
+
+  <ol>
+    <li>
+      <b>El PARTNER</b> se obliga a poner todo su empeño y conocimiento, para
+      buscar la celebración de <b>contrato</b>s de Prestación de Servicios,
+      convenios y/o alianzas entre el <b>CLIENTE</b> y <b>KEYBE</b>.
+    </li>
+    <li>
+      <b>El PARTNER</b> se obliga a comunicar a <b>KEYBE</b> la información que
+      tenga a su disposición sobre los <b>CLIENTES</b> y que resulte importante
+      para la celebración del negocio entre este y <b>KEYBE</b>.
+    </li>
+    <li>
+      Mantener la reserva de la información o documentos que llegare a tener
+      conocimiento con ocasión de los servicios contratados, los cuales no
+      podrán ser usados para fines diferentes a la ejecución del presente
+      documento. Asimismo, se abstendrá de divulgar por cualquier medio, el
+      contenido total o parcial de los documentos e información que le sean
+      encomendados para el desarrollo de los servicios, salvo expresa
+      autorización escrita de
+      <b>KEYBE</b>.
+    </li>
+    <li>
+      <b>El PARTNER</b> no está facultado para delegar la responsabilidad que
+      tiene en el presente <b>CONTRATO</b>.
+    </li>
+  </ol>
+
+  <p>
+    <b>CUARTA. -OBLIGACIONES DE <b>KEYBE</b>: <b>KEYBE</b></b> se obliga a:
+  </p>
+
+  <ol>
+    <li>
+      Suministrar al PARTNER toda la información que sea relevante e importante
+      para el desarrollo y ejecución de este <b>CONTRATO</b>.
+    </li>
+    <li>Mantener una comunicación abierta con el <b>PARTNER</b>.</li>
+    <li>
+      Remunerar al PARTNER, en los términos del presente <b>CONTRATO</b>, por
+      sus servicios prestados.
+    </li>
+    <li>
+      Garantizar el nivel de servicio en relación con el Acuerdo de Nivel de
+      Servicio (ANS) de <b>KEYBE</b>, que se puede acceder a través del
+      siguiente enlace:
+      <a href="https://keybe.ai/legales/acuerdo-de-nivel-de-servicio"
+        >https://keybe.ai/legales/acuerdo-de-nivel-de-servicio</a
       >
-      Únicamente en caso de no lograrse un acuerdo en las instancias antes
-      mencionadas, el conflicto será resuelto mediante la jurisdicción ordinaria
-      colombiana.
-    </span>
-    <br /><br /><br />
+    </li>
+  </ol>
 
-    <span>
-      <b>DÉCIMA. -CONFIDENCIALIDAD:</b> las <b>PARTES</b> se comprometen a
-      guardar completa confidencialidad frente a información que obtenga en el
-      ejercicio del presente contrato y sobre la información suministrada de
-      manera directa o indirecta por la <b>COMPAÑÍA</b>.
-    </span>
-    <br /><br /><br />
-
-    <span>
-      <b>PARÁGRAFO:</b> Las <b>PARTES</b> suscribirán un acuerdo de
-      confidencialidad marco el cual hace parte del presente contrato y se
-      entenderá como un anexo del mismo.
-    </span>
-    <br /><br /><br />
-
-    <span>
-      <b>DÉCIMA PRIMERA. - INDEMNIDAD. EL PARTNER:</b> el
-      <b>PARTNER</b> Indemnizará, saldrá en defensa y mantendrá indemne a la
-      <b>COMPAÑÍA</b>, a sus funcionarios, directores, empleados, agentes
-      (colectivamente los "Indemnizados del <b>PARTNER"</b>) de y contra
-      cualesquiera reclamaciones, demandas, que resulten de, surjan, estén
-      asociadas a las acciones u omisiones del <b>PARTNER</b> en cumplimiento
-      del presente Contrato, y que sean atribuibles al <b>PARTNER</b>,
-      incluyendo, pero sin limitarse a las siguientes:
-    </span>
+  <p>
+    <b>QUINTA. -VALOR DE LA COMISIÓN O BENEFICIO Y FORMA DE PAGO:</b>
+    <b>KEYBE</b> se compromete a pagar una comisión u otros beneficios, sobre
+    los negocios que se logren pactar con cada nuevo <b>CLIENTE</b>, siempre y
+    cuando cumpla con lo siguiente:
   </p>
-  <br /><br /><br />
-  <p class="customFooter">
-    <span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEYBE INC. EIN
-      30-1280531 &nbsp; KEYBE AI CORP EIN. 85-2498949<br />
-      &nbsp;&nbsp;Medellín, Colombia, CO. &nbsp; West New York, NJ. USA<br /><br />
-      &nbsp;<u>www.keybe.ai</u> | <u>hello@kbe.ai</u>
-    </span>
+
+  <ol>
+    <li>
+      Que esta contratación se genere gracias a la intermediación exclusiva del
+      PARTNER.
+    </li>
+    <li>
+      Que este <b>CLIENTE</b> nuevo no hubiera sido contactado y enviado una
+      propuesta comercial previamente por parte de <b>KEYBE</b> o de otro
+      PARTNER y se tenga una negociación activa.
+    </li>
+    <li>
+      Que sea una negociación con el alcance, rentabilidad y capacidad de
+      ejecución de <b>KEYBE</b>.
+    </li>
+    <li>
+      Que el <b>PARTNER</b> cumpla con los requisitos mencionados en la Sección
+      2 del ANEXO 1, si aplica.
+    </li>
+  </ol>
+
+  <p>
+    El valor de ésta comisión y/o los beneficios ofrecidos por <b>KEYBE</b> será
+    el pactado por las <b>PARTES</b> en el ANEXO 1.
+  </p>
+
+  <p>
+    El valor mencionado en el ANEXO 1, se liquidará por el valor antes de
+    impuestos de venta adjudicados según el territorio. El pago de dicha
+    comisión se realizará al PARTNER dentro de los quince (15) días calendario
+    siguientes, al mes vencido luego que la factura emitida por <b>KEYBE</b> sea
+    efectivamente pagada por el <b>CLIENTE</b>, igualmente el pago se realizará
+    en la moneda de la negociación con el <b>CLIENTE</b> y por el medio pactado
+    de mutuo acuerdo entre las <b>PARTES</b>.
+  </p>
+
+  <p>
+    <b>PARÁGRAFO PRIMERO:</b> el <b>PARTNER</b> asumirá el valor de la seguridad
+    social como independiente por el valor de la comisión si aplica. De igual
+    manera, cualquier impuesto originado a consecuencia de la celebración del
+    presente <b>CONTRATO</b> serán de cuenta del PARTNER si aplica.
+  </p>
+
+  <p>
+    <b>PARÁGRAFO SEGUNDO:</b> el <b>PARTNER</b> deberá presentar una factura o
+    una cuenta de cobro cada vez que el monto a pagar por comisiones supere el
+    valor mínimo de doscientos cincuenta dólares USD ($250 USD).
+  </p>
+
+  <p>
+    <b>PARÁGRAFO TERCERO:</b> El porcentaje de comisión incluye todos los
+    servicios en la nube prestados por <b>KEYBE</b> hacia el <b>CLIENTE</b>,
+    respecto a una o varias <b>MARCAS</b> (como definido en la Sección 1 del
+    ANEXO 1), excluyendo completamente una comisión por los costos de consumo
+    del PARTNER en la plataforma Keybe y excluyendo el costo de las licencias
+    que usará el <b>PARTNER</b>.
+  </p>
+
+  <p>
+    Se entiende por “costos de consumo”, todos los mensajes de planes, licencias
+    de usuario, Whatsapp, SMS y Email, etc… (entendido que el valor de SMS podrá
+    variar según el país), los valores asociados a Whatsapp (determinados por
+    Meta y variando según el país), Acciones y Almacenamiento superior a 10gb si
+    es necesario.
+  </p>
+
+  <p>
+    <b>PARÁGRAFO CUARTO:</b> Mediante el presente <b>CONTRATO</b>, el
+    <b>PARTNER</b> gozará de licencias con un precio equivalente a un dólar USD
+    ($1 USD). Esta modalidad aplica únicamente a la cuenta de PARTNER y
+    exclusivamente a la actividad de este último como PARTNER.
+  </p>
+
+  <p>
+    <b>PARÁGRAFO QUINTO:</b> El pago de las comisiones o beneficios establecidos
+    en el ANEXO 1, cesará de forma inmediata con la terminación del presente
+    <b>CONTRATO</b>.
+  </p>
+
+  <p>
+    <b>SEXTA. -NATURALEZA DEL <b>CONTRATO</b>:</b> las <b>PARTES</b> dejan
+    constancia que la relación que las vincula es de carácter estrictamente
+    comercial, y que, por tanto, ni el <b>PARTNER</b>, ni sus dependientes,
+    colaboradores, proveedores, asesores o contratistas tendrán ningún tipo de
+    vinculación laboral con <b>KEYBE</b>, ni podrán exigir de ella pagos por
+    concepto de salarios, liquidación de <b>contrato</b>, vacaciones legales a
+    extralegales que pudieran corresponder a una relación laboral.
+  </p>
+
+  <p>
+    <b>PARÁGRAFO:</b> el <b>PARTNER</b> no podrá actuar en nombre o por cuenta
+    de <b>KEYBE</b>, salvo que exista expresa autorización para ello conferida
+    por escrito por la otra parte.
+  </p>
+
+  <p>
+    <b>SÉPTIMA. -DURACIÓN:</b> el presente <b>CONTRATO</b> es de vigencia de un
+    (1) año y podrá prorrogarse por acuerdo entre las <b>PARTES</b> con
+    antelación a la fecha de su expiración mediante la celebración de un
+    <b>contrato</b> adicional que deberá constar por escrito.
+  </p>
+
+  <p>
+    No obstante, lo anterior, <b>KEYBE</b> podrá dar por terminados todos o
+    alguno de los servicios en cualquier tiempo, bastando para ello,
+    comunicación verbal o escrita con una antelación de treinta (30) días, a la
+    fecha en la cual se pretende dar por terminado el servicio, teniendo en
+    cuenta la cláusula octava aquí establecida, sin que ello sea causal de
+    sanción o pago de indemnización alguna para <b>KEYBE</b>.
+  </p>
+
+  <p><b>OCTAVA. -TERMINACIÓN:</b> el presente <b>CONTRATO</b> terminará:</p>
+
+  <ol type="a">
+    <li>Por común acuerdo entre las <b>PARTES</b>.</li>
+    <li>Por decisión unilateral de alguna de las <b>PARTES</b>.</li>
+    <li>
+      Por incumplimiento de cualquiera de una de las <b>PARTES</b> a sus
+      obligaciones legales o contractuales.
+    </li>
+    <li>Por solicitud expresa del <b>CLIENTE</b>.</li>
+    <li>Por expiración del plazo pactado en la cláusula séptima.</li>
+    <li>Por muerte del PARTNER.</li>
+  </ol>
+
+  <p>
+    <b>NOVENA. -CLÁUSULA COMPROMISORIA:</b> El presente <b>CONTRATO</b> se
+    regirá para todos los efectos legales y procesales por las leyes del Estado
+    de Delaware, Estados Unidos. Durante la ejecución del mismo o con ocasión o
+    a la terminación del <b>CONTRATO</b>, todas las controversias, diferencias,
+    disputas o reclamos que pudieran derivarse durante la ejecución del
+    <b>CONTRATO</b>, con ocasión o a la terminación del mismo, se resolverán en
+    primera instancia a través de negociación directa entre los funcionarios que
+    designe cada parte.
+  </p>
+
+  <p>
+    De no lograrse un acuerdo directo entre las <b>PARTES</b>, cualquier disputa
+    o reclamación que surja de o en relación con él o su objeto o formación
+    (incluyendo disputas o reclamaciones no contractuales) se regirán e
+    interpretarán de acuerdo con la ley del Estado de Delaware y cada Parte
+    acepta irrevocablemente que los tribunales ubicados en el Estado de
+    Delaware, Estados Unidos, tendrán jurisdicción exclusiva para resolver
+    cualquier disputa o reclamación.
+  </p>
+
+  <p>
+    <b>DÉCIMA. - CONFIDENCIALIDAD:</b> las <b>PARTES</b> se comprometen a
+    guardar completa confidencialidad frente a información que obtenga en el
+    ejercicio del presente <b>CONTRATO</b> y sobre la información suministrada
+    de manera directa o indirecta por <b>KEYBE</b>.
+  </p>
+
+  <p>
+    <b>El PARTNER</b> reconoce que existe la necesidad para <b>KEYBE</b> de
+    revelar cierta información confidencial que será utilizada únicamente por el
+    <b>PARTNER</b> y reconoce, además, la necesidad de proteger dicha
+    información confidencial del indebido uso y divulgación.
+  </p>
+
+  <p>
+    En consideración a la divulgación de dicha información, las
+    <b>PARTES</b> acuerdan lo siguiente:
+  </p>
+
+  <p>
+    1. Definición. “información confidencial” significa cualquier información
+    confidencial o privada, información técnica, incluyendo de manera no
+    taxativa la información concerniente a la investigación, planes de
+    producción, productos, servicios, clientela, programas, tendencias,
+    inventos, procesos, diseños, ingeniería, información de configuración,
+    mercadeo o finanzas suministrada por <b>KEYBE</b> al PARTNER.
+    <b>El PARTNER</b> declara, reconoce y acepta que la información confidencial
+    puede incluir secretos comerciales, programas de computadora, y en general
+    la información, productos, objetos, marcas, invenciones protegidas por las
+    leyes de Propiedad Intelectual.
+  </p>
+  <p>
+    2. Exclusión. La información confidencial no incluirá información alguna (i)
+    que al momento de la divulgación o en lo sucesivo, sea o se torne del
+    conocimiento público sin que medie violación de cualquier obligación de
+    confidencialidad por parte del PARTNER o de algún tercero; (ii) que haya
+    sido del conocimiento del PARTNER sin que haya mediado restricción de uso o
+    divulgación antes del recibo de dicha información; (iii) que haya sido
+    suministrada al <b>PARTNER</b> por un tercero sin que haya mediado
+    restricción en cuanto a su uso o divulgación, y sin que se haya cometido
+    violación alguna de dicha restricción por parte de un tercero; (iv) que el
+    PARTNER pueda documentar que fue desarrollada sin que guarde referencia con
+    la información confidencial de <b>KEYBE</b>, o (v) cuya divulgación haya
+    sido aprobada mediante autorización escrita de <b>KEYBE</b>.
+  </p>
+  <p>
+    3. No-Divulgación de información confidencial. <b>El PARTNER</b> acuerda (i)
+    mantener la información confidencial de <b>KEYBE</b> en privado en la manera
+    que se describe más adelante, (ii) no divulgar información confidencial
+    alguna a terceros, (iii) no utilizar información confidencial alguna para su
+    propio beneficio o con cualquier propósito salvo que ello se disponga en el
+    presente <b>CONTRATO</b>, y (iv) no copiar o reproducir la información
+    confidencial. <b>El PARTNER</b> podrá además divulgar información
+    confidencial recibida de <b>KEYBE</b> a empleados de cualquier sucursal,
+    subsidiaria o afiliada del PARTNER, que estén en necesidad de conocerla.
+    <b>El PARTNER</b> deberá informar de manera apropiada a los empleados que
+    estén en necesidad de conocer la información confidencial, sobre el
+    contenido y las disposiciones del presente <b>CONTRATO</b>.
+    <b>El PARTNER</b> acuerda que ordenará a sus empleados, directores,
+    dignatarios, accionistas, agentes, empleados, consultores externos e
+    internos, auditores la no-divulgación de cualquier información confidencial
+    de <b>KEYBE</b> a terceros sin que medie el previo consentimiento por
+    escrito de <b>KEYBE</b>. <b>El PARTNER</b> acuerda que adoptará todas las
+    medidas razonables a fin de proteger la privacidad de la información
+    confidencial de <b>KEYBE</b> y evitará la divulgación o la utilización de
+    información confidencial de <b>KEYBE</b> que no sea autorizada en el
+    presente <b>CONTRATO</b> de manera expresa, medidas las cuales no serán
+    menos estrictas que las que el <b>PARTNER</b> utiliza para proteger su
+    propia información de naturaleza e importancia similares.
+    <b>El PARTNER</b> acuerda notificar a <b>KEYBE</b>, por escrito, sobre
+    cualquier uso indebido o apropiación ilícita de la información confidencial
+    de que tenga conocimiento.
+  </p>
+  <p>
+    4. Divulgación de conformidad con la Ley. <b>El PARTNER</b> podrá divulgar
+    información confidencial de <b>KEYBE</b> en la medida en que dicha
+    divulgación se encuentre amparada por la ley. En tal caso, el
+    <b>PARTNER</b> notificará a <b>KEYBE</b>, propietaria de la información
+    confidencial, siempre que ello no esté expresamente prohibido por la ley,
+    sobre cualquier petición o solicitud que reciba para dar a conocer la
+    información confidencial con la suficiente antelación para permitir a
+    <b>KEYBE</b> objetar dicha divulgación requerida.
+  </p>
+  <p>
+    5. Devolución de Materiales. Todas las copias de asuntos tangibles,
+    incluyendo de manera no taxativa, documentos y medios magnéticos, que
+    contengan o abarquen información confidencial que haya sido suministrada por
+    <b>KEYBE</b> al PARTNER, a solicitud de <b>KEYBE</b>, serán devueltas de
+    inmediato, o previo recibo de aprobación escrita de <b>KEYBE</b>, serán
+    destruidas luego de que la revelación de dicha información confidencial haya
+    servido su propósito. En adición, el <b>PARTNER</b>, previo recibo de
+    instrucciones escritas por <b>KEYBE</b>, destruirá la totalidad de las
+    copias de asuntos tangibles, incluyendo de manera no taxativa, los
+    documentos y los medios magnéticos desarrollados por el <b>PARTNER</b>, los
+    cuales guardan relación con la información confidencial divulgada por
+    <b>KEYBE</b>.
+  </p>
+  <p>
+    6. Término. Las obligaciones del PARTNER conforme al presente
+    <b>CONTRATO</b> sobrevivirán a cualquier terminación de discusión o
+    negociación entre las <b>PARTES</b> y continuarán por un período de dos (2)
+    años posteriores a la fecha de terminación del presente <b>CONTRATO</b>. No
+    obstante, lo anterior, queda entendido que las obligaciones de
+    confidencialidad con respecto a la información confidencial sobrevivirán al
+    término de este <b>CONTRATO</b>.
+  </p>
+  <p>
+    7. Recursos. <b>El PARTNER</b> acuerda que la información confidencial de
+    <b>KEYBE</b> es de su propiedad exclusiva, y que los daños monetarios serían
+    insuficientes para compensar a <b>KEYBE</b> por la divulgación de la
+    información confidencial o por la violación de cualquiera de las condiciones
+    y convenios contemplados en este <b>CONTRATO</b>. En consecuencia, las
+    <b>PARTES</b> acuerdan y reconocen que dicha violación causará un daño
+    irreparable a la parte que no haya incurrido en incumplimiento alguno y que,
+    en adición a cualesquiera recursos adicionales que puedan encontrarse a
+    disposición, por ley, en equidad o de otro modo, la parte que no haya
+    incurrido en incumplimiento alguno estará facultada para obtener una orden
+    judicial, conforme considere apropiado, de algún tribunal de jurisdicción
+    competente para impedir la continuidad de dicha violación por una de las
+    <b>partes</b>, sin que medie necesidad de comprobar la existencia de daños
+    reales.
+  </p>
+
+  <p>
+    <b>DÉCIMA PRIMERA. - PROTECCIÓN DE DATOS PERSONALES.</b> Queda informado que
+    los datos personales entregados por el <b>PARTNER</b> a través de la
+    documentación necesaria para proceder a la contratación, o en cualquier
+    momento de la relación contractual serán tratados por <b>KEYBE</b>, con la
+    finalidad de garantizar la celebración y ejecución del presente
+    <b>CONTRATO</b> o satisfacer los requerimientos que afecten de forma directa
+    o indirecta el mismo. La firma del presente <b>CONTRATO</b> constituye un
+    permiso para que <b>KEYBE</b> recoja, registre y almacene los datos
+    necesarios.
+  </p>
+
+  <p>
+    <b>El PARTNER</b> únicamente comunicará a <b>KEYBE</b> datos personales,
+    adecuados, pertinentes y no excesivos en relación con las necesidades del
+    objeto del presente <b>CONTRATO</b>, garantizando que dichos datos sean
+    exactos y puestos al día, y obligándose a comunicar a <b>KEYBE</b> cualquier
+    modificación. Cualquier interesado podrá ejercitar sus derechos de acceso,
+    rectificación, cancelación y oposición solicitándolo por escrito dirigido a
+    <b>KEYBE</b> a la dirección de notificación.
+  </p>
+
+  <p>
+    La política general de protección de datos está disponible en sitio internet
+    de <b><b>KEYBE</b></b>
+    <a href="https://keybe.ai/legales/acuerdo-de-privacidad"
+      >https://keybe.ai/legales/acuerdo-de-privacidad</a
+    >.
+  </p>
+
+  <p>
+    <b>DÉCIMA SEGUNDA. - INDEMNIZACIÓN. <b>El PARTNER</b></b> indemnizará,
+    saldrá en defensa y mantendrá indemne a <b>KEYBE</b>, a sus funcionarios,
+    directores, empleados, agentes (colectivamente los “Indemnizados del
+    PARTNER”) de y contra cualesquiera reclamaciones, demandas, que resulten de,
+    surjan, estén asociadas a las acciones u omisiones del PARTNER en
+    cumplimiento del presente <b>CONTRATO</b>, y que sean atribuibles al
+    PARTNER, incluyendo, pero sin limitarse a las siguientes:
+  </p>
+
+  <ol>
+    <li>
+      La negligencia del <b>PARTNER</b> o su conducta intencional inapropiada.
+    </li>
+    <li>
+      La inexactitud, falsedad o violación de declaración o representación hecho
+      por el <b>PARTNER</b>.
+    </li>
+    <li>
+      Los errores del <b>PARTNER</b>, sus omisiones o fallas en el desempeño de
+      los servicios a su cargo bajo este <b>CONTRATO</b>.
+    </li>
+    <li>
+      Cualquier violación de una norma jurídica por parte del <b>PARTNER</b>.
+    </li>
+    <li>
+      Cualquier daño ocasionado o derivado de las actuaciones de los empleados
+      del
+      <b>PARTNER</b>.
+    </li>
+    <li>Reclamaciones hechas por los subcontratistas del <b>PARTNER</b>.</li>
+    <li>
+      Cualquier monto, incluyendo impuestos, intereses y multas, serán imputadas
+      en contra del <b>PARTNER</b> que sean obligación del <b>PARTNER</b>.
+    </li>
+    <li>
+      Cualquier reclamación hecha contra <b>KEYBE</b> por el uso del software a
+      que se refiere este <b>CONTRATO</b> o relacionadas con propiedad
+      intelectual que el <b>PARTNER</b> utilizó o le permitió a
+      <b>KEYBE</b> utilizar en virtud de este <b>CONTRATO</b>.
+    </li>
+  </ol>
+
+  <p>
+    <b>PARÁGRAFO PRIMERO:</b> Si una reclamación de un tercero se instaura
+    contra <b>KEYBE</b>, <b>KEYBE</b> dará aviso de la reclamación y
+    suministrará copias de toda la documentación relacionada al PARTNER. Tal
+    aviso y documentación se suministrará tan pronto sea posible.
+    <b>KEYBE</b> cooperará con el <b>PARTNER</b> y sus abogados en la
+    investigación, en las pruebas y en la defensa de dicha reclamación y de
+    cualquier apelación. <b>KEYBE</b> podrá, a su propio costo y asumiendo el
+    gasto, participar, a través de sus abogados o de otra forma, en tal
+    investigación, prueba y defensa de dicha reclamación y de cualquier
+    apelación. En tal caso, el <b>PARTNER</b> cooperará con los abogados de
+    <b>KEYBE</b>. Sin embargo, si una autoridad gubernamental presenta una
+    reclamación contra <b>KEYBE</b> o contra cualquiera de los Indemnizados del
+    PARTNER, entonces <b>KEYBE</b> tendrá el derecho, a su discreción razonable,
+    de asumir el control de la defensa de cualquier dicha reclamación y el
+    <b>PARTNER</b> deberá reembolsar a <b>KEYBE</b> los costos razonables de la
+    defensa.
+  </p>
+
+  <p>
+    Cualquier acuerdo extrajudicial relacionado con reclamaciones de
+    indemnización estará sujeto a la aprobación expresa de <b>KEYBE</b>.
+  </p>
+
+  <p>
+    <b
+      >DÉCIMA TERCERA. - AUTONOMÍA E INDEPENDENCIA EN EL MANEJO DEL PERSONAL:</b
+    >
+    los servicios objeto del presente <b>CONTRATO</b> constituyen una de las
+    principales actividades del PARTNER o con quien contratamos como proveedor
+    independiente que es, desarrolladas bajo su propio riesgo y medios, sin
+    estar sujeto al cumplimiento de horarios ni a reglamentos de trabajo. Por
+    ello en desarrollo de las actividades tendrá plena libertad y autonomía
+    técnica, administrativa y financiera en la ejecución y cumplimiento de las
+    mismas y en ningún momento, se constituye <b>contrato</b> o relación de
+    trabajo alguno entre KEYBE y las personas que el <b>PARTNER</b> vincule para
+    la ejecución de los servicios aquí contratados; razón por la cual no habrá
+    lugar a cargo de KEYBE al pago de salarios, prestaciones sociales ni demás
+    derechos que amparen a trabajadores subordinados o dependientes.
+  </p>
+
+  <p>
+    En consecuencia, el <b>PARTNER</b> asumirá bajo su propio riesgo, las
+    obligaciones laborales o de cualquier otro tipo que requiera para la
+    prestación de sus servicios, empleando de manera directa a sus propios
+    empleados y técnicos especializados y declara que para efectos de la
+    prestación de los servicios, obra como único empleador del personal
+    utilizado, por consiguiente, el personal que contrate será de su exclusiva
+    subordinación, por lo que el <b>PARTNER</b> mantendrá libre e indemne a
+    KEYBE de cualquier consecuencia patrimonial que pueda derivarse de las
+    relaciones de trabajo que los servicios ofrecidos demanden y en caso de
+    iniciarse en contra de KEYBE alguna acción judicial o administrativa
+    relacionada con estos servicios, el <b>PARTNER</b> defenderá los intereses
+    de KEYBE y cubrirá los costos que cualquier acción laboral, civil, penal,
+    etc. originada por causa o con ocasión de las relaciones laborales del
+    <b>PARTNER</b> con su personal.
+  </p>
+
+  <p>
+    Antes de iniciar la prestación de los servicios objeto de este
+    <b>CONTRATO</b> y durante su ejecución, el <b>PARTNER</b> deberá tener
+    afiliado por su propia cuenta al personal contratado para la ejecución de
+    éste al sistema de seguridad social pertinente. Nombre del oferente o con
+    quien contratamos entregará a KEYBE por lo menos cada tres meses constancias
+    de aportes a la seguridad social; además, KEYBE en cualquier tiempo podrá
+    solicitar los documentos que estime pertinentes para verificar el
+    cumplimiento de esta obligación. El <b>PARTNER</b> se responsabiliza por los
+    pagos de las prestaciones sociales, los salarios de sus trabajadores,
+    aportes parafiscales, indemnizaciones; así mismo velará porque todos sus
+    trabajadores tomen su período de vacaciones por lo menos una vez durante el
+    año sin excepción, quedando KEYBE completamente exonerada de cualquier
+    responsabilidad por estos conceptos.
+  </p>
+
+  <p>
+    <b>DÉCIMA CUARTA. - CLÁUSULA PENAL:</b> en caso de que el
+    <b>PARTNER</b> incumpla con las obligaciones emanadas de las cláusulas
+    DECIMA y DECIMA TERCERA del presente <b>CONTRATO</b>, quedará obligado a
+    pagar, a título de pena, la suma equivalente a dos mil trescientos dólares
+    USD ($2,300 USD), suma que será exigible el día siguiente al del
+    incumplimiento con la sola presentación de este documento, el cual prestará
+    mérito ejecutivo. Por el pago de la pena no se extingue la obligación
+    principal, la cual podrá ser exigida separada o conjuntamente y no impide el
+    ejercicio de las acciones indemnizatorias de perjuicios a que tenga derecho
+    KEYBE.
+  </p>
+
+  <p>
+    <b>DÉCIMA QUINTA. - OTROS ANEXOS:</b> Los anexos que hacen parte integral
+    del presente <b>CONTRATO</b> son:
+  </p>
+
+  <ol>
+    <li>Anexo 01 Comisiones o beneficios.</li>
+    <li>
+      Anexo 02 Documentos de identificación del <b>PARTNER</b>: Cámara de
+      comercio, RUT, Cédula representante legal, certificación bancária.
+    </li>
+    <li>
+      Anexo 03 Documentos de identificación de KEYBE: Certificate of Incumbency,
+      Cédula representante legal, certificación bancaria.
+    </li>
+  </ol>
+
+  <p>
+    Las <b>PARTES</b> podrán de común acuerdo y por escrito, modificar, retirar,
+    adicionar en cualquier tiempo de vigencia del <b>CONTRATO</b> los anexos que
+    hacen parte integral de este <b>CONTRATO</b> y como tal los nuevos anexos
+    reemplazan y anulan los anteriores. En caso de contradicción entre el
+    <b>CONTRATO</b> y algún anexo, prima el contenido del presente
+    <b>CONTRATO</b> sobre el contenido de los anexos presentes o futuros que
+    hacen o hagan parte integral del mismo.
+  </p>
+
+  <p>
+    Para constancia se firma en la ciudad de Medellín en dos ejemplares de igual
+    tenor y valor, el <span name="fecha_firma">_________________</span>
+  </p>
+
+  <br /><br /><br /><br />
+
+  <p>
+    <b>
+      KEYBE 
+      <div id="firma_keybe_1" name="firma_keybe" class="sign_margin"></div>
+      <br />
+      SAMUEL URQUIJO MURILLO
+      <br />
+      REPRESENTANTE LEGAL
+      <br />
+      KEYBE INC.
+      <br />
+      C.C. 1.036.930.038
+    </b>
+  </p>
+
+  <br /><br />
+
+  <p>
+    <b> PARTNER </b>
+    <div id="firma_partner_1" name="firma_partner" class="sign_margin"></div>
+    <br />
+    <b name="nombre_partner">_________________</b>
+    <br />
+    <b>C.C. <b name="cc_partner">_________________</b></b>
   </p>
 </div>
 
 <div style="page-break-after: always"></div>
 
-<div class="page">
-  <img
-    class="image"
-    src="https://mi-contrato-static.s3.amazonaws.com/Keybe/acuerdo_partners.jpg"
-  />
-  <br /><br /><br />
+<div>
+  <p style="text-align: center"><b>ANEXO 1 COMISIONES O BENEFICIOS</b></p>
+
+  <p>Las comisiones se asignan al <b>PARTNER</b> de la siguiente manera:</p>
+
   <p>
-    <span>
-      <ol type="a">
-        <li>
-          <p>
-            La negligencia del <b>PARTNER</b> o su conducta intencional
-            inapropiada.
-          </p>
-        </li>
-        <li>
-          <p>
-            La inexactitud, falsedad o violación de declaración o representación
-            hecho por el <b>PARTNER</b>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Los errores del <b>PARTNER</b>, sus omisiones o fallas en el
-            desempeño de los servicios a su cargo bajo este Contrato.
-          </p>
-        </li>
-        <li>
-          <p>
-            Cualquier violación de una norma jurídica por parte del
-            <b>PARTNER</b>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Cualquier daño ocasionado o derivado de las actuaciones de los
-            empleados del <b>PARTNER</b>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Reclamaciones hechas por los subcontratistas del <b>PARTNER</b>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Cualquier monto, incluyendo impuestos, intereses y multas, serán
-            imputadas en contra del <b>PARTNER</b> que sean obligación del
-            <b>PARTNER</b>.
-          </p>
-        </li>
-        <li>
-          <p>
-            Cualquier reclamación hecha contra la <b>COMPAÑÍA</b> por el uso del
-            software a que se refiere este Contrato o relacionadas con propiedad
-            intelectual que el <b>PARTNER</b> utilizó o le permitió a la
-            <b>COMPAÑÍA</b>
-            utilizar en virtud de este Contrato.
-          </p>
-        </li>
-      </ol>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>PARÁGRAFO PRIMERO:</b> Si una reclamación de un tercero se instaura
-      contra la <b>COMPAÑÍA</b>, la <b>COMPAÑÍA</b> dará aviso de la reclamación
-      y suministrará copias de toda la documentación relacionada al
-      <b>PARTNER</b>. Tal aviso y documentación se suministrará tan pronto sea
-      posible. La <b>COMPAÑÍA</b> cooperará con el <b>PARTNER</b> y sus abogados
-      en la investigación, en las pruebas y en la defensa de dicha reclamación y
-      de cualquier apelación. La <b>COMPAÑÍA</b> podrá, a su propio costo y
-      asumiendo el gasto, participar, a través de sus abogados o de otra forma,
-      en tal investigación, prueba y defensa de dicha reclamación y de cualquier
-      apelación. En tal caso, el <b>PARTNER</b> cooperará con los abogados de la
-      <b>COMPAÑÍA</b>. Sin embargo, si una autoridad gubernamental presenta una
-      reclamación contra la COMPAÑÍA o contra cualquiera de los Indemnizados del
-      PARTNER, entonces la <b>COMPAÑÍA</b> tendrá el derecho, a su discreción
-      razonable, de asumir el control de la defensa de cualquier dicha
-      reclamación y el <b>PARTNER</b> deberá reembolsar a la <b>COMPAÑÍA</b> los
-      costos razonables de la defensa.
-    </span>
-    <br /><br /><br />
-    <span>
-      Cualquier acuerdo extrajudicial relacionado con reclamaciones de
-      indemnidad estará sujeto a la aprobación expresa de la <b>COMPAÑÍA.</b>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>DÉCIMA SEGUNDA. - EXCLUSIVIDAD Y NO COMPETENCIA:</b> el
-      <b>PARTNER</b> se compromete a no firmar ningún contrato similar o
-      realizar alguna actividad similar con otra empresa que se encuentre en el
-      mismo rango de mercado, o que pueda ser potencial competidor de la
-      <b>COMPAÑÍA</b> durante el contrato.
-    </span>
+    1. El <b>PARTNER</b>, INTERMEDIARIO COMERCIAL, gana un porcentaje
+    equivalente al:
   </p>
-  <br /><br /><br />
-  <p class="customFooter">
-    <span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEYBE INC. EIN
-      30-1280531 &nbsp; KEYBE AI CORP EIN. 85-2498949<br />
-      &nbsp;&nbsp;Medellín, Colombia, CO. &nbsp; West New York, NJ. USA<br /><br />
-      &nbsp;<u>www.keybe.ai</u> | <u>hello@kbe.ai</u>
-    </span>
-  </p>
-</div>
+  <ul>
+    <li>
+      5% de la facturación de los clientes contratados respecto a una o varias
+      MARCAS propias, durante los primeros 3 meses.
+    </li>
+  </ul>
 
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <img
-    class="image"
-    src="https://mi-contrato-static.s3.amazonaws.com/Keybe/acuerdo_partners.jpg"
-  />
-  <br /><br /><br />
   <p>
-    <span>
-      <b
-        >DÉCIMA TERCERA. - AUTONOMÍA E INDEPENDENCIA EN EL MANEJO DEL
-        PERSONAL</b
-      >: los SERVICIOS objeto del presente contrato constituyen una de las
-      principales actividades del <b>PARTNER</b> o con quien contratamos como
-      proveedor independiente que es, desarrolladas bajo su propio riesgo y
-      medios, sin estar sujeto al cumplimiento de horarios ni a reglamentos de
-      trabajo. Por ello en desarrollo de las actividades tendrá plena libertad y
-      autonomía técnica, administrativa y financiera en la ejecución y
-      cumplimiento de las mismas y en ningún momento, se constituye contrato o
-      relación de trabajo alguno entre la <b>COMPAÑÍA</b> y las personas que el
-      <b>PARTNER</b> vincule para la ejecución de los servicios aquí
-      contratados; razón por la cual no habrá lugar a cargo de la
-      <b>COMPAÑÍA</b> al pago de salarios, prestaciones sociales ni demás
-      derechos que amparen a trabajadores subordinados o dependientes.
-    </span>
-    <br /><br /><br />
-    <span>
-      En consecuencia, el <b>PARTNER</b> asumirá bajo su propio riesgo, las
-      obligaciones laborales o de cualquier otro tipo que requiera para la
-      prestación de sus servicios, empleando de manera directa a sus propios
-      empleados y técnicos especializados y declara que para efectos de la
-      prestación de los servicios, obra como único empleador del personal
-      utilizado, por consiguiente, el personal que contrate será de su exclusiva
-      subordinación, por lo que el <b>PARTNER</b> mantendrá libre e indemne a la
-      <b>COMPAÑÍA</b> de cualquier consecuencia patrimonial que pueda derivarse
-      de las relaciones de trabajo que los servicios ofrecidos demanden y en
-      caso de iniciarse en contra de la <b>COMPAÑÍA</b> alguna acción judicial o
-      administrativa relacionada con estos servicios, el
-      <b>PARTNER</b> defenderá los intereses de la <b>COMPAÑÍA</b> y cubrirá los
-      costos que cualquier acción laboral, civil, penal, etc. originada por
-      causa o con ocasión de las relaciones laborales del <b>PARTNER</b> con su
-      personal.
-    </span>
-    <br /><br /><br />
-    <span>
-      Antes de iniciar la prestación de los servicios objeto de este contrato y
-      durante su ejecución, el <b>PARTNER</b> deberá tener afiliado por su
-      propia cuenta al personal contratado para la ejecución de éste al sistema
-      de seguridad social integral pensiones, salud y riesgos laborales y a una
-      caja de compensación familiar. Nombre del oferente o con quien contratamos
-      entregará a la <b>COMPAÑÍA</b> por lo menos cada tres meses constancias de
-      aportes a la seguridad social; además, la <b>COMPAÑÍA</b> en cualquier
-      tiempo podrá solicitar los documentos que estime pertinentes para
-      verificar el cumplimiento de esta obligación. El <b>PARTNER</b> se
-      responsabiliza por los pagos de las prestaciones sociales, los salarios de
-      sus trabajadores, aportes parafiscales, indemnizaciones; así mismo velará
-      porque todos sus trabajadores tomen su período de vacaciones por lo menos
-      una vez durante el año sin excepción, quedando la
-      <b>COMPAÑÍA</b> completamente exonerada de cualquier responsabilidad por
-      estos conceptos.
-    </span>
+    Se entiende por <b>“INTERMEDIARIO COMERCIAL”</b>, el <b>PARTNER</b> que
+    refiere a clientes, sin tener que cumplir con las obligaciones específicas
+    de la Sección 2 del presente <b>ANEXO 1</b>.
   </p>
-  <br /><br /><br />
-  <p class="customFooter">
-    <span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEYBE INC. EIN
-      30-1280531 &nbsp; KEYBE AI CORP EIN. 85-2498949<br />
-      &nbsp;&nbsp;Medellín, Colombia, CO. &nbsp; West New York, NJ. USA<br /><br />
-      &nbsp;<u>www.keybe.ai</u> | <u>hello@kbe.ai</u>
-    </span>
-  </p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div class="page">
-  <img
-    class="image"
-    src="https://mi-contrato-static.s3.amazonaws.com/Keybe/acuerdo_partners.jpg"
-  />
-  <br /><br /><br />
   <p>
-    <span>
-      <b>DÉCIMA CUARTA. - CLÁUSULA PENAL:</b> en caso de que el
-      <b>PARTNER</b> incumpla o se retarde en el cumplimiento de cualquiera de
-      sus obligaciones emanadas de este contrato, quedará obligado a pagar, a
-      título de pena, la suma equivalente a 10 SMMLV, suma que será exigible el
-      día siguiente al del incumplimiento con la sola presentación de este
-      documento, el cual prestará mérito ejecutivo. Por el pago de la pena no se
-      extingue la obligación principal, la cual podrá ser exigida separada o
-      conjuntamente y no impide el ejercicio de las acciones indemnizatorias de
-      perjuicios a que tenga derecho la <b>COMPAÑÍA.</b>
-    </span>
-    <br /><br /><br />
-    <span>
-      <b>DÉCIMA QUINTA. - OTROS ANEXOS:</b> Los anexos que hacen parte integral
-      del presente contrato son:
-      <ol>
-        <li>
-          <p>Anexo 01 omisiones o beneficios.</p>
-        </li>
-        <li>
-          <p>Anexo 02 Acuerdo de confidencialidad.</p>
-        </li>
-        <li>
-          <p>
-            Anexo 03 Documentos de identificación del <b>PARTNER</b>: Cámara de
-            comercio, RUT, Cédula representante legal, certificación bancaria.
-          </p>
-        </li>
-        <li>
-          <p>Documentos de identificación de la COMPAÑÍA.</p>
-        </li>
-      </ol>
-    </span>
-    <br /><br /><br />
-    <span>
-      Las <b>PARTES</b> podrán de común acuerdo y por escrito, modificar,
-      retirar, adicionar en cualquier tiempo de vigencia del contrato los anexos
-      que hacen parte integral de este contrato y como tal los nuevos anexos
-      reemplazan y anulan los anteriores. En caso de contradicción entre el
-      contrato y algún anexo, prima el contenido del presente contrato sobre el
-      contenido de los anexos presentes o futuros que hacen o hagan parte
-      integral del mismo.
-    </span>
-    <br /><br /><br />
-    <span>
-      Para constancia se firma en la ciudad de Medellín en dos ejemplares de
-      igual tenor y valor, el día <span name="dias_firma">__</span> de
-      <span name="mes_firma">________</span> de
-      <span name="anio_firma">____</span>.
-    </span>
+    Se entiende por <b>“MARCA”</b>, todo elemento marcador de servicios y
+    productos de un <b>CLIENTE</b>, entendido que un <b>CLIENTE</b> puede
+    manejar varias MARCAS y en consecuencia, un <b>CLIENTE</b> puede tener
+    tantos <b>PARTNER</b>S como MARCAS propias.
   </p>
-  <br /><br />
-  <br /><br />
-  <div class="left">
+
+  <p>
+    2. El <b>PARTNER</b>, ALIADO COMERCIAL, gana un porcentaje equivalente al:
+  </p>
+
+  <ul>
+    <li>
+      10% de la facturación de los clientes contratados respecto a una o varias
+      <b>MARCAS</b> propias, durante los primeros 3 meses.
+    </li>
+
+    <li>
+      15% de la facturación de los clientes contratados respecto a una o varias
+      <b>MARCAS</b> propias, por los siguientes 3 meses.
+    </li>
+
+    <li>
+      17% de la facturación de los clientes contratados respecto a una o varias
+      <b>MARCAS</b> propias, desde el séptimo mes en adelante.
+    </li>
+  </ul>
+
+  <p>
+    El <b>PARTNER</b>, ALIADO COMERCIAL, recibirá un crédito por parte de
+    <b>KEYBE</b>, directamente en su cuenta KEYBE, equivalente a cien dólares
+    USD ($100 USD) que podrá utilizar libremente en la plataforma keybe.
+  </p>
+
+  <p>
+    Se entiende por “ALIADO COMERCIAL”, el <b>PARTNER</b> que demuestra valor en
+    el servicio con buenas relaciones con los clientes aportando acompañamiento
+    demostrable que ayuden a que el <b>CLIENTE</b> en lo siguiente:
+  </p>
+
+  <ol>
+    <li>
+      Certificarse como <b>PARTNER</b> oficial de <b>KEYBE</b> a través de Keybe
+      Academy, cursando los 5 módulos principales.
+    </li>
+    <li>
+      Mantenerse como <b>PARTNER</b> actualizado en la Certificación Keybe
+      Academy cada Quarter (Tres meses).
+    </li>
+    <li>
+      Ser Partner Activo. El estado de <b>PARTNER</b> activo se revisará
+      internamente al final de cada Quarter.
+    </li>
+    <li>
+      Mantener un nivel de satisfacción del <b>CLIENTE</b> con el
+      <b>PARTNER</b> del 70% como mínimo. De hecho, se realizará mensualmente
+      una encuesta de CSAT (CUSTOMER SATISFACTION SCORE) que califica la
+      atención y el servicio prestado por el <b>PARTNER</b> hacia el
+      <b>CLIENTE</b>, sobre 10. En caso de tener una calificación inferior a 7
+      en 2 ocasiones con un mismo <b>CLIENTE</b>, este último podrá solicitar
+      cambio de <b>PARTNER</b>.
+    </li>
+    <li>
+      Ejecutar constantemente estrategias de Up selling y Cross selling con el
+      <b>CLIENTE</b>.
+    </li>
+    <li>
+      Hacer uso de Keybe como herramienta de ventas 360 para llevar a cabo todo
+      el proceso de partner Keybe.
+    </li>
+    <li>
+      Brindar un acompañamiento adecuado al <b>CLIENTE</b>, implicando:
+      <ul>
+        <li>Dominio de proceso de ventas</li>
+        <li>Proceso de implementación (Onboarding)</li>
+        <li>
+          Estrategias de crecimiento. (CRM, BOT, AUTOMATIZACIONES, UP SELLING,
+          CROSS SELLING)
+        </li>
+      </ul>
+    </li>
+    <li>
+      Brindar respuesta oportuna al <b>CLIENTE</b>, en un tiempo no mayor a las
+      24 horas, en días hábiles.
+    </li>
+    <li>Cumplir con los Términos y Condiciones del servicio de Keybe.</li>
+  </ol>
+
+  <p>
+    El valor anteriormente mencionado se liquidará por el valor antes de
+    impuestos de venta adjudicados según el territorio. El pago de dicha
+    comisión se realizará al <b>PARTNER</b> dentro de los quince (15) días
+    calendario siguientes, al mes vencido luego que la factura emitida por
+    <b>KEYBE</b> sea efectivamente pagada por el <b>CLIENTE</b>, igualmente el
+    pago se realizará en la moneda de la negociación con el <b>CLIENTE</b> y por
+    el medio pactado de mutuo acuerdo entre las PARTES.
+  </p>
+
+  <p>
+    Para constancia se firma en la ciudad de Medellín en dos ejemplares de igual
+    tenor y valor, el <span name="fecha_firma">_________________</span>
+  </p>
+
+  <br /><br /><br /><br />
+
+  <p>
     <b>
-      <div id="firma_keybe"></div>
-      <span>_____________________________________</span><br />
-      <span>SAMUEL URQUIJO MURILLO.</span><br />
-      <span>Representante Legal</span><br />
-      <span>KEYBE INC.</span><br />
-      <span>C.C. 1.036.930.038</span><br />
-      <span>EIN 30-1280531</span><br />
-    </b>
-  </div>
-  <div class="right">
-    <b>
-      <div id="firma_rep"></div>
-      <span>_____________________________________</span><br />
-      <span name="nombre_rep">_______________________</span><br />
-      <span>REPRESENTANTE LEGAL</span><br />
-      <span>C.C. <span name="cedula_rep">_______________</span></span>
+      KEYBE 
+      <div id="firma_keybe_2" name="firma_keybe" class="sign_margin"></div>
       <br />
-      <span>
-        Empresa: <span name="nombre_empresa">_______________________</span>
-      </span>
+      SAMUEL URQUIJO MURILLO
       <br />
-      <span>NIT: <span name="nit_empresa">_______________________</span></span>
+      REPRESENTANTE LEGAL
+      <br />
+      KEYBE INC.
+      <br />
+      C.C. 1.036.930.038
     </b>
-  </div>
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br />
-  <p class="customFooter">
-    <span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEYBE INC. EIN
-      30-1280531 &nbsp; KEYBE AI CORP EIN. 85-2498949<br />
-      &nbsp;&nbsp;Medellín, Colombia, CO. &nbsp; West New York, NJ. USA<br /><br />
-      &nbsp;<u>www.keybe.ai</u> | <u>hello@kbe.ai</u>
-    </span>
   </p>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div name="anexos_s" class="page">
-  <img
-    class="image"
-    src="https://mi-contrato-static.s3.amazonaws.com/Keybe/acuerdo_partners.jpg"
-  />
-  <br /><br />
-  <p class="titulo">ANEXO 1 COMISIONES O BENEFICIOS</p>
   <br /><br />
   <p>
-    <span>
-      Entre <b>KEYBE INC</b>, sociedad comercial identificada con
-      <b>EIN 30-1280531</b>, quien en adelante se llamará la
-      <b>COMPAÑÍA</b> representada legalmente por <b>SAMUEL URQUIJO MURILLO</b>,
-      mayor de edad, residente en la ciudad de Medellín, identificado con cédula
-      de ciudadania <b>No. 1.036.930.038</b> y por el otro lado, la empresa
-      <b><span name="nombre_empresa">_____________________</span></b> con número
-      de identificación tributario (NIT)
-      <b><span name="nit_empresa">_____________________</span></b>
-      representada legalmente por
-      <b><span name="nombre_rep">_____________________</span></b
-      >, identificado con número de cédula de ciudadanía
-      <b><span name="cedula_rep">_____________________</span></b
-      >, mayor de edad y domiciliado en la ciudad de
-      <b><span name="residencia_rep">_____________________</span></b
-      >, actuando en nombre propio y quien para efectos del presente contrato se
-      denominará el <b>PARTNER</b>, quienes conjuntamente se denominará las
-      <b>PARTES.</b> Entre los anteriores se ha celebrado un contrato de
-      <b>CORRETAJE</b> y al mismo se le adjunta el siguiente anexo:
-    </span>
-  </p>
-  <br />
-  <p class="titulo">CLÁUSULAS</p>
-  <br />
-  <span name="comisiones_n" hidden></span>
-  <p name="comisiones_s">
-    <span>
-      <b>CLÁUSULA PRIMERA:</b> las siguientes son las estipulaciones de
-      comisiones que aplicarán para la relación de las <b>PARTES:</b>
-      <span name="comisiones_n" hidden></span>
-      <ol name="comisiones_s" type="a">
-        <span name="com_partner_aliado_n"></span>
-        <li name="com_partner_aliado_s">
-          <p>
-            <b>PARTNER ALIADO:</b> Gana un porcentaje de la primera factura así:
-          </p>
-          <ol type="i">
-            <li>
-              <p>
-                <span name="aliado_porcentaje_1">__</span>% si el
-                <b>PARTNER</b> hace el contacto inicial y es la
-                <b>COMPAÑÍA</b> la que cierra y ejecuta la negociación.
-              </p>
-            </li>
-            <li>
-              <p>
-                <span name="aliado_porcentaje_2">__</span>% si el
-                <b>PARTNER</b> y la <b>COMPAÑÍA</b> cierran y ejecutan la
-                negociación en conjunto.
-              </p>
-            </li>
-            <li>
-              <p>
-                <span name="aliado_porcentaje_3">__</span>% si el
-                <b>PARTNER</b> es el que cierra y ejecuta la negociación.
-              </p>
-            </li>
-          </ol>
-        </li>
-        <span name="facturacion_partner_n"></span>
-        <li name="facturacion_partner_s">
-          <p>
-            <b>PARTNER: </b>
-            El <span name="partner_porcentaje_fac_let">_____</span> (<span
-              name="partner_porcentaje_fac_num"
-              >__</span
-            >%) por ciento del valor de la facturación mensual, siempre y cuando
-            el <b>PARTNER</b> demuestre valor en el servicio con buenas
-            relaciones con los clientes aportando acompañamiento demostrable que
-            ayuden a que el <b>CLIENTE</b> en lo siguiente:
-          </p>
-          <ol type="i">
-            <li>
-              <p>
-                Mantenga un nivel de satisfacción del <b>CLIENTE</b> con el
-                <b>PARTNER</b> del 90% como mínimo.
-              </p>
-            </li>
-            <li>
-              <p>
-                Ejecute constantemente estrategias de <em>Up selling</em> y
-                <em>Cross selling</em> con sus clientes.
-              </p>
-            </li>
-            <li>
-              <p>
-                Ejecute actividades de mantenimiento del
-                <b>CLIENTE</b> acordadas entre la <b>COMPAÑÍA</b> y el
-                <b>PARTNER</b>
-              </p>
-            </li>
-            <li>
-              <p>
-                Responda a las alertas que se le activen <b>CLIENTES</b> por
-                parte de la plataforma
-              </p>
-            </li>
-            <li>
-              <p>Cumpla con los Términos y Condiciones del servicio de Keybe</p>
-            </li>
-          </ol>
-        </li>
-        <span name="partner_pro_n"></span>
-        <li name="partner_pro_s">
-          <p>
-            <b>PARTNER PRO:</b> El
-            <span name="partner_pro_porcentaje_fac_let">_____</span> (<span
-              name="partner_pro_porcentaje_fac_num"
-              >__</span
-            >%) por ciento del valor de facturación mensual, mas un bono de
-            <span name="bono_let">________</span> dólares (USD $<span
-              name="bono_num"
-              >____</span
-            >) por cada <span name="rango_bono_let">_________</span> dólares
-            (USD $<span name="rango_bono_num">____</span>) en ventas mensuales
-            antes de impuestos, siempre y cuando:
-          </p>
-          <ol type="i">
-            <li>
-              <p>
-                Que sea autónomo en la gestión de preventa y postventa de la
-                cuenta.
-              </p>
-            </li>
-            <li>
-              <p>
-                Que la junta directiva de la <b>COMPAÑÍA</b> otorgue la
-                categoria de PARTNER PRO.
-              </p>
-            </li>
-          </ol>
-        </li>
-      </ol>
-    </span>
-  </p>
-  <span name="beneficios_n"></span>
-  <p name="beneficios_s" hidden>
-    <span>
-      <span name="comisiones_s"><b>CLÁUSULA SEGUNDA:</b></span>
-      <span name="comisiones_n" hidden><b>CLÁUSULA PRIMERA:</b></span> las
-      siguientes son las estipulaciones de beneficios que aplicarán para la
-      relación de las
-      <b>PARTES:</b>
-      <span name="ben_partner_aliado_n"></span>
-      <ol name="beneficios_s">
-        <li name="ben_partner_aliado_s">
-          <p>
-            <b>PARTNER ALIADO:</b> Tiene
-            <span name="num_licensias">__</span> licensias aprobadas para usar
-            la plataforma ofrecida por la <b>COMPAÑÍA</b> y $<span
-              name="dolares_omnicanal"
-              >___</span
-            >
-            USD equivalentes en consumo omnicanal a cambio de:
-            <span name="cambio">__</span>
-          </p>
-        </li>
-        <span name="otros_beneficios_n"></span>
-        <li name="otros_beneficios_s">
-          <p>
-            <b>OTROS BENEFICIOS: </b>
-            <span name="otros_beneficios_texto"
-              >________________________________________</span
-            >
-          </p>
-        </li>
-      </ol>
-    </span>
-  </p>
-  <br /><br /><br />
-  <p>
-    <span>
-      El valor anteriormente mencionado se liquidará por el valor antes de
-      impuestos de venta adjudicados según el territorio. El pago de dicha
-      comisión se realizará al <b>PARTNER</b> dentro de los quince (15) días
-      calendario siguientes, al mes vencido luego que la factura emitida por la
-      <b>COMPAÑÍA</b> sea efectivamente pagada por el <b>CLIENTE</b>, igualmente
-      el pago se realizará en la moneda de la negociación con el
-      <b>CLIENTE</b> y por el medio pactado de mutuo acuerdo entre las
-      <b>PARTES.</b>
-    </span>
-    <br /><br /><br />
-    <span>
-      Para constancia se firma en la ciudad de Medellín en dos ejemplares de
-      igual tenor y valor, el día <span name="dias_firma">__</span> de
-      <span name="mes_firma">________</span> de
-      <span name="anio_firma">____</span>.
-    </span>
-  </p>
-  <div class="left">
-    <b>
-      <div id="firma_keybe"></div>
-      <span>_____________________________________</span><br />
-      <span>SAMUEL URQUIJO MURILLO.</span><br />
-      <span>Representante Legal</span><br />
-      <span>KEYBE INC.</span><br />
-      <span>C.C. 1.036.930.038</span><br />
-      <span>EIN 30-1280531</span><br />
-    </b>
-  </div>
-  <div class="right">
-    <b>
-      <div id="firma_rep"></div>
-      <span>_____________________________________</span><br />
-      <span name="nombre_rep">_______________________</span><br />
-      <span>REPRESENTANTE LEGAL</span><br />
-      <span>C.C. <span name="cedula_rep">_______________</span></span>
-      <br />
-      <span>
-        Empresa: <span name="nombre_empresa">_______________________</span>
-      </span>
-      <br />
-      <span>NIT: <span name="nit_empresa">_______________________</span></span>
-    </b>
-  </div>
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br /><br />
-  <br />
-  <p class="customFooter">
-    <span>
-      &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KEYBE INC. EIN
-      30-1280531 &nbsp; KEYBE AI CORP EIN. 85-2498949<br />
-      &nbsp;&nbsp;Medellín, Colombia, CO. &nbsp; West New York, NJ. USA<br /><br />
-      &nbsp;<u>www.keybe.ai</u> | <u>hello@kbe.ai</u>
-    </span>
+    <b>PARTNER</b>
+    <div id="firma_partner_2" name="firma_partner" class="sign_margin"></div>
+    <br />
+    <b name="nombre_partner">_________________</b>
+    <br />
+    <b>C.C. <b name="cc_partner">_________________</b></b>
   </p>
 </div>

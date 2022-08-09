@@ -1,0 +1,272 @@
+{
+    _id: ObjectId('62f1727151fc27d23d9291b3'),
+    config: [
+        {
+            name: 'fecha',
+            description: 'Seleccione la fecha de diligenciamiento del presente documento',
+            type: 'date'
+        },
+        {
+            name: 'nombres_agente',
+            description: 'Ingrese el nombre completo del Agente Comercial',
+            type: 'name'
+        },
+        {
+            name: 'cedula_agente',
+            description: 'Ingrese el número de cédula de ciudadanía del Agente Comercial',
+            type: 'number'
+        },
+        {
+            name: 'correo_agente',
+            description: 'Ingrese el correo electrónico del Agente Comercial',
+            type: 'email'
+        },
+        {
+            name: 'telefono_agente',
+            description: 'Ingrese el correo electrónico del Agente Comercial',
+            type: 'phone'
+        },
+        {
+            name: 'doc_1',
+            description: '¿La documentación incluye el FORMATO VINCULACIÓN COMERCIAL?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_2',
+            description: '¿La documentación incluye COPIA DE LA CEDULA AL 150%?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_3',
+            description: '¿La documentación incluye el CONTRATO COMERCIAL DE COLOCADORES DE APUESTAS PERMANENTES?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_4',
+            description: '¿La documentación incluye el CONTRATO COMODATO?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_5',
+            description: '¿La documentación incluye el CONTRATO DE BIENVENIDA?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_6',
+            description: '¿La documentación incluye la CARTA DE BIENVENIDA?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_7',
+            description: '¿La documentación incluye COPIA DE CUENTA DE SERVICIOS PUBLICOS DOMICILIARIOS VIGENTE?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_8',
+            description: '¿La documentación incluye COPIA DEL RUT?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_9',
+            description: '¿La documentación incluye CUATRO FOTOS DEL ESTABLECIMIENTO?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_10',
+            description: '¿La documentación incluye FOTO DEL DOCUMENTO?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'doc_11',
+            description: '¿La documentación incluye CERTIFICACIÓN MANEJO DE TERMINAL Y PRODUCTOS?',
+            type: 'clausula',
+            value: 'na',
+            options: [
+                {
+                    name: 'No Aplica',
+                    value: 'na'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        }
+    ],
+    opration: [],
+    preBuild: false,
+    preBuildData: [],
+    name: 'LISTA DE CHEQUEO DE DOCUMENTACIÓN PARA VINCULACIÓN COMERCIAL',
+    build: 0,
+    price: 5000,
+    sign: [
+        'cedula_agente',
+        'correo_agente',
+        'nombres_agente',
+        'telefono_agente'
+    ],
+    username: '57a2c52a-8fb8-4d62-bd72-6f3d1a8d7f3e',
+    signatureProfile: [
+        {
+            name: 'nombres_agente',
+            identification: 'cedula_agente',
+            email: 'correo_agente',
+            phone: 'telefono_agente',
+            type: 'firma_agente'
+        }
+    ]
+}

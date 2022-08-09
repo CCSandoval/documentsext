@@ -29,17 +29,17 @@
         {
             name: 'actividad_comercial_a',
             type: 'text',
-            description: 'Ingrese la primer actividad comercial',
+            description: 'Ingrese la primer actividad comercial'
         },
         {
             name: 'actividad_comercial_b',
             type: 'text',
-            description: 'Ingrese la segunda actividad comercial',
+            description: 'Ingrese la segunda actividad comercial'
         },
         {
             name: 'actividad_comercial_c',
             type: 'text',
-            description: 'Ingrese la tercera actividad comercial',
+            description: 'Ingrese la tercera actividad comercial'
         },
         {
             name: 'actividad_comercial_4',
@@ -54,17 +54,17 @@
                 {
                     name: 'Si',
                     value: 's'
-                },
+                }
             ]
         },
         {
             name: 'actividad_comercial_d',
             type: 'text',
             description: 'Ingrese la cuarta actividad comercial',
-            prereq:[
+            prereq: [
                 {
-                    k:'actividad_comercial_4',
-                    v:'s'
+                    k: 'actividad_comercial_4',
+                    v: 's'
                 }
             ]
         },
@@ -81,12 +81,12 @@
                 {
                     name: 'Si',
                     value: 's'
-                },
+                }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'actividad_comercial_4',
-                    v:'s'
+                    k: 'actividad_comercial_4',
+                    v: 's'
                 }
             ]
         },
@@ -94,15 +94,15 @@
             name: 'actividad_comercial_e',
             type: 'text',
             description: 'Ingrese la quinta actividad comercial',
-            prereq:[
+            prereq: [
                 {
-                    k:'actividad_comercial_4',
-                    v:'s'
+                    k: 'actividad_comercial_4',
+                    v: 's'
                 },
                 {
-                    k:'actividad_comercial_5',
-                    v:'s'
-                },
+                    k: 'actividad_comercial_5',
+                    v: 's'
+                }
             ]
         },
         {
@@ -166,6 +166,7 @@
             type: 'firma_rep_legal'
         }
     ],
+    company: ObjectId('62ec022a449fd398818f7261'),
     preBuild: false,
     preBuildData: []
 }

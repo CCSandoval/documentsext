@@ -166,10 +166,6 @@
             value: 'Samuel Urquijo Murillo'
         },
         {
-            name: 'ceo_title',
-            value: 'CEO and Co Founder'
-        },
-        {
             name: 'ceo_email',
             value: 'samuel@kbe.ai'
         },
@@ -182,14 +178,12 @@
         {
             name: 'ceo_name',
             identification: 'ceo_id',
-            title: 'ceo_title',
             email: 'ceo_email',
             type: 'sign_ceo'
         },
         {
             name: 'legal_rep_company_name',
             identification: 'legal_rep_company_id',
-            title: 'legal_rep_company_title',
             email: 'legal_rep_company_email',
             type: 'sign_legal'
         },
