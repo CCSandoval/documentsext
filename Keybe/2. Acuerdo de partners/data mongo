@@ -2,17 +2,22 @@
     _id: ObjectId('61f2d4dced0a939e61367486'),
     config: [
         {
+            description: 'Ingrese el correo del partner',
+            type: 'email',
+            name: 'correo_enviar'
+        },
+        {
             name: 'tipo_persona',
             type: 'clausula',
-            description: 'Seleccione el tipo de persona del PARTNER',
+            description: '¿Tiene empresa o es persona independiente?',
             value: 'n',
             options: [
                 {
-                    name: 'Natural',
+                    name: 'Independiente',
                     value: 'n'
                 },
                 {
-                    name: 'Juridica',
+                    name: 'Empresa',
                     value: 'j'
                 }
             ]
@@ -40,6 +45,17 @@
             ]
         },
         {
+            name: 'pais',
+            type: 'name',
+            description: 'Ingrese el pais donde se constituyó la empresa',
+            prereq: [
+                {
+                    k: 'tipo_persona',
+                    v: 'j'
+                }
+            ]
+        },
+        {
             name: 'nombre_partner',
             type: 'name',
             description: [
@@ -50,7 +66,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el nombre del representante legal'
+                    text: 'Ingrese el nombre del representante legal de la empresa'
                 },
                 {
                     prereq: [
@@ -59,7 +75,7 @@
                             v: 'n'
                         }
                     ],
-                    text: 'Ingrese el nombre del PARTNER'
+                    text: 'Ingrese su nombre completo'
                 }
             ]
         },
@@ -74,7 +90,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el número de cédula del representante legal'
+                    text: 'Ingrese el número de cédula de ciudadanía del representante legal de la empresa'
                 },
                 {
                     prereq: [
@@ -83,7 +99,7 @@
                             v: 'n'
                         }
                     ],
-                    text: 'Ingrese el número de cédula del PARTNER'
+                    text: 'Ingrese el número de cédula de ciudadanía'
                 }
             ]
         },
@@ -98,7 +114,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el país de expedición de la cédula del representante legal'
+                    text: 'Ingrese el país de expedición de la cédula del representante legal de la empresa'
                 },
                 {
                     prereq: [
@@ -107,7 +123,7 @@
                             v: 'n'
                         }
                     ],
-                    text: 'Ingrese el país de expedición de la cédula del PARTNER'
+                    text: 'Ingrese el país de expedición de la cédula'
                 }
             ]
         },
@@ -127,7 +143,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el correo electrónico del representante legal'
+                    text: 'Ingrese el correo electrónico donde llegará la invitación a firmar (el correo con el que realizarás el proceso de firma)'
                 },
                 {
                     prereq: [
@@ -136,7 +152,7 @@
                             v: 'n'
                         }
                     ],
-                    text: 'Ingrese el correo electrónico del PARTNER'
+                    text: 'Ingrese el correo electrónico donde llegará la invitación a firmar (el correo con el que realizarás el proceso de firma)'
                 }
             ]
         },
@@ -151,7 +167,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el teléfono del representante legal'
+                    text: 'Ingrese el teléfono del representante legal de la empresa'
                 },
                 {
                     prereq: [
@@ -160,7 +176,7 @@
                             v: 'n'
                         }
                     ],
-                    text: 'Ingrese el teléfono del PARTNER'
+                    text: 'Ingrese el número de teléfono'
                 }
             ]
         }
@@ -201,9 +217,12 @@
             type: 'firma_partner'
         }
     ],
-    preBuild: false,
-    preBuildData: [],
+    preBuild: true,
+    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
+    preBuildData: [
+        'correo_enviar'
+    ],
     price: 5000,
-    build: 0,
+    build: 2,
     name: 'ACUERDO DE PARTNERS'
 }

@@ -1,0 +1,57 @@
+{
+    _id: ObjectId('62fafd3b51fc27d23d9291bf'),
+    config: [
+        {
+            name: 'nombre_contratista',
+            type: 'name',
+            description: 'Ingrese el nombre completo del contratista'
+        },
+        {
+            name: 'cc_contratista',
+            type: 'number',
+            description: 'Ingrese el número de cédula del contratista'
+        },
+        {
+            name: 'exp_cc_contratista',
+            type: 'name',
+            description: 'Ingrese el lugar de expedición de la cédula del contratista'
+        },
+        {
+            name: 'dir_contratista',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia del contratista'
+        },
+        {
+            name: 'municipio_contratista',
+            type: 'text',
+            description: 'Ingrese el municipio de residencia del contratista'
+        },
+        {
+            name: 'correo_contratista',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del contratista'
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha de firma'
+        }
+    ],
+    sign: [
+        'nombre_contratista',
+        'cc_contratista',
+        'correo_contratista'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_contratista',
+            type: 'firma_contratista',
+            identification: 'cc_contratista',
+            email: 'correo_contratista'
+        }
+    ],
+    preBuild: false,
+    name: 'Contrato de prestación de Servicios',
+    price: 5000,
+    build: 0
+}

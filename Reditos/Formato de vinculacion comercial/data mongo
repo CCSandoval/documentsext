@@ -1,0 +1,1029 @@
+{
+    _id: ObjectId('62fac7bb51fc27d23d9291bb'),
+    config: [
+        {
+            name: 'fecha',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se realiza el presente documento'
+        },
+        {
+            name: 'ciudad',
+            type: 'name',
+            description: 'Ingrese la ciudad en la que se realiza el presente documento'
+        },
+        {
+            name: 'departamento',
+            type: 'name',
+            description: 'Ingrese el departamento en la que se realiza el presente documento'
+        },
+        {
+            name: 'valor_sol',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el valor solicitado'
+        },
+        {
+            name: 'plazo_meses',
+            type: 'number',
+            description: 'Ingrese el plazo en meses'
+        },
+        {
+            name: 'garantia',
+            type: 'text',
+            description: 'Ingrese la garantía'
+        },
+        {
+            name: 'tipo_vinculacion',
+            description: 'Seleccione el tipo de vinculacion',
+            type: 'clausula',
+            value: 'simp',
+            options: [
+                {
+                    name: 'GANACOMERCIO REGIMEN SIMPLIFICADO',
+                    value: 'simp'
+                },
+                {
+                    name: 'GANACOMERCIO REGIMEN COMÚN',
+                    value: 'com'
+                },
+                {
+                    name: 'COLOCADOR INDEPENDIENTE',
+                    value: 'col_ind'
+                },
+                {
+                    name: 'CREDINTEGRAL - RIS',
+                    value: 'credintegral'
+                },
+                {
+                    name: 'FRANQUICIA',
+                    value: 'franquicia'
+                },
+                {
+                    name: 'RED DE REDES',
+                    value: 'red_redes'
+                }
+            ]
+        },
+        {
+            name: 'oficina_adscrita',
+            type: 'name',
+            description: 'Ingrese la oficina adscrita'
+        },
+        {
+            name: 'centro_costos',
+            type: 'name',
+            description: 'Ingrese el centro de costos'
+        },
+        {
+            name: 'nombre_completo',
+            type: 'name',
+            description: 'Ingrese el nombre completo'
+        },
+        {
+            name: 'tipo_documento',
+            type: 'clausula',
+            description: 'Seleccione el tipo de documento de identidad',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'numero_id',
+            type: 'number',
+            description: 'Ingrese el número de documento de identidad'
+        },
+        {
+            name: 'fecha_exp_id',
+            type: 'date',
+            description: 'Seleccion la fecha de expedición del documento de identidad'
+        },
+        {
+            name: 'lugar_exp_id',
+            type: 'text',
+            description: 'Ingrese el lugar de expedición del documento de identidad'
+        },
+        {
+            name: 'fecha_nacimiento',
+            type: 'date',
+            description: 'Seleccione la fecha de nacimiento'
+        },
+        {
+            name: 'genero',
+            type: 'clausula',
+            description: 'Seleccione el genero',
+            value: 'f',
+            options: [
+                {
+                    name: 'FEMENINO',
+                    value: 'f'
+                },
+                {
+                    name: 'MASCULINO',
+                    value: 'm'
+                }
+            ]
+        },
+        {
+            name: 'estado_civil',
+            type: 'select',
+            description: 'Seleccione el estado civil',
+            value: 's',
+            options: [
+                {
+                    name: 'SOLTERO',
+                    label: 'SOLTERO',
+                    value: 's'
+                },
+                {
+                    name: 'UNIÓN LIBRE',
+                    label: 'UNIÓN LIBRE',
+                    value: 'ul'
+                },
+                {
+                    name: 'CASADO',
+                    label: 'CASADO',
+                    value: 'c'
+                }
+            ]
+        },
+        {
+            name: 'rh',
+            type: 'text',
+            description: 'Ingrese el grupo sanguineo'
+        },
+        {
+            name: 'nivel_estudio',
+            type: 'text',
+            description: 'Ingrese el nivel de estudio'
+        },
+        {
+            name: 'dir_residencia',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia'
+        },
+        {
+            name: 'barrio',
+            type: 'text',
+            description: 'Ingrese el barrio de residencia'
+        },
+        {
+            name: 'estrato',
+            type: 'number',
+            description: 'Ingrese el estrato'
+        },
+        {
+            name: 'tipo_vivienda',
+            type: 'select',
+            description: 'Seleccione el tipo de vivienda',
+            value: 'p',
+            options: [
+                {
+                    name: 'PROPIA',
+                    label: 'PROPIA',
+                    value: 'p'
+                },
+                {
+                    name: 'ARRENDADA',
+                    label: 'ARRENDADA',
+                    value: 'a'
+                },
+                {
+                    name: 'FAMILIAR',
+                    label: 'FAMILIAR',
+                    value: 'f'
+                }
+            ]
+        },
+        {
+            name: 'correo',
+            type: 'email',
+            description: 'Ingrese el correo electrónico'
+        },
+        {
+            name: 'tel_fijo',
+            type: 'text',
+            description: 'Ingrese el teléfono fijo'
+        },
+        {
+            name: 'tel_celular',
+            type: 'phone',
+            description: 'Ingrese el teléfono celular'
+        },
+        {
+            name: 'otro',
+            type: 'text',
+            description: 'Ingrese otro medio de contacto'
+        },
+        {
+            name: 'contratista',
+            type: 'clausula',
+            description: '¿Desempeña o ha desempeñado cargos públicos o es contratista de alguna entidad del estado?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'entidad_contratista',
+            type: 'text',
+            description: 'Ingrese la entidad para la cual trabajó',
+            prereq: [
+                {
+                    k: 'contratista',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cargo_contratista',
+            type: 'text',
+            description: 'Ingrese el cargo que desempeñó',
+            prereq: [
+                {
+                    k: 'contratista',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'vinculacion_contratista',
+            type: 'date',
+            description: 'Seleccione la fecha de vinculacion',
+            prereq: [
+                {
+                    k: 'contratista',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'desvinculacion_contratista',
+            type: 'date',
+            description: 'Seleccione la fecha de desvinculacion',
+            prereq: [
+                {
+                    k: 'contratista',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_negocio',
+            type: 'text',
+            description: 'Ingrese el nombre del negocio'
+        },
+        {
+            name: 'tipo_negocio',
+            type: 'text',
+            description: 'Ingrese el tipo de negocio'
+        },
+        {
+            name: 'negocio_cabecera',
+            type: 'select',
+            description: 'Seleccione si el negocio es cabecera de barrio',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    label: 'NO',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    label: 'SI',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'direccion_negocio',
+            type: 'text',
+            description: 'Ingrese la dirección del negocio'
+        },
+        {
+            name: 'tel_fijo_negocio',
+            type: 'text',
+            description: 'Ingrese el teléfono fijo del negocio'
+        },
+        {
+            name: 'cel_negocio',
+            type: 'phone',
+            description: 'Ingrese el celular del negocio'
+        },
+        {
+            name: 'horario_negocio',
+            type: 'text',
+            description: 'Ingrese el horario de atención del negocio'
+        },
+        {
+            name: 'negocio_cam_comer',
+            type: 'clausula',
+            description: '¿El negocio cuenta con camara de comercio?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'num_cam_comer',
+            type: 'text',
+            description: 'Ingrese el numero de camara de comercio del negocio',
+            prereq: [
+                {
+                    k: 'negocio_cam_comer',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_negocio',
+            type: 'text',
+            description: 'Ingrese el NIT/RUT del negocio',
+            prereq: [
+                {
+                    k: 'negocio_cam_comer',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'num_cajas_reg',
+            type: 'number',
+            description: 'Ingrese la cantidad de cajas registradoras del negocio'
+        },
+        {
+            name: 'num_tenderos',
+            type: 'number',
+            description: 'Ingrese la cantidad de personas que atienden el negocio'
+        },
+        {
+            name: 'local_propio_arrendado',
+            type: 'select',
+            description: '¿El local es propio o arrendado?',
+            value: 'p',
+            options: [
+                {
+                    name: 'Propio',
+                    label: 'Propio',
+                    value: 'p'
+                },
+                {
+                    name: 'Arrendado',
+                    label: 'Arrendado',
+                    value: 'a'
+                }
+            ]
+        },
+        {
+            name: 'prerrogativas',
+            type: 'text',
+            description: 'Ingrese la información de las prerrogativas'
+        },
+        {
+            name: 'autoriza_capacitacion',
+            type: 'select',
+            description: '¿Autoriza capacitación para personal diferente al titular en los diferentes productos?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    label: 'SI',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    label: 'NO',
+                    value: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cod_sitio_venta',
+            type: 'text',
+            description: 'Ingrese el código sitio de venta'
+        },
+        {
+            name: 'factura_legal_cobro',
+            type: 'text',
+            description: 'Ingrese la factura legal de cobro'
+        },
+        {
+            name: 'nombre_desarrollador_comercial',
+            type: 'name',
+            description: 'Ingrese el nombre del desarrollador comercial'
+        },
+        {
+            name: 'cc_desarrollador_comercial',
+            type: 'number',
+            description: 'Ingrese el número de cédula del desarrollador comercial'
+        },
+        {
+            name: 'bien_raiz_desc',
+            type: 'text',
+            description: 'Ingrese la descripción del bien raiz'
+        },
+        {
+            name: 'bien_raiz_dir',
+            type: 'text',
+            description: 'Ingrese la dirección del bien raiz'
+        },
+        {
+            name: 'bien_raiz_ciudad',
+            type: 'text',
+            description: 'Ingrese la ciudad del bien raiz'
+        },
+        {
+            name: 'bien_raiz_matricula',
+            type: 'text',
+            description: 'Ingrese el número de matricula del bien raiz'
+        },
+        {
+            name: 'bien_raiz_vr_comercial',
+            type: 'text',
+            description: 'Ingrese el vr comercial del bien raiz'
+        },
+        {
+            name: 'nombre_hipotecado_a',
+            type: 'text',
+            description: 'Ingrese el nombre de la persona a la que está hipotecado el bien raiz'
+        },
+        {
+            name: 'vehiculo_desc',
+            type: 'text',
+            description: 'Ingrese la descripción del vehiculo'
+        },
+        {
+            name: 'vehiculo_marca',
+            type: 'text',
+            description: 'Ingrese la marca del vehiculo'
+        },
+        {
+            name: 'vehiculo_placa',
+            type: 'text',
+            description: 'Ingrese la placa del vehiculo'
+        },
+        {
+            name: 'vehiculo_modelo',
+            type: 'text',
+            description: 'Ingrese el modelo del vehiculo'
+        },
+        {
+            name: 'vehiculo_vr_comercial',
+            type: 'text',
+            description: 'Ingrese el vr comercial del vehiculo'
+        },
+        {
+            name: 'nombre_pignorado_a',
+            type: 'text',
+            description: 'Ingrese el nombre de la persona a la que está pignorado el vehículo'
+        },
+        {
+            name: 'otros_desc',
+            type: 'text',
+            description: 'Ingrese la descripción de los otros activos'
+        },
+        {
+            name: 'otros_total',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el total equivalente de los otros activos'
+        },
+        {
+            name: 'otros_garantia',
+            type: 'text',
+            description: 'Ingrese la garantía de los otros activos'
+        },
+        {
+            name: 'tarj_credito_entidad',
+            type: 'text',
+            description: 'Ingrese la entidad de la tarjeta de crédito'
+        },
+        {
+            name: 'tarj_credito_cuenta',
+            type: 'text',
+            description: 'Ingrese la cuenta asociada a la tarjeta de crédito'
+        },
+        {
+            name: 'tarj_credito_cupo',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el cupo de la tarjeta de crédito'
+        },
+        {
+            name: 'tarj_credito_vigencia',
+            type: 'text',
+            description: 'Ingrese la vigencia de la tarjeta de crédito'
+        },
+        {
+            name: 'otra_obligacion_acreedor',
+            type: 'text',
+            description: 'Ingrese el acreedor de las otras obligaciones'
+        },
+        {
+            name: 'otra_obligacion_vr_ini',
+            type: 'text',
+            description: 'Ingrese el vr inicial de las otras obligaciones'
+        },
+        {
+            name: 'otra_obligacion_cuota',
+            type: 'text',
+            description: 'Ingrese la cuota del mes de las otras obligaciones'
+        },
+        {
+            name: 'otra_obligacion_vendimiento',
+            type: 'text',
+            description: 'Ingrese el vendimiento final de las otras obligaciones'
+        },
+        {
+            name: 'ref_comer_nombre',
+            type: 'name',
+            description: 'Ingrese el nombre de la referencia comercial'
+        },
+        {
+            name: 'ref_comer_direccion',
+            type: 'text',
+            description: 'Ingrese la dirección de la referencia comercial'
+        },
+        {
+            name: 'ref_comer_ciudad',
+            type: 'text',
+            description: 'Ingrese la ciudad de la referencia comercial'
+        },
+        {
+            name: 'ref_comer_telefono',
+            type: 'phone',
+            description: 'Ingrese el teléfono de la referencia comercial'
+        },
+        {
+            name: 'ref_banc_num_cuenta',
+            type: 'text',
+            description: 'Ingrese el numero de cuenta de la referencia bancaria'
+        },
+        {
+            name: 'ref_banc_banco',
+            type: 'text',
+            description: 'Ingrese el banco de la referencia bancaria'
+        },
+        {
+            name: 'ref_banc_dir_sucur',
+            type: 'text',
+            description: 'Ingrese la dirección de la sucursal de la referencia bancaria'
+        },
+        {
+            name: 'ref_banc_ciudad',
+            type: 'text',
+            description: 'Ingrese la ciudad de la referencia bancaria'
+        },
+        {
+            name: 'ref_banc_telefono',
+            type: 'phone',
+            description: 'Ingrese el teléfono de la referencia bancaria'
+        },
+        {
+            name: 'nombre_codeudor',
+            type: 'name',
+            description: 'Ingrese el nombre del codeudor'
+        },
+        {
+            name: 'id_codeudor',
+            type: 'text',
+            description: 'Ingrese el numero de identificación del codeudor'
+        },
+        {
+            name: 'genero_codeudor',
+            type: 'clausula',
+            description: 'Seleccione el genero del codeudor',
+            value: 'f',
+            options: [
+                {
+                    name: 'FEMENINO',
+                    value: 'f'
+                },
+                {
+                    name: 'MASCULINO',
+                    value: 'm'
+                }
+            ]
+        },
+        {
+            name: 'situacion_lab_codeudor',
+            type: 'select',
+            description: 'Seleccione la situación laboral del codeudor',
+            value: 'fijo',
+            options: [
+                {
+                    name: 'Empleo fijo',
+                    label: 'Empleo fijo',
+                    value: 'fijo'
+                },
+                {
+                    name: 'Empleo temporal',
+                    label: 'Empleo temporal',
+                    value: 'temp'
+                },
+                {
+                    name: 'Independiente',
+                    label: 'Independiente',
+                    value: 'ind'
+                }
+            ]
+        },
+        {
+            name: 'antiguedad_empleado',
+            type: 'text',
+            description: 'Ingrese la antigüedad del empleado'
+        },
+        {
+            name: 'ocupacion_codeudor',
+            type: 'text',
+            description: 'Ingrese la ocupación del codeudor'
+        },
+        {
+            name: 'dir_ofic_codeudor',
+            type: 'text',
+            description: 'Ingrese la dirección de la oficina del codeudor'
+        },
+        {
+            name: 'tel_ofic_codeudor',
+            type: 'phone',
+            description: 'Ingrese el teléfono de la oficina del codeudor'
+        },
+        {
+            name: 'patrim_total_codeudor',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el patrimonio total del codeudor'
+        },
+        {
+            name: 'valor_neto_vivienda_codeudor',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el valor neto de la vivienda del codeudor'
+        },
+        {
+            name: 'parentesco_codeudor',
+            type: 'text',
+            description: 'Ingrese el parentesco del codeudor'
+        },
+        {
+            name: 'fijo_codeudor',
+            type: 'text',
+            description: 'Ingrese el teléfono fijo del codeudor'
+        },
+        {
+            name: 'cel_codeudor',
+            type: 'phone',
+            description: 'Ingrese el número de celular del codeudor'
+        },
+        {
+            name: 'residencia_codeudor',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia del codeudor'
+        },
+        {
+            name: 'estrato_codeudor',
+            type: 'number',
+            description: 'Ingrese el estrato del codeudor'
+        },
+        {
+            name: 'ciudad_codeudor',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia del codeudor'
+        },
+        {
+            name: 'situacion_vivienda_codeudor',
+            type: 'select',
+            description: 'Seleccione la situación de la vivienda del codeudor',
+            value: 'sin',
+            options: [
+                {
+                    name: 'Propia sin hipoteca',
+                    label: 'Propia sin hipoteca',
+                    value: 'sin'
+                },
+                {
+                    name: 'Propia con hipoteca',
+                    label: 'Propia con hipoteca',
+                    value: 'con'
+                }
+            ]
+        },
+        {
+            name: 'email_codeudor',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del codeudor'
+        },
+        {
+            name: 'nombre_arrendador',
+            type: 'name',
+            description: 'Ingrese el nombre completo del arrendador o la agencia de arrendamientos'
+        },
+        {
+            name: 'ciudad_res_arrendador',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia del arrendador'
+        },
+        {
+            name: 'ciudad_arrendador',
+            type: 'text',
+            description: 'Ingrese la ciudad del arrendador'
+        },
+        {
+            name: 'celular_arrendador',
+            type: 'phone',
+            description: 'Ingrese el celular del arrendador'
+        },
+        {
+            name: 'nombre_ref_1',
+            type: 'name',
+            description: 'Ingrese el nombre completo de la primer referencia'
+        },
+        {
+            name: 'dir_res_ref_1',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia de la primer referencia'
+        },
+        {
+            name: 'tel_ref_1',
+            type: 'text',
+            description: 'Ingrese el teléfono fijo de la primer referencia'
+        },
+        {
+            name: 'cel_ref_1',
+            type: 'text',
+            description: 'Ingrese el teléfono celular de la primer referencia'
+        },
+        {
+            name: 'ciudad_ref_1',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia de la primer referencia'
+        },
+        {
+            name: 'nombre_ref_2',
+            type: 'name',
+            description: 'Ingrese el nombre completo de la segunda referencia'
+        },
+        {
+            name: 'dir_res_ref_2',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia de la segunda referencia'
+        },
+        {
+            name: 'tel_ref_2',
+            type: 'text',
+            description: 'Ingrese el teléfono fijo de la segunda referencia'
+        },
+        {
+            name: 'cel_ref_2',
+            type: 'text',
+            description: 'Ingrese el teléfono celular de la segunda referencia'
+        },
+        {
+            name: 'ciudad_ref_2',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia de la segunda referencia'
+        },
+        {
+            name: 'observaciones',
+            type: 'text',
+            description: 'Ingrese las observaciones'
+        },
+        {
+            name: 'lugar_exp_deudor_solidario',
+            type: 'name',
+            description: 'Ingrese el lugar de expedición de la cédula del deudor solidario'
+        },
+        {
+            name: 'fecha_exp_deudor_solidario',
+            type: 'date',
+            description: 'Seleccione la fecha de expedición de la cédula del deudor solidario'
+        },
+        {
+            name: 'num_pagare',
+            type: 'number',
+            description: 'Ingrese el número del pagaré'
+        },
+        {
+            name: 'pagare_creacion',
+            type: 'date',
+            description: 'Seleccione la fecha de creación del pagaré'
+        },
+        {
+            name: 'pagare_vencimiento',
+            type: 'date',
+            description: 'Seleccione la fecha de vencimiento del pagaré'
+        },
+        {
+            name: 'dir_residencia_solidario',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia del deudor solidario'
+        },
+        {
+            name: 'valor_pagare',
+            type: 'currency',
+            description: 'Ingrese el valor del pagaré'
+        },
+        {
+            name: 'valor_cuotas_pagare',
+            type: 'currency',
+            description: 'Ingrese el valor de las cuotas del pagaré'
+        },
+        {
+            name: 'fecha_primer_cuota',
+            type: 'date',
+            description: 'Seleccione la fecha de pago de la primer cuota del pagaré'
+        },
+        {
+            name: 'interes',
+            type: 'number',
+            description: 'Ingrese el interés del pagaré'
+        },
+        {
+            name: 'procredito',
+            type: 'text',
+            description: 'Ingrese procredito'
+        },
+        {
+            name: 'procredito_reportes',
+            type: 'number',
+            description: 'Ingrese la cantidad de reportes en procredito'
+        },
+        {
+            name: 'procredito_d',
+            type: 'text',
+            description: 'Ingrese "d" procredito'
+        },
+        {
+            name: 'procredito_cd',
+            type: 'text',
+            description: 'Ingrese "cd" procredito'
+        },
+        {
+            name: 'procredito_saldo_deuda_total',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el saldo de la deuda total en procredito'
+        },
+        {
+            name: 'procredito_saldo_deuda_total_mora',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el saldo de la deuda total en mora en procredito'
+        },
+        {
+            name: 'procredito_score',
+            type: 'text',
+            description: 'Ingrese el score de procredito'
+        },
+        {
+            name: 'cifin',
+            type: 'text',
+            description: 'Ingrese cifin'
+        },
+        {
+            name: 'cifin_reportes',
+            type: 'number',
+            description: 'Ingrese la cantidad de reportes en cifin'
+        },
+        {
+            name: 'cifin_d',
+            type: 'text',
+            description: 'Ingrese "d" cifin'
+        },
+        {
+            name: 'cifin_cd',
+            type: 'text',
+            description: 'Ingrese "cd" cifin'
+        },
+        {
+            name: 'cifin_saldo_deuda_total',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el saldo de la deuda total en cifin'
+        },
+        {
+            name: 'cifin_saldo_deuda_total_mora',
+            type: 'currency',
+            removeText: true,
+            description: 'Ingrese el saldo de la deuda total en mora en cifin'
+        },
+        {
+            name: 'cifin_score',
+            type: 'text',
+            description: 'Ingrese el score de cifin'
+        },
+        {
+            name: 'stradata',
+            type: 'text',
+            description: 'Ingrese stradata'
+        },
+        {
+            name: 'stradata_usuario',
+            type: 'text',
+            description: 'Ingrese el usuario de stradata'
+        },
+        {
+            name: 'stradata_hallazgo',
+            type: 'text',
+            description: 'Ingrese el hallazgo o coincidencia de stradata'
+        },
+        {
+            name: 'validacion_siga',
+            type: 'text',
+            description: 'Ingrese la validación en SIGA'
+        },
+        {
+            name: 'motivo_validacion',
+            type: 'text',
+            description: 'Ingrese el motivo de la validación en SIGA'
+        },
+        {
+            name: 'fecha_consulta',
+            type: 'date',
+            description: 'Seleccione la fecha de consulta'
+        },
+        {
+            name: 'dictamen',
+            type: 'text',
+            description: 'Ingrese el dictamen'
+        },
+        {
+            name: 'explicacion_dictamen',
+            type: 'text',
+            description: 'Ingrese la explicación del dictamen'
+        },
+        {
+            name: 'analisis_elaborado_por',
+            type: 'name',
+            description: 'Ingrese el nombre de la persona que elaboró el análisis'
+        },
+        {
+            name: 'autorizado_por',
+            type: 'name',
+            description: 'Ingrese el nombre de la persona que autorizó el análisis'
+        },
+        {
+            name: 'cupo_aprobado',
+            type: 'text',
+            description: 'Ingrese el cupo aprobado'
+        },
+        {
+            name: 'observaciones_analisis',
+            type: 'text',
+            description: 'Ingrese las observaciones del analisis'
+        }
+    ],
+    operation: [],
+    preBuild: false,
+    sign: [
+        'nombre_completo',
+        'numero_id',
+        'correo',
+        'tel_celular',
+        'nombre_codeudor',
+        'id_codeudor',
+        'email_codeudor',
+        'cel_codeudor'
+    ],
+    signatureProfile: [
+        {
+            type: 'firma_deudor',
+            name: 'nombre_completo',
+            identification: 'numero_id',
+            email: 'correo',
+            phone: 'tel_celular'
+        },
+        {
+            type: 'firma_deudor_sol',
+            name: 'nombre_codeudor',
+            identification: 'id_codeudor',
+            email: 'email_codeudor',
+            phone: 'cel_codeudor'
+        }
+    ],
+    name: 'FORMATO DE VINCULACION COMERCIAL',
+    price: 5000,
+    build: 1
+}

@@ -1,0 +1,134 @@
+{
+    _id: ObjectId('62faddca51fc27d23d9291bd'),
+    config: [
+        {
+            name: 'nombre_colaborador',
+            type: 'name',
+            description: 'Ingrese el nombre del colaborador'
+        },
+        {
+            name: 'tipo_id_colab',
+            type: 'clausula',
+            description: 'Seleccione el tipo de identificación del colaborador',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                }
+            ],
+            value: 'cc'
+        },
+        {
+            name: 'num_cc_colab',
+            type: 'number',
+            description: 'Ingrese el número de cédula de ciudadanía del colaborador',
+            prereq: [
+                {
+                    k: 'tipo_id_colab',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'num_ce_colab',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del colaborador',
+            prereq: [
+                {
+                    k: 'tipo_id_colab',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'lugar_nacimiento',
+            type: 'name',
+            description: 'Ingrese el lugar de nacimiento del colaborador'
+        },
+        {
+            name: 'fecha_nacimiento',
+            type: 'date',
+            description: 'Seleccione la fecha de nacimiento del colaborador'
+        },
+        {
+            name: 'nacionalidad_colab',
+            type: 'name',
+            description: 'Ingrese la nacionalidad del colaborador'
+        },
+        {
+            name: 'dir_res_colab',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia del colaborador'
+        },
+        {
+            name: 'cel_colaborador',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono del colaborador'
+        },
+        {
+            name: 'correo_colaborador',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del colaborador'
+        },
+        {
+            name: 'fecha_inicio',
+            type: 'date',
+            description: 'Seleccione la fecha de iniciación del contrato'
+        },
+        {
+            name: 'oficio',
+            type: 'name',
+            description: 'Ingrese el oficio que desempeñará el colaborador'
+        },
+        {
+            name: 'salario_base',
+            type: 'currency',
+            description: 'Ingrese el salario base de liquidación'
+        },
+        {
+            name: 'lugar_desempeno',
+            type: 'name',
+            description: 'Ingrese el lugar donde se desempeñarán las labores'
+        },
+        {
+            name: 'lugar_contratacion',
+            type: 'name',
+            description: 'Ingrese el lugar donde ha sido contratado el laborador'
+        },
+        {
+            name: 'duracion_contrato',
+            type: 'number',
+            addText: true,
+            description: 'Ingrese el lugar donde ha sido contratado el laborador'
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha de firma'
+        }
+    ],
+    sign: [
+        'nombre_colaborador',
+        'correo_colaborador',
+        'cel_colaborador',
+        'num_ce_colab',
+        'num_cc_colab'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_colaborador',
+            email: 'correo_colaborador',
+            phone: 'cel_colaborador',
+            identification: 'num_cc_colab|num_ce_colab',
+            type: 'firma_colaborador'
+        }
+    ],
+    preBuild: false,
+    build: 0,
+    price: 5000,
+    name: 'CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO'
+}
