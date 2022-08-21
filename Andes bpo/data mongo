@@ -16,9 +16,17 @@
                     value: 'cc'
                 },
                 {
-                    name: 'Cédula de Extranjería',
-                    value: 'ce'
-                }
+                    name: 'Tarjeta de identidad',
+                    value: 'ti'
+                },
+                {
+                    name: 'Permiso Especial de Permanencia',
+                    value: 'pep'
+                },
+                {
+                    name: 'Permiso de Protección Temporal',
+                    value: 'ppt'
+                },
             ],
             value: 'cc'
         },
@@ -34,13 +42,35 @@
             ]
         },
         {
-            name: 'num_ce_colab',
+            name: 'num_ti_colab',
             type: 'number',
-            description: 'Ingrese el número de cédula de extranjería del colaborador',
+            description: 'Ingrese el número de tarjeta de identidad del colaborador',
             prereq: [
                 {
                     k: 'tipo_id_colab',
-                    v: 'ce'
+                    v: 'ti'
+                }
+            ]
+        },
+        {
+            name: 'num_pep_colab',
+            type: 'number',
+            description: 'Ingrese el número de permiso especial de permanencia del colaborador',
+            prereq: [
+                {
+                    k: 'tipo_id_colab',
+                    v: 'pep'
+                }
+            ]
+        },
+        {
+            name: 'num_ppt_colab',
+            type: 'number',
+            description: 'Ingrese el número de permiso de protección temporal del colaborador',
+            prereq: [
+                {
+                    k: 'tipo_id_colab',
+                    v: 'ppt'
                 }
             ]
         },
@@ -103,12 +133,7 @@
             name: 'duracion_contrato',
             type: 'number',
             addText: true,
-            description: 'Ingrese el lugar donde ha sido contratado el laborador'
-        },
-        {
-            name: 'fecha_firma',
-            type: 'date',
-            description: 'Seleccione la fecha de firma'
+            description: 'Ingrese la duración en meses del contrato'
         }
     ],
     sign: [
@@ -123,12 +148,12 @@
             name: 'nombre_colaborador',
             email: 'correo_colaborador',
             phone: 'cel_colaborador',
-            identification: 'num_cc_colab|num_ce_colab',
+            identification: 'num_cc_colab|num_ti_colab|num_ppt_colab|num_pep_colab',
             type: 'firma_colaborador'
         }
     ],
     preBuild: false,
-    build: 0,
+    build: 2,
     price: 5000,
     name: 'CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO'
 }

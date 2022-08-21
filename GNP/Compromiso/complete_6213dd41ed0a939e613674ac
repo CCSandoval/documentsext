@@ -1,0 +1,185 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+
+  .table_class th {
+    background-color: #1f3864;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    background-color: #1f3864;
+    color: white;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .tabla_cv {
+    font-family: sans-serif;
+    border: 1px solid black;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  .border_bottom {
+    border-bottom: 1px solid;
+  }
+
+  .border_right {
+    border-right: 1px solid;
+  }
+
+  .border_left {
+    border-left: 1px solid;
+  }
+</style>
+
+<table class="tabla_cv">
+  <tr class="border_bottom">
+    <td rowspan="3">
+      <img
+        src="https://mi-contrato-static.s3.amazonaws.com/gnp/logo.jpg"
+        alt="gnp"
+      />
+    </td>
+    <td class="border_left"><small>NOMBRE:</small></td>
+    <td class="border_right" colspan="2">
+      <p style="text-align: center"><b>GESTION DE TALENTO HUMANO</b></p>
+    </td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="border_left"><small>TITULO:</small></td>
+    <td class="border_right" colspan="2">
+      <p style="text-align: center">
+        <b>
+          COMPROMISO DE CUMPLIMIENTO DE LAS RECOMENDACIONES MÉDICAS
+          OCUPACIONALES
+        </b>
+      </p>
+    </td>
+  </tr>
+  <tr class="border_bottom">
+    <td class="border_left border_right">
+      <small>CODIGO: <b>GNP-TH-F-97</b></small>
+    </td>
+    <td class="border_right">
+      <small>VERSION: <b>02</b></small>
+    </td>
+    <td class="border_right">
+      <small>FECHA VIGENCIA: <b>12/07/2022</b></small>
+    </td>
+  </tr>
+</table>
+
+<br />
+<br />
+<table class="table_class">
+  <tr>
+    <th>Fecha:</th>
+    <td><span name="fecha_firma">___________</span></td>
+    <th>Nombre del colaborador:</th>
+    <td><span name="nombre_trabajador">___________</span></td>
+  </tr>
+  <tr>
+    <th>Ciudad:</th>
+    <td><span name="ciudad_firma">___________</span></td>
+    <th>Cédula:</th>
+    <td><span name="cedula_trabajador">___________</span></td>
+  </tr>
+  <tr>
+    <th>Cargo:</th>
+    <td><span name="cargo">___________</span></td>
+    <th>Antigüedad:</th>
+    <td><span name="antiguedad">___________</span></td>
+  </tr>
+</table>
+
+<p>Cordial saludo,</p>
+
+<p>
+  Dándole seguimiento a nuestro programa de medicina preventiva y del trabajo le
+  queremos dar a conocer los resultados del examen médico ocupacional-
+  <span name="tipo_examen">___________</span> que se le practicó el pasado
+  <span name="fecha_examen">___________</span> en este encontrará las
+  recomendaciones médicas que tienen para usted:
+</p>
+
+<p name="recomendaciones_medicas">
+  _______________________________________________________
+</p>
+
+<p>
+  Para nosotros es importante que usted haga el respectivo seguimiento por lo
+  tanto esperamos su colaboración para que en un lapso de
+  <b>2 meses consulte a su médico por medio de la EPS</b> a la cual está
+  afiliado y por escrito nos dé a conocer el procedimiento que va a seguir para
+  mejorar esos aspectos.
+</p>
+
+<p>
+  <b><em>Prevención COVID:</em></b> <br />
+
+  Si tiene los siguientes Síntomas: Fiebre, Tos, Dificultad para respirar, dolor
+  para tragar, notifíquelo a su empleador y su EPS, No vaya a lugares públicos,
+  es ideal que se aísle preventivamente y use tapabocas constante.
+</p>
+
+<p>
+  Lo anterior, de conformidad con lo establecido en el Código Sustantivo de
+  Trabajo, el Reglamento Interno de Trabajo y en especial el Decreto 1072 del 26
+  de mayo de 2015, que señala: “Artículo 2.2.4.6.10. Responsabilidades de los
+  trabajadores. Los trabajadores, de conformidad con la normatividad vigente
+  tendrán entre otras, las siguientes responsabilidades:
+</p>
+
+<ol>
+  <li>Procurar el cuidado integral de su salud;</li>
+  <li>
+    Suministrar información clara, veraz y completa sobre su estado de salud;
+  </li>
+</ol>
+
+<p>Atentamente:</p>
+
+<br />
+<br />
+<br />
+
+<div id="firma_gnp" class="sign_margin"></div>
+<p>
+  _________________________________ <br />
+  Empleador
+</p>
+
+<br />
+<br />
+<br />
+
+<div id="firma_trabajador" class="sign_margin"></div>
+<p>
+  _________________________________ <br />
+  <span name="nombre_trabajador">___________</span>
+  <br />
+  Correo: <span name="correo_trabajador">___________</span> <br />
+  C.C. <span name="cedula_trabajador">___________</span> <br />
+</p>

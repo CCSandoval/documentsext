@@ -56,9 +56,17 @@
       <span name="tipo_id_colab_cc">
         <span name="num_cc_colab">______________</span>
       </span>
-      <span name="tipo_id_colab_ce" hidden>C.E.</span>
-      <span name="tipo_id_colab_ce" hidden>
-        <span name="num_ce_colab">______________</span>
+      <span name="tipo_id_colab_ti" hidden>T.I.</span>
+      <span name="tipo_id_colab_ti" hidden>
+        <span name="num_ti_colab">______________</span>
+      </span>
+      <span name="tipo_id_colab_pep" hidden>Permiso especial de permanencia</span>
+      <span name="tipo_id_colab_pep" hidden>
+        <span name="num_pep_colab">______________</span>
+      </span>
+      <span name="tipo_id_colab_ppt" hidden>Permiso de protección temporal</span>
+      <span name="tipo_id_colab_ppt" hidden>
+        <span name="num_ppt_colab">______________</span>
       </span>
     </td>
   </tr>
@@ -465,8 +473,7 @@
 
 <p>
   Para constancia se firma en dos ejemplares, uno para la <b>EMPRESA</b> y otro
-  para el <b>EMPLEADO</b>, en la Ciudad de La Ceja el día
-  <span name="fecha_firma">______________</span>
+  para el <b>EMPLEADO</b>, en la Ciudad de La Ceja.
 </p>
 
 <br />
@@ -504,8 +511,16 @@
   <b name="tipo_id_colab_cc">
     <b name="num_cc_colab">______________</b>
   </b>
-  <b name="tipo_id_colab_ce" hidden>C.E.</b>
-  <b name="tipo_id_colab_ce" hidden>
-    <b name="num_ce_colab">______________</b>
+  <b name="tipo_id_colab_ti" hidden>T.I.</b>
+  <b name="tipo_id_colab_ti" hidden>
+    <b name="num_ti_colab">______________</b>
+  </b>
+  <b name="tipo_id_colab_pep" hidden>Permiso especial de permanencia</b>
+  <b name="tipo_id_colab_pep" hidden>
+    <b name="num_pep_colab">______________</b>
+  </b>
+  <b name="tipo_id_colab_ppt" hidden>Permiso de protección temporal</b>
+  <b name="tipo_id_colab_ppt" hidden>
+    <b name="num_ppt_colab">______________</b>
   </b>
 </p>

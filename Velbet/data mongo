@@ -2,6 +2,11 @@
     _id: ObjectId('62fafd3b51fc27d23d9291bf'),
     config: [
         {
+            name: 'correo_enviar',
+            type: 'email',
+            description: 'Ingrese el correo electrónico de la persona que diligenciará el contrato'
+        },
+        {
             name: 'nombre_contratista',
             type: 'name',
             description: 'Ingrese el nombre completo del contratista'
@@ -29,13 +34,8 @@
         {
             name: 'correo_contratista',
             type: 'email',
-            description: 'Ingrese el correo electrónico del contratista'
+            description: 'Ingrese el correo electrónico con el que va a firmar'
         },
-        {
-            name: 'fecha_firma',
-            type: 'date',
-            description: 'Seleccione la fecha de firma'
-        }
     ],
     sign: [
         'nombre_contratista',
@@ -50,8 +50,12 @@
             email: 'correo_contratista'
         }
     ],
-    preBuild: false,
+    preBuild: true,
+    preBuildData: [
+        'correo_enviar'
+    ],
     name: 'Contrato de prestación de Servicios',
     price: 5000,
-    build: 0
+    build: 2,
+    username: '66efd34e-8936-462e-b36b-2253b74914ea'
 }
