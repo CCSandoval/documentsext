@@ -21,7 +21,7 @@
     text-align: center;
   }
 
-  .table_class td>p {
+  .table_class td > p {
     text-align: center;
   }
 
@@ -50,34 +50,18 @@
   <p>
     Por lo anterior, hago constar que he leido y entendido en su totalidad dicho
     manual, el cual hace parte integral de mi contrato laboral suscrito con
-    <span name="nombre_empresa">____________________________</span>, por lo que en
-    constancia firmo y acepto su contenido el dia
+    <span name="nombre_empresa">____________________________</span>, por lo que
+    en constancia firmo y acepto su contenido el dia
     <span name="fecha_firma">___________________</span>,
   </p>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <span>Atentamente,</span>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <p>
-    <div name="firma_trabajador" id="firma_0"></div>
-    <span>C.C <span name="cedula_trabajador">___________</span></span><br /><br />
-    <span>Correo: <span name="correo_trabajador">___________</span></span><br /><br />
-    <span>TRABAJADOR</span>
-  </p>
-  <br />
-  <br />
-  <br />
   <p>
     <span>CC. Hoja de Vida</span><br />
-    <span><b>V.02 <br />
-        04/02/2020</b></span>
+    <span
+      ><b
+        >V.02 <br />
+        04/02/2020</b
+      ></span
+    >
   </p>
 </div>
 
@@ -110,25 +94,6 @@
     constancia firmo y acepto su contenido el día
     <span name="fecha_firma">___________________</span>
   </p>
-  <br />
-  <br />
-  <br />
-  <p>
-    <span>Atentamente,</span><br />
-    <div name="firma_trabajador" id="firma_1"></div>
-    <span name="nombre_trabajador">________________</span> <br />
-    <span><b>C.C</b> <b name="cedula_trabajador">________________</b></span>
-    <br />
-    <span><b>Correo</b> <b name="correo_trabajador">________________</b></span>
-    <br />
-    <br />
-    <span>
-      <span>Copia Hoja de Vida</span><br />
-      <small>
-        <b>V.03 <br />20/11/2017</b>
-      </small>
-    </span>
-  </p>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -143,8 +108,9 @@
     <b name="cedula_trabajador">___________________</b> en calidad de trabajador
     de la sociedad <span name="nombre_empresa">______________</span> - informo
     que me he acogido a la medida de “pago de adelantado de vacaciones” adoptada
-    por <span name="nombre_empresa">______________</span>, y por medio del presente
-    documento autorizo a <span name="nombre_empresa">______________</span>
+    por <span name="nombre_empresa">______________</span>, y por medio del
+    presente documento autorizo a
+    <span name="nombre_empresa">______________</span>
     para descontar el equivalente en dinero de las vacaciones adelantadas que no
     hayan sido causadas, es decir, de las vacaciones adeudadas.
   </p>
@@ -179,21 +145,12 @@
   <br />
   <br />
   <br />
-  <p>
-    <div name="firma_trabajador" id="firma_2"></div>
-    <span> <b name="nombre_trabajador">____________________</b> </span><br />
-    <span><b>C.C No.</b> <b name="cedula_trabajador">________________</b></span><br />
-    <span><b>Cargo</b> <b name="cargo_trabajador">________________</b></span><br />
-    <span><b>Correo</b> <b name="correo_trabajador">________________</b></span><br />
-    <br />
-    <br />
-    <span>
-      <small>
-        <b>Versión:</b> 00 <br />
-        <b>Vigencia: 18/01/2022</b>
-      </small>
-    </span>
-  </p>
+  <span>
+    <small>
+      <b>Versión:</b> 00 <br />
+      <b>Vigencia: 18/01/2022</b>
+    </small>
+  </span>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -257,24 +214,6 @@
     <span name="autoriza_s" hidden> ___ </span>
     <u name="autoriza_n">&nbsp;X&nbsp;</u>
   </p>
-
-  <br />
-  <br />
-  <br />
-  <p>
-    <span>Firma trabajador:</span>
-    <div name="firma_trabajador" id="firma_3"></div>
-    <br />
-    <span>C.C. <span name="cedula_trabajador">___________________</span></span>
-    <br />
-    <br />
-    <span>Cargo: <span name="cargo_trabajador">___________________</span></span>
-    <br />
-    <br />
-    <span>
-      Correo: <span name="correo_trabajador">___________________</span>
-    </span>
-  </p>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -309,9 +248,8 @@
     <span name="dotacion_s" hidden>
       <span name="nombre_entregante">______________</span>
     </span>
-    <span name="dotacion_n">
-      ______________
-    </span>, hace entrega oficial de la siguiente dotación compuesta por los elementos que más adelante se
+    <span name="dotacion_n"> ______________ </span>, hace entrega oficial de la
+    siguiente dotación compuesta por los elementos que más adelante se
     describen:
   </p>
   <p><b>EL TRABAJADOR con su firma manifiesta y acepta que:</b></p>
@@ -346,9 +284,7 @@
         <span hidden name="dotacion_s">
           <span name="nombre_trabajador">______________</span>
         </span>
-        <span name="dotacion_n">
-          ______________
-        </span>
+        <span name="dotacion_n"> ______________ </span>
       </td>
     </tr>
     <tr>
@@ -359,9 +295,7 @@
         <span hidden name="dotacion_s">
           <span name="cedula_trabajador">______________</span>
         </span>
-        <span name="dotacion_n">
-          ______________
-        </span>
+        <span name="dotacion_n"> ______________ </span>
       </td>
     </tr>
     <tr>
@@ -453,18 +387,6 @@
     Para constancia se firma por las partes que intervienen, el dia
     <span name="fecha_firma">_______________</span>
   </p>
-  <p>
-    <span name="dotacion_n"></span>
-    <div name="dotacion_s" hidden>
-      <div name="firma_trabajador" id="firma_4"></div>
-    </div>
-    <span><b>TRABAJADOR (A)</b></span>
-    <br />
-    <span><b name="nombre_trabajador">_____________________</b></span> <br />
-    <span><b>C.C.</b> <b name="cedula_trabajador"></b></span> <br />
-    <span><b>Correo: </b> <b name="correo_trabajador"></b></span> <br />
-  </p>
-  <br />
   <span><small>Copia: Hoja de vida.</small></span>
 </div>
 
@@ -577,12 +499,16 @@
   </p>
   <br />
   <p>
-    <b>Nombre Colaborador:
-      <b name="nombre_trabajador">___________________</b></b>
+    <b
+      >Nombre Colaborador:
+      <b name="nombre_trabajador">___________________</b></b
+    >
     <b>Cedula N.º: <b name="cedula_trabajador">___________________</b></b>
     <br />
-    <b>Cargo:
-      <b name="cargo_trabajador">__________________________________</b></b>
+    <b
+      >Cargo:
+      <b name="cargo_trabajador">__________________________________</b></b
+    >
     <b>Fecha: <b name="fecha_firma">___________________</b></b>
   </p>
   <br />
@@ -590,16 +516,9 @@
     Recibí el documento Responsabilidades para la prevención de COVID 19, lo
     entendí y me comprometo a darle estricto cumplimiento.
   </p>
-  <p>
-    <span>Firma del colaborador: </span><br />
-    <div name="firma_trabajador" id="firma_5"></div>
-    <span name="nombre_trabajador">________________________</span><br />
-    <span>Correo: <span name="correo_trabajador">________________</span></span>
-  </p>
 </div>
 
 <div style="page-break-after: always"></div>
-
 
 <div class="page">
   <p style="text-align: center">
@@ -659,24 +578,21 @@
     </li>
   </ol>
   <p>
-    <b>Nombre empleado:
-      <b name="nombre_trabajador">_______________________</b></b>
+    <b
+      >Nombre empleado:
+      <b name="nombre_trabajador">_______________________</b></b
+    >
     <b>Cedula N.º: <b name="cedula_trabajador">___________________</b></b>
     <br />
-    <b>Cargo:
-      <b name="cargo_trabajador">__________________________________</b></b>
+    <b
+      >Cargo:
+      <b name="cargo_trabajador">__________________________________</b></b
+    >
     <b>Fecha: <b name="fecha_firma">___________________</b></b>
   </p>
   <p>
     Recibí el documento Funciones y Responsabilidades Ambientales, lo entendí y
     me comprometo a darle estricto cumplimiento.
-  </p>
-  <br />
-  <br />
-  <p>
-    <span>Firma empleado: </span><br /><br /><br />
-    <div name="firma_trabajador" id="firma_6"></div>
-    <span>Correo: </span> <span name="correo_trabajador">________________</span>
   </p>
 </div>
 
@@ -717,45 +633,33 @@
       <td>
         <b>NOMBRE TRABAJADOR:</b>
       </td>
-      <td>
-        ______________________
-      </td>
+      <td>______________________</td>
       <td>
         <b>CEDULA:</b>
       </td>
-      <td>
-        ______________________
-      </td>
+      <td>______________________</td>
     </tr>
     <tr>
       <td>
         <b>CARGO:</b>
       </td>
-      <td>
-        ______________________
-      </td>
+      <td>______________________</td>
       <td>
         <b>PROYECTO:</b>
       </td>
-      <td>
-        ______________________
-      </td>
+      <td>______________________</td>
     </tr>
     <tr>
       <td>
         <b>FUNCIÓN:</b>
       </td>
-      <td colspan="3">
-        ____________________________________________
-      </td>
+      <td colspan="3">____________________________________________</td>
     </tr>
     <tr>
       <td>
         <b>CORREO:</b>
       </td>
-      <td colspan="3">
-        ____________________________________________
-      </td>
+      <td colspan="3">____________________________________________</td>
     </tr>
   </table>
   <table name="epp_s" hidden class="table_class">
@@ -800,7 +704,9 @@
         <b>CORREO:</b>
       </td>
       <td colspan="3">
-        <span name="correo_trabajador">____________________________________________</span>
+        <span name="correo_trabajador"
+          >____________________________________________</span
+        >
       </td>
     </tr>
   </table>
@@ -826,9 +732,6 @@
         <p><b>DESCRIPCIÓN DEL E.P.P Y/O EPCC</b></p>
       </td>
       <td>
-        <p><b>FIRMA</b></p>
-      </td>
-      <td>
         <p>
           <b>
             NOMBRE DE <br />
@@ -842,17 +745,8 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -863,10 +757,14 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -883,9 +781,6 @@
       </td>
       <td>
         <p><b>DESCRIPCIÓN DEL E.P.P Y/O EPCC</b></p>
-      </td>
-      <td>
-        <p><b>FIRMA</b></p>
       </td>
       <td>
         <p>
@@ -907,12 +802,6 @@
         <p name="desc_1">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_7"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -925,12 +814,6 @@
       </td>
       <td>
         <p name="desc_2">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_8"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -947,12 +830,6 @@
         <p name="desc_3">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_9"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -967,12 +844,6 @@
         <p name="desc_4">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_10"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -985,12 +856,6 @@
       </td>
       <td>
         <p name="desc_5">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_11"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -1008,12 +873,6 @@
         <p name="desc_6">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_12"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -1027,12 +886,6 @@
       </td>
       <td>
         <p name="desc_7">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_13"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -1050,12 +903,6 @@
         <p name="desc_8">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_14"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -1069,12 +916,6 @@
       </td>
       <td>
         <p name="desc_9">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_15"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -1092,12 +933,6 @@
         <p name="desc_10">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_16"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -1111,12 +946,6 @@
       </td>
       <td>
         <p name="desc_11">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_17"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -1134,12 +963,6 @@
         <p name="desc_12">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_18"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -1153,12 +976,6 @@
       </td>
       <td>
         <p name="desc_13">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_19"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -1176,12 +993,6 @@
         <p name="desc_14">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_20"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -1195,12 +1006,6 @@
       </td>
       <td>
         <p name="desc_15">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_21"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -1218,12 +1023,6 @@
         <p name="desc_16">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_22"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -1237,12 +1036,6 @@
       </td>
       <td>
         <p name="desc_17">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_23"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -1260,12 +1053,6 @@
         <p name="desc_18">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_24"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -1281,12 +1068,6 @@
         <p name="desc_19">____________________________________</p>
       </td>
       <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_25"></div>
-        </div>
-      </td>
-      <td>
         <p name="entregante">__________________</p>
       </td>
     </tr>
@@ -1300,12 +1081,6 @@
       </td>
       <td>
         <p name="desc_20">____________________________________</p>
-      </td>
-      <td>
-        <span name="epp_n"></span>
-        <div name="epp_s" hidden>
-          <div name="firma_trabajador" id="firma_26"></div>
-        </div>
       </td>
       <td>
         <p name="entregante">__________________</p>
@@ -1362,46 +1137,93 @@
     aplicación de polígrafo, entre otras, en caso de requerirse.
   </p>
 
-  <p>Así mismo, autorizo la realización de los exámenes médicos de ingreso y periódicos y aquellos que la empresa
-    considere pertinentes dentro del ejercicio de mi labor, con el fin de dar cumplimiento a la Política de Seguridad y
-    Salud en el Trabajo de la compañía y al Reglamento Interno de Trabajo de la misma. </p>
-  <p>Hago constar que fui informado de que los riesgos a los que puedo verme expuesto en la ejecución de la labor son:
+  <p>
+    Así mismo, autorizo la realización de los exámenes médicos de ingreso y
+    periódicos y aquellos que la empresa considere pertinentes dentro del
+    ejercicio de mi labor, con el fin de dar cumplimiento a la Política de
+    Seguridad y Salud en el Trabajo de la compañía y al Reglamento Interno de
+    Trabajo de la misma.
+  </p>
+  <p>
+    Hago constar que fui informado de que los riesgos a los que puedo verme
+    expuesto en la ejecución de la labor son:
   </p>
   <ul>
-    <li>Físicos: exposiciones a ruido, radiaciones, vibraciones, iluminación deficiente.</li>
-    <li>Químicos: Exposiciones a material particulado, humos, polvos, líquidos, gases y vapores.</li>
-    <li>Biológicos: Exposiciones a virus, hongos, bacterias, mordeduras y picaduras.</li>
-    <li>Psicosocial: Condiciones de la tarea, jornadas de trabajo, características del grupo social de trabajo.</li>
-    <li>Biomecánico: Exposiciones a posturas sostenidas, movimientos repetitivos, manipulación manual de cargas.</li>
-    <li>Condiciones de seguridad: ejecución de trabajos en alturas, espacios confinados, contacto con alta y baja
-      tensión, incendios, explosiones, accidentes de transito, situaciones de orden publico, contacto con partes de
-      maquinas y herramientas.</li>
-    <li>Fenómenos naturales: posibilidades se sismos, derrumbes, inundaciones.</li>
+    <li>
+      Físicos: exposiciones a ruido, radiaciones, vibraciones, iluminación
+      deficiente.
+    </li>
+    <li>
+      Químicos: Exposiciones a material particulado, humos, polvos, líquidos,
+      gases y vapores.
+    </li>
+    <li>
+      Biológicos: Exposiciones a virus, hongos, bacterias, mordeduras y
+      picaduras.
+    </li>
+    <li>
+      Psicosocial: Condiciones de la tarea, jornadas de trabajo, características
+      del grupo social de trabajo.
+    </li>
+    <li>
+      Biomecánico: Exposiciones a posturas sostenidas, movimientos repetitivos,
+      manipulación manual de cargas.
+    </li>
+    <li>
+      Condiciones de seguridad: ejecución de trabajos en alturas, espacios
+      confinados, contacto con alta y baja tensión, incendios, explosiones,
+      accidentes de transito, situaciones de orden publico, contacto con partes
+      de maquinas y herramientas.
+    </li>
+    <li>
+      Fenómenos naturales: posibilidades se sismos, derrumbes, inundaciones.
+    </li>
   </ul>
-  <p>Conociendo mis derechos y mis deberes y, las normas sobre tratamiento de datos personales autorizo a LATINCO S.A.
-    para la recolección y tratamiento de mis datos personales (fotos tomadas en eventos y actividades de la sociedad,
-    fecha y lugar de nacimiento, cargo, formación académica, estado civil, número de hijos, grupo sanguíneo, correo
-    electrónico, acontecimientos relevantes del grupo familiar primario: nacimientos, fallecimientos, matrimonios, fecha
-    de inicio y finalización de la actividad) en los siguientes casos:</p>
+  <p>
+    Conociendo mis derechos y mis deberes y, las normas sobre tratamiento de
+    datos personales autorizo a LATINCO S.A. para la recolección y tratamiento
+    de mis datos personales (fotos tomadas en eventos y actividades de la
+    sociedad, fecha y lugar de nacimiento, cargo, formación académica, estado
+    civil, número de hijos, grupo sanguíneo, correo electrónico, acontecimientos
+    relevantes del grupo familiar primario: nacimientos, fallecimientos,
+    matrimonios, fecha de inicio y finalización de la actividad) en los
+    siguientes casos:
+  </p>
   <ul>
-    <li>Publicaciones internas y externas (intranet, boletines, carteleras).</li>
+    <li>
+      Publicaciones internas y externas (intranet, boletines, carteleras).
+    </li>
     <li>Plataformas tecnológicas propias de la organización.</li>
-    <li>Brindar información a empresas que solicitan verificar datos laborales de los empleados para autorización de
-      créditos de dinero o de créditos comerciales.</li>
+    <li>
+      Brindar información a empresas que solicitan verificar datos laborales de
+      los empleados para autorización de créditos de dinero o de créditos
+      comerciales.
+    </li>
     <li>Procesos de elección y formación.</li>
-    <li>Encuestas relacionadas con Medición de factores psicosociales, estudios de clima organizacional, Mediciones de
-      SST.</li>
+    <li>
+      Encuestas relacionadas con Medición de factores psicosociales, estudios de
+      clima organizacional, Mediciones de SST.
+    </li>
   </ul>
-  <p>Como titular de datos personales, en cualquier momento puedo solicitar al responsable o encargado, la supresión de
-    mis datos personales y/o revocar la autorización otorgada para el tratamiento de los mismos, mediante la
-    presentación de una solicitud, de conformidad con lo establecido en el artículo 15 de la ley 1581 de 2012 y en el
-    decreto 1377 de 2013. Lo anterior, salvo en aquellos casos en los que tenga el deber legal o contractual de
-    permanecer en la base de datos. Así mismo tengo derecho a conocer, actualizar y rectificar mis datos ante la empresa
-    y acceder de forma gratuita a mis datos personales objeto de tratamiento. </p>
-  <p>Firma digital: Autorizo expresamente la firma digital, la cual tendrá la misma fuerza y efecto que el uso de una
-    firma manuscrita, definida en el literal C) del artículo segundo de la ley 527 de 1999: de esta manera estoy de
-    acuerdo, que documentos como contrato de trabajo, otro si, clausulas adicionales y cualquier tipo de documento que
-    se derive de mi relación laboral se realice de esta manera.</p>
+  <p>
+    Como titular de datos personales, en cualquier momento puedo solicitar al
+    responsable o encargado, la supresión de mis datos personales y/o revocar la
+    autorización otorgada para el tratamiento de los mismos, mediante la
+    presentación de una solicitud, de conformidad con lo establecido en el
+    artículo 15 de la ley 1581 de 2012 y en el decreto 1377 de 2013. Lo
+    anterior, salvo en aquellos casos en los que tenga el deber legal o
+    contractual de permanecer en la base de datos. Así mismo tengo derecho a
+    conocer, actualizar y rectificar mis datos ante la empresa y acceder de
+    forma gratuita a mis datos personales objeto de tratamiento.
+  </p>
+  <p>
+    Firma digital: Autorizo expresamente la firma digital, la cual tendrá la
+    misma fuerza y efecto que el uso de una firma manuscrita, definida en el
+    literal C) del artículo segundo de la ley 527 de 1999: de esta manera estoy
+    de acuerdo, que documentos como contrato de trabajo, otro si, clausulas
+    adicionales y cualquier tipo de documento que se derive de mi relación
+    laboral se realice de esta manera.
+  </p>
 
   <p>
     Hago constar que he leído y entendido en su totalidad este documento, por lo
@@ -1411,7 +1233,10 @@
   <br />
   <br />
   <span>Firma:</span><br />
-  <div name="firma_trabajador" id="firma_27"></div>
-  <span>C.C: <span name="cedula_trabajador">______________________</span></span><br />
-  <span>Correo: <span name="correo_trabajador">______________________</span></span>
+  <div id="firma_trabajador"></div>
+  <span>C.C: <span name="cedula_trabajador">______________________</span></span
+  ><br />
+  <span
+    >Correo: <span name="correo_trabajador">______________________</span></span
+  >
 </div>

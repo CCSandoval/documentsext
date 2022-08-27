@@ -48,28 +48,6 @@
     en constancia firmo y acepto su contenido el dia
     <span name="fecha_firma">___________________</span>,
   </p>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <span>Atentamente,</span>
-  <br />
-  <br />
-  <br />
-  <br />
-  <br />
-  <p>
-    <span>_____________________________</span><br /><br />
-    <span>C.C <span name="cedula_trabajador">___________</span></span
-    ><br /><br />
-    <span>Correo: <span name="correo_trabajador">___________</span></span
-    ><br /><br />
-    <span>TRABAJADOR</span>
-  </p>
-  <br />
-  <br />
-  <br />
   <p>
     <span>CC. Hoja de Vida</span><br />
     <span
@@ -109,25 +87,6 @@
     de Trabajo y el Código de Ética y Conducta Empresarial por lo que en
     constancia firmo y acepto su contenido el día
     <span name="fecha_firma">___________________</span>
-  </p>
-  <br />
-  <br />
-  <br />
-  <p>
-    <span>Atentamente,</span><br />
-    <span>______________________________</span><br />
-    <span name="nombre_trabajador">________________</span> <br />
-    <span><b>C.C</b> <b name="cedula_trabajador">________________</b></span>
-    <br />
-    <span><b>Correo</b> <b name="correo_trabajador">________________</b></span>
-    <br />
-    <br />
-    <span>
-      <span>Copia Hoja de Vida</span><br />
-      <small>
-        <b>V.03 <br />20/11/2017</b>
-      </small>
-    </span>
   </p>
 </div>
 
@@ -180,24 +139,12 @@
   <br />
   <br />
   <br />
-  <p>
-    <span>______________________________</span><br />
-    <span> <b name="nombre_trabajador">____________________</b> </span><br />
-    <span><b>C.C No.</b> <b name="cedula_trabajador">________________</b></span
-    ><br />
-    <span><b>Cargo</b> <b name="cargo_trabajador">________________</b></span
-    ><br />
-    <span><b>Correo</b> <b name="correo_trabajador">________________</b></span
-    ><br />
-    <br />
-    <br />
-    <span>
-      <small>
-        <b>Versión:</b> 00 <br />
-        <b>Vigencia: 18/01/2022</b>
-      </small>
-    </span>
-  </p>
+  <span>
+    <small>
+      <b>Versión:</b> 00 <br />
+      <b>Vigencia: 18/01/2022</b>
+    </small>
+  </span>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -212,7 +159,9 @@
           </b>
         </p>
       </td>
-      <td><p>CÓDIGO: FO-S-62-6</p></td>
+      <td>
+        <p>CÓDIGO: FO-S-62-6</p>
+      </td>
     </tr>
     <tr>
       <td>
@@ -223,7 +172,9 @@
       <td>
         <p>SEGURIDAD Y SALUD EN EL TRABAJO</p>
       </td>
-      <td><p>VIGENCIA: 02-AGO-2017</p></td>
+      <td>
+        <p>VIGENCIA: 02-AGO-2017</p>
+      </td>
     </tr>
   </table>
   <br />
@@ -257,24 +208,6 @@
     <span name="autoriza_s" hidden> ___ </span>
     <u name="autoriza_n">&nbsp;X&nbsp;</u>
   </p>
-
-  <br />
-  <br />
-  <br />
-  <p>
-    <span>Firma trabajador: <br /><span>___________________</span></span>
-    <br />
-    <br />
-    <span>C.C. <span name="cedula_trabajador">___________________</span></span>
-    <br />
-    <br />
-    <span>Cargo: <span name="cargo_trabajador">___________________</span></span>
-    <br />
-    <br />
-    <span>
-      Correo: <span name="correo_trabajador">___________________</span>
-    </span>
-  </p>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -298,7 +231,9 @@
       <td>
         <p>TALENTO HUMANO</p>
       </td>
-      <td><p>VIGENCIA: 22-ENE-2022</p></td>
+      <td>
+        <p>VIGENCIA: 22-ENE-2022</p>
+      </td>
     </tr>
   </table>
   <br />
@@ -307,10 +242,8 @@
     <span name="dotacion_s" hidden>
       <span name="nombre_entregante">______________</span>
     </span>
-    <span name="dotacion_n">
-      ______________
-    </span>, hace entrega oficial
-    de la siguiente dotación compuesta por los elementos que más adelante se
+    <span name="dotacion_n"> ______________ </span>, hace entrega oficial de la
+    siguiente dotación compuesta por los elementos que más adelante se
     describen:
   </p>
   <p><b>EL TRABAJADOR con su firma manifiesta y acepta que:</b></p>
@@ -345,9 +278,7 @@
         <span hidden name="dotacion_s">
           <span name="nombre_trabajador">______________</span>
         </span>
-        <span name="dotacion_n">
-          ______________
-        </span>
+        <span name="dotacion_n"> ______________ </span>
       </td>
     </tr>
     <tr>
@@ -358,9 +289,7 @@
         <span hidden name="dotacion_s">
           <span name="cedula_trabajador">______________</span>
         </span>
-        <span name="dotacion_n">
-          ______________
-        </span>
+        <span name="dotacion_n"> ______________ </span>
       </td>
     </tr>
     <tr>
@@ -452,15 +381,6 @@
     Para constancia se firma por las partes que intervienen, el dia
     <span name="fecha_firma">_______________</span>
   </p>
-  <p>
-    <span>___________________________</span><br />
-    <span><b>TRABAJADOR (A)</b></span>
-    <br />
-    <span><b name="nombre_trabajador">_____________________</b></span> <br />
-    <span><b>C.C.</b> <b name="cedula_trabajador"></b></span> <br />
-    <span><b>Correo: </b> <b name="correo_trabajador"></b></span> <br />
-  </p>
-  <br />
   <span><small>Copia: Hoja de vida.</small></span>
 </div>
 
@@ -474,7 +394,9 @@
           <b>RESPONSABILIDADES PREVENCION COVID 19</b>
         </p>
       </td>
-      <td><p>CÓDIGO: DA-S-37-11</p></td>
+      <td>
+        <p>CÓDIGO: DA-S-37-11</p>
+      </td>
     </tr>
     <tr>
       <td>
@@ -485,7 +407,9 @@
       <td>
         <p>SEGURIDAD Y SALUD EN EL TRABAJO</p>
       </td>
-      <td><p>VIGENCIA: 01-ABR-2021</p></td>
+      <td>
+        <p>VIGENCIA: 01-ABR-2021</p>
+      </td>
     </tr>
   </table>
   <br />
@@ -586,11 +510,6 @@
     Recibí el documento Responsabilidades para la prevención de COVID 19, lo
     entendí y me comprometo a darle estricto cumplimiento.
   </p>
-  <p>
-    <span>Firma del colaborador: </span><br />
-    <span name="nombre_trabajador">________________________</span><br />
-    <span>Correo: <span name="correo_trabajador">________________</span></span>
-  </p>
 </div>
 
 <div class="page">
@@ -667,13 +586,6 @@
     Recibí el documento Funciones y Responsabilidades Ambientales, lo entendí y
     me comprometo a darle estricto cumplimiento.
   </p>
-  <br />
-  <br />
-  <p>
-    <span>Firma empleado: </span><br /><br /><br />
-    <span>_________________________</span><br /><br />
-    <span>Correo: </span> <span name="correo_trabajador">________________</span>
-  </p>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -689,7 +601,9 @@
           </b>
         </p>
       </td>
-      <td><p>CÓDIGO: FO-S-09-1</p></td>
+      <td>
+        <p>CÓDIGO: FO-S-09-1</p>
+      </td>
     </tr>
     <tr>
       <td>
@@ -700,7 +614,9 @@
       <td>
         <p>SEGURIDAD Y SALUD EN EL TRABAJO</p>
       </td>
-      <td><p>VIGENCIA: 05-ABR-2017</p></td>
+      <td>
+        <p>VIGENCIA: 05-ABR-2017</p>
+      </td>
     </tr>
   </table>
   <br />
@@ -709,45 +625,33 @@
       <td>
         <b>NOMBRE TRABAJADOR:</b>
       </td>
-      <td>
-        ______________________
-      </td>
+      <td>______________________</td>
       <td>
         <b>CEDULA:</b>
       </td>
-      <td>
-        ______________________
-      </td>
+      <td>______________________</td>
     </tr>
     <tr>
       <td>
         <b>CARGO:</b>
       </td>
-      <td>
-        ______________________
-      </td>
+      <td>______________________</td>
       <td>
         <b>PROYECTO:</b>
       </td>
-      <td>
-        ______________________
-      </td>
+      <td>______________________</td>
     </tr>
     <tr>
       <td>
         <b>FUNCIÓN:</b>
       </td>
-      <td colspan="3">
-        ____________________________________________
-      </td>
+      <td colspan="3">____________________________________________</td>
     </tr>
     <tr>
       <td>
         <b>CORREO:</b>
       </td>
-      <td colspan="3">
-        ____________________________________________
-      </td>
+      <td colspan="3">____________________________________________</td>
     </tr>
   </table>
   <table name="epp_s" hidden class="table_class">
@@ -792,7 +696,9 @@
         <b>CORREO:</b>
       </td>
       <td colspan="3">
-        <span name="correo_trabajador">____________________________________________</span>
+        <span name="correo_trabajador"
+          >____________________________________________</span
+        >
       </td>
     </tr>
   </table>
@@ -818,9 +724,6 @@
         <p><b>DESCRIPCIÓN DEL E.P.P Y/O EPCC</b></p>
       </td>
       <td>
-        <p><b>FIRMA</b></p>
-      </td>
-      <td>
         <p>
           <b>
             NOMBRE DE <br />
@@ -834,17 +737,8 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-      <td>&nbsp;</td>
-    </tr>
-    <tr>
-      <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -855,10 +749,14 @@
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
-      <td>&nbsp;</td>
     </tr>
     <tr>
       <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+      <td>&nbsp;</td>
+    </tr>
+    <tr>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
       <td>&nbsp;</td>
@@ -877,9 +775,6 @@
         <p><b>DESCRIPCIÓN DEL E.P.P Y/O EPCC</b></p>
       </td>
       <td>
-        <p><b>FIRMA</b></p>
-      </td>
-      <td>
         <p>
           <b>
             NOMBRE DE <br />
@@ -889,199 +784,299 @@
       </td>
     </tr>
     <tr>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_1">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_1">___</p>
+      </td>
       <td>
         <p name="desc_1">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_2">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_2">___</p>
+      </td>
       <td>
         <p name="desc_2">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_3">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_3">___</p>
+      </td>
       <td>
         <p name="desc_3">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_4">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_4">___</p>
+      </td>
       <td>
         <p name="desc_4">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_5">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_5">___</p>
+      </td>
       <td>
         <p name="desc_5">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_6_n"></tr>
     <tr name="elemento_6_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_6">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_6">___</p>
+      </td>
       <td>
         <p name="desc_6">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_7_n"></tr>
     <tr name="elemento_7_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_7">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_7">___</p>
+      </td>
       <td>
         <p name="desc_7">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_8_n"></tr>
     <tr name="elemento_8_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_8">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_8">___</p>
+      </td>
       <td>
         <p name="desc_8">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_9_n"></tr>
     <tr name="elemento_9_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_9">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_9">___</p>
+      </td>
       <td>
         <p name="desc_9">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_10_n"></tr>
     <tr name="elemento_10_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_10">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_10">___</p>
+      </td>
       <td>
         <p name="desc_10">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_11_n"></tr>
     <tr name="elemento_11_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_11">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_11">___</p>
+      </td>
       <td>
         <p name="desc_11">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_12_n"></tr>
     <tr name="elemento_12_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_12">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_12">___</p>
+      </td>
       <td>
         <p name="desc_12">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_13_n"></tr>
     <tr name="elemento_13_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_13">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_13">___</p>
+      </td>
       <td>
         <p name="desc_13">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_14_n"></tr>
     <tr name="elemento_14_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_14">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_14">___</p>
+      </td>
       <td>
         <p name="desc_14">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_15_n"></tr>
     <tr name="elemento_15_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_15">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_15">___</p>
+      </td>
       <td>
         <p name="desc_15">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_16_n"></tr>
     <tr name="elemento_16_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_16">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_16">___</p>
+      </td>
       <td>
         <p name="desc_16">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_17_n"></tr>
     <tr name="elemento_17_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_17">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_17">___</p>
+      </td>
       <td>
         <p name="desc_17">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_18_n"></tr>
     <tr name="elemento_18_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_18">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_18">___</p>
+      </td>
       <td>
         <p name="desc_18">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_19_n"></tr>
     <tr name="elemento_19_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_19">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_19">___</p>
+      </td>
       <td>
         <p name="desc_19">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
     <tr name="elemento_20_n"></tr>
     <tr name="elemento_20_s" hidden>
-      <td><p name="fecha">_________</p></td>
-      <td><p name="cant_20">___</p></td>
+      <td>
+        <p name="fecha">_________</p>
+      </td>
+      <td>
+        <p name="cant_20">___</p>
+      </td>
       <td>
         <p name="desc_20">____________________________________</p>
       </td>
-      <td></td>
-      <td><p name="entregante">__________________</p></td>
+      <td>
+        <p name="entregante">__________________</p>
+      </td>
     </tr>
   </table>
 </div>

@@ -1,0 +1,68 @@
+{
+    _id: ObjectId('6305270051fc27d23d9291c7'),
+    config: [
+        {
+            name: 'nombre_firmante',
+            type: 'name',
+            description: 'Ingrese su nombre completo',
+            help: 'nombre'
+        },
+        {
+            name: 'correo_firmante',
+            type: 'email',
+            description: 'Ingrese el correo donde llegará la invitación a firmar el documento',
+            help: 'correo'
+        },
+        {
+            name: 'celular_firmante',
+            type: 'phone',
+            description: 'Ingrese su número de teléfono'
+        },
+        {
+            name: 'id_firmante',
+            type: 'number',
+            description: 'Ingrese su número de identificación (Sin puntos ni espacios)',
+            help: 'id'
+        },
+        {
+            name: 'tyc',
+            type: 'clausula',
+            description: '¿Acepta el tratamiento de datos conforme a la Política de Protección y Tratamiento de datos de Domina y Auco?',
+            value: 's',
+            options: [
+                {
+                    name: 'Si',
+                    value: 's'
+                },
+                {
+                    name: 'No',
+                    value: 'n'
+                }
+            ]
+        }
+    ],
+    sign: [
+        'nombre_firmante',
+        'correo_firmante',
+        'celular_firmante',
+        'tyc'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_firmante',
+            email: 'correo_firmante',
+            phone: 'celular_firmante',
+            identification: 'id_firmante',
+            type: 'firmante'
+        }
+    ],
+    help: {
+        correo: 'Ejemplo: correo@dominio.com',
+        nombre: 'Ejemplo: DAVID ALBERTO RAMIREZ VILLANUEVA',
+        id: 'Ejemplo: 1110334861'
+    },
+    preBuild: false,
+    price: 5000,
+    name: 'Demostración Domina',
+    build: 1
+}

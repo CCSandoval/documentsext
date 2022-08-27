@@ -273,8 +273,7 @@
 <p>
   En constancia de pleno conocimiento y aceptación de lo anterior se firma la
   presente carta de instrucciones en la ciudad de
-  <span name="ciudad_firma">_______________</span>, el
-  <span name="fecha_firma">_______________</span>
+  <span name="ciudad_firma">_______________</span>
 </p>
 
 <br /><br /><br />
@@ -324,6 +323,13 @@
   C.C. <b name="cc_avalista_1">_______________</b>
   <br />
   Correo: <b name="correo_avalista_1">_______________</b>
+  <span name="tipo_persona_avalista_1_n"></span>
+  <span name="tipo_persona_avalista_1_j" hidden>
+    <br />
+    Razón Social: <b name="nombre_empresa_av_1">_______________</b>
+    <br />
+    NIT: <b name="nit_empresa_av_1">_______________</b>
+  </span>
 </p>
 
 <br /><br />
@@ -337,6 +343,13 @@
   C.C. <b name="cc_avalista_2">_______________</b>
   <br />
   Correo: <b name="correo_avalista_2">_______________</b>
+  <span name="tipo_persona_avalista_2_n"></span>
+  <span name="tipo_persona_avalista_2_j" hidden>
+    <br />
+    Razón Social: <b name="nombre_empresa_av_2">_______________</b>
+    <br />
+    NIT: <b name="nit_empresa_av_2">_______________</b>
+  </span>
 
   <span name="avalista_3_n"></span>
   <div name="avalista_3_s" hidden>
@@ -348,6 +361,14 @@
     C.C. <b name="cc_avalista_3">_______________</b>
     <br />
     Correo: <b name="correo_avalista_3">_______________</b>
+    <span name="tipo_persona_avalista_3_n"></span>
+    <span name="tipo_persona_avalista_3_j" hidden>
+      <br />
+      Razón Social: <b name="nombre_empresa_av_3">_______________</b>
+      <br />
+      NIT: <b name="nit_empresa_av_3">_______________</b>
+    </span>
+    
     <span name="avalista_4_n"></span>
     <div name="avalista_4_s" hidden>
       <br /><br />
@@ -358,6 +379,13 @@
       C.C. <b name="cc_avalista_4">_______________</b>
       <br />
       Correo: <b name="correo_avalista_4">_______________</b>
+      <span name="tipo_persona_avalista_4_n"></span>
+      <span name="tipo_persona_avalista_4_j" hidden>
+        <br />
+        Razón Social: <b name="nombre_empresa_av_4">_______________</b>
+        <br />
+        NIT: <b name="nit_empresa_av_4">_______________</b>
+      </span>
     </div>
   </div>
 </div>

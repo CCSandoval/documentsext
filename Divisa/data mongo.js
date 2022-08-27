@@ -123,19 +123,57 @@
             ]
         },
         {
+            name:'correo_enviar',
+            type:'email',
+            description:'Ingresa el correo de la persona que diligenciará éste documento',
+        },
+        {
             name:'ciudad_firma',
             type:'text',
             description:'Ingrese la ciudad donde se firma el pagaré',
         },
         {
-            name:'fecha_firma',
-            type:'date',
-            description:'Seleccione la fecha en la que se firma el pagaré',
-        },
-        {
             name:'correo_deudor',
             type:'email',
             description:'Ingrese el correo electrónico donde le llegará la invitación a fimar al deudor',
+        },
+        {
+            name:'tipo_persona_avalista_1',
+            type:'clausula',
+            description:'Seleccione el tipo de persona del primer avalista',
+            value:'n',
+            options:[
+                {
+                    name:'Natural',
+                    value:'n'
+                },
+                {
+                    name:'Jurídica',
+                    value:'j'
+                },
+            ]
+        },
+        {
+            name:'nombre_empresa_av_1',
+            type:'text',
+            description:'Ingrese el nombre de la empresa del primer avalista',
+            prereq:[
+                {
+                    k:'tipo_persona_avalista_1',
+                    v:'j'
+                },
+            ]
+        },
+        {
+            name:'nit_empresa_av_1',
+            type:'text',
+            description:'Ingrese el NIT de la empresa del primer avalista',
+            prereq:[
+                {
+                    k:'tipo_persona_avalista_1',
+                    v:'j'
+                },
+            ]
         },
         {
             name:'nombre_avalista_1',
@@ -167,6 +205,58 @@
                     value:'s'
                 },
             ],
+        },
+        {
+            name:'tipo_persona_avalista_2',
+            type:'clausula',
+            description:'Seleccione el tipo de persona del segundo avalista',
+            value:'n',
+            options:[
+                {
+                    name:'Natural',
+                    value:'n'
+                },
+                {
+                    name:'Jurídica',
+                    value:'j'
+                },
+            ],
+            prereq:[
+                {
+                    k:'avalista_2',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name:'nombre_empresa_av_2',
+            type:'text',
+            description:'Ingrese el nombre de la empresa del segundo avalista',
+            prereq:[
+                {
+                    k:'tipo_persona_avalista_2',
+                    v:'j'
+                },
+                {
+                    k:'avalista_2',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name:'nit_empresa_av_2',
+            type:'text',
+            description:'Ingrese el NIT de la empresa del segundo avalista',
+            prereq:[
+                {
+                    k:'tipo_persona_avalista_2',
+                    v:'j'
+                },
+                {
+                    k:'avalista_2',
+                    v:'s'
+                }
+            ]
         },
         {
             name:'nombre_avalista_2',
@@ -221,6 +311,70 @@
                     k:'avalista_2',
                     v:'s'
                 },
+            ]
+        },
+        {
+            name:'tipo_persona_avalista_3',
+            type:'clausula',
+            description:'Seleccione el tipo de persona del tercer avalista',
+            value:'n',
+            options:[
+                {
+                    name:'Natural',
+                    value:'n'
+                },
+                {
+                    name:'Jurídica',
+                    value:'j'
+                },
+            ],
+            prereq:[
+                {
+                    k:'avalista_2',
+                    v:'s'
+                },
+                {
+                    k:'avalista_3',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name:'nombre_empresa_av_3',
+            type:'text',
+            description:'Ingrese el nombre de la empresa del tercer avalista',
+            prereq:[
+                {
+                    k:'tipo_persona_avalista_2',
+                    v:'j'
+                },
+                {
+                    k:'avalista_2',
+                    v:'s'
+                },
+                {
+                    k:'avalista_3',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name:'nit_empresa_av_3',
+            type:'text',
+            description:'Ingrese el NIT de la empresa del tercer avalista',
+            prereq:[
+                {
+                    k:'tipo_persona_avalista_2',
+                    v:'j'
+                },
+                {
+                    k:'avalista_2',
+                    v:'s'
+                },
+                {
+                    k:'avalista_3',
+                    v:'s'
+                }
             ]
         },
         {
@@ -292,6 +446,82 @@
                     k:'avalista_3',
                     v:'s'
                 },
+            ]
+        },
+        {
+            name:'tipo_persona_avalista_4',
+            type:'clausula',
+            description:'Seleccione el tipo de persona del cuarto avalista',
+            value:'n',
+            options:[
+                {
+                    name:'Natural',
+                    value:'n'
+                },
+                {
+                    name:'Jurídica',
+                    value:'j'
+                },
+            ],
+            prereq:[
+                {
+                    k:'avalista_2',
+                    v:'s'
+                },
+                {
+                    k:'avalista_3',
+                    v:'s'
+                },
+                {
+                    k:'avalista_4',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name:'nombre_empresa_av_4',
+            type:'text',
+            description:'Ingrese el nombre de la empresa del cuarto avalista',
+            prereq:[
+                {
+                    k:'tipo_persona_avalista_2',
+                    v:'j'
+                },
+                {
+                    k:'avalista_2',
+                    v:'s'
+                },
+                {
+                    k:'avalista_3',
+                    v:'s'
+                },
+                {
+                    k:'avalista_4',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name:'nit_empresa_av_4',
+            type:'text',
+            description:'Ingrese el NIT de la empresa del cuarto avalista',
+            prereq:[
+                {
+                    k:'tipo_persona_avalista_2',
+                    v:'j'
+                },
+                {
+                    k:'avalista_2',
+                    v:'s'
+                },
+                {
+                    k:'avalista_3',
+                    v:'s'
+                },
+                {
+                    k:'avalista_4',
+                    v:'s'
+                }
             ]
         },
         {
@@ -401,8 +631,24 @@
             type:'firma_avalista_4'
         },
     ],
-    preBuild:false,
+    preBuild:true,
+    preBuildData:[
+        'num_pagare',
+        'valor_pagare',
+        'ciudad_pago',
+        'fecha_vencimiento',
+        'interes_mora',
+        'tipo_persona',
+        'nombre_deudor',
+        'domicilio_deudor',
+        'cc_deudor',
+        'establecimiento',
+        'nombre_establecimiento',
+        'nombre_empresa',
+        'nit_empresa',
+        'correo_enviar'
+    ],
     name:'PAGARÉ FACTORING DIVISA',
     price:5000,
-    build:0
+    build:1
 }

@@ -1,0 +1,3429 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    background-color: #e7e6e6;
+  }
+</style>
+
+<h2 style="text-align: center">
+  <b>
+    CONTRATO DE LICENCIAMIENTO PARA EL USO EXCLUSIVO DEL SOFTWARE 'HIMED'
+    <br />
+    <br />
+    TABLA DE CONTENIDO
+  </b>
+</h2>
+
+<h3 style="text-align: center"><b>PARTES</b></h3>
+
+<p>Entre los suscritos a saber,</p>
+
+<ol>
+  <li>
+    <b>CARLOS EDUARDO MESA CANO</b>, mayor de edad, identificado con cédula de
+    ciudadanía No. 71.657.211, actuando en representación legal de la sociedad
+    <b>HIMED SOLUTIONS S.A.S.</b>, “HIMED S.A.S”, sociedad constituida bajo las
+    leyes colombianas, con domicilio en Medellín - Colombia, identificada con el
+    NIT. 900.150.913-7, quien en adelante se denominará 'LA EMPRESA'; y
+  </li>
+  <li>
+    <span name="nombre_cliente">___________________</span>, mayor de edad,
+    identificado (a) con cédula de ciudadanía No.
+    <span name="cc_cliente">___________________</span>,
+
+    <span name="tipo_persona_cliente_n">
+      actuando en representación propia, quien en adelante se denominará 'EL
+      CLIENTE';
+    </span>
+    <span name="tipo_persona_cliente_j" hidden>
+      actuando en representación legal de
+      <span name="nombre_sociedad">___________________</span> sociedad
+      constituida bajo las leyes colombianas, con domicilio en
+      <span name="domicilio_sociedad">___________________</span> - Colombia,
+      identificada con el NIT.
+      <span name="nit_sociedad">___________________</span>, quien en adelante se
+      denominará 'EL CLIENTE';
+    </span>
+  </li>
+</ol>
+
+<p>
+  han celebrado de manera libre y espontánea el presente
+  <b>CONTRATO DE LICENCIAMIENTO PARA EL USO NO EXCLUSIVO DEL SOFTWARE 'HIMED'</b
+  >, en adelante EL CONTRATO, el cual se regirá por las siguientes cláusulas y
+  en lo no previsto en ellas por las disposiciones legales aplicables.
+</p>
+
+<h3 style="text-align: center"><b>TÍTULO PRELIMINAR - DEFICICIONES</b></h3>
+
+<p>
+  <b>CLÁUSULA 1 - DEFINICIONES.</b> Para la adecuada interpretación del presente
+  CONTRATO, los términos utilizados con mayúscula sostenida deben ser entendidos
+  con el significado que aquí se les asigna. Los demás términos que no se
+  encuentren expresamente definidos, deberán entenderse en el sentido que les
+  confiera el lenguaje técnico respectivo o por su significado de sentido
+  natural y obvio, de conformidad con su uso general. Los términos utilizados
+  con mayúscula sostenida y en negrita serán igualmente aplicables en singular y
+  en plural de acuerdo con sus respectivos significados; Los encabezados de los
+  títulos, capítulos y cláusulas se incluyen con fines de referencia y de
+  conveniencia del lector, pero de ninguna manera limitan o definen el alcance
+  del CONTRATO.
+</p>
+
+<p>
+  Los términos que se relacionan a continuación tendrán el significado que a
+  cada uno se asigna, el cual será aplicable para cada término en su forma
+  individual o plural, a saber:
+</p>
+
+<ol>
+  <li>
+    <b>ADQUIRENTE:</b> Persona natural o jurídica que adquiere bienes y/o
+    servicios y tiene la obligación de exigir factura o documento equivalente;
+  </li>
+  <li>
+    <b>CIE:</b> Se refiere a las siglas utilizadas para la Clasificación
+    Internacional de Enfermedades;
+  </li>
+  <li>
+    <b>CLIENTE o LICENCIATARIO:</b> Es la persona natural o jurídica,
+    profesional o especializado en la Prestación de Servicios en Salud de
+    cualquier área o nivel, cuya calidad acredita las autoridades competentes,
+    quien por el presente acto jurídico adquiere la Licencia de Uso del Software
+    como Servicio (S.a.S.) desarrollado por LA EMPRESA;
+  </li>
+  <li>
+    <b>CONTRATO DE LICENCIAMIENTO o LA LICENCIA:</b> Es el presente instrumento
+    a través del cual LA EMPRESA concede la licencia de uso sobre el Software
+    denominado ‘HiMed Web’ en los términos expresados en este documento.
+    Adicionalmente, este contrato define los lineamientos, parámetros,
+    principios y reglas generales que regularán las obligaciones que
+    recíprocamente adquieren en virtud del presente acto jurídico;
+  </li>
+  <li>
+    <b>CUPS:</b> Se refiere a las siglas utilizadas para la Clasificación Única
+    de Procedimientos en Salud;
+  </li>
+  <li>
+    <b>DATO GENERADOR DE HISTORIA CLÍNICA:</b> Es cualquier secuencia de uno o
+    más símbolos a los que se les da significado mediante actos específicos de
+    interpretación, los cuales son procesados por LA PLATAFORMA a partir del
+    comando efectuado por un USUARIO para la generación del documento privado,
+    obligatorio y sometido a reserva que es la Historia Clínica en los términos
+    de la Resolución 1995 de 1999 expedida por el Ministerio de Salud y
+    Protección Social;
+  </li>
+  <li>
+    <b>DOCUMENTOS COMPLEMENTARIOS:</b> Se entenderán como complementarios e
+    incorporados al presente instrumento, aquellos documentos con valor jurídico
+    accesorio al presente contrato, mediante los cuales LAS PARTES determinan,
+    clarifican, precisan y/o alteran las condiciones de la licencia conferida a
+    través del presente contrato. De su calidad como documentos complementarios
+    se dejará anotación en los mismos;
+  </li>
+  <li>
+    <b>EL CLIENTE o EL LICENCIATARIO:</b> Corresponde a la parte denominada
+    CLIENTE en el presente contrato, a quien, en virtud del presente
+    instrumento, se le confiere de la Licencia para el Uso del Software 'HiMed'
+    en los términos señalados en este acto;
+  </li>
+  <li>
+    <b>EL PACIENTE:</b> Es toda persona natural que está sometida a los cuidados
+    profesionales en salud ofrecidos, comercializados y/o prestados por EL
+    CLIENTE.
+  </li>
+  <li>
+    <b>ENTIDAD ALIANZA:</b> Son las entidades de naturaleza pública y/o privada
+    con quien LA EMPRESA celebra convenios de interoperabilidad de la
+    información en virtud de vínculo contractual y/o reglamentario de éstas para
+    con EL CLIENTE, bajo la cual se le exige a este último entregar información
+    clínica de LOS PACIENTES atendidos por el CLIENTE;
+  </li>
+  <li>
+    <b>FACTURA ELECTRÓNICA:</b> Es el documento que soporta transacciones de
+    venta de bienes y/o servicios en salud y que operativamente tiene lugar a
+    través de sistemas computacionales y/o soluciones informáticas que permiten
+    el cumplimiento de las características y condiciones que se establecen en la
+    normatividad aplicable;
+  </li>
+  <li>
+    <b>FECHA DE HABILITACIÓN:</b> Corresponde a la fecha en la cual, previo
+    agotamiento del proceso de parametrización y configuración de LA PLATAFORMA,
+    EL CLIENTE puede hacer uso efectivo de la Licencia de Uso conferida por LA
+    EMPRESA sobre el software ‘Himed Web’:
+  </li>
+  <li>
+    <b>FUNCIONES ADICIONALES:</b> Corresponden a las funcionalidades del
+    software ‘HiMed Web’ que, sin estar comprendidas dentro de las que son
+    propias de cada módulo especializado, complementan o agregan funciones
+    particulares a los módulos adquiridos por el cliente, tales como el envío de
+    documentos clínicos por correo y el acceso para la consulta y generación de
+    informes;
+  </li>
+  <li>
+    <b>HISTORIA CLÍNICA:</b> De conformidad con la Resolución 1995 de 1996
+    expedida por el Ministerio de Salud y Protección Social, es un documento
+    privado, obligatorio y sometido a reserva, en el cual se registran
+    cronológicamente las condiciones de salud de EL PACIENTE, los actos médicos
+    y los demás procedimientos ejecutados por el equipo de salud que interviene
+    en su atención. Dicho documento únicamente puede ser conocido por terceros
+    previa autorización de EL PACIENTE o en los casos previstos por la ley;
+  </li>
+  <li>
+    <b>INFORMACIÓN:</b> Son los datos propiedad del CLIENTE que se manejan o
+    almacenan en LA PLATAFORMA, los cuales podrán ser de carácter personal,
+    privados, semiprivados o sensibles;
+  </li>
+  <li>
+    <b>INFRAESTRUCTURA:</b> Son todos los elementos físicos o inmateriales que
+    permiten a la EMPRESA ofrecer el Software como Servicio denominado ‘HiMed
+    Web’;
+  </li>
+  <li>
+    <b>INGRESO A LA PLATAFORMA POR USUARIOS:</b> Modalidad de uso de LA
+    PLATAFORMA por medio de la cual EL CLIENTE ingresará a LA PLATAFORMA de
+    acuerdo con la cantidad de licencias que adquiera. En este caso, solo será
+    posible el acceso de un único usuario a LA PLATAFORMA por cada licencia
+    adquirida. La modalidad de ingreso será la definida en el Anexo de
+    Condiciones Específicas de la Licencia que se incorpora al presente
+    instrumento;
+  </li>
+  <li>
+    <b>INGRESO POR CONEXIONES:</b> Modalidad de uso de LA PLATAFORMA por medio
+    de la cual EL CLIENTE adquiere la cantidad de conexiones de USUARIOS que
+    podrán utilizar y manejar LA PLATAFORMA estando conectados de manera
+    simultánea. El número de usuarios que podrán estar conectados
+    simultáneamente será el definido de conformidad a la modalidad de ingreso
+    contenida en el Anexo de Condiciones Específicas de la Licencia que se
+    incorpora al presente instrumento;
+  </li>
+  <li>
+    <b>INTEROPERABILIDAD:</b> Es el intercambio de información mediante
+    parámetros estándar entre EL CLIENTE y LA EMPRESA, así como entre LA EMPRESA
+    con la ENTIDAD ALIANZA y demás Empresas Prestadoras de Salud, que según la
+    relación que tengan con las partes, exija el intercambio de información de
+    conformidad con la ley aplicable. En el presente caso se refiere a la
+    información que, con el propósito de permitir una buena información clínica,
+    se envía entre un aplicativo y/o dispositivo con otro siempre que medie la
+    aprobación de los dos puntos.
+  </li>
+  <li>
+    <b>LA EMPRESA o EL LICENCIANTE:</b> Es la sociedad comercial denominada
+    HIMED SOLUTIONS S.A.S., especializada en diseños, estructuración e
+    implementación de soluciones tecnológicas para la prestación del servicio de
+    manejo de información médica de manera digital en la nube, y propietaria de
+    LA PLATAFORMA que permite posibilitar el servicio;
+  </li>
+  <li>
+    <b>LA PLATAFORMA o EL SOFTWARE:</b> Es el Software como Servicio denominado
+    como ‘HiMed Web’, desarrollado y ofertado por LA EMPRESA, el cual permite a
+    EL CLIENTE almacenar, ordenar y hacer uso de la información consignada por
+    éste en la base de datos del Software; con el cual el CLIENTE y los USUARIOS
+    autorizados por éste interactúan a través de un dominio al cual se accede
+    por medio de un navegador web; y cuya licencia hace parte del presente
+    contrato en las condiciones más adelante detalladas;
+  </li>
+  <li>
+    <b>MÓDULOS:</b> Se refiere a los diferentes desarrollos especializados
+    prestados por LA EMPRESA y que son ofrecidos a EL CLIENTE de acuerdo con la
+    necesidad empresarial que presente este último, y que pueden ser, sin
+    perjuicio de otros que llegasen a desarrollarse por parte de LA EMPRESA: (a)
+    Historia clínica, (b) Facturación por Computador; (c) Facturación
+    Electrónica; (d) Agendamiento; y (e) Portal Pacientes;
+  </li>
+  <li>
+    <b>PARTNER:</b> Es la empresa de servicios donde se almacenan y alojan los
+    datos electrónicos que se manejan o manipulan a través de LA PLATAFORMA
+    según el objeto del contrato y cuya sede puede estar dentro o fuera del
+    territorio nacional de la República de Colombia;
+  </li>
+  <li>
+    <b>PROVEEDOR TECNOLÓGICO O PST:</b> Proveedor de Servicios Tecnológicos
+    autorizado por la DIAN para la prestación del servicio de Facturación
+    Electrónica;
+  </li>
+  <li>
+    <b>SOFTWARE COMO SERVICIO (S.a.S):</b> Es un modelo de distribución de
+    software donde el soporte lógico y los datos que maneja se alojan en
+    servidores de una compañía de tecnologías de información y comunicación
+    (TIC), a los que EL USUARIO accede con un navegador web a través de
+    Internet;
+  </li>
+  <li>
+    <b>USUARIO:</b> Es toda persona autorizada por el CLIENTE para la
+    utilización y acceso a la licencia otorgada por LA EMPRESA, guarde éste
+    relación contractual o no con EL CLIENTE. Para todos los efectos de este
+    contrato se entenderá que EL USUARIO interactúa con la plataforma a través
+    de una Cuenta de Usuario, a la cual accede haciendo uso de las credenciales
+    de identificación asignadas por EL CLIENTE;
+  </li>
+  <li>
+    <b>USUARIO ADMINISTRADOR:</b> Es el USUARIO con más amplios privilegios
+    dentro de LA PLATAFORMA desde el cual se realiza la parametrización de LA
+    PLATAFORMA y se asignan, por cuenta y riesgo del CLIENTE, los roles y
+    permisos que tendrán los demás USUARIOS que operarán el Software;
+  </li>
+  <li>
+    <b>USUARIO MÉDICO APROBANTE:</b> Siempre que EL CLIENTE configure su
+    utilización, corresponde al rol de USUARIO especialista con privilegios para
+    aprobar o avalar la acción médica realizada por el MÉDICO TRATANTE o
+    documentos clínicos cargados por este último; y
+  </li>
+  <li>
+    <b>USUARIO MÉDICO TRATANTE:</b> Se refiere al profesional de la salud que
+    interviene en la atención de EL PACIENTE y además realiza el registro en
+    HIMED de las condiciones de salud, actos médicos y procedimientos ejecutados
+    al mismo.
+  </li>
+</ol>
+
+<h3 style="text-align: center">
+  <b>TÍTULO I - DEL LICENCIAMIENTO DE USO</b>
+</h3>
+<h3 style="text-align: center">
+  <b>CAPÍTULO I - DISPOSICIONES GENERALES</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 2 - OBJETO.</b> Por medio del presente contrato, HIMED SOLUTIONS
+  S.A.S. en calidad de desarrollador y titular de los derechos de autor sobre el
+  Software como Servicio (S.a.S.) denominado ‘HiMed Web’, otorga a EL CLIENTE la
+  licencia comercial no exclusiva para el uso de LA PLATAFORMA en los términos
+  descritos en el presente instrumento.
+</p>
+
+<p>
+  <b>CLÁUSULA 3 - ALCANCE DEL OBJETO.</b> La Licencia Comercial de Uso que
+  constituye el objeto del presente contrato se otorga (a) para el uso de LA
+  PLATAFORMA por parte de EL CLIENTE y las personas naturales a quienes él
+  autorice, sin que le sea permitido transferir, ceder o comercializar por sí
+  mismo o a través de terceros la presente licencia, sea de forma parcial o
+  total; (b) por un término indefinido siempre que EL CLIENTE se encuentre
+  cumplido en las obligaciones derivadas del presente instrumento; (c) para uso
+  global, pudiendo EL CLIENTE acceder y hacer uso de LA PLATAFORMA desde una
+  terminal ubicada en cualesquier sitio, ubicación y/o territorio; (d) haciendo
+  uso de los recursos informáticos –bases de datos, usuarios, conexiones, entre
+  otros– señalados y delimitados en el Anexo de Condiciones Específicas de la
+  Licencia, que se incorpora al presente instrumento.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> Conforme a los lineamientos y parámetros establecidos en
+  el presente contrato, LA EMPRESA le concede a EL CLIENTE la Licencia de Uso
+  del software ‘HiMed Web’ únicamente respecto a los MÓDULOS que se detallan en
+  el Anexo de Condiciones Específicas de la Licencia, que se incorpora al
+  presente instrumento, por lo que no podrá entenderse que la presente licencia
+  otorga a EL CLIENTE el uso de la totalidad de módulos desarrollados por LA
+  EMPRESA.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> Los términos de este contrato comprenderán cualquier
+  actualización de LA PLATAFORMA que pudiese sustituir y/o complementar el
+  software exclusivamente sobre los módulos licenciados a través del presente
+  contrato. LA EMPRESA conservará en todo momento la propiedad exclusiva sobre
+  LA PLATAFORMA y sus MÓDULOS, reservándose todos los derechos que no se le
+  otorguen de manera expresa a EL CLIENTE a través del presente documento o a
+  través de documentos complementarios que incluyan MÓDULOS adicionales a la
+  presente licencia.
+</p>
+
+<p>
+  <b>CLÁUSULA 4 - SOFTWARE MODULAR.</b> El Software desarrollado y ofrecido
+  comercialmente por HIMED SOLUTIONS S.A.S. hace uso del paradigma de la
+  Programación Modular para ofrecer al público un Software como Servicio
+  (S.a.S.) que se compone de distintas funcionalidades que pueden agregarse
+  según se requieran, permitiendo a EL CLIENTE, previa negociación y obtención
+  de las licencias, ampliar o disminuir las funcionalidades de LA PLATAFORMA
+  para ajustarla a sus necesidades comerciales.
+</p>
+
+<p>
+  <b>CLÁUSULA 5 - PROPIEDAD INTELECTUAL.</b> EL CLIENTE reconoce la titularidad
+  de LA EMPRESA sobre todos los derechos de propiedad intelectual e industrial,
+  especialmente sobre los derechos de autor sobre LA PLATAFORMA, incluyendo cada
+  uno de los módulos y actualizaciones que llegase a desarrollar; así como de
+  las marcas, enseñas, nombres comerciales y demás signos distintivos que se
+  encuentren contenidos en LA PÁGINA o en LA PLATAFORMA. En este sentido y con
+  la finalidad de salvaguardar los derechos de propiedad industrial e
+  intelectual, el Know How y Good Will de LA EMPRESA, EL CLIENTE se compromete a
+  lo siguiente: (a) Respetar los derechos de propiedad industrial y de derechos
+  de autor que se encuentren en cabeza de LA EMPRESA o de EL PARTNER; (b) No
+  usar para su beneficio personal o de un tercero, ni realizar ningún tipo de
+  explotación económica sobre las obras o signos distintivos de LA EMPRESA o de
+  EL PARTNER; (c) No reproducir, copiar, comercializar, transformar, alterar,
+  mutilar o entregar a terceros el software ‘HiMed Web’, sus actualizaciones, y
+  demás obras protegidas bajo Derechos de Autor que sean propiedad de LA
+  EMRPESA; (d) No adquirir o registrar en ningún país o territorio que admita el
+  registro o uso de derechos sobre las obras o signos distintivos que amparen
+  los productos y servicios de LA EMPRESA; (e) Notificar oportunamente cualquier
+  infracción real, amenaza o sospecha, que sea de su conocimiento, sobre
+  cualquiera de las obras, signos distintivos u otros derechos de propiedad
+  intelectual de LA EMPRESA.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> Queda establecido que en virtud del presente Contrato de
+  Licenciamiento, LA EMPRESA no está cediendo ni autorizando la subrogación o
+  sublicenciamiento de su propiedad intelectual e industrial, esto es:
+  softwares, hardware, obras literarias, artísticas, patentes, fórmulas
+  intelectuales, industriales, técnicas y científicas, ni las marcas,
+  denominaciones, slogans, enseñas comerciales, metodologías, procedimientos,
+  políticas, términos o elementos distintivos de los servicios o productos
+  entregados, los logotipos correspondientes y demás documentos, esquemas,
+  metodologías, manuales, diseños, planos e imágenes que amparan y distinguen
+  los productos y servicios de LA EMPRESA y demás signos distintivos y/o obras
+  mencionadas o conocidas en virtud de este acuerdo.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> El uso indebido o fraudulento por parte de EL CLIENTE de
+  los elementos o derechos de propiedad intelectual de LA EMPRESA, facultará a
+  esta última, por la sola comisión de la conducta, para terminar
+  unilateralmente el presente contrato e iniciar las acciones penales a que haya
+  lugar, así como a solicitar judicial o extrajudicialmente la indemnización de
+  los perjuicios que se hayan causado.
+</p>
+
+<p>
+  <b>CLÁUSULA 6 - ACTUALIZACIONES DEL SISTEMA.</b> LA EMPRESA es libre para
+  desarrollar nuevos módulos, efectuar actualizaciones sobre LA PLATAFORMA y
+  para cambiar de PARTNER, siempre que se garantice a EL CLIENTE y/o EL USUARIO
+  la operatividad y la capacitación necesaria para el correcto funcionamiento
+  del software. El adelantamiento de actualizaciones será discrecional de la
+  EMPRESA y no constituyen de ninguna manera una obligación para la misma.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> Los módulos nuevos y las actualizaciones que se realicen a
+  LA PLATAFORMA harán parte de la propiedad intelectual de LA EMPRESA, inclusive
+  aun cuando el desarrollo de estas fuese contratado por EL CLIENTE para su uso
+  exclusivo o provengan de ideas no materializadas del mismo.
+</p>
+
+<p>
+  <b>CLÁUSULA 7 - DURACIÓN DE LA LICENCIA.</b> La duración de la Licencia de Uso
+  No Exclusiva conferida por LA EMPRESA en favor de EL CLIENTE será indefinida,
+  siempre que LAS PARTES permanezcan cumplidas en las obligaciones a su cargo.
+  No obstante, a efectos del cumplimiento de las obligaciones contractuales, y
+  en particular aquellas relacionadas con el pago de los derechos de
+  licenciamiento, la ejecución del contrato se dividirá en Periodos de
+  Licenciamiento, los cuales se contarán de forma sucesiva y comprenderán el
+  término señalado en el Anexo de Condiciones Específicas.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> Los Periodos de Licenciamiento contemplados en la presente
+  cláusula no alteran ni modifican la duración indefinida de la Licencia de Uso
+  conferida por medio de este instrumento. En todo caso deberán interpretarse de
+  conformidad a su finalidad, la cual es servir como fechas de corte para el
+  cálculo de los derechos de licenciamiento a cargo de EL CLIENTE, y que
+  constituyen la contraprestación económica periódica hacia LA EMPRESA. Los
+  Periodos de Licenciamiento no podrán interpretarse como renovaciones
+  automáticas del presente contrato ni como novación de las obligaciones
+  contractuales estipuladas en el presente acto.
+</p>
+
+<p>
+  <b>CLÁUSULA 8 - PAGO DE DERECHOS DE LICENCIAMIENTO Y CARGOS FACTURADOS.</b>
+  El CLIENTE se obliga a pagar los Derechos de Licenciamiento, los cuales serán
+  liquidados y facturados por LA EMPRESA de forma anticipada al Periodo de
+  Licenciamiento correspondiente y con base en las tarifas fijadas por ésta
+  para: (a) los MÓDULOS que, respecto al CLIENTE, integran LA PLATAFORMA al
+  momento de la liquidación y facturación de los referidos derechos; (b) las
+  funcionalidades extras adicionadas por EL CLIENTE. La Factura incluirá los
+  valores discriminados que sirvieron a LA EMPRESA para la liquidación de los
+  derechos de Licenciamiento.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> LA EMPRESA podrá incluir en la Factura de Derechos de
+  Licenciamiento los cargos relacionados con los demás servicios prestados por
+  ella a EL CLIENTE, inclusive aquellos que no hagan parte del presente contrato
+  de Licenciamiento de Uso, sin que por ello pueda entenderse que dichos
+  servicios agregados o ajenos se han prestado en virtud del presente negocio
+  jurídico. Lo anterior sin perjuicio de la posibilidad que le asiste a LA
+  EMPRESA de facturar dichos servicios de forma independiente. En todo caso, los
+  servicios prestados por LA EMPRESA a favor de EL CLIENTE seguirán las
+  estipulaciones contractuales particulares de cada negocio.
+</p>
+
+<p>
+  <b>CLÁUSULA 9 - OPORTUNIDAD DE PAGO DE LOS CARGOS FACTURADOS.</b> Los Derechos
+  de Licenciamiento y los demás cargos facturados por LA EMPRESA serán pagados
+  por EL CLIENTE así: (a) respecto al primer periodo de licenciamiento, de forma
+  anticipada y al momento de la generación por parte de EL CLIENTE de la orden
+  de compra de la Licencia de Uso No Exclusiva sobre el software ‘HiMed Web’;
+  (b) respecto al segundo periodo de licenciamiento y los sucesivos, de forma
+  anticipada al periodo correspondiente y dentro de los diez (10) días hábiles
+  previos día de vencimiento del Periodo de Licenciamiento que se encuentre en
+  curso.
+</p>
+
+<p>
+  <b>PARAGRAFO UNO.</b> EL CLIENTE se obliga a pagar los intereses de mora que
+  se causaren por el no pago oportuno de las facturas, los cuales no superarán
+  los máximos permitidos por la ley, sin perjuicio de que se pueda disponer por
+  parte de LA EMPRESA la suspensión del Licenciamiento de Uso y el bloqueo de
+  acceso a LA PLATAFORMA.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> EL CLIENTE, en calidad de obligado al pago, renuncia a
+  todo requerimiento para constituirle en mora y se obliga a pagar los gastos
+  que por todo concepto se causen debido al cobro judicial o extrajudicial de la
+  deuda.
+</p>
+
+<p>
+  <b>PARÁGRAFO TRES.</b> Las facturas emitidas por LA EMPRESA y firmadas por el
+  representante legal de la misma prestarán mérito ejecutivo de acuerdo con las
+  normas del derecho civil y comercial, y en tal sentido, podrán ser cobradas
+  ejecutivamente.
+</p>
+
+<p>
+  <b>CLÁUSULA 10 - VALOR DEL CONTRATO.</b> Para todos los efectos contractuales
+  derivados del presente acto jurídico, el valor del Contrato de Licenciamiento
+  de Uso No Exclusivo del software ‘HiMed Web’ será el que resultase de la suma
+  de todos los derechos de licenciamiento causados en todos y cada uno de los
+  Periodos de Licenciamiento durante la existencia de la relación comercial
+  entre las partes.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 11 - AUTORIZACIÓN PARA CONSULTA Y REPORTE EN CENTRALES DE
+    RIESGO.</b
+  >
+  Con la suscripción del presente documento y en atención a lo dispuesto en la
+  Ley 1266 de 2008, EL CLIENTE declara que la información suministrada a LA
+  EMPRESA es verídica y otorga consentimiento expreso e irrevocable a LA EMPRESA
+  o a quien represente sus intereses para: (a) consultar, en cualquier tiempo y
+  en cualquier central de información de riesgo legalmente autorizada, toda
+  información relevante para conocer el desempeño de EL CLIENTE como deudor, la
+  capacidad de pago y/o para valorar el riesgo futuro de la relación comercial;
+  (b) reportar a cualquier central de información de riesgo legalmente
+  autorizada, datos sobre el cumplimiento oportuno como sobre el incumplimiento
+  sí lo hubiere, de las obligaciones crediticias o de sus deberes legales de
+  contenido patrimonial, de tal forma que estas presenten una información veraz,
+  pertinente, completa, actualizada y exacta del comportamiento de EL CLIENTE
+  como deudor; y (c) suministrar a cualquier central de información de riesgo
+  legalmente autorizada, los datos relativos a las solicitudes de crédito así
+  como otros atinentes a las relaciones comerciales, financieras, y en general
+  de carácter socioeconómico que EL CLIENTE haya entregado a LA EMPRESA o que
+  consten en registros públicos, bases de datos públicas o documentos públicos.
+</p>
+
+<p>
+  <b>CLÁUSULA 12 - MODIFICACIÓN DE LOS MODULOS QUE INTEGRAN LA LICENCIA.</b>
+  EL CLIENTE podrá solicitar, a través de cualquier medio que permita dejar
+  registro y constancia de ello, la adición y/o retiro de los MODULOS que
+  integran la Licencia de Uso que le confiere LA EMPRESA, con sujeción a lo
+  dispuesto en la presente cláusula. LA EMPRESA guardará el soporte de la
+  solicitud formulada por EL CLIENTE y dejará constancia de la modificación de
+  la Licencia de Uso, el cual se entenderá incorporado al presente contrato.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> Cuando se trate de adición de uno o varios MODULOS
+  ofertados por LA EMPRESA a la Licencia de Uso objeto del presente contrato, EL
+  CLIENTE asumirá el pago de la Tarifa fijada por LA EMPRESA para los módulos
+  adquiridos, la cual se liquidará en su primer pago de forma proporcional al
+  tiempo que faltase para el vencimiento del Periodo de Licenciamiento en curso
+  y de forma plena en los futuros periodos. LA EMPRESA habilitará los MODULOS
+  adquiridos por EL CLIENTE en un plazo no superior al establecido para
+  Habilitación de Uso.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> Cuando se trate de la cancelación o supresión de uno o
+  varios MODULOS integrados a la Licencia de Uso objeto del presente contrato,
+  obren estos en el Anexo de Condiciones Específicas o en documento
+  complementario incorporado al presente contrato, el retiro del módulo y sus
+  funcionalidades se hará efectivo el día siguiente al vencimiento del Periodo
+  de Licenciamiento en curso. LA EMPRESA no realizará devoluciones ni
+  reintegros, totales o proporcionales, sobre las sumas canceladas por EL
+  CLIENTE por concepto de derechos de licenciamiento con fundamento en la
+  supresión de MÓDULOS en el curso del Periodo de Licenciamiento vigente.
+</p>
+
+<p>
+  <b>PARÁGRAFO TRES.</b> Cuando se trate de la cancelación o supresión de uno o
+  varios MODULOS integrados a la Licencia de Uso objeto del presente contrato,
+  los datos almacenados en la base de datos de LA PLATAFORMA y con relación a
+  los MODULOS a suprimir serán destinados de conformidad a lo estipulado en la
+  CLÁUSULA 18 -del presente contrato.
+</p>
+
+<p>
+  <b>PARÁGRAFO CUATRO.</b> LAS PARTES podrán modificar los MODULOS que integran
+  la presente licencia cuantas veces resulte necesario en atención a su
+  capacidad y necesidad empresarial. La Licencia objeto del presente contrato
+  estará vigente mientras subsista cuando menos un (1) módulo de LA PLATAFORMA
+  incluido en ella. La cancelación de todos los MÓDULOS de LA PLATAFORMA por
+  parte de EL CLIENTE no se entenderá como modificación a la Licencia de Uso del
+  software ‘HiMed Web’, debiendo EL CLIENTE dar cumplimiento a lo dispuesto en
+  el Literal ‘b’ de la CLÁUSULA 17 -concerniente a la Terminación Unilateral del
+  Contrato.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPÍTULO II - OBLIGACIONES Y DECLARACIONES</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 13 - OBLIGACIONES DE LA EMPRESA.</b> Para efectos del
+  perfeccionamiento del presente Contrato de Licenciamiento y para su efectivo
+  cumplimiento, LA EMPRESA tendrá a cargo las siguientes obligaciones: (a)
+  Presentar para la firma de EL CLIENTE los documentos complementarios por medio
+  de los cuales se modifique o altere la presente licencia con ocasión a la
+  adquisición y/o cancelación de módulos de LA PLATAFORMA; (b) Poner LA
+  PLATAFORMA en estado de funcionamiento para EL CLIENTE; (c) Dictar la
+  capacitación acordada o entregar los tutoriales para autocapacitarse en los
+  términos establecidos en el presente Contrato de Licenciamiento; (d) Realizar
+  los mantenimientos por garantía y a solicitud de EL CLIENTE; (e) Propender
+  porque LA PLATAFORMA se mantenga en operación dentro de sus posibilidades; y
+  (f) Atender oportunamente los reclamos de EL CLIENTE.
+</p>
+
+<p>
+  <b>CLÁUSULA 14 - OBLIGACIONES DE EL CLIENTE.</b> Para efectos del
+  perfeccionamiento del presente Contrato de Licenciamiento y para su efectivo
+  cumplimiento, EL CLIENTE tendrá a cargo las siguientes obligaciones, sin
+  perjuicio de aquellas que se deriven de la adquisición de uno o varios módulos
+  en particular:
+</p>
+
+<ol type="a">
+  <li>
+    Utilizar LA PLATAFORMA acorde a los parámetros establecidos en el presente
+    Contrato de Licenciamiento;
+  </li>
+  <li>
+    Mantener los códigos y credenciales de acceso bajo reserva, así como
+    brindarles buen manejo;
+  </li>
+  <li>
+    No ceder ni vender los derechos o posición contractual sobre el presente
+    Contrato de Licenciamiento a ningún tercero;
+  </li>
+  <li>
+    Mantener su información por su cuenta y riesgo y alimentar su base de datos
+    LA PLATAFORMA;
+  </li>
+  <li>
+    Responder por las faltas legales que sucedan por la mala utilización de LA
+    PLATAFORMA o por los datos que almacene en ella;
+  </li>
+  <li>
+    Responder por LA EMPRESA cuando sea llamado en garantía por la violación
+    legal de cualquier índole ocasionada por culpa de EL USUARIO;
+  </li>
+  <li>
+    Atender las capacitaciones dispuestas en el lugar y horas designados por LA
+    EMPRESA;
+  </li>
+  <li>
+    Realizar los pagos estipulados por el uso de HIMED y sus MÓDULOS, así como
+    por los mantenimientos solicitados;
+  </li>
+  <li>
+    Acatar la prohibición de:
+    <ul>
+      <li>
+        Hacer correcciones, modificar o adaptar el software ‘HiMed Web’, crear
+        trabajos derivados basados en él, en un instalador suyo o cualquiera de
+        sus partes o permitir que terceros lo hagan;
+      </li>
+      <li>
+        Hacer o distribuir copias de HIMED o transferirlo electrónicamente de
+        una computadora a otra o a través de una red;
+      </li>
+      <li>
+        Descompilar, traducir, emplear técnicas de ingeniería inversa, intentar
+        derivar un código fuente de HIMED, desensamblar o reducir el software a
+        un formato legible para el usuario;
+      </li>
+      <li>Alquilar, arrendar o subcontratar el software ‘HiMed Web’; o</li>
+      <li>
+        Utilizar el software para desarrollar cualquier producto que tenga la
+        misma función principal que HIMED.
+      </li>
+    </ul>
+  </li>
+  <li>
+    Defender y mantener indemne a LA EMPRESA por cualquier tipo de
+    responsabilidad que se pueda derivar en virtud de cualquier reclamación,
+    demanda, acción o actuación administrativa, judicial, de carácter civil,
+    comercial, penal, o de cualquier otra naturaleza presentada o instaurada por
+    terceros que tengan como origen o hecho generador la forma como sea obtenida
+    o manejada la Información depositada en HIMED por EL CLIENTE y/o EL USUARIO,
+    la pérdida de datos, veracidad o seriedad de los datos, el contenido que se
+    incluya en el software, el uso dado a la información, divulgaciones no
+    autorizadas, venta, distribución o comunicación de la información con fines
+    investigativos o científicos y en general, por cualquier manejo inadecuado
+    que le sea dado a la información que se deposite o se encuentre depositada
+    en HIMED;
+  </li>
+  <li>
+    Informar a LA EMPRESA sobre el bloqueo o eliminación de contraseñas para
+    personal que EL CLIENTE considere como no autorizado. LA EMPRESA no se
+    responsabiliza por el uso que den a la información, los usuarios que EL
+    CLENTE ha asignado para tal efecto;
+  </li>
+  <li>
+    Pagar los derechos de licenciamiento liquidados de conformidad a las tarifas
+    fijadas por LA EMPRESA;
+  </li>
+  <li>
+    Realizar todas las gestiones y trámites necesarios y suficientes para
+    obtener la autorización de tratamiento de datos personales de aquellas
+    personas que sean titulares de estos o actúen en representación de un
+    tercero, de los cuales se requiera realizar el correspondiente tratamiento
+    para los efectos de cumplimiento del presente Contrato de Licenciamiento;
+  </li>
+  <li>
+    Cumplir con todas y cada una de las obligaciones o prestaciones adquiridas
+    en los CONTRATOS suscritos para la prestación de los servicios de los
+    MÓDULOS; y
+  </li>
+  <li>
+    Las demás estipuladas en el presente Contrato de Licenciamiento y las demás
+    que se deriven de su naturaleza.
+  </li>
+</ol>
+
+<p>
+  <b>CLÁUSULA 15 - DECLARACIONES GENERALES DEL CLIENTE:</b> EL CLIENTE, en
+  calidad de adquirente de la Licencia de Uso sobre LA PLATAFORMA declara, so
+  pena de que se entienda como un incumplimiento grave su contrariedad, lo
+  siguiente:
+</p>
+
+<ol type="a">
+  <li>
+    Que cuenta con todas las facultades suficientes para celebrar el presente
+    Contrato de Licenciamiento y cumplir con las obligaciones en él contenidas;
+  </li>
+  <li>
+    Que la información que deposita en LA PLATAFORMA ha sido obtenida de manera
+    lícita con las correspondientes autorizaciones y que sus datos se encuentran
+    acorde a la realidad;
+  </li>
+  <li>
+    Que la información depositada en LA PLATAFORMA cumple con toda la
+    normatividad que reglamenta la materia y que su contenido no vulnera en
+    ninguna medida derechos fundamentales de terceros;
+  </li>
+  <li>
+    Conocer en detalle el alcance del software ‘HiMed Web’, entendiendo que sus
+    características y especificaciones son estándar, por lo cual LA EMPRESA no
+    se compromete con adaptaciones o desarrollos a la medida.
+  </li>
+</ol>
+
+<p>
+  <b>CLÁUSULA 16 - RESPONSABILIDAD DERIVADA DEL USO DE LA PLATAFORMA.</b> EL
+  CLIENTE, en calidad de propietario exclusivo de los datos e información que se
+  encuentra depositada en LA PLATAFORMA, asume todo tipo de responsabilidad que
+  se pueda derivar en virtud de cualquier reclamación, demanda, acción o
+  actuación administrativa, judicial, de carácter civil, penal, o de cualquier
+  otra naturaleza presentada o instaurada por terceros o por EL CLIENTE que
+  tengan como origen o hecho generador: (a) Los errores de digitación de EL
+  CLIENTE o los usuarios autorizados por él para el manejo de la plataforma; (b)
+  La veracidad de la información ingresada por EL CLIENTE o los usuarios
+  autorizados por él para el manejo de la plataforma; (c) La falta de
+  autorización para el tratamiento de los datos ingresados a la plataforma; (d)
+  Fallas en la conexión o red que dificulten el ingreso o guarda de información;
+  (e) La pérdida de datos ingresados en la plataforma; (f) Afectación a derechos
+  fundamentales; (g) Fuga de información; (h) Contenido de los documentos
+  generados por el software; (i) Cualquier responsabilidad incurrida frente a
+  las entidades de control y vigilancia municipal, departamental o nacional; (j)
+  Cualquier manejo inadecuado que le sea dado a la información que se deposite o
+  se encuentre depositada en LA PLATAFORMA, para la prestación del servicio
+  contemplado en el presente instrumento; y (k) Los permisos o privilegios
+  asignados por el USUARIO ADMINISTRADOR a otros USUARIOS para el uso de
+  funcionalidades en LA PLATAFORMA.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPÍTULO III - DE LA TERMINACIÓN DE LA LICENCIA DE USO</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 17 - CAUSALES DE TERMINACIÓN.</b> LAS PARTES podrán dar por
+  terminado el presente contrato en los siguientes eventos: (a) Por mutuo
+  acuerdo entre LAS PARTES; (b) Por incumplimiento de cualquiera de las
+  obligaciones contraídas en virtud del presente contrato de licenciamiento, por
+  cualquiera de LAS PARTES; (c) Por el uso indebido o fraudulento de la
+  información depositada en HIMED o conocida en virtud del presente contrato de
+  licenciamiento; (d) Por decisión unilateral de cualquiera de LAS PARTES
+  comunicada con una antelación previa de treinta (30) días antes de la fecha de
+  vencimiento del periodo de licenciamiento en curso, sin que se requiera motivo
+  o causa justificada o injustificada, dado que dicha terminación puede ser
+  discrecional de cualquiera de las partes, sin que ello genere indemnización
+  producto de la responsabilidad contractual o extracontractual; y (e) Las demás
+  que se indiquen o se deriven de la naturaleza del presente contrato de
+  licenciamiento.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> EL CLIENTE únicamente podrá terminar el contrato por la
+  causal contenida en el literal ‘d’ siempre y cuando haya transcurrido un (1)
+  mes desde la fecha de aceptación y suscripción del presente contrato. En caso
+  de informar la terminación sin causa justificada dentro del primer mes contado
+  a partir de la aceptación y suscripción del presente instrumento, se procederá
+  al cobro de la cláusula penal descrita en la CLÁUSULA 34 -.
+</p>
+
+<p><b>CLÁUSULA 18 - DESTINO DE LA INFORMACIÓN.</b></p>
+Dentro del mes calendario siguiente a la fecha de terminación del presente
+licenciamiento de uso no exclusivo, sea ello a causa de la voluntad de las
+partes o por haber operado alguna de las causales de terminación contenidas en
+este instrumento, LA EMPRESA procederá a exportar la información depositada en
+la base de datos de LA PLATAFORMA y hará entrega a EL CLIENTE de las Historias
+Clínicas de sus pacientes en formato PDF, a través del medio que LA EMPRESA
+considere adecuado de acuerdo al tamaño del conjunto de archivos. Efectuada la
+exportación de la información a formato PDF y vencido el periodo señalado en la
+presente cláusula, LA EMPRESA podrá eliminar dicha información sin incurrir en
+ningún tipo de responsabilidad de su parte.
+
+<p>
+  <b>PARÁGRAFO UNO.</b> EL CLIENTE, previo el pago de la tarifa fijada por LA
+  EMPRESA, podrá solicitar que la información por él depositada en LA PLATAFORMA
+  le sea entregada en formatos ‘txt’, ‘xlxs’, ‘cvs’ y/o ‘xls’, según lo
+  solicite. Así mismo se procederá cuando EL CLIENTE requiriere copia de su
+  información en una estructura diferente a los formatos precitados para la
+  migración de ésta hacia otra plataforma.
+</p>
+
+<p>
+  <b>PARAGRAFO DOS.</b> En caso de desaparición de la persona jurídica o el
+  fallecimiento del profesional del profesional independiente, LA EMPRESA
+  procederá a exportar la información depositada en la base de datos de LA
+  PLATAFORMA y hará entrega de esta, en formato PDF, a quien corresponda el
+  manejo de los expedientes de historia clínica de conformidad a la Resolución
+  839 de 2017 expedida por el Ministerio de Salud y Protección Social o a las
+  normas que la sustituyan, modifiquen o complementen.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPÍTULO IV - DEL USO DE LA PLATAFORM</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 19 - ACCESO Y OPERACIÓN DE LA PLATAFORMA.</b> EL CLIENTE es
+  responsable sobre el acceso y las acciones de LOS USUARIOS configurados y
+  autorizados por él para hacer uso de LA PLATAFORMA. Así mismo, EL USUARIO es
+  el único responsable de la creación y custodia de las credenciales y
+  contraseñas que disponga para el ingreso a la PLATAFORMA, por lo cual, EL
+  CLIENTE y/o EL USUARIO autorizado, se obligan a utilizar y guardar las
+  contraseñas que le sean suministradas en forma confidencial, de manera que no
+  pueda ser utilizada por personas sin autorización.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> La inadecuada utilización de LA PLATAFORMA será
+  responsabilidad exclusiva de EL CLIENTE y dará lugar a la eliminación o
+  restricción de su acceso, si con ella se vulnera o amenaza los derechos de
+  terceros.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> El ingreso a LA PLATAFORMA podrá realizarse desde
+  cualquier parte del mundo, siempre y cuando se cumpla con las especificaciones
+  técnicas mínimas para su acceso, incluyendo la conectividad al sistema.
+</p>
+
+<p>
+  <b>CLÁUSULA 20 - AUTENTICIDAD DE LAS OPERACIONES.</b> EL CLIENTE acepta y
+  declara entender que se reputan auténticos y legítimos todos los datos e
+  instrucciones impartidas por vía electrónica en la medida en que provenga de
+  un acceso verificado a través de las credenciales, contraseña o elementos de
+  identificación del USUARIO de que se trate. LA EMPRESA no será responsable las
+  consecuencias derivadas de los datos e instrucciones auténticos y legítimos al
+  tenor de la presente cláusula. EL CLIENTE comprende y acepta la ausencia de
+  verificación biométrica en los procesos de validación de la identidad para el
+  acceso a LA PLATAFORMA.
+</p>
+
+<p>
+  <b>CLÁUSULA 21 - PROPIEDAD DE LA INFORMACIÓN.</b> EL CLIENTE es propietario
+  exclusivo de la información que se encuentra depositada en LA PLATAFORMA y con
+  la cual se alimenta el sistema, por lo cual, asumirá todo tipo de
+  responsabilidad que se pueda derivar en virtud de cualquier reclamación,
+  demanda, acción o actuación administrativa, judicial, de carácter civil,
+  penal, o de cualquier otra naturaleza presentada o instaurada por terceros que
+  tengan como origen o hecho generador la forma como sea obtenida dicha
+  información, la pérdida de datos, veracidad o seriedad de los datos, el
+  contenido que se incluya en el software, el uso dado a la Información,
+  divulgaciones no autorizadas, venta, distribución o comunicación de la
+  Información con fines investigativos o científicos, y en general, por
+  cualquier manejo inadecuado que le sea dado a la información que se deposite o
+  se encuentre depositada en LA PLATAFORMA.
+</p>
+
+<p>
+  <b>CLÁUSULA 22 - COPIAS DE SEGURIDAD.</b> EL CLIENTE, a través de EL USUARIO
+  que designe para tal fin, será el responsable de la realización de back-up o
+  copias de seguridad sobre la información depositada en LA PLATAFORMA. Las
+  copias que pueda hacer el PARTNER o LA EMPRESA sobre dicha información no
+  releva a EL USUARIO de la responsabilidad de mantener segura su información.
+  EL CLIENTE declara comprender que el Software no genera copias automáticas ni
+  recuerda, genera o emite alarmas para la realización de estas.
+</p>
+
+<p>
+  Sin perjuicio de lo anterior, LA EMPRESA podrá realizar copia de seguridad o
+  back-up de la información depositada en LA PLATAFORMA por LOS USUARIOS, la
+  cual en todo caso deberá estar encriptada y sólo podrá ser utilizada por el
+  personal de LA EMPRESA en caso de pérdida de información. LA EMPRESA estará
+  exenta de todo tipo de responsabilidad derivada de la pérdida o fuga de la
+  información contenida en el software.
+</p>
+
+<p>
+  <b>CLÁUSULA 23 - SOBRE EL USUARIO ADMINISTRADOR.</b> El USUARIO ADMINISTRADOR
+  es aquel USUARIO con mayor amplitud de permisos y privilegios en LA
+  PLATAFORMA, dentro de los cuales se encuentra la facultad de asignar roles,
+  permisos y privilegios a los demás USUARIOS vinculados al CLIENTE. El USUARIO
+  designado como ADMINISTRADOR sólo podrá utilizar las funcionalidades que le
+  asisten de dicho rol en el software ‘HiMed Web’ cuando se configure como tal,
+  de acuerdo con los lineamientos que para el efecto determine EL CLIENTE.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> El CLIENTE será responsable de la custodia, tenencia y uso
+  de las credenciales de acceso al perfil del USUARIO ADMINISTRADOR, y en
+  consecuencia a ello será responsable sobre toda situación, acción u omisión en
+  la asignación de roles, permisos y/o privilegios a otros USUARIOS. El CLIENTE
+  declara y garantiza indemnidad a LA EMPRESA por los perjuicios y/o daños que
+  se causen con ocasión a la acción, omisión o a las configuraciones adoptadas
+  desde la cuenta del USUARIO ADMINISTRADOR.
+</p>
+
+<p>
+  <b>CLÁUSULA 24 - GARANTÍA DE OPERATIBILIDAD.</b> LA EMPRESA garantizará la
+  disponibilidad de LA PLATAFORMA por lo menos en un noventa y ocho por ciento
+  (98%) mensual. No obstante, LA EMPRESA no será responsable por el no
+  almacenamiento de datos o mal funcionamiento de LA PLATAFORMA con ocasión de
+  fallas técnicas de los equipos de cómputo, artefactos tecnológicos o red de
+  internet que utilice EL CLIENTE, o cualquier otro dispositivo que afecte,
+  dificulte o imposibilite la calidad en la prestación del servicio, así como
+  por causas imputables a los servicios de la redes y telecomunicaciones y,
+  alojamiento de datos en las instalaciones del PARTNER que deriven en una falla
+  parcial o total en la prestación del servicio.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> En caso de ser requeridos mantenimientos necesarios para
+  implementar mejoras o actualizaciones al software, LA EMPRESA informará a EL
+  CLIENTE del suceso, así como el periodo de tiempo en el cual EL CLIENTE no
+  podrá hacer uso de LA PLATAFORMA, sin que por este motivo se constituya un
+  incumplimiento o falla en el servicio o sobre la garantía de operabilidad por
+  parte de LA EMPRESA.
+</p>
+
+<p>
+  <b>CLÁUSULA 25 - OFERTA DE ESPECIALIZACIÓN DEL MÓDULO.</b> LA EMPRESA ofrecerá
+  a EL CLIENTE, además del servicio descrito en el objeto del presente contrato,
+  una serie de servicios de carácter especializado en determinadas áreas, tales
+  como: Portal de Pacientes, telemedicina, facturación electrónica,
+  oftalmología, odontología, curvas de crecimiento, entre otros, los cuales
+  serán cobrados de manera independiente y serán adquiridos por EL CLIENTE de
+  acuerdo con sus necesidades. Una vez EL CLIENTE adquiera el servicio adicional
+  especializado, las características bajo las cuales se prestará el servicio se
+  harán constar en un documento independiente, el cual se considerará anexo y
+  parte integral del presente contrato, y deberá ser debidamente suscrito por
+  las partes como constancia de las condiciones establecidas para la prestación
+  del servicio.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPÍTULO V - DEL SOPORTE TÉCNICO Y CAPACITACIÓN</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 26 - SOPORTE SOBRE LA PLATAFORMA.</b> El servicio técnico prestado
+  por LA EMPRESA con ocasión al presente Contrato de Licenciamiento estará
+  limitado única y exclusivamente a el soporte o mantenimiento de LA PLATAFORMA,
+  comprendiéndose dentro de esto la atención de novedades, requerimientos y
+  solicitudes presentadas con relación al software ‘HiMed Web’. El soporte se
+  realizará de forma virtual, a través de plataformas destinadas para ello o por
+  atención telefónica dentro del horario comprendido entre lunes a viernes de
+  7:00 a.m. a 6:00 p.m. y sábados de 7:00 a.m. a 12:00 p.m. No se atenderá ni
+  domingos, ni festivos.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> LA EMPRESA se reserva la facultad de notificar con una
+  antelación de cinco (5) días calendario, la no prestación del servicio de
+  soporte o mantenimiento con ocasión a la declaratoria o reconocimiento del
+  Estado colombiano de días festivos de carácter religioso, cultural o no
+  laborales y que sean reconocidos por LA EMPRESA. EL CLIENTE declara que conoce
+  y acepta que el tiempo establecido en el presente parágrafo varíe o sea menor
+  en caso de que se presenten situaciones imprevistas que imposibiliten a LA
+  EMPRESA notificar en el tiempo establecido.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> No se realizará soporte técnico en sitio o en las
+  instalaciones físicas de EL CLIENTE y/o LOS USUARIOS autorizado por este, a
+  menos que LA EMPRESA lo considere pertinente en virtud de la complejidad del
+  requerimiento. Así mismo, no harán parte del servicio el soporte o
+  mantenimiento adicional sobre conexiones, instalaciones, equipos o
+  dispositivos propiedad de EL CLIENTE. Las situaciones contempladas en el
+  presente parágrafo, en caso de ser solicitadas por EL CLIENTE, se cobrarán de
+  manera independiente acorde a las tarifas de la EMPRESA, sin perjuicio de la
+  garantía otorgada por la EMPRESA.
+</p>
+
+<p>
+  <b>PARÁGRAFO TRES.</b> Todas las llamadas son grabadas y monitoreadas por LA
+  EMPRESA, la cual generará un registro de la atención realizada en la
+  herramienta de HelpDesk para llevar la trazabilidad de estas.
+</p>
+
+<p>
+  <b>CLÁUSULA 27 - CAPACITACIÓN.</b> La capacitación para el uso de LA
+  PLATAFORMA se realizará a EL USUARIO que elija EL CLIENTE para tal efecto, y
+  podrá darse de la siguiente manera, a discrecionalidad de LA EMPRESA: (a) Tres
+  (3) horas de capacitación virtual o presencial a EL USUARIO o; (b) La entrega
+  de tutoriales a EL USUARIO, dentro del horario laboral de LA EMPRESA.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> EL CLIENTE se compromete a que EL USUARIO asista o
+  reciba la capacitación atendiendo a las instrucciones allí impartidas; el
+  incumplimiento de este compromiso liberará a la EMPRESA de cualquier
+  reclamación por no operatividad de LA PLATAFORMA.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> En caso de que la capacitación impartida de forma
+  presencial por LA EMPRESA a EL CLIENTE y/o EL USUARIO sea realizada en
+  instalaciones que se encuentren por fuera del Área Metropolitana del Valle de
+  Aburrá (Antioquia, Colombia), se cobrará una tarifa adicional.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPÍTULO VI - SERVICIOS ASOCIADOS Y FUNCIONES ADICIONALES</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 28 - MIGRACIÓN DESDE OTRO APLICATIVO.</b> EL CLIENTE podrá
+  solicitarle a LA EMPRESA la realización del proceso de migración de datos
+  desde una base de datos utilizada anteriormente por EL CLIENTE con destino a
+  la base de datos que alimenta LA PLATAFORMA. Este proceso estará sujeto al
+  pago de una tarifa por parte de EL CLIENTE y de un análisis previo que
+  realizará LA EMPRESA con el fin de verificar la viabilidad de la migración de
+  datos, archivos e imágenes.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> EL CLIENTE que haga uso del servicio de migración de datos
+  declara que es propietario exclusivo de la información que se encuentra
+  depositada en la base de datos de origen, por lo cual asume todo tipo de
+  responsabilidad que se pueda derivar en virtud de cualquier reclamación,
+  demanda, acción o actuación administrativa, judicial, de carácter civil,
+  penal, o de cualquier otra naturaleza presentada o instaurada por terceros o
+  por EL CLIENTE que tengan como origen o hecho generador la veracidad, calidad
+  y el contenido de la información contenida en la base de datos de origen y que
+  será migrada a la base de datos que alimenta LA PLATAFORMA.
+</p>
+
+<p>
+  <b>CLÁUSULA 29 - AUTORIZACIÓN DE OFERTAS.</b> EL CLIENTE autoriza a LA EMPRESA
+  a recabar y usar su información con fines estadísticos y de referencia,
+  conservándola con la respectiva reserva de los datos que la ameriten. LA
+  EMPRESA, en el desarrollo y mejora continua de su portafolio, puede permitir
+  que terceros ofrezcan o promocionen sus productos y servicios. EL CLIENTE
+  autoriza a LA EMPRESA a realizar modificaciones en todos los MÓDULOS y en las
+  opciones de todas las aplicaciones de la herramienta para efectos de incluir
+  en ella listas desplegables con sugerencia de productos o servicios de diversa
+  índole relacionados con la prestación de servicios médicos y de salud
+  prestados por EL USUARIO a PACIENTES o terceros.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> No obstante, en los eventos en que se celebren actos o
+  negocios entre los USUARIOS y/o EL CLIENTE para con terceros, estos serán
+  completamente ajenos a la relación que regula el presente contrato, de manera
+  que LA EMPRESA no tendrá responsabilidad alguna por defectos de dichos
+  productos u obligaciones adquiridas, o daños que pueda causar y se originen en
+  defectos en su diseño, fabricación, embalaje, distribución, información o
+  publicidad engañosa.
+</p>
+
+<p>
+  <b>CLÁUSULA 30 - FUNCIÓN DE ENVÍO DE DOCUMENTOS.</b> EL CLIENTE podrá, previo
+  pago de la tarifa fijada por LA EMPRESA, contratar la funcionalidad adicional
+  del envío a EL PACIENTE, vía correo electrónico y a través de LA PLATAFORMA,
+  los documentos de carácter clínico en formato PDF, tales como consulta, ayudas
+  diagnósticas, fórmulas, entre otros. LA PLATAFORMA implementará medidas
+  razonables para obstruir la edición, alteración o modificación de los
+  documentos clínicos enviados vía correo electrónico, así como para impedir que
+  terceros no autorizados accedan a dicha información. Esta función se integrará
+  en los módulos sobre los cuales EL CLIENTE tenga licencia de uso.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> LA EMPRESA no realizará procesos de validación
+  tendientes a establecer la idoneidad de la dirección de correo electrónico
+  ingresada a LA PLATAFORMA por EL CLIENTE, así como tampoco aquellos orientados
+  a establecer la titularidad sobre el buzón de correo electrónico. En
+  consecuencia, LA EMPRESA no será responsable sobre perjuicios sufridos por EL
+  CLIENTE y/o terceros derivados de la clasificación del mensaje de datos como
+  spam o correo no deseado; el rechazo del mensaje de datos por parte del
+  proveedor de correo electrónico de EL PACIENTE; errores en la digitación de
+  las direcciones de correo electrónico; y la apertura por parte de terceros no
+  autorizados de información confidencial enviada a la dirección de correo
+  electrónico suministrada por EL PACIENTE
+</p>
+
+<p>
+  <b>PARAGRAFO DOS.</b> EL CLIENTE se obliga a obtener los permisos suficientes
+  para el tratamiento de los datos personales de EL PACIENTE por parte suya y de
+  LA EMPRESA, y en especial el consentimiento de EL PACIENTE para recibir
+  información y notificaciones a través de la dirección de su buzón de correo
+  electrónico.
+</p>
+
+<h3 style="text-align: center">
+  <b>TITULO II – REGULACIÓN SOBRE LA RELACIÓN CONTRACTUAL</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 31 - CASO FORTUITO Y FUERZA MAYOR.</b> Las obligaciones de LAS
+  PARTES, de conformidad con el presente Contrato de Licenciamiento, quedarán
+  suspendidas en cualquier caso en el que una de ellas, se vea imposibilitada de
+  cumplir con sus obligaciones debido a un supuesto de caso fortuito o fuerza
+  mayor, entendidos como eventos, condiciones o circunstancias no imputables a
+  LAS PARTES, de naturaleza extraordinaria, imprevisible e irresistible, que
+  impidan a alguna de ellas cumplir con las obligaciones a su cargo o causen su
+  cumplimiento parcial, tardío o defectuoso; y que, además, deberá ser
+  debidamente acreditado.
+</p>
+
+<p>
+  El suceso deberá estar fuera del control razonable de la parte que invoque la
+  causal, la cual, a pesar de todos los esfuerzos razonables para prevenirlos o
+  mitigar sus efectos. Igual tratamiento será aplicable para los plazos
+  previstos en el presente Contrato de Licenciamiento para el ejercicio de
+  derechos.
+</p>
+
+<p>
+  La parte que no pueda cumplir con sus obligaciones en virtud de lo establecido
+  en la presente cláusula notificará a la otra parte, por escrito, dentro de los
+  diez (10) días calendario de producido el evento o de conocerlo, dando los
+  detalles de este. Adicionalmente, la parte que se vea afectada por el evento
+  deberá mantener a la otra informada del desarrollo de la situación.
+</p>
+
+<p>
+  Ante un eventual retraso por caso fortuito o fuerza mayor, los plazos
+  estipulados en el presente Contrato de Licenciamiento se prorrogarán por el
+  tiempo que dure el evento o sus efectos; prórroga que en ningún caso superará
+  los tres (3) meses. Una vez superados los tres (3) meses, sin que haya cesado
+  el evento o suceso considerado como caso fortuito o fuerza mayor, el presente
+  Contrato de Licenciamiento se dará por terminado, sin perjuicio del
+  cumplimiento de las obligaciones que se encuentren en mora de cumplirse.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> Si transcurridos los diez (10) días calendario con los que
+  cuenta la parte afectada con el suceso, esta no hubiere realizado la
+  respectiva notificación a la otra parte, tal suceso o evento no se podrá
+  aducir posteriormente como causal de exoneración de responsabilidad.
+</p>
+
+<p>
+  <b>CLÁUSULA 32 - RELACIÓN DE LAS PARTES.</b> El presente Contrato de
+  Licenciamiento no genera relación laboral entre las partes, y sus obligaciones
+  y derechos están regidas por las cláusulas aquí contenidas y por el Código de
+  Comercio en lo no regulado en ellas, así como por las Decisiones
+  Supranacionales y Leyes que rigen los Derechos de Autor y Conexos.
+</p>
+
+<p>
+  <b>CLÁUSULA 33 - INDEMNIDAD.</b> EL CLIENTE manifiesta en forma expresa e
+  irrevocable que mantendrá indemne a LA EMPRESA ante cualquier reclamación,
+  demanda, acción o actuación administrativa, judicial, de carácter civil,
+  comercial, penal, o de cualquier otra naturaleza presentada o instaurada por
+  terceros que tengan como origen o hecho generador acciones u omisiones en las
+  que incurra EL CLIENTE, tales como mal manejo de la Información, historias
+  clínicas, manejo inadecuado de la asignación delegación de claves y
+  contraseñas utilizadas para el ingreso al software, afectación a derechos
+  fundamentales, fuga de información; responsabilidades de carácter fiscal,
+  contenido de los documentos generados por el software, incumplimiento de
+  cualquiera de las obligaciones plasmadas en el presente Contrato de
+  Licenciamiento o en el documento que sea firmado como respaldo del MÓDULO
+  adquirido por EL CLIENTE; así como cualquier responsabilidad incurrida frente
+  a las entidades de vigilancia nacional.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> En el evento de configurarse las situaciones previstas en el
+  presente Contrato de Licenciamiento, EL CLIENTE deberá asumir todos los gastos
+  directos e indirectos que se causen o en los que incurra LA EMPRESA, por
+  cuenta de las reclamaciones, demandas, pleitos pendientes, sanciones o
+  condenas, así como eventos similares que generen honorarios, costas, gastos
+  procesales o el desembolso de una suma de dinero.
+</p>
+
+<p>
+  <b>CLÁUSULA 34 - CLÁUSULA PENAL.</b> LAS PARTES acuerdan una cláusula penal,
+  exclusivamente sancionatoria, equivalente al cincuenta por ciento (50%) del
+  valor del presente contrato de licenciamiento a favor de la parte que cumplió
+  o se allanó a cumplir, sin perjuicio del cobro de los perjuicios ocasionados
+  con el incumplimiento y cumplimiento forzado o de la resolución del contrato,
+  a elección de la parte correspondiente según el caso.
+</p>
+
+<p>
+  <b>CLÁUSULA 35 - CLÁUSULA COMPROMISORIA.</b> Todas las controversias que se
+  susciten entre las partes con respecto a este contrato de licenciamiento o a
+  los demás CONTRATOS o instrumentos que sean suscritos por las partes, con
+  respecto a su interpretación, cumplimiento, vencimiento, cancelación, validez
+  y terminación, serán resueltas de manera definitiva por los medios reconocidos
+  de resolución de conflictos, inicialmente se intentará la conciliación entre
+  las partes y sus apoderados de ser el caso; de no ser posible la conciliación
+  se optará por el mecanismo alternativo del arbitraje regido de acuerdo con la
+  disposición de la Ley 1563 de 2012 y las normas que las adicionen o reformen y
+  con sujeción a las reglas del Centro de Arbitraje y Conciliación de la Cámara
+  de Comercio de Medellín, por intermedio de un solo árbitro que será designado
+  por la misma Cámara de Comercio y sus decisiones serán en derecho. Dicho
+  tribunal sesionará en la ciudad de Medellín.
+</p>
+
+<p>
+  <b>CLÁUSULA 36 - DEFENSA.</b> En caso de que LA EMPRESA asuma directamente su
+  defensa por la ocurrencia de un hecho, acción u omisión de EL CLIENTE,
+  repetirá contra este último por todos los costos, gastos, sanciones y condenas
+  que implique dicha defensa o que se le haya impuesto, pudiendo descontar estos
+  valores de los saldos que le adeude EL CLIENTE y, de no existir saldos, podrá
+  efectuar su cobro por la vía ejecutiva para lo cual, el presente contrato de
+  licenciamiento prestará mérito ejecutivo sin que se requiera constitución en
+  mora.
+</p>
+
+<p>
+  <b>CLÁUSULA 37 - DIVISIBILIDAD.</b> Se busca que este contrato se ejecute de
+  acuerdo con y en toda la extensión permitida por la ley y disposiciones
+  aplicables en Colombia. Si cualquier disposición de este contrato de
+  licenciamiento o la aplicación del presente a cualquier persona o
+  circunstancia es declarada nula o no ejecutable por cualquier razón y en
+  cualquier medida, el resto de este Contrato no se verá afectado por ello, sino
+  que se hará valer en la medida permitida por la ley.
+</p>
+
+<p>
+  <b>CLÁUSULA 38 - NOTIFICACIONES.</b> Todas las notificaciones, comunicaciones,
+  peticiones o solicites permitidas en virtud del presente acuerdo deben ser
+  realizadas por escrito y entregadas personalmente, o enviadas por correo
+  certificado o por correo electrónico dirigido a:
+</p>
+
+<p>
+  La EMPRESA: Calle 11B # 43A-27 Edificio Los Cedros Torre 2 Oficina 205,
+  Medellín, Antioquia, Colombia Correo electrónico: ayudamed@himedsolutions.com
+</p>
+
+<p>
+  El CLIENTE: En la dirección de correo electrónico informada en el Anexo de
+  Condiciones Específicas o demás instrumentos que sean suscritos por las partes
+  para la prestación del servicio.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> Las direcciones, los números de teléfonos o celulares aquí
+  registrados, pueden ser modificados mediante notificación escrita presentada a
+  la otra parte con por lo menos quince (15) días de anticipación para que se
+  haga efectivo el cambio de la nueva dirección o persona designada. Cualquier
+  notificación enviada a la dirección física registrada se considerará entregada
+  a partir del quinto (5) día hábil después de la fecha de envío, la cual será
+  verificada por la fecha de introducción al correo, entendiendo que se envió a
+  la dirección correcta y por correo certificado, tratándose de notificaciones
+  electrónicas la misma se entenderá surtida a los cinco (5) días hábiles
+  siguientes a la recepción del correo electrónico.
+</p>
+
+<p>
+  <b>CLÁUSULA 39 - PERFECCIONAMIENTO.</b> el presente contrato de licenciamiento
+  queda perfeccionado con la suscripción realizada por las partes.
+</p>
+
+<p>
+  <b>CLÁUSULA 40 - CONFIDENCIALIDAD DE LA INFORMACIÓN.</b> LAS PARTES reconocen
+  la naturaleza confidencial de los hechos, omisiones, comportamientos y
+  actuaciones descritas en este contrato, de los documentos anexos y de
+  perfeccionamiento del mismo, información que no podrá ser vendida, negociada,
+  publicada o revelada a persona distinta de los que en este contrato
+  intervienen, salvo que tal divulgación sea requerida en el contexto de un
+  proceso legal y por orden judicial de autoridad competente, que resulte
+  vinculante para la parte obligada a proporcionar la información. En este caso,
+  la parte requerida a suministrar la información o el contenido de este
+  contrato deberá notificar inmediatamente a la otra parte dicho requerimiento,
+  de forma tal que la parte informante pueda solicitar su amparo, orden judicial
+  o cualquier otro remedio legal disponible y/u otorgue consentimiento al
+  incumplimiento de las cláusulas de este Contrato de Licenciamiento. En la
+  eventualidad que dicha orden protectora u otro remedio legal no sea obtenido,
+  o que la parte informante no otorgue su consentimiento relacionado a las
+  cláusulas de este Contrato de Licenciamiento en cuanto a la divulgación de la
+  información, la parte recipiente o su representante debe producir únicamente
+  la porción de la información que se recomiende mediante una opinión legal
+  requerida y deberá realizar sus mejores esfuerzos en obtener seguridad
+  confiable en que se le dará a la información un tratamiento confidencial en su
+  uso.
+</p>
+
+<p>
+  <b>CLÁUSULA 41 - DATOS PERSONALES.</b> LAS PARTES declaran que suministraron
+  recíprocamente, de manera voluntaria e informada los datos personales suyos o
+  de sus representantes legales que constan en este Contrato de Licenciamiento o
+  en los documentos complementarios que sean suscritos para cada MÓDULO, según
+  el caso y los necesarios para la correcta ejecución de la relación civil o
+  comercial, respetando los fines consagrados en la Constitución Política, la
+  Ley 1581 de 2012, Decreto reglamentario 1377 de 2013, las demás normas que las
+  complementen, adicionen, sustituyan o deroguen y en la política de Tratamiento
+  de Datos Personales prescrita por cada una de LAS PARTES.
+</p>
+
+<p>
+  Así mismo declaran LAS PARTES que han sido informadas que es de carácter
+  facultativo responder a preguntas que versen sobre datos sensibles o sobre
+  menores de edad. Se entiende por datos sensibles aquellos que afectan la
+  intimidad del titular o cuyo uso indebido puede generar discriminación, por
+  ejemplo, la orientación política, las convicciones religiosas o filosóficas,
+  de derechos humanos, así como los datos relativos a la salud, a la vida sexual
+  y los datos biométricos. Les asiste a LAS PARTES el deber de garantizar la
+  confidencialidad, libertad, seguridad, veracidad, transparencia, acceso y
+  circulación restringida de los datos. LAS PARTES se reservan el derecho de
+  modificar su Política de Tratamiento de Datos Personales en cualquier momento,
+  circunstancia que será informada y publicada oportunamente.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> EL CLIENTE se obliga a obtener las autorizaciones necesarias
+  y suficientes para el uso, manejo, almacenamiento, compilación en bases de
+  datos, y en general, cualquier tratamiento de los datos personales conforme al
+  objeto del presente contrato, ante lo cual, suscribirán con el usuario o
+  PACIENTE y demás personas que se puedan ver afectadas directa o indirectamente
+  las autorizaciones o permisos requeridos, para el uso, manejo, tratamiento o
+  almacenamiento de Información privada, semiprivada o sensible directa o
+  indirectamente.
+</p>
+
+<p>
+  <b>CLÁUSULA 42 - SECRETOS EMPRESARIALES.</b> Se entenderá por tal, cualquier
+  información divulgada por LAS PARTES a la otra con ocasión del presente
+  Contrato de Licenciamiento y que pueda usarse en alguna actividad productiva,
+  industrial o comercial, y que sea susceptible de transmitirse a un tercero, en
+  la medida que dicha información sea: (a) Secreta, en el sentido que como
+  conjunto o en la configuración y reunión precisa de sus componentes, no sea
+  generalmente conocida ni fácilmente accesible por quienes se encuentran en los
+  círculos que normalmente manejan la información respectiva; (b) Tenga un valor
+  comercial por ser secreta; y (c) Haya sido objeto de medidas razonables
+  tomadas por LAS PARTES para mantenerla secreta, para la cual LAS PARTES se
+  comprometen a informar a la otra la información que goza de confidencialidad.
+  La información de un secreto empresarial podrá estar referida a la naturaleza,
+  características o finalidades de los productos; a los métodos o procesos de
+  producción; o, a los medios o formas de distribución o comercialización de
+  productos o prestación de servicios. La información puede incluir, entre
+  otros, planes de negocios y de desarrollo, información técnica y financiera,
+  planes de productos y servicios, información de precios, informes de mercadeo,
+  análisis y proyecciones, especificaciones, diseños, dibujos, software, datos,
+  prototipos, secretos industriales, Know How y otras informaciones de negocios
+  o técnica, relativos o necesarios para la prestación de los servicios por las
+  partes, información que es exclusiva de las partes, en lo sucesivo la
+  "Información Confidencial", convienen en mantener la confidencialidad y
+  exclusividad.
+</p>
+
+<p>
+  <b>CLÁUSULA 43 - MÉRITO EJECUTIVO.</b> LAS PARTES acuerdan que las
+  obligaciones aquí pactadas, por ser claras, expresas y exigibles prestarán
+  mérito ejecutivo, y una vez alguna de las partes incumpla algunas de las
+  obligaciones pactadas, podrá exigir su cumplimiento por medio del proceso
+  ejecutivo. De igual modo, las Facturas que llegasen a ser emitidas a EL
+  CLIENTE por parte de LA EMPRESA prestarán merito ejecutivo.
+</p>
+
+<p>
+  <b>CLÁUSULA 44 - LEGISLACIÓN APLICABLE.</b> El presente CONTRATO se
+  considerará celebrado en la ciudad de Medellín y los derechos y obligaciones
+  de LAS PARTES en virtud del presente documentos se regirán e interpretarán de
+  conformidad con las leyes de la República de Colombia, las decisiones
+  supranacionales sobre Derechos de Autor y, en especial por la Resolución 1995
+  del 1999 y demás normas que la adicionen, reglamenten, modifiquen,
+  complementen y/o deroguen. Todas las disputas que surjan de o en relación con
+  este Contrato de Licenciamiento serán finalmente resueltas en la ciudad de
+  Medellín, Colombia y se realizarán en idioma español.
+</p>
+
+<h3 style="text-align: center">
+  <b>TÍTULO III – DE LOS MODULOS DE LA PLATAFORMA</b>
+</h3>
+<h3 style="text-align: center">
+  <b>CAPITULO I – MÓDULO DE HISTORIA CLÍNICA</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 45 - FUNCIONALIDADES DEL MÓDULO DE HISTORIA CLÍNICA.</b> El Módulo
+  de Historia Clínica facultará al profesional de la salud para la realización
+  de los siguientes actos: (a) Realizar el registro del motivo por el cual
+  consulta el PACIENTE; (b) Registrar los antecedentes médicos de la persona a
+  la que se le presta el servicio de salud; (c) Incluir dentro del registro el
+  diagnóstico realizado de conformidad con lo establecido en el CIE
+  -Clasificación Internacional de Enfermedades-; (d) Realizar el registro de los
+  exámenes físicos realizados; (e) Adjuntar archivos relacionados con resultados
+  clínicos referentes al estado de salud de EL PACIENTE, tales como ayudas
+  diagnósticas y exámenes realizados; (f) Generar plantillas personalizadas de
+  acuerdo con el desarrollo de algunos puntos de la consulta; (g) Utilizar
+  plantillas generadas directamente por HIMED para el registro de antecedentes,
+  exámenes físicos ordenados y exámenes aportados por el PACIENTE; (h) Crear
+  notas aclaratorias dentro del registro, por errores cometidos en el desarrollo
+  de la consulta o aclaraciones que se consideren necesarias por el profesional
+  de la salud; (i) Realizar notas de evolución donde se plasmen los resultados
+  de los exámenes practicados a EL PACIENTE y/o revisiones posteriores a la
+  consulta y/o procedimientos a los que se haya visto sujeto el PACIENTE; (j)
+  Crear notas introductorias que permitan identificar con mayor facilidad el
+  PACIENTE a tratar; y (k) Realizar la impresión de la historia clínica de EL
+  PACIENTE; (l) Administrar de forma electrónica los datos generadores de la
+  historia clínica.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> LA EMPRESA manifiesta que ha realizado todas las pruebas
+  orientadas a evitar que los servicios que se obliga a prestar no sufran
+  interrupciones, alteraciones o inconsistencias. Sin embargo, no garantiza que
+  la prestación del servicio este completamente libre de error. En caso de que
+  algún servicio y/o suministro presente alguna interrupción o alteración, LA
+  EMPRESA realizará inmediatamente sus mejores esfuerzos para corregirlos y se
+  compromete a obrar diligentemente para reducir al mínimo las posibilidades de
+  fallas o interrupciones en la prestación del servicio.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 46 - DECLARACIONES DEL CLIENTE FRENTE AL MÓDULO DE HISTORIA
+    CLÍNICA.</b
+  >
+  EL CLIENTE declara que conoce la normatividad aplicable en materia de
+  protección de datos personales y que ha obtenido la información ingresada en
+  la historia clínica cumpliendo con los requisitos y obligaciones plasmados en
+  la Constitución Política, la Ley 1581 de 2012, Decreto reglamentario 1377 de
+  2013 y las demás normas que las complementen, adicionan, sustituyan o
+  deroguen.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 47 - RESPONSABILIDAD DERIVADA DE LA INFORMACIÓN TRATADA EN EL
+    MÓDULO DE HISTORIA CLÍNICA.</b
+  >
+  Sin perjuicio de las estipulaciones contractuales establecidas en el Título I
+  del presente instrumento, EL CLIENTE, en calidad de propietario exclusivo de
+  la información que se encuentra depositada en LA PLATAFORMA, se obliga a
+  asumir todo tipo de responsabilidad que se pueda derivar en virtud de su
+  manejo, recolección o cualquier reclamación, demanda, acción o actuación
+  administrativa, judicial, de carácter civil, penal, o de cualquier otra
+  naturaleza presentada o instaurada por terceros, en contra de él o de LA
+  EMPRESA y que tengan como origen o hecho generador: (a) Contenido de los
+  documentos generados por el software; (b) Cualquier responsabilidad incurrida
+  frente a las entidades de control y vigilancia municipal, departamental o
+  nacional; (c) Cualquier manejo inadecuado que le sea dado a la información que
+  se deposite o se encuentre depositada en HIMED, para la prestación del
+  servicio contemplado en el presente instrumento; (d) Los permisos o
+  privilegios asignados por el ADMINISTRADOR a los USUARIOS para el uso de
+  funcionalidades en LA PLATAFORMA; y (e) Las configuraciones realizadas por EL
+  CLIENTE en HIMED para la consulta, revisión, modificación, anotación, o
+  cualquier otro tipo de uso o acceso a las historias clínicas de los PACIENTES
+  por parte de los USUARIOS, sin distinción de los roles que le sean asignados
+  por el ADMINISTRADOR.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 48 - OBLIGACIONES DEL CLIENTE DERIVADA DE LA ADQUISICIÓN DEL
+    MODULO DE HISTORIA CLÍNICA.</b
+  >
+  Sin perjuicio de las demás obligaciones estipuladas en éste contrato, EL
+  CLIENTE tendrá a cargo las siguientes obligaciones: (a) Validar diligentemente
+  la información ingresada, con el fin de evitar errores que puedan generar
+  consecuencias en la prestación del servicio de salud tales como error en el
+  diagnóstico, motivo de consulta, enfermedad de EL PACIENTE, entre otros; (b)
+  Hacer uso de los servicios prestados por LA EMPRESA de conformidad con lo
+  establecido en el presente Contrato y sus anexos y de acuerdo con las
+  licencias pertinentes y las normas legales vigentes aplicables al o los
+  servicios objeto de este Contrato; (c) Disponer de los equipos y programas
+  adecuados y requisitos mínimos técnicos, que le permitan utilizar el Módulo,
+  de conformidad a lo señalado en los términos y condiciones de uso, el cual
+  hace parte integral de este contrato. Así mismo debe contar con una conexión a
+  internet con un ancho de banda adecuado a sus operaciones; (d) Utilizar la o
+  las contraseñas que le sean suministradas y guardarlas en forma confidencial,
+  de manera que no pueda ser utilizada por personas sin autorización; (e)
+  Garantizar que la información entregada por los PACIENTES y posteriormente
+  ingresada a la plataforma cumple con las normas vigentes para el tratamiento y
+  protección de datos personales. EL CLIENTE siempre será responsable sobre la
+  información procesada por LA EMPRESA ante cualquier acción legal que
+  interponga una persona natural, persona jurídica o entidad competente; (f)
+  Responder totalmente por el uso y recibo de la información que transmite. LA
+  EMPRESA no responderá por el acceso de terceros, ni por los fraudes o actos
+  indebidos que puedan cometerse con la información que recibe y transmite EL
+  CLIENTE por medio del servicio objeto del presente Contrato; (g) Informar a LA
+  EMPRESA sobre el bloqueo o eliminación de contraseñas para personal que EL
+  CLIENTE considere como no autorizado. LA EMPRESA no se responsabiliza por el
+  uso que den a la información, los usuarios que EL CLENTE ha asignado para tal
+  efecto; y (h) Pagar las tarifas indicadas en la oferta de servicios,
+  cotización o cualquier otro instrumento donde se hayan indicado las
+  condiciones del servicio.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> LA EMPRESA no será responsable por la utilización indebida
+  de las credenciales y contraseñas que LA EMPRESA proporcionará a EL CLIENTE.
+  En este sentido y sobre este particular, EL CLIENTE acepta y entiende que
+  cuando se envían a LA EMPRESA datos e instrucciones por vía electrónica, esta
+  información es interpretada como auténtica y fidedigna por LA EMPRESA en la
+  medida en que provenga de un acceso verificado a través de la contraseña o de
+  la identificación del usuario de que se trate, sin que LA EMPRESA pueda
+  hacerse responsable por cualquier consecuencia; las cuales asume en su
+  integridad EL CLIENTE, pues él o los servicios que por el presente Contrato se
+  compromete a prestar LA EMPRESA no podría en forma alguna incluir la
+  verificación de la identidad de la específica persona natural que accede a la
+  red.
+</p>
+
+<p>
+  <b>CLÁUSULA 49 - DE LA FUNCIÓN DE CONSULTA.</b> El profesional de la salud a
+  través del USUARIO MÉDICO TRATANTE podrá realizar el registro de las
+  condiciones de salud, exámenes, procedimientos y demás información de carácter
+  médico que sea necesario para el correcto acompañamiento a EL PACIENTE, sin
+  embargo, esta consulta deberá atender a los siguientes presupuestos: (a) El
+  USUARIO MÉDICO TRATANTE que ingrese la información a la plataforma únicamente
+  podrá crear la consulta en la fecha de realización de la misma,
+  imposibilitándose la creación de consultas en fechas anteriores o posteriores
+  a la misma; (b) La consulta realizada por el personal de la salud a EL
+  PACIENTE deberá atender a lo dispuesto por la normatividad colombiana en la
+  materia, atendiendo en todo caso a la ética profesional que rige su profesión;
+  (c) La plataforma únicamente permite la creación de registros médicos para
+  PACIENTES que han sido creados previamente en los datos demográficos del
+  módulo de Historia Clínica; (d) El USUARIO MÉDICO TRATANTE o EL USUARIO que
+  ingrese los datos a la plataforma, solo podrá finalizar la consulta realizada
+  a EL PACIENTE previa identificación del mismo, selección de servicios en
+  consulta, finalidad de consulta, causa externa, diagnóstico, el cual deberá
+  darse de conformidad con el listado consagrado en el CIE (Clasificación
+  Internacional de Enfermedades) y tipo de diagnóstico; (e) Una vez la consulta
+  sea guardada en la plataforma, no se permiten las modificaciones a la misma.
+  En caso de haberse presentado un error en el ingreso de la información el
+  USUARIO MÉDICO TRATANTE podrán crear notas aclaratorias al interior de la
+  consulta.
+</p>
+
+<p>
+  <b>CLÁUSULA 50 - DE LA FUNCIÓN DE PRECONSULTA.</b> El permiso para hacer uso
+  de la función de preconsulta habilita a un USUARIO y miembro del equipo de
+  salud, para adelantar la consulta con el propósito de que dicho registro sea
+  posteriormente revisado, avalado y aprobado por un USUARIO especializado que
+  tenga el rol de USUARIO MEDICO TRATANTE o MÉDICO APROBANTE. El eventual uso de
+  esta función por parte de los USUARIOS es de exclusiva responsabilidad del
+  CLIENTE, razón por la cual LA EMPRESA no asumirá ningún tipo de
+  responsabilidad frente a éste o a terceros por la identidad, idoneidad
+  profesional, información ingresada o actuaciones realizadas por quien ingrese
+  a la plataforma en calidad de USUARIO con privilegios para hacer uso de la
+  función de preconsulta.
+</p>
+
+<p>
+  <b>CLÁUSULA 51 - SOBRE LA FUNCIÓN DE INTERCONSULTA.</b> El permiso de
+  Interconsulta permite a dos (2) o más USUARIOS intervenir en un mismo
+  registro, con el propósito de que los USUARIOS que no interactúan directamente
+  con el PACIENTE puedan emitir su concepto médico especializado sobre los
+  hechos y actuaciones médicas adelantadas en la consulta. Para todos los
+  efectos, la consulta será guardada relacionando el nombre de todos los
+  USUARIOS que intervinieron en ella. El eventual uso de esta función por parte
+  de los USUARIOS es de exclusiva responsabilidad del CLIENTE, razón por la cual
+  LA EMPRESA no asumirá ningún tipo de responsabilidad frente a éste o a
+  terceros por la identidad, idoneidad profesional, información ingresada o
+  actuaciones realizadas por quien ingrese a la plataforma en calidad de USUARIO
+  con privilegios para hacer uso de la función de interconsulta.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 52 - GESTIÓN DOCUMENTAL DE LOS SOPORTES DE CONSENTIMIENTOS
+    INFORMADOS.</b
+  >
+  La gestión documental de los soportes de los consentimientos informados en LA
+  PLATAFORMA permite almacenar de forma electrónica o digital los soportes y
+  formularios de los consentimientos informados de los PACIENTES de EL CLIENTE,
+  los cuales están a cargo exclusivo del profesional de salud para la práctica
+  de ayudas diagnósticas, procedimientos, y en general, de todos los actos
+  médicos que requieran del consentimiento de EL PACIENTE para su realización.
+  En caso de que se requiera la validación de la identidad de EL PACIENTE a
+  través de elementos biométricos o de cualquier otra índole, los dispositivos
+  electrónicos o Hardware que permita la captura de estos datos deberá ser
+  adquirido por EL CLIENTE y estarán por cuenta y riesgo de éste.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> La función de gestión documental de los soportes o
+  formularios de consentimientos informados se limitará a (1) permitir la
+  creación del documento por medio del cual el PACIENTE aceptaría las
+  indicaciones y contraindicaciones del procedimiento; (2) asociar al
+  consentimiento informado los archivos contentivos de la ayuda diagnóstica; y
+  (3) posibilitar la impresión del documento o la suscripción de este por medio
+  electrónico. EL CLIENTE declara que el texto y documentos cargados a la
+  PLATAFORMA en uso de esta función son de su exclusiva producción y propiedad.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> LAS PARTES declaran y garantizan que LA EMPRESA es un
+  proveedor tecnológico que por su calidad y condición no interviene en el acto
+  médico del profesional de la salud con su PACIENTE, y por lo tanto no
+  participa de manera directa ni indirecta en la formación del consentimiento
+  informado de los PACIENTES, así mismo LAS PARTES declaran y garantizan que
+  cualquier responsabilidad que se derive del incumplimiento legal en el
+  otorgamiento del consentimiento información de PACIENTES es de cargo exclusivo
+  de EL CLIENTE.
+</p>
+
+<p>
+  <b>PARÁGRAFO TRES.</b> LA EMPRESA no proveerá dispositivos electrónicos o
+  Hardware para la captura de la firma de EL PACIENTE o de sus datos
+  biométricos. En consideración de ello, LA EMPRESA no será responsable sobre
+  los perjuicios sufridos por EL CLIENTE y/o terceros que tengan como hecho
+  generador problemas de compatibilidad entre el software y el dispositivo del
+  cliente ocasionados por la obsolescencia del dispositivo y/o actualizaciones
+  del software efectuadas por el fabricante.
+</p>
+
+<p>
+  <b>CLÁUSULA 53 - MÉDICO APROBANTE.</b> EL CLIENTE, a través del USUARIO
+  ADMINISTRADOR, podrá a su discreción asignar a un USUARIO permisos de MÉDICO
+  APROBANTE para que apruebe o avale la información ingresada por el MÉDICO
+  TRATANTE relativa a actuaciones médicas que haya realizado en la prestación
+  del servicio de la salud, previo al registro definitivo de la información en
+  la base de datos. Este rol solo podrá ser utilizado cuando el USUARIO
+  ADMINISTRADOR lo configure para el CLIENTE, y ante su ausencia, la información
+  consignada por el MEDICO TRATANTE será asentada de forma definitiva a la
+  ejecución del comando ‘guardar’. LA PLATAFORMA notificará al MEDICO APROBANTE
+  sobre el requerimiento de aprobación, informándole la identificación del
+  MÉDICO TRATANTE que lo solicita y los registros que requieren de su
+  aprobación. El USUARIO que se designe con este rol estará en la obligación de
+  suministrar sus credenciales en la configuración de la PLATAFORMA para la
+  obtención de las funcionalidades propias del rol MÉDICO APROBANTE.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> LA EMPRESA se exime de todo tipo de responsabilidad por la
+  identidad, información ingresada o actuaciones realizadas por quien ingrese a
+  la plataforma en calidad de USUARIO MÉDICO APROBANTE, las cuales asume en su
+  integridad EL CLIENTE, pues él o los servicios que por el presente Contrato se
+  compromete a prestar LA EMPRESA no incluyen la verificación de la identidad de
+  la persona natural que accede a la red.
+</p>
+
+<p>
+  <b>CLÁUSULA 54 - SOBRE PROCEDIMIENTOS.</b> En virtud del presente contrato, EL
+  MÉDICO TRATANTE o EL USUARIO que se encuentre facultado por EL CLIENTE para
+  consignar la información en el SOFTWARE, podrá registrar el diagnóstico dado
+  en una consulta y los procedimientos realizados sobre un determinado PACIENTE.
+  Al registro se podrá asociar una ayuda diagnóstica de conformidad a lo
+  señalado en la cláusula siguiente y mediante los códigos de Clasificación
+  Única de Procedimientos en Salud (CUPS), lo cual permite al profesional de la
+  salud reportar de forma histórica los procedimientos realizados, diligenciar
+  hallazgos encontrados y cargar archivos o imágenes relacionadas con los
+  mismos. Se exceptúan de estos archivos las extensiones de videos.
+</p>
+
+<p>
+  <b>CLÁUSULA 55 - ARCHIVOS E IMÁGENES.</b> EL USUARIO podrá, en cada acción de
+  carga, subir a LA PLATAFORMA un máximo de diez (10) archivos e imágenes, los
+  cuales se relacionarán con la historia clínica de EL PACIENTE. La suma de los
+  archivos no podrá superar los doce megabytes (12MB) por acción de carga, y
+  deberán adjuntarse en las siguientes extensiones ‘gif’, ‘jpeg’, ‘jpeg’, ‘png’,
+  ‘pdf’, ‘csv’, ‘xls’, ‘xlsx’, ‘xlt’, ‘xlsm’, ‘ods’, ‘doc’, ‘docx’ y ‘pdf’, sin
+  perjuicio de otras extensiones de archivos que habilite en el futuro LA
+  EMPRESA.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> Con ocasión a la adquisición de la licencia para el uso de
+  LA PLATAFORMA, EL CLIENTE contará con una cuota de almacenamiento gratuito
+  para archivos e imágenes detallada en el Anexo de Condiciones Específicas, del
+  cual se irá descontando la dimensión acumulada del total de archivos subidos a
+  LA PLATAFORMA en cada acción de carga. Agotada la cuota de almacenamiento
+  incluido junto a la licencia, EL CLIENTE deberá adquirir una nueva cuota de
+  almacenamiento dentro de la oferta comercial de LA EMPRESA para continuar
+  haciendo uso de la funcionalidad de carga de archivos e imágenes.
+</p>
+
+<p>
+  <b>CLÁUSULA 56 - INTEROPERABILIDAD.</b> EL CLIENTE autoriza a LA EMPRESA para
+  suscribir convenios y generar enlaces de interoperabilidad informática con
+  ENTIDADES ALIANZA, ello con la finalidad que está última acceda, incorpore o
+  modifique la información, datos e historias clínicas de los PACIENTES
+  adscritos a dicha entidad y atendidos por EL CLIENTE para el almacenamiento de
+  la información clínica en los servidores destinados por la ENTIDAD ALIANZA. El
+  CLIENTE podrá de igual forma acceder a las historias clínicas de los PACIENTES
+  que esté tratando en ese momento a través de un repositorio creado en los
+  servidores de LA ENTIDAD ALIANZA y que serán enviados de forma automática para
+  su lectura. Los datos recibidos de este repositorio no se podrán guardar ni
+  modificar en ninguna circunstancia, ello en aras de garantizar la integridad y
+  custodia de la información.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> LA EMPRESA solo se hace responsable por el alojamiento
+  de la información que sea depositada por EL CLIENTE, y se exime totalmente de
+  cualquier responsabilidad que se genere en virtud del contenido,
+  modificaciones, back-up no autorizado, y en general cualquier manejo
+  inadecuado que se le dé a dicha información. Así mismo, LA EMPRESA no será
+  responsable sobre los perjuicios sufridos por EL CLIENTE y/o tercero con
+  ocasión los actos de modificación, alteración y/o supresión que realicen las
+  ENTIDADES ALIANZA sobre la información interoperable.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> Actualmente se tiene interoperabilidad con la entidad
+  SURA con un estándar HL7 Vr.2, sin embargo, EL CLIENTE acepta que LA EMPRESA
+  cree enlace con nuevas ENTIDADES ALIANZA con las cuales pueda llegar a tener
+  algún tipo de convenio.
+</p>
+
+<p>
+  <b>CLÁUSULA 57 - DEL ASENTAMIENTO DEL REGISTRO EN LA BASE DE DATOS.</b> EL
+  CLIENTE se obliga a asentar de forma definitiva la INFORMACIÓN en la base de
+  datos de HIMED para lo cual será necesario dar cierre al registro de la
+  consulta, actuación que es de exclusiva responsabilidad del CLIENTE a través
+  del USUARIO con rol de MEDICO TRATANTE. EL CLIENTE declara y garantiza
+  indemnidad a LA EMPRESA por los perjuicios y/o daños que se causen con ocasión
+  al incumplimiento culposo o doloso de esta obligación, por lo tanto, La
+  EMPRESA no será responsable frente al CLIENTE o terceros por la pérdida o
+  extravío de información consignada en registros de consultas pausadas o
+  suspendidas y que no hayan sido efectivamente cerradas y guardadas por el
+  USUARIO, con indiferencia del rol del cual disponga en HIMED.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> Discrecionalmente, LA EMPRESA podrá enviar a los USUARIOS
+  mensajes o notificaciones recordativas sobre el estado inconcluso de los
+  registros de consultas pausadas o suspendidas, de conformidad a los
+  lineamientos y protocolos que para el efecto adopte LA EMPRESA. Lo anterior no
+  exime de responsabilidad al CLIENTE por el incumplimiento de la obligación
+  descrita anteriormente, ni podrá entenderse la subrogación de LA EMPRESA en
+  las obligaciones contenidas en esta cláusula y que se encuentran a cargo del
+  CLIENTE. En todo caso LA EMPRESA actuará en cumplimiento a la normatividad
+  legal vigente sobre la inmutabilidad de la información consignada en la
+  historia clínica de PACIENTES.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 58 - GENERACIÓN DE REGISTRO INDIVIDUAL DE LA PRESTACIÓN DE
+    SERVICIOS DE SALUD.</b
+  >
+  El módulo de Historia Clínica objeto de este contrato genera de forma
+  automática los informes para el Registro Individual de la Prestación de
+  Servicios de Salud –RIPS– con la información consignada y guardada en la base
+  de datos en el software ‘HiMed Web’, función para la cual es necesaria la
+  parametrización de la plataforma por parte del CLIENTE. El software ‘HiMed
+  Web’ generará exclusivamente los Registros Individuales de la Prestación de
+  Servicios de Salud –RIPS– exigidos en la normatividad vigente, y su producción
+  se sujetarán a los requerimientos y lineamientos técnicos y jurídicos
+  contemplados en la Resolución 3374 de 2000 emitida por el Ministerio de Salud
+  y a las normas que la adicionen, modifiquen o sustituyan. Para la generación
+  de RIPS, la PLATAFORMA podrá asociar la información contenida en otros módulos
+  contratados, siempre que EL CLIENTE de cumplimiento cabal e irrestricto al
+  proceso de trazabilidad estipulado por LA EMPRESA, los cuales serán adoptados
+  por ésta en atención a la normatividad vigente.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> LA EMPRESA podrá realizar cambios en la PLATAFORMA sin
+  limitación alguna con el propósito de implementar los lineamientos,
+  requerimientos o dar cumplimiento a modificaciones normativas adoptadas por
+  las Entidades de Vigilancia en materia de RIPS. En el mismo sentido, LA
+  EMPRESA podrá introducir- a solicitud y por cuenta y riesgo del CLIENTE-
+  cambios en el entorno, diseño, opciones y funcionalidades en que la práctica
+  médica justifique suficientemente una excepción a lo estipulado en la
+  normatividad vigente.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> Los RIPS generados por la PLATAFORMA y sus archivos
+  contentivos indicarán exactamente la misma información que la consignada en la
+  base de datos en el software ‘HiMed Web’ por EL CLIENTE. LA EMPRESA no será
+  responsable por los perjuicios, daños o inconvenientes derivados de la
+  inexactitud, imprecisión o yerros en la información consignada en la base de
+  datos y que sirve de fuente para la generación de los Registros Individuales
+  de la Prestación de Servicios de Salud –RIPS–. Corresponde al CLIENTE la
+  corrección o modificación de la información base utilizada por HIMED para la
+  generación de RIPS, asumiendo a su cargo los perjuicios derivados de la
+  información conflictiva consignada por los USUARIOS a quien éste habilite.
+</p>
+
+<p>
+  <b>PARAGRAFO TRES.</b> El software ‘HiMed Web’ podrá notificar al USUARIO
+  cuando la información consignada en el SOFTWARE no cumpla con los requisitos
+  de validación contemplados en la normatividad vigente. EL CLIENTE declara y
+  garantiza indemnidad a LA EMPRESA por los perjuicios y/o daños que se causen
+  con ocasión a la no corrección de la información rechazada por el proceso de
+  validación establecido por el Ministerio de Salud. Adicionalmente, LA EMPRESA
+  estará exenta de responsabilidad sobre los perjuicios sufridos por EL CLIENTE
+  con ocasión a la modificación o cambio súbito en los parámetros técnicos o
+  prevalidadores utilizados por las Entidades Administradoras de Planes de
+  Beneficios –EAPB– a quien corresponda remitir los RIPS.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPITULO II – MÓDULO DE AGENDA</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 59 - FUNCIONALIDAD DEL MÓDULO DE AGENDA.</b> El Módulo de Agenda,
+  sin perjuicio de posteriores funcionalidades, permite al CLIENTE los
+  siguientes actos: (a) programar y organizar las diversas consultas,
+  procedimientos, y en general los eventos previstos en la agenda de los
+  USUARIOS; (b) envío de correos electrónicos de notificación a los PACIENTES
+  con ocasión al agendamiento, modificación y/o cancelación de las consultas,
+  procedimientos y eventos programados por el USUARIO; (c) envío de
+  recordatorios previos a la consulta o procedimientos agendados entre el
+  PACIENTE y el USUARIO, siempre que el CLIENTE lo configure para su licencia;
+  (d) personalización por parte del USUARIO de los tipos de consultas y otras
+  funcionalidades del Módulo.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> LA EMPRESA no adelantará validaciones tendientes a verificar
+  la validez de las direcciones de correo electrónico suministradas por el
+  USUARIO a la base de datos de LA PLATAFORMA para la recepción de mensajes, ni
+  a verificar el efectivo control de terceros sobre el buzón de correo
+  electrónico suministrado a la PLATAFORMA.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 60 - RESPONSABILIDAD DERIVADA LA INFORMACIÓN TRATADA EN EL MÓDULO
+    DE AGENDA.</b
+  >
+  El envío de comunicaciones desde el LA PLATAFORMA hacia buzones de correo
+  electrónico se efectuará a las direcciones suministradas por EL CLIENTE en el
+  uso de LA PLATAFORMA. Sin perjuicio de las estipulaciones contractuales
+  establecidas en el Título I del presente instrumento, EL CLIENTE se obliga a
+  asumir todo tipo de responsabilidad que se pueda derivar en virtud de su
+  manejo, recolección o cualquier reclamación, demanda, acción o actuación
+  administrativa, judicial, de carácter civil, penal, o de cualquier otra
+  naturaleza presentada o instaurada por terceros, en contra de él o de LA
+  EMPRESA y que tengan como origen o hecho generador: (a) errores de digitación
+  de EL CLIENTE o los usuarios autorizados por él para hacer uso de LA
+  PLATAFORMA que conlleven a la no entrega de la comunicación o a la lectura del
+  mismo por un tercero diferente al destinatario; (b) los intentos fallidos y
+  errores de entrega de la comunicación con ocasión a configuraciones
+  particulares del buzón de correo electrónico del destinatario; (c) los
+  intentos fallidos y errores de entrega de la comunicación con ocasión a la
+  infracción de la cuenta sobre los límites de recepción fijados por el
+  proveedor de correo electrónico del destinatario; (d) la no lectura efectiva
+  por parte del destinatario con ocasión a que la dirección de correo
+  electrónico del remitente sea catalogada como correo basura o spam por el
+  proveedor del servicio de correo electrónico del destinatario. EL CLIENTE
+  instruirá la revisión del buzón de spam a los destinatarios de las
+  comunicaciones electrónicas enviadas desde LA PLATAFORMA; (e) La información
+  contenida en las comunicaciones enviadas a buzones de correo electrónico desde
+  LA PLATAFORMA; (f) pérdida de oportunidad y conflictos por errores en el
+  agendamiento de consultas, procedimientos y eventos que generen perjuicios a
+  EL CLIENTE y/o a terceros, siempre que éstos sean atribuibles al USUARIO.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 61 - OBLIGACIONES DEL CLIENTE DERIVADAS DE LA ADQUISICIÓN DEL
+    MODULO DE AGENDA.</b
+  >
+  Sin perjuicio de las demás obligaciones que le asisten en virtud del presente
+  Contrato de Licenciamiento, EL CLIENTE tendrá las siguientes obligaciones: (a)
+  instruir y verificar la diligencia, cuidado y atención de LOS USUARIOS
+  autorizados para hacer uso de LA PLATAFORMA en la digitación de las
+  direcciones de correo electrónico a efectos de evitar errores en el envío; (b)
+  recoger del titular del dato personal las autorizaciones pertinentes y
+  suficientes para el tratamiento de datos personales de terceros por parte de
+  EL CLIENTE y la transmisión de ellos a LA PLATAFORMA.
+</p>
+
+<p>
+  <b>CLÁUSULA 62 - RESPONSABILIDAD SOBRE LA OPERACIÓN DEL MÓDULO DE AGENDA.</b>
+  EL CLIENTE se obliga a guardar y utilizar en forma confidencial las
+  credenciales de validación y/o contraseñas de acceso que le sean
+  suministradas, de manera que no puedan ser utilizadas por personas sin
+  autorización. LA EMPRESA no será responsable por la utilización indebida de la
+  contraseña del Módulo de Agenda. EL CLIENTE acepta y entiende que cuando se
+  envían a LA EMPRESA datos e instrucciones por vía electrónica, esta
+  información es interpretada como auténtica y fidedigna por LA EMPRESA en la
+  medida en que provenga de un acceso verificado a través de la contraseña o de
+  la identificación del usuario de que se trate, sin que LA EMPRESA pueda
+  hacerse responsable por cualquier consecuencia; las cuales asume en su
+  integridad EL CLIENTE puesto que LA EMPRESA no puede en forma alguna incluir
+  funciones de verificación de identidad de la persona natural que accede a la
+  red.
+</p>
+
+<p>
+  <b>CLÁUSULA 63 - NOTIFICACIONES Y ENVÍO DE INFORMACIÓN DE LA PLATAFORMA.</b>
+  EL CLIENTE, a través del USUARIO ADMINISTRADOR, podrá configurar en la
+  prestación del servicio el envío de notificaciones vía correo electrónico a EL
+  PACIENTE, informándole por este medio el agendamiento, modificación o
+  cancelación de su cita médica, así como el envío de recordatorios de la cita
+  asignada.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> EL CLIENTE podrá solicitar la funcionalidad extra de envío
+  de notificaciones a través de mensaje de texto (SMS) al número telefónico
+  registrado para el PACIENTE, previo pago de la tarifa fijada por LA EMPRESA
+  para dicho servicio adicional.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPITULO III – MÓDULO DE FACTURACIÓN POR COMPUTADOR</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 64 - FUNCIONALIDAD DEL MÓDULO DE FACTURACIÓN POR COMPUTADOR.</b>
+  El Módulo de Facturación por Computador, el cual no debe entenderse en ninguna
+  medida como la prestación de servicios o intermediación de facturación
+  electrónica, permite al CLIENTE, sin perjuicio de posteriores funcionalidades,
+  los siguientes actos: (a) Emitir o generar documento legal que haga las veces
+  de factura, donde se plasmen los servicios prestados por EL CLIENTE a
+  PACIENTES o entidades; (b) Anular facturas y/o corregir el valor plasmado en
+  las facturas previamente emitidas, mediante la emisión de notas crédito o
+  débito; (c) Registrar los valores a pagar por parte de EL PACIENTE, mediante
+  la emisión de recibos de caja, que permitan soportar el recaudo de cuotas
+  moderadoras y copagos; y (d) Realizar pre facturas de una atención a un
+  PACIENTE y/o entidad con el fin de tener control de un presupuesto.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> Los valores o saldos para emitir de conformidad con el
+  servicio de facturación por computador prestado por LA EMPRESA se realizan
+  únicamente en pesos colombianos (COP).
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> Las fechas de realización de la factura o demás
+  documentos inherentes al servicio, así como sus consecutivos, no podrán ser
+  objeto de modificación o alteración por parte del usuario autorizado por EL
+  CLIENTE para el uso de la plataforma.
+</p>
+
+<p>
+  <b>PARÁGRAFO TRES.</b> LA EMPRESA no será responsable total o parcialmente
+  ante la entidad fiscal o cualquier entidad que ejecute un procedimiento de
+  auditoría a EL CLIENTE de la información procesada en el servicio de
+  facturación por computador, la cual es objeto del presente Contrato, ya que EL
+  CLIENTE como contribuyente es el único responsable por la información que
+  incluya en sus Facturas, Notas de Crédito y demás documentos inherentes a la
+  prestación del servicio.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 65 - RESPONSABILIDAD DERIVADA DE LA INFORMACIÓN TRATADA EN EL
+    MÓDULO DE FACTUACIÓN POR COMPUTADOR.</b
+  >
+  Sin perjuicio de las estipulaciones contractuales establecidas en el Título I
+  del presente instrumento, EL CLIENTE, en calidad de propietario exclusivo de
+  la información que se encuentra depositada en LA PLATAFORMA, se obliga a
+  asumir todo tipo de responsabilidad que se pueda derivar en virtud de su
+  manejo, recolección o cualquier reclamación, demanda, acción o actuación
+  administrativa, judicial, de carácter civil, penal, o de cualquier otra
+  naturaleza presentada o instaurada por terceros, en contra de él o de LA
+  EMPRESA y que tengan como origen o hecho generador: (a) El vencimiento de la
+  resolución de facturación de EL CLIENTE; (b) La gestión de nuevas resoluciones
+  para facturar con ocasión a vencimientos de la resolución de facturación; (c)
+  La identificación, registro, clasificación, liquidación y cuantificación de la
+  prestación de servicios de salud que conlleva a la atención de un PACIENTE o
+  entidad; (d) Responsabilidades de carácter fiscal; (e) No cumplimiento de
+  requisitos legales para la emisión de la factura; (f) Inadecuado control del
+  consecutivo de facturación; (g) Inadecuado cálculo de los impuestos,
+  retenciones practicadas e IVA generado producto del suministro de información
+  errónea; (h) Cualquier responsabilidad incurrida frente a las entidades de
+  vigilancia y control de carácter municipal, departamental y nacional; y (i)
+  Cualquier manejo inadecuado que le sea dado a la información que se deposite o
+  se encuentre depositada en LA PLATAFORMA, para la prestación del servicio
+  contemplado en el presente instrumento.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 66 - OBLIGACIONES DEL CLIENTE DERIVADAS DE LA ADQUISICIÓN DEL
+    MODULO DE FACTURACIÓN POR COMPUTADOR.</b
+  >
+  Sin perjuicio de las demás obligaciones que le asisten en virtud del presente
+  Contrato de Licenciamiento, EL CLIENTE tendrá las siguientes obligaciones: (a)
+  Atender a los vencimientos de la resolución por facturación y gestionar la
+  nueva resolución; (b) Validar diligentemente la información ingresada, con el
+  fin de evitar errores que puedan generar un cálculo inadecuado de impuestos o
+  valores a pagar; (c) Realizar copias de seguridad de manera periódica, con el
+  fin de no perder la información ingresada; (d) Garantizar que la información
+  entregada como NIT de clientes, razones sociales, impuestos aplicados,
+  descuentos y demás información que sea entregada o ingresada a la plataforma
+  cumple con las normas vigentes para la expedición de una factura, nota crédito
+  y débito. EL CLIENTE siempre será responsable sobre la información ingresada
+  ante cualquier acción legal que interponga una entidad competente; (e)
+  Responder totalmente por el uso y recibo de la información que transmite; y
+  (f) Realizar los pagos estipulados por el uso de HIMED y por los
+  mantenimientos solicitados.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 67 - RESPONSABILIDAD SOBRE LA OPERACIÓN DEL MÓDULO DE FACTURACIÓN
+    POR COMPUTADOR.</b
+  >
+  LA EMPRESA no será responsable por la utilización indebida de las credenciales
+  de validación o contraseñas de acceso a LA PLATAFORMA proporcionadas por LA
+  EMPRESA para la gestión y control de las Facturas, Notas de Crédito y Débito
+  de EL CLIENTE. En este sentido y sobre este particular, EL CLIENTE acepta y
+  entiende que cuando ingresa información a la herramienta, esta es interpretada
+  como auténtica y fidedigna por LA EMPRESA en la medida en que provenga de un
+  acceso verificado a través de la contraseña o de la identificación del usuario
+  de que se trate, sin que LA EMPRESA pueda hacerse responsable por cualquier
+  consecuencia; las cuales asume en su integridad EL CLIENTE, pues él o los
+  servicios que por el presente Contrato se compromete a prestar LA EMPRESA no
+  podría en forma alguna incluir la verificación de la identidad de la
+  específica persona natural que accede a la red. LA EMPRESA no responderá por
+  el acceso de terceros, ni por los fraudes o actos indebidos que puedan
+  cometerse con la información que recibe y transmite EL CLIENTE por medio del
+  Módulo de Facturación por Computador.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPITULO IV – MÓDULO DE FACTURACIÓN ELECTRÓNICA</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 68 - FUNCIONALIDADES DEL MÓDULO DE FACTURACIÓN ELECTRÓNICA:</b>
+  El Módulo de Facturación Electrónica permite al CLIENTE los siguientes actos:
+  (a) Proporcionar el medio por el cual EL CLIENTE podrá hacer gestión de las
+  facturas, notas crédito y débito emitidas al ADQUIRENTE; (b) Emitir o generar
+  electrónicamente documento legal que haga las veces de factura, donde se
+  plasmen los servicios prestados por EL CLIENTE a PACIENTES o entidades; (c)
+  Enviar representación gráfica de factura, nota crédito y débito al correo
+  electrónico que EL CLIENTE parametrice en LA PLATAFORMA; (d) Proporcionar el
+  medio para que EL CLIENTE realice el proceso de aceptación o rechazo de la
+  factura electrónica; (e) Facilitar a EL CLIENTE y prestar los medios para que
+  realice el proceso de anulación de facturas y/o corrección el valor plasmado
+  en las facturas previamente emitidas, mediante la emisión de notas crédito o
+  débito; (f) Entregar o suministrar a la DIAN la información correspondiente a
+  las facturas electrónicas en los términos que exija la entidad; (g) Conservar
+  las facturas electrónicas, notas débito y notas crédito, así como las
+  constancias de recibo y rechazo, si fuere el caso, por el término de diez (10)
+  años o en su defecto por el establecido en la Ley; (h) Recibir en los medios
+  que establezca la DIAN, el acuse de recepción por parte de esta entidad; y (i)
+  Enviar las representaciones gráficas de facturas, notas crédito y débito en el
+  formato estándar ya estipulado por el PST, en consonancia con los requisitos
+  exigidos por la normatividad colombiana aplicable. En caso de que EL CLIENTE
+  desee otro diferente o adicionar datos, estos se cobrarán por separado.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> La prestación del Software como Servicio (S.a.S.)
+  descritos en el presente Contrato de Licenciamiento no implica, comprende o
+  incluye de forma alguna la prestación de servicios de asesoría o consultoría
+  contable, por lo tanto, es responsabilidad de EL CLIENTE conocer y estar
+  actualizado de la información contable legal que se requiere para el
+  cumplimiento de las exigencias legales en materia de facturación electrónica.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> LA EMPRESA no será responsable total o parcialmente ante
+  la entidad fiscal o cualquier entidad que ejecute un procedimiento de
+  auditoría a EL CLIENTE de la información procesada en el servicio de
+  facturación electrónica, la cual es objeto del presente Contrato, ya que EL
+  CLIENTE como contribuyente es el único responsable por la información que
+  incluya en sus Facturas, Notas de Crédito, Notas Débito y demás documentos
+  inherentes a la prestación del servicio.
+</p>
+
+<p>
+  <b>CLÁUSULA 69 - DEL PROVEDOR DE SERVICIOS TECNOLÓGICOS.</b> El Proveedor de
+  Servicios Tecnológicos (PST) que sea elegido por LA EMPRESA para la
+  realización del proceso de facturación electrónica, deberá ser autorizado por
+  la Dirección de Impuestos y Aduanas Nacionales, de acuerdo con la resolución
+  8878 del 15 de noviembre de 2017 expedida por dicho órgano o por las
+  disposiciones que la modifiquen, adicionen, complementen o sustituyan. Así
+  mismo el PST deberá cumplir con todos los requisitos señalados por la
+  normatividad vigente para la autorización, habilitación y cumplirá con la
+  renovación como Proveedor Tecnológico para el servicio de Facturación
+  Electrónica.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> LA EMPRESA manifiesta que ha realizado todas las pruebas
+  orientadas a evitar que los servicios prestados a través del PST no sufran
+  interrupciones, alteraciones o inconsistencias. Sin embargo, no garantiza que
+  la prestación del servicio este completamente libre de error. En caso de que
+  algún servicio y/o suministro presente alguna interrupción o alteración, LA
+  EMPRESA realizará inmediatamente sus mejores esfuerzos para corregirlos y se
+  compromete a obrar diligentemente para reducir al mínimo las posibilidades de
+  fallas o interrupciones en la prestación del servicio.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> EL CLIENTE declara que conoce la normatividad aplicable
+  y los procedimientos de contingencia establecidos por la DIAN para los
+  procesos de facturación y especialmente el consagrado en el Artículo 12 de la
+  Resolución 000030 de abril de 2019 expedida por dicha entidad, o las demás
+  disposiciones que lo adicionen, complementen o sustituyan.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 70 - RESPONSABILIDAD DERIVADA DE LA INFORMACIÓN TRATADA EN EL
+    MÓDULO DE FACTURACIÓN ELECTRÓNICA.</b
+  >
+  Sin perjuicio de las estipulaciones contractuales establecidas en el Título I
+  del presente instrumento, EL CLIENTE, en calidad de propietario exclusivo de
+  la información que se encuentra depositada en LA PLATAFORMA, se obliga a
+  asumir todo tipo de responsabilidad que se pueda derivar en virtud de su
+  manejo, recolección o cualquier reclamación, demanda, acción o actuación
+  administrativa, judicial, de carácter civil, penal, o de cualquier otra
+  naturaleza presentada o instaurada por terceros, en contra de él o de LA
+  EMPRESA y que tengan como origen o hecho generador: (a) El vencimiento de la
+  resolución de facturación de EL CLIENTE, ni asume la gestión de nuevas
+  resoluciones para facturar; (b) La identificación, registro, clasificación,
+  liquidación y cuantificación de la prestación de servicios de salud que
+  conlleva a la atención de un PACIENTE o entidad; (c) Responsabilidades de
+  carácter fiscal; (d) No cumplimiento de requisitos legales para la emisión de
+  la factura; (e) Inadecuado control del consecutivo de facturación; (f)
+  Inadecuado cálculo de los impuestos, retenciones practicadas e IVA generado
+  producto del suministro de información errónea; (g) Cualquier responsabilidad
+  incurrida frente a las entidades de control y vigilancia municipal,
+  departamental o nacional; y (h) Cualquier manejo inadecuado que le sea dado a
+  la información que se deposite o se encuentre depositada en LA PLATAFORMA para
+  la prestación del servicio contemplado en el presente instrumento.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 71 - OBLIGACIONES DEL CLIENTE DERIVADAS DE LA ADQUISICIÓN DEL
+    MODULO DE FACTURACIÓN ELECTRÓNICA.</b
+  >
+  Sin perjuicio de las demás obligaciones que le asisten en virtud del presente
+  Contrato de Licenciamiento, EL CLIENTE tendrá las siguientes obligaciones: (a)
+  Atender a los vencimientos de la resolución por facturación y gestionar la
+  nueva resolución, para lo cual informará con no menos de cinco (5) días
+  hábiles de anticipación a LA EMPRESA, con el objetivo de tramitar la nueva
+  resolución ante el PST; (b) Validar diligentemente la información ingresada,
+  con el fin de evitar errores que puedan generar un cálculo inadecuado de
+  impuestos o valores a pagar; (c) Hacer uso de LA PLATAFORMA de conformidad con
+  lo establecido en el presente Contrato y sus anexos, de acuerdo con las
+  licencias pertinentes y las normas legales vigentes aplicables al objeto de
+  este Contrato; (d) Disponer de los equipos, programas adecuados requisitos
+  mínimos técnicos, que le permitan utilizar el servicio de facturación
+  electrónica; (e) Realizar correctamente el trámite de habilitación que para el
+  efecto se exija según la normatividad vigente; (f) Cumplir con los requisitos
+  señalados en el Artículo 617 del Estatuto Tributario de acuerdo con lo
+  establecido en el Artículo 3 del decreto 2242 de 2015, o las demás
+  disposiciones que lo adicionen, complementen o sustituyan; (g) Suministrar a
+  la DIAN través de la plataforma del PST, un ejemplar de todas las facturas
+  electrónicas generadas teniendo en cuenta lo indicado en el Artículo 7 del
+  Decreto 2242 de 2015 o las demás disposiciones que lo adicionen, complementen
+  o sustituyan; (h) Entregar a la DIAN a través de los servicios informáticos
+  electrónicos que disponga la entidad la información de las facturas que se
+  expidan en los casos contemplados en el Artículo 8 del Decreto 2242 de 2015 o
+  las demás disposiciones que lo adicionen, complementen o sustituyan y el
+  registro auxiliar de ventas y compras e IVA por pagar el impuesto nacional al
+  consumo, cuando la DIAN lo disponga; (i) Actualizar la habilitación para la
+  expedición de la factura electrónica de acuerdo con el Parágrafo 3 del numeral
+  2 del Artículo 10 del Decreto 2242 de 2015 o las demás disposiciones que lo
+  adicionen, complementen o sustituyan; (j) Garantizar que la información
+  entregada como NIT de clientes, razones sociales, impuestos aplicados,
+  descuentos y demás información que sea entregada o ingresada a la plataforma
+  cumple con las normas vigentes para la expedición de una factura electrónica,
+  nota débito y nota crédito. El CLIENTE siempre será responsable sobre la
+  información procesada por LA EMPRESA y el PST ante cualquier acción legal que
+  interponga una entidad competente; (k) Responder totalmente por el uso y
+  recibo de la información que transmite. LA EMPRESA no responderá por el acceso
+  de terceros, ni por los fraudes o actos indebidos que puedan cometerse con la
+  información que recibe y transmite EL CLIENTE por medio del servicio de
+  intermediación comercial de datos e información objeto del presente Contrato;
+  (l) Pagar las tarifas indicadas en la oferta de servicios, cotización o
+  cualquier otro instrumento donde se hayan indicado las condiciones del
+  servicio; (m) Realizar las pruebas requeridas para la habilitación del
+  servicio de facturación electrónica ante la DIAN. Las herramientas o procesos
+  suministrados por LA EMPRESA para la consecución de la habilitación de EL
+  CLIENTE no constituyen obligación o responsabilidad para LA EMPRESA; (n)
+  Suministrar la información necesaria a LA EMPRESA para el envío de la
+  respectiva factura electrónica, esto es, el correo electrónico en el cual deba
+  notificarse al ADQUIRENTE; (o) Verificar el cumplimiento de los requisitos y
+  obligaciones requeridas para facturar bajo los términos de facturación
+  electrónica; y (p) adquirir la firma digital obligatoria y renovarla cuando
+  ello sea necesario.
+</p>
+
+<p>
+  <b>CLÁUSULA 72 - ELEMENTOS PARA LA VALORACIÓN ECONOMICA.</b> La tasación de la
+  contraprestación económica que deberá pagar EL CLIENTE por la adquisición del
+  Módulo de Facturación Electrónica constará de tres fases o elementos
+  independientes que serán cobrados por separado de acuerdo con los valores
+  establecidos en la propuesta comercial, los cuales corresponden a: (i)
+  Expedición de documentos; (ii) Implementación del Software y; (iii) Firma o
+  certificado digital, en caso de no contar con uno.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 73 - RESPONSABILIDAD SOBRE LA OPERACIÓN DEL MÓDULO DE FACTURACIÓN
+    ELECTRÓNICA.</b
+  >
+  EL CLIENTE se obliga a guardar y utilizar en forma confidencial las
+  credenciales de validación y/o contraseñas de acceso que le sean
+  suministradas, de manera que no puedan ser utilizadas por personas sin
+  autorización. LA EMPRESA no será responsable por la utilización indebida de la
+  contraseña del Módulo de Facturación Electrónica que LA EMPRESA proporcionará
+  al cliente para gestión y control de sus Facturas, Notas débito y Notas de
+  Crédito. En este sentido y sobre este particular, EL CLIENTE acepta y entiende
+  que cuando se envían a LA EMPRESA datos e instrucciones por vía electrónica,
+  esta información es interpretada como auténtica y fidedigna por LA EMPRESA en
+  la medida en que provenga de un acceso verificado a través de la contraseña o
+  de la identificación del usuario de que se trate, sin que LA EMPRESA pueda
+  hacerse responsable por cualquier consecuencia; las cuales asume en su
+  integridad EL CLIENTE puesto que LA EMPRESA no puede en forma alguna incluir
+  funciones de verificación de identidad de la persona natural que accede a la
+  red.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPITULO V – MÓDULO PORTAL PACIENTES</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 74 - FUNCIONALIDAD DEL MODULO PORTAL PACIENTES.</b> El Módulo de
+  Portal Pacientes, sin perjuicio de posteriores funcionalidades, permite al
+  cliente la habilitación de un entorno público de LA PLATAFORMA al cual podrán
+  acceder terceros autorizados en calidad de PACIENTES para realizar, entre
+  otras, las siguientes actuaciones: (a) visualización del último registro de
+  consulta, ayudas diagnósticas, formula, incapacidad y orden de remisión
+  cargados por los USUARIOS involucrados en la atención y contentivos de datos,
+  valoraciones e informaciones sobre su situación y evolución clínica a lo largo
+  del proceso asistencial; (b) previa configuración por parte de EL CLIENTE, dar
+  su autorización para el tratamiento de sus datos personales por parte de EL
+  CLIENTE y gestionar el estado de la misma; (c) previa configuración por parte
+  de EL CLIENTE, suscribir de forma electrónica otros documentos de carácter
+  clínico. (d) visualización de la disponibilidad de agenda del profesional de
+  la salud, representado en el USUARIO MÉDICO configurado por EL CLIENTE, para
+  la programación de consultas, procedimientos y actos médicos; y (e) solicitar,
+  consultar, modificar y/o cancelar citas, procedimientos y actos médicos con el
+  profesional de la salud, representado éste en el USUARIO MÉDICO configurado
+  por EL CLIENTE.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> Para el correcto funcionamiento del módulo, expresado
+  ello en la posibilidad de que los pacientes accedan a su información clínica a
+  través del módulo, EL CLIENTE deberá configurar desde el USUARIO ADMINISTRADOR
+  de LA PLATAFORMA la integración de la base de datos con el módulo de Portal
+  Pacientes. EL CLIENTE se obliga a obtener de los PACIENTES la autorización
+  suficiente para realizar el tratamiento de sus datos personales a través del
+  módulo de Portal Pacientes.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> El Módulo de Portal Pacientes no cuenta con la capacidad
+  para consultar, compartir e intercambiar datos e información alojada en
+  programas informáticos de terceros, por lo cual las funciones sólo se
+  ejecutarán en relación con la información consignada en la base de datos que
+  alimenta LA PLATAFORMA.
+</p>
+
+<p>
+  <b>CLÁUSULA 75 - REGISTRO Y CREACIÓN DE CREDENCIALES DEL PACIENTE.</b> Una vez
+  guardada correctamente la información de la primera consulta en la base de
+  datos, siempre que se encuentre habilitada la integración de la que habla el
+  parágrafo uno de la CLÁUSULA 74 -, LA PLATAFORMA habilitará el registro de EL
+  PACIENTE, el cual este podrá completar ingresando a ‘conecta.medsas.co’ a
+  través de cualquier navegador web. LA EMPRESA adoptará medidas razonables de
+  seguridad que permitan inferir que el usuario registrado corresponde al
+  titular de la información.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> EL PACIENTE será responsable de la creación,
+  modificación y la reserva de las credenciales para el acceso al Módulo de
+  Portal Pacientes. EL CLIENTE se obliga a instruir a EL PACIENTE en (a) la
+  obligación que le asiste de conservar en reserva las contraseñas, usuarios y
+  en general, todo tipo de credenciales para el acceso a LA PLATAFORMA; (b) la
+  interpretación de autenticidad de las comunicaciones, instrucciones, ordenes,
+  y en general cualesquier tipo de acto realizado por el PACIENTE en LA
+  PLATAFORMA en la medida en que provenga de un acceso verificado a través de la
+  credencial, contraseña u otros criterios de identificación asignados por EL
+  PACIENTE; (c) la obligación que le asiste de conservar en reserva los
+  documentos de carácter clínico contentivos de datos, valoraciones e
+  informaciones sobre su situación y evolución clínica a lo largo del proceso
+  asistencial, y en general toda información reservada o sensible a la que pueda
+  acceder en virtud de la autorización para el uso de LA PLATAFORMA en el Módulo
+  de Portal Pacientes; y (d) la calidad de documento no controlado que asumen
+  los documentos de carácter clínico contentivos de datos, valoraciones e
+  informaciones sobre su situación y evolución clínica a lo largo del proceso
+  asistencial a partir de la descarga del mismo desde el Portal Pacientes de LA
+  PLATAFORMA.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> LA EMPRESA podrá a su discreción implementar en LA
+  PLATAFORMA mensajes informativos de las anteriores recomendaciones de
+  seguridad en el Módulo de Portal Pacientes, sin que por ello se entienda la
+  subrogación de LA EMPRESA en las obligaciones de instrucción en cabeza de EL
+  CLIENTE o la exoneración parcial o total de las mismas.
+</p>
+
+<p>
+  <b>CLÁUSULA 76 - AUTORIZACIÓN PARA PUBLICACIÓN EN HIMED CONECTA.</b> EL
+  CLIENTE, con la contratación del Módulo Portal Pacientes, autoriza a LA
+  EMPRESA para publicar en el directorio medico de ‘HiMed Conecta’, entre otra,
+  la siguiente información de EL CLIENTE: denominación social o nombre, área
+  médica de especialidad, información académica, redes sociales e información de
+  contacto tales como dirección, teléfonos y direcciones de correo electrónico.
+</p>
+
+<p>
+  <b>CLÁUSULA 77 - ANUNCIOS Y OFERTAS DE TERCEROS.</b> LA EMPRESA podrá fijar en
+  la página de autenticación y en los demás entornos del Portal Pacientes,
+  anuncios y ofertas de carácter comercial de los bienes y servicios ofertados
+  por LA EMPRESA y por sus aliados comerciales. EL CLIENTE no será responsable
+  sobre los negocios jurídicos celebrados por EL PACIENTE con ocasión a la
+  aceptación de las ofertas publicitadas en el Portal Pacientes. Así mismo, LA
+  EMPRESA no será responsable frente a EL PACIENTE por los negocios jurídicos
+  que éste celebre para con terceros en virtud de la aceptación de la oferta
+  publicitada.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 78 - RESPONSABILIDAD DERIVADA DE LA INFORMACIÓN TRATADA EN EL
+    MODULO PORTAL PACIENTES.</b
+  >
+  Sin perjuicio de las estipulaciones contractuales establecidas en el Título I
+  del presente instrumento , EL CLIENTE, en calidad de propietario exclusivo de
+  la información que se encuentra depositada en LA PLATAFORMA, se obliga a
+  asumir todo tipo de responsabilidad que se pueda derivar en virtud de su
+  manejo, recolección o cualquier reclamación, demanda, acción o actuación
+  administrativa, judicial, de carácter civil, penal, o de cualquier otra
+  naturaleza presentada o instaurada por terceros, en contra de él o de LA
+  EMPRESA y que tengan como origen o hecho generador: (a) La veracidad de la
+  información ingresada por EL CLIENTE o LOS USUARIOS autorizados por él para el
+  manejo de la herramienta; (b) el acceso y divulgación por parte de terceros no
+  autorizados sobre información de carácter confidencial con ocasión a la
+  revelación de credenciales o vulneración a las medidas de seguridad del
+  Software; y (c) Cualquier manejo inadecuado que le sea dado a la información,
+  con indiferencia de la naturaleza o clase de la misma, que se deposite o se
+  encuentre depositada en LA PLATAFORMA.
+</p>
+
+<p>
+  <b>CLÁUSULA 79 - DOCUMENTO NO CONTROLADO A PARTIR DE LA DESCARGA.</b> Los
+  documentos de carácter clínico contentivos de datos, valoraciones e
+  informaciones sobre su situación y evolución clínica a lo largo del proceso
+  asistencial se considerarán documentos no controlados a partir de la descarga
+  de estos desde LA PLATAFORMA y cualesquiera de sus módulos, por lo que LA
+  EMPRESA no estará obligada a notificar los cambios efectuados por los USUARIOS
+  sobre la información consignada en dichos documentos. LA EMPRESA adoptará los
+  protocolos y medidas técnicas y administrativas pertinentes para impedir el
+  acceso a documentos por parte de terceros no autorizados, constituyéndose ello
+  en una obligación de medio. LA EMPRESA no será responsable sobre el uso que EL
+  CLIENTE y/o terceros den a la información contenida en los documentos
+  descargados desde la plataforma, así como sobre la divulgación de esta y los
+  perjuicios sufridos por terceros y/o EL CLIENTE por dichas actividades.
+</p>
+
+<h3 style="text-align: center">
+  <b>CAPITULO VI – MÓDULO DE TELEMEDICINA INTERACTIVA</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA 80 - FUNCIONALIDAD DEL MÓDULO TELEMEDICINA INTERACTIVA.</b> El
+  Módulo de Telemedicina Interactiva, sin perjuicio de posteriores
+  funcionalidades, permite al CLIENTE los siguientes actos: (a) proveerse de
+  infraestructura tecnológica en la modalidad de software especializado para la
+  realización de videollamada en tiempo real entre un USUARIO autorizado por EL
+  CLIENTE y el USUARIO en calidad de PACIENTE para el desarrollo de consultas en
+  la modalidad de Telemedicina Interactiva en los términos de la Resolución 2654
+  de 2019 expedida por el Ministerio de Salud y Protección Social; (b) envío de
+  protocolos de comunicación y acceso a buzón de correo electrónico registrado
+  por EL PACIENTE; (c) verificación de la identidad del USUARIO en calidad de
+  PACIENTE a través de códigos temporales; (d) suscripción electrónica del
+  consentimiento informado requerido para la prestación de servicios en salud
+  bajo la modalidad de Telemedicina Interactiva en los términos del Artículo 7°
+  de la Resolución 2654 de 2019; y (e) siempre que el usuario cuente con el
+  Módulo de Historia Clínica, la inclusión automática de la grabación de las
+  videollamadas de Telemedicina Interactiva en la historia clínica de EL
+  PACIENTE en cumplimiento de lo dispuesto en la Resolución 2654 de 2019 y
+  Resolución 1995 de 1999.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> En atención a la naturaleza de la Telemedicina
+  Interactiva. LA PLATAFORMA no adelantará la verificación de la identidad de
+  LOS USUARIOS a partir de la validación de elementos biométricos, sean estos
+  profesionales de la salud o terceros. LA PLATAFORMA utilizará exclusivamente
+  la información consignada por el USUARIO autorizado por EL CLIENTE para
+  realizar la validación de identidad de EL PACIENTE a través de códigos
+  temporales enviados a través de la dirección de correo electrónico y/o
+  teléfono celular registrados y sobre los cuales el PACIENTE, de conformidad a
+  las reglas de la experiencia, posee de forma exclusiva las credenciales para
+  su utilización. LA EMPRESA estará exenta de toda clase de responsabilidad
+  derivada de los perjuicios sufridos por EL CLIENTE y/o terceros con ocasión a
+  hurto de cuentas, fraude de credenciales, violación de medidas de seguridad, y
+  en general, sobre todos los eventos en los cuales, por el actuar de un
+  tercero, se suplante la identidad de EL PACIENTE en el acceso a LA PLATAFORMA
+  y en la interacción con el USUARIO en calidad de profesional de la salud.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> La función de suscripción electrónica del consentimiento
+  informado requerido para la prestación del servicio de salud a través de la
+  modalidad de Telemedicina Interactiva se limita a (a) permitir la creación del
+  documento por medio del cual EL PACIENTE aceptaría la prestación del servicio
+  en salud bajo la modalidad de Telemedicina Interactiva; (2) siempre que EL
+  CLIENTE cuente con el Módulo de Historia Clínica, asociar el consentimiento
+  informado a la historia clínica de EL PACIENTE de conformidad a lo señalado en
+  la Resolución 2654 de 2019; y (3) posibilitar la suscripción del documento
+  contentivo del consentimiento informado por medio electrónico, con
+  cumplimiento de lo establecido en la Ley 527 de 1999 en materia de firma
+  digital. EL CLIENTE declara que el texto y documentos cargados a la PLATAFORMA
+  en uso de esta función son de su exclusiva producción y propiedad. LAS PARTES
+  declaran y garantizan que LA EMPRESA es un proveedor tecnológico que, por su
+  calidad y condición, no interviene en el acto médico del profesional de la
+  salud con su PACIENTE, y por lo tanto no participa de manera directa ni
+  indirecta en la formación del consentimiento informado de los PACIENTES. De
+  igual modo, LAS PARTES declaran y garantizan que cualquier responsabilidad que
+  se derive del incumplimiento legal en el otorgamiento del consentimiento
+  información de PACIENTES es de cargo exclusivo de EL CLIENTE.
+</p>
+
+<p>
+  <b>PARÁGRAFO TRES.</b> El Módulo de Telemedicina Interactiva de LA PLATAFORMA
+  es un software especializado para la prestación de servicios de salud a través
+  de la modalidad de la telemedicina interactiva en los términos del Artículo
+  15° de la Resolución 2654 de 2019. En consecuencia, EL CLIENTE declara y
+  acepta que el Módulo no es apto para la ejecución de actividades de
+  telemedicina a través de las modalidades de Telexperticia y Telemonitoreo. LA
+  EMPRESA estará exenta de toda responsabilidad cuando EL CLIENTE utilice la
+  herramienta para adelantar la prestación del servicio en salud bajo las
+  modalidades antes descritas.
+</p>
+
+<p>
+  <b>PARÁGRAFO CUATRO.</b> El Módulo de Telemedicina Interactiva de LA
+  PLATAFORMA permite la conexión de los USUARIOS, sean éstos personal médico o
+  PACIENTES, desde cualquier parte del mundo. EL CLIENTE deberá poner en
+  conocimiento de EL PACIENTE por la satisfacción de los requerimientos técnicos
+  para el uso del módulo descritos en el Anexo de Condiciones Específicas.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 81 - RESPONSABILIDAD POR EL USO DEL MÓDULO DE TELEMEDICINA
+    INTERACTIVA.</b
+  >
+  EL CLIENTE, en calidad de Prestador de Referencia de servicios en salud a
+  través de la modalidad de Telemedicina, de conformidad a lo reglado en el
+  Artículo 21 de la Resolución 2654 de 2019 expedida por el Ministerio de Salud
+  y Protección Social, se obliga a asumir todo tipo de responsabilidad que se
+  pueda derivar en virtud de su manejo, recolección o cualquier reclamación,
+  demanda, acción o actuación administrativa, judicial, de carácter civil,
+  penal, o de cualquier otra naturaleza presentada o instaurada por terceros, en
+  contra de él o de LA EMPRESA y que tengan como origen o hecho generador la
+  prestación de servicios en salud a través del Módulo de Telemedicina
+  Interactiva proveído desde LA PLATAFORMA.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 82 - OBLIGACIONES DEL CLIENTE RESPECTO AL MODULO DE TELEMEDICINA
+    INTERACTIVA.</b
+  >
+  Sin perjuicio de las demás obligaciones que le asisten en virtud del presente
+  Contrato de Licenciamiento, EL CLIENTE tendrá las siguientes obligaciones: (a)
+  diseñar y cargar a LA PLATAFORMA, para su posterior suscripción, el documento
+  contentivo del consentimiento informado que debe otorgar EL PACIENTE para la
+  prestación de servicios de salud bajo la modalidad de Telemedicina
+  Interactiva; (b) dar cumplimiento a los requisitos establecidos en el Artículo
+  12° de la Resolución 2654 de 2019 para la comunicación de los usuarios con el
+  personal de la salud a través de LA PLATAFORMA; (c) obtener de EL PACIENTE la
+  autorización amplia y suficiente para el envío de comunicaciones,
+  recordatorios y protocolos de acceso, para la obtención de los datos de su
+  conexión, así como para el tratamiento de sus datos personales y la
+  transmisión de éstos hacia la base de datos de LA PLATAFORMA; (d) garantizar
+  la identificación del personal de la salud frente al usuario al inicio de la
+  comunicación; (e) garantizar la identificación de EL PACIENTE cumpliendo con
+  las buenas prácticas de identificación de acuerdo con la Política Nacional de
+  Seguridad de PACIENTES adoptada por el Ministerio de Salud y Protección
+  Social; (f) garantizar el tratamiento confidencial de la información por parte
+  del personal de la salud adscrito a EL CLIENTE; (g) registrar en la historia
+  clínica de EL PACIENTE, a través del personal de la salud que participe en la
+  atención, las actividades de Telemedicina efectuadas; (h) dar cumplimiento al
+  Régimen de Protección de Datos Personales y demás aspectos relacionados con el
+  tratamiento de la información que le resulte aplicable en el marco de las
+  normas que regulen la materia, a efectos de garantizar la privacidad,
+  seguridad, integridad y confidencialidad de la información suministrada y de
+  los datos a los que tengan acceso en los términos de la Ley 1581 de 2012; (i)
+  informar a EL PACIENTE de los requerimientos técnicos para la realización de
+  las actividades de telemedicina a través de LA PLATAFORMA.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> LAS PARTES declaran y garantizan que LA EMPRESA es un
+  proveedor tecnológico que, por su calidad y condición, no interviene en el
+  acto médico del profesional de la salud con su PACIENTE, y por lo tanto no
+  participa de manera directa ni indirecta en las actividades de consulta
+  ejecutadas por EL CLIENTE bajo la modalidad de Telemedicina Interactiva. LA
+  EMPRESA estará exenta de responsabilidad sobre los perjuicios sufridos por EL
+  CLIENTE y/o terceros con ocasión a eventos de mala práctica médica, violación
+  de la Política Nacional de Seguridad de PACIENTES, deficiente calidad en la
+  prestación de los servicios en salud ofertados por EL CLIENTE, y en general,
+  sobre todos los actos de carácter clínico ejecutados durante la consulta
+  efectuada por el personal médico.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS.</b> EL CLIENTE declara cumplir a cabalidad los estándares
+  aplicables para la habilitación de la prestación de servicios en salud a
+  través de la modalidad de Telemedicina Interactiva, así como que garantiza la
+  formación continua de su talento humano en el manejo de la tecnología
+  utilizada, procesos, procedimientos y herramientas inherentes a la prestación
+  de su servicio.
+</p>
+
+<p>
+  <b
+    >CLÁUSULA 83 - OBLIGACIONES DE LA EMPRESA RESPECTO AL MODULO DE TELEMEDICINA
+    INTERACTIVA.</b
+  >
+  LA EMPRESA en calidad de proveedor de plataforma tecnológica, de conformidad a
+  lo señalado en la Resolución 2654 de 2019, sin perjuicio de las demás
+  señaladas en este instrumento, tendrá las siguientes obligaciones en la
+  prestación del Software como Servicio (S.a.S) y sobre los eventuales
+  desarrollos que efectuase sobre el Módulo: (a) garantizar la autenticidad,
+  integridad, disponibilidad y fiabilidad de los datos; (b) implementar dentro
+  de su ámbito las técnicas necesarias para evitar el riesgo de suplantación,
+  alteración, pérdida de confidencialidad y el acceso indebido, fraudulento o no
+  autorizado a LA PLATAFORMA, de conformidad a lo que para el efecto reglen las
+  Autoridades; (c) cumplir con los lineamientos de seguridad, privacidad y
+  protección de datos personales en el desarrollo y operación del Módulo de
+  Telemedicina Interactiva; (d) implementar criterios de seguridad del servicio
+  de intercambio de información, control de los permisos de acceso a LA
+  PLATAFORMA, certificados de seguridad, algoritmos de cifrado, y en general,
+  las medidas que garanticen la seguridad, privacidad y confidencialidad de la
+  información; (e) cumplir con los estándares de interoperabilidad que se
+  establezcan tanto en contenidos como en el intercambio electrónico de datos,
+  de acuerdo a la normatividad que regule la materia; y (f) garantizar la
+  recolección y posterior transmisión a EL CLIENTE de los datos que permitan la
+  verificación periódica del estado de salud de los afiliados, la trazabilidad y
+  la gestión individual de los riesgos en salud, de conformidad a lo estipulado
+  en el Decreto 780 de 2016 expedido por el Ministerio de Salud y Protección
+  Social, así como de las normas que lo sustituya, modifique o complemente.
+</p>
+
+<p>
+  <b>PARÁGRAFO UNO.</b> EL CLIENTE declara que ha verificado las condiciones de
+  seguridad, privacidad y confidencialidad de los datos susceptibles de
+  recolección, transmisión y tratamiento ofrecidos por LA PLATAFORMA, las cuales
+  considera aptas, suficientes y conformes a la Resolución 2654 de 2019 expedida
+  por el Ministerio de Salud y Protección Social.
+</p>
+
+<p>
+  <b>PARÁGRAFO DOS</b>. La estipulación contractual de las presentes
+  obligaciones a cargo de LA EMPRESA en la prestación del Software como Servicio
+  (S.a.S) tienen como propósito la satisfacción de los requerimientos técnicos
+  exigidos por el Ministerio de Salud y Protección Social para las plataformas o
+  software especializado a través del cual el Prestador de Referencia de
+  Telemedicina efectúe la prestación de servicios en salud a través de dicha
+  modalidad. En consecuencia, dichas obligaciones no podrán entenderse como la
+  subrogación total o parcial de LA EMPRESA en las obligaciones y
+  responsabilidad exclusiva frente a terceros que detenta EL CLIENTE en virtud
+  de lo estipulado en la Resolución 2654 de 2019 expedida por el Ministerio de
+  Salud y Protección Social, así como las asignadas en las normas que la
+  sustituya, modifique o complemente.
+</p>
+
+<p>
+  <b>CLÁUSULA 84 - DE LAS AUTORIZACIONES Y PRESCRIPCIÓN DE MEDICAMENTOS.</b>
+  EL CLIENTE y/o los USUARIOS MÉDICOS, en calidad de Prestador de Referencia de
+  servicios en salud bajo la modalidad de Telemedicina, asumirá de forma
+  exclusiva la responsabilidad sobre los perjuicios sufridos por EL CLIENTE y/o
+  terceras personas sobrevinientes de la prescripción de medicamentos y/o
+  autorizaciones de servicios en salud, los cuales deberán sujetarse a lo
+  estipulado en los Artículos 19° y 20 de la Resolución 2654 de 2019
+  respectivamente. LA EMPRESA, en calidad de proveedor tecnológico ajeno al acto
+  médico, estará exento de toda responsabilidad que pudiese generarse con
+  ocasión a la prescripción de medicamentos y autorización de servicios.
+</p>
+
+<h3 style="text-align: center">
+  <b>
+    ANEXO DE CONDICIONES ESPECÍFICAS
+    <br />
+    CONTRATO DE LICENCIAMIENTO PARA EL USO NO EXCLUSIVO DEL SOFTWARE ‘HIMED’
+  </b>
+</h3>
+
+<table class="table_class">
+  <tr>
+    <th colspan="2"><b>1. IDENTIFICACIÓN DEL CLIENTE</b></th>
+  </tr>
+  <tr>
+    <td><b>1.1 NOMBRE</b></td>
+    <td><b name="nombre_cliente">___________________</b></td>
+  </tr>
+  <tr>
+    <td><b>1.2 ID</b></td>
+    <td><b name="cc_cliente">___________________</b></td>
+  </tr>
+  <tr>
+    <td><b>1.3 CORREO ELECTRÓNICO</b></td>
+    <td><b name="correo_cliente">___________________</b></td>
+  </tr>
+  <tr>
+    <td><b>1.4 TELÉFONO</b></td>
+    <td><b name="tel_cliente">___________________</b></td>
+  </tr>
+  <tr>
+    <th colspan="2"><b>2. ASPECTOS CONTRACTUALES</b></th>
+  </tr>
+  <tr>
+    <td>
+      <b>2.1 TÉRMINO DEL PERIODO DE LICENCIAMIENTO INICIAL Y SUCESIVOS</b>
+    </td>
+    <td>
+      Los Periodos de Licenciamiento Inicial tendrá un término de
+      <b>12 meses</b>, el cual iniciará su contabilización desde el
+      <b name="fecha_inicio_contrato">___________________</b>. Los Periodos de
+      Licenciamiento sucesivos se contabilizarán por términos iguales, contados
+      a partir del día siguiente al vencimiento del periodo inmediatamente
+      anterior.
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <b>2.2 PERIODO DE FACTURACIÓN</b>
+    </td>
+    <td>
+      <span name="periodo_facturacion">
+        _________________________________________________________
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <th colspan="2"><b>2. ASPECTOS TÉCNICOS</b></th>
+  </tr>
+  <tr>
+    <td><b>3.1 MODALIDAD DE INGRESO A LA PLATAFORMA</b></td>
+    <td>
+      Ingreso a la plataforma por:
+      <b name="medio_ingreso_plataforma">___________________</b>
+      <br />
+      Número de usuarios: <b name="num_usuarios">___________________</b>
+    </td>
+  </tr>
+  <tr>
+    <td><b>3.2. RECURSOS INFORMÁTICOS ASIGNADOS A LA LICENCIA</b></td>
+    <td>
+      Almacenamiento ilimitado de registros en la historia clínica. Base de
+      datos independiente en infraestructura compartida.
+    </td>
+  </tr>
+  <tr>
+    <td><b>3.3. CUOTA DE ALMACENAMIENTO ASIGNADA A LA LICENCIA</b></td>
+    <td>3GB de almacenamiento en archivo e imágenes por usuario gratis.</td>
+  </tr>
+  <tr>
+    <th colspan="2"><b>4. SERVICIOS ADICIONALES</b></th>
+  </tr>
+  <tr>
+    <td><b>4.1 MIGRACIÓN DE DATOS</b></td>
+    <td><b name="migracion_datos">___________________</b></td>
+  </tr>
+  <tr>
+    <td><b>4.2 SERVICIOS Y FUNCIONALIDADES EXTRA ADQUIRIDOS</b></td>
+    <td><b name="servicios_extra">___________________</b></td>
+  </tr>
+</table>
+<table class="table_class">
+  <tr>
+    <th colspan="3"><b>5. MODULOS QUE INTEGRAN LA LICENCIA</b></th>
+  </tr>
+  <tr>
+    <td style="text-align: center"><b>MÓDULO</b></td>
+    <td style="text-align: center"><b>INCLUSIÓN</b></td>
+    <td style="text-align: center"><b>REQUISITOS TÉCNICOS MÍNIMOS</b></td>
+  </tr>
+  <tr>
+    <td>5.1 MÓDULO HISTORIA CLÍNICA</td>
+    <td>SI</td>
+    <td rowspan="3">
+      <ul>
+        <li>
+          Equipo de cómputo con sistema operativo Windows a partir de Windows
+          10, MAC o Linux.
+        </li>
+        <li>Memoria RAM Mínimo 4Gb o superior.</li>
+        <li>Procesador Mínimo Core i5 o superior.</li>
+        <li>Teclado, mouse de cualquier especificación.</li>
+        <li>
+          <b>Conexión a internet:</b> entre dos (2) y cuatro (4) usuarios se
+          requerirá una conexión igual o superior a 15 Mb.
+        </li>
+        <li>
+          Entre cinco (5) y quince (15) usuarios se requerirá una conexión igual
+          o superior a 25 Mb.
+        </li>
+        <li>
+          Para más de quince (15) usuarios se requerirá mínimo cincuenta (50)
+          Mb.
+        </li>
+        <li>
+          <b>Navegador:</b> Google Chrome (Recomendado) o Mozilla Firefox, o
+          Safari (MAC).
+        </li>
+      </ul>
+    </td>
+  </tr>
+  <tr>
+    <td>5.2 MÓDULO AGENDA</td>
+    <td>SI</td>
+  </tr>
+  <tr>
+    <td>5.3 MÓDULO FACTURACIÓN POR COMPUTADOR</td>
+    <td>SI</td>
+  </tr>
+  <tr>
+    <td>5.4. MODULO FACTURACIÓN ELECTRÓNICA</td>
+    <td><span name="incluye_fact_electr">___________________</span></td>
+    <td>
+      <em>
+        Firma digital vigente, resolución vigente. Paquete de documentos
+        activos.
+      </em>
+    </td>
+  </tr>
+  <tr>
+    <td>5.5. MODULO PORTAL PACIENTES</td>
+    <td><span name="incluye_portal_pacientes">___________________</span></td>
+    <td>
+      <em>
+        Para el paciente equipo de cómputo con cámara y micrófono o Diadema con
+        acceso a internet.
+      </em>
+    </td>
+  </tr>
+  <tr>
+    <td>5.6. MODULO TELEMEDICINA INTERACTIVA</td>
+    <td>SI</td>
+    <td>
+      <ul>
+        <li>
+          Equipo de cómputo con cámara y micrófono o Diadema, con sistema
+          operativo Windows a partir de Windows 10, MAC o Linux.
+        </li>
+        <li>Memoria RAM Mínimo 4Gb o superior.</li>
+        <li>Procesador Mínimo Core i5 o superior.</li>
+        <li>Teclado, mouse de cualquier especificación.</li>
+        <li>
+          Conexión a internet: entre dos (2) y cuatro (4) usuarios se requerirá
+          una conexión igual o superior a 15 Mb.
+        </li>
+        <li>
+          Entre cinco (5) y quince (15) usuarios se requerirá una conexión igual
+          o superior a 25 Mb.
+        </li>
+        <li>
+          Para más de quince (15) usuarios se requerirá mínimo cincuenta (50)
+          Mb.
+        </li>
+        <li>
+          Navegador: Google Chrome (Recomendado) o Mozilla Firefox, o Safari
+          (MAC).
+        </li>
+      </ul>
+    </td>
+  </tr>
+</table>
+
+<p>
+  En señal de conformidad las partes suscriben el presente contrato en dos
+  ejemplares del mismo valor y tenor en el municipio de Medellín – Antioquia, el
+  <span name="fecha_firma">___________________</span>
+</p>
+
+<br />
+<br />
+<br />
+
+<p>
+  <b>EL CLIENTE</b>
+  <br />
+  <br />
+  <br />
+  _________________________________________________________
+  <br />
+  <span name="nombre_cliente">___________________</span>
+  <br />
+  C.C <span name="cc_cliente">___________________</span>
+  <span name="tipo_persona_cliente_j" hidden>
+    <br />
+    Representante Legal <br />
+    <span name="nombre_sociedad">___________________</span> <br />
+    NIT. <span name="nit_sociedad">___________________</span>
+  </span>
+</p>
+
+<br />
+<br />
+<br />
+
+<p>
+  <b>LA EMPRESA</b>
+  <br />
+  <br />
+  <br />
+  _________________________________________________________
+  <br />
+  CARLOS EDUARDO MESA CANO <br />
+  C.C. 71.657.211 <br />
+  Representante Legal HIMED SOLUTIONS S.A.S. <br />
+  NIT. 900.150.913-7
+</p>
+
+<div style="page-break-after: always"></div>
+
+<h2 style="text-align: center">
+  <b>
+    CONTRATO DE TRANSMISIÓN PARA EL TRATAMIENTO DE DATOS PERSONALES CON OCASIÓN
+    A LICENCIAMIENTO DE USO DE SOFTWARE
+  </b>
+</h2>
+
+<p>Entre los suscritos a saber:</p>
+
+<h3 style="text-align: center">
+  <b>I. PARTES</b>
+</h3>
+
+<ol>
+  <li>
+    <span name="tipo_persona_cliente_j" hidden>
+      <span name="nombre_sociedad">___________________</span> Sociedad comercial
+      identificada con NIT.
+      <span name="nit_sociedad">___________________</span>, representada
+      legalmente por
+    </span>
+    <span name="nombre_cliente">___________________</span>, identificado (a) con
+    cédula de ciudadanía número
+    <span name="cc_cliente">___________________</span>, quien para todos los
+    efectos legales se denominará EL CLIENTE – EL RESPONSABLE
+  </li>
+  <li>
+    HIMED SOLUTIONS S.A.S., sociedad comercial identificada con NIT.
+    900.150.913-7, representada legalmente por el señor Carlos Eduardo Mesa
+    Cano, identificado con la cédula de ciudadanía número 71.657.211, quien para
+    todos los efectos legales se denominará LA EMPRESA – EL ENCARGADO
+  </li>
+</ol>
+
+<p>
+  Para efectos del presente Contrato serán denominados como las “Partes”, o
+  individualmente cada uno y cuando proceda, como la “Parte”.
+</p>
+
+<p>
+  Las Partes, en la calidad en que intervienen, aseguran tener la capacidad
+  legal necesaria para obligarse en los términos del presente Contrato previas
+  las siguientes:
+</p>
+
+<h3 style="text-align: center">
+  <b>II. DEFINICIONES</b>
+</h3>
+
+<ol>
+  <li>
+    <b>EL CLIENTE o EL RESPONSABLE.</b> Corresponde a la parte denominada
+    CLIENTE en el CONTRATO MARCO, y en particular a quien, en virtud de la
+    Licencia para el Uso del Software, trasfiere datos personales de terceros
+    para su conservación en una base de datos en la nube;
+  </li>
+  <li>
+    <b>LA EMPRESA o EL ENCARGADO.</b> Debe entenderse como la Sociedad comercial
+    HIMED SOLUTIONS S.A.S., quien, en su calidad de proveedor tecnológico,
+    recibe datos personales de terceras personas;
+  </li>
+  <li>
+    <b>USUARIOS.</b> Son las personas que, en virtud de la relación con EL
+    CLIENTE, están autorizadas por éste para la utilización de la Licencia de
+    Uso otorgada por LA EMPRESA
+  </li>
+  <li>
+    <b>LA PLATAFORMA o HIMED.</b> Corresponde al programa informático de
+    computación en la nube bajo el modelo de Software como Servicio (SaaS)
+    desarrollado por la sociedad comercial HIMED SOLUTIONS S.A.S. y cuya
+    licencia de uso ha sido adquirida por el CLIENTE;
+  </li>
+  <li>
+    <b>CONTRATO MARCO.</b> Es el Contrato de Licenciamiento para el uso de la
+    Plataforma HIMED celebrado entre EL CLIENTE y LA EMPRESA, el cual regula el
+    negocio jurídico que da origen a la transmisión de datos personales de
+    terceras personas;
+  </li>
+  <li>
+    <b>COMPUTACIÓN EN LA NUBE.</b> Es un modelo que permite el acceso
+    conveniente, y por demanda de un conjunto compartido de recursos
+    computaciones configurables, como, por ejemplo: redes, servidores,
+    almacenamiento, aplicaciones y servicios;
+  </li>
+  <li>
+    <b>BASE DE DATOS EN LA NUBE</b>. Es un servicio de base de datos creado y
+    accedido por medio de una plataforma en la nube, por la cual se posibilita
+    acceder a una colección de contenido, estructurado o no estructurado, a
+    través de internet;
+  </li>
+  <li>
+    <b>SOFTWARE COMO SERVICIO (SaaS).</b> es un derivado de la computación en la
+    nube que permite la prestación de software en el cual el proveedor de nube
+    desarrolla y mantiene un software de aplicaciones de nube, proporciona
+    actualizaciones de software automáticas y hace que el software sea accesible
+    para los clientes a través de internet.
+  </li>
+</ol>
+
+<h3 style="text-align: center">
+  <b>III. CONSIDERACIONES Y ANTECEDENTES</b>
+</h3>
+
+<p>
+  La Plataforma HIMED desarrollada y comercializada por HIMED SOLUTIONS S.A.S.
+  es un programa informático que se sirve de la computación en la nube para
+  ofrecer un producto con las características técnicas del Software como
+  Servicio (SaaS), el cual para su operación hace uso de una base de datos en la
+  nube. En consecuencia, HIMED SOLUTIONS S.A.S., en su condición de proveedor en
+  la nube, es destinatario de la transmisión en diferido de datos personales
+  recaudados y consignados por los USUARIOS autorizados por EL CLIENTE para
+  hacer uso de la licencia y funcionalidades adquiridas por éste. En atención a
+  ello, en el tratamiento de datos personales que realice HIMED SOLUTIONS
+  S.A.S., éste se obliga a limitarse a las actividades estrictamente necesarias
+  para la prestación del Software como Servicio (SaaS) a EL CLIENTE, sin que por
+  ello se traslade o se entienda la subrogación de LA EMPRESA en la calidad y
+  obligaciones de Custodia sobre Historias Clínicas que le conciernen
+  exclusivamente a EL CLIENTE como prestador de servicios de salud, en los
+  términos de la Resolución 1995 de 1999 del Ministerio de Salud y Protección
+  Social, así como de las normas que la complementen, modifiquen o sustituyan.
+</p>
+
+<p>
+  Salvo que medie mandato legal, orden de Autoridad Competente o procesos de
+  validación previamente pactados con EL CLIENTE, HIMED SOLUTIONS S.A.S. no
+  alterará ni modificará, directa o indirectamente, los datos y registros
+  consignados en la base de datos de la plataforma desde las cuentas de
+  USUARIOS. En aceptación de ello, EL CLIENTE declara que es atribuible a él
+  todo dato inexacto, incompleto, erróneo, equívoco o falso que se incorpore a
+  los registros almacenados en la base de datos de la aplicación, así como los
+  efectos de la ejecución de comandos de guardar, modificar y/o suprimir sobre
+  registros de esta.
+</p>
+
+<p>
+  En atención a las anteriores definiciones, consideraciones y antecedentes que
+  hacen parte del Contrato y son su causa, las Partes han decidido obligarse
+  además por las cláusulas contractuales que pasan a indicarse:
+</p>
+
+<h3 style="text-align: center">
+  <b>IV. CLÁUSULAS CONTRACTUALES</b>
+</h3>
+
+<p>
+  <b>CLÁUSULA PRIMERA. OBJETO.</b> El presente contrato tiene por objeto regular
+  las condiciones sobre la transmisión de datos personales que realice EL
+  CLIENTE en calidad de responsable de datos personales, y hacia LA EMPRESA en
+  el marco del Contrato de Licenciamiento para el Uso de la Solución Informática
+  HiMed, así como el tratamiento que esta última debe darles a dichos datos
+  personales en calidad de encargado.
+</p>
+
+<p>
+  <b
+    >PARÁGRAFO PRIMERO. ALCANCE DEL OBJETO – FINALIDAD DE LA TRANSMISIÓN Y DEL
+    TRATAMIENTO.</b
+  >
+  La información consignada en las bases de datos del Software HIMED podrá
+  utilizarse por parte de LA EMPRESA exclusivamente para garantizar el correcto
+  funcionamiento y ejecución de los comandos efectuados por los USUARIOS en el
+  uso de LA PLATAFORMA, de conformidad a las funcionalidades propias de cada
+  módulo y a los términos fijados en las licencias adquiridas por el CLIENTE en
+  el Contrato de Licenciamiento para el Uso de la Solución Informática HiMed.
+</p>
+
+<p>
+  El uso de los datos consignados en las bases de datos del Software HIMED se
+  realizará mientras se mantenga vigente el CONTRATO MARCO suscrito entre las
+  partes, sin perjuicio de los tiempos de conservación de la información
+  descritos en el CONTRATO MARCO y la ley. En ningún caso el uso de los datos
+  comprenderá la cesión sobre los derechos de propiedad de la información
+  consignada en las bases de datos de LA PLATAFORMA.
+</p>
+
+<p>
+  <b>PARÁGRAFO SEGUNDO. CONDICIONES DE USO DE LOS DATOS.</b> Con el propósito de
+  garantizar la operatividad de LA PLATAFORMA, la transmisión de datos
+  personales recaudados por EL RESPONSABLE y el tratamiento del ENCARGADO
+  alcanzará todos los campos de la base de datos, incluyendo todos los datos o
+  archivos electrónicos que sean necesarios para la correcta utilización y
+  tratamiento de la base de datos.
+</p>
+
+<p>
+  EL ENCARGADO no podrá utilizar la información personal de contacto de
+  terceros, proveída por estos al RESPONSABLE con ocasión a su actividad
+  comercial, para adelantar campañas publicitarias y/o actividades de marketing
+  en favor propio o de terceros. EL ENCARGADO no podrá efectuar y guardar para
+  sí copias de la base de datos que contenga la información consignada por EL
+  RESPONSABLE, salvo los respaldos o Back-Up que deban efectuarse en virtud del
+  CONTRATO MARCO o por adquisición de este servicio por parte de EL RESPONSABLE.
+  El ENCARGADO entiende que los datos personales transmitidos por EL RESPONSABLE
+  podrán ser tratados exclusivamente para las finalidades indicadas en este
+  contrato y con sujeción a las condiciones detalladas en el mismo.
+</p>
+
+<p>
+  <b>CLÁUSULA SEGUNDA. OBLIGACIONES DEL ENCARGADO.</b> Sin perjuicio de las
+  obligaciones asignadas por la Ley 1581 de 2012, son obligaciones del ENCARGADO
+  del tratamiento de datos personales transmitidos en virtud del presente
+  contrato:
+</p>
+
+<ol>
+  <li>
+    Garantizar que el tratamiento de los datos personales transmitidos por EL
+    RESPONSABLE se adelante teniendo en cuenta niveles buenos de seguridad,
+    protección y confidencialidad, en cumplimiento de la normatividad en materia
+    de protección de datos personales y en materia de información de carácter
+    clínico; y la Política de Tratamiento de Datos Personales adoptada por EL
+    RESPONSABLE.
+  </li>
+  <li>
+    Notificar al RESPONSABLE sobre los requerimientos que reciba de parte de las
+    Autoridades Competentes, cuando ellos impliquen la divulgación de datos
+    personales;
+  </li>
+  <li>
+    Atender las solicitudes que le formule EL RESPONSABLE con relación al
+    tratamiento de datos personales transferidos en virtud de la presente
+    convención;
+  </li>
+  <li>
+    Cumplir con las recomendaciones, instrucciones y ordenes impartidas por la
+    Autoridad de Protección de Datos, en cumplimiento con el régimen normativo
+    aplicable en materia de Protección de Datos Personales, y en particular,
+    sobre las actividades de tratamiento de datos personales;
+  </li>
+  <li>
+    Por cuenta de EL RESPONSABLE, dar tratamiento a los Datos Personales,
+    limitando este a las actividades indispensables para garantizar el correcto
+    funcionamiento, procesamiento y ejecución de los comandos efectuados por los
+    USUARIOS en el uso de LA PLATAFORMA, de conformidad a las funcionalidades
+    propias de cada módulo y a los términos fijados en las licencias adquiridas
+    por el CLIENTE;
+  </li>
+  <li>
+    Adoptar las medidas administrativas y técnicas conducentes a impedir la
+    adulteración, modificación, supresión de los datos y registros consignados
+    por los USUARIOS en la base de datos de LA PLATAFORMA, por parte de los
+    colaboradores del ENCARGADO y/o terceros no autorizados expresamente para
+    ello por parte de EL CLIENTE;
+  </li>
+  <li>
+    Implementar cláusulas de confidencialidad en los contratos de trabajo de los
+    colaboradores que, debido a su relación con el ENCARGADO, puedan tener
+    acceso y que tengan o puedan tener conocimiento y/o acceso a los datos
+    consignados en la base de datos de LA PLATAFORMA. Esta cláusula se extenderá
+    inclusive después de finalizada la relación contractual entre el colaborador
+    y el ENCARGADO;
+  </li>
+  <li>
+    Informar a EL CLIENTE y a la Superintendencia de Industria y Comercio cuando
+    se presenten violaciones a las medidas de seguridad y existan riesgos en la
+    administración de la información de los Titulares;
+  </li>
+</ol>
+
+<p>
+  <b>PARÁGRAFO.</b> El aviso al que alude el numeral dos de la presente cláusula
+  deberá darse con una anticipación razonable (con no menos de 6 días
+  calendario), de forma que permita al RESPONSABLE adoptar las medidas legales
+  que considere oportunas o necesarias. EL ENCARGADO no estará obligado a avisar
+  al RESPONSABLE cuando las leyes aplicables le impidan hacerlo.
+</p>
+
+<p>
+  <b>CLÁUSULA TERCERA. OBLIGACIONES DEL RESPONSABLE.</b> Sin perjuicio de las
+  obligaciones asignadas por la Ley 1581 DE 2012, son obligaciones del ENCARGADO
+  del tratamiento de datos personales transmitidos en virtud del presente
+  contrato:
+</p>
+
+<ol>
+  <li>
+    Garantizar que el tratamiento de los datos personales a transmitir al
+    ENCARGADO se adelante teniendo en cuenta niveles buenos de seguridad,
+    protección y confidencialidad, en cumplimiento de la normatividad en materia
+    de protección de datos personales y en materia de información de carácter
+    clínico; y la Política de Tratamiento de Datos Personales adoptada por EL
+    RESPONSABLE;
+  </li>
+  <li>
+    Notificar al ENCARGADO acerca de cualquier cambio en la normatividad que EL
+    RESPONSABLE considere que puede afectar el Tratamiento de Datos Personales
+    efectuado por el ENCARGADO;
+  </li>
+  <li>
+    Atender de forma oportuna y apropiada las solicitudes que le formule EL
+    ENCARGADO con relación al tratamiento de datos personales transferidos en
+    virtud de la presente convención;
+  </li>
+  <li>
+    Solicitar y conservar prueba de la Autorización de los TITULARES para
+    adelantar el tratamiento de sus datos personales, informándoles a éstos las
+    finalidades del tratamiento adelantado por EL RESPONSABLE y EL ENCARGADO;
+  </li>
+  <li>
+    Garantizar que la información que se le suministre a EL ENCARGADO de los
+    Datos Personales sea conforme con la información que suministren los
+    Titulares;
+  </li>
+  <li>
+    Implementar las medidas técnicas y administrativas tendientes a mantener la
+    confidencialidad y reserva de las credenciales de acceso a las cuentas de
+    USUARIO con las cuales el cliente hace uso de la licencia por él adquirida;
+  </li>
+</ol>
+
+<p>
+  <b>CLÁUSULA CUARTA. PROPIEDAD DE LA INFORMACIÓN.</b> EL CLIENTE, en calidad de
+  RESPONSABLE del tratamiento de los datos personales captados en el ejercicio
+  de su actividad comercial, es propietario exclusivo de la información que se
+  encuentra depositada en la base de datos de LA PLATAFORMA y con la cual se
+  alimenta el sistema, por lo cual, asumirá todo tipo de responsabilidad que se
+  pueda derivar en virtud de cualesquier reclamación, demanda, acción o
+  actuación administrativa, judicial, de carácter civil, penal, o de cualquier
+  otra naturaleza presentada o instaurada por terceros que tengan como origen o
+  hecho generador la forma como sea obtenida dicha información, la pérdida de
+  datos, veracidad o seriedad de los datos, el contenido que se incluya en el
+  software, el uso dado a la Información, divulgaciones no autorizadas, venta,
+  distribución o comunicación de la Información con fines investigativos o
+  científicos y en general, por cualquier manejo inadecuado que le sea dado a la
+  información que se deposite o se encuentre depositada en LA PLATAFORMA.
+  También serán responsabilidad de EL RESPONSABLE los efectos de todas las
+  eventualidades que puedan injerir o alterar el proceso de construcción del
+  dato.
+</p>
+
+<p>
+  <b>CLÁUSULA QUINTA. GARANTÍA SOBRE LA INFORMACIÓN.</b> EL RESPONSABLE declara
+  y garantiza al ENCARGADO que los datos consignados por sus USUARIOS en la base
+  de datos de LA PLATAFORMA, y en particular los datos fuente para la generación
+  de Documento de Historia Clínica, han sido obtenidos de forma y con causa
+  lícita, con observancia de la normatividad vigente aplicable, especialmente
+  las disposiciones contenidas en la Ley 1581 de 2012, el Decreto Reglamentario
+  1377 de 2013, la Resolución 1995 de 1999 y las normas que las modifiquen,
+  adicionen o sustituyan.
+</p>
+
+<p>
+  <b>CLÁUSULA SEXTA. INDEMNIDAD.</b> Cada parte responderá y eximirá de
+  responsabilidad a la otra parte en caso de que, con alguna de sus actuaciones,
+  contraríe este documento o realice un tratamiento de los datos personales
+  incumpliendo la presente convención y/o la normativa aplicable en materia de
+  protección de datos personales. Las partes se mantendrán indemnes una a la
+  otra, según corresponda, por todo reclamo o investigación que en su contra
+  reciba con ocasión a la omisión u extralimitación en el ejercicio de sus
+  funciones derivadas de las obligaciones propias que cada parte haya adquirido
+  en virtud de la celebración del presente contrato.
+</p>
+
+<p>
+  <b>CLÁUSULA SÉPTIMA. EXTINCIÓN DE LA AUTORIZACIÓN PARA EL TRATAMIENTO.</b> La
+  transmisión de datos y la autorización concedida por EL RESPONSABLE para
+  efectuar el tratamiento en su nombre y por parte del ENCARGADO se extinguirá
+  por las siguientes causales:
+</p>
+
+<ol>
+  <li>
+    Por el incumplimiento de cualesquiera de las partes sobre las obligaciones
+    principales a su cargo y descritas del presente contrato;
+  </li>
+  <li>
+    Por la terminación del CONTRATO MARCO o por la suspensión o terminación de
+    la prestación de servicios de LA PLATAFORMA HIMED;
+  </li>
+  <li>
+    Por ser declarada cualquiera de las partes en estado de insolvencia,
+    concurso de acreedores y/o fuese demostrada una situación de insolvencia o
+    cese de actividades, o cuando se iniciase el proceso de liquidación o
+    disolución de la parte;
+  </li>
+  <li>
+    Por el fallecimiento o inhabilitación del RESPONSABLE, cuando éste sea una
+    persona natural; y
+  </li>
+  <li>Por las demás causas previstas en el ordenamiento jurídico.</li>
+</ol>
+
+<p>
+  <b>CLÁUSULA OCTAVA. DISPOSICIONES EN CASO DE TERMINACIÓN.</b> Una vez EL
+  CONTRATO MARCO sea terminado por cualquiera de las causales contenidas en
+  dicho instrumento, la información será conservada por EL ENCARGADO detendrá de
+  forma inmediata el tratamiento de datos personales transmitidos por EL
+  RESPONSABLE y conservará la información consignada en la base de datos de LA
+  PLATAFORMA por el término de un (1) mes calendario contado a partir del día
+  siguiente al cual operó la causal de terminación. EL ENCARGADO, dentro de este
+  término, procederá a la entrega de la totalidad de la información depositada
+  por EL RESPONSABLE en la base de datos de LA PLATAFORMA en formatos los ´txt´,
+  ´xlxs´, ´cvs´ y/o ´xls´, a elección de éste. Vencido el término descrito en
+  esta cláusula, EL ENCARGADO podrá eliminar los datos sin incurrir en ningún
+  tipo de responsabilidad de su parte.
+</p>
+
+<p>
+  <b>PARÁGRAFO PRIMERO.</b> Previo pago de la tarifa que para el efecto señale
+  LA EMPRESA, el CLIENTE, previo o concomitante a la terminación del contrato,
+  podrá solicitar a LA EMPRESA la emisión de la información almacenada en la
+  base de datos de LA PLATAFORMA en un formato y/o estructura diferente a los
+  formatos ´txt´, ´xlxs´, ´cvs´ y/o ´xls´. La emisión de la información en
+  formato diferente estará condicionada a la capacidad tecnológica de LA
+  EMPRESA.
+</p>
+
+<p>
+  <b>PARÁGRAFO SEGUNDO.</b> Previo pago de la tarifa que para el efecto señale
+  LA EMPRESA, EL CLIENTE podrá adquirir el servicio de almacenamiento y custodia
+  de información ofrecido por LA EMPRESA. Los datos almacenados temporalmente se
+  eliminarán una vez cumplan el término por el cual fue adquirido el referido
+  servicio.
+</p>
+
+<p>
+  <b>CLÁUSULA NOVENA. DE LA PROTECCIÓN DE DATOS PERSONALES.</b> Les asiste a LAS
+  PARTES el deber de garantizar la confidencialidad, libertad, seguridad,
+  veracidad, transparencia, acceso y circulación restringida de los datos. LAS
+  PARTES se reservan el derecho de modificar su Política de Tratamiento de Datos
+  Personales en cualquier momento, circunstancia que será informada y publicada
+  oportunamente.
+</p>
+
+<p>
+  <b>PARÁGRAFO.</b> EL CLIENTE se obliga a obtener las autorizaciones necesarias
+  y suficientes para el manejo de los datos personales conforme al objeto del
+  presente contrato, ante lo cual, suscribirá con el Usuario o pacientes y demás
+  personas que se puedan ver afectadas directa o indirectamente las
+  autorizaciones o permisos requeridos, para el uso, manejo o almacenamiento de
+  Información privada, semiprivada o sensible directa o indirectamente.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA. VIGENCIA Y DURACIÓN DE LA ENCARGATURA.</b> La vigencia del
+  presente contrato iniciará desde la fecha de su firma. La transmisión de datos
+  personales por parte de EL RESPONSABLE y el tratamiento de éstos por parte del
+  ENCARGADO tendrá la misma duración que la del CONTRATO MARCO.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA PRIMERA. DE LAS CONSULTAS.</b> Las consultas, peticiones y
+  reclamos presentadas por los titulares de los datos personales captados por EL
+  RESPONSABLE, deberán tener respuesta en los términos de ley y estarán a cargo
+  del RESPONSABLE.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA SEGUNDA. LEGISLACIÓN APLICABLE.</b> El presente contrato se
+  regirá e interpretará de acuerdo con lo que establece la legislación
+  colombiana.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA TERCERA. CESIÓN.</b> Ninguna de las Partes podrá ceder este
+  Contrato o cualquiera de los derechos u obligaciones contenidos en el mismo a
+  un tercero sin el previo consentimiento escrito de la otra Parte.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA CUARTA. CONSENTIMIENTO Y APROBACIONES.</b> EL RESPONSABLE
+  ha obtenido todas las autorizaciones, consentimientos o aprobaciones de
+  cualquier persona (o titular de datos personales), y ha realizado todas las
+  notificaciones, que resulten necesarias para la celebración del presente
+  contrato.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA QUINTA. DIVISIBILIDAD.</b> Si cualquier disposición del
+  presente contrato fuera o llegare a ser declarada inválida o ineficaz, las
+  otras disposiciones del presente contrato mantendrán su plena eficacia y
+  validez. La disposición que se considerada o declarada inválida o ineficaz
+  será modificada por las partes de tal manera que se ajuste a la ley aplicable
+  y a las intenciones de las partes.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA SEXTA. CONFIDENCIALIDAD.</b> Las partes reconocen la
+  naturaleza confidencial de las operaciones descritas en este Contrato y en los
+  documentos de perfeccionamiento del mismo, y no podrán ser vendidas,
+  negociadas, publicadas o reveladas a ninguna persona física o moral, salvo que
+  tal divulgación sea requerida en el contexto de un proceso legal, por decreto
+  u orden gubernamental u orden judicial que resulte vinculante para la parte
+  obligada a proporcionar la información. En este caso, la parte mencionada
+  deberá notificar inmediatamente a la otra parte dicho requerimiento, de forma
+  tal que la parte informante pueda solicitar su amparo, orden judicial o
+  cualquier otro remedio legal disponible y/u otorgue consentimiento al
+  incumplimiento de las cláusulas de este Contrato. En la eventualidad que dicha
+  orden protectora u otro remedio legal no sea obtenido, o que la parte
+  informante no otorgue su consentimiento relacionado a las cláusulas de este
+  Contrato en cuanto a la divulgación de la información, la parte recipiente o
+  su representante debe producir únicamente la porción de la información que se
+  recomiende mediante una opinión legal requerida y deberá realizar sus mejores
+  esfuerzos en obtener seguridad confiable en que se le dará a la información un
+  tratamiento confidencial en su uso.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA SÉPTIMA. INTERPRETACIÓN Y AVISOS.</b> Los subtítulos,
+  encabezamientos y distribución de las materias en las diferentes acciones de
+  este contrato, se utilizan como mera referencia, y en manera alguna definen o
+  limitan el alcance o intención de las partes respecto a materias contenidas en
+  cada una de ellos, debiendo interpretarse el presente contrato en su
+  integridad y debiendo ejecutarse el mismo de buena fe, obligando a LAS PARTES,
+  no sólo a lo que se expresan, sino que todo aquello que por la ley o la
+  costumbre se entiende pertenecer a un contrato de esta naturaleza.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA OCTAVA. CONSENTIMIENTO MUTUO.</b> Las Partes declaran y
+  aceptan que todas las estipulaciones de este Contrato han sido ampliamente
+  discutidas y negociadas, y que ninguna de las Partes ha impuesto a la otra los
+  términos y condiciones aquí contempladas. Cada uno de las Partes acepta
+  voluntariamente firmar este Contrato.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA NOVENA. NOTIFICACIONES.</b> Todos los avisos, documentos y
+  demás comunicaciones que conforme al presente Contrato se requieran, deberán
+  ser realizados por escrito, en español, y tendrán que ser entregados
+  personalmente o enviados por servicio de mensajería especializada o correo
+  certificado o por correo electrónico y deberán ser enviados a:
+</p>
+
+<table class="table_class">
+  <tr>
+    <td style="text-align: center">El CLIENTE - EL RESPONSABLE</td>
+    <td style="text-align: center">LA EMPRESA - EL ENCARGADO</td>
+  </tr>
+  <tr>
+    <td>
+      Atención:
+      <span name="tipo_persona_cliente_n">
+        <span name="nombre_cliente">___________________</span>
+      </span>
+      <span name="tipo_persona_cliente_j" hidden>
+        <span name="nombre_sociedad">___________________</span>
+      </span>
+    </td>
+    <td>Atención: Atención: HiMed Solutions S.A.S.</td>
+  </tr>
+  <tr>
+    <td>
+      Dirección:
+      <span name="tipo_persona_cliente_n">
+        <span name="direccion_cliente">___________________</span>
+      </span>
+      <span name="tipo_persona_cliente_j" hidden>
+        <span name="direccion_sociedad">___________________</span>
+      </span>
+    </td>
+    <td>
+      Dirección: Calle 11B # 43A – 27, Edificio Los Cedros, torre 1, oficina
+      305, Medellín.
+    </td>
+  </tr>
+  <tr>
+    <td>Teléfono: <span name="tel_cliente">___________________</span></td>
+    <td>Teléfono: 6044243960</td>
+  </tr>
+  <tr>
+    <td>Email: <span name="correo_cliente">___________________</span></td>
+    <td>Email: ayudamed@himedsolutions.com</td>
+  </tr>
+</table>
+
+<p>
+  <b>CLÁUSULA VIGÉSIMA. DOMICILIO DE LAS PARTES.</b> Para todos los efectos del
+  cumplimiento de las obligaciones que se derivan del presente contrato, se
+  señala como domicilio la ciudad de Medellín.
+</p>
+
+<p>
+  El presente contrato se firma por las partes en el municipio de Medellín, el <span name="fecha_firma">___________________</span>
+</p>
+
+<br />
+<br />
+<br />
+
+<p>
+  <b>EL CLIENTE</b>
+  <br />
+  <br />
+  <br />
+  _________________________________________________________
+  <br />
+  <span name="nombre_cliente">___________________</span>
+  <br />
+  C.C <span name="cc_cliente">___________________</span>
+  <span name="tipo_persona_cliente_j" hidden>
+    <br />
+    Representante Legal <br />
+    <span name="nombre_sociedad">___________________</span> <br />
+    NIT. <span name="nit_sociedad">___________________</span>
+  </span>
+</p>
+
+<br />
+<br />
+<br />
+
+<p>
+  <b>LA EMPRESA</b>
+  <br />
+  <br />
+  <br />
+  _________________________________________________________
+  <br />
+  CARLOS EDUARDO MESA CANO <br />
+  C.C. 71.657.211 <br />
+  Representante Legal HIMED SOLUTIONS S.A.S. <br />
+  NIT. 900.150.913-7
+</p>
