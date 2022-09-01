@@ -7,6 +7,12 @@
             type: 'text'
         },
         {
+            name: 'anio_contrato',
+            description: 'Ingrese el año del contrato',
+            type: 'text',
+            help: 'derivado'
+        },
+        {
             name: 'nombre_emprendedor',
             description: 'Ingrese el nombre del emprendedor',
             type: 'name'
@@ -292,7 +298,8 @@
     name: 'CONTRATO DE COOPERACIÓN EMPRESARIAL V2',
     price: 5000,
     help: {
-        correo: 'ejemplo@dominio.com'
+        correo: 'ejemplo@dominio.com',
+        derivado: 'CO1_PCCNTR.3451677 de 2022'
     },
     company: ObjectId('614cc577580d130009ce2dd5'),
     preBuild: true,
@@ -310,5 +317,5 @@
         },
         noShowHeader: true
     },
-    build: 4
+    build: 7
 }

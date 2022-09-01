@@ -8,30 +8,30 @@
             options: [
                 {
                     name: 'Enero - Febrero',
-                    value: '2'
+                    value: 'ene-feb'
                 },
                 {
                     name: 'Marzo - Abril',
-                    value: '4'
+                    value: 'mar-abr'
                 },
                 {
                     name: 'Mayo - Junio',
-                    value: '6'
+                    value: 'may-jun'
                 },
                 {
                     name: 'Julio - Agosto',
-                    value: '8'
+                    value: 'jul-agos'
                 },
                 {
                     name: 'Septiembre - Octubre',
-                    value: '10'
+                    value: 'sept-oct'
                 },
                 {
                     name: 'Noviembre - Diciembre',
-                    value: '12'
+                    value: 'nov-dic'
                 }
             ],
-            value: '0'
+            value: 'ene-feb'
         },
         {
             name: 'dec_inic',
@@ -73,51 +73,8 @@
         },
         {
             name: 'año',
-            description: 'Seleccione el año actual',
-            type: 'select',
-            value:'38004',
-            options:[
-                {
-                    name:'2015',
-                    label:'2015',
-                    value:'28279'
-                },
-                {
-                    name:'2016',
-                    label:'2016',
-                    value:'29753'
-                },
-                {
-                    name:'2017',
-                    label:'2017',
-                    value:'31859'
-                },
-                {
-                    name:'2018',
-                    label:'2018',
-                    value:'33156'
-                },
-                {
-                    name:'2019',
-                    label:'2019',
-                    value:'34270'
-                },
-                {
-                    name:'2020',
-                    label:'2020',
-                    value:'35607'
-                },
-                {
-                    name:'2021',
-                    label:'2021',
-                    value:'36308'
-                },
-                {
-                    name:'2022',
-                    label:'2022',
-                    value:'38004'
-                }
-            ],
+            description: 'Ingrese el año',
+            type: 'text',
             prereq: [
                 {
                     k: 'dec_inic',
@@ -790,15 +747,6 @@
                 }
             ],
             type: 'sum'
-        },
-        {
-            name: 'meses_sancion_año_actual',
-            adding:[
-                {
-                    name: 'bimestre_declarado',
-                    fromOperation: false
-                },
-            ]
         }
     ],
     name: 'ALCALDIA DE BELLO',
@@ -811,7 +759,7 @@
             type: 'firma_rep'
         }
     ],
-    build: 16,
+    build: 18,
     price: 5000,
     preFill: [],
     preBuild: false,

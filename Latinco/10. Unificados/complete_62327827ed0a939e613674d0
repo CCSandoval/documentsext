@@ -54,6 +54,19 @@
     en constancia firmo y acepto su contenido el dia
     <span name="fecha_firma">___________________</span>,
   </p>
+  <br />
+  <br />
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_1" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
   <p>
     <span>CC. Hoja de Vida</span><br />
     <span
@@ -94,6 +107,19 @@
     constancia firmo y acepto su contenido el día
     <span name="fecha_firma">___________________</span>
   </p>
+  <br />
+  <br />
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_2" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -142,6 +168,19 @@
   <p>
     <b>Fecha: <b name="fecha_firma">___________________</b>.</b>
   </p>
+  <br />
+  <br />
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_3" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
   <br />
   <br />
   <br />
@@ -214,6 +253,19 @@
     <span name="autoriza_s" hidden> ___ </span>
     <u name="autoriza_n">&nbsp;X&nbsp;</u>
   </p>
+  <br />
+  <br />
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_4" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -387,6 +439,19 @@
     Para constancia se firma por las partes que intervienen, el dia
     <span name="fecha_firma">_______________</span>
   </p>
+  <br />
+  <br />
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_5" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
   <span><small>Copia: Hoja de vida.</small></span>
 </div>
 
@@ -516,6 +581,19 @@
     Recibí el documento Responsabilidades para la prevención de COVID 19, lo
     entendí y me comprometo a darle estricto cumplimiento.
   </p>
+  <br />
+  <br />
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_6" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -594,6 +672,19 @@
     Recibí el documento Funciones y Responsabilidades Ambientales, lo entendí y
     me comprometo a darle estricto cumplimiento.
   </p>
+  <br />
+  <br />
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_7" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -1087,6 +1178,19 @@
       </td>
     </tr>
   </table>
+  <br />
+  <br />
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_8" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -1232,11 +1336,15 @@
   </p>
   <br />
   <br />
-  <span>Firma:</span><br />
-  <div id="firma_trabajador"></div>
-  <span>C.C: <span name="cedula_trabajador">______________________</span></span
-  ><br />
-  <span
-    >Correo: <span name="correo_trabajador">______________________</span></span
-  >
+  <div>
+    <span>Firma:</span><br />
+    <div id="firma_trabajador_9" name="firma_trabajador"></div>
+    <span
+      >C.C: <span name="cedula_trabajador">______________________</span></span
+    ><br />
+    <span
+      >Correo:
+      <span name="correo_trabajador">______________________</span></span
+    >
+  </div>
 </div>
