@@ -2,9 +2,9 @@
     _id: ObjectId('628ea9ab51fc27d23d929157'),
     config: [
         {
-            name: 'num_acta',
-            type: 'number',
-            description: 'Ingrese el número de la presente acta de inscripcion de listas de candidatos'
+            name: 'lugar_envio',
+            type: 'text',
+            description: 'Ingrese el lugar en el que se realizó el envío'
         },
         {
             name: 'fecha_envio',
@@ -31,27 +31,6 @@
                     value: 's'
                 }
             ]
-        },
-        {
-            name: 'numero_lista',
-            type: 'text',
-            description: 'Ingrese el número de la lista'
-        },
-        {
-            name:'genero_candidato',
-            type:'clausula',
-            description:'Seleccione el género del candidato que inscribe la lista',
-            options:[
-                {
-                    name:'Masculino',
-                    value:'m'
-                },
-                {
-                    name:'Femenino',
-                    value:'f'
-                },
-            ],
-            value:'m'
         },
         {
             name: 'nombre_candidato',
@@ -257,145 +236,2317 @@
             description: 'Ingrese el número del consecutivo'
         },
         {
-            name: 'info_principal_1',
-            type: 'text',
-            description: 'Ingrese la información del primer candidato principal'
-        },
-        {
-            name: 'info_suplente_1',
-            type: 'text',
-            description: 'Ingrese la información del primer candidato suplente'
-        },
-        {
-            name: 'info_principal_2',
-            type: 'text',
-            description: 'Ingrese la información del segundo candidato principal'
-        },
-        {
-            name: 'info_suplente_2',
-            type: 'text',
-            description: 'Ingrese la información del segundo candidato suplente'
-        },
-        {
-            name: 'info_principal_3',
-            type: 'text',
-            description: 'Ingrese la información del tercer candidato principal'
-        },
-        {
-            name: 'info_suplente_3',
-            type: 'text',
-            description: 'Ingrese la información del tercer candidato suplente'
-        },
-        {
-            name: 'info_principal_4',
-            type: 'text',
-            description: 'Ingrese la información del cuarto candidato principal'
-        },
-        {
-            name: 'info_suplente_4',
-            type: 'text',
-            description: 'Ingrese la información del cuarto candidato suplente'
-        },
-        {
-            name: 'mas_candidatos',
+            name: 'tipo_persona_principal_1',
+            description: 'Seleccione el tipo de persona del primer candidato principal',
             type: 'clausula',
-            description: 'Desea ingresar más candidatos.?',
-            value: 'n',
             options: [
                 {
-                    name: 'Si',
-                    value: 's'
+                    name: 'Natural',
+                    value: 'n'
                 },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'razon_principal_1',
+            type: 'name',
+            description: 'Ingrese la razón social del primer candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_1',
+                    v: 'j'
+                }
+            ]
+        },
+        {
+            name: 'nit_principal_1',
+            type: 'text',
+            description: 'Ingrese el NIT del primer candidato principal (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_1',
+                    v: 'j'
+                }
+            ]
+        },
+        {
+            name: 'nombre_principal_1',
+            type: 'name',
+            description: 'Ingrese el nombre del primer candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_1',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cc_principal_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula del primer candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_1',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_suplente_1',
+            description: 'Seleccione el tipo de persona del primer candidato suplente',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'razon_suplente_1',
+            type: 'name',
+            description: 'Ingrese la razón social del primer candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_1',
+                    v: 'j'
+                }
+            ]
+        },
+        {
+            name: 'nit_suplente_1',
+            type: 'text',
+            description: 'Ingrese el NIT del primer candidato suplente (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_1',
+                    v: 'j'
+                }
+            ]
+        },
+        {
+            name: 'nombre_suplente_1',
+            type: 'name',
+            description: 'Ingrese el nombre del primer candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_1',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'cc_suplente_1',
+            type: 'number',
+            description: 'Ingrese el número de cédula del primer candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_1',
+                    v: 'n'
+                }
+            ]
+        },
+        {
+            name: 'segundo_candidato',
+            description: '¿Desea ingresar un segundo candidato?',
+            type: 'clausula',
+            options: [
                 {
                     name: 'No',
                     value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
                 }
-            ]
+            ],
+            value: 'n'
         },
         {
-            name: 'info_principal_5',
-            type: 'text',
-            description: 'Ingrese la información del quinto candidato principal',
+            name: 'tipo_persona_principal_2',
+            description: 'Seleccione el tipo de persona del segundo candidato principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
             prereq: [
                 {
-                    k: 'mas_candidatos',
+                    k: 'segundo_candidato',
                     v: 's'
                 }
             ]
         },
         {
-            name: 'info_suplente_5',
-            type: 'text',
-            description: 'Ingrese la información del quinto candidato suplente',
+            name: 'razon_principal_2',
+            type: 'name',
+            description: 'Ingrese la razón social del segundo candidato principal',
             prereq: [
                 {
-                    k: 'mas_candidatos',
+                    k: 'tipo_persona_principal_2',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
                     v: 's'
                 }
             ]
         },
         {
-            name: 'info_principal_6',
+            name: 'nit_principal_2',
             type: 'text',
-            description: 'Ingrese la información del sexto candidato principal',
+            description: 'Ingrese el NIT del segundo candidato principal (indique el número de verificación)',
             prereq: [
                 {
-                    k: 'mas_candidatos',
+                    k: 'tipo_persona_principal_2',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
                     v: 's'
                 }
             ]
         },
         {
-            name: 'info_suplente_6',
-            type: 'text',
-            description: 'Ingrese la información del sexto candidato suplente',
+            name: 'nombre_principal_2',
+            type: 'name',
+            description: 'Ingrese el nombre del segundo candidato principal',
             prereq: [
                 {
-                    k: 'mas_candidatos',
+                    k: 'tipo_persona_principal_2',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
                     v: 's'
                 }
             ]
         },
         {
-            name: 'info_principal_7',
-            type: 'text',
-            description: 'Ingrese la información del séptimo candidato principal',
+            name: 'cc_principal_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula del segundo candidato principal',
             prereq: [
                 {
-                    k: 'mas_candidatos',
+                    k: 'tipo_persona_principal_2',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
                     v: 's'
                 }
             ]
         },
         {
-            name: 'info_suplente_7',
-            type: 'text',
-            description: 'Ingrese la información del séptimo candidato suplente',
+            name: 'tipo_persona_suplente_2',
+            description: 'Seleccione el tipo de persona del segundo candidato suplente',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
             prereq: [
                 {
-                    k: 'mas_candidatos',
+                    k: 'segundo_candidato',
                     v: 's'
                 }
             ]
         },
         {
-            name: 'info_principal_8',
-            type: 'text',
-            description: 'Ingrese la información del octavo candidato principal',
+            name: 'razon_suplente_2',
+            type: 'name',
+            description: 'Ingrese la razón social del segundo candidato suplente',
             prereq: [
                 {
-                    k: 'mas_candidatos',
+                    k: 'tipo_persona_suplente_2',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
                     v: 's'
                 }
             ]
         },
         {
-            name: 'info_suplente_8',
+            name: 'nit_suplente_2',
             type: 'text',
-            description: 'Ingrese la información del octavo candidato suplente',
+            description: 'Ingrese el NIT del segundo candidato suplente (indique el número de verificación)',
             prereq: [
                 {
-                    k: 'mas_candidatos',
+                    k: 'tipo_persona_suplente_2',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_suplente_2',
+            type: 'name',
+            description: 'Ingrese el nombre del segundo candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_2',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_suplente_2',
+            type: 'number',
+            description: 'Ingrese el número de cédula del segundo candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_2',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tercer_candidato',
+            description: '¿Desea ingresar un tercer candidato?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_principal_3',
+            description: 'Seleccione el tipo de persona del tercer candidato principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_principal_3',
+            type: 'name',
+            description: 'Ingrese la razón social del tercer candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_3',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_principal_3',
+            type: 'text',
+            description: 'Ingrese el NIT del tercer candidato principal (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_3',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_principal_3',
+            type: 'name',
+            description: 'Ingrese el nombre del tercer candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_3',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_principal_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula del tercer candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_3',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_suplente_3',
+            description: 'Seleccione el tipo de persona del tercer candidato suplente',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_suplente_3',
+            type: 'name',
+            description: 'Ingrese la razón social del tercer candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_3',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_suplente_3',
+            type: 'text',
+            description: 'Ingrese el NIT del tercer candidato suplente (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_3',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_suplente_3',
+            type: 'name',
+            description: 'Ingrese el nombre del tercer candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_3',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_suplente_3',
+            type: 'number',
+            description: 'Ingrese el número de cédula del tercer candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_3',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cuarto_candidato',
+            description: '¿Desea ingresar un cuarto candidato?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_principal_4',
+            description: 'Seleccione el tipo de persona del cuarto candidato principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_principal_4',
+            type: 'name',
+            description: 'Ingrese la razón social del cuarto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_4',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_principal_4',
+            type: 'text',
+            description: 'Ingrese el NIT del cuarto candidato principal (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_4',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_principal_4',
+            type: 'name',
+            description: 'Ingrese el nombre del cuarto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_4',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_principal_4',
+            type: 'number',
+            description: 'Ingrese el número de cédula del cuarto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_4',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_suplente_4',
+            description: 'Seleccione el tipo de persona del cuarto candidato suplente',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_suplente_4',
+            type: 'name',
+            description: 'Ingrese la razón social del cuarto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_4',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_suplente_4',
+            type: 'text',
+            description: 'Ingrese el NIT del cuarto candidato suplente (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_4',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_suplente_4',
+            type: 'name',
+            description: 'Ingrese el nombre del cuarto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_4',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_suplente_4',
+            type: 'number',
+            description: 'Ingrese el número de cédula del cuarto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_4',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'quinto_candidato',
+            description: '¿Desea ingresar un quinto candidato?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_principal_5',
+            description: 'Seleccione el tipo de persona del quinto candidato principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_principal_5',
+            type: 'name',
+            description: 'Ingrese la razón social del quinto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_5',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_principal_5',
+            type: 'text',
+            description: 'Ingrese el NIT del quinto candidato principal (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_5',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_principal_5',
+            type: 'name',
+            description: 'Ingrese el nombre del quinto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_5',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_principal_5',
+            type: 'number',
+            description: 'Ingrese el número de cédula del quinto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_5',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_suplente_5',
+            description: 'Seleccione el tipo de persona del quinto candidato suplente',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_suplente_5',
+            type: 'name',
+            description: 'Ingrese la razón social del quinto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_5',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_suplente_5',
+            type: 'text',
+            description: 'Ingrese el NIT del quinto candidato suplente (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_5',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_suplente_5',
+            type: 'name',
+            description: 'Ingrese el nombre del quinto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_5',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_suplente_5',
+            type: 'number',
+            description: 'Ingrese el número de cédula del quinto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_5',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'sexto_candidato',
+            description: '¿Desea ingresar un sexto candidato?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_principal_6',
+            description: 'Seleccione el tipo de persona del sexto candidato principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_principal_6',
+            type: 'name',
+            description: 'Ingrese la razón social del sexto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_6',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_principal_6',
+            type: 'text',
+            description: 'Ingrese el NIT del sexto candidato principal (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_6',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_principal_6',
+            type: 'name',
+            description: 'Ingrese el nombre del sexto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_6',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_principal_6',
+            type: 'number',
+            description: 'Ingrese el número de cédula del sexto candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_6',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_suplente_6',
+            description: 'Seleccione el tipo de persona del sexto candidato suplente',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_suplente_6',
+            type: 'name',
+            description: 'Ingrese la razón social del sexto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_6',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_suplente_6',
+            type: 'text',
+            description: 'Ingrese el NIT del sexto candidato suplente (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_6',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_suplente_6',
+            type: 'name',
+            description: 'Ingrese el nombre del sexto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_6',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_suplente_6',
+            type: 'number',
+            description: 'Ingrese el número de cédula del sexto candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_6',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'septimo_candidato',
+            description: '¿Desea ingresar un septimo candidato?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_principal_7',
+            description: 'Seleccione el tipo de persona del séptimo candidato principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_principal_7',
+            type: 'name',
+            description: 'Ingrese la razón social del séptimo candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_7',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_principal_7',
+            type: 'text',
+            description: 'Ingrese el NIT del séptimo candidato principal (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_7',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_principal_7',
+            type: 'name',
+            description: 'Ingrese el nombre del séptimo candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_7',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_principal_7',
+            type: 'number',
+            description: 'Ingrese el número de cédula del séptimo candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_7',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_suplente_7',
+            description: 'Seleccione el tipo de persona del séptimo candidato suplente',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_suplente_7',
+            type: 'name',
+            description: 'Ingrese la razón social del séptimo candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_7',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_suplente_7',
+            type: 'text',
+            description: 'Ingrese el NIT del séptimo candidato suplente (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_7',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_suplente_7',
+            type: 'name',
+            description: 'Ingrese el nombre del séptimo candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_7',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_suplente_7',
+            type: 'number',
+            description: 'Ingrese el número de cédula del séptimo candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_7',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'octavo_candidato',
+            description: '¿Desea ingresar un octavo candidato?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_principal_8',
+            description: 'Seleccione el tipo de persona del octavo candidato principal',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_principal_8',
+            type: 'name',
+            description: 'Ingrese la razón social del octavo candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_8',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_principal_8',
+            type: 'text',
+            description: 'Ingrese el NIT del octavo candidato principal (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_8',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_principal_8',
+            type: 'name',
+            description: 'Ingrese el nombre del octavo candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_8',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_principal_8',
+            type: 'number',
+            description: 'Ingrese el número de cédula del octavo candidato principal',
+            prereq: [
+                {
+                    k: 'tipo_persona_principal_8',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_suplente_8',
+            description: 'Seleccione el tipo de persona del octavo candidato suplente',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Juridica',
+                    value: 'j'
+                }
+            ],
+            value: 'n',
+            prereq: [
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'razon_suplente_8',
+            type: 'name',
+            description: 'Ingrese la razón social del octavo candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_8',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_suplente_8',
+            type: 'text',
+            description: 'Ingrese el NIT del octavo candidato suplente (indique el número de verificación)',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_8',
+                    v: 'j'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_suplente_8',
+            type: 'name',
+            description: 'Ingrese el nombre del octavo candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_8',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_suplente_8',
+            type: 'number',
+            description: 'Ingrese el número de cédula del octavo candidato suplente',
+            prereq: [
+                {
+                    k: 'tipo_persona_suplente_8',
+                    v: 'n'
+                },
+                {
+                    k: 'segundo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'cuarto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'quinto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'sexto_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'septimo_candidato',
+                    v: 's'
+                },
+                {
+                    k: 'octavo_candidato',
                     v: 's'
                 }
             ]
@@ -412,18 +2563,17 @@
         },
         {
             name: 'tel_candidato',
-            type: 'text',
+            type: 'phone',
             description: 'Ingrese el numero de teléfono del candidato que inscribe la lista'
         },
         {
             name: 'cc_candidato',
-            type: 'text',
+            type: 'number',
             description: 'Ingrese el numero de cédula del candidato que inscribe la lista'
         }
     ],
     operation: [],
     sign: [
-        'num_acta',
         'fecha_envio',
         'hora_envio',
         'numero_lista',
@@ -431,15 +2581,75 @@
         'nombre_sale',
         'nombre_entra',
         'num_consecutivo',
-        'info_principal_1',
-        'info_suplente_1',
-        'info_principal_5',
-        'info_suplente_5',
         'num_constancias',
         'nombre_candidato',
         'correo_candidato',
         'tel_candidato',
-        'cc_candidato'
+        'cc_candidato',
+        'nombre_principal_1',
+        'cc_principal_1',
+        'nit_principal_1',
+        'razon_principal_1',
+        'nombre_suplente_1',
+        'cc_suplente_1',
+        'nit_suplente_1',
+        'razon_suplente_1',
+        'nombre_principal_2',
+        'cc_principal_2',
+        'nit_principal_2',
+        'razon_principal_2',
+        'nombre_suplente_2',
+        'cc_suplente_2',
+        'nit_suplente_2',
+        'razon_suplente_2',
+        'nombre_principal_3',
+        'cc_principal_3',
+        'nit_principal_3',
+        'razon_principal_3',
+        'nombre_suplente_3',
+        'cc_suplente_3',
+        'nit_suplente_3',
+        'razon_suplente_3',
+        'nombre_principal_4',
+        'cc_principal_4',
+        'nit_principal_4',
+        'razon_principal_4',
+        'nombre_suplente_4',
+        'cc_suplente_4',
+        'nit_suplente_4',
+        'razon_suplente_4',
+        'nombre_principal_5',
+        'cc_principal_5',
+        'nit_principal_5',
+        'razon_principal_5',
+        'nombre_suplente_5',
+        'cc_suplente_5',
+        'nit_suplente_5',
+        'razon_suplente_5',
+        'nombre_principal_6',
+        'cc_principal_6',
+        'nit_principal_6',
+        'razon_principal_6',
+        'nombre_suplente_6',
+        'cc_suplente_6',
+        'nit_suplente_6',
+        'razon_suplente_6',
+        'nombre_principal_7',
+        'cc_principal_7',
+        'nit_principal_7',
+        'razon_principal_7',
+        'nombre_suplente_7',
+        'cc_suplente_7',
+        'nit_suplente_7',
+        'razon_suplente_7',
+        'nombre_principal_8',
+        'cc_principal_8',
+        'nit_principal_8',
+        'razon_principal_8',
+        'nombre_suplente_8',
+        'cc_suplente_8',
+        'nit_suplente_8',
+        'razon_suplente_8'
     ],
     preFill: [
         {
@@ -487,9 +2697,10 @@
             email: 'correo_dir_juridica'
         }
     ],
-    name: 'INSCRIPCIÓN DE LISTAS DE CANDIDATOS JUNTA DIRECTIVA',
+    name: 'ACTA DE INSCRIPCIÓN-MODIFICACIÓN DE CANDIDATO JUNTA DIRECTIVA',
+    username: 'b21716df-8b65-47a9-8044-6d62dd5493d2',
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 1
+    build: 3
 }

@@ -8,32 +8,35 @@
     padding: 5px;
   }
   .table_class th {
+    text-align: center;
     border: 1px solid black;
     padding: 10px;
     background-color: #d9d9d9;
   }
 </style>
 
-<h2 style="text-align: center">
+<p style="text-align: center">
   <b>
-    ACTA No <b name="num_acta">____</b> DE INSCRIPCIÓN DE LISTAS DE CANDIDATOS
-    JUNTA DIRECTIVA CÁMARA DE COMERCIO DE MEDELLÍN PARA ANTIOQUIA
+    ACTA DE <b name="modificacion_s" hidden>MODIFICACIÓN</b>
+    <b name="modificacion_n">INSCRIPCIÓN</b> DE LISTAS DE CANDIDATOS JUNTA
+    DIRECTIVA CÁMARA DE COMERCIO DE MEDELLÍN PARA ANTIOQUIA
     <br />
     PERIODO 2023-2026
   </b>
-</h2>
+</p>
 
 <p>
-  En Medellín, el <span name="fecha_envio">____________________</span>, siendo
-  las <span name="hora_envio">________</span>, enviaron al canal virtual
-  de la Secretaria General de la Cámara de Comercio de Medellín para Antioquia,
-  la solicitud de inscripción de
-  <span name="modificacion_s" hidden>modificación de la listas</span
-  ><span name="modificacion_n">listas</span> No
-  <span name="numero_lista">________</span> <span name="genero_candidato_m">el señor</span><span name="genero_candidato_f" hidden>la señora</span> <span name="nombre_candidato">____________________</span>, con el fin de
-  inscribir la lista de candidatos a la Junta Directiva de la Cámara de Comercio
-  de Medellín para Antioquia para el período 2023-2026, en las elecciones que
-  deben celebrarse el día 1 de diciembre del año en curso.
+  En <span name="lugar_envio">________</span>, el
+  <span name="fecha_envio">_________</span>, siendo las
+  <span name="hora_envio">_______</span>, el(la) señor(a)
+  <span name="nombre_candidato">____________________</span>, envío al canal
+  virtual de la Secretaria General de la Cámara de Comercio de Medellín para
+  Antioquia la solicitud de
+  <span name="modificacion_s" hidden>modificación</span>
+  <span name="modificacion_n">inscripción</span> de lista de candidatos a la
+  Junta Directiva de la Cámara de Comercio de Medellín para Antioquia para el
+  periodo 2023 – 2026, para las elecciones que deben celebrarse el 1 de
+  diciembre del 2022
 </p>
 
 <p>
@@ -149,12 +152,14 @@
 </table>
 
 <small>
-  *Los Candidatos deberán validar que cumplen con las condiciones y requisitos
-  para ser afiliados establecidos en la Ley 1727 de 2014 y su Decreto
-  reglamentario, la CCMA podrá validar dicho cumplimiento y en caso de encontrar
-  algún impedimento en los candidatos inscritos para aspirar al cargo de miembro
-  de JD informará al candidato que inscribe la lista. Artículo 12 y 13 de la Ley
-  1727.
+  <small>
+    *Los Candidatos deberán validar que cumplen con las condiciones y requisitos
+    para ser afiliados establecidos en la Ley 1727 de 2014 y su Decreto
+    reglamentario, la CCMA podrá validar dicho cumplimiento y en caso de
+    encontrar algún impedimento en los candidatos inscritos para aspirar al
+    cargo de miembro de JD informará al candidato que inscribe la lista.
+    Artículo 12 y 13 de la Ley 1727.
+  </small>
 </small>
 
 <span name="modificacion_n"></span>
@@ -167,55 +172,219 @@
 </p>
 
 <p>
-  La lista que se inscribe es la siguiente y se continúa con el consecutivo No
+  La lista que se inscribe es la siguiente y se identifica con el consecutivo N°
   <span name="num_consecutivo">____</span>
 </p>
 
 <table class="table_class">
   <tr>
-    <th>PRINCIPALES</th>
-    <th>SUPLENTES</th>
+    <th>Número de renglón</th>
+    <th>PRINCIPAL</th>
+    <th>SUPLENTE</th>
   </tr>
   <tr>
-    <td><span name="info_principal_1">_____________</span></td>
-    <td><span name="info_suplente_1">_____________</span></td>
+    <td>1</td>
+    <td>
+      <span name="tipo_persona_principal_1_n">
+        Nombre <span name="nombre_principal_1">_____________</span> <br />
+        C.C. <span name="cc_principal_1">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_1_j" hidden>
+        Razón Social <span name="razon_principal_1">_____________</span> <br />
+        NIT <span name="nit_principal_1">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_1_n">
+        Nombre <span name="nombre_suplente_1">_____________</span> <br />
+        C.C. <span name="cc_suplente_1">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_1_j" hidden>
+        Razón Social <span name="razon_suplente_1">_____________</span> <br />
+        NIT <span name="nit_suplente_1">_____________</span>
+      </span>
+    </td>
   </tr>
-  <tr>
-    <td><span name="info_principal_2">_____________</span></td>
-    <td><span name="info_suplente_2">_____________</span></td>
+  <span name="segundo_candidato_n"></span>
+  <tr name="segundo_candidato_s" hidden>
+    <td>2</td>
+    <td>
+      <span name="tipo_persona_principal_2_n">
+        Nombre <span name="nombre_principal_2">_____________</span> <br />
+        C.C. <span name="cc_principal_2">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_2_j" hidden>
+        Razón Social <span name="razon_principal_2">_____________</span>
+        <br />
+        NIT <span name="nit_principal_2">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_2_n">
+        Nombre <span name="nombre_suplente_2">_____________</span> <br />
+        C.C. <span name="cc_suplente_2">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_2_j" hidden>
+        Razón Social <span name="razon_suplente_2">_____________</span> <br />
+        NIT <span name="nit_suplente_2">_____________</span>
+      </span>
+    </td>
   </tr>
-  <tr>
-    <td><span name="info_principal_3">_____________</span></td>
-    <td><span name="info_suplente_3">_____________</span></td>
+  <span name="tercer_candidato_n"></span>
+  <tr name="tercer_candidato_s" hidden>
+    <td>3</td>
+    <td>
+      <span name="tipo_persona_principal_3_n">
+        Nombre <span name="nombre_principal_3">_____________</span> <br />
+        C.C. <span name="cc_principal_3">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_3_j" hidden>
+        Razón Social <span name="razon_principal_3">_____________</span>
+        <br />
+        NIT <span name="nit_principal_3">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_3_n">
+        Nombre <span name="nombre_suplente_3">_____________</span> <br />
+        C.C. <span name="cc_suplente_3">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_3_j" hidden>
+        Razón Social <span name="razon_suplente_3">_____________</span> <br />
+        NIT <span name="nit_suplente_3">_____________</span>
+      </span>
+    </td>
   </tr>
-  <tr>
-    <td><span name="info_principal_4">_____________</span></td>
-    <td><span name="info_suplente_4">_____________</span></td>
+  <span name="cuarto_candidato_n"></span>
+  <tr name="cuarto_candidato_s" hidden>
+    <td>4</td>
+    <td>
+      <span name="tipo_persona_principal_4_n">
+        Nombre <span name="nombre_principal_4">_____________</span> <br />
+        C.C. <span name="cc_principal_4">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_4_j" hidden>
+        Razón Social <span name="razon_principal_4">_____________</span>
+        <br />
+        NIT <span name="nit_principal_4">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_4_n">
+        Nombre <span name="nombre_suplente_4">_____________</span> <br />
+        C.C. <span name="cc_suplente_4">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_4_j" hidden>
+        Razón Social <span name="razon_suplente_4">_____________</span> <br />
+        NIT <span name="nit_suplente_4">_____________</span>
+      </span>
+    </td>
   </tr>
-  <span name="mas_candidatos_n"></span>
-  <tbody name="mas_candidatos_s" hidden>
-    <tr>
-      <td><span name="info_principal_5">_____________</span></td>
-      <td><span name="info_suplente_5">_____________</span></td>
-    </tr>
-    <tr>
-      <td><span name="info_principal_6">_____________</span></td>
-      <td><span name="info_suplente_6">_____________</span></td>
-    </tr>
-    <tr>
-      <td><span name="info_principal_7">_____________</span></td>
-      <td><span name="info_suplente_7">_____________</span></td>
-    </tr>
-    <tr>
-      <td><span name="info_principal_8">_____________</span></td>
-      <td><span name="info_suplente_8">_____________</span></td>
-    </tr>
-  </tbody>
+  <span name="quinto_candidato_n"></span>
+  <tr name="quinto_candidato_s" hidden>
+    <td>5</td>
+    <td>
+      <span name="tipo_persona_principal_5_n">
+        Nombre <span name="nombre_principal_5">_____________</span> <br />
+        C.C. <span name="cc_principal_5">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_5_j" hidden>
+        Razón Social <span name="razon_principal_5">_____________</span>
+        <br />
+        NIT <span name="nit_principal_5">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_5_n">
+        Nombre <span name="nombre_suplente_5">_____________</span> <br />
+        C.C. <span name="cc_suplente_5">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_5_j" hidden>
+        Razón Social <span name="razon_suplente_5">_____________</span> <br />
+        NIT <span name="nit_suplente_5">_____________</span>
+      </span>
+    </td>
+  </tr>
+  <span name="sexto_candidato_n"></span>
+  <tr name="sexto_candidato_s" hidden>
+    <td>6</td>
+    <td>
+      <span name="tipo_persona_principal_6_n">
+        Nombre <span name="nombre_principal_6">_____________</span> <br />
+        C.C. <span name="cc_principal_6">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_6_j" hidden>
+        Razón Social <span name="razon_principal_6">_____________</span>
+        <br />
+        NIT <span name="nit_principal_6">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_6_n">
+        Nombre <span name="nombre_suplente_6">_____________</span> <br />
+        C.C. <span name="cc_suplente_6">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_6_j" hidden>
+        Razón Social <span name="razon_suplente_6">_____________</span> <br />
+        NIT <span name="nit_suplente_6">_____________</span>
+      </span>
+    </td>
+  </tr>
+  <span name="septimo_candidato_n"></span>
+  <tr name="septimo_candidato_s" hidden>
+    <td>7</td>
+    <td>
+      <span name="tipo_persona_principal_7_n">
+        Nombre <span name="nombre_principal_7">_____________</span> <br />
+        C.C. <span name="cc_principal_7">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_7_j" hidden>
+        Razón Social <span name="razon_principal_7">_____________</span>
+        <br />
+        NIT <span name="nit_principal_7">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_7_n">
+        Nombre <span name="nombre_suplente_7">_____________</span> <br />
+        C.C. <span name="cc_suplente_7">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_7_j" hidden>
+        Razón Social <span name="razon_suplente_7">_____________</span> <br />
+        NIT <span name="nit_suplente_7">_____________</span>
+      </span>
+    </td>
+  </tr>
+  <span name="octavo_candidato_n"></span>
+  <tr name="octavo_candidato_s" hidden>
+    <td>8</td>
+    <td>
+      <span name="tipo_persona_principal_8_n">
+        Nombre <span name="nombre_principal_8">_____________</span> <br />
+        C.C. <span name="cc_principal_8">_____________</span>
+      </span>
+      <span name="tipo_persona_principal_8_j" hidden>
+        Razón Social <span name="razon_principal_8">_____________</span>
+        <br />
+        NIT <span name="nit_principal_8">_____________</span>
+      </span>
+    </td>
+    <td>
+      <span name="tipo_persona_suplente_8_n">
+        Nombre <span name="nombre_suplente_8">_____________</span> <br />
+        C.C. <span name="cc_suplente_8">_____________</span>
+      </span>
+      <span name="tipo_persona_suplente_8_j" hidden>
+        Razón Social <span name="razon_suplente_8">_____________</span> <br />
+        NIT <span name="nit_suplente_8">_____________</span>
+      </span>
+    </td>
+  </tr>
 </table>
 
 <p>
   Se adjuntan <span name="num_constancias">_____________</span> constancias de
-  aceptación de los candidatos ingresados.
+  aceptación de los candidatos inscritos.
 </p>
 
 <p>
@@ -228,30 +397,36 @@
 <p>
   <b>Observaciones:</b>
   <br />
+  <span name="observaciones">____________________</span>
+  <br />
+  <br />
   La presente acta de inscripción se firma por las personas que intervinieron en
   la diligencia de inscripción, previa validación y aceptación de su contenido.
 </p>
 
 <br />
 
+<div id="sec_general" class="sign_margin"></div>
 <p>
-  <div id="sec_general" class="sign_margin"></div>
+  ________________________________________ <br />
   <b>JORGE VILLEGAS BETANCUR</b> <br />
   Secretario General
 </p>
 
 <br />
 
+<div id="dir_juridica" class="sign_margin"></div>
 <p>
-  <div id="dir_juridica" class="sign_margin"></div>
+  ________________________________________ <br />
   <b>LILIANA MARÍA CASTILLO RESTREPO</b> <br />
   Directora Jurídica
 </p>
 
 <br />
 
+<div id="candidato" class="sign_margin"></div>
 <p>
-  <div id="candidato" class="sign_margin"></div>
+  ________________________________________ <br />
   <b name="nombre_candidato">____________________</b> <br />
   <b>C.C. <b name="cc_candidato">_____________</b></b> <br />
   <b>Candidato que inscribe la lista</b>

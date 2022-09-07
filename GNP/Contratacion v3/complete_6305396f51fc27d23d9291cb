@@ -388,6 +388,7 @@
       <td>
         CARGO
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
+        <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
         <span name="cargo_coord_hd" hidden>Coordinador de soporte Help Desk</span>
@@ -937,6 +938,7 @@
       </td>
       <td>
         <b name="cargo_call_c_cnd">AGENTE CALL CENTER CND</b>
+        <b name="cargo_gest_oper" hidden>Gestor Operativo</b>
         <b name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</b>
         <b name="cargo_sop_redes" hidden>Soporte Redes</b>
         <b name="cargo_coord_hd" hidden>Coordinador de soporte Help Desk</b>
@@ -1632,6 +1634,7 @@
       <td>
         <span name="cargo_call_c">AGENTE CALL CENTER</span>
         <span name="cargo_call_c_cnd" hidden>AGENTE CALL CENTER CND</span>
+        <span name="cargo_call_c_cnd" h hgest_oper>Gestor Operativo</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
         <span name="cargo_coord_hd" hidden>Coordinador de soporte Help Desk</span>
@@ -3145,6 +3148,18 @@
           <br> Coordinar toda la gestión Administrativa y operativas del Archivo central.
           <br> Cumplir con las demás funciones que le asigne su jefe inmediato.
         </span>
+        <span name="cargo_gest_oper" hidden>
+          Escucha, analisis y seguimiento de todas las Pqrs dirigidas a GNP (Hogar,Móvil y Tecnología)
+          <br/>Seguimiento, retroalimentación y mejoras en la operación.
+          <br/>Refuerzos comerciales y de manejo de llamada para evitar pqrs.
+          <br/>Elaboración de informes de Pqrs.
+          <br/>Resolución de pqrs Bogotá-Cali.
+          <br/>Actividades comerciales y motivacionales enfocadas al mejoramiento de resultados
+          <br/>Tareas administrativas de calidad.
+          <br/>Habilidades interpersonasles.
+          <br/>Indicadores comerciales y de pqrs.
+          <br/>Creación de informes, Planificación de Monitoreos. Auditar y supervisar todas las ventas y aleatoriamente las no ventas.
+        </span>
       </td>
     </tr>
     <tr>
@@ -3310,6 +3325,7 @@
       <td>GERENTE TH</td>
       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
+        <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
         <span name="cargo_coord_hd" hidden>Coordinador de soporte Help Desk</span>
@@ -4757,6 +4773,7 @@
       <th>Cargo:</th>
        <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
+        <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
         <span name="cargo_jefe_nal" hidden
           >Jefe Nacional de Redes y Soporte</span
         >

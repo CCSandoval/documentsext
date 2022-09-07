@@ -21,10 +21,18 @@
 </p>
 
 <p>
-  <span name="tipo_persona_n" hidden>
+  <span name="tipo_persona_n">
     <b name="nombre_deudor">_______________</b>, mayor de edad, domiciliado en
-    <b name="domicilio_deudor">_______________</b>, identificado con la cédula
-    de ciudadanía nro. <b name="cc_deudor">_______________</b>,
+    <b name="domicilio_deudor">_______________</b>, identificado con
+    <span name="tipo_id_deudor_cc">
+      la cédula de ciudadanía nro. <b name="cc_deudor">_______________</b>
+    </span>
+    <span name="tipo_id_deudor_ce" hidden>
+      la cédula de extranjería nro. <b name="ce_deudor">_______________</b>
+    </span>
+    <span name="tipo_id_deudor_pa" hidden>
+      el pasaporte nro. <b name="pa_deudor">_______________</b> </span
+    >,
     <span name="establecimiento_n">
       actuando en mi propio nombre y representación
     </span>
@@ -34,27 +42,33 @@
     </span>
   </span>
 
-  <span name="tipo_persona_j">
+  <span name="tipo_persona_j" hidden>
     <b name="nombre_empresa">_______________</b> sociedad debidamente
     constituida de conformidad con las Leyes de la República de Colombia,
-    identificada con NIT. <b name="nit_empresa">_______________</b>, todo
-    lo cual consta en el certificado de existencia y representación legal
-    expedido por la Cámara de Comercio,
+    identificada con NIT. <b name="nit_empresa">_______________</b>, todo lo
+    cual consta en el certificado de existencia y representación legal expedido
+    por la Cámara de Comercio,
   </span>
 
   , prometo pagar incondicional, solidaria e indivisiblemente, en dinero en
   efectivo, a la orden de la sociedad <b>DIVISA S.A.</b> (en adelante
   <b>“DIVISA”</b> o a quien represente u ostente en el futuro la calidad de
-  acreedor), la suma de: <b name="valor_pagare">_______________</b>, moneda
-  corriente colombiana, por concepto de las obligaciones impagadas derivadas de
-  el(los) contrato(s) u operación(es) de mutuo con intereses, operaciones de
-  descuento(s) de cartera, operaciones de factoring y conexas, tales pero sin
-  limitarse a ellas como anticipos sobre ordenes de compra o servicio, o
-  cualquier otra(s) operación(es) activa(s) de crédito celebrada(s) por las
-  partes. Esta suma se obliga a pagarla a <b>“DIVISA”</b>, en la oficina ubicada
-  en la ciudad de Medellín, el día de la fecha de vencimiento del presente
-  título valor. En caso de mora, sin perjuicio de las acciones legales a que
-  tenga derecho el acreedor, se obliga a pagar la tasa máxima de interés
+  acreedor), la suma de: <br />
+  <b name="valor_pagare">
+    ________________________________________________________________________________
+    <br />
+    ________________________________________________________________________________
+    <br />
+    ________________________________________________________________________________</b
+  >, moneda corriente colombiana, por concepto de las obligaciones impagadas
+  derivadas de el(los) contrato(s) u operación(es) de mutuo con intereses,
+  operaciones de descuento(s) de cartera, operaciones de factoring y conexas,
+  tales pero sin limitarse a ellas como anticipos sobre ordenes de compra o
+  servicio, o cualquier otra(s) operación(es) activa(s) de crédito celebrada(s)
+  por las partes. Esta suma se obliga a pagarla a <b>“DIVISA”</b>, en la oficina
+  ubicada en la ciudad de Medellín, el día de la fecha de vencimiento del
+  presente título valor. En caso de mora, sin perjuicio de las acciones legales
+  a que tenga derecho el acreedor, se obliga a pagar la tasa máxima de interés
   moratorio permitida por la ley, que resulte de la certificación expedida por
   la <b>SUPERINTENDENCIA FINANCIERA DE COLOMBIA</b> o por la autoridad
   monetaria, vigente en la fecha del pago de los intereses, expresada en
@@ -282,14 +296,24 @@
   <b>DEUDOR(A)(ES)</b>
 </p>
 
-<p>
+<div>
   <br /><br />
-  <div id="firma_deudor" class="sign_margin"></div>
+  <div id="firma_deudor_1" name="firma_deudor" class="sign_margin"></div>
   _____________________________________________
   <br />
   <b name="nombre_deudor">_______________</b>
   <br />
-  C.C. <b name="cc_deudor">_______________</b>
+  <span>
+    <span name="tipo_id_deudor_cc">
+      C.C. <b name="cc_deudor">_______________</b>
+    </span>
+    <span name="tipo_id_deudor_ce" hidden>
+      C.E. <b name="ce_deudor">_______________</b>
+    </span>
+    <span name="tipo_id_deudor_pa" hidden>
+      PA. <b name="pa_deudor">_______________</b>
+    </span>
+  </span>
   <span name="establecimiento_s" hidden>
     <br />
     Administrador
@@ -299,13 +323,15 @@
   </span>
   <span name="tipo_persona_j">
     <br />
+    <span name="tipo_rep_deudor">_______________</span>
+    <br />
     <b name="nombre_empresa">_______________</b>
     <br />
     Nit No. <b name="nit_empresa">_______________</b>
   </span>
   <br />
   Correo: <b name="correo_deudor">_______________</b>
-</p>
+</div>
 
 <br /><br /><br />
 
@@ -315,77 +341,361 @@
 
 <br /><br />
 
-<p>
+<div name="establecimiento_s">
+  <br /><br />
+  <div id="firma_deudor_2" name="firma_deudor" class="sign_margin"></div>
+  _____________________________________________
+  <br />
+  <b name="nombre_deudor">_______________</b>
+  <br />
+  <span>
+    <span name="tipo_id_deudor_cc">
+      C.C. <b name="cc_deudor">_______________</b>
+    </span>
+    <span name="tipo_id_deudor_ce" hidden>
+      C.E. <b name="ce_deudor">_______________</b>
+    </span>
+    <span name="tipo_id_deudor_pa" hidden>
+      PA. <b name="pa_deudor">_______________</b>
+    </span>
+  </span>
+  <span name="establecimiento_s" hidden>
+    <br />
+    Administrador
+    <br />
+    Establecimiento de comercio:
+    <b name="nombre_establecimiento">_______________</b>
+  </span>
+  <span name="tipo_persona_j">
+    <br />
+    <span name="tipo_rep_deudor">_______________</span>
+    <br />
+    <b name="nombre_empresa">_______________</b>
+    <br />
+    Nit No. <b name="nit_empresa">_______________</b>
+  </span>
+  <br />
+  Correo: <b name="correo_deudor">_______________</b>
+</div>
+
+<div name="establecimiento_n">
   <div id="firma_avalista_1" class="sign_margin"></div>
+  _____________________________________________
   <br />
   <b name="nombre_avalista_1">_______________</b>
   <br />
-  C.C. <b name="cc_avalista_1">_______________</b>
+  <span>
+    <span name="tipo_id_avalista_1_cc">
+      C.C. <b name="cc_avalista_1">_______________</b>
+    </span>
+    <span name="tipo_id_avalista_1_ce" hidden>
+      C.E. <b name="ce_avalista_1">_______________</b>
+    </span>
+    <span name="tipo_id_avalista_1_pa" hidden>
+      PA. <b name="pa_avalista_1">_______________</b>
+    </span>
+  </span>
   <br />
   Correo: <b name="correo_avalista_1">_______________</b>
   <span name="tipo_persona_avalista_1_n"></span>
   <span name="tipo_persona_avalista_1_j" hidden>
     <br />
+    <span name="tipo_rep_avalista_1">_______________</span>
+    <br />
     Razón Social: <b name="nombre_empresa_av_1">_______________</b>
     <br />
     NIT: <b name="nit_empresa_av_1">_______________</b>
   </span>
-</p>
 
-<br /><br />
+  <br /><br />
 
-<span name="avalista_2_n"></span>
-<div name="avalista_2_s" hidden>
-  <div id="firma_avalista_2" class="sign_margin"></div>
-  <br />
-  <b name="nombre_avalista_2">_______________</b>
-  <br />
-  C.C. <b name="cc_avalista_2">_______________</b>
-  <br />
-  Correo: <b name="correo_avalista_2">_______________</b>
-  <span name="tipo_persona_avalista_2_n"></span>
-  <span name="tipo_persona_avalista_2_j" hidden>
+  <span name="avalista_2_n"></span>
+  <div name="avalista_2_s" hidden>
+    <div id="firma_avalista_2" class="sign_margin"></div>
+    _____________________________________________
     <br />
-    Razón Social: <b name="nombre_empresa_av_2">_______________</b>
+    <b name="nombre_avalista_2">_______________</b>
     <br />
-    NIT: <b name="nit_empresa_av_2">_______________</b>
-  </span>
-
-  <span name="avalista_3_n"></span>
-  <div name="avalista_3_s" hidden>
-    <br /><br />
-    <div id="firma_avalista_3" class="sign_margin"></div>
-    <br />
-    <b name="nombre_avalista_3">_______________</b>
-    <br />
-    C.C. <b name="cc_avalista_3">_______________</b>
-    <br />
-    Correo: <b name="correo_avalista_3">_______________</b>
-    <span name="tipo_persona_avalista_3_n"></span>
-    <span name="tipo_persona_avalista_3_j" hidden>
-      <br />
-      Razón Social: <b name="nombre_empresa_av_3">_______________</b>
-      <br />
-      NIT: <b name="nit_empresa_av_3">_______________</b>
-    </span>
-    
-    <span name="avalista_4_n"></span>
-    <div name="avalista_4_s" hidden>
-      <br /><br />
-      <div id="firma_avalista_4" class="sign_margin"></div>
-      <br />
-      <b name="nombre_avalista_4">_______________</b>
-      <br />
-      C.C. <b name="cc_avalista_4">_______________</b>
-      <br />
-      Correo: <b name="correo_avalista_4">_______________</b>
-      <span name="tipo_persona_avalista_4_n"></span>
-      <span name="tipo_persona_avalista_4_j" hidden>
-        <br />
-        Razón Social: <b name="nombre_empresa_av_4">_______________</b>
-        <br />
-        NIT: <b name="nit_empresa_av_4">_______________</b>
+    <span>
+      <span name="tipo_id_avalista_2_cc">
+        C.C. <b name="cc_avalista_2">_______________</b>
       </span>
+      <span name="tipo_id_avalista_2_ce" hidden>
+        C.E. <b name="ce_avalista_2">_______________</b>
+      </span>
+      <span name="tipo_id_avalista_2_pa" hidden>
+        PA. <b name="pa_avalista_2">_______________</b>
+      </span>
+    </span>
+    <br />
+    Correo: <b name="correo_avalista_2">_______________</b>
+    <span name="tipo_persona_avalista_2_n"></span>
+    <span name="tipo_persona_avalista_2_j" hidden>
+      <br />
+      <span name="tipo_rep_avalista_2">_______________</span>
+      <br />
+      Razón Social: <b name="nombre_empresa_av_2">_______________</b>
+      <br />
+      NIT: <b name="nit_empresa_av_2">_______________</b>
+    </span>
+
+    <span name="avalista_3_n"></span>
+    <div name="avalista_3_s" hidden>
+      <br /><br />
+      <div id="firma_avalista_3" class="sign_margin"></div>
+      _____________________________________________
+      <br />
+      <b name="nombre_avalista_3">_______________</b>
+      <br />
+      <span>
+        <span name="tipo_id_avalista_3_cc">
+          C.C. <b name="cc_avalista_3">_______________</b>
+        </span>
+        <span name="tipo_id_avalista_3_ce" hidden>
+          C.E. <b name="ce_avalista_3">_______________</b>
+        </span>
+        <span name="tipo_id_avalista_3_pa" hidden>
+          PA. <b name="pa_avalista_3">_______________</b>
+        </span>
+      </span>
+      <br />
+      Correo: <b name="correo_avalista_3">_______________</b>
+      <span name="tipo_persona_avalista_3_n"></span>
+      <span name="tipo_persona_avalista_3_j" hidden>
+        <br />
+        <span name="tipo_rep_avalista_3">_______________</span>
+        <br />
+        Razón Social: <b name="nombre_empresa_av_3">_______________</b>
+        <br />
+        NIT: <b name="nit_empresa_av_3">_______________</b>
+      </span>
+
+      <span name="avalista_4_n"></span>
+      <div name="avalista_4_s" hidden>
+        <br /><br />
+        <div id="firma_avalista_4" class="sign_margin"></div>
+        _____________________________________________
+        <br />
+        <b name="nombre_avalista_4">_______________</b>
+        <br />
+        <span>
+          <span name="tipo_id_avalista_4_cc">
+            C.C. <b name="cc_avalista_4">_______________</b>
+          </span>
+          <span name="tipo_id_avalista_4_ce" hidden>
+            C.E. <b name="ce_avalista_4">_______________</b>
+          </span>
+          <span name="tipo_id_avalista_4_pa" hidden>
+            PA. <b name="pa_avalista_4">_______________</b>
+          </span>
+        </span>
+        <br />
+        Correo: <b name="correo_avalista_4">_______________</b>
+        <span name="tipo_persona_avalista_4_n"></span>
+        <span name="tipo_persona_avalista_4_j" hidden>
+          <br />
+          <span name="tipo_rep_avalista_4">_______________</span>
+          <br />
+          Razón Social: <b name="nombre_empresa_av_4">_______________</b>
+          <br />
+          NIT: <b name="nit_empresa_av_4">_______________</b>
+        </span>
+
+        <span name="avalista_5_n"></span>
+        <div name="avalista_5_s" hidden>
+          <br /><br />
+          <div id="firma_avalista_5" class="sign_margin"></div>
+          _____________________________________________
+          <br />
+          <b name="nombre_avalista_5">_______________</b>
+          <br />
+          <span>
+            <span name="tipo_id_avalista_5_cc">
+              C.C. <b name="cc_avalista_5">_______________</b>
+            </span>
+            <span name="tipo_id_avalista_5_ce" hidden>
+              C.E. <b name="ce_avalista_5">_______________</b>
+            </span>
+            <span name="tipo_id_avalista_5_pa" hidden>
+              PA. <b name="pa_avalista_5">_______________</b>
+            </span>
+          </span>
+          <br />
+          Correo: <b name="correo_avalista_5">_______________</b>
+          <span name="tipo_persona_avalista_5_n"></span>
+          <span name="tipo_persona_avalista_5_j" hidden>
+            <br />
+            <span name="tipo_rep_avalista_5">_______________</span>
+            <br />
+            Razón Social: <b name="nombre_empresa_av_5">_______________</b>
+            <br />
+            NIT: <b name="nit_empresa_av_5">_______________</b>
+          </span>
+
+          <span name="avalista_6_n"></span>
+          <div name="avalista_6_s" hidden>
+            <br /><br />
+            <div id="firma_avalista_6" class="sign_margin"></div>
+            _____________________________________________
+            <br />
+            <b name="nombre_avalista_6">_______________</b>
+            <br />
+            <span>
+              <span name="tipo_id_avalista_6_cc">
+                C.C. <b name="cc_avalista_6">_______________</b>
+              </span>
+              <span name="tipo_id_avalista_6_ce" hidden>
+                C.E. <b name="ce_avalista_6">_______________</b>
+              </span>
+              <span name="tipo_id_avalista_6_pa" hidden>
+                PA. <b name="pa_avalista_6">_______________</b>
+              </span>
+            </span>
+            <br />
+            Correo: <b name="correo_avalista_6">_______________</b>
+            <span name="tipo_persona_avalista_6_n"></span>
+            <span name="tipo_persona_avalista_6_j" hidden>
+              <br />
+              <span name="tipo_rep_avalista_6">_______________</span>
+              <br />
+              Razón Social: <b name="nombre_empresa_av_6">_______________</b>
+              <br />
+              NIT: <b name="nit_empresa_av_6">_______________</b>
+            </span>
+
+            <span name="avalista_7_n"></span>
+            <div name="avalista_7_s" hidden>
+              <br /><br />
+              <div id="firma_avalista_7" class="sign_margin"></div>
+              _____________________________________________
+              <br />
+              <b name="nombre_avalista_7">_______________</b>
+              <br />
+              <span>
+                <span name="tipo_id_avalista_7_cc">
+                  C.C. <b name="cc_avalista_7">_______________</b>
+                </span>
+                <span name="tipo_id_avalista_7_ce" hidden>
+                  C.E. <b name="ce_avalista_7">_______________</b>
+                </span>
+                <span name="tipo_id_avalista_7_pa" hidden>
+                  PA. <b name="pa_avalista_7">_______________</b>
+                </span>
+              </span>
+              <br />
+              Correo: <b name="correo_avalista_7">_______________</b>
+              <span name="tipo_persona_avalista_7_n"></span>
+              <span name="tipo_persona_avalista_7_j" hidden>
+                <br />
+                <span name="tipo_rep_avalista_7">_______________</span>
+                <br />
+                Razón Social: <b name="nombre_empresa_av_7">_______________</b>
+                <br />
+                NIT: <b name="nit_empresa_av_7">_______________</b>
+              </span>
+
+              <span name="avalista_8_n"></span>
+              <div name="avalista_8_s" hidden>
+                <br /><br />
+                <div id="firma_avalista_8" class="sign_margin"></div>
+                _____________________________________________
+                <br />
+                <b name="nombre_avalista_8">_______________</b>
+                <br />
+                <span>
+                  <span name="tipo_id_avalista_8_cc">
+                    C.C. <b name="cc_avalista_8">_______________</b>
+                  </span>
+                  <span name="tipo_id_avalista_8_ce" hidden>
+                    C.E. <b name="ce_avalista_8">_______________</b>
+                  </span>
+                  <span name="tipo_id_avalista_8_pa" hidden>
+                    PA. <b name="pa_avalista_8">_______________</b>
+                  </span>
+                </span>
+                <br />
+                Correo: <b name="correo_avalista_8">_______________</b>
+                <span name="tipo_persona_avalista_8_n"></span>
+                <span name="tipo_persona_avalista_8_j" hidden>
+                  <br />
+                  <span name="tipo_rep_avalista_8">_______________</span>
+                  <br />
+                  Razón Social:
+                  <b name="nombre_empresa_av_8">_______________</b>
+                  <br />
+                  NIT: <b name="nit_empresa_av_8">_______________</b>
+                </span>
+
+                <span name="avalista_9_n"></span>
+                <div name="avalista_9_s" hidden>
+                  <br /><br />
+                  <div id="firma_avalista_9" class="sign_margin"></div>
+                  _____________________________________________
+                  <br />
+                  <b name="nombre_avalista_9">_______________</b>
+                  <br />
+                  <span>
+                    <span name="tipo_id_avalista_9_cc">
+                      C.C. <b name="cc_avalista_9">_______________</b>
+                    </span>
+                    <span name="tipo_id_avalista_9_ce" hidden>
+                      C.E. <b name="ce_avalista_9">_______________</b>
+                    </span>
+                    <span name="tipo_id_avalista_9_pa" hidden>
+                      PA. <b name="pa_avalista_9">_______________</b>
+                    </span>
+                  </span>
+                  <br />
+                  Correo: <b name="correo_avalista_9">_______________</b>
+                  <span name="tipo_persona_avalista_9_n"></span>
+                  <span name="tipo_persona_avalista_9_j" hidden>
+                    <br />
+                    <span name="tipo_rep_avalista_9">_______________</span>
+                    <br />
+                    Razón Social:
+                    <b name="nombre_empresa_av_9">_______________</b>
+                    <br />
+                    NIT: <b name="nit_empresa_av_9">_______________</b>
+                  </span>
+
+                  <span name="avalista_10_n"></span>
+                  <div name="avalista_10_s" hidden>
+                    <br /><br />
+                    <div id="firma_avalista_10" class="sign_margin"></div>
+                    _____________________________________________
+                    <br />
+                    <b name="nombre_avalista_10">_______________</b>
+                    <br />
+                    <span>
+                      <span name="tipo_id_avalista_10_cc">
+                        C.C. <b name="cc_avalista_10">_______________</b>
+                      </span>
+                      <span name="tipo_id_avalista_10_ce" hidden>
+                        C.E. <b name="ce_avalista_10">_______________</b>
+                      </span>
+                      <span name="tipo_id_avalista_10_pa" hidden>
+                        PA. <b name="pa_avalista_10">_______________</b>
+                      </span>
+                    </span>
+                    <br />
+                    Correo: <b name="correo_avalista_10">_______________</b>
+                    <span name="tipo_persona_avalista_10_n"></span>
+                    <span name="tipo_persona_avalista_10_j" hidden>
+                      <br />
+                      <span name="tipo_rep_avalista_10">_______________</span>
+                      <br />
+                      Razón Social:
+                      <b name="nombre_empresa_av_10">_______________</b>
+                      <br />
+                      NIT: <b name="nit_empresa_av_10">_______________</b>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
