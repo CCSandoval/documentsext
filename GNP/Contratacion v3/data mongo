@@ -224,6 +224,10 @@
                     value: 'ing_nal_servidores'
                 },
                 {
+                    name: 'Jefe de Formación',
+                    value: 'jefe_formacion'
+                },
+                {
                     name: 'Jefe Nacional de Redes y Soporte',
                     value: 'jefe_nal'
                 },
@@ -2020,5 +2024,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 2
+    build: 3
 }

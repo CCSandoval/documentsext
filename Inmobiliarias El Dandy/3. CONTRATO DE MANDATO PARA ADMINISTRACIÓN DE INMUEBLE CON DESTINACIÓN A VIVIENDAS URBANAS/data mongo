@@ -4359,6 +4359,7 @@
             description: 'Digite el porcentaje de la administración',
             help: 'porcentaje',
             name: 'porcentaje_documento',
+            addText: true,
             type: 'number'
         },
         {
@@ -4621,7 +4622,7 @@
         porcentaje: 'Ejemplo: 15',
         fecha: 'Ejemplo: 13 de Septiembre del 2021'
     },
-    build: 30,
+    build: 31,
     createdAt: ISODate('2021-09-29T18:40:33.337Z'),
     updatedAt: ISODate('2021-09-29T18:40:33.337Z')
 }

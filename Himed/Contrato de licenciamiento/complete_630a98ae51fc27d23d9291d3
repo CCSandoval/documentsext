@@ -18,9 +18,6 @@
 <h2 style="text-align: center">
   <b>
     CONTRATO DE LICENCIAMIENTO PARA EL USO EXCLUSIVO DEL SOFTWARE 'HIMED'
-    <br />
-    <br />
-    TABLA DE CONTENIDO
   </b>
 </h2>
 
@@ -38,9 +35,23 @@
   </li>
   <li>
     <span name="nombre_cliente">___________________</span>, mayor de edad,
-    identificado (a) con cédula de ciudadanía No.
-    <span name="cc_cliente">___________________</span>,
-
+    identificado (a) con
+    <span name="tipo_id_cliente_cc">
+      cédula de ciudadanía No.
+      <b name="cc_cliente">___________________</b></span
+    >
+    <span name="tipo_id_cliente_ce" hidden>
+      cédula de extranjería No.
+      <b name="ce_cliente">___________________</b></span
+    >
+    <span name="tipo_id_cliente_pep" hidden>
+      permiso especial de pernanecia No.
+      <b name="pep_cliente">___________________</b></span
+    >
+    <span name="tipo_id_cliente_ppt" hidden>
+      permiso de protección temporal No.
+      <b name="ppt_cliente">___________________</b></span
+    >,
     <span name="tipo_persona_cliente_n">
       actuando en representación propia, quien en adelante se denominará 'EL
       CLIENTE';
@@ -2590,18 +2601,47 @@ ningún tipo de responsabilidad de su parte.
   </tr>
   <tr>
     <td><b>1.1 NOMBRE</b></td>
-    <td><b name="nombre_cliente">___________________</b></td>
+    <td>
+      <span name="tipo_persona_cliente_n">
+        <b name="nombre_cliente">___________________</b>
+      </span>
+      <span name="tipo_persona_cliente_j" hidden>
+        <b name="nombre_sociedad">___________________</b>
+      </span>
+    </td>
   </tr>
   <tr>
     <td><b>1.2 ID</b></td>
-    <td><b name="cc_cliente">___________________</b></td>
+    <td>
+      <span name="tipo_persona_cliente_n">
+        <span name="tipo_id_cliente_cc">
+          CC. <b name="cc_cliente">___________________</b>
+        </span>
+        <span name="tipo_id_cliente_ce" hidden>
+          CE. <b name="ce_cliente">___________________</b>
+        </span>
+        <span name="tipo_id_cliente_pep" hidden>
+          PEP. <b name="pep_cliente">___________________</b>
+        </span>
+        <span name="tipo_id_cliente_ppt" hidden>
+          PPT. <b name="ppt_cliente">___________________</b>
+        </span>
+      </span>
+      <span name="tipo_persona_cliente_j" hidden>
+        NIT. <b name="nit_sociedad">___________________</b>
+      </span>
+    </td>
   </tr>
   <tr>
-    <td><b>1.3 CORREO ELECTRÓNICO</b></td>
+    <td><b>1.3 DIRECCIÓN</b></td>
+    <td><b name="direccion_cliente">___________________</b></td>
+  </tr>
+  <tr>
+    <td><b>1.4 CORREO ELECTRÓNICO</b></td>
     <td><b name="correo_cliente">___________________</b></td>
   </tr>
   <tr>
-    <td><b>1.4 TELÉFONO</b></td>
+    <td><b>1.5 TELÉFONO</b></td>
     <td><b name="tel_cliente">___________________</b></td>
   </tr>
   <tr>
@@ -2783,7 +2823,18 @@ ningún tipo de responsabilidad de su parte.
   <br />
   <span name="nombre_cliente">___________________</span>
   <br />
-  C.C <span name="cc_cliente">___________________</span>
+  <span name="tipo_id_cliente_cc">
+    CC. <b name="cc_cliente">___________________</b>
+  </span>
+  <span name="tipo_id_cliente_ce" hidden>
+    CE. <b name="ce_cliente">___________________</b>
+  </span>
+  <span name="tipo_id_cliente_pep" hidden>
+    PEP. <b name="pep_cliente">___________________</b>
+  </span>
+  <span name="tipo_id_cliente_ppt" hidden>
+    PPT. <b name="ppt_cliente">___________________</b>
+  </span>
   <span name="tipo_persona_cliente_j" hidden>
     <br />
     Representante Legal <br />
@@ -2831,9 +2882,23 @@ ningún tipo de responsabilidad de su parte.
       legalmente por
     </span>
     <span name="nombre_cliente">___________________</span>, identificado (a) con
-    cédula de ciudadanía número
-    <span name="cc_cliente">___________________</span>, quien para todos los
-    efectos legales se denominará EL CLIENTE – EL RESPONSABLE
+    <span name="tipo_id_cliente_cc">
+      cédula de ciudadanía No.
+      <b name="cc_cliente">___________________</b></span
+    >
+    <span name="tipo_id_cliente_ce" hidden>
+      cédula de extranjería No.
+      <b name="ce_cliente">___________________</b></span
+    >
+    <span name="tipo_id_cliente_pep" hidden>
+      permiso especial de pernanecia No.
+      <b name="pep_cliente">___________________</b></span
+    >
+    <span name="tipo_id_cliente_ppt" hidden>
+      permiso de protección temporal No.
+      <b name="ppt_cliente">___________________</b></span
+    >, quien para todos los efectos legales se denominará EL CLIENTE – EL
+    RESPONSABLE
   </li>
   <li>
     HIMED SOLUTIONS S.A.S., sociedad comercial identificada con NIT.
@@ -3351,15 +3416,14 @@ ningún tipo de responsabilidad de su parte.
     <td>Atención: Atención: HiMed Solutions S.A.S.</td>
   </tr>
   <tr>
-    <td>Dirección: 
-      <span name="tipo_persona_cliente_n">
-        <span name="direccion_cliente">___________________</span>
-      </span>
-      <span name="tipo_persona_cliente_j" hidden>
-        <span name="direccion_sociedad">___________________</span>
-      </span>
+    <td>
+      Dirección:
+      <span name="direccion_cliente">___________________</span>
     </td>
-    <td>Dirección: Calle 11B # 43A – 27, Edificio Los Cedros, torre 1, oficina 305, Medellín.</td>
+    <td>
+      Dirección: Calle 11B # 43A – 27, Edificio Los Cedros, torre 1, oficina
+      305, Medellín.
+    </td>
   </tr>
   <tr>
     <td>Teléfono: <span name="tel_cliente">___________________</span></td>
@@ -3372,11 +3436,14 @@ ningún tipo de responsabilidad de su parte.
 </table>
 
 <p>
-  <b>CLÁUSULA VIGÉSIMA. DOMICILIO DE LAS PARTES.</b> Para todos los efectos del cumplimiento de las obligaciones que se derivan del presente contrato, se señala como domicilio la ciudad de Medellín.
+  <b>CLÁUSULA VIGÉSIMA. DOMICILIO DE LAS PARTES.</b> Para todos los efectos del
+  cumplimiento de las obligaciones que se derivan del presente contrato, se
+  señala como domicilio la ciudad de Medellín.
 </p>
 
 <p>
-  El presente contrato se firma por las partes en el municipio de Medellín, el <span name="fecha_firma">___________________</span>
+  El presente contrato se firma por las partes en el municipio de Medellín, el
+  <span name="fecha_firma">___________________</span>
 </p>
 
 <br />
@@ -3390,7 +3457,18 @@ ningún tipo de responsabilidad de su parte.
   <br />
   <span name="nombre_cliente">___________________</span>
   <br />
-  C.C <span name="cc_cliente">___________________</span>
+  <span name="tipo_id_cliente_cc">
+    CC. <b name="cc_cliente">___________________</b>
+  </span>
+  <span name="tipo_id_cliente_ce" hidden>
+    CE. <b name="ce_cliente">___________________</b>
+  </span>
+  <span name="tipo_id_cliente_pep" hidden>
+    PEP. <b name="pep_cliente">___________________</b>
+  </span>
+  <span name="tipo_id_cliente_ppt" hidden>
+    PPT. <b name="ppt_cliente">___________________</b>
+  </span>
   <span name="tipo_persona_cliente_j" hidden>
     <br />
     Representante Legal <br />

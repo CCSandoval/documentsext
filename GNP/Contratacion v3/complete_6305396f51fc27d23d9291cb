@@ -389,6 +389,7 @@
         CARGO
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_jefe_formacion" hidden>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
         <span name="cargo_coord_hd" hidden>Coordinador de soporte Help Desk</span>
@@ -939,6 +940,7 @@
       <td>
         <b name="cargo_call_c_cnd">AGENTE CALL CENTER CND</b>
         <b name="cargo_gest_oper" hidden>Gestor Operativo</b>
+        <b name="cargo_jefe_formacion" hidden>Jefe de Formación</b>
         <b name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</b>
         <b name="cargo_sop_redes" hidden>Soporte Redes</b>
         <b name="cargo_coord_hd" hidden>Coordinador de soporte Help Desk</b>
@@ -1634,7 +1636,8 @@
       <td>
         <span name="cargo_call_c">AGENTE CALL CENTER</span>
         <span name="cargo_call_c_cnd" hidden>AGENTE CALL CENTER CND</span>
-        <span name="cargo_call_c_cnd" h hgest_oper>Gestor Operativo</span>
+        <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_call_c_cnd" cargo_jefe_formacion hgest_oper>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
         <span name="cargo_coord_hd" hidden>Coordinador de soporte Help Desk</span>
@@ -3160,6 +3163,16 @@
           <br/>Indicadores comerciales y de pqrs.
           <br/>Creación de informes, Planificación de Monitoreos. Auditar y supervisar todas las ventas y aleatoriamente las no ventas.
         </span>
+        <span name="cargo_jefe_formacion" hidden>
+            Garantizar el cumplimiento de indicadores del area
+          <br/>Presentar informes 
+          <br/>Diseñar evaluaciones de procesos y certificaciones
+          <br/>Satisfacción del cliente interno y externo sobre las capacitaciones. 
+          <br/>Elaborar nómina de asesores en etapa teórica y practica
+          <br/>Realizar solicitud y seguimiento de diademas y porta carnet
+          <br/>Garantizar que se realice seguimiento de los indicadores comerciales de los asesores en etapa práctica dentro de la operación
+          <br/>Asumir y ejecutar las demás funciones que le sean asignadas en cumplimiento de la misión del cargo.
+        </span>
       </td>
     </tr>
     <tr>
@@ -3326,6 +3339,7 @@
       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_jefe_formacion" hidden>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
         <span name="cargo_coord_hd" hidden>Coordinador de soporte Help Desk</span>
@@ -4774,6 +4788,7 @@
        <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_jefe_formacion" hidden>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden
           >Jefe Nacional de Redes y Soporte</span
         >

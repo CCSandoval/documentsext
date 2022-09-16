@@ -7,9 +7,72 @@
             description: 'Ingrese el nombre completo del cliente'
         },
         {
+            name: 'tipo_id_cliente',
+            type: 'clausula',
+            description: 'Seleccione el tipo de documento de identidad del cliente',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Permiso de protección temporal',
+                    value: 'ppt'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                }
+            ]
+        },
+        {
             name: 'cc_cliente',
             type: 'number',
-            description: 'Ingrese el número de cédula de ciudadanía del cliente'
+            description: 'Ingrese el número de cédula de ciudadanía del cliente',
+            prereq: [
+                {
+                    k: 'tipo_id_cliente',
+                    v: 'cc'
+                }
+            ]
+        },
+        {
+            name: 'ce_cliente',
+            type: 'number',
+            description: 'Ingrese el número de cédula de extranjería del cliente',
+            prereq: [
+                {
+                    k: 'tipo_id_cliente',
+                    v: 'ce'
+                }
+            ]
+        },
+        {
+            name: 'ppt_cliente',
+            type: 'text',
+            description: 'Ingrese el permiso de proteccion temporal del cliente',
+            prereq: [
+                {
+                    k: 'tipo_id_cliente',
+                    v: 'ppt'
+                }
+            ]
+        },
+        {
+            name: 'pep_cliente',
+            type: 'text',
+            description: 'Ingrese el permiso especial de permanencia del cliente',
+            prereq: [
+                {
+                    k: 'tipo_id_cliente',
+                    v: 'pep'
+                }
+            ]
         },
         {
             name: 'tipo_persona_cliente',
@@ -59,6 +122,11 @@
                     v: 'j'
                 }
             ]
+        },
+        {
+            name: 'direccion_cliente',
+            type: 'text',
+            description: 'Ingrese la dirección de residencia del cliente'
         },
         {
             name: 'correo_cliente',
@@ -137,17 +205,6 @@
             ]
         },
         {
-            name: 'direccion_cliente',
-            type: 'text',
-            description: 'Ingrese la dirección de residencia del cliente',
-            prereq: [
-                {
-                    k: 'tipo_persona_cliente',
-                    v: 'n'
-                }
-            ]
-        },
-        {
             name: 'fecha_firma',
             type: 'date',
             description: 'Seleccione la fecha de firma del contrato'
@@ -171,12 +228,15 @@
         'nombre_cliente',
         'cc_cliente',
         'correo_cliente',
-        'tel_cliente'
+        'tel_cliente',
+        'ce_cliente',
+        'ppt_cliente',
+        'pep_cliente'
     ],
     signatureProfile: [
         {
             name: 'nombre_cliente',
-            identification: 'cc_cliente',
+            identification: 'cc_cliente|ce_cliente|ppt_cliente|pep_cliente',
             email: 'correo_cliente',
             phone: 'tel_cliente',
             type: 'firma_cliente'
@@ -191,5 +251,5 @@
     preBuild: false,
     name: 'CONTRATO DE LICENCIAMIENTO PARA EL USO EXCLUSIVO DEL SOFTWARE HIMED',
     price: 5000,
-    build: 1
+    build: 3
 }

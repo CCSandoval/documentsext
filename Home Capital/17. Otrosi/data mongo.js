@@ -7,8 +7,35 @@
             name: 'document_code'
         },
         {
-            description: 'Ingresa el correo de la persona que diligenciará éste documento',
+            name: 'campo_texto',
+            description: '¿Desea ingresar texto extra?',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            value: 'n'
+        },
+        {
+            name: 'texto_extra',
+            description: 'Ingrese el texto extra',
             type: 'text',
+            prereq: [
+                {
+                    k: 'campo_texto',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            description: 'Ingresa el correo de la persona que diligenciará éste documento',
+            type: 'email',
             name: 'correo_enviar'
         },
         {
@@ -7131,33 +7158,6 @@
             type: 'name'
         },
         {
-            name: 'campo_texto',
-            description: '¿Desea ingresar texto extra?',
-            type: 'clausula',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Si',
-                    value: 's'
-                }
-            ],
-            value: 'n'
-        },
-        {
-            name: 'texto_extra',
-            description: 'Ingrese el texto extra',
-            type: 'text',
-            prereq: [
-                {
-                    k: 'campo_texto',
-                    v: 's'
-                }
-            ]
-        },
-        {
             description: 'Seleccione la fecha en la que se firma el presente contrato',
             help: 'fecha',
             name: 'fecha_firma',
@@ -7483,6 +7483,8 @@
     preFill: [],
     preBuildData: [
         'document_code',
+        'campo_texto',
+        'texto_extra',
         'correo_enviar'
     ],
     name: 'OTROSÍ PROMESA DE COMPRAVENTA',
@@ -7514,6 +7516,6 @@
     price: 5000,
     preBuild: true,
     company: ObjectId('614a3a750aebb000084cbac0'),
-    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916',
-    build: 0
+    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
+    build: 2
 }

@@ -4048,7 +4048,6 @@
     ],
     name: 'PAGARÉ FACTORING DIVISA',
     username: '037e0578-8052-4efd-9662-0bcc6077c897',
-    company: ObjectId('61942036889b8f0009db9812'),
     price: 5000,
     build: 4
 }

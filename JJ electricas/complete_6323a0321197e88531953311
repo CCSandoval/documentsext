@@ -1,0 +1,183 @@
+<p style="text-align: center">
+  <b>
+    OTRO SI Nº 01 <br />
+    AL CONTRATO INDIVIDUAL DE TRABAJO A TERMINO FIJO
+  </b>
+</p>
+<hr />
+<table style="width: 100%">
+  <tr>
+    <td><b>EMPLEADOR</b></td>
+    <td><span name="nombre_empresa_empleador">________________</span></td>
+  </tr>
+  <tr>
+    <td>NIT</td>
+    <td><span name="nit_empleador">________________</span></td>
+  </tr>
+  <tr>
+    <td>DOMICILIO</td>
+    <td><span name="domicilio_empleador">________________</span></td>
+  </tr>
+  <tr>
+    <td>DIRECCIÓN DEL EMPLEADOR</td>
+    <td><span name="direccion_empleador">________________</span></td>
+  </tr>
+</table>
+<hr />
+<table style="width: 100%">
+  <tr>
+    <td><b>EMPLEADO</b></td>
+    <td><span name="nombre_empleado">________________</span></td>
+  </tr>
+  <tr>
+    <td>DOCUMENTO DE IDENTIDAD</td>
+    <td>
+      <span name="tipo_id_empleado_cc">
+        C.C. <span name="cc_empleado">________________</span>
+      </span>
+      <span name="tipo_id_empleado_ce" hidden>
+        C.E. <span name="ce_empleado">________________</span>
+      </span>
+      <span name="tipo_id_empleado_pep" hidden>
+        PEP. <span name="pep_empleado">________________</span>
+      </span>
+      <span name="tipo_id_empleado_ppt" hidden>
+        PPT. <span name="ppt_empleado">________________</span>
+      </span>
+    </td>
+  </tr>
+  <tr>
+    <td>DOMICILIO</td>
+    <td><span name="domicilio_empleado">________________</span></td>
+  </tr>
+  <tr>
+    <td>DIRECCION DE RESIDENCIA</td>
+    <td><span name="direccion_empleado">________________</span></td>
+  </tr>
+</table>
+
+<p>
+  Entre los suscritos <b name="nombre_empleado">________________</b> identificado(a)
+  con
+  <span name="tipo_id_empleado_cc">
+    C.C. <span name="cc_empleado">________________</span>
+  </span>
+  <span name="tipo_id_empleado_ce" hidden>
+    C.E. <span name="ce_empleado">________________</span>
+  </span>
+  <span name="tipo_id_empleado_pep" hidden>
+    PEP. <span name="pep_empleado">________________</span>
+  </span>
+  <span name="tipo_id_empleado_ppt" hidden>
+    PPT. <span name="ppt_empleado">________________</span>
+  </span>
+  de <span name="lugar_exp_id_empleado">________________</span> actuando en
+  nombre propio y quien en adelante y para efectos de este acuerdo se denominará
+  <b>el TRABAJADOR</b> y el señor(a)
+  <span name="nombre_rep_empleador">________________</span> identificado(a) con
+  <span name="tipo_id_empleador_cc">
+    C.C. <span name="cc_empleador">________________</span>
+  </span>
+  <span name="tipo_id_empleador_ce" hidden>
+    C.E. <span name="ce_empleador">________________</span>
+  </span>
+  <span name="tipo_id_empleador_pep" hidden>
+    PEP. <span name="pep_empleador">________________</span>
+  </span>
+  <span name="tipo_id_empleador_ppt" hidden>
+    PPT. <span name="ppt_empleador">________________</span>
+  </span>
+  de <span name="lugar_exp_id_empleador">________________</span> actuando en
+  nombre y representación de la empresa
+  <span name="nombre_empresa_empleador">________________</span> con número de
+  <b>NIT</b> <b name="nit_empleador">________________</b> y quien en adelante se
+  y para efectos de este acuerdo se denominará <b>EL EMPLEADOR</b>, se ha
+  convenido lo siguiente:
+</p>
+
+<p>
+  Las partes de común acuerdo determinan modificar y/o adicionar la siguiente
+  clausula:
+</p>
+
+<p>
+  <b>CLAUSULA PRIMERA: EL TRABAJADOR</b> se compromete a permanecer vinculado a
+  la empresa <b>JJ INSTALACIONES ELECTRICAS SAS</b> por un lapso mínimo de dos
+  meses contados a partir de la firma del contrato laboral ejecutando las
+  labores derivadas del contrato de trabajo suscrito el
+  <span name="fecha_contrato">________________</span>, de igual manera el
+  trabajador se obliga a asistir y/o capacitarse en las actividades que programe
+  el empleador o quien haga sus veces, para lo cual dichas capacitaciones y/o
+  cursos deberán ser informadas al trabajador con una anticipación de un (1)
+  día. Es oportuno señalar que, de conformidad a lo preceptuado en el artículo
+  64 del CST, si el trabajador llegare a incumplir el tiempo mínimo de
+  permanencia establecido en el acápite anterior, deberá efectuar la devolución
+  de los dineros cancelados por el empleador por concepto de capacitación y/o
+  estudio.
+</p>
+
+<p>
+  <b>PARÁGRAFO:</b> El trabajador autoriza de manera expresa e irrevocablemente
+  a JJ INSTALACIONES ELÉCTRICAS, para que deduzcan de mi salario o liquidación
+  el valor total del curso pagado al centro de entrenamiento.
+</p>
+
+<p>Las demás cláusulas del contrato a término fijo siguen vigentes.</p>
+
+<p>
+  Para constancia, y en señal de aceptación, se firma el presente acuerdo en dos
+  ejemplares, por las partes que en él han intervenido, en la ciudad de
+  <span name="ciudad_firma">________________</span>.
+</p>
+
+<br />
+<br />
+<br />
+<br />
+
+<p>
+  <b>El Empleador</b>
+  <div id="empleador" class="sign_margin"></div>
+  Nombres Empleador: <span name="nombre_rep_empleador">________________</span>
+  <br />
+  <span name="tipo_id_empleador_cc">
+    C.C: <span name="cc_empleador">________________</span>
+  </span>
+  <span name="tipo_id_empleador_ce" hidden>
+    C.E: <span name="ce_empleador">________________</span>
+  </span>
+  <span name="tipo_id_empleador_pep" hidden>
+    PEP: <span name="pep_empleador">________________</span>
+  </span>
+  <span name="tipo_id_empleador_ppt" hidden>
+    PPT: <span name="ppt_empleador">________________</span>
+  </span>
+  <br />
+  Cargo: <span name="cargo_empleador">________________</span>
+  <br />
+  Email: <span name="email_empleador">________________</span>
+</p>
+
+<br />
+<br />
+
+<p>
+  <b>El Trabajador</b>
+  <div id="empleado" class="sign_margin"></div>
+  Nombres Trabajador: <span name="nombre_empleado">________________</span>
+  <br />
+  <span name="tipo_id_empleado_cc">
+    C.C: <span name="cc_empleado">________________</span>
+  </span>
+  <span name="tipo_id_empleado_ce" hidden>
+    C.E: <span name="ce_empleado">________________</span>
+  </span>
+  <span name="tipo_id_empleado_pep" hidden>
+    PEP: <span name="pep_empleado">________________</span>
+  </span>
+  <span name="tipo_id_empleado_ppt" hidden>
+    PPT: <span name="ppt_empleado">________________</span>
+  </span>
+  <br />
+  Email: <span name="email_empleado">________________</span>
+</p>
