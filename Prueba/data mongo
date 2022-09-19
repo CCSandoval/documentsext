@@ -27,31 +27,31 @@
             type: 'clausula',
             value: 'cc',
             help: 'comprador'
-        },
+},
+{
+    description: 'Digite el número de cédula de ciudadanía de la parte comprador',
+    name: 'cedula_comprador',
+    prereq: [
         {
-            description: 'Digite el número de cédula de ciudadanía de la parte comprador',
-            name: 'cedula_comprador',
-            prereq: [
-                {
-                    k: 'document_type_comprador',
-                    v: 'cc'
-                }
-            ],
-            type: 'number',
-            help: 'comprador'
-        },
+            k: 'document_type_comprador',
+            v: 'cc'
+        }
+    ],
+    type: 'number',
+    help: 'comprador'
+},
+{
+    description: 'Digite el número de cédula de extranjería de la parte comprador',
+    name: 'cedulae_comprador',
+    prereq: [
         {
-            description: 'Digite el número de cédula de extranjería de la parte comprador',
-            name: 'cedulae_comprador',
-            prereq: [
-                {
-                    k: 'document_type_comprador',
-                    v: 'ce'
-                }
-            ],
-            type: 'number',
-            help: 'comprador'
-        },
+            k: 'document_type_comprador',
+            v: 'ce'
+        }
+    ],
+    type: 'number',
+    help: 'comprador'
+},
         {
             description: 'Digite el número del pasaporte de la parte comprador',
             name: 'pasaporte_comprador',
@@ -90,13 +90,13 @@
         'email_comprador'
     ],
     signatureProfile: [
-        {
-            email: 'email_comprador',
-            phone: 'telefono_comprador',
-            identification: 'cedula_comprador|cedulae_comprador|pasaporte_comprador',
-            name: 'name_comprador',
-            type: 'comprador'
-        }
+{
+    email: 'email_comprador',
+    phone: 'telefono_comprador',
+    identification: 'cedula_comprador|cedulae_comprador|pasaporte_comprador',
+    name: 'name_comprador',
+    type: 'comprador'
+}
     ],
     build: 0,
     price: 5000,

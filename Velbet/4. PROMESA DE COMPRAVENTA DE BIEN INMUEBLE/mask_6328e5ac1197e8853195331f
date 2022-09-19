@@ -1,0 +1,1052 @@
+<h2 class="text-center">
+  <b style="font-size: 16pt">CONTRATO DE PROMESA DE COMPRAVENTA DE BIEN INMUEBLE</b>
+</h2>
+
+<p>
+  Entre los suscritos a saber,
+  <span name="nombre_comprador">________</span>, mayor de edad,
+  <span name="genero_comprador_m"> identificada</span>
+  <span name="genero_comprador_h" hidden> identificado</span> con
+  <span name="tipo_documento_comprador_cc"> cédula de ciudadanía número
+    <span name="cedula_comprador">________</span>,
+  </span>
+  <span name="tipo_documento_comprador_ce" hidden> cédula de extranjería número
+    <span name="cedulae_comprador">________</span>,
+  </span>
+  <span name="tipo_documento_comprador_pa" hidden> pasaporte número
+    <span name="pasaporte_comprador">________</span>,
+  </span>
+  <span name="tipo_comprador_n"> con estado civil
+    <span name="estado_civil_comprador_cc" hidden>
+      <span name="genero_comprador_m"> casada con sociedad conyugal vigente,</span>
+      <span name="genero_comprador_h" hidden> casado con sociedad conyugal vigente,</span>
+    </span>
+    <span name="estado_civil_comprador_cs" hidden>
+      <span name="genero_comprador_m"> casada sin sociedad conyugal vigente,</span>
+      <span name="genero_comprador_h" hidden> Casado sin sociedad conyugal vigente,</span>
+    </span>
+    <span name="estado_civil_comprador_so">
+      <span name="genero_comprador_m"> soltera,</span>
+      <span name="genero_comprador_h" hidden> soltero,</span>
+    </span>
+    <span name="estado_civil_comprador_vi" hidden>
+      <span name="genero_comprador_m"> viuda,</span>
+      <span name="genero_comprador_h" hidden> viudo,</span>
+    </span>
+    <span name="estado_civil_comprador_su" hidden>
+      <span name="genero_comprador_m"> soltera con unión marital de hecho,</span>
+      <span name="genero_comprador_h" hidden> soltero con unión marital de hecho,</span>
+    </span>
+    <span name="genero_comprador_m"> domiciliada</span>
+    <span name="genero_comprador_h" hidden> domiciliado</span> en la ciudad de
+    <span name="ciudad_comprador">________</span>,
+  </span>
+  <span name="tipo_comprador_j" hidden> actuando en calidad de representante legal de
+    <span name="nombre_empresa_comprador">________</span>, persona jurídica de derecho privado debidamente
+    constituida, con domicilio principal en el municipio de
+    <span name="ciudad_empresa_comprador">________</span>, identificada con NIT
+    <span name="identificacion_empresa_comprador">________ </span>,
+  </span>
+  <span name="compradores_2_n"></span>
+  <span name="compradores_2_s" hidden>
+    <span name="nombre_comprador_2">________</span>, mayor de edad,
+    <span name="genero_comprador_2_m"> identificada</span>
+    <span name="genero_comprador_2_h" hidden> identificado</span> con
+    <span name="tipo_documento_comprador_2_cc"> cédula de ciudadanía número
+      <span name="cedula_comprador_2">________</span>,
+    </span>
+    <span name="tipo_documento_comprador_2_ce" hidden> cédula de extranjería número
+      <span name="cedulae_comprador_2">________</span>,
+    </span>
+    <span name="tipo_documento_comprador_2_pa" hidden> pasaporte número
+      <span name="pasaporte_comprador_2">________</span>,
+    </span>
+    <span name="tipo_comprador_2_n"> con estado civil
+      <span name="estado_civil_comprador_2_cc" hidden>
+        <span name="genero_comprador_2_m"> casada con sociedad conyugal vigente,</span>
+        <span name="genero_comprador_2_h" hidden> casado con sociedad conyugal vigente,</span>
+      </span>
+      <span name="estado_civil_comprador_2_cs" hidden>
+        <span name="genero_comprador_2_m"> casada sin sociedad conyugal vigente,</span>
+        <span name="genero_comprador_2_h" hidden> Casado sin sociedad conyugal vigente,</span>
+      </span>
+      <span name="estado_civil_comprador_2_so">
+        <span name="genero_comprador_2_m"> soltera,</span>
+        <span name="genero_comprador_2_h" hidden> soltero,</span>
+      </span>
+      <span name="estado_civil_comprador_2_vi" hidden>
+        <span name="genero_comprador_2_m"> viuda,</span>
+        <span name="genero_comprador_2_h" hidden> viudo,</span>
+      </span>
+      <span name="estado_civil_comprador_2_su" hidden>
+        <span name="genero_comprador_2_m"> soltera con unión marital de hecho,</span>
+        <span name="genero_comprador_2_h" hidden> soltero con unión marital de hecho,</span>
+      </span>
+      <span name="genero_comprador_2_m"> domiciliada</span>
+      <span name="genero_comprador_2_h" hidden> domiciliado</span> en la ciudad de
+      <span name="ciudad_comprador_2">________</span>,
+    </span>
+    <span name="tipo_comprador_2_j" hidden> actuando en calidad de representante legal de
+      <span name="nombre_empresa_comprador_2">________</span>, persona jurídica de derecho privado debidamente
+      constituida, con domicilio principal en el municipio de
+      <span name="ciudad_empresa_comprador_2">________</span>, identificada con NIT
+      <span name="identificacion_empresa_comprador_2">________ </span>,
+    </span>
+    <span name="compradores_3_n"></span>
+    <span name="compradores_3_s" hidden>
+      <span name="nombre_comprador_3">________</span>, mayor de edad,
+      <span name="genero_comprador_3_m"> identificada</span>
+      <span name="genero_comprador_3_h" hidden> identificado</span> con
+      <span name="tipo_documento_comprador_3_cc"> cédula de ciudadanía número
+        <span name="cedula_comprador_3">________</span>,
+      </span>
+      <span name="tipo_documento_comprador_3_ce" hidden> cédula de extranjería número
+        <span name="cedulae_comprador_3">________</span>,
+      </span>
+      <span name="tipo_documento_comprador_3_pa" hidden> pasaporte número
+        <span name="pasaporte_comprador_3">________</span>,
+      </span>
+      <span name="tipo_comprador_3_n"> con estado civil
+        <span name="estado_civil_comprador_3_cc" hidden>
+          <span name="genero_comprador_3_m"> casada con sociedad conyugal vigente,</span>
+          <span name="genero_comprador_3_h" hidden> casado con sociedad conyugal vigente,</span>
+        </span>
+        <span name="estado_civil_comprador_3_cs" hidden>
+          <span name="genero_comprador_3_m"> casada sin sociedad conyugal vigente,</span>
+          <span name="genero_comprador_3_h" hidden> Casado sin sociedad conyugal vigente,</span>
+        </span>
+        <span name="estado_civil_comprador_3_so">
+          <span name="genero_comprador_3_m"> soltera,</span>
+          <span name="genero_comprador_3_h" hidden> soltero,</span>
+        </span>
+        <span name="estado_civil_comprador_3_vi" hidden>
+          <span name="genero_comprador_3_m"> viuda,</span>
+          <span name="genero_comprador_3_h" hidden> viudo,</span>
+        </span>
+        <span name="estado_civil_comprador_3_su" hidden>
+          <span name="genero_comprador_3_m"> soltera con unión marital de hecho,</span>
+          <span name="genero_comprador_3_h" hidden> soltero con unión marital de hecho,</span>
+        </span>
+        <span name="genero_comprador_3_m"> domiciliada</span>
+        <span name="genero_comprador_3_h" hidden> domiciliado</span> en la ciudad de
+        <span name="ciudad_comprador_3">________</span>,
+      </span>
+      <span name="tipo_comprador_3_j" hidden> actuando en calidad de representante legal de
+        <span name="nombre_empresa_comprador_3">________</span>, persona jurídica de derecho privado debidamente
+        constituida, con domicilio principal en el municipio de
+        <span name="ciudad_empresa_comprador_3">________</span>, identificada con NIT
+        <span name="identificacion_empresa_comprador_3">________ </span>,
+      </span>
+      <span name="compradores_4_n"></span>
+      <span name="compradores_4_s" hidden>
+        <span name="nombre_comprador_4">________</span>, mayor de edad,
+        <span name="genero_comprador_4_m"> identificada</span>
+        <span name="genero_comprador_4_h" hidden> identificado</span> con
+        <span name="tipo_documento_comprador_4_cc"> cédula de ciudadanía número
+          <span name="cedula_comprador_4">________</span>,
+        </span>
+        <span name="tipo_documento_comprador_4_ce" hidden> cédula de extranjería número
+          <span name="cedulae_comprador_4">________</span>,
+        </span>
+        <span name="tipo_documento_comprador_4_pa" hidden> pasaporte número
+          <span name="pasaporte_comprador_4">________</span>,
+        </span>
+        <span name="tipo_comprador_4_n"> con estado civil
+          <span name="estado_civil_comprador_4_cc" hidden>
+            <span name="genero_comprador_4_m"> casada con sociedad conyugal vigente,</span>
+            <span name="genero_comprador_4_h" hidden> casado con sociedad conyugal vigente,</span>
+          </span>
+          <span name="estado_civil_comprador_4_cs" hidden>
+            <span name="genero_comprador_4_m"> casada sin sociedad conyugal vigente,</span>
+            <span name="genero_comprador_4_h" hidden> Casado sin sociedad conyugal vigente,</span>
+          </span>
+          <span name="estado_civil_comprador_4_so">
+            <span name="genero_comprador_4_m"> soltera,</span>
+            <span name="genero_comprador_4_h" hidden> soltero,</span>
+          </span>
+          <span name="estado_civil_comprador_4_vi" hidden>
+            <span name="genero_comprador_4_m"> viuda,</span>
+            <span name="genero_comprador_4_h" hidden> viudo,</span>
+          </span>
+          <span name="estado_civil_comprador_4_su" hidden>
+            <span name="genero_comprador_4_m"> soltera con unión marital de hecho,</span>
+            <span name="genero_comprador_4_h" hidden> soltero con unión marital de hecho,</span>
+          </span>
+          <span name="genero_comprador_4_m"> domiciliada</span>
+          <span name="genero_comprador_4_h" hidden> domiciliado</span> en la ciudad de
+          <span name="ciudad_comprador_4">________</span>,
+        </span>
+        <span name="tipo_comprador_4_j" hidden> actuando en calidad de representante legal de
+          <span name="nombre_empresa_comprador_4">________</span>, persona jurídica de derecho privado debidamente
+          constituida, con domicilio principal en el municipio de
+          <span name="ciudad_empresa_comprador_4">________</span>, identificada con NIT
+          <span name="identificacion_empresa_comprador_4">________ </span>,
+        </span>
+        <span name="compradores_5_n"></span>
+        <span name="compradores_5_s" hidden>
+          <span name="nombre_comprador_5">________</span>, mayor de edad,
+          <span name="genero_comprador_5_m"> identificada</span>
+          <span name="genero_comprador_5_h" hidden> identificado</span> con
+          <span name="tipo_documento_comprador_5_cc"> cédula de ciudadanía número
+            <span name="cedula_comprador_5">________</span>,
+          </span>
+          <span name="tipo_documento_comprador_5_ce" hidden> cédula de extranjería número
+            <span name="cedulae_comprador_5">________</span>,
+          </span>
+          <span name="tipo_documento_comprador_5_pa" hidden> pasaporte número
+            <span name="pasaporte_comprador_5">________</span>,
+          </span>
+          <span name="tipo_comprador_5_n"> con estado civil
+            <span name="estado_civil_comprador_5_cc" hidden>
+              <span name="genero_comprador_5_m"> casada con sociedad conyugal vigente,</span>
+              <span name="genero_comprador_5_h" hidden> casado con sociedad conyugal vigente,</span>
+            </span>
+            <span name="estado_civil_comprador_5_cs" hidden>
+              <span name="genero_comprador_5_m"> casada sin sociedad conyugal vigente,</span>
+              <span name="genero_comprador_5_h" hidden> Casado sin sociedad conyugal vigente,</span>
+            </span>
+            <span name="estado_civil_comprador_5_so">
+              <span name="genero_comprador_5_m"> soltera,</span>
+              <span name="genero_comprador_5_h" hidden> soltero,</span>
+            </span>
+            <span name="estado_civil_comprador_5_vi" hidden>
+              <span name="genero_comprador_5_m"> viuda,</span>
+              <span name="genero_comprador_5_h" hidden> viudo,</span>
+            </span>
+            <span name="estado_civil_comprador_5_su" hidden>
+              <span name="genero_comprador_5_m"> soltera con unión marital de hecho,</span>
+              <span name="genero_comprador_5_h" hidden> soltero con unión marital de hecho,</span>
+            </span>
+            <span name="genero_comprador_5_m"> domiciliada</span>
+            <span name="genero_comprador_5_h" hidden> domiciliado</span> en la ciudad de
+            <span name="ciudad_comprador_5">________</span>,
+          </span>
+          <span name="tipo_comprador_5_j" hidden> actuando en calidad de representante legal de
+            <span name="nombre_empresa_comprador_5">________</span>, persona jurídica de derecho privado debidamente
+            constituida, con domicilio principal en el municipio de
+            <span name="ciudad_empresa_comprador_5">________</span>, identificada con NIT
+            <span name="identificacion_empresa_comprador_5">________ </span>,
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+  y quien en adelante se
+  <span name="compradores_2_n">denominará</span>
+  <span name="compradores_2_s" hidden>denominarán</span>
+  <b>LA PARTE PROMITENTE COMPRADORA;</b> por una parte; y por la otra,
+  <span name="nombre_vendedor">________</span>, mayor de edad,
+  <span name="genero_vendedor_m"> identificada</span>
+  <span name="genero_vendedor_h" hidden> identificado</span> con
+  <span name="tipo_documento_vendedor_cc"> cédula de ciudadanía número
+    <span name="cedula_vendedor">________</span>,
+  </span>
+  <span name="tipo_documento_vendedor_ce" hidden> cédula de extranjería número
+    <span name="cedulae_vendedor">________</span>,
+  </span>
+  <span name="tipo_documento_vendedor_pa" hidden> pasaporte número
+    <span name="pasaporte_vendedor">________</span>,
+  </span>
+  <span name="tipo_vendedor_n"> con estado civil
+    <span name="estado_civil_vendedor_cc" hidden>
+      <span name="genero_vendedor_m"> casada con sociedad conyugal vigente,</span>
+      <span name="genero_vendedor_h" hidden> casado con sociedad conyugal vigente,</span>
+    </span>
+    <span name="estado_civil_vendedor_cs" hidden>
+      <span name="genero_vendedor_m"> casada sin sociedad conyugal vigente,</span>
+      <span name="genero_vendedor_h" hidden> Casado sin sociedad conyugal vigente,</span>
+    </span>
+    <span name="estado_civil_vendedor_so">
+      <span name="genero_vendedor_m"> soltera,</span>
+      <span name="genero_vendedor_h" hidden> soltero,</span>
+    </span>
+    <span name="estado_civil_vendedor_vi" hidden>
+      <span name="genero_vendedor_m"> viuda,</span>
+      <span name="genero_vendedor_h" hidden> viudo,</span>
+    </span>
+    <span name="estado_civil_vendedor_su" hidden>
+      <span name="genero_vendedor_m"> soltera con unión marital de hecho,</span>
+      <span name="genero_vendedor_h" hidden> soltero con unión marital de hecho,</span>
+    </span>
+    <span name="genero_vendedor_m"> domiciliada</span>
+    <span name="genero_vendedor_h" hidden> domiciliado</span> en el municipio de
+    <span name="ciudad_vendedor">________</span>,
+  </span>
+  <span name="tipo_vendedor_j" hidden>, actuando en calidad de representante legal de
+    <span name="nombre_empresa_vendedor">________</span>, persona jurídica de derecho privado debidamente
+    constituida, con domicilio principal en el municipio de
+    <span name="ciudad_empresa_vendedor">________</span> identificada con Nit, y
+    <span name="identificacion_empresa_vendedor">________</span>
+  </span>
+  <span name="vendedores_2_n"></span>
+  <span name="vendedores_2_s" hidden>
+    <span name="nombre_vendedor_2">________</span>, mayor de edad,
+    <span name="genero_vendedor_2_m"> identificada</span>
+    <span name="genero_vendedor_2_h" hidden> identificado</span> con
+    <span name="tipo_documento_vendedor_2_cc"> cédula de ciudadanía número
+      <span name="cedula_vendedor_2">________</span>,
+    </span>
+    <span name="tipo_documento_vendedor_2_ce" hidden> cédula de extranjería número
+      <span name="cedulae_vendedor_2">________</span>,
+    </span>
+    <span name="tipo_documento_vendedor_2_pa" hidden> pasaporte número
+      <span name="pasaporte_vendedor_2">________</span>,
+    </span>
+    <span name="tipo_vendedor_2_n"> con estado civil
+      <span name="estado_civil_vendedor_2_cc" hidden>
+        <span name="genero_vendedor_2_m"> casada con sociedad conyugal vigente,</span>
+        <span name="genero_vendedor_2_h" hidden> casado con sociedad conyugal vigente,</span>
+      </span>
+      <span name="estado_civil_vendedor_2_cs" hidden>
+        <span name="genero_vendedor_2_m"> casada sin sociedad conyugal vigente,</span>
+        <span name="genero_vendedor_2_h" hidden> Casado sin sociedad conyugal vigente,</span>
+      </span>
+      <span name="estado_civil_vendedor_2_so">
+        <span name="genero_vendedor_2_m"> soltera,</span>
+        <span name="genero_vendedor_2_h" hidden> soltero,</span>
+      </span>
+      <span name="estado_civil_vendedor_2_vi" hidden>
+        <span name="genero_vendedor_2_m"> viuda,</span>
+        <span name="genero_vendedor_2_h" hidden> viudo,</span>
+      </span>
+      <span name="estado_civil_vendedor_2_su" hidden>
+        <span name="genero_vendedor_2_m"> soltera con unión marital de hecho,</span>
+        <span name="genero_vendedor_2_h" hidden> soltero con unión marital de hecho,</span>
+      </span>
+      <span name="genero_vendedor_2_m"> domiciliada</span>
+      <span name="genero_vendedor_2_h" hidden> domiciliado</span> en el municipio de
+      <span name="ciudad_vendedor_2">________</span>,
+    </span>
+    <span name="tipo_vendedor_2_j" hidden>, actuando en calidad de representante legal de
+      <span name="nombre_empresa_vendedor_2">________</span>, persona jurídica de derecho privado debidamente
+      constituida, con domicilio principal en el municipio de
+      <span name="ciudad_empresa_vendedor_2">________</span> identificada con Nit, y
+      <span name="identificacion_empresa_vendedor_2">________</span>
+    </span>
+    <span name="vendedores_3_n"></span>
+    <span name="vendedores_3_s" hidden>
+      <span name="nombre_vendedor_3">________</span>, mayor de edad,
+      <span name="genero_vendedor_3_m"> identificada</span>
+      <span name="genero_vendedor_3_h" hidden> identificado</span> con
+      <span name="tipo_documento_vendedor_3_cc"> cédula de ciudadanía número
+        <span name="cedula_vendedor_3">________</span>,
+      </span>
+      <span name="tipo_documento_vendedor_3_ce" hidden> cédula de extranjería número
+        <span name="cedulae_vendedor_3">________</span>,
+      </span>
+      <span name="tipo_documento_vendedor_3_pa" hidden> pasaporte número
+        <span name="pasaporte_vendedor_3">________</span>,
+      </span>
+      <span name="tipo_vendedor_3_n"> con estado civil
+        <span name="estado_civil_vendedor_3_cc" hidden>
+          <span name="genero_vendedor_3_m"> casada con sociedad conyugal vigente,</span>
+          <span name="genero_vendedor_3_h" hidden> casado con sociedad conyugal vigente,</span>
+        </span>
+        <span name="estado_civil_vendedor_3_cs" hidden>
+          <span name="genero_vendedor_3_m"> casada sin sociedad conyugal vigente,</span>
+          <span name="genero_vendedor_3_h" hidden> Casado sin sociedad conyugal vigente,</span>
+        </span>
+        <span name="estado_civil_vendedor_3_so">
+          <span name="genero_vendedor_3_m"> soltera,</span>
+          <span name="genero_vendedor_3_h" hidden> soltero,</span>
+        </span>
+        <span name="estado_civil_vendedor_3_vi" hidden>
+          <span name="genero_vendedor_3_m"> viuda,</span>
+          <span name="genero_vendedor_3_h" hidden> viudo,</span>
+        </span>
+        <span name="estado_civil_vendedor_3_su" hidden>
+          <span name="genero_vendedor_3_m"> soltera con unión marital de hecho,</span>
+          <span name="genero_vendedor_3_h" hidden> soltero con unión marital de hecho,</span>
+        </span>
+        <span name="genero_vendedor_3_m"> domiciliada</span>
+        <span name="genero_vendedor_3_h" hidden> domiciliado</span> en el municipio de
+        <span name="ciudad_vendedor_3">________</span>,
+      </span>
+      <span name="tipo_vendedor_3_j" hidden>, actuando en calidad de representante legal de
+        <span name="nombre_empresa_vendedor_3">________</span>, persona jurídica de derecho privado debidamente
+        constituida, con domicilio principal en el municipio de
+        <span name="ciudad_empresa_vendedor_3">________</span> identificada con Nit, y
+        <span name="identificacion_empresa_vendedor_3">________</span>
+      </span>
+      <span name="vendedores_4_n"></span>
+      <span name="vendedores_4_s" hidden>
+        <span name="nombre_vendedor_4">________</span>, mayor de edad,
+        <span name="genero_vendedor_4_m"> identificada</span>
+        <span name="genero_vendedor_4_h" hidden> identificado</span> con
+        <span name="tipo_documento_vendedor_4_cc"> cédula de ciudadanía número
+          <span name="cedula_vendedor_4">________</span>,
+        </span>
+        <span name="tipo_documento_vendedor_4_ce" hidden> cédula de extranjería número
+          <span name="cedulae_vendedor_4">________</span>,
+        </span>
+        <span name="tipo_documento_vendedor_4_pa" hidden> pasaporte número
+          <span name="pasaporte_vendedor_4">________</span>,
+        </span>
+        <span name="tipo_vendedor_4_n"> con estado civil
+          <span name="estado_civil_vendedor_4_cc" hidden>
+            <span name="genero_vendedor_4_m"> casada con sociedad conyugal vigente,</span>
+            <span name="genero_vendedor_4_h" hidden> casado con sociedad conyugal vigente,</span>
+          </span>
+          <span name="estado_civil_vendedor_4_cs" hidden>
+            <span name="genero_vendedor_4_m"> casada sin sociedad conyugal vigente,</span>
+            <span name="genero_vendedor_4_h" hidden> Casado sin sociedad conyugal vigente,</span>
+          </span>
+          <span name="estado_civil_vendedor_4_so">
+            <span name="genero_vendedor_4_m"> soltera,</span>
+            <span name="genero_vendedor_4_h" hidden> soltero,</span>
+          </span>
+          <span name="estado_civil_vendedor_4_vi" hidden>
+            <span name="genero_vendedor_4_m"> viuda,</span>
+            <span name="genero_vendedor_4_h" hidden> viudo,</span>
+          </span>
+          <span name="estado_civil_vendedor_4_su" hidden>
+            <span name="genero_vendedor_4_m"> soltera con unión marital de hecho,</span>
+            <span name="genero_vendedor_4_h" hidden> soltero con unión marital de hecho,</span>
+          </span>
+          <span name="genero_vendedor_4_m"> domiciliada</span>
+          <span name="genero_vendedor_4_h" hidden> domiciliado</span> en el municipio de
+          <span name="ciudad_vendedor_4">________</span>,
+        </span>
+        <span name="tipo_vendedor_4_j" hidden>, actuando en calidad de representante legal de
+          <span name="nombre_empresa_vendedor_4">________</span>, persona jurídica de derecho privado debidamente
+          constituida, con domicilio principal en el municipio de
+          <span name="ciudad_empresa_vendedor_4">________</span> identificada con Nit, y
+          <span name="identificacion_empresa_vendedor_4">________</span>
+        </span>
+        <span name="vendedores_5_n"></span>
+        <span name="vendedores_5_s" hidden>
+          <span name="nombre_vendedor_5">________</span>, mayor de edad,
+          <span name="genero_vendedor_5_m"> identificada</span>
+          <span name="genero_vendedor_5_h" hidden> identificado</span> con
+          <span name="tipo_documento_vendedor_5_cc"> cédula de ciudadanía número
+            <span name="cedula_vendedor_5">________</span>,
+          </span>
+          <span name="tipo_documento_vendedor_5_ce" hidden> cédula de extranjería número
+            <span name="cedulae_vendedor_5">________</span>,
+          </span>
+          <span name="tipo_documento_vendedor_5_pa" hidden> pasaporte número
+            <span name="pasaporte_vendedor_5">________</span>,
+          </span>
+          <span name="tipo_vendedor_5_n"> con estado civil
+            <span name="estado_civil_vendedor_5_cc" hidden>
+              <span name="genero_vendedor_5_m"> casada con sociedad conyugal vigente,</span>
+              <span name="genero_vendedor_5_h" hidden> casado con sociedad conyugal vigente,</span>
+            </span>
+            <span name="estado_civil_vendedor_5_cs" hidden>
+              <span name="genero_vendedor_5_m"> casada sin sociedad conyugal vigente,</span>
+              <span name="genero_vendedor_5_h" hidden> Casado sin sociedad conyugal vigente,</span>
+            </span>
+            <span name="estado_civil_vendedor_5_so">
+              <span name="genero_vendedor_5_m"> soltera,</span>
+              <span name="genero_vendedor_5_h" hidden> soltero,</span>
+            </span>
+            <span name="estado_civil_vendedor_5_vi" hidden>
+              <span name="genero_vendedor_5_m"> viuda,</span>
+              <span name="genero_vendedor_5_h" hidden> viudo,</span>
+            </span>
+            <span name="estado_civil_vendedor_5_su" hidden>
+              <span name="genero_vendedor_5_m"> soltera con unión marital de hecho,</span>
+              <span name="genero_vendedor_5_h" hidden> soltero con unión marital de hecho,</span>
+            </span>
+            <span name="genero_vendedor_5_m"> domiciliada</span>
+            <span name="genero_vendedor_5_h" hidden> domiciliado</span> en el municipio de
+            <span name="ciudad_vendedor_5">________</span>,
+          </span>
+          <span name="tipo_vendedor_5_j" hidden>, actuando en calidad de representante legal de
+            <span name="nombre_empresa_vendedor_5">________</span>, persona jurídica de derecho privado debidamente
+            constituida, con domicilio principal en el municipio de
+            <span name="ciudad_empresa_vendedor_5">________</span> identificada con Nit, y
+            <span name="identificacion_empresa_vendedor_5">________</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span> y, quien en adelante se
+  <span name="vendedores_2_n"> denominará</span>
+  <span name="vendedores_2_s" hidden> denominarán</span>
+  <b>LA PARTE PROMITENTE VENDEDORA,</b> han convenido celebrar el presente CONTRATO DE PROMESA DE COMPRAVENTA DE BIEN
+  INMUEBLE, el cual se regirá por las leyes civiles y mercantiles vigentes, y en especial por las siguientes:
+</p>
+
+<p class="text-center">
+  <b>CLÁUSULAS</b>
+</p>
+
+<p>
+  <b>PRIMERA - OBJETO.</b> Por medio del presente contrato, LA PARTE PROMITENTE VENDEDORA, se compromete a transferir a
+  título de compraventa, a LA PARTE PROMITENTE COMPRADORA quien a su vez se compromete a comprar el derecho de dominio y
+  la propiedad plena que aquella tiene y ejerce sobre la siguiente propiedad:
+  <br />
+  <span name="linderos_n">
+    <span name="descripcion_inmueble">________</span><br />
+  </span>
+  <span name="linderos_s" hidden>
+    <span name="descripcion_inmueble">________</span><br />
+    El inmueble está alinderado, así:<br />
+    <span name="descripcion_linderos">________</span>
+  </span>
+  <br />
+  El inmueble se identifica, así:
+  <br />
+  MATRÍCULA INMOBILIARIA NO.
+  <span name="numero_matricula_inmobiliaria">________</span> de la Oficina de Registro de Instrumentos Públicos de
+  <span name="direccion_catastral_no">
+    <span name="ciudad_matricula_inmobiliaria">________</span>.<br />
+  </span>
+  <span name="direccion_catastral_si" hidden>
+    <span name="ciudad_matricula_inmobiliaria">________</span>.<br />
+    DIRECCIÓN CATASTRAL:
+    <span name="direccion_inmueble">________</span>.<br />
+  </span>
+  <span name="codigo_catastral_no"></span>
+  <span name="codigo_catastral_si" hidden>
+    CÓDIGO CATASTRAL:
+    <span name="codigo_inmueble">________</span>.
+  </span><br />
+  <b>PARÁGRAFO. VENTA COMO CUERPO CIERTO.</b> No obstante, la cabida, extensión y alindamiento de que habla la presente cláusula, la compraventa del bien
+  inmueble descrito se hará como cuerpo cierto, y comprenderá todos los derechos, anexidades, dependencias,
+  reformas, adiciones y modificaciones del inmueble objeto del presente contrato.
+</p>
+
+<p>
+  <b>SEGUNDA - TRADICIÓN.</b> Adquirió LA PARTE PROMITENTE VENDEDORA la propiedad que aquí enajena, por
+  <span name="modo_adquisicion"> compraventa</span>
+  <span name="modo_adquisicion_co"> hecha a
+    <span name="nombre_compraventa">________</span>, a través de escritura pública
+    <span name="numero_escritura_co">________</span> de
+    <span name="dia_escritura_co">________</span>, otorgada en la Notaría
+    <span name="nombre_notaria_co">________</span> del Círculo de
+    <span name="ciudad_notaria_co">________</span>.
+  </span>
+  <span name="modo_adquisicion_do" hidden> hecha por
+    <span name="nombre_donador">________</span>, a través de escritura pública
+    <span name="numero_escritura_do">________</span> de
+    <span name="dia_escritura_do">________</span>, otorgada en la Notaría
+    <span name="nombre_notaria_do">________</span> del Círculo de
+    <span name="ciudad_notaria_do">________</span>.
+  </span>
+  <span name="modo_adquisicion_pa" hidden> declarada a través de sentencia judicial
+    <span name="numero_sentencia_pa">________</span>.
+  </span>
+  <span name="modo_adquisicion_sm" hidden> del causante
+    <span name="nombre_fallecido">________</span> a través de
+    <span name="tipo_sucesion_j"> sentencia judicial
+      <span name="numero_sentencia_sm">________</span>.
+    </span>
+    <span name="tipo_sucesion_n" hidden> escritura pública
+      <span name="numero_escritura_n">________</span> de
+      <span name="dia_escritura_n">________</span>, otorgada en la Notaría
+      <span name="nombre_notaria_n">________</span> del Círculo de
+      <span name="ciudad_notaria_n">________</span>.
+    </span>
+  </span>
+  <span name="modo_adquisicion_sc" hidden> que sostenía con
+    <span name="nombre_conyugue">________</span>, a través de
+    <span name="tipo_liquidacion_j"> sentencia judicial
+      <span name="numero_sentencia_sc">________</span>.
+    </span>
+    <span name="tipo_liquidacion_n" hidden> escritura pública
+      <span name="numero_escritura_sc">________</span> de
+      <span name="dia_escritura_sc">________</span>, otorgada en la Notaría
+      <span name="nombre_notaria_sc">________</span> del Círculo de
+      <span name="ciudad_notaria_sc">________</span>.
+    </span>
+  </span>
+</p>
+<p>
+  <b>TERCERA – OTRAS OBLIGACIONES.</b> LA PARTE PROMITENTE VENDEDORA se obliga a transferir el dominio del inmueble objeto del presente contrato, libre de demandas civiles,
+  embargos, condiciones resolutorias, pleito pendiente, censos, anticresis y en general, de todo gravamen o limitación
+  del dominio y saldrá al saneamiento en los casos de ley. También se obliga al pago de paz y salvo de impuestos,
+  tasas y contribuciones causadas hasta la fecha de la presente promesa de contrato.
+</p>
+<p>
+  <b>CUARTA – PRECIO.</b> El precio de venta del inmueble objeto del presente contrato, pactado por las partes, es de
+  <span name="precio_inmueble">________</span>,
+  <span name="tipo_pago_tp"> suma que ha sido pagada en el mismo acto de suscripción de la presente promesa de
+    compraventa, y suma que ha sido recibida a conformidad por LA PARTE PROMITENTE VENDEDORA.
+  </span>
+  <span name="tipo_pago_pe" hidden> siendo pagada en el momento en que se suscriba la presente promesa de
+    compraventa la suma de
+    <span name="precio_pc">________</span>, y el saldo restante será pagado en la misma fecha de suscripción de la
+    escritura pública de compraventa que perfecciona el presente contrato.
+  </span>
+  <span name="tipo_pago_te" hidden> suma que será pagada en su totalidad en el momento de suscripción de la escritura
+    pública de compraventa.
+  </span>
+  <span name="tipo_pago_ot" hidden> suma que será pagada por LA PARTE PROMITENTE COMPRADORA, así:
+    <span name="otro_pago">________</span>.
+  </span><br />
+  <b>PARÁGRAFO.</b> El pago de los valores pactados se realizará a través de
+  <span name="metodo_pago_c"> depósito en la cuenta
+    <span name="cuenta_tipo_a"> de ahorros</span>
+    <span name="cuenta_tipo_c" hidden> corriente</span> número
+    <span name="numero_cuenta_vendedor">________</span> de
+    <span name="banco_vendedor">________</span> a nombre de
+    <span name="nombre_cuenta_vendedor">________</span>.
+  </span>
+  <span name="metodo_pago_e" hidden> pago en efectivo, y de manera directa a LA PARTE PROMITENTE VENDEDORA en
+    <span name="lugar_pago">________</span>.
+  </span>
+  <span name="metodo_pago_o" hidden> de la siguiente manera:
+    <!-- un 50% del precio en efectivo, y de manera directa a LA PARTE VENDEDORA en la calle 1 #70-70 de Medellín; el 50% restante
+    se dividirá en dos (2) pagamentos del 25% cada uno, donde el primero, irá a la cuenta de ahorros bancolombia número 12345678901
+    a nombre de Eliana Ortiz , y el segundo 25% a la cuenta corriente Davivienda número 03135112233 a nombre de Leonardo Botero -->
+    <span name="otro_tipo_pago">________</span>.
+  </span>
+</p>
+
+<p>
+  <span name="clausula_penal_n"></span>
+  <span name="clausula_penal_s" hidden>
+    <b>QUINTA - CLÁUSULA PENAL.</b> El incumplimiento de cualquiera de las de las Partes a las cláusulas u obligaciones
+    derivadas de este contrato, o el mero retardo en el cumplimiento, por cualquiera de las partes, lo constituirá en
+    deudor del contratante cumplido de una suma de
+    <span name="multa_incumplimiento">_________</span>, a título de pena, la cual será exigible inmediatamente, sin
+    necesidad de constitución en mora ni de requerimientos judicial alguno, y sin perjuicio de las demás acciones a
+    que haya lugar.
+  </span>
+</p>
+
+<p>
+  <span name="clausula_penal_n"><b>QUINTA -</b></span>
+  <span name="clausula_penal_s" hidden><b>SEXTA -</b></span>
+  <b> OTORGAMIENTO DE ESCRITURA PÚBLICA.</b> La escritura pública que deberá hacerse con el fin de perfeccionar la
+  venta prometida del inmueble descrito en la cláusula primera de este contrato, se otorgará en la
+  <span name="nombre_notaria_oep">________</span> del Círculo de
+  <span name="ciudad_notaria_oep">________</span>, el día
+  <span name="dia_escritura_oep">________</span>, a las
+  <span name="hora_escritura_oep">________</span>.
+</p>
+
+<p>
+  <span name="clausula_penal_n"><b>SEXTA -</b></span>
+  <span name="clausula_penal_s" hidden><b>SÉPTIMA -</b></span>
+  <b> PRÓRROGA.</b> Sólo se podrá prorrogar el término para el cumplimiento de las obligaciones que por este contrato se
+    contraen, cuando así lo acuerden las partes por escrito, mediante cláusula que se agregue al presente instrumento,
+    firmada por ambas partes por lo menos con 2 (DOS) días hábiles de anticipación a la fecha señalada para el
+    otorgamiento de la escritura pública.
+</p>
+
+<p>
+  <span name="clausula_penal_n"><b>SÉPTIMA -</b></span>
+  <span name="clausula_penal_s" hidden><b>OCTAVA. -</b></span>
+  <b> ENTREGA.</b>
+  <span name="entrega_inmueble_pc"> LA PARTE PROMITENTE VENDEDORA hace entrega material a LA PARTE PROMITENTE COMPRADORA
+    del inmueble vendido con todas sus mejoras, anexidades, usos y servidumbres en el mismo acto de suscripción de la
+    presente promesa de compraventa, y declara LA PARTE PROMITENTE COMPRADORA recibir el inmueble en buen estado de
+    servir.
+  </span>
+  <span name="entrega_inmueble_fp" hidden> LA PARTE PROMITENTE VENDEDORA hará entrega material a LA PARTE PROMITENTE
+    COMPRADORA del inmueble vendido con todas sus mejoras, anexidades, usos y servidumbres, el día
+    <span name="fecha_entrega">________</span>, y para el efecto se suscribirá acta o se grabará un vídeo donde
+    se documente el estado en el que se recibe el inmueble.
+  </span>
+</p>
+
+
+<p>
+  <span name="clausula_penal_n"><b>OCTAVA -</b></span>
+  <span name="clausula_penal_s" hidden><b>NOVENA -</b></span>
+  <b> ACUERDO DE VOLUNTADES.</b> Este acuerdo contiene la total voluntad alcanzada entre las partes intervinientes y reemplaza cualquiera y
+    todas las comunicaciones, opiniones, entendimientos o acuerdos previos, verbales o escritos, entre las partes
+    intervinientes en relación con el objeto de este acuerdo. Si alguna de las cláusulas de este contrato de alguna
+    manera violare la ley, tal cláusula se tendrá por no escrita pero no afectará el cumplimiento de las demás
+    obligaciones derivadas de este contrato. Las partes acuerdan que intentarán sustituir cualquier cláusula
+    inválida por una que legalmente cumpla con los objetivos económicos, legales y comerciales de la que se tuvo por
+    no escrita.
+</p>
+
+<p>
+  <span name="clausula_penal_n"><b>NOVENA -</b></span>
+  <span name="clausula_penal_s" hidden><b>DÉCIMA -</b></span>
+  <b> EFECTOS JURÍDICOS DEL PRESENTE CONTRATO.</b> Las partes reconocen que los efectos jurídicos de este contrato y de todas y cada una de las obligaciones
+    que emanan de este acuerdo de voluntades; por lo cual este contrato tendrá plena validez, aún después de
+    suscrita la escritura pública de compraventa sobre los inmuebles descritos, respecto de aquellas obligaciones no
+    satisfechas para la fecha de la su suscripción.
+</p>
+
+<p>
+  <span name="clausula_penal_n"><b>DÉCIMA -</b></span>
+  <span name="clausula_penal_s" hidden><b>DECIMOPRIMERA -</b></span>
+  <b> MÉRITO EJECUTIVO.</b> El presente contrato presta mérito ejecutivo para el cumplimiento de las obligaciones de dar y hacer derivadas del
+    mismo.
+</p>
+
+<p>
+  <span name="clausula_penal_n"><b>DECIMOPRIMERA -</b></span>
+  <span name="clausula_penal_s" hidden><b>DECIMOSEGUNDA -</b></span>
+  <b> GASTOS.</b> Los Gastos derivados de la firma de este contrato de promesa de compraventa, y los que demande el
+  otorgamiento de la escritura pública, y su correspondiente registro, correrán a cargo de
+  <span name="gastos_parte_a"> AMBAS PARTES, conforme con la usanza notarial.</span>
+  <span name="gastos_parte_c" hidden> LA PARTE PROMITENTE COMPRADORA.</span>
+  <span name="gastos_parte_v" hidden> LA PARTE PROMITENTE VENDEDORA.</span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <b name="clausula_penal_n">DECIMOSEGUNDA - </b>
+    <b name="clausula_penal_s" hidden>DECIMOTERCERA - </b>
+    <b name="clausulas_adicional_2_n">DISPOSICIONES ADICIONALES.</b>
+    <b name="clausulas_adicional_2_s" hidden>DISPOSICIÓN ADICIONAL 1.</b>
+    <span name="adicional_clausulas_1">_________</span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <b name="clausula_penal_n">DECIMOTERCERA - </b>
+      <b name="clausula_penal_s" hidden>DECIMOCUARTA - </b>
+      <b>DISPOSICIÓN ADICIONAL 2.</b>
+      <span name="adicional_clausulas_2">_________</span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <b name="clausula_penal_n">DECIMOCUARTA - </b>
+        <b name="clausula_penal_s" hidden>DECIMOQUINTA - </b>
+        <b>DISPOSICIÓN ADICIONAL 3.</b>
+        <span name="adicional_clausulas_3">_________</span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <span name="clausulas_adicional_4_n"></span>
+        <span name="clausulas_adicional_4_s" hidden>
+          <b name="clausula_penal_n">DECIMOQUINTA - </b>
+          <b name="clausula_penal_s" hidden>DECIMOSEXTA - </b>
+          <b>DISPOSICIÓN ADICIONAL 4.</b>
+          <span name="adicional_clausulas_4">_________</span>
+        </span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <span name="clausulas_adicional_4_n"></span>
+        <span name="clausulas_adicional_4_s" hidden>
+          <span name="clausulas_adicional_5_n"></span>
+          <span name="clausulas_adicional_5_s" hidden>
+            <b name="clausula_penal_n">DECIMOSEXTA - </b>
+            <b name="clausula_penal_s" hidden>DECIMOSEPTIMA - </b>
+            <b>DISPOSICIÓN ADICIONAL 5.</b>
+            <span name="adicional_clausulas_5">_________</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  En señal de aceptación del contenido del presente contrato, las partes libre y voluntariamente lo firman, en dos
+  copias del mismo tenor, en el municipio de
+  <span name="ciudad_firma">________</span>, el día
+  <span name="fecha_firma">________</span>.
+</p>
+
+<p>
+  <br /><br /><br /><br />
+<div id="comprador" class="sign-margin"></div>
+<b name="nombre_comprador">________</b><br />
+<span name="tipo_documento_comprador_cc"><b>C.C.</b>
+  <span name="cedula_comprador">________</span>
+</span>
+<span name="tipo_documento_comprador_ce" hidden><b>C.E.</b>
+  <span name="cedulae_comprador">________</span>
+</span>
+<span name="tipo_documento_comprador_pa" hidden><b>PASAPORTE</b>
+  <span name="pasaporte_comprador">________</span>
+</span><br />
+<span name="tipo_comprador_n"></span>
+<span name="tipo_comprador_j" hidden>
+  <b>REPRESENTANTE LEGAL DE</b>
+  <b name="nombre_empresa_comprador">________</b><br />
+</span>
+<b>DIRECCIÓN:</b>
+<span name="direccion_comprador">________</span><br />
+<b>TELÉFONO:</b>
+<span name="telefono_comprador">________</span><br />
+<b>CORREO ELECTRÓNICO:</b>
+<span name="correo_comprador">________</span><br />
+
+
+<span name="compradores_2_n"></span>
+<span name="compradores_2_s" hidden>
+  <br /><br /><br /><br />
+  <div id="comprador_2" class="sign-margin"></div>
+  <b name="nombre_comprador_2">________</b><br />
+  <span name="tipo_documento_comprador_2_cc"><b>C.C.</b>
+    <span name="cedula_comprador_2">________</span>
+  </span>
+  <span name="tipo_documento_comprador_2_ce" hidden><b>C.E.</b>
+    <span name="cedulae_comprador_2">________</span>
+  </span>
+  <span name="tipo_documento_comprador_2_pa" hidden><b>PASAPORTE</b>
+    <span name="pasaporte_comprador_2">________</span>
+  </span><br />
+  <span name="tipo_comprador_2_n"></span>
+  <span name="tipo_comprador_2_j" hidden>
+    <b>REPRESENTANTE LEGAL DE</b>
+    <b name="nombre_empresa_comprador_2">________</b><br />
+  </span>
+  <b>DIRECCIÓN:</b>
+  <span name="direccion_comprador_2">________</span><br />
+  <b>TELÉFONO:</b>
+  <span name="telefono_comprador_2">________</span><br />
+  <b>CORREO ELECTRÓNICO:</b>
+  <span name="correo_comprador_2">________</span><br />
+
+
+  <span name="compradores_3_n"></span>
+  <span name="compradores_3_s" hidden>
+    <br /><br /><br /><br />
+    <div id="comprador_3" class="sign-margin"></div>
+    <b name="nombre_comprador_3">________</b><br />
+    <span name="tipo_documento_comprador_3_cc"><b>C.C.</b>
+      <span name="cedula_comprador_3">________</span>
+    </span>
+    <span name="tipo_documento_comprador_3_ce" hidden><b>C.E.</b>
+      <span name="cedulae_comprador_3">________</span>
+    </span>
+    <span name="tipo_documento_comprador_3_pa" hidden><b>PASAPORTE</b>
+      <span name="pasaporte_comprador_3">________</span>
+    </span><br />
+    <span name="tipo_comprador_3_n"></span>
+    <span name="tipo_comprador_3_j" hidden>
+      <b>REPRESENTANTE LEGAL DE</b>
+      <b name="nombre_empresa_comprador_3">________</b><br />
+    </span>
+    <b>DIRECCIÓN:</b>
+    <span name="direccion_comprador_3">________</span><br />
+    <b>TELÉFONO:</b>
+    <span name="telefono_comprador_3">________</span><br />
+    <b>CORREO ELECTRÓNICO:</b>
+    <span name="correo_comprador_3">________</span><br />
+
+
+    <span name="compradores_4_n"></span>
+    <span name="compradores_4_s" hidden>
+      <br /><br /><br /><br />
+      <div id="comprador_4" class="sign-margin"></div>
+      <b name="nombre_comprador_4">________</b><br />
+      <span name="tipo_documento_comprador_4_cc"><b>C.C.</b>
+        <span name="cedula_comprador_4">________</span>
+      </span>
+      <span name="tipo_documento_comprador_4_ce" hidden><b>C.E.</b>
+        <span name="cedulae_comprador_4">________</span>
+      </span>
+      <span name="tipo_documento_comprador_4_pa" hidden><b>PASAPORTE</b>
+        <span name="pasaporte_comprador_4">________</span>
+      </span><br />
+      <span name="tipo_comprador_4_n"></span>
+      <span name="tipo_comprador_4_j" hidden>
+        <b>REPRESENTANTE LEGAL DE</b>
+        <b name="nombre_empresa_comprador_4">________</b><br />
+      </span>
+      <b>DIRECCIÓN:</b>
+      <span name="direccion_comprador_4">________</span><br />
+      <b>TELÉFONO:</b>
+      <span name="telefono_comprador_4">________</span><br />
+      <b>CORREO ELECTRÓNICO:</b>
+      <span name="correo_comprador_4">________</span><br />
+
+
+
+      <span name="compradores_5_n"></span>
+      <span name="compradores_5_s" hidden>
+        <br /><br /><br /><br />
+        <div id="comprador_5" class="sign-margin"></div>
+        <b name="nombre_comprador_5">________</b><br />
+        <span name="tipo_documento_comprador_5_cc"><b>C.C.</b>
+          <span name="cedula_comprador_5">________</span>
+        </span>
+        <span name="tipo_documento_comprador_5_ce" hidden><b>C.E.</b>
+          <span name="cedulae_comprador_5">________</span>
+        </span>
+        <span name="tipo_documento_comprador_5_pa" hidden><b>PASAPORTE</b>
+          <span name="pasaporte_comprador_5">________</span>
+        </span><br />
+        <span name="tipo_comprador_5_n"></span>
+        <span name="tipo_comprador_5_j" hidden>
+          <b>REPRESENTANTE LEGAL DE</b>
+          <b name="nombre_empresa_comprador_5">________</b><br />
+        </span>
+        <b>DIRECCIÓN:</b>
+        <span name="direccion_comprador_5">________</span><br />
+        <b>TELÉFONO:</b>
+        <span name="telefono_comprador_5">________</span><br />
+        <b>CORREO ELECTRÓNICO:</b>
+        <span name="correo_comprador_5">________</span><br />
+      </span>
+    </span>
+  </span>
+</span>
+<b>LA PARTE PROMITENTE COMPRADORA</b>
+</p>
+
+<p>
+  <br /><br /><br /><br />
+<div id="vendedor" class="sign-margin"></div>
+<b name="nombre_vendedor">________</b><br />
+<span name="tipo_documento_vendedor_cc"> <b>C.C.</b>
+  <span name="cedula_vendedor">________</span>
+</span>
+<span name="tipo_documento_vendedor_ce" hidden> <b>C.E.</b>
+  <span name="cedulae_vendedor">________</span>
+</span>
+<span name="tipo_documento_vendedor_pa" hidden> <b>PASAPORTE</b>
+  <span name="pasaporte_vendedor">________</span>
+</span><br />
+<span name="tipo_vendedor_n"></span>
+<span name="tipo_vendedor_j" hidden>
+  <b>REPRESENTANTE LEGAL DE</b>
+  <b name="nombre_empresa_vendedor">________</b><br />
+</span>
+<b>DIRECCIÓN:</b>
+<span name="direccion_vendedor">________</span><br />
+<b>TELÉFONO:</b>
+<span name="telefono_vendedor">________</span><br />
+<b>CORREO ELECTRÓNICO:</b>
+<span name="correo_vendedor">________</span><br />
+
+
+<span name="vendedores_2_n"></span>
+<span name="vendedores_2_s" hidden>
+  <br /><br /><br /><br />
+  <div id="vendedor_2" class="sign-margin"></div>
+  <b name="nombre_vendedor_2">________</b><br />
+  <span name="tipo_documento_vendedor_2_cc"> <b>C.C.</b>
+    <span name="cedula_vendedor_2">________</span>
+  </span>
+  <span name="tipo_documento_vendedor_2_ce" hidden> <b>C.E.</b>
+    <span name="cedulae_vendedor_2">________</span>
+  </span>
+  <span name="tipo_documento_vendedor_2_pa" hidden> <b>PASAPORTE</b>
+    <span name="pasaporte_vendedor_2">________</span>
+  </span><br />
+  <span name="tipo_vendedor_2_n"></span>
+  <span name="tipo_vendedor_2_j" hidden>
+    <b>REPRESENTANTE LEGAL DE</b>
+    <b name="nombre_empresa_vendedor_2">________</b><br />
+  </span>
+  <b>DIRECCIÓN:</b>
+  <span name="direccion_vendedor_2">________</span><br />
+  <b>TELÉFONO:</b>
+  <span name="telefono_vendedor_2">________</span><br />
+  <b>CORREO ELECTRÓNICO:</b>
+  <span name="correo_vendedor_2">________</span><br />
+
+
+  <span name="vendedores_3_n"></span>
+  <span name="vendedores_3_s" hidden>
+    <br /><br /><br /><br />
+    <div id="vendedor_3" class="sign-margin"></div>
+    <b name="nombre_vendedor_3">________</b><br />
+    <span name="tipo_documento_vendedor_3_cc"> <b>C.C.</b>
+      <span name="cedula_vendedor_3">________</span>
+    </span>
+    <span name="tipo_documento_vendedor_3_ce" hidden> <b>C.E.</b>
+      <span name="cedulae_vendedor_3">________</span>
+    </span>
+    <span name="tipo_documento_vendedor_3_pa" hidden> <b>PASAPORTE</b>
+      <span name="pasaporte_vendedor_3">________</span>
+    </span><br />
+    <span name="tipo_vendedor_3_n"></span>
+    <span name="tipo_vendedor_3_j" hidden>
+      <b>REPRESENTANTE LEGAL DE</b>
+      <b name="nombre_empresa_vendedor_3">________</b><br />
+    </span>
+    <b>DIRECCIÓN:</b>
+    <span name="direccion_vendedor_3">________</span><br />
+    <b>TELÉFONO:</b>
+    <span name="telefono_vendedor_3">________</span><br />
+    <b>CORREO ELECTRÓNICO:</b>
+    <span name="correo_vendedor_3">________</span><br />
+
+
+
+    <span name="vendedores_4_n"></span>
+    <span name="vendedores_4_s" hidden>
+      <br /><br /><br /><br />
+      <div id="vendedor_4" class="sign-margin"></div>
+      <b name="nombre_vendedor_4">________</b><br />
+      <span name="tipo_documento_vendedor_4_cc"> <b>C.C.</b>
+        <span name="cedula_vendedor_4">________</span>
+      </span>
+      <span name="tipo_documento_vendedor_4_ce" hidden> <b>C.E.</b>
+        <span name="cedulae_vendedor_4">________</span>
+      </span>
+      <span name="tipo_documento_vendedor_4_pa" hidden> <b>PASAPORTE</b>
+        <span name="pasaporte_vendedor_4">________</span>
+      </span><br />
+      <span name="tipo_vendedor_4_n"></span>
+      <span name="tipo_vendedor_4_j" hidden>
+        <b>REPRESENTANTE LEGAL DE</b>
+        <b name="nombre_empresa_vendedor_4">________</b><br />
+      </span>
+      <b>DIRECCIÓN:</b>
+      <span name="direccion_vendedor_4">________</span><br />
+      <b>TELÉFONO:</b>
+      <span name="telefono_vendedor_4">________</span><br />
+      <b>CORREO ELECTRÓNICO:</b>
+      <span name="correo_vendedor_4">________</span><br />
+
+
+
+      <span name="vendedores_5_n"></span>
+      <span name="vendedores_5_s" hidden>
+        <br /><br /><br /><br />
+        <div id="vendedor_5" class="sign-margin"></div>
+        <b name="nombre_vendedor_5">________</b><br />
+        <span name="tipo_documento_vendedor_5_cc"> <b>C.C.</b>
+          <span name="cedula_vendedor_5">________</span>
+        </span>
+        <span name="tipo_documento_vendedor_5_ce" hidden> <b>C.E.</b>
+          <span name="cedulae_vendedor_5">________</span>
+        </span>
+        <span name="tipo_documento_vendedor_5_pa" hidden> <b>PASAPORTE</b>
+          <span name="pasaporte_vendedor_5">________</span>
+        </span><br />
+        <span name="tipo_vendedor_5_n"></span>
+        <span name="tipo_vendedor_5_j" hidden>
+          <b>REPRESENTANTE LEGAL DE</b>
+          <b name="nombre_empresa_vendedor_5">________</b><br />
+        </span>
+        <b>DIRECCIÓN:</b>
+        <span name="direccion_vendedor_5">________</span><br />
+        <b>TELÉFONO:</b>
+        <span name="telefono_vendedor_5">________</span><br />
+        <b>CORREO ELECTRÓNICO:</b>
+        <span name="correo_vendedor_5">________</span><br />
+      </span>
+    </span>
+  </span>
+</span>
+<b>LA PARTE PROMITENTE VENDEDORA</b><br />
+</p>
