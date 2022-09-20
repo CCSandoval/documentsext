@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('6324d3b71197e88531953315'),
+    _id: ObjectId('6328fe1f1197e88531953321'),
     config: [
         {
             name: 'direccion_reval',
@@ -125,6 +125,11 @@
             description: 'Ingrese la ciudad donde ha sido contratado el trabajador'
         },
         {
+            name: 'termino_periodo_prueba',
+            type: 'name',
+            description: 'Ingrese el término del periodo de prueba del trabajador'
+        },
+        {
             name: 'municipio_trabajo',
             type: 'name',
             description: 'Ingrese el municipio donde el trabajador desempeñará sus funciones'
@@ -166,7 +171,7 @@
         'ppt_empleado',
         'pep_empleado',
         'email_empleado',
-        'celular_empleado',
+        'celular_empleado'
     ],
     signatureProfile: [
         {
@@ -174,7 +179,7 @@
             name: 'nombre_empleado',
             identification: 'cc_empleado|ce_empleado|ppt_empleado|pep_empleado',
             email: 'email_empleado',
-            phone: 'celular_empleado',
+            phone: 'celular_empleado'
         },
         {
             type: 'firma_reval',
@@ -186,5 +191,5 @@
     preBuild: false,
     build: 0,
     price: 5000,
-    name: 'CONTRATO DE TRABAJO ACP TÉRMINO INDEFINIDO'
+    name: 'FOR_GJ_006_01 - CONTRATO DE TRABAJO A TÉRMINO FIJO'
 }

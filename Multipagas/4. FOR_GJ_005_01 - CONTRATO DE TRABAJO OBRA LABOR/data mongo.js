@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('6323d77e1197e88531953313'),
+    _id: ObjectId('6324e96c1197e88531953319'),
     config: [
         {
             name: 'direccion_reval',
@@ -130,6 +130,11 @@
             description: 'Ingrese el término del periodo de prueba del trabajador'
         },
         {
+            name:'tipo_cubrimiento',
+            type:'text',
+            description:'Ingrese qué cubre el presente contrato',
+        },
+        {
             name: 'municipio_trabajo',
             type: 'name',
             description: 'Ingrese el municipio donde el trabajador desempeñará sus funciones'
@@ -191,5 +196,5 @@
     preBuild: false,
     build: 2,
     price: 5000,
-    name: 'CONTRATO DE TRABAJO ACP TÉRMINO FIJO'
+    name: 'FOR_GJ_002_01 - CONTRATO DE TRABAJO A TERMINO INDEFINIDO REVAL'
 }
