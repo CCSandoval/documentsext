@@ -9,18 +9,23 @@
 <p>El autor <span name="name_comprador">________</span></p>
 <p></p>
 <p>
-  <span
-    ><br /><br /><br /><br /><span>___________________</span><br /><b
-      name="name_comprador"
-      >________</b
-    ><br /><b name="document_type_comprador_cc"
-      >C.C. <b name="cedula_comprador">________</b></b
-    ><b name="document_type_comprador_ce" hidden
-      >C.E. <b name="cedulae_comprador">________</b></b
-    ><b name="document_type_comprador_pa" hidden
-      >PASAPORTE <b name="pasaporte_comprador">________</b></b
-    ><br /><b>COMPRADOR</b><br /><b
-      >CORREO: <b name="email_comprador">________</b></b
-    ><br /><b>TELÉFONO: <b name="telefono_comprador">________</b></b></span
-  >
+  <span>
+    <br /><br /><br /><br />
+    <span>___________________</span><br />
+    <b name="name_comprador">________ </b><br />
+    <b name="document_type_comprador_cc">
+      C.C. <b name="cedula_comprador">________</b>
+    </b>
+    <b name="document_type_comprador_ce" hidden>
+      C.E. <b name="cedulae_comprador">________</b>
+    </b>
+    <b name="document_type_comprador_pa" hidden>
+      PASAPORTE <b name="pasaporte_comprador">________</b>
+    </b>
+    <br />
+    <b>COMPRADOR</b><br />
+    <b>CORREO: <b name="email_comprador">________</b></b>
+    <br />
+    <b>TELÉFONO: <b name="telefono_comprador">________</b></b>
+  </span>
 </p>

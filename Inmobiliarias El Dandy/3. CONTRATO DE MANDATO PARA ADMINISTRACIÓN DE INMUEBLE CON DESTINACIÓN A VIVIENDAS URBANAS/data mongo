@@ -4238,6 +4238,12 @@
             type: 'text'
         },
         {
+            name:'area_inmueble',
+            description:'Ingrese el área apróximada del inmueble',
+            type:'number',
+            help:'area'
+        },
+        {
             description: '¿Desea agregar un avalúo catastral? ',
             name: 'avaluo_catastral',
             options: [
@@ -4622,7 +4628,7 @@
         porcentaje: 'Ejemplo: 15',
         fecha: 'Ejemplo: 13 de Septiembre del 2021'
     },
-    build: 31,
+    build: 32,
     createdAt: ISODate('2021-09-29T18:40:33.337Z'),
     updatedAt: ISODate('2021-09-29T18:40:33.337Z')
 }

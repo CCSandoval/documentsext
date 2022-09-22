@@ -4,7 +4,7 @@
         {
             name: 'name_comprador',
             type: 'name',
-            help: 'comprador',
+            help: 'sandoval',
             description: 'Digite el valor para Nombre'
         },
         {
@@ -27,31 +27,31 @@
             type: 'clausula',
             value: 'cc',
             help: 'comprador'
-},
-{
-    description: 'Digite el número de cédula de ciudadanía de la parte comprador',
-    name: 'cedula_comprador',
-    prereq: [
+        },
         {
-            k: 'document_type_comprador',
-            v: 'cc'
-        }
-    ],
-    type: 'number',
-    help: 'comprador'
-},
-{
-    description: 'Digite el número de cédula de extranjería de la parte comprador',
-    name: 'cedulae_comprador',
-    prereq: [
+            description: 'Digite el número de cédula de ciudadanía de la parte comprador',
+            name: 'cedula_comprador',
+            prereq: [
+                {
+                    k: 'document_type_comprador',
+                    v: 'cc'
+                }
+            ],
+            type: 'number',
+            help: 'comprador'
+        },
         {
-            k: 'document_type_comprador',
-            v: 'ce'
-        }
-    ],
-    type: 'number',
-    help: 'comprador'
-},
+            description: 'Digite el número de cédula de extranjería de la parte comprador',
+            name: 'cedulae_comprador',
+            prereq: [
+                {
+                    k: 'document_type_comprador',
+                    v: 'ce'
+                }
+            ],
+            type: 'number',
+            help: 'comprador'
+        },
         {
             description: 'Digite el número del pasaporte de la parte comprador',
             name: 'pasaporte_comprador',
@@ -79,9 +79,10 @@
     ],
     operation: [],
     help: {
-        comprador: 'Comprador: Persona que adquiere el producto o servicio y paga el precio por este'
+        comprador: 'Comprador: Persona que adquiere el producto o servicio y paga el precio por este',
+        sandoval: "Ejemplo: correo@dominio.com"
     },
-    name: 'Documento de prueba',
+    name: 'Documento de Prueba con Prebuild',
     sign: [
         'name_comprador',
         'cedula_comprador',
@@ -90,20 +91,22 @@
         'email_comprador'
     ],
     signatureProfile: [
-{
-    email: 'email_comprador',
-    phone: 'telefono_comprador',
-    identification: 'cedula_comprador|cedulae_comprador|pasaporte_comprador',
-    name: 'name_comprador',
-    type: 'comprador'
-}
+        {
+            email: 'email_comprador',
+            phone: 'telefono_comprador',
+            identification: 'cedula_comprador|cedulae_comprador|pasaporte_comprador',
+            name: 'name_comprador',
+            type: 'comprador'
+        }
     ],
     build: 0,
     price: 5000,
     preFill: [],
     preBuildData: [],
+    preBuildSign: true,
     custom: {
         noShowHeader: true
     },
-    company: ObjectId('61942036889b8f0009db9812')
+    company: ObjectId('618c876340e2d3000815c7fc'),
+    username: '8b37ecb1-2201-4f9f-bb4e-68c4bc645767'
 }
