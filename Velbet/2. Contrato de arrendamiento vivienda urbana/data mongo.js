@@ -1679,10 +1679,6 @@
                 {
                     k: 'firma_codeudor',
                     v: 's'
-                },
-                {
-                    k: 'uso_respaldo',
-                    v: 's'
                 }
             ],
             type: 'name'
@@ -1708,10 +1704,6 @@
                 {
                     k: 'firma_codeudor',
                     v: 's'
-                },
-                {
-                    k: 'uso_respaldo',
-                    v: 's'
                 }
             ],
             type: 'clausula',
@@ -1723,10 +1715,6 @@
             prereq: [
                 {
                     k: 'firma_codeudor',
-                    v: 's'
-                },
-                {
-                    k: 'uso_respaldo',
                     v: 's'
                 },
                 {
@@ -1745,10 +1733,6 @@
                     v: 's'
                 },
                 {
-                    k: 'uso_respaldo',
-                    v: 's'
-                },
-                {
                     k: 'tipo_documento_codeudor',
                     v: 'ce'
                 }
@@ -1761,10 +1745,6 @@
             prereq: [
                 {
                     k: 'firma_codeudor',
-                    v: 's'
-                },
-                {
-                    k: 'uso_respaldo',
                     v: 's'
                 },
                 {
@@ -1781,10 +1761,6 @@
                 {
                     k: 'firma_codeudor',
                     v: 's'
-                },
-                {
-                    k: 'uso_respaldo',
-                    v: 's'
                 }
             ],
             type: 'text'
@@ -1796,10 +1772,6 @@
                 {
                     k: 'firma_codeudor',
                     v: 's'
-                },
-                {
-                    k: 'uso_respaldo',
-                    v: 's'
                 }
             ],
             type: 'text'
@@ -1810,10 +1782,6 @@
             prereq: [
                 {
                     k: 'firma_codeudor',
-                    v: 's'
-                },
-                {
-                    k: 'uso_respaldo',
                     v: 's'
                 }
             ],
@@ -1875,5 +1843,6 @@
         }
     ],
     build: 2,
-    preBuild: false
+    preBuild: false,
+    company: ObjectId('62fc063367cfc581d0086c40')
 }
