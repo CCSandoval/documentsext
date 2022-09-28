@@ -17,39 +17,117 @@
             description: 'Ingrese la cédula de ciudadanía del trabajador'
         },
         {
+            name:'concepto_cargo',
+            value:'s',
+            type:'clausula',
+            description:'¿Desea ingresar concepto por cambio de cargo?',
+            options:[
+                {
+                    name:'Si',
+                    value:'s'
+                },
+                {
+                    name:'No',
+                    value:'n'
+                },
+            ]
+        },
+        {
             name: 'cargo_viejo',
             type: 'text',
-            description: 'Ingrese el cargo anterior del trabajador'
+            description: 'Ingrese el cargo anterior del trabajador',
+            prereq:[
+                {
+                    k:'concepto_cargo',
+                    v:'s'
+                }
+            ]
         },
         {
             name: 'cargo_nuevo',
             type: 'text',
-            description: 'Ingrese el cargo nuevo del trabajador'
+            description: 'Ingrese el cargo nuevo del trabajador',
+            prereq:[
+                {
+                    k:'concepto_cargo',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name:'concepto_2',
+            value:'salario',
+            type:'clausula',
+            description:'¿Desea ingresar concepto por aumento salarial o bono prestacional?',
+            options:[
+                {
+                    name:'Aumento salarial',
+                    value:'salario'
+                },
+                {
+                    name:'Bono prestacional',
+                    value:'bono'
+                },
+                {
+                    name:'Ninguno',
+                    value:'no'
+                },
+            ]
         },
         {
             name: 'salario_viejo',
             type: 'currency',
-            description: 'Ingrese el salario anterior del trabajador'
+            description: 'Ingrese el salario anterior del trabajador',
+            prereq:[
+                {
+                    k:'concepto_2',
+                    v:'salario'
+                }
+            ]
         },
         {
             name: 'salario_nuevo',
             type: 'currency',
-            description: 'Ingrese el salario nuevo del trabajador'
+            description: 'Ingrese el salario nuevo del trabajador',
+            prereq:[
+                {
+                    k:'concepto_2',
+                    v:'salario'
+                }
+            ]
         },
         {
             name: 'bono_prestacional',
             type: 'currency',
-            description: 'Ingrese el valor del bono no prestacional'
+            description: 'Ingrese el valor del bono no prestacional',
+            prereq:[
+                {
+                    k:'concepto_2',
+                    v:'bono'
+                }
+            ]
         },
         {
             name: 'valor_quincenas',
             type: 'currency',
-            description: 'Ingrese el valor de las quincenas para el bono no prestacional'
+            description: 'Ingrese el valor de las quincenas para el bono no prestacional',
+            prereq:[
+                {
+                    k:'concepto_2',
+                    v:'bono'
+                }
+            ]
         },
         {
             name: 'fecha_bono',
             type: 'date',
-            description: 'Seleccione la fecha a partir de la cual el bono no prestacional será efectivo'
+            description: 'Seleccione la fecha a partir de la cual el bono no prestacional será efectivo',
+            prereq:[
+                {
+                    k:'concepto_2',
+                    v:'bono'
+                }
+            ]
         },
         {
             name: 'ciudad_firma',
@@ -105,5 +183,5 @@
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 2
+    build: 3
 }

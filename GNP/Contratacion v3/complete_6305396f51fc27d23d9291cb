@@ -389,6 +389,10 @@
         CARGO
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
+        <span name="cargo_anal_cont" hidden>Analista de contratación</span>
+        <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>
+        <span name="cargo_aux_serv_client" hidden>Auxiliar Servicio al Cliente</span>
         <span name="cargo_jefe_formacion" hidden>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
@@ -940,6 +944,10 @@
       <td>
         <b name="cargo_call_c_cnd">AGENTE CALL CENTER CND</b>
         <b name="cargo_gest_oper" hidden>Gestor Operativo</b>
+        <b name="cargo_prod_auv" hidden>Productor audiovisual</b>
+        <b name="cargo_anal_cont" hidden>Analista de contratación</b>
+        <b name="cargo_prod_auv" hidden>Productor Audiovisual</b>
+        <b name="cargo_aux_serv_client" hidden>Auxiliar Servicio al Cliente</b>
         <b name="cargo_jefe_formacion" hidden>Jefe de Formación</b>
         <b name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</b>
         <b name="cargo_sop_redes" hidden>Soporte Redes</b>
@@ -1637,6 +1645,10 @@
         <span name="cargo_call_c">AGENTE CALL CENTER</span>
         <span name="cargo_call_c_cnd" hidden>AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
+        <span name="cargo_anal_cont" hidden>Analista de contratación</span>
+        <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>
+        <span name="cargo_aux_serv_client" hidden>Auxiliar Servicio al Cliente</span>
         <span name="cargo_call_c_cnd" cargo_jefe_formacion hgest_oper>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
@@ -1757,6 +1769,15 @@
           <br />Generar los informes de las actividades realizadas por los ingenieros
           <br />Garantizar la continuidad y disponibilidad de la infraestructura
           <br />Garantizar el apropiado diseño y mantenimiento de la infraestructura
+        </span>
+        <span name="cargo_prod_auv" hidden>
+          Pre, pro y post producción de piezas de video.
+<br/>Edición de fotografías
+<br/>Diseño de piezas gráficas animadas (2D y 3D).
+<br/>Manejo de programas de edición de fotografía, edición de video,
+<br/>Producción del contenido audiovisual de la empresa
+<br/>Asumir y ejecutar las demás funciones que le sean asignadas en cumplimiento de la misión
+del cargo.
         </span>
         <span name="cargo_jefe_seg_inf" hidden>
           Coordinar el desarrollo y la actualización de las normas, procedimientos y formatos de hacen parte de los
@@ -2965,6 +2986,31 @@
           solicitudes a que haya lugar
           <br />Asumir y ejecutar las demás funciones que le sean asignadas en cumplimiento de la misión del cargo.
         </span>
+        <span name="cargo_aux_serv_client" hidden>
+          Brindar atención al cliente interno y externo que tenga interés de relacionarse con la empresa a través de los medios autorizados por la compañía.
+          <br/>Realizar seguimiento a las áreas involucradas en resolver la solicitud originada por el cliente interno y externo
+          <br/>Garantizar la respuesta oportuna a través de los medios establecidos por la compañía para generar satisfacción a los clientes.
+          <br/>Brindar soporte a la administración de personal a través de las solicitudes que generen los empleados para brindar un servicio oportuno
+          <br/>Apoyar a las actividades de bienestar que se puedan generar en las diferentes sedes de la compañía en la ciudad de Bogotá con el fin de asegurar la participación de los colaboradores.
+          <br/>Ejecutar las diferentes actividades que sean ejecutadas por su jefe inmediato.        
+        </span>
+        <span name="cargo_anal_cont" hidden>
+          Realizar ingreso de personal a la plataforma inerna del cliente.
+          <br/>Recibir,revisar y clasificar la documentacion entregada por los candidatos para iniciar proceso de contratacion
+          <br/>Recepcion y revicion de formatos propios en el  proceso de contratacion
+          <br/>Ingresar al software de la empresa el personal contratado a nivel nacional
+          <br/>Elaboracion y entrega de carnets a todo el personal contratado.
+          <br/>Gestionar la afiliación y el retiro para  EPS, ARL, AFP y CAJA de compensacion etc.
+          <br/>Garantizar la afilaicion de beneficiarios a EPS y caja de conpensacion
+          <br/>Gestionar y realizar seguimiento a los requerimientos de traslados de EPS, solicitados por la operación.
+          <br/>Gestionar, controlar y realizar seguimiento a procesos de desvinculacion.
+          <br/>Realizar entrega de las hojas de vida al area  "Gestion documental" por medio del FUID.
+          <br/>Mantener el puesto de trabajo en respectivo orden y velar por la confidencialidad de los documentos
+          <br/>Registrar personal en torniquete
+          <br/>Eliminar personal retirado en torniquete
+          <br/>Registro personal campañas CLARO en plataforma SUCCESS FACTORS
+          <br/>Asumir y ejecutar las demás funciones que le sean asignadas por el jefe inmediato en cumplimiento de la misión del cargo.
+        </span>
         <span name="cargo_lider_compras" hidden>
           Actualizar la base de datos de los precios del mercado, solicitando diferentes cotizaciones
           <br />Realizar búsqueda de cotizaciones de forma nacional e internacional. Al menos 3 cotizaciones antes de
@@ -3339,6 +3385,10 @@
       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
+        <span name="cargo_anal_cont" hidden>Analista de contratación</span>
+        <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>
+        <span name="cargo_aux_serv_client" hidden>Auxiliar Servicio al Cliente</span>
         <span name="cargo_jefe_formacion" hidden>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</span>
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
@@ -4614,7 +4664,7 @@
         aprovechamiento del cargo ejercido en la empresa para cometer delitos que genere perjuicios, apropiarse
         fraudulentamente de los bienes que comercializa la empresa
       </u>, entre otras deudas que se puedan generar por el
-      vínculo laboral con <b>GNP GRUPO NACIONAL DE PROYECTOS S.A.S.</b> , identificado con NIT. No <b>900.230.578-6</b>.
+      vínculo laboral con <b>GNP GRUPO NACIONAL DE PROYECTOS S.A.S.</b> , identificado con NIT. No <b>900.230.578-6</b>, de acuerdo a políticas internas de la compañía.
     </li>
 
     <li>La fecha del vencimiento del Pagaré, identificado en el cuerpo del mismo con el (ii), será la fecha en que <b>
@@ -4788,6 +4838,10 @@
        <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
+        <span name="cargo_anal_cont" hidden>Analista de contratación</span>
+        <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>
+        <span name="cargo_aux_serv_client" hidden>Auxiliar Servicio al Cliente</span>
         <span name="cargo_jefe_formacion" hidden>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden
           >Jefe Nacional de Redes y Soporte</span

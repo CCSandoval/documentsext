@@ -34,20 +34,22 @@
 </p>
 
 <ol>
-  <li>
+  <span name="concepto_cargo_n"></span>
+  <li name="concepto_cargo_s">
     <b>EL TRABAJADOR</b>, realiza el cambio de cargo de
     <span name="cargo_viejo">__________________</span> y en adelante prestara
     sus servicios personales como
     <span name="cargo_nuevo">__________________</span>
   </li>
-  <li>
+  <span name="concepto_2_no"></span>
+  <li name="concepto_2_salario">
     <b>EL EMPLEADOR</b> pagara al trabajador un incremento sobre su salario que
     pasara de ser de <span name="salario_viejo">__________________</span> m/cte
     a <span name="salario_nuevo">__________________</span> m/cte, por la
     ejecución de su labor, dentro de este pago se encuentran incluidos las
     remuneraciones por los descansos dominicales y festivos.
   </li>
-  <li>
+  <li name="concepto_2_bono" hidden>
     <b>EL EMPLEADOR</b> pagara al trabajador un bono no prestacional por
     concepto de bienestar personal por un monto
     <span name="bono_prestacional">__________________</span> distribuidos en dos
