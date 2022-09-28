@@ -12,6 +12,7 @@
             type: 'clausula',
             description: 'Seleccione el genero del empleador',
             help: 'genero',
+            value: 'm',
             options: [
                 {
                     name: 'Masculino',
@@ -33,6 +34,7 @@
             name: 'genero_empleado',
             type: 'clausula',
             description: 'Seleccione el genero del empleado',
+            value: 'm',
             help: 'genero',
             options: [
                 {
@@ -56,12 +58,6 @@
             type: 'date',
             description: 'Seleccione la fecha de firma',
             help: 'fecha'
-        },
-        {
-            name: 'nombre_empleador',
-            type: 'name',
-            description: 'Digite el nombre del empleador',
-            help: 'nombre'
         },
         {
             name: 'tipo_documento_empleador',
@@ -119,12 +115,6 @@
                     v: 'pa'
                 }
             ],
-        },
-        {
-            name: 'nombre_empleado',
-            type: 'name',
-            description: 'Digite el nombre del empleado',
-            help: 'nombre'
         },
         {
             name: 'tipo_documento_empleado',
@@ -240,4 +230,5 @@
         pasaporte: 'Ejemplo: AAA1234567',
     ],
     build: 0,
+    price: 5000,
 }
