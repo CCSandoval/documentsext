@@ -2,34 +2,34 @@
     _id: ObjectId('632b78f61197e8853195332b'),
     config: [
         {
-            name:'empresa',
-            description:'Ingrese la razón social de la empresa contratante',
-            type:'name'
+            name: 'empresa',
+            description: 'Ingrese la razón social de la empresa contratante',
+            type: 'name'
         },
         {
-            name:'nit_empresa',
-            description:'Ingrese el NIT de la empresa contratante',
-            type:'name'
+            name: 'nit_empresa',
+            description: 'Ingrese el NIT de la empresa contratante',
+            type: 'name'
         },
         {
-            name:'direccion_empresa',
-            description:'Ingrese la dirección de la empresa contratante',
-            type:'name'
+            name: 'direccion_empresa',
+            description: 'Ingrese la dirección de la empresa contratante',
+            type: 'name'
         },
         {
-            name:'telefono_empresa',
-            description:'Ingrese el número telefónico de la empresa contratante',
-            type:'phone'
+            name: 'telefono_empresa',
+            description: 'Ingrese el número telefónico de la empresa contratante',
+            type: 'phone'
         },
         {
-            name:'rep_legal_empresa',
-            description:'Ingrese el nombre del representante legal de la empresa contratante',
-            type:'name'
+            name: 'rep_legal_empresa',
+            description: 'Ingrese el nombre del representante legal de la empresa contratante',
+            type: 'name'
         },
         {
-            name:'cc_rep_legal',
-            description:'Ingrese el número de cédula del representante legal de la empresa contratante',
-            type:'number'
+            name: 'cc_rep_legal',
+            description: 'Ingrese el número de cédula del representante legal de la empresa contratante',
+            type: 'number'
         },
         {
             name: 'nombre_trabajador',
@@ -215,7 +215,7 @@
                     value: 'n'
                 }
             ]
-        },
+        }
     ],
     sign: [
         'nombre_empleado',
@@ -245,7 +245,7 @@
             identification: 'cc_empleado|ce_empleado|ppt_empleado|pep_empleado',
             email: 'correo_empleado',
             phone: 'telefono_empleado',
-            type: 'firma_empleado',
+            type: 'firma_empleado'
         },
         {
             name: 'nombre_domina',
@@ -257,5 +257,6 @@
     build: 2,
     name: 'Aprendices',
     price: 5000,
+    username: '7eecb5fa-6e63-40e7-8723-d523afcd4f33',
     preBuild: false
 }

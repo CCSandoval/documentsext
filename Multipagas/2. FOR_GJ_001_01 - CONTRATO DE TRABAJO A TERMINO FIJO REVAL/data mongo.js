@@ -181,5 +181,6 @@
     preBuild: false,
     build: 3,
     price: 5000,
+    username: '19bfec32-b26f-4b80-9de6-0612934c8819',
     name: 'FOR_GJ_001_01 - CONTRATO DE TRABAJO A TERMINO FIJO REVAL'
 }

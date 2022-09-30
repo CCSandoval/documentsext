@@ -235,6 +235,7 @@
     ],
     build: 2,
     name: 'Agente Callcenter Teletrabajo',
+    username: '7eecb5fa-6e63-40e7-8723-d523afcd4f33',
     price: 5000,
     preBuild: false
 }

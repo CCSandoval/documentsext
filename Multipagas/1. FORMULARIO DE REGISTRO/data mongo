@@ -136,6 +136,16 @@
                     name: 'Viernes',
                     label: 'Viernes',
                     value: 'Viernes'
+                },
+                {
+                    name: 'Sabado',
+                    label: 'Sabado',
+                    value: 'Sabado'
+                },
+                {
+                    name: 'Domingo',
+                    label: 'Domingo',
+                    value: 'Domingo'
                 }
             ]
         },
@@ -170,6 +180,16 @@
                     name: 'Viernes',
                     label: 'Viernes',
                     value: 'Viernes'
+                },
+                {
+                    name: 'Sabado',
+                    label: 'Sabado',
+                    value: 'Sabado'
+                },
+                {
+                    name: 'Domingo',
+                    label: 'Domingo',
+                    value: 'Domingo'
                 }
             ]
         },
@@ -513,7 +533,7 @@
             approve: 'pending'
         }
     ],
-    build: 22,
+    build: 23,
     price: 5000,
     company: ObjectId('61942036889b8f0009db9812'),
     username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916'

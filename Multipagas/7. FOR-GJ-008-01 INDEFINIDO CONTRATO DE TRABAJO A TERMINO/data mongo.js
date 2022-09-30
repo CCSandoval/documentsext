@@ -178,7 +178,7 @@
         'ppt_empleado',
         'pep_empleado',
         'email_empleado',
-        'celular_empleado',
+        'celular_empleado'
     ],
     signatureProfile: [
         {
@@ -186,11 +186,12 @@
             name: 'nombre_empleado',
             identification: 'cc_empleado|ce_empleado|ppt_empleado|pep_empleado',
             email: 'email_empleado',
-            phone: 'celular_empleado',
+            phone: 'celular_empleado'
         }
     ],
     preBuild: false,
     build: 1,
     price: 5000,
+    username: '19bfec32-b26f-4b80-9de6-0612934c8819',
     name: 'FOR-GJ-008-01 INDEFINIDO CONTRATO DE TRABAJO A TERMINO'
 }
