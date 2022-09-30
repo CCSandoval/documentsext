@@ -15,484 +15,745 @@
   }
 </style>
 
-<h2 style="text-align: center">
-  <b>
-    CONTRATO DE TRABAJO A TERMINO FIJO <br />
-    REVAL S.A.S. NIT. 830097673-4
-  </b>
-</h2>
+<div>
+  <h2 style="text-align: center">
+    <b>
+      CONTRATO DE TRABAJO A TERMINO FIJO <br />
+      <span name="empresa_reval">REVAL S.A.S. NIT. 830097673-4</span>
+      <span name="empresa_multi" hidden
+        >MULTIPAGAS S.A.S. NIT. 815004859-4</span
+      >
+    </b>
+  </h2>
 
-<table class="table_class">
-  <tr>
-    <td><b>NOMBRE DEL EMPLEADOR:</b></td>
-    <td>RECAUDOS DE VALORES S.A.S.</td>
-  </tr>
-  <tr>
-    <td><b>DIRECCIÓN:</b></td>
-    <td><span name="direccion_reval">___________</span></td>
-  </tr>
-  <tr>
-    <td><b>REPRESENTANTE LEGAL:</b></td>
-    <td>ELBA LUCIA ESTEVEZ CONTRERAS</td>
-  </tr>
-  <tr>
-    <td><b>CÉDULA DE CIUDADANÍA:</b></td>
-    <td>63.318.551 DE BUCARAMANGA</td>
-  </tr>
-  <tr>
-    <td><b>NOMBRE DEL EMPLEADO:</b></td>
-    <td><span name="nombre_empleado">___________</span></td>
-  </tr>
-  <tr>
-    <td>
-      <b name="tipo_id_empleado_cc">CÉDULA DE CIUDADANÍA:</b>
-      <b name="tipo_id_empleado_ce" hidden>CÉDULA DE EXTRANJERÍA:</b>
-      <b name="tipo_id_empleado_ppt" hidden>PERMISO POR PROTECCIÓN TEMPORAL:</b>
-      <b name="tipo_id_empleado_pep" hidden>PERMISO ESPECIAL DE PERMANENCIA:</b>
-    </td>
-    <td>
-      <span name="tipo_id_empleado_cc">
-        <span name="cc_empleado">___________</span>
-      </span>
-      <span name="tipo_id_empleado_ce" hidden>
-        <span name="ce_empleado">___________</span>
-      </span>
-      <span name="tipo_id_empleado_ppt" hidden>
-        <span name="ppt_empleado">___________</span>
-      </span>
-      <span name="tipo_id_empleado_pep" hidden>
-        <span name="pep_empleado">___________</span>
-      </span>
-      DE
-      <span name="lugar_exp_id_empleado">___________</span>
-    </td>
-  </tr>
-  <tr>
-    <td><b>DIRECCIÓN:</b></td>
-    <td><span name="direccion_empleado">___________</span></td>
-  </tr>
-  <tr>
-    <td><b>NÚMERO DE CELULAR:</b></td>
-    <td><span name="celular_empleado">___________</span></td>
-  </tr>
-  <tr>
-    <td><b>LUGAR, FECHA DE NACIMIENTO:</b></td>
-    <td>
-      <span name="lugar_nacimiento">___________</span>,
-      <span name="fecha_nacimiento">___________</span>
-    </td>
-  </tr>
-  <tr>
-    <td><b>CARGO:</b></td>
-    <td><span name="cargo_empleado">___________</span></td>
-  </tr>
-  <tr>
-    <td><b>SALARIO:</b></td>
-    <td><span name="salario_empleado">___________</span></td>
-  </tr>
-  <tr>
-    <td><b>FECHA DE INICIACIÓN DE CONTRATO:</b></td>
-    <td><span name="fecha_inicio_contrato">___________</span></td>
-  </tr>
-  <tr>
-    <td><b>CIUDAD DONDE HA SIDO CONTRATADO EL TRABAJADOR:</b></td>
-    <td><span name="ciudad_contrato">___________</span></td>
-  </tr>
-  <tr>
-    <td><b>MODALIDAD:</b></td>
-    <td>TÉRMINO FIJO</td>
-  </tr>
-  <tr>
-    <td><b>FORMA DE CONTRATO:</b></td>
-    <td>ESCRITO</td>
-  </tr>
-  <tr>
-    <td><b>PERIODO DE PRUEBA:</b></td>
-    <td>
-      <span name="termino_periodo_prueba">___________</span> CONTADOS DESDE LA
-      FECHA DE INICIACIÓN DEL CONTRATO SUSCRITO.
-    </td>
-  </tr>
-</table>
+  <table class="table_class">
+    <tr>
+      <td><b>NOMBRE DEL EMPLEADOR:</b></td>
+      <td>
+        <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+        ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>DIRECCIÓN:</b></td>
+      <td><span name="direccion_reval">___________</span></td>
+    </tr>
+    <tr>
+      <td><b>REPRESENTANTE LEGAL:</b></td>
+      <td>ELBA LUCIA ESTEVEZ CONTRERAS</td>
+    </tr>
+    <tr>
+      <td><b>CÉDULA DE CIUDADANÍA:</b></td>
+      <td>63.318.551 DE BUCARAMANGA</td>
+    </tr>
+    <tr>
+      <td><b>NOMBRE DEL EMPLEADO:</b></td>
+      <td><span name="nombre_empleado">___________</span></td>
+    </tr>
+    <tr>
+      <td>
+        <b name="tipo_id_empleado_cc">CÉDULA DE CIUDADANÍA:</b>
+        <b name="tipo_id_empleado_ce" hidden>CÉDULA DE EXTRANJERÍA:</b>
+        <b name="tipo_id_empleado_ppt" hidden
+          >PERMISO POR PROTECCIÓN TEMPORAL:</b
+        >
+        <b name="tipo_id_empleado_pep" hidden
+          >PERMISO ESPECIAL DE PERMANENCIA:</b
+        >
+      </td>
+      <td>
+        <span name="tipo_id_empleado_cc">
+          <span name="cc_empleado">___________</span>
+        </span>
+        <span name="tipo_id_empleado_ce" hidden>
+          <span name="ce_empleado">___________</span>
+        </span>
+        <span name="tipo_id_empleado_ppt" hidden>
+          <span name="ppt_empleado">___________</span>
+        </span>
+        <span name="tipo_id_empleado_pep" hidden>
+          <span name="pep_empleado">___________</span>
+        </span>
+        DE
+        <span name="lugar_exp_id_empleado">___________</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>DIRECCIÓN:</b></td>
+      <td><span name="direccion_empleado">___________</span></td>
+    </tr>
+    <tr>
+      <td><b>NÚMERO DE CELULAR:</b></td>
+      <td><span name="celular_empleado">___________</span></td>
+    </tr>
+    <tr>
+      <td><b>LUGAR, FECHA DE NACIMIENTO:</b></td>
+      <td>
+        <span name="lugar_nacimiento">___________</span>,
+        <span name="fecha_nacimiento">___________</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>CARGO:</b></td>
+      <td><span name="cargo_empleado">___________</span></td>
+    </tr>
+    <tr>
+      <td><b>SALARIO:</b></td>
+      <td><span name="salario_empleado">___________</span></td>
+    </tr>
+    <tr>
+      <td><b>FECHA DE INICIACIÓN DE CONTRATO:</b></td>
+      <td><span name="fecha_inicio_contrato">___________</span></td>
+    </tr>
+    <tr>
+      <td><b>CIUDAD DONDE HA SIDO CONTRATADO EL TRABAJADOR:</b></td>
+      <td><span name="ciudad_contrato">___________</span></td>
+    </tr>
+    <tr>
+      <td><b>MODALIDAD:</b></td>
+      <td>TÉRMINO FIJO</td>
+    </tr>
+    <tr>
+      <td><b>FORMA DE CONTRATO:</b></td>
+      <td>ESCRITO</td>
+    </tr>
+    <tr>
+      <td><b>PERIODO DE PRUEBA:</b></td>
+      <td>
+        <span name="termino_periodo_prueba">___________</span> CONTADOS DESDE LA
+        FECHA DE INICIACIÓN DEL CONTRATO SUSCRITO.
+      </td>
+    </tr>
+  </table>
 
-<p>
-  Entre <b>EL EMPLEADOR</b> y el <b>TRABAJADOR</b>, de las condiciones
-  previamente identificadas en el encabezamiento del presente documento,
-  debidamente identificados como aparece en las antefirmas, se ha celebrado un
-  contrato de trabajo a término indefinido, que se regirá por las disposiciones
-  del Código Sustantivo del Trabajo Laboral, la legislación nacional que regula
-  las relaciones laborales en el Estado Colombiano y en particular por
-  siguientes cláusulas:
-</p>
+  <p>
+    Entre <b>EL EMPLEADOR</b> y el <b>TRABAJADOR</b>, de las condiciones
+    previamente identificadas en el encabezamiento del presente documento,
+    debidamente identificados como aparece en las antefirmas, se ha celebrado un
+    contrato de trabajo a término indefinido, que se regirá por las
+    disposiciones del Código Sustantivo del Trabajo Laboral, la legislación
+    nacional que regula las relaciones laborales en el Estado Colombiano y en
+    particular por siguientes cláusulas:
+  </p>
 
-<p>
-  <b>CLÁUSULA PRIMERA.- OBJETO:</b> El Empleador se obliga a contratar los
-  servicios personales del Trabajador y este se obliga a poner al servicio del
-  Empleador toda su capacidad normal de trabajo en el desempeño de las funciones
-  y cumplimiento de las responsabilidades propias del cargo de
-  <span name="cargo">___________</span>, las cuales se encuentran en el
-  Reglamento interno de trabajo y Manual de Funciones establecidas por REVAL
-  S.A.S y todas las demás actividades, anexas o complementarias del cargo para
-  el que se le ha contratado, mientras subsistan la materia del trabajo, las
-  causas que lo originaron y el trabajador cumpla efectivamente sus
-  obligaciones, de conformidad con los reglamentos, instrucciones e indicaciones
-  que reciba del Empleador o su delegado.
-</p>
+  <p>
+    <b>CLÁUSULA PRIMERA.- OBJETO:</b> El Empleador se obliga a contratar los
+    servicios personales del Trabajador y este se obliga a poner al servicio del
+    Empleador toda su capacidad normal de trabajo en el desempeño de las
+    funciones y cumplimiento de las responsabilidades propias del cargo de
+    <span name="cargo">___________</span>, las cuales se encuentran en el
+    Reglamento interno de trabajo y Manual de Funciones establecidas por
+    <span name="empresa_reval">REVAL S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> y todas las
+    demás actividades, anexas o complementarias del cargo para el que se le ha
+    contratado, mientras subsistan la materia del trabajo, las causas que lo
+    originaron y el trabajador cumpla efectivamente sus obligaciones, de
+    conformidad con los reglamentos, instrucciones e indicaciones que reciba del
+    Empleador o su delegado.
+  </p>
 
-<p>
-  <b>CLÁUSULA SEGUNDA. - DESEMPEÑO DE LABORES.</b> El Trabajador desempeñará sus
-  funciones inicialmente en el Municipio o Ciudad de
-  <span name="municipio_trabajo">___________</span> Departamento de
-  <span name="departamento_trabajo">___________</span>, Estado de Colombia, no
-  obstante, el Trabajador se compromete a desempeñarlas en las demás ciudades,
-  poblaciones o lugares a donde se deba desplazar para el cumplimiento de las
-  mismas en el territorio nacional, por cuanto esta es una de las razones por
-  las cuales se le contrató; en consecuencia el hecho de que el Trabajador deba
-  prestar sus servicios inicialmente en un determinado lugar no implica su
-  inmovilidad, obligándose a cumplir con los desplazamientos, traslados,
-  transferencias o cambios de sede o domicilio que por necesidades del servicio
-  se requieran pues la naturaleza del cargo y la razón de su contratación lo
-  exigen y al suscribir el presente documento así lo está aceptando el
-  trabajador.
-</p>
+  <p>
+    <b>CLÁUSULA SEGUNDA. - DESEMPEÑO DE LABORES.</b> El Trabajador desempeñará
+    sus funciones inicialmente en el Municipio o Ciudad de
+    <span name="municipio_trabajo">___________</span> Departamento de
+    <span name="departamento_trabajo">___________</span>, Estado de Colombia, no
+    obstante, el Trabajador se compromete a desempeñarlas en las demás ciudades,
+    poblaciones o lugares a donde se deba desplazar para el cumplimiento de las
+    mismas en el territorio nacional, por cuanto esta es una de las razones por
+    las cuales se le contrató; en consecuencia el hecho de que el Trabajador
+    deba prestar sus servicios inicialmente en un determinado lugar no implica
+    su inmovilidad, obligándose a cumplir con los desplazamientos, traslados,
+    transferencias o cambios de sede o domicilio que por necesidades del
+    servicio se requieran pues la naturaleza del cargo y la razón de su
+    contratación lo exigen y al suscribir el presente documento así lo está
+    aceptando el trabajador.
+  </p>
 
-<p>
-  <b>CLÁUSULA TERCERA - JORNADA DE TRABAJO:</b> La jornada laboral máxima legal
-  será la determinada por la legislación laboral colombiana, la cual deberá ser
-  cumplida salvo autorización o justificación debidamente comprobada; ahora
-  bien, cualquier actividad que demande trabajo adicional o de horas extras, o
-  en días dominicales o festivos, será remunerada de conformidad con los
-  recargos que para tal efecto regula el Código Sustantivo del Trabajo.
-  <b>El TRABAJADOR</b> se compromete a laborar en cualquiera de los siguientes
-  turnos de trabajo que tiene establecido <b>EL EMPLEADOR</b>, los cuales podrá
-  este último variar de conformidad con las necesidades del servicio.
-</p>
+  <p>
+    <b>CLÁUSULA TERCERA - JORNADA DE TRABAJO:</b> La jornada laboral máxima
+    legal será la determinada por la legislación laboral colombiana, la cual
+    deberá ser cumplida salvo autorización o justificación debidamente
+    comprobada; ahora bien, cualquier actividad que demande trabajo adicional o
+    de horas extras, o en días dominicales o festivos, será remunerada de
+    conformidad con los recargos que para tal efecto regula el Código Sustantivo
+    del Trabajo. <b>El TRABAJADOR</b> se compromete a laborar en cualquiera de
+    los siguientes turnos de trabajo que tiene establecido <b>EL EMPLEADOR</b>,
+    los cuales podrá este último variar de conformidad con las necesidades del
+    servicio.
+  </p>
 
-<p>
-  <b>CLÁUSULA CUARTA - DURACIÓN DEL CONTRATO:</b> Este contrato se celebra por
-  término fijo cuya fecha de inicio es
-  <span name="fecha_inicio_contrato">___________</span> y fecha de terminación
-  es <span name="fecha_terminacion_contrato">___________</span>. De igual
-  manera, el Empleador y Trabajador acuerdan que durante el termino
-  <span name="termino_periodo_prueba">___________</span>, se constituirán como
-  período de prueba.
-</p>
+  <p>
+    <b>CLÁUSULA CUARTA - DURACIÓN DEL CONTRATO:</b> Este contrato se celebra por
+    término fijo cuya fecha de inicio es
+    <span name="fecha_inicio_contrato">___________</span> y fecha de terminación
+    es <span name="fecha_terminacion_contrato">___________</span>. De igual
+    manera, el Empleador y Trabajador acuerdan que durante el termino
+    <span name="termino_periodo_prueba">___________</span>, se constituirán como
+    período de prueba.
+  </p>
 
-<p>
-  <b>CLÁUSULA QUINTA - REMUNERACIÓN:</b> Por todos los servicios que preste el
-  Trabajador, el Empleador le reconoce una remuneración en dinero mensual,
-  moneda colombiana, por valor de valor de
-  <span name="salario_empleado">___________</span>
-  pagaderos por períodos mensuales iguales y vencidos según lo decida el
-  Empleador y podrá ser pagado directamente o por conducto de cualquier otro
-  medio de pago.
-</p>
+  <p>
+    <b>CLÁUSULA QUINTA - REMUNERACIÓN:</b> Por todos los servicios que preste el
+    Trabajador, el Empleador le reconoce una remuneración en dinero mensual,
+    moneda colombiana, por valor de valor de
+    <span name="salario_empleado">___________</span>
+    pagaderos por períodos mensuales iguales y vencidos según lo decida el
+    Empleador y podrá ser pagado directamente o por conducto de cualquier otro
+    medio de pago.
+  </p>
 
-<b>PARÁGRAFO PRIMERO.-</b> Las partes acuerdan que en los casos en que se le
-reconozcan al Trabajador beneficios diferentes al salario, en dinero o especie
-que haya suministrado o suministre el Empleador a cualquier título, dentro de la
-jornada ordinaria de trabajo o fuera de ella, por concepto de alimentación,
-alojamiento y transporte ya sea en comedores o cafeterías de la empresa o por
-terceros, vestuario, suministro en dinero o en especie tales beneficios o
-reconocimientos no se tendrán en cuenta para liquidar prestaciones sociales ni
-para efectuar los aportes parafiscales, de conformidad con los Artículos 15 y 16
-de la Ley 50 de 1990, en concordancia con el Artículo 17 de la Ley 344 de 1.996.
-El suministro por parte del Empleador de elementos tales como vehículos o
-transporte, líneas telefónicas teléfonos celulares, escritorios, sillas, espacio
-físico sin contraprestación de canon de arrendamiento, obliga a El Trabajador a
-que sean utilizadas única y exclusivamente para efectos laborales y no
-personales, los cuales de conformidad con el Artículo 128 del C.S.T., no serían
-salario por tener como finalidad el cabal cumplimiento de las obligaciones a
-cargo del Trabajador.
+  <b>PARÁGRAFO PRIMERO.-</b> Las partes acuerdan que en los casos en que se le
+  reconozcan al Trabajador beneficios diferentes al salario, en dinero o especie
+  que haya suministrado o suministre el Empleador a cualquier título, dentro de
+  la jornada ordinaria de trabajo o fuera de ella, por concepto de alimentación,
+  alojamiento y transporte ya sea en comedores o cafeterías de la empresa o por
+  terceros, vestuario, suministro en dinero o en especie tales beneficios o
+  reconocimientos no se tendrán en cuenta para liquidar prestaciones sociales ni
+  para efectuar los aportes parafiscales, de conformidad con los Artículos 15 y
+  16 de la Ley 50 de 1990, en concordancia con el Artículo 17 de la Ley 344 de
+  1.996. El suministro por parte del Empleador de elementos tales como vehículos
+  o transporte, líneas telefónicas teléfonos celulares, escritorios, sillas,
+  espacio físico sin contraprestación de canon de arrendamiento, obliga a El
+  Trabajador a que sean utilizadas única y exclusivamente para efectos laborales
+  y no personales, los cuales de conformidad con el Artículo 128 del C.S.T., no
+  serían salario por tener como finalidad el cabal cumplimiento de las
+  obligaciones a cargo del Trabajador.
 
-<p>
-  <b>CLÁUSULA SEXTA:</b> Queda expresamente convenido entre las partes que si el
-  trabajador laborara para terceras personas, naturales o jurídicas, en virtud
-  del presente contrato de trabajo por instrucciones de
-  <b>RECAUDOS DE VALORES S.A.S</b> y dentro de la jornada convenida en este
-  documento ni la mencionada Sociedad ni el beneficiario de los servicios del
-  trabajador, tendrá que pagar a éste suma adicional a las que se deriven del
-  presente contrato, toda vez que queda entendido que con los salarios y/o
-  prestaciones sociales que les cancele <b>RECAUDOS DE VALORES S.A.S</b> quedan
-  remunerados los citados servicios a terceros.
-</p>
+  <p>
+    <b>CLÁUSULA SEXTA:</b> Queda expresamente convenido entre las partes que si
+    el trabajador laborara para terceras personas, naturales o jurídicas, en
+    virtud del presente contrato de trabajo por instrucciones de
+    <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> y dentro de la
+    jornada convenida en este documento ni la mencionada Sociedad ni el
+    beneficiario de los servicios del trabajador, tendrá que pagar a éste suma
+    adicional a las que se deriven del presente contrato, toda vez que queda
+    entendido que con los salarios y/o prestaciones sociales que les cancele
+    <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> quedan
+    remunerados los citados servicios a terceros.
+  </p>
 
-<p>
-  <b>PARÁGRAFO PRIMERO.</b> Para efectos del cabal desempeño de las funciones
-  del trabajador, la empresa a la que será designado el trabajador a prestar sus
-  servicios, podrá expedir carnés o tarjetas de identificación a nombre de dicho
-  trabajador sin que ello implique consecuencia alguna en el presente contrato
-  de trabajo ni tampoco cree relación jurídica entre el trabajador y la citada
-  empresa.
-</p>
+  <p>
+    <b>PARÁGRAFO PRIMERO.</b> Para efectos del cabal desempeño de las funciones
+    del trabajador, la empresa a la que será designado el trabajador a prestar
+    sus servicios, podrá expedir carnés o tarjetas de identificación a nombre de
+    dicho trabajador sin que ello implique consecuencia alguna en el presente
+    contrato de trabajo ni tampoco cree relación jurídica entre el trabajador y
+    la citada empresa.
+  </p>
 
-<p>
-  <b>CLÁUSULA SÉPTIMA - PAGO DE LIQUIDACIÓN.</b> El Trabajador acepta desde
-  ahora que si a la finalización del presente contrato de trabajo al Empleador
-  se le presentaren circunstancias que le impidieren efectuar oportunamente la
-  liquidación del contrato, dicho Empleador dispondrá de quince (15) días
-  hábiles contados desde la aludida terminación, para tales efectos.
-</p>
+  <p>
+    <b>CLÁUSULA SÉPTIMA - PAGO DE LIQUIDACIÓN.</b> El Trabajador acepta desde
+    ahora que si a la finalización del presente contrato de trabajo al Empleador
+    se le presentaren circunstancias que le impidieren efectuar oportunamente la
+    liquidación del contrato, dicho Empleador dispondrá de quince (15) días
+    hábiles contados desde la aludida terminación, para tales efectos.
+  </p>
 
-<p>
-  <b>CLÁUSULA OCTAVA - LICENCIAS, VACACIONES Y PERMISOS.</b> Para la solicitud,
-  obtención de licencias, vacaciones y permisos se aplicarán las disposiciones
-  contenidas en el Reglamento Interno de Trabajo. Asimismo, se aplicarán las
-  normas análogas vigentes establecidas en las Leyes, Decretos, Actos
-  Administrativos que rigen la materia en el Estado Colombiano.
-</p>
+  <p>
+    <b>CLÁUSULA OCTAVA - LICENCIAS, VACACIONES Y PERMISOS.</b> Para la
+    solicitud, obtención de licencias, vacaciones y permisos se aplicarán las
+    disposiciones contenidas en el Reglamento Interno de Trabajo. Asimismo, se
+    aplicarán las normas análogas vigentes establecidas en las Leyes, Decretos,
+    Actos Administrativos que rigen la materia en el Estado Colombiano.
+  </p>
 
-<p>
-  <b>PARÁGRAFO PRIMERO.</b> El Trabajador disfrutará los dos (2) días de la
-  familia Consagrados en la ley 1857 de 2017.
-</p>
+  <p>
+    <b>PARÁGRAFO PRIMERO.</b> El Trabajador disfrutará los dos (2) días de la
+    familia Consagrados en la ley 1857 de 2017.
+  </p>
 
-<p>
-  <b>CLÁUSULA NOVENA - CAMBIO DE LABOR.</b> El Trabajador se obliga a aceptar
-  los cambios de Labor que decida el Empleador dentro de su poder subordinante,
-  siempre que se respeten las condiciones laborales del Trabajador y no se le
-  causen perjuicios. Todo ello sin que se afecte el honor, la dignidad y los
-  derechos mínimos del trabajador, de conformidad con lo establecido en el
-  artículo 53 de la Constitución Política de 1991.
-</p>
+  <p>
+    <b>CLÁUSULA NOVENA - CAMBIO DE LABOR.</b> El Trabajador se obliga a aceptar
+    los cambios de Labor que decida el Empleador dentro de su poder
+    subordinante, siempre que se respeten las condiciones laborales del
+    Trabajador y no se le causen perjuicios. Todo ello sin que se afecte el
+    honor, la dignidad y los derechos mínimos del trabajador, de conformidad con
+    lo establecido en el artículo 53 de la Constitución Política de 1991.
+  </p>
 
-<p>
-  <b>CLÁUSULA DÉCIMA - CAUSALES DE TERMINACIÓN DEL CONTRATO.</b> Habrá lugar a
-  la terminación de este contrato por las justas causas previstas en la ley.
-  Asimismo, por cualquier falta grave calificada en el Reglamento Interno de
-  Trabajo, por transgresión, omisión o incumplimiento al manual de funciones,
-  Código de Ética y demás Políticas Corporativas establecidas por la Compañía.
-</p>
+  <p>
+    <b>CLÁUSULA DÉCIMA - CAUSALES DE TERMINACIÓN DEL CONTRATO.</b> Habrá lugar a
+    la terminación de este contrato por las justas causas previstas en la ley.
+    Asimismo, por cualquier falta grave calificada en el Reglamento Interno de
+    Trabajo, por transgresión, omisión o incumplimiento al manual de funciones,
+    Código de Ética y demás Políticas Corporativas establecidas por la Compañía.
+  </p>
 
-<p>
-  <b>CLÁUSULA DÉCIMA PRIMERA - DE LA RESPONSABILIDAD DEL DINERO:</b> Todo Cajero
-  de REVAL S.A.S a nivel Nacional es responsable de salvaguardar el dinero de
-  los clientes, además, el deber de cuidado y custodia de este. Igualmente, está
-  en la obligación de informar y diligenciar en el reporte diario de liquidez
-  los faltantes y sobrantes de caja.
-</p>
+  <p>
+    <b>CLÁUSULA DÉCIMA PRIMERA - DE LA RESPONSABILIDAD DEL DINERO:</b> Todo
+    Cajero de <span name="empresa_reval">REVAL S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> a nivel Nacional
+    es responsable de salvaguardar el dinero de los clientes, además, el deber
+    de cuidado y custodia de este. Igualmente, está en la obligación de informar
+    y diligenciar en el reporte diario de liquidez los faltantes y sobrantes de
+    caja.
+  </p>
 
-<b>PARÁGRAFO PRIMERO.</b> Serán responsables del dinero todos los Cajeros de
-REVAL S.A.S a nivel nacional que producto de su negligencia, omisión,
-transgresión e incumplimiento a las Políticas Corporativas de la Compañía
-presenten faltantes y/o sobrantes en caja.
+  <b>PARÁGRAFO PRIMERO.</b> Serán responsables del dinero todos los Cajeros de
+  <span name="empresa_reval">REVAL S.A.S.</span
+  ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> a nivel nacional
+  que producto de su negligencia, omisión, transgresión e incumplimiento a las
+  Políticas Corporativas de la Compañía presenten faltantes y/o sobrantes en
+  caja.
 
-<p>
-  <b>CLÁUSULA DÉCIMA SEGUNDA. - FIDELIDAD Y RESERVA.</b> En concordancia con el
-  artículo 57 del Código Sustantivo del Trabajo, el Trabajador se obliga a
-  desempeñar el cargo con lealtad, buena fe y fidelidad para con el Empleador y,
-  por lo tanto adquiere la obligación de que todos los asuntos que conozca
-  directa o indirectamente por razón de su cargo o por estar vinculado con el
-  Empleador, tendrán el carácter de reservados y por tal motivo no podrán ser
-  revelados por ningún medio a terceros o a personal vinculado al Empleador, que
-  no deban conocerlos por razón de sus funciones. Tiene especial carácter de
-  reservados todo lo que tenga que ver con la situación financiera del
-  Empleador, su producción, operaciones comerciales, financieras, bancarias,
-  administrativas, técnicas, base de datos de toda clase, fórmulas y
-  procedimientos industriales, técnicos y comerciales. La violación de esta
-  obligación se califica como falta grave sin perjuicio de las otras acciones
-  legales y extralegales a que haya lugar. Excepto en aquellos casos en que sea
-  necesario por razón del trabajo, o en el caso en que el Empleador lo autorice
-  previamente por escrito, el Trabajador no divulgará a nadie, ni usará fuera
-  del trabajo ni después de terminado el mismo, informaciones confidenciales de
-  tipo técnico o de negocios del Empleador o de sus compañías afiliadas o de sus
-  clientes. Esta misma obligación se extenderá a cualquier información
-  proveniente de terceras personas que el Empleador o sus compañías afiliadas
-  tengan la obligación de mantener confidencialmente y de la cual tenga
-  conocimiento el Trabajador en el curso de su trabajo.
-</p>
+  <p>
+    <b>CLÁUSULA DÉCIMA SEGUNDA. - FIDELIDAD Y RESERVA.</b> En concordancia con
+    el artículo 57 del Código Sustantivo del Trabajo, el Trabajador se obliga a
+    desempeñar el cargo con lealtad, buena fe y fidelidad para con el Empleador
+    y, por lo tanto adquiere la obligación de que todos los asuntos que conozca
+    directa o indirectamente por razón de su cargo o por estar vinculado con el
+    Empleador, tendrán el carácter de reservados y por tal motivo no podrán ser
+    revelados por ningún medio a terceros o a personal vinculado al Empleador,
+    que no deban conocerlos por razón de sus funciones. Tiene especial carácter
+    de reservados todo lo que tenga que ver con la situación financiera del
+    Empleador, su producción, operaciones comerciales, financieras, bancarias,
+    administrativas, técnicas, base de datos de toda clase, fórmulas y
+    procedimientos industriales, técnicos y comerciales. La violación de esta
+    obligación se califica como falta grave sin perjuicio de las otras acciones
+    legales y extralegales a que haya lugar. Excepto en aquellos casos en que
+    sea necesario por razón del trabajo, o en el caso en que el Empleador lo
+    autorice previamente por escrito, el Trabajador no divulgará a nadie, ni
+    usará fuera del trabajo ni después de terminado el mismo, informaciones
+    confidenciales de tipo técnico o de negocios del Empleador o de sus
+    compañías afiliadas o de sus clientes. Esta misma obligación se extenderá a
+    cualquier información proveniente de terceras personas que el Empleador o
+    sus compañías afiliadas tengan la obligación de mantener confidencialmente y
+    de la cual tenga conocimiento el Trabajador en el curso de su trabajo.
+  </p>
 
-<p>
-  <b>CLÁUSULA DÉCIMA TERCERA- CONFIDENCIALIDAD.</b> En concordancia con la
-  Política Empresarial sobre este aspecto, el Trabajador no podrá, cualquiera
-  que sea su finalidad u objeto sacar, extraer, enviar por cualquier medio,
-  documentos, datos o informes fuera de las instalaciones del Empleador o de las
-  Empresas, personas naturales o jurídicas con quien EL EMPLEADOR mantiene
-  relaciones comerciales. Tampoco podrá permitir que otras personas, aún de la
-  empresa lo hagan, teniendo el deber de informar al Empleador la ocurrencia de
-  tales hechos. Todos los originales y copias de manuales, correspondencia,
-  notas, informes, cuadernos, fotografías y cualquier otro material grabado,
-  impreso o escrito en cualquier forma, relacionados con el negocio o las
-  operaciones del Empleador, sus compañías afiliadas, y sus Clientes elaborados
-  o recibidos por el Trabajador durante la vigencia del contrato, son propiedad
-  del Empleador y el Trabajador, se obliga a entregarlos a el Empleador los que
-  se encuentren en su posesión al terminar el contrato o antes, si así lo
-  solicita el Empleador. Así mismo, el Trabajador, devolverá al Empleador
-  cualquier otro bien de propiedad de la empresa o de sus afiliadas o de sus
-  Clientes o Empresas con quien mantiene relaciones comerciales. El
-  incumplimiento de esta obligación se califica como falta grave.
-</p>
+  <p>
+    <b>CLÁUSULA DÉCIMA TERCERA- CONFIDENCIALIDAD.</b> En concordancia con la
+    Política Empresarial sobre este aspecto, el Trabajador no podrá, cualquiera
+    que sea su finalidad u objeto sacar, extraer, enviar por cualquier medio,
+    documentos, datos o informes fuera de las instalaciones del Empleador o de
+    las Empresas, personas naturales o jurídicas con quien EL EMPLEADOR mantiene
+    relaciones comerciales. Tampoco podrá permitir que otras personas, aún de la
+    empresa lo hagan, teniendo el deber de informar al Empleador la ocurrencia
+    de tales hechos. Todos los originales y copias de manuales, correspondencia,
+    notas, informes, cuadernos, fotografías y cualquier otro material grabado,
+    impreso o escrito en cualquier forma, relacionados con el negocio o las
+    operaciones del Empleador, sus compañías afiliadas, y sus Clientes
+    elaborados o recibidos por el Trabajador durante la vigencia del contrato,
+    son propiedad del Empleador y el Trabajador, se obliga a entregarlos a el
+    Empleador los que se encuentren en su posesión al terminar el contrato o
+    antes, si así lo solicita el Empleador. Así mismo, el Trabajador, devolverá
+    al Empleador cualquier otro bien de propiedad de la empresa o de sus
+    afiliadas o de sus Clientes o Empresas con quien mantiene relaciones
+    comerciales. El incumplimiento de esta obligación se califica como falta
+    grave.
+  </p>
 
-<p>
-  <b>CLÁUSULA DÉCIMA CUARTA - IDENTIFICACIÓN Y DOMICILIO.</b> El Trabajador de
-  las condiciones ya dichas, para todos los efectos legales y en especial para
-  la aplicación del parágrafo 1 del Artículo 29 de la Ley 789 del 2002, norma
-  que modificó el Artículo 65 del C.S.T., adquiere la obligación de informar por
-  escrito y de manera inmediata a el Empleador cualquier cambio en su dirección
-  de residencia, teniéndose en todo caso como suya, la última dirección
-  registrada en su hoja de vida. El incumplimiento de esta obligación, dados sus
-  efectos, se califica como falta grave.
-</p>
+  <p>
+    <b>CLÁUSULA DÉCIMA CUARTA - IDENTIFICACIÓN Y DOMICILIO.</b> El Trabajador de
+    las condiciones ya dichas, para todos los efectos legales y en especial para
+    la aplicación del parágrafo 1 del Artículo 29 de la Ley 789 del 2002, norma
+    que modificó el Artículo 65 del C.S.T., adquiere la obligación de informar
+    por escrito y de manera inmediata a el Empleador cualquier cambio en su
+    dirección de residencia, teniéndose en todo caso como suya, la última
+    dirección registrada en su hoja de vida. El incumplimiento de esta
+    obligación, dados sus efectos, se califica como falta grave.
+  </p>
 
-<p>
-  <b>CLÁUSULA DÉCIMA QUINTA - USO EXCLUSIVO DE HERRAMIENTAS DE TRABAJO.</b> El
-  Trabajador reconoce expresamente que las plataformas de correo electrónico,
-  computadores suministrados por el Empleador y los servicios de mensajes
-  asociados al mismo, no deben ser utilizadas para fines personales o que no
-  estén relacionados con las funciones desempeñadas por el Empleador. El
-  Empleador podrá acceder a estas herramientas de trabajo sin necesidad de
-  autorización del Trabajador para, y sin limitarse a: (i) realizar
-  investigaciones, y (ii) verificar el uso de las herramientas.
-</p>
+  <p>
+    <b>CLÁUSULA DÉCIMA QUINTA - USO EXCLUSIVO DE HERRAMIENTAS DE TRABAJO.</b> El
+    Trabajador reconoce expresamente que las plataformas de correo electrónico,
+    computadores suministrados por el Empleador y los servicios de mensajes
+    asociados al mismo, no deben ser utilizadas para fines personales o que no
+    estén relacionados con las funciones desempeñadas por el Empleador. El
+    Empleador podrá acceder a estas herramientas de trabajo sin necesidad de
+    autorización del Trabajador para, y sin limitarse a: (i) realizar
+    investigaciones, y (ii) verificar el uso de las herramientas.
+  </p>
 
-<p>
-  <b>CLÁUSULA DÉCIMA SEXTA - ENTREGA DE REGLAMENTOS.</b> El Trabajador deja
-  constancia de que recibió y conoció el Reglamento Interno de Trabajo y el
-  Reglamento de Higiene y Seguridad Industrial suministrado y socializado por El
-  Empleador.
-</p>
+  <p>
+    <b>CLÁUSULA DÉCIMA SEXTA - ENTREGA DE REGLAMENTOS.</b> El Trabajador deja
+    constancia de que recibió y conoció el Reglamento Interno de Trabajo y el
+    Reglamento de Higiene y Seguridad Industrial suministrado y socializado por
+    El Empleador.
+  </p>
 
-<p>
-  <b>CLÁUSULA DÉCIMA SÉPTIMA - ENTREGA DE POLÍTICAS REGLAMENTARIAS.</b> El
-  Trabajador deja constancia de que recibió y conoció las Políticas corporativas
-  de la compañía.
-</p>
+  <p>
+    <b>CLÁUSULA DÉCIMA SÉPTIMA - ENTREGA DE POLÍTICAS REGLAMENTARIAS.</b> El
+    Trabajador deja constancia de que recibió y conoció las Políticas
+    corporativas de la compañía.
+  </p>
 
-<p>
-  <b
-    >CLÁUSULA DÉCIMA OCTAVA - TRATAMIENTO DE DATOS PERSONALES, DATOS
-    SENSIBLES:</b
-  >
-  En fundamento con el formato “AUTORIZACIÓN PARA EL TRATAMIENTO, CONSULTA,
-  PROCESAMIENTO Y REPORTE DE DATOS PERSONALES”, conocida y firmada
-  voluntariamente por el Trabajador concede y autoriza el Empleador las
-  disposiciones contenidas en el aludido documento.
-</p>
+  <p>
+    <b
+      >CLÁUSULA DÉCIMA OCTAVA - TRATAMIENTO DE DATOS PERSONALES, DATOS
+      SENSIBLES:</b
+    >
+    En fundamento con el formato “AUTORIZACIÓN PARA EL TRATAMIENTO, CONSULTA,
+    PROCESAMIENTO Y REPORTE DE DATOS PERSONALES”, conocida y firmada
+    voluntariamente por el Trabajador concede y autoriza el Empleador las
+    disposiciones contenidas en el aludido documento.
+  </p>
 
-<p>
-  <b
-    >CLÁUSULA DÉCIMA NOVENA - CONSULTA, PROCESAMIENTO Y REPORTE DE DATOS A
-    CENTRALES DE RIESGO.</b
-  >
-  En consonancia con el formato “AUTORIZACIÓN PARA EL TRATAMIENTO, CONSULTA,
-  PROCESAMIENTO Y REPORTE DE DATOS PERSONALES”, conocida y firmada
-  voluntariamente por el Trabajador concede y autoriza el Empleador las
-  disposiciones contenidas en el aludido documento.
-</p>
+  <p>
+    <b
+      >CLÁUSULA DÉCIMA NOVENA - CONSULTA, PROCESAMIENTO Y REPORTE DE DATOS A
+      CENTRALES DE RIESGO.</b
+    >
+    En consonancia con el formato “AUTORIZACIÓN PARA EL TRATAMIENTO, CONSULTA,
+    PROCESAMIENTO Y REPORTE DE DATOS PERSONALES”, conocida y firmada
+    voluntariamente por el Trabajador concede y autoriza el Empleador las
+    disposiciones contenidas en el aludido documento.
+  </p>
 
-<p>
-  <b>CLÁUSULA VIGÉSIMA - ESTIPULACIÓN.</b> El presente contrato de trabajo
-  reemplaza íntegramente Cualquier otra estipulación que con anterioridad
-  hubiere regido entre las partes que lo suscriben.
-</p>
+  <p>
+    <b>CLÁUSULA VIGÉSIMA - ESTIPULACIÓN.</b> El presente contrato de trabajo
+    reemplaza íntegramente Cualquier otra estipulación que con anterioridad
+    hubiere regido entre las partes que lo suscriben.
+  </p>
 
-<p>
-  <b>CLÁUSULA VIGÉSIMA PRIMERA - VALIDEZ DE LA FIRMA ELECTRÓNICA.</b> El
-  Empleador y Trabajador declaran que este acuerdo es legalmente vinculante y
-  renuncian expresamente a interponer una acción con el fin de invalidar su
-  contenido por el solo hecho de usarse el “Intercambio Electrónico de Datos”
-  (firma electrónica) en cumplimiento de la ley 527 de 1999 y el Decreto 2364 de
-  2012 y demás normas que las modifiquen y/ o complementen. Las Partes declaran
-  que, en caso de litigio, los registros de los mensajes de Intercambio
-  Electrónico de Datos que se hayan utilizado serán admisibles ante el Juez
-  competente y constituirán plena prueba de los hechos que en ellos figuran,
-  salvo que se aporte prueba en contrario.
-</p>
+  <p>
+    <b>CLÁUSULA VIGÉSIMA PRIMERA - VALIDEZ DE LA FIRMA ELECTRÓNICA.</b> El
+    Empleador y Trabajador declaran que este acuerdo es legalmente vinculante y
+    renuncian expresamente a interponer una acción con el fin de invalidar su
+    contenido por el solo hecho de usarse el “Intercambio Electrónico de Datos”
+    (firma electrónica) en cumplimiento de la ley 527 de 1999 y el Decreto 2364
+    de 2012 y demás normas que las modifiquen y/ o complementen. Las Partes
+    declaran que, en caso de litigio, los registros de los mensajes de
+    Intercambio Electrónico de Datos que se hayan utilizado serán admisibles
+    ante el Juez competente y constituirán plena prueba de los hechos que en
+    ellos figuran, salvo que se aporte prueba en contrario.
+  </p>
 
-<p>
-  Por su parte, el Empleador y Trabajador reconocen y aceptan que las firmas
-  plasmadas en el Contrato son confiables y vinculantes para obligarlas legal y
-  contractualmente en relación con su contenido y tienen la misma validez y los
-  mismos efectos jurídicos de la firma manuscrita. De conformidad con lo
-  anterior, las Partes declaran: a) Que los firmantes tienen plenas facultades
-  legales para obligarse mediante firma electrónica y no requieren de
-  autorización adicional para ello. b) Que los datos de creación de cada firma
-  corresponden única y exclusivamente a aquellas personas que legalmente pueden
-  obligarse. c). Que quienes aparezcan como firmantes del Contrato son las
-  únicas personas que tienen acceso para la creación de la firma del Contrato
-  por los sistemas destinados por las Partes para tal fin, los cuales, desde ya,
-  las partes declaran conocer y verificar que provee un mecanismo de firma
-  electrónica confiable que garantiza el cumplimiento de los requisitos de firma
-  electrónica previstos en la legislación vigente.
-</p>
+  <p>
+    Por su parte, el Empleador y Trabajador reconocen y aceptan que las firmas
+    plasmadas en el Contrato son confiables y vinculantes para obligarlas legal
+    y contractualmente en relación con su contenido y tienen la misma validez y
+    los mismos efectos jurídicos de la firma manuscrita. De conformidad con lo
+    anterior, las Partes declaran: a) Que los firmantes tienen plenas facultades
+    legales para obligarse mediante firma electrónica y no requieren de
+    autorización adicional para ello. b) Que los datos de creación de cada firma
+    corresponden única y exclusivamente a aquellas personas que legalmente
+    pueden obligarse. c). Que quienes aparezcan como firmantes del Contrato son
+    las únicas personas que tienen acceso para la creación de la firma del
+    Contrato por los sistemas destinados por las Partes para tal fin, los
+    cuales, desde ya, las partes declaran conocer y verificar que provee un
+    mecanismo de firma electrónica confiable que garantiza el cumplimiento de
+    los requisitos de firma electrónica previstos en la legislación vigente.
+  </p>
 
-<p>
-  Por lo anterior, el mecanismo de firma electrónica elegido garantiza la
-  autenticidad identidad de los firmantes), la integridad (no alteración del
-  documento luego de su firma) y el no repudio del documento firmado. Con el
-  propósito de proteger la autenticidad, integridad, validez e inviolabilidad de
-  la firma electrónica y del Contrato y de conformidad con la Ley 527 de 1999,
-  el Decreto 2364 de 2012 y demás normas que las modifiquen y/ o complementen,
-  los firmantes de Las Partes se obligan a: a). Mantener el control y custodia
-  exclusiva sobre los datos de creación de la firma. b). Garantizar que los
-  datos de creación de la firma no sean utilizados de forma indebida o no
-  autorizada. c). Dar aviso inmediato a la otra Parte sobre cualquier evento que
-  den lugar a que los datos de creación de la firma sean cuestionados,
-  repudiados y/o queden en entredicho, amenazando la confiabilidad e integridad
-  de los mismos.
-</p>
+  <p>
+    Por lo anterior, el mecanismo de firma electrónica elegido garantiza la
+    autenticidad identidad de los firmantes), la integridad (no alteración del
+    documento luego de su firma) y el no repudio del documento firmado. Con el
+    propósito de proteger la autenticidad, integridad, validez e inviolabilidad
+    de la firma electrónica y del Contrato y de conformidad con la Ley 527 de
+    1999, el Decreto 2364 de 2012 y demás normas que las modifiquen y/ o
+    complementen, los firmantes de Las Partes se obligan a: a). Mantener el
+    control y custodia exclusiva sobre los datos de creación de la firma. b).
+    Garantizar que los datos de creación de la firma no sean utilizados de forma
+    indebida o no autorizada. c). Dar aviso inmediato a la otra Parte sobre
+    cualquier evento que den lugar a que los datos de creación de la firma sean
+    cuestionados, repudiados y/o queden en entredicho, amenazando la
+    confiabilidad e integridad de los mismos.
+  </p>
 
-<p>
-  <b>CLÁUSULA VIGÉSIMA SEGUNDA - EFECTOS:</b> El efecto de las anteriores
-  cláusulas será con retroactividad al primer día de vigencia del contrato y
-  será supletorio a todos los derechos que el Empleador pueda tener bajo la
-  legislación vigente o bajo cualquier otro convenio similar verbal o
-  previamente firmado por el Trabajador. En caso de que alguna parte de lo
-  pactado en las cláusulas anteriores sea declarada nula y sin efecto, el resto
-  del convenio continuará en vigor. Las obligaciones pactadas en el presente
-  contrato continuarán vigentes en el caso de que el Trabajador, pase a laborar
-  a alguna compañía afiliada y todos los efectos se harán extensivos para dicho
-  Empleador.
-</p>
+  <p>
+    <b>CLÁUSULA VIGÉSIMA SEGUNDA - EFECTOS:</b> El efecto de las anteriores
+    cláusulas será con retroactividad al primer día de vigencia del contrato y
+    será supletorio a todos los derechos que el Empleador pueda tener bajo la
+    legislación vigente o bajo cualquier otro convenio similar verbal o
+    previamente firmado por el Trabajador. En caso de que alguna parte de lo
+    pactado en las cláusulas anteriores sea declarada nula y sin efecto, el
+    resto del convenio continuará en vigor. Las obligaciones pactadas en el
+    presente contrato continuarán vigentes en el caso de que el Trabajador, pase
+    a laborar a alguna compañía afiliada y todos los efectos se harán extensivos
+    para dicho Empleador.
+  </p>
 
-<p>
-  Para constancia se suscribe el presente documento en la ciudad - MUNICIPIO de
-  <span name="ciudad_firma">___________</span>, en dos copias una de las cuales
-  se entrega a cada una de ellas, quienes declaran haberla recibido de
-  conformidad.
-</p>
+  <p>
+    Para constancia se suscribe el presente documento en la ciudad - MUNICIPIO
+    de
+    <span name="ciudad_firma">___________</span>, en dos copias una de las
+    cuales se entrega a cada una de ellas, quienes declaran haberla recibido de
+    conformidad.
+  </p>
 
-<br />
-<br />
-<br />
-
-<p>
   <br />
   <br />
   <br />
-  <br />
-  <b>ELBA LUCIA ESTEVEZ CONTRERAS</b>
-  <br />
-  C.C. No. 63.318.551 de Bucaramanga
-  <br />
-  Representante legal de Reval S.A.S.
-</p>
 
-<p>
+  <p>
+    <br /><br /><br /><br />
+    <br />
+    <b>ELBA LUCIA ESTEVEZ CONTRERAS</b>
+    <br />
+    C.C. No. 63.318.551 de Bucaramanga
+    <br />
+    Representante legal de <span name="empresa_reval">REVAL S.A.S.</span>
+    <span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span>
+  </p>
+
+  <p>
+    <br /><br /><br /><br />
+    <b name="nombre_empleado">___________</b>
+    <br />
+    <span name="tipo_id_empleado_cc">
+      C.C. No.
+      <span name="cc_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_ce" hidden>
+      C.E. No.
+      <span name="ce_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_ppt" hidden>
+      PPT. No.:
+      <span name="ppt_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_pep" hidden>
+      PEP. No.:
+      <span name="pep_empleado">___________</span>
+    </span>
+    de
+    <span name="lugar_exp_id_empleado">___________</span>
+    <br />
+    Correo: <span name="email_empleado">___________</span>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p style="text-align: center">
+    <b>
+      Carta de instrucciones para diligenciar Pagaré No.
+      <b name="num_pagare">___________</b>
+    </b>
+  </p>
+  <p>
+    Señores <br />
+    <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> <br />
+    <b name="ciudad_firma">___________</b>
+  </p>
+
   <br />
   <br />
-  <br />
-  <br />
-  <b name="nombre_empleado">___________</b>
-  <br />
-  <span name="tipo_id_empleado_cc">
-    C.C. No.
-    <span name="cc_empleado">___________</span>
-  </span>
-  <span name="tipo_id_empleado_ce" hidden>
-    C.E. No.
-    <span name="ce_empleado">___________</span>
-  </span>
-  <span name="tipo_id_empleado_ppt" hidden>
-    PPT. No.:
-    <span name="ppt_empleado">___________</span>
-  </span>
-  <span name="tipo_id_empleado_pep" hidden>
-    PEP. No.:
-    <span name="pep_empleado">___________</span>
-  </span>
-  de
-  <span name="lugar_exp_id_empleado">___________</span>
-  <br />
-  Correo: <span name="email_empleado">___________</span>
-</p>
+
+  <p>Apreciados señores,</p>
+
+  <p>
+    Yo <span name="nombre_empleado">___________</span> identificado como aparece
+    al pie de mi firma, por medio de la presente y de conformidad con lo
+    establecido en el Art. 622 del Código de Comercio y demás normas
+    concordantes, autorizo expresa, permanente e irrevocablemente a
+    <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span>, a quien
+    represente sus intereses o al tenedor legítimo de este documento, a
+    diligenciar y llenar los espacios en blanco en el título valor No.
+    <span name="num_pagare">___________</span> de acuerdo con las siguientes
+    instrucciones:
+  </p>
+
+  <ol>
+    <li>
+      Los espacios en blanco relativos a la cuantía, intereses y fecha de
+      vencimiento, podrán ser diligenciados sin necesidad de requerimiento
+      alguno, por la ocurrencia de cualquiera de los supuestos establecidos en
+      el artículo 780 del Código de Comercio y normas concordantes, o cuando se
+      presente alguno(s) de los siguientes eventos:
+
+      <ol type="a">
+        <li>
+          Incumplimiento en el pago de una o más cuotas de capital, intereses
+          pactados o de cualquier otra clase de obligación existente con
+          <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+          ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> o quien
+          represente sus derechos o el tenedor de este título valor.
+        </li>
+        <li>
+          Si llegare a ser investigado o vinculado por cualquier autoridad a un
+          proceso penal, especialmente a uno relacionado con los delitos
+          derivados del movimiento de capitales ilícitos, o fuere demandado
+          judicialmente, o se me embargare bienes por cualquier clase de acción.
+        </li>
+        <li>
+          Cuando incumpla el pago de otra(s) obligación(es) adquirida(s) con
+          <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+          ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> o quien
+          represente sus derechos o el tenedor Legítimo de éste título, o por el
+          giro de cheques a favor de
+          <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+          ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> sin la
+          suficiente provisión de fondos o si estos fueren devueltos por
+          cualquier causa.
+        </li>
+        <li>
+          La existencia de cualquier causal establecida en la ley, sus normas
+          reglamentarias, o disposiciones de autoridad competente.
+        </li>
+      </ol>
+    </li>
+    <li>
+      La cuantía será igual al monto de todas las sumas que por cualquier
+      concepto le esté debiendo a
+      <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+      ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> o a quien
+      represente sus derechos o al tenedor legítimo de este instrumento, el día
+      que sea diligenciado el pagaré.
+    </li>
+    <li>
+      Los intereses de mora serán liquidados a la tasa máxima legal vigente,
+      estipulada por la Superintendencia Financiera de Colombia.
+    </li>
+    <li>
+      La fecha de vencimiento será el día en que se diligencien los espacios
+      dejados en blanco en el pagaré.
+    </li>
+    <li>
+      El impuesto de timbre a que haya lugar cuando el título sea diligenciado,
+      correrá por cuenta mía y su monto puede ser cobrado a mí junto con las
+      demás obligaciones, incorporándola a la suma diligenciada en el pagaré.
+    </li>
+  </ol>
+
+  <p>
+    En constancia de lo anterior firmo el día
+    <span name="fecha_firma">___________</span>
+  </p>
+
+  <p>
+    <br /><br /><br /><br />
+    _________________________________ <br />
+    <b>Firma deudor</b>
+    <span name="nombre_empleado">___________</span>
+    <br />
+    <span name="tipo_id_empleado_cc">
+      C.C. No.
+      <span name="cc_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_ce" hidden>
+      C.E. No.
+      <span name="ce_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_ppt" hidden>
+      PPT. No.:
+      <span name="ppt_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_pep" hidden>
+      PEP. No.:
+      <span name="pep_empleado">___________</span>
+    </span>
+    de
+    <span name="lugar_exp_id_empleado">___________</span>
+    <br />
+    Correo: <span name="email_empleado">___________</span>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p>
+    <b>Pagaré Nº <b name="num_pagare">___________</b></b>
+  </p>
+
+  <p>
+    Yo <span name="nombre_empleado">___________</span> identificado como aparece
+    al pie de mi firma, prometo pagar solidaria e incondicionalmente a la orden
+    de <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> o a quien
+    represente sus derechos o al tenedor legítimo de este título valor, en la
+    ciudad de __________________________, la suma de
+    ___________________________________________________________ pesos moneda
+    corriente ($_____________________), el día __________________ (____) del mes
+    de _______________ del año _______________. En caso de mora pagare intereses
+    moratorios a la tasa máxima legal autorizada por la Superintendencia
+    Financiera de Colombia o quien haga sus veces.
+  </p>
+
+  <p>
+    Autorizo irrevocablemente a
+    <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> o a quien
+    represente sus derechos o al tenedor legítimo del presente título-valor,
+    para declarar el plazo vencido del presente pagaré, y para que en tal evento
+    proceda inmediatamente al cobro judicial o extrajudicial del mismo, sin
+    necesidad de requerimiento alguno, cuando ocurra cualquiera de los supuestos
+    establecidos en el artículo 780 del Código de Comercio y normas
+    concordantes, o cuando se presente alguno(s) de los siguientes eventos:
+  </p>
+
+  <ol type="a">
+    <li>
+      Incumplimiento en el pago de una o más cuotas de capital, intereses
+      pactados o de cualquier otra clase de obligación existente con
+      <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+      ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> o quien
+      represente sus derechos o el tenedor de este título valor.
+    </li>
+    <li>
+      Si llegare a ser investigado o vinculado por cualquier autoridad a un
+      proceso penal, especialmente a uno relacionado con los delitos derivados
+      del movimiento de capitales ilícitos, o fuere demandado judicialmente, o
+      se me embargare bienes por cualquier clase de acción.
+    </li>
+    <li>
+      Cuando incumpla el pago de otra(s) obligación(es) adquirida(s) con
+      <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+      ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> o quien
+      represente sus derechos o el tenedor Legítimo de éste título, o por el
+      giro de cheques a favor de
+      <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+      ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> sin la
+      suficiente provisión de fondos o si estos fueren devueltos por cualquier
+      causa.
+    </li>
+    <li>
+      La existencia de cualquier causal establecida en la ley, sus normas
+      reglamentarias, o disposiciones de autoridad competente.
+    </li>
+  </ol>
+
+  <p>
+    Serán de mi cargo el valor total de los honorarios profesionales, por la
+    cobranza judicial y/o extrajudicial, los cuales en ningún caso pueden ser
+    inferiores al diez por ciento (10%) de la suma total adeudada, al igual que
+    todos los demás gastos en que incurra
+    <span name="empresa_reval">RECAUDOS DE VALORES S.A.S.</span
+    ><span name="empresa_multi" hidden>MULTIPAGAS S.A.S.</span> o quien
+    represente sus derechos o el tenedor legítimo de este título-valor, por
+    motivo de la cobranza. La mera ampliación del plazo no constituye novación
+    ni me exonera de la obligación de pagar la totalidad de las sumas adeudadas.
+  </p>
+
+  <p>
+    En constancia se firma en la ciudad de
+    <span name="ciudad_firma">___________</span> el
+    <span name="fecha_firma">___________</span>.
+  </p>
+
+  <p>
+    <br /><br /><br /><br />
+    _________________________________ <br />
+    <b>Firma deudor</b>
+    <span name="nombre_empleado">___________</span>
+    <br />
+    <span name="tipo_id_empleado_cc">
+      C.C. No.
+      <span name="cc_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_ce" hidden>
+      C.E. No.
+      <span name="ce_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_ppt" hidden>
+      PPT. No.:
+      <span name="ppt_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_pep" hidden>
+      PEP. No.:
+      <span name="pep_empleado">___________</span>
+    </span>
+    de
+    <span name="lugar_exp_id_empleado">___________</span>
+    <br />
+    Correo: <span name="email_empleado">___________</span>
+  </p>
+</div>

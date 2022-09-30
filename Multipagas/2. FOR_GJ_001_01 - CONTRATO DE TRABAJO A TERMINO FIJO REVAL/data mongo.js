@@ -148,20 +148,16 @@
             name: 'email_empleado',
             type: 'email',
             description: 'Ingrese el correo donde le llegará la invitación a firmar al empleado'
-        }
-    ],
-    preFill: [
-        {
-            name: 'nombre_reval',
-            value: 'ELBA LUCIA ESTEVEZ CONTRERAS'
         },
         {
-            name: 'cc_reval',
-            value: '63.318.551'
+            name: 'num_pagare',
+            type: 'number',
+            description: 'Ingrese el número del pagaré'
         },
         {
-            name: 'email_reval',
-            value: 'ccsandovalt@gmail.com'
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha de firma'
         }
     ],
     sign: [
@@ -171,7 +167,7 @@
         'ppt_empleado',
         'pep_empleado',
         'email_empleado',
-        'celular_empleado',
+        'celular_empleado'
     ],
     signatureProfile: [
         {
@@ -180,16 +176,10 @@
             identification: 'cc_empleado|ce_empleado|ppt_empleado|pep_empleado',
             email: 'email_empleado',
             phone: 'celular_empleado'
-        },
-        {
-            type: 'firma_reval',
-            name: 'nombre_reval',
-            identification: 'cc_reval',
-            email: 'email_reval'
         }
     ],
     preBuild: false,
-    build: 2,
+    build: 3,
     price: 5000,
     name: 'FOR_GJ_001_01 - CONTRATO DE TRABAJO A TERMINO FIJO REVAL'
 }
