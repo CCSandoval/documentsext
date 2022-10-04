@@ -49,12 +49,12 @@
 </p>
 <p>El inmueble cuenta además con los siguientes servicios públicos :</p>
 
-<p>Acueducto y alcantarillado: <span name="acueducto">________</span></p>
-<p>Energía eléctrica: <span name="energia">________</span></p>
-<p>Gas domiciliario: <span name="gas">________</span></p>
-<p>Línea telefónica: <span name="linea">________</span></p>
-<p>TV cable: <span name="tv">________</span></p>
-<p>Administración: <span name="administracion">________</span></p>
+<p>Acueducto y alcantarillado: <span name="acueducto_n" hidden>No</span><span name="acueducto_s" >Si</span></p>
+<p>Energía eléctrica: <span name="energia_n" hidden>No</span><span name="energia_s" >Si</span></p>
+<p>Gas domiciliario: <span name="gas_n" hidden>No</span><span name="gas_s" >Si</span></p>
+<p>Línea telefónica: <span name="linea_n" hidden>No</span><span name="linea_s" >Si</span></p>
+<p>TV cable: <span name="tv_n" hidden>No</span><span name="tv_s">Si</span></p>
+<p>Administración: <span name="administracion_n" hidden>No</span><span name="administracion_s">Si</span></p>
 <p>Otros: <span name="otros">________</span></p>
 
 <p>
