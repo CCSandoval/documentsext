@@ -300,9 +300,19 @@
             description: "Ingrese el correo del empleador"
         },
         {
+            name: "celular_empleador",
+            type: "phone",
+            description: "Ingrese el celular del empleador"
+        },
+        {
             name: "correo_trabajador",
             type: "email",
             description: "Ingrese el correo del trabajador"
+        },
+        {
+            name: "celular_trabajador",
+            type: "phone",
+            description: "Ingrese el celular del trabajador"
         },
         {
             name: "nombre_testigo",
@@ -363,7 +373,12 @@
             name: "correo_testigo",
             type: "email",
             description: "Ingrese el correo del testigo"
-        },         
+        },
+        {
+            name: "celular_testigo",
+            type: "phone",
+            description: "Ingrese el celular del testigo"
+        },
     ],
     sign: [
       "nombre_trabajador",
@@ -390,25 +405,31 @@
       "lugartrabajo_trabajador",
       "idcargo_trabajador",
       "periodo_prueba",
-      "correo_empleador",
+        "correo_empleador",
+        "celular_empleador",
+        "celular_trabajador",
+        "celular_testigo",
     ],
     signatureProfile: [
         {
             type: 'firma_empleador',	
             name: 'firma_empleador',
             email: 'correo_empleador',
+            phone: 'celular_empleador',
         },
         {
             type: 'firma_trabajador',
             name: 'firma_trabajador',
             email: 'correo_trabajador',
             identification: 'cc_trabajador|ce_trabajador|pep_trabajador|ppt_trabajador',
+            phone: 'celular_trabajador',
         },
         {
             type: 'firma_testigo',
             name: 'firma_testigo',
             email: 'correo_testigo',
             identification: 'cc_testigo|ce_testigo|pep_testigo|ppt_testigo',
+            phone: 'celular_testigo',
         },
     ],
         prebuild: false,
