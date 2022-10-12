@@ -137,7 +137,7 @@ contratada: <span name="idcargo_trabajador">___________</span> , debiendo ejecut
 funciones:
 </p>
 <p>
-  Funciones
+  <span name="funciones_trabajador">___________</span>
 </p>
 <h2 class="bg-gris" style="font-size: 12pt">CLÁUSULA SEGUNDA. OBRA O LABOR CONTRATADA:</h2>
 <p>
@@ -145,7 +145,7 @@ funciones:
 implica:
 </p>
 <p>
-  !!!1Descripción de la Obra o Labor
+  <span name="obra_trabajador">___________</span>
 </p>
 <h2 class="bg-gris" style="font-size: 12pt">CLÁUSULA TERCERA. PROHIBICIONES ESPECIALES:</h2>
 <p>
@@ -648,7 +648,7 @@ los <span name="fecha_firma">_________</span>
   </p>
 </p>
 
-<p>
+<p name="ingresar_testigo_si" hidden>
     TESTIGO:
   <br /><br /><br /><br /><br />
    <span name="nombre_testigo">___________</span>
@@ -665,12 +665,11 @@ los <span name="fecha_firma">_________</span>
    <span name="cargo_testigo">___________</span>
   <br/>
   INDUTRONICA DEL CARIBE SAS
-  <p>
+  <br />
     Correo:
     <span name="correo_testigo">________</span>
-  </p>
-   <p>
+  <br />
     Celular: 
     <span name="celular_testigo">________</span>
-  </p>
 </p>
+<span name="ingresar_testigo_no"></span>
