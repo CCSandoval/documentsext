@@ -49,7 +49,7 @@
   <span name="nacimiento_trabajador">___________</span>
 </p>
 <p>
-  Fecha de Nacimiento::
+  Fecha de Nacimiento:
   <span name="fechanacimiento_trabajador">___________</span>
 </p>
 <p>
@@ -62,7 +62,7 @@
 </p>
 <p>
   Número de Teléfono del Trabajador:
-  <span name="telefono_trabajador">___________</span>
+  <span name="celular_trabajador">___________</span>
 </p>
 <p>
   Estado Civil del Trabajador:
@@ -103,13 +103,13 @@
   <span name="pep_trabajador" hidden>___________</span>
   <span name="ppt_trabajador" hidden>___________</span>
   , con lugar de expedición en
-  <span name="lugarexpe_trabajador">___________</span> – Atlántico , nacido el
+  <span name="lugarexpe_trabajador">___________</span> , nacido el
   día <span name="fechanacimiento_trabajador">___________</span>, en
   <span name="nacimiento_trabajador">___________</span> , de estado civil
   <span name="estadocivil_trabajador">___________</span> , con residencia en
   <span name="ciudadresidencia_trabajador">___________</span> , en la dirección
   <span name="direccion_trabajador">___________</span> , con teléfono número
-  <span name="telefono_trabajador">___________</span> , contratada en la ciudad
+  <span name="celular_trabajador">___________</span> , contratada en la ciudad
   de Barranquilla, para prestar sus servicios en
   <span name="lugartrabajo_trabajador">___________</span> , ejecutando el cargo
   de <span name="idcargo_trabajador">___________</span> , desde el día
@@ -141,34 +141,9 @@
   Desempeñar a cabalidad y dentro de los términos contratados, el objeto de su
   cargo y las funciones que a continuación se establecen:
 </p>
-<p>1.<span name="funcion_1">___________</span></p>
-<p>2.<span name="funcion_2">___________</span></p>
-<p>3.<span name="funcion_3">___________</span></p>
-<p>4.<span name="funcion_4">___________</span></p>
-<p>5.<span name="funcion_5">___________</span></p>
-<p>6.<span name="funcion_6">___________</span></p>
-<p>7.<span name="funcion_7">___________</span></p>
-<p>8.<span name="funcion_8">___________</span></p>
-<p>9.<span name="funcion_9">___________</span></p>
-<p>10.<span name="funcion_10">___________</span></p>
-<p>11.<span name="funcion_11">___________</span></p>
-<p>12.<span name="funcion_12">___________</span></p>
-<p>13.<span name="funcion_13">___________</span></p>
-<p>14.<span name="funcion_14">___________</span></p>
-<p>15.<span name="funcion_15">___________</span></p>
-<p>16.<span name="funcion_16">___________</span></p>
-<p>17.<span name="funcion_17">___________</span></p>
-<p>18.<span name="funcion_18">___________</span></p>
-<p>19.<span name="funcion_19">___________</span></p>
-<p>20.<span name="funcion_20">___________</span></p>
-<p>21.<span name="funcion_21">___________</span></p>
-<p>22.<span name="funcion_22">___________</span></p>
-<p>23.<span name="funcion_23">___________</span></p>
-<p>24.<span name="funcion_24">___________</span></p>
-<p>25.<span name="funcion_25">___________</span></p>
-<p>26.<span name="funcion_26">___________</span></p>
-<p>27.<span name="funcion_27">___________</span></p>
-<p>28.<span name="funcion_28">___________</span></p>
+<p>
+  <span name="funciones_trabajador">___________</span>
+</p>
 <h2 class="bg-gris" style="font-size: 12pt">CLÁUSULA SEGUNDA:</h2>
 <p>
   Son prohibiciones especiales para EL TRABAJADOR, además de las establecidas
@@ -800,18 +775,14 @@ los 07 días del mes de abril del año 2022.</p>
   <br /><br /><br /><br /><br />
    <span name="nombre_trabajador">___________</span>
    <br />
-   <span name="tipo_id_trabajador_cc"
-    ><span name="cc_trabajador">___________</span>
-    <span name="tipo_id_trabajador_ce" hidden
-      ><span name="ce_trabajador">___________</span>
-    </span>
-    <span name="tipo_id_trabajador_ppt" hidden>
-      <span name="ppt_trabajador">___________</span></span
-    >
-    <span name="tipo_id_trabajador_pep" hidden
-      ><span name="pep_trabajador">___________</span></span
-    ></span
-  >
+   <span name="tipo_id_trabajador_cc">Cédula de Ciudadanía</span>
+  <span name="tipo_id_trabajador_ce" hidden>Cédula de extranjería</span>
+  <span name="tipo_id_trabajador_ppt" hidden>Permiso por protección temporal</span>
+  <span name="tipo_id_trabajador_pep" hidden>Permiso especial de permanencia</span>
+  <span name="cc_trabajador">___________</span>
+    <span name="ce_trabajador" hidden>___________</span>
+    <span name="ppt_trabajador" hidden>___________</span>
+    <span name="pep_trabajador" hidden>___________</span>
    <br />
   
   <p>
@@ -824,33 +795,28 @@ los 07 días del mes de abril del año 2022.</p>
   </p>
 </p>
 
-<p>
+<p name="ingresar_testigo_si" hidden>
     TESTIGO:
   <br /><br /><br /><br /><br />
    <span name="nombre_testigo">___________</span>
    <br />
-   <span name="tipo_id_testigo_cc"
-    ><span name="cc_testigo">___________</span>
-    <span name="tipo_id_testigo_ce" hidden
-      ><span name="ce_testigo">___________</span>
-    </span>
-    <span name="tipo_id_testigo_ppt" hidden>
-      <span name="ppt_testigo">___________</span></span
-    >
-    <span name="tipo_id_testigo_pep" hidden
-      ><span name="pep_testigo">___________</span></span
-    ></span
-  >
+   <span name="tipo_id_testigo_cc">Cédula de Ciudadanía</span>
+  <span name="tipo_id_testigo_ce" hidden>Cédula de extranjería</span>
+  <span name="tipo_id_testigo_ppt" hidden>Permiso por protección temporal</span>
+  <span name="tipo_id_testigo_pep" hidden>Permiso especial de permanencia</span>
+  <span name="cc_testigo">___________</span>
+    <span name="ce_testigo" hidden>___________</span>
+    <span name="ppt_testigo" hidden>___________</span>
+    <span name="pep_testigo" hidden>___________</span>
    <br />
    <span name="cargo_testigo">___________</span>
   <br/>
   INDUTRONICA DEL CARIBE SAS
-  <p>
+  <br />
     Correo:
     <span name="correo_testigo">________</span>
-  </p>
-   <p>
+  <br />
     Celular: 
     <span name="celular_testigo">________</span>
-  </p>
 </p>
+<span name="ingresar_testigo_no"></span>

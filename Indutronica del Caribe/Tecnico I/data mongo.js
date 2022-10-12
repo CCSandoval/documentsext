@@ -90,7 +90,7 @@
             description: "Ingrese el lugar de nacimiento del trabajador"
         },
         {
-            name: "fecha_nacimiento_trabajador",
+            name: "fechanacimiento_trabajador",
             type: "date",
             description: "Ingrese la fecha de nacimiento del trabajador"
         },
@@ -105,9 +105,9 @@
             description: "Ingrese la dirección de residencia del trabajador"
         },
         {
-            name: "telefono_trabajador",
-            type: "number",
-            description: "Ingrese el número de teléfono del trabajador"
+            name: "celular_trabajador",
+            type: "phone",
+            description: "Ingrese el celular del trabajador"
         },
         {
             name: "estadocivil_trabajador",
@@ -136,148 +136,13 @@
         },
         {
             name: "duracion_trabajador",
-            type: "date",
+            type: "text",
             description: "Ingrese la duración del contrato del trabajador"
         },
         {
-            name: "funcion_1",
+            name: "funciones_trabajador",
             type: "text",
-            description: "Ingrese la función 1 del trabajador"
-        },
-        {
-            name: "funcion_2",
-            type: "text",
-            description: "Ingrese la función 2 del trabajador"
-        },
-        {
-            name: "funcion_3",
-            type: "text",
-            description: "Ingrese la función 3 del trabajador"
-        },
-        {
-            name: "funcion_4",
-            type: "text",
-            description: "Ingrese la función 4 del trabajador"
-        },
-        {
-            name: "funcion_5",
-            type: "text",
-            description: "Ingrese la función 5 del trabajador"
-        },
-        {
-            name: "funcion_6",
-            type: "text",
-            description: "Ingrese la función 6 del trabajador"
-        },
-        {
-            name: "funcion_7",
-            type: "text",
-            description: "Ingrese la función 7 del trabajador"
-        },
-        {
-            name: "funcion_8",
-            type: "text",
-            description: "Ingrese la función 8 del trabajador"
-        },
-        {
-            name: "funcion_9",
-            type: "text",
-            description: "Ingrese la función 9 del trabajador"
-        },
-        {
-            name: "funcion_10",
-            type: "text",
-            description: "Ingrese la función 10 del trabajador"
-        },
-        {
-            name: "funcion_11",
-            type: "text",
-            description: "Ingrese la función 11 del trabajador"
-        },
-        {
-            name: "funcion_12",
-            type: "text",
-            description: "Ingrese la función 12 del trabajador"
-        },
-        {
-            name: "funcion_13",
-            type: "text",
-            description: "Ingrese la función 13 del trabajador"
-        },
-        {
-            name: "funcion_14",
-            type: "text",
-            description: "Ingrese la función 14 del trabajador"
-        },
-        {
-            name: "funcion_15",
-            type: "text",
-            description: "Ingrese la función 15 del trabajador"
-        },
-        {
-            name: "funcion_16",
-            type: "text",
-            description: "Ingrese la función 16 del trabajador"
-        },
-        {
-            name: "funcion_17",
-            type: "text",
-            description: "Ingrese la función 17 del trabajador"
-        },
-        {
-            name: "funcion_18",
-            type: "text",
-            description: "Ingrese la función 18 del trabajador"
-        },
-        {
-            name: "funcion_19",
-            type: "text",
-            description: "Ingrese la función 19 del trabajador"
-        },
-        {
-            name: "funcion_20",
-            type: "text",
-            description: "Ingrese la función 20 del trabajador"
-        },
-        {
-            name: "funcion_21",
-            type: "text",
-            description: "Ingrese la función 21 del trabajador"
-        },
-        {
-            name: "funcion_22",
-            type: "text",
-            description: "Ingrese la función 22 del trabajador"
-        },
-        {
-            name: "funcion_23",
-            type: "text",
-            description: "Ingrese la función 23 del trabajador"
-        },
-        {
-            name: "funcion_24",
-            type: "text",
-            description: "Ingrese la función 24 del trabajador"
-        },
-        {
-            name: "funcion_25",
-            type: "text",
-            description: "Ingrese la función 25 del trabajador"
-        },
-        {
-            name: "funcion_26",
-            type: "text",
-            description: "Ingrese la función 26 del trabajador"
-        },
-        {
-            name: "funcion_27",
-            type: "text",
-            description: "Ingrese la función 27 del trabajador"
-        },
-        {
-            name: "funcion_28",
-            type: "text",
-            description: "Ingrese la función 28 del trabajador"
+            description: "Ingrese las funciones del trabajador"
         },
         {
             name: "bonificacion_paragrafo",
@@ -310,20 +175,43 @@
             description: "Ingrese el correo del trabajador"
         },
         {
-            name: "celular_trabajador",
-            type: "phone",
-            description: "Ingrese el celular del trabajador"
+            name: "ingresar_testigo",
+            type: "clausula",
+            description: "¿Desea ingresar un testigo?",
+            value: "no",
+            options: [
+                {
+                    name: "Si",
+                    value: "si"
+                },
+                {
+                    name: "No",
+                    value: "no"
+                }
+            ]
         },
         {
             name: "nombre_testigo",
             type: "name",
-            description: "Ingrese el nombre del testigo"
+            description: "Ingrese el nombre del testigo",
+            prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                }
+            ]
         },
         {
             name: "tipo_id_testigo",
             type: "clausula",
             description: "Ingrese el tipo de identificación del testigo",
             value: 'cc',
+                 prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                }
+            ],
             options: [
                 {
                     name: "Cédula de ciudadanía",
@@ -346,43 +234,114 @@
         {
             name: "cc_testigo",
             type: "number",
-            description: "Ingrese el número de identificación del testigo"
+            description: "Ingrese el número de identificación del testigo",
+
+            prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                },
+                {
+                    k: "tipo_id_testigo",
+                    v: "cc"
+                }
+            ],
 
         },
         {
             name: "ce_testigo",
             type: "number",
             description: "Ingrese el número de cédula de extranjería del testigo",
+               prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                },
+                {
+                    k: "tipo_id_testigo",
+                    v: "ce"
+                }
+            ],
         },
         {
             name: "pep_testigo",
             type: "name",
             description: "Ingrese el número de permiso especial de permanencia del testigo",
+               prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                },
+                {
+                    k: "tipo_id_testigo",
+                    v: "pep"
+                }
+            ],
         },
         {
             name: "ppt_testigo",
             type: "name",
             description: "Ingrese el número de permiso por protección temporal del testigo",
+               prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                },
+                {
+                    k: "tipo_id_testigo",
+                    v: "ppt"
+                }
+            ],
         },
         {
             name: "cargo_testigo",
             type: "text",
-            description: "Ingrese el cargo del testigo"
+            description: "Ingrese el cargo del testigo",
+             prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                },
+            ],
         },
         {
             name: "correo_testigo",
             type: "email",
-            description: "Ingrese el correo del testigo"
+            description: "Ingrese el correo del testigo",
+            prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                },
+            ],
         },
         {
             name: "celular_testigo",
             type: "phone",
-            description: "Ingrese el celular del testigo"
+            description: "Ingrese el celular del testigo",
+            prereq: [
+                {
+                    k: "ingresar_testigo",
+                    v: "si"
+                },
+            ],
+        },
+    ],
+    preFill: [
+        {
+            name: "nombre_empleador",
+            value: "ALBERTO ENRIQUE MANOTAS VILLEGAS"
+        },
+        {
+            name: "cc_empleador",
+            value: "71.665.132"
         },
     ],
     sign: [
       "nombre_trabajador",
-      "tipo_id_trabajador",
+        "tipo_id_trabajador",
+        "funciones_trabajador",
+      "ingresar_testigo",
       "cc_trabajador",
       "ce_trabajador",
       "pep_trabajador",
@@ -392,7 +351,7 @@
       "ciudadania_trabajador",
       "direccion_trabajador",
       "telefono_trabajador",
-      "fecha_nacimiento_trabajador",
+      "fechanacimiento_trabajador",
       "ciudad_residencia",
       "ciudadresidencia_trabajador",
       "correo_trabajador",
@@ -413,27 +372,28 @@
     signatureProfile: [
         {
             type: 'firma_empleador',	
-            name: 'firma_empleador',
+            name: 'nombre_empleador',
+            identification: 'cc_empleador',
             email: 'correo_empleador',
             phone: 'celular_empleador',
         },
         {
             type: 'firma_trabajador',
-            name: 'firma_trabajador',
+            name: 'nombre_trabajador',
             email: 'correo_trabajador',
             identification: 'cc_trabajador|ce_trabajador|pep_trabajador|ppt_trabajador',
             phone: 'celular_trabajador',
         },
         {
             type: 'firma_testigo',
-            name: 'firma_testigo',
+            name: 'nombre_testigo',
             email: 'correo_testigo',
             identification: 'cc_testigo|ce_testigo|pep_testigo|ppt_testigo',
             phone: 'celular_testigo',
         },
     ],
         prebuild: false,
-        build: 0,
+        build: 4,
         price: 5000,
         name: "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO",
 }
