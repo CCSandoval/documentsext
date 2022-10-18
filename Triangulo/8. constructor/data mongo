@@ -1,0 +1,138 @@
+{
+    _id: ObjectId('627006d8680e724f6a318b61'),
+    config: [
+        {
+            name: 'name_colaborador',
+            type: 'name',
+            help: 'colaborador',
+            description: 'Ingresar Nombres y Apellidos'
+        },
+        {
+            description: 'Seleccione el tipo de documento del Colaborador',
+            name: 'document_type_colaborador',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc',
+            help: 'colaborador'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del Colaborador',
+            name: 'cedula_colaborador',
+            prereq: [
+                {
+                    k: 'document_type_colaborador',
+                    v: 'cc'
+                }
+            ],
+            type: 'number',
+            help: 'colaborador'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del Colaborador',
+            name: 'cedulae_colaborador',
+            prereq: [
+                {
+                    k: 'document_type_colaborador',
+                    v: 'ce'
+                }
+            ],
+            type: 'number',
+            help: 'colaborador'
+        },
+        {
+            description: 'Digite el número del pasaporte del Colaborador',
+            name: 'pasaporte_colaborador',
+            prereq: [
+                {
+                    k: 'document_type_colaborador',
+                    v: 'pa'
+                }
+            ],
+            type: 'text',
+            help: 'colaborador'
+        },
+        {
+            name: 'email_colaborador',
+            type: 'text',
+            help: 'colaborador',
+            description: 'Correo del colaborador de la BD.'
+        },
+        {
+            name: 'date_fecha_de_firma',
+            type: 'date',
+            help: 'fecha_de_firma',
+            description: 'Ingresar fecha en la que se firma el documento'
+        },
+        {
+            description: 'Digite el correo electrónico del usuario que diligenciará el documento',
+            help: 'correo',
+            name: 'correo_receptor',
+            type: 'text'
+        },
+        {
+            name: 'place_donde_se_expidio_cc',
+            type: 'text',
+            help: 'donde_se_expidio_cc',
+            description: 'Ingresar ciudad de expedición de cédula de ciudadanía'
+        }
+    ],
+    preBuildData: [
+        'name_colaborador',
+        'document_type_colaborador',
+        'cedula_colaborador',
+        'cedulae_colaborador',
+        'pasaporte_colaborador',
+        'email_colaborador',
+        'date_fecha_de_firma',
+        'correo_receptor'
+    ],
+    help: {
+        fecha: 'Fecha día de envió entre 2 y3',
+        colaborador: 'Datos de Colaborador',
+        donde_se_expidio_cc: 'Solo Ciudad de expedición de la cedula de ciudadanía',
+        fecha_de_firma: 'Fecha cuando se firma el documento. '
+    },
+    name: 'CERTIFICACIÓN EMPLEO JOVEN',
+    sign: [
+        'name_colaborador',
+        'cedula_colaborador',
+        'cedulae_colaborador',
+        'pasaporte_colaborador',
+        'email_colaborador'
+    ],
+    signatureProfile: [
+        {
+            email:'npinto@triangulum.com.co',
+            name:'Nelly Pinto Sandoval',
+            order:0,
+            role:'APPROVER'
+        },
+        {
+            email: 'email_colaborador',
+            identification: 'cedula_colaborador|cedulae_colaborador|pasaporte_colaborador',
+            name: 'name_colaborador',
+            type: 'colaborador',
+            order:1
+        }
+    ],
+    preBuild: true,
+    username: 'f2e39773-5db1-4b93-8cc6-bb1c09495bd2',
+    build: 3,
+    price: 5000,
+    company: ObjectId('618c31703fe94c00095fe61e'),
+    createdAt: ISODate('2022-05-02T16:00:00.000Z'),
+    updatedAt: ISODate('2022-05-02T16:00:00.000Z')
+}

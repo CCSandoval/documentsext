@@ -22,7 +22,7 @@
                     name: 'Femenino',
                     value: 'f'
                 }
-            ],
+            ]
         },
         {
             name: 'nombre_empleado',
@@ -45,7 +45,7 @@
                     name: 'Femenino',
                     value: 'f'
                 }
-            ],
+            ]
         },
         {
             name: 'bonificacion',
@@ -78,7 +78,7 @@
                     name: 'Pasaporte',
                     value: 'pa'
                 }
-            ],
+            ]
         },
         {
             name: 'cedula_empleador',
@@ -90,7 +90,7 @@
                     k: 'tipo_documento_empleador',
                     v: 'cc'
                 }
-            ],
+            ]
         },
         {
             name: 'cedulae_empleador',
@@ -102,7 +102,7 @@
                     k: 'tipo_documento_empleador',
                     v: 'ce'
                 }
-            ],
+            ]
         },
         {
             name: 'pasaporte_empleador',
@@ -114,7 +114,7 @@
                     k: 'tipo_documento_empleador',
                     v: 'pa'
                 }
-            ],
+            ]
         },
         {
             name: 'tipo_documento_empleado',
@@ -135,7 +135,7 @@
                     name: 'Pasaporte',
                     value: 'pa'
                 }
-            ],
+            ]
         },
         {
             name: 'cedula_empleado',
@@ -147,7 +147,7 @@
                     k: 'tipo_documento_empleado',
                     v: 'cc'
                 }
-            ],
+            ]
         },
         {
             name: 'cedulae_empleado',
@@ -159,7 +159,7 @@
                     k: 'tipo_documento_empleado',
                     v: 'ce'
                 }
-            ],
+            ]
         },
         {
             name: 'pasaporte_empleado',
@@ -171,7 +171,7 @@
                     k: 'tipo_documento_empleado',
                     v: 'pa'
                 }
-            ],
+            ]
         },
         {
             name: 'correo_empleador',
@@ -184,7 +184,7 @@
             type: 'email',
             description: 'Digite el correo electrónico del empleado',
             help: 'correo'
-        },
+        }
     ],
     sign: [
         'nombre_empleador',
@@ -202,33 +202,42 @@
         'tipo_documento_empleado',
         'cedula_empleado',
         'cedulae_empleado',
-        'pasaporte_empleado',
+        'pasaporte_empleado'
     ],
     signatureProfile: [
+        {
+            email:'npinto@triangulum.com.co',
+            name:'Nelly Pinto Sandoval',
+            order:0,
+            role:'APPROVER'
+        },
         {
             name: 'nombre_empleador',
             identification: 'cedula_empleador|cedulae_empleador|pasaporte_empleador',
             type: 'empleador',
+            order:1,
             email: 'correo_empleador'
         },
         {
             name: 'nombre_empleado',
             identification: 'cedula_empleado|cedulae_empleado|pasaporte_empleado',
             type: 'empleado',
+            order:1,
             email: 'correo_empleado'
         },
     ],
     preBuildData: [],
-    name: 'BONIFICACIÓN O BENEFICIO NO CONSTITUTIVA DE SALARIO NI FACTOR  PRESTACIONAL',    
-    help: [
+    name: 'BONIFICACIÓN O BENEFICIO NO CONSTITUTIVA DE SALARIO NI FACTOR  PRESTACIONAL',
+    help: {
         nombre: 'Ejemplo: Andrea Sofia Diaz Diaz',
         valor: 'Ejemplo: 1000000',
         fecha: 'Ejemplo: 12 de Noviembre del 2021',
         sexo: 'Ejemplo: Femenino',
         tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
         cedula: 'Ejemplo: 1234567890',
-        pasaporte: 'Ejemplo: AAA1234567',
-    ],
+        pasaporte: 'Ejemplo: AAA1234567'
+    },
     build: 0,
     price: 5000,
+    company: ObjectId('618c31703fe94c00095fe61e')
 }

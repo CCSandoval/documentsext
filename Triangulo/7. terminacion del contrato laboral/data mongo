@@ -170,10 +170,17 @@
     ],
     signatureProfile: [
         {
+            email:'npinto@triangulum.com.co',
+            name:'Nelly Pinto Sandoval',
+            order:0,
+            role:'APPROVER'
+        },
+        {
             email: 'correo_g_t_humano',
             identification: 'cedula_g_t_humano|cedulae_g_t_humano|pasaporte_g_t_humano',
             name: 'nombre_g_t_humano',
-            type: 'g_t_humano'
+            type: 'g_t_humano',
+            order:1
         }
     ],
     preFill: [
