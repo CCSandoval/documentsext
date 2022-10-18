@@ -13,6 +13,7 @@
   .table_class th {
     border: 1px solid black;
     padding: 10px;
+    text-align: center;
   }
 </style>
 
@@ -22,7 +23,7 @@
 
 <table class="table_class">
   <tr>
-    <th colspan="2"><b>ARENDADOR</b></th>
+    <th colspan="2"><b>ARRENDADOR</b></th>
   </tr>
   <tr>
     <td>
@@ -67,7 +68,7 @@
     </td>
   </tr>
   <tr>
-    <th colspan="2"><b>DEUDOR SOLIDARIO</b></th>
+    <th colspan="2"><b>ARRENDATARIO</b></th>
   </tr>
   <tr>
     <td>
@@ -108,7 +109,7 @@
   </tr>
   <span name="arrend_sol_2_n"></span>
   <tr name="arrend_sol_2_s" hidden>
-    <th colspan="2"><b>DEUDOR SOLIDARIO 2</b></th>
+    <th colspan="2"><b>DEUDOR SOLIDARIO 1</b></th>
   </tr>
   <tr name="arrend_sol_2_s" hidden>
     <td>
@@ -149,7 +150,7 @@
   </tr>
   <span name="arrend_sol_3_n"></span>
   <tr name="arrend_sol_3_s" hidden>
-    <th colspan="2"><b>DEUDOR SOLIDARIO 3</b></th>
+    <th colspan="2"><b>DEUDOR SOLIDARIO 2</b></th>
   </tr>
   <tr name="arrend_sol_3_s" hidden>
     <td>
@@ -579,7 +580,7 @@
 <p>
   <b>
     __________________________________________ <br />
-    DEUDOR SOLIDARIO / REPRESENTANTE LEGAL<br />
+    ARRENDATARIO / REPRESENTANTE LEGAL<br />
     NOMBRE: <b name="nombre_arrend_sol_1">_______________________</b><br />
     C.C./NIT: <b name="cedula_arrend_sol_1">_______________________</b><br />
     DIRECCION: <b name="domi_arrend_sol_1">_______________________</b><br />
