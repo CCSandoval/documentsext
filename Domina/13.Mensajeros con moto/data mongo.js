@@ -177,84 +177,6 @@
             ]
         },
         {
-            name: 'nombre_titular',
-            type: 'name',
-            description: 'Ingrese el nombre del titular'
-        },
-            {
-            name: 'tipo_id_titular',
-            type: 'clausula',
-            description: 'Seleccione el tipo de identificación del titular',
-            value: 'cc',
-            options: [
-                {
-                    name: 'Cédula de ciudadanía',
-                    value: 'cc'
-                },
-                {
-                    name: 'Cédula de extranjería',
-                    value: 'ce'
-                },
-                {
-                    name: 'Permiso especial de permanencia',
-                    value: 'pep'
-                },
-                {
-                    name: 'Permiso por proteccion temporal',
-                    value: 'ppt'
-                }
-            ]
-        },
-        {
-            name: 'cc_titular',
-            type: 'number',
-            description: 'Ingrese el número de cédula de ciudadanía del titular',
-            prereq: [
-                {
-                    k: 'tipo_id_titular',
-                    v: 'cc'
-                }
-            ]
-        },
-        {
-            name: 'ce_titular',
-            type: 'number',
-            description: 'Ingrese el número de cédula de extranjería del titular',
-            prereq: [
-                {
-                    k: 'tipo_id_titular',
-                    v: 'ce'
-                }
-            ]
-        },
-        {
-            name: 'pep_titular',
-            type: 'name',
-            description: 'Ingrese el permiso especial de permanencia del titular',
-            prereq: [
-                {
-                    k: 'tipo_id_titular',
-                    v: 'pep'
-                }
-            ]
-        },
-        {
-            name: 'ppt_titular',
-            type: 'name',
-            description: 'Ingrese el permiso por protección temporal del titular',
-            prereq: [
-                {
-                    k: 'tipo_id_titular',
-                    v: 'ppt'
-                }
-            ]
-        },
-        {
-            name: 'correo_titular',
-            type: 'email',
-            description: 'Ingrese el correo electrónico del titular'
-        },
-        {
             name: 'correo_empleado',
             type: 'email',
             description: 'Ingrese el correo electrónico donde llegará la invitación a firmar del trabajador'
@@ -273,11 +195,6 @@
         'fecha_modificacion',
         'autoriza_huella',
         'autoriza_reconocimento',
-        'nombre_titular',
-        'cc_titular',
-        'ce_titular',
-        'ppt_titular',
-        'pep_titular'
     ],
     preFill: [
         {
@@ -306,14 +223,8 @@
             email: 'correo_domina',
             type: 'firma_domina'
         },
-        {
-            name: 'nombre_titular',
-            identification: 'cc_titular|ce_titular|ppt_titular|pep_titular',
-            type: 'firma_titular',
-            email: 'correo_titular'
-        }
     ],
-    build: 0,
+    build: 1,
     name: 'Mensajeros con Moto',
     price: 5000,
     preBuild: false
