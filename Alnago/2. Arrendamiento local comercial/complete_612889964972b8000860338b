@@ -1,0 +1,1004 @@
+<style type="text/css">
+  .img_tittle img {
+    width: 20%;
+    position: relative;
+    left: 40%
+  }
+
+  table {
+    border: 0.5px solid #808080;
+    width: 100%
+  }
+
+  .first_cell {
+    width: 15rem
+  }
+</style>
+
+<p>
+  <span class="img_tittle">
+    <img src="https://mi-contrato-static.s3.amazonaws.com/Alnago/image.jpg" />
+  </span>
+</p>
+<h2 class="text-center">
+  <b style="font-size: 16pt">MAVU N° 00093 SGM<br /></b>
+  <b style="font-size: 16pt">CONTRATO DE ARRENDAMIENTO COMERCIAL</b>
+</h2>
+<br />
+
+<table class="text-center" style="border: none" id="table_1">
+  <tr>
+    <td style="width: 8cm"><b>LUGAR Y FECHA DECONTRATO:</td>
+    <td>MEDELLÍN, <b name="fecha_contrato">________</b></td>
+  </tr>
+  <tr>
+    <td style="width: 8cm"><b>ARRENDADOR:</b></td>
+    <td>ARRENDAMIENTOS ALNAGO Y/O ARACELLY NARANJO ARISTIZABAL</td>
+  </tr>
+  <tr>
+    <td style="width: 8cm"><b>ARRENDATARIO:</b></td>
+    <td>
+      <span name="tipo_arrendatario_n">
+        <b name="nombre_arrendatario">________</b>
+      </span>
+      <span name="tipo_arrendatario_j" hidden>
+        <span name="nombre_empresa_arrendatario">___________</span>
+      </span>
+    </td>
+  </tr>
+</table><br /><br />
+
+<h2 class="text-center"><b style="font-size: 16pt">
+    <center><u>CONDICIONES GENERALES</u></center>
+  </b></h2>
+
+<p>
+  <b>PRIMERA: OBJETIVO DEL CONTRATO:</b> Mediante el presente contrato el arrendador concede al
+  arrendatario el goce del inmueble que adelante se identifica por su dirección, de acuerdo con el inventario
+  que las partes firman por separado.
+</p>
+
+<p>
+  <b>SEGUNDA: DIRECCIÓN DEL INMUEBLE:</b>
+  <span name="direccion_inmueble">________</span>
+</p>
+
+<p>
+  <b>TERCERA: DESTINACIÓN</b> El arrendatario se compromete a destinar este inmueble exclusivamente para:
+  <br /><span name="destinacion_inmueble">________</span>
+</p>
+
+<p>
+  <b>CUARTA: PRECIO DEL ARRENDAMIENTO:</b>
+  <span name="precio_are_inmueble">________</span> mensuales, pagaderos dentro de los cinco (5) primeros días de cada
+  periodo mensual, por anticipado, al arrendador o a su orden.
+</p>
+
+<p>
+  <b>QUINTA: INCREMENTOS DEL PRECIO:</b> Vencido el primer año de vigencia de este contrato y así
+  sucesivamente cada doce (12) mensualidades, en caso de prórroga tácita o expresa, en forma automática
+  y sin necesidad de requerimiento alguno entre las partes, el precio mensual del arrendamiento se
+  incrementará en una proporción equivalente al
+  <span name="porcentaje_canon">___________</span>% del canon de arrendamiento. Al suscribir este contrato
+  el arrendatario y los deudores solidarios quedan plenamente notificados de todos los reajustes automáticos
+  pactados en este contrato y que han de operar durante la vigencia del mismo.
+</p>
+
+<p>
+  <b>SEXTA: LUGAR PARA EL PAGO:</b> Salvo pacto expreso entre las partes, el arrendatario pagará el precio
+  del arrendamiento en las oficinas del arrendador.
+</p>
+
+<p>
+  <b>SÉPTIMA: VIGENCIA DEL CONTRATO:</b> El presente contrato tendrá como vigencia un periodo de
+  <span name="vigencia_contrato">________</span> meses que comienzan a contarse el día
+  <span name="fecha_inicio_contrato">________</span>.
+</p>
+
+<p>
+  <b>OCTAVA: PRÓROGAS:</b> Vencido los primeros
+  <span name="vigencia_p_contrato">________</span> meses de vigencia de este contrato, a menos que alguna de las partes
+  haya comunicado a la otra por escrito su intención de darlo por terminado, el contrato se considerará prorrogado por
+  <span name="prorroga_contrato">________</span> meses más. Vencido el primer año de vigencia las prórrogas quedarán
+  regidas por las disposiciones del Código de Comercio.
+</p>
+
+<p>
+  <b>NOVENA: SERVICIOS:</b> Estarán a cargo del arrendatario los servicios públicos domiciliarios de acueducto,
+  saneamiento, energía, gas si lo tiene y línea telefónica local, los cuales con la firma de este contrato el
+  arrendatario se obliga a pagar mensualmente. Otros servicios como internet y televisión debe solicitarlos
+  personalmente al arrendatario a su nombre en cuenta separada de la línea telefónica.
+  <span name="falta_servicios_publicos_n"></span>
+  <span name="falta_servicios_publicos_s" hidden>
+    <br /><br />
+    El inmueble no cuenta con el servicio público de:
+    <span name="servicio_publico_falta">________</span><br />
+  </span>
+  <span name="comparte_servicios_publicos_n"></span>
+  <span name="comparte_servicios_publicos_s" hidden>
+    <br />
+    El inmueble comparte los servicios públicos de:
+    <span name="servicio_publico_comparte">________</span><br />
+  </span>
+  <span name="adicionales_servicios_publicos_n"></span>
+  <span name="adicionales_servicios_publicos_s" hidden>
+    <br />
+    El inmueble cuenta con los servicios adicionales de:
+    <span name="servicio_publico_adicionales">________</span><br />
+  </span><br />
+  El arrendatario con la firma de este contrato acepta expresamente las condiciones pactadas en esta
+  cláusula.
+</p>
+
+<p>
+  El presente documento junto con los recibos de servicios públicos cancelados por el arrendador, constituye
+  título ejecutivo para cobrar judicialmente al arrendatario a sus garantes los servicios que dejaren de pagar
+  siempre que tales montos correspondan al período en el que los tuvieron en su poder el inmueble. A cargo
+  del arrendador estarán los siguientes servicios.
+</p>
+
+<p>
+  <b>DÉCIMA: COSAS O USOS CONEXOS:</b> Además del inmueble identificado y descrito anteriormente tendrá
+  el arrendatario derecho de goce sobre las siguientes cosas y usos:
+  <span name="usos_conexos_arrendatario">________</span>.
+</p>
+
+<p>
+  <b>DÉCIMA PRIMERA: CUOTAS DE ADMINISTRACIÓN:</b> Se obliga también al arrendatario a cancelar al
+  arrendador la suma de <span name="cuota_mensual">________</span> por concepto de cuota mensual de
+  administración, pagadera por anticipado dentro de los cinco (5) primeros días de cada mensualidad.
+  Este valor se reajustará automáticamente el día <span name="fecha_reajuste">________</span> de cada
+  año calendario, sin necesidad de requerimiento alguno, en una proporción del <span name="porcentaje">________</span>%
+  cada vez; no obstante, si la copropiedad decide un aumento superior o inferior al indicado en esta cláusula, el
+  arrendatario estará obligado a pagar el reajuste señalado por la copropiedad. El arrendatario y los deudores
+  solidarios renuncian expresamente a los requerimientos para constitución en mora respecto de esta
+  obligación pecuniaria.
+</p>
+
+<p>
+  <b>DÉCIMA SEGUNDA: CLAUSULA PENAL:</b> El incumplimiento por parte del arrendatario y del arrendador de
+  cualquiera de las cláusulas de este contrato, y aún el simple retardo en el pago de una o más
+  mensualidades, lo constituirá en deudor del arrendador por una suma equivalente al triple del precio
+  mensual del arrendamiento que esté vigente en el momento en que tal incumplimiento se presente a título
+  de pena. Se entenderá, en todo caso, que el pago de la pena no extingue la obligación principal y que el
+  arrendador podrá pedir a la vez el pago de la pena y la indemnización de perjuicios, si es el caso. Este
+  contrato será prueba sumaria suficiente para el cobro de esta pena y el arrendatario o sus deudores
+  solidarios renuncian expresamente a cualquier requerimiento privado o judicial para constituirlos en mora
+  del pago de esta o cualquiera otra obligación derivada del contrato.
+</p>
+
+<p>
+  <b>DÉCIMA TERCERA: ESPACIOS EN BLANCO:</b> El arrendatario faculta expresamente al arrendador para
+  llenar en este documento los espacios en blanco.
+</p>
+
+<p>
+  <b>DÉCIMA CUARTA: REQUERIMIENTOS:</b> El arrendatario y los deudores solidarios que suscriben este
+  contrato renuncian expresamente a los requerimientos de que tratan los artículos 2007 del C.C y 424 del C.
+  de P.C., y en general a los que consagre cualquier norma sustancial o procesal para efectos de la
+  constitución en mora.
+</p>
+
+<p>
+  <b>DÉCIMA QUINTA: PREAVISOS PARA LA ENTREGA:</b> Las partes se obligan a dar el correspondiente
+  preaviso para la entrega con tres (3) meses de anticipación a la finalización del plazo original o de sus
+  prórroga antes de cumplir dos años de ejecución del contrato; Después de cumplidos los dos (2) años de
+  ejecución del contrato, se debe dar el preaviso para la entrega por parte del arrendador, con seis (6) meses
+  de anticipación a la fecha de vencimiento del contrato de arrendamiento. La terminación unilateral por
+  parte del arrendatario en cualquier otro momento solo se aceptara previo el pago de una indemnización
+  equivalente al precio de tres (3) meses de canon arrendamiento que estén vigentes al momento de la
+  entrega del inmueble.
+</p>
+
+<p>
+  <b>DÉCIMA SEXTA:</b> A la muerte de alguno de los arrendatarios el arrendador podrá acogerse al artículo 1484
+  del C.C. respecto a uno o a cualquiera de los herederos a su elección y seguir el juicio con él, sin la
+  necesidad de notificar ni demandar a los demás.
+</p>
+
+<p>
+  <b>DÉCIMA SEPTIMA: CAUSALES DE TERMINACION:</b> A favor del arrendador serán las siguientes:
+  A). la cesión o subarriendo. B). el cambio de destinación del inmueble. C). El no pago del precio dentro del
+  término previsto en este contrato. D). La destinación del inmueble para fines ilícitos o contrario a las buenas
+  costumbres, o que representen peligro para el inmueble o la salubridad de sus habitantes. E). La
+  realización de mejoras, cambios o ampliaciones del inmueble, sin expresa Autorización del arrendador. F).
+  La no cancelación de los servicios públicos a cargo del arrendatario. G). la no cancelación del valor de las
+  cuotas de administración, dentro del término pactado si estuviera obligado. H). El no compromiso del
+  arrendatario a entregar la fachada del local sin avisos, logos o publicidad que se halla instalado durante el
+  tiempo que estuvo arrendado. I). El no acogerse a las normas de diseño exterior del edificio y publicar el
+  aviso de la empresa fuera de estas.
+</p>
+
+<p>
+  <b>PARÁGRAFO:</b> En el evento que se cambie la fachada exterior, esta deberá ser entregada una vez
+  restituido el inmueble en el mismo estado en que les fue entregada inicialmente. J). Utilizar las zonas
+  comunes, pasillos y accesos para la colocación venta o exposición de mercancías. K). Mantener, guardar o
+  comercializar mercancías y productos cuya introducción al país haya sido ilegal. L). Así mismo está
+  prohibido a los ARRENDATARIOS mantener, guardar y comercializar mercancías de ilícita procedencia.
+  M). Colocar sonido exterior, música o parlantes que generen ruido en las afueras del inmueble. N). Hacerse
+  sustituir sin la previa y expresa autorización del ARRENDADOR por otra persona en la relación tenencial,
+  bien sea mediante cesión de este contrato o cualquier otro medio que tenga como efecto mutación de las
+  personas que ocupan el local, Ñ). Modificar o alterar el sistema eléctrico, hidráulico o sanitario. O). Se le
+  prohíbe el cobro de primas o cualquier otro rubro, por concepto de permanencia en el inmueble. P). las
+  demás previstas en la ley.
+</p>
+
+<p>
+  <b>DÉCIMA OCTAVA: CESION DE LOS DERECHOS:</b> Estipulan expresamente los contratantes que este
+  contrato no formara parte integral de ningún establecimiento de comercio y que, por lo tanto, la enajenación
+  del que eventualmente se establezca en el inmueble no solo no transfiere ningún derecho de
+  arrendamiento al adquiriente sino que constituye causal de terminación del contrato, toda vez que el
+  arrendatario se obliga expresamente a no ceder, a no subarrendar el inmueble, ni transferir su tenencia.
+  Para los efectos legales, esta estipulación equivale a la oposición a que se refiere el numeral 3 del artículo
+  528 del Código de Comercio, de tal suerte que la responsabilidad del arrendatario no cesara con la
+  enajenación del establecimiento, ni con el aviso de la transferencia, ni aun con la inscripción de la
+  enajenación en el Registro Mercantil. No obstante los arrendatarios perfeccionen la venta del
+  establecimiento comercial ante el arrendador una vez los compradores firmen un nuevo contrato de
+  arrendamiento, de lo contrario el arrendador se reserva el derecho de oponerse al traslado ante la Cámara
+  de Comercio correspondiente.
+</p>
+
+<p>
+  <b>PARÁGRAFO:</b> Podrá el arrendador ceder libremente los derechos que emanan de este contrato y tal
+  cesión producirá efectos respecto del arrendatario y de los deudores solidarios a partir de la fecha de la
+  comunicación certificada en que a ellos se notifique tal cesión.
+</p>
+
+<p>
+  <b>DÉCIMA NOVENA: RECIBO Y ESTADO:</b> El arrendatario declara que ha recibido el inmueble objeto de
+  este contrato en buen estado, conforme al inventario que hace parte del mismo, y que en el mismo estado
+  lo restituirá al arrendador a la terminación del arrendamiento, o cuando este haya de cesar por alguna de la
+  causales previstas, salvo el deterioro proveniente del tiempo y del uso legítimo.
+</p>
+
+<p>
+  <b>VIGÉSIMA:</b> El arrendatario es el responsable una vez inicie la ejecución del presente contrato de realizar el
+  reporte de cualquier daño o anomalía que ocurra en el inmueble al arrendador, para que este sea
+  solucionado, si esto no se hace será el arrendatario, responsable por la reparación de los daños y
+  anomalías presentadas en el inmueble, según el artículo 1997 de código civil.
+</p>
+
+<p>
+  <b>VIGÉSIMA PRIMERA: MEJORAS:</b> No podrá el arrendatario ejecutar en el inmueble mejoras de ninguna
+  especie, excepto las reparaciones locativas, sin el permiso escrito del arrendador, si se ejecutaren
+  accederán al propietario del inmueble sin indemnización para quien las efectuó. El arrendatario renuncia
+  expresamente a descontar de la renta el valor de las reparaciones indispensables, a que se refiere el
+  artículo 27 de la Ley 820 de 2003.
+</p>
+
+<p>
+  <span name="total_deudor_1_n"></span>
+  <span name="total_deudor_1_s" hidden>
+    <b>VIGÉSIMA SEGUNDA:</b>
+    <b name="total_deudor_2_n">DEUDOR SOLIDARIO - El suscrito:</b>
+    <b name="total_deudor_2_s" hidden>DEUDORES SOLIDARIOS - Los suscritos:</b>
+  </span>
+</p>
+
+<p>
+  <span name="total_deudor_1_n"></span>
+  <span name="total_deudor_1_s" hidden>
+    <span name="nombre_deudor_1">________</span>.<br />Con
+    <span name="tipo_documento_deudor_1_cc"> <b>C.C. No</b>
+      <span name="cedula_deudor_1">___________</span>
+    </span>
+    <span name="tipo_documento_deudor_1_ce" hidden> <b>C.E. No</b>
+      <span name="cedulae_deudor_1">___________</span>
+    </span>
+    <span name="tipo_documento_deudor_1_pa" hidden> <b>PASAPORTE No.</b>
+      <span name="pasaporte_deudor_1">___________</span>
+    </span>
+    <span name="tipo_deudor_1_n"></span>
+    <span name="tipo_deudor_1_j" hidden>
+      representante legal de
+      <span name="nombre_empresa_deudor_1">___________</span>,
+      identificada con NIT No.
+      <span name="nit_empresa_deudor_1">___________</span>
+    </span>
+    <span name="total_deudor_2_n"></span>
+    <span name="total_deudor_2_s" hidden><br />
+      <span name="nombre_deudor_2">________</span>.<br />Con
+      <span name="tipo_documento_deudor_2_cc"> <b>C.C. No</b>
+        <span name="cedula_deudor_2">___________</span>
+      </span>
+      <span name="tipo_documento_deudor_2_ce" hidden> <b>C.E. No</b>
+        <span name="cedulae_deudor_2">___________</span>
+      </span>
+      <span name="tipo_documento_deudor_2_pa" hidden> <b>PASAPORTE No.</b>
+        <span name="pasaporte_deudor_2">___________</span>
+      </span>
+      <span name="tipo_deudor_2_n"></span>
+      <span name="tipo_deudor_2_j" hidden>
+        representante legal de
+        <span name="nombre_empresa_deudor_2">___________</span>,
+        identificada con NIT No.
+        <span name="nit_empresa_deudor_2">___________</span>
+      </span>
+      <span name="total_deudor_3_n"></span>
+      <span name="total_deudor_3_s" hidden><br />
+        <span name="nombre_deudor_3">________</span>.<br />Con
+        <span name="tipo_documento_deudor_3_cc"> <b>C.C. No</b>
+          <span name="cedula_deudor_3">___________</span>
+        </span>
+        <span name="tipo_documento_deudor_3_ce" hidden> <b>C.E. No</b>
+          <span name="cedulae_deudor_3">___________</span>
+        </span>
+        <span name="tipo_documento_deudor_3_pa" hidden> <b>PASAPORTE No.</b>
+          <span name="pasaporte_deudor_3">___________</span>
+        </span>
+        <span name="tipo_deudor_3_n"></span>
+        <span name="tipo_deudor_3_j" hidden>
+          representante legal de
+          <span name="nombre_empresa_deudor_3">___________</span>,
+          identificada con NIT No.
+          <span name="nit_empresa_deudor_3">___________</span>
+        </span>
+        <span name="total_deudor_4_n"></span>
+        <span name="total_deudor_4_s" hidden><br />
+          <span name="nombre_deudor_4">________</span>. <br />Con
+          <span name="tipo_documento_deudor_4_cc"> <b>C.C. No</b>
+            <span name="cedula_deudor_4">___________</span>
+          </span>
+          <span name="tipo_documento_deudor_4_ce" hidden> <b>C.E. No</b>
+            <span name="cedulae_deudor_4">___________</span>
+          </span>
+          <span name="tipo_documento_deudor_4_pa" hidden> <b>PASAPORTE No.</b>
+            <span name="pasaporte_deudor_4">___________</span>
+          </span>
+          <span name="tipo_deudor_4_n"></span>
+          <span name="tipo_deudor_4_j" hidden>
+            representante legal de
+            <span name="nombre_empresa_deudor_4">___________</span>,
+            identificada con NIT No.
+            <span name="nit_empresa_deudor_4">___________</span>
+          </span>
+          <span name="total_deudor_5_n"></span>
+          <span name="total_deudor_5_s" hidden><br />
+            <span name="nombre_deudor_5">________</span>.<br />Con
+            <span name="tipo_documento_deudor_5_cc"> <b>C.C. No</b>
+              <span name="cedula_deudor_5">___________</span>
+            </span>
+            <span name="tipo_documento_deudor_5_ce" hidden> <b>C.E. No</b>
+              <span name="cedulae_deudor_5">___________</span>
+            </span>
+            <span name="tipo_documento_deudor_5_pa" hidden> <b>PASAPORTE No.</b>
+              <span name="pasaporte_deudor_5">___________</span>
+            </span>
+            <span name="tipo_deudor_5_n"></span>
+            <span name="tipo_deudor_5_j" hidden>
+              representante legal de
+              <span name="nombre_empresa_deudor_5">___________</span>,
+              identificada con NIT No.
+              <span name="nit_empresa_deudor_5">___________</span>
+            </span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  Por medio del presente documento nos declaramos deudores del ARRENDATARIO en forma solidaria e
+  indivisible junto con el Arrendatario
+  <span name="nombre_arrendatario">________</span>
+  de todas las cargas y obligaciones contenidas en el presente contrato, tanto durante el termino
+  inicialmente pactado como durante sus prorrogas o renovaciones expresas o tacitas y hasta la restitución
+  real del inmueble al arrendador, por concepto de: Arrendamiento, servicios públicos, indemnizaciones,
+  daños en el inmueble, intereses, cuotas de administración, clausulas penales, costas procesales y cualquier
+  otra derivada del contrato, la cuales podrán ser exigidas por el arrendador a cualquiera de los obligados,
+  por la vía ejecutiva, sin necesidad de requerimientos privados o judiciales a los cuales renunciamos expresamente,
+  sin que por razón de esta solidaridad asumamos el carácter de fiadores, ni arrendatarios del inmueble objeto del
+  presente contrato, pues tal calidad la asume exclusivamente
+  <span name="nombre_arrendatario">________</span>
+  y sus respectivos causahabientes.
+</p>
+
+<p>
+  Todo lo anterior sin perjuicio de que en caso de abandono del inmueble cualquiera de los deudores
+  solidarios pueda hacer entrega válidamente del inmueble al arrendador o a quien este señale, bien sea
+  judicial o extrajudicialmente. Para este exclusivo efecto el arrendatario otorga poder amplio y suficiente a
+  los deudores solidarios en este mismo acto y al suscribirse el presente contrato.
+</p>
+
+<p>
+  <b>PARÁGRAFO: CESION DEL CONTRATO:</b> Los deudores solidarios aceptan expresamente desde ahora
+  cualquier cesión que el ARRENDADOR haga respecto del presente contrato y ratifican su voluntad de que
+  la notificación de que trata el artículo 1960 del Código Civil se surta con el solo envió de la nota de cesión
+  acompañada de copia simple del contrato, por servicio postal autorizado, a la dirección que aparece
+  registrada en este contrato.
+</p>
+
+<p>
+  <b name="total_deudor_1_n">VIGÉSIMA SEGUNDA:</b>
+  <b name="total_deudor_1_s" hidden>VIGÉSIMA TERCERA:</b>
+  <b>CONSENTIMIENTO PARA USO DE DATOS PERSONALES.</b> De Acuerdo con la
+  Ley Estatutaria 1581 de 2012 de Protección de Datos y sus normas reglamentarias, autorizo
+  expresamente para QUE mis datos sean incorporados en una base de datos responsabilidad de
+  NARANJO ARISTIZABAL ARACELLY DEL SOCORRO propietario del establecimiento de comercio
+  ARRENDAMIENTOS ALNAGO, para que sean tratados con la finalidad de realizar gestión de clientes,
+  cobros y pagos, facturación, económica y contable, marketing, datos biométricos (huella dactilar) para la
+  suscripción del presente contrato y las inherentes del mismo. PARAGRAFO. El titular de los datos podrá
+  ejercitar sus derechos de acceso, corrección, supresión, revocación o reclamo por infracción de sus datos,
+  con un escrito dirigido a NARANJO ARISTIZABAL ARACELLY DEL SOCORRO a la dirección de correo
+  electrónico
+  <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hans.palominon@gmail.com" target="_bank">
+    hans.palominon@gmail.com
+  </a>, indicado en el asunto de derecho que desea ejercitar, o mediante correo ordinario remitido a la CALLE 47 # 42-54
+  LOCAL 105, MEDELLIN.
+</p>
+
+<p>
+  <b>PARÁGRAFO I.</b> Para efectos de marketing, NARANJO ARISTIZABAL ARACELLY DEL SOCORRO
+  propietaria del establecimiento de comercio ARRENDAMIENTOS ALNAGO, encarga por su cuenta a LUIS
+  DE LA ROSA identificado con la Cédula de ciudadanía No. 8.163.556, actuando en calidad de
+  Representante Legal de INVERSIONES CNI S.A.S., compañía legalmente constituida e identificada con
+  NIT 901.327.902-1, domiciliada en la dirección Carrera 43b No. 14 – 51 Oficina 303, en Medellín Antioquia,
+  como responsable para que realice el tratamiento de los datos personales.
+</p>
+
+<p>
+  <b>PARÁGRAFO II</b> El titular de los datos podrá ejercitar sus derechos de acceso, corrección, supresión,
+  revocación o reclamo por infracción de sus datos, con un escrito dirigido a NARANJO ARISTIZABAL
+  ARACELLY DEL SOCORRO a la dirección de correo electrónico protecciondatos@alnago.com, indicando
+  en el asunto el derecho que desea ejercitar, o mediante correo ordinario remitido a CALLE 47 # 42 - 54
+  LOCAL 105, MEDELLÍN.
+</p>
+
+<p>
+  <b name="total_deudor_1_n">VIGÉSIMA TERCERA:</b>
+  <b name="total_deudor_1_s" hidden>VIGÉSIMA CUARTA:</b>
+  <b>AUTORIZACIÓN:</b> El arrendatario y los deudores solidarios autorizan expresamente
+  al arrendador y a
+  <b name="nombre_aseguradora">________</b>, para incorporar, reportar, procesar y consultar
+  en Bancos de Datos, la información que se relacione con este contrato o que de él se derive especialmente cualquier
+  incumplimiento relativo a las obligaciones contraídas. Para efectos de esta autorización el arrendador
+  puede actuar directamente o a través de su asesor jurídico <b name="nombre_aseguradora">________</b>. La misma
+  autorización se extiende a cualquier eventual cesionario o subrogatorio de las obligaciones derivadas del
+  contrato.
+</p>
+
+<p>
+  <b name="total_deudor_1_n">VIGÉSIMA CUARTA:</b>
+  <b name="total_deudor_1_s" hidden>VIGÉSIMA QUINTA:</b>
+  <b>CONSENTIMIENTO PARA USO DE DATOS PERSONALES.</b> De acuerdo con la Ley
+  Estatutaria 1581 de 2012 de Protección de Datos y sus normas reglamentarias, autorizo expresamente
+  para que mis datos sean incorporados en una base de datos responsabilidad de NARANJO ARISTIZABAL
+  ARACELLY DEL SOCORRO propietaria del establecimiento de comercio ARRENDAMIENTOS ALNAGO,
+  para que sean tratados con la finalidad de realizar gestión de clientes, cobros y pagos, facturación,
+  económica y contable, marketing, datos biométricos (huella dactilar) para la suscripción del presente
+  contrato y las inherentes del mismo.
+</p>
+
+<p>
+  <b>PARAGRAFO I.</b> Para efectos de marketing, NARANJO ARISTIZABAL ARACELLY DEL SOCORRO
+  propietaria del establecimiento de comercio ARRENDAMIENTOS ALNAGO, encarga por su cuenta a LUIS
+  DE LA ROSA identificado con la Cédula de ciudadanía No. 8.163.556, actuando en calidad de
+  Representante Legal de INVERSIONES CNI S.A.S., compañía legalmente constituida e identificada con
+  NIT 901.327.902-1, domiciliada en la dirección Carrera 43b No. 14 – 51 Oficina 303, en Medellín Antioquia,
+  como responsable para que realice el tratamiento de los datos personales.
+</p>
+
+<p>
+  <b>PARAGRAFO II</b> El titular de los datos podrá ejercitar sus derechos de acceso, corrección, supresión,
+  revocación o reclamo por infracción de sus datos, con un escrito dirigido a NARANJO ARISTIZABAL
+  ARACELLY DEL SOCORRO a la dirección de correo electrónico protecciondatos@alnago.com, indicando
+  en el asunto el derecho que desea ejercitar, o mediante correo ordinario remitido a CALLE 47 # 42 - 54
+  LOCAL 105, MEDELLÍN.
+</p>
+
+<p>
+  <b name="total_deudor_1_n">VIGÉSIMA QUINTA:</b>
+  <b name="total_deudor_1_s" hidden>VIGÉSIMA SEXTA:</b>
+  <b>VIGÉSIMA SEXTA: ABANDONO DE LA TENENCIA DEL INMUEBLE ARRENDADO:</b> Al suscribir este
+  contrato el arrendatario faculta expresamente al arrendador para penetrar en el inmueble y recuperar su
+  tenencia con el solo requisito de la presencia de dos testigos, en procura de evitar el deterioro y el
+  desmantelamiento de tal inmueble, siempre que por cualquier circunstancia el mismo permanezca
+  abandonado o deshabitado o que amenace la integridad física del bien o la seguridad del vecindario. La
+  misma faculta tendrá los deudores solidarios en caso de abandono del inmueble para efectos de restituirlo
+  al arrendador.
+</p>
+
+<p>
+  <b name="total_deudor_1_n">VIGÉSIMA SEXTA:</b>
+  <b name="total_deudor_1_s" hidden>VIGÉSIMA SÉPTIMA:</b>
+  <b>VIGÉSIMA SÉPTIMA: EL ARRENDATARIO,</b> está obligado a gestionar la consecución y pago de la factura
+  de servicios públicos, inmediatamente después de ocupar el inmueble, con el fin de evitar la suspensión de
+  éstos y a su vez conserva el derecho a que se le reembolse sumas a favor que resultaren por dichos
+  pagos.
+</p>
+
+<p>
+  <b>EL ARRENDATARIO,</b> declara que ha recibido por parte del arrendador copia de este documento con
+  firmas originales, dando cumplimiento a lo dispuesto en el artículo 8 de la ley 820 de 2003. EL
+  ARRENDATARIO se compromete a informar oportunamente al arrendador de las fechas en que se realicen
+  las asambleas en el edificio, o en caso contrario asumirá el valor correspondiente a la multa por
+  inasistencia y a entregar en nuestras oficinas la correspondencia que no le corresponda, especialmente la
+  relacionada con la administración del edificio.
+</p>
+
+<p>
+  <b name="total_deudor_1_n">VIGÉSIMA SÉPTIMA:</b>
+  <b name="total_deudor_1_s" hidden>VIGÉSIMA OCTAVA:</b>
+  <b>NOTIFICACIONES:</b> Para el arrendador sus oficinas y la dirección electrónica
+  suministrada, para el arrendatario y los deudores solidarios la del inmueble objeto de este contrato y la
+  dirección electrónica indicada en el mismo.
+</p>
+
+<h2 class="text-center"><b style="font-size: 16pt">
+    <center><u>CLAUSULAS ADICIONALES.</u></center>
+  </b></h2>
+
+<p>
+  <b>CLÁUSULA PRIMERA:</b> En el evento en que los arrendatarios y/o deudores solidarios compren el inmueble
+  objeto de este contrato estando administrado por ARRENDAMIENTOS ALNAGO Y/O ARACELLY
+  NARANJO ARISTIZABAL, el propietario estará obligado a reconocer el valor de la comisión de corretaje
+  por una suma equivalente al 3% del precio de la venta.
+</p>
+
+<p>
+  <b>CLÁUSULA SEGUNDA:</b> Las infracciones de orden policivo o delictivo en las que incurriesen los
+  arrendatarios, en el inmueble objeto de este contrato, son de absoluta y total responsabilidad del
+  arrendatario.
+</p>
+
+<p>
+  <b>CLÁUSULA TERCERA: SANCION POR DEVOLUCION DE CHEQUES:</b> De acuerdo con lo establecido en
+  el art. 731 del C.C. se cobrara una sanción equivalente al 20% del valor del cheque con el cual se haya
+  pagado la obligación correspondiente.
+</p>
+
+<p>
+  <b>CLÁUSULA CUARTA:</b> Se obliga al arrendatario a no guardar o utilizar en el inmueble, sustancias o
+  materiales inflamables, explosivos, combustibles o comburentes. En el evento de transgredir esta
+  obligación omisiva, será responsable solidariamente ante el propietario del bien y/o terceros por daños y
+  perjuicios causados.
+</p>
+
+<p>
+  <b>CLÁUSULA QUINTA: ASPECTO TRIBUTARIO:</b> Las partes contratantes dejan expresa constancia de que
+  el beneficiario directo de los pagos por concepto de los cánones de arrendamiento en el propietario del
+  inmueble arrendado y en consecuencia la retención en la fuente le será practicada al mismo.
+</p>
+
+<p>
+  <b>CLÁUSULA SEXTA:</b> Las partes contratantes acordamos expresamente que es obligación exclusiva de los
+  arrendatarios o deudores solidarios, tramitar lo concerniente al certificado de ubicación requerido por la
+  oficina de planeación correspondiente para el funcionamiento de la actividad comercial en el inmueble
+  arrendado.
+</p>
+
+<p>
+  <b>CLÁUSULA SÉPTIMA:</b> Ni el ARRENDADOR ni el PROPIETARIO del inmueble serán responsables por
+  hurtos, daños o eventualidades de cualquier naturaleza, que puedan sobrevenir en el inmueble arrendado,
+  sea que en tales eventos intervenga o no la mano del hombre y con ellos se perjudique directa o
+  indirectamente a los ARRENDATARIOS. De la misma manera no serán responsables por los deterioros
+  que sufran las mercancías depositadas en el local, por causas no imputables directamente a su voluntad.
+</p>
+
+<p>
+  <b>CLÁUSULA OCTAVA:</b> Los ARRENDATARIOS autorizan expresamente al ARRENDADOR para que este
+  agregue al presente documento unilateralmente y con plena validez para todos los efectos legales, los
+  cambios de nomenclatura que se puedan presentar, lo mismo que los linderos del bien arrendado.
+</p>
+
+<p>
+  <b>CLÁUSULA NOVENA:</b> El arrendatario deberá realizar todos los trámites necesarios para ajustarse a lo
+  establecido en el artículo 92 Numeral 12 de la ley 1801 del 29 de Julio de 2016 en lo referente a la
+  normatividad del uso del suelo, de no reunir estos requisitos se podrá ver incurso en una sanción
+  económica de 5 hasta 25 SMMLV.
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA:</b> Cualquier comunicación y/o notificación que una parte deba remitir a la otra se hará
+  a cualquiera de las direcciones físicas y/o de correo electrónico indicadas en el presente contrato. Las
+  Partes declaran expresamente que el correo electrónico será un mecanismo de notificación para la
+  remisión y recibo de cualquier comunicación o notificación.
+</p>
+
+<p>
+  De manera particular las Partes autorizan que todas las comunicaciones, certificaciones, memorandos y, en
+  general, cualquier documento relacionado con el presente contrato, podrá ser firmado de manera
+  electrónica/digital a través de la plataforma MiContrato
+</p>
+
+<p>
+  <b>CLÁUSULA DÉCIMA PRIMERA.</b> Las Partes declaran que el presente contrato será firmado electrónicamente a través de
+  la aplicación MiContrato que garantiza el cumplimiento de los requisitos previstos en la legislación vigente (Ley 527
+  de 1999, el artículo 2.2.2.47.7. del Decreto 1074 de 2015 y demás normas que la reglamentan): autenticidad (identidad
+  de los firmantes), integridad (no alteración del documento luego de su firma) y no repudio (la debida trazabilidad del
+  mensaje de datos).
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <b>CLÁUSULA DÉCIMA SEGUNDA.</b>
+    <span name="adicional_clausulas_1">_________</span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <b>CLÁUSULA DÉCIMA TERCERA.</b>
+      <span name="adicional_clausulas_2">_________</span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <b>CLÁUSULA DÉCIMA CUARTA.</b>
+        <span name="adicional_clausulas_3">_________</span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <span name="clausulas_adicional_4_n"></span>
+        <span name="clausulas_adicional_4_s" hidden>
+          <b>CLÁUSULA DÉCIMA QUINTA.</b>
+          <span name="adicional_clausulas_4">_________</span>
+        </span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <span name="clausulas_adicional_4_n"></span>
+        <span name="clausulas_adicional_4_s" hidden>
+          <span name="clausulas_adicional_5_n"></span>
+          <span name="clausulas_adicional_5_s" hidden>
+            <b>CLÁUSULA DÉCIMA SEXTA.</b>
+            <span name="adicional_clausulas_5">_________</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  Para constancia de lo anterior, se firma por las partes y ante testigos hábiles el día
+  <span name="fecha_firma">________</span>.
+</p>
+
+<p>
+  <b>ARRENDADOR</b>
+</p>
+
+<p>
+    <br /><br /><img style="width:250px" src="https://mi-contrato-static.s3.amazonaws.com/Alnago/firma+alnago.jpg" /><br />
+<b>FIRMA ELECTRÓNICA</b><br />
+<b>NOMBRE: </b>Aracelly Del Socorro Naranjo Aristizábal<br />
+<b>C.C.</b> 43.095.952<br />
+<b>NIT:</b> 43.095.952-0<br />
+<b>Dirección:</b> CALLE 47 # 42-54 Of. 105 MED-ANT <br />
+<b>E-mail: </b>
+<a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hans.palominon@gmail.com" target="_bank">
+  hans.palominon@gmail.com
+</a>
+</p>
+
+<p>
+  <b>ARRENDATARIO</b>
+</p>
+
+<p>
+<div id="arrendatario" class="sign-margin"></div>
+<b>FIRMA ELECTRÓNICA</b><br />
+<b>NOMBRE: </b><b name="nombre_arrendatario">________</b><br />
+<span name="tipo_documento_arrendatario_cc"> <b>C.C. No</b>
+  <span name="cedula_arrendatario">___________</span>
+</span>
+<span name="tipo_documento_arrendatario_ce" hidden> <b>C.E. No</b>
+  <span name="cedulae_arrendatario">___________</span>
+</span>
+<span name="tipo_documento_arrendatario_pa" hidden> <b>PASAPORTE No.</b>
+  <span name="pasaporte_arrendatario">___________</span>
+</span><br />
+<span name="tipo_arrendatario_n"></span>
+<span name="tipo_arrendatario_j" hidden>
+  <b>REPRESENTANTE LEGAL DE</b>
+  <span name="nombre_empresa_arrendatario">___________</span><br />
+  <b>NIT No.</b>
+  <span name="nit_empresa_arrendatario">___________</span>
+</span><br />
+<b>E-mail: </b><span name="correo_arrendatario">________</span>
+</p>
+
+<p>
+  <span name="total_testigo_1_n"></span>
+  <span name="total_testigo_1_s" hidden>
+    <b>TESTIGO</b>
+    <span name="total_testigo_2_n"></span>
+    <span name="total_testigo_2_s" hidden>
+      <b>1</b>
+    </span>
+  </span>
+</p>
+
+<p>
+<div name="total_testigo_1_n"></div>
+<div name="total_testigo_1_s" hidden>
+  <div id="testigo_1" class="sign-margin"></div>
+  <b>FIRMA ELECTRÓNICA</b><br />
+  <b>NOMBRE: </b><b name="nombre_testigo_1">________</b><br />
+  <span name="tipo_documento_testigo_1_cc"> <b>C.C. No</b>
+    <span name="cedula_testigo_1">___________</span>
+  </span>
+  <span name="tipo_documento_testigo_1_ce" hidden> <b>C.E. No</b>
+    <span name="cedulae_testigo_1">___________</span>
+  </span>
+  <span name="tipo_documento_testigo_1_pa" hidden> <b>PASAPORTE No.</b>
+    <span name="pasaporte_testigo_1">___________</span>
+  </span>
+</div>
+</p>
+
+<p>
+  <span name="total_testigo_1_n"></span>
+  <span name="total_testigo_1_s" hidden>
+    <span name="total_testigo_2_n"></span>
+    <span name="total_testigo_2_s" hidden>
+      <b>TESTIGO 2</b>
+    </span>
+  </span>
+</p>
+
+<p>
+<div name="total_testigo_1_n"></div>
+<div name="total_testigo_1_s" hidden>
+  <div name="total_testigo_2_n"></div>
+  <div name="total_testigo_2_s" hidden>
+    <div id="testigo_2" class="sign-margin"></div>
+    <b>FIRMA ELECTRÓNICA</b><br />
+    <b>NOMBRE: </b><b name="nombre_testigo_2">________</b><br />
+    <span name="tipo_documento_testigo_2_cc"> <b>C.C. No</b>
+      <span name="cedula_testigo_2">___________</span>
+    </span>
+    <span name="tipo_documento_testigo_2_ce" hidden> <b>C.E. No</b>
+      <span name="cedulae_testigo_2">___________</span>
+    </span>
+    <span name="tipo_documento_testigo_2_pa" hidden> <b>PASAPORTE No.</b>
+      <span name="pasaporte_testigo_2">___________</span>
+    </span>
+  </div>
+</div>
+</p>
+
+<p>
+  <span name="total_deudor_1_n"></span>
+  <span name="total_deudor_1_s" hidden>
+    <b name="total_deudor_2_n">DEUDOR SOLIDARIO</b>
+    <b name="total_deudor_2_s" hidden>DEUDOR SOLIDARIO 1</b>
+  </span>
+</p>
+
+<p>
+<div name="total_deudor_1_n"></div>
+<div name="total_deudor_1_s" hidden>
+  <div id="deudor_1" class="sign-margin"></div>
+  <b>FIRMA ELECTRÓNICA</b><br />
+  <b>NOMBRE: </b><b name="nombre_deudor_1">________</b><br />
+  <span name="tipo_documento_deudor_1_cc"> <b>C.C. No</b>
+    <span name="cedula_deudor_1">___________</span>
+  </span>
+  <span name="tipo_documento_deudor_1_ce" hidden> <b>C.E. No</b>
+    <span name="cedulae_deudor_1">___________</span>
+  </span>
+  <span name="tipo_documento_deudor_1_pa" hidden> <b>PASAPORTE No.</b>
+    <span name="pasaporte_deudor_1">___________</span>
+  </span><br />
+  <span name="tipo_deudor_1_n"></span>
+  <span name="tipo_deudor_1_j" hidden>
+    <b>REPRESENTANTE LEGAL DE</b>
+    <span name="nombre_empresa_deudor_1">___________</span>,
+    <b>IDENTIFICADA CON NIT No.</b>
+    <span name="nit_empresa_deudor_1">___________</span>
+  </span>
+</div>
+</p>
+
+<p>
+  <span name="total_deudor_1_n"></span>
+  <span name="total_deudor_1_s" hidden>
+    <b name="total_deudor_2_n"></b>
+    <b name="total_deudor_2_s" hidden>DEUDOR SOLIDARIO 2</b>
+  </span>
+</p>
+
+<p>
+<div name="total_deudor_1_n"></div>
+<div name="total_deudor_1_s" hidden>
+  <div name="total_deudor_2_n"></div>
+  <div name="total_deudor_2_s" hidden>
+    <div id="deudor_2" class="sign-margin"></div>
+    <b>FIRMA ELECTRÓNICA</b><br />
+    <b>NOMBRE: </b><b name="nombre_deudor_2">________</b><br />
+    <span name="tipo_documento_deudor_2_cc"> <b>C.C. No</b>
+      <span name="cedula_deudor_2">___________</span>
+    </span>
+    <span name="tipo_documento_deudor_2_ce" hidden> <b>C.E. No</b>
+      <span name="cedulae_deudor_2">___________</span>
+    </span>
+    <span name="tipo_documento_deudor_2_pa" hidden> <b>PASAPORTE No.</b>
+      <span name="pasaporte_deudor_2">___________</span>
+    </span><br />
+    <span name="tipo_deudor_2_n"></span>
+    <span name="tipo_deudor_2_j" hidden>
+      <b>REPRESENTANTE LEGAL DE</b>
+      <span name="nombre_empresa_deudor_2">___________</span>,
+      <b>IDENTIFICADA CON NIT No.</b>
+      <span name="nit_empresa_deudor_2">___________</span>
+    </span>
+  </div>
+</div>
+</p>
+
+<p>
+  <span name="total_deudor_1_n"></span>
+  <span name="total_deudor_1_s" hidden>
+    <span name="total_deudor_2_n"></span>
+    <span name="total_deudor_2_s" hidden>
+      <b name="total_deudor_3_n"></b>
+      <b name="total_deudor_3_s" hidden>DEUDOR SOLIDARIO 3</b>
+    </span>
+  </span>
+</p>
+
+<p>
+<div name="total_deudor_1_n"></div>
+<div name="total_deudor_1_s" hidden>
+  <div name="total_deudor_2_n"></div>
+  <div name="total_deudor_2_s" hidden>
+    <div name="total_deudor_3_n"></div>
+    <div name="total_deudor_3_s" hidden>
+      <div id="deudor_3" class="sign-margin"></div>
+      <b>FIRMA ELECTRÓNICA</b><br />
+      <b>NOMBRE: </b><b name="nombre_deudor_3">________</b><br />
+      <span name="tipo_documento_deudor_3_cc"> <b>C.C. No</b>
+        <span name="cedula_deudor_3">___________</span>
+      </span>
+      <span name="tipo_documento_deudor_3_ce" hidden> <b>C.E. No</b>
+        <span name="cedulae_deudor_3">___________</span>
+      </span>
+      <span name="tipo_documento_deudor_3_pa" hidden> <b>PASAPORTE No.</b>
+        <span name="pasaporte_deudor_3">___________</span>
+      </span><br />
+      <span name="tipo_deudor_3_n"></span>
+      <span name="tipo_deudor_3_j" hidden>
+        <b>REPRESENTANTE LEGAL DE</b>
+        <span name="nombre_empresa_deudor_3">___________</span>,
+        <b>IDENTIFICADA CON NIT No.</b>
+        <span name="nit_empresa_deudor_3">___________</span>
+      </span>
+    </div>
+  </div>
+</div>
+</p>
+
+
+<p>
+  <span name="total_deudor_1_n"></span>
+  <span name="total_deudor_1_s" hidden>
+    <span name="total_deudor_2_n"></span>
+    <span name="total_deudor_2_s" hidden>
+      <span name="total_deudor_3_n"></span>
+      <span name="total_deudor_3_s" hidden>
+        <b name="total_deudor_4_n"></b>
+        <b name="total_deudor_4_s" hidden>DEUDOR SOLIDARIO 4</b>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+<div name="total_deudor_1_n"></div>
+<div name="total_deudor_1_s" hidden>
+  <div name="total_deudor_2_n"></div>
+  <div name="total_deudor_2_s" hidden>
+    <div name="total_deudor_3_n"></div>
+    <div name="total_deudor_3_s" hidden>
+      <div name="total_deudor_4_n"></div>
+      <div name="total_deudor_4_s" hidden>
+        <div id="deudor_4" class="sign-margin"></div>
+        <b>FIRMA ELECTRÓNICA</b><br />
+        <b>NOMBRE: </b><b name="nombre_deudor_4">________</b><br />
+        <span name="tipo_documento_deudor_4_cc"> <b>C.C. No</b>
+          <span name="cedula_deudor_4">___________</span>
+        </span>
+        <span name="tipo_documento_deudor_4_ce" hidden> <b>C.E. No</b>
+          <span name="cedulae_deudor_4">___________</span>
+        </span>
+        <span name="tipo_documento_deudor_4_pa" hidden> <b>PASAPORTE No.</b>
+          <span name="pasaporte_deudor_4">___________</span>
+        </span><br />
+        <span name="tipo_deudor_4_n"></span>
+        <span name="tipo_deudor_4_j" hidden>
+          <b>REPRESENTANTE LEGAL DE</b>
+          <span name="nombre_empresa_deudor_4">___________</span>,
+          <b>IDENTIFICADA CON NIT No.</b>
+          <span name="nit_empresa_deudor_4">___________</span>
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+</p>
+
+<p>
+  <span name="total_deudor_1_n"></span>
+  <span name="total_deudor_1_s" hidden>
+    <span name="total_deudor_2_n"></span>
+    <span name="total_deudor_2_s" hidden>
+      <span name="total_deudor_3_n"></span>
+      <span name="total_deudor_3_s" hidden>
+        <span name="total_deudor_4_n"></span>
+        <span name="total_deudor_4_s" hidden>
+          <b name="total_deudor_5_n"></b>
+          <b name="total_deudor_5_s" hidden>DEUDOR SOLIDARIO 5</b>
+        </span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+<div name="total_deudor_1_n"></div>
+<div name="total_deudor_1_s" hidden>
+  <div name="total_deudor_2_n"></div>
+  <div name="total_deudor_2_s" hidden>
+    <div name="total_deudor_3_n"></div>
+    <div name="total_deudor_3_s" hidden>
+      <div name="total_deudor_4_n"></div>
+      <div name="total_deudor_4_s" hidden>
+        <div name="total_deudor_5_n"></div>
+        <div name="total_deudor_5_s" hidden>
+          <div id="deudor_5" class="sign-margin"></div>
+          <b>FIRMA ELECTRÓNICA</b><br />
+          <b>NOMBRE: </b><b name="nombre_deudor_5">________</b><br />
+          <span name="tipo_documento_deudor_5_cc"> <b>C.C. No</b>
+            <span name="cedula_deudor_5">___________</span>
+          </span>
+          <span name="tipo_documento_deudor_5_ce" hidden> <b>C.E. No</b>
+            <span name="cedulae_deudor_5">___________</span>
+          </span>
+          <span name="tipo_documento_deudor_5_pa" hidden> <b>PASAPORTE No.</b>
+            <span name="pasaporte_deudor_5">___________</span>
+          </span><br />
+          <span name="tipo_deudor_5_n"></span>
+          <span name="tipo_deudor_5_j" hidden>
+            <b>REPRESENTANTE LEGAL DE</b>
+            <span name="nombre_empresa_deudor_5">___________</span>,
+            <b>IDENTIFICADA CON NIT No.</b>
+            <span name="nit_empresa_deudor_5">___________</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</p>

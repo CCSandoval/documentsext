@@ -1,0 +1,814 @@
+<style type="text/css">
+  .img_tittle>img {
+    position: relative;
+    width: 20%;
+    left: 40%;
+  }
+
+  table {
+    border: 0.5px solid #808080;
+    width: 100%;
+  }
+
+  td {
+    border: 1px solid #808080;
+  }
+
+  td.table_header {
+    width: 15%;
+  }
+
+  td.table_value {
+    width: 35%;
+  }
+</style>
+
+<p>
+  <span class="img_tittle">
+    <img src="https://mi-contrato-static.s3.amazonaws.com/Alnago/image.jpg" />
+  </span>
+</p>
+<h2 class="text-center">
+  <b>CONTRATO DE ADMINISTRACIÓN DE INMUEBLES</b>
+</h2>
+
+<p>
+  Entre los suscritos:
+  <b name="nombre_propietario">__________</b>, mayor de edad,
+  <span name="genero_propietario_m">identificado</span>
+  <span name="genero_propietario_f" hidden>identificada</span> con la cédula de ciudadanía cuyo número aparece al pie de
+  su firma,
+  <span name="tipo_propietario_n">
+    <span name="genero_propietario_m">vecino</span>
+    <span name="genero_propietario_f" hidden>vecina</span> de
+    <b name="residencia_propietario">__________</b>, de nacionalidad
+    <b name="nacionalidad_propietario">__________</b>,
+  </span>
+  <span name="tipo_propietario_j" hidden> actuando en calidad de representante legal de
+    <span name="nombre_empresa_propietario">________</span>, persona jurídica de derecho privado debidamente
+    constituida, con domicilio principal en el municipio de
+    <span name="ciudad_empresa_propietario">________</span>, identificada con NIT
+    <span name="identificacion_empresa_propietario">________ </span>,
+  </span> quien para efectos del presente contrato se denominará
+  <span name="genero_propietario_m">el PROPIETARIO</span>
+  <span name="genero_propietario_f" hidden>la PROPIETARIA</span> o su
+  representante, y ARACELLY NARANJO ARISTIZÁBAL, mayor de edad, vecina de
+  Medellín, de nacionalidad colombiana, quien obra en nombre y representación de
+  ARRENDAMIENTOS ALNAGO, y para efectos del presente contrato se denominará la
+  ADMINISTRADORA, hemos celebrado el contrato de administración de inmuebles,
+  que se regirá por las siguientes cláusulas.
+</p>
+
+<p style="text-align: center">
+  <b>
+    <u> CLÁUSULAS </u>
+  </b>
+</p>
+
+<p>
+  <b>
+    PRIMERA - OBJETO DEL CONTRATO Y UBICACIÓN DEL INMUEBLE:
+    <span name="genero_propietario_m">EL PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>LA PROPIETARIA</span>
+  </b>
+  o su representante confiere a la ADMINISTRADORA la gestión de arrendar y
+  administrar a nombre de
+  <span name="genero_propietario_m">este</span>
+  <span name="genero_propietario_f" hidden>esta</span> pero por cuenta y, riesgo
+  <span name="genero_propietario_m">del PROPIETARIO,</span>
+  <span name="genero_propietario_f" hidden>de la PROPIETARIA,</span> el
+  siguiente inmueble ubicado en la dirección:
+  <b name="direccion_inmueble">__________</b>.
+</p>
+
+<!-- Tabla -->
+
+<table id="table_1">
+  <tr>
+    <td class="table_header">
+      <b> Parqueadero: </b>
+    </td>
+    <td class="table_value">
+      <b>#</b>
+      <b name="parqueadero_inmueble">__________</b>
+    </td>
+    <td class="table_header">
+      <b> Cuarto Útil: </b>
+    </td>
+    <td class="table_value">
+      <b>#</b>
+      <b name="util_inmueble">__________</b>
+    </td>
+  </tr>
+  <tr>
+    <td class="table_header">
+      <b> Otro (Cual): </b>
+    </td>
+    <td class="table_value">
+      <b name="otro_inmueble_s">
+        <span name="valor_otro_inmueble">__________</span>
+      </b>
+      <b name="otro_inmueble_n" hidden>-----</b>
+    </td>
+    <td class="table_header">
+      <b> Destinatación: </b>
+    </td>
+    <td class="table_value">
+      <b name="destinacion_inmueble">__________</b>
+    </td>
+  </tr>
+  <tr>
+    <td class="table_header">
+      <b> Valor Cánon: </b>
+    </td>
+    <td class="table_value">
+      <b name="canon_inmueble">__________</b>
+    </td>
+    <td class="table_header">
+      <b> Duración contrato: </b>
+    </td>
+    <td class="table_value">
+      <b name="duracion_contrato_inmueble">__________</b>
+    </td>
+  </tr>
+</table>
+
+<!-- Tabla -->
+
+<p>
+  <b> PARÁGRAFO PRIMERO: </b>
+  <span name="genero_propietario_m">EL PROPIETARIO</span>
+  <span name="genero_propietario_f" hidden>LA PROPIETARIA</span> o quien lo
+  represente, acepta expresamente que las cláusulas contenidas de este contrato
+  de administración regirán entre las partes para todas las relaciones de igual
+  naturaleza que sostenga con la ADMINISTRADORA y en la que no exista contrato
+  escrito, en todo caso la ADMINISTRADORA también podrá incluir en el presente
+  contrato las direcciones de las propiedades que entren bajo su administración
+  según el artículo 64 del Código General del Proceso.
+</p>
+
+<p>
+  <b>
+    SEGUNDA – OBLIGACIONES
+    <span name="genero_propietario_m">DEL PROPIETARIO:</span>
+    <span name="genero_propietario_f" hidden>DE LA PROPIETARIA:</span> son
+    obligaciones
+    <span name="genero_propietario_m">del PROPIETARIO:</span>
+    <span name="genero_propietario_f" hidden>de la PROPIETARIA:</span>
+  </b>
+</p>
+
+<ol type="A">
+  <li>Entregar a la administradora el inmueble a arrendar.</li>
+  <li>Mantener en estado de servir para el fin a que ha sido arrendado.</li>
+  <li>
+    Asumir toda la responsabilidad por causa de reclamaciones, juicios,
+    devoluciones o indemnizaciones que se originen en las disposiciones legales
+    que regulan la actividad de arrendamiento y en caso de responsabilidad civil
+    extracontractual por perjuicios o incidentes que sobrevengan en razón del
+    mal estado o deficiente funcionamiento de los inmuebles o de alguna de sus
+    instalaciones. Si por cualquier circunstancia la ADMINISTRADORA, fuera
+    condenada a pagar suma alguna de dinero por estos conceptos,
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span> se obliga a
+    reembolsar dichos dineros a la ADMINISTRADORA, dentro de los cinco (5) días
+    hábiles siguientes en que se hubiere ejecutado el acto que generó la
+    obligación.
+  </li>
+  <li>
+    Autorizar o realizar las reparaciones locativas necesarias en el inmueble,
+    en el momento para la conservación y mantenimiento del mismo. De conformidad
+    con las normas legales vigentes, en caso de ser realizado por
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span> informará por
+    escrito a la ADMINISTRADORA las reparaciones o mejoras realizadas con el fin
+    que sean incluidas en el inventario vigente con el arrendatario.
+  </li>
+  <li>
+    Si
+    <span name="genero_propietario_m">el PROPIETARIO,</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA,</span> una vez
+    notificado de las reparaciones no locativas necesarias que requiere el
+    inmueble y que afecten el normal uso y disfrute del mismo o de los
+    servicios, cosas y usos conexos adicionales con los que se arrendó y este no
+    ejecuta o no autoriza a la ADMINISTRADORA para que realicen en el término de
+    cinco (5) días hábiles, se procederá a repararlo, siempre y cuando cubran un
+    tope máximo de un canon de arrendamiento vigente, para evitar que el
+    ARRENDATARIO los ejecute por su cuenta amparado en el art. 27 de la ley 820
+    de 2003.
+  </li>
+  <li>
+    Si a causa del incumplimiento de la obligación de dar mantenimiento al
+    inmueble por parte
+    <span name="genero_propietario_m">del PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>de la PROPIETARIA</span> o su
+    represente, El ARRENDATARIO desocupará el inmueble, la ADMINISTRADORA Tendrá
+    la obligación legal de recibirlo y así evitar sanciones que pueden
+    perjudicar a las partes. Igualmente la recibirá si el ARRENDATARIO(A) opta
+    por no esperar la reparación en caso de humedades, alcantarillado, techos,
+    terrazas, baja capacidad eléctrica y similar.
+  </li>
+  <li>
+    Pagar oportunamente las cuotas de administración del inmueble cuando sea el
+    caso, y así evitar posibles cobros jurídicos a los arrendatarios por estos
+    conceptos, si por este incumplimiento el(la) ARRENDATARIO(A) decide entregar
+    el inmueble a la ADMINISTRADORA estará en la obligación de recibirlo.
+  </li>
+  <li>
+    <span name="genero_propietario_m">EL PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>LA PROPIETARIA</span> hará entrega
+    de paz y salvo de la administración si el inmueble está sometido a régimen
+    de propiedad horizontal al momento de firmar este contrato.
+  </li>
+  <li>
+    Suministrar a la ADMINISTRADORA en forma fidedigna, la información que esta
+    requieran en relación con los inmuebles, tendientes a facilitar el
+    cumplimiento de la gestión encomendada.
+  </li>
+  <li>
+    Restituirá a la ADMINISTRADORA las sumas de dinero que sin fundamento
+    hubiere recibido de ésta, con ocasión del presente contrato.
+  </li>
+  <li>
+    Comunicará a la ADMINISTRADORA, cualquier hecho que afecte el normal
+    desarrollo de este contrato y del contrato de arrendamiento que se suscriba.
+  </li>
+  <li>
+    Reconocer y cancelar a la ADMINISTRADORA la remuneración por su gestión, en
+    la cuantía que más adelante se indica, Así mismo los impuestos que de
+    acuerdo con las leyes tributarias se deriven de este contrato.
+  </li>
+  <li>
+    Es obligación <span name="genero_propietario_m">del PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>de la PROPIETARIA</span> o su representante aportar a la administradora
+    el manual de convivencia que regula el inmueble cuando el inmueble se encuentre
+    sometido al regimen de propiedad horizontal, de lo contrario no se podrá exigir su
+    cumplimiento a los arrendatarios.
+  </li>
+  <li>
+    <span name="genero_propietario_m">El PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>La PROPIETARIA</span> o su
+    representante debe presentar a la ADMINISTRADORA copia del impuesto predial
+    para poder determinar el valor máximo del canon de arrendamiento a cobrar
+    por el inmueble. A sabiendas de exceder el 2% del avaluó catastral asumirá
+    directamente todas las consecuencias legales que se llegará a generar.
+  </li>
+  <li>
+    <span name="genero_propietario_m">El PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>La PROPIETARIA</span> o su
+    representante deberán presentar a la ADMINISTRADORA copia del RUT. En caso
+    tal que el inmueble a administrar sea diferente a vivienda y sea régimen
+    común
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span> o su
+    representante deberá reportar a la DIAN EL 19% por concepto de IVA sobre el
+    canon estipulado bimestralmente.
+  </li>
+  <li>
+    Si en el desarrollo del contrato de arrendamiento, el arrendatario o sus
+    familiares consanguíneos o por afinidad resuelven adquirir el(los)
+    inmueble(s) arrendados(s),
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span> o su
+    representante le reconocerá la comisión a la ADMINISTRADORA, generalmente
+    aceptada por la intermediación en la compraventa correspondiente al tres por
+    ciento (3%) del valor de la venta más el impuesto al valor agregado (IVA)
+    correspondiente.
+  </li>
+  <li>
+    Para el logro de un óptimo desarrollo de la administración,
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span> su
+    representante se obliga a no mantener relación con el(la) arrendatario(a)
+    DIRECTAMENTE, sino a través de la ADMINISTRADORA, gestión para la cual fue
+    contratada.
+  </li>
+  <li>
+    Comunicar por escrito a la dirección de la ADMINISTRADORA cualquier
+    requerimiento que surja dentro de su desarrollo.
+  </li>
+  <li>
+    Mientras el inmueble esté desocupado
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span> será el
+    responsable de su cuidado y del pago de los gastos de administración,
+    servicios públicos y predial.
+  </li>
+  <li>
+    En caso de que
+    <span name="genero_propietario_m">el PROPIETARIO,</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA,</span>solicite el
+    inmueble antes del vencimiento del contrato,
+    <span name="genero_propietario_m">el PROPIETARIO,</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA,</span> será el
+    responsable de pagar la indemnización correspondiente a 3 cánones de
+    arrendamiento vigentes, al arrendatario y el cumplimiento del trámite legal
+    estipulado.
+  </li>
+  <li>
+    Consideración general: El desarrollo de la actividad encomendada a la
+    ADMINISTRADORA no suple las obligaciones que el propietario tiene con los
+    entes de administración de la propiedad horizontal de sus inmuebles ante los
+    cuales sigue siendo el directo responsable.
+  </li>
+  <li>
+    En caso de que
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span> desee dar por
+    terminado el contrato de arrendamiento a la fecha de vencimiento del
+    contrato de vivienda urbana, debe dar un aviso por escrito con 3 meses de
+    anticipación y el cumplimiento de los demás requisitos legales. <br /><br />
+    En caso de que el contrato de arrendamiento sea de local comercial,
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span>
+    sólo podrá solicitar la entrega del inmueble arrendado únicamente a partir
+    de 2 años de ejecución y por las causales previstas en el artículo 518 del
+    código de comercio y adicionalmente debe desahuciar al arrendatario con no
+    menos de seis meses de anticipación a la fecha de terminación del contrato,
+    so pena de que se considere renovado o prorrogado en las mismas condiciones
+    y por el mismo término del contrato inicial.
+  </li>
+  <li>
+    Si en el curso del contrato de arrendamiento, el ARRENDATARIO, es multado
+    por cualquier causal estipulada en el reglamento de propiedad horizontal o
+    comité de convivencia del edificio o unidad residencial, la ADMINISTRADORA,
+    no se hará directamente responsable por el pago o reconocimiento de dichas
+    multas. la ADMINISTRADORA, se encargará de la gestión del cobro pre jurídico
+    de multas impuestas por la administración del edificio o unidad residencial
+    sometida a reglamento de propiedad horizontal siempre y cuando se hayan
+    adelantado las gestiones pertinentes para el cumplimiento del proceso de
+    cargos y descargos y se soporte los cobros con las pruebas pertinentes por
+    parte de la administración.
+  </li>
+  <li>
+    Las demás obligaciones establecidas en la Legislación Colombiana vigente.
+  </li>
+</ol>
+
+<p>
+  <b>
+    TERCERA – OBLIGACIONES DE LA ADMINISTRADORA: son obligaciones de la
+    ADMINISTRADORA.
+  </b>
+</p>
+
+<ol type="A">
+  <li>
+    Reconocer y cancelar
+    <span name="genero_propietario_m">el PROPIETARIO,</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA,</span> el valor de
+    los cánones de arrendamiento establecido en el contrato, dentro del quinto
+    (5) día y octavo (8) día de cada periodo mensual, de acuerdo con cada
+    periodo regular de pagos, realizando las deducciones a que haya lugar;
+    obligación que se deberá cumplir durante todo el tiempo en que el(los)
+    inmueble(s) esté(n) física y materialmente ocupados por el(los)
+    arrendatario(s) y cesará cuando este(os) le sea(n) entregado(s) a la
+    ADMINISTRADORA, estando o no en curso proceso de restitución del inmueble en
+    contra del arrendatario: Art. 2003 y 2013. C.C.
+  </li>
+</ol>
+
+<p>
+  <b>PARÁGRAFO PRIMERO:</b>
+  Cuando los ARRENDATARIOS se encontraren en mora, se responderá por
+  el valor de los cánones de arrendamiento, durante 36 (Treinta y seis) meses consecutivos, o
+  segun el limite aprobado por la aseguradora al momneto del contrato hasta que se logre el
+  saneamiento de la deuda y/o la restitución del inmueble arrendado.
+</p>
+
+<p>
+  <b>PARÁGRAFO SEGUNDO:</b>
+  La ADMINISTRADORA a su costa y criterio podrá iniciar el proceso de
+  restitución del inmueble por mora en el pago aunque genera la terminación del
+  contrato de arrendamiento antes del cumplimiento del contrato.
+</p>
+
+<ol type="A" start="2">
+  <li>
+    Presentar informe mensual de su gestión como ADMINISTRADORA en el que se
+    consigne el detalle de los dineros recibidos, las erogaciones efectuadas y
+    el saldo a favor o en contra que se abone o reclame
+    <span class="genero_propietario_m">al PROPIETARIO.</span>
+    <span class="genero_propietario_f" hidden>a la PROPIETARIA.</span>
+  </li>
+  <li>
+    Cancelar oportunamente por cuenta del PROPIETARIO(A), previo acuerdo con
+    este las cuentas de impuesto predial, valorización, cuotas de
+    administración y servicios públicos de los inmuebles administrados
+  </li>
+  <li>
+    <span name="genero_propietario_m">El PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>La PROPIETARIA</span> o su
+    representante autoriza expresamente a la ADMINISTRADORA a cancelar las
+    cuotas de administración y las facturas de servicios públicos cuando estos
+    fueran de obligación exclusiva
+    <span class="genero_propietario_m">del PROPIETARIO</span>
+    <span class="genero_propietario_f" hidden>de la PROPIETARIA</span> y su
+    falta de pago conlleva un perjuicio para el(los) arrendatario(s).
+  </li>
+  <li>
+    Elaborar un inventario del estado en que se encuentre(n) el(los) inmueble(s)
+    cuando este(os) sea(n) arrendado(s), el cual deberá ser confrontado a la
+    terminación del mismo.
+  </li>
+  <li>
+    La ADMINISTRADORA podrá tomar las medidas preventivas y correctivas que sean
+    indispensables, en caso de no poder informar al propietario el riesgo de
+    deterioro o destrucción de (los) inmueble(s); las erogaciones que se hayan
+    realizado serán descontadas en el siguiente mes, así mismo se procederá con
+    el pago de las cuotas de administración que estando bajo la responsabilidad
+    <span class="genero_propietario_m">del PROPIETARIO</span>
+    <span class="genero_propietario_f" hidden>de la PROPIETARIA</span> o
+    representante estén en mora y este atraso genera sanciones para los
+    arrendatarios en el disfrute de zonas comunes, apertura de parqueadero,
+    etc., que adopte la administración como manera coercitiva por el no pago.
+  </li>
+  <li>
+    Promocionar debidamente el(los) inmuebles administrado(s) cuando esté(n)
+    desocupado(s) para colocarlo(s) nuevamente en arrendamiento, previo acuerdo
+    entre las partes.
+  </li>
+  <li>
+    La ADMINISTRADORA, no será responsable por hurtos, daños que presenten al
+    inmueble cuando este desocupado, por ello LA ADMINISTRADORA, informa
+    <span class="genero_propietario_m">al PROPIETARIO</span>
+    <span class="genero_propietario_f" hidden>a la PROPIETARIA</span> con la
+    debida anticipación con el fin que de común acuerdo establezcan los
+    mecanismos para la seguridad del mismo.
+  </li>
+  <li>
+    En el evento que
+    <span name="genero_propietario_m">el PROPIETARIO</span>
+    <span name="genero_propietario_f" hidden>la PROPIETARIA</span> fallezca, el
+    represente contrato de Administración se seguirá desarrollando con la
+    persona que el juzgado o el testamento determine con el albacea para la
+    custodia de los bienes en sucesión.
+  </li>
+  <li>
+    La administradora pondrá a su consideración recibir el inmueble antes del
+    vencimiento del contrato cuando éste fuese nuevamente dado en arrendamiento
+    siempre y cuando no se interrumpa su continuidad bajo la figura de empalme.
+  </li>
+  <li>
+    La administradora será responsable de pagar el valor de la indemnización
+    pactado con el arrendatario por el incumplimiento del contrato siempre y cuando
+    sea cancelado por este.
+  </li>
+  <li>
+    El arrendatario será responsable de los daños causados al inmueble a
+    excepción de los generados por el deterioro natural y la acción del tiempo según
+    el inventario inicial. En este caso LA ADMINISTRADORA se encargará de
+    efectuar el cobro de los servicios públicos causados hasta la fecha de entrega
+    del inmueble y de los daños que estuvieren a cargo de los Arrendatarios, según
+    el inventario que hace parte integral del presente contrato y una vez recaudado
+    dicho dinero será reembolsado al propietario.
+  </li>
+</ol>
+
+<p>
+  <b> CUARTA – EXCEPCIÓN DE RESPONSABILIDAD: LA ADMININSTRADORA: </b>
+  no será responsable ante
+  <span name="genero_propietario_m">el PROPIETARIO</span>
+  <span name="genero_propietario_f" hidden>la PROPIETARIA</span> o su
+  representante en ninguno de los siguientes eventos:
+</p>
+
+<ul>
+  <li>
+    Por las cuotas de administración cuando no estuvieran incluidas en el cánon
+    de arrendamiento.
+  </li>
+  <li>
+    Cancelar suma alguno, por daños a terceros en propiedad horizontal o bienes
+    comunes.
+  </li>
+  <li>
+    Por el pago de servicio públicos domiciliarios que el(los) arrendatario(s)
+    quedare(n) a deber.
+  </li>
+  <li>
+    Por los daños o faltantes que dejaran el (los) arrendatario(s) en el(los)
+    inmueble(s), según se determine con el inventario inicial de la propiedad.
+  </li>
+  <li>
+    En todos los casos la ADMINISTRADORA, adelantará las gestiones
+    extrajudiciales tendientes a obtener el reconocimiento del pago de los
+    mismos.
+  </li>
+</ul>
+
+<p>
+  <b>QUINTA: VIGENCIA:</b>
+  el presente contrato rige a partir del día
+  <b name="inicio_contrato">__________</b>
+  y hasta que el inmueble dado en administración se encuentre ocupado por
+  el(los) arrendatario(s).
+</p>
+
+<p>
+  <b> SEXTA: CAUSALES DE TERMINACIÓN: </b>
+  El presente contrato terminará por la ocurrencia de una o varias de las
+  siguientes cláusulas:
+</p>
+
+<ul>
+  <li>
+    Por el engaño, omisión o falsedad
+    <span class="genero_propietario_m">del PROPIETARIO</span>
+    <span class="genero_propietario_f" hidden>de la PROPIETARIA</span> o de su
+    representante en el suministro cabal y oportuno de la información necesaria
+    para que la ADMINISTRADORA pueda cumplir sus funciones.
+  </li>
+  <li>
+    Por la Cesión del contrato de arrendamiento o la decisión de terminación
+    unilateral
+    <span class="genero_propietario_m">del PROPIETARIO,</span>
+    <span class="genero_propietario_f" hidden>de la PROPIETARIA,</span>evento en
+    el cual este(a) deberá reconocer a la ADMINISTRADORA, la comisión
+    correspondiente al ciena por ciento (100%) del canon de arrendamiento
+    vigente en el momento.
+  </li>
+  <li>
+    Por la destrucción total o parcial del(los) inmueble(s), de manera tal que
+    hagan imposible la continuidad del contrato del arrendamiento sobre el (los)
+    mismo(s).
+  </li>
+  <li>
+    Porque la ADMINISTRADORA no entregue oportunamente
+    <span class="genero_propietario_m">al PROPIETARIO</span>
+    <span class="genero_propietario_f" hidden>a la PROPIETARIA</span>
+    el valor de los cánones de arrendamiento causadas o lo retenga sin causa que
+    lo justifique.
+  </li>
+  <li>
+    Por el incumplimiento total, de cualquiera de los contratantes, de alguna de
+    obligaciones aquí contraídas.
+  </li>
+  <li>
+    Por la desocupación y entrega del inmueble por parte del(os)
+    arrendatario(s).
+  </li>
+  <li>
+    Por extinción de dominio judicial del inmueble al propietario y cuando esta
+    se genere para acto ilícitos del Arrendatario, en cuyo caso la
+    ADMINISTRADORA no será responsable ya que al celebrar el contrato de
+    arrendamiento se asume su buena fe y lo que se derive de su ejecución
+    ilícita es responsabilidad de quien ejecute tales actos ilícitos.
+  </li>
+</ul>
+
+<p>
+  <b>SÉPTIMA: REMUNERACIÓN:</b>
+  Como contraprestación por los servicios de administración convenidos,
+  <span name="genero_propietario_m">el PROPIETARIO</span>
+  <span name="genero_propietario_f" hidden>la PROPIETARIA</span> reconocerá y
+  pagará a la ADMINISTRADORA una remuneración equivalente al diez por ciento
+  (10%) de los ingresos obtenidos por concepto de cánones de arrendamiento
+  del(los) inmueble(s), administrados; liquidados en forma mensual y serán
+  deducidos directamente de los ingresos por cánones de arrendamiento(s) con
+  preferencia sobre cualquier gasto o concepto.
+</p>
+
+<p>
+  <b>OCTAVA: GASTOS:</b>
+  En el eventual caso que fuera necesario instaurar un proceso de restitución
+  del(los) inmueble(s) arrendado(s) por la mora en el pago del canon de arrendamiento, los
+  honorarios profesionales del abogado y demás gastos procesales serán a cargo de la LA
+  ADMINISTRADORA.
+</p>
+
+<p>
+  <b>NOVENA: CESIÓN DEL CONTRATO:</b>
+  La admistradora queda autorizada para ceder el presente contrato de
+  Administración de Bienes a cualquier persona natural o jurídica, como
+  consecuencia de la enajenación del establecimiento comercial, debiendo notificar con un mes de
+  anticipación a la otra parte, para que quede perfeccionada la cesión.
+</p>
+
+<p>
+  <b>DÉCIMA: AUTORIZACIÓN REPORTE A CENTRALES DE RIESGO:</b>
+  Autorizo expresamente a la ADMINISTRADORA a reportar de manera directa a las
+  centrales de riesgo, que administre base de datos la información sobre el
+  manejo de mis obligaciones pecuniarias y créditos comerciales relacionados con
+  el(los) inmuebles y generadas durante la vigencia del presente contrato como
+  al momento de su terminación y a conservar la información reportada en la
+  bases de datos de centrales de riesgo con las debidas actualizaciones y
+  durante el periodo necesario señalado en sus reglamentos.
+</p>
+
+<p>
+  <b>DÉCIMA PRIMERA: CONSENTIMIENTO PARA USO DE DATOS PERSONALES:</b>
+  De acuerdo con la Ley Estatutaria 1581 de 2012 de Protección de Datos y sus
+  normas reglamentarias, autorizo expresamente para que mis datos sean
+  incorporados en una base de datos responsabilidad de LA ADMINISTRADORA para
+  que sean tratados con la finalidad de realizar gestión de clientes, cobros y
+  pagos, facturación, económica y contable, marketing, datos biométricos (huella
+  dactilar) para la suscripción del presente contrato.
+</p>
+
+<p>
+  <b>PARÁGRAFO PRIMERO:</b>
+  El titular de los datos podrá ejercitar sus derechos de acceso, corrección,
+  supresión, revocación o reclamo por infracción de sus datos, con un escrito
+  dirigido a NARANJO ARISTIZABAL ARACELLY DEL SOCORRO a la dirección de correo
+  electrónico protecciondatos@alnago.com, indicando en el asunto el derecho que
+  desea ejercitar, o mediante correo ordinario remitido a CALLE 47 # 42 - 54
+  LOCAL 105, MEDELLÍN.
+</p>
+
+<p>
+  <b> DÉCIMA SEGUNDA: AUTORIZACIÓN FIRMA ELECTRÓNICA / DIGITAL: </b>
+  Las Partes declaran que el presente contrato será firmado electrónicamente a
+  través de la plataforma MiContrato, que garantiza el cumplimiento de los
+  requisitos previstos en la legislación vigente (Ley 527 de 1999, el artículo
+  2.2.2.47.7. del Decreto 1074 de 2015 y demás normas que la reglamentan):
+  autenticidad (identidad de los firmantes), integridad (no alteración del
+  documento luego de su firma) y no repudio (la debida trazabilidad del mensaje
+  de datos).
+</p>
+
+<b style="text-align: center">
+  DÉCIMA TERCERA: DIRECCION Y DATOS PARA EFECTOS DE NOTIFICACIONES.
+</b>
+
+<p>
+  <span name="genero_propietario_m">El PROPIETARIO</span>
+  <span name="genero_propietario_f" hidden>La PROPIETARIA</span> o su
+  representante: <b name="nombre_propietario">__________</b> al correo
+  electrónico: <b name="correo_propietario">__________</b> y a la dirección de su residencia <span name="residencia_propietario">__________</span>.
+</p>
+
+<p>
+  La ADMINISTRADORA: Calle 47 # 42 – 54 Oficina 103 Torres de Bomboná, y al
+  correo electrónico:
+  <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hans.palominon@gmail.com" target="_bank">
+    hans.palominon@gmail.com
+  </a>
+</p>
+
+<p>
+  <span name="genero_propietario_m">El PROPIETARIO</span>
+  <span name="genero_propietario_f" hidden>La PROPIETARIA</span> o su
+  representante informará a la ADMINISTRADORA por escrito cualquier cambio de
+  dirección para efectos de notificación.
+</p>
+
+<p>
+  Cualquier comunicación y/o notificación que una parte deba remitir a la otra
+  se hará a cualquiera de las direcciones físicas y/o de correo electrónico
+  indicadas en el presente contrato. Las Partes declaran expresamente que el
+  correo electrónico será un mecanismo de notificación para la remisión y recibo
+  de cualquier comunicación o notificación.
+</p>
+
+<p>
+  De manera particular las Partes autorizan que todas las comunicaciones,
+  certificaciones, memorandos y, en general, cualquier documento relacionado con
+  el presente contrato, podrá ser firmado de manera electrónica /digital a
+  través de la plataforma MiContrato.
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <b>DÉCIMA CUARTA.</b>
+    <b name="clausulas_adicional_2_n">DISPOSICIONES ADICIONALES.</b>
+    <b name="clausulas_adicional_2_s" hidden>DISPOSICIÓN ADICIONAL 1.</b>
+    <span name="adicional_clausulas_1">_________</span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <b>DÉCIMA QUINTA. DISPOSICIÓN ADICIONAL 2.</b>
+      <span name="adicional_clausulas_2">_________</span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <b>DÉCIMA SEXTA. DISPOSICIÓN ADICIONAL 3</b>
+        <span name="adicional_clausulas_3">_________</span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <span name="clausulas_adicional_4_n"></span>
+        <span name="clausulas_adicional_4_s" hidden>
+          <b>DÉCIMA SÉPTIMA. DISPOSICIÓN ADICIONAL 4</b>
+          <span name="adicional_clausulas_4">_________</span>
+        </span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <span name="clausulas_adicional_1_n"></span>
+  <span name="clausulas_adicional_1_s" hidden>
+    <span name="clausulas_adicional_2_n"></span>
+    <span name="clausulas_adicional_2_s" hidden>
+      <span name="clausulas_adicional_3_n"></span>
+      <span name="clausulas_adicional_3_s" hidden>
+        <span name="clausulas_adicional_4_n"></span>
+        <span name="clausulas_adicional_4_s" hidden>
+          <span name="clausulas_adicional_5_n"></span>
+          <span name="clausulas_adicional_5_s" hidden>
+            <b>DÉCIMA OCTAVA. DISPOSICIÓN ADICIONAL 5</b>
+            <span name="adicional_clausulas_5">_________</span>
+          </span>
+        </span>
+      </span>
+    </span>
+  </span>
+</p>
+
+<p>
+  <b>
+    Para constancia se firma en la ciudad de
+    <span name="lugar_firma">__________</span> el
+    <span name="fecha_firma">__________</span>.
+  </b>
+</p>
+
+<p>
+  <b>BENEFICIOS EXCLUSIVOS PROPIETARIOS ALNAGO</b> <br>
+  La ADMINISTRADORA responderá por el pago de los Servicios Públicos Domiciliarios adeudados y por los dañoscausados al inmueble a excepción de los generados por el deterioro natural y la acción del tiempo,según el inventario
+  inicial, hasta la fecha en que se efectúe la entrega material del inmueble arrendado por parte del arrendatario. Dicho
+  reconocimiento, se hará hasta un tope de UN MILLÓN DE PESOS M/L ($1.000.000) concurrentemente.
+  En el caso de que no se alcance a cubrir toda la deuda, LA ADMINISTRADORA se encargará de efectuar el cobro
+  prejuridico de los servicios públicos causados hasta la fecha de entrega del inmueble y de los daños que estuvieren a
+  cargo de los arrendatarios, según el inventario que hace parte integral del presente contrato y una vez recaudado dicho
+  dinero será reembolsado al PROPIETARIO.
+</p>
+
+<br /><br />
+
+<p>
+  <b name="genero_propietario_m">PROPIETARIO / REPRESENTANTE</b>
+  <b name="genero_propietario_f" hidden>PROPIETARIA / REPRESENTANTE</b>
+</p>
+
+<p>
+  <br /><br /><br />
+  <span>________________________________________</span><br />
+  <b>FIRMA ELECTRÓNICA</b><br />
+  <b>NOMBRE:</b> <b name="nombre_propietario">__________</b><br />
+  <b>ID:</b>
+  <b name="tipo_documento_propietario_cc">C.C.
+    <b name="cedula_propietario"> __________ </b>
+  </b>
+  <b name="tipo_documento_propietario_ce" hidden>C.E.
+    <b name="cedulae_propietario"> __________ </b>
+  </b>
+  <b name="tipo_documento_propietario_pa" hidden>PASAPORTE
+    <b name="pasaporte_propietario"> __________ </b>
+  </b><br />
+  <span name="tipo_propietario_n"></span>
+  <b name="tipo_propietario_j" hidden>Representante Legal de
+    <b name="nombre_empresa_propietario">________</b><br />
+  </b>
+  <b>CORREO ELECTRÓNICO:</b>
+  <b name="correo_propietario">__________</b>
+</p>
+
+<br /><br />
+
+<p>
+  <b> LA ADMINISTRADORA </b>
+</p>
+
+<p>
+  <br /><br /><br />
+  <span>________________________________________</span><br />
+  <b>FIRMA ELECTRÓNICA</b><br />
+  <b>NOMBRE: Aracelly Del Socorro Naranjo Aristizábal</b><br />
+  <b>ID: C.C. 43.095.952</b><br />
+  <b>CORREO ELECTRÓNICO:</b>
+  <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=hans.palominon@gmail.com" target="_bank">
+    hans.palominon@gmail.com
+  </a>
+</p>
+
+<br /><br /><br /><br />
+<p>
+  <b>Calle 47 No. 42 -54 Torres de Bomboná local 105</b><br />
+  <b>PBX: 239 30 88/ www.alnago.com</b>
+</p>

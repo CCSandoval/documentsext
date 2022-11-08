@@ -466,7 +466,7 @@
         <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
         <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
         <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
-        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras e inventarios.</span>
+        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras</span>
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
       </td>
       <td colspan="2">EPS <span name="eps">_______________</span></td>
@@ -1106,7 +1106,7 @@
         >
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
         <span name="cargo_auxiliar_compras" hidden
-          >Auxiliar de compras e inventarios</span
+          >Auxiliar de compras</span
         >
       </td>
     </tr>
@@ -1284,7 +1284,7 @@
     <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
     <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
     <span name="cargo_auxiliar_compras" hidden
-      >Auxiliar de compras e inventarios</span
+      >Auxiliar de compras</span
     >
     . El TRABAJADOR deberá cumplir con el manual de funciones que el EMPLEADOR
     le hará entrega y mencionado documento hará parte integral del contrato
@@ -2093,7 +2093,7 @@
         <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
         <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
         <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
-        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras e inventarios.</span>
+        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras</span>
       </td>
     </tr>
     <tr>
@@ -2197,20 +2197,26 @@ del cargo.
           <br />Garantizar el apropiado diseño y mantenimiento de la infraestructura
         </span>
         <span name="cargo_auxiliar_compras" hidden>
-          Actualizar la base de datos de los precios del mercado, solicitando diferentes cotizaciones.
-          <br/>Realizar búsqueda de cotizaciones de forma nacional e internacional. Al menos 3 cotizaciones antes de realizar la compra.
-          <br/>Analizar las cotizaciones y las ofertas recibidas de cada proveedor, otorgando las respuestas a cada uno de los proveedores.
-          <br/>Determinar la factibilidad de compra, de acuerdo al presupuesto establecido por la empresa, cuando se deba comprar activos o materia prima.
-          <br/>Control de stock de papelería, dotación, elementos de aseo y demás recursos considerados como gastos.
-          <br/>Recepción de requisiciones para todas las regionales y sede principal.
-          <br/>Validar la autorización de la orden de compra.
-          <br/>Realizar la orden de compra en el aplicativo HELISA y Enviarla a los proveedores.
-          <br/>Recibirla factura, gestionar validación de gerencia y entregarlas a contabilidad.
-          <br/>Entregar el producto al área que lo solicita
-          <br/>Control y seguimiento de el inventario de materiales y repuestos
-          <br/>Coordinar con proveedores todo lo relacionado con el área contable y financiera de la compañía.
-          <br/>Realizar la evaluación a proveedores y contratistas conforme a lo estipulado en el procedimiento.
-          <br/>Realizar otras labores que disponga el empleador.
+          Actualizar la base de datos de los precios del mercado, solicitando
+          diferentes cotizaciones.
+          <br />Realizar búsqueda de cotizaciones de forma nacional e
+          internacional. Al menos 3 cotizaciones antes de realizar la compra.
+          <br />Analizar las cotizaciones y las ofertas recibidas de cada
+          proveedor, otorgando las respuestas a cada uno de los proveedores.
+          <br />Determinar la factibilidad de compra, de acuerdo al presupuesto
+          establecido por la empresa. <br />Control de stock de papelería,
+          dotación, elementos de aseo y demás recursos considerados como gastos.
+          <br />Realizar la orden de compra en el aplicativo contable y Enviarla
+          a los proveedores. <br />Recibirla factura, gestionar validación de
+          gerencia y entregarlas a contabilidad. <br />Presentar los indicadores
+          de gestión conforme al procedimiento. <br />Entregar el producto al
+          área que lo solicita y cerrar la solicitud en el aplicativo de compras
+          <br />Control y seguimiento del inventario de materiales y repuestos
+          <br />Coordinar con proveedores todo lo relacionado con el área
+          contable y financiera de la compañía. <br />Realizar la evaluación a
+          proveedores y contratistas conforme a lo estipulado en el
+          procedimiento. <br />Realizar liquidación y proceso de pago para los
+          contratistas <br />Realizar otras labores que disponga el empleador.
         </span>
         <span name="cargo_ing_nal_servidores" hidden>
           Realizar seguimiento, control y mantenimiento de los servidores (físicos, virtuales y de almacenamiento)
@@ -3833,7 +3839,7 @@ del cargo.
         <span name="cargo_ing_nal_redes" hidden>Ingeniero Nacional de Redes y Comunicaciones</span>
         <span name="cargo_ing_nal_servidores" hidden>Ingeniero Nacional de Servidores y Almacenamiento</span>
         <span name="cargo_ing_nal_tel" hidden>Ingeniero Nacional de Telefonía</span>
-        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras e inventarios.</span>
+        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras</span>
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
       </td>
     </tr>
@@ -5343,7 +5349,7 @@ del cargo.
           >Ingeniero Nacional de Telefonía</span
         >
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
-        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras e inventarios</span>
+        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras</span>
       </td>
       <th>Antigüedad:</th>
       <td><span name="antiguedad">___________</span></td>
