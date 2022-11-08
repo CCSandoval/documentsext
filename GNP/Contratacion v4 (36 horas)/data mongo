@@ -98,7 +98,7 @@
                     value: 'auxiliar_enfermeria'
                 },
                 {
-                    name: 'Auxiliar de compras e inventarios.',
+                    name: 'Auxiliar de compras',
                     value: 'auxiliar_compras'
                 },
                 {
@@ -2037,6 +2037,7 @@
         }
     ],
     username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
+    company: ObjectId('623099c6d9a7ac3bbc96b943'),
     preBuild: true,
     price: 5000,
     help: {

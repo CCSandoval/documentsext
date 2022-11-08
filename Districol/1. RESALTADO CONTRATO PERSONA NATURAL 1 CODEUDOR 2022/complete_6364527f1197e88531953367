@@ -1,0 +1,1394 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    padding: 5px;
+    border: 1px solid black;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 5px;
+    text-align: center;
+  }
+</style>
+
+<div>
+  <p style="text-align: center"><b>CONTRATO DE COLABORACIÓN MERCANTIL</b></p>
+
+  <p>
+    Entre los suscritos CORRESPONSALES DISTRICOL S.A.S Sociedad por acciones
+    simplificada, con domicilio principal de sus actividades en la ciudad de
+    Medellín, Antioquia, e identificada con NIT 901.334.391 -7, representada
+    legalmente por Juliana Monsalve Correa, identificada con cedula de
+    ciudadanía 1’039.451.294, sociedad que para efectos del presente contrato se
+    denominará ADMINISTRADOR y la persona natural o jurídica que se describirá
+    en párrafo siguiente quien para efectos del presente contrato se denominará
+    OPERADOR CORRESPONSAL y el OTORGANTE SOLIDARIO, manifiestan su
+    consentimiento libre e informado de celebrar el contrato colaboración
+    mercantil.
+  </p>
+
+  <p>EL OPERADOR CORRESPONSAL:</p>
+
+  <p>
+    Persona: Natural <span name="tipo_persona_corresponsal_n">[x]</span>
+    <span name="tipo_persona_corresponsal_j" hidden>[__]</span> Jurídica
+    <span name="tipo_persona_corresponsal_n">[__]</span>
+    <span name="tipo_persona_corresponsal_j" hidden>[x]</span>
+  </p>
+
+  <p>
+    Nombre:
+    <span name="tipo_persona_corresponsal_n">
+      <span name="nombre_corresponsal">____________________</span>
+    </span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <span name="empresa_corresponsal">____________________</span>
+    </span>
+  </p>
+
+  <p>
+    Identificación:
+    <span name="tipo_persona_corresponsal_n">
+      C.C. <span name="cc_corresponsal">____________________</span>
+    </span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      NIT <span name="nit_corresponsal">____________________</span>
+    </span>
+  </p>
+
+  <p name="tipo_persona_corresponsal_j" hidden>
+    Representante Legal:
+    <span name="nombre_corresponsal">____________________</span>
+    <br />
+    Identificación: C.C.
+    <span name="cc_corresponsal">____________________</span>
+  </p>
+
+  <p>
+    Dirección del domicilio principal de la sociedad o de residencia de la
+    persona natural:
+    <span name="dir_corresponsal">____________________</span>
+  </p>
+
+  <p>
+    Correo Electrónico
+    <span name="email_corresponsal">____________________</span>
+  </p>
+
+  <p>
+    Teléfono Fijo:
+    <span name="tel_fijo_corresponsal">____________________</span> Celular:
+    <span name="cel_corresponsal">____________________</span>
+  </p>
+
+  <p>
+    Quién operará el siguiente punto de servicio:
+    <span name="nombre_operario_punto">____________________</span>
+  </p>
+
+  <p>
+    Nombre del establecimiento de comercio donde se desarrollará el punto de
+    servicio: <span name="nombre_establecimiento">____________________</span>
+  </p>
+
+  <p>
+    Dirección:
+    <span name="direccion_establecimiento">____________________</span>
+  </p>
+
+  <p>
+    Ciudad:
+    <span name="ciudad_establecimiento">____________________</span>
+    Departamento:
+    <span name="departamento_establecimiento">____________________</span>
+  </p>
+
+  <p>
+    Horario de lunes a viernes:
+    <span name="horario_lun_vier">____________________</span>
+  </p>
+
+  <p>
+    Horario de sábados:
+    <span name="horario_sab">____________________</span>
+  </p>
+
+  <p>
+    Horario de domingos y festivos:
+    <span name="horario_dom">____________________</span>
+  </p>
+
+  <p>
+    <b
+      >Es importante tener en cuenta que los horarios aquí diligenciados son
+      vinculantes, lo cual quiere decir quelos establecimientos de comercio no
+      podrán operar por fuera de dichos horarios, ni podrán dejar de operar el
+      corresponsal dentro de los horarios establecidos, salvo que se dé aviso
+      escrito a Districol de la situación en particular que está generando la no
+      transaccionalidad del punto.
+    </b>
+  </p>
+
+  <p>
+    Límite de aprovisionamiento (cupo de dinero autorizado por el administrador
+    para el funcionamiento del corresponsal bancario
+  </p>
+
+  <p style="text-align: center"><b>CLÁUSULAS REGULATORIAS.</b></p>
+
+  <p>
+    <b>PRIMERO: OBJETO. </b>Mediante este contrato se ejecutará en el punto de
+    servicio individualizado, la operación de corresponsalía bancaria que el
+    ADMINISTRADOR tiene con Bancolombia S.A.
+  </p>
+
+  <p>
+    <b>SEGUNDO: UTILIDAD PARA EL OPERADOR.</b> El OPERADOR CORRESPONSAL
+    devengará como utilidad, que en ningún caso se entiende como rendimiento
+    garantizado ya que este depende de la ocurrencia o no de operaciones
+    autorizadas, una suma resultante del tipo de operación y el número de
+    operaciones exitosas en cada periodo mensual, de acuerdo a la siguiente
+    tabla:
+  </p>
+
+  <table class="table_class">
+    <tr>
+      <th>OPERACIONES</th>
+      <th>TABLA PESOS</th>
+    </tr>
+    <tr>
+      <td>Cada operación Monetaria de Recaudo</td>
+      <td>$258</td>
+    </tr>
+    <tr>
+      <td>Cada operación Monetaria diferente de Recaudo</td>
+      <td>$358</td>
+    </tr>
+    <tr>
+      <td>Cada operación no Monetaria</td>
+      <td>$141</td>
+    </tr>
+    <tr>
+      <td>Venta de Giros</td>
+      <td>$358</td>
+    </tr>
+    <tr>
+      <td>Recaudos Codensa</td>
+      <td>$241</td>
+    </tr>
+  </table>
+
+  <p>
+    El dinero a pagar a favor del OPERADOR CORRESPONSAL se cancelará en la
+    cuenta bancaria BANCOLOMBIA n°
+    <span name="num_cuenta">____________________</span>, tipo
+    <span name="tipo_cuenta">____________________</span>, siempre y cuando el
+    valor de la comisión sea superior a $100.000 pesos; en caso contrario se
+    acumulará hasta que la suma de las comisiones sea superior a 100.000, lo que
+    se pagará por transferencia.
+  </p>
+
+  <p>
+    <b>TERCERO: OBLIGACION GENERAL.</b> EL ADMINISTRADOR tiene a su cargo la
+    administración del contrato y su gestión ante Bancolombia s.a., así como la
+    gestión para que el banco suministre los dispositivos tecnológicos para el
+    desarrollo de la operación. EL OPERADOR CORRESPONSAL ejecutará la
+    corresponsalía mediante la utilización de su propio personal, en los puntos
+    de servicios aquí establecidos.
+  </p>
+
+  <p>
+    <b>CUARTO: OBLIGACIONES DEL OPERADOR CORRESPONSAL.</b> Para el cabal
+    cumplimiento de la operación de corresponsalía bancaria, EL OPERADOR
+    CORRESPONSAL se obliga, sin perjuicio de las demás consagradas en este
+    contrato, a:
+  </p>
+
+  <ol type="a">
+    <li>
+      Atender en forma diligente, amable y oportuna a los clientes o usuarios
+      que requieran la prestación de los servicios que puede prestar,
+      garantizando estándares de calidad adecuados y dando cumplimiento en todo,
+      a las instrucciones dadas por EL ADMINISTRADOR sobre los productos o
+      servicios; y a las instrucciones contenidas en el Anexo 1. “Manual de
+      Procedimiento” (Manual operativo Redeban) el cual contiene los asuntos
+      relacionados con el uso de publicidad, dispositivos de operación, equipos
+      y dotación, procesos de operación, condiciones de servicio y seguridad,
+      confidencialidad y uso de la información, manejo del efectivo y
+      presentación de quejas y reclamos; en este mismo acto se hace entrega del
+      Manual, completo, en formato digital, mediante envío al correo
+      electrónico.
+    </li>
+    <li>
+      Atender las observaciones e instrucciones de EL ADMINISTRADOR en lo
+      relacionado con la promoción, publicidad e información sobre los productos
+      y servicios vinculados con la ejecución de la operación de corresponsalía
+      bancaria, para lo cual deberá ceñirse a los guiones por aquel
+      proporcionados, obligándose a no entregar información diferente a la que
+      le ha sido previamente suministrada.
+    </li>
+    <li>
+      Ejecutar la operación de corresponsalía bancaria en el horario establecido
+      en este contrato.
+    </li>
+    <li>
+      Mantener en un sitio visible del punto de servicio, previamente definido
+      por EL ADMINISTRADOR, los avisos al público definidos por este, en los que
+      conste que el punto de servicio se encuentra habilitado por EL
+      ADMINISTRADOR para ejecutar la operación de corresponsalía bancaria de
+      Bancolombia; así como tener a disposición del público, la información que
+      EL ADMINISTRADOR le suministre, para promover y publicitar los productos y
+      servicios relacionados con dicha operación.
+    </li>
+    <li>
+      Poner a disposición y entregar a los clientes y usuarios la constancia de
+      la transacción realizada a través delos dispositivos tecnológicos
+      facilitados por EL ADMINISTRADOR, en virtud de la ejecución de la
+      operación de corresponsalía.
+    </li>
+    <li>
+      Mantener adecuada infraestructura física, administrativa y humana para
+      ejecutar la operación de corresponsalía bancaria. El OPERADOR CORRESPONSAL
+      no podrá contratar a una o varias personas exclusivamente para la atención
+      a los usuarios del servicio de corresponsalía, pues se entiende que este
+      es parte integrante del ejercicio comercial de su negocio o
+      establecimiento.
+    </li>
+    <li>
+      Guardar el debido secreto y reserva de la información de los clientes y
+      usuarios que, derivada de la operación de corresponsalía, sea conocida por
+      él. Así mismo, dar las instrucciones pertinentes a sus empleados,
+      dependientes o vinculados, para que se abstengan de comentar con terceros
+      la información acerca de las operaciones y transacciones que se realizaron
+      en desarrollo de la corresponsalía. EL OPERADORCORRESPONSAL no adquiere
+      ningún derecho sobre la información que se transmita, procese o almacene
+      en virtud de la operación de corresponsalía.
+    </li>
+    <li>
+      Velar por un adecuado manejo del efectivo atendiendo las instrucciones
+      dadas para este efecto por EL ADMINISTRADOR, en el desarrollo de las
+      labores propias y las inherentes o conexas a la corresponsalía bancaria.
+    </li>
+    <li>
+      Informar a los clientes y usuarios, cuando hubiere lugar a ello, que las
+      operaciones y transacciones requeridas, no pueden realizarse en el punto
+      de servicio, por alguna de las siguientes razones: i) Porque el tipo de
+      operación y/o transacción no es de aquellas que se encuentran previamente
+      autorizadas; ii) Por insuficiencia de efectivo; iii) Porque excede el cupo
+      para la operación asignado por EL ADMINISTRADOR; iv) Porque se encuentra
+      fuera de línea; v) Porque se presentan inconvenientes técnicos o
+      tecnológicos.
+    </li>
+    <li>
+      Suministrar a EL ADMINISTRADOR la información y reportes que le fueren
+      solicitados.
+    </li>
+    <li>
+      Permitir a los funcionarios de EL ADMINISTRADOR o a quien este designe, la
+      realización de visitas de inspección y auditoría con el fin de comprobar
+      el cumplimiento de los deberes y obligaciones que adquiere en virtud del
+      presente contrato.
+    </li>
+    <li>
+      Informar a EL ADMINISTRADOR y a las autoridades de policía, fiscalía u
+      otra autoridad pública competente sobre hechos que atenten contra la
+      seguridad del punto de servicio y pongan en riesgo la operación de
+      corresponsalía para la cual fue contratado. Igualmente, informar a EL
+      ADMINISTRADOR sobre cualquier operación extraña o que pueda ser
+      considerada como fuente de lavado de activos.
+    </li>
+    <li>
+      Mantener inalterados los enlaces de comunicación seguros de la red
+      tecnológica a través de la cual se ejecuta la corresponsalía.
+    </li>
+    <li>
+      Permitir a EL ADMINISTRADOR o un tercero autorizado por éste, la
+      realización de las adecuaciones físicas, eléctricas y de amueblamiento que
+      se convengan como necesarias para la prestación del servicio de
+      corresponsalía.
+    </li>
+    <li>
+      Informar a EL ADMINISTRADOR, con no menos de treinta (30) días calendario
+      de antelación, en el evento que requiera cambiar la identificación o
+      ubicación del punto de servicio. En cualquier caso, el cambio deberá ser
+      aprobado por EL ADMINISTRADOR, quien podrá terminar unilateralmente el
+      presente contrato, bien porque el nuevo punto de servicio no cumple con
+      las especificaciones que este estime adecuadas, o porque dicho cambio
+      implica un mayor riesgo no aceptable para este.
+    </li>
+    <li>
+      Cubrir los gastos de traslado, adecuación y modificación del punto del
+      servicio cuando EL ADMINISTRADORapruebe tales circunstancias.
+    </li>
+    <li>
+      Permitir a EL ADMINISTRADOR, a la terminación del contrato, el retiro de
+      todos los avisos, publicidad, insumos, aparatos, equipos y demás
+      infraestructura suministrada por éste para la prestación de los servicios
+      de corresponsalía.
+    </li>
+    <li>
+      Realizar diariamente el cuadre de caja, de acuerdo a las operaciones de
+      corresponsalía realizadas.
+    </li>
+  </ol>
+
+  <p>
+    <b>QUINTO: OBLIGACIONES DE EL ADMINISTRADOR.</b> Las siguientes son
+    obligaciones de EL ADMINISTRADOR, sinperjuicio de las demás fijadas en el
+    contrato:
+  </p>
+
+  <ol type="a">
+    <li>
+      Suministrarle a EL OPERADOR CORRESPONSAL, toda la información,
+      instrucciones y demás documentos para el cabal cumplimiento de lo
+      establecido en este contrato, y los que se requieran para ser puestos a
+      disposición de los clientes y usuarios, en particular, hacer entrega del
+      Anexo 1: “Manual de Procedimiento”. Adicionalmente, instruirlo sobre el
+      sistema de control de lavado de activos y financiación del terrorismo.
+    </li>
+    <li>
+      Poner a disposición o gestionar que el banco corresponsal entregue a EL
+      OPERADOR CORRESPONSAL, a título de comodato precario, los equipos y
+      dispositivos electrónicos requeridos para la adecuada prestación del
+      servicio, de acuerdo con lo establecido en el numeral 10 de este
+      documento.
+    </li>
+    <li>
+      Instalar en los puntos de servicio de EL OPERADOR CORRESPONSAL, los avisos
+      dirigidos al público, contentivos de la información que por ley se debe
+      entregar a los clientes y usuarios.
+    </li>
+    <li>
+      Supervisar de manera permanente el cumplimiento de cada una de las
+      obligaciones que se encuentran en cabeza de EL OPERADOR CORRESPONSAL.
+    </li>
+    <li>
+      Pagarle o gestionar el pago efectivo para, de la utilidad que le
+      corresponde, de acuerdo a las condiciones acordadas.
+    </li>
+    <li>
+      Solicitar a EL OPERADOR CORRESPONSAL las autorizaciones necesarias para el
+      tratamiento de sus datos cuando, en virtud de la naturaleza de los mismos,
+      este sea necesario. Dicha autorización deberá contener deforma expresa El
+      OPERADOR CORRESPONSAL tratamiento que se le podrá dar a la información y
+      la finalidad del mismo. Igualmente, conservar las autorizaciones para los
+      eventos en que las mismas sean requeridas.
+    </li>
+    <li>
+      Todas las demás obligaciones contenidas en los documentos que regulen la
+      relación entre EL ADMINISTRADOR y EL OPERADOR CORRESPONSAL para la
+      prestación del servicio de corresponsalía.
+    </li>
+  </ol>
+
+  <p>
+    <b>SEXTO: MODIFICACIONES A LOS SERVICIOS PRESTADOS.</b> EL ADMINISTRADOR se
+    reserva el derecho de ampliar, modificar, reducir y restringir el tipo de
+    servicio prestado por EL OPERADOR CORRESPONSAL en ejercicio de la
+    corresponsalía bancaria, así como los medios electrónicos disponibles, para
+    lo cual dará aviso previo a EL OPERADOR CORRESPONSAL, por medio electrónico
+    o escrito a la dirección estipulada previamente y con una antelación de no
+    menos de 10 días calendarios previas a la implementación del cambio.
+  </p>
+
+  <p>
+    <b>SEPTIMO: PROHIBICIONES DEL OPERADOR CORRESPONSAL.</b> EL OPERADOR
+    CORRESPONSAL tiene prohibido incurrir, entre otras, en las malas prácticas
+    que a continuación se detallan, so pena de dar por terminado el contrato de
+    manera unilateral:
+  </p>
+
+  <ol type="a">
+    <li>
+      Inobservancia del procedimiento establecido por EL ADMINISTRADOR para la
+      correcta prestación del servicio de corresponsalía.
+    </li>
+    <li>Incumplimiento del horario acordado con EL ADMINISTRADOR.</li>
+    <li>
+      Cobrar tarifas o comisiones a los clientes o usuarios por la prestación
+      del servicio de corresponsalía.
+    </li>
+    <li>
+      Prestar el servicio cuando los dispositivos electrónicos se encuentren
+      fuera de servicio, situación que deberá ser informada a los clientes o
+      usuarios.
+    </li>
+    <li>
+      Celebrar contratos de similar naturaleza con bancos diferentes a
+      BANCOLOMBIA; la relación jurídica existente entre EL ADMINISTRADOR y EL
+      OPERADOR CORRESPONSAL implica exclusividad de este último, respecto de la
+      operación de corresponsalía.
+    </li>
+    <li>
+      Limitar o condicionar la prestación del servicio, a la adquisición por
+      parte de los clientes y/o usuarios de bienes o servicios propios de EL
+      OPERADOR CORRESPONSAL ofrecidos en el negocio o establecimiento de
+      comercio donde se halle el punto de servicio.
+    </li>
+    <li>
+      Realizar operaciones de corresponsalía que no le hayan sido previamente
+      autorizadas por parte de EL ADMINISTRADOR.
+    </li>
+  </ol>
+
+  <p>
+    Adicional a las anteriores, también se consideran como malas prácticas las
+    siguientes:
+  </p>
+
+  <ol type="a">
+    <li>
+      Reubicar operadores corresponsales en otra dirección, sin autorización de
+      Districol ni de Bancolombia.
+    </li>
+    <li>
+      Tener en el establecimiento de comercio algún otro corresponsal que
+      pertenezca a un banco diferente a Bancolombia. Tampoco puede haber en el
+      lugar compañías de giros tales como Efecty, Baloto, Ganacomercio,
+      Interrapidisimo, Dimonex entre otras.
+    </li>
+    <li>Generar transacciones fuera de línea.</li>
+    <li>
+      Fraccionamiento, que consiste realizar una consignación en varias
+      operaciones, cuando el cliente solicita solo una operación.
+    </li>
+  </ol>
+
+  <p>
+    <b>
+      OCTAVO: RECEPCION DE EFECTIVO POR PARTE DEL OPERADOR CORRESPONSAL Y
+      MANEJO.
+    </b>
+    El dinero efectivo recaudado en ejecución de la operación de corresponsalía
+    bancaria, debe seguir estrictamente las siguientes reglas de manejo:
+  </p>
+
+  <ol type="a">
+    <li>
+      Periodicidad de la consignación al Banco (BANCOLOMBIA S.A.): EL OPERADOR
+      CORRESPONSAL deberá, por lo menos una vez cada 10 días calendario,
+      entregar el dinero que tiene acumulado producto de la ejecución de la
+      operación de corresponsalía bancaria, mediante consignación en BANCOLOMBIA
+      en el formato asignado para ello por el banco.
+    </li>
+    <li>
+      Forma excepcional de entrega del efectivo recaudado: EL ADMINISTRADOR
+      podrá instruir a EL OPERADOR CORRESPONSAL para que éste entregue
+      directamente el efectivo, o que se haga una consignación a la cuenta
+      designada e informada por EL ADMINISTRADOR para tal fin.
+    </li>
+    <li>
+      Si EL OPERADOR CORRESPONSAL no cumple con la obligación de pago, se podrá
+      bloquear el dispositivo de operación por parte de EL ADMINISTRADOR.
+    </li>
+  </ol>
+
+  <p>
+    <b>NOVENO: COMODATO Y TENENCIA DE LOS DISPOSITIVOS.</b> Todos los equipos y
+    dispositivos técnicos y tecnológicos que se entregan a EL OPERADOR
+    CORRESPONSAL, los tendrá este a título de comodato precario. Si no se
+    hubiere celebrado dicho contrato con el Banco o con la red que suministra
+    los equipos, se entenderá que EL ADMINISTRADOR obra como comodante y los
+    entrega a tal título, y en todo caso aplicándose las siguientes reglas:
+  </p>
+
+  <ol type="a">
+    <li>
+      Cuando la operación de corresponsalía se vaya ejecutar con tecnología de
+      las redes REDEBAN/CREDIBANCO y EL OPERADOR CORRESPONSAL no haya celebrado
+      con alguna de ellas previamente un contrato para la aceptación de tarjetas
+      débito y/o crédito como medio de pago de los productos y/o servicios
+      ofrecidos en su establecimiento de comercio, se deben establecer las
+      condiciones del comodato de los dispositivos por parte de EL OPERADOR
+      CORRESPONSAL frente a EL ADMINISTRADOR y las obligaciones que se señalan a
+      continuación:
+      <ol type="i">
+        <li>
+          Usar los dispositivos para la finalidad convenida, siguiendo las
+          instrucciones y lo indicado en el Anexo 1. “Manual de procedimiento”
+          suministrado por EL ADMINISTRADOR.
+        </li>
+        <li>
+          Abstenerse de copiar para sí o para terceros los programas instalados
+          en los equipos, aun cuando ello fuere posible, así como adicionar,
+          actualizar, modificar o reparar en cualquier 5 forma los equipos.
+        </li>
+        <li>
+          Guardar confidencialidad sobre los equipos y programas, sus
+          características y funcionamiento, absteniéndose, por tanto, de
+          divulgar a terceros cualquier información sobre los mismos.
+        </li>
+        <li>
+          Darle a los equipos un buen uso, evitando su deterioro por accidentes
+          o actos que imposibiliten su funcionamiento y siguiendo las
+          recomendaciones de uso y cuidados incluidos en el manual de
+          operaciones.
+        </li>
+        <li>
+          Informar de inmediato a EL ADMINISTRADOR cualquier falla técnica o
+          problema que se presente con los equipos.
+        </li>
+        <li>
+          Responder hasta por culpa leve por los daños que se causen a los
+          equipos cuando tales daños se causen por uso indebido por parte de EL
+          OPERADOR CORRESPONSAL o su personal.
+        </li>
+        <li>
+          Restituir los dispositivos cuando EL ADMINISTRADOR lo considere
+          necesario.
+        </li>
+        <li>
+          Mantener los dispositivos instalados en el sitio de ubicación del
+          punto de operación donde fueron instalados. El sitio de ubicación no
+          podrá ser cambiado por EL OPERADOR CORRESPONSAL sin la intervenciónde
+          funcionarios o delegados de EL ADMINISTRADOR.
+        </li>
+        <li>
+          En caso en que los dispositivos fueren perseguidos por un tercero para
+          cobro de las obligaciones adeudadas por EL OPERADOR CORRESPONSAL a
+          personas diferentes de EL ADMINISTRADOR, éste deberá oponerse a dicha
+          medida, indicando que la propiedad es de un tercero.
+        </li>
+        <li>
+          Las demás obligaciones propias de los comodatarios de acuerdo a las
+          disposiciones legales.
+        </li>
+      </ol>
+    </li>
+  </ol>
+
+  <p>
+    EL ADMINISTRADOR podrá, en cualquier momento, restituir, reemplazar,
+    modificar o realizar mantenimiento a los dispositivos informando de ello
+    previamente y por escrito a EL OPERADOR CORRESPONSAL, quien permitirá al
+    personal autorizado por EL ADMINISTRADOR el acceso a los dispositivos con el
+    fin de que éstos sean retirados o reemplazados. EL OPERADOR CORRESPONSAL
+    renuncia a ejercer el derecho de retención sobre los dispositivos entregados
+    en comodato precario. Cuando el dispositivo de operación sea el mismo que
+    usa el punto de servicio de EL ADMINISTRADOR para la aceptación de tarjetas
+    débito y/o crédito como medio de pago para la adquisición de los productos
+    que ofrece en su establecimiento de comercio, la entrega, instalación,
+    desinstalación, incidentes, reposición, cambio, retiro, fallas técnicas y
+    demás novedades y responsabilidades relacionadas con el dispositivo se
+    regularán de acuerdo a lo estipulado en el contrato de comodato firmado
+    entre EL OPERADOR CORRESPONSAL y LA RED; y en efecto, en ningún evento, EL
+    ADMINISTRADOR será responsable por dichos dispositivos. No obstante, las
+    obligaciones de EL OPERADOR CORRESPONSAL señaladas en las numerales romanos
+    i), ii), iii), iv), vi) y viii) del numeral primero de esta cláusula
+    permanecerán frente a EL ADMINISTRADOR. A partir del día en que se termine
+    el contrato entre LA RED y EL OPERADOR CORRESPONSAL para la aceptación de
+    tarjetas débito y/o crédito como medio de pago para la adquisición de los
+    productos que ofrecidos por ELOPERADOR CORRESPONSAL y subsista la operación
+    de corresponsalía, igualmente se terminará el contrato de comodato precario
+    celebrado entre aquellos y comenzará a regir un contrato de comodato
+    precario entre ELADMINISTRADOR y EL OPERADOR CORRESPONSAL, aplicándose todo
+    lo establecido en el literal a de esta cláusula.
+  </p>
+
+  <p>
+    <b>DÉCIMO: INFORMACIÓN AL PÚBLICO.</b> EL OPERADOR CORRESPONSAL debe
+    mantener en un lugar visible, durante la vigencia de la relación jurídica
+    establecida con EL ADMINISTRADOR, los avisos y demás elementos de
+    señalización necesarios para que el público identifique claramente que en
+    ese punto de servicio se ofrecen servicios de corresponsalía bancaria de
+    BANCOLOMBIA.
+  </p>
+
+  <p>
+    <b>DECIMO PRIMERO:</b> SARLAFT. EL OPERADOR CORRESPONSAL se obliga con EL
+    ADMINISTRADOR a implementar las medidas tendientes a evitar que las
+    operaciones puedan ser utilizadas como instrumentos para el ocultamiento,
+    manejo, inversión o aprovechamiento en cualquier forma de dinero u otros
+    bienes provenientes de actividades ilícitas o para dar apariencia de
+    legalidad a estas actividades. El incumplimiento de esta obligación da lugar
+    a la terminación de dicha relación de manera unilateral e inmediata por
+    parte de EL ADMINISTRADOR, sin que haya lugar al pago de indemnización
+    alguna cuando EL OPERADOR CORRESPONSAL, o su representante legal o cualquier
+    otro administrador conforme a la Ley 222 de 1995, en cualquier tiempo haya
+    sido o llegare a ser:
+  </p>
+
+  <ul>
+    <li>
+      Condenado por parte de las autoridades competentes por el delito de lavado
+      de activos, los delitos fuente de éste, o por el delito de financiación
+      del terrorismo o administración de recursos relacionados con dichas
+      actividades.
+    </li>
+    <li>
+      Incluido en listas para el control de lavado de activos y financiación del
+      terrorismo administradas por cualquier autoridad nacional o extranjera.
+    </li>
+    <li>
+      Vinculados con requerimientos, investigaciones, procesos judiciales,
+      administrativos o fiscales por la presunta comisión de delitos de lavado
+      de activos, delitos fuente de lavado de activos y/o financiación del
+      terrorismo o administración de recursos relacionados con dichas
+      actividades, ante la Fiscalía General de la Nación, Juez de la República,
+      DIAN, Coljuegos, alguna de las Superintendencias de Colombia, Contraloría
+      General de la Nación, Autorregulador del Mercado de Valores, Policía
+      Nacional y otras autoridades competentes de orden nacional o extranjero
+      que tengan por oficio investigar este tipo de delitos.
+    </li>
+  </ul>
+
+  <p>
+    <b>DECIMO SEGUNDO: DECLARACIONES.</b> EL OPERADOR CORRESPONSAL declara que
+    no ha sido condenado, ni cursa contra sí mismo investigación judicial o
+    administrativa, o se encuentra en trámite proceso ante cualquier autoridad,
+    ni que se ha declarado en su contra sentencia o fallo en relación con los
+    siguientes:
+  </p>
+
+  <ul>
+    <li>
+      Delitos contra el patrimonio económico, o financiación del terrorismo
+    </li>
+    <li>Delito del lavado de activos o sus delitos fuente.</li>
+    <li>Procesos de extinción de dominio.</li>
+  </ul>
+
+  <p>
+    Igual declaración realiza respecto de sus representantes legales y demás
+    administradores, en los términos de la Ley 222 de 1995.
+  </p>
+
+  <p>
+    EL OPERADOR CORRESPONSAL garantiza la adopción de todas las medidas y
+    controles necesarios para efectos de abstenerse, mientras estuviere en
+    vigencia el presente contrato, de nombrar como representante legal a
+    personas respecto de las cuales no se cumplan las declaraciones de la
+    presente cláusula y procederá a remover del cargo a cualquier persona que no
+    cumpla con tales características, una vez tenga conocimiento de ello.
+  </p>
+
+  <p>
+    EL OPERADOR CORRESPONSAL acepta que la inexactitud o inconsistencias frente
+    a la declaración contenida en la presente cláusula será causal para dar por
+    terminado, de manera unilateral e inmediata, el contrato en el que reposa la
+    relación jurídica con EL ADMINISTRADOR, sin que haya lugar al pago de
+    indemnización alguna a favor de EL OPERADOR CORRESPONSAL.
+  </p>
+
+  <p>
+    <b>DECIMO TERCERO: SEGURO. </b>Se tomará por parte DEL OPERADOR CORRESPONSAL
+    una póliza de seguro contra todo riesgo, la cual tendrá como beneficiario a
+    BANCOLOMBIA, en caso de que se presente un siniestro.
+  </p>
+
+  <ul>
+    <li>
+      Dicha póliza debe ser solicitada y pagada por el OPERADOR CORRESPONSAL.
+    </li>
+    <li>
+      Es responsabilidad del OPERADOR CORRESPONSAL, buscar el proveedor del
+      seguro y realizar los pagos del mismo si en su territorio es posible
+      asegurar este tipo de negocio. En caso de no contar con una póliza contra
+      todo riesgo y tener un siniestro de cualquier índole, debe responder de
+      manera solidaria al ADMINISTRADOR por los recursos perdidos.
+    </li>
+  </ul>
+
+  <p>
+    <b>DECIMO CUARTO: ASUNCION DE RIESGOS E INDEMNIDAD.</b> Para efectos de la
+    consignación y/o entrega de los dineros recaudados, las partes pactan que se
+    trata de una obligación de resultado. El OPERADOR CORRESPONSAL asume los
+    riesgos de fuerza mayor y caso fortuito, sin que en ningún caso pueda alegar
+    a su favor la pérdida de la cosa debida, ni hechos o actos de terceros. El
+    OPERADOR CORRESPONSAL garantiza plena indemnidad a EL ADMINISTRADOR, por
+    todo concepto relacionado con cualquier acción que pretenda desconocer los
+    derechos que EL ADMINISTRADOR adquiere por este contrato o que intente
+    obtener una indemnización actual o futura por perjuicios ocasionados con
+    ocasión de la suscripción del presente, por hechos sucedidos en su vigencia
+    o aún con anterioridad pero con efectos nocivos para la relación
+    contractual, independientemente del momento en que las acciones
+    administrativas o judiciales sean decididas.
+  </p>
+
+  <p>
+    En caso de presentarse reclamación o litigio contra EL OPERADOR CORRESPONSAL
+    de cualquier naturaleza, por cualquier hecho, acto o negocio de cualquier
+    índole acaecido en cualquier tiempo, se obliga a mantener indemne a EL
+    ADMINISTRADOR, a concurrir en su defensa y pagar oportuna y completamente al
+    reclamante o reclamantes la suma que legítimamente se les adeude, y/o a la
+    autoridad o entidad competente la sanción o la suma de dinero que se le
+    adeude.
+  </p>
+
+  <p>
+    En caso que EL ADMINISTRADOR deba pagar alguna suma de dinero o realizar una
+    conducta valorable en dinero, EL OPERADOR CORRESPONSAL deberá reembolsar
+    directa e inmediatamente los valores que por los anteriores conceptos se
+    hayan pagado, más sus intereses moratorios comerciales y demás accesorios de
+    ley, como gastos de cobranza y honorarios profesionales.
+  </p>
+
+  <p>
+    En todo caso EL OPERADOR CORRESPONSAL deberá proteger, defender, y
+    salvaguardar a EL ADMINISTRADOR y a sus accionistas, administradores,
+    directivos, funcionarios y/o agentes, y deberá indemnizarlos contra
+    cualquiera y todas las pérdidas, reclamaciones, demandas, litigios y
+    acciones de carácter civil, comercial, laboral, tributaria o de cualquier
+    naturaleza y carácter que resulten en favor de cualquier tercero, persona
+    natural o jurídica, ante cualquier jurisdicción, por cualquier concepto
+    relacionado con este contrato.
+  </p>
+
+  <p>
+    En todo caso, si EL ADMINISTRADOR es perseguido judicial, administrativa o
+    arbitralmente por hechos u omisiones de EL OPERADOR CORRESPONSAL y/o de sus
+    administradores y/o asociados, parientes, funcionarios y/o agentes durante y
+    como consecuencia directa o indirecta del presente contrato, o por hechos
+    anteriores que lo afecten, EL ADMINISTRADOR podrá llamar en garantía y/o
+    denunciar el pleito a EL OPERADOR CORRESPONSAL para que éste reembolse la
+    totalidad de los dineros que eventualmente deba pagar EL ADMINISTRADOR por
+    virtud de una sanción administrativa, condena judicial o fallo arbitral
+    impartidos en su contrato.
+  </p>
+
+  <p><b>DECIMO QUINTO: GARANTÍAS OTORGADAS POR EL OPERADOR CORRESPONSAL.</b></p>
+
+  <ol type="a">
+    <li>
+      SOLIDARIDAD: En caso que el OPERADOR CORRESPONSAL sea persona jurídica, el
+      representante legal quesuscribe el contrato, queda a título personal
+      obligado solidaria, indivisible e ilimitadamente en todas y cada una de
+      las obligaciones adquiridas en el contrato.
+    </li>
+    <li>
+      GARANTÍAS ESPECÍFICAS El OPERADOR CORRESPONSAL: otorga a favor de EL
+      ADMINISTRADOR las siguientes garantías, que éste podrá ejercer en forma
+      alternativa o conjunta, a su elección, comprometiéndose a limitar el monto
+      de lo recuperado al valor adeudado, sus intereses moratorios comerciales
+      máximos de ley, gastos de cobranza y demás perjuicios comprobados
+      sumariamente:
+      <ol>
+        <li>
+          Pagaré en blanco con carta de instrucciones: para respaldar el valor
+          de cualquier obligación pasada, presente o futura, relacionada con
+          presente contrato, en especial, pero sin limitarse a:
+          <ul>
+            <li>
+              Dineros descontados a EL ADMINISTRADOR por BANCOLOMBIA por
+              retardo, mora o incumplimiento del OPERADOR CORRESPONSAL y/o
+              Otorgante solidario.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Promesa de dación en pago: El OPERADOR CORRESPONSAL promete al
+          ADMINISTRADOR pagar mediante dación en pago de los activos fijos y
+          circulantes del negocio o establecimiento de comercio, las sumas de
+          dinero consistentes en capital, intereses de mora a la tasa máxima
+          comercial y gastos de cobranza, que adeudeal EL ADMINISTRADOR en razón
+          del presente contrato, en especial, pero sin limitarse a:
+          <ul>
+            <li>
+              Dineros descontados a EL ADMINISTRADOR por BANCOLOMBIA por
+              retardo, mora o incumplimiento del OPERADOR CORRESPONSAL y EL
+              OTORGANTE SOLIDARIO.
+            </li>
+            <li>
+              Sanciones aplicadas por BANCOLOMBIA a EL ADMINISTRADOR, por causa
+              de retardo, mora o incumplimiento del OPERADOR CORRESPONSAL y
+              OTORGANTE SOLIDARIO. La dación en pago podrá ser ejecutada
+              materialmente por EL ADMINISTRADOR en el día calendario
+              inmediatamente siguiente al que haya efectuado el pago a favor de
+              BANCOLOMBIA o del tercero acreedor, teniendo facultades amplias y
+              suficientes para ingresar al negocio o establecimiento y
+              seleccionar los bienes con los cuales ha de pagarse efectivamente
+              lo adeudado.
+            </li>
+          </ul>
+        </li>
+        <li>
+          Derecho de administración: Conforme al artículo 533 del Código de
+          Comercio, el OPERADOR CORRESPONSAL confiere a EL ADMINISTRADOR el
+          derecho a administrar el negocio o establecimiento de comercio, a
+          partir del día siguiente a aquel en que EL ADMINISTRADOR haya pagado
+          una obligación que tuviere nacimiento en el retardo, mora o
+          incumplimiento del OPERADOR CORRESPONSAL. Esta administración
+          terminará el día en que se hayan satisfecho las obligaciones
+          adeudadas, en su capital, e interés moratorio a la tasa máxima legal,
+          gastos de cobranza y demás perjuicios comprobados sumariamente.
+        </li>
+        <li>
+          Prenda abierta sin tenencia sobre establecimiento de comercio: Se
+          otorga en documento separado prenda mercantil abierta sin tenencia,
+          hasta por el doble del cupo de operación autorizado, con el fin de
+          garantizar cualquier obligación pasada, presente o futura relacionada
+          con el presente contrato.
+        </li>
+        <li>
+          Garantía hipotecaria: Si las partes lo acuerdan, en razón del cupo
+          concedido, se constituirá hipoteca abiertay sin límite de cuantía
+          sobre bien inmueble del OPERADOR CORRESPONSAL o de un tercero que
+          otorgue dicha garantía asumiendo la solidaridad pasiva, y hasta por el
+          doble del cupo de operaciones concedido al punto de servicio. Todos
+          los gastos de constitución y cancelación de la hipoteca son a cargo
+          del OPERADOR CORRESPONSAL.
+        </li>
+      </ol>
+    </li>
+    <li>
+      OTORGANTE SOLIDARIO: El (la) señor (a)
+      <span name="nombre_otorgante">____________________</span>, mayor de edad,
+      identificado (a) con cédula de ciudadanía número
+      <span name="cc_otorgante">____________________</span>, expedida en
+      <span name="exp_cc_otorgante">____________________</span>, declara
+      <span name="tipo_persona_otorgante_n">que en representación propia</span>
+      <span name="tipo_persona_otorgante_j" hidden>
+        que en representación legal de la sociedad
+        <span name="empresa_otorgante">____________________</span> identificada
+        con NIT <span name="nit_otorgante">____________________</span> y
+        domiciliada en la ciudad
+        <span name="ciudad_emp_otorgante">____________________</span>
+      </span>
+      se constituye como otorgante solidario e ilimitado del OPERADOR
+      CORRESPONSAL, en todas las obligaciones que éste asume con EL
+      ADMINISTRADOR. En constancia de lo anterior, suscribe el pagaré en blanco
+      y la carta de instrucciones que son otorgados como garantía anexa a este
+      contrato. Sus datos para notificación son: Dirección
+      <span name="dir_otorgante">____________________</span> de la Ciudad de
+      <span name="ciudad_otorgante">____________________</span>, Departamento de
+      <span name="departamento_otorgante">____________________</span>, Teléfono <span name="tel_fijo_otorgante">____________________</span>,
+      móvil <span name="cel_otorgante">____________________</span>, E-Mail:
+      <span name="email_otorgante">____________________</span>.
+    </li>
+  </ol>
+
+  <p><b>DECIMO SEXTO: CAUSAL ESPECIAL DE TERMINACIÓN.</b></p>
+
+  <ol type="a">
+    <li>
+      Por tratarse de un contrato intuito personae, es decir celebrado en
+      consideración a las condiciones personales del OPERADOR CORRESPONSAL, éste
+      podrá darse por terminado sin previo aviso por parte de EL ADMINISTRADOR
+      cuando a su juicio se haya perdido la confianza en el OPERADOR
+      CORRESPONSAL, y si éste fuere persona jurídica, cuando acaezca dicha
+      pérdida en cualquiera de susadministradores o socios. En todo caso dicha
+      causal de terminación especial, deberá enviarse vía correo electrónico o
+      correo certificado a la dirección del establecimiento de comercio los
+      motivos por los cuales se hace uso de dicha causal en cualquier tiempo.
+    </li>
+  </ol>
+  <p>
+    En virtud de lo anterior EL ADMINISTRADOR debe aprobar la enajenación del
+    negocio o establecimiento de comercio.
+  </p>
+  <ol type="a" start="2">
+    <li>
+      Este contrato terminará automáticamente cuando BANCOLOMBIA S.A. de por
+      terminado el contrato de corresponsalía y/o alianza suscrito con
+      CORRESPONSALES DISTRICOL S.A.S, sin que esta causal delugar a
+      indemnización a favor del OPERADOR CORRESPONSAL.
+    </li>
+  </ol>
+
+  <p>
+    <b>DECIMO SEPTIMO: CONFIDENCIALIDAD.</b> Las partes se comprometen a que sus
+    directivos, revisores fiscales, funcionarios, empleados, contratistas y en
+    general, todo el personal a su cargo o bajo su dirección mantendrán la
+    debida reserva y no-divulgación a terceros, ni utilizarán en forma no
+    autorizada previamente por cada parte, toda la información que les ha sido
+    revelada directa o indirectamente por la otra parte por razón de la
+    celebración del presente contrato, sus representantes y/o agentes, la cual
+    es de propiedad exclusiva de cada parte. Todo aviso de prensa o revelación
+    pública escrita u oral o por cualquier medio acerca de este contrato, de su
+    existencia o de las transacciones contempladas en este contrato, se
+    realizará solamente habiendo sido aprobada expresamente la divulgación con
+    el consentimiento previo, expreso y escrito de las partes. Ello sin
+    perjuicio de las obligaciones legales a las que estén sometidos frente a las
+    autoridades competentes.
+  </p>
+
+  <p>
+    <b>DECIMO OCTAVO: ACUERDO DE EXCLUSIVIDAD.</b> El operador corresponsal se
+    compromete a operar exclusivamente con los corresponsales bancarios
+    ofrecidos por CORRESPONSALES DISTRICOL S.A.S. Es importante tener en cuenta
+    que en el punto de atención o prestación de servicio no puede existir un
+    corresponsal de otra entidad bancaria diferente a las ofrecidas por
+    CORRESPONSALES DISTRICOL S.A.S. En caso de incumplirse la presente cláusula,
+    el incumplimiento dará lugar a la terminación unilateral del contrato.
+  </p>
+
+  <p>
+    <b>DECIMO NOVENO: CLÁUSULA PENAL.</b> En caso de que el operador
+    corresponsal no cumpla con la exclusividad exigida en la cláusula anterior o
+    incurra en las malas prácticas enumeradas en la cláusula séptima de este
+    contrato o cualquier otra que sea considerada contraria a derecho, el orden
+    público o que imposibilite la correcta ejecución del mismo, se procederá con
+    el cierre inmediato del punto de atención y CORRESPONSALES DISTRICOL S.A.S
+    efectuará el cobro de los perjuicios causados por tal situación, que se
+    pacta de manera voluntaria por las partes en un 10 % del cupo asignado a
+    dicho punto, por lo cual el operador corresponsal, una vez leído el presente
+    acuerdo, autoriza a CORRESPONSALES DISTRICOL S.A.S para que realice el cobro
+    de la sanción de manera directa, a quienes son otorgantes del pagaré en
+    blanco, e incluso, de ser necesario, ante la renuencia de este a realizar
+    dicho pago se autoriza a CORRESPONSALES DISTRICOL S.A.S a que retenga las
+    comisiones generadas por la operación del corresponsal para realizar dicho
+    pago, y en general de cualquier otra forma que sea posible conforme a la
+    ley.
+  </p>
+
+  <p>
+    Para constancia de lo anterior, se firman ejemplares en la ciudad de
+    <span name="ciudad_firma">____________________</span>
+  </p>
+
+  <br /><br /><br />
+
+  <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
+  <p>
+    Firma:
+    <div id="corresponsal_1" name="firma_corresponsal"></div> <br />
+    Nombre:
+    <span name="tipo_persona_corresponsal_n">
+      <span name="nombre_corresponsal">____________________</span>
+    </span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <span name="empresa_corresponsal">____________________</span>
+      <br />
+      NIT: <span name="nit_corresponsal">____________________</span>
+    </span>
+    <br />
+    Ciudad y fecha de suscripción de contrato:
+    <span name="ciudad_suscripcion">____________________</span>
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <br />
+      Representante Legal Sociedad:
+      <span name="nombre_corresponsal">____________________</span>
+      <br />
+      C.C. <span name="cc_corresponsal">____________________</span></span
+    >, Y en nombre propio
+  </p>
+
+  <br /><br /><br />
+
+  <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+  <p>
+    Firma:
+    <div id="otorgante_1" name="firma_otorgante"></div> <br />
+    Nombre:
+    <span name="tipo_persona_otorgante_n">
+      <span name="nombre_otorgante">____________________</span>
+    </span>
+    <span name="tipo_persona_otorgante_j" hidden>
+      <span name="empresa_otorgante">____________________</span>
+      <br />
+      NIT: <span name="nit_otorgante">____________________</span>
+    </span>
+    <br />
+    Ciudad y fecha de suscripción de contrato:
+    <span name="ciudad_suscripcion">____________________</span>
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_otorgante_j" hidden>
+      <br />
+      Representante Legal Sociedad:
+      <span name="nombre_otorgante">____________________</span>
+      <br />
+      C.C. <span name="cc_otorgante">____________________</span></span
+    >, Y en nombre propio
+  </p>
+  <br /><br /><br />
+  <p>
+    EL ADMINISTRADOR NIT: ANEXO 1: MANUAL DE PROCEDIMIENTO (MANUEL OPERATIO
+    REDEBAN). ANEXO 2:LISTADO Y CLASIFICACION DE OPERACIONES. ANEXO 3:
+    AUTORIZACION Y REGULACION DEL MANEJO DE DATOS PERSONALES
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p style="text-align: center">
+    <b>AUTORIZACION PARA EL TRATAMIENTO DE DATOS PERSONALES </b>
+  </p>
+  <p style="text-align: center">
+    LEY 1266 DE 2008 - LEY 1581 DE 2012 – DECRETO 1377 DE 2013
+  </p>
+  <p>
+    Por medio del presente escrito autorizo a la sociedad
+    <b>CORRESPONSALES DISTRICOL S.A.S</b> con NIT. <b>901.334.391 -7</b>,
+    compañía legítimamente constituida de acuerdo con las leyes colombianas,
+    domiciliada en Medellín, para el tratamiento de mis datos personales, los
+    cuales han sido recolectados con el fin de iniciar y sostener una relación
+    de carácter comercial bajo las leyes de la república de Colombia.
+  </p>
+  <p>
+    Por lo anterior, de manera libre, expresa, voluntaria, debidamente
+    informada, y conforme al artículo 9º de la Ley 1581 de2012, permito
+    recolectar, recaudar, almacenar, usar, procesar, compilar, verificar,
+    consultar, reportar, actualizar y disponer de mis datos como persona natural
+    y los de la persona jurídica que represento, si es el caso, en distintas
+    bases o bancos de datos o en repositorios electrónicos de todo tipo, con los
+    siguientes propósitos:
+  </p>
+  <ul>
+    <li>
+      Tener una eficiente información, comunicación y control relacionados con
+      el vínculo comercial, sea cual fuere el acto o negocio jurídico realizado.
+    </li>
+    <li>
+      Dar cumplimiento a obligaciones existentes para con cualquier autoridad
+      pública del orden municipal, departamental o nacional.
+    </li>
+    <li>
+      Proveer a los clientes CORRESPONSALES DISTRICOL S.A.S con los productos y
+      servicios ofrecidos por ésta.
+    </li>
+    <li>
+      Atender cualquier requerimiento de una autoridad administrativa o
+      judicial.
+    </li>
+    <li>Atender cualquier tipo de proceso legal que involucre a las partes.</li>
+    <li>Expedir recomendaciones o certificaciones</li>
+    <li>
+      Enviar al correo físico, electrónico, celular o dispositivo móvil, vía
+      mensajes de texto SMS o MMS, o por cualquier otro medio análogoo digital
+      de comunicación, información necesaria para el correcto desarrollo de la
+      relación comercial.
+    </li>
+    <li>
+      Declaro que conozco la política de tratamiento de datos personales de la
+      empresa, y que se me ha informado que, como titular de datos personales,
+      en cualquier momento tengo derecho a:
+    </li>
+    <li>Conocer, actualizar y rectificar datos personales.</li>
+    <li>Solicitar prueba de la autorización.</li>
+    <li>Ser informado respecto del uso que se le ha dado a la información.</li>
+    <li>Presentar quejas ante la Superintendencia de Industria y Comercio.</li>
+    <li>
+      Acceder en forma gratuita a datos personales que hayan sido objeto de
+      tratamiento.
+    </li>
+    <li>
+      Solicitar la corrección, actualización o supresión de sus datos en los
+      términos de la ley 1581 de 2012 y conforme a la jurisprudencia de la Corte
+      Constitucional sobre la materia.
+    </li>
+  </ul>
+
+  <p>
+    En caso de incumplimiento de obligaciones autorizo expresamente el reporte a
+    las centrales de riesgo y bancos de datos de PROCREDITO, DATACREDITO, CIFIN,
+    FENALCO, o cualquier otra que exista o llegue a crearse con fines de
+    información financiera, crediticia y comercial, en la forma y términos
+    fijados por la Ley 1266 de 2008, leyes complementarias, decretos y
+    reglamentos.
+  </p>
+
+  <p>
+    La presente autorización se extiende hasta la fecha en que se hayan pagado
+    todas las obligaciones adquiridas con CORRESPONSALES DISTRICOL S.A.S Para
+    constancia firma esta autorización, en la ciudad de
+    <span name="ciudad_firma">____________________</span>
+  </p>
+
+  <br /><br /><br />
+
+  <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
+  <p>
+    Firma:
+    <div id="corresponsal_2" name="firma_corresponsal"></div> <br />
+    Nombre:
+    <span name="tipo_persona_corresponsal_n">
+      <span name="nombre_corresponsal">____________________</span>
+    </span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <span name="empresa_corresponsal">____________________</span>
+      <br />
+      NIT: <span name="nit_corresponsal">____________________</span>
+    </span>
+    <br />
+    Ciudad y fecha de suscripción de contrato:
+    <span name="ciudad_suscripcion">____________________</span>
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <br />
+      Representante Legal Sociedad:
+      <span name="nombre_corresponsal">____________________</span>
+      <br />
+      C.C. <span name="cc_corresponsal">____________________</span></span
+    >, Y en nombre propio
+  </p>
+
+  <br /><br /><br />
+
+  <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+  <p>
+    Firma:
+    <div id="otorgante_2" name="firma_otorgante"></div> <br />
+    Nombre:
+    <span name="tipo_persona_otorgante_n">
+      <span name="nombre_otorgante">____________________</span>
+    </span>
+    <span name="tipo_persona_otorgante_j" hidden>
+      <span name="empresa_otorgante">____________________</span>
+      <br />
+      NIT: <span name="nit_otorgante">____________________</span>
+    </span>
+    <br />
+    Ciudad y fecha de suscripción de contrato:
+    <span name="ciudad_suscripcion">____________________</span>
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_otorgante_j" hidden>
+      <br />
+      Representante Legal Sociedad:
+      <span name="nombre_otorgante">____________________</span>
+      <br />
+      C.C. <span name="cc_otorgante">____________________</span></span
+    >, Y en nombre propio
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p style="text-align: center">
+    <b>PAGARÉ EN BLANCO O CON ESPACIOS EN BLANCO #______</b>
+  </p>
+
+  <p>
+    Yo, ________________________________________, identificado con Cédula de
+    Ciudadaní ____________________ N° ____________________ en calidad de
+    representante legal de la sociedad ________________________________________,
+    identificada con NIT ____________________, y a la vez en mi nombre propio
+    como persona natural y yo ________________________________________
+    identificado con Cédula de Ciudadanía N° ____________________, en calidad de
+    representante legal de la sociedad ________________________________________,
+    identificada con NIT. ____________________, y sí no represento ninguna
+    sociedad, en mi nombre propio como persona natural, en virtud de este
+    pagaré, prometemos pagar solidaria, ilimitada e incondicionalmente el total
+    del importe aquí especificado, más los intereses que de este surjan y los
+    demás gastos de cobranza extrajudicial y judicial que se pudieren causar, a
+    la orden de CORRESPONSALES DISTRICOL S.A.S, con NIT. 901.334.391-7, o a
+    quien represente su derecho la suma de
+    ________________________________________ MLC
+    ($________________________________________).
+  </p>
+  <p>
+    Fecha de exigibilidad del pagaré y lugar de cumplimiento del mismo
+    ____________________.
+  </p>
+  <p>
+    A partir del día siguiente del vencimiento o exigibilidad del presente
+    pagaré se causarán intereses moratorios a la tasa máxima legal certificado
+    por la Superintendencia Financiera estarán a cargo de ambos otorgantes, así
+    como todos los gastos de cobranza extrajudicial y judicial del presente
+    pagaré en que se pueda incurrir.
+  </p>
+
+  <p>
+    En el presente pagaré como otorgantes, renunciamos a la presentación para el
+    pago del instrumento; el presente pagaré no requiere protesto.
+  </p>
+
+  <br /><br /><br />
+
+  <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
+  <p>
+    Firma:
+    <div id="corresponsal_3" name="firma_corresponsal"></div> <br />
+    Nombre:
+    <span name="tipo_persona_corresponsal_n">
+      <span name="nombre_corresponsal">____________________</span>
+    </span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <span name="empresa_corresponsal">____________________</span>
+      <br />
+      NIT: <span name="nit_corresponsal">____________________</span>
+    </span>
+    <br />
+    Ciudad y fecha de suscripción de contrato:
+    <span name="ciudad_suscripcion">____________________</span>
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <br />
+      Representante Legal Sociedad:
+      <span name="nombre_corresponsal">____________________</span>
+      <br />
+      C.C. <span name="cc_corresponsal">____________________</span></span
+    >, Y en nombre propio
+  </p>
+
+  <br /><br /><br />
+
+  <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+  <p>
+    Firma:
+    <div id="otorgante_3" name="firma_otorgante"></div> <br />
+    Nombre:
+    <span name="tipo_persona_otorgante_n">
+      <span name="nombre_otorgante">____________________</span>
+    </span>
+    <span name="tipo_persona_otorgante_j" hidden>
+      <span name="empresa_otorgante">____________________</span>
+      <br />
+      NIT: <span name="nit_otorgante">____________________</span>
+    </span>
+    <br />
+    Ciudad y fecha de suscripción de contrato:
+    <span name="ciudad_suscripcion">____________________</span>
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_otorgante_j" hidden>
+      <br />
+      Representante Legal Sociedad:
+      <span name="nombre_otorgante">____________________</span>
+      <br />
+      C.C. <span name="cc_otorgante">____________________</span></span
+    >, Y en nombre propio
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p style="text-align: center">
+    <b>CARTA DE INSTRUCCIONES CORRESPONDIENTE AL PAGARE #______ </b>
+  </p>
+
+  <p>
+    Nosotros, ________________________________________, identificado con Cédula
+    de Ciudadanía N° ____________________ en calidad de representante legal de
+    la sociedad ________________________________________, identificada con NIT
+    ____________________, y a la vez en mi nombre propio como persona natural y
+    ________________________________________ identificado con Cédula de
+    Ciudadanía N° ____________________, en calidad de representante legal de la
+    sociedad ________________________________________, identificada con NIT.
+    ____________________, y sí no represento ninguna sociedad, en mi nombre
+    propio como persona natural, facultamos al acreedor (legitimo tenedor
+    CORRESPONSALES DISTRICOL S.A.S con NIT. 901334391-7, o a quien represente
+    sus derechos, para llenar los espacios en blanco o incompletos del pagaré
+    otorgado a su favor, o a su orden; por lo que aceptamos, desde ahora, que el
+    acreedor diligencie el pagaré arriba mencionado bajo las siguientes
+    instrucciones.
+  </p>
+
+  <p>
+    <b>PRIMERA:</b> LUGAR DE CUMPLIMIENTO. Lo puede ser la ciudad de Medellín,
+    Antioquia en la oficina principal de los CORRESPONSALES DISTRICOL S.A.S o el
+    municipio de ubicación del punto de servicio, o el domicilio del operador
+    corresponsal u otorgante solidario (otorgantes), esto a elección del
+    acreedor y sin que los deudores puedan oponer excepciones relativas a la
+    competencia del Juez ante el cual se ejecute el título valor.
+  </p>
+
+  <p>
+    <b>SEGUNDA:</b> FECHA DE EXIGIBILIDAD DE LA OBLIGACIÓN: Corresponde al día
+    calendario siguiente a aquel en el cual CORRESPONSALES DISTRICOL S.A.S o
+    quien represente sus derechos para ese momento, haya dado por terminado el
+    contrato de colaboración mercantil celebrado con el OPERADOR CORRESPONSAL y
+    otorgante solidario (otorgantes), debido al no pago de cualquier suma de
+    dinero, que debió ser restituida por estos en favor de CORRESPONSALES
+    DISTRICOL S.A.S, o que dicha devolución no se haya causado por un hecho,
+    acto u omisión del OPERADOR CORRESPONSAL o otorgante solidario (otorgantes),
+    en relación con el contrato de colaboración empresarial para ejecución de la
+    corresponsalía bancaria que suscribieron las partes.
+  </p>
+
+  <p>
+    <b>TERCERA:</b> CAPITAL. Es la suma de dinero que, a la fecha de
+    exigibilidad de la obligación, se encuentre aún depositada por parte de
+    CORRESPONSALES DISTRICOL S.A.S o quien represente sus derechos para ese
+    momento, en las arcas del OPERADOR CORRESPONSAL y/o otorgante solidario
+    (otorgantes) o de un tercero, y que debieron ser restituidas por estos al
+    momento de culminar el contrato de colaboración mercantil que suscribieron
+    las partes. Será parte del capital el monto que el acreedor (legítimo
+    tenedor) haya pagado por gastos de cobranza judicial y extrajudicial.
+  </p>
+
+  <p>
+    <b>CUARTA:</b> Ciudad y fecha: Corresponde al lugar y fecha en el cual se
+    suscribió el pagaré.
+  </p>
+
+  <p><b>Condiciones generales:</b></p>
+
+  <ol type="a">
+    <li>
+      Para llenar los espacios en blanco del pagaré no se requiere dar aviso a
+      los firmantes del mismo, en lo relativo a nombres de los otorgantes del
+      pagaré N° ____
+    </li>
+    <li>
+      Las instrucciones son explicadas al OPERADOR CORRESPONSAL y otorgante
+      solidario
+    </li>
+    <li>Los intereses serán cobrados conforme a lo estipulado en el pagaré.</li>
+    <li>
+      Ninguna estipulación verbal puede alterar las presentes instrucciones.
+      Sólo podrán cambiarse por documento escrito firmado por las partes.
+    </li>
+    <li>
+      Como otorgantes, renunciamos a la presentación para el pago del
+      instrumento; el presente pagaré no requiere protesto.
+    </li>
+  </ol>
+  <p>
+    Las anteriores instrucciones se dan de conformidad con el artículo 622 del
+    Código de Comercio y se entregan los otorgantes, quien para constancia
+    firma:
+  </p>
+
+  <br /><br /><br />
+
+  <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
+  <p>
+    Firma:
+    <div id="corresponsal_4" name="firma_corresponsal"></div> <br />
+    Nombre:
+    <span name="tipo_persona_corresponsal_n">
+      <span name="nombre_corresponsal">____________________</span>
+    </span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <span name="empresa_corresponsal">____________________</span>
+      <br />
+      NIT: <span name="nit_corresponsal">____________________</span>
+    </span>
+    <br />
+    Ciudad y fecha de suscripción de contrato:
+    <span name="ciudad_suscripcion">____________________</span>
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_corresponsal_j" hidden>
+      <br />
+      Representante Legal Sociedad:
+      <span name="nombre_corresponsal">____________________</span>
+      <br />
+      C.C. <span name="cc_corresponsal">____________________</span></span
+    >, Y en nombre propio
+  </p>
+
+  <br /><br /><br />
+
+  <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+  <p>
+    Firma:
+    <div id="otorgante_4" name="firma_otorgante"></div> <br />
+    Nombre:
+    <span name="tipo_persona_otorgante_n">
+      <span name="nombre_otorgante">____________________</span>
+    </span>
+    <span name="tipo_persona_otorgante_j" hidden>
+      <span name="empresa_otorgante">____________________</span>
+      <br />
+      NIT: <span name="nit_otorgante">____________________</span>
+    </span>
+    <br />
+    Ciudad y fecha de suscripción de contrato:
+    <span name="ciudad_suscripcion">____________________</span>
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_otorgante_j" hidden>
+      <br />
+      Representante Legal Sociedad:
+      <span name="nombre_otorgante">____________________</span>
+      <br />
+      C.C. <span name="cc_otorgante">____________________</span></span
+    >, Y en nombre propio
+  </p>
+</div>

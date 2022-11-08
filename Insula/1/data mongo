@@ -34,7 +34,7 @@
         },
         {
             name: 'nombre_comprador_2',
-            description: 'Ingrese el nombre del primer comprador',
+            description: 'Ingrese el nombre del segundo comprador',
             type: 'name',
             prereq: [
                 {
@@ -690,12 +690,12 @@
         {
             name: 'correo_comprador_1',
             description: 'Ingrese el correo del primer comprador',
-            type: 'text'
+            type: 'email'
         },
         {
             name: 'correo_comprador_2',
             description: 'Ingrese el correo del segundo comprador',
-            type: 'text'
+            type: 'email'
         },
         {
             name: 'fecha_contrato_adhesion',
@@ -720,12 +720,12 @@
         {
             name: 'tel_comprador_1',
             description: 'Ingrese el telefono del primer comprador',
-            type: 'text'
+            type: 'phone'
         },
         {
             name: 'tel_comprador_2',
             description: 'Ingrese el telefono del segundo comprador',
-            type: 'text'
+            type: 'phone'
         }
     ],
     operation: [],

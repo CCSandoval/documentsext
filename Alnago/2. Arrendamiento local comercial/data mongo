@@ -7,7 +7,54 @@
             type: 'date'
         },
         {
-            description: 'Digite el nombre de la parte arrendataria',
+            description: 'El arrendatario es:',
+            name: 'tipo_arrendatario',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_arrendatario',
+            prereq: [
+                {
+                    k: 'tipo_arrendatario',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_arrendatario',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Digite el nombre completo del representante legal de la empresa arrendataria'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_arrendatario',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona arrendataria'
+                }
+            ],
             help: 'nombre',
             name: 'nombre_arrendatario',
             type: 'name'
@@ -139,6 +186,7 @@
         },
         {
             description: 'Digite los usos conexos con los que cuenta el local comercial',
+            help: 'usos_conexos',
             name: 'usos_conexos_arrendatario',
             type: 'text'
         },
@@ -284,7 +332,7 @@
         },
         {
             description: 'Digite el nombre de la empresa del deudor solidario',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_1',
             prereq: [
                 {
@@ -300,7 +348,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa del deudor solidario',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_1',
             prereq: [
                 {
@@ -470,7 +518,7 @@
         },
         {
             description: 'Digite el nombre de la empresa del segundo deudor solidario',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_2',
             prereq: [
                 {
@@ -490,7 +538,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa del segundo deudor solidario',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_2',
             prereq: [
                 {
@@ -692,7 +740,7 @@
         },
         {
             description: 'Digite el nombre de la empresa del tercer deudor solidario',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_3',
             prereq: [
                 {
@@ -716,7 +764,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa del tercer deudor solidario',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_3',
             prereq: [
                 {
@@ -950,7 +998,7 @@
         },
         {
             description: 'Digite el nombre de la empresa del cuarto deudor solidario',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_4',
             prereq: [
                 {
@@ -978,7 +1026,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa del cuarto deudor solidario',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_4',
             prereq: [
                 {
@@ -1248,7 +1296,7 @@
         },
         {
             description: 'Digite el nombre de la empresa del quinto deudor solidario',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_5',
             prereq: [
                 {
@@ -1280,7 +1328,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa del quinto deudor solidario',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_5',
             prereq: [
                 {
@@ -1600,6 +1648,18 @@
             type: 'name'
         },
         {
+            description: 'Digite el número del NIT de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_arrendatario',
+            prereq: [
+                {
+                    k: 'tipo_arrendatario',
+                    v: 'j'
+                }
+            ],
+            type: 'number'
+        },
+        {
             description: 'Digite el correo electrónico de la parte arrendataria',
             help: 'correo',
             name: 'correo_arrendatario',
@@ -1732,7 +1792,7 @@
             ],
             prereq: [
                 {
-                    k: 'testigo_1',
+                    k: 'total_testigo_1',
                     v: 's'
                 }
             ],
@@ -1849,11 +1909,11 @@
             name: 'correo_testigo_2',
             prereq: [
                 {
-                    k: 'testigo_1',
+                    k: 'total_testigo_1',
                     v: 's'
                 },
                 {
-                    k: 'testigo_2',
+                    k: 'total_testigo_2',
                     v: 's'
                 }
             ],
@@ -1963,6 +2023,9 @@
     operation: [],
     sign: [
         'fecha_contrato',
+        'tipo_arrendatario',
+        'nombre_empresa_arrendatario',
+        'nit_empresa_arrendatario',
         'nombre_arrendatario',
         'direccion_inmueble',
         'destinacion_inmueble',
@@ -2046,27 +2109,7 @@
         'correo_deudor_5',
         'correo_arrendatario'
     ],
-    preFill: [
-        {
-            name: 'nombre_arrendador',
-            value: 'Aracelly Del Socorro Naranjo Aristizábal'
-        },
-        {
-            name: 'cedula_arrendador',
-            value: '43.095.952'
-        },
-        {
-            name: 'correo_arrendador',
-            value: 'hans.palominon@gmail.com'
-        }
-    ],
     signatureProfile: [
-        {
-            email: 'correo_arrendador',
-            identification: 'cedula_arrendador',
-            name: 'nombre_arrendador',
-            type: 'arrendador'
-        },
         {
             email: 'correo_arrendatario',
             identification: 'cedula_arrendatario|cedulae_arrendatario|pasaporte_arrendatario',
@@ -2118,10 +2161,14 @@
     ],
     preBuildData: [],
     name: 'CONTRATO DE ARRENDAMIENTO COMERCIAL ALNAGO',
-    price: 0,
+    price: 5000,
     help: {
+        usos_conexos: 'Ejemplo: Televisión, Internet, Telefonía.',
         lugar: 'Ejemplo: Avenida siempre viva 12 # 34 - 56',
+        nombre_empresa: 'Ejemplo: Alnago',
+        nit_empresa: 'Ejemplo: 12345678-9',
         nombre: 'Ejemplo: Elon Patarroyo',
+        nombre_arrendatario: 'Ejemplo: Elon Patarroyo \nArrendatario: Es la parte que recibe el local comercial en arrendamiento',
         correo: 'Ejemplo: elonmartinez@alnago.com.co',
         destinacion: 'Ejemplo: Almacén de mercancías',
         direccion: 'Ejemplo: Avenida 20 # 98 - 76, Medellín Antioquia',
@@ -2133,8 +2180,12 @@
         porcentaje: 'Ejemplo: 10',
         fecha_reajuste: 'Ejemplo: 1 de noviembre'
     },
-    build: 11,
+    build: 17,
+    custom: {
+        noShowHeader: true
+    },
     username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
+    company: ObjectId('6179a50cc930d700099c5bd6'),
     createdAt: ISODate('2021-08-27T06:43:34.060Z'),
     updatedAt: ISODate('2021-08-27T06:43:34.060Z')
 }

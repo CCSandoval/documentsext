@@ -85,7 +85,7 @@
                             v: 'm'
                         }
                     ],
-                    text: 'Digite la ciudad donde vecina el propietario'
+                    text: 'Digite la dirección de residencia del propietario'
                 },
                 {
                     prereq: [
@@ -94,7 +94,7 @@
                             v: 'f'
                         }
                     ],
-                    text: 'Digite la ciudad donde vecina la propietaria'
+                    text: 'Digite la dirección de residencia de la propietaria'
                 }
             ],
             name: 'residencia_propietario',
@@ -708,7 +708,7 @@
     },
     name: 'CONTRATO DE ADMINISTRACIÓN DE INMUEBLES',
     price: 0,
-    build: 11,
+    build: 12,
     company: ObjectId('6179a50cc930d700099c5bd6'),
     username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
     createdAt: ISODate('2021-08-26T14:53:00.657Z'),

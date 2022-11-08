@@ -13,7 +13,54 @@
             type: 'date'
         },
         {
-            description: 'Digite el nombre de la parte arrendataria',
+            description: 'El arrendatario es:',
+            name: 'tipo_arrendatario',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Digite el nombre de la empresa de la parte arrendataria',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_arrendatario',
+            prereq: [
+                {
+                    k: 'tipo_arrendatario',
+                    v: 'j'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_arrendatario',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Digite el nombre completo del representante legal de la empresa arrendataria'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_arrendatario',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona arrendataria'
+                }
+            ],
             help: 'nombre',
             name: 'nombre_arrendatario',
             type: 'name'
@@ -323,11 +370,11 @@
             name: 'tipo_deudor_1',
             options: [
                 {
-                    name: 'Natural',
+                    name: 'Persona Natural',
                     value: 'n'
                 },
                 {
-                    name: 'Juridica',
+                    name: 'Persona Jurídica',
                     value: 'j'
                 }
             ],
@@ -342,7 +389,7 @@
         },
         {
             description: 'Digite el nombre de la empresa',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_1',
             prereq: [
                 {
@@ -358,7 +405,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_1',
             prereq: [
                 {
@@ -505,11 +552,11 @@
             name: 'tipo_deudor_2',
             options: [
                 {
-                    name: 'Natural',
+                    name: 'Persona Natural',
                     value: 'n'
                 },
                 {
-                    name: 'Juridica',
+                    name: 'Persona Jurídica',
                     value: 'j'
                 }
             ],
@@ -528,7 +575,7 @@
         },
         {
             description: 'Digite el nombre de la empresa',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_2',
             prereq: [
                 {
@@ -548,7 +595,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_2',
             prereq: [
                 {
@@ -723,11 +770,11 @@
             name: 'tipo_deudor_3',
             options: [
                 {
-                    name: 'Natural',
+                    name: 'Persona Natural',
                     value: 'n'
                 },
                 {
-                    name: 'Juridica',
+                    name: 'Persona Jurídica',
                     value: 'j'
                 }
             ],
@@ -750,7 +797,7 @@
         },
         {
             description: 'Digite el nombre de la empresa',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_3',
             prereq: [
                 {
@@ -774,7 +821,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_3',
             prereq: [
                 {
@@ -977,11 +1024,11 @@
             name: 'tipo_deudor_4',
             options: [
                 {
-                    name: 'Natural',
+                    name: 'Persona Natural',
                     value: 'n'
                 },
                 {
-                    name: 'Juridica',
+                    name: 'Persona Jurídica',
                     value: 'j'
                 }
             ],
@@ -1008,7 +1055,7 @@
         },
         {
             description: 'Digite el nombre de la empresa',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_4',
             prereq: [
                 {
@@ -1036,7 +1083,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_4',
             prereq: [
                 {
@@ -1267,11 +1314,11 @@
             name: 'tipo_deudor_5',
             options: [
                 {
-                    name: 'Natural',
+                    name: 'Persona Natural',
                     value: 'n'
                 },
                 {
-                    name: 'Juridica',
+                    name: 'Persona Jurídica',
                     value: 'j'
                 }
             ],
@@ -1302,7 +1349,7 @@
         },
         {
             description: 'Digite el nombre de la empresa',
-            help: 'nombre',
+            help: 'nombre_empresa',
             name: 'nombre_empresa_deudor_5',
             prereq: [
                 {
@@ -1334,7 +1381,7 @@
         },
         {
             description: 'Digite el número del NIT de la empresa',
-            help: 'cedula',
+            help: 'nit_empresa',
             name: 'nit_empresa_deudor_5',
             prereq: [
                 {
@@ -1597,8 +1644,6 @@
             name: 'fecha_firma',
             type: 'date'
         },
-        
-
         {
             description: 'Seleccione el tipo de documento del arrendatario',
             name: 'tipo_documento_arrendatario',
@@ -1655,7 +1700,18 @@
             ],
             type: 'name'
         },
-
+        {
+            description: 'Digite el número del NIT de la empresa arrendataria',
+            help: 'nit_empresa',
+            name: 'nit_empresa_arrendatario',
+            prereq: [
+                {
+                    k: 'tipo_arrendatario',
+                    v: 'j'
+                }
+            ],
+            type: 'number'
+        },
         {
             description: '¿Desea agregar un testigo al presente contrato?',
             name: 'total_testigo_1',
@@ -1877,6 +1933,9 @@
     sign: [
         'lugar_contrato',
         'fecha_contrato',
+        'tipo_arrendatario',
+        'nombre_empresa_arrendatario',
+        'nit_empresa_arrendatario',
         'nombre_arrendatario',
         'direccion_arrendatario',
         'correo_arrendatario',
@@ -1957,27 +2016,7 @@
         'correo_deudor_4',
         'correo_deudor_5'
     ],
-    preFill: [
-        {
-            name: 'nombre_arrendador',
-            value: 'Aracelly Del Socorro Naranjo Aristizábal'
-        },
-        {
-            name: 'cedula_arrendador',
-            value: '43.095.952'
-        },
-        {
-            name: 'correo_arrendador',
-            value: 'hans.palominon@gmail.com'
-        }
-    ],
     signatureProfile: [
-        {
-            email: 'correo_arrendador',
-            identification: 'cedula_arrendador',
-            name: 'nombre_arrendador',
-            type: 'arrendador'
-        },
         {
             email: 'correo_arrendatario',
             identification: 'cedula_arrendatario|cedulae_arrendatario|pasaporte_arrendatario|nit_arrendatario',
@@ -2033,6 +2072,8 @@
     help: {
         lugar: 'Ejemplo: Avenida siempre viva 12 # 34 - 56',
         nombre: 'Ejemplo: Elon Patarroyo',
+        nombre_empresa: 'Ejemplo: Alnago',
+        nit_empresa: 'Ejemplo: 12345678-9',
         correo: 'Ejemplo: elonmartinez@alnago.com.co',
         direccion: 'Ejemplo: Avenid 20 # 98 - 76, Medellín Antioquia',
         ciudad: 'Ejemplo: Medellín',
@@ -2041,8 +2082,12 @@
         total_personas: 'Ejemplo: 5',
         precio_inmueble: 'Ejemplo: 1200000'
     },
-    build: 6,
+    build: 11,
+    custom: {
+        noShowHeader: true
+    },
     username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
+    company: ObjectId('6179a50cc930d700099c5bd6'),
     createdAt: ISODate('2021-08-26T15:04:02.766Z'),
     updatedAt: ISODate('2021-08-26T15:04:02.766Z')
 }

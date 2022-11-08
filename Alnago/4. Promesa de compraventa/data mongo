@@ -3149,1183 +3149,1183 @@
             type: 'name'
         },
         {
-            name:'sometido_rph',
+            name: 'sometido_rph',
             description: '¿El primer inmueble está sometido a RPH?',
-            options:[
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            type:'clausula',
-            value:'n'
-        },        
+            type: 'clausula',
+            value: 'n'
+        },
         {
-            name:'no_escritura_0',
-            description:'Ingrese el número de la escritura',
-            type:'text',
-            prereq:[
+            name: 'no_escritura_0',
+            description: 'Ingrese el número de la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
-                },
+                    k: 'sometido_rph',
+                    v: 's'
+                }
             ]
         },
         {
-            name:'fecha_escritura_0',
-            description:'Seleccione la fecha de la escritura',
-            type:'date',
-            prereq:[
+            name: 'fecha_escritura_0',
+            description: 'Seleccione la fecha de la escritura',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
-                },
+                    k: 'sometido_rph',
+                    v: 's'
+                }
             ]
         },
         {
-            name:'notaria_reforma_0',
-            description:'Ingrese la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'notaria_reforma_0',
+            description: 'Ingrese la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
-                },
+                    k: 'sometido_rph',
+                    v: 's'
+                }
             ]
         },
         {
-            name:'municipio_notaria_0',
-            description:'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'municipio_notaria_0',
+            description: 'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
-                },
+                    k: 'sometido_rph',
+                    v: 's'
+                }
             ]
         },
         {
-            name:'fecha_registro_0',
-            description:'Seleccione la fecha en la cual se radicó la reforma',
-            type:'date',
-            prereq:[
+            name: 'fecha_registro_0',
+            description: 'Seleccione la fecha en la cual se radicó la reforma',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
-                },
+                    k: 'sometido_rph',
+                    v: 's'
+                }
             ]
         },
         {
-            name:'radicacion_reforma_0',
-            description:'Ingrese la radicación de la reforma',
-            type:'text',
-            prereq:[
+            name: 'radicacion_reforma_0',
+            description: 'Ingrese la radicación de la reforma',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
-                },
+                    k: 'sometido_rph',
+                    v: 's'
+                }
             ]
         },
         {
             name: 'rph_reformado',
             description: '¿El reglamento de propiedad horizontal fue reformado?',
-            options:[
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
-                },
+                    k: 'sometido_rph',
+                    v: 's'
+                }
             ],
-            type:'clausula',
-            value:'n'
+            type: 'clausula',
+            value: 'n'
         },
         {
-            name:'no_escritura_1',
-            description:'Ingrese el número de la escritura',
-            type:'text',
-            prereq:[
+            name: 'no_escritura_1',
+            description: 'Ingrese el número de la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_escritura_1',
-            description:'Seleccione la fecha de la escritura',
-            type:'date',
-            prereq:[
+            name: 'fecha_escritura_1',
+            description: 'Seleccione la fecha de la escritura',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'notaria_reforma_1',
-            description:'Ingrese la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'notaria_reforma_1',
+            description: 'Ingrese la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'municipio_notaria_1',
-            description:'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'municipio_notaria_1',
+            description: 'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_registro',
-            description:'Seleccione la fecha en la cual se radicó la reforma',
-            type:'date',
-            prereq:[
+            name: 'fecha_registro',
+            description: 'Seleccione la fecha en la cual se radicó la reforma',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'radicacion_reforma_1',
-            description:'Ingrese la radicación de la reforma',
-            type:'text',
-            prereq:[
+            name: 'radicacion_reforma_1',
+            description: 'Ingrese la radicación de la reforma',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 }
             ]
         },
         {
             name: 'rph_reformado_2',
             description: '¿El reglamento de propiedad horizontal fue reformado una segunda vez?',
-            options:[
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 }
             ],
-            type:'clausula',
-            value:'n'
+            type: 'clausula',
+            value: 'n'
         },
         {
-            name:'no_escritura_2',
-            description:'Ingrese el número de la escritura',
-            type:'text',
-            prereq:[
+            name: 'no_escritura_2',
+            description: 'Ingrese el número de la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_escritura_2',
-            description:'Seleccione la fecha de la escritura',
-            type:'date',
-            prereq:[
+            name: 'fecha_escritura_2',
+            description: 'Seleccione la fecha de la escritura',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'notaria_reforma_2',
-            description:'Ingrese la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'notaria_reforma_2',
+            description: 'Ingrese la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'municipio_notaria_2',
-            description:'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'municipio_notaria_2',
+            description: 'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_registro_2',
-            description:'Seleccione la fecha en la cual se radicó la reforma',
-            type:'date',
-            prereq:[
+            name: 'fecha_registro_2',
+            description: 'Seleccione la fecha en la cual se radicó la reforma',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'radicacion_reforma_2',
-            description:'Ingrese la radicación de la reforma',
-            type:'text',
-            prereq:[
+            name: 'radicacion_reforma_2',
+            description: 'Ingrese la radicación de la reforma',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 }
             ]
         },
         {
             name: 'rph_reformado_3',
             description: '¿El reglamento de propiedad horizontal fue reformado una tercera vez?',
-            options:[
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 }
             ],
-            type:'clausula',
-            value:'n'
+            type: 'clausula',
+            value: 'n'
         },
         {
-            name:'no_escritura_3',
-            description:'Ingrese el número de la escritura',
-            type:'text',
-            prereq:[
+            name: 'no_escritura_3',
+            description: 'Ingrese el número de la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_escritura_3',
-            description:'Seleccione la fecha de la escritura',
-            type:'date',
-            prereq:[
+            name: 'fecha_escritura_3',
+            description: 'Seleccione la fecha de la escritura',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'notaria_reforma_3',
-            description:'Ingrese la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'notaria_reforma_3',
+            description: 'Ingrese la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'municipio_notaria_3',
-            description:'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'municipio_notaria_3',
+            description: 'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_registro_3',
-            description:'Seleccione la fecha en la cual se radicó la reforma',
-            type:'date',
-            prereq:[
+            name: 'fecha_registro_3',
+            description: 'Seleccione la fecha en la cual se radicó la reforma',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'radicacion_reforma_3',
-            description:'Ingrese la radicación de la reforma',
-            type:'text',
-            prereq:[
+            name: 'radicacion_reforma_3',
+            description: 'Ingrese la radicación de la reforma',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 }
             ]
         },
         {
             name: 'rph_reformado_4',
             description: '¿El reglamento de propiedad horizontal fue reformado una cuarta vez?',
-            options:[
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 }
             ],
-            type:'clausula',
-            value:'n'
+            type: 'clausula',
+            value: 'n'
         },
         {
-            name:'no_escritura_4',
-            description:'Ingrese el número de la escritura',
-            type:'text',
-            prereq:[
+            name: 'no_escritura_4',
+            description: 'Ingrese el número de la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_escritura_4',
-            description:'Seleccione la fecha de la escritura',
-            type:'date',
-            prereq:[
+            name: 'fecha_escritura_4',
+            description: 'Seleccione la fecha de la escritura',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'notaria_reforma_4',
-            description:'Ingrese la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'notaria_reforma_4',
+            description: 'Ingrese la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'municipio_notaria_4',
-            description:'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'municipio_notaria_4',
+            description: 'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_registro_4',
-            description:'Seleccione la fecha en la cual se radicó la reforma',
-            type:'date',
-            prereq:[
+            name: 'fecha_registro_4',
+            description: 'Seleccione la fecha en la cual se radicó la reforma',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'radicacion_reforma_4',
-            description:'Ingrese la radicación de la reforma',
-            type:'text',
-            prereq:[
+            name: 'radicacion_reforma_4',
+            description: 'Ingrese la radicación de la reforma',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 }
             ]
         },
         {
             name: 'rph_reformado_5',
             description: '¿El reglamento de propiedad horizontal fue reformado una quinta vez?',
-            options:[
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 }
             ],
-            type:'clausula',
-            value:'n'
+            type: 'clausula',
+            value: 'n'
         },
         {
-            name:'no_escritura_5',
-            description:'Ingrese el número de la escritura',
-            type:'text',
-            prereq:[
+            name: 'no_escritura_5',
+            description: 'Ingrese el número de la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_escritura_5',
-            description:'Seleccione la fecha de la escritura',
-            type:'date',
-            prereq:[
+            name: 'fecha_escritura_5',
+            description: 'Seleccione la fecha de la escritura',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'notaria_reforma_5',
-            description:'Ingrese la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'notaria_reforma_5',
+            description: 'Ingrese la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'municipio_notaria_5',
-            description:'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'municipio_notaria_5',
+            description: 'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_registro_5',
-            description:'Seleccione la fecha en la cual se radicó la reforma',
-            type:'date',
-            prereq:[
+            name: 'fecha_registro_5',
+            description: 'Seleccione la fecha en la cual se radicó la reforma',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
-                },
+                    k: 'rph_reformado_5',
+                    v: 's'
+                }
             ]
         },
         {
-            name:'radicacion_reforma_5',
-            description:'Ingrese la radicación de la reforma',
-            type:'text',
-            prereq:[
+            name: 'radicacion_reforma_5',
+            description: 'Ingrese la radicación de la reforma',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 }
             ]
         },
         {
             name: 'rph_reformado_6',
             description: '¿El reglamento de propiedad horizontal fue reformado una sexta vez?',
-            options:[
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 }
             ],
-            type:'clausula',
-            value:'n'
+            type: 'clausula',
+            value: 'n'
         },
         {
-            name:'no_escritura_6',
-            description:'Ingrese el número de la escritura',
-            type:'text',
-            prereq:[
+            name: 'no_escritura_6',
+            description: 'Ingrese el número de la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_6',
-                    v:'s'
+                    k: 'rph_reformado_6',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_escritura_6',
-            description:'Seleccione la fecha de la escritura',
-            type:'date',
-            prereq:[
+            name: 'fecha_escritura_6',
+            description: 'Seleccione la fecha de la escritura',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_6',
-                    v:'s'
+                    k: 'rph_reformado_6',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'notaria_reforma_6',
-            description:'Ingrese la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'notaria_reforma_6',
+            description: 'Ingrese la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_6',
-                    v:'s'
+                    k: 'rph_reformado_6',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'municipio_notaria_6',
-            description:'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
-            type:'text',
-            prereq:[
+            name: 'municipio_notaria_6',
+            description: 'Ingrese el municipio donde se encuentra la notaria donde se diligenció la escritura',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_6',
-                    v:'s'
+                    k: 'rph_reformado_6',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'fecha_registro_6',
-            description:'Seleccione la fecha en la cual se radicó la reforma',
-            type:'date',
-            prereq:[
+            name: 'fecha_registro_6',
+            description: 'Seleccione la fecha en la cual se radicó la reforma',
+            type: 'date',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_6',
-                    v:'s'
+                    k: 'rph_reformado_6',
+                    v: 's'
                 }
             ]
         },
         {
-            name:'radicacion_reforma_6',
-            description:'Ingrese la radicación de la reforma',
-            type:'text',
-            prereq:[
+            name: 'radicacion_reforma_6',
+            description: 'Ingrese la radicación de la reforma',
+            type: 'text',
+            prereq: [
                 {
-                    k:'sometido_rph',
-                    v:'s'
+                    k: 'sometido_rph',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado',
-                    v:'s'
+                    k: 'rph_reformado',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_2',
-                    v:'s'
+                    k: 'rph_reformado_2',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_3',
-                    v:'s'
+                    k: 'rph_reformado_3',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_4',
-                    v:'s'
+                    k: 'rph_reformado_4',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_5',
-                    v:'s'
+                    k: 'rph_reformado_5',
+                    v: 's'
                 },
                 {
-                    k:'rph_reformado_6',
-                    v:'s'
+                    k: 'rph_reformado_6',
+                    v: 's'
                 }
             ]
         },
         {
             description: '¿Desea ingresar la información correspondiente a un segundo inmueble?',
             name: 'inmueble2',
-            options:[
+            options: [
                 {
                     name: 'No',
                     value: 'n'
@@ -4342,7 +4342,7 @@
             description: 'Digite la información correspondiente a los linderos del inmueble',
             name: 'info_linderos_2',
             type: 'text',
-            prereq:[
+            prereq: [
                 {
                     k: 'inmueble2',
                     v: 's'
@@ -4354,7 +4354,7 @@
             help: 'numero',
             name: 'numero_matricula_inmo_2',
             type: 'text',
-            prereq:[
+            prereq: [
                 {
                     k: 'inmueble2',
                     v: 's'
@@ -4380,7 +4380,7 @@
             ],
             type: 'clausula',
             value: 'mn',
-            prereq:[
+            prereq: [
                 {
                     k: 'inmueble2',
                     v: 's'
@@ -4408,7 +4408,7 @@
             help: 'direccion',
             name: 'direccion_catastral_2',
             type: 'name',
-            prereq:[
+            prereq: [
                 {
                     k: 'inmueble2',
                     v: 's'
@@ -4420,7 +4420,7 @@
             help: 'codigo',
             name: 'codigo_catastral_2',
             type: 'name',
-            prereq:[
+            prereq: [
                 {
                     k: 'inmueble2',
                     v: 's'
@@ -5533,9 +5533,9 @@
         {
             name: 'gravamenes_paragrafo_extra',
             description: '¿Desea ingresar un paragrafo extra bajo la clausula cuarta?',
-            options:[
+            options: [
                 {
-                    name:'No',
+                    name: 'No',
                     value: 'n'
                 },
                 {
@@ -5543,23 +5543,23 @@
                     value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
                 {
                     k: 'gravamenes_especiales',
                     v: 's'
                 }
             ],
             value: 'n',
-            type:'clausula'
+            type: 'clausula'
         },
         {
-            name:'paragrafo_extra_texto',
+            name: 'paragrafo_extra_texto',
             type: 'text',
             description: 'Escriba la información correspondiente al parágrafo extra',
-            prereq:[
+            prereq: [
                 {
-                    k:'gravamenes_paragrafo_extra',
-                    v:'s'
+                    k: 'gravamenes_paragrafo_extra',
+                    v: 's'
                 },
                 {
                     k: 'gravamenes_especiales',
@@ -5568,11 +5568,11 @@
             ]
         },
         {
-            name:'inmueble_con_arrendamiento',
+            name: 'inmueble_con_arrendamiento',
             description: '¿El inmueble cuenta actualmente con un contrato de arrendamiento vigente?',
-            options:[
+            options: [
                 {
-                    name:'No',
+                    name: 'No',
                     value: 'n'
                 },
                 {
@@ -5581,18 +5581,18 @@
                 }
             ],
             value: 'n',
-            type:'clausula'
+            type: 'clausula'
         },
         {
-            name:'fecha_inicio_3_meses',
-            description:'Seleccione la fecha en la que empieza el periodo de tres meses para la entrega material de lo vendido',
-            prereq:[
+            name: 'fecha_inicio_3_meses',
+            description: 'Seleccione la fecha en la que empieza el periodo de tres meses para la entrega material de lo vendido',
+            prereq: [
                 {
-                    k:'inmueble_con_arrendamiento',
-                    v:'s'
+                    k: 'inmueble_con_arrendamiento',
+                    v: 's'
                 }
             ],
-            type:'date'
+            type: 'date'
         },
         {
             description: 'Seleccione la fecha de entrega del bien inmueble',
@@ -5844,19 +5844,19 @@
         },
         {
             description: '¿El valor de la comisión tiene el IVA incluido?',
-            name:'iva_incluido',
-            options:[
+            name: 'iva_incluido',
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            type:'clausula',
-            value:'n'
+            type: 'clausula',
+            value: 'n'
         },
         {
             description: 'Digite el primer porcentaje de pago de comisión a cancelar',
@@ -5877,9 +5877,9 @@
             type: 'currency'
         },
         {
-            name:'fecha_comision',
-            description:'Seleccione la fecha de cancelación del primer pago de la comisión',
-            type:'date'
+            name: 'fecha_comision',
+            description: 'Seleccione la fecha de cancelación del primer pago de la comisión',
+            type: 'date'
         },
         {
             description: 'Digite el método y fecha en la que se hará el primer pago de la comisión',
@@ -5898,9 +5898,9 @@
             type: 'currency'
         },
         {
-            name:'fecha_comision_2',
-            description:'Seleccione la fecha de cancelación del segundo pago de la comisión',
-            type:'date'
+            name: 'fecha_comision_2',
+            description: 'Seleccione la fecha de cancelación del segundo pago de la comisión',
+            type: 'date'
         },
         {
             description: 'Digite el método y fecha en la que se hará el segundo pago de la comisión',
@@ -6167,13 +6167,13 @@
             name: 'nombre_comprador_2',
             identification: 'cedula_comprador_2|cedulae_comprador_2|pasaporte_comprador_2',
             email: 'correo_comprador_2',
-            type: 'segundo_comprador'
+            type: 'comprador_2'
         },
         {
             name: 'nombre_comprador_3',
             identification: 'cedula_comprador_3|cedulae_comprador_3|pasaporte_comprador_3',
             email: 'correo_comprador_3',
-            type: 'tercer_comprador'
+            type: 'comprador_3'
         },
         {
             name: 'nombre_vendedor_1',
@@ -6185,13 +6185,13 @@
             name: 'nombre_vendedor_2',
             identification: 'cedula_vendedor_2|cedulae_vendedor_2|pasaporte_vendedor_2',
             email: 'correo_vendedor_2',
-            type: 'segundo_vendedor'
+            type: 'vendedor_2'
         },
         {
             name: 'nombre_vendedor_3',
             identification: 'cedula_vendedor_3|cedulae_vendedor_3|pasaporte_vendedor_3',
             email: 'correo_vendedor_3',
-            type: 'tercer_vendedor'
+            type: 'vendedor_3'
         }
     ],
     preBuildData: [],
@@ -6214,7 +6214,10 @@
         nit: 'Ejemplo: 123456789-0',
         origen_recursos: 'Ejemplo: propios'
     },
-    build: 38,
+    custom: {
+        noShowHeader: true
+    },
+    build: 39,
     username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
     company: ObjectId('6179a50cc930d700099c5bd6'),
     createdAt: ISODate('2021-10-06T21:31:43.788Z'),
