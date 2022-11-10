@@ -106,7 +106,7 @@
                     value: 'auxiliar_hseq'
                 },
                 {
-                    name: 'Auxiliar Gestion Documental',
+                    name: 'Auxiliar Archivo',
                     value: 'auxiliar_g_documental'
                 },
                 {
@@ -1936,16 +1936,14 @@
             name: 'nombre_trabajador',
             email: 'correo_trabajador',
             'package': true,
-            order: 0,
-            role: 'SIGN'
+            order: 0
         },
         {
             type: 'firma_gnp',
             identification: 'cc_gnp',
             name: 'nombre_gnp',
             email: 'correo_gnp',
-            order: 1,
-            role: 'SIGN'
+            order: 1
         }
     ],
     preBuildData: [
@@ -2047,5 +2045,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 0
+    build: 1
 }

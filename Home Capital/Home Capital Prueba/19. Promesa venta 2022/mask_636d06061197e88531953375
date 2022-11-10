@@ -1,0 +1,911 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+
+<p style="color: #666; text-align: right">
+  Código: <span name="document_code">____________</span>
+</p>
+
+<p style="text-align: center">
+  <b>PROMESA DE VENTA</b>
+</p>
+
+<table class="table_class">
+  <tr>
+    <td><b>Propiedad</b></td>
+    <td><span name="propiedad">____________</span></td>
+  </tr>
+  <tr>
+    <td><b>Valor del inmueble</b></td>
+    <td><span name="valor_total">____________</span></td>
+  </tr>
+  <tr>
+    <td><b>Fecha de entrega</b></td>
+    <td><span name="fecha_entrega_material">____________</span></td>
+  </tr>
+  <tr>
+    <td><b>Fecha de firma de escritura</b></td>
+    <td><span name="fecha_escritura">____________</span></td>
+  </tr>
+</table>
+
+<p>
+  <b>
+    1.EL PRESENTE NEGOCIO JURÍDICO CONTENIDO EN LAS SIGUIENTES CLÁUSULAS SE
+    REALIZA ENTRE:
+  </b>
+</p>
+
+<p>
+  <b>PROMITENTE VENDEDOR: HOME CAPITAL COLOMBIA S.A.S.,</b> identificada con
+  <b>NIT. 901211179-3</b>, constituida mediante documento privado del tres (03)
+  de septiembre de dos mil dieciocho (2018), inscrita en la Cámara de Comercio
+  de Medellín, el cinco (05) de septiembre de dos mil dieciocho (2018), bajo el
+  número 22174 del libro IX del Registro Mercantil, representada en su calidad
+  de Representante Legal por
+  <span name="nombre_rep_hc">____________</span>
+  identificado con cédula de ciudadanía número
+  <b name="cc_rep_hc">____________</b>, de estado civil
+  <span name="estado_rep_hc">____________</span>
+</p>
+
+<table>
+  <tr>
+    <td><b>DIRECCIÓN:</b></td>
+    <td>
+      <span name="dir_rep_hc">____________</span>
+    </td>
+    <td><b>DEPARTAMENTO:</b></td>
+    <td>
+      <span name="dept_rep_hc">____________</span>
+    </td>
+    <td><b>CIUDAD:</b></td>
+    <td>
+      <span name="ciud_rep_hc">____________</span>
+    </td>
+  </tr>
+  <tr>
+    <td><b>CORREO:</b></td>
+    <td><span name="email_rep_hc">____________</span></td>
+    <td><b>CELULAR</b></td>
+    <td><span name="cel_rep_hc">____________</span></td>
+  </tr>
+</table>
+
+<br />
+
+<p name="comprador_2_s" hidden><b>PROMITENTES COMPRADORES:</b></p>
+
+<p>
+  <b>PROMITENTE COMPRADOR<b name="comprador_2_s" hidden> 1</b>:</b>
+  <span name="nombre_comprador_1">____________</span> mayor de edad,
+  identificado (a) con
+  <span name="tipo_documento_comprador_1_cc">cédula de ciudadanía</span>
+  <span name="tipo_documento_comprador_1_ce" hidden>cédula de extranjería</span>
+  <span name="tipo_documento_comprador_1_pa" hidden>pasaporte</span> número
+  <span name="numero_id_comprador_1">____________</span>, de estado civil
+  <span name="estado_comprador_1">____________</span>, actuando en nombre propio
+</p>
+
+<table>
+  <tr>
+    <td><b>DIRECCIÓN:</b></td>
+    <td>
+      <span name="direccion_comprador_1">____________</span>
+    </td>
+    <td><b>DEPARTAMENTO:</b></td>
+    <td>
+      <span name="depart_comprador_1">____________</span>
+    </td>
+    <td><b>CIUDAD:</b></td>
+    <td>
+      <span name="municipio_comprador_1">____________</span>
+    </td>
+  </tr>
+  <tr>
+    <td><b>CORREO:</b></td>
+    <td><span name="correo_comprador_1">____________</span></td>
+    <td><b>CELULAR</b></td>
+    <td><span name="telefono_comprador_1">____________</span></td>
+  </tr>
+</table>
+
+<span name="comprador_2_n"></span>
+
+<div name="comprador_2_s" hidden>
+  <br />
+  <br />
+  <p>
+    <b>PROMITENTE COMPRADOR 2:</b>
+    <span name="nombre_comprador_2">____________</span> mayor de edad,
+    identificado (a) con
+    <span name="tipo_documento_comprador_2_cc">cédula de ciudadanía</span>
+    <span name="tipo_documento_comprador_2_ce" hidden
+      >cédula de extranjería</span
+    >
+    <span name="tipo_documento_comprador_2_pa" hidden>pasaporte</span> número
+    <span name="numero_id_comprador_2">____________</span>, de estado civil
+    <span name="estado_comprador_2">____________</span>, actuando en nombre
+    propio
+  </p>
+
+  <table>
+    <tr>
+      <td><b>DIRECCIÓN:</b></td>
+      <td>
+        <span name="direccion_comprador_2">____________</span>
+      </td>
+      <td><b>DEPARTAMENTO:</b></td>
+      <td>
+        <span name="depart_comprador_2">____________</span>
+      </td>
+      <td><b>CIUDAD:</b></td>
+      <td>
+        <span name="municipio_comprador_2">____________</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>CORREO:</b></td>
+      <td><span name="correo_comprador_2">____________</span></td>
+      <td><b>CELULAR</b></td>
+      <td><span name="telefono_comprador_2">____________</span></td>
+    </tr>
+  </table>
+</div>
+
+<span name="comprador_3_n"></span>
+
+<div name="comprador_3_s" hidden>
+  <br />
+  <br />
+  <p>
+    <b>PROMITENTE COMPRADOR 3:</b>
+    <span name="nombre_comprador_3">____________</span> mayor de edad,
+    identificado (a) con
+    <span name="tipo_documento_comprador_3_cc">cédula de ciudadanía</span>
+    <span name="tipo_documento_comprador_3_ce" hidden
+      >cédula de extranjería</span
+    >
+    <span name="tipo_documento_comprador_3_pa" hidden>pasaporte</span> número
+    <span name="numero_id_comprador_3">____________</span>, de estado civil
+    <span name="estado_comprador_3">____________</span>, actuando en nombre
+    propio
+  </p>
+
+  <table>
+    <tr>
+      <td><b>DIRECCIÓN:</b></td>
+      <td>
+        <span name="direccion_comprador_3">____________</span>
+      </td>
+      <td><b>DEPARTAMENTO:</b></td>
+      <td>
+        <span name="depart_comprador_3">____________</span>
+      </td>
+      <td><b>CIUDAD:</b></td>
+      <td>
+        <span name="municipio_comprador_3">____________</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>CORREO:</b></td>
+      <td><span name="correo_comprador_3">____________</span></td>
+      <td><b>CELULAR</b></td>
+      <td><span name="telefono_comprador_3">____________</span></td>
+    </tr>
+  </table>
+</div>
+
+<span name="comprador_4_n"></span>
+
+<div name="comprador_4_s" hidden>
+  <br />
+  <br />
+  <p>
+    <b>PROMITENTE COMPRADOR 4:</b>
+    <span name="nombre_comprador_4">____________</span> mayor de edad,
+    identificado (a) con
+    <span name="tipo_documento_comprador_4_cc">cédula de ciudadanía</span>
+    <span name="tipo_documento_comprador_4_ce" hidden
+      >cédula de extranjería</span
+    >
+    <span name="tipo_documento_comprador_4_pa" hidden>pasaporte</span> número
+    <span name="numero_id_comprador_4">____________</span>, de estado civil
+    <span name="estado_comprador_4">____________</span>, actuando en nombre
+    propio
+  </p>
+
+  <table>
+    <tr>
+      <td><b>DIRECCIÓN:</b></td>
+      <td>
+        <span name="direccion_comprador_4">____________</span>
+      </td>
+      <td><b>DEPARTAMENTO:</b></td>
+      <td>
+        <span name="depart_comprador_4">____________</span>
+      </td>
+      <td><b>CIUDAD:</b></td>
+      <td>
+        <span name="municipio_comprador_4">____________</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>CORREO:</b></td>
+      <td><span name="correo_comprador_4">____________</span></td>
+      <td><b>CELULAR</b></td>
+      <td><span name="telefono_comprador_4">____________</span></td>
+    </tr>
+  </table>
+</div>
+
+<span name="comprador_5_n"></span>
+
+<div name="comprador_5_s" hidden>
+  <br />
+  <br />
+  <p>
+    <b>PROMITENTE COMPRADOR 5:</b>
+    <span name="nombre_comprador_5">____________</span> mayor de edad,
+    identificado (a) con
+    <span name="tipo_documento_comprador_5_cc">cédula de ciudadanía</span>
+    <span name="tipo_documento_comprador_5_ce" hidden
+      >cédula de extranjería</span
+    >
+    <span name="tipo_documento_comprador_5_pa" hidden>pasaporte</span> número
+    <span name="numero_id_comprador_5">____________</span>, de estado civil
+    <span name="estado_comprador_5">____________</span>, actuando en nombre
+    propio
+  </p>
+
+  <table>
+    <tr>
+      <td><b>DIRECCIÓN:</b></td>
+      <td>
+        <span name="direccion_comprador_5">____________</span>
+      </td>
+      <td><b>DEPARTAMENTO:</b></td>
+      <td>
+        <span name="depart_comprador_5">____________</span>
+      </td>
+      <td><b>CIUDAD:</b></td>
+      <td>
+        <span name="municipio_comprador_5">____________</span>
+      </td>
+    </tr>
+    <tr>
+      <td><b>CORREO:</b></td>
+      <td><span name="correo_comprador_5">____________</span></td>
+      <td><b>CELULAR</b></td>
+      <td><span name="telefono_comprador_5">____________</span></td>
+    </tr>
+  </table>
+</div>
+
+<p>
+  <b>
+    <b>2. OBJETO DEL CONTRATO:</b> El PROMITENTE VENDEDOR se obliga a transferir
+    A TITULO DE COMPRAVENTA, y el PROMITENTE COMPRADOR se obliga a adquirir al
+    mismo título y con sujeción a las condiciones que se expresen en esta
+    PROMESA DE COMPRAVENTA el derecho de dominio y la posesión real y material
+    que el primero tiene y ejerce sobre el 100% de los siguientes inmuebles,
+    descrito así:
+  </b>
+</p>
+
+<table class="table_class">
+  <tr>
+    <td><b name="tipo_inmueble">____________</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_inmueble">____________</span> m2</td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_inmueble">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_inmueble">____________</span></td>
+  </tr>
+  <span name="parqueadero_1_n"></span>
+  <tr name="parqueadero_1_s">
+    <td><b>Parqueadero 1</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_parqueadero_1">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_parqueadero_1">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_parqueadero_1">____________</span></td>
+  </tr>
+  <span name="parqueadero_2_n"></span>
+  <tr name="parqueadero_2_s" hidden>
+    <td><b>Parqueadero 2</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_parqueadero_2">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_parqueadero_2">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_parqueadero_2">____________</span></td>
+  </tr>
+  <span name="parqueadero_3_n"></span>
+  <tr name="parqueadero_3_s" hidden>
+    <td><b>Parqueadero 3</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_parqueadero_3">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_parqueadero_3">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_parqueadero_3">____________</span></td>
+  </tr>
+  <span name="parqueadero_4_n"></span>
+  <tr name="parqueadero_4_s" hidden>
+    <td><b>Parqueadero 4</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_parqueadero_4">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_parqueadero_4">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_parqueadero_4">____________</span></td>
+  </tr>
+  <span name="parqueadero_5_n"></span>
+  <tr name="parqueadero_5_s" hidden>
+    <td><b>Parqueadero 5</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_parqueadero_5">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_parqueadero_5">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_parqueadero_5">____________</span></td>
+  </tr>
+  <span name="util_1_n"></span>
+  <tr name="util_1_s">
+    <td><b>Útil 1</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_util_1">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_util_1">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_util_1">____________</span></td>
+  </tr>
+  <span name="util_2_n"></span>
+  <tr name="util_2_s" hidden>
+    <td><b>Útil 2</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_util_2">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_util_2">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_util_2">____________</span></td>
+  </tr>
+  <span name="util_3_n"></span>
+  <tr name="util_3_s" hidden>
+    <td><b>Útil 3</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_util_3">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_util_3">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_util_3">____________</span></td>
+  </tr>
+  <span name="util_4_n"></span>
+  <tr name="util_4_s" hidden>
+    <td><b>Útil 4</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_util_4">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_util_4">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_util_4">____________</span></td>
+  </tr>
+  <span name="util_5_n"></span>
+  <tr name="util_5_s" hidden>
+    <td><b>Útil 5</b></td>
+    <td><b>Área</b></td>
+    <td><span name="area_util_5">____________</span></td>
+    <td><b>Matricula inmobiliaria</b></td>
+    <td><span name="numero_matricula_util_5">____________</span></td>
+    <td><b>Código catastral</b></td>
+    <td><span name="codigo_catastral_util_5">____________</span></td>
+  </tr>
+</table>
+
+<p>
+  Cabida y Linderos descritos en la escritura
+  <span name="num_escritura">____________</span> del
+  <span name="fecha_escritura">____________</span> de la notaría
+  <span name="num_notaria">____________</span> de
+  <span name="municipio_notaria">____________</span> (TOMADOS DE LA ESCRITURA
+  VIGENTE)
+</p>
+
+<p>
+  <b>3. UBICACIÓN DEL INMUEBLE:</b> Los inmuebles antes mencionados hacen parte
+  de <span name="nombre_unidad">____________</span> ubicada en
+  <span name="dir_unidad">____________</span> de
+  <span name="municipio_unidad">____________</span>,
+  <span name="dept_unidad">____________</span>
+  <b>(TOMADOS DEL C. DE LIBERTAD)</b>
+</p>
+
+<p>
+  <b>4. CUERPO CIERTO:</b> No obstante la mención de cabida y linderos, la venta
+  del inmueble se efectúa como cuerpo cierto.
+</p>
+
+<p>
+  <b>5. PRECIO DE VENTA:</b> Los bienes indicados serán vendidos por la suma
+  total de <span name="valor_total">____________</span> que se pagarán a la
+  cuenta que previamente indique por escrito el PROMITENTE VENDEDOR, de la
+  siguiente forma:
+</p>
+
+<table class="table_class">
+  <tr>
+    <th>Pago</th>
+    <th>Valor</th>
+    <th>Fecha</th>
+    <th>Instrucción de Pago (incluye cuenta y a qué se aplica)</th>
+    <th>Condición de pago (a qué está sujeto el pago)</th>
+  </tr>
+  <tr>
+    <td>1</td>
+    <td><span name="valor_pago_1">____________</span></td>
+    <td><span name="fecha_pago_1">____________</span></td>
+    <td><span name="instruccion_pago_1">____________</span></td>
+    <td><span name="condicion_pago_1">____________</span></td>
+  </tr>
+  <span name="pago_2_n"></span>
+  <tr name="pago_2_s" hidden>
+    <td>2</td>
+    <td><span name="valor_pago_2">____________</span></td>
+    <td><span name="fecha_pago_2">____________</span></td>
+    <td><span name="instruccion_pago_2">____________</span></td>
+    <td><span name="condicion_pago_2">____________</span></td>
+  </tr>
+  <span name="pago_3_n"></span>
+  <tr name="pago_3_s" hidden>
+    <td>3</td>
+    <td><span name="valor_pago_3">____________</span></td>
+    <td><span name="fecha_pago_3">____________</span></td>
+    <td><span name="instruccion_pago_3">____________</span></td>
+    <td><span name="condicion_pago_3">____________</span></td>
+  </tr>
+  <span name="pago_4_n"></span>
+  <tr name="pago_4_s" hidden>
+    <td>4</td>
+    <td><span name="valor_pago_4">____________</span></td>
+    <td><span name="fecha_pago_4">____________</span></td>
+    <td><span name="instruccion_pago_4">____________</span></td>
+    <td><span name="condicion_pago_4">____________</span></td>
+  </tr>
+  <span name="pago_5_n"></span>
+  <tr name="pago_5_s" hidden>
+    <td>5</td>
+    <td><span name="valor_pago_5">____________</span></td>
+    <td><span name="fecha_pago_5">____________</span></td>
+    <td><span name="instruccion_pago_5">____________</span></td>
+    <td><span name="condicion_pago_5">____________</span></td>
+  </tr>
+</table>
+
+<span name="fna_n"></span>
+<p name="fna_s" hidden>
+  Que serán cancelados con crédito solicitado al Fondo Nacional del Ahorro (FNA)
+  por medio de transferencia bancaria en la cuenta ahorros número
+  <span name="num_cuenta">____________</span>, Banco Bancolombia S.A. a nombre
+  de P.A. HOME CAPITAL COLOMBIA. Dicho pago será desembolsado una vez salga
+  registrada la Escritura Pública de Compraventa e hipoteca a favor del FNA y
+  sea aprobada por este último,
+</p>
+
+<p>
+  Una vez se realicen los pagos relacionados, EL PROMITENTE COMPRADOR deberá
+  enviar los respectivos soportes al correo electrónico
+  recaudos@homecapital.com.co
+</p>
+
+<p>
+  <b>PARÁGRAFO PRIMERO:</b> Los valores de pago pactados en esta cláusula, están
+  libres de 4x1000 y otras retenciones.
+</p>
+
+<p>
+  <b>PARÁGRAFO SEGUNDO:</b> EL PROMITENTE COMPRADOR declara que los recursos
+  entregados en parte de pago por la compra de los inmuebles descritos,
+  provienen de las fuentes que en virtud de la ocupación, profesión u oficio
+  desarrollamos lícitamente y que por tanto dichos recursos no provienen de
+  ninguna actividad ilícita de las contempladas en el Código Penal Colombiano o
+  en cualquier norma que lo modifican, adicionan o complementan.
+</p>
+
+<p>
+  <b
+    >6. LA PRESENTE NEGOCIACIÒN ESTÀ CONDICIONADA A LAS SIGUIENTES SITUACIONES
+    (CONDICIONES SUSPENSIVAS):</b
+  >
+</p>
+
+<ol type="A">
+  <li>
+    La propiedad deberá estar 100% sin ningún tipo de gravamen o afectación en
+    el momento de la escrituración.
+  </li>
+  <li>
+    Que no recaigan sobre el inmueble gravámenes o limitaciones al dominio que
+    impidan la escrituración del inmueble.
+  </li>
+  <li>
+    Que el bien no haya sido enajenado ni prometido en venta a favor de otra
+    persona.
+  </li>
+  <li>
+    En caso de incumplimiento de las fechas de pago se cobrarán intereses a la
+    tasa máxima legal permitida por la Superintendencia Financiera., Si dos
+    meses después no se han pagado los saldos de cada una de las fechas
+    estipulados de los desembolsos se declara resuelto este contrato a favor del
+    vendedor.
+  </li>
+  <li>
+    Se entrega a Paz salvo la administración, predial, tasas de valorización y
+    servicios públicos.
+  </li>
+  <li>
+    EL PROMITENTE VENDEDOR suministre los documentos requeridos por el
+    PROMITENTE COMPRADOR para la formalización del presente negocio
+  </li>
+</ol>
+
+<p>
+  <b>PARÁGRAFO PRIMERO:</b> En el evento en que se desista del negocio por una
+  de las causales indicadas, EL PROMITENTE VENDEDOR devolverá los dineros que
+  hubiere recibido en un plazo máximo de quince (15) días hábiles, sin lugar a
+  reconocimiento de intereses por el periodo en que tales sumas estuvieron en
+  poder de EL PROMITENTE VENDEDOR.
+</p>
+
+<p>
+  <b>7 CELEBRACIÓN DEL CONTRATO PROMETIDO:</b> la escritura pública por medio de
+  la cual se dé cumplimiento al presente contrato se otorgará en la Notaría
+  <span name="num_notaria">____________</span> del Círculo Notarial de
+  <span name="municipio_notaria">____________</span>, el día
+  <span name="fecha_firma_contrato">____________</span> a las
+  <span name="hora_contrato">____________</span> o antes si es posible, fecha
+  que podrá adelantarse por mutuo acuerdo entre las partes.
+</p>
+
+<p>
+  <b>PARÁGRAFO PRIMERO:</b> No obstante, el plazo anterior, se pacta un plazo de
+  gracia de tres (03) meses adicionales, contados a partir de la fecha antes
+  indicada. Durante dicho periodo de gracia EL PROMITENTE VENDEDOR deberá pagar
+  al PROMITENTE COMPRADOR, a título de compensación, una suma mensual
+  equivalente a al 0,3% del total de las sumas que EL PROMITENTE COMPRADOR
+  hubiere pagado. Durante este periodo adicional, no se configurará
+  incumplimiento por parte del PROMITENTE VENDEDOR.
+</p>
+
+<p>
+  <b
+    >PARÁGRAFO SEGUNDO: EL PROMITENTE VENDEDOR se reserva la facultad de cambiar
+    la fecha, hora y notaría para la suscripción de la Escritura</b
+  >
+  pública, previa comunicación por escrito con no menos de cinco (5) días
+  calendario.
+</p>
+
+<p>
+  <b>8. GASTOS DE LOS INMUEBLES:</b> Los gastos que generen los inmuebles por
+  impuestos, tasas y contribuciones, serán asumidos por el PROMITENTE VENDEDOR
+  hasta la fecha de la entrega material del inmueble y los que se causen a
+  partir de la fecha de la entrega, material del inmueble los asumirá EL
+  PROMITENTE COMPRADOR.
+</p>
+
+<p>
+  El saldo por concepto de el prorrateo de administración, predial y servicios
+  públicos se pagará el día de la entrega a través de transferencia a la cuenta
+  que previamente indique por escrito el PROMITENTE VENDEDOR.
+</p>
+
+<p>
+  <b>9. ENTREGA MATERIAL:</b> La entrega y material de los inmuebles se
+  efectuará el <span name="fecha_entrega_material">____________</span> o antes
+  si es posible, fecha que podrá adelantarse por mutuo acuerdo entre las partes.
+  En el evento de que el inmueble sea entregado antes de otorgar la Escritura
+  Pública de Compraventa, la ocupación de este será a título de MERA TENENCIA.
+</p>
+
+<span name="entrega_sujeta_n" hidden></span>
+<p name="entrega_sujeta_s">
+  La entrega queda sujeta a
+  <span name="texto_entrega_sujeta">____________</span>
+</p>
+
+<p>
+  <b>PARÁGRAFO PRIMERO. BENEFICIO MUDATE YA:</b> Acuerdan LAS PARTES y así dejan
+  expresa constancia, que previo acuerdo entre estas, EL PROMITENTE VENDEDOR
+  podrá efectuar la entrega material del inmueble previo a la fecha acordada, a
+  título de mera tenencia. De llegar a un acuerdo, EL PROMITENTE VENDEDOR
+  otorgará un periodo de gracia de quince (15) días calendario contados a partir
+  de la entrega, exento de pago. Cumplidos los quince (15) días calendario
+  iniciales EL PROMITENTE COMPRADOR se obliga a cancelar como compensación, una
+  suma equivalente al 0.8% mensual anticipado sobre los saldos pendientes por
+  pagar, hasta tanto se otorgue la Escritura Pública que perfecciona el presente
+  contrato.
+</p>
+
+<p>
+  Celebrada la Escritura Publica de transferencia, sin que se hubiere cumplido
+  con el pago de la totalidad del inmueble, EL PROMITENTE COMPRADOR se obliga a
+  pagar a partir de dicho momento y hasta que se efectué el desembolso del saldo
+  final, a titulo de compensación, una suma equivalente al 1.2% mensual
+  anticipado sobre el saldo pendiente por pagar.
+</p>
+
+<p>
+  En ningún evento, estas sumas de dinero se considerarán como parte de pago del
+  valor total del inmueble.
+</p>
+
+<p>
+  <b>10. EVENTO AJENO:</b> Se entenderá como evento ajeno para el cumplimiento
+  del presente contrato: (i) el hecho exclusivo de un tercero ajeno a EL
+  PROMITENTE VENDEDOR, que impida el cumplimiento del presente contrato. (ii)
+  Fuerza mayor o caso fortuito. (iii) Demoras en la obtención de paz y salvos
+  ante entidades financieras, territoriales y copropiedad.
+</p>
+
+<p>
+  En caso de presentarse un evento ajeno, el contrato se suspenderá por el mismo
+  término que dure dicho fenómeno. Ante este evento no habrá lugar al cobro por
+  parte del PROMITENTE COMPRADOR, de multas o penalidades.
+</p>
+
+<p>
+  <b>11. INCUMPLIMIENTO DEL CONTRATO:</b> Si EL PROMITENTE COMPRADOR incumple
+  alguna o todas las obligaciones derivadas del presente contrato y ello no
+  fuere por su muerte, terremoto, inundación, incendio; perderá la suma de 10%
+  del valor total del negocio, que será exigible por la vía ejecutiva sin
+  necesidad de requerimientos para la constitución en mora, derecho al cual
+  expresamente renuncian ambas partes. No obstante lo anterior, el pago de la
+  pena no extingue la obligación principal del negocio, por lo tanto EL
+  PROMITENTE VENDEDOR podrá exigir su cumplimiento.
+</p>
+
+<p>
+  <b>PARÁGRAFO PRIMERO:</b> No obstante, lo anterior, ante cualquier evento de
+  incumplimiento por parte del PROMITENTE COMPRADOR, EL PROMITENTE VENDEDOR
+  estará facultado para la terminación unilateral del presente negocio. Para tal
+  efecto se seguirá el siguiente proceso:
+</p>
+
+<p>
+  EL PROMITENTE VENDEDOR requerirá por escrito a EL PROMITENTE COMPRADOR para
+  que en un plazo no mayor a cinco (05) días calendario cumpla con sus
+  obligaciones. Transcurrido dicho plazo, si el PROMITENTE COMPRADOR no ha
+  cumplido, EL PROMITENTE VENDEDOR dará por terminado el presente contrato por
+  incumplimiento y así lo comunicará a EL PROMITENTE COMPRADOR, quedando
+  obligado a restituir las sumas de dinero pagadas por EL PROMITENTE COMPRADOR,
+  restando la suma indemnizatoria acordada en esta cláusula, en un plazo no
+  mayor a treinta (30) días calendario.
+</p>
+
+<p name="ciudad_escritura_med">
+  <b>GASTOS DE ESCRITURA DE VENTA:</b> Los gastos que causen en el otorgamiento
+  de la escritura pública de venta, serán calculados sobre la base del precio de
+  $XX0.000.000 especificado en el punto 5 (nunca inferior al avalúo catastral) y
+  serán asumidos así: EL PROMITENTE VENDEDOR: Asume el 100% de la retención en
+  la fuente, el 50% de los gastos notariales y el 50% de la boleta de rentas. EL
+  PROMITENTE COMPRADOR: Asume el 50% de los gastos notariales, el 50% de la
+  boleta de rentas y el 100% de los gastos de registro. Los gastos de
+  Cancelaciones de hipotecas y/o embargos son asumidos 100% por EL PROMITENTE
+  VENDEDOR correspondientes a los negocios anteriores. Los gastos de
+  Constitución de hipotecas y/o afectaciones a vivienda familiar son asumidos
+  100% por EL PROMITENTE VENDEDOR correspondientes a este negocio.
+</p>
+
+<p name="ciudad_escritura_bog" hidden>
+  <b>GASTOS DE ESCRITURA DE VENTA:</b> Los gastos que causen en el otorgamiento
+  de la escritura pública de venta, serán calculados sobre la base del precio de
+  $XX0.000.000 especificado en el punto 5 (nunca inferior al avalúo catastral) y
+  serán asumidos así: EL PROMITENTE VENDEDOR: Asume el 100% de la retención en
+  la fuente y el 50% de los gastos notariales. EL PROMITENTE COMPRADOR: Asume el
+  50% de los gastos notariales, el 100% de la estampilla o impuesto de
+  beneficencia y el 100% de los gastos de registro. Los gastos de Cancelaciones
+  de hipotecas y/o embargos son asumidos 100% por EL PROMITENTE VENDEDOR
+  correspondientes a los negocios anteriores. Los gastos de Constitución de
+  hipotecas y/o afectaciones a vivienda familiar son asumidos 100% por EL
+  PROMITENTE VENDEDOR correspondientes a este negocio.
+</p>
+
+<p name="ciudad_escritura_otra" hidden>
+  <b>GASTOS DE ESCRITURA DE VENTA:</b>
+  <span name="parrafo_escritura_otra">__________________________________</span>
+</p>
+
+<p>
+  <b>13. CESIÓN DEL CONTRATO:</b> Este contrato de promesa de venta no es
+  negociable por parte de los contratantes, sin el previo consentimiento de
+  ambas partes, manifestado por escrito.
+</p>
+
+<p>
+  <b>14. ESTIPULACIONES ANTERIORES:</b> Las partes manifiestan que no
+  reconocerán validez a estipulaciones verbales relacionadas con el presente
+  contrato, ya que, aquí se consigna el acuerdo completo y total acerca de su
+  objeto y reemplaza y deja sin efecto alguno cualquier contrato verbal o
+  escrito celebrado entre las partes con anterioridad.
+</p>
+
+<p>
+  <b>15. CELEBRACION Y EJECUCION DE BUENA FE:</b> Las partes contratantes
+  dejamos expresamente consignado que hemos actuado de buena fe exenta de culpa
+  en todo el proceso previo al de la celebración del presente contrato y nos
+  obligamos recíprocamente a ejecutarlo y dar cumplimiento a las obligaciones
+  adquiridas, prevalidos de la mayor buena fe y con la clara intención de no
+  causar perjuicios al otro contratante ni a terceros.
+</p>
+
+<p>
+  <b>16. AUTORIZACION DE USO DE IMAGEN: EL (LOS) PROMITENTE(S) COMPRADOR(ES)</b>
+  <b name="autoriza_imagen">____________</b> autoriza(n) a HOME CAPITAL COLOMBIA
+  S.A.S o al tercero que éste designe para que narre y comparta la experiencia
+  de compra o venta y utilice, muestre, divulgue o de cualquier manera exhiba su
+  Imagen (total o parcial) ya sea en obras fotográficas, audiovisuales y/o
+  escritas a través de cualquier medio que considere apropiado en relación con
+  la empresa, siempre y cuando dicho uso sea conforme a la moral y al orden
+  público. Dicha autorización no tiene límite de territorio ni de tiempo.
+</p>
+
+<p>Así mismo, declara que:</p>
+
+<ol type="A">
+  <li>
+    Entiende y acepta que esta autorización se hace en virtud de campañas
+    publicitarias y que no tendrá derecho a pago alguno en ningún momento y por
+    ningún concepto por la explotación de su Imagen.
+  </li>
+  <li>
+    Los materiales publicitarios que se generarán con su Imagen serán públicos,
+    por lo tanto, HOME CAPITAL COLOMBIA S.A.S. no será responsable por las
+    utilizaciones indebidas o no, que hagan terceros de las mismas.
+  </li>
+  <li>
+    Renuncia a inspeccionar y/o aprobar la publicidad determinada y/o cualquier
+    otra forma de explotación en virtud de la cual se fije o divulgue su Imagen.
+  </li>
+</ol>
+
+<p>
+  <b>17. MÉRITO EJECUTIVO:</b> El presente contrato prestará merito ejecutivo,
+  como base para la exigencia del cumplimiento de las obligaciones pactadas.
+</p>
+
+<p>
+  <b>18. AUTORIZACIÓN CONSULTA EN BASES DE DATOS:</b> EL PROMITENTE COMPRADOR
+  autoriza expresamente al PROMITENTE VENDEDOR a consultar y solicitar sus
+  condiciones personales y financieras en las listas y bases de datos,
+  requeridas para adoptar decisiones relativas a la presente negociación
+</p>
+
+<p>
+  <b>
+    Para constancia y validez, una vez leído por los contratantes, se firma en
+    la ciudad de <span name="ciudad_firma">____________</span> el
+    <span name="fecha_firma_contrato">____________</span>
+  </b>
+</p>
+
+<br /><br /><br />
+
+<p>
+  <b>PROMITENTE COMPRADOR 1</b>
+  <br />
+  <br />
+  <br />
+  __________________________________
+  <br />
+  <b name="nombre_comprador_1">____________</b>
+  <br />
+  <b name="tipo_documento_comprador_1_cc">C.C.</b>
+  <b name="tipo_documento_comprador_1_ce" hidden>C.E.</b>
+  <b name="tipo_documento_comprador_1_pa" hidden>PA</b>
+  <b name="numero_id_comprador_1">____________</b>
+</p>
+
+<p name="comprador_2_s" hidden>
+  <br />
+  <br />
+  <br />
+  <b>PROMITENTE COMPRADOR 2</b>
+  <br />
+  <br />
+  <br />
+  __________________________________
+  <br />
+  <b name="nombre_comprador_2">____________</b>
+  <br />
+  <b name="tipo_documento_comprador_2_cc">C.C.</b>
+  <b name="tipo_documento_comprador_2_ce" hidden>C.E.</b>
+  <b name="tipo_documento_comprador_2_pa" hidden>PA</b>
+  <b name="numero_id_comprador_2">____________</b>
+</p>
+
+<p name="comprador_3_s" hidden>
+  <br />
+  <br />
+  <br />
+  <b>PROMITENTE COMPRADOR 3</b>
+  <br />
+  <br />
+  <br />
+  __________________________________
+  <br />
+  <b name="nombre_comprador_3">____________</b>
+  <br />
+  <b name="tipo_documento_comprador_3_cc">C.C.</b>
+  <b name="tipo_documento_comprador_3_ce" hidden>C.E.</b>
+  <b name="tipo_documento_comprador_3_pa" hidden>PA</b>
+  <b name="numero_id_comprador_3">____________</b>
+</p>
+
+<p name="comprador_4_s" hidden>
+  <br />
+  <br />
+  <br />
+  <b>PROMITENTE COMPRADOR 4</b>
+  <br />
+  <br />
+  <br />
+  __________________________________
+  <br />
+  <b name="nombre_comprador_4">____________</b>
+  <br />
+  <b name="tipo_documento_comprador_4_cc">C.C.</b>
+  <b name="tipo_documento_comprador_4_ce" hidden>C.E.</b>
+  <b name="tipo_documento_comprador_4_pa" hidden>PA</b>
+  <b name="numero_id_comprador_4">____________</b>
+</p>
+
+<p name="comprador_5_s" hidden>
+  <br />
+  <br />
+  <br />
+  <b>PROMITENTE COMPRADOR 5</b>
+  <br />
+  <br />
+  <br />
+  __________________________________
+  <br />
+  <b name="nombre_comprador_5">____________</b>
+  <br />
+  <b name="tipo_documento_comprador_5_cc">C.C.</b>
+  <b name="tipo_documento_comprador_5_ce" hidden>C.E.</b>
+  <b name="tipo_documento_comprador_5_pa" hidden>PA</b>
+  <b name="numero_id_comprador_5">____________</b>
+</p>
+
+<br /><br /><br />
+
+<p>
+  <b>PROMITENTE VENDEDOR</b>
+  <br />
+  <br />
+  <br />
+  __________________________________
+  <br />
+  <b>HOME CAPITAL COLOMBIA S.A.S.</b>
+  <br />
+  <b>Nit. 901211179-3, Representada por</b>
+  <br />
+  <b name="nombre_rep_hc">____________</b>
+  <br />
+  C.C. <b name="cc_rep_hc">____________</b>
+</p>
