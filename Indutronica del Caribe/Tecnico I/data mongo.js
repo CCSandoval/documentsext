@@ -152,7 +152,12 @@
         {
             name: "bonificacion",
             type: "text",
-            description: "Ingrese la bonificación extralegal del trabajador"
+            description: "Ingrese el nombre de la bonificación extralegal del trabajador"
+        },
+        {
+            name: "bonificacion_monto",
+            type: "currency",
+            description: "Ingrese el valor de la bonificación del trabajador"
         },
         {
             name: "periodo_prueba",
@@ -160,14 +165,14 @@
             description: "Ingrese el periodo de prueba del trabajador"
         },
         {
-            name: "correo_empleador",
-            type: "email",
-            description: "Ingrese el correo del empleador"
+            name: "nombre_contrato",
+            type: "text",
+            description: "Ingrese el nombre del contrato",
         },
         {
-            name: "celular_empleador",
-            type: "phone",
-            description: "Ingrese el celular del empleador"
+            name: "nombre_cliente",
+            type: "text",
+            description: "Ingrese el nombre del cliente",
         },
         {
             name: "correo_trabajador",
@@ -336,6 +341,14 @@
             name: "cc_empleador",
             value: "71.665.132"
         },
+        {
+            name: "correo_empleador",
+            value: "amanotas@indutronica.com"
+        },
+        {
+            name: "celular_empleador",
+            value: "+573107076553"
+        },
     ],
     sign: [
       "nombre_trabajador",
@@ -393,7 +406,9 @@
         },
     ],
         prebuild: false,
-        build: 4,
+        build: 6,
         price: 5000,
         name: "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO",
+        company: ObjectId('61eae55829edb10009edd3de')
+
 }
