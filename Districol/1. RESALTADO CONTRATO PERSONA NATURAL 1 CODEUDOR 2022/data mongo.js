@@ -322,6 +322,245 @@
             description: 'Ingrese el correo electrónico donde llegará la invitación a firmar del otorgante solidario'
         },
         {
+            name: 'otorgante_solidario_2',
+            type: 'clausula',
+            description: '¿Desea ingresar un segundo otorgante solidario?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_otorgante_2',
+            type: 'clausula',
+            description: 'Seleccione el tipo de la persona del segundo otorgante solidario',
+            value: 'n',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_otorgante_2',
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_otorgante_2',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Ingrese el nombre del representante legal del segundo otorgante solidario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_otorgante_2',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Ingrese el nombre del segundo otorgante solidario'
+                }
+            ],
+            type: 'name',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cc_otorgante_2',
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_otorgante_2',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Ingrese el número de cédula del representante legal del segundo otorgante solidario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_otorgante_2',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Ingrese el número de cédula del segundo otorgante solidario'
+                }
+            ],
+            type: 'number',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'exp_cc_otorgante_2',
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_otorgante_2',
+                            v: 'j'
+                        }
+                    ],
+                    text: 'Ingrese el lugar de expedición de la cédula del representante legal del segundo otorgante solidario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_otorgante_2',
+                            v: 'n'
+                        }
+                    ],
+                    text: 'Ingrese el lugar de expedición de la cédula del segundo otorgante solidario'
+                }
+            ],
+            type: 'text',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'empresa_otorgante_2',
+            type: 'name',
+            description: 'Ingrese el nombre del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'tipo_persona_otorgante_2',
+                    v: 'j'
+                },
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nit_otorgante_2',
+            type: 'name',
+            description: 'Ingrese el NIT del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'tipo_persona_otorgante_2',
+                    v: 'j'
+                },
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'ciudad_emp_otorgante_2',
+            type: 'name',
+            description: 'Ingrese la ciudad de domicilio de la sociedad del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'tipo_persona_otorgante_2',
+                    v: 'j'
+                },
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'dir_otorgante_2',
+            type: 'name',
+            description: 'Ingrese la dirección del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'ciudad_otorgante_2',
+            type: 'name',
+            description: 'Ingrese la ciudad del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'departamento_otorgante_2',
+            type: 'name',
+            description: 'Ingrese el departamento del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tel_fijo_otorgante_2',
+            type: 'text',
+            description: 'Ingrese el número de teléfono fijo del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'cel_otorgante_2',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono célular del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'email_otorgante_2',
+            type: 'email',
+            description: 'Ingrese el correo electrónico donde llegará la invitación a firmar del segundo otorgante solidario',
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
             name: 'ciudad_suscripcion',
             type: 'text',
             description: 'Ingrese la ciudad de suscripción'
@@ -330,6 +569,11 @@
             name: 'ciudad_firma',
             type: 'text',
             description: 'Ingrese la ciudad donde se firma el presente contrato'
+        },
+        {
+            name: 'package_name',
+            type: 'text',
+            description: 'Ingrese el nombre de la carpeta donde quedarán guardados el presente contrato y sus anexos'
         }
     ],
     preBuild: false,
@@ -367,6 +611,10 @@
         'tel_fijo_otorgante',
         'cel_otorgante',
         'email_otorgante',
+        'email_otorgante_2',
+        'nombre_otorgante_2',
+        'cc_otorgante_2',
+        'cel_otorgante_2',
         'ciudad_suscripcion',
         'fecha_suscripcion',
         'ciudad_firma'
@@ -377,7 +625,8 @@
             email: 'email_corresponsal',
             name: 'nombre_corresponsal',
             identification: 'cc_corresponsal',
-            phone: 'cel_corresponsal'
+            phone: 'cel_corresponsal',
+            'package': true
         },
         {
             type: 'firma_otorgante',
@@ -385,9 +634,61 @@
             name: 'nombre_otorgante',
             identification: 'cc_otorgante',
             phone: 'cel_otorgante'
+        },
+        {
+            type: 'firma_otorgante_2',
+            email: 'email_otorgante_2',
+            name: 'nombre_otorgante_2',
+            identification: 'cc_otorgante_2',
+            phone: 'cel_otorgante_2'
         }
     ],
     price: 5000,
+    files: [
+        {
+            name: 'Copia cédula representante legal',
+            approve: 'pending',
+            required: false
+        },
+        {
+            name: 'Copia cédula codeudor 1',
+            approve: 'pending',
+            required: false
+        },
+        {
+            name: 'Copia cédula codeudor 2',
+            approve: 'pending',
+            required: false,
+            preReq: 'otorgante_solidario_2'
+        },
+        {
+            name: 'RUT representante legal',
+            approve: 'pending',
+            required: false
+        },
+        {
+            name: 'RUT codeudor 1',
+            approve: 'pending',
+            required: false
+        },
+        {
+            name: 'RUT codeudor 2',
+            approve: 'pending',
+            required: false,
+            preReq: 'otorgante_solidario_2'
+        },
+        {
+            name: 'RUT de la persona jurídica',
+            approve: 'pending',
+            required: false,
+            preReq: 'tipo_persona_corresponsal'
+        },
+        {
+            name: 'Cámara de comercio',
+            approve: 'pending',
+            required: false
+        }
+    ],
     name: 'CONTRATO DE COLABORACIÓN MERCANTIL',
-    build: 3
+    build: 4
 }

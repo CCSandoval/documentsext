@@ -855,9 +855,40 @@
       contrato. Sus datos para notificación son: Dirección
       <span name="dir_otorgante">____________________</span> de la Ciudad de
       <span name="ciudad_otorgante">____________________</span>, Departamento de
-      <span name="departamento_otorgante">____________________</span>, Teléfono <span name="tel_fijo_otorgante">____________________</span>,
-      móvil <span name="cel_otorgante">____________________</span>, E-Mail:
+      <span name="departamento_otorgante">____________________</span>, Teléfono
+      <span name="tel_fijo_otorgante">____________________</span>, móvil
+      <span name="cel_otorgante">____________________</span>, E-Mail:
       <span name="email_otorgante">____________________</span>.
+    </li>
+    <span name="otorgante_solidario_2_n"></span>
+    <li name="otorgante_solidario_2_s" hidden>
+      OTORGANTE SOLIDARIO: El (la) señor (a)
+      <span name="nombre_otorgante_2">____________________</span>, mayor de
+      edad, identificado (a) con cédula de ciudadanía número
+      <span name="cc_otorgante_2">____________________</span>, expedida en
+      <span name="exp_cc_otorgante_2">____________________</span>, declara
+      <span name="tipo_persona_otorgante_2_n"
+        >que en representación propia</span
+      >
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        que en representación legal de la sociedad
+        <span name="empresa_otorgante_2">____________________</span>
+        identificada con NIT
+        <span name="nit_otorgante_2">____________________</span> y domiciliada
+        en la ciudad
+        <span name="ciudad_emp_otorgante_2">____________________</span>
+      </span>
+      se constituye como otorgante solidario e ilimitado del OPERADOR
+      CORRESPONSAL, en todas las obligaciones que éste asume con EL
+      ADMINISTRADOR. En constancia de lo anterior, suscribe el pagaré en blanco
+      y la carta de instrucciones que son otorgados como garantía anexa a este
+      contrato. Sus datos para notificación son: Dirección
+      <span name="dir_otorgante_2">____________________</span> de la Ciudad de
+      <span name="ciudad_otorgante_2">____________________</span>, Departamento
+      de <span name="departamento_otorgante_2">____________________</span>,
+      Teléfono <span name="tel_fijo_otorgante_2">____________________</span>,
+      móvil <span name="cel_otorgante_2">____________________</span>, E-Mail:
+      <span name="email_otorgante_2">____________________</span>.
     </li>
   </ol>
 
@@ -965,7 +996,8 @@
       <span name="nombre_corresponsal">____________________</span>
     </span>
     <br />
-    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre propio
+    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre
+    propio
   </p>
 
   <br /><br /><br />
@@ -993,14 +1025,49 @@
       <span name="nombre_otorgante">____________________</span>
     </span>
     <br />
-    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre propio
+    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre
+    propio
   </p>
+
+  <span name="otorgante_solidario_2_n"></span>
+  <div name="otorgante_solidario_2_s" hidden>
+    <br /><br /><br />
+    <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+    <p>
+      Firma:
+      <br /><br /><br /><br />
+      ________________________________________ <br />
+      Nombre:
+      <span name="tipo_persona_otorgante_2_n">
+        <span name="nombre_otorgante_2">____________________</span>
+      </span>
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        <span name="empresa_otorgante_2">____________________</span>
+        <br />
+        NIT: <span name="nit_otorgante_2">____________________</span>
+      </span>
+      <br />
+      Ciudad de suscripción de contrato:
+      <span name="ciudad_suscripcion">____________________</span>
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        <br />
+        Representante Legal Sociedad:
+        <span name="nombre_otorgante_2">____________________</span>
+      </span>
+      <br />
+      C.C. <span name="cc_otorgante_2">____________________</span>, Y en nombre
+      propio
+    </p>
+  </div>
+
   <br /><br /><br />
   <p>
     EL ADMINISTRADOR NIT: ANEXO 1: MANUAL DE PROCEDIMIENTO (MANUEL OPERATIO
     REDEBAN). ANEXO 2:LISTADO Y CLASIFICACION DE OPERACIONES. ANEXO 3:
     AUTORIZACION Y REGULACION DEL MANEJO DE DATOS PERSONALES
   </p>
+  <br><br><br><br>
+  <span name="package_name">____________________</span>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -1115,7 +1182,8 @@
       <span name="nombre_corresponsal">____________________</span>
     </span>
     <br />
-    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre propio
+    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre
+    propio
   </p>
 
   <br /><br /><br />
@@ -1143,8 +1211,40 @@
       <span name="nombre_otorgante">____________________</span>
     </span>
     <br />
-    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre propio
+    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre
+    propio
   </p>
+
+  <span name="otorgante_solidario_2_n"></span>
+  <div name="otorgante_solidario_2_s" hidden>
+    <br /><br /><br />
+    <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+    <p>
+      Firma:
+      <br /><br /><br /><br />
+      ________________________________________ <br />
+      Nombre:
+      <span name="tipo_persona_otorgante_2_n">
+        <span name="nombre_otorgante_2">____________________</span>
+      </span>
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        <span name="empresa_otorgante_2">____________________</span>
+        <br />
+        NIT: <span name="nit_otorgante_2">____________________</span>
+      </span>
+      <br />
+      Ciudad de suscripción de contrato:
+      <span name="ciudad_suscripcion">____________________</span>
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        <br />
+        Representante Legal Sociedad:
+        <span name="nombre_otorgante_2">____________________</span>
+      </span>
+      <br />
+      C.C. <span name="cc_otorgante_2">____________________</span>, Y en nombre
+      propio
+    </p>
+  </div>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -1206,7 +1306,7 @@
       NIT: <span name="nit_corresponsal">____________________</span>
     </span>
     <br />
-    Ciudad de suscripción de contrato:
+    Ciudad de suscripción de pagaré:
     <span name="ciudad_suscripcion">____________________</span>
     <span name="tipo_persona_corresponsal_j" hidden>
       <br />
@@ -1214,7 +1314,8 @@
       <span name="nombre_corresponsal">____________________</span>
     </span>
     <br />
-    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre propio
+    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre
+    propio
   </p>
 
   <br /><br /><br />
@@ -1234,7 +1335,7 @@
       NIT: <span name="nit_otorgante">____________________</span>
     </span>
     <br />
-    Ciudad de suscripción de contrato:
+    Ciudad de suscripción de pagaré:
     <span name="ciudad_suscripcion">____________________</span>
     <span name="tipo_persona_otorgante_j" hidden>
       <br />
@@ -1242,8 +1343,40 @@
       <span name="nombre_otorgante">____________________</span>
     </span>
     <br />
-    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre propio
+    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre
+    propio
   </p>
+
+  <span name="otorgante_solidario_2_n"></span>
+  <div name="otorgante_solidario_2_s" hidden>
+    <br /><br /><br />
+    <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+    <p>
+      Firma:
+      <br /><br /><br /><br />
+      ________________________________________ <br />
+      Nombre:
+      <span name="tipo_persona_otorgante_2_n">
+        <span name="nombre_otorgante_2">____________________</span>
+      </span>
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        <span name="empresa_otorgante_2">____________________</span>
+        <br />
+        NIT: <span name="nit_otorgante_2">____________________</span>
+      </span>
+      <br />
+      Ciudad de suscripción del pagaré:
+      <span name="ciudad_suscripcion">____________________</span>
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        <br />
+        Representante Legal Sociedad:
+        <span name="nombre_otorgante_2">____________________</span>
+      </span>
+      <br />
+      C.C. <span name="cc_otorgante_2">____________________</span>, Y en nombre
+      propio
+    </p>
+  </div>
 </div>
 
 <div style="page-break-after: always"></div>
@@ -1353,7 +1486,7 @@
       NIT: <span name="nit_corresponsal">____________________</span>
     </span>
     <br />
-    Ciudad de suscripción de contrato:
+    Ciudad de suscripción de pagaré:
     <span name="ciudad_suscripcion">____________________</span>
     <span name="tipo_persona_corresponsal_j" hidden>
       <br />
@@ -1361,7 +1494,8 @@
       <span name="nombre_corresponsal">____________________</span>
     </span>
     <br />
-    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre propio
+    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre
+    propio
   </p>
 
   <br /><br /><br />
@@ -1381,7 +1515,7 @@
       NIT: <span name="nit_otorgante">____________________</span>
     </span>
     <br />
-    Ciudad de suscripción de contrato:
+    Ciudad de suscripción de pagaré:
     <span name="ciudad_suscripcion">____________________</span>
     <span name="tipo_persona_otorgante_j" hidden>
       <br />
@@ -1389,6 +1523,38 @@
       <span name="nombre_otorgante">____________________</span>
     </span>
     <br />
-    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre propio
+    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre
+    propio
   </p>
+
+  <span name="otorgante_solidario_2_n"></span>
+  <div name="otorgante_solidario_2_s" hidden>
+    <br /><br /><br />
+    <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+    <p>
+      Firma:
+      <br /><br /><br /><br />
+      ________________________________________ <br />
+      Nombre:
+      <span name="tipo_persona_otorgante_2_n">
+        <span name="nombre_otorgante_2">____________________</span>
+      </span>
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        <span name="empresa_otorgante_2">____________________</span>
+        <br />
+        NIT: <span name="nit_otorgante_2">____________________</span>
+      </span>
+      <br />
+      Ciudad de suscripción del pagaré:
+      <span name="ciudad_suscripcion">____________________</span>
+      <span name="tipo_persona_otorgante_2_j" hidden>
+        <br />
+        Representante Legal Sociedad:
+        <span name="nombre_otorgante_2">____________________</span>
+      </span>
+      <br />
+      C.C. <span name="cc_otorgante_2">____________________</span>, Y en nombre
+      propio
+    </p>
+  </div>
 </div>
