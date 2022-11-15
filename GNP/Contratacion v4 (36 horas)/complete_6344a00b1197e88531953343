@@ -389,6 +389,12 @@
         CARGO
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
+        <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
+        <span name="cargo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</span>
+        <span name="cargo_torre_ctrl" hidden>TORRE DE CONTROL</span>
+        <span name="cargo_coord_g_doc" hidden>COORDINADOR GESTION DOCUMENTAL</span>
+        <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTIÓN DOCUMENTAL</span>
         <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
         <span name="cargo_anal_cont" hidden>Analista de contratación</span>
         <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>
@@ -970,6 +976,12 @@
       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>GESTOR OPERATIVO</span>
+        <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
+        <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
+        <span name="cargo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</span>
+        <span name="cargo_torre_ctrl" hidden>TORRE DE CONTROL</span>
+        <span name="cargo_coord_g_doc" hidden>COORDINADOR GESTION DOCUMENTAL</span>
+        <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTIÓN DOCUMENTAL</span>
         <span name="cargo_anal_cont" hidden>Analista de contratación</span>
         <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
         <span name="cargo_aux_serv_client" hidden
@@ -1176,6 +1188,12 @@
     TRABAJADOR para desempeñar el cargo de
     <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
     <span name="cargo_gest_oper" hidden>GESTOR OPERATIVO</span>
+    <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
+    <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
+    <span name="cargo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</span>
+    <span name="cargo_torre_ctrl" hidden>TORRE DE CONTROL</span>
+    <span name="cargo_coord_g_doc" hidden>COORDINADOR GESTION DOCUMENTAL</span>
+    <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTIÓN DOCUMENTAL</span>
     <span name="cargo_anal_cont" hidden>Analista de contratación</span>
     <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
     <span name="cargo_aux_serv_client" hidden
@@ -2016,6 +2034,12 @@
         <span name="cargo_call_c">AGENTE CALL CENTER</span>
         <span name="cargo_call_c_cnd" hidden>AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
+        <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
+        <span name="cargo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</span>
+        <span name="cargo_torre_ctrl" hidden>TORRE DE CONTROL</span>
+        <span name="cargo_coord_g_doc" hidden>COORDINADOR GESTION DOCUMENTAL</span>
+        <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTIÓN DOCUMENTAL</span>
         <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
         <span name="cargo_anal_cont" hidden>Analista de contratación</span>
         <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>
@@ -3586,6 +3610,80 @@ del cargo.
           <br/>Indicadores comerciales y de pqrs.
           <br/>Creación de informes, Planificación de Monitoreos. Auditar y supervisar todas las ventas y aleatoriamente las no ventas.
         </span>
+        <span name="cargo_ger_tic" hidden>
+          Realizar seguimiento, control y mantenimiento a la operación de la red 
+          <br/>Realizar seguimiento y control Firewall 
+          <br/>Realizar control y gestionar autorizaciones de acceso a la red privada VPN de GNP Y CLARO 
+          <br/>Realizar monitoreo de la red 
+          <br/>Atender soporte de segundo nivel a la red
+          <br/>Realizar monitoreo del funcionamiento del sistema de cámaras 
+          <br/>Realizar seguimiento al comportamiento de la infraestructura de redes y telefonía 
+          <br/>Realizar respaldo a cada equipo que se encuentra dentro de la red 
+          <br/>Monitorear el mantenimiento de cada equipo de la red
+        </span>
+        <span name="cargo_torre_ctrl_jr" hidden>
+          Seguimiento de indicadores
+          <br/>Velar por el cumplimiento de los kpis diarios
+          <br/>Seguimiento de asistencia y cumplí miento al turno
+          <br/>Reportes hora a hora y día vencido para el staff
+          <br/>Conocimiento Excel básico
+        </span>
+        <span name="cargo_anal_work" hidden>
+          Dimensionamiento de las operaciones
+          <br/>Creación de las mallas de turnos de las operaciones.
+          <br/>Realizar informes diarios, semanales y mensuales para la optimización de los recursos.
+          <br/>Recopilar información de las operaciones del día a día.
+          <br/>Optimización de los recursos de las campañas asignadas.
+        </span>
+        <span name="cargo_anal_g_doc" hidden>
+          Apoyar técnicamente el proceso de trámite de documentos de archivo de los diferentes procesos de la organización. 
+          <br/>Realizar las operaciones técnicas de organización de documentos de archivo. 
+          <br/>Instalar físicamente los documentos de archivo en las unida desde conservación e instalación de acuerdo con las normas archivistas. 
+          <br/>Apoyar el proceso de Gestión Documental, desde la recepción de los documentos hasta la digitalización o conservación de estos, de los diferentes procesos de la organización. 
+          <br/>Buscar y recuperar documentos de archivo. 
+          <br/>Apoyar técnicamente el proceso de transferencias documentales. 
+          <br/>Apoyar los procesos básicos de preservación de documentos. 
+          <br/>Clasificación de documentos para microfilmación. 
+          <br/>Clasificar, codificar, registrar y archivar la entrada y salida de correspondencia. 
+          <br/>Mantener indicadores para sistemas de clasificación. 
+          <br/>Mantener listas de acceso de registros clasificados. 
+          <br/>Operar sistema de captura de información y facilitar documentos requeridos. 
+          <br/>Revisar archivos periódicamente para garantizar que estén completos y clasificados correctamente. 
+          <br/>Apoyar en la supervisión y controlar el préstamo de documentos cuando se requiera inspeccionar el original.
+          <br/>Apoyar en la validación de la documentación para que se encuentre en la versión actual y solicitar el respectivo cambio en caso de incumplimiento. 
+          <br/>Realizar el control de inventarios del área de Sistemas, audiovisuales, mobiliarios y otros que sean solicitados por las áreas respectivas. 
+          <br/>Apoyar al área del sistema integral de gestión de acuerdo con las actividades a ejecutar y a la programación de estas. 
+          <br/>Apoyar el registro de la información en las diferentes aplicativos que sean asignados y utilizados por GNP SAS (GSPACE, HELISA,AUCO, Apli asistencia, Apli mantenimiento, entre otros). 
+          <br/>Apoyar la actualización y montaje de la información generada durante la vinculación y duración del personal en GNP SAS, en la plataforma AUCO. 
+          <br/>Asumir y ejecutar las demás funciones que le sean asignadas en cumplimiento de la misión del cargo. 
+        </span>
+        <span name="cargo_coord_g_doc" hidden>
+          Realizar el diagnóstico integral del procesode Gestión Documental. 
+          <br/>Realizar planeación y elaboración de los procesosy procedimientos del Sistema de Gestión Documental. 
+          <br/>Realizar el levantamiento de información e implementación de las TRD 
+          <br/>Crear y mantener el Comitéde Archivo. 
+          <br/>Coordinar el proceso de Gestión Documental, desde la recepciónde los documentos hasta la digitalización o conservación de estos, de los diferentes procesos de la organización. 
+          <br/>Coordinar el proceso de la eliminación documental de acuerdocon lo establecido por la organización. 
+          <br/>Garantizar la disponibilidad de la información documental (física) para revisión, por parte del personal interesado. 
+          <br/>Realizar en la plataforma AUCO, la actualización y montaje de la información generada durante la vinculación y duración del personal en GNP SAS. 
+          <br/>Validar que la documentación recibida este en la versiónactual y solicitarel respectivo cambioen caso de incumplimiento. 
+          <br/>Estructurar y aplicar el Programa de GestiónDocumental en la Organización. 
+          <br/>Realizar informe mensualsobre la base del Sistema de Gestión Documental. 
+          <br/>Garantizar la disposición de los residuosgenerados en el proceso de eliminación de la documentación, garantizando las actas de dicha eliminación.
+          <br/>Supervisary controlarel préstamo de documentos cuando se requierainspeccionar el original. 
+          <br/>Capacitar sobre los procesosde Gestión Documentalal personal a cargo y/o de la Organización. 
+          <br/>Apoyar al área del sistema integralde gestión de acuerdo con las actividades a ejecutar y a la programación de estas. 
+          <br/>Registrar la información en las diferentes aplicativos que sean asignados y utilizados por GNP SAS (GSPACE, HELISA, AUCO, Apli asistencia, Apli mantenimiento, entre otros). 
+          <br/>Realizar el control de inventarios del área de Sistemas, audiovisuales, mobiliarios y otrosque sean solicitados por las áreas respectivas. 
+          <br/>Documentar e implementar los procedimientos, elaboración de comunicaciones y organización de documentos del Archivo de Gestión. 
+          <br/>Asumir y ejecutar las demás funcionesque le sean asignadas en cumplimiento de la misióndel cargo. 
+        </span>
+        <span name="cargo_torre_ctrl" hidden>
+          Generar alarmas por medios electrónicos como vivas voz
+          <br/>Reportes hora a hora y día vencido para el staff
+          <br/>Seguimiento de asistencia y cumplimiento de turno
+          <br/>Velar por el cumplimiento de Kpi´s
+        </span>
         <span name="cargo_jefe_formacion" hidden>
             Garantizar el cumplimiento de indicadores del area
           <br/>Presentar informes 
@@ -3762,6 +3860,12 @@ del cargo.
       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
+        <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
+        <span name="cargo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</span>
+        <span name="cargo_torre_ctrl" hidden>TORRE DE CONTROL</span>
+        <span name="cargo_coord_g_doc" hidden>COORDINADOR GESTION DOCUMENTAL</span>
+        <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTIÓN DOCUMENTAL</span>
         <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
         <span name="cargo_anal_cont" hidden>Analista de contratación</span>
         <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>
@@ -5215,6 +5319,12 @@ del cargo.
        <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
+        <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
+        <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
+        <span name="cargo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</span>
+        <span name="cargo_torre_ctrl" hidden>TORRE DE CONTROL</span>
+        <span name="cargo_coord_g_doc" hidden>COORDINADOR GESTION DOCUMENTAL</span>
+        <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTIÓN DOCUMENTAL</span>
         <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
         <span name="cargo_anal_cont" hidden>Analista de contratación</span>
         <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>

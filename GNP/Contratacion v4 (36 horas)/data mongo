@@ -122,12 +122,24 @@
                     value: 'aux_selec'
                 },
                 {
+                    name: 'Analista workforce',
+                    value: 'anal_work'
+                },
+                {
+                    name: 'Analista de gestión documental',
+                    value: 'anal_g_doc'
+                },
+                {
                     name: 'Backoffice CND',
                     value: 'backoffice_cnd'
                 },
                 {
                     name: 'Backoffice',
                     value: 'backoffice'
+                },
+                {
+                    name: 'Coordinador de Gestión Documental',
+                    value: 'coord_g_doc'
                 },
                 {
                     name: 'Coordinador Backoffice',
@@ -224,6 +236,10 @@
                 {
                     name: 'Gerente de Talento Humano',
                     value: 'gerente_th'
+                },
+                {
+                    name: 'Gerente de Tecnología de la información',
+                    value: 'ger_tic'
                 },
                 {
                     name: 'Gestor Operativo',
@@ -360,7 +376,15 @@
                 {
                     name: 'Tesorero',
                     value: 'tesorero'
-                }
+                },
+                {
+                    name: 'Torre de control',
+                    value: 'torre_ctrl'
+                },
+                {
+                    name: 'Torre de control Junior',
+                    value: 'torre_ctrl_jr'
+                },
             ]
         },
         {

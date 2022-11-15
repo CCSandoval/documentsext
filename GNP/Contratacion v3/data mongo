@@ -28,10 +28,6 @@
                     value: 'anal_bi'
                 },
                 {
-                    name: 'Profesional de bienestar',
-                    value: 'profesional_bienestar'
-                },
-                {
                     name: 'Analista Operativo.',
                     value: 'anal_op'
                 },
@@ -100,7 +96,7 @@
                     value: 'auxiliar_hseq'
                 },
                 {
-                    name: 'Auxiliar Gestion Documental',
+                    name: 'Auxiliar Archivo',
                     value: 'auxiliar_g_documental'
                 },
                 {
@@ -116,12 +112,24 @@
                     value: 'aux_selec'
                 },
                 {
+                    name: 'Analista workforce',
+                    value: 'anal_work'
+                },
+                {
+                    name: 'Analista de gestión documental',
+                    value: 'anal_g_doc'
+                },
+                {
                     name: 'Backoffice CND',
                     value: 'backoffice_cnd'
                 },
                 {
                     name: 'Backoffice',
                     value: 'backoffice'
+                },
+                {
+                    name: 'Coordinador de Gestión Documental',
+                    value: 'coord_g_doc'
                 },
                 {
                     name: 'Coordinador Backoffice',
@@ -218,6 +226,10 @@
                 {
                     name: 'Gerente de Talento Humano',
                     value: 'gerente_th'
+                },
+                {
+                    name: 'Gerente de Tecnología de la información',
+                    value: 'ger_tic'
                 },
                 {
                     name: 'Gestor Operativo',
@@ -354,7 +366,15 @@
                 {
                     name: 'Tesorero',
                     value: 'tesorero'
-                }
+                },
+                {
+                    name: 'Torre de control',
+                    value: 'torre_ctrl'
+                },
+                {
+                    name: 'Torre de control Junior',
+                    value: 'torre_ctrl_jr'
+                },
             ]
         },
         {
@@ -2040,5 +2060,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 5
+    build: 7
 }
