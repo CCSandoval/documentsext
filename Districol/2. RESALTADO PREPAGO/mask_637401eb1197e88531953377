@@ -33,9 +33,9 @@
 
   <p>
     Persona: Natural <span name="tipo_persona_corresponsal_n">[x]</span>
-    <span name="tipo_persona_corresponsal_j" hidden>[__]</span> Jurídica
+    <span name="tipo_persona_corresponsal_s" hidden>[__]</span> Jurídica
     <span name="tipo_persona_corresponsal_n">[__]</span>
-    <span name="tipo_persona_corresponsal_j" hidden>[x]</span>
+    <span name="tipo_persona_corresponsal_s" hidden>[x]</span>
   </p>
 
   <p>
@@ -43,7 +43,7 @@
     <span name="tipo_persona_corresponsal_n">
       <span name="nombre_corresponsal">____________________</span>
     </span>
-    <span name="tipo_persona_corresponsal_j" hidden>
+    <span name="tipo_persona_corresponsal_s" hidden>
       <span name="empresa_corresponsal">____________________</span>
     </span>
   </p>
@@ -53,12 +53,12 @@
     <span name="tipo_persona_corresponsal_n">
       C.C. <span name="cc_corresponsal">____________________</span>
     </span>
-    <span name="tipo_persona_corresponsal_j" hidden>
+    <span name="tipo_persona_corresponsal_s" hidden>
       NIT <span name="nit_corresponsal">____________________</span>
     </span>
   </p>
 
-  <p name="tipo_persona_corresponsal_j" hidden>
+  <p name="tipo_persona_corresponsal_s" hidden>
     Representante Legal:
     <span name="nombre_corresponsal">____________________</span>
     <br />
@@ -836,22 +836,23 @@
           los gastos de constitución y cancelación de la hipoteca son a cargo
           del OPERADOR CORRESPONSAL.
         </li>
-        <li>
+        <span name="tipo_persona_corresponsal_n"></span>
+        <li name="tipo_persona_corresponsal_s" hidden>
           OTORGANTE SOLIDARIO: El (la) señor (a)
-          <span name="nombre_otorgante">____________________</span>, mayor de
+          <span name="nombre_corresponsal">____________________</span>, mayor de
           edad, identificado (a) con cédula de ciudadanía número
-          <span name="cc_otorgante">____________________</span>, expedida en
-          <span name="exp_cc_otorgante">____________________</span>, declara
-          <span name="tipo_persona_otorgante_n"
+          <span name="cc_corresponsal">____________________</span>, expedida en
+          <span name="exp_cc_corresponsal">____________________</span>, declara
+          <span name="tipo_persona_corresponsal_n"
             >que en representación propia</span
           >
-          <span name="tipo_persona_otorgante_j" hidden>
+          <span name="tipo_persona_corresponsal_s" hidden>
             que en representación legal de la sociedad
-            <span name="empresa_otorgante">____________________</span>
+            <span name="empresa_corresponsal">____________________</span>
             identificada con NIT
-            <span name="nit_otorgante">____________________</span> y domiciliada
-            en la ciudad
-            <span name="ciudad_emp_otorgante">____________________</span>
+            <span name="nit_corresponsal">____________________</span> y
+            domiciliada en la ciudad
+            <span name="ciudad_otorgante">____________________</span>
           </span>
           se constituye como otorgante solidario e ilimitado del OPERADOR
           CORRESPONSAL, en todas las obligaciones que éste asume con EL
@@ -862,9 +863,10 @@
           <span name="ciudad_otorgante">____________________</span>,
           Departamento de
           <span name="departamento_otorgante">____________________</span>,
-          Teléfono <span name="tel_fijo_otorgante">____________________</span>,
-          móvil <span name="cel_otorgante">____________________</span>, E-Mail:
-          <span name="email_otorgante">____________________</span>.
+          Teléfono
+          <span name="tel_fijo_corresponsal">____________________</span>, móvil
+          <span name="cel_corresponsal">____________________</span>, E-Mail:
+          <span name="email_corresponsal">____________________</span>.
         </li>
       </ol>
     </li>
@@ -950,483 +952,411 @@
   <p>
     Firma:
     <br /><br /><br /><br />
-    Nombre:
-    <span name="tipo_persona_corresponsal_n">
-      <span name="nombre_corresponsal">____________________</span>
-    </span>
-    <span name="tipo_persona_corresponsal_j" hidden>
+    ________________________________________ <br />
+    Nombre
+    <span name="tipo_persona_corresponsal_s" hidden>
+      del representante legal</span
+    >:
+    <span name="nombre_corresponsal">____________________</span>
+    <br />
+    C.C. <span name="cc_corresponsal">____________________</span> <br />
+    Ciudad y fecha de suscripción del contrato:
+    <span name="ciudad_suscripcion">____________________</span>,
+    <span name="fecha_suscripcion">____________________</span>
+    <span name="tipo_persona_corresponsal_s" hidden>
+      <br />
+      Representante Legal Sociedad:
       <span name="empresa_corresponsal">____________________</span>
       <br />
-      NIT: <span name="nit_corresponsal">____________________</span>
-    </span>
-    <br />
-    Ciudad de suscripción de contrato:
-    <span name="ciudad_suscripcion">____________________</span>
-    <span name="tipo_persona_corresponsal_j" hidden>
-      <br />
-      Representante Legal Sociedad:
-      <span name="nombre_corresponsal">____________________</span>
-    </span>
-    <br />
-    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre
-    propio
+      NIT: <span name="nit_corresponsal">____________________</span> </span
+    >, Y en nombre propio
   </p>
 
   <br /><br /><br />
 
-  <p><b>OTORGANTE SOLIDARIO (A)</b></p>
-  <p>
-    Firma:
-    <br /><br /><br /><br />
-    Nombre:
-    <span name="tipo_persona_otorgante_n">
-      <span name="nombre_otorgante">____________________</span>
-    </span>
-    <span name="tipo_persona_otorgante_j" hidden>
-      <span name="empresa_otorgante">____________________</span>
-      <br />
-      NIT: <span name="nit_otorgante">____________________</span>
-    </span>
-    <br />
-    Ciudad de suscripción de contrato:
-    <span name="ciudad_suscripcion">____________________</span>
-    <span name="tipo_persona_otorgante_j" hidden>
-      <br />
-      Representante Legal Sociedad:
-      <span name="nombre_otorgante">____________________</span>
-    </span>
-    <br />
-    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre
-    propio
-  </p>
-
-  <br /><br /><br />
-  <p>
-    EL ADMINISTRADOR NIT: ANEXO 1: MANUAL DE PROCEDIMIENTO (MANUEL OPERATIO
-    REDEBAN). ANEXO 2:LISTADO Y CLASIFICACION DE OPERACIONES. ANEXO 3:
-    AUTORIZACION Y REGULACION DEL MANEJO DE DATOS PERSONALES
-  </p>
-  <br /><br /><br />
-  <span name="package_name">____________________</span>
-</div>
-
-<div style="page-break-after: always"></div>
-
-<div>
-  <p style="text-align: center">
-    <b>AUTORIZACION PARA EL TRATAMIENTO DE DATOS PERSONALES </b>
-  </p>
-  <p style="text-align: center">
-    LEY 1266 DE 2008 - LEY 1581 DE 2012 – DECRETO 1377 DE 2013
-  </p>
-  <p>
-    Por medio del presente escrito autorizo a la sociedad
-    <b>CORRESPONSALES DISTRICOL S.A.S</b> con NIT. <b>901.334.391 -7</b>,
-    compañía legítimamente constituida de acuerdo con las leyes colombianas,
-    domiciliada en Medellín, para el tratamiento de mis datos personales, los
-    cuales han sido recolectados con el fin de iniciar y sostener una relación
-    de carácter comercial bajo las leyes de la república de Colombia.
-  </p>
-  <p>
-    Por lo anterior, de manera libre, expresa, voluntaria, debidamente
-    informada, y conforme al artículo 9º de la Ley 1581 de2012, permito
-    recolectar, recaudar, almacenar, usar, procesar, compilar, verificar,
-    consultar, reportar, actualizar y disponer de mis datos como persona natural
-    y los de la persona jurídica que represento, si es el caso, en distintas
-    bases o bancos de datos o en repositorios electrónicos de todo tipo, con los
-    siguientes propósitos:
-  </p>
-  <ul>
-    <li>
-      Tener una eficiente información, comunicación y control relacionados con
-      el vínculo comercial, sea cual fuere el acto o negocio jurídico realizado.
-    </li>
-    <li>
-      Dar cumplimiento a obligaciones existentes para con cualquier autoridad
-      pública del orden municipal, departamental o nacional.
-    </li>
-    <li>
-      Proveer a los clientes CORRESPONSALES DISTRICOL S.A.S con los productos y
-      servicios ofrecidos por ésta.
-    </li>
-    <li>
-      Atender cualquier requerimiento de una autoridad administrativa o
-      judicial.
-    </li>
-    <li>Atender cualquier tipo de proceso legal que involucre a las partes.</li>
-    <li>Expedir recomendaciones o certificaciones</li>
-    <li>
-      Enviar al correo físico, electrónico, celular o dispositivo móvil, vía
-      mensajes de texto SMS o MMS, o por cualquier otro medio análogoo digital
-      de comunicación, información necesaria para el correcto desarrollo de la
-      relación comercial.
-    </li>
-    <li>
-      Declaro que conozco la política de tratamiento de datos personales de la
-      empresa, y que se me ha informado que, como titular de datos personales,
-      en cualquier momento tengo derecho a:
-    </li>
-    <li>Conocer, actualizar y rectificar datos personales.</li>
-    <li>Solicitar prueba de la autorización.</li>
-    <li>Ser informado respecto del uso que se le ha dado a la información.</li>
-    <li>Presentar quejas ante la Superintendencia de Industria y Comercio.</li>
-    <li>
-      Acceder en forma gratuita a datos personales que hayan sido objeto de
-      tratamiento.
-    </li>
-    <li>
-      Solicitar la corrección, actualización o supresión de sus datos en los
-      términos de la ley 1581 de 2012 y conforme a la jurisprudencia de la Corte
-      Constitucional sobre la materia.
-    </li>
-  </ul>
-
-  <p>
-    En caso de incumplimiento de obligaciones autorizo expresamente el reporte a
-    las centrales de riesgo y bancos de datos de PROCREDITO, DATACREDITO, CIFIN,
-    FENALCO, o cualquier otra que exista o llegue a crearse con fines de
-    información financiera, crediticia y comercial, en la forma y términos
-    fijados por la Ley 1266 de 2008, leyes complementarias, decretos y
-    reglamentos.
-  </p>
-
-  <p>
-    La presente autorización se extiende hasta la fecha en que se hayan pagado
-    todas las obligaciones adquiridas con CORRESPONSALES DISTRICOL S.A.S Para
-    constancia firma esta autorización, en la ciudad de
-    <span name="ciudad_firma">____________________</span>
-  </p>
-
-  <br /><br /><br />
-
-  <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
-  <p>
-    Firma:
-    <br /><br /><br /><br />
-    Nombre:
-    <span name="tipo_persona_corresponsal_n">
-      <span name="nombre_corresponsal">____________________</span>
-    </span>
-    <span name="tipo_persona_corresponsal_j" hidden>
-      <span name="empresa_corresponsal">____________________</span>
-      <br />
-      NIT: <span name="nit_corresponsal">____________________</span>
-    </span>
-    <br />
-    Ciudad de suscripción de contrato:
-    <span name="ciudad_suscripcion">____________________</span>
-    <span name="tipo_persona_corresponsal_j" hidden>
-      <br />
-      Representante Legal Sociedad:
-      <span name="nombre_corresponsal">____________________</span>
-    </span>
-    <br />
-    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre
-    propio
-  </p>
-
-  <br /><br /><br />
-
-  <p><b>OTORGANTE SOLIDARIO (A)</b></p>
-  <p>
-    Firma:
-    <br /><br /><br /><br />
-    Nombre:
-    <span name="tipo_persona_otorgante_n">
-      <span name="nombre_otorgante">____________________</span>
-    </span>
-    <span name="tipo_persona_otorgante_j" hidden>
-      <span name="empresa_otorgante">____________________</span>
-      <br />
-      NIT: <span name="nit_otorgante">____________________</span>
-    </span>
-    <br />
-    Ciudad de suscripción de contrato:
-    <span name="ciudad_suscripcion">____________________</span>
-    <span name="tipo_persona_otorgante_j" hidden>
-      <br />
-      Representante Legal Sociedad:
-      <span name="nombre_otorgante">____________________</span>
-    </span>
-    <br />
-    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre
-    propio
-  </p>
-
-  <span name="otorgante_solidario_2_n"></span>
-  <div name="otorgante_solidario_2_s" hidden>
-    <br /><br /><br />
+  <div name="tipo_persona_corresponsal_s" hidden>
     <p><b>OTORGANTE SOLIDARIO (A)</b></p>
     <p>
       Firma:
       <br /><br /><br /><br />
       ________________________________________ <br />
       Nombre:
-      <span name="tipo_persona_otorgante_2_n">
-        <span name="nombre_otorgante_2">____________________</span>
-      </span>
-      <span name="tipo_persona_otorgante_2_j" hidden>
-        <span name="empresa_otorgante_2">____________________</span>
-        <br />
-        NIT: <span name="nit_otorgante_2">____________________</span>
-      </span>
+      <span name="nombre_corresponsal">____________________</span>
       <br />
-      Ciudad de suscripción de contrato:
-      <span name="ciudad_suscripcion">____________________</span>
-      <span name="tipo_persona_otorgante_2_j" hidden>
+      C.C. <span name="cc_corresponsal">____________________</span> <br />
+      Ciudad y fecha de suscripción del contrato:
+      <span name="ciudad_suscripcion">____________________</span>,
+      <span name="fecha_suscripcion">____________________</span>
+    </p>
+
+    <br /><br /><br />
+    <p>
+      EL ADMINISTRADOR NIT: ANEXO 1: MANUAL DE PROCEDIMIENTO (MANUEL OPERATIO
+      REDEBAN). ANEXO 2:LISTADO Y CLASIFICACION DE OPERACIONES. ANEXO 3:
+      AUTORIZACION Y REGULACION DEL MANEJO DE DATOS PERSONALES
+    </p>
+    <br /><br /><br />
+    <span name="package_name">____________________</span>
+  </div>
+
+  <div style="page-break-after: always"></div>
+
+  <div>
+    <p style="text-align: center">
+      <b>AUTORIZACION PARA EL TRATAMIENTO DE DATOS PERSONALES </b>
+    </p>
+    <p style="text-align: center">
+      LEY 1266 DE 2008 - LEY 1581 DE 2012 – DECRETO 1377 DE 2013
+    </p>
+    <p>
+      Por medio del presente escrito autorizo a la sociedad
+      <b>CORRESPONSALES DISTRICOL S.A.S</b> con NIT. <b>901.334.391 -7</b>,
+      compañía legítimamente constituida de acuerdo con las leyes colombianas,
+      domiciliada en Medellín, para el tratamiento de mis datos personales, los
+      cuales han sido recolectados con el fin de iniciar y sostener una relación
+      de carácter comercial bajo las leyes de la república de Colombia.
+    </p>
+    <p>
+      Por lo anterior, de manera libre, expresa, voluntaria, debidamente
+      informada, y conforme al artículo 9º de la Ley 1581 de2012, permito
+      recolectar, recaudar, almacenar, usar, procesar, compilar, verificar,
+      consultar, reportar, actualizar y disponer de mis datos como persona
+      natural y los de la persona jurídica que represento, si es el caso, en
+      distintas bases o bancos de datos o en repositorios electrónicos de todo
+      tipo, con los siguientes propósitos:
+    </p>
+    <ul>
+      <li>
+        Tener una eficiente información, comunicación y control relacionados con
+        el vínculo comercial, sea cual fuere el acto o negocio jurídico
+        realizado.
+      </li>
+      <li>
+        Dar cumplimiento a obligaciones existentes para con cualquier autoridad
+        pública del orden municipal, departamental o nacional.
+      </li>
+      <li>
+        Proveer a los clientes CORRESPONSALES DISTRICOL S.A.S con los productos
+        y servicios ofrecidos por ésta.
+      </li>
+      <li>
+        Atender cualquier requerimiento de una autoridad administrativa o
+        judicial.
+      </li>
+      <li>
+        Atender cualquier tipo de proceso legal que involucre a las partes.
+      </li>
+      <li>Expedir recomendaciones o certificaciones</li>
+      <li>
+        Enviar al correo físico, electrónico, celular o dispositivo móvil, vía
+        mensajes de texto SMS o MMS, o por cualquier otro medio análogoo digital
+        de comunicación, información necesaria para el correcto desarrollo de la
+        relación comercial.
+      </li>
+      <li>
+        Declaro que conozco la política de tratamiento de datos personales de la
+        empresa, y que se me ha informado que, como titular de datos personales,
+        en cualquier momento tengo derecho a:
+      </li>
+      <li>Conocer, actualizar y rectificar datos personales.</li>
+      <li>Solicitar prueba de la autorización.</li>
+      <li>
+        Ser informado respecto del uso que se le ha dado a la información.
+      </li>
+      <li>
+        Presentar quejas ante la Superintendencia de Industria y Comercio.
+      </li>
+      <li>
+        Acceder en forma gratuita a datos personales que hayan sido objeto de
+        tratamiento.
+      </li>
+      <li>
+        Solicitar la corrección, actualización o supresión de sus datos en los
+        términos de la ley 1581 de 2012 y conforme a la jurisprudencia de la
+        Corte Constitucional sobre la materia.
+      </li>
+    </ul>
+
+    <p>
+      En caso de incumplimiento de obligaciones autorizo expresamente el reporte
+      a las centrales de riesgo y bancos de datos de PROCREDITO, DATACREDITO,
+      CIFIN, FENALCO, o cualquier otra que exista o llegue a crearse con fines
+      de información financiera, crediticia y comercial, en la forma y términos
+      fijados por la Ley 1266 de 2008, leyes complementarias, decretos y
+      reglamentos.
+    </p>
+
+    <p>
+      La presente autorización se extiende hasta la fecha en que se hayan pagado
+      todas las obligaciones adquiridas con CORRESPONSALES DISTRICOL S.A.S Para
+      constancia firma esta autorización, en la ciudad de
+      <span name="ciudad_firma">____________________</span>
+    </p>
+
+    <br /><br /><br />
+
+    <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
+    <p>
+      Firma:
+      <br /><br /><br /><br />
+      ________________________________________ <br />
+      Nombre
+      <span name="tipo_persona_corresponsal_s" hidden>
+        del representante legal</span
+      >:
+      <span name="nombre_corresponsal">____________________</span>
+      <br />
+      C.C. <span name="cc_corresponsal">____________________</span> <br />
+      Ciudad y fecha de suscripción del contrato:
+      <span name="ciudad_suscripcion">____________________</span>,
+      <span name="fecha_suscripcion">____________________</span>
+      <span name="tipo_persona_corresponsal_s" hidden>
         <br />
         Representante Legal Sociedad:
-        <span name="nombre_otorgante_2">____________________</span>
-      </span>
-      <br />
-      C.C. <span name="cc_otorgante_2">____________________</span>, Y en nombre
-      propio
+        <span name="empresa_corresponsal">____________________</span>
+        <br />
+        NIT: <span name="nit_corresponsal">____________________</span> </span
+      >, Y en nombre propio
     </p>
+
+    <div name="tipo_persona_corresponsal_s" hidden>
+      <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+      <p>
+        Firma:
+        <br /><br /><br /><br />
+        ________________________________________ <br />
+        Nombre:
+        <span name="nombre_corresponsal">____________________</span>
+        <br />
+        C.C. <span name="cc_corresponsal">____________________</span> <br />
+        Ciudad y fecha de suscripción del contrato:
+        <span name="ciudad_suscripcion">____________________</span>,
+        <span name="fecha_suscripcion">____________________</span>
+      </p>
+      <br /><br /><br />
+    </div>
   </div>
-</div>
 
-<div style="page-break-after: always"></div>
+  <div style="page-break-after: always"></div>
 
-<div>
-  <p style="text-align: center">
-    <b>PAGARÉ EN BLANCO O CON ESPACIOS EN BLANCO #______</b>
-  </p>
+  <div>
+    <p style="text-align: center">
+      <b>PAGARÉ EN BLANCO O CON ESPACIOS EN BLANCO #______</b>
+    </p>
 
-  <p>
-    Yo, ________________________________________, identificado con Cédula de
-    Ciudadaní ____________________ N° ____________________ en calidad de
-    representante legal de la sociedad ________________________________________,
-    identificada con NIT ____________________, y a la vez en mi nombre propio
-    como persona natural y yo ________________________________________
-    identificado con Cédula de Ciudadanía N° ____________________, en calidad de
-    representante legal de la sociedad ________________________________________,
-    identificada con NIT. ____________________, y sí no represento ninguna
-    sociedad, en mi nombre propio como persona natural, en virtud de este
-    pagaré, prometemos pagar solidaria, ilimitada e incondicionalmente el total
-    del importe aquí especificado, más los intereses que de este surjan y los
-    demás gastos de cobranza extrajudicial y judicial que se pudieren causar, a
-    la orden de CORRESPONSALES DISTRICOL S.A.S, con NIT. 901.334.391-7, o a
-    quien represente su derecho la suma de
-    ________________________________________ MLC
-    ($________________________________________).
-  </p>
-  <p>
-    Fecha de exigibilidad del pagaré y lugar de cumplimiento del mismo
-    ____________________.
-  </p>
-  <p>
-    A partir del día siguiente del vencimiento o exigibilidad del presente
-    pagaré se causarán intereses moratorios a la tasa máxima legal certificado
-    por la Superintendencia Financiera estarán a cargo de ambos otorgantes, así
-    como todos los gastos de cobranza extrajudicial y judicial del presente
-    pagaré en que se pueda incurrir.
-  </p>
+    <p>
+      Yo, ________________________________________, identificado con Cédula de
+      Ciudadaní ____________________ N° ____________________ en calidad de
+      representante legal de la sociedad
+      ________________________________________, identificada con NIT
+      ____________________, y a la vez en mi nombre propio como persona natural
+      y yo ________________________________________ identificado con Cédula de
+      Ciudadanía N° ____________________, en calidad de representante legal de
+      la sociedad ________________________________________, identificada con
+      NIT. ____________________, y sí no represento ninguna sociedad, en mi
+      nombre propio como persona natural, en virtud de este pagaré, prometemos
+      pagar solidaria, ilimitada e incondicionalmente el total del importe aquí
+      especificado, más los intereses que de este surjan y los demás gastos de
+      cobranza extrajudicial y judicial que se pudieren causar, a la orden de
+      CORRESPONSALES DISTRICOL S.A.S, con NIT. 901.334.391-7, o a quien
+      represente su derecho la suma de ________________________________________
+      MLC ($________________________________________).
+    </p>
+    <p>
+      Fecha de exigibilidad del pagaré y lugar de cumplimiento del mismo
+      ____________________.
+    </p>
+    <p>
+      A partir del día siguiente del vencimiento o exigibilidad del presente
+      pagaré se causarán intereses moratorios a la tasa máxima legal certificado
+      por la Superintendencia Financiera estarán a cargo de ambos otorgantes,
+      así como todos los gastos de cobranza extrajudicial y judicial del
+      presente pagaré en que se pueda incurrir.
+    </p>
 
-  <p>
-    En el presente pagaré como otorgantes, renunciamos a la presentación para el
-    pago del instrumento; el presente pagaré no requiere protesto.
-  </p>
+    <p>
+      En el presente pagaré como otorgantes, renunciamos a la presentación para
+      el pago del instrumento; el presente pagaré no requiere protesto.
+    </p>
 
-  <br /><br /><br />
+    <br /><br /><br />
 
-  <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
-  <p>
-    Firma:
-    <br /><br /><br /><br />
-    Nombre:
-    <span name="tipo_persona_corresponsal_n">
+    <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
+    <p>
+      Firma:
+      <br /><br /><br /><br />
+      ________________________________________ <br />
+      Nombre
+      <span name="tipo_persona_corresponsal_s" hidden>
+        del representante legal</span
+      >:
       <span name="nombre_corresponsal">____________________</span>
-    </span>
-    <span name="tipo_persona_corresponsal_j" hidden>
-      <span name="empresa_corresponsal">____________________</span>
       <br />
-      NIT: <span name="nit_corresponsal">____________________</span>
-    </span>
-    <br />
-    Ciudad de suscripción de pagaré:
-    <span name="ciudad_suscripcion">____________________</span>
-    <span name="tipo_persona_corresponsal_j" hidden>
-      <br />
-      Representante Legal Sociedad:
+      C.C. <span name="cc_corresponsal">____________________</span> <br />
+      Ciudad y fecha de suscripción del pagaré:
+      <span name="ciudad_suscripcion">____________________</span>,
+      <span name="fecha_suscripcion">____________________</span>
+      <span name="tipo_persona_corresponsal_s" hidden>
+        <br />
+        Representante Legal Sociedad:
+        <span name="empresa_corresponsal">____________________</span>
+        <br />
+        NIT: <span name="nit_corresponsal">____________________</span> </span
+      >, Y en nombre propio
+    </p>
+
+    <div name="tipo_persona_corresponsal_s" hidden>
+      <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+      <p>
+        Firma:
+        <br /><br /><br /><br />
+        ________________________________________ <br />
+        Nombre:
+        <span name="nombre_corresponsal">____________________</span>
+        <br />
+        C.C. <span name="cc_corresponsal">____________________</span> <br />
+        Ciudad y fecha de suscripción del pagaré:
+        <span name="ciudad_suscripcion">____________________</span>,
+        <span name="fecha_suscripcion">____________________</span>
+      </p>
+      <br /><br /><br />
+    </div>
+  </div>
+
+  <div style="page-break-after: always"></div>
+
+  <div>
+    <p style="text-align: center">
+      <b>CARTA DE INSTRUCCIONES CORRESPONDIENTE AL PAGARE #______ </b>
+    </p>
+
+    <p>
+      Nosotros, ________________________________________, identificado con
+      Cédula de Ciudadanía N° ____________________ en calidad de representante
+      legal de la sociedad ________________________________________,
+      identificada con NIT ____________________, y a la vez en mi nombre propio
+      como persona natural y ________________________________________
+      identificado con Cédula de Ciudadanía N° ____________________, en calidad
+      de representante legal de la sociedad
+      ________________________________________, identificada con NIT.
+      ____________________, y sí no represento ninguna sociedad, en mi nombre
+      propio como persona natural, facultamos al acreedor (legitimo tenedor
+      CORRESPONSALES DISTRICOL S.A.S con NIT. 901334391-7, o a quien represente
+      sus derechos, para llenar los espacios en blanco o incompletos del pagaré
+      otorgado a su favor, o a su orden; por lo que aceptamos, desde ahora, que
+      el acreedor diligencie el pagaré arriba mencionado bajo las siguientes
+      instrucciones.
+    </p>
+
+    <p>
+      <b>PRIMERA:</b> LUGAR DE CUMPLIMIENTO. Lo puede ser la ciudad de Medellín,
+      Antioquia en la oficina principal de los CORRESPONSALES DISTRICOL S.A.S o
+      el municipio de ubicación del punto de servicio, o el domicilio del
+      operador corresponsal u otorgante solidario (otorgantes), esto a elección
+      del acreedor y sin que los deudores puedan oponer excepciones relativas a
+      la competencia del Juez ante el cual se ejecute el título valor.
+    </p>
+
+    <p>
+      <b>SEGUNDA:</b> FECHA DE EXIGIBILIDAD DE LA OBLIGACIÓN: Corresponde al día
+      calendario siguiente a aquel en el cual CORRESPONSALES DISTRICOL S.A.S o
+      quien represente sus derechos para ese momento, haya dado por terminado el
+      contrato de colaboración mercantil celebrado con el OPERADOR CORRESPONSAL
+      y otorgante solidario (otorgantes), debido al no pago de cualquier suma de
+      dinero, que debió ser restituida por estos en favor de CORRESPONSALES
+      DISTRICOL S.A.S, o que dicha devolución no se haya causado por un hecho,
+      acto u omisión del OPERADOR CORRESPONSAL o otorgante solidario
+      (otorgantes), en relación con el contrato de colaboración empresarial para
+      ejecución de la corresponsalía bancaria que suscribieron las partes.
+    </p>
+
+    <p>
+      <b>TERCERA:</b> CAPITAL. Es la suma de dinero que, a la fecha de
+      exigibilidad de la obligación, se encuentre aún depositada por parte de
+      CORRESPONSALES DISTRICOL S.A.S o quien represente sus derechos para ese
+      momento, en las arcas del OPERADOR CORRESPONSAL y/o otorgante solidario
+      (otorgantes) o de un tercero, y que debieron ser restituidas por estos al
+      momento de culminar el contrato de colaboración mercantil que suscribieron
+      las partes. Será parte del capital el monto que el acreedor (legítimo
+      tenedor) haya pagado por gastos de cobranza judicial y extrajudicial.
+    </p>
+
+    <p>
+      <b>CUARTA:</b> Ciudad y fecha: Corresponde al lugar y fecha en el cual se
+      suscribió el pagaré.
+    </p>
+
+    <p><b>Condiciones generales:</b></p>
+
+    <ol type="a">
+      <li>
+        Para llenar los espacios en blanco del pagaré no se requiere dar aviso a
+        los firmantes del mismo, en lo relativo a nombres de los otorgantes del
+        pagaré N° ____
+      </li>
+      <li>
+        Las instrucciones son explicadas al OPERADOR CORRESPONSAL y otorgante
+        solidario
+      </li>
+      <li>
+        Los intereses serán cobrados conforme a lo estipulado en el pagaré.
+      </li>
+      <li>
+        Ninguna estipulación verbal puede alterar las presentes instrucciones.
+        Sólo podrán cambiarse por documento escrito firmado por las partes.
+      </li>
+      <li>
+        Como otorgantes, renunciamos a la presentación para el pago del
+        instrumento; el presente pagaré no requiere protesto.
+      </li>
+    </ol>
+    <p>
+      Las anteriores instrucciones se dan de conformidad con el artículo 622 del
+      Código de Comercio y se entregan los otorgantes, quien para constancia
+      firma:
+    </p>
+
+    <br /><br /><br />
+
+    <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
+    <p>
+      Firma:
+      <br /><br /><br /><br />
+      ________________________________________ <br />
+      Nombre
+      <span name="tipo_persona_corresponsal_s" hidden>
+        del representante legal</span
+      >:
       <span name="nombre_corresponsal">____________________</span>
-    </span>
-    <br />
-    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre
-    propio
-  </p>
-
-  <br /><br /><br />
-
-  <p><b>OTORGANTE SOLIDARIO (A)</b></p>
-  <p>
-    Firma:
-    <br /><br /><br /><br />
-    Nombre:
-    <span name="tipo_persona_otorgante_n">
-      <span name="nombre_otorgante">____________________</span>
-    </span>
-    <span name="tipo_persona_otorgante_j" hidden>
-      <span name="empresa_otorgante">____________________</span>
       <br />
-      NIT: <span name="nit_otorgante">____________________</span>
-    </span>
-    <br />
-    Ciudad de suscripción de pagaré:
-    <span name="ciudad_suscripcion">____________________</span>
-    <span name="tipo_persona_otorgante_j" hidden>
-      <br />
-      Representante Legal Sociedad:
-      <span name="nombre_otorgante">____________________</span>
-    </span>
-    <br />
-    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre
-    propio
-  </p>
-</div>
+      C.C. <span name="cc_corresponsal">____________________</span> <br />
+      Ciudad y fecha de suscripción del pagaré:
+      <span name="ciudad_suscripcion">____________________</span>,
+      <span name="fecha_suscripcion">____________________</span>
+      <span name="tipo_persona_corresponsal_s" hidden>
+        <br />
+        Representante Legal Sociedad:
+        <span name="empresa_corresponsal">____________________</span>
+        <br />
+        NIT: <span name="nit_corresponsal">____________________</span> </span
+      >, Y en nombre propio
+    </p>
 
-<div style="page-break-after: always"></div>
-
-<div>
-  <p style="text-align: center">
-    <b>CARTA DE INSTRUCCIONES CORRESPONDIENTE AL PAGARE #______ </b>
-  </p>
-
-  <p>
-    Nosotros, ________________________________________, identificado con Cédula
-    de Ciudadanía N° ____________________ en calidad de representante legal de
-    la sociedad ________________________________________, identificada con NIT
-    ____________________, y a la vez en mi nombre propio como persona natural y
-    ________________________________________ identificado con Cédula de
-    Ciudadanía N° ____________________, en calidad de representante legal de la
-    sociedad ________________________________________, identificada con NIT.
-    ____________________, y sí no represento ninguna sociedad, en mi nombre
-    propio como persona natural, facultamos al acreedor (legitimo tenedor
-    CORRESPONSALES DISTRICOL S.A.S con NIT. 901334391-7, o a quien represente
-    sus derechos, para llenar los espacios en blanco o incompletos del pagaré
-    otorgado a su favor, o a su orden; por lo que aceptamos, desde ahora, que el
-    acreedor diligencie el pagaré arriba mencionado bajo las siguientes
-    instrucciones.
-  </p>
-
-  <p>
-    <b>PRIMERA:</b> LUGAR DE CUMPLIMIENTO. Lo puede ser la ciudad de Medellín,
-    Antioquia en la oficina principal de los CORRESPONSALES DISTRICOL S.A.S o el
-    municipio de ubicación del punto de servicio, o el domicilio del operador
-    corresponsal u otorgante solidario (otorgantes), esto a elección del
-    acreedor y sin que los deudores puedan oponer excepciones relativas a la
-    competencia del Juez ante el cual se ejecute el título valor.
-  </p>
-
-  <p>
-    <b>SEGUNDA:</b> FECHA DE EXIGIBILIDAD DE LA OBLIGACIÓN: Corresponde al día
-    calendario siguiente a aquel en el cual CORRESPONSALES DISTRICOL S.A.S o
-    quien represente sus derechos para ese momento, haya dado por terminado el
-    contrato de colaboración mercantil celebrado con el OPERADOR CORRESPONSAL y
-    otorgante solidario (otorgantes), debido al no pago de cualquier suma de
-    dinero, que debió ser restituida por estos en favor de CORRESPONSALES
-    DISTRICOL S.A.S, o que dicha devolución no se haya causado por un hecho,
-    acto u omisión del OPERADOR CORRESPONSAL o otorgante solidario (otorgantes),
-    en relación con el contrato de colaboración empresarial para ejecución de la
-    corresponsalía bancaria que suscribieron las partes.
-  </p>
-
-  <p>
-    <b>TERCERA:</b> CAPITAL. Es la suma de dinero que, a la fecha de
-    exigibilidad de la obligación, se encuentre aún depositada por parte de
-    CORRESPONSALES DISTRICOL S.A.S o quien represente sus derechos para ese
-    momento, en las arcas del OPERADOR CORRESPONSAL y/o otorgante solidario
-    (otorgantes) o de un tercero, y que debieron ser restituidas por estos al
-    momento de culminar el contrato de colaboración mercantil que suscribieron
-    las partes. Será parte del capital el monto que el acreedor (legítimo
-    tenedor) haya pagado por gastos de cobranza judicial y extrajudicial.
-  </p>
-
-  <p>
-    <b>CUARTA:</b> Ciudad y fecha: Corresponde al lugar y fecha en el cual se
-    suscribió el pagaré.
-  </p>
-
-  <p><b>Condiciones generales:</b></p>
-
-  <ol type="a">
-    <li>
-      Para llenar los espacios en blanco del pagaré no se requiere dar aviso a
-      los firmantes del mismo, en lo relativo a nombres de los otorgantes del
-      pagaré N° ____
-    </li>
-    <li>
-      Las instrucciones son explicadas al OPERADOR CORRESPONSAL y otorgante
-      solidario
-    </li>
-    <li>Los intereses serán cobrados conforme a lo estipulado en el pagaré.</li>
-    <li>
-      Ninguna estipulación verbal puede alterar las presentes instrucciones.
-      Sólo podrán cambiarse por documento escrito firmado por las partes.
-    </li>
-    <li>
-      Como otorgantes, renunciamos a la presentación para el pago del
-      instrumento; el presente pagaré no requiere protesto.
-    </li>
-  </ol>
-  <p>
-    Las anteriores instrucciones se dan de conformidad con el artículo 622 del
-    Código de Comercio y se entregan los otorgantes, quien para constancia
-    firma:
-  </p>
-
-  <br /><br /><br />
-
-  <p><b>EL OPERADOR CORRESPONSAL (OTORGANTE)</b></p>
-  <p>
-    Firma:
-    <br /><br /><br /><br />
-    Nombre:
-    <span name="tipo_persona_corresponsal_n">
-      <span name="nombre_corresponsal">____________________</span>
-    </span>
-    <span name="tipo_persona_corresponsal_j" hidden>
-      <span name="empresa_corresponsal">____________________</span>
-      <br />
-      NIT: <span name="nit_corresponsal">____________________</span>
-    </span>
-    <br />
-    Ciudad de suscripción de pagaré:
-    <span name="ciudad_suscripcion">____________________</span>
-    <span name="tipo_persona_corresponsal_j" hidden>
-      <br />
-      Representante Legal Sociedad:
-      <span name="nombre_corresponsal">____________________</span>
-    </span>
-    <br />
-    C.C. <span name="cc_corresponsal">____________________</span>, Y en nombre
-    propio
-  </p>
-
-  <br /><br /><br />
-
-  <p><b>OTORGANTE SOLIDARIO (A)</b></p>
-  <p>
-    Firma:
-    <br /><br /><br /><br />
-    Nombre:
-    <span name="tipo_persona_otorgante_n">
-      <span name="nombre_otorgante">____________________</span>
-    </span>
-    <span name="tipo_persona_otorgante_j" hidden>
-      <span name="empresa_otorgante">____________________</span>
-      <br />
-      NIT: <span name="nit_otorgante">____________________</span>
-    </span>
-    <br />
-    Ciudad de suscripción de pagaré:
-    <span name="ciudad_suscripcion">____________________</span>
-    <span name="tipo_persona_otorgante_j" hidden>
-      <br />
-      Representante Legal Sociedad:
-      <span name="nombre_otorgante">____________________</span>
-    </span>
-    <br />
-    C.C. <span name="cc_otorgante">____________________</span>, Y en nombre
-    propio
-  </p>
+    <div name="tipo_persona_corresponsal_s" hidden>
+      <p><b>OTORGANTE SOLIDARIO (A)</b></p>
+      <p>
+        Firma:
+        <br /><br /><br /><br />
+        ________________________________________ <br />
+        Nombre:
+        <span name="nombre_corresponsal">____________________</span>
+        <br />
+        C.C. <span name="cc_corresponsal">____________________</span> <br />
+        Ciudad y fecha de suscripción del pagaré:
+        <span name="ciudad_suscripcion">____________________</span>,
+        <span name="fecha_suscripcion">____________________</span>
+      </p>
+      <br /><br /><br />
+    </div>
+  </div>
 </div>

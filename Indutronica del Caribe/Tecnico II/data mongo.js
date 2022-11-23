@@ -396,6 +396,6 @@
         prebuild: false,
         build: 2,
         price: 5000,
-        name: "CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO",
+        name: "CONTRATO POR OBRA O LABOR",
         company: ObjectId('61eae55829edb10009edd3de')
 }

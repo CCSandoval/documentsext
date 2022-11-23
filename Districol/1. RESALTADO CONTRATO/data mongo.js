@@ -2,9 +2,35 @@
     _id: ObjectId('6364527f1197e88531953367'),
     config: [
         {
+            name: 'nombre_establecimiento',
+            type: 'name',
+            description: 'Ingrese el nombre del establecimiento donde se desarrollará el punto de servicio'
+        },
+        {
+            name: 'package_name',
+            type: 'text',
+            description: 'Ingrese el nombre de la carpeta donde quedarán guardados el presente contrato y sus anexos'
+        },
+        {
             name: 'tipo_persona_corresponsal',
             type: 'clausula',
             description: 'Seleccione el tipo de la persona del operador corresponsal',
+            value: 'n',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_otorgante',
+            type: 'clausula',
+            description: 'Seleccione el tipo de la persona del otorgante solidario',
             value: 'n',
             options: [
                 {
@@ -18,13 +44,61 @@
             ]
         },
         {
+            name: 'otorgante_solidario_2',
+            type: 'clausula',
+            description: '¿Desea ingresar dos otorgantes solidarios?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'tipo_persona_otorgante_2',
+            type: 'clausula',
+            description: 'Seleccione el tipo de la persona del segundo otorgante solidario',
+            value: 'n',
+            options: [
+                {
+                    name: 'Persona Natural',
+                    value: 'n'
+                },
+                {
+                    name: 'Persona Jurídica',
+                    value: 'j'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'otorgante_solidario_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fecha_suscripcion',
+            type: 'date',
+            description: 'Ingresa la fecha de suscripción del contrato'
+        },
+        {
+            name: 'correo_enviar',
+            type: 'email',
+            description: 'Ingresa el correo de la persona que diligenciará éste documento'
+        },
+        {
             name: 'empresa_corresponsal',
             type: 'name',
-            description: 'Ingrese el nombre del operador corresponsal',
+            description: 'Ingrese el nombre de la persona juridica o sociedad',
             prereq: [
                 {
                     k: 'tipo_persona_corresponsal',
-                    v: 'j'
+                    v: 's'
                 }
             ]
         },
@@ -35,7 +109,7 @@
             prereq: [
                 {
                     k: 'tipo_persona_corresponsal',
-                    v: 'j'
+                    v: 's'
                 }
             ]
         },
@@ -46,10 +120,10 @@
                     prereq: [
                         {
                             k: 'tipo_persona_corresponsal',
-                            v: 'j'
+                            v: 's'
                         }
                     ],
-                    text: 'Ingrese el nombre del representante legal del operador corresponsal'
+                    text: 'Ingrese el nombre del representante legal de la persona juridica o sociedad'
                 },
                 {
                     prereq: [
@@ -70,10 +144,10 @@
                     prereq: [
                         {
                             k: 'tipo_persona_corresponsal',
-                            v: 'j'
+                            v: 's'
                         }
                     ],
-                    text: 'Ingrese el número de cédula del representante legal del operador corresponsal'
+                    text: 'Ingrese el número de cédula del representante legal de la persona juridica o sociedad'
                 },
                 {
                     prereq: [
@@ -111,11 +185,6 @@
             name: 'nombre_operario_punto',
             type: 'name',
             description: 'Ingrese el nombre de la persona que operará el punto de servicio'
-        },
-        {
-            name: 'nombre_establecimiento',
-            type: 'name',
-            description: 'Ingrese el nombre del establecimiento donde se desarrollará el punto de servicio'
         },
         {
             name: 'direccion_establecimiento',
@@ -171,22 +240,6 @@
             ]
         },
         {
-            name: 'tipo_persona_otorgante',
-            type: 'clausula',
-            description: 'Seleccione el tipo de la persona del otorgante solidario',
-            value: 'n',
-            options: [
-                {
-                    name: 'Persona Natural',
-                    value: 'n'
-                },
-                {
-                    name: 'Persona Jurídica',
-                    value: 'j'
-                }
-            ]
-        },
-        {
             name: 'nombre_otorgante',
             description: [
                 {
@@ -196,7 +249,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el nombre del representante legal del otorgante solidario'
+                    text: 'Ingrese el nombre del representante legal de la persona juridica o sociedad'
                 },
                 {
                     prereq: [
@@ -220,7 +273,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el número de cédula del representante legal del otorgante solidario'
+                    text: 'Ingrese el número de cédula del representante legal de la persona juridica o sociedad'
                 },
                 {
                     prereq: [
@@ -244,7 +297,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el lugar de expedición de la cédula del representante legal del otorgante solidario'
+                    text: 'Ingrese el lugar de expedición de la cédula del representante legal de la persona juridica o sociedad'
                 },
                 {
                     prereq: [
@@ -322,44 +375,6 @@
             description: 'Ingrese el correo electrónico donde llegará la invitación a firmar del otorgante solidario'
         },
         {
-            name: 'otorgante_solidario_2',
-            type: 'clausula',
-            description: '¿Desea ingresar un segundo otorgante solidario?',
-            value: 'n',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Si',
-                    value: 's'
-                }
-            ]
-        },
-        {
-            name: 'tipo_persona_otorgante_2',
-            type: 'clausula',
-            description: 'Seleccione el tipo de la persona del segundo otorgante solidario',
-            value: 'n',
-            options: [
-                {
-                    name: 'Persona Natural',
-                    value: 'n'
-                },
-                {
-                    name: 'Persona Jurídica',
-                    value: 'j'
-                }
-            ],
-            prereq: [
-                {
-                    k: 'otorgante_solidario_2',
-                    v: 's'
-                }
-            ]
-        },
-        {
             name: 'nombre_otorgante_2',
             description: [
                 {
@@ -369,7 +384,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el nombre del representante legal del segundo otorgante solidario'
+                    text: 'Ingrese el nombre del representante legal de la persona juridica o sociedad'
                 },
                 {
                     prereq: [
@@ -399,7 +414,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el número de cédula del representante legal del segundo otorgante solidario'
+                    text: 'Ingrese el número de cédula del representante legal de la persona juridica o sociedad'
                 },
                 {
                     prereq: [
@@ -429,7 +444,7 @@
                             v: 'j'
                         }
                     ],
-                    text: 'Ingrese el lugar de expedición de la cédula del representante legal del segundo otorgante solidario'
+                    text: 'Ingrese el lugar de expedición de la cédula del representante legal de la persona juridica o sociedad'
                 },
                 {
                     prereq: [
@@ -569,15 +584,19 @@
             name: 'ciudad_firma',
             type: 'text',
             description: 'Ingrese la ciudad donde se firma el presente contrato'
-        },
-        {
-            name: 'package_name',
-            type: 'text',
-            description: 'Ingrese el nombre de la carpeta donde quedarán guardados el presente contrato y sus anexos'
         }
     ],
-    preBuild: false,
-    preBuildData: [],
+    preBuild: true,
+    preBuildData: [
+        'nombre_establecimiento',
+        'package_name',
+        'tipo_persona_corresponsal',
+        'tipo_persona_otorgante',
+        'otorgante_solidario_2',
+        'tipo_persona_otorgante_2',
+        'fecha_suscripcion',
+        'correo_enviar'
+    ],
     sign: [
         'tipo_persona_corresponsal',
         'empresa_corresponsal',
@@ -617,7 +636,8 @@
         'cel_otorgante_2',
         'ciudad_suscripcion',
         'fecha_suscripcion',
-        'ciudad_firma'
+        'ciudad_firma',
+        'correo_enviar'
     ],
     signatureProfile: [
         {
@@ -651,7 +671,7 @@
             required: false
         },
         {
-            name: 'Copia cédula codeudor 1',
+            name: 'Copia cédula codeudor',
             approve: 'pending',
             required: false
         },
@@ -667,7 +687,7 @@
             required: false
         },
         {
-            name: 'RUT codeudor 1',
+            name: 'RUT codeudor',
             approve: 'pending',
             required: false
         },
@@ -690,5 +710,7 @@
         }
     ],
     name: 'CONTRATO DE COLABORACIÓN MERCANTIL',
-    build: 4
+    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
+    company: ObjectId('6356ab6c1243c226bbd5615d'),
+    build: 11
 }
