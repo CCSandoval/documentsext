@@ -296,9 +296,16 @@
             required: false
         },
         {
+            name: 'RUT de la persona jurídica',
+            approve: 'pending',
+            required: false,
+            preReq: 'tipo_persona_corresponsal'
+        },
+        {
             name: 'RUT de la sociedad',
             approve: 'pending',
             required: false,
+            preReq: 'tipo_persona_corresponsal'
         },
         {
             name: 'Cámara de comercio',
@@ -309,5 +316,5 @@
     name: 'CONTRATO DE COLABORACIÓN MERCANTIL (PREPAGO)',
     company: ObjectId('6356ab6c1243c226bbd5615d'),
     username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
-    build: 6
+    build: 7
 }

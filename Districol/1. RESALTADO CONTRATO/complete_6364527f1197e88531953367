@@ -834,6 +834,38 @@
         </li>
       </ol>
     </li>
+    <span name="tipo_persona_corresponsal_n"></span>
+    <li name="tipo_persona_corresponsal_s" hidden>
+      OTORGANTE SOLIDARIO: El (la) señor (a)
+      <span name="nombre_corresponsal">____________________</span>, mayor de
+      edad, identificado (a) con cédula de ciudadanía número
+      <span name="cc_corresponsal">____________________</span>, expedida en
+      <span name="exp_cc_corresponsal">____________________</span>, declara
+      <span name="tipo_persona_corresponsal_n"
+        >que en representación propia</span
+      >
+      <span name="tipo_persona_corresponsal_s" hidden>
+        que en representación legal de la sociedad
+        <span name="empresa_corresponsal">____________________</span>
+        identificada con NIT
+        <span name="nit_corresponsal">____________________</span> y
+        domiciliada en la ciudad
+        <span name="ciudad_empresa_corresponsal">____________________</span>
+      </span>
+      se constituye como otorgante solidario e ilimitado del OPERADOR
+      CORRESPONSAL, en todas las obligaciones que éste asume con EL
+      ADMINISTRADOR. En constancia de lo anterior, suscribe el pagaré en
+      blanco y la carta de instrucciones que son otorgados como garantía
+      anexa a este contrato. Sus datos para notificación son: Dirección
+      <span name="dir_rep_legal">____________________</span> de la Ciudad de
+      <span name="ciudad_rep_legal">____________________</span>,
+      Departamento de
+      <span name="departamento_rep_legal">____________________</span>,
+      Teléfono
+      <span name="tel_fijo_corresponsal">____________________</span>, móvil
+      <span name="cel_corresponsal">____________________</span>, E-Mail:
+      <span name="email_corresponsal">____________________</span>.
+    </li>
     <li>
       OTORGANTE SOLIDARIO: El (la) señor (a)
       <span name="nombre_otorgante">____________________</span>, mayor de edad,

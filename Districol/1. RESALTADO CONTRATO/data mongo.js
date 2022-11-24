@@ -240,6 +240,61 @@
             ]
         },
         {
+            name: 'exp_cc_corresponsal',
+            description: 'Ingrese el lugar de expedición de la cédula del representante legal de la persona juridica o sociedad',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona_corresponsal',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            name: 'ciudad_empresa_corresponsal',
+            description: 'Ingrese la ciudad de residencia de la persona juridica o sociedad',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona_corresponsal',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            name: 'dir_rep_legal',
+            description: 'Ingrese la dirección de residencia del representante legal de la persona juridica o sociedad',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona_corresponsal',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            name: 'ciudad_rep_legal',
+            description: 'Ingrese la ciudad de residencia del representante legal de la persona juridica o sociedad',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona_corresponsal',
+                    v: 's'
+                }
+            ],
+        },
+        {
+            name: 'departamento_rep_legal',
+            description: 'Ingrese el departamento de residencia del representante legal de la persona juridica o sociedad',
+            type: 'text',
+            prereq: [
+                {
+                    k: 'tipo_persona_corresponsal',
+                    v: 's'
+                }
+            ],
+        },
+        {
             name: 'nombre_otorgante',
             description: [
                 {
@@ -704,6 +759,12 @@
             preReq: 'tipo_persona_corresponsal'
         },
         {
+            name: 'RUT de la sociedad',
+            approve: 'pending',
+            required: false,
+            preReq: 'tipo_persona_corresponsal'
+        },
+        {
             name: 'Cámara de comercio',
             approve: 'pending',
             required: false
@@ -712,5 +773,5 @@
     name: 'CONTRATO DE COLABORACIÓN MERCANTIL',
     username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
     company: ObjectId('6356ab6c1243c226bbd5615d'),
-    build: 11
+    build: 12
 }
