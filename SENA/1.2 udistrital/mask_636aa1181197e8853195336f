@@ -44,12 +44,13 @@
   <p class="page_text">
     <b>
       CONTRATO DE COOPERACIÓN EMPRESARIAL No.
-      <span name="numero_contrato">___________</span> DERIVADO DEL CONTRATO
+      <b name="numero_contrato">___________</b> DERIVADO DEL CONTRATO
       INTERADMINISTRATIVO SENA-UD
-      <span name="anio_contrato">___________</span> CELEBRADO ENTRE LA
-      UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS-EL SERVICIO NACIONAL DE
-      APRENDIZAJE - SENA Y
-      <span name="nombre_emprendedor">____________________________</span> </b
+      <b name="anio_contrato_2021" hidden>CO1.PCCNTR.2564825 DE 2021</b>
+      <b name="anio_contrato_2022">CO1.PCCNTR.3451677 DE 2022</b> CELEBRADO
+      ENTRE LA UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS-EL SERVICIO
+      NACIONAL DE APRENDIZAJE - SENA Y
+      <b name="nombre_emprendedor">____________________________</b> </b
     ><br /><br />
     Entre los suscritos a saber de una parte
     <b>LUZ DANA LEAL RUIZ</b>, domiciliada en la ciudad de Bogotá D.C.,
@@ -104,8 +105,12 @@
     quien ejercerá las funciones de Administración del mismo, cuya dirección
     ejecutiva estará a cargo del Director General del Servicio Nacional de
     Aprendizaje SENA, <b>4)</b> La UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE
-    CALDAS (UDFJC) y el SENA suscribieron el día 9 de junio de 2021 el contrato
-    interadministrativo No. CO1.PCCNTR.3451677, cuyo objeto es
+    CALDAS (UDFJC) y el SENA suscribieron el día
+    <b name="anio_contrato_2021" hidden>09 de junio de 2021</b>
+    <b name="anio_contrato_2022">28 de enero de 2022</b> el contrato
+    interadministrativo No.
+    <b name="anio_contrato_2021" hidden>CO1.PCCNTR.2564825 DE 2021</b>
+    <b name="anio_contrato_2022">CO1.PCCNTR.3451677 DE 2022</b>, cuyo objeto es
     <em>
       “Contratar los servicios de gestión, operación, administración de los
       recursos e implementación de la ruta completa de creación, puesta en
@@ -115,14 +120,18 @@
       y recuperación de cartera.”
     </em>
     <b>5)</b> Que en virtud de las obligaciones derivadas del contrato
-    interadministrativo No. CO1.PCCNTR.3451677, la Universidad Distrital
-    Francisco José de Caldas puede suscribir contratos de cooperación con el
-    Fondo Emprender que así mismo, mediante resolución número 151-2021 de junio
-    17 de 2021
+    interadministrativo No.
+    <b name="anio_contrato_2021" hidden>CO1.PCCNTR.2564825 DE 2021</b>
+    <b name="anio_contrato_2022">CO1.PCCNTR.3451677 DE 2022</b>, la Universidad
+    Distrital Francisco José de Caldas puede suscribir contratos de cooperación
+    con el Fondo Emprender que así mismo, mediante resolución número 151-2021 de
+    junio 17 de 2021
     <em>
       “Por la cual se, delegan las facultades de Supervisión, a un docente de
       carrera de la Universidad Distrital Francisco José De caldas para el
-      óptimo desarrollo y ejecución Contrato No. CO1.PCCNTR.3451677 DE 2022
+      óptimo desarrollo y ejecución Contrato No.
+      <b name="anio_contrato_2021" hidden>CO1.PCCNTR.2564825 DE 2021</b>
+      <b name="anio_contrato_2022">CO1.PCCNTR.3451677 DE 2022</b> DE 2022
       Suscrito Con El Servicio Nacional De Aprendizaje - SENA, y LA UNIVERSIDAD
       DISTRITAL FRANCISCO JOSÉ DE CALDAS.”
     </em>
@@ -137,12 +146,12 @@
     <span name="numero_acta">____________</span> de
     <span name="fecha_acta">_______________________</span>, dio voto favorable
     para la financiación del plan de negocio No.
-    <b>
-      <span name="id_plan">___________</span> -
-      <span name="nombre_plan">____________________________</span>
-    </b>
-    <b>8)</b> Que, con fundamento en la normatividad citada anteriormente, se
-    aprobó para el proyecto No.
+    <b name="id_plan">___________</b> -
+    <b name="nombre_plan">____________________________</b>
+    perteneciente a la regional
+    <span name="regional_sena">___________________</span> <b>8)</b> Que, con
+    fundamento en la normatividad citada anteriormente, se aprobó para el
+    proyecto No.
     <b>
       <span name="id_plan">___________</span> -
       <span name="nombre_plan">____________________________</span>
@@ -168,8 +177,9 @@
     </span>
     expedido por la UNIVERSIDAD de los recursos a gestionar.
 
-    <b>10)</b> Que el Servicio Nacional de Aprendizaje- SENA, expidió el Acuerdo
-    0010 de 2019 por el cual se establece el reglamento interno del Fondo
+    <b>10)</b> Que el Servicio Nacional de Aprendizaje- SENA, por medio del
+    Consejo Directivo expidió el Acuerdo 0010 de 2019 expedido por el consejo
+    directivo del SENA por el cual se establece el reglamento interno del Fondo
     Emprender, de esta normatividad hace parte integral los manuales de
     operación y financiación del Fondo Emprender.
 
@@ -180,38 +190,37 @@
     presente contrato interadministrativo <b>12)</b> Teniendo en cuenta las
     anteriores consideraciones, se procede a la suscripción del presente
     Contrato de Cooperación Empresarial que se rige por las siguientes
-    clausulas: <b>CLÁUSULA PRIMERA - OBJETO:</b> financiar la iniciativa
+    cláusulas: <b>CLÁUSULA PRIMERA - OBJETO:</b> financiar la iniciativa
     empresarial contenida en el Plan de Negocios No.
-    <b>
-      <span name="id_plan">___________</span> -
-      <span name="nombre_plan">____________________________</span>
-    </b>
+    <b name="id_plan">___________</b> -
+    <b name="nombre_plan">____________________________</b>
     presentado por el (los) <b>BENEFICIARIO(S)</b>, y aprobado por el Consejo
     Directivo Nacional del <b>SENA</b>, mediante la sesión indicada en los
     considerandos, en los términos y condiciones en los cuales fue evaluado y
     viabilizado por el administrador de los recursos la
-    <b>UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS</b>, así como lo
+    <b>UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS</b>, así como lo
     estipulado en el presente documento y sus anexos, los cuales hacen parte
     integral de este contrato.
     <b>CLÁUSULA SEGUNDA - VALOR Y FORMA DE PAGO:</b> El valor del presente
     contrato es por la suma de <b> <span name="valor_plan">___________</span></b
     >, la cual deberá ser entregada por parte del <b>SENA - FONDO EMPRENDER</b>,
-    a través de <b>LA UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS</b> a la
+    a través de <b>LA UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS</b> a la
     <b>FIDUCIARIA</b>, y los recursos se entregarán a
     <b>EL(LOS) BENEFICIARIO(S)</b>, en la forma y condiciones señaladas en el
     plan operativo asociado al plan de negocio aprobado en la convocatoria
     realizada por el Fondo Emprender, en los manuales, instructivos y circulares
     que se tengan dispuestos para el desarrollo del Fondo Emprender, en el
-    Instructivo de Pagos, Manual de Operaciones y Acuerdo 0010 del 2019 y/o
-    demás normas que los modifiquen o adicionen y que hacen parte integral del
-    presente contrato. En todo caso, los desembolsos de los recursos deberán ser
-    avalados previamente por la interventoría designada para hacer seguimiento
-    al presente contrato. <b>PARÁGRAFO PRIMERO:</b> El primer desembolso, no
-    podrá superar el cincuenta por ciento (50%) del valor total del contrato y
-    se realizará una vez se haya suscrito el presente contrato, así como sus
-    anexos, y se realizará una vez cumplidos los siguientes requisitos:
-    <b>1)</b> Suscripción por parte del (los) beneficiario (s) del pagaré con su
-    carta de instrucciones, documentos de contrapartidas, en calidad de deudores
+    Instructivo de Pagos, Manual de Operaciones y Acuerdo 0010 del 2019 expedido
+    por el consejo directivo del SENA y/o demás normas que los modifiquen o
+    adicionen y que hacen parte integral del presente contrato. En todo caso,
+    los desembolsos de los recursos deberán ser avalados previamente por la
+    interventoría designada para hacer seguimiento al presente contrato.
+    <b>PARÁGRAFO PRIMERO:</b> El primer desembolso, no podrá superar el
+    cincuenta por ciento (50%) del valor total del contrato y se realizará una
+    vez se haya suscrito el presente contrato, así como sus anexos, y se
+    realizará una vez cumplidos los siguientes requisitos: <b>1)</b> Suscripción
+    por parte del (los) beneficiario (s) del pagaré con su carta de
+    instrucciones, documentos de contrapartidas, en calidad de deudores
     solidarios. Así como el contrato de garantía mobiliaria por parte del
     representante de la empresa creada para ejecutar el plan de negocios
     <b>2)</b> constituir legalmente la empresa por un término no inferior a la
@@ -261,7 +270,7 @@
     prórroga, para hacerse efectiva, deberá ser aprobada en conjunto por el SENA
     - FONDO EMPRENDER Y LA UNIVERSIDAD. Para la comunicación de la aprobación de
     la prórroga, podrá utilizarse la plataforma o cualquier otro mecanismo
-    oficial. <b>4)</b> LA UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS,
+    oficial. <b>4)</b> LA UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS,
     gestionará los trámites administrativos necesarios para actualizar la fecha
     de terminación del presente contrato en sus sistemas de información, y
     dejará dentro del expediente del contrato el soporte documental de dicha
@@ -270,7 +279,7 @@
     convocatoria a la cual se presentó el BENEFICIARIO(S).
     <b
       >CLÁUSULA CUARTA - OBLIGACIONES DEL (O DE LOS) BENEFICIARIO(S) CON EL
-      FONDO EMPRENDER Y CON UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS:</b
+      FONDO EMPRENDER Y CON UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS:</b
     >El (o los) BENEFICIARIO (S) se obliga (n) a realizar y ejecutar las
     siguientes actividades: <b>1)</b> Cumplir con las actividades y acciones
     necesarias para la debida ejecución del plan de negocio, en los términos y
@@ -343,12 +352,14 @@
     deudores. <b>25)</b> Pagar los impuestos que se generen como consecuencia de
     la suscripción del presente contrato y los que de él se deriven, salvo
     aquellos que sean asumidos por el FONDO EMPRENDER, con cargo al contrato
-    interadministrativo CO1.PCCNTR.3451677 de 2022. <b>26)</b> Pagar los aportes
-    parafiscales que se deriven de la suscripción del presente contrato y de la
-    ejecución del plan de negocio aprobado por el FONDO EMPRENDER.
-    <b>27)</b> Mantener indemne tanto a LA UNIVERSIDAD como al SENA, por
-    posibles reclamaciones, frente a cualquier acción, reclamación o demanda de
-    cualquier naturaleza derivadas de daños y/o perjuicios causados a
+    interadministrativo
+    <b name="anio_contrato_2021" hidden>CO1.PCCNTR.2564825 DE 2021</b>
+    <b name="anio_contrato_2022">CO1.PCCNTR.3451677 DE 2022</b> de 2022.
+    <b>26)</b> Pagar los aportes parafiscales que se deriven de la suscripción
+    del presente contrato y de la ejecución del plan de negocio aprobado por el
+    FONDO EMPRENDER. <b>27)</b> Mantener indemne tanto a LA UNIVERSIDAD como al
+    SENA, por posibles reclamaciones, frente a cualquier acción, reclamación o
+    demanda de cualquier naturaleza derivadas de daños y/o perjuicios causados a
     propiedades, o a la vida, o integridad personal de terceros, o de cualquiera
     de los empleados, agentes o contratistas, que surjan como consecuencia
     directa o indirecta de actos, hechos u omisiones del o (los)
@@ -364,18 +375,19 @@
     <b>30)</b>Cumplir con las cláusulas y condiciones estipuladas en el contrato
     de garantía mobiliaria, especialmente las que se refieren al reporte de los
     bienes adquiridos con los recursos financiados por el Fondo Emprender y lo
-    fijado en el parágrafo tercero del artículo 25 del Acuerdo 0010 de 2019.
-    <b>31)</b> Las demás que se deriven de la firma del presente contrato, sus
-    anexos y normas regulatorias. <b>PARÁGRAFO</b> La autorización que habla el
-    numeral 16 de la presente cláusula se entenderá surtida con la aceptación y
-    firma del presente contrato de cooperación empresarial.
+    fijado en el parágrafo tercero del artículo 25 del Acuerdo 0010 de 2019
+    expedido por el Consejo Directivo del SENA. <b>31)</b> Las demás que se
+    deriven de la firma del presente contrato, sus anexos y normas regulatorias.
+    <b>PARÁGRAFO</b> La autorización que habla el numeral 16 de la presente
+    cláusula se entenderá surtida con la aceptación y firma del presente
+    contrato de cooperación empresarial.
     <b
       >CLÁUSULA QUINTA - OBLIGACIONES DE UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE
       CALDAS:</b
     >
     <b> 1)</b> Constituir, el encargo fiduciario a nombre del
     <b
-      >FIDEICOMISO UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS - FONDO
+      >FIDEICOMISO UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS - FONDO
       EMPRENDER,</b
     >
     que manejará los recursos de cada plan de negocios a través de subcuentas.
@@ -422,9 +434,9 @@
     suscripción del Acta de inicio, según los informes de interventoría y el
     Operador presentados, y el cumplimiento de las obligaciones contractuales.
     El Consejo Directivo Nacional del SENA, decidirá sobre la condonación de los
-    recursos asignados, de acuerdo con lo dispuesto en el Acuerdo 0010 de 2019,
-    Manual de Financiación capítulo I literal C), o la norma que lo modifique,
-    sustituya o derogue.
+    recursos asignados, de acuerdo con lo dispuesto en el Acuerdo 0010 de 2019
+    expedido por el Consejo Directivo del SENA, Manual de Financiación capítulo
+    I literal C), o la norma que lo modifique, sustituya o derogue.
     <b> CLÁUSULA OCTAVA - DERECHOS DE AUTOR: MARCAS Y PATENTES:</b> En caso de
     desarrollar proyectos innovadores y/o actividades que conlleven el registro
     de derechos de autor o de marcas y patentes, el (los)
@@ -532,7 +544,7 @@
     adelantar el objeto del presente CONTRATO DE COOPERACIÓN EMPRESARIAL o para
     continuar con su ejecución <b>16)</b> Cuando el (los) BENEFICIARIO (S)
     incurra (n) en conductas prohibidas establecidas en el Capítulo 2 del Título
-    II de la Ley 418 de 1997, prorrogada por las leyes 548 de 1999 y 782 de
+    II de la Ley 418 de 1997, prorrogada por las Leyes 548 de 1999 y 782 de
     2002, y el artículo 25 de la Ley 40 de 1993, pago de sumas de dinero a
     extorsionistas u ocultar o colaborar, por parte de el(los) BENEFICIARIO(S),
     en el pago por la liberación de una persona secuestrada que sea contratista
@@ -551,58 +563,61 @@
     implique la enajenación de los bienes financiados con recursos del Fondo
     Emprender y que no correspondan al giro normal de la empresa. <b>21)</b> Por
     cualquiera de las circunstancias previstas en el artículo 14 del Acuerdo 10
-    de 2019 o la norma que lo adicione, modifique o derogue. <b>22)</b> Cuando
-    se viole cualquiera de las prohibiciones estipuladas en el artículo 4 del
-    Acuerdo 10 de 2019. <b>23)</b> Por el incumplimiento de lo estipulado en el
-    contrato y especialmente lo atinente a los documentos necesarios,
-    estipulados en el artículo 25 del Acuerdo 10 de 2019 o la norma que lo
-    adicione, modifique o derogue. <b>24)</b> Si EL(LOS) BENEFICIARIO(S) no
-    acepta(n), durante la ejecución del contrato, la vigilancia de la
-    interventoría designada por LA UNIVERSIDAD. <b>PARÁGRAFO PRIMERO:</b> Las
-    partes acuerdan que el contrato se dará por terminado anticipadamente, a
-    partir de la fecha que señale la comunicación de notificación. Sin perjuicio
-    de lo anterior las partes podrán suscribir un acta de liquidación en caso de
-    ejecución de recursos, en la cual se dejará constancia de los hechos o
-    circunstancias que motivaron la misma; dicha acta no se requiere si no hubo
-    ejecución de recursos. PARÁGRAFO SEGUNDO: Para que se haga efectiva la
-    terminación anticipada del presente contrato, se deberá contar con visto
-    bueno del INTERVENTOR, y autorización por parte de LA UNIVERSIDAD y el SENA.
-    PARÁGRAFO TERCERO: En todo caso, el acaecimiento de una de las causales de
-    terminación anticipada previstas en la presente cláusula, facultará al SENA
-    a través de LA UNIVERSIDAD, para abstenerse de continuar realizando los
-    desembolsos y exigir la devolución de los aportes asignados al proyecto. El
-    o los emprendedores podrán realizar acuerdos de pago con el Ente encargado
-    de la operación del FONDO EMPRENDER, que permitan la devolución de los
-    recursos que se hayan entregado por el SENA FONDO EMPRENDER, para la
-    financiación de su plan de negocios. Estos acuerdos de pago serán de
-    estricto cumplimiento so pena de iniciar las acciones judiciales que sean
-    requeridas. <b> CLÁUSULA DÉCIMA CUARTA - REGIMEN LEGAL APLICABLE: </b> El
-    presente contrato se rige por la Ley 789 de 2002, Decreto 934 de 2003,
-    modificados por los Decretos 3930 de 2006 y 1072 de 2015, y especialmente,
-    con lo determinado en los manuales, acuerdos y resoluciones vigentes que
-    regulan y reglamentan del Fondo Emprender, o aquellas que la derogue,
-    modifiquen, sustituyan o adicionen, así como lo contemplado en los términos
-    de referencia de la convocatoria a la cual postuló su plan de negocio. Marco
+    de 2019 expedido por el Consejo Directivo del SENA o la norma que lo
+    adicione, modifique o derogue. <b>22)</b> Cuando se viole cualquiera de las
+    prohibiciones estipuladas en el artículo 4 del Acuerdo 10 de 2019 expedido
+    por el Consejo Directivo del SENA. <b>23)</b> Por el incumplimiento de lo
+    estipulado en el contrato y especialmente lo atinente a los documentos
+    necesarios, estipulados en el artículo 25 del Acuerdo 10 de 2019 expedido
+    por el Consejo Directivo del SENA o la norma que lo adicione, modifique o
+    derogue. <b>24)</b> Si EL(LOS) BENEFICIARIO(S) no acepta(n), durante la
+    ejecución del contrato, la vigilancia de la interventoría designada por LA
+    UNIVERSIDAD. <b>PARÁGRAFO PRIMERO:</b> Las partes acuerdan que el contrato
+    se dará por terminado anticipadamente, a partir de la fecha que señale la
+    comunicación de notificación. Sin perjuicio de lo anterior las partes podrán
+    suscribir un acta de liquidación en caso de ejecución de recursos, en la
+    cual se dejará constancia de los hechos o circunstancias que motivaron la
+    misma; dicha acta no se requiere si no hubo ejecución de recursos. PARÁGRAFO
+    SEGUNDO: Para que se haga efectiva la terminación anticipada del presente
+    contrato, se deberá contar con visto bueno del INTERVENTOR, y autorización
+    por parte de LA UNIVERSIDAD y el SENA. PARÁGRAFO TERCERO: En todo caso, el
+    acaecimiento de una de las causales de terminación anticipada previstas en
+    la presente cláusula, facultará al SENA a través de LA UNIVERSIDAD, para
+    abstenerse de continuar realizando los desembolsos y exigir la devolución de
+    los aportes asignados al proyecto. El o los emprendedores podrán realizar
+    acuerdos de pago con el Ente encargado de la operación del FONDO EMPRENDER,
+    que permitan la devolución de los recursos que se hayan entregado por el
+    SENA FONDO EMPRENDER, para la financiación de su plan de negocios. Estos
+    acuerdos de pago serán de estricto cumplimiento so pena de iniciar las
+    acciones judiciales que sean requeridas.
+    <b> CLÁUSULA DÉCIMA CUARTA - REGIMEN LEGAL APLICABLE: </b> El presente
+    contrato se rige por la Ley 789 de 2002, Decreto 934 de 2003, modificados
+    por los Decretos 3930 de 2006 y 1072 de 2015, y especialmente, con lo
+    determinado en los manuales, acuerdos y resoluciones vigentes que regulan y
+    reglamentan del Fondo Emprender, o aquellas que la derogue, modifiquen,
+    sustituyan o adicionen, así como lo contemplado en los términos de
+    referencia de la convocatoria a la cual postuló su plan de negocio. Marco
     normativo conocido por el (los) BENEFICIARIO(S), desde el momento de la
     postulación de su plan de negocio y confirmado con la suscripción del
     presente contrato. <b>PARÁGRAFO:</b> Su régimen jurídico estará enmarcado en
     las normas precitadas, y en concordancia con lo establecido por el artículo
-    5 del Acuerdo 10 de 2019 y las normas civiles y comerciales.
+    5 del Acuerdo 10 de 2019 expedido por el Consejo Directivo del SENA y las
+    normas civiles y comerciales.
     <b> CLÁUSULA DÉCIMA QUINTA - CESIÓN: El (LOS) BENEFICIARIO(S) </b> no podrá
     ceder total, ni parcialmente el presente contrato, ni el cumplimiento de sus
     obligaciones. El incumplimiento de esta cláusula, facultará al
-    <b> SENA Y LA UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS </b> para
+    <b> SENA Y LA UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS </b> para
     abstenerse de continuar realizando los desembolsos y exigir la devolución de
     los recursos girados al proyecto.
-    <b>CLÁUSULA DÉCIMA SEXTA AUSENCIA DE VINCULO O RELACIÓN CONTRACTUAL:</b> En
+    <b>CLÁUSULA DÉCIMA SEXTA AUSENCIA DE VíNCULO O RELACIÓN CONTRACTUAL:</b> En
     virtud del presente contrato, los contratistas, proveedores, empleados del
     (o de los) <b>BENEFICIARIO(S)</b>, no adquieren vínculo laboral ni
     contractual alguno con el <b>SENA</b> y
-    <b> LA UNIVERSIDAD DISTRITAL FRANCISCO JOSE DE CALDAS.</b>
+    <b> LA UNIVERSIDAD DISTRITAL FRANCISCO JOSÉ DE CALDAS.</b>
 
     <b
-      >CLÁUSULA DÉCIMA SEPTIMA - INHABILIDADES, INCOMPATIBILIDADES Y CONFLICTO
-      DE INTERES: El (los) BENEFICIARIO(S)
+      >CLÁUSULA DÉCIMA SÉPTIMA - INHABILIDADES, INCOMPATIBILIDADES Y CONFLICTO
+      DE INTERÉS: El (los) BENEFICIARIO(S)
     </b>
     declara(n) bajo la gravedad del juramento, el cual se entiende prestado con
     la firma del presente documento, que no se halla(n) incurso (s) en ninguna
@@ -625,7 +640,7 @@
     seguimiento de interventoría al contrato, así como las actas de agendas
     especiales. <b>9)</b> y los demás documentos que se generen en desarrollo
     del presente contrato.
-    <b> CLÁUSULA DÉCIMA NOVENA - INTERVENTORIA: EL (LOS) BENEFICIARIO(S) </b>
+    <b> CLÁUSULA DÉCIMA NOVENA - INTERVENTORÍA: EL (LOS) BENEFICIARIO(S) </b>
     acepta(n) la inspección y vigilancia de la interventoría que designe
     <b> LA UNIVERSIDAD, </b> o de quien esta designe, encaminada a cerciorarse
     de que la inversión se hace o se ha realizado en la forma indicada, acorde
@@ -636,8 +651,8 @@
     a dar aplicación estricta al destino de las inversiones y a no abandonar las
     obligaciones, ocultar, enajenar o disponer de los bienes gravados si los
     hubiere, cuya tenencia conservará, al tenor de lo dispuesto en los artículos
-    255 y 311 del Código Penal.
-    <b>CLÁUSULA VIGÉSIMA - CLAUSULA ACELERATORIA:</b> El SENA podrá hacer uso de
+    255 y 311 del Código Penal Colombiano.
+    <b>CLÁUSULA VIGÉSIMA - CLÁUSULA ACELERATORIA:</b> El SENA podrá hacer uso de
     la cláusula aceleratoria de conformidad con lo previsto en la normatividad
     prevista para el caso, ante la simple ocurrencia de cualquiera de las
     causales previstas en las cláusulas novena y décima segunda, del presente
@@ -695,8 +710,7 @@
     los dineros ejecutados. <b>CLÁUSULA VIGESIMA SEPTIMA - DOMICILIO:</b> Las
     partes acuerdan para todos los efectos legales la ciudad de Bogotá D.C.
   </p>
-  <br /><br /><br />
-  <br />
+  <br /><br />
 
   <p class="page_text">
     <b
@@ -751,54 +765,64 @@
 
   <p>
     <small>
-      <span><b>Por SENA</b></span
-      ><br /><br />
+      <span><b>Por SENA</b></span>
+      <br /><br /><br />
       <div>
         Proyectó y Revisó: &nbsp;&nbsp;&nbsp; Mónica Alejandra Torres Rey,
         Abogada Fondo Emprender &nbsp;&nbsp;&nbsp;
       </div>
+      <br />
+      <br />
       <br />
       <div>
         Revisó y Aprobó: &nbsp;&nbsp;&nbsp; Carlos Arturo Gamba Castillo,
         Coordinador Nacional de Emprendimiento
       </div>
       <br />
+      <br />
+      <br />
       <div>
-        Revisó y Aprobó: &nbsp;&nbsp;&nbsp; Luisa Fernanda Velásquez Giraldo,
+        Revisó y Aprobó: &nbsp;&nbsp;&nbsp; Diana Carolina Gutiérrez Pérez,
         Abogada Dirección de Empleo y Trabajo SENA
       </div>
       <br />
-      <div>
-        Revisó y Aprobó: &nbsp;&nbsp;&nbsp; Lady Stella Herrera Dallos, Abogada
-        Dirección de Empleo y Trabajo SENA
-      </div>
       <br />
+      <br />
+      <div>
+        Revisó y Aprobó: &nbsp;&nbsp;&nbsp; Efraín Andrés Rodríguez Ovalle,
+        Abogado Dirección de Empleo y Trabajo SENA
+      </div>
     </small>
   </p>
 
   <br />
+  <br />
 
   <p>
     <small>
-      <span><b>Por UNIVERSIDAD</b></span
-      ><br /><br />
+      <span><b>Por UNIVERSIDAD</b></span>
+      <br /><br /><br />
       <div>
         Proyectó: &nbsp;&nbsp;&nbsp; Nelson Eduardo Rodríguez, Supervisor
         UDistrital
       </div>
       <br />
+      <br />
+      <br />
       <div>
-        Revisó: &nbsp;&nbsp;&nbsp; Alides Espinosa Ospino, Coordinador
+        Revisó: &nbsp;&nbsp;&nbsp; Alcides Espinosa Ospino, Coordinador
         Contractual UDistrital
       </div>
+      <br />
+      <br />
       <br />
       <div>
         Revisó: &nbsp;&nbsp;&nbsp; Ana María Chavarro Méndez, Abogada IDEXUD
       </div>
-      <br />
     </small>
   </p>
 
+  <br />
   <br />
 
   <p>
@@ -813,6 +837,4 @@
       </small>
     </small>
   </p>
-
-  <br />
 </div>

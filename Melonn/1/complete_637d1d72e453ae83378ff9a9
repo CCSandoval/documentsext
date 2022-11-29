@@ -176,6 +176,12 @@
         referencia de clientes. En caso de contradicción y/o incompatibilidad entre los términos y condiciones del
         presente acuerdo y de sus documentos y/o anexos, prevalecerá en primer lugar los términos y condiciones del
         acuerdo sobre los documentos y/o anexos.</span><span> &nbsp;</span></p>
+
+<span name="otra_clausula_n"hidden></span>
+<p name="otra_clausula_s">
+        CLÁUSULA 15. <span name="otra_clausula_texto">_________________________________________________________</span>
+</p>
+
 <p style="text-align: justify"><span style="color: black"> El presente acuerdo se suscribe entre las partes a
         los</span><span style="font-size: 15pt; color: black"> </span><span name="date_fecha">________</span></p>
 <p style="text-align: center"><strong><span style="color: black"> ANEXO 1. Condiciones de la
@@ -283,8 +289,8 @@
 <p><span> &nbsp;</span></p>
 <p style="text-align: justify"><strong><b style="color: black">MELONN</b></strong></p>
 <p style="text-align: justify">
-    <div><br /><br /><br /><br /><span>___________________</span><br />
-        <div name="email_replegalmelonn"></div><b name="name_replegalmelonn">________</b><br /><b
+    <div>
+        <div class="sign-margin" id="replegalmelonn"></div><b name="name_replegalmelonn">________</b><br /><b
             name="document_type_replegalmelonn_cc">C.C. <b name="cedula_replegalmelonn">________</b></b><b
             name="document_type_replegalmelonn_ce" hidden>C.E. <b name="cedulae_replegalmelonn">________</b></b><b
             name="document_type_replegalmelonn_pa" hidden>PASAPORTE <b
@@ -293,10 +299,12 @@
 </p>
 <br><br><br>
 <p style="text-align: justify"><strong><b style="color: black">EL ALIADO</b></strong></p>
-<div><br /><br /><br /><br /><span>___________________</span><br />
-    <div name="email_replegalpartner"></div><b name="name_replegalpartner">________</b><br /><b
-        name="document_type_replegalpartner_cc">C.C. <b name="cedula_replegalpartner">________</b></b><b
-        name="document_type_replegalpartner_ce" hidden>C.E. <b name="cedulae_replegalpartner">________</b></b><b
-        name="document_type_replegalpartner_pa" hidden>PASAPORTE <b
-            name="pasaporte_replegalpartner">________</b></b><br /><b>REPRESENTANTE LEGAL PARTNER</b>
-</div>
+<p>
+        <div>
+            <div class="sign-margin" id="replegalpartner"></div><b name="name_replegalpartner">________</b><br /><b
+                name="document_type_replegalpartner_cc">C.C. <b name="cedula_replegalpartner">________</b></b><b
+                name="document_type_replegalpartner_ce" hidden>C.E. <b name="cedulae_replegalpartner">________</b></b><b
+                name="document_type_replegalpartner_pa" hidden>PASAPORTE <b
+                    name="pasaporte_replegalpartner">________</b></b><br /><b>REPRESENTANTE LEGAL PARTNER</b>
+        </div>
+</p>

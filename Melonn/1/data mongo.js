@@ -81,6 +81,33 @@
             description: 'Escribe en valor y letras el valor de comisión acordado'
         },
         {
+            name: 'otra_clausula',
+            type: 'clausula',
+            description: '¿Desea ingresar una cláusula extra?',
+            value:'n',
+            options:[
+                {
+                    name:'No',
+                    value:'n'
+                },
+                {
+                    name:'Si',
+                    value:'s'
+                },
+            ]
+        },
+        {
+            name: 'otra_clausula_texto',
+            type: 'text',
+            description: 'Ingresa el texto de la clausula extra',
+            prereq:[
+                {
+                    k:'otra_clausula',
+                    v:'s'
+                }
+            ]
+        },
+        {
             name: 'date_fecha',
             type: 'date',
             help: 'fecha',
@@ -189,7 +216,7 @@
             type: 'replegalmelonn'
         }
     ],
-    build: 0,
+    build: 1,
     price: 5000,
     createdAt: ISODate('2022-11-22T19:00:00.000Z'),
     updatedAt: ISODate('2022-11-22T19:00:00.000Z')

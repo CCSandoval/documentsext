@@ -7178,6 +7178,10 @@
     ],
     operation: [],
     sign: [
+        'document_code',
+        'campo_texto',
+        'texto_extra',
+        'correo_enviar',
         'tipo_persona_v_1',
         'nombre_empresa_vendedor_1',
         'nit_empresa_vendedor_1',

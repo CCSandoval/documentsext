@@ -110,7 +110,7 @@
         {
             name: 'dir_corresponsal',
             type: 'name',
-            description: 'Ingrese el domicilio de la persona juridica o sociedad'
+            description: 'Ingrese la dirección de la persona juridica o sociedad'
         },
         {
             name: 'email_corresponsal',
@@ -194,7 +194,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'dir_otorgante',
@@ -205,7 +205,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'ciudad_otorgante',
@@ -216,7 +216,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'departamento_otorgante',
@@ -227,7 +227,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'ciudad_suscripcion',
@@ -281,7 +281,7 @@
             identification: 'cc_corresponsal',
             phone: 'cel_corresponsal',
             'package': true
-        },
+        }
     ],
     price: 5000,
     files: [
@@ -302,16 +302,10 @@
             preReq: 'tipo_persona_corresponsal'
         },
         {
-            name: 'RUT de la sociedad',
-            approve: 'pending',
-            required: false,
-            preReq: 'tipo_persona_corresponsal'
-        },
-        {
-            name: 'Cámara de comercio',
+            name: 'Cámara de comercio (Persona Jurídica o Natural)',
             approve: 'pending',
             required: false
-        },
+        }
     ],
     name: 'CONTRATO DE COLABORACIÓN MERCANTIL (PREPAGO)',
     company: ObjectId('6356ab6c1243c226bbd5615d'),

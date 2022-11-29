@@ -164,7 +164,7 @@
         {
             name: 'dir_corresponsal',
             type: 'name',
-            description: 'Ingrese el domicilio del operador corresponsal'
+            description: 'Ingrese la dirección del operador corresponsal'
         },
         {
             name: 'email_corresponsal',
@@ -248,7 +248,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'ciudad_empresa_corresponsal',
@@ -259,7 +259,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'dir_rep_legal',
@@ -270,7 +270,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'ciudad_rep_legal',
@@ -281,7 +281,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'departamento_rep_legal',
@@ -292,7 +292,7 @@
                     k: 'tipo_persona_corresponsal',
                     v: 's'
                 }
-            ],
+            ]
         },
         {
             name: 'nombre_otorgante',
@@ -759,13 +759,7 @@
             preReq: 'tipo_persona_corresponsal'
         },
         {
-            name: 'RUT de la sociedad',
-            approve: 'pending',
-            required: false,
-            preReq: 'tipo_persona_corresponsal'
-        },
-        {
-            name: 'Cámara de comercio',
+            name: 'Cámara de comercio (Persona Jurídica o Natural)',
             approve: 'pending',
             required: false
         }
