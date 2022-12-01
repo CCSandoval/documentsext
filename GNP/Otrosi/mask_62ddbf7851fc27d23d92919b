@@ -37,19 +37,2089 @@
   <span name="concepto_cargo_n"></span>
   <li name="concepto_cargo_s">
     <b>EL TRABAJADOR</b>, realiza el cambio de cargo de
-    <span name="cargo_viejo">__________________</span> y en adelante prestara
-    sus servicios personales como
-    <span name="cargo_nuevo">__________________</span>
+    <span>
+      <b name="cargo_viejo_call_c">AGENTE CALL CENTER</b>
+      <b name="cargo_viejo_auxiliar_compras" hidden>Auxiliar de compras</b>
+      <b name="cargo_viejo_call_c_cnd" hidden>AGENTE CALL CENTER CND</b>
+      <b name="cargo_viejo_gest_oper" hidden>GESTOR OPERATIVO</b>
+      <b name="cargo_viejo_anal_work" hidden>ANALISTA WORKFORCE</b>
+      <b name="cargo_viejo_ger_tic" hidden>
+        GERENTE TECNOLOGIA DE LA INFORMACIÓN
+      </b>
+      <b name="cargo_viejo_anal_g_doc" hidden>ANALISTA DE GESTION DOCUMENTAL</b>
+      <b name="cargo_viejo_coord_g_doc" hidden>
+        COORDINADOR DE GESTION DOCUMENTAL
+      </b>
+      <b name="cargo_viejo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</b>
+      <b name="cargo_viejo_torre_ctrl" hidden>TORRE DE CONTROL</b>
+      <b name="cargo_viejo_anal_cont" hidden>Analista de contratación</b>
+      <b name="cargo_viejo_prod_auv" hidden>Productor audiovisual</b>
+      <b name="cargo_viejo_aux_serv_client" hidden>
+        Auxiliar Servicio al Cliente
+      </b>
+      <b name="cargo_viejo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</b>
+      <b name="cargo_viejo_sop_redes" hidden>Soporte Redes</b>
+      <b name="cargo_viejo_jefe_formacion" hidden>Jefe de Formación</b>
+      <b name="cargo_viejo_coord_hd" hidden>Coordinador de soporte Help Desk</b>
+      <b name="cargo_viejo_aux_soporte" hidden>Auxiliares de soporte Nivel I</b>
+      <b name="cargo_viejo_jefe_dig" hidden>Jefe Digital</b>
+      <b name="cargo_viejo_jefe_design" hidden>Jefe De Diseño</b>
+      <b name="cargo_viejo_web_design" hidden>Diseñador Web</b>
+      <b name="cargo_viejo_dig_design" hidden>
+        Diseñador Digital y Audiovisual
+      </b>
+      <b name="cargo_viejo_dig_analist" hidden>Analista digital</b>
+      <b name="cargo_viejo_backoffice_cnd" hidden>Backoffice CND</b>
+      <b name="cargo_viejo_call_c_sup_cnd" hidden>Supervisor Call Center CND</b>
+      <b name="cargo_viejo_jefe_cuenta_cnd" hidden>Jefe de Cuenta CND</b>
+      <b name="cargo_viejo_data_marshall_cnd" hidden>Data Marshall CND</b>
+      <b name="cargo_viejo_data_marshall_coord_cnd" hidden>
+        Coordinador Data Marshall CND
+      </b>
+      <b name="cargo_viejo_test_analist" hidden>
+        Analista de pruebas y automatización
+      </b>
+      <b name="cargo_viejo_jefe_calidad" hidden>Jefe de formación y calidad</b>
+      <b name="cargo_viejo_formador_cnd" hidden>Formador CND</b>
+      <b name="cargo_viejo_quality_cnd" hidden>Quality CND</b>
+      <b name="cargo_viejo_asesor_cliente" hidden>Asesor Servicio al Cliente</b>
+      <b name="cargo_viejo_pusher" hidden>Pusher</b>
+      <b name="cargo_viejo_team_leader" hidden>Team Leader</b>
+      <b name="cargo_viejo_coord_c_center" hidden>Coordinador Call Center</b>
+      <b name="cargo_viejo_jefe_operaciones" hidden>Jefe de Operaciones</b>
+      <b name="cargo_viejo_jefe_cuenta" hidden>Jefe de Cuenta</b>
+      <b name="cargo_viejo_formador" hidden>Formador</b>
+      <b name="cargo_viejo_gestor_aprendizaje" hidden>Gestor de Aprendizaje</b>
+      <b name="cargo_viejo_quality" hidden>Quality</b>
+      <b name="cargo_viejo_coord_form" hidden>Coordinador de Formación</b>
+      <b name="cargo_viejo_lider_form" hidden>Lider de Formación</b>
+      <b name="cargo_viejo_gestor_nal_op" hidden>
+        Gestor Nacional de Operaciones
+      </b>
+      <b name="cargo_viejo_lider_calidad" hidden>Lider de Calidad</b>
+      <b name="cargo_viejo_coord_serv_cliente" hidden>
+        Coordinador Servicio al Cliente y Calidad
+      </b>
+      <b name="cargo_viejo_coord_data_marshall" hidden>
+        Coordinador Data Marshall
+      </b>
+      <b name="cargo_viejo_junior_data_marshall" hidden>Data Marshall Junior</b>
+      <b name="cargo_viejo_backoffice" hidden>Backoffice</b>
+      <b name="cargo_viejo_coord_backoffice" hidden>Coordinador Backoffice</b>
+      <b name="cargo_viejo_analista_legal" hidden>Analista de legalización</b>
+      <b name="cargo_viejo_senior_dev" hidden>Desarrollador Senior</b>
+      <b name="cargo_viejo_supervisor_tecnico" hidden>Supervisor Técnico</b>
+      <b name="cargo_viejo_jefe_regional" hidden>Jefe Regional</b>
+      <b name="cargo_viejo_controller_financiero" hidden>
+        Controller Financiero
+      </b>
+      <b name="cargo_viejo_gerente_th" hidden>Gerente de Talento Humano</b>
+      <b name="cargo_viejo_jefe_nomina" hidden>Jefe de Nómina</b>
+      <b name="cargo_viejo_tesorero" hidden>Tesorero</b>
+      <b name="cargo_viejo_contador_junior" hidden>Contador Junior</b>
+      <b name="cargo_viejo_coordinador_nomina" hidden>Coordinador Nomina</b>
+      <b name="cargo_viejo_analista_nomina" hidden>Analista Nomina</b>
+      <b name="cargo_viejo_auxiliar_contable" hidden>Auxiliar Contable</b>
+      <b name="cargo_viejo_lider_g_documental" hidden>
+        Lider de Gestión Documental
+      </b>
+      <b name="cargo_viejo_auxiliar_enfermeria" hidden>Auxiliar Enfermería</b>
+      <b name="cargo_viejo_auxiliar_hseq" hidden>Auxiliar HSEQ</b>
+      <b name="cargo_viejo_auxiliar_g_documental" hidden>Auxiliar de archivo</b>
+      <b name="cargo_viejo_jefe_admin_nal" hidden>
+        Jefe Administrativo Nacional
+      </b>
+      <b name="cargo_viejo_jefe_admin" hidden>Jefe Administrativo</b>
+      <b name="cargo_viejo_lider_compras" hidden>Lider de Compras</b>
+      <b name="cargo_viejo_admin_sede" hidden>Administrador de Sede</b>
+      <b name="cargo_viejo_aux_serv_gen" hidden>Auxiliar Servicios Generales</b>
+      <b name="cargo_viejo_coord_selec" hidden>Coordinador de Selección</b>
+      <b name="cargo_viejo_analista_selec" hidden>Analista de selección</b>
+      <b name="cargo_viejo_aux_selec" hidden>Auxiliar de selección</b>
+      <b name="cargo_viejo_ejec_datos" hidden>
+        Ejecutiva de Datos y Recursos Comerciales
+      </b>
+      <b name="cargo_viejo_sop_usuarios" hidden>Soporte de usuarios</b>
+      <b name="cargo_viejo_anal_bi" hidden>Analista BI</b>
+      <b name="cargo_viejo_anal_op" hidden>Analista Operativo</b>
+      <b name="cargo_viejo_anal_inf_fin" hidden>
+        Analista Información Financiera
+      </b>
+      <b name="cargo_viejo_jefe_procesos" hidden>Jefe de Calidad y Procesos</b>
+      <b name="cargo_viejo_jefe_nal_inf" hidden>
+        Jefe Nacional de Infraestructura
+      </b>
+      <b name="cargo_viejo_jefe_nal_mesa" hidden>
+        Jefe Nacional de Mesa de Ayuda
+      </b>
+      <b name="cargo_viejo_jefe_seg_inf" hidden>
+        Jefe de Seguridad de la Información
+      </b>
+      <b name="cargo_viejo_ing_nal_redes" hidden>
+        Ingeniero Nacional de Redes y Comunicaciones
+      </b>
+      <b name="cargo_viejo_ing_nal_servidores" hidden>
+        Ingeniero Nacional de Servidores y Almacenamiento
+      </b>
+      <b name="cargo_viejo_ing_nal_tel" hidden>
+        Ingeniero Nacional de Telefonía
+      </b>
+    </span>
+    y en adelante prestara sus servicios personales como
+    <span>
+      <b name="cargo_nuevo_call_c">AGENTE CALL CENTER</b>
+      <b name="cargo_nuevo_auxiliar_compras" hidden>Auxiliar de compras</b>
+      <b name="cargo_nuevo_call_c_cnd" hidden>AGENTE CALL CENTER CND</b>
+      <b name="cargo_nuevo_gest_oper" hidden>GESTOR OPERATIVO</b>
+      <b name="cargo_nuevo_anal_work" hidden>ANALISTA WORKFORCE</b>
+      <b name="cargo_nuevo_ger_tic" hidden>
+        GERENTE TECNOLOGIA DE LA INFORMACIÓN
+      </b>
+      <b name="cargo_nuevo_anal_g_doc" hidden>ANALISTA DE GESTION DOCUMENTAL</b>
+      <b name="cargo_nuevo_coord_g_doc" hidden>
+        COORDINADOR DE GESTION DOCUMENTAL
+      </b>
+      <b name="cargo_nuevo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</b>
+      <b name="cargo_nuevo_torre_ctrl" hidden>TORRE DE CONTROL</b>
+      <b name="cargo_nuevo_anal_cont" hidden>Analista de contratación</b>
+      <b name="cargo_nuevo_prod_auv" hidden>Productor audiovisual</b>
+      <b name="cargo_nuevo_aux_serv_client" hidden>
+        Auxiliar Servicio al Cliente
+      </b>
+      <b name="cargo_nuevo_jefe_nal" hidden>Jefe Nacional de Redes y Soporte</b>
+      <b name="cargo_nuevo_sop_redes" hidden>Soporte Redes</b>
+      <b name="cargo_nuevo_jefe_formacion" hidden>Jefe de Formación</b>
+      <b name="cargo_nuevo_coord_hd" hidden>Coordinador de soporte Help Desk</b>
+      <b name="cargo_nuevo_aux_soporte" hidden>Auxiliares de soporte Nivel I</b>
+      <b name="cargo_nuevo_jefe_dig" hidden>Jefe Digital</b>
+      <b name="cargo_nuevo_jefe_design" hidden>Jefe De Diseño</b>
+      <b name="cargo_nuevo_web_design" hidden>Diseñador Web</b>
+      <b name="cargo_nuevo_dig_design" hidden>
+        Diseñador Digital y Audiovisual
+      </b>
+      <b name="cargo_nuevo_dig_analist" hidden>Analista digital</b>
+      <b name="cargo_nuevo_backoffice_cnd" hidden>Backoffice CND</b>
+      <b name="cargo_nuevo_call_c_sup_cnd" hidden>Supervisor Call Center CND</b>
+      <b name="cargo_nuevo_jefe_cuenta_cnd" hidden>Jefe de Cuenta CND</b>
+      <b name="cargo_nuevo_data_marshall_cnd" hidden>Data Marshall CND</b>
+      <b name="cargo_nuevo_data_marshall_coord_cnd" hidden>
+        Coordinador Data Marshall CND
+      </b>
+      <b name="cargo_nuevo_test_analist" hidden>
+        Analista de pruebas y automatización
+      </b>
+      <b name="cargo_nuevo_jefe_calidad" hidden>Jefe de formación y calidad</b>
+      <b name="cargo_nuevo_formador_cnd" hidden>Formador CND</b>
+      <b name="cargo_nuevo_quality_cnd" hidden>Quality CND</b>
+      <b name="cargo_nuevo_asesor_cliente" hidden>Asesor Servicio al Cliente</b>
+      <b name="cargo_nuevo_pusher" hidden>Pusher</b>
+      <b name="cargo_nuevo_team_leader" hidden>Team Leader</b>
+      <b name="cargo_nuevo_coord_c_center" hidden>Coordinador Call Center</b>
+      <b name="cargo_nuevo_jefe_operaciones" hidden>Jefe de Operaciones</b>
+      <b name="cargo_nuevo_jefe_cuenta" hidden>Jefe de Cuenta</b>
+      <b name="cargo_nuevo_formador" hidden>Formador</b>
+      <b name="cargo_nuevo_gestor_aprendizaje" hidden>Gestor de Aprendizaje</b>
+      <b name="cargo_nuevo_quality" hidden>Quality</b>
+      <b name="cargo_nuevo_coord_form" hidden>Coordinador de Formación</b>
+      <b name="cargo_nuevo_lider_form" hidden>Lider de Formación</b>
+      <b name="cargo_nuevo_gestor_nal_op" hidden>
+        Gestor Nacional de Operaciones
+      </b>
+      <b name="cargo_nuevo_lider_calidad" hidden>Lider de Calidad</b>
+      <b name="cargo_nuevo_coord_serv_cliente" hidden>
+        Coordinador Servicio al Cliente y Calidad
+      </b>
+      <b name="cargo_nuevo_coord_data_marshall" hidden>
+        Coordinador Data Marshall
+      </b>
+      <b name="cargo_nuevo_junior_data_marshall" hidden>Data Marshall Junior</b>
+      <b name="cargo_nuevo_backoffice" hidden>Backoffice</b>
+      <b name="cargo_nuevo_coord_backoffice" hidden>Coordinador Backoffice</b>
+      <b name="cargo_nuevo_analista_legal" hidden>Analista de legalización</b>
+      <b name="cargo_nuevo_senior_dev" hidden>Desarrollador Senior</b>
+      <b name="cargo_nuevo_supervisor_tecnico" hidden>Supervisor Técnico</b>
+      <b name="cargo_nuevo_jefe_regional" hidden>Jefe Regional</b>
+      <b name="cargo_nuevo_controller_financiero" hidden>
+        Controller Financiero
+      </b>
+      <b name="cargo_nuevo_gerente_th" hidden>Gerente de Talento Humano</b>
+      <b name="cargo_nuevo_jefe_nomina" hidden>Jefe de Nómina</b>
+      <b name="cargo_nuevo_tesorero" hidden>Tesorero</b>
+      <b name="cargo_nuevo_contador_junior" hidden>Contador Junior</b>
+      <b name="cargo_nuevo_coordinador_nomina" hidden>Coordinador Nomina</b>
+      <b name="cargo_nuevo_analista_nomina" hidden>Analista Nomina</b>
+      <b name="cargo_nuevo_auxiliar_contable" hidden>Auxiliar Contable</b>
+      <b name="cargo_nuevo_lider_g_documental" hidden>
+        Lider de Gestión Documental
+      </b>
+      <b name="cargo_nuevo_auxiliar_enfermeria" hidden>Auxiliar Enfermería</b>
+      <b name="cargo_nuevo_auxiliar_hseq" hidden>Auxiliar HSEQ</b>
+      <b name="cargo_nuevo_auxiliar_g_documental" hidden>Auxiliar de archivo</b>
+      <b name="cargo_nuevo_jefe_admin_nal" hidden>
+        Jefe Administrativo Nacional
+      </b>
+      <b name="cargo_nuevo_jefe_admin" hidden>Jefe Administrativo</b>
+      <b name="cargo_nuevo_lider_compras" hidden>Lider de Compras</b>
+      <b name="cargo_nuevo_admin_sede" hidden>Administrador de Sede</b>
+      <b name="cargo_nuevo_aux_serv_gen" hidden>Auxiliar Servicios Generales</b>
+      <b name="cargo_nuevo_coord_selec" hidden>Coordinador de Selección</b>
+      <b name="cargo_nuevo_analista_selec" hidden>Analista de selección</b>
+      <b name="cargo_nuevo_aux_selec" hidden>Auxiliar de selección</b>
+      <b name="cargo_nuevo_ejec_datos" hidden>
+        Ejecutiva de Datos y Recursos Comerciales
+      </b>
+      <b name="cargo_nuevo_sop_usuarios" hidden>Soporte de usuarios</b>
+      <b name="cargo_nuevo_anal_bi" hidden>Analista BI</b>
+      <b name="cargo_nuevo_anal_op" hidden>Analista Operativo</b>
+      <b name="cargo_nuevo_anal_inf_fin" hidden>
+        Analista Información Financiera
+      </b>
+      <b name="cargo_nuevo_jefe_procesos" hidden>Jefe de Calidad y Procesos</b>
+      <b name="cargo_nuevo_jefe_nal_inf" hidden>
+        Jefe Nacional de Infraestructura
+      </b>
+      <b name="cargo_nuevo_jefe_nal_mesa" hidden>
+        Jefe Nacional de Mesa de Ayuda
+      </b>
+      <b name="cargo_nuevo_jefe_seg_inf" hidden>
+        Jefe de Seguridad de la Información
+      </b>
+      <b name="cargo_nuevo_ing_nal_redes" hidden>
+        Ingeniero Nacional de Redes y Comunicaciones
+      </b>
+      <b name="cargo_nuevo_ing_nal_servidores" hidden>
+        Ingeniero Nacional de Servidores y Almacenamiento
+      </b>
+      <b name="cargo_nuevo_ing_nal_tel" hidden>
+        Ingeniero Nacional de Telefonía
+      </b>
+    </span>
+    <ul>
+      <li>
+        <span name="cargo_nuevo_call_c_cnd">
+          Realizar control de cumplimiento de horarios del técnico de las
+          visitas manteniendo constante comunicación con el técnico del ALIADO.
+          <br />Identificar los posibles retrasos de la operación,
+          incumplimiento de visitas o no reporte de las mismas <br />Reportar al
+          cliente las demoras por retrasos o novedades operativas que se
+          identifiquen o sean notificadas en la gestión de los técnicos.
+          <br />Realizar validación de razones de visitas de acuerdo con
+          procedimientos estipulados. <br />Prestar soporte de primer nivel a
+          los técnicos en casos donde se requiera para efectos de confirmación
+          de visitas, aprovisionamiento de servicios, confirmación de
+          direcciones, ubicación del predio, servicios del cliente,
+          actualización de servicios de la orden, o para casos de ordenes con
+          servicios mal asociados. <br />Identificar y gestionar la corrección
+          de los errores de agendamiento. <br />Confirmar los trabajos para re -
+          agendamiento de visitas de acuerdo con lo establecido en los
+          procedimientos. <br />Realizar la Cancelación de trabajos de acuerdo
+          con lo establecido en los procedimientos. <br />Realizar seguimiento a
+          los tiempos de respuesta de acuerdo con lo establecido en los
+          procedimientos. <br />Asumir y ejecutar las demás funciones que le
+          sean asignadas en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_jefe_nal_inf" hidden>
+          Coordinar el equipo de ingenieros a cargo y el cumplimiento de sus
+          funciones
+          <br />Coordinar el seguimiento, control y mantenimiento a la
+          infraestructura de redes, telefonía y servidores <br />Coordinar el
+          seguimiento y control de: firewall, antivirus, LAN, WLAN y Proxy
+          <br />Coordinar que se aplique el control y la gestión de
+          autorizaciones de acceso a la red privada VPN de GNP <br />Cumplir con
+          las políticas de seguridad enfocadas a la infraestructura
+          <br />Garantizar la atención del soporte de segundo y tercer nivel a
+          la red <br />Garantizar la funcionalidad de la Infraestructura y la
+          disponibilidad de los servicios <br />Coordinar el seguimiento al
+          comportamiento de la infraestructura <br />Coordinar que se realice el
+          respaldo de los equipos de infraestructura <br />Coordinar que se
+          realice el monitoreo los enlaces de datos y troncales telefónicas
+          <br />Garantizar que se apliquen las acciones preventivas y
+          correctivas ante anomalias en la infraestructura <br />Generar los
+          informes de las actividades realizadas por los ingenieros
+          <br />Garantizar la continuidad y disponibilidad de la infraestructura
+          <br />Garantizar el apropiado diseño y mantenimiento de la
+          infraestructura
+        </span>
+        <span name="cargo_nuevo_jefe_seg_inf" hidden>
+          Coordinar el desarrollo y la actualización de las normas,
+          procedimientos y formatos de hacen parte de los controles relacionados
+          con el SGI
+          <br />Facilitar la administración y desarrollo de iniciativas sobre el
+          SGSI al interior de la organización <br />Dirigir las pruebas
+          necesarias para evaluar el cumplimiento del SGSI <br />Proponer y
+          coordinar la realización de un análisis de riesgos formal en el SGSI
+          que abarque toda la organización <br />Dirigir los estudios de
+          penetración y pruebas de seguridad en la infraestructura tecnológica
+          <br />Gestionar la respuesta a incidentes del SGSI <br />Coordinar la
+          difusión, entrenamiento y concienciación en toda la organización
+          acerca del SGSI <br />Apoyar las reuniones de CSI <br />Plantear
+          mejoras o actualizaciones al SGSI <br />Auditar los procedimientos de
+          todas las áreas de la organización referentes al SGSI de la
+          infraestructura TI <br />Llevar el control de la seguridad física como
+          acceso dentro de las sedes, lugares restringidos y el manejo del CCTV
+          <br />Realizar seguimiento al plan del SGSI
+        </span>
+        <span name="cargo_nuevo_ing_nal_tel" hidden>
+          Realizar seguimiento, control y mantenimiento de las plantas
+          telefónicas
+          <br />Realizar seguimiento y control de las troncales telefónicas
+          <br />Realizar monitoreo del almacenamiento y rendimiento de las
+          plantas telefónicas <br />Realizar monitoreo del consumo de los
+          canales de voz <br />Atender soporte de segundo nivel y tercer nivel a
+          la telefonía <br />Realizar monitoreo del funcionamiento de los DIDs
+          de las troncales distribuidas <br />Realizar seguimiento al
+          comportamiento de la infraestructura de telefonía <br />Realizar
+          respaldo de las llamadas de los aplicativos de telefonía y de los
+          principales archivos de configuración <br />Administrar los accesos a
+          los aplicativos de telefonía <br />Comunicarse con el outsourcing de
+          telefonía para solicitar soporte y con los proveedores de los
+          aplicativos de telefonía
+        </span>
+        <span name="cargo_nuevo_ing_nal_redes" hidden>
+          Realizar seguimiento, control y mantenimiento a la infraestructura de
+          redes
+          <br />Realizar seguimiento y control de: firewall, antivirus, LAN,
+          WLAN y Proxy <br />Realizar control y gestionar autorizaciones de
+          acceso a la red privada VPN de GNP <br />Cumplir con las políticas de
+          seguridad enfocadas a la infraestructura <br />Atender soporte de
+          segundo y tercer nivel a la red <br />Garantizar la funcionalidad de
+          la Infraestructura y la disponibilidad de los servicios <br />Realizar
+          seguimiento al comportamiento de la infraestructura de redes
+          <br />Realizar respaldo de los equipos de infraestructura
+          <br />Monitorear los enlaces de datos <br />Dirigir y coordinar las
+          acciones preventivas y correctivas ante anomalias en la
+          infraestructura <br />Garantizar la continuidad y disponibilidad de la
+          infraestructura <br />Garantizar el apropiado diseño y mantenimiento
+          de la infraestructura
+        </span>
+        <span name="cargo_nuevo_ing_nal_servidores" hidden>
+          Realizar seguimiento, control y mantenimiento de los servidores
+          (físicos, virtuales y de almacenamiento)
+          <br />Realizar monitoreo del almacenamiento de los servidores
+          (físicos, virtuales y de almacenamiento) <br />Realizar monitoreo del
+          procesamiento de los servidores (físicos, virtuales y de
+          almacenamiento) <br />Realizar monitoreo de los logs centralizados de
+          los servidores (físicos, virtuales y de almacenamiento) <br />Realizar
+          monitoreo del despliegue de las actualizaciones de windows con WSUS
+          <br />Realizar el monitoreo y diagnóstico continuo de los servidores
+          (físicos, virtuales y de almacenamiento) <br />Realizar seguimiento de
+          los servidores mediante las herramientas implementadas <br />Realizar
+          respaldo a diario de servidores y actualizaciones <br />Administrar el
+          almacenamiento de los servidores y NAS <br />Realizar hardening y
+          running de servidores <br />Administrar el acceso a los servidores y
+          servicios
+        </span>
+        <span name="cargo_nuevo_call_c" hidden>
+          Atender las llamadas entrantes y salientes de los clientes, aplicando
+          las guías de bienvenida y protocolos de atención de llamadas
+          establecidos en el proyecto asignado.
+          <br />Ofrecer y realizar la venta de servicios durante las llamadas y
+          propiciar la venta de servicios adicionales en los momentos que la
+          naturaleza de la llamada lo permita, a través de un adecuado
+          perfilamiento, escucha activa, manejo de objeciones y cierres
+          comerciales efectivos, suministrando información con total veracidad,
+          calidad y eficiencia. <br />Generar el reporte de cada llamada de
+          manera inmediata al concluir el proceso de comunicación con cada
+          cliente. <br />Ingresar las ventas diarias al sistema y realizar
+          seguimiento a los casos introducidos en el mismo para generar la venta
+          de servicios. <br />Calificar Datos <br />Cumplir con las metas
+          estipuladas para la campaña y las establecidas por su jefe inmediato
+          (Coordinador de Call Center) <br />Asumir y ejecutar las demás
+          funciones que le sean asignadas por el empleador en cumplimiento de la
+          misión del cargo.
+        </span>
+        <span name="cargo_nuevo_jefe_nal" hidden>
+          Coordinar el desarrollo de las funciones del personal de Soporte,
+          Redes.
+          <br />Realizar y delegar el soporte y mantenimiento técnico de los
+          sistemas de toda la compañía <br />Elaborar de reportes relacionados
+          con el área de sistemas <br />Desarrollar planes de contingencia en el
+          área de sistemas. <br />Configurar y supervisar instalaciones de
+          Hardware y software dentro de la compañía. <br />Realizar Back ups y
+          planes de respaldo. <br />Coordinar con los proveedores todo lo
+          relacionado con actualizaciones, instalaciones y planes correctivos en
+          sistemas. <br />Configurar las redes y servidores de la compañía.
+          <br />Analizar y desarrollar software <br />Administrar las redes de
+          telefonía VOIP <br />Gestionar el mantenimiento de todos los equipos,
+          software de la compañía <br />Asumir y ejecutar las demás funciones
+          que le sean asignadas en cumplimiento de la misión del cargo.
+          <br />Realizar soporte de tercer nivel <br />Realizar seguimiento,
+          control y asignación de tickets <br />Participar activamente en las
+          actividades de los sistemas de gestión
+        </span>
+        <span name="cargo_nuevo_sop_redes" hidden>
+          Realizar seguimiento, control y mantenimiento a la operación de la red
+          <br />Realizar seguimiento y control Firewall <br />Realizar control y
+          gestionar autorizaciones de acceso a la red privada VPN de GNP Y CLARO
+          <br />Realizar monitoreo de la red <br />Atender soporte de segundo
+          nivel a la red <br />Realizar monitoreo del funcionamiento del sistema
+          de cámaras <br />Realizar seguimiento al comportamiento de la
+          infraestructura de redes y telefonía <br />Realizar respaldo a cada
+          equipo que se encuentra dentro de la red <br />Monitorear el
+          mantenimiento de cada equipo de la red
+        </span>
+        <span name="cargo_nuevo_coord_hd" hidden>
+          Coordinar la recepción, asignación, gestión y solución de
+          requerimientos y/o incidentes reportados al área de sistemas por medio
+          de la mesa de ayuda.
+          <br />Liderar y dirigir <br />Planear, coordinar y ejecutar plan de
+          mantenimiento a los diferentes componentes hardware y software en GNP.
+          <br />Gestionar el soporte técnico con los proveedores del software o
+          hardware que presente fallos en el funcionamiento y del cual el área
+          de sistemas de GNP, no es responsable. <br />Levantar, mantener y
+          controlar de manera organizada, el inventario de activos tecnológicos
+          (Hardware y Software) en GNP. <br />Solicitar de manera oportuna a los
+          proveedores de las diferentes soluciones informáticas (Tercerizadas),
+          los suministros o consumibles necesarios para el correcto
+          funcionamiento de estas. <br />Documentar y mantener actualizados los
+          procesos y procedimientos del área de sistemas. <br />Formular
+          propuestas de mejora sobre los procesos que se manejan en el área.
+          <br />Brindar y/o gestionar apoyo con las áreas que se requieran, para
+          darle gestión y solución a la Incidencias y/o requerimientos que
+          presente el área de sistemas. <br />Las demás funciones asignadas por
+          la autoridad competente de acuerdo con el nivel, la naturaleza y el
+          área de desempeño del cargo.
+        </span>
+        <span name="cargo_nuevo_aux_soporte" hidden>
+          Elaborar los reportes de funciones y de incidencias de la semana
+          <br />Dar soporte al personal de la compañía, con respecto al sistema
+          y equipo de cómputo. <br />Entrelazar las computadoras y crear las
+          redes de trabajo <br />Realizar las modificaciones necesarias para
+          hacer más eficiente la carga de trabajo <br />Realizar pruebas de los
+          equipos de cómputo para mantener siempre su buen funcionamiento.
+          <br />Dar soporte técnico al personal de la empresa, y revisar los
+          equipos para corroborar su adecuado funcionamiento. <br />Realizar
+          pruebas de diagnósticos y aplicar los protocolos de antivirus y
+          malware. <br />Realizar el aprovisionamiento de nuevos equipos de
+          acuerdo a la solicitud de cada área <br />Atender soporte de primer
+          nivel
+        </span>
+        <span name="cargo_nuevo_jefe_dig" hidden>
+          Implementación de la estrategia globa de pauta digital por cada
+          cliente activo.
+          <br />Asegurar la rentabilidad de cada una de las campañas activas con
+          las diferentes estrategias de pauta. <br />Monitoreo de la estrategia
+          de keywords positivas y negativas. <br />Establecer rendimientos bases
+          de cada una de las campañas <br />Manejo del equipo digital.
+          <br />Manejar el presupuesto de medios online. Buscando eficiencias y
+          mejores resultados. <br />Manejo de informes según la periodicidad
+          acordada con cada cliente. <br />Distribuir funciones de cada uno de
+          los analistas digitales y la social media manager, en pro de la
+          operación. <br />
+          Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo
+        </span>
+        <span name="cargo_nuevo_jefe_design" hidden>
+          Diseño de páginas web
+          <br />Coordinación del equipo de diseño <br />Desarrollo y
+          coordinación de proyectos gráficos y web <br />Dirección creativa y de
+          experiencia de usuario <br />
+          Editar fotos y piezas gráficas <br />
+          Realizar desarrollo de páginas web <br />
+          Hacer diseño de materiales gráficos. <br />
+          Desarrollo y montaje de páginas web <br />
+          Manejo de programas de edición de fotografía, edición de video,
+          montaje web. <br />
+          Comunicación con clientes de páginas web. <br />
+          Desarrollo y edición de piezas para redes sociales. <br />
+          Desarrollo y diseño de Landing Page. <br />Asumir y ejecutar las demás
+          funciones que le sean asignadas en cumplimiento de la misión del cargo
+        </span>
+        <span name="cargo_nuevo_jefe_nal_mesa" hidden>
+          Coordinar el equipo de coordinadores de mesa de ayuda y auxiliares de
+          soporte nivel 1 y el cumplimiento de sus funciones
+          <br />Coordinar el seguimiento, control y mantenimiento preventivo y
+          correctivo de los equipos de las operaciones <br />Coordinar las
+          mallas de horarios del área <br />Coordinar las tareas solicitadas por
+          los ingenieros que necesiten apoyo de los auxiliares <br />Cumplir con
+          las políticas de seguridad enfocadas a la infraestructura
+          <br />Garantizar la atención del soporte solicitado en la mesa de
+          ayuda <br />Coordinar las solicitudes de permisos, incapacidades,
+          retardos y descargos de área <br />Apoyar la implementación y
+          cumplimiento de la ISO 27001 <br />Realizar reuniones con el personal
+          a cargo <br />Garantizar que se apliquen los ANS de la mesa de ayuda
+          <br />Garantizar que se apliquen las acciones preventivas y
+          correctivas <br />Generar los informes de las tareas realizadas en la
+          mesa de ayuda
+        </span>
+        <span name="cargo_nuevo_web_design" hidden>
+          Diseño de páginas web
+          <br />Editar fotos y piezas gráficas <br />Realizar desarrollo de
+          páginas web <br />Hacer diseño de materiales gráficos.
+          <br />Desarrollo y montaje de páginas web <br />Manejo de programas de
+          edición de fotografía, edición de video, montaje web.
+          <br />Comunicación con clientes de páginas web. <br />Desarrollo y
+          edición de piezas para redes sociales. <br />Desarrollo y diseño de
+          Landing Page.
+        </span>
+        <span name="cargo_nuevo_dig_design" hidden>
+          Manejo de herramientas de edición de video y fotografía.
+          <br />Manejo de la plataforma adobe. <br />Revisión de reel y book
+          completo de trabajo. <br />Excelente línea gráfica, adecuada para cada
+          solicitud. <br />Cumplimiento con los proyectos estípulados.
+          <br />Manejo del tiempo versus las responsabilidades. <br />Seguir al
+          pie de la letra el tráfico estípulado o negociar disponibilidad.
+          <br />
+          Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo
+        </span>
+        <span name="cargo_nuevo_dig_analist" hidden>
+          Manejo operativo de las herramientas de pauta.
+          <br />Revisión de la segmentación de las diferentes campañas activas.
+          <br />Revisión de los diferentes términos de búsqueda, keywords de
+          cada campaña activa. <br />Revisión de diferentes herramientas
+          existentes de pauta. <br />Monitoreo constante de keywords negativas.
+          <br />Conocimiento avanzado en Google Ads, Facebook ADS y estrategias
+          de pauta digital. <br />
+          Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo
+        </span>
+        <span name="cargo_nuevo_backoffice_cnd" hidden>
+          Recepción de solicitudes Hogar, Residencial, Pyme y Fibra Óptica
+          <br />Validar y confirmar los datos consignados en los módulos de
+          gestión de Claro. <br />Realizar la Materialización y consignación de
+          datos en aplicativos externos. <br />Realizar la validación,
+          confirmación y seguimiento de cada una de las solicitudes y realizar
+          el cierre de su proceso de gestión. <br />Realizar procesos de calidad
+          a la base de datos de Claro AS400 (RR). <br />Agendar las visitas
+          técnicas para validación de cobertura. <br />Garantizar el cierre de
+          la gestión, bajo las políticas que se manejan en la operación.
+          <br />Diligenciar los datos, sobre la gestión realizada para efectos
+          de medición tanto de gestión cómo de productividad. <br />Asumir y
+          ejecutar las demás funciones que le sean asignadas en cumplimiento de
+          la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_call_c_sup_cnd" hidden>
+          Supervisar el desempeño, la salida e ingreso de los agentes de Call
+          Center.
+          <br />Administrar y Controlar las herramientas de gestión de CLARO.
+          <br />Recibir y realizar seguimiento a las peticiones quejas y
+          reclamos de los clientes <br />Reportar las novedades diarias.
+          <br />Realizar dos muestras de calidad a diario. <br />Realizar
+          escuchas aleatorias de las llamadas de la plataforma <br />Realizar al
+          menos una retroalimentación escrita de las escuchas realizadas a cada
+          Agente de trabajo de su equipo <br />Liderar, acompañar y soportar
+          todos los aspectos tácticos y operativos relacionados con el servicio
+          contratado <br />Realizar el seguimiento a volúmenes, indicadores y
+          aseguramiento de resultados del proceso. <br />Analizar los volúmenes,
+          cargas, resultados y generar los planes de mejoramiento de gestión.
+          <br />Generar las estrategias de administración de la operación
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_jefe_cuenta_cnd" hidden>
+          Supervisar activamente la labor de todos los colaboradores a cargo
+          velando por el cumplimiento de las metas y funciones impuestas.
+          <br />Generar planes de acción ante quejas y reclamos de los clientes.
+          <br />Designar la cantidad de personal a laborar por turno de acuerdo
+          con el cuadro de flujo de trabajo. <br />Realizar de manera oportuna
+          la solicitud de recursos con las áreas de apoyo (tecnología, recursos
+          humanos, administrativos y financieros, entre otras), según las
+          necesidades del servicio a cargo <br />Realizar seguimiento a las
+          solicitudes realizadas a las áreas de apoyo teniendo en cuenta los
+          plazos establecidos, con el objeto de resguardar el cumplimiento de
+          los acuerdos comprometidos y así asegurar la calidad del servicio
+          entregado. <br />Determinar, en conjunto con planeación, los picos de
+          trabajo y coordinar la inserción de nuevos colaboradores de acuerdo
+          con el flujo de trabajo. <br />Realizar revisiones de las estrategias
+          de alcance de métricas y elaborar nuevas formas de lograr mejores
+          resultados <br />Elaborar y supervisar las estrategias de calidad y de
+          productividad de su equipo de trabajo. <br />Reportar y gestionar de
+          manera oportuna las necesidades del personal a cargo. <br />Velar por
+          el cumplimiento de los estándares de calidad y las métricas de
+          servicio. <br />Mantener óptimas relaciones comerciales con el Cliente
+          Contratante, realizando reuniones (Mensuales, semanales o diarias
+          (según acuerdo con el cliente), acogiendo sus solicitudes e informando
+          los resultados operativos y financieros del servicio. <br />Reportar
+          al Gerente los indicadores financieros del servicio a cargo, mediante
+          reportes e informes de gestión, explicando las variaciones respecto de
+          lo planificado y proponiendo acciones correctivas o preventivas sobre
+          las mismas. <br />Mantener y mejor la productividad de la campaña y
+          velar porque la facturación de la campaña tenga lo dividendos
+          trazados. <br />Asumir y ejecutar las demás funciones que le sean
+          asignadas en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_data_marshall_cnd" hidden>
+          Administrar adecuadamente las Bases de Datos
+          <br />Diseñar y elaborar Informes y Reportes de la operación
+          <br />Realizar la medición y análisis de las métricas de la operación
+          <br />Desarrollar e implementar actividades que faciliten el análisis
+          de la información y la toma de decisiones. <br />Asumir y ejecutar las
+          demás funciones que le sean asignadas por el empleador en cumplimiento
+          de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_data_marshall_coord_cnd" hidden>
+          Implementar y estructurar los informes nuevos solicitados por la
+          operación
+          <br />Realizar seguimiento al desempeño y cumplimiento de las tareas y
+          actividades asignadas a los Data Marshall. <br />Responder y gestionar
+          oportunamente las solicitudes de los Clientes. <br />Actualización y
+          ajustar cuando sea necesario los Dashboard en Power Bi. <br />Realizar
+          el cierre y reporte de indicadores. <br />Apoyo en piso a Data
+          Marshall cuando así se requiera. <br />Realizar el cargue y depuración
+          de bases de datos <br />Elaborar la previsión de aceleradores para
+          incentivos <br />Generar informes de gestión de las campañas o
+          segmentos solicitados. <br />Asumir y ejecutar las demás funciones que
+          le sean asignadas por el empleador en cumplimiento de la misión del
+          cargo.
+        </span>
+        <span name="cargo_nuevo_test_analist" hidden>
+          Proporcionar orientación con el diseño del proceso.
+          <br />Diseñar, desarrollar y probar flujos de trabajo de
+          automatización. <br />Despliegue de componentes RPA: bots, robots,
+          herramientas de desarrollo. <br />Apoyar la implementación de
+          soluciones RPA. <br />Crear documentación de proceso. <br />Asegurar
+          la calidad de la automatización (procesos de control de calidad.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_jefe_calidad" hidden>
+          Liderar, acompañar, soportar: Planes formativos y de desarrollo del
+          personal para garantizar la capacitación de este ante las necesidades
+          del OFERENTE SELECCIONADO o de CLARO.
+          <br />Definición y administración efectiva de las necesidades de
+          formación y el direccionamiento del equipo de formadores de CLARO
+          <br />Garantizar que el personal involucrado con los procesos claves
+          de relación con los usuarios finales de CLARO información adecuada,
+          actualizada, oportuna y bajo los procesos y protocolos definidos por
+          CLARO. <br />Liderar, acompañar, soportar: El proceso de monitoreo de
+          todos los procesos del Centro Nacional de Despachos de CLARO.
+          <br />Administración efectiva del equipo de análisis de monitoreo
+          asignados. <br />Monitorear e identificar oportunidades de mejora en
+          la calidad de las interacciones con los usuarios finales del CND
+          <br />Analizar, alertar, diseñar e implementar estrategias que
+          permitan impactar positivamente la percepción del cliente con respecto
+          a los canales y procesos con los cuales interactúa
+        </span>
+        <span name="cargo_nuevo_formador_cnd" hidden>
+          Recibir y capacitar los grupos iniciales de formación de Agentes Call
+          Center de acuerdo con las funciones específicas del cargo y
+          habilidades necesarias para desempeñar el mismo en las campañas, de
+          acuerdo con los procedimientos establecidos.
+          <br />Generar herramientas de evaluación, ejecutarlas y generar las
+          certificaciones pertinentes a los grupos. <br />Realizar seguimiento y
+          retroalimentación a los grupos nuevos en operación. <br />Generar
+          informes estructurados para control y seguimiento del área, para la
+          contratación y convenio. <br />Ejecutar sesiones de formación en las
+          campañas cada que se evidencie la necesidad. <br />Elaborar y
+          actualizar el material didáctico y lúdico para desarrollar las
+          sesiones de formación. <br />Gestionar la información necesaria para
+          realizar el proceso de contratación de los Agentes Call Center y
+          entregarla oportunamente de acuerdo con los procedimientos
+          establecidos. <br />Solicitar y entregar los usuarios a cada Agente de
+          Call Center durante la etapa de formación <br />Asumir y ejecutar las
+          demás funciones que le sean asignadas por el empleador en cumplimiento
+          de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_quality_cnd" hidden>
+          Realizar seguimiento y retroalimentación al servicio prestado por los
+          asesores Call Center.
+          <br />Participar en las reuniones de calibraciones semanales.
+          <br />Realizar la Retención y confirmación de servicios
+          <br />Planificar y ejecutar Monitoreos a la operación.
+          <br />Resolución de PQRS <br />Asumir y ejecutar las demás funciones
+          que le sean asignadas por el empleador en cumplimiento de la misión
+          del cargo.
+        </span>
+        <span name="cargo_nuevo_auxiliar_compras" hidden>
+          Actualizar la base de datos de los precios del mercado, solicitando
+          diferentes cotizaciones.
+          <br />Realizar búsqueda de cotizaciones de forma nacional e
+          internacional. Al menos 3 cotizaciones antes de realizar la compra.
+          <br />Analizar las cotizaciones y las ofertas recibidas de cada
+          proveedor, otorgando las respuestas a cada uno de los proveedores.
+          <br />Determinar la factibilidad de compra, de acuerdo al presupuesto
+          establecido por la empresa. <br />Control de stock de papelería,
+          dotación, elementos de aseo y demás recursos considerados como gastos.
+          <br />Realizar la orden de compra en el aplicativo contable y Enviarla
+          a los proveedores. <br />Recibirla factura, gestionar validación de
+          gerencia y entregarlas a contabilidad. <br />Presentar los indicadores
+          de gestión conforme al procedimiento. <br />Entregar el producto al
+          área que lo solicita y cerrar la solicitud en el aplicativo de compras
+          <br />Control y seguimiento del inventario de materiales y repuestos
+          <br />Coordinar con proveedores todo lo relacionado con el área
+          contable y financiera de la compañía. <br />Realizar la evaluación a
+          proveedores y contratistas conforme a lo estipulado en el
+          procedimiento. <br />Realizar liquidación y proceso de pago para los
+          contratistas <br />Realizar otras labores que disponga el empleador.
+        </span>
+        <span name="cargo_nuevo_asesor_cliente" hidden>
+          Realizar recepción y clasificación de llamadas de información, PQRs y
+          ventas.
+          <br />Realizar encuestas de seguimiento de servicios prestados y no
+          prestados para la línea de asistencia solo servicios prestados.
+          <br />Gestionar la retención de clientes utilizando estrategias
+          validadas con el coordinador del área. <br />Validar los datos del
+          cliente. <br />Realizar la recuperación de servicios por políticas.
+          <br />Realizar el cierre de los servicios de asistencia en el
+          aplicativo y notificar por correo a las regionales (Aplica para la
+          campaña de asistencia). <br />Realizar seguimiento a los repuestos
+          pendientes por cambiar. (Aplica para la campaña de Asistencia).
+          <br />Gestionar la retención de clientes ante las quejas, reclamos y
+          cancelaciones (Asistencia). <br />Programar las visitas en compañía de
+          las regionales para la prestación de los servicios. (Asistencia).
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas por
+          el empleador en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_pusher" hidden>
+          Seguimiento y apoyo comercial en las ventas adicionales de claro fijo,
+          paquetes moviles y productos de tecnología.
+          <br />Apoyo comercial en la gestión de los agentes. <br />Crear
+          concursos y planes de acción para las diferentes operaciones de claro.
+          <br />Realizar seguimiento al cumplimiento de funciones del equipo de
+          formación. <br />Reforzar el conocimiento operacional en producto,
+          aplicativos y habilidades. <br />Realizar otras labores que disponga
+          el empleador. <br />Seguimiento y retroalimentación asesores de
+          entregas y devoluciones. <br />Envió de malla de Turnos campaña
+          tecnología. <br />Seguimiento retroalimentación a las gestiones
+          diarias de cada asesor. <br />Actualización de resultados diarios de
+          campaña y asesor. <br />Radicación de Soportes de Aceleradores e
+          incapacidades del grupo Tecnología. <br />Interacción directa con los
+          clientes Claro y los proveedores de las marcas para impulso y gestión
+          de entregas de los productos. <br />Asumir y ejecutar las demás
+          funciones que le sean asignadas por el empleador en cumplimiento de la
+          misión del cargo.
+        </span>
+        <span name="cargo_nuevo_team_leader" hidden>
+          Acompañar y realizar seguimiento a los agentes con bajo rendimiento.
+          <br />Ejecutar y garantizar el cumplimiento de los planes de acción
+          destinados a mejorar los indicadores objetivos. <br />Realizar
+          monitoreos y feedbacks en la frecuencia y cantidad indicada por parte
+          del jefe de operaciones. <br />Impulsar el volumen de ventas con los
+          focos de la semana – mes. <br />Realizar los informes de productividad
+          y seguimiento que le sean solicitados, analizar los datos obtenidos y
+          a partir de ellos generar nuevas estrategias para mejorar los
+          indicadores objetivos. <br />Asumir y ejecutar las demás funciones que
+          le sean asignadas por el empleador en cumplimiento de la misión del
+          cargo.
+        </span>
+        <span name="cargo_nuevo_coord_c_center" hidden>
+          Supervisar el desempeño de las labores del personal a cargo.
+          <br />Gestionar los sistemas de información CRM, plataformas de
+          control y recursos tecnológicos durante la operación. <br />Controlar
+          la asistencia de los agentes según la planificación estratégica de la
+          campaña. <br />Recibir y realizar seguimiento a las peticiones quejas
+          y reclamos de los clientes. <br />Reportar las novedades diarias
+          presentadas en la operación. <br />Escuchar llamadas de manera
+          aleatoria y realizar la respectiva retroalimentación. <br />Diseñar
+          planes de mejora de calidad de las campañas. <br />Realizar
+          retroalimentación y elaborar compromisos de mejora a los agentes de
+          acuerdo con los seguimientos realizados. <br />Diseñar e Implementar
+          modelos de gestión integral con el fin de mejorar el rendimiento de su
+          equipo de trabajo. <br />Gestionar las credenciales de acceso de los
+          agentes a los sistemas de información necesarios para la operación de
+          la campaña y vigilar el buen uso de estas. <br />Reportar los
+          resultados de cierre de operación diariamente al jefe inmediato.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas por
+          el empleador en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_jefe_operaciones" hidden>
+          Liderar, organizar, estructurar y citar a las personas pertinentes a
+          comités semanales de su segmento para revisar indicadores como: ventas
+          digitadas e instaladas, productividad de asesores, caídas y
+          rentabilidades.
+          <br />De dichos comités semanales deberá hacer un acta con los
+          hallazgos y establecer las acciones a implementar con los responsables
+          y fechas. Dicha acta debe revisarse al comienzo de cada comité.
+          <br />Realizar los turnos de las campañas en conjunto con los
+          coordinadores y enviar un correo semanal todos los viernes al jefe de
+          Cuenta de cómo están estas mallas. <br />Enviar semanalmente los
+          viernes el reporte de rentabilidad de su segmento/campaña al jefe de
+          Cuenta y a la Gerencia. Dicho correo debe ir acompañado de un análisis
+          con la proyección del segmento o campañas. <br />Bajar los incentivos
+          mensuales a las operaciones de asesores y adicional a los
+          coordinadores de cada campaña. <br />Velar por la productividad de sus
+          campañas a cargo y revisar a diario temas de rentabilidad, ventas,
+          instalaciones/entregas/activaciones. <br />Liderar semanalmente por lo
+          menos una calibración con sus coordinadores y asesores. Y presentar
+          estos resultados semanalmente en reunión con su Jefe de Cuenta.
+          <br />Aprobar o negar permisos de sus operaciones. Cuando se trate de
+          coordinadores debe copiar vía correo al jefe de Cuenta el permiso que
+          se ha dado y la razón para dicha decisión o cambio de turno.
+          <br />realizar un informe semanal los jueves con el reporte de
+          rotación de sus campañas: indicadores de cuántos asesores tiene a
+          comienzo de mes, la inclusión de asesores nuevos y retiros. Con
+          respecto a los retiros se debe hacer un detalle del nombre, fecha de
+          salida, motivo del retiro y en dado caso decir cuál fue el proceso de
+          rotación que se hizo en caso de renuncia. Y debe ponerse en cuánto es
+          el % de rotación de cada campaña y consolidado anual. <br />Planear y
+          coordinar el ingreso de los grupos de asesores nuevos que se están
+          formando. Debe delegar un coordinador que va a recibir cada grupo en
+          su etapa práctica y este coordinador será el encargado de empalmar con
+          formación y asegurar temas de pagos y contratación. <br />Realizar la
+          solicitud de sillas, diademas, PC y otras necesidades que tengan los
+          grupos nuevos que se están formando. <br />Supervisar y hacer control
+          en el desarrollo del día de los grupos de whatsapp de las campañas.
+          <br />Escalar los temas de la operación a la gerencia a través del
+          Jefe de Cuenta. Esto lo podrá hacer mediante una reunión o si es por
+          correo debe siempre estar coordinado con el Jefe de Cuenta. Por ningún
+          motivo se debe obviar copiar al Jefe de Cuenta. <br />Enviar las
+          propuestas y solicitudes de incentivos. Copiando y enterando al Jefe
+          de Cuenta. <br />Asegurar el cumplimiento de todos los indicadores y
+          cumplimiento de metas de sus campañas. <br />Estructurar las campañas,
+          esto quiere decir que tiene a cargo el equipo de coordinadores y team
+          leaders. Si requiere hacer el movimiento de un coordinador correrá
+          bajo su decisión, pero debe notificar y enviar por correo al Jefe de
+          Cuenta de las razones que tiene para hacer dicho movimiento. De igual
+          manera debe hacer el requerimiento cuando necesite incluir alguna otra
+          persona. <br />Debe tener absolutamente claros los conceptos de
+          rentabilidad de las campañas como: cuánto nos pagan por un
+          servicio/línea/equipo, métricas de rentabilidad, tickets promedio de
+          venta y de pago, costo de una posición en la operación, costo de un
+          empleado. <br />Hacer las solicitudes de personal y/o convocatorias
+          internas. <br />Notificar al área de backoffice los turnos programados
+          de sus operaciones y si se van a hacer cambios o si se trabajará un
+          domingo no habitual. <br />Programar, diseñar y coordinar con el área
+          de Formación los talleres de refuerzo de sus campañas con temas como
+          gestión comercial, etiqueta telefónica, técnicas de ventas.
+          <br />Garantizar que los coordinadores bajan las políticas de ventas.
+          <br />Pedir apoyo al área de Calidad cuando haya lugar. <br />Revisar
+          la prenómina y tramitar con el área de nómina las correcciones que
+          haya lugar. Además, debe garantizar que dicha prenómina con datos de
+          salario, descuentos e incentivos sea comunicada a cada uno de los
+          asesores. Cuando hay pertinente alguna novedad que deba escalarse a
+          Gerencia debe enviar dicha solicitud al Jefe de Cuenta, quien a su vez
+          debe enviarlo en el conducto regular a la Gerencia Gerencia genera
+          <br />Debe verificar la asistencia de los asesores de sus campañas.
+          <br />Debe velar porque los coordinadores hagan los procesos
+          disciplinarios. <br />Debe garantizar que los coordinadores hagan los
+          seguimientos y feedbacks a los asesores. <br />Debe diseñar a más
+          tardar a 5 días de terminar el mes el plan de acción de sus campañas
+          para el mes venidero. Esto debe hacerse en una presentación
+          especificando: qué se va a hacer, cotización económica específica y
+          general de lo que se va a gastar y adicional debe especificarse de qué
+          se espera aumentar en ventas o el objetivo de dicho plan de acción.
+          Dicha presentación debe revisarse con el Jefe de Cuenta y luego
+          presentarla a la Gerencia. <br />Dar respuesta a las solicitudes por
+          correo que le pidan la gerencia, el Jefe de Cuenta y el cliente en los
+          tiempos establecidos. <br />Presentar al inicio de cada trimestre el
+          Plan de Ventas y Expansión Trimestral (PVET) que debe contener las
+          proyecciones de ventas de cada mes y la proyección de head count. Esto
+          debe hacerse junto con el Jefe de Cuenta para presentar a Gerencia.
+          <br />Realizar y revisar los informes de sus campañas. Esto significa
+          que debe velar porque tanto él como sus coordinadores revisen los
+          informes de métricas de las campañas. Proponer mejorar al equipo de
+          Reporting. <br />Organizar y coordinar las presentaciones del comité
+          mensual con el cliente. <br />Atender las requisiciones del cliente.
+          <br />Realizar las premiaciones mensuales de buen rendimiento y
+          desempeño de su personal de acuerdo con las métricas establecidas.
+          <br />Planificar, asignar y evaluar el rendimiento de los
+          coordinadores frente a las tareas y responsabilidades asignadas.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas por
+          el empleador en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_jefe_cuenta" hidden>
+          Ser el principal interlocutor del cliente. Por ello debe atender todos
+          los requerimientos del cliente y dar respuesta.
+          <br />Gestionar el crecimiento sobre los clientes actuales y
+          prospectados. <br />Representar comercialmente a GNP. <br />Asistir
+          activamente a los comités semanales y velar por su realización en su
+          segmento para revisar indicadores como: ventas digitadas e instaladas,
+          productividad de asesores, caídas y rentabilidades. <br />De dichos
+          comités semanales deberá velar por recibir por parte del Jefe de
+          Operación el acta con los hallazgos y establecer las acciones a
+          implementar con los responsables y fechas. Dicha acta debe revisarse
+          al comienzo de cada comité. <br />Revisar el correo con las mallas de
+          turnos de las operaciones que envía el Jefe de Operación <br />Enviar
+          semanalmente los viernes el reporte de rentabilidad de su segmento.
+          Dicho correo debe ir acompañado de un análisis con la proyección del
+          segmento o campañas. <br />Velar por recibir el acta de que se han
+          bajado los incentivos. <br />Reunirse con el Jefe de Operación para
+          revisar las solicitudes o propuestas de incentivos. <br />Velar por la
+          rentabilidad de las campañas y que estas sean rentables para la
+          compañía. Esto significa que debe diseñar los planes de acción y tomar
+          las medidas para que los indicadores económicos estén acordes a lo que
+          pide la gerencia. <br />Programar, organizar y liderar un comité
+          mensual de no mayor de una hora con la gerencia para mostrar sus
+          indicadores productivos y además los temas de facturación y
+          rentabilidad. <br />Velar por que la reunión semanal con el Jefe de
+          Operación para revisar los indicadores de las calibraciones de calidad
+          se hagan. <br />Velar por que el informe de rotación del Jefe de
+          Operación se entregue y también dicho reporte se envíe a Gerencia.
+          <br />Garantizar que los grupos nuevos en formación sean organizados
+          como lo ha designado el Jefe de Operación. <br />Aprobar las
+          requisiciones de sillas, pc, diademas que envían los Jefes de
+          Operaciones. <br />Enviar las solicitudes de compras de sus campañas.
+          <br />Garantizar que el Jefe de Operación haga las solicitudes de
+          sillas, diademas, PC y otras necesidades que tengan los grupos nuevos
+          que se están formando. <br />Supervisar y hacer control en el
+          desarrollo del día de los grupos de whatsapp de las campañas.
+          <br />Responder por todos los indicadores y cumplimiento de metas de
+          sus campañas. <br />Debe tener absolutamente claros los conceptos de
+          rentabilidad de las campañas como: cuánto nos pagan por un
+          servicio/línea/equipo, métricas de rentabilidad, tickets promedio de
+          venta y de pago, costo de una posición en la operación, costo de un
+          empleado. <br />Aprobar las solicitudes de personal que hace el Jefe
+          de Operación. <br />Solicitar periódicamente al Jefe de Operación los
+          indicadores de asistencia de los asesores de sus campañas.
+          <br />Negociar las metas de sus campañas con el cliente. <br />Enviar
+          al cliente mensualmente el headcount de sus campañas. <br />Coordinar
+          y dar respuesta a los correos de penalizaciones por parte del cliente.
+          <br />Citar y coordinar una reunión semanal con el área de
+          legalización para ver el estatus y dejar acta con el estatus y enviar
+          a gerencia. <br />Citar y coordinar una reunión semanal con el área de
+          backoffice para ver el estatus de efectividades de
+          entrega/instalación/activación de sus campañas. En dicha reunión debe
+          estar el jefe de operación. <br />Velar y verificar que los informes
+          de sus campañas se envíen al cliente en los tiempos establecidos y de
+          forma correcta. <br />Velar porque los talleres planeados por el Jefe
+          de Operación se hagan. De esto se debe hacer un informe a la gerencia
+          quincenal mostrando los avances, asistencia y detalles de lo que se ha
+          hecho. <br />Revisar los escalamientos especiales de incentivos y
+          nómina y cuando haya lugar enviar dichas requisiciones a la Gerencia
+          General en el formato y tiempos establecidos. <br />Presentar a
+          Gerencia el Plan de Acción para cada mes diseñado junto con el Jefe de
+          Operaciones. Esto debe hacerse a más tardar 5 días antes de empezar
+          cada mes. <br />Presentar a Gerencia el Plan de Acción para cada mes
+          diseñadcuenta el Jefe de Cuenta. Esto debe hacerse a más tardar 5 días
+          antes de empezar cada mes. <br />Hacer la entrega de premios y bonos
+          de las campañas, firmando y custodiando las actas de recibido.
+          <br />Recibir las personas de casas distribuidoras y fabricantes con
+          las cuales se trabajan las campañas. Igualmente deben coordinar con
+          dichas personas cuando haya lugar a premios o incentivos. Esto debe
+          bajarse al Jefe de Operación, quien lo debe hacer a los coordinadores
+          y asesores y debe pedirse dicha acta. <br />Dar respuesta a las
+          solicitudes por correo que le pidan la gerencia, el Jefe de Cuenta y
+          el cliente en los tiempos establecidos. <br />Presentar y coordinar
+          con el Jefe de Operación al inicio de cada trimestre el Plan de Ventas
+          y Expansión Trimestral (PVET) que debe contener las proyecciones de
+          ventas de cada mes y la proyección de head count. Esto debe hacerse
+          junto con el Jefe de Cuenta para presentar a Gerencia. <br />Realizar
+          y revisar los informes de sus campañas. Esto significa que debe velar
+          porque tanto él, su Jefe de Operación como sus coordinadores revisen
+          los informes de métricas de las campañas. Proponer mejoras al equipo
+          de Reporting. <br />Organizar y coordinar las presentaciones del
+          comité mensual con el cliente. <br />Atender las requisiciones del
+          cliente. <br />Garantizar que se hagan las premiaciones mensuales de
+          buen rendimiento y desempeño de su personal de acuerdo a las métricas
+          establecidas. <br />Planificar, asignar y evaluar el rendimiento de
+          los coordinadores frente a las tareas y responsabilidades asignadas .
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas por
+          el empleador en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_formador" hidden>
+          Recibir y capacitar los grupos iniciales de formación de Agentes Call
+          Center de acuerdo con las funciones específicas del cargo y
+          habilidades necesarias para desempeñar el mismo en las campañas, de
+          acuerdo con los procedimientos establecidos.
+          <br />Generar herramientas de evaluación, ejecutarlas y generar las
+          certificaciones pertinentes a los grupos. <br />Realizar seguimiento y
+          retroalimentación a los grupos nuevos en operación. <br />Generar
+          informes estructurados para control y seguimiento del área, para la
+          contratación y convenio. <br />Ejecutar sesiones de formación en las
+          campañas cada que se evidencie la necesidad. <br />Elaborar y
+          actualizar el material didáctico y lúdico para desarrollar las
+          sesiones de formación. <br />Gestionar la información necesaria para
+          realizar el proceso de contratación de los Agentes Call Center y
+          entregarla oportunamente de acuerdo con los procedimientos
+          establecidos. <br />Solicitar y entregar los usuarios a cada Agente de
+          Call Center durante la etapa de formación <br />Asumir y ejecutar las
+          demás funciones que le sean asignadas por el empleador en cumplimiento
+          de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_gestor_aprendizaje" hidden>
+          Liderar, organizar y guiar el proceso de laboratorio y práctica de los
+          Agentes Call Center.
+          <br />Realizar Pre-turno y/o Pos-turno diario con el fin de reforzar
+          los puntos de mejora y realizar su respectiva evolución.
+          <br />Garantizar el envío y seguimiento de las novedades diarias que
+          se puedan presentar en el grupo asignado. <br />Realizar seguimiento a
+          la productividad del grupo asignado y revisar a diario las ventas y
+          garantizar los procesos. <br />Enviar cortes hora a hora con el fin de
+          dar a conocer la productividad diaria del grupo. <br />Reportar la
+          asistencia diaria de los asesores en etapa practica al Coordinador de
+          formación, coordinador de operación y formador. <br />Tomar 4 muestras
+          diarias a su grupo asignado y realizar su respectivo seguimiento y
+          evolución. <br />Enviar al finalizar el proceso de formación un
+          informe detallado (nota general de calidad, ventas, asistencia y/o
+          inasistencias, procesos formativos, retiros(motivos) u otros que se
+          consideren pertinentes). <br />Planear y organizar calibraciones y
+          seguimientos de su campaña asignada. <br />Reportar alarmas,
+          inconsistencias o cualquier irregularidad que se presente en la
+          campaña. <br />Realizar seguimiento y control al manejo y utilización
+          de usuarios en la etapa práctica, así como asegurar la entrega de los
+          propios. <br />Establecer PDA originados de los seguimientos
+          realizados a las campañas asignadas y los hallazgos encontrados y
+          ejecutarlos en los tiempos establecidos. <br />Garantizar
+          actualizaciones y capacitaciones continuas a la operación.
+          <br />Medir, reportar y analizar los indicadores y cumplimiento de
+          metas asignadas. <br />Conocer y reforzar los conocimientos y
+          conceptos de formación (pagos, procesos, aplicativos, contratación)
+          <br />Planificar, asignar y evaluar el rendimiento de asesores nuevos.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas por
+          el empleador en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_quality" hidden>
+          Realizar seguimiento y retroalimentación a las ventas de los asesores
+          Call Center.
+          <br />Participar en las reuniones de calibraciones semanales.
+          <br />Realizar la Retención y confirmación de servicios (Gas y
+          seguros) <br />Realizar el enrutamiento de servicios (Gas)
+          <br />Planificar y ejecutar Monitoreos a la operación. <br />Auditar y
+          supervisar las ventas y las no ventas de acuerdo con el muestreo
+          establecido. <br />Resolución de PQRS (BPO) <br />Subir las llamadas
+          de MEC (BPO) <br />Asumir y ejecutar las demás funciones que le sean
+          asignadas por el empleador en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_coord_form" hidden>
+          Realizar informes de gestión para las campañas asignadas.
+          <br />Elaborar la nómina de Agentes Call Center en etapa teórica y
+          práctica. <br />Recibir y adelantar la documentación para el proceso
+          de contratación. <br />Elaborar informe de calibraciones internas de
+          personal de calidad cuando sea requerido. <br />Realizar seguimiento
+          al desempeño del personal a cargo cuando aplique. <br />Realizar
+          seguimiento de asesores en etapa teórica y practica <br />Generar
+          informes de formación <br />Gestionar la solicitud y asignación de
+          diademas y porta carnet para los agentes en formación práctica.
+          <br />Gestionar los accesos y usuarios para los agentes en formación
+          etapa práctica. <br />Seguimiento de los indicadores comerciales de
+          los asesores en etapa práctica dentro de la operación <br />Realizar
+          seguimiento de los indicadores comerciales de los asesores en etapa
+          práctica dentro de la operación. <br />Coordinar y actualizar los
+          procesos formativos en plataformas E-learning. <br />Desarrollo de
+          proyectos audiovisuales. <br />Manejo de plataformas de
+          entretenimiento e información de la compañía. <br />Desarrollo de
+          proyectos audiovisuales (Campus GNP-GNP NEWS) Otros. <br />Asumir y
+          ejecutar las demás funciones que le sean asignadas por el empleador en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_lider_form" hidden>
+          Realizar informes de gestión para las campañas asignadas.
+          <br />Elaborar la nómina de Agentes Call Center en etapa teórica y
+          práctica. <br />Recibir y adelantar la documentación para el proceso
+          de contratación. <br />Elaborar informe de calibraciones internas de
+          personal de calidad cuando sea requerido. <br />Realizar seguimiento
+          al desempeño del personal a cargo cuando aplique. <br />Realizar
+          seguimiento de asesores en etapa teórica y practica <br />Generar
+          informes de formación <br />Gestionar la solicitud y asignación de
+          diademas y porta carnet para los agentes en formación práctica.
+          <br />Gestionar los accesos y usuarios para los agentes en formación
+          etapa práctica. <br />Seguimiento de los indicadores comerciales de
+          los asesores en etapa práctica dentro de la operación <br />Realizar
+          seguimiento de los indicadores comerciales de los asesores en etapa
+          práctica dentro de la operación. <br />Coordinar y actualizar los
+          procesos formativos en plataformas E-learning. <br />Desarrollo de
+          proyectos audiovisuales. <br />Manejo de plataformas de
+          entretenimiento e información de la compañía. <br />Desarrollo de
+          proyectos audiovisuales (Campus GNP-GNP NEWS) Otros. <br />Asumir y
+          ejecutar las demás funciones que le sean asignadas por el empleador en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_gestor_nal_op" hidden>
+          Realizar seguimiento y brindar soporte a los técnicos en terreno a
+          nivel nacional.
+          <br />Realizar el enrutamiento de técnicos en la ciudad de Bogotá
+          <br />Realizar la radicación de documentos (pagares, formatos, etc…)
+          generados durante los servicios prestados por los técnicos en la
+          ciudad de Bogotá. <br />Realizar la entrega al área de archivo de los
+          soportes de radicación de los servicios prestados por los técnicos.
+          <br />Realizar el informe diario de cierre de servicios a nivel
+          nacional. <br />Realizar el informe diario de servicios realizados en
+          efectivo o financiados a nivel nacional. <br />Asumir y ejecutar las
+          demás funciones que le sean asignadas por el empleador en cumplimiento
+          de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_lider_calidad" hidden>
+          Crear informes a partir de la matriz de calidad de todas las campañas
+          de seguro y gas.
+          <br />Crear Informes de las campañas Inbound a la línea del servicio
+          al cliente. <br />Realizar la Validación de Pólizas para la línea de
+          mantenimiento. <br />Realizar seguimiento a los Quality en la gestión
+          de la matriz de calidad. <br />Programar las calibraciones con los
+          clientes. <br />Realizar informes semanales de todas las campañas
+          <br />Realizar retroalimentación a las campañas con el fin de mejorar
+          la operación de estas. <br />Enviar diariamente la gestión de cierre
+          de mantenimientos. <br />Enviar por SMS a los clientes que contrataron
+          servicios la notificación de programación de mantenimiento.
+          <br />Enviar semanalmente audios seleccionados de manera aleatoria al
+          cliente para calibración. <br />Elaborar en compañía del coordinador
+          Call Center el plan de acción de acuerdo con el desempeño de cada
+          campaña. <br />Enviar alertas de malas prácticas por parte de los
+          agentes Call Center en las campañas <br />Asumir y ejecutar las demás
+          funciones que le sean asignadas por el empleador en cumplimiento de la
+          misión del cargo.
+        </span>
+        <span name="cargo_nuevo_coord_serv_cliente" hidden>
+          Realizar seguimiento a los asesores en la calidad y cantidad de
+          llamadas auditadas
+          <br />Generar informes de: llamadas de Re-gestión/rechazo, encuestas
+          de calidad, reportes de monitoreo y servicio al cliente, informes de
+          PQRS. <br />Realizar seguimiento a las llamadas de los asesores SAC
+          para verificar la calidad de la información brindada por estos.
+          <br />Generar informes de indicadores de productividad. <br />Reportar
+          el Indicador de encuesta de calidad en la frecuencia establecida.
+          <br />Apoyar las funciones del líder de calidad cuando sea requerido.
+          <br />Informar oportunamente cualquier novedad o situación detectada
+          en el monitoreo de las llamadas. <br />Realizar seguimiento al
+          desempeño del equipo de trabajo y emitir conceptos claros y concisos
+          sobre la gestión de cada uno incluido los asesores <br />Realizar
+          retroalimentación diaria a la operación de temas del día anterior.
+          <br />Enviar informes de las campañas de mantenimiento y asistencia.
+          <br />Enviar las novedades de nómina del personal a cargo.
+          <br />Elaborar informes de PQRS. <br />Medir y reportar los
+          Indicadores comerciales y de PQRS. <br />Resolver y realizar
+          seguimiento a todas las PQRS dirigidas a GNP de acuerdo con las líneas
+          de negocio establecidas. <br />Realizar la verificación de pre-nómina
+          del personal a cargo. <br />Verificar el pago de incentivos del
+          personal a cargo. <br />Entregar las bases de cancelaciones y PQRS y
+          enviar las respuestas de la gestión de estas a las gaseras.
+          <br />Realizar Seguimiento a los indicadores de la línea de SAC.
+          <br />Autorizar la compra de repuestos para la prestación de los
+          servicios a nivel nacional. <br />Seguimiento de inventarios de
+          repuestos a nivel nacional. <br />Realizar las novedades para el pago
+          a los técnicos Contratistas. <br />Prestar apoyo a las regionales a
+          nivel nacional. <br />Realizar la entregar el efectivo de los
+          servicios prestados en Bogotá. <br />Realzar ajustes en el Aplicativo
+          si se evidencia la necesidad. <br />Realizar el manejo y dar respuesta
+          de referidos de las gaseras. <br />Legalizar y descargar las
+          cancelaciones por Smartflex. <br />Asumir y ejecutar las demás
+          funciones que le sean asignadas por el empleador en cumplimiento de la
+          misión del cargo.
+        </span>
+        <span name="cargo_nuevo_coord_data_marshall" hidden>
+          Implementar y estructurar los informes nuevos solicitados por la
+          operación
+          <br />Realizar seguimiento al desempeño y cumplimiento de las tareas y
+          actividades asignadas a los Data Marshall. <br />Responder y gestionar
+          oportunamente las solicitudes de los Clientes. <br />Actualización y
+          ajustar cuando sea necesario los Dashboard en Power Bi. <br />Realizar
+          el cierre y reporte de indicadores. <br />Apoyo en piso a Data
+          Marshall cuando así se requiera. <br />Realizar el cargue y depuración
+          de bases de datos <br />Elaborar la previsión de aceleradores para
+          incentivos <br />Generar informes de gestión de las campañas o
+          segmentos solicitados. <br />Asumir y ejecutar las demás funciones que
+          le sean asignadas por el empleador en cumplimiento de la misión del
+          cargo.
+        </span>
+        <span name="cargo_nuevo_junior_data_marshall" hidden>
+          Realizar los reportes diarios y semanales de ventas acumuladas por
+          ciudad.
+          <br />Realizar el reporte Hora a Hora de Ventas y duración de llamadas
+          cuando la campaña lo requiera. <br />Realizar los reportes de
+          cumplimiento de insumo cada hora. <br />Realizar el reporte de
+          cumplimiento de ventas <br />Asumir y ejecutar las demás funciones que
+          le sean asignadas por el empleador en cumplimiento de la misión del
+          cargo.
+        </span>
+        <span name="cargo_nuevo_data_marshall" hidden>
+          Recopilar, consolidar la Información y realizar informes de métricas
+          de las campañas o segmentos asignados y presentarlos a la operación en
+          las frecuencias acordadas.
+          <br />Manejar bases de datos: uso, interacción, filtración y
+          preparación de estas de acuerdo con las necesidades de la campaña o
+          segmento asignado. <br />Generar el informe de cierre diario de
+          cumplimiento para las campañas o segmentos asignados. <br />Generar
+          consolidado de logueo y deslogueo. <br />Realizar Informe de
+          adherencia del personal de la campaña <br />Reportar en los tiempos
+          establecidos por la operación los informes requeridos para el control
+          y gestión de los diferentes segmentos o campañas <br />Asumir y
+          ejecutar las demás funciones que le sean asignadas por el empleador en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_backoffice" hidden>
+          Realizar la recepción, validación, seguimiento y control del pool
+          total de ventas realizadas en las campañas asignadas.
+          <br />Verificar las grabaciones de llamadas y su gestión en los
+          diferente <br />Validar y confirmar los datos consignados en los
+          formularios de venta Interno <br />Materializar y consignar los datos
+          en los aplicativos externos. <br />Correcto uso y asignación de cada
+          uno de los usuarios entregados para gestión <br />Apoyar la creación
+          de usuarios en los aplicativos, así como la asignación de puestos y
+          diademas cuando sea requerido. <br />Gestionar los Asesores que se
+          retiran de la campaña <br />Validación, confirmación y seguimiento de
+          cada una de las ventas en el cierre de su proceso instalación -
+          entrega – activación (Aplica para la línea de Gas). <br />Recuperar y
+          retener los clientes en proceso de cancelación y desistimiento.
+          <br />Agendar y reprogramar ventas <br />Reportar las novedades y
+          solicitudes al equipo Call Center <br />Generar los informes y
+          retroalimentaciones sobre la gestión realizada. <br />Asumir y
+          ejecutar las demás funciones que le sean asignadas por el empleador en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_coord_backoffice" hidden>
+          Realizar seguimiento a la Digitación Diaria de los BackOffice
+          (Fija-Movil-T&T)
+          <br />Realizar seguimiento al proceso Reclamaciones y Refutaciones,
+          <br />Gestionar y responder oportunamente las solicitudes diarias de
+          la operación. <br />Elaborar y reportar los informes de las Entregas e
+          instalaciones. <br />Realizar el Control y Reporte de novedades Nomina
+          del personal a cargo. <br />Auditar y supervisar la gestión realizada
+          por los BackOffice a las ventas registradas <br />Supervisar el
+          desempeño del personal a cargo y realizar las retroalimentaciones
+          pertinentes. <br />Realizar el seguimiento y reporte en el proceso de
+          confirmación e instalación <br />Realizar auditoria a las validaciones
+          de identidad. <br />Asumir y ejecutar las demás funciones que le sean
+          asignadas por el empleador en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_analista_legal" hidden>
+          Generar planes de acción orientados a la mejora continua del proceso.
+          <br />Calificar llamadas de los Agentes de Call de las diferentes
+          campañas. <br />Informar oportunamente cualquier novedad o situación
+          detectada en el monitoreo de las llamadas. <br />Emitir concepto claro
+          y conciso sobre la gestión de cada uno de los agentes Call Center.
+          <br />Dar calificación veraz y real de la gestión realizada por los
+          agentes del Call Center y las llamadas monitoreadas <br />Proporcionar
+          información veraz, real y confiable cuando su supervisor inmediato lo
+          solicite. <br />Cooperar con el área de calidad para controlar y
+          cumplir la política de calidad establecida por la dirección.
+          <br />Ayudar en los informes finales de auditoría, viendo que se
+          cumpla con la normatividad para garantizar la calidad del trabajo
+          hecho realizado. <br />Asumir y ejecutar las demás funciones que le
+          sean asignadas por el empleador en cumplimiento de la misión del
+          cargo.
+        </span>
+        <span name="cargo_nuevo_senior_dev" hidden>
+          Desarrollo aplicativos WEB.
+          <br />Desarrollo aplicativos de Escritorio. <br />Desarrollo
+          aplicativos Móviles. <br />Documentación desarrollos realizados.
+          <br />Atender soporte segundo nivel de aplicativos desarrollados.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas por
+          el empleador en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_supervisor_tecnico" hidden>
+          Prestar la atención oportuna al cliente, brindar solución a las PQR`S
+          y prestar la atención al cliente durante la posventa.
+          <br />Capacitar, retroalimentar y dar inducción al personal Técnico
+          nuevo y antiguo. <br />Atender y dar solución a las fallas encontradas
+          en terreno respecto a la información reportada por los clientes.
+          <br />Realizar Inspección y verificación de instalaciones realizadas
+          por la firma. <br />Verificar y supervisar la gestión de instalaciones
+          y mantenimientos realizados. <br />Realizar las visitas asignadas por
+          la empresa con el fin de identificar las necesidades de los clientes.
+          <br />Proveer soluciones técnicas al cliente de acuerdo con los fines
+          comerciales de la organización. <br />Ofrecer al cliente productos
+          suministrados por la empresa. <br />Realizar la verificación de la
+          instalación de redes de gas natural. <br />Diligenciar documentación
+          requerida para la prestación del servicio asignado. <br />Realizar
+          control y auditoria a herramientas y equipos de medición,
+          documentación de vehículos, carnet y dotación de los Contratistas.
+          <br />Inspeccionar las herramientas y equipos de manera semanal.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_coordinador_tecnico" hidden>
+          Prestar la atención oportuna al cliente, brindar solución a las PQR`S
+          y prestar la atención al cliente durante la posventa.
+          <br />Capacitar, retroalimentar y dar inducción al personal Técnico
+          nuevo y antiguo. <br />Atender y dar solución a las fallas encontradas
+          en terreno respecto a la información reportada por los clientes.
+          <br />Realizar Inspección y verificación de instalaciones realizadas
+          por la firma. <br />Verificar y supervisar la gestión de instalaciones
+          y mantenimientos realizados. <br />Realizar las visitas asignadas por
+          la empresa con el fin de identificar las necesidades de los clientes.
+          <br />Proveer soluciones técnicas al cliente de acuerdo con los fines
+          comerciales de la organización. <br />Ofrecer al cliente productos
+          suministrados por la empresa. <br />Realizar la verificación de la
+          instalación de redes de gas natural. <br />Diligenciar documentación
+          requerida para la prestación del servicio asignado. <br />Realizar
+          control y auditoria a herramientas y equipos de medición,
+          documentación de vehículos, carnet y dotación de los Contratistas.
+          <br />Inspeccionar las herramientas y equipos de manera semanal.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_anal_op" hidden>
+          Realizar dimensionamiento semanal por campaña y entregar a la
+          operación.
+          <br />Confirmar requerimiento de personal de acuerdo con los
+          dimensionamientos por campaña <br />Realizar mallas de turno semanal
+          por campaña y entregar a la operación. <br />
+          Seguimientos poliedros por Token. <br />
+          Escalar a Claro usuarios bloqueados. <br />
+          Auditoria de los REQ escalados a Claro. <br />
+          Reporte polaris por campaña. <br />
+          Validar descuentos de todas las campañas por nómina. <br />
+          Validar visitas fallidas y recuperar estas ventas. <br />
+          Validar descuentos de todas las campañas por nómina. <br />
+          Seguimiento a los nuevos radicados y validar entrega efectiva <br />
+          Radicar incapacidades de todas las campañas <br />
+          Realizar alerta de los agentes con más incapacidades a los
+          coordinadores. <br />
+          Seguimiento ventas digitadas sin ot a back. <br />
+          Validar casos cerrados de todas las campañas y escalar a Claro para
+          asegurar entrega, legalización y pago de la venta.
+        </span>
+        <span name="cargo_nuevo_jefe_regional" hidden>
+          Lograr el Crecimiento sobre los clientes actuales y prospectados.
+          <br />Estructurar la asignación de servicios a cada uno de los
+          contratistas a su cargo, manteniendo carga laboral equilibrada,
+          teniendo en cuenta: efectividad del día hábil anterior, compromiso del
+          contratista, medio de transporte, ciudad o barrio de residencia del
+          contratista <br />Recolectar el dinero de los servicios pagados en
+          efectivo por los clientes a los Contratistas, para ser procesados.
+          <br />Realizar seguimiento telefónico del personal a cargo personal
+          técnico (Contratistas) durante la prestación del servicio cuando este
+          amerite. <br />Realizar cotización y seguimiento a los repuestos
+          solicitados por el cliente y/o solicitados por el personal técnico de
+          la regional. <br />Realizar seguimiento al cliente una vez finalizado
+          el servicio prestado por el contratista en caso de requerirse.
+          <br />Generar las PQR en el aplicativo que aplique cuando el cliente
+          lo solicite como resultado del seguimiento al cliente, al técnico,
+          visita presencial del cliente o que sea recibida por teléfono sea
+          móvil o fijo. <br />Realizar seguimiento y recuperación de los
+          negocios que estén en cartera por Asignado técnico, Visita asignada,
+          cotización etc . <br />Recepción y atención a documentación devuelta
+          al contratista o por la gasera. <br />Coordinar el personal técnico a
+          cargo (programadores y/o contratistas). <br />Manejar el aplicativo
+          APLIGNP en lo concerniente al o los proyectos asignados (cargue de
+          servicios y reporte una vez prestado el servicio). <br />Realizar la
+          confirmación con los clientes del servicio que se le va a prestar en
+          cuanto a fecha y horario, en los casos de reagenda miento notificar
+          por correo electrónico al área de SAC. <br />Radicar los servicios en
+          plataforma de gas natural (GIV) o cualquier otro que se maneje en la
+          regional a la que pertenece y solicitud de pagare, diligenciando la
+          documentación de acuerdo con lo solicitado por la gasera.
+          <br />Entrega de documentación para la radicación ante la oficina de
+          gasera. <br />Organizar el archivo físico y/o digital de la regional,
+          Verificar que la documentación cumpla con los requisitos de la gasera.
+          <br />Verificar el estado del cliente en plataforma de la gasera.
+          <br />Validar pólizas en el aplicativo de la gasera para confirmar la
+          viabilidad de crédito del negocio. <br />Representar comercialmente a
+          GNP <br />Supervisar activamente la labor de todos los colaboradores
+          velando por el cumplimiento de las metas y funciones acordadas.
+          <br />Generar planes de acción para las PQRS de los clientes.
+          <br />Recibir reportes de novedades de contratos, etc. <br />Llevar
+          control de las facturas que se generan <br />Manejar la caja menor y
+          mayor <br />Controlar el inventario de materiales, repuestos,
+          papelería, dotación y activos fijos. <br />Revisar y programar los
+          gastos fijos de la regional. <br />Realizar corte de contratistas
+          independientes en las periodicidades que les sean informadas.
+          <br />Realizar la cuenta de cobro o facturacion a la gasera
+          correspondiente de la regional, si aplica en la ciudad asignada.
+          <br />Realizar seguimiento y recuperación de los negocios que estén en
+          cartera por envío documentación gas. <br />Realizar la facturacion
+          contable en los aplicativos que la empresa disponga para tal fin.
+          <br />Realizar informes diarios, semanales, mensuales o periódicos que
+          se establezcan por el jefe inmediato, con respecto a la operación de
+          la regional. <br />Asumir y ejecutar las demás funciones que le sean
+          asignadas en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_controller_financiero" hidden>
+          Administración y manejo de la información contable de GNP S.A.S.
+          <br />Entrega del cronograma de pago a gerencia administrativa y
+          financiera, coordinador administrativo. <br />Auditar las
+          conciliaciones bancarias. <br />Vigilar los saldos, de todas las
+          cuentas que constituyen el movimiento contable y que dan lugar a la
+          elaboración de Estados Financieros. <br />Elaboración y presentación
+          de las declaraciones fiscales nacionales y municipales dentro de los
+          plazos establecidos. <br />Velar por la aplicación de las NIIF en los
+          procedimientos contables de GNP. <br />Revisión de todos los
+          comprobantes por concepto de débitos y créditos que afectan la
+          información de GNP. <br />velar por que los estados financieros sean
+          copia fiel de la realidad de la organización <br />Velar por la
+          correcta liquidación de la nómina y pagos de los incentivos.
+          <br />Seguimiento a los inventarios <br />Verificar las cuentas de
+          balance. <br />Administración manejo y configuración de los centros de
+          costos de GNP junto con gerencia general y el departamento de
+          aseguramiento. <br />Verificar que la información presentada por
+          tesorería esté acorde con ingresos y egresos de la organización.
+          <br />Responsabilidad por la aplicación y seguimiento de los clientes
+          asignados en el Comité de Cartera GNP. <br />Realizar las provisiones
+          de cartera. <br />
+          Realizar y crear la compra de activos fijos y su depreciación mensual.
+          <br />Verificación, creación y seguimiento de las referencias de
+          incrementos, mantenimiento, repuestos y servicios junto con la
+          dirección de operaciones <br />Velar por la correcta configuración,
+          interacción y ejecución de los diferentes módulos de Contapyme
+          <br />Generar informes solicitados a la Revisoría Fiscal
+          <br />Presentación mensual de estados financieros y ejecución
+          presupuestal. <br />
+          Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_gerente_th" hidden>
+          Coordinar el procedimiento de contratación de personal.
+          <br />Coordinar la entrega de Tarjetas magnéticas y carnés
+          <br />Coordinar el archivo y actualización de las hojas de vida y
+          demás registros del personal activo y retirado de la empresa.
+          <br />Seguimiento y control de los permisos, licencias e incapacidades
+          laborales. <br />Apoyo a las actividades, capacitaciones, charlas,
+          etc., orientadas a promover el cambio en los conocimientos técnicos,
+          habilidades y aptitudes de todo el personal de la empresa.
+          <br />Implementar modelo o estrategias para medir el desempeño de cada
+          trabajador confrontando las funciones o procesos del cargo con
+          respecto a la actuación de la idoneidad del evaluado en la ejecución
+          de sus labores. <br />Identificar los programas y políticas que buscan
+          la satisfacción de las necesidades primarias de los trabajadores y sus
+          familias. <br />Divulgar constantemente información formal e informal
+          interna al personal de la empresa. <br />Atender y crear vínculos
+          laborales con los asesores o representantes de entidades prestadoras
+          de salud, riesgos profesionales, fondo de pensiones, entidades
+          privadas que prestan servicios asistenciales o técnicos.
+          <br />Actualizar y divulgar el manual de funciones del personal de la
+          empresa. <br />Colaborar en la aplicación del proceso de satisfacción
+          del cliente interno/clima <br />Colaborar con el mantenimiento del
+          sistema interno de evaluación de desempeño. <br />Gestionar
+          solicitudes de las regionales. <br />Coordinar procesos de selección.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo. <br />Supervisar las campañas de
+          las buenas prácticas de seguridad y salud en el trabajo.
+          <br />Mantener actualizada la base de datos del personal
+          <br />Elaborar y mantener actualizado el HEADCOUNT de la compañía.
+          <br />Mantener actualizados los indicadores de rotación.
+          <br />Orientar las acciones pertinentes para dirigir el proceso
+          disciplinario en cuanto a las conductas del trabajador que conlleven
+          el incumplimiento del reglamento interno de trabajo.
+          <br />Implementacion y mantenimiento del sistema de gestion de
+          seguridad y salud en el trabajo <br />Realizar analisis periodico del
+          bienestar laboral del trabajador. <br />Ser el back up de los sub
+          procesos de selección y contratacion. <br />Asumir y ejecutar las
+          demás funciones que le sean asignadas en cumplimiento de la misión del
+          cargo
+        </span>
+        <span name="cargo_nuevo_jefe_nomina" hidden>
+          Garantizar el cumplimiento de las leyes aplicables y las obligaciones
+          con respecto a los impuestos sobre las nóminas
+          <br />Supervisar y orientar al equipo de nóminas <br />Revisar estados
+          de cuentas EPS, ARL, CCF, PENSIONES y hacer seguimiento <br />Revisar
+          informe de incapacidades y realizar seguimiento <br />Revisar
+          liquidaciones de Personal retirado <br />Colaborar con los equipos de
+          Recursos Humanos (RR. HH.) y contabilidad <br />Revisar y ayudar en la
+          elaboración de Incentivos de las diferentes campañas de la
+          organización <br />Generar informes de nomina <br />Responder los
+          requerimientos de los clientes internos que correspondan a nomina
+          <br />Responsable de Revisar al detalle la nómina quincenal
+          <br />Responsable de actualizar la nómina y generar los archivos de
+          pago para tesorería <br />Revisar planilla de seguridad social
+          <br />Revisar que la nómina este contabilizada de acuerdo con
+          parámetros estipulados <br />Revisar y analizar formato UGPP
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_tesorero" hidden>
+          Asegurar la liquidez de la empresa.
+          <br />Preparar diariamente el estado de flujo de efectivo e informar
+          al Gerente sobre los excesos de liquidez para la toma de decisiones en
+          materia de colocación. <br />Llevar el registro individual de aportes,
+          ahorros y cartera de créditos. <br />Control de la Caja General de la
+          sede principal. <br />Realizar el levantamiento de procesos contables
+          de la organización en pro de la estandarizacion de los mismos
+          <br />Participar en los planes de acción derivados de las acciones de
+          mejora para el SG-SST <br />Elaborar y Presentar informe de bancos y
+          saldos (Diario) <br />Elaborar y Presentar programacion de pagos
+          (Diario) <br />seguimiento a las fechas de vencimiento de facturas,
+          creditos y demas obligaciones. <br />Cargue en la plataforma de los
+          bancos todos los pago o egresos de dinero. <br />Recaudo de dinero de
+          las maquinas dispensadoras de alimentos. <br />Descargar los egresos y
+          relizar los ingresos en el sistema contable <br />Elaborar y Presentar
+          informe de Cash Flow (Diario) <br />control de facturación semanal
+          <br />Gestion de cartera y cobranza <br />Realizar Informe "portafolio
+          report" (mensual) <br />Realizar Informe de proyeccion de ingresos.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_contador_junior" hidden>
+          Revisión de las contabilizaciones de Gastos - Caja General
+          <br />Realizar el argueo de caja general. <br />Conciliaciones
+          Bancarias y de tarjetas de credito <br />Revision de Liquidaciones
+          <br />Conciliación de los psgo a Seguridad Social <br />Analisis de
+          cuentas de balance <br />Realización de impuestos nacionales y
+          distritales <br />Realizar la infomacion de Exogena Naconal Y
+          Distrital <br />Revision de incapaciddaes <br />Elaboracion de informe
+          mensual de Obligaciones Financieras <br />Revision de comprobantes de
+          egreso <br />Asumir y ejecutar las demás funciones que le sean
+          asignadas en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_coordinador_nomina" hidden>
+          Generar informes (analisis de ventas, reporte de UGPP)
+          <br />Revisar quincenalmente todas las liquidaciones y nomina nacional
+          teniendo en cuenta descuentos y novedades (punteo uno a uno para
+          identificar que las personas estén en programación y nómina
+          <br />Auditar planilla de aportes. <br />Auditar novedades de nomina
+          <br />Auditar incentivos <br />Conciliar la nómina mensual
+          <br />Verificar estados de cuenta de EPS, PENSION y CAJA
+          <br />Ingresar incapacidades y reportes. <br />Validar ingresos y
+          salidas del personal <br />Asumir y ejecutar las demás funciones que
+          le sean asignadas en cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_analista_nomina" hidden>
+          Revisar quincenalmente todas las liquidaciones y nomina nacional
+          teniendo en cuenta descuentos y novedades (punteo uno a uno para
+          identificar que las personas estén en programación y nómina
+          <br />Liquidar seguridad social en las fechas indicadas del mes.
+          <br />Auditar planilla de aportes. <br />Generar planilla de seguridad
+          social, <br />Recibir de programación novedades de retiro,
+          <br />Auditar novedades de nomina <br />realizar incentivos y
+          auditarlos <br />Liquidacion de prestaciones sociales <br />Enviar
+          pre-nomina <br />Generar informes (analisis de ventas, reporte de
+          UGPP) <br />Cargue de la interfaz contable de las nominas <br />Asumir
+          y ejecutar las demás funciones que le sean asignadas en cumplimiento
+          de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_auxiliar_contable" hidden>
+          Elaboración de facturas y cuentas de cobro cuando se requieran
+          <br />Contabilizar los viáticos de los diferentes funcionarios de la
+          compañía. <br />Contabilizar los servicios técnicos de GNP.
+          <br />Contabilizar las cajas de las diferentes regionales
+          <br />Contabilizar las facturas de compra, venta y liquidaciones
+          <br />Radicación y verificación de incapacidades <br />Archivo de
+          todos los documentos contables <br />Contabilizar los documentos
+          equivalentes de los contratistas <br />Validación de las cajas en el
+          aplicativo. <br />Contabilizar los diferentes gastos de las tarjetas
+          de crédito por parte de la compañía <br />Contabilización de
+          incapacidades pagadas por las diferentes EPS y alimentar el indicador
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_lider_g_documental" hidden>
+          Realizar el diagnóstico integral del Sistema de Gestión Documental.
+          <br />Realizar planeación y elaboración de los procesos y
+          procedimientos del Sistema de Gestión Documental. <br />Realizar el
+          levantamiento de información e implementación de las TRD <br />Crear y
+          mantener el Comité de Archivo. <br />Coordinar el proceso de Gestión
+          Documental, desde la recepción de los documentos hasta la
+          digitalización o conservación de estos. <br />Estructurar y aplicar el
+          Programa de Gestión Documental en la Organización. <br />Realizar
+          informe mensual sobre la base del Sistema de Gestión Documental.
+          <br />Supervisar y controlar el préstamo de documentos cuando se
+          requiera inspeccionar el original. <br />Capacitar sobre los procesos
+          de Gestión Documental al personal a cargo y/o de la Organización
+          <br />Documentar e implementar los procedimientos, elaboración de
+          comunicaciones y organización de documentos del Archivo de Gestión.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_auxiliar_enfermeria" hidden>
+          Toma de signos vitales para llevar registros y control apoyándose en
+          los insumos del botiquín instalado por GNP.
+          <br />Controlar infecciones de acuerdo con protocolos establecidos y
+          normativa de salud <br />Apoyar los procedimientos e indicaciones
+          médicas que los médicos tratantes del personal entreguen de acuerdo
+          con cada diagnóstico individual de acuerdo con la delegación,
+          protocolos y tecnología requerida; con la discreción absoluta de la
+          información. <br />Fomentar prácticas saludables de acuerdo con
+          normativa de salud. <br />Seguimiento a los cuidados, casos y citas
+          médicas del personal de GNP; para apoyar en la recuperación de los
+          patrones funcionales según delegación, ciclo del proceso vital y
+          protocolos institucionales vigentes dejando evidencia digital e
+          impresa firmada por los trabajadores en sus hojas de vida y como
+          extensión del SG-SST <br />Asistir personas según la etapa del ciclo
+          vital y guías de manejo de salud <br />Promover el mantenimiento de
+          los patrones funcionales por etapa del proceso vital según normativa
+          legal vigente de salud. <br />Realizar pausas activas de acuerdo con
+          el programa <br />Verificar y registrar que el paciente tenga
+          estabilidad en sus funciones regulares <br />Asumir y ejecutar las
+          demás funciones que le sean asignadas en cumplimiento de la misión del
+          cargo
+        </span>
+        <span name="cargo_nuevo_auxiliar_hseq" hidden>
+          Apoyar las actividades de control, prevención e implementación
+          asociadas al SGC, SG-SST y SGA.
+          <br />Apoyar la actualización y gestión del plan de emergencia de la
+          organización. <br />Desarrollar actividades destinada a la prevención
+          de accidentes y control de enfermedades en el trabajo. <br />Realizar
+          las actividades de vigilancia epidemiológica asignadas de acuerdo con
+          los factores de riesgo identificados y priorizados por la empresa o la
+          A.R.L. correspondiente. <br />Identificar, monitorear y reportar
+          condiciones peligrosas e inseguras. <br />Prestar apoyo en la atención
+          de auditorías internas y externas. <br />Asumir y ejecutar las demás
+          funciones que le sean asignadas por el empleador en cumplimiento de la
+          misión del cargo. <br />Apoyar la ejecución de actividades de
+          mediciones de condiciones ambientales para el SG-SST. <br />Gestionar
+          la conformación del comité de convivencia laboral y COPASST y
+          organizar las reuniones de acuerdo con el plan de trabajo.
+          <br />Realizar la medición y reporte de los indicadores del SG-SST de
+          acuerdo con la frecuencia establecida. <br />Generar la información de
+          HSEQ necesaria para realizar reportes al cliente o dar respuesta a las
+          solicitudes que asignadas al área. <br />Apoyar la elaboración de la
+          documentación del Sistema Integrado de Gestión cuando sea requerido.
+          <br />Apoyar la actualización de información documentada y la
+          estructuración de procesos del Sistema Integrado de Gestión.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo
+        </span>
+        <span name="cargo_nuevo_auxiliar_g_documental" hidden>
+          Apoyar técnicamente el proceso de trámite de documentos de archivo de
+          los diferentes procesos de la organización.
+          <br />Realizar las operaciones técnicas de organización de documentos
+          de archivo. <br />Instalar físicamente los documentos de archivo en
+          las unidades de conservación e instalación de acuerdo con las normas
+          archivistas. <br />Buscar y recuperar documentos de archivo.
+          <br />Apoyar técnicamente el proceso de transferencias documentales.
+          <br />Apoyar los procesos básicos de preservación de documentos.
+          <br />Clasificación de documentos para microfilmación.
+          <br />Clasificar, codificar, registrar y archivar la entrada y salida
+          de correspondencia. <br />Mantener indicadores para sistemas de
+          clasificación. <br />Mantener listas de acceso de registros
+          clasificados. <br />Operar sistema de captura de información y
+          facilitar documentos requeridos. <br />Revisar archivos periódicamente
+          para garantizar que estén completos y clasificados correctamente.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo
+        </span>
+        <span name="cargo_nuevo_ger_tic" hidden>
+          Realizar seguimiento, control y mantenimiento a la operación de la red
+          <br />Realizar seguimiento y control Firewall <br />Realizar control y
+          gestionar autorizaciones de acceso a la red privada VPN de GNP Y CLARO
+          <br />Realizar monitoreo de la red <br />Atender soporte de segundo
+          nivel a la red <br />Realizar monitoreo del funcionamiento del sistema
+          de cámaras <br />Realizar seguimiento al comportamiento de la
+          infraestructura de redes y telefonía <br />Realizar respaldo a cada
+          equipo que se encuentra dentro de la red <br />Monitorear el
+          mantenimiento de cada equipo de la red
+        </span>
+        <span name="cargo_nuevo_torre_ctrl_jr" hidden>
+          Seguimiento de indicadores
+          <br />Velar por el cumplimiento de los kpis diarios <br />Seguimiento
+          de asistencia y cumplí miento al turno <br />Reportes hora a hora y
+          día vencido para el staff <br />Conocimiento Excel básico
+        </span>
+        <span name="cargo_nuevo_anal_work" hidden>
+          Dimensionamiento de las operaciones
+          <br />Creación de las mallas de turnos de las operaciones.
+          <br />Realizar informes diarios, semanales y mensuales para la
+          optimización de los recursos. <br />Recopilar información de las
+          operaciones del día a día. <br />Optimización de los recursos de las
+          campañas asignadas.
+        </span>
+        <span name="cargo_nuevo_anal_g_doc" hidden>
+          Apoyar técnicamente el proceso de trámite de documentos de archivo de
+          los diferentes procesos de la organización.
+          <br />Realizar las operaciones técnicas de organización de documentos
+          de archivo. <br />Instalar físicamente los documentos de archivo en
+          las unida desde conservación e instalación de acuerdo con las normas
+          archivistas. <br />Apoyar el proceso de Gestión Documental, desde la
+          recepción de los documentos hasta la digitalización o conservación de
+          estos, de los diferentes procesos de la organización. <br />Buscar y
+          recuperar documentos de archivo. <br />Apoyar técnicamente el proceso
+          de transferencias documentales. <br />Apoyar los procesos básicos de
+          preservación de documentos. <br />Clasificación de documentos para
+          microfilmación. <br />Clasificar, codificar, registrar y archivar la
+          entrada y salida de correspondencia. <br />Mantener indicadores para
+          sistemas de clasificación. <br />Mantener listas de acceso de
+          registros clasificados. <br />Operar sistema de captura de información
+          y facilitar documentos requeridos. <br />Revisar archivos
+          periódicamente para garantizar que estén completos y clasificados
+          correctamente. <br />Apoyar en la supervisión y controlar el préstamo
+          de documentos cuando se requiera inspeccionar el original.
+          <br />Apoyar en la validación de la documentación para que se
+          encuentre en la versión actual y solicitar el respectivo cambio en
+          caso de incumplimiento. <br />Realizar el control de inventarios del
+          área de Sistemas, audiovisuales, mobiliarios y otros que sean
+          solicitados por las áreas respectivas. <br />Apoyar al área del
+          sistema integral de gestión de acuerdo con las actividades a ejecutar
+          y a la programación de estas. <br />Apoyar el registro de la
+          información en las diferentes aplicativos que sean asignados y
+          utilizados por GNP SAS (GSPACE, HELISA,AUCO, Apli asistencia, Apli
+          mantenimiento, entre otros). <br />Apoyar la actualización y montaje
+          de la información generada durante la vinculación y duración del
+          personal en GNP SAS, en la plataforma AUCO. <br />Asumir y ejecutar
+          las demás funciones que le sean asignadas en cumplimiento de la misión
+          del cargo.
+        </span>
+        <span name="cargo_nuevo_coord_g_doc" hidden>
+          Realizar el diagnóstico integral del procesode Gestión Documental.
+          <br />Realizar planeación y elaboración de los procesosy
+          procedimientos del Sistema de Gestión Documental. <br />Realizar el
+          levantamiento de información e implementación de las TRD <br />Crear y
+          mantener el Comitéde Archivo. <br />Coordinar el proceso de Gestión
+          Documental, desde la recepciónde los documentos hasta la
+          digitalización o conservación de estos, de los diferentes procesos de
+          la organización. <br />Coordinar el proceso de la eliminación
+          documental de acuerdocon lo establecido por la organización.
+          <br />Garantizar la disponibilidad de la información documental
+          (física) para revisión, por parte del personal interesado.
+          <br />Realizar en la plataforma AUCO, la actualización y montaje de la
+          información generada durante la vinculación y duración del personal en
+          GNP SAS. <br />Validar que la documentación recibida este en la
+          versiónactual y solicitarel respectivo cambioen caso de
+          incumplimiento. <br />Estructurar y aplicar el Programa de
+          GestiónDocumental en la Organización. <br />Realizar informe
+          mensualsobre la base del Sistema de Gestión Documental.
+          <br />Garantizar la disposición de los residuosgenerados en el proceso
+          de eliminación de la documentación, garantizando las actas de dicha
+          eliminación. <br />Supervisary controlarel préstamo de documentos
+          cuando se requierainspeccionar el original. <br />Capacitar sobre los
+          procesosde Gestión Documentalal personal a cargo y/o de la
+          Organización. <br />Apoyar al área del sistema integralde gestión de
+          acuerdo con las actividades a ejecutar y a la programación de estas.
+          <br />Registrar la información en las diferentes aplicativos que sean
+          asignados y utilizados por GNP SAS (GSPACE, HELISA, AUCO, Apli
+          asistencia, Apli mantenimiento, entre otros). <br />Realizar el
+          control de inventarios del área de Sistemas, audiovisuales,
+          mobiliarios y otrosque sean solicitados por las áreas respectivas.
+          <br />Documentar e implementar los procedimientos, elaboración de
+          comunicaciones y organización de documentos del Archivo de Gestión.
+          <br />Asumir y ejecutar las demás funcionesque le sean asignadas en
+          cumplimiento de la misióndel cargo.
+        </span>
+        <span name="cargo_nuevo_torre_ctrl" hidden>
+          Generar alarmas por medios electrónicos como vivas voz
+          <br />Reportes hora a hora y día vencido para el staff
+          <br />Seguimiento de asistencia y cumplimiento de turno <br />Velar
+          por el cumplimiento de Kpi´s
+        </span>
+        <span name="cargo_nuevo_jefe_admin_nal" hidden>
+          Verificar mediante las inspecciones gerenciales el cumplimiento de
+          politicas, procesos y procedimientos de la organización
+          <br />Reportar a la gerencia toda inconsistencia en cumplimiento de
+          politicas, procesos y procedimientos. <br />Realizar los diferentes
+          pagos de las obligaciones financieras emitidas por el departamento
+          contable de nómina y financiero de la compañía <br />Verificar la
+          correcta gestion de inventarios, hojas de vida de equipos y
+          trazabilidad en sus mantenimientos. <br />Supervisar y asignar las
+          funciones de personal de servicios generales, recepcionista,
+          adecuaciones y seguridad. <br />Establecer, controlar y ejecutar el
+          plan de mantenimiento preventivo y correctivo de la infraestructura
+          física a nivel nacional. <br />Asegurar la correcta ejecución de los
+          proyectos de infraestructura <br />Coordinar y supervisar el diseño,
+          construcción y montaje de las nuevas instalaciones. <br />Planificar y
+          asignar las actividades del personal a su cargo <br />Proponer
+          modificaciones locativas viables que optimicen los espacios
+          <br />Estimar el costo de las reparaciones necesarias <br />Controlar
+          el cumplimiento del marco legal de los contratos. <br />Asegurar el
+          cumplimiento de los procedimientos administrativos de la empresa.
+          <br />Implementar los controles de acceso a las diferentes sedes a
+          nivel nacional y realizar seguimiento oportuno a los mismos.
+          <br />Asegurar el cumplimiento de los procesos administrativos a nivel
+          nacional. <br />Asegurar la correcta ejecución del gasto y su relación
+          con el objeto social de la compañía. <br />Distribuir la información
+          de los contratos de manera oportuna y clara (costo de contratos
+          mensual) <br />Control de pólizas y impuestos de vehículos e
+          inmuebles. <br />Asumir y ejecutar las demás funciones que le sean
+          asignadas en cumplimiento de la misión del cargo
+        </span>
+        <span name="cargo_nuevo_jefe_admin" hidden>
+          Realizar seguimiento de personal de contratacion
+          <br />Supervisar el personal de servicios generales y el registro de
+          aseo de las áreas. <br />Manejo y control de la caja menor de GNP a su
+          cargo. <br />Supervisar el personal de administrador de sede y
+          Auxiliar de TH, adecuaciones y seguridad de las sedes <br />Realizar
+          pausas activas de acuerdo al programa <br />Realizar auditoria interna
+          a carpetas antes de ser enviadas a la Sede de Bogota <br />Gestionar
+          retiros (proceso de desvinculacion) y reportar al area encargada
+          <br />Alimentar el drive con las liquidaciones y paz y salvo del
+          personal <br />Efectuar seguimiento a la entrega de carnés del
+          personal <br />Apoyar y realizar seguimiento al control de los
+          permisos, licencias , incapacidades laborales, aceleradores,
+          vacaciones <br />Divulgar las campañas de Reglamento interno de
+          trabajo ,politica empresarial , entre otras <br />Apoyar en la
+          implementacion de estrategias para medir el desempeño de cada
+          trabajador confrontando las funciones o procesos del cargo con
+          respecto a la actuación de la idoneidad del evaluado en la ejecución
+          de sus labores. <br />Identificar los programas y políticas que buscan
+          la satisfacción de las necesidades primarias de los trabajadores y sus
+          familias. <br />Divulgar constantemente información formal e informal
+          interna al personal de la empresa <br />Colaborar en la aplicación del
+          proceso de satisfacción del cliente interno / Clima Organizacional
+          <br />Apoyar en la Supervisión de las campañas en cuanto a sus buenas
+          prácticas de seguridad y salud en el trabajo. <br />Realizar los
+          correspondientes procesos disciplinarios en cuanto a las conductas del
+          trabajador que conlleven el incumplimiento del reglamento interno de
+          trabajo. <br />Realizar la inducción corporativa al personal
+          contratado <br />Ejecutar las actividades, capacitaciones, charlas,
+          etc., orientadas a promover el cambio, en los conocimientos técnicos,
+          habilidades y aptitudes de todo el personal de la empresa según el
+          Plan de Bienestar laboral de GNP. <br />Recibir y atender los clientes
+          externos (Claro) y entes Gubernamentales o de control, en las
+          diferentes solicitudes a que haya lugar <br />Asumir y ejecutar las
+          demás funciones que le sean asignadas en cumplimiento de la misión del
+          cargo.
+        </span>
+        <span name="cargo_nuevo_lider_compras" hidden>
+          Actualizar la base de datos de los precios del mercado, solicitando
+          diferentes cotizaciones
+          <br />Realizar búsqueda de cotizaciones de forma nacional e
+          internacional. Al menos 3 cotizaciones antes de realizar la compra.
+          <br />Analizar las cotizaciones y las ofertas recibidas de cada
+          proveedor, otorgando las respuestas a cada uno de los proveedores.
+          <br />Determinar la factibilidad de compra, de acuerdo al presupuesto
+          establecido por la empresa, cuando se deba comprar activos o materia
+          prima. <br />Manejar y preparar el presupuesto de compras
+          <br />Control de stock de papelería, dotación, elementos de aseo y
+          demás recursos considerados como gastos. <br />Control y entrega de
+          equipos de monóxido, fugas y elementos de identificacion a
+          contratistas <br />Recepción de requisiciones para todas las
+          regionales y sede principal. <br />Validar la autorización de la orden
+          de compra. <br />Realizar la orden de compra en el aplicativo
+          (Contapyme de acuerdo al requerimiento) y Enviarla a los proveedores.
+          <br />Recibirla factura, gestionar validación de gerencia y
+          entregarlas a contabilidad. <br />Presentar los indicadores de gestion
+          conforme al procedimiento. <br />Entregar el producto al área que lo
+          solicita y dejar acta de entrega (si se requiere, en acompañamiento de
+          sistemas o mantenimientos) <br />Para las regionales se realiza el
+          embalaje y se envía por correo con el acta de entrega. <br />Control y
+          seguimiento del inventario de materiales y repuestos <br />Realizar
+          requisición de elementos de aseo. <br />Coordinar con proveedores todo
+          lo relacionado con el área contable y financiera de la compañía
+          <br />Realizar la evaluación a proveedores y contratistas conforme a
+          lo estipulado en el procedimiento. <br />Redactar, archivar y revisar
+          documentos, tales como recibos, contratos, pólizas, hojas de cálculos
+          y otros documentos administrativos. <br />Asumir y ejecutar las demás
+          funciones que le sean asignadas en cumplimiento de la misión del
+          cargo.
+        </span>
+        <span name="cargo_nuevo_admin_sede" hidden>
+          Realizar la atención de visitantes, con el fin de direccionar sus
+          requerimientos a las áreas indicadas.
+          <br />Controlar el registro de los visitantes en el respectivo formato
+          de Control de Visitantes <br />Solicitar documento para ingreso de
+          visitantes, el cual debe indicar el nombre completo y el número de
+          cedula (Este documento no puede ser la cedula de ciudadanía).
+          <br />Asignar una escarapela a cada persona que tenga el ingreso
+          autorizado por las áreas (administrativa, staff, selección y
+          formadores) <br />Autorizar acceso una vez el visitante sea autorizado
+          por el área solicitada. <br />Recibir correspondencia y coordinar su
+          entrega al funcionario o dependencia al cual está dirigida.
+          <br />Comunicar a Talento Humano cuando los asesores no tengan acceso
+          por no portar carnét. <br />Apoyo al área de Talento Humano cuanto
+          esta lo solicite. <br />Velar por el buen funcionamiento y uso de las
+          instalaciones, equipos e instrumentos que utiliza en el desarrollo de
+          sus actividades, reportando cualquier anomalía o daño importante que
+          se presente a su superior inmediato. <br />Enrolar el personal que
+          ingresa a capacitación o personal nuevo contratado <br />Supervisar el
+          personal de servicios generales y el registro de aseo de las áreas
+          (Bogotá) <br />Realizar requisición de elementos de cafetería y aseo
+          (y papelería Cali) <br />Asignación de parqueaderos al personal
+          interno y externo de la empresa <br />Manejo y control de la caja
+          menor de GNP (Bogotá) <br />Realizar inventarios a las neveras de GNP
+          (Bogotá) <br />Realizar inventario de sillas, diademas, TV, teléfonos
+          y mesas (Cali) <br />Recepción de incapacidades, permisos,
+          aceleradores, vacaciones, licencias, entre otros, relación en archivo
+          respectivo y envío a Nómina <br />Verificar el uso correcto del carné
+          en los colaboradores <br />Verificar el diligenciamiento de las
+          encuestas de salud (Cali) <br />Verificar el uso correcto del
+          tapabocas en los colaboradores <br />Realizar la asignación de sillas
+          (y lockers para Cali) <br />Recepción de documentación y paquetes para
+          la sede <br />Gestionar autorizaciones de ingreso y salida de
+          materiales y personal externo e interno <br />Asumir y ejecutar las
+          demás funciones que le sean asignadas en cumplimiento de la misión del
+          cargo.
+        </span>
+        <span name="cargo_nuevo_aux_serv_gen" hidden>
+          Realizar labores de limpieza en las áreas asignadas, antes del ingreso
+          de los funcionarios y velar por mantener el orden y aseo en todas las
+          dependencias, atendiendo de manera oportuna los requerimientos para
+          tal fin.
+          <br />Mantener los baños y lavamanos en perfectas condiciones y con la
+          dotación necesaria, para su uso. <br />Responder por los elementos a
+          su cargo e informar sobre cualquier anormalidad o deterioro que ellos
+          presenten y solicitar su reposición o reparación si es del caso.
+          <br />Realizar una limpieza general a todas las instalaciones cada 8
+          días. <br />Prestar el servicio de cafetería a los funcionarios en sus
+          oficinas y atender las reuniones que se lleven a cabo en el área de
+          trabajo. <br />Cumplir de manera efectiva la misión y los objetivos de
+          la dependencia a la que se encuentra adscrito y la ejecución de estas.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_coord_selec" hidden>
+          Recepción de requisición
+          <br />Validar la requisición con coordinación de talento humano
+          <br />Consultar el formato de perfil de cargo con el fin de alinear la
+          requisición. <br />Publicación de la oferta en las fuentes de
+          reclutamiento <br />Perfilamiento y preselección de candidatos
+          <br />Citación y entrevista de candidatos <br />Aplicación y
+          tabulación de pruebas psicotécnicas <br />Referenciarían personal y
+          laboral <br />Selección e ingreso a formación de operativo <br />Para
+          cargos administrativos deberá direccionar los candidatos al área de
+          gestión de talento humano <br />Coordinar posibles segundas o terceras
+          entrevistas con supervisores o gerentes <br />Programar exámenes
+          médicos y orden de contratación con el apoyo de gestión formación
+          <br />Recibir requisición, publicar oferta, seleccionar y programar
+          candidatos para las regionales. <br />Actualizar la base de datos de
+          los candidatos buscados y entrevistados <br />Administración del
+          recurso Sena y uniminuto <br />Coordinar el cumplimiento de las
+          labores del personal a cargo. <br />Cumplir con los indicadores.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_analista_selec" hidden>
+          Recibir las requisiciónes de los diferentes procesos
+          <br />Validar la requisición con coordinación de talento humano
+          <br />Consultar el formato de perfil de cargo con el fin de alinear la
+          requisición. <br />Publicar oferta laboral, en las fuentes de
+          reclutamiento <br />Perfilar y preselecciónar candidatos <br />Citar a
+          entrevista a candidatos <br />Aplicar y tabular pruebas psicotécnicas
+          <br />Referenciacion personal y laboral <br />Realizar selección e
+          ingreso a formación del personal <br />Coordinar posibles segundas o
+          terceras entrevistas con supervisores o gerentes <br />Programar
+          exámenes médicos y orden de contratación con el apoyo de gestión
+          formación <br />Recibir requisicion,publicar oferta, seleccionar y
+          programar candidatos para las regionales. <br />Actualizar la base de
+          datos de los candidatos buscados y entrevistados <br />Administrar del
+          recurso Sena y uniminuto <br />Coordinar el cumplimiento de las
+          labores del personal a cargo. <br />Cumplir con los indicadores.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_aux_selec" hidden>
+          Recibir las requisiciónes de los diferentes procesos
+          <br />Validar la requisición con coordinación de talento humano
+          <br />Consultar el formato de perfil de cargo con el fin de alinear la
+          requisición. <br />Publicar oferta laboral, en las fuentes de
+          reclutamiento <br />Perfilar y preselecciónar candidatos <br />Citar a
+          entrevista a candidatos <br />Aplicar y tabular pruebas psicotécnicas
+          <br />Referenciacion personal y laboral <br />Realizar selección e
+          ingreso a formación del personal <br />Programar exámenes médicos y
+          orden de contratación con el apoyo de gestión formación <br />Recibir
+          requisicion,publicar oferta, seleccionar y programar candidatos para
+          las regionales. <br />Actualizar la base de datos de los candidatos
+          buscados y entrevistados <br />Cumplir con los indicadores.
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_ejec_datos" hidden>
+          Realizar acta de reuniones
+          <br />Realizar seguimiento a los compromisos delegados en las
+          reuniones a los jefes de Operación/Cuenta <br />Presentar informes
+          delegados por parte de la Gerencia BPO <br />Consolidar información
+          enviada por la operación <br />Hacer seguimiento a compromisos de
+          reuniones y tareas <br />Presentar y realizar cuadros de rentabilidad
+          de las campañas <br />Hacer seguimiento de agendas y reuniones de la
+          Gerencia <br />Presentar informes de gastos en tema de incentivos y
+          premios de las campañas <br />Asumir y ejecutar las demás funciones
+          que le sean asignadas por su jefe inmediato.
+        </span>
+        <span name="cargo_nuevo_sop_usuarios" hidden>
+          Recepcionar solicitudes de incidentes aplicativos GNP y Claro
+          <br />Atender, gestionar, direccionar fallas de usuarios <br />Brindar
+          asesoría en la aparición de inconvenientes con los accesos GNP y Claro
+          <br />Realizar seguimiento a todos los requerimientos generados,
+          abiertos, en curso, pendientes, etc <br />Asegurar la verificación de
+          los usuarios entregados por Claro <br />Actualizar la base total de
+          usuarios <br />Confidencialidad absoluta de la información
+          <br />Auditoría periódica de aplicativos asi como verificar
+          reincidencia en incidencias reportadas <br />Mantener formación
+          continua y actualización de procesos y procedimientos herramientas
+          Claro y GNP <br />Asegurar escalamiento de baja de usuarios de todo
+          personal activo retirado asi como personal retirado en formación u
+          laboratorio
+        </span>
+        <span name="cargo_nuevo_anal_bi" hidden>
+          Analizar la información de BBDD de las campañas para obtener el
+          conocimiento real de la ejecución de los procesos.
+          <br />
+          Implementar estrategias que permitan alinear los procesos por
+          segmentos. <br />
+          Identificar la planificación, programación y control sobre la
+          ejecución implementada por las campañas para anticipar riesgos. <br />
+          Realizar seguimiento de los KPI´s para alcanzar el cumplimiento de las
+          metas establecidas. <br />
+          Cumplir con las demás funciones que le asigne su jefe inmediato.
+        </span>
+        <span name="cargo_nuevo_anal_inf_fin" hidden>
+          Analizar la información suministrada de las areas para contribuir al
+          analisis de los procesos ejecutados
+          <br />
+          Apoyar a la construccion de estrategias para optimizar los procesos
+          <br />
+          Apoyar en la Identificación y alerta del sobredimensionamiento de las
+          campañas <br />
+          Alertar sobre las posibles desviaciones que ocasionen perdidas
+          operacionales. <br />
+          Cruzar BBDD para generar los reportes solicitados. <br />
+          Apoyar en el seguimiento, control y ejecución de ingresos, salidas,
+          costos e inventarios para garantizar la optimización de los recursos.
+          <br />
+          Realizar informes en Excel para identificar el Head Count de la
+          compañía. <br />
+          Cumplir con las demás funciones que le asigne su jefe inmediato.
+        </span>
+        <span name="cargo_nuevo_jefe_procesos" hidden>
+          Certificar a la compañía en todos los sistemas de Gestión que le
+          encomiendo su jefe directo.
+          <br />
+          Mantener los sistemas de gestión y obtener las recertificaciones en
+          los tiempos establecidos. <br />
+          Monitorear el cumplimiento de los establecidos en los dispuesto en las
+          diferentes políticas, procesos, procedimientos, instructivos, etc
+          solucionando con el líder de cada proceso las posibles desviaciones.
+          <br />
+          Diseñar e implementar todos los sistemas de gestión que le encomiendo
+          su jefe inmediato. <br />
+          Presentar el desempeño y necesidades de mejora del Sistema de Gestión
+          de Calidad a la Gerencia General. <br />
+          Gestionar todos los recursos necesarios para la implementación y
+          mantenimiento de los Sistema de Gestión. <br />
+          Coordinar todas las actividades necesarias para la implementación y
+          mantenimiento de los Sistema de Gestión. <br />
+          Coordinar toda la gestión Administrativa y de compras de GNP. <br />
+          Coordinar toda la gestión Administrativa y operativas del Archivo
+          central. <br />
+          Cumplir con las demás funciones que le asigne su jefe inmediato.
+        </span>
+        <span name="cargo_nuevo_gest_oper" hidden>
+          Escucha, analisis y seguimiento de todas las Pqrs dirigidas a GNP
+          (Hogar,Móvil y Tecnología)
+          <br />Seguimiento, retroalimentación y mejoras en la operación.
+          <br />Refuerzos comerciales y de manejo de llamada para evitar pqrs.
+          <br />Elaboración de informes de Pqrs. <br />Resolución de pqrs
+          Bogotá-Cali. <br />Actividades comerciales y motivacionales enfocadas
+          al mejoramiento de resultados <br />Tareas administrativas de calidad.
+          <br />Habilidades interpersonasles. <br />Indicadores comerciales y de
+          pqrs. <br />Creación de informes, Planificación de Monitoreos. Auditar
+          y supervisar todas las ventas y aleatoriamente las no ventas.
+        </span>
+        <span name="cargo_nuevo_aux_serv_client" hidden>
+          Brindar atención al cliente interno y externo que tenga interés de
+          relacionarse con la empresa a través de los medios autorizados por la
+          compañía.
+          <br />Realizar seguimiento a las áreas involucradas en resolver la
+          solicitud originada por el cliente interno y externo <br />Garantizar
+          la respuesta oportuna a través de los medios establecidos por la
+          compañía para generar satisfacción a los clientes. <br />Brindar
+          soporte a la administración de personal a través de las solicitudes
+          que generen los empleados para brindar un servicio oportuno
+          <br />Apoyar a las actividades de bienestar que se puedan generar en
+          las diferentes sedes de la compañía en la ciudad de Bogotá con el fin
+          de asegurar la participación de los colaboradores. <br />Ejecutar las
+          diferentes actividades que sean ejecutadas por su jefe inmediato.
+        </span>
+        <span name="cargo_nuevo_prod_auv" hidden>
+          Pre, pro y post producción de piezas de video.
+          <br />Edición de fotografías <br />Diseño de piezas gráficas animadas
+          (2D y 3D). <br />Manejo de programas de edición de fotografía, edición
+          de video, <br />Producción del contenido audiovisual de la empresa
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+        <span name="cargo_nuevo_anal_cont" hidden>
+          Realizar ingreso de personal a la plataforma inerna del cliente.
+          <br />Recibir,revisar y clasificar la documentacion entregada por los
+          candidatos para iniciar proceso de contratacion <br />Recepcion y
+          revicion de formatos propios en el proceso de contratacion
+          <br />Ingresar al software de la empresa el personal contratado a
+          nivel nacional <br />Elaboracion y entrega de carnets a todo el
+          personal contratado. <br />Gestionar la afiliación y el retiro para
+          EPS, ARL, AFP y CAJA de compensacion etc. <br />Garantizar la
+          afilaicion de beneficiarios a EPS y caja de conpensacion
+          <br />Gestionar y realizar seguimiento a los requerimientos de
+          traslados de EPS, solicitados por la operación. <br />Gestionar,
+          controlar y realizar seguimiento a procesos de desvinculacion.
+          <br />Realizar entrega de las hojas de vida al area "Gestion
+          documental" por medio del FUID. <br />Mantener el puesto de trabajo en
+          respectivo orden y velar por la confidencialidad de los documentos
+          <br />Registrar personal en torniquete <br />Eliminar personal
+          retirado en torniquete <br />Registro personal campañas CLARO en
+          plataforma SUCCESS FACTORS <br />Asumir y ejecutar las demás funciones
+          que le sean asignadas por el jefe inmediato en cumplimiento de la
+          misión del cargo.
+        </span>
+        <span name="cargo_nuevo_jefe_formacion" hidden>
+          Garantizar el cumplimiento de indicadores del area
+          <br />Presentar informes <br />Diseñar evaluaciones de procesos y
+          certificaciones <br />Satisfacción del cliente interno y externo sobre
+          las capacitaciones. <br />Elaborar nómina de asesores en etapa teórica
+          y practica <br />Realizar solicitud y seguimiento de diademas y porta
+          carnet <br />Garantizar que se realice seguimiento de los indicadores
+          comerciales de los asesores en etapa práctica dentro de la operación
+          <br />Asumir y ejecutar las demás funciones que le sean asignadas en
+          cumplimiento de la misión del cargo.
+        </span>
+      </li>
+    </ul>
   </li>
-  <span name="concepto_2_no"></span>
-  <li name="concepto_2_salario">
+  <span name="concepto_salario_n"></span>
+  <li name="concepto_salario_s">
     <b>EL EMPLEADOR</b> pagara al trabajador un incremento sobre su salario que
     pasara de ser de <span name="salario_viejo">__________________</span> m/cte
     a <span name="salario_nuevo">__________________</span> m/cte, por la
     ejecución de su labor, dentro de este pago se encuentran incluidos las
     remuneraciones por los descansos dominicales y festivos.
   </li>
-  <li name="concepto_2_bono" hidden>
+  <span name="concepto_bono_n"></span>
+  <li name="concepto_bono_s" hidden>
     <b>EL EMPLEADOR</b> pagara al trabajador un bono no prestacional por
     concepto de bienestar personal por un monto
     <span name="bono_prestacional">__________________</span> distribuidos en dos
