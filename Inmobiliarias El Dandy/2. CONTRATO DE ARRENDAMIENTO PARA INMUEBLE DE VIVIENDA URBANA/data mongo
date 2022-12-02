@@ -80,7 +80,7 @@
                     v: 'ce'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del arrendatario',
@@ -225,7 +225,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del segundo arrendatario',
@@ -382,7 +382,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del deudor solidario',
@@ -565,7 +565,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del segundo deudor solidario',
@@ -784,7 +784,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del tercer deudor solidario',
@@ -1039,7 +1039,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del cuarto deudor solidario',
@@ -1582,7 +1582,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
         },
         {
             description: 'Digite el número de whatsapp del deudor solidario',
@@ -1594,7 +1594,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del segundo deudor solidario',
@@ -1606,7 +1606,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
         },
         {
             description: 'Digite el número de whatsapp del segundo deudor solidario',
@@ -1622,7 +1622,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del tercer deudor solidario',
@@ -1642,7 +1642,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
         },
         {
             description: 'Digite el número de whatsapp del tercer deudor solidario',
@@ -1662,7 +1662,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del cuarto deudor solidario',
@@ -1686,7 +1686,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
         },
         {
             description: 'Digite el número de whatsapp del cuarto deudor solidario',
@@ -1710,7 +1710,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: '¿Desea agregar una cláusula adicional al presente contrato?',
@@ -1980,19 +1980,19 @@
             description: 'Digite el número de teléfono del arrendatario',
             help: 'telefono',
             name: 'telefono_arrendatario',
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del arrendatario',
             help: 'correo',
             name: 'correo_arrendatario',
-            type: 'text'
+            type: 'email'
         },
         {
             description: 'Digite el número de whatsapp del arrendatario',
             help: 'celular',
             name: 'celular_arrendatario',
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite la dirección del segundo arrendatario',
@@ -2028,7 +2028,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del segundo arrendatario',
@@ -2040,7 +2040,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
         },
         {
             description: 'Digite el número de whatsapp del segundo arrendatario',
@@ -2052,7 +2052,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite la dirección del deudor solidario',
@@ -2088,7 +2088,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite la dirección del segundo deudor solidario',
@@ -2136,7 +2136,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite la dirección del tercer deudor solidario',
@@ -2196,7 +2196,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         },
         {
             description: 'Digite la dirección del cuarto deudor solidario',
@@ -2268,7 +2268,7 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'phone'
         }
     ],
     preFill: [
@@ -2279,6 +2279,10 @@
         {
             name: 'cedula_arrendador',
             value: '8.909.080.941'
+        },
+        {
+            name: 'tel_arrendador',
+            value: '+573004479100'
         },
         {
             name: 'correo_arrendador',
@@ -2347,42 +2351,49 @@
             name: 'nombre_arrendador',
             identification: 'cedula_arrendador',
             email: 'correo_arrendador',
+            phone:'tel_arrendador',
             type: 'arrendador'
         },
         {
             name: 'nombre_arrendatario',
             identification: 'cedula_arrendatario|cedulae_arrendatario|pasaporte_arrendatario|pep_arrendatario|pasaporte_arrendatario_p|nit_arrendatario',
             email: 'correo_arrendatario',
+            phone:'celular_arrendatario',
             type: 'arrendatario'
         },
         {
             name: 'nombre_arrendatario_2',
             identification: 'cedula_arrendatario_2|cedulae_arrendatario_2|pasaporte_arrendatario_2|pep_arrendatario_2|pasaporte_arrendatario_2_p|nit_arrendatario_2',
             email: 'correo_arrendatario_2',
+            phone:'celular_arrendatario_2',
             type: 'arrendatario_2'
         },
         {
             name: 'nombre_deudor_soli_1',
             identification: 'cedula_deudor_soli_1|cedulae_deudor_soli_1|pasaporte_deudor_soli_1|pep_deudor_soli_1|pasaporte_deudor_soli_1_p|nit_deudor_soli_1',
             email: 'correo_deudor_soli_1',
+            phone:'celular_deudor_soli_1',
             type: 'deudor_soli_1'
         },
         {
             name: 'nombre_deudor_soli_2',
             identification: 'cedula_deudor_soli_2|cedulae_deudor_soli_2|pasaporte_deudor_soli_2|pep_deudor_soli_2|pasaporte_deudor_soli_2_p|nit_deudor_soli_2',
             email: 'correo_deudor_soli_2',
+            phone:'celular_deudor_soli_2',
             type: 'deudor_soli_2'
         },
         {
             name: 'nombre_deudor_soli_3',
             identification: 'cedula_deudor_soli_3|cedulae_deudor_soli_3|pasaporte_deudor_soli_3|pep_deudor_soli_3|pasaporte_deudor_soli_3_p|nit_deudor_soli_3',
             email: 'correo_deudor_soli_3',
+            phone:'celular_deudor_soli_3',
             type: 'deudor_soli_3'
         },
         {
             name: 'nombre_deudor_soli_4',
             identification: 'cedula_deudor_soli_4|cedulae_deudor_soli_4|pasaporte_deudor_soli_4|pep_deudor_soli_4|pasaporte_deudor_soli_4_p|nit_deudor_soli_4',
             email: 'correo_deudor_soli_4',
+            phone:'celular_deudor_soli_4',
             type: 'deudor_soli_4'
         }
     ],
@@ -2408,7 +2419,7 @@
         pep: 'Permiso especial de permanencia',
         zona: 'Sur'
     },
-    build: 45,
+    build: 50,
     createdAt: ISODate('2021-09-28T19:07:38.268Z'),
     updatedAt: ISODate('2021-09-28T19:07:38.268Z')
 }

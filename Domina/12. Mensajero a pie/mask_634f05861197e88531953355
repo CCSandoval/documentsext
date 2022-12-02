@@ -1481,3 +1481,208 @@
     </b>
   </p>
 </div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <table class="table_class">
+    <tr>
+      <th>
+        <img
+          src=" data:image/jpeg;base64,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"
+        />
+      </th>
+      <th>ANEXO CONTRATO MENSAJEROS</th>
+      <td>
+        <b>Código:</b> CL-JD-16 <br />
+        <b>Versión:</b> 0
+      </td>
+    </tr>
+  </table>
+
+  <p style="text-align: center">
+    <b> ANEXO AL CONTRATO DE TRABAJO </b>
+  </p>
+
+  <p>
+    Entre los suscritos a saber de una parte, la sociedad comercial Domina
+    Entrega Total S.A.S. identificada con Nit. 800.088.155-3, con domicilio
+    principal en la ciudad de Medellín, representada legalmente por el señor
+    Juan Pablo Chavarriaga Hoyos, mayor de edad e identificado con cédula de
+    ciudadanía número 1.039.446.361, quien para efectos de este documento se
+    denominará EL EMPLEADOR y por otra parte
+    <span name="nombre_trabajador">___________</span>, identificado(a) con
+    <span name="tipo_id_empleado_cc">
+      cédula de ciudadanía número
+      <span name="cc_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_ce" hidden>
+      cédula de extranjería número
+      <span name="ce_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_ppt" hidden>
+      permiso de protección temporal número
+      <span name="ppt_empleado">___________</span>
+    </span>
+    <span name="tipo_id_empleado_pep" hidden>
+      permiso especial de permanencia número
+      <span name="pep_empleado">___________</span> </span
+    >, quien para efectos de este documento de denominará EL TRABAJADOR, se ha
+    acordado celebrar entre las partes el siguiente anexo, que se hace constar
+    en:
+  </p>
+
+  <p style="text-align: center">
+    <b>CONSIDERACIONES:</b>
+  </p>
+
+  <p>
+    <b>Primera:</b> Que entre las partes se suscribió un contrato de trabajo
+    mediante el cual el trabajador debe realizar labores de mensajería, en
+    desarrollo de un contrato de prestación de servicios de mensajería expresa
+    y/o transporte de mercancías, para lo cual, el trabajador es responsable de
+    que la mercancía u objetos sean entregados a su destinatario final.
+  </p>
+  <p>
+    <b>Segunda:</b> Que EL TRABAJADOR en el desempeño de su cargo debe realizar
+    las funciones de distribución de objetos postales, paquetes y/o productos
+    financieros, los cuales le son asignados quedando así bajo su custodia, de
+    igual manera, debe recaudar dinero en efectivo debido a que algunos clientes
+    hacen pago contra entrega de los objetos, paquetes y/ cualquier producto
+    gestionado.
+  </p>
+
+  <p>
+    <b>Tercera:</b> El trabajador está obligado a entregar dinero en efectivo
+    que reciba producto de su oficio en la caja o en las oficinas de la
+    administración del empleador, o el sitio señalado para ello por su
+    empleador.
+  </p>
+
+  <p>
+    Como consecuencia de lo anterior, las partes actuando de manera libre y
+    voluntaria, en uso de sus facultades legales, y conociendo las consecuencias
+    de la celebración del presente documento, han acordado lo siguiente:
+  </p>
+
+  <p style="text-align: center">
+    <b>CLÁUSULAS:</b>
+  </p>
+
+  <p>
+    <b>Primera.</b> EL TRABAJADOR se obliga a obrar con diligencia y cuidado y
+    responder hasta la culpa leve por la custodia de los bienes que se indicaron
+    en las consideraciones de este anexo.
+  </p>
+
+  <p>
+    Si como consecuencia de la violación de la obligación anterior se produce un
+    detrimento económico en el patrimonio del empleador, el trabajador asumirá
+    la responsabilidad pecuniaria producto de dicha conducta, en especial, sin
+    que sean las únicas por los siguientes hechos:
+  </p>
+
+  <ol>
+    <li>
+      Sanciones económicas impuestas o traslados de responsabilidad a Domina
+      Entrega Total
+    </li>
+    S.A.S. y/o las indemnizaciones que deba reconocer a sus clientes y/o
+    terceras personas, en virtud, y como consecuencia de no realizarse por parte
+    de EL TRABAJADOR la labor de acuerdo al procedimiento o instrucciones de
+    distribución de cada objeto, paquete y/o producto financiero.
+    <li>
+      Extravío, pérdida total, deterioro o expoliación de los objetos postales o
+      paquetes que le fueron asignados a EL TRABAJADOR para su custodia y
+      distribución ocasionados por su culpa, negligencia, omisión o mala
+      práctica.
+    </li>
+    <li>
+      Por las diferencias que pudieren llegar a presentarse en el proceso de
+      conciliación del dinero recaudado atribuibles a su culpa, negligencia,
+      omisión o mala práctica en el cumplimiento de la función y el
+      procedimiento de recaudo de las sumas de dinero de los envíos con método
+      de pago contra entrega.
+    </li>
+  </ol>
+
+  <p>
+    <b>Segunda.</b> EL TRABAJADOR en virtud de lo señalado en la cláusula
+    anterior, se obliga a otorgar título valor a favor de EL EMPLEADOR, para
+    proceder con el pago de las afectaciones causadas a Domina Entrega Total
+    S.A.S. y/o a terceros como consecuencia del incumplimiento de las funciones
+    que le fueron designadas.
+  </p>
+
+  <p>
+    <b>Tercera.</b> EL TRABAJADOR autoriza a EL EMPLEADOR para que, de su
+    salario mensual, bonificaciones, auxilios se deduzcan las sumas que deba
+    reconocer como consecuencia del incumplimiento o la violación de las
+    obligaciones antes enunciadas. Así mismo, en el evento que el contrato de
+    trabajo termine, cualquiera sea la razón, EL TRABAJADOR autoriza de manera
+    expresa a Domina Entrega Total S.A.S. para que de sus salarios,
+    bonificaciones, auxilios, valor de la liquidación final de prestaciones
+    sociales legales (cesantías, intereses a las cesantías, prima legal de
+    servicios) y extralegales, vacaciones, indemnizaciones de cualquier
+    naturaleza, y en general cualquier ingreso u otra acreencia laboral derivada
+    de la relación de trabajo, le sea deducido el saldo insoluto de la
+    obligación antes indicada.
+  </p>
+
+  <p>
+    <b>Cuarta:</b> Las partes acuerdan que el presente documento hará parte
+    integral del contrato de trabajo.
+  </p>
+
+  <p>
+    <b>Quinta:</b> Las demás cláusulas del contrato de trabajo continuaran
+    vigentes.
+  </p>
+
+  <p>
+    Para constancia se lee y se firma en la ciudad de
+    <span name="ciudad_firma">___________</span>.
+  </p>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <p>
+    <b>
+      _________________________________ <br />
+      Juan Pablo Chavarriaga Hoyos
+      <br />
+      Empleador
+    </b>
+  </p>
+
+  <br />
+  <br />
+  <br />
+
+  <p>
+    <b>
+      _________________________________ <br />
+      El trabajador
+      <br />
+      <span name="tipo_id_empleado_cc">
+        C.C. No.
+        <span name="cc_empleado">___________</span>
+      </span>
+      <span name="tipo_id_empleado_ce" hidden>
+        C.E. No.
+        <span name="ce_empleado">___________</span>
+      </span>
+      <span name="tipo_id_empleado_ppt" hidden>
+        PPT. No.
+        <span name="ppt_empleado">___________</span>
+      </span>
+      <span name="tipo_id_empleado_pep" hidden>
+        PEP. No.
+        <span name="pep_empleado">___________</span>
+      </span>
+    </b>
+  </p>
+</div>
