@@ -42,7 +42,7 @@
                 {
                     name: 'PPT',
                     value: 'ppt'
-                },
+                }
             ],
             type: 'clausula',
             value: 'cc'
@@ -165,6 +165,11 @@
             description: 'Digite el nombre de la linea',
             help: 'nombre_linea',
             name: 'nombre_linea',
+            type: 'text'
+        },
+        {
+            description: 'Contrato',
+            name: 'contrato',
             type: 'text'
         },
         {
@@ -301,7 +306,7 @@
         correo: 'Ejemplo: correo@solucionesbpo.com.co',
         nombre_linea: 'Ejemplo: Big Pass'
     },
-    build: 12,
+    build: 13,
     createdAt: ISODate('2021-09-28T15:32:41.370Z'),
     updatedAt: ISODate('2022-03-09T17:36:13.091Z')
 }

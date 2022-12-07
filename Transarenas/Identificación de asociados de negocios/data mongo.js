@@ -1,0 +1,975 @@
+{
+    _id: ObjectId('638e79db02631493e07a2f3e'),
+    config: [
+        {
+            name: 'nombre_razon_social',
+            type: 'name',
+            description: 'Ingrese el nombre o razón social del cliente'
+        },
+        {
+            name: 'tipo_id',
+            type: 'clausula',
+            description: 'Seleccione el tipo de identificación del cliente',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'NIT',
+                    value: 'nit'
+                }
+            ]
+        },
+        {
+            name: 'lugar_exp_id',
+            type: 'name',
+            description: 'Ingrese el lugar de expedición de la identificación del cliente'
+        },
+        {
+            name: 'num_id',
+            type: 'text',
+            description: 'Ingrese el número de identificación del cliente'
+        },
+        {
+            name: 'nacionalidad',
+            type: 'text',
+            description: 'Ingrese la nacionalidad del cliente'
+        },
+        {
+            name: 'domicilio',
+            type: 'text',
+            description: 'Ingrese el domicilio de residencia del cliente'
+        },
+        {
+            name: 'ciudad',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia del cliente'
+        },
+        {
+            name: 'telefono',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono del cliente'
+        },
+        {
+            name: 'pais',
+            type: 'text',
+            description: 'Ingrese el país de residencia del cliente'
+        },
+        {
+            name: 'email_facturacion',
+            type: 'email',
+            description: 'Ingrese el email de facturación electrónica'
+        },
+        {
+            name: 'email_reporte',
+            type: 'email',
+            description: 'Ingrese el email de reportes de seguimiento'
+        },
+        {
+            name: 'tipo_empresa',
+            type: 'clausula',
+            description: 'Seleccione el tipo de empresa del cliente',
+            value: 'pub',
+            options: [
+                {
+                    name: 'Pública',
+                    value: 'pub'
+                },
+                {
+                    name: 'Privada',
+                    value: 'priv'
+                },
+                {
+                    name: 'Mixta',
+                    value: 'mix'
+                },
+                {
+                    name: 'Extranjera',
+                    value: 'ext'
+                }
+            ]
+        },
+        {
+            name: 'cargas_magaya',
+            type: 'text',
+            description: 'Ingrese las cargas en magaya del cliente'
+        },
+        {
+            name: 'trans_mon_extr',
+            type: 'clausula',
+            description: '¿Realiza transacciones en moneda extranjera?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'trans_mon_extr_cual',
+            type: 'clausula',
+            description: '¿Cuál de las siguientes transacciones en moneda extranjera realiza?',
+            value: 'imp',
+            options: [
+                {
+                    name: 'Importaciones',
+                    value: 'imp'
+                },
+                {
+                    name: 'Exportaciones',
+                    value: 'exp'
+                },
+                {
+                    name: 'Leasing',
+                    value: 'leas'
+                },
+                {
+                    name: 'Pagos',
+                    value: 'pago'
+                },
+                {
+                    name: 'Inversiones',
+                    value: 'inv'
+                },
+                {
+                    name: 'Transferencias',
+                    value: 'trans'
+                },
+                {
+                    name: 'Prestamos',
+                    value: 'prest'
+                },
+                {
+                    name: 'Otros',
+                    value: 'otros'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'trans_mon_extr',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'trans_mon_extr_otro_cual',
+            type: 'text',
+            description: 'Ingrese las otras transacciones en moneda extranjera que realiza',
+            prereq: [
+                {
+                    k: 'trans_mon_extr',
+                    v: 's'
+                },
+                {
+                    k: 'trans_mon_extr_cual',
+                    v: 'otros'
+                }
+            ]
+        },
+        {
+            name: 'maneja_publicos',
+            type: 'clausula',
+            description: '¿Maneja recursos públicos?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'poder_publico',
+            type: 'clausula',
+            description: '¿Ejerce algún grado de poder público?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'reconocimiento',
+            type: 'clausula',
+            description: '¿Goza de reconocimiento público general?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'obligaciones_extranjeras',
+            type: 'clausula',
+            description: '¿Es sujeto de obligaciones tributarias en otro país diferente a Colombia?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'especificacion',
+            type: 'text',
+            description: 'Si alguna de las preguntas anteriores es afirmativa, especifique'
+        },
+        {
+            name: 'nombres_razon_accion_1',
+            type: 'name',
+            description: 'Ingrese el nombre completo o razón social del primer accionista/socio/asociado'
+        },
+        {
+            name: 'nacionalidad_accion_1',
+            type: 'name',
+            description: 'Ingrese la nacionalidad del primer accionista/socio/asociado'
+        },
+        {
+            name: 'tipo_id_accion_1',
+            type: 'clausula',
+            description: 'Seleccione el tipo de identificación del primer accionista/socio/asociado',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'NIT',
+                    value: 'nit'
+                }
+            ]
+        },
+        {
+            name: 'num_id_accion_1',
+            type: 'text',
+            description: 'Ingrese el número de identificación del primer accionista/socio/asociado'
+        },
+        {
+            name: 'dir_accion_1',
+            type: 'text',
+            description: 'Ingrese la dirección del primer accionista/socio/asociado'
+        },
+        {
+            name: 'participación_accion_1',
+            type: 'number',
+            description: 'Ingrese el porcentaje de participación del primer accionista/socio/asociado'
+        },
+        {
+            name: 'nombres_razon_accion_2',
+            type: 'name',
+            description: 'Ingrese el nombre completo o razón social del segundo accionista/socio/asociado'
+        },
+        {
+            name: 'nacionalidad_accion_2',
+            type: 'name',
+            description: 'Ingrese la nacionalidad del segundo accionista/socio/asociado'
+        },
+        {
+            name: 'tipo_id_accion_2',
+            type: 'clausula',
+            description: 'Seleccione el tipo de identificación del segundo accionista/socio/asociado',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'NIT',
+                    value: 'nit'
+                }
+            ]
+        },
+        {
+            name: 'num_id_accion_2',
+            type: 'text',
+            description: 'Ingrese el número de identificación del segundo accionista/socio/asociado'
+        },
+        {
+            name: 'dir_accion_2',
+            type: 'text',
+            description: 'Ingrese la dirección del segundo accionista/socio/asociado'
+        },
+        {
+            name: 'participación_accion_2',
+            type: 'number',
+            description: 'Ingrese el porcentaje de participación del segundo accionista/socio/asociado'
+        },
+        {
+            name: 'nombres_razon_accion_3',
+            type: 'name',
+            description: 'Ingrese el nombre completo o razón social del tercer accionista/socio/asociado'
+        },
+        {
+            name: 'nacionalidad_accion_3',
+            type: 'name',
+            description: 'Ingrese la nacionalidad del tercer accionista/socio/asociado'
+        },
+        {
+            name: 'tipo_id_accion_3',
+            type: 'clausula',
+            description: 'Seleccione el tipo de identificación del tercer accionista/socio/asociado',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'NIT',
+                    value: 'nit'
+                }
+            ]
+        },
+        {
+            name: 'num_id_accion_3',
+            type: 'text',
+            description: 'Ingrese el número de identificación del tercer accionista/socio/asociado'
+        },
+        {
+            name: 'dir_accion_3',
+            type: 'text',
+            description: 'Ingrese la dirección del tercer accionista/socio/asociado'
+        },
+        {
+            name: 'participación_accion_3',
+            type: 'number',
+            description: 'Ingrese el porcentaje de participación del tercer accionista/socio/asociado'
+        },
+        {
+            name: 'nombres_razon_accion_4',
+            type: 'name',
+            description: 'Ingrese el nombre completo o razón social del cuarto accionista/socio/asociado'
+        },
+        {
+            name: 'nacionalidad_accion_4',
+            type: 'name',
+            description: 'Ingrese la nacionalidad del cuarto accionista/socio/asociado'
+        },
+        {
+            name: 'tipo_id_accion_4',
+            type: 'clausula',
+            description: 'Seleccione el tipo de identificación del cuarto accionista/socio/asociado',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                },
+                {
+                    name: 'NIT',
+                    value: 'nit'
+                }
+            ]
+        },
+        {
+            name: 'num_id_accion_4',
+            type: 'text',
+            description: 'Ingrese el número de identificación del cuarto accionista/socio/asociado'
+        },
+        {
+            name: 'dir_accion_4',
+            type: 'text',
+            description: 'Ingrese la dirección del cuarto accionista/socio/asociado'
+        },
+        {
+            name: 'participación_accion_4',
+            type: 'number',
+            description: 'Ingrese el porcentaje de participación del cuarto accionista/socio/asociado'
+        },
+        {
+            name: 'nombre_rep_1',
+            type: 'name',
+            description: 'Ingrese el nombre completo del primer representante legal'
+        },
+        {
+            name: 'id_rep_1',
+            type: 'text',
+            description: 'Ingrese el número de identificación del primer representante legal'
+        },
+        {
+            name: 'dir_rep_1',
+            type: 'text',
+            description: 'Ingrese la dirección del primer representante legal'
+        },
+        {
+            name: 'ciudad_rep_1',
+            type: 'number',
+            description: 'Ingrese la ciudad del primer representante legal'
+        },
+        {
+            name: 'nombre_rep_2',
+            type: 'name',
+            description: 'Ingrese el nombre completo del segundo representante legal'
+        },
+        {
+            name: 'id_rep_2',
+            type: 'text',
+            description: 'Ingrese el número de identificación del segundo representante legal'
+        },
+        {
+            name: 'dir_rep_2',
+            type: 'text',
+            description: 'Ingrese la dirección del segundo representante legal'
+        },
+        {
+            name: 'ciudad_rep_2',
+            type: 'text',
+            description: 'Ingrese la ciudad del segundo representante legal'
+        },
+        {
+            name: 'capital_social_registrado',
+            type: 'text',
+            description: 'Ingrese el capital social registrado'
+        },
+        {
+            name: 'desc_act_economica',
+            type: 'text',
+            description: 'Ingrese la descripción de la actividad económica'
+        },
+        {
+            name: 'regimen_iva',
+            type: 'clausula',
+            description: 'Seleccione el regimen de IVA',
+            value: 'comun',
+            options: [
+                {
+                    name: 'Común',
+                    value: 'comun'
+                },
+                {
+                    name: 'Simplificado',
+                    value: 'simp'
+                }
+            ]
+        },
+        {
+            name: 'actividad_ica',
+            type: 'clausula',
+            description: 'Seleccione la actividad de ICA',
+            value: 'ciiu',
+            options: [
+                {
+                    name: 'CIIU',
+                    value: 'ciiu'
+                },
+                {
+                    name: 'Tarifa',
+                    value: 'tar'
+                }
+            ]
+        },
+        {
+            name: 'gran_contribuyente',
+            type: 'clausula',
+            description: 'Seleccione si es gran contribuyente',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'autorretendor',
+            type: 'clausula',
+            description: 'Seleccione si es autorretendor',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombres_personal_1',
+            type: 'name',
+            description: 'Ingrese el nombre completo del primer miembro del personal'
+        },
+        {
+            name: 'cargo_personal_1',
+            type: 'name',
+            description: 'Ingrese el cargo del primer miembro del personal'
+        },
+        {
+            name: 'telefono_personal_1',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono del primer miembro del personal'
+        },
+        {
+            name: 'direccion_personal_1',
+            type: 'text',
+            description: 'Ingrese la dirección del primer miembro del personal'
+        },
+        {
+            name: 'ciudad_personal_1',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia del primer miembro del personal'
+        },
+        {
+            name: 'nombres_personal_2',
+            type: 'name',
+            description: 'Ingrese el nombre completo del segundo miembro del personal'
+        },
+        {
+            name: 'cargo_personal_2',
+            type: 'name',
+            description: 'Ingrese el cargo del segundo miembro del personal'
+        },
+        {
+            name: 'telefono_personal_2',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono del segundo miembro del personal'
+        },
+        {
+            name: 'direccion_personal_2',
+            type: 'text',
+            description: 'Ingrese la dirección del segundo miembro del personal'
+        },
+        {
+            name: 'ciudad_personal_2',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia del segundo miembro del personal'
+        },
+        {
+            name: 'nombres_personal_3',
+            type: 'name',
+            description: 'Ingrese el nombre completo del tercer miembro del personal'
+        },
+        {
+            name: 'cargo_personal_3',
+            type: 'name',
+            description: 'Ingrese el cargo del tercer miembro del personal'
+        },
+        {
+            name: 'telefono_personal_3',
+            type: 'phone',
+            description: 'Ingrese el número de teléfono del tercer miembro del personal'
+        },
+        {
+            name: 'direccion_personal_3',
+            type: 'text',
+            description: 'Ingrese la dirección del tercer miembro del personal'
+        },
+        {
+            name: 'ciudad_personal_3',
+            type: 'text',
+            description: 'Ingrese la ciudad de residencia del tercer miembro del personal'
+        },
+        {
+            name: 'origen_recursos',
+            type: 'text',
+            description: 'Ingrese el origen de los recursos con los que se realiza la operación de comercio exterior'
+        },
+        {
+            name: 'forma_pago_operaciones_exterior',
+            type: 'text',
+            description: 'Ingrese la forma de pago de las operaciones de comercio exterior / entidad emisora o pagadora'
+        },
+        {
+            name: 'ing_oper_mes',
+            type: 'currency',
+            description: 'Ingrese los ingresos operacionales mensuales'
+        },
+        {
+            name: 'activos_totales',
+            type: 'currency',
+            description: 'Ingrese los activos totales'
+        },
+        {
+            name: 'ing_no_oper_mes',
+            type: 'currency',
+            description: 'Ingrese los ingresos no operacionales mensuales'
+        },
+        {
+            name: 'pasivos_totales',
+            type: 'currency',
+            description: 'Ingrese los pasivos totales'
+        },
+        {
+            name: 'egresos_oper_mes',
+            type: 'currency',
+            description: 'Ingrese los egresos operacionales mensuales'
+        },
+        {
+            name: 'patrimonio',
+            type: 'currency',
+            description: 'Ingrese el patrimonio'
+        },
+        {
+            name: 'egresos_no_oper_mes',
+            type: 'currency',
+            description: 'Ingrese los egresos no operacionales mensuales'
+        },
+        {
+            name: 'concepto_ingresos_no_oper',
+            type: 'text',
+            description: 'Ingrese el concepto de los ingresos no operacionales mensuales'
+        },
+        {
+            name: 'banco_1',
+            type: 'name',
+            description: 'Ingrese el nombre del primer banco'
+        },
+        {
+            name: 'sucursal_1',
+            type: 'text',
+            description: 'Ingrese la sucursal del primer banco'
+        },
+        {
+            name: 'no_cuenta_1',
+            type: 'text',
+            description: 'Ingrese el primer número de cuenta'
+        },
+        {
+            name: 'tipo_cuenta_1',
+            type: 'text',
+            description: 'Ingrese el primer tipo de cuenta'
+        },
+        {
+            name: 'telefono_financ_1',
+            type: 'phone',
+            description: 'Ingrese el primer número telefónico'
+        },
+        {
+            name: 'contacto_financ_1',
+            type: 'text',
+            description: 'Ingrese el primer contacto financiero'
+        },
+        {
+            name: 'banco_2',
+            type: 'name',
+            description: 'Ingrese el nombre del segundo banco'
+        },
+        {
+            name: 'sucursal_2',
+            type: 'text',
+            description: 'Ingrese la sucursal del segundo banco'
+        },
+        {
+            name: 'no_cuenta_2',
+            type: 'text',
+            description: 'Ingrese el segundo número de cuenta'
+        },
+        {
+            name: 'tipo_cuenta_2',
+            type: 'text',
+            description: 'Ingrese el segundo tipo de cuenta'
+        },
+        {
+            name: 'telefono_financ_2',
+            type: 'phone',
+            description: 'Ingrese el segundo número telefónico'
+        },
+        {
+            name: 'contacto_financ_2',
+            type: 'text',
+            description: 'Ingrese el segundo contacto financiero'
+        },
+        {
+            name: 'ref_empresa_1',
+            type: 'text',
+            description: 'Ingrese la empresa de la primer referencia comercial'
+        },
+        {
+            name: 'ref_contacto_1',
+            type: 'text',
+            description: 'Ingrese el contacto de la primer referencia comercial'
+        },
+        {
+            name: 'ref_tel_1',
+            type: 'phone',
+            description: 'Ingrese el número telefónico de la primer referencia comercial'
+        },
+        {
+            name: 'ref_dir_1',
+            type: 'text',
+            description: 'Ingrese la dirección de la primer referencia comercial'
+        },
+        {
+            name: 'ref_ciudad_1',
+            type: 'text',
+            description: 'Ingrese la ciudad de la primer referencia comercial'
+        },
+        {
+            name: 'ref_empresa_2',
+            type: 'text',
+            description: 'Ingrese la empresa de la segunda referencia comercial'
+        },
+        {
+            name: 'ref_contacto_2',
+            type: 'text',
+            description: 'Ingrese el contacto de la segunda referencia comercial'
+        },
+        {
+            name: 'ref_tel_2',
+            type: 'phone',
+            description: 'Ingrese el número telefónico de la segunda referencia comercial'
+        },
+        {
+            name: 'ref_dir_2',
+            type: 'text',
+            description: 'Ingrese la dirección de la segunda referencia comercial'
+        },
+        {
+            name: 'ref_ciudad_2',
+            type: 'text',
+            description: 'Ingrese la ciudad de la segunda referencia comercial'
+        },
+        {
+            name: 'certificaciones',
+            type: 'clausula',
+            description: 'Seleccione la certificación que posee',
+            value: 'basc',
+            options: [
+                {
+                    name: 'BASC',
+                    value: 'basc'
+                },
+                {
+                    name: 'ISO',
+                    value: 'iso'
+                },
+                {
+                    name: 'Otra',
+                    value: 'otra'
+                }
+            ]
+        },
+        {
+            name: 'otra_cert_text',
+            type: 'text',
+            description: 'Ingrese la certificación',
+            prereq: [
+                {
+                    k: 'certificaciones',
+                    v: 'otra'
+                }
+            ]
+        },
+        {
+            name: 'en_proceso',
+            type: 'text',
+            description: 'Ingrese las certificaciones en proceso'
+        },
+        {
+            name: 'pertenece_gremio',
+            type: 'clausula',
+            description: '¿Pertenece a algún gremio?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'cual_gremio',
+            type: 'text',
+            description: '¿A qué gremio pertenece?',
+            prereq: [
+                {
+                    k: 'pertenece_gremio',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'acepta_visita',
+            type: 'clausula',
+            description: '¿Estaría dispuesto a recibirnos para conocer las instalaciones y verificar la efectividad del Sistema de Calidad, Gestión Ambiental, Salud Ocupacional y/o Seguridad Aplicada?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'justificacion_visita',
+            type: 'text',
+            description: 'Justifique su respuesta anterior'
+        },
+        {
+            name: 'acepta_seguridad',
+            type: 'clausula',
+            description: '¿Estaría dispuesto a comprometerse con la seguridad en la prestación de servicio y/o productos que le ofrece a TRANS-ARENAS mediante la firma de un acuerdo Contractual?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'justificacion_seguridad',
+            type: 'text',
+            description: 'Justifique su respuesta anterior'
+        },
+        {
+            name: 'observaciones',
+            type: 'text',
+            description: 'Ingrese sus observaciones'
+        },
+        {
+            name: 'fecha_diligenciamiento',
+            type: 'date',
+            description: 'Seleccione la fecha de diligenciamiento'
+        },
+        {
+            name: 'acepta_asociado',
+            type: 'clausula',
+            description: '¿Se acepta al asociado del negocio?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'condicion_pago',
+            type: 'clausula',
+            description: 'Seleccione las condiciones de pago',
+            value: 'credito',
+            options: [
+                {
+                    name: 'Crédito',
+                    value: 'credito'
+                },
+                {
+                    name: 'Contado',
+                    value: 'contado'
+                }
+            ]
+        },
+        {
+            name: 'no_dias',
+            type: 'number',
+            description: 'Ingrese el número de días'
+        },
+        {
+            name: 'observaciones_2',
+            type: 'text',
+            description: 'Ingrese sus observaciones'
+        }
+    ],
+    sign: [
+        'nombre_razon_social',
+        'num_id',
+        'telefono',
+        'email_facturacion'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_razon_social',
+            identification: 'num_id',
+            phone: 'telefono',
+            email: 'email_facturacion',
+            type: 'firma'
+        }
+    ],
+    prebuild: false,
+    build: 0,
+    price: 5000,
+    name: 'Identificación de asociados de negocios'
+}

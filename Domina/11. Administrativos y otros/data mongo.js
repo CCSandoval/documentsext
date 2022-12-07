@@ -175,36 +175,16 @@
         'pep_empleado',
         'correo_empleado'
     ],
-    preFill: [
-        {
-            name: 'nombre_domina',
-            value: 'JUAN PABLO CHAVARRIAGA HOYOS'
-        },
-        {
-            name: 'cc_domina',
-            value: '1.039.446.361'
-        },
-        {
-            name: 'correo_domina',
-            value: 'ccsandovalt@gmail.com'
-        }
-    ],
     signatureProfile: [
         {
             name: 'nombre_trabajador',
             identification: 'cc_empleado|ce_empleado|ppt_empleado|pep_empleado',
             email: 'correo_empleado',
             type: 'firma_empleado'
-        },
-        {
-            name: 'nombre_domina',
-            identification: 'cc_domina',
-            email: 'correo_domina',
-            type: 'firma_domina'
         }
     ],
     build: 0,
-    username: '7eecb5fa-6e63-40e7-8723-d523afcd4f33',
+        company: ObjectId('618d8a0c7e6627000962020f'),
     name: 'Administrativos y otros',
     price: 5000,
     preBuild: false

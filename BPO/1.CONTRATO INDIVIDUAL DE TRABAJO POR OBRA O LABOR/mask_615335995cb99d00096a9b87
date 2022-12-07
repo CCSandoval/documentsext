@@ -1,5 +1,5 @@
 <style type="text/css">
-    .nombre_firma {
+     .nombre_firma {
         text-transform: uppercase;
     }
 </style>
@@ -41,11 +41,12 @@
     <b>LUGAR DE DESEMPEÑO DE LABORES:</b> <span name="l_d_l_trabajador">_________</span>
 </p>
 
+
 <p>
     Entre los suscritos, a saber Federico Valencia Patiño, mayor de edad, identificado con cédula de ciudadanía No.
     10.027.254 de Pereira y vecino de Medellín, en su calidad de Representante Legal de <b>Soluciones BPO S.A.S.</b> con
     número de
-    <b>NIT 900.708.784-0</b> por una parte, quien en adelante se llamará <b>EL EMPLEADOR</b>, y por la otra
+    <b>NIT 900.708.784-0</b> por una parte, quien en adelante se llamará el <b>EMPLEADOR</b>, y por la otra
     <span name="nombre_trabajador">_________________________</span>,
     <span name="sexo_trabajador_h">identificado</span>
     <span name="sexo_trabajador_m" hidden>identificada</span> con
@@ -57,11 +58,10 @@
     </span>
     <span name="tipo_documento_trabajador_pa" hidden> pasaporte No.
         <span name="pasaporte_trabajador">_________________________</span>
-    </span>
+    </span> 
     <span name="tipo_documento_trabajador_ppt" hidden> Permiso de Protección Temporal No.
-        <span name="ppt_trabajador">_________________________</span>
-    </span>
-     de
+        <span name="ppt_trabajador">_________</span>
+    </span> de
     <span name="lugar_expe_cedula_trabajador">________________</span>, quien en adelante se llamará el
     <b>TRABAJADOR</b>, acuerdan celebrar el presente Contrato de Trabajo por obra o labor, el cual se regirá por las
     normas del Código Sustantivo del Trabajo, y lo establecido en el Reglamento Interno del <b>EMPLEADOR</b>, conoce y
@@ -71,8 +71,9 @@
 <p>
     <b>PRIMERA:</b> El <b>TRABAJADOR</b> se obliga con el <b>EMPLEADOR</b> a incorporar su capacidad normal de trabajo a
     su servicio exclusivo en el desempeño de todas las funciones propias del cargo de
-    <span name="cargo_d_trabajador">_____________________</span> para la línea de 
-    <b name="nombre_linea">_____________________</b>, así como en la ejecución de las tareas ordinarias y anexas al
+    <span name="cargo_d_trabajador">_____________________</span>
+    para la línea de 
+    <b name="nombre_linea">_____________________</b> - <b name="contrato">_____________________</b>, así como en la ejecución de las tareas ordinarias y anexas al
     mencionado cargo, de conformidad con los reglamentos, órdenes e instrucciones que le imparta el <b>EMPLEADOR</b>,
     observando en su cumplimiento la diligencia y el cuidado necesario.
 </p>
@@ -93,7 +94,7 @@
 
 <p>
     <b>CUARTA:</b> El presente contrato que se celebra será en razón de la obra o labor a la Línea de
-    <b name="nombre_linea">_____________________</b>, y en caso en el
+    <b name="nombre_linea">_____________________</b> - <b name="contrato">_____________________</b>, y en caso en el
     cual dicha obra o labor finalice se tendrá como justa causa para dar por terminado el contrato laboral.
 </p>
 
@@ -538,28 +539,30 @@
     <span name="fecha_firma">________________</span> en dos (2) ejemplares de idéntico tenor.
 </p>
 
-<p>
-<div id="empleador" class="sign-margin"></div>
-<b>FEDERICO VALENCIA PATIÑO</b><br />
-<b>EL EMPLEADOR</b><br />
-<b>C.C. No. 10.027.254</b>
-<b>Representante Legal de Soluciones BPO S.A.S.</b><br />
+<p><br /><br /><br /><br />
+    <span>______________________________________</span> <br />
+    <b>FEDERICO VALENCIA PATIÑO</b><br />
+    <b>EL EMPLEADOR</b><br />
+    <b>C.C. No. 10.027.254</b><br />
+    <b>Representante Legal de Soluciones BPO S.A.S.</b><br/>
 </p>
 
-<p>
-<div id="trabajador" class="sign-margin"></div>
-<b class="nombre_firma" name="nombre_trabajador">______________________</b><br />
-<b>EL TRABAJADOR</b><br />
-<b name="tipo_documento_trabajador_cc">C.C. No.
-    <b name="cedula_trabajador">_________________________</b>
-</b>
-<b name="tipo_documento_trabajador_ce" hidden>C.E. No.
-    <b name="cedulae_trabajador">_________________________</b>
-</b>
-<b name="tipo_documento_trabajador_pa" hidden>PASAPORTE No.
-    <b name="pasaporte_trabajador">_________________________</b>
-</b>
-<b name="tipo_documento_trabajador_ppt" hidden>PERMISO DE PROTECCIÓN TEMPORAL No.
-    <b name="ppt_trabajador">_________________________</b>
-</b>
+<p><br /><br /><br /><br />
+    <span>______________________________________</span> <br />
+    <b class="nombre_firma" name="nombre_trabajador">______________________</b><br />
+    <b>EL TRABAJADOR</b><br />
+    <b name="tipo_documento_trabajador_cc">C.C. No.
+        <b name="cedula_trabajador">_________________________</b>
+    </b>
+    <b name="tipo_documento_trabajador_ce" hidden>C.E. No.
+        <b name="cedulae_trabajador">_________________________</b>
+    </b>
+    <b name="tipo_documento_trabajador_pa" hidden>PASAPORTE No.
+        <b name="pasaporte_trabajador">_________________________</b>
+    </b>
+    <b name="tipo_documento_trabajador_ppt" hidden>PERMISO DE PROTECCIÓN TEMPORAL No.
+        <b name="ppt_trabajador">_________________________</b>
+    </b>
+    <br />
+    <b>Correo: </b> <b name="correo_trabajador">_________________________</b>
 </p>
