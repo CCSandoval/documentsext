@@ -194,21 +194,7 @@
         'ciudad_trabajador',
         'fecha_modificacion',
         'autoriza_huella',
-        'autoriza_reconocimento',
-    ],
-    preFill: [
-        {
-            name: 'nombre_domina',
-            value: 'JUAN PABLO CHAVARRIAGA HOYOS'
-        },
-        {
-            name: 'cc_domina',
-            value: '1.039.446.361'
-        },
-        {
-            name: 'correo_domina',
-            value: 'ccsandovalt@gmail.com'
-        }
+        'autoriza_reconocimento'
     ],
     signatureProfile: [
         {
@@ -216,16 +202,11 @@
             identification: 'cc_empleado|ce_empleado|ppt_empleado|pep_empleado',
             email: 'correo_empleado',
             type: 'firma_empleado'
-        },
-        {
-            name: 'nombre_domina',
-            identification: 'cc_domina',
-            email: 'correo_domina',
-            type: 'firma_domina'
-        },
+        }
     ],
     build: 0,
     name: 'Mensajeros EE',
+    company: ObjectId('618d8a0c7e6627000962020f'),
     price: 5000,
     preBuild: false
 }

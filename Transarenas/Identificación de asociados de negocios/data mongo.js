@@ -911,6 +911,11 @@
             description: 'Seleccione la fecha de diligenciamiento'
         },
         {
+            name: 'comercial_responsable',
+            type: 'name',
+            description: 'Ingrese el nombre del comercial responsable'
+        },
+        {
             name: 'acepta_asociado',
             type: 'clausula',
             description: '¿Se acepta al asociado del negocio?',
@@ -971,5 +976,5 @@
     prebuild: false,
     build: 0,
     price: 5000,
-    name: 'Identificación de asociados de negocios'
+    name: 'IDENTIFICACIÓN DE ASOCIADOS DE NEGOCIOS - CLIENTE'
 }

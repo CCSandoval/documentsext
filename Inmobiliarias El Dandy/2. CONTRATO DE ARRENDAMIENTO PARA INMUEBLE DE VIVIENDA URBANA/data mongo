@@ -2274,11 +2274,11 @@
     preFill: [
         {
             name: 'nombre_arrendador',
-            value: 'EL DANDY INMOBILIARIA S.A.S.'
+            value: 'Fernando Rodriguez Restrepo'
         },
         {
             name: 'cedula_arrendador',
-            value: '8.909.080.941'
+            value: '70501123'
         },
         {
             name: 'tel_arrendador',
@@ -2351,49 +2351,49 @@
             name: 'nombre_arrendador',
             identification: 'cedula_arrendador',
             email: 'correo_arrendador',
-            phone:'tel_arrendador',
+            phone: 'tel_arrendador',
             type: 'arrendador'
         },
         {
             name: 'nombre_arrendatario',
             identification: 'cedula_arrendatario|cedulae_arrendatario|pasaporte_arrendatario|pep_arrendatario|pasaporte_arrendatario_p|nit_arrendatario',
             email: 'correo_arrendatario',
-            phone:'celular_arrendatario',
+            phone: 'celular_arrendatario',
             type: 'arrendatario'
         },
         {
             name: 'nombre_arrendatario_2',
             identification: 'cedula_arrendatario_2|cedulae_arrendatario_2|pasaporte_arrendatario_2|pep_arrendatario_2|pasaporte_arrendatario_2_p|nit_arrendatario_2',
             email: 'correo_arrendatario_2',
-            phone:'celular_arrendatario_2',
+            phone: 'celular_arrendatario_2',
             type: 'arrendatario_2'
         },
         {
             name: 'nombre_deudor_soli_1',
             identification: 'cedula_deudor_soli_1|cedulae_deudor_soli_1|pasaporte_deudor_soli_1|pep_deudor_soli_1|pasaporte_deudor_soli_1_p|nit_deudor_soli_1',
             email: 'correo_deudor_soli_1',
-            phone:'celular_deudor_soli_1',
+            phone: 'celular_deudor_soli_1',
             type: 'deudor_soli_1'
         },
         {
             name: 'nombre_deudor_soli_2',
             identification: 'cedula_deudor_soli_2|cedulae_deudor_soli_2|pasaporte_deudor_soli_2|pep_deudor_soli_2|pasaporte_deudor_soli_2_p|nit_deudor_soli_2',
             email: 'correo_deudor_soli_2',
-            phone:'celular_deudor_soli_2',
+            phone: 'celular_deudor_soli_2',
             type: 'deudor_soli_2'
         },
         {
             name: 'nombre_deudor_soli_3',
             identification: 'cedula_deudor_soli_3|cedulae_deudor_soli_3|pasaporte_deudor_soli_3|pep_deudor_soli_3|pasaporte_deudor_soli_3_p|nit_deudor_soli_3',
             email: 'correo_deudor_soli_3',
-            phone:'celular_deudor_soli_3',
+            phone: 'celular_deudor_soli_3',
             type: 'deudor_soli_3'
         },
         {
             name: 'nombre_deudor_soli_4',
             identification: 'cedula_deudor_soli_4|cedulae_deudor_soli_4|pasaporte_deudor_soli_4|pep_deudor_soli_4|pasaporte_deudor_soli_4_p|nit_deudor_soli_4',
             email: 'correo_deudor_soli_4',
-            phone:'celular_deudor_soli_4',
+            phone: 'celular_deudor_soli_4',
             type: 'deudor_soli_4'
         }
     ],
@@ -2419,7 +2419,7 @@
         pep: 'Permiso especial de permanencia',
         zona: 'Sur'
     },
-    build: 50,
+    build: 51,
     createdAt: ISODate('2021-09-28T19:07:38.268Z'),
     updatedAt: ISODate('2021-09-28T19:07:38.268Z')
 }

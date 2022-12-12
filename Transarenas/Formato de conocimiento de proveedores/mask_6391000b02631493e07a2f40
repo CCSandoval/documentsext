@@ -22,7 +22,7 @@
     padding-bottom: 7px;
   }
   .gray_bg {
-    background-color: #f2f2f2;
+    background-color: #d8d8d8;
   }
 </style>
 
@@ -36,818 +36,492 @@
           alt="transarenas"
         />
       </th>
-      <th rowspan="2">IDENTIFICACIÓN DE ASOCIADOS DE NEGOCIOS - CLIENTE</th>
-      <td>VERSION: #10</td>
+      <th rowspan="2">FORMATO PARA CONOCIMIENTO DE CONTRAPARTES</th>
+      <td>VERSION: #1</td>
     </tr>
     <tr>
       <td>FECHA: 08-02-2021</td>
     </tr>
   </table>
-  <p style="border: 1px solid black">
-    ESTIMADO CLIENTE: En cumplimiento a lo dispuesto en la circular externa No.
-    0170 del 10 de octubre de 2002 de la Dirección de Impuestos y Aduana
-    Nacionales (DIAN), nos permitimos presentar a ustedes la información y
-    documentos requeridos así:
-  </p>
-  <div style="border: 1px solid black">
-    <b>1. IDENTIFICACIÓN</b>
-    <br />
-    <br />
-    <table class="table_class_nb">
-      <tr>
-        <td>NOMBRE / RAZÓN SOCIAL</td>
-        <td>
-          <span name="nombre_razon_social">
-            ______________________________
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td>TIPO DE IDENTIFICACIÓN</td>
-        <td>
-          <span name="tipo_id_cc">CC</span>
-          <span name="tipo_id_ce" hidden>CE</span>
-          <span name="tipo_id_pa" hidden>Pasaporte</span>
-          <span name="tipo_id_nit" hidden>NIT</span>
-        </td>
-        <td>LUGAR DE EXPEDICIÓN</td>
-        <td><span name="lugar_exp_id">__________</span></td>
-      </tr>
-      <tr>
-        <td>NÚMERO DE DOCUMENTO DE IDENTIDAD</td>
-        <td><span name="num_id">__________</span></td>
-        <td>NACIONALIDAD</td>
-        <td><span name="nacionalidad">__________</span></td>
-      </tr>
-      <tr>
-        <td>DOMICILIO</td>
-        <td><span name="domicilio">__________</span></td>
-        <td>CIUDAD</td>
-        <td><span name="ciudad">__________</span></td>
-      </tr>
-      <tr>
-        <td>TELÉFONO</td>
-        <td><span name="telefono">__________</span></td>
-        <td>PAÍS</td>
-        <td><span name="pais">__________</span></td>
-      </tr>
-      <tr>
-        <td>E-MAIL FACTURACIÓN ELECTRÓNICA</td>
-        <td>
-          <span name="email_facturacion">__________</span>
-        </td>
-        <td>E-MAILS REPORTE SEGUIMIENTO</td>
-        <td>
-          <span name="email_reporte">__________</span>
-        </td>
-      </tr>
-      <tr>
-        <td>TIPO DE EMPRESA</td>
-        <td>
-          <span name="tipo_empresa_pub">Pública</span>
-          <span name="tipo_empresa_priv" hidden>Privada</span>
-          <span name="tipo_empresa_mix" hidden>Mixta</span>
-          <span name="tipo_empresa_ext" hidden>Extranjera</span>
-        </td>
-        <td>CARGAS EN MAGAYA</td>
-        <td>
-          <span name="cargas_magaya">__________</span>
-        </td>
-      </tr>
-    </table>
-
-    <p>
-      ESTIMADO CLIENTE: Con el diligenciamiento de este formulario nos permitira
-      adelantar el Proceso de Conocimiento del Cliente o tercero, de conformidad
-      con el Sistema de Administracion del Riesgo de Lavado de Activos y
-      Financiacion del Terrorismo de TRANS ARENAS INTERNATIONAL CARGO S.A.S.
-    </p>
-  </div>
-
   <table class="table_class">
     <tr>
-      <td class="gray_bg">¿Realiza transacciones en moneda extranjera?</td>
-      <td>
-        No <span name="trans_mon_extr_n">[X]</span>
-        <span name="trans_mon_extr_s" hidden>[__]</span>
-        Si <span name="trans_mon_extr_n">[__]</span>
-        <span name="trans_mon_extr_s" hidden>[X]</span>
-      </td>
-      <td name="trans_mon_extr_s" hidden class="gray_bg">
-        En caso que su respuesta sea afirmativa indique ¿Cuál?
-      </td>
-      <td name="trans_mon_extr_s" hidden>
-        <span name="trans_mon_extr_cual_imp">Importaciones</span>
-        <span name="trans_mon_extr_cual_exp" hidden>Exportaciones</span>
-        <span name="trans_mon_extr_cual_leas" hidden>Leasing</span>
-        <span name="trans_mon_extr_cual_pago" hidden>Pagos de servicios</span>
-        <span name="trans_mon_extr_cual_inv" hidden>Inversiones</span>
-        <span name="trans_mon_extr_cual_trans" hidden>Transferencias</span>
-        <span name="trans_mon_extr_cual_prest" hidden>Prestamos</span>
-        <span name="trans_mon_extr_cual_otros" hidden>Otros</span>
-      </td>
+      <th class="gray_bg">FECHA</th>
+      <th class="gray_bg">CIUDAD</th>
+      <th class="gray_bg">EMPRESA</th>
     </tr>
-    <tr name="trans_mon_extr_cual_otros" hidden>
-      <td class="gray_bg" style="text-align: center">Otros, ¿Cuál?</td>
+    <tr>
+      <td><span name="fecha">____________</span></td>
+      <td><span name="ciudad">____________</span></td>
+      <td>TRANS ARENAS INTERNATIONAL CARGO S.A.S.</td>
+    </tr>
+    <tr>
+      <th colspan="3" class="gray_bg">
+        INDIQUE EL GRUPO DE INTERÉS AL QUE PERTENECE EL TITULAR DE LOS DATOS
+      </th>
+    </tr>
+    <tr>
       <td colspan="3">
-        <span name="trans_mon_extr_otro_cual">
-          ______________________________
-        </span>
+        <span name="grupo_interes">____________</span>
       </td>
+    </tr>
+    <tr>
+      <th colspan="3" class="gray_bg">
+        SISTEMA DE ADMINISTRACIÓN DEL RIESGO DE LAVADO DE ACTIVOS Y FINANCIACIÓN
+        DEL TERRORISMO - SIPLA *
+      </th>
+    </tr>
+    <tr>
+      <td colspan="3">
+        Estimado usuario: Con el diligenciamiento de este formulario nos
+        permitira adelantar el Proceso de Conocimiento del Cliente o tercero, de
+        conformidad con el Sistema de Administracion del Riesgo de Lavado de
+        Activos y Financiacion del Terrorismo de TRANS ARENAS INTERNATIONAL
+        CARGO S.A.S.
+      </td>
+    </tr>
+    <tr>
+      <td colspan="3" class="gray_bg">&nbsp;</td>
     </tr>
   </table>
-
   <table class="table_class">
     <tr>
-      <td>Por su actividad maneja recursos públicos?</td>
-      <td>
-        <span>
-          Si <span name="maneja_publicos_n">[__]</span>
-          <span name="maneja_publicos_s" hidden>[X]</span>
-        </span>
-        <span>
-          No <span name="maneja_publicos_n">[X]</span>
-          <span name="maneja_publicos_s" hidden>[__]</span>
-        </span>
-      </td>
-      <td>Por su cargo o actividad ejerce algún grado de poder público?</td>
-      <td>
-        <span>
-          Si <span name="poder_publico_n">[__]</span>
-          <span name="poder_publico_s" hidden>[X]</span>
-        </span>
-        <span>
-          No <span name="poder_publico_n">[X]</span>
-          <span name="poder_publico_s" hidden>[__]</span>
-        </span>
+      <th class="gray_bg">Razón Social:</th>
+      <td><span name="razon_social">____________</span></td>
+      <th class="gray_bg">NIT</th>
+      <td><span name="nit">____________</span></td>
+    </tr>
+    <tr>
+      <th class="gray_bg" rowspan="2">Representante Legal</th>
+      <th class="gray_bg" colspan="3">Nombre Completo</th>
+    </tr>
+    <tr>
+      <td colspan="3">
+        <span name="nombre_rep_legal">____________</span>
       </td>
     </tr>
     <tr>
-      <td colspan="2">
-        Por su actividad u oficio goza usted de reconocimiento público general?
+      <th rowspan="2" class="gray_bg">Documento de Identidad</th>
+      <th class="gray_bg">Tipo y Número</th>
+      <th class="gray_bg">Lugar de expedición</th>
+      <th class="gray_bg">Nacionalidad</th>
+    </tr>
+    <tr>
+      <td>
+        <span name="tipo_id_rep_legal_cc">CC.</span
+        ><span name="tipo_id_rep_legal_ce" hidden>CE.</span>
+        <span name="tipo_id_rep_legal_pa" hidden>PASAPORTE.</span>
+        <span name="num_id_rep_legal">____________</span>
       </td>
+      <td><span name="exp_id_rep_legal">____________</span></td>
+      <td><span name="nacionalidad_rep_legal">____________</span></td>
+    </tr>
+  </table>
+  <table class="table_class">
+    <tr>
+      <th class="gray_bg">Domicilio Principal</th>
+      <th class="gray_bg">Ciudad</th>
+      <th class="gray_bg">Departamento</th>
+      <th class="gray_bg">País</th>
+      <th class="gray_bg">Teléfono</th>
+    </tr>
+    <tr>
+      <td><span name="dom_principal">____________</span></td>
+      <td><span name="ciudad_rep_legal">____________</span></td>
+      <td><span name="dep_rep_legal">____________</span></td>
+      <td><span name="pais_rep_legal">____________</span></td>
+      <td><span name="tel_rep_legal">____________</span></td>
+    </tr>
+    <tr>
+      <th class="gray_bg">Correo electrónico de contacto</th>
+      <th class="gray_bg">Antigüedad en el mercado</th>
+      <th colspan="2" class="gray_bg">Capital registrado</th>
+      <th class="gray_bg">Origen de los recursos</th>
+    </tr>
+    <tr>
+      <td><span name="correo_contacto_rep_legal">____________</span></td>
+      <td><span name="antiguedad_rep_legal">____________</span></td>
+      <td colspan="2"><span name="capital_registrado">____________</span></td>
+      <td><span name="origen_recursos">____________</span></td>
+    </tr>
+  </table>
+  <table class="table_class">
+    <tr>
+      <th>Correo electrónico de facturación</th>
+      <th>Tipo de empresa</th>
+      <th colspan="2">Actividad económica</th>
+    </tr>
+    <tr>
+      <td><span name="correo_facturacion">____________</span></td>
+      <td><span name="tipo_empresa">____________</span></td>
       <td colspan="2">
-        <span>
-          Si <span name="reconocimiento_n">[__]</span>
-          <span name="reconocimiento_s" hidden>[X]</span>
-        </span>
-        <span>
-          No <span name="reconocimiento_n">[X]</span>
-          <span name="reconocimiento_s" hidden>[__]</span>
-        </span>
+        <span name="actividad_economica"> ____________ </span>
       </td>
     </tr>
     <tr>
-      <td colspan="2">
+      <th class="gray_bg">Código CIIU</th>
+      <td><span name="codigo_ciiu">____________</span></td>
+      <th class="gray_bg">Descripción de la actividad</th>
+      <td><span name="desc_actividad">____________</span></td>
+    </tr>
+  </table>
+  <table class="table_class">
+    <tr>
+      <th class="gray_bg">Descripción del bien o servicio suministrado.</th>
+    </tr>
+    <tr>
+      <td><span name="desc_servicio">____________</span></td>
+    </tr>
+  </table>
+  <table class="table_class">
+    <tr>
+      <th colspan="3" class="gray_bg">
+        2. ACTIVIDAD DE OPERACIONES INTERNACIONALES
+      </th>
+    </tr>
+    <tr>
+      <th class="gray_bg">¿Realiza transacciones en moneda extranjera?</th>
+      <td>
+        <span name="trans_mon_extr_s">Si</span
+        ><span name="trans_mon_extr_n" hidden>No</span>
+      </td>
+      <th class="gray_bg">
+        En caso de que su respuesta sea afirmativa indique ¿Cuál?
+      </th>
+    </tr>
+    <tr>
+      <td colspan="3"><span name="cual_transaccion">____________</span></td>
+    </tr>
+    <tr>
+      <th class="gray_bg">Otros, ¿cuál?</th>
+      <td colspan="2"><span name="otras_transacciones">____________</span></td>
+    </tr>
+  </table>
+  <table class="table_class">
+    <tr>
+      <th class="gray_bg">
+        3. DECLARACIÓN PERSONA PUBLICAMENTE EXPUESTA (PEPS)
+      </th>
+      <th class="gray_bg">Seleccione:</th>
+    </tr>
+    <tr>
+      <td>
+        Por su cargo o actividad, ¿administra o tiene a su cargo el manejo de
+        recursos públicos?
+      </td>
+      <td><span name="recursos_publicos">NO</span></td>
+    </tr>
+    <tr>
+      <td>
+        Por su cargo o actividad, ¿ejerce algún grado o tipo de poder público?
+      </td>
+      <td><span name="poder_publico">NO</span></td>
+    </tr>
+    <tr>
+      <td>
+        Por su actividad, ocupación u oficio, ¿goza de reconocimiento público
+        general?
+      </td>
+      <td><span name="reconocimiento_publico">NO</span></td>
+    </tr>
+    <tr>
+      <td>
         ¿Es usted sujeto de obligaciones tributarias en otro país diferente a
-        Colombia?
+        colombia?
       </td>
-      <td colspan="2">
-        <span>
-          Si <span name="obligaciones_extranjeras_n">[__]</span>
-          <span name="obligaciones_extranjeras_s" hidden>[X]</span>
-        </span>
-        <span>
-          No <span name="obligaciones_extranjeras_n">[X]</span>
-          <span name="obligaciones_extranjeras_s" hidden>[__]</span>
-        </span>
-      </td>
+      <td><span name="obligaciones_extranjeras">NO</span></td>
     </tr>
     <tr>
-      <td colspan="2">
-        Si alguna de las preguntas anteriores es afirmativa especifique:
+      <th class="gray_bg" colspan="3">
+        Si contestó afirmativamente alguna de las anteriores preguntas, por
+        favor, especifique:
+      </th>
+    </tr>
+    <tr>
+      <td colspan="3"><span name="especificacion">____________</span></td>
+    </tr>
+  </table>
+  <table class="table_class">
+    <tr>
+      <th colspan="5" class="gray_bg">
+        4. IDENTIFICACIÓN DE ACCIONISTAS, SOCIOS, ASOCIADOS QUE SEAN TITULARES
+        DE MÁS DEL 5% DEL CAPITAL SOCIAL, APORTE O PARTICIPACIÓN
+      </th>
+    </tr>
+    <tr>
+      <th class="gray_bg">Nombre completo o razón social</th>
+      <th class="gray_bg">Nacionalidad</th>
+      <th class="gray_bg">Seleccione ID</th>
+      <th class="gray_bg">Número</th>
+      <th class="gray_bg">% Participación</th>
+    </tr>
+    <tr>
+      <td><span name="nombre_accion_1">____________</span></td>
+      <td><span name="nacionalidad_accion_1">____________</span></td>
+      <td><span name="tipo_id_accion_1">____________</span></td>
+      <td><span name="num_id_accion_1">____________</span></td>
+      <td><span name="participacion_accion_1">____________</span></td>
+    </tr>
+    <tr>
+      <td><span name="nombre_accion_2">____________</span></td>
+      <td><span name="nacionalidad_accion_2">____________</span></td>
+      <td><span name="tipo_id_accion_2">____________</span></td>
+      <td><span name="num_id_accion_2">____________</span></td>
+      <td><span name="participacion_accion_2">____________</span></td>
+    </tr>
+    <tr>
+      <td><span name="nombre_accion_3">____________</span></td>
+      <td><span name="nacionalidad_accion_3">____________</span></td>
+      <td><span name="tipo_id_accion_3">____________</span></td>
+      <td><span name="num_id_accion_3">____________</span></td>
+      <td><span name="participacion_accion_3">____________</span></td>
+    </tr>
+    <tr>
+      <td><span name="nombre_accion_4">____________</span></td>
+      <td><span name="nacionalidad_accion_4">____________</span></td>
+      <td><span name="tipo_id_accion_4">____________</span></td>
+      <td><span name="num_id_accion_4">____________</span></td>
+      <td><span name="participacion_accion_4">____________</span></td>
+    </tr>
+  </table>
+  <table class="table_class">
+    <tr>
+      <th colspan="4" class="gray_bg">5. INFORMACIÓN FINANCIERA</th>
+    </tr>
+    <tr>
+      <th class="gray_bg">Nombre del revisor fiscal y/o contador público</th>
+      <th class="gray_bg">Identificación - número de tarjeta profesional</th>
+      <th class="gray_bg">Dirección</th>
+      <th class="gray_bg">Correo electrónico - Teléfono</th>
+    </tr>
+    <tr>
+      <td><span name="nombre_revisor">____________</span></td>
+      <td>
+        <span name="id_revisor">____________</span> -
+        <span name="tarj_prof_revisor">____________</span>
       </td>
-      <td colspan="2">
-        <span name="especificacion"> ______________________________ </span>
+      <td><span name="direccion_revisor">____________</span></td>
+      <td>
+        <span name="correo_revisor">____________</span> -
+        <span name="tel_revisor">____________</span>
       </td>
     </tr>
   </table>
-
-  <div style="border: 1px solid black">
-    <p>
-      <b>2. INFORMACIÓN LEGAL (Solo Para Personas Jurídicas)</b> <br />
-      IDENTIFICACIÓN DE ACCIONISTAS, SOCIOS, ASOCIADOS QUE SEAN TITULARES DE MAS
-      DEL 5% DEL CAPITAL SOCIAL, APORTE O PARTICIPACIÓN.
-    </p>
-  </div>
-
   <table class="table_class">
     <tr>
-      <th>NOMBRES, APELLIDOS O RAZÓN SOCIAL</th>
-      <th>NACIONALIDAD</th>
-      <th>TIPO DE ID</th>
-      <th>NÚMERO DE ID</th>
-      <th>DIRECCIÓN, CIUDAD, PAÍS</th>
-      <th>% DE PARTICIPACIÓN</th>
+      <th class="gray_bg">Ingresos mensuales</th>
+      <td><span name="ing_mes">____________</span></td>
+      <th class="gray_bg">Activos totales</th>
+      <td><span name="activos_totales">____________</span></td>
     </tr>
     <tr>
-      <td>
-        <span name="nombres_razon_accion_1">__________</span>
-      </td>
-      <td>
-        <span name="nacionalidad_accion_1">__________</span>
-      </td>
-      <td>
-        <span name="tipo_id_accion_1_cc">CC</span>
-        <span name="tipo_id_accion_1_ce" hidden>CE</span>
-        <span name="tipo_id_accion_1_pa" hidden>Pasaporte</span>
-        <span name="tipo_id_accion_1_nit" hidden>NIT</span>
-      </td>
-      <td>
-        <span name="num_id_accion_1">__________</span>
-      </td>
-      <td><span name="dir_accion_1">__________</span></td>
-      <td><span name="participación_accion_1">__</span> %</td>
-    </tr>
-
-    <tr>
-      <td>
-        <span name="nombres_razon_accion_2">__________</span>
-      </td>
-      <td>
-        <span name="nacionalidad_accion_2">__________</span>
-      </td>
-      <td>
-        <span name="tipo_id_accion_2_cc">CC</span>
-        <span name="tipo_id_accion_2_ce" hidden>CE</span>
-        <span name="tipo_id_accion_2_pa" hidden>Pasaporte</span>
-        <span name="tipo_id_accion_2_nit" hidden>NIT</span>
-      </td>
-      <td>
-        <span name="num_id_accion_2">__________</span>
-      </td>
-      <td><span name="dir_accion_2">__________</span></td>
-      <td><span name="participación_accion_2">__</span> %</td>
+      <th class="gray_bg">Egresos mensuales</th>
+      <td><span name="egr_mes">____________</span></td>
+      <th class="gray_bg">Pasivos totales</th>
+      <td><span name="pasivos_totales">____________</span></td>
     </tr>
     <tr>
-      <td>
-        <span name="nombres_razon_accion_3">__________</span>
-      </td>
-      <td>
-        <span name="nacionalidad_accion_3">__________</span>
-      </td>
-      <td>
-        <span name="tipo_id_accion_3_cc">CC</span>
-        <span name="tipo_id_accion_3_ce" hidden>CE</span>
-        <span name="tipo_id_accion_3_pa" hidden>Pasaporte</span>
-        <span name="tipo_id_accion_3_nit" hidden>NIT</span>
-      </td>
-      <td>
-        <span name="num_id_accion_3">__________</span>
-      </td>
-      <td><span name="dir_accion_3">__________</span></td>
-      <td><span name="participación_accion_3">__</span> %</td>
+      <th class="gray_bg">
+        % de Retención ICA (Si no es informado se aplicará el porcentaje máximo
+        de retención)
+      </th>
+      <td><span name="porc_reten">____________</span></td>
+      <th class="gray_bg">Patrimonio</th>
+      <td><span name="patrimonio">____________</span></td>
     </tr>
     <tr>
-      <td>
-        <span name="nombres_razon_accion_4">__________</span>
-      </td>
-      <td>
-        <span name="nacionalidad_accion_4">__________</span>
-      </td>
-      <td>
-        <span name="tipo_id_accion_4_cc">CC</span>
-        <span name="tipo_id_accion_4_ce" hidden>CE</span>
-        <span name="tipo_id_accion_4_pa" hidden>Pasaporte</span>
-        <span name="tipo_id_accion_4_nit" hidden>NIT</span>
-      </td>
-      <td>
-        <span name="num_id_accion_4">__________</span>
-      </td>
-      <td><span name="dir_accion_4">__________</span></td>
-      <td><span name="participación_accion_4">__</span> %</td>
+      <th class="gray_bg">Código de actividad ICA</th>
+      <td><span name="cod_ica">____________</span></td>
+      <th class="gray_bg">% de Retención en la fuente</th>
+      <td><span name="porc_reten_fuente">____________</span></td>
+    </tr>
+    <tr>
+      <th class="gray_bg">Autorretendor</th>
+      <td><span name="autorretendor">____________</span></td>
+      <th class="gray_bg">CUAL?</th>
+      <td><span name="autorretendor_cual">____________</span></td>
+    </tr>
+    <tr>
+      <th colspan="2" class="gray_bg">Grandes contribuyentes</th>
+      <td colspan="2"><span name="gran_contribuyente">____________</span></td>
     </tr>
   </table>
-  <div style="border: 1px solid black">
-    <p><b>REPRESENTANTE(S) LEGAL(ES)</b></p>
-  </div>
   <table class="table_class">
+    <tr>
+      <th colspan="4" class="gray_bg">
+        6. INFORMACIÓN OPERATIVA: Personal que realiza directamente la operación
+        de Comercio Exterior
+      </th>
+    </tr>
     <tr>
       <th>NOMBRES Y APELLIDOS</th>
-      <th>IDENTIFICACIÓN</th>
-      <th>DIRECCIÓN</th>
-      <th>CIUDAD</th>
+      <th>CARGO</th>
+      <th>TELÉFONO</th>
+      <th>CORREO ELECTRÓNICO</th>
     </tr>
     <tr>
-      <td><span name="nombre_rep_1">__________</span></td>
-      <td><span name="id_rep_1">__________</span></td>
-      <td><span name="dir_rep_1">__________</span></td>
-      <td><span name="ciudad_rep_1">__________</span></td>
+      <td><span name="nombre_personal_1">____________</span></td>
+      <td><span name="cargo_personal_1">____________</span></td>
+      <td><span name="tel_personal_1">____________</span></td>
+      <td><span name="email_personal_1">____________</span></td>
     </tr>
     <tr>
-      <td><span name="nombre_rep_2">__________</span></td>
-      <td><span name="id_rep_2">__________</span></td>
-      <td><span name="dir_rep_2">__________</span></td>
-      <td><span name="ciudad_rep_2">__________</span></td>
-    </tr>
-  </table>
-
-  <div style="border: 1px solid black">
-    <table style="margin: 16px 0px" class="table_class_nb">
-      <tr>
-        <td>CAPITAL SOCIAL REGISTRADO:</td>
-        <td>
-          <span name="capital_social_registrado">__________</span>
-        </td>
-      </tr>
-      <tr>
-        <td>DESCRIPCIÓN DE LA ACTIVIDAD ECONÓMICA:</td>
-        <td>
-          <span name="desc_act_economica">__________</span>
-        </td>
-      </tr>
-    </table>
-
-    <p><b>3. INFORMACIÓN TRIBUTARIA</b></p>
-
-    <table class="table_class_nb">
-      <tr>
-        <td>REGIMEN IVA</td>
-        <td>
-          <span name="regimen_iva_comun">COMÚN</span>
-          <span name="regimen_iva_simp" hidden>SIMPLIFICADO</span>
-        </td>
-      </tr>
-      <tr>
-        <td>ACTIVIDAD DE ICA</td>
-        <td>
-          <span name="actividad_ica_ciiu">CIIU</span>
-          <span name="actividad_ica_tar" hidden>TARIFA</span>
-        </td>
-      </tr>
-      <tr>
-        <td>GRAN CONTRIBUYENTE</td>
-        <td>
-          <span>
-            Si <span name="gran_contribuyente_n">[__]</span>
-            <span name="gran_contribuyente_s" hidden>[X]</span>
-          </span>
-          <span>
-            No <span name="gran_contribuyente_n">[X]</span>
-            <span name="gran_contribuyente_s" hidden>[__]</span>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td>AUTORRETENDOR</td>
-        <td>
-          <span>
-            Si <span name="autorretendor_n">[__]</span>
-            <span name="autorretendor_s" hidden>[X]</span>
-          </span>
-          <span>
-            No <span name="autorretendor_n">[X]</span>
-            <span name="autorretendor_s" hidden>[__]</span>
-          </span>
-        </td>
-      </tr>
-    </table>
-
-    <p>
-      <b>4. INFORMACIÓN OPERATIVA</b><br />
-      <b>
-        Personal que realiza directamente la operación de Comercio Exterior.
-      </b>
-    </p>
-
-    <table class="table_class">
-      <tr>
-        <th>NOMBRES Y APELLIDOS</th>
-        <th>CARGO</th>
-        <th>TELÉFONO</th>
-        <th>DIRECCIÓN</th>
-        <th>CIUDAD</th>
-      </tr>
-      <tr>
-        <td>
-          <span name="nombres_personal_1">__________</span>
-        </td>
-        <td>
-          <span name="cargo_personal_1">__________</span>
-        </td>
-        <td>
-          <span name="telefono_personal_1">__________</span>
-        </td>
-        <td>
-          <span name="direccion_personal_1">__________</span>
-        </td>
-        <td>
-          <span name="ciudad_personal_1">__________</span>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span name="nombres_personal_2">__________</span>
-        </td>
-        <td>
-          <span name="cargo_personal_2">__________</span>
-        </td>
-        <td>
-          <span name="telefono_personal_2">__________</span>
-        </td>
-        <td>
-          <span name="direccion_personal_2">__________</span>
-        </td>
-        <td>
-          <span name="ciudad_personal_2">__________</span>
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span name="nombres_personal_3">__________</span>
-        </td>
-        <td>
-          <span name="cargo_personal_3">__________</span>
-        </td>
-        <td>
-          <span name="telefono_personal_3">__________</span>
-        </td>
-        <td>
-          <span name="direccion_personal_3">__________</span>
-        </td>
-        <td>
-          <span name="ciudad_personal_3">__________</span>
-        </td>
-      </tr>
-    </table>
-  </div>
-
-  <div style="border: 1px solid black">
-    <p>
-      ORIGEN DE LOS RECURSOS CON LOS QUE SE REALIZA LA OPERACIÓN DE COMERCIO
-      EXTERIOR:
-      <span name="origen_recursos">__________</span>
-    </p>
-  </div>
-  <div style="border: 1px solid black">
-    <p>
-      FORMA DE PAGO DE LAS OPERACIONES DE COMERCIO EXTERIOR / ENTIDAD EMISORA O
-      PAGADORA:
-      <span name="forma_pago_operaciones_exterior">__________</span>
-    </p>
-  </div>
-  <div style="border: 1px solid black">
-    <p>
-      <b>5. INFORMACIÓN FINANCIERA</b>
-    </p>
-  </div>
-  <table class="table_class">
-    <tr>
-      <td class="gray_bg">Ingresos operacionales mensuales</td>
-      <td><span name="ing_oper_mes">__________</span></td>
-      <td class="gray_bg">Activos totales</td>
-      <td>
-        <span name="activos_totales">__________</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="gray_bg">Ingresos no operacionales mensuales</td>
-      <td>
-        <span name="ing_no_oper_mes">__________</span>
-      </td>
-      <td class="gray_bg">Pasivos totales</td>
-      <td>
-        <span name="pasivos_totales">__________</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="gray_bg">Egresos operacionales mensuales</td>
-      <td>
-        <span name="egresos_oper_mes">__________</span>
-      </td>
-      <td class="gray_bg" rowspan="2">Patrimonio</td>
-      <td rowspan="2">
-        <span name="patrimonio">__________</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="gray_bg">Egresos no operacionales mensuales</td>
-      <td>
-        <span name="egresos_no_oper_mes">__________</span>
-      </td>
-    </tr>
-    <tr>
-      <td class="gray_bg">Concepto ingresos no operacionales</td>
-      <td colspan="3">
-        <span name="concepto_ingresos_no_oper">__________</span>
-      </td>
+      <td><span name="nombre_personal_2">____________</span></td>
+      <td><span name="cargo_personal_2">____________</span></td>
+      <td><span name="tel_personal_2">____________</span></td>
+      <td><span name="email_personal_2">____________</span></td>
     </tr>
   </table>
   <table class="table_class">
+    <tr>
+      <th class="gray_bg" colspan="6">7. INFORMACIÓN FINANCIERA</th>
+    </tr>
     <tr>
       <th>BANCO</th>
       <th>SUCURSAL</th>
-      <th>No CUENTA</th>
+      <th>Nº CUENTA</th>
       <th>TIPO</th>
-      <th>TELÉFONO</th>
       <th>CONTACTO</th>
+      <th>TELÉFONO</th>
     </tr>
     <tr>
-      <td><span name="banco_1">__________</span></td>
-      <td><span name="sucursal_1">__________</span></td>
-      <td><span name="no_cuenta_1">__________</span></td>
-      <td><span name="tipo_cuenta_1">__________</span></td>
-      <td>
-        <span name="telefono_financ_1">__________</span>
-      </td>
-      <td>
-        <span name="contacto_financ_1">__________</span>
-      </td>
+      <td><span name="banco_1">____________</span></td>
+      <td><span name="sucursal_1">____________</span></td>
+      <td><span name="num_cuenta_1">____________</span></td>
+      <td><span name="tipo_cuenta_1">____________</span></td>
+      <td><span name="contacto_1">____________</span></td>
+      <td><span name="tel_banco_1">____________</span></td>
     </tr>
     <tr>
-      <td><span name="banco_2">__________</span></td>
-      <td><span name="sucursal_2">__________</span></td>
-      <td><span name="no_cuenta_2">__________</span></td>
-      <td><span name="tipo_cuenta_2">__________</span></td>
-      <td>
-        <span name="telefono_financ_2">__________</span>
-      </td>
-      <td>
-        <span name="contacto_financ_2">__________</span>
-      </td>
+      <td><span name="banco_2">____________</span></td>
+      <td><span name="sucursal_2">____________</span></td>
+      <td><span name="num_cuenta_2">____________</span></td>
+      <td><span name="tipo_cuenta_2">____________</span></td>
+      <td><span name="contacto_2">____________</span></td>
+      <td><span name="tel_banco_2">____________</span></td>
     </tr>
   </table>
-  <div style="border: 1px solid black">
-    <p>
-      <b>6. REFERENCIAS COMERCIALES</b>
-    </p>
-  </div>
   <table class="table_class">
+    <tr>
+      <th colspan="5" class="gray_bg">8. REFERENCIAS COMERCIALES</th>
+    </tr>
     <tr>
       <th>EMPRESA</th>
       <th>CONTACTO</th>
+      <th>CORREO</th>
       <th>TELÉFONO</th>
-      <th>DIRECCIÓN</th>
-      <th>CIUDAD</th>
+      <th>DIRECCIÓN - CIUDAD</th>
     </tr>
     <tr>
-      <td><span name="ref_empresa_1">__________</span></td>
-      <td><span name="ref_contacto_1">__________</span></td>
-      <td><span name="ref_tel_1">__________</span></td>
-      <td><span name="ref_dir_1">__________</span></td>
-      <td><span name="ref_ciudad_1">__________</span></td>
+      <td><span name="ref_empresa_1">____________</span></td>
+      <td><span name="ref_contacto_1">____________</span></td>
+      <td><span name="ref_email_1">____________</span></td>
+      <td><span name="ref_tel_1">____________</span></td>
+      <td>
+        <span name="ref_dir_1">____________</span> -
+        <span name="ref_ciudad_1">____________</span>
+      </td>
     </tr>
     <tr>
-      <td><span name="ref_empresa_2">__________</span></td>
-      <td><span name="ref_contacto_2">__________</span></td>
-      <td><span name="ref_tel_2">__________</span></td>
-      <td><span name="ref_dir_2">__________</span></td>
-      <td><span name="ref_ciudad_2">__________</span></td>
+      <td><span name="ref_empresa_2">____________</span></td>
+      <td><span name="ref_contacto_2">____________</span></td>
+      <td><span name="ref_email_2">____________</span></td>
+      <td><span name="ref_tel_2">____________</span></td>
+      <td>
+        <span name="ref_dir_2">____________</span> -
+        <span name="ref_ciudad_2">____________</span>
+      </td>
+    </tr>
+  </table>
+  <table class="table_class">
+    <tr>
+      <th class="gray_bg" colspan="4">9. INFORMACIÓN SISTEMA DE GESTIÓN</th>
+    </tr>
+    <tr>
+      <th>CERTIFICACIÓN QUE POSEE</th>
+      <td>
+        <span name="certificacion_basc">BASC</span>
+        <span name="certificacion_iso" hidden>ISO</span>
+        <span name="certificacion_otra" hidden>OTRA</span>
+      </td>
+      <th>CUÁL?</th>
+      <td>
+        <span name="otra_certificacion_text">____________</span>
+      </td>
+    </tr>
+    <tr>
+      <th>EN PROCESO?</th>
+      <td>
+        SI <span name="otra_cert_s">[x]</span>
+        <span name="otra_cert_n" hidden>[__]</span>
+        NO <span name="otra_cert_s">[__]</span>
+        <span name="otra_cert_n" hidden>[x]</span>
+      </td>
+      <th>CUÁL?</th>
+      <td>
+        <span name="otra_certificacion_text">____________</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        NOTA: Estaría dispuesto a recibirnos para conocer las instalaciones y
+        verificar la efectividad del Sistema de Calidad, Gestión Ambiental,
+        Salud Ocupacional y/o Seguridad Aplicada.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Si <span name="acepta_visita_n">[__]</span>
+          <span name="acepta_visita_s" hidden>[X]</span>
+        </span>
+      </td>
+      <td>
+        <span>
+          No <span name="acepta_visita_n">[X]</span>
+          <span name="acepta_visita_s" hidden>[__]</span>
+        </span>
+      </td>
+      <td>POR FAVOR JUSTIFIQUE SU RESPUESTA</td>
+      <td>
+        <span name="justificacion_visita">____________</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">
+        Estaría dispuesto a comprometerse con la seguridad en la prestación de
+        servicio y/o productos que le ofrece a TRANS-ARENAS mediante la firma de
+        un acuerdo Contractual?
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span>
+          Si <span name="acepta_seguridad_n">[__]</span>
+          <span name="acepta_seguridad_s" hidden>[X]</span>
+        </span>
+      </td>
+      <td>
+        <span>
+          No <span name="acepta_seguridad_n">[X]</span>
+          <span name="acepta_seguridad_s" hidden>[__]</span>
+        </span>
+      </td>
+      <td>POR FAVOR JUSTIFIQUE SU RESPUESTA</td>
+      <td><span name="justificacion_seguridad">____________</span></td>
     </tr>
   </table>
   <div style="border: 1px solid black">
-    <b>7. INFORMACIÓN SISTEMA DE GESTIÓN</b>
-
-    <table class="table_class_nb">
-      <tr>
-        <td>CERTIFICACIONES QUE POSEE:</td>
-        <td>
-          BASC <span name="certificaciones_basc">[x]</span>
-          <span name="certificaciones_iso" hidden>[__]</span>
-          <span name="certificaciones_otra" hidden>[__]</span>
-        </td>
-        <td>
-          ISO <span name="certificaciones_basc">[__]</span>
-          <span name="certificaciones_iso" hidden>[x]</span>
-          <span name="certificaciones_otra" hidden>[__]</span>
-        </td>
-        <td>
-          OTRA <span name="certificaciones_basc">[__]</span>
-          <span name="certificaciones_iso" hidden>[__]</span>
-          <span name="certificaciones_otra" hidden>
-            [x]
-            <span name="otra_cert_text">__________</span>
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="2">EN PROCESO:</td>
-        <td colspan="2">
-          <span name="en_proceso">__________</span>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="4">
-          EN CASO AFIRMATIVO ADJUNTE EL CERTIFICADO O CARTA DE ACEPTACIÓN
-        </td>
-      </tr>
-      <tr>
-        <td>PERTENECE A ALGÚN GREMIO?</td>
-        <td>
-          <span>
-            Si <span name="pertenece_gremio_n">[__]</span>
-            <span name="pertenece_gremio_s" hidden>[X]</span>
-          </span>
-        </td>
-        <td>
-          <span>
-            No <span name="pertenece_gremio_n">[X]</span>
-            <span name="pertenece_gremio_s" hidden>[__]</span>
-          </span>
-        </td>
-        <td name="pertenece_gremio_s" hidden>
-          CUAL <span name="cual_gremio">__________</span>
-        </td>
-      </tr>
-      <tr>
-        <td colspan="4">
-          NOTA: Estaría dispuesto a recibirnos para conocer las instalaciones y
-          verificar la efectividad del Sistema de Calidad, Gestión Ambiental,
-          Salud Ocupacional y/o Seguridad Aplicada.
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <span>
-            Si <span name="acepta_visita_n">[__]</span>
-            <span name="acepta_visita_s" hidden>[X]</span>
-          </span>
-        </td>
-        <td>
-          <span>
-            No <span name="acepta_visita_n">[X]</span>
-            <span name="acepta_visita_s" hidden>[__]</span>
-          </span>
-        </td>
-        <td>POR FAVOR JUSTIFIQUE SU RESPUESTA</td>
-        <td>
-          <span name="justificacion_visita">__________</span>
-        </td>
-      </tr>
-    </table>
-    <div style="border: 1px solid black">
-      <table class="table_class_nb">
-        <tr>
-          <td colspan="4">
-            Estaría dispuesto a comprometerse con la seguridad en la prestación
-            de servicio y/o productos que le ofrece a TRANS-ARENAS mediante la
-            firma de un acuerdo Contractual?
-          </td>
-        </tr>
-        <tr>
-          <td>
-            <span>
-              Si <span name="acepta_seguridad_n">[__]</span>
-              <span name="acepta_seguridad_s" hidden>[X]</span>
-            </span>
-          </td>
-          <td>
-            <span>
-              No <span name="acepta_seguridad_n">[X]</span>
-              <span name="acepta_seguridad_s" hidden>[__]</span>
-            </span>
-          </td>
-          <td>
-            POR FAVOR JUSTIFIQUE SU RESPUESTA
-            <span name="justificacion_seguridad">__________</span>
-          </td>
-        </tr>
-      </table>
-    </div>
-  </div>
-  <div style="border: 1px solid black">
-    <p><b>8. DECLARACIÓN VOLUNTARIA DE ORIGEN DE FONDOS:</b></p>
-  </div>
-  <div style="border: 1px solid black">
-    <p>En mi calidad de Representante Legal de la compañía declaro:</p>
-    <p>
-      Que tanto mis recursos como los de la persona jurídica que represento,
-      provienen de actividades lícitas. Por lo tanto, los mismos no provienen de
-      ninguna actividad ilícita de las contempladas en el Código Penal
-      Colombiano.
-    </p>
-    <p>
-      Que en la ejecución del negocio jurídico con la Compañía no contrataremos
-      ni tendremos vínculos de ningún tipo con terceros que realicen operaciones
-      o tengan recursos provenientes de actividades ilícitas de las contempladas
-      en el Código Penal Colombiano.
-    </p>
-    <p>
-      Que la persona jurídica que represento cumple con las normas sobre
-      prevención y control de lavado de activos y la financiación del terrorismo
-      que le resulten aplicables, teniendo implementados las políticas,
-      procedimientos y estrategias de prevención y control que se deriven de
-      dichas normas.
-    </p>
-    <p>
-      Que ni yo ni la sociedad que represento, ni sus accionistas o socios que
-      directa o indirectamente tengan el 5% o más del capital social, ni sus
-      representantes legales, ni sus miembros de junta directiva, se encuentran
-      en las listas internacionales vinculantes para Colombia, de conformidad
-      con el derecho internacional (listas de las Naciones Unidas) o en las
-      listas de la OFAC y que en el evento de tener conocimiento de que alguna
-      de las anteriores personas estamos en dichas listas, lo informaremos
-      inmediatamente a la Compañía. Reconocemos el derecho de Trans Arenas
-      Internacional Cargo S.A.S. de efectuar las verificaciones que considere
-      pertinentes y de dar por terminada cualquier relación comercial o jurídica
-      si verifica que algunas de las personas mencionadas arriba figuran en
-      dichas listas.
-    </p>
-    <p>
-      Que ni yo ni la sociedad que represento, ni sus accionistas o socios que
-      directa o indirectamente tengan el 5% o más del capital social, ni sus
-      representantes legales, ni sus miembros de junta directiva, tenemos
-      investigaciones o procesos penales por delitos de lavado de activos y
-      financiación del terrorismo, ni por delitos conexos tales como omisión de
-      denuncia y favorecimiento, entre otros. En el evento que yo o alguna de
-      las anteriores personas seamos investigados por la comisión de cualquiera
-      de los delitos anteriores o de cualquier otro delito, así lo informaremos
-      inmediatamente a la Compañía y esta está facultada para efectuar las
-      verificaciones que estime pertinentes y podrá dar por terminada cualquier
-      relación comercial o jurídica si verifica que alguna de las personas
-      mencionadas arriba tenemos investigaciones o procesos penales en curso.
-    </p>
-    <p>
-      Que reconozco y acepto que Trans Arenas Internacional Cargo S.A.S. tiene
-      la obligación legal de solicitar las aclaraciones y explicaciones que
-      considere pertinentes en relación con mis operaciones o las operaciones de
-      la persona jurídica que represento, al igual que sobre el origen de mis
-      activos y los de la persona jurídica que represento.
-    </p>
-    <p>
-      Autorizo a Trans Arenas Internacional Cargo S.A.S para efectuar la
-      consulta de mi información personal en listas de control de lavado de
-      activos y financiación del terrorismo y efectuar los reportes a las
-      autoridades competentes en materia de lavado de activos y financiación al
-      terrorismo, que considere necesarios realizar de conformidad con sus
-      reglamentos y manuales de prevención y/o administración del riesgo de
-      lavado de activos y financiación al terrorismo
-    </p>
-  </div>
-  <div style="border: 1px solid black">
-    OBSERVACIÓN:
-    <span name="observaciones">__________</span>
-  </div>
-  <div style="border: 1px solid black">
-    <ol>
-      <div>
-        REPRESENTANTE LEGAL (FIRMA)
-        <br />
-        <br />
-        <br />
-        ______________________________
-      </div>
-      <br /><br /><br />
-      <div>
-        FIRMA (PERSONA NATURAL)
-        <br />
-        <br />
-        <br />
-        ______________________________
-      </div>
-    </ol>
-  </div>
-  <div style="border: 1px solid black">
-    <b>POR FAVOR ANEXAR LOS SIGUIENTES DOCUMENTOS:</b>
-    <ul>
-      <li>
-        CERTIFICADO DE EXISTENCIA Y REPRESENTACION LEGAL (ORIGINAL NO MAYOR A 30
-        DIAS)
-      </li>
-      <li>FOTOCOPIA DEL RUT</li>
-      <li>FOTOCOPIA CEDULA REPRESENTANTE LEGAL</li>
-      <li>UNA (1) REFERENCIA BANCARIA Y UNA (1) REFERENCIA COMERCIAL</li>
-      <li>
-        FOTOCOPIA DE LOS CERTIFICADOS DE GESTION DE CALIDAD, GESTION AMBIENTAL,
-        BASC U OTROS, DE ESTAR CERTIFICADO. SI SE ENCUENTRA EN PROCESO DE
-        CERTIFICACION OACTUALIZACION ANEXE COPIA DE LA CARTA DE LA ENTIDAD
-        CERTIFICADORA QUE LO CONFIRME.
-      </li>
-    </ul>
-  </div>
-  <div style="border: 1px solid black">
-    Con el objetivo de brindar un mejor servicio a sus clientes y proteger la
-    cadena logística del Comercio Internacional en Colombia TRANS-ARENAS
-    INTERNATIONAL CARGO S.A.S., ha implementado estándares y controles de
-    seguridad en todos sus procesos, invitando además a sus Asociados de
-    Negocios a vincularse con iniciativas de seguridad como el Basc y
-    disponiendo de mecanismos que permiten brindarles un asesoramiento en su
-    aplicación. Contáctenos para brindarle mayor información al respecto.
-  </div>
-  <div style="border: 1px solid black">
-    <b>9. SOLICITUD DE AUTORIZACIÓN PARA CONSULTA Y VERIFICACIÓN DE DATOS</b>
-    <br />
-    Autorizo TRANSARENAS INTERNATIONAL CARGO S.A.S según lo establecido a norma
-    (DECRETO NACIONAL 886 de 2014-Decreto 090 del 2018) a lo que respecta al
-    tratamiento de datos personales y ley HABEAS DATA para: Consultar verificar,
-    procesar, suministrar, actualizar con fines estadísticos y de control las
-    entidades financieras de Colombia, y a cualquier otra entidad que maneje
-    base de datos con los mismos fines para dar cumplimiento a lo establecido a
-    la normatividad vigente.
-  </div>
-  <div style="border: 1px solid black">
-    <b>10. PARA USO EXCLUSIVO DE TRANS-ARENAS</b>
     <table class="table_class_nb">
       <tr>
         <td colspan="2">FECHA DE DILIGENCIAMIENTO:</td>
         <td colspan="2">
-          <span name="fecha_diligenciamiento">__________</span>
+          <span name="fecha_diligenciamiento">____________</span>
         </td>
       </tr>
       <tr>
-        <td>COMERCIAL RESPONSABLE</td>
+        <td>RESPONSABLE</td>
         <td>
-          <span name="comercial_responsable">__________</span>
+          <span name="comercial_responsable">____________</span>
         </td>
         <td>SE ACEPTA ASOCIADO DE NEGOCIO</td>
         <td>
@@ -875,17 +549,199 @@
             <span name="condicion_pago_contado" hidden>[__]</span>
           </span>
         </td>
-        <td>No. DE DÍAS <span name="no_dias">__________</span></td>
+        <td>No. DE DÍAS <span name="no_dias">____________</span></td>
       </tr>
       <tr>
         <td colspan="4">
           CERTIFICO QUE LA INFORMACIÓN CONSIGNADA ARRIBA ES CORRECTA
         </td>
       </tr>
+      <tr>
+        <td colspan="4">
+          OBSERVACIONES:
+          <span name="observaciones_2">____________</span>
+        </td>
+      </tr>
     </table>
   </div>
   <div style="border: 1px solid black">
-    OBSERVACIONES:
-    <span name="observaciones_2">__________</span>
+    <ol>
+      <div>
+        <br />
+        <br />
+        <br />
+        ______________________________
+        <br />
+        <b>FIRMA DE PERSONA QUE CONFIRMA</b>
+      </div>
+    </ol>
   </div>
+  <table class="table_class">
+    <tr>
+      <th class="gray_bg">
+        11. DECLARACIÓN DEL ORIGEN DE LOS DINEROS / FONDOS
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <p>En mi calidad de Representante Legal de la compañía declaro:</p>
+
+        <p>
+          Que tanto mis recursos como los de la persona jurídica que represento,
+          provienen de actividades lícitas. Por lo tanto, los mismos no
+          provienen de ninguna actividad ilícita de las contempladas en el
+          Código Penal Colombiano.
+        </p>
+
+        <p>
+          Que en la ejecución del negocio jurídico con la Compañía no
+          contrataremos ni tendremos vínculos de ningún tipo con terceros que
+          realicen operaciones o tengan recursos provenientes de actividades
+          ilícitas de las contempladas en el Código Penal Colombiano.
+        </p>
+
+        <p>
+          Que la persona jurídica que represento cumple con las normas sobre
+          prevención y control de lavado de activos y la financiación del
+          terrorismo que le resulten aplicables, teniendo implementados las
+          políticas, procedimientos y estrategias de prevención y control que se
+          deriven de dichas normas.
+        </p>
+
+        <p>
+          Que ni yo ni la sociedad que represento, ni sus accionistas o socios
+          que directa o indirectamente tengan el 5% o más del capital social, ni
+          sus representantes legales, ni sus miembros de junta directiva, se
+          encuentran en las listas internacionales vinculantes para Colombia, de
+          conformidad con el derecho internacional (listas de las Naciones
+          Unidas) o en las listas de la OFAC y que en el evento de tener
+          conocimiento de que alguna de las anteriores personas estamos en
+          dichas listas, lo informaremos inmediatamente a la Compañía.
+          Reconocemos el derecho de Trans Arenas Internacional Cargo S.A.S. de
+          efectuar las verificaciones que considere pertinentes y de dar por
+          terminada cualquier relación comercial o jurídica si verifica que
+          algunas de las personas mencionadas arriba figuran en dichas listas.
+        </p>
+
+        <p>
+          Que ni yo ni la sociedad que represento, ni sus accionistas o socios
+          que directa o indirectamente tengan el 5% o más del capital social, ni
+          sus representantes legales, ni sus miembros de junta directiva,
+          tenemos investigaciones o procesos penales por delitos de lavado de
+          activos y financiación del terrorismo, ni por delitos conexos tales
+          como omisión de denuncia y favorecimiento, entre otros. En el evento
+          que yo o alguna de las anteriores personas seamos investigados por la
+          comisión de cualquiera de los delitos anteriores o de cualquier otro
+          delito, así lo informaremos inmediatamente a la Compañía y esta está
+          facultada para efectuar las verificaciones que estime pertinentes y
+          podrá dar por terminada cualquier relación comercial o jurídica si
+          verifica que alguna de las personas mencionadas arriba tenemos
+          investigaciones o procesos penales en curso.
+        </p>
+
+        <p>
+          Que reconozco y acepto que Trans Arenas Internacional Cargo S.A.S.
+          tiene la obligación legal de solicitar las aclaraciones y
+          explicaciones que considere pertinentes en relación con mis
+          operaciones o las operaciones de la persona jurídica que represento,
+          al igual que sobre el origen de mis activos y los de la persona
+          jurídica que represento.
+        </p>
+
+        <p>
+          Autorizo a Trans Arenas Internacional Cargo S.A.S para efectuar la
+          consulta de mi información personal en listas de control de lavado de
+          activos y financiación del terrorismo y efectuar los reportes a las
+          autoridades competentes en materia de lavado de activos y financiación
+          al terrorismo, que considere necesarios realizar de conformidad con
+          sus reglamentos y manuales de prevención y/o administración del riesgo
+          de lavado de activos y financiación al terrorismo
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <th class="gray_bg">Documentos adicionales</th>
+    </tr>
+    <tr>
+      <td>
+        Junto a este formulario, el usuario se obliga a remitir la siguiente
+        documentación adicional:
+
+        <ol>
+          <li>
+            Original Certificado de Existencia y Representacion Legal con
+            vigencia no superior a noventa (30) días, expedido por la Camara de
+            Comercio.
+          </li>
+          <li>Registro Unico Tributario RUT.</li>
+          <li>
+            Copia del documento de identificacion del Representante legal de la
+            Empresa.
+          </li>
+          <li>
+            Copia Declaracion de Renta del ultimo periodo gravable declarado.
+          </li>
+          APODERADO
+          <li>Certificación Bancaria no superior a (30) dias</li>
+          <li>2 referencias comerciales</li>
+          <li>Estados Financieros</li>
+          <li>
+            Fotocopia de Certificaciones obtenidas (ISO, BASC, entre otras)
+          </li>
+        </ol>
+        Adjunta poder debidamente firmado con reconocimiento ante Notario
+        Publico.
+      </td>
+    </tr>
+    <tr>
+      <th class="gray_bg">12. TRATAMIENTO DE USO DE DATOS PERSONALES</th>
+    </tr>
+    <tr>
+      <td>
+        <p style="text-align: center">
+          SOLICITUD DE AUTORIZACIÓN PARA CONSULTA Y VERIFICACIÓN DE DATOS
+        </p>
+        <p>
+          Autorizo TRANSARENAS INTERNATIONAL CARGO S.A.S según lo establecido a
+          norma (DECRETO NACIONAL 886 de 2014-Decreto 090 del 2018) a lo que
+          respecta al tratamiento de datos personales y ley HABEAS DATA para:
+          Consultar verificar, procesar, suministrar, actualizar con fines
+          estadísticos y de control las entidades financieras de Colombia, y a
+          cualquier otra entidad que maneje base de datos con los mismos fines
+          para dar cumplimiento a lo establecido a la normatividad vigente.
+        </p>
+      </td>
+    </tr>
+    <tr>
+      <th class="gray_bg">13. AUTORIZACIÓN</th>
+    </tr>
+    <tr>
+      <td>
+        <p>
+          El suscrito, identificado como aparece al pie de mi firma, manifiesto
+          de forma libre, consciente, expresa e informada, que autorizo a TRANS
+          ARENAS INTERNATIONAL CARGO S.A.S.,y sus empresas vinculadas para
+          realizar y/o continuar con el tratamiento de la información personal
+          (datos personales) de la cual soy titular, en los términos
+          establecidos en la Ley 1581 de 2012, decretos reglamentarios y normas
+          que la complementen y/o sustituyan y en la “Política de Privacidad y
+          Tratamiento de Datos Personales de TRANS ARENAS INTERNATIONAL CARGO
+          S.A.S."
+        </p>
+        <div>
+          Atentamente,
+          <br />
+          <br />
+          <br />
+          ______________________________ <br />
+          Nombre Rep. Legal:
+          <span name="nombre_rep_legal">____________</span> <br />
+          Tipo y No. de ID: <span name="tipo_id_rep_legal_cc">CC.</span
+          ><span name="tipo_id_rep_legal_ce" hidden>CE.</span>
+          <span name="tipo_id_rep_legal_pa" hidden>PASAPORTE.</span>
+          <span name="num_id_rep_legal">____________</span>
+        </div>
+      </td>
+    </tr>
+  </table>
 </div>
