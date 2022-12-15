@@ -39,6 +39,8 @@
     <b>EL TRABAJADOR</b>, realiza el cambio de cargo de
     <span>
       <b name="cargo_viejo_call_c">AGENTE CALL CENTER</b>
+      <b name="cargo_viejo_gerente_comer" hidden>GERENTE COMERCIAL</b>
+      <b name="cargo_viejo_coord_jr" hidden>COORDINADOR JUNIOR</b>
       <b name="cargo_viejo_auxiliar_compras" hidden>Auxiliar de compras</b>
       <b name="cargo_viejo_call_c_cnd" hidden>AGENTE CALL CENTER CND</b>
       <b name="cargo_viejo_gest_oper" hidden>GESTOR OPERATIVO</b>
@@ -168,6 +170,8 @@
     y en adelante prestara sus servicios personales como
     <span>
       <b name="cargo_nuevo_call_c">AGENTE CALL CENTER</b>
+      <b name="cargo_nuevo_gerente_comer" hidden>GERENTE COMERCIAL</b>
+      <b name="cargo_nuevo_coord_jr" hidden>COORDINADOR JUNIOR</b>
       <b name="cargo_nuevo_auxiliar_compras" hidden>Auxiliar de compras</b>
       <b name="cargo_nuevo_call_c_cnd" hidden>AGENTE CALL CENTER CND</b>
       <b name="cargo_nuevo_gest_oper" hidden>GESTOR OPERATIVO</b>
@@ -296,6 +300,40 @@
     </span>
     <ul>
       <li>
+        <span name="cargo_nuevo_gerente_comer" hidden>
+          Garantizar el crecimiento de la organización a través del proceso de
+          marketing y networking para contribuir con la estrategia de la
+          compañía.
+          <br />Seguimiento y control de las softwares/plataformas o diseños
+          definidos por la compañía para garantizar el cumplimiento del
+          presupuesto definido por compañía. <br />Gestión de comunicación
+          externa e interna analizando la información para determinar las
+          estrategias y planeación para posicionar la imagen de la compañía en
+          el mercado. <br />Cumplir la promesa de valor con los clientes
+          corporativos para ejecutar el servicio al cliente idóneo que permita a
+          la organización mantener el buen relacionamiento. <br />Búsqueda de
+          nuevos negocios que contribuyan al crecimiento de la organización
+        </span>
+        <span name="cargo_nuevo_coord_jr" hidden>
+          Supervisar el desempeño de las labores del personal a cargo.
+          <br />Gestionar los sistemas de información CRM, plataformas de
+          control y recursos tecnológicos durante la operación. <br />Controlar
+          la asistencia de los agentes según la planificación estratégica de la
+          campaña. <br />Recibir y realizar seguimiento a las peticiones quejas
+          y reclamos de los clientes. <br />Reportar las novedades diarias
+          presentadas en la operación. <br />Escuchar llamadas de manera
+          aleatoria y realizar la respectiva retroalimentación. <br />Diseñar
+          planes de mejora de calidad de las campañas. <br />Realizar
+          retroalimentación y elaborar compromisos de mejora a los agentes de
+          acuerdo con los seguimientos realizados. <br />Diseñar e Implementar
+          modelos de gestión integral con el fin de mejorar el rendimiento de su
+          equipo de trabajo. <br />Gestionar las credenciales de acceso de los
+          agentes a los sistemas de información necesarios para la operación de
+          la campaña y vigilar el buen uso de estas. <br />Reportar los
+          resultados de cierre de operación diariamente al jefe inmediato. •
+          Asumir y ejecutar las demás funciones que le sean asignadas por el
+          empleador en cumplimiento de la misión del cargo.
+        </span>
         <span name="cargo_nuevo_call_c_cnd">
           Realizar control de cumplimiento de horarios del técnico de las
           visitas manteniendo constante comunicación con el técnico del ALIADO.

@@ -389,6 +389,8 @@
         CARGO
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>GESTOR OPERATIVO</span>
+        <span name="cargo_gerente_comer" hidden>GERENTE COMERCIAL</span>
+        <span name="cargo_coord_jr" hidden>COORDINADOR JUNIOR</span>
         <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
         <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
         <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTION DOCUMENTAL</span>
@@ -1009,6 +1011,8 @@
       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>GESTOR OPERATIVO</span>
+        <span name="cargo_gerente_comer" hidden>GERENTE COMERCIAL</span>
+        <span name="cargo_coord_jr" hidden>COORDINADOR JUNIOR</span>
         <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
         <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
         <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTION DOCUMENTAL</span>
@@ -1778,6 +1782,8 @@
         >
         <span name="cargo_call_c_cnd" hidden>AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>GESTOR OPERATIVO</span>
+        <span name="cargo_gerente_comer" hidden>GERENTE COMERCIAL</span>
+        <span name="cargo_coord_jr" hidden>COORDINADOR JUNIOR</span>
         <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
         <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
         <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTION DOCUMENTAL</span>
@@ -2819,6 +2825,26 @@
           segmentos solicitados. <br />Asumir y ejecutar las demás funciones que
           le sean asignadas por el empleador en cumplimiento de la misión del
           cargo.
+        </span>
+        <span name="cargo_gerente_comer" hidden>
+          Garantizar el crecimiento de la organización a través del proceso de marketing y networking para contribuir con la estrategia de la compañía.
+          <br/>Seguimiento y control de las softwares/plataformas o diseños definidos por la compañía para garantizar el cumplimiento del presupuesto definido por compañía.
+          <br/>Gestión de comunicación externa e interna analizando la información para determinar las estrategias y planeación para posicionar la imagen de la compañía en el mercado.
+          <br/>Cumplir la promesa de valor con los clientes corporativos para ejecutar el servicio al cliente idóneo que permita a la organización mantener el buen relacionamiento.
+          <br/>Búsqueda de nuevos negocios que contribuyan al crecimiento de la organización
+        </span>
+        <span name="cargo_coord_jr" hidden>
+          Supervisar el desempeño de las labores del personal a cargo.
+          <br/>Gestionar los sistemas de información CRM, plataformas de control y recursos tecnológicos durante la operación.
+          <br/>Controlar la asistencia de los agentes según la planificación estratégica de la campaña.
+          <br/>Recibir y realizar seguimiento a las peticiones quejas y reclamos de los clientes.
+          <br/>Reportar las novedades diarias presentadas en la operación.
+          <br/>Escuchar llamadas de manera aleatoria y realizar la respectiva retroalimentación.
+          <br/>Diseñar planes de mejora de calidad de las campañas.
+          <br/>Realizar retroalimentación y elaborar compromisos de mejora a los agentes de acuerdo con los seguimientos realizados.
+          <br/>Diseñar e Implementar modelos de gestión integral con el fin de mejorar el rendimiento de su equipo de trabajo.
+          <br/>Gestionar las credenciales de acceso de los agentes a los sistemas de información necesarios para la operación de la campaña y vigilar el buen uso de estas.
+          <br/>Reportar los resultados de cierre de operación diariamente al jefe inmediato. • Asumir y ejecutar las demás funciones que le sean asignadas por el empleador en cumplimiento de la misión del cargo.
         </span>
         <span name="cargo_junior_data_marshall" hidden>
           Realizar los reportes diarios y semanales de ventas acumuladas por
@@ -3874,6 +3900,8 @@
       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>GESTOR OPERATIVO</span>
+        <span name="cargo_gerente_comer" hidden>GERENTE COMERCIAL</span>
+        <span name="cargo_coord_jr" hidden>COORDINADOR JUNIOR</span>
         <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
         <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
         <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTION DOCUMENTAL</span>
@@ -5392,6 +5420,8 @@
       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
         <span name="cargo_gest_oper" hidden>GESTOR OPERATIVO</span>
+        <span name="cargo_gerente_comer" hidden>GERENTE COMERCIAL</span>
+        <span name="cargo_coord_jr" hidden>COORDINADOR JUNIOR</span>
         <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
         <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
         <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTION DOCUMENTAL</span>

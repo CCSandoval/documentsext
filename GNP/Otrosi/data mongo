@@ -143,6 +143,10 @@
                     value: 'backoffice'
                 },
                 {
+                    name: 'Coordinador Junior',
+                    value: 'coord_jr'
+                },
+                {
                     name: 'Coordinador de Gestión Documental',
                     value: 'coord_g_doc'
                 },
@@ -237,6 +241,10 @@
                 {
                     name: 'Gestor Nacional de Operaciones',
                     value: 'gestor_nal_op'
+                },
+                {
+                    name: 'Gerente Comercial',
+                    value: 'gerente_comer'
                 },
                 {
                     name: 'Gerente de Talento Humano',
@@ -363,7 +371,7 @@
                     value: 'sop_redes'
                 },
                 {
-                    name: 'Supervisor Call Center CND',
+                    name: 'Supervisor Call Center',
                     value: 'call_c_sup_cnd'
                 },
                 {
@@ -389,7 +397,7 @@
                 {
                     name: 'Torre de control Junior',
                     value: 'torre_ctrl_jr'
-                },
+                }
             ],
             prereq:[
                 {
@@ -509,6 +517,10 @@
                     value: 'backoffice'
                 },
                 {
+                    name: 'Coordinador Junior',
+                    value: 'coord_jr'
+                },
+                {
                     name: 'Coordinador de Gestión Documental',
                     value: 'coord_g_doc'
                 },
@@ -603,6 +615,10 @@
                 {
                     name: 'Gestor Nacional de Operaciones',
                     value: 'gestor_nal_op'
+                },
+                {
+                    name: 'Gerente Comercial',
+                    value: 'gerente_comer'
                 },
                 {
                     name: 'Gerente de Talento Humano',
@@ -729,7 +745,7 @@
                     value: 'sop_redes'
                 },
                 {
-                    name: 'Supervisor Call Center CND',
+                    name: 'Supervisor Call Center',
                     value: 'call_c_sup_cnd'
                 },
                 {
@@ -755,7 +771,7 @@
                 {
                     name: 'Torre de control Junior',
                     value: 'torre_ctrl_jr'
-                },
+                }
             ],
             prereq:[
                 {
@@ -905,5 +921,5 @@
     preBuild: false,
     preBuildData: [],
     price: 5000,
-    build: 4
+    build: 5
 }

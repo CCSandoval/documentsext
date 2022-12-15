@@ -128,6 +128,10 @@
                     value: 'backoffice'
                 },
                 {
+                    name: 'Coordinador Junior',
+                    value: 'coord_jr'
+                },
+                {
                     name: 'Coordinador de Gestión Documental',
                     value: 'coord_g_doc'
                 },
@@ -222,6 +226,10 @@
                 {
                     name: 'Gestor Nacional de Operaciones',
                     value: 'gestor_nal_op'
+                },
+                {
+                    name: 'Gerente Comercial',
+                    value: 'gerente_comer'
                 },
                 {
                     name: 'Gerente de Talento Humano',
@@ -348,7 +356,7 @@
                     value: 'sop_redes'
                 },
                 {
-                    name: 'Supervisor Call Center CND',
+                    name: 'Supervisor Call Center',
                     value: 'call_c_sup_cnd'
                 },
                 {
@@ -374,7 +382,7 @@
                 {
                     name: 'Torre de control Junior',
                     value: 'torre_ctrl_jr'
-                },
+                }
             ]
         },
         {
@@ -2060,5 +2068,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 7
+    build: 8
 }
