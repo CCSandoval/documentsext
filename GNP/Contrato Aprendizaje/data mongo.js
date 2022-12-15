@@ -2105,7 +2105,7 @@
         'recomendaciones_medicas',
         'correo_continuar_trabajador'
     ],
-    name: 'Contratación GNP V4 (Contrato 36 horas)',
+    name: 'Contratación GNP V5 (Contrato aprendizaje)',
     files: [
         {
             name: 'Hoja de Vida',
@@ -2175,5 +2175,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 1
+    build: 2
 }
