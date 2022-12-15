@@ -2372,6 +2372,33 @@
             ]
         },
         {
+            name: 'beneficio_n',
+            description: "¿Desea ingresar el beneficio mudate ya?",
+            value: 'n',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'valor_pago_2',
+            type: 'currency',
+            description: 'Ingrese el valor del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                }
+            ]
+        },
+        {
             name: 'fecha_firma_cesion',
             description: 'Seleccione la fecha de firma de la cesion',
             type: 'date'
