@@ -1638,16 +1638,6 @@
             ]
         },
         {
-            name: 'nombre_trabajador',
-            description: 'Ingrese el nombre del trabajador',
-            type: 'name'
-        },
-        {
-            name: 'cedula_trabajador',
-            description: 'Ingrese el número de cédula del trabajador',
-            type: 'number',
-        },
-        {
             name: 'fechanaci_trabajador',
             description: 'Ingrese la fecha de nacimiento del trabajador',
             type: 'date',
@@ -1674,12 +1664,6 @@
             type: 'number'
         },
         {
-            name: 'fecha_inicio_trabajador',
-            description: 'Ingrese la fecha de inicio de labores del trabajador',
-            type: 'date',
-            help: 'fecha'
-        },
-        {
             name: 'fecha_terminacion_trabajador',
             description: 'Ingrese la fecha de inicio de labores del trabajador',
             type: 'date',
@@ -1696,11 +1680,6 @@
             type: 'number'
         },
         {
-            name: 'eps_trabajador',
-            description: 'Ingrese la EPS del trabajador',
-            type: 'text'
-        },
-        {
             name: 'arl_trabajador',
             description: 'Ingrese la ARL del trabajador',
             type: 'text'
@@ -1712,7 +1691,7 @@
         },
         {
             name: 'nit_trabajador',
-            description: 'Ingrese el NIT del trabajador',
+            description: 'Ingrese el NIT de la institución educativa del trabajador',
             type: 'number'
         },
         { 
@@ -2175,5 +2154,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 2
+    build: 3
 }
