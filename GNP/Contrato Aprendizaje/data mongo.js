@@ -1644,24 +1644,9 @@
             help: 'fecha'
         },
         {
-            name: 'dir_dom_trabajador',
-            description: 'Ingrese la dirección de domicilio del trabajador',
-            type: 'text'
-        },
-        {
-            name: 'tel_celular_trabajador',
-            description: 'Ingrese el número de celular del trabajador',
-            type: 'phone'
-        },
-        {
             name: 'correo_trabajador',
             description: 'Ingrese el correo electrónico del trabajador',
             type: 'email'
-        },
-        {
-            name: 'estrato_trabajador',
-            description: 'Ingrese el estrato del trabajador',
-            type: 'number'
         },
         {
             name: 'fecha_terminacion_trabajador',
@@ -1959,11 +1944,6 @@
             ],
             value: 's'
         },
-        {
-            name: 'correo_trabajador',
-            description: 'Digite el correo electrónico que usará para firmar',
-            type: 'email'
-        }
     ],
     operation: [],
     sign: [
@@ -2059,7 +2039,6 @@
         'num_contrato',
         'objeto_contrato',
         'nombre_trabajador',
-        'dir_dom_trabajador',
         'campania',
         'cargo',
         'ccf',
@@ -2154,5 +2133,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 3
+    build: 4
 }
