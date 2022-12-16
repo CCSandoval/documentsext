@@ -5212,7 +5212,7 @@ del cargo.
   <br>
   <br>
   <div class="align_left">
-    <div name="firma_trabajador" id="trabajador_9" class="sign_margin"></div>
+    <div name="firma_trabajador" id="trabajador_10" class="sign_margin"></div>
     <p>
       <b name="nombre_trabajador">_____________</b>
       <br />
@@ -5549,7 +5549,7 @@ del cargo.
   <br />
   <br />
   
-  <div id="firma_gnp" class="sign_margin"></div>
+  <div name="firma_gnp" id="gnp_8" class="sign_margin"></div>
   <p>
     _________________________________ <br />
     Empleador
@@ -5559,7 +5559,7 @@ del cargo.
   <br />
   <br />
   
-  <div id="firma_trabajador" class="sign_margin"></div>
+  <div name="firma_trabajador" id="trabajador_11" class="sign_margin"></div>
   <p>
     _________________________________ <br />
     <span name="nombre_trabajador">___________</span>
@@ -5567,4 +5567,95 @@ del cargo.
     Correo: <span name="correo_trabajador">___________</span> <br />
     C.C. <span name="cedula_trabajador">___________</span> <br />
   </p>  
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <img
+    style="width: 100%"
+    src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg"
+    alt="banner"
+  />
+  <p style="text-align: right; color: #979797">
+    <b>GNP-TH-D-08</b>
+    <br />
+    <b>V 2</b>
+    <br />
+    <em>12/11/2022</em>
+  </p>
+  <br />
+  <br />
+
+  <h3 style="text-align: center">
+    <b>
+      ACTA DE CONOCIMIENTO Y AUTORIZACIÓN DEL EMPLEADO PARA EFECTUAR LA PRUEBA
+      DE ALCOHOL Y DROGAS
+    </b>
+  </h3>
+
+  <p>
+    ACEPTO que he leído y entendido el Reglamento de la Política sobre el abuso
+    del Alcohol y Drogas, acepto su
+    <b
+      >CONTENIDO y ME COMPROMETO A CUMPLIR CON TODAS EXIGENCIAS, REQUISITOS,
+      NORMAS Y PROCEDIMIENTOS ALLI ESTABLECIDOS. IGUALMENTE ACEPTO QUE FIRME
+      PARTE INTEGRANTE DE MI CONTRATO DE TRABAJO Y EN EL CASO DE QUE LO INCUMPLA
+      ACEPTO QUE SE CALIFIQUE COMO FALTA GRAVE TAL INCUMPLIMIENTO.</b
+    >
+  </p>
+
+  <p>
+    Así mismo, autorizo analizar las muestras biológicas que me tomen. Entiendo
+    que estas muestras tienen el propósito de determinar o descartar la
+    presencia en mi orina de drogas controladas no recetadas o de sustancias
+    alucinógenas, enervantes o que creen dependencia y/o niveles de alcohol en
+    mi saliva, aliento o sangre con propósitos de asegurar un desempeño seguro.
+    Entiendo que los resultados de estas pruebas de alcohol y drogas pueden
+    llevar a tomar medidas disciplinarias, Y ME OBLIGO A PRESENTAR LOS
+    RESPECTIVOS DESCARGOS incluyendo los requerimientos para que participe en
+    programas de tratamiento.
+  </p>
+
+  <p>
+    Anoto a continuación todos los medicamentos, drogas o vitaminas que
+    actualmente estoy tomando, o recientemente he tomado. Incluyo medicamentos
+    recetados y no-recetados, remedios para el dolor de cabeza, tabletas contra
+    “gripa”, píldoras para dormir/dietas, etc.:
+  </p>
+
+  <p><span name="medicamentos">_________________________________</span></p>
+
+  <p>
+    Si algunos de los medicamentos enunciados anteriormente son prescritos,
+    suministraré el nombre y toda la información pertinente relacionada con el
+    médico que dio la prescripción.
+  </p>
+
+  <p>
+    Doy mi consentimiento para que un laboratorio, hospital o médico autorizado
+    por GRUPO NACIONAL DE PROYECTOS, para que lleve a cabo la prueba de alcohol
+    y drogas para que entregue los resultados de la misma en forma confidencial,
+    a la persona designada por la Compañía.
+  </p>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div name="firma_trabajador" id="trabajador_12" class="sign_margin"></div>
+  <p>
+    ____________________________________________________
+    <br />
+    <br />
+    <span name="nombre_trabajador">_________________________________</span>
+    <br />
+    Nombre
+    <br />
+    <span name="fecha_firma">_________________________________</span>
+    <br />
+    Fecha
+    <br />
+  </p>
 </div>
