@@ -1,0 +1,38 @@
+{
+    _id: ObjectId(""),
+    config:[
+        {
+            name:'nombre_titular',
+            type:'name',
+            description:'Nombre del titular'
+        },
+        {
+            name:'id_titular',
+            type:'text',
+            description:'Número de identificación del titular'
+        },
+        {
+            name:'correo_titular',
+            type:'email',
+            description:'Correo electrónico del titular'
+        },
+        {
+            name:'tel_titular',
+            type:'phone',
+            description:'Número telefónico del titular'
+        },
+    ],
+    name: 'SEMPLI',
+    price: 5000,
+    build: 0,
+    preBuild: false,
+    signatureProfile: [
+        {
+            email: 'correo_titular',
+            phone: 'telefono_titular',
+            identification: 'id_titular',
+            name: 'nombre_titular',
+            type: 'titular'
+        }
+    ],
+}

@@ -688,7 +688,7 @@
         <b><small>FIRMA:</small></b>
       </td>
       <td style="border-left: none" colspan="4">
-        <span>_________________</span>
+        <div name="firma_trabajador" id="trabajador_1" class="sign_margin"></div>
       </td>
     </tr>
   </table>
@@ -1208,14 +1208,14 @@
   <br />
   <div class="align_right">
     <span>
-      <div name="firma_trabajador" class="sign_margin"></div><br />
+      <div name="firma_trabajador" id="trabajador_2" class="sign_margin"></div><br />
       <p>EL APRENDIZ</p>
       <br />
     </span>
   </div>
   <div class="align_left">
     <span>
-      <div name="firma_gnp" class="sign_margin"></div><br />
+      <div name="firma_gnp" id="trabajador_3" class="sign_margin"></div><br />
       <p>LA EMPRESA</p>
       <br />
     </span>
@@ -3566,11 +3566,7 @@
 <div style="page-break-after: always"></div>
 
 <div class="page">
-  <img
-    style="width: 100%"
-    src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg"
-    alt="banner"
-  />
+  <img style="width: 100%" src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg" alt="banner" />
   <p style="text-align: right; margin-top: 0px">
     <b>Bogotá,</b> <b name="fecha_firma">__________</b>
   </p>
@@ -3634,17 +3630,16 @@
   </p>
 
   <div class="align_left">
+    <div name="firma_trabajador" id="trabajador_4" class="sign_margin"></div>
     <span>
-      <span>_____________________</span><br />
       <b>Trabajador</b><br />
-      <b>Nombre: <b name="nombre_trabajador">__________</b></b
-      ><br />
+      <b>Nombre: <b name="nombre_trabajador">__________</b></b><br />
       <b>C.C. <b name="cedula_trabajador">__________</b></b>
     </span>
   </div>
   <div class="align_right">
+    <div name="firma_gnp" id="gnp_3" class="sign_margin"></div>
     <span>
-      <span>_____________________</span><br />
       <b>GNP - La empresa</b><br />
       <b>Nombre: MILENA CASTILLO</b><br />
       <b>C.C. 53159805</b>
@@ -3655,11 +3650,7 @@
 <div style="page-break-after: always"></div>
 
 <div class="page">
-  <img
-    style="width: 100%"
-    src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg"
-    alt="banner"
-  />
+  <img style="width: 100%" src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg" alt="banner" />
   <p style="text-align: center">
     <b>
       POLITICA DE INCENTIVOS <br />
@@ -3786,17 +3777,16 @@
   </ol>
   <br />
   <div class="align_left">
+    <div name="firma_trabajador" id="trabajador_5" class="sign_margin"></div>
     <span>
-      <span>_____________________</span><br />
       <b>Trabajador</b><br />
-      <b>Nombre: <b name="nombre_trabajador">__________</b></b
-      ><br />
+      <b>Nombre: <b name="nombre_trabajador">__________</b></b><br />
       <b>C.C. <b name="cedula_trabajador">__________</b></b>
     </span>
   </div>
   <div class="align_right">
+    <div name="firma_gnp" id="gnp_4" class="sign_margin"></div>
     <span>
-      <span>_____________________</span><br />
       <b>GNP - La empresa</b><br />
       <b>Nombre: MILENA CASTILLO</b><br />
       <b>C.C. 53159805</b>
@@ -3807,11 +3797,7 @@
 <div style="page-break-after: always"></div>
 
 <div class="page">
-  <img
-    style="width: 100%"
-    src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg"
-    alt="banner"
-  />
+  <img style="width: 100%" src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg" alt="banner" />
   <p style="text-align: center">
     <b>
       AUTORIZACIÓN DE USO DE DERECHOS DE IMAGEN SOBRE FOTOGRAFÍAS Y FIJACIONES
@@ -3822,7 +3808,7 @@
   <p>
     Yo, <span name="nombre_trabajador">_____________</span> mayor de edad,
     domiciliado en
-    <span name="ciudad_res_trabajador">_________________</span> identificado con
+    <span name="dir_dom_trabajador">_________________</span> identificado con
     cédula de ciudadanía No.
     <span name="cedula_trabajador">_________________</span> de
     <span name="expedicion_cedula_trabajador">_______________</span> en mi
@@ -3901,19 +3887,20 @@
   </p>
   <br />
   <p>
-    <span>Firma: _____________________</span><br />
-    <span>Nombre: <span name="nombre_trabajador">_________________</span></span>
-    <br />
-    <span>
-      Cédula No.
-      <span name="cedula_trabajador">_______________</span> de
-      <span name="expedicion_cedula_trabajador">___________</span>
-    </span>
-    <br />
-    <span>
-      Residenciado en
-      <span name="ciudad_res_trabajador">_____________________</span>
-    </span>
+    <span>Firma:</span>
+  <div name="firma_trabajador" id="trabajador_6" class="sign_margin"></div>
+  <span>Nombre: <span name="nombre_trabajador">_________________</span></span>
+  <br />
+  <span>
+    Cédula No.
+    <span name="cedula_trabajador">_______________</span> de
+    <span name="expedicion_cedula_trabajador">___________</span>
+  </span>
+  <br />
+  <span>
+    Residenciado en
+    <span name="dir_dom_trabajador">_____________________</span>
+  </span>
   </p>
   <ul style="list-style-type: none">
     <li>
@@ -3961,10 +3948,7 @@
   <table class="tabla_cv">
     <tr class="border_bottom">
       <td rowspan="3">
-        <img
-          src="https://mi-contrato-static.s3.amazonaws.com/gnp/logo.jpg"
-          alt="gnp"
-        />
+        <img src="https://mi-contrato-static.s3.amazonaws.com/gnp/logo.jpg" alt="gnp" />
       </td>
       <td class="border_left"><small>NOMBRE:</small></td>
       <td class="border_right" colspan="2">
@@ -3999,66 +3983,68 @@
     personal retirado y la base contable de clientes, proveedores y contratistas
     independientes, para las siguientes finalidades:
   </p>
-  <p
-    style="
+  <p style="
       border: 1px solid black;
       background-color: #daeef3;
       text-align: center;
-    "
-  >
+    ">
     AUTORIZO
   </p>
-  <table class="tabla_cv bordered_table">
+  <table class="tabla_cv">
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Efectuar las gestiones pertinentes para el desarrollo del objeto
           social de la compañía en lo que tiene que ver con el cumplimiento del
           objeto del contrato celebrado con el Titular de la información.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_gestiones_n">&nbsp;</span>
           <span name="autoriza_gestiones_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_gestiones_n">x</span>
           <span name="autoriza_gestiones_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Contactar al Titular a través de correo electrónico para el envío de
           extractos, estados de cuenta o facturas en relación con las
           obligaciones derivadas del contrato celebrado entre las partes.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_correo_n">&nbsp;</span>
           <span name="autoriza_contactar_correo_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_correo_n">x</span>
           <span name="autoriza_contactar_correo_s" hidden>&nbsp;</span>
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Suministrar información de contacto a la fuerza comercial y/o red de
           distribución, telemercadeo, investigación de mercados y cualquier
@@ -4069,23 +4055,26 @@
           las mismas
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
+
           <span name="autoriza_suministrar_n">&nbsp;</span>
           <span name="autoriza_suministrar_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_suministrar_n">x</span>
           <span name="autoriza_suministrar_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Dar cumplimiento a las obligaciones contraídas por
           <b> GNP Grupo Nacional de Proyectos S.A.S </b> con el Titular de la
@@ -4095,143 +4084,160 @@
           organización).
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_dar_cumplimiento_n">&nbsp;</span>
           <span name="autoriza_dar_cumplimiento_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_dar_cumplimiento_n">x</span>
           <span name="autoriza_dar_cumplimiento_s" hidden>&nbsp;</span>
+
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Contactar al Titular a través de medios electrónicos - SMS o chat para
           el envío de noticias relacionadas con campañas de fidelización o
           mejora de servicio.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_sms_n">&nbsp;</span>
           <span name="autoriza_contactar_sms_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_sms_n">x</span>
           <span name="autoriza_contactar_sms_s" hidden>&nbsp;</span>
+
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Ofrecer programas de bienestar corporativo y planificar actividades
           empresariales, para el titular y sus beneficiarios (hijos, cónyuge,
           compañero permanente).
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_ofrecer_n">&nbsp;</span>
           <span name="autoriza_ofrecer_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_ofrecer_n">x</span>
           <span name="autoriza_ofrecer_s" hidden>&nbsp;</span>
+
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Efectuar encuestas de satisfacción respecto de los bienes y servicios
           ofrecidos por <b>GNP Grupo Nacional de Proyectos S.A.S</b>
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
+
           <span name="autoriza_encuestas_n">&nbsp;</span>
           <span name="autoriza_encuestas_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_encuestas_n">x</span>
           <span name="autoriza_encuestas_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Transferir datos personales fuera del país a la compañía matriz de
           <b> GNP Grupo Nacional de Proyectos S.A.S </b> para cumplir con las
           regulaciones anti lavado de activos que le aplican.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_trans_datos_n">&nbsp;</span>
           <span name="autoriza_trans_datos_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_trans_datos_n">x</span>
           <span name="autoriza_trans_datos_s" hidden>&nbsp;</span>
+
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Contactar al Titular a través de medios telefónicos para realizar
           encuestas, estudios y/o confirmación de datos personales necesarios
           para la ejecución de una relación contractual.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_contactar_tel_n">&nbsp;</span>
           <span name="autoriza_contactar_tel_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
-          <span name="autoriza_contactar_tel_n">x;</span>
+        <br />
+        <span style="padding:3px" class="square">
+          <span name="autoriza_contactar_tel_n">x</span>
           <span name="autoriza_contactar_tel_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Transmitir los datos personales fuera del país a terceros con los
           cuales GNP Grupo Nacional de Proyectos S.AS haya suscrito un contrato
@@ -4239,25 +4245,28 @@
           cumplimiento del objeto contractual.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
+
           <span name="autoriza_trans_datos_terceros_n">&nbsp;</span>
           <span name="autoriza_trans_datos_terceros_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_trans_datos_terceros_n">x</span>
           <span name="autoriza_trans_datos_terceros_s" hidden>&nbsp;</span>
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Suministrar la información a terceros con los cuales
           <b> GNP Grupo Nacional de Proyectos S.A.S </b> tenga relación
@@ -4265,84 +4274,96 @@
           objeto contratado.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
+
           <span name="autoriza_sum_info_n">&nbsp;</span>
           <span name="autoriza_sum_info_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_sum_info_n">x</span>
           <span name="autoriza_sum_info_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>
           Prestar los servicios ofrecidos por
           <b>GNP Grupo Nacional de Proyectos S.A.S</b> y aceptados en el
           contrato suscrito.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
+
           <span name="autoriza_prestar_servicios_n">&nbsp;</span>
           <span name="autoriza_prestar_servicios_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_prestar_servicios_n">x</span>
           <span name="autoriza_prestar_servicios_s" hidden>&nbsp;</span>
         </span>
       </td>
     </tr>
     <tr>
-      <td>
+      <td class="border_right">
         <li>
           Realizar invitaciones a eventos y ofrecer nuevos productos y
           servicios.
         </li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
+
           <span name="autoriza_invitaciones_n">&nbsp;</span>
           <span name="autoriza_invitaciones_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_invitaciones_n">x</span>
           <span name="autoriza_invitaciones_s" hidden>&nbsp;</span>
         </span>
       </td>
-      <td>
+      <td class="border_right">
         <li>Gestionar trámites (solicitudes, quejas, reclamos).</li>
       </td>
-      <td style="padding: 0px">
+      <td>
         <span>SI</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
+
           <span name="autoriza_gest_tramites_n">&nbsp;</span>
           <span name="autoriza_gest_tramites_s" hidden>x</span>
         </span>
       </td>
-      <td style="padding: 0px; border-left: none">
+      <td class="border_right" style="padding: 10px; border-left: none">
         <span>NO</span>
         <br />
-        <span class="square">
+        <br />
+        <span style="padding:3px" class="square">
           <span name="autoriza_gest_tramites_n">x</span>
           <span name="autoriza_gest_tramites_s" hidden>&nbsp;</span>
         </span>
@@ -4503,9 +4524,7 @@
     Política de Tratamiento de Datos Personales dispuesta por la sociedad en la
     página
     <a
-      href="https://gnpsa.com/bpo/assets/Politica%20de%20tratamiento%20datos%20personales.pdf"
-      >https://gnpsa.com/bpo/assets/Politica%20de%20tratamiento%20datos%20personales.pdf</a
-    >
+      href="https://gnpsa.com/bpo/assets/Politica%20de%20tratamiento%20datos%20personales.pdf">https://gnpsa.com/bpo/assets/Politica%20de%20tratamiento%20datos%20personales.pdf</a>
     y que me dio a conocer antes de recolectar mis datos personales.
   </p>
   <p style="text-align: justify">
@@ -4522,18 +4541,18 @@
     </b>
     <br /><br />
     <b>Fecha: <b name="fecha_firma">_________________________________</b></b>
-    <b>Firma: <b>_________________________________</b> </b>
+    <br />
+    <br />
+    <b>Firma:</b>
+  <div name="firma_trabajador" id="trabajador_7" class="sign_margin"></div>
   </p>
 </div>
 
 <div style="page-break-after: always"></div>
 
 <div class="page">
-  <img
-    style="width: 100%; opacity: 0.7"
-    src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg"
-    alt="banner"
-  />
+  <img style="width: 100%; opacity: 0.7" src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg"
+    alt="banner" />
   <p style="text-align: right; color: #666"><b>GNP-TH-D-04</b></p>
   <p style="text-align: center">
     <b>
@@ -4589,18 +4608,16 @@
     la ciudad de Bogotá D.C. el
     <span name="fecha_firma">___________________</span>
   </p>
-  <div>
-    <b>___________________</b><br />
+  <div class="align_left">
+    <div name="firma_trabajador" id="trabajador_8" class="sign_margin"></div>
     <p>
       <b>Nombre: <b name="nombre_trabajador">_____________</b></b>
       <br />
       <b>C.C. <b name="cedula_trabajador">_____________</b></b>
-      <br />
-      <b>Correo: <b name="correo_trabajador">_____________</b></b>
     </p>
   </div>
-  <div>
-    <b>___________________</b><br />
+  <div class="align_left">
+    <div name="firma_gnp" id="gnp_5" class="sign_margin"></div>
     <p>
       <b>Nombre: MILENA CASTILLO</b>
       <br />
@@ -4612,78 +4629,65 @@
 <div style="page-break-after: always"></div>
 
 <div class="page">
-  <p style="text-align: right">
-    <b>PAGARÉ NO. <b name="num_pagare">___________</b></b>
-  </p>
+  <p style="text-align: right;"><b>PAGARÉ NO. <b name="num_pagare">___________</b></b></p>
   <p>
-    <span name="nombre_trabajador">________________</span>, identificado con
-    cedula de ciudadanía No.<span name="cedula_trabajador">_________</span> de
-    <span name="expedicion_cedula_trabajador">____________</span>, domiciliado
-    en la ciudad de <span name="dir_dom_trabajador">__________</span>, empleado
-    de la empresa <b>GNP GRUPO NACIONAL DE PROYECTOS S.A.S.</b> tal como lo
-    acredita el contrato suscrito entre las partes, documento que se anexa para
-    que haga parte del presente Título Valor, declaro que por virtud del
-    presente título valor Pagaremos en forma incondicional y solidaria a la
-    orden de <b> GNP GRUPO NACIONAL DE PROYECTOS S.A.S. </b> identificado con
-    Nit No. <b>900.230.578-6</b>, domiciliada en la ciudad de Bogotá D.C., o a
-    quien represente sus derechos (en adelante <b>ACREEDOR</b>), a su orden por
-    concepto <b>de capital</b>; la suma de:
-    <span name="valor_pagare">_______________________________________</span>
-    M/TE. A partir de la fecha de vencimiento anotada en este Título Valor,
-    reconoceré(mos) y pagaré(mos) intereses moratorios sobre la suma consignada
-    en el literal (i) de este Pagaré, liquidados a la tasa máxima legal
-    permitida. Acepto(amos), desde ahora e incondicionalmente, cualquier cesión
-    o endoso que, de este Pagaré, hiciere <b>EL ACREEDOR</b> a cualquier persona
-    natural o jurídica, sin que para su efectividad se requiera autorizaciones,
-    aceptaciones o notificaciones adicionales. Autorizo(amos) que el pago total
-    o parcial, tanto de los intereses como del capital de este Título, se hagan
-    constar en registros sistematizados o manuales establecidos de manera
-    general por <b>EL ACREEDOR</b> para contabilizar abonos de cartera. Se hace
-    constar que, de ser suscrito este Pagaré por varias personas, la
-    responsabilidad solidaria constituida para respaldar su pago subsiste, toda
-    vez que <b>EL ACREEDOR</b> hace expresa reserva a la solidaridad prevista en
-    el artículo 1.573 del Código Civil, entre otros eventos similares, en los
-    siguientes casos: a). Prórroga o cualquier modificación a lo aquí
-    estipulado, así éstas se pacten con uno solo de los firmantes, por cuanto
-    desde ahora accedemos a ellas expresamente; b). Si se llegare a aprobar
-    acuerdo de insolvencia o liquidación respecto de alguno de los otorgantes;
-    c). Si alguno de los otorgantes solicitare o es admitido o convocado a
-    reorganización o liquidación voluntaria o judicial; o d). Si se llegare a
-    recibir o a cobrar todo o parte del importe de este Título a alguno(s) de
-    los suscriptores. Queda entendido que toda garantía real o personal
-    constituida conjunta o separadamente por el(los) suscriptor(es) de este
-    Título Valor a favor de <b>EL ACREEDOR</b> o que <b>EL ACREEDOR</b> llegare
-    a adquirir por endoso o cesión de otras personas, amparará las obligaciones
-    contenidas en este Pagaré, así como en sus prórrogas y en sus demás
-    modificaciones. Acepto(amos) pagar las sumas en que deba incurrir ACREEDOR,
-    para hacer efectivas las obligaciones incorporadas en el presente Titulo
-    Valor en caso de incumplimiento, tales como honorarios de abogado, mismos
-    que se fijan desde ahora en el quince por ciento (15%) de la sumatoria del
-    capital e intereses, para el cobro extrajudicial, y en caso de cobro
-    judicial en la suma que fije el respectivo Juez, sumado a las costas, portes
-    y demás conceptos previstos en el artículo 782 del Código de Comercio. El
-    impuesto de timbre que se cause por el otorgamiento y utilización del
-    presente Pagaré será de cargo del(os) suscriptor(es).
+    <span name="nombre_trabajador">________________</span>, identificado con cedula de ciudadanía No.<span
+      name="cedula_trabajador">_________</span> de <span name="expedicion_cedula_trabajador">____________</span>,
+    domiciliado en la ciudad de
+    <span name="dir_dom_trabajador">__________</span>, empleado de la empresa <b>GNP GRUPO NACIONAL DE PROYECTOS
+      S.A.S.</b> tal
+    como lo acredita el contrato suscrito
+    entre las partes, documento que se anexa para que haga parte del presente Título Valor, declaro que por virtud del
+    presente título valor Pagaremos en forma incondicional y solidaria a la orden de <b>
+      GNP GRUPO NACIONAL DE PROYECTOS
+      S.A.S.
+    </b> identificado con Nit No. <b>900.230.578-6</b>, domiciliada en la ciudad de Bogotá D.C., o a quien represente
+    sus
+    derechos (en adelante <b>ACREEDOR</b>), a su orden por concepto <b>de capital</b>; la suma de:
+    <span name="valor_pagare">_______________________________________</span> M/TE. A partir de la fecha de vencimiento
+    anotada en
+    este Título Valor, reconoceré(mos) y pagaré(mos) intereses moratorios sobre la suma consignada en el literal (i) de
+    este Pagaré, liquidados a la tasa máxima legal permitida. Acepto(amos), desde ahora e incondicionalmente, cualquier
+    cesión o endoso que, de este Pagaré, hiciere <b>EL ACREEDOR</b> a cualquier persona natural o jurídica, sin que para
+    su
+    efectividad se requiera autorizaciones, aceptaciones o notificaciones adicionales. Autorizo(amos) que el pago total
+    o parcial, tanto de los intereses como del capital de este Título, se hagan constar en registros sistematizados o
+    manuales establecidos de manera general por <b>EL ACREEDOR</b> para contabilizar abonos de cartera. Se hace constar
+    que, de
+    ser suscrito este Pagaré por varias personas, la responsabilidad solidaria constituida para respaldar su pago
+    subsiste, toda vez que <b>EL ACREEDOR</b> hace expresa reserva a la solidaridad prevista en el artículo 1.573 del
+    Código
+    Civil, entre otros eventos similares, en los siguientes casos: a). Prórroga o cualquier modificación a lo aquí
+    estipulado, así éstas se pacten con uno solo de los firmantes, por cuanto desde ahora accedemos a ellas
+    expresamente; b). Si se llegare a aprobar acuerdo de insolvencia o liquidación respecto de alguno de los otorgantes;
+    c). Si alguno de los otorgantes solicitare o es admitido o convocado a reorganización o liquidación voluntaria o
+    judicial; o d). Si se llegare a recibir o a cobrar todo o parte del importe de este Título a alguno(s) de los
+    suscriptores. Queda entendido que toda garantía real o personal constituida conjunta o separadamente por el(los)
+    suscriptor(es) de este Título Valor a favor de <b>EL ACREEDOR</b> o que <b>EL ACREEDOR</b> llegare a adquirir por
+    endoso o cesión
+    de otras personas, amparará las obligaciones contenidas en este Pagaré, así como en sus prórrogas y en sus demás
+    modificaciones. Acepto(amos) pagar las sumas en que deba incurrir ACREEDOR, para hacer efectivas las obligaciones
+    incorporadas en el presente Titulo Valor en caso de incumplimiento, tales como honorarios de abogado, mismos que se
+    fijan desde ahora en el quince por ciento (15%) de la sumatoria del capital e intereses, para el cobro
+    extrajudicial, y en caso de cobro judicial en la suma que fije el respectivo Juez, sumado a las costas, portes y
+    demás conceptos previstos en el artículo 782 del Código de Comercio. El impuesto de timbre que se cause por el
+    otorgamiento y utilización del presente Pagaré será de cargo del(os) suscriptor(es).
   </p>
 
   <p>
-    LUGAR PARA EL PAGO Y VENCIMIENTO: Las sumas antes mencionadas las pagaremos
-    en la ciudad de Bogotá D.C., <b>en las oficinas de</b>
-    <span name="oficinas_pago">_________________________</span> o la que designe
-    el tenedor legitimo del título. (ii) El vencimiento será el
+    LUGAR PARA EL PAGO Y VENCIMIENTO: Las sumas antes mencionadas las pagaremos en la ciudad de Bogotá D.C., <b>en las
+    oficinas de</b> <span name="oficinas_pago">_________________________</span> o la que designe el tenedor legitimo del
+    título. (ii) El vencimiento será el
     <span name="vencimiento_pagare">_________________________</span>.
   </p>
 
-  <p>
-    Se firma el presente documento en la ciudad de Bogotá el
-    <span name="fecha_firma">_________________________</span>
+  <p>Se firma el presente documento en la ciudad de Bogotá el <span name="fecha_firma">_________________________</span>
   </p>
-  <br />
-  <br />
-  <br />
+  <br>
+  <br>
+  <br>
   <div class="align_left">
-    <br />
-    <br />
+    <div name="firma_trabajador" id="trabajador_9" class="sign_margin"></div>
     <p>
       <b name="nombre_trabajador">_____________</b>
       <br />
@@ -4691,8 +4695,7 @@
     </p>
   </div>
   <div class="align_left">
-    <br />
-    <br />
+    <div name="firma_gnp" id="gnp_6" class="sign_margin"></div>
     <p>
       <b>MILENA CASTILLO</b>
       <br />
@@ -4708,115 +4711,86 @@
 <div style="page-break-after: always"></div>
 
 <div class="page">
-  <p style="text-align: center">
-    <b
-      >CARTA DE INSTRUCCIONES - PAGARÉ No.
-      <b name="num_pagare">___________</b> - 2022</b
-    >
-  </p>
+  <p style="text-align:center"><b>CARTA DE INSTRUCCIONES - PAGARÉ No. <b name="num_pagare">___________</b> - 2022</b></p>
   <p>
     Bogotá, <span name="fecha_firma">_________________</span>
-    <br />
-    <br />
+    <br>
+    <br>
     Señores
-    <br />
+    <br>
     <b>GNP GRUPO NACIONAL DE PROYECTOS S.A.S. </b>
-    <br />
+    <br>
     Bogotá D.C.
   </p>
 
   <p>Apreciados Señores,</p>
 
-  <p>
-    <span name="nombre_trabajador">________________</span>, identificado con
-    cedula de ciudadanía No.<span name="cedula_trabajador">_________</span> de
-    <span name="expedicion_cedula_trabajador">____________</span>, domiciliado
-    en la ciudad de <span name="dir_dom_trabajador">__________</span>, obrando
-    en su calidad de empleado de la empresa
-    <b> GNP GRUPO NACIONAL DE PROYECTOS S.A.S. </b> tal como lo acredita el
-    contrato suscrito entre las partes, faculto expresa e irrevocablemente al
-    <b>GNP GRUPO NACIONAL DE PROYECTOS S.A.S.</b> identificado con Nit
-    No.<b>900.230.578-6</b>, domiciliado en la ciudad de Bogotá D.C., (en
-    adelante ACREEDOR) o a quien en el futuro ostente la calidad de acreedor o
-    tenedor legítimo del Pagaré identificado con el No.
-    <b name="num_pagare">___________</b> para diligenciar, en cualquier tiempo y
-    sin necesidad de previo aviso, todos los espacios que se encuentran en
-    blanco dentro de dicho Titulo Valor, de conformidad con las siguientes
+  <p><span name="nombre_trabajador">________________</span>, identificado con cedula de ciudadanía No.<span
+      name="cedula_trabajador">_________</span> de <span name="expedicion_cedula_trabajador">____________</span>,
+    domiciliado en la ciudad de <span name="dir_dom_trabajador">__________</span>, obrando en su calidad de empleado de
+    la empresa <b>
+      GNP GRUPO NACIONAL DE
+      PROYECTOS S.A.S.
+    </b> tal como lo acredita el contrato suscrito entre las partes, faculto expresa e irrevocablemente al
+    <b>GNP GRUPO NACIONAL DE PROYECTOS S.A.S.</b> identificado con Nit No.<b>900.230.578-6</b>, domiciliado en la ciudad
+    de Bogotá
+    D.C., (en adelante ACREEDOR) o a quien en el futuro ostente la calidad de acreedor o tenedor legítimo del Pagaré
+    identificado con el No. <b name="num_pagare">___________</b> para diligenciar, en cualquier tiempo y sin necesidad
+    de previo aviso,
+    todos los espacios que se encuentran en blanco dentro de dicho Titulo Valor, de conformidad con las siguientes
     instrucciones:
   </p>
   <ol>
-    <li>
-      El valor correspondiente a <b>capital</b> del pagaré, identificado en el
-      cuerpo de mismo con el (i), será igual al monto a nuestro cargo que
-      tengamos por concepto de documento de deuda y en general cualquier
-      operación o deuda, presente o futura que aparezca registrada en los libros
-      de contabilidad de, que directa o indirectamente, conjunta o separadamente
-      le adeude, en especial por
-      <u>
+
+    <li>El valor correspondiente a <b>capital</b> del pagaré, identificado en el cuerpo de mismo con el (i), será igual
+      al
+      monto a nuestro cargo que tengamos por concepto de documento de deuda y en general cualquier operación o deuda,
+      presente o futura que aparezca registrada en los libros de contabilidad de, que directa o indirectamente, conjunta
+      o separadamente le adeude, en especial por <u>
         conceptos anticipos indebidamente legalizados, fraudes o cualquier
-        delito cometido contra la empresa, clientes, trabajadores que generen
-        perjuicios, perdida de herramientas de la empresa, daños en bienes
-        ajenos o propios de la empresa, adulteración de información que genere
-        perjuicios, aprovechamiento del cargo ejercido en la empresa para
-        cometer delitos que genere perjuicios, apropiarse fraudulentamente de
-        los bienes que comercializa la empresa </u
-      >, entre otras deudas que se puedan generar por el vínculo laboral con
-      <b>GNP GRUPO NACIONAL DE PROYECTOS S.A.S.</b> , identificado con NIT. No
-      <b>900.230.578-6</b>, de acuerdo a políticas internas de la compañía.
+        delito cometido contra la empresa, clientes, trabajadores que generen perjuicios, perdida de herramientas de la
+        empresa, daños en bienes ajenos o propios de la empresa, adulteración de información que genere perjuicios,
+        aprovechamiento del cargo ejercido en la empresa para cometer delitos que genere perjuicios, apropiarse
+        fraudulentamente de los bienes que comercializa la empresa
+      </u>, entre otras deudas que se puedan generar por el
+      vínculo laboral con <b>GNP GRUPO NACIONAL DE PROYECTOS S.A.S.</b> , identificado con NIT. No <b>900.230.578-6</b>, de acuerdo a políticas internas de la compañía.
     </li>
 
-    <li>
-      La fecha del vencimiento del Pagaré, identificado en el cuerpo del mismo
-      con el (ii), será la fecha en que
-      <b> GNP GRUPO NACIONAL DE PROYECTOS S.A.S. </b>, identificado con Nit No.
-      <b>900.230.578-6</b> o el tenedor legitimo del Pagaré, llene los espacios
-      dejados en blanco o la persona que corresponda podrá llenar el Pagaré en
-      el momento en que lo considere necesario, siempre y cuando una o alguna de
-      nuestras obligaciones se encuentren vencidas, en especial la ejecución de
-      los eventos desarrollados en el numeral 1 de este documento. Y podrá
-      exigir su pago inmediato por todo concepto que se le adeude ya sea
-      judicial o extrajudicialmente.
-    </li>
+    <li>La fecha del vencimiento del Pagaré, identificado en el cuerpo del mismo con el (ii), será la fecha en que <b>
+        GNP
+        GRUPO NACIONAL DE PROYECTOS S.A.S.
+      </b>, identificado con Nit No. <b>900.230.578-6</b> o el tenedor legitimo del
+      Pagaré, llene
+      los espacios dejados en blanco o la persona que corresponda podrá llenar el Pagaré en el momento en que lo
+      considere necesario, siempre y cuando una o alguna de nuestras obligaciones se encuentren vencidas, en especial la
+      ejecución de los eventos desarrollados en el numeral 1 de este documento. Y podrá exigir su pago inmediato por
+      todo concepto que se le adeude ya sea judicial o extrajudicialmente.</li>
 
-    <li>
-      Acepto(amos) incondicionalmente todo traspaso, endoso o cesión que
-      <b>EL ACREEDOR</b> haga del presente instructivo junto con el Pagaré al
-      cual corresponde, así como de la garantía que lo ampara, sin que para su
-      efectividad sean necesarias nuevas autorizaciones o aceptaciones.
-    </li>
+    <li>Acepto(amos) incondicionalmente todo traspaso, endoso o cesión que <b>EL ACREEDOR</b> haga del presente
+      instructivo
+      junto con el Pagaré al cual corresponde, así como de la garantía que lo ampara, sin que para su efectividad sean
+      necesarias nuevas autorizaciones o aceptaciones.</li>
 
-    <li>
-      Acepto(amos) suscribir una nueva Carta de Instrucciones junto con su
-      respectivo nuevo Pagaré, con espacios en blanco, en los siguientes casos:
-      a). Cuando se presente el cambio de titular de la deuda; b). Cuando se
-      venza el plazo acordado y se refinancie la deuda; y c). Cuando así lo
-      requiera <b>EL ACREEDOR</b>.
-    </li>
+    <li>Acepto(amos) suscribir una nueva Carta de Instrucciones junto con su respectivo nuevo Pagaré, con espacios en
+      blanco, en los siguientes casos: a). Cuando se presente el cambio de titular de la deuda; b). Cuando se venza el
+      plazo acordado y se refinancie la deuda; y c). Cuando así lo requiera <b>EL ACREEDOR</b>.</li>
 
-    <li>
-      Las partes de común acuerdo podrán programar pagos anticipados a la deuda,
-      en el caso en que la empresa
-      <b> GNP GRUPO NACIONAL DE PROYECTOS S.A.S. </b> me otorgue algún aumento
-      salarial, estos aumentos serán destinados al pago de la deuda mediante
-      abonos mensuales para disminuir el plazo en el plan de amortización.
-    </li>
+    <li>Las partes de común acuerdo podrán programar pagos anticipados a la deuda, en el caso en que la empresa <b>
+        GNP
+        GRUPO NACIONAL DE PROYECTOS S.A.S.
+      </b> me otorgue algún aumento salarial, estos aumentos serán destinados al pago de
+      la deuda mediante abonos mensuales para disminuir el plazo en el plan de amortización.</li>
   </ol>
 
-  <p>
-    Para todos los efectos, declaramos haber recibido copia de la presente Carta
-    de Instrucciones, así como del Pagaré.
+  <p>Para todos los efectos, declaramos haber recibido copia de la presente Carta de Instrucciones, así como del Pagaré.
   </p>
 
-  <p>
-    Se firma el presente documento en la ciudad de Bogotá
-    <span name="fecha_firma">_________________</span>
-  </p>
-  <br />
-  <br />
-  <br />
+  <p>Se firma el presente documento en la ciudad de Bogotá <span name="fecha_firma">_________________</span></p>
+  <br>
+  <br>
+  <br>
   <div class="align_left">
-    <br />
-    <br />
+    <div name="firma_trabajador" id="trabajador_10" class="sign_margin"></div>
     <p>
       <b name="nombre_trabajador">_____________</b>
       <br />
@@ -4824,8 +4798,7 @@
     </p>
   </div>
   <div class="align_left">
-    <br />
-    <br />
+    <div name="firma_gnp" id="gnp_7" class="sign_margin"></div>
     <p>
       <b>MILENA CASTILLO</b>
       <br />
@@ -4838,9 +4811,65 @@
   </div>
 </div>
 
-<div style="page-break-after: always"></div>
+<div style="page-break-after: always;"></div>
 
 <div>
+  <style type="text/css">
+    .table_class {
+      width: 100%;
+      border-collapse: collapse;
+    }
+  
+    .table_class td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+  
+    .table_class th {
+      background-color: #1f3864;
+      color: white;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  </style>
+  <style type="text/css">
+    .table_class {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .table_class td {
+      border: 1px solid black;
+      padding: 5px;
+    }
+    .table_class th {
+      background-color: #1f3864;
+      color: white;
+      border: 1px solid black;
+      padding: 10px;
+      text-align: center;
+    }
+  
+    .tabla_cv {
+      font-family: sans-serif;
+      border: 1px solid black;
+      border-collapse: collapse;
+      width: 100%;
+    }
+  
+    .border_bottom {
+      border-bottom: 1px solid;
+    }
+  
+    .border_right {
+      border-right: 1px solid;
+    }
+  
+    .border_left {
+      border-left: 1px solid;
+    }
+  </style>
+  
   <table class="tabla_cv">
     <tr class="border_bottom">
       <td rowspan="3">
@@ -4877,10 +4906,9 @@
       </td>
     </tr>
   </table>
-
+  
   <br />
   <br />
-
   <table class="table_class">
     <tr>
       <th>Fecha:</th>
@@ -4896,27 +4924,26 @@
     </tr>
     <tr>
       <th>Cargo:</th>
-      <td>
+       <td>
         <span name="cargo_call_c_cnd">AGENTE CALL CENTER CND</span>
-        <span name="cargo_gest_oper" hidden>GESTOR OPERATIVO</span>
-        <span name="cargo_gerente_comer" hidden>GERENTE COMERCIAL</span>
+        <span name="cargo_gest_oper" hidden>Gestor Operativo</span>
         <span name="cargo_coord_jr" hidden>COORDINADOR JUNIOR</span>
+        <span name="cargo_gerente_comer" hidden>GERENTE COMERCIAL</span>
         <span name="cargo_anal_work" hidden>ANALISTA WORKFORCE</span>
         <span name="cargo_ger_tic" hidden>GERENTE TECNOLOGIA DE LA INFORMACIÓN</span>
-        <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTION DOCUMENTAL</span>
-        <span name="cargo_coord_g_doc" hidden>COORDINADOR DE GESTION DOCUMENTAL</span>
         <span name="cargo_torre_ctrl_jr" hidden>TORRE DE CONTROL JUNIOR</span>
         <span name="cargo_torre_ctrl" hidden>TORRE DE CONTROL</span>
-        <span name="cargo_anal_cont" hidden>Analista de contratación</span>
+        <span name="cargo_coord_g_doc" hidden>COORDINADOR GESTION DOCUMENTAL</span>
+        <span name="cargo_anal_g_doc" hidden>ANALISTA DE GESTIÓN DOCUMENTAL</span>
         <span name="cargo_prod_auv" hidden>Productor audiovisual</span>
-        <span name="cargo_aux_serv_client" hidden
-          >Auxiliar Servicio al Cliente</span
-        >
+        <span name="cargo_anal_cont" hidden>Analista de contratación</span>
+        <span name="cargo_prod_auv" hidden>Productor Audiovisual</span>
+        <span name="cargo_aux_serv_client" hidden>Auxiliar Servicio al Cliente</span>
+        <span name="cargo_jefe_formacion" hidden>Jefe de Formación</span>
         <span name="cargo_jefe_nal" hidden
           >Jefe Nacional de Redes y Soporte</span
         >
         <span name="cargo_sop_redes" hidden>Soporte Redes</span>
-        <span name="cargo_jefe_formacion" hidden>Jefe de Formación</span>
         <span name="cargo_coord_hd" hidden
           >Coordinador de soporte Help Desk</span
         >
@@ -5042,80 +5069,171 @@
           >Ingeniero Nacional de Telefonía</span
         >
         <span name="cargo_call_c" hidden>AGENTE CALL CENTER</span>
-        <span name="cargo_auxiliar_compras" hidden
-          >Auxiliar de compras</span
-        >
+        <span name="cargo_auxiliar_compras" hidden>Auxiliar de compras</span>
       </td>
       <th>Antigüedad:</th>
       <td><span name="antiguedad">___________</span></td>
     </tr>
   </table>
-
+  
   <p>Cordial saludo,</p>
-
+  
   <p>
-    Dándole seguimiento a nuestro programa de medicina preventiva y del trabajo
-    le queremos dar a conocer los resultados del examen médico ocupacional-
+    Dándole seguimiento a nuestro programa de medicina preventiva y del trabajo le
+    queremos dar a conocer los resultados del examen médico ocupacional-
     <span name="tipo_examen">___________</span> que se le practicó el pasado
     <span name="fecha_examen">___________</span> en este encontrará las
     recomendaciones médicas que tienen para usted:
   </p>
-
+  
   <p name="recomendaciones_medicas">
     _______________________________________________________
   </p>
-
+  
   <p>
     Para nosotros es importante que usted haga el respectivo seguimiento por lo
     tanto esperamos su colaboración para que en un lapso de
     <b>2 meses consulte a su médico por medio de la EPS</b> a la cual está
-    afiliado y por escrito nos dé a conocer el procedimiento que va a seguir
-    para mejorar esos aspectos.
+    afiliado y por escrito nos dé a conocer el procedimiento que va a seguir para
+    mejorar esos aspectos.
   </p>
-
+  
   <p>
     <b><em>Prevención COVID:</em></b> <br />
-
-    Si tiene los siguientes Síntomas: Fiebre, Tos, Dificultad para respirar,
-    dolor para tragar, notifíquelo a su empleador y su EPS, No vaya a lugares
-    públicos, es ideal que se aísle preventivamente y use tapabocas constante.
+  
+    Si tiene los siguientes Síntomas: Fiebre, Tos, Dificultad para respirar, dolor
+    para tragar, notifíquelo a su empleador y su EPS, No vaya a lugares públicos,
+    es ideal que se aísle preventivamente y use tapabocas constante.
   </p>
-
+  
   <p>
     Lo anterior, de conformidad con lo establecido en el Código Sustantivo de
-    Trabajo, el Reglamento Interno de Trabajo y en especial el Decreto 1072 del
-    26 de mayo de 2015, que señala: “Artículo 2.2.4.6.10. Responsabilidades de
-    los trabajadores. Los trabajadores, de conformidad con la normatividad
-    vigente tendrán entre otras, las siguientes responsabilidades:
+    Trabajo, el Reglamento Interno de Trabajo y en especial el Decreto 1072 del 26
+    de mayo de 2015, que señala: “Artículo 2.2.4.6.10. Responsabilidades de los
+    trabajadores. Los trabajadores, de conformidad con la normatividad vigente
+    tendrán entre otras, las siguientes responsabilidades:
   </p>
-
+  
   <ol>
     <li>Procurar el cuidado integral de su salud;</li>
     <li>
       Suministrar información clara, veraz y completa sobre su estado de salud;
     </li>
   </ol>
-
+  
   <p>Atentamente:</p>
-
+  
   <br />
   <br />
   <br />
-
+  
+  <div name="firma_gnp" id="gnp_9" class="sign_margin"></div>
   <p>
     _________________________________ <br />
     Empleador
   </p>
-
+  
   <br />
   <br />
   <br />
-
+  
+  <div id="trabjador_11" name="firma_trabajador" class="sign_margin"></div>
   <p>
     _________________________________ <br />
-    <span name="nombre_trabajador">___________</span> <br />
+    <span name="nombre_trabajador">___________</span>
+    <br />
     Correo: <span name="correo_trabajador">___________</span> <br />
     C.C. <span name="cedula_trabajador">___________</span> <br />
-  </p>
+  </p>  
 </div>
 
+<div style="page-break-after: always"></div>
+
+<div class="page">
+  <img
+    style="width: 100%"
+    src="https://mi-contrato-static.s3.amazonaws.com/gnp/banner.jpg"
+    alt="banner"
+  />
+  <p style="text-align: right; color: #979797">
+    <b>GNP-TH-D-08</b>
+    <br />
+    <b>V 2</b>
+    <br />
+    <em>12/11/2022</em>
+  </p>
+  <br />
+  <br />
+
+  <h3 style="text-align: center">
+    <b>
+      ACTA DE CONOCIMIENTO Y AUTORIZACIÓN DEL EMPLEADO PARA EFECTUAR LA PRUEBA
+      DE ALCOHOL Y DROGAS
+    </b>
+  </h3>
+
+  <p>
+    ACEPTO que he leído y entendido el Reglamento de la Política sobre el abuso
+    del Alcohol y Drogas, acepto su
+    <b
+      >CONTENIDO y ME COMPROMETO A CUMPLIR CON TODAS EXIGENCIAS, REQUISITOS,
+      NORMAS Y PROCEDIMIENTOS ALLI ESTABLECIDOS. IGUALMENTE ACEPTO QUE FIRME
+      PARTE INTEGRANTE DE MI CONTRATO DE TRABAJO Y EN EL CASO DE QUE LO INCUMPLA
+      ACEPTO QUE SE CALIFIQUE COMO FALTA GRAVE TAL INCUMPLIMIENTO.</b
+    >
+  </p>
+
+  <p>
+    Así mismo, autorizo analizar las muestras biológicas que me tomen. Entiendo
+    que estas muestras tienen el propósito de determinar o descartar la
+    presencia en mi orina de drogas controladas no recetadas o de sustancias
+    alucinógenas, enervantes o que creen dependencia y/o niveles de alcohol en
+    mi saliva, aliento o sangre con propósitos de asegurar un desempeño seguro.
+    Entiendo que los resultados de estas pruebas de alcohol y drogas pueden
+    llevar a tomar medidas disciplinarias, Y ME OBLIGO A PRESENTAR LOS
+    RESPECTIVOS DESCARGOS incluyendo los requerimientos para que participe en
+    programas de tratamiento.
+  </p>
+
+  <p>
+    Anoto a continuación todos los medicamentos, drogas o vitaminas que
+    actualmente estoy tomando, o recientemente he tomado. Incluyo medicamentos
+    recetados y no-recetados, remedios para el dolor de cabeza, tabletas contra
+    “gripa”, píldoras para dormir/dietas, etc.:
+  </p>
+
+  <p><span name="medicamentos">_________________________________</span></p>
+
+  <p>
+    Si algunos de los medicamentos enunciados anteriormente son prescritos,
+    suministraré el nombre y toda la información pertinente relacionada con el
+    médico que dio la prescripción.
+  </p>
+
+  <p>
+    Doy mi consentimiento para que un laboratorio, hospital o médico autorizado
+    por GRUPO NACIONAL DE PROYECTOS, para que lleve a cabo la prueba de alcohol
+    y drogas para que entregue los resultados de la misma en forma confidencial,
+    a la persona designada por la Compañía.
+  </p>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <div name="firma_trabajador" id="trabajador_11" class="sign_margin"></div>
+  <p>
+    ____________________________________________________
+    <br />
+    <br />
+    <span name="nombre_trabajador">_________________________________</span>
+    <br />
+    Nombre
+    <br />
+    <span name="fecha_firma">_________________________________</span>
+    <br />
+    Fecha
+    <br />
+  </p>
+</div>

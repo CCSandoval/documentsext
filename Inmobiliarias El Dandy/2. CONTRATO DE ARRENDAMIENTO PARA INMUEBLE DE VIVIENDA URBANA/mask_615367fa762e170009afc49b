@@ -49,8 +49,8 @@ Itagüí,
 <span name="tipo_documento_arrendatario_pep" hidden>
   <b>PEP. No.</b> <span name="pep_arrendatario">___________</span> -
   <b>PASAPORTE Nro.</b>
-  <span name="pasaporte_arrendatario_p">__________</span> </span
->
+  <span name="pasaporte_arrendatario_p">__________</span>
+</span>
 <span name="tipo_documento_arrendatario_nit" hidden>
   <b>NIT. No.</b>
   <span name="nit_arrendatario">___________</span>
@@ -212,7 +212,12 @@ Itagüí,
   </span>
 </span>
 
-<b>VALOR DEL CANON DE ARRENDAMIENTO:</b> <span name="valor_c_arrendamiento_num">_______</span><span style="margin-left: -0.3rem">.00</span> (<span name="valor_c_arrendamiento_letras">____________</span>) M/L
+<b>VALOR DEL CANON DE ARRENDAMIENTO:</b>
+<span name="valor_c_arrendamiento_num">_______</span
+><span style="margin-left: -0.3rem">.00</span> (<span
+  name="valor_c_arrendamiento_letras"
+  >____________</span
+>) M/L
 <span name="valor_c_administracion_n"></span>
 <span name="valor_c_administracion_s" hidden
   ><br />
@@ -236,12 +241,12 @@ arrendatarios, quienes declaran recibir bajo el mismo título.<br />
 ubicado en el municipio de
 <span name="municipio_inmueble">___________</span><br />
 <b>Área aproximada del inmueble en m<sup>2</sup>:</b>
-<span name="area_inmueble">_______</span> 
+<span name="area_inmueble">_______</span>
 
 <span name="avaluo_catastral_n"></span>
 <span name="avaluo_catastral_s" hidden>
   - <b>Avalúo Catastral:</b> <span name="valor_avaluo_catastral">_______</span>
-  <span style="margin-left: -0.3rem">.00</span> M/L 
+  <span style="margin-left: -0.3rem">.00</span> M/L
 </span>
 
 <span name="avaluo_comercial_n"></span>
@@ -252,19 +257,22 @@ ubicado en el municipio de
 
 <span name="avaluo_apartamento_n"></span>
 <span name="avaluo_apartamento_s" hidden>
-  - <b>Avalúo de apartamento:</b> <span name="valor_avaluo_apartamento">_______</span>
+  - <b>Avalúo de apartamento:</b>
+  <span name="valor_avaluo_apartamento">_______</span>
   <span style="margin-left: -0.3rem">.00</span> M/L
 </span>
 
 <span name="avaluo_parqueadero_n"></span>
 <span name="avaluo_parqueadero_s" hidden>
-  - <b>Avalúo de parqueadero:</b> <span name="valor_avaluo_parqueadero">_______</span>
+  - <b>Avalúo de parqueadero:</b>
+  <span name="valor_avaluo_parqueadero">_______</span>
   <span style="margin-left: -0.3rem">.00</span> M/L
 </span>
 
 <span name="avaluo_cuarto_u_n"></span>
 <span name="avaluo_cuarto_u_s" hidden>
-  <b>Avalúo de cuarto util:</b> <span name="valor_avaluo_cuarto_u">_______</span>
+  <b>Avalúo de cuarto util:</b>
+  <span name="valor_avaluo_cuarto_u">_______</span>
   <span style="margin-left: -0.3rem">.00</span> M/L
 </span>
 
@@ -334,9 +342,12 @@ de vencimiento, para los contratos con vigencias inferiores a seis (6) meses.
 
 <b>SEGUNDA. PRECIO:</b> El precio del arrendamiento es de
 
-<span name="valor_c_arrendamiento_num">_______</span><span style="margin-left: -0.3rem">.00</span> (<span name="valor_c_arrendamiento_letras">________________</span>) M/L mensuales, que los
-arrendatarios pagarán dentro de los CINCO (5) primeros días de cada periodo, por
-anticipado, al arrendador o a su orden,
+<span name="valor_c_arrendamiento_num">_______</span
+><span style="margin-left: -0.3rem">.00</span> (<span
+  name="valor_c_arrendamiento_letras"
+  >________________</span
+>) M/L mensuales, que los arrendatarios pagarán dentro de los CINCO (5) primeros
+días de cada periodo, por anticipado, al arrendador o a su orden,
 <u
   >a través de PSE en el botón de pagos ingresando en nuestro sitio web –
   <a href="https://www.eldandyinmobiliaria.com/" target="_blank"
@@ -351,19 +362,15 @@ Superintendencia Financiera a la fecha de constitución en mora en el pago de la
 renta y por los dineros que se queden adeudando como consecuencia de la
 ejecución de este contrato.
 
-<b>TERCERA. INCREMENTO DEL PRECIO:</b> Transcurridos
-<span name="plazo">__________</span> meses de ejecución del presente contrato,
-el <b>ARRENDADOR</b> podrá modificar el precio o renta, en la cuantía o
-porcentaje autorizado por la Ley. Si
-<span name="segundo_arrendatario_n">el <b>ARRENDATARIO</b></span>
-<span name="segundo_arrendatario_s" hidden>los <b>ARRENDATARIOS</b></span>
-no se avienen al pago del nuevo precio, el <b>ARRENDADOR</b> podrá dar por
-terminado el contrato.
-<u
-  >Dichos incrementos serán notificados mediante correo electrónico, por
-  WhatsApp o por comunicación escrita entregada por un empleado del
-  <b>ARRENDADOR</b> para que sean obligatorios y exigibles.
-</u>
+  <b>TERCERA. INCREMENTO DEL PRECIO:</b> Transcurridos 12 meses de ejecución del
+  presente contrato, el ARRENDADOR podrá modificar el precio o renta, en la
+  cuantía o autorizado por la Ley. Si el ARRENDATARIO no se avienen al pago del
+  nuevo precio, el ARRENDADOR podrá dar por terminado el contrato.
+  <u>
+    Dichos incrementos serán notificados mediante correo electrónico, por
+    WhatsApp o por comunicación escrita entregada por un empleado del ARRENDADOR
+    para que sean obligatorios y exigibles.
+  </u>
 
 <b>CUARTA. PAGO DE SERVICIOS:</b> Los servicios de energía, acueducto,
 alcantarillado, aseo, gas, teléfono, serán por cuenta
@@ -904,7 +911,8 @@ Ley 820 de 2003 y demás normas concordantes.
 Para constancia y señal de aceptación se firma este documento y sus ejemplares
 del mismo tenor literal destinado a las partes en la ciudad de Itagüí y/o en la
 ciudad donde se encuentren ubicados los firmantes al momento de la firma
-<b name="fecha_hoy">___________</b> y aceptamos la información plasmada en este documento.<br />
+<b name="fecha_hoy">___________</b> y aceptamos la información plasmada en este
+documento.<br />
 
 <p><b>El Arrendador</b></p>
 
@@ -947,8 +955,8 @@ ciudad donde se encuentren ubicados los firmantes al momento de la firma
   <span name="tipo_documento_arrendatario_pep" hidden>
     <b>PEP. No.</b> <span name="pep_arrendatario">___________</span> -
     <b>PASAPORTE. No.</b>
-    <span name="pasaporte_arrendatario_p">__________</span> </span
-  >
+    <span name="pasaporte_arrendatario_p">__________</span>
+  </span>
   <span name="tipo_documento_arrendatario_nit" hidden>
     <b>NIT. No.</b>
     <span name="nit_arrendatario">___________</span>
@@ -985,8 +993,8 @@ ciudad donde se encuentren ubicados los firmantes al momento de la firma
     <span name="tipo_documento_arrendatario_2_pep" hidden>
       <b>PEP. No.</b> <span name="pep_arrendatario_2">___________</span> -
       <b>PASAPORTE. No.</b>
-      <span name="pasaporte_arrendatario_2_p">__________</span> </span
-    >
+      <span name="pasaporte_arrendatario_2_p">__________</span>
+    </span>
     <span name="tipo_documento_arrendatario_2_nit" hidden>
       <b>NIT. No.</b>
       <span name="nit_arrendatario_2">___________</span>
@@ -1036,12 +1044,12 @@ ciudad donde se encuentren ubicados los firmantes al momento de la firma
     <span name="tipo_documento_deudor_soli_1_pep" hidden>
       <b>PEP. No.</b> <span name="pep_deudor_soli_1">___________</span> -
       <b>PASAPORTE. No.</b>
-      <span name="pasaporte_deudor_soli_1_p">__________</span> </span
-    >
+      <span name="pasaporte_deudor_soli_1_p">__________</span>
+    </span>
     <span name="tipo_documento_deudor_soli_1_nit" hidden>
       <b>NIT. No.</b>
       <span name="nit_deudor_soli_1">___________</span>
-    </span> 
+    </span>
     <br />
     <b>Dirección:</b> <span name="direccion_deudor_soli_1">_______</span><br />
     <b>Ciudad:</b> <span name="municipio_deudor_soli_1">_______</span><br />
@@ -1080,8 +1088,8 @@ ciudad donde se encuentren ubicados los firmantes al momento de la firma
       <span name="tipo_documento_deudor_soli_2_pep" hidden>
         <b>PEP. No.</b> <span name="pep_deudor_soli_2">___________</span> -
         <b>PASAPORTE. No.</b>
-        <span name="pasaporte_deudor_soli_2_p">__________</span> </span
-      >
+        <span name="pasaporte_deudor_soli_2_p">__________</span>
+      </span>
       <span name="tipo_documento_deudor_soli_2_nit" hidden>
         <b>NIT. No.</b>
         <span name="nit_deudor_soli_2">___________</span>
@@ -1128,8 +1136,8 @@ ciudad donde se encuentren ubicados los firmantes al momento de la firma
         <span name="tipo_documento_deudor_soli_3_pep" hidden>
           <b>PEP. No.</b> <span name="pep_deudor_soli_3">___________</span> -
           <b>PASAPORTE. No.</b>
-          <span name="pasaporte_deudor_soli_3_p">__________</span> </span
-        >
+          <span name="pasaporte_deudor_soli_3_p">__________</span>
+        </span>
         <span name="tipo_documento_deudor_soli_3_nit" hidden>
           <b>NIT. No.</b>
           <span name="nit_deudor_soli_3">___________</span>
@@ -1179,8 +1187,8 @@ ciudad donde se encuentren ubicados los firmantes al momento de la firma
           <span name="tipo_documento_deudor_soli_4_pep" hidden>
             <b>PEP. No.</b> <span name="pep_deudor_soli_4">___________</span> -
             <b>PASAPORTE. No.</b>
-            <span name="pasaporte_deudor_soli_4_p">__________</span> </span
-          >
+            <span name="pasaporte_deudor_soli_4_p">__________</span>
+          </span>
           <span name="tipo_documento_deudor_soli_4_nit" hidden>
             <b>NIT. No.</b>
             <span name="nit_deudor_soli_4">___________</span>
