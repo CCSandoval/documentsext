@@ -452,14 +452,12 @@
     <th>Pago</th>
     <th>Valor</th>
     <th>Fecha</th>
-    <th>Instrucción de Pago (incluye cuenta y a qué se aplica)</th>
-    <th>Condición de pago (a qué está sujeto el pago)</th>
+    <th>Forma de pago</th>
   </tr>
   <tr>
     <td>1</td>
     <td><span name="valor_pago_1">____________</span></td>
     <td><span name="fecha_pago_1">____________</span></td>
-    <td><span name="instruccion_pago_1">____________</span></td>
     <td><span name="condicion_pago_1">____________</span></td>
   </tr>
   <span name="pago_2_n"></span>
@@ -467,7 +465,6 @@
     <td>2</td>
     <td><span name="valor_pago_2">____________</span></td>
     <td><span name="fecha_pago_2">____________</span></td>
-    <td><span name="instruccion_pago_2">____________</span></td>
     <td><span name="condicion_pago_2">____________</span></td>
   </tr>
   <span name="pago_3_n"></span>
@@ -475,7 +472,6 @@
     <td>3</td>
     <td><span name="valor_pago_3">____________</span></td>
     <td><span name="fecha_pago_3">____________</span></td>
-    <td><span name="instruccion_pago_3">____________</span></td>
     <td><span name="condicion_pago_3">____________</span></td>
   </tr>
   <span name="pago_4_n"></span>
@@ -483,7 +479,6 @@
     <td>4</td>
     <td><span name="valor_pago_4">____________</span></td>
     <td><span name="fecha_pago_4">____________</span></td>
-    <td><span name="instruccion_pago_4">____________</span></td>
     <td><span name="condicion_pago_4">____________</span></td>
   </tr>
   <span name="pago_5_n"></span>
@@ -491,20 +486,9 @@
     <td>5</td>
     <td><span name="valor_pago_5">____________</span></td>
     <td><span name="fecha_pago_5">____________</span></td>
-    <td><span name="instruccion_pago_5">____________</span></td>
     <td><span name="condicion_pago_5">____________</span></td>
   </tr>
 </table>
-
-<span name="fna_n"></span>
-<p name="fna_s" hidden>
-  Que serán cancelados con crédito solicitado al Fondo Nacional del Ahorro (FNA)
-  por medio de transferencia bancaria en la cuenta ahorros número
-  <span name="num_cuenta">____________</span>, Banco Bancolombia S.A. a nombre
-  de P.A. HOME CAPITAL COLOMBIA. Dicho pago será desembolsado una vez salga
-  registrada la Escritura Pública de Compraventa e hipoteca a favor del FNA y
-  sea aprobada por este último,
-</p>
 
 <p>
   Una vez se realicen los pagos relacionados, EL PROMITENTE COMPRADOR deberá
@@ -558,8 +542,8 @@
     servicios públicos.
   </li>
   <li>
-    EL PROMITENTE VENDEDOR suministre los documentos requeridos por el
-    PROMITENTE COMPRADOR para la formalización del presente negocio
+    EL PROMITENTE COMPRADOR suministre los documentos requeridos por el
+    PROMITENTE VENDEDOR para la formalización del presente negocio
   </li>
 </ol>
 
@@ -642,14 +626,6 @@
 </p>
 
 <p>
-  Celebrada la Escritura Publica de transferencia, sin que se hubiere cumplido
-  con el pago de la totalidad del inmueble, EL PROMITENTE COMPRADOR se obliga a
-  pagar a partir de dicho momento y hasta que se efectué el desembolso del saldo
-  final, a titulo de compensación, una suma equivalente al 1.2% mensual
-  anticipado sobre el saldo pendiente por pagar.
-</p>
-
-<p>
   En ningún evento, estas sumas de dinero se considerarán como parte de pago del
   valor total del inmueble.
 </p>
@@ -669,9 +645,9 @@
 </p>
 
 <p>
-  <b>11. INCUMPLIMIENTO DEL CONTRATO:</b> Si EL PROMITENTE COMPRADOR incumple
+  <b>11. INCUMPLIMIENTO DEL CONTRATO:</b> Si cualquiera de las pates incumple
   alguna o todas las obligaciones derivadas del presente contrato y ello no
-  fuere por su muerte, terremoto, inundación, incendio; perderá la suma de 10%
+  fuere por su muerte, terremoto, inundación, incendio; deberá cancelar la suma de 10%
   del valor total del negocio, que será exigible por la vía ejecutiva sin
   necesidad de requerimientos para la constitución en mora, derecho al cual
   expresamente renuncian ambas partes. No obstante lo anterior, el pago de la
@@ -694,11 +670,11 @@
   incumplimiento y así lo comunicará a EL PROMITENTE COMPRADOR, quedando
   obligado a restituir las sumas de dinero pagadas por EL PROMITENTE COMPRADOR,
   restando la suma indemnizatoria acordada en esta cláusula, en un plazo no
-  mayor a treinta (30) días calendario.
+  mayor a quince (15) días calendario.
 </p>
 
 <p name="ciudad_escritura_med">
-  <b>GASTOS DE ESCRITURA DE VENTA:</b> Los gastos que causen en el otorgamiento
+  <b>12. GASTOS DE ESCRITURA DE VENTA:</b> Los gastos que causen en el otorgamiento
   de la escritura pública de venta, serán calculados sobre la base del precio de
   $XX0.000.000 especificado en el punto 5 (nunca inferior al avalúo catastral) y
   serán asumidos así: EL PROMITENTE VENDEDOR: Asume el 100% de la retención en
@@ -712,7 +688,7 @@
 </p>
 
 <p name="ciudad_escritura_bog" hidden>
-  <b>GASTOS DE ESCRITURA DE VENTA:</b> Los gastos que causen en el otorgamiento
+  <b>12. GASTOS DE ESCRITURA DE VENTA:</b> Los gastos que causen en el otorgamiento
   de la escritura pública de venta, serán calculados sobre la base del precio de
   $XX0.000.000 especificado en el punto 5 (nunca inferior al avalúo catastral) y
   serán asumidos así: EL PROMITENTE VENDEDOR: Asume el 100% de la retención en
@@ -726,7 +702,7 @@
 </p>
 
 <p name="ciudad_escritura_otra" hidden>
-  <b>GASTOS DE ESCRITURA DE VENTA:</b>
+  <b>12. GASTOS DE ESCRITURA DE VENTA:</b>
   <span name="parrafo_escritura_otra">__________________________________</span>
 </p>
 

@@ -1638,46 +1638,15 @@
             ]
         },
         {
-            name: 'nombre_trabajador',
-            description: 'Ingrese el nombre del trabajador',
-            type: 'name'
-        },
-        {
-            name: 'cedula_trabajador',
-            description: 'Ingrese el número de cédula del trabajador',
-            type: 'number'
-        },
-        {
             name: 'fechanaci_trabajador',
             description: 'Ingrese la fecha de nacimiento del trabajador',
             type: 'date',
             help: 'fecha'
         },
         {
-            name: 'dir_dom_trabajador',
-            description: 'Ingrese la dirección de domicilio del trabajador',
-            type: 'text'
-        },
-        {
-            name: 'tel_celular_trabajador',
-            description: 'Ingrese el número de celular del trabajador',
-            type: 'phone'
-        },
-        {
             name: 'correo_trabajador',
             description: 'Ingrese el correo electrónico del trabajador',
             type: 'email'
-        },
-        {
-            name: 'estrato_trabajador',
-            description: 'Ingrese el estrato del trabajador',
-            type: 'number'
-        },
-        {
-            name: 'fecha_inicio_trabajador',
-            description: 'Ingrese la fecha de inicio de labores del trabajador',
-            type: 'date',
-            help: 'fecha'
         },
         {
             name: 'fecha_terminacion_trabajador',
@@ -1696,11 +1665,6 @@
             type: 'number'
         },
         {
-            name: 'eps_trabajador',
-            description: 'Ingrese la EPS del trabajador',
-            type: 'text'
-        },
-        {
             name: 'arl_trabajador',
             description: 'Ingrese la ARL del trabajador',
             type: 'text'
@@ -1712,7 +1676,7 @@
         },
         {
             name: 'nit_trabajador',
-            description: 'Ingrese el NIT del trabajador',
+            description: 'Ingrese el NIT de la institución educativa del trabajador',
             type: 'number'
         },
         {
@@ -1979,11 +1943,6 @@
                 }
             ],
             value: 's'
-        },
-        {
-            name: 'correo_trabajador',
-            description: 'Digite el correo electrónico que usará para firmar',
-            type: 'email'
         }
     ],
     operation: [],
@@ -2031,7 +1990,6 @@
         'celular_otro',
         'cedula_trabajador',
         'nombre_trabajador',
-        'dir_dom_trabajador',
         'sena_centro_trabajador',
         'nit_trabajador',
         'institucion_trabajador',
@@ -2174,5 +2132,5 @@
         nombre: 'Ejemplo: Juan David Saenz Lopez',
         celular: 'Ejemplo: 3027091713'
     },
-    build: 2
+    build: 4
 }
