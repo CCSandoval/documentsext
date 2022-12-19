@@ -40,8 +40,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             type: 'clausula',
@@ -69,7 +69,7 @@
                     v: 'ce'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del arrendatario',
@@ -167,8 +167,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -210,7 +210,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del segundo arrendatario',
@@ -367,7 +367,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del deudor solidario',
@@ -491,8 +491,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -565,7 +565,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del segundo deudor solidario',
@@ -694,8 +694,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -734,7 +734,7 @@
                 {
                     k: 'tercer_solidario',
                     v: 's'
-                },
+                }
             ],
             type: 'text'
         },
@@ -784,7 +784,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del tercer deudor solidario',
@@ -933,8 +933,8 @@
                     value: 'pep'
                 },
                 {
-                    name:'NIT',
-                    value:'nit'
+                    name: 'NIT',
+                    value: 'nit'
                 }
             ],
             prereq: [
@@ -1039,7 +1039,7 @@
                     v: 's'
                 }
             ],
-            type: 'number'
+            type: 'text'
         },
         {
             description: 'Digite el número de pasaporte del cuarto deudor solidario',
@@ -1170,6 +1170,11 @@
             description: 'Digite la dirección del local comercial',
             help: 'direccion',
             name: 'direccion_inmueble',
+            type: 'name'
+        },
+        {
+            description: 'Digite el área en metros cuadrados del local comercial',
+            name: 'area_local',
             type: 'name'
         },
         {
@@ -2199,7 +2204,7 @@
         uso: 'Ejemplo: Montacargas',
         porcentaje: 'Ejemplo: 10%'
     },
-    build: 18,
+    build: 21,
     username: 'fef63f10-02fc-49aa-9d64-db5f24da0391',
     createdAt: ISODate('2021-10-08T20:30:26.972Z'),
     updatedAt: ISODate('2021-10-08T20:30:26.972Z')

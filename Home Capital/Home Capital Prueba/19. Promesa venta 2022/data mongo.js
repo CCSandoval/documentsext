@@ -1946,14 +1946,9 @@
             description: 'Seleccione la fecha del primer pago'
         },
         {
-            name: 'instruccion_pago_1',
-            type: 'text',
-            description: 'Ingrese la instruccion del primer pago'
-        },
-        {
             name: 'condicion_pago_1',
             type: 'text',
-            description: 'Ingrese la condicion del primer pago'
+            description: 'Ingrese la forma del primer pago'
         },
         {
             name: 'pago_2',
@@ -1994,20 +1989,9 @@
             ]
         },
         {
-            name: 'instruccion_pago_2',
-            type: 'text',
-            description: 'Ingrese la instruccion del pago',
-            prereq: [
-                {
-                    k: 'pago_2',
-                    v: 's'
-                }
-            ]
-        },
-        {
             name: 'condicion_pago_2',
             type: 'text',
-            description: 'Ingrese la condicion del pago',
+            description: 'Ingrese la forma del pago',
             prereq: [
                 {
                     k: 'pago_2',
@@ -2068,24 +2052,9 @@
             ]
         },
         {
-            name: 'instruccion_pago_3',
-            type: 'text',
-            description: 'Ingrese la instruccion del pago',
-            prereq: [
-                {
-                    k: 'pago_2',
-                    v: 's'
-                },
-                {
-                    k: 'pago_3',
-                    v: 's'
-                }
-            ]
-        },
-        {
             name: 'condicion_pago_3',
             type: 'text',
-            description: 'Ingrese la condicion del pago',
+            description: 'Ingrese la forma del pago',
             prereq: [
                 {
                     k: 'pago_2',
@@ -2164,26 +2133,7 @@
         {
             name: 'condicion_pago_4',
             type: 'text',
-            description: 'Ingrese la instruccion del pago',
-            prereq: [
-                {
-                    k: 'pago_2',
-                    v: 's'
-                },
-                {
-                    k: 'pago_3',
-                    v: 's'
-                },
-                {
-                    k: 'pago_4',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name: 'instruccion_pago_4',
-            type: 'text',
-            description: 'Ingrese la condicion del pago',
+            description: 'Ingrese la forma del pago',
             prereq: [
                 {
                     k: 'pago_2',
@@ -2276,32 +2226,9 @@
             ]
         },
         {
-            name: 'instruccion_pago_5',
-            type: 'text',
-            description: 'Ingrese la instruccion del pago',
-            prereq: [
-                {
-                    k: 'pago_2',
-                    v: 's'
-                },
-                {
-                    k: 'pago_3',
-                    v: 's'
-                },
-                {
-                    k: 'pago_4',
-                    v: 's'
-                },
-                {
-                    k: 'pago_5',
-                    v: 's'
-                }
-            ]
-        },
-        {
             name: 'condicion_pago_5',
             type: 'text',
-            description: 'Ingrese la condicion del pago',
+            description: 'Ingrese la forma del pago',
             prereq: [
                 {
                     k: 'pago_2',
@@ -2318,33 +2245,6 @@
                 {
                     k: 'pago_5',
                     v: 's'
-                }
-            ]
-        },
-        {
-            name: 'fna',
-            description: '¿El pago se hará con FNA?',
-            value: 'n',
-            type: 'clausula',
-            options: [
-                {
-                    name: 'No',
-                    value: 'n'
-                },
-                {
-                    name: 'Si',
-                    value: 's'
-                }
-            ]
-        },
-        {
-            name: 'num_cuenta',
-            description: 'Ingrese el número de cuenta',
-            type: 'text',
-            prereq:[
-                {
-                    k:'fna',
-                    v:'s'
                 }
             ]
         },
@@ -2387,6 +2287,22 @@
                 {
                     k: 'entrega_sujeta',
                     v: 's'
+                }
+            ]
+        },
+        {
+            name: 'mudate_ya',
+            description: '¿Desea incluir cláusula de beneficio Múdate Ya?',
+            value: 'n',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
                 }
             ]
         },
@@ -2523,6 +2439,6 @@
     name: 'Promesa venta 2022',
     username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
     company: ObjectId('618d299c3b775300099e6214'),
-    build: 0,
+    build: 1,
     price: 5000
 }

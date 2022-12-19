@@ -1679,7 +1679,7 @@
             description: 'Ingrese el NIT de la institución educativa del trabajador',
             type: 'number'
         },
-        { 
+        {
             name: 'sena_centro_trabajador',
             description: 'Ingrese el centro de formación del SENA del trabajador',
             type: 'text'
@@ -1943,7 +1943,7 @@
                 }
             ],
             value: 's'
-        },
+        }
     ],
     operation: [],
     sign: [
@@ -1990,7 +1990,6 @@
         'celular_otro',
         'cedula_trabajador',
         'nombre_trabajador',
-        'dir_dom_trabajador',
         'sena_centro_trabajador',
         'nit_trabajador',
         'institucion_trabajador',
@@ -2001,8 +2000,7 @@
         'fecha_terminacion_trabajador',
         'fecha_inicio_trabajador',
         'correo_trabajador',
-        'tel_celular_trabajador',
-
+        'tel_celular_trabajador'
     ],
     preFill: [
         {
@@ -2039,6 +2037,7 @@
         'num_contrato',
         'objeto_contrato',
         'nombre_trabajador',
+        'dir_dom_trabajador',
         'campania',
         'cargo',
         'ccf',

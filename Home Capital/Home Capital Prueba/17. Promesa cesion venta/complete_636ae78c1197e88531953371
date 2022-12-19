@@ -314,7 +314,7 @@
   <tr>
     <td><b name="tipo_inmueble">____________</b></td>
     <td><b>Área</b></td>
-    <td><span name="area_inmueble">____________</span> m2</td>
+    <td><span name="area_inmueble">____________</span></td>
     <td><b>Matricula inmobiliaria</b></td>
     <td><span name="numero_matricula_inmueble">____________</span></td>
     <td><b>Código catastral</b></td>
@@ -423,7 +423,8 @@
 </table>
 
 <p>
-  Cabida y Linderos descritos en la escritura <span name="num_escritura">____________</span> del
+  Cabida y Linderos descritos en la escritura
+  <span name="num_escritura">____________</span> del
   <span name="fecha_escritura">____________</span> de la notaría
   <span name="num_notaria">____________</span> de
   <span name="municipio_notaria">____________</span> (TOMADOS DE LA ESCRITURA
@@ -456,14 +457,12 @@
     <th>Pago</th>
     <th>Valor</th>
     <th>Fecha</th>
-    <th>Instrucción de Pago (incluye cuenta y a qué se aplica)</th>
-    <th>Condición de pago (a qué está sujeto el pago)</th>
+    <th>Forma de pago</th>
   </tr>
   <tr>
     <td>1</td>
     <td><span name="valor_pago_1">____________</span></td>
     <td><span name="fecha_pago_1">____________</span></td>
-    <td><span name="instruccion_pago_1">____________</span></td>
     <td><span name="condicion_pago_1">____________</span></td>
   </tr>
   <span name="pago_2_n"></span>
@@ -471,7 +470,6 @@
     <td>2</td>
     <td><span name="valor_pago_2">____________</span></td>
     <td><span name="fecha_pago_2">____________</span></td>
-    <td><span name="instruccion_pago_2">____________</span></td>
     <td><span name="condicion_pago_2">____________</span></td>
   </tr>
   <span name="pago_3_n"></span>
@@ -479,7 +477,6 @@
     <td>3</td>
     <td><span name="valor_pago_3">____________</span></td>
     <td><span name="fecha_pago_3">____________</span></td>
-    <td><span name="instruccion_pago_3">____________</span></td>
     <td><span name="condicion_pago_3">____________</span></td>
   </tr>
   <span name="pago_4_n"></span>
@@ -487,7 +484,6 @@
     <td>4</td>
     <td><span name="valor_pago_4">____________</span></td>
     <td><span name="fecha_pago_4">____________</span></td>
-    <td><span name="instruccion_pago_4">____________</span></td>
     <td><span name="condicion_pago_4">____________</span></td>
   </tr>
   <span name="pago_5_n"></span>
@@ -495,19 +491,9 @@
     <td>5</td>
     <td><span name="valor_pago_5">____________</span></td>
     <td><span name="fecha_pago_5">____________</span></td>
-    <td><span name="instruccion_pago_5">____________</span></td>
     <td><span name="condicion_pago_5">____________</span></td>
   </tr>
 </table>
-
-<span name="fna_n"></span>
-  <p name="fna_s" hidden>
-    Que serán cancelados con crédito solicitado al Fondo Nacional del Ahorro
-    (FNA) por medio de transferencia bancaria en la cuenta corriente número
-    25900001062, Banco Bancolombia S.A. a nombre de P.A. HOME CAPITAL COLOMBIA.
-    Dicho pago será desembolsado una vez salga registrada la Escritura Pública
-    de Compraventa e hipoteca a favor del FNA y sea aprobada por este último,
-  </p>
 
 <p>
   Una vez se realicen los pagos relacionados, EL PROMITENTE CESIONARIO deberá
@@ -564,15 +550,15 @@
     servicios públicos.
   </li>
   <li>
-    EL PROMITENTE CEDENTE suministre los documentos requeridos por el PROMITENTE
-    CESIONARIO para la formalización del presente negocio
+    EL PROMITENTE CESIONARIO suministre los documentos requeridos por el PROMITENTE
+    CEDENTE para la formalización del presente negocio
   </li>
 </ol>
 
 <p>
-  <b>PARÁGRAFO PRIMERO:</b> En el evento en que se desista del negocio por una de
-  las causales indicadas, EL PROMITENTE CEDENTE devolverá los dineros que hubiere
-  recibido en un plazo máximo de quince (15) días hábiles, sin lugar a
+  <b>PARÁGRAFO PRIMERO:</b> En el evento en que se desista del negocio por una
+  de las causales indicadas, EL PROMITENTE CEDENTE devolverá los dineros que
+  hubiere recibido en un plazo máximo de quince (15) días hábiles, sin lugar a
   reconocimiento de intereses por el periodo en que tales sumas estuvieron en
   poder de EL PROMITENTE CEDENTE.
 </p>
@@ -588,8 +574,8 @@
 <p>
   <b>PARÁGRAFO PRIMERO:</b> Se deja expresa constancia que la celebración de la
   <span name="tipo_contrato_leasing">cesión</span>
-  <span name="tipo_contrato_fidu" hidden>escritura</span> publica de transferencia
-  de los inmuebles, se efectuará directamente por
+  <span name="tipo_contrato_fidu" hidden>escritura</span> publica de
+  transferencia de los inmuebles, se efectuará directamente por
   <span name="propietario_anterior">____________</span>. En tal sentido EL
   PROMITENTE CEDENTE gestionara todo lo pertinente hasta tanto se efectúe o se
   otorgue dicha <span name="tipo_contrato_leasing">cesión</span>
@@ -599,11 +585,11 @@
 <p>
   <b>PARÁGRAFO SEGUNDO:</b> No obstante, el plazo anterior, se pacta un plazo de
   gracia de tres (03) meses adicionales, contados a partir de la fecha antes
-  indicada. Durante dicho periodo de gracia EL PROMITENTE CEDENTE deberá pagar al
-  PROMITENTE CESIONARIO, a título de compensación, una suma mensual equivalente a
-  al 0,3 % del total de las sumas que EL PROMITENTE CESIONARIO hubiere pagado.
-  Durante este periodo adicional, no se configurará incumplimiento por parte del
-  PROMITENTE CEDENTE.
+  indicada. Durante dicho periodo de gracia EL PROMITENTE CEDENTE deberá pagar
+  al PROMITENTE CESIONARIO, a título de compensación, una suma mensual
+  equivalente a al 0,3 % del total de las sumas que EL PROMITENTE CESIONARIO
+  hubiere pagado. Durante este periodo adicional, no se configurará
+  incumplimiento por parte del PROMITENTE CEDENTE.
 </p>
 
 <p>
@@ -630,8 +616,8 @@
 
 <p>
   <b>9. ENTREGA MATERIAL:</b> La entrega y material de los inmuebles se
-  efectuará el <span name="fecha_entrega_material">____________</span> o antes
-  si es posible, fecha que podrá adelantarse por mutuo acuerdo entre las partes.
+  efectuará el <span name="fecha_entrega">____________</span> o antes si es
+  posible, fecha que podrá adelantarse por mutuo acuerdo entre las partes.
 </p>
 
 <p>
@@ -646,7 +632,8 @@
   <span name="texto_entrega_sujeta">____________</span>
 </p>
 
-<p>
+<span name="mudate_ya_n"></span>
+<p name="mudate_ya_s" hidden>
   <b>PARÁGRAFO PRIMERO. BENEFICIO MUDATE YA:</b> Acuerdan LAS PARTES y así dejan
   expresa constancia, que previo acuerdo entre estas, EL PROMITENTE CEDENTE
   podrá efectuar la entrega material del inmueble previo a la fecha acordada, a
@@ -659,13 +646,6 @@
   presente contrato.
 </p>
 
-<p>
-  Celebrada el contrato de cesión, sin que se hubiere cumplido con el pago de la
-  totalidad del inmueble, EL PROMITENTE CESIONARIO se obliga a pagar a partir de
-  dicho momento y hasta que se efectué el desembolso del saldo final, a título
-  de compensación, una suma equivalente al 1.2% mensual anticipado sobre el
-  saldo pendiente por pagar.
-</p>
 
 <p>
   En ningún evento, estas sumas de dinero se considerarán como parte de pago del
@@ -687,9 +667,9 @@
 </p>
 
 <p>
-  <b>11. INCUMPLIMIENTO DEL CONTRATO:</b> Si EL PROMITENTE CESIONARIO incumple
+  <b>11. INCUMPLIMIENTO DEL CONTRATO:</b> Si cualquiera de las partes incumple
   alguna o todas las obligaciones derivadas del presente contrato y ello no
-  fuere por su muerte, terremoto, inundación, incendio; perderá la suma de 10%
+  fuere por su muerte, terremoto, inundación, incendio; deberá cancelar la suma de 10%
   del valor total del negocio, que será exigible por la vía ejecutiva sin
   necesidad de requerimientos para la constitución en mora, derecho al cual
   expresamente renuncian ambas partes. No obstante lo anterior, el pago de la
@@ -712,7 +692,7 @@
   incumplimiento y así lo comunicará a EL PROMITENTE CESIONARIO, quedando
   obligado a restituir las sumas de dinero pagadas por EL PROMITENTE CESIONARIO,
   restando la suma indemnizatoria acordada en esta cláusula, en un plazo no
-  mayor a treinta (30) días calendario.
+  mayor a quince (15) días calendario.
 </p>
 
 <p>
