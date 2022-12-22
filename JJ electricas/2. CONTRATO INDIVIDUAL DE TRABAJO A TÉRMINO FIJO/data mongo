@@ -1,0 +1,229 @@
+{
+    _id: ObjectId('63a367ea2c28fb4f87c096be'),
+    config: [
+        {
+            name: 'nombre_empleador',
+            type: 'name',
+            description: 'Ingrese el nombre de la empresa empleadora'
+        },
+        {
+            name: 'dir_empleador',
+            type: 'text',
+            description: 'Ingrese la dirección de la empresa empleadora'
+        },
+        {
+            name: 'nombre_trabajador',
+            type: 'name',
+            description: 'Ingrese el nombre del trabajador'
+        },
+        {
+            name: 'dir_trabajador',
+            type: 'text',
+            description: 'Ingrese la dirección del trabajador'
+        },
+        {
+            name: 'lugar_nacimiento',
+            type: 'text',
+            description: 'Ingrese el lugar de nacimiento del trabajador'
+        },
+        {
+            name: 'fecha_nacimiento',
+            type: 'date',
+            description: 'Seleccione la fecha de nacimiento del trabajador'
+        },
+        {
+            name: 'cargo',
+            type: 'text',
+            description: 'Ingrese el cargo del trabajador'
+        },
+        {
+            name: 'fecha_inicio_labores',
+            type: 'date',
+            description: 'Seleccione la fecha de inicio de las labores del trabajador'
+        },
+        {
+            name: 'salario',
+            type: 'currency',
+            description: 'Ingrese el salario del trabajador'
+        },
+        {
+            name: 'ciudad_empleador',
+            type: 'text',
+            description: 'Ingrese el municipio de domicilio de la empresa empleadora'
+        },
+        {
+            name: 'vencimiento_contrato',
+            type: 'date',
+            description: 'Seleccione la fecha de vencimiento del contrato'
+        },
+        {
+            name: 'rep_legal_empleador',
+            type: 'text',
+            description: 'Ingrese el nombre del representante legal de la empresa contratadora'
+        },
+        {
+            name: 'tipo_id_rep_legal',
+            type: 'clausula',
+            description: 'Seleccione el tipo de identificación del representante legal de la empresa empleadora',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                },
+                {
+                    name: 'Permiso por proteccion temporal',
+                    value: 'ppt'
+                }
+            ]
+        },
+        {
+            name: 'num_id_rep_legal',
+            type: 'text',
+            description: 'Ingrese el número de identificación del representante legal de la empresa empleadora'
+        },
+        {
+            name: 'exp_id_rep_legal',
+            type: 'text',
+            description: 'Ingrese el lugar de expedición del documento de identidad del representante legal de la empresa empleadora'
+        },
+        {
+            name: 'nit_empleador',
+            type: 'text',
+            description: 'Ingrese el NIT de la empresa empleadora'
+        },
+        {
+            name: 'tipo_id_trabajador',
+            type: 'clausula',
+            description: 'Seleccione el tipo de identificación del trabajador',
+            value: 'cc',
+            options: [
+                {
+                    name: 'Cédula de ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Permiso especial de permanencia',
+                    value: 'pep'
+                },
+                {
+                    name: 'Permiso por proteccion temporal',
+                    value: 'ppt'
+                }
+            ]
+        },
+        {
+            name: 'num_id_trabajador',
+            type: 'number',
+            description: 'Ingrese el número de identificación del trabajador'
+        },
+        {
+            name: 'exp_id_trabajador',
+            type: 'text',
+            description: 'Ingrese el lugar de expedición del documento de identidad del trabajador'
+        },
+        {
+            name: 'duracion_contrato',
+            type: 'text',
+            description: 'Ingrese la duración del contrato'
+        },
+        {
+            name: 'correo_empleador',
+            type: 'email',
+            description: 'Ingrese el correo donde llegará la invitación a firmar del representante legal de la empresa empleadora'
+        },
+        {
+            name: 'tel_empleador',
+            type: 'text',
+            description: 'Ingrese el número teléfonico de la empresa empleadora'
+        },
+        {
+            name: 'domicilio_contractual',
+            type: 'text',
+            description: 'Ingrese el domicilio contractual'
+        },
+        {
+            name: 'fecha_suscripcion',
+            type: 'date',
+            description: 'Seleccione la fecha de suscripción del contrato'
+        },
+        {
+            name: 'correo_trabajador',
+            type: 'email',
+            description: 'Ingrese el correo donde llegará la invitación a firmar del trabajador'
+        },
+        {
+            name: 'ciudad_firma',
+            type: 'text',
+            description: 'Ingrese la ciudad en la que se firma el documento'
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se firma el documento'
+        },
+        {
+            name: 'fecha_insc_camara',
+            type: 'date',
+            description: 'Seleccione la fecha en la que se inscribió a cámara de comercio la empresa empleadora'
+        },
+        {
+            name: 'num_insc_camara',
+            type: 'text',
+            description: 'Ingrese el número bajo el que se inscribió a cámara de comercio la empresa empleadora'
+        },
+        {
+            name: 'cel_empleador',
+            type: 'phone',
+            description: 'Ingrese el número teléfonico del representante legal de la empresa empleadora'
+        },
+        {
+            name: 'ciudad_trabajador',
+            type: 'text',
+            description: 'Ingrese la ciudad del trabajador'
+        },
+        {
+            name: 'cargo_empleador',
+            type: 'text',
+            description: 'Ingrese el cargo del representante legal de la empresa empleadora'
+        }
+    ],
+    sign: [
+        'rep_legal_empleador',
+        'num_id_empleador',
+        'correo_empleador',
+        'nombre_trabajador',
+        'num_id_trabajador',
+        'correo_trabajador'
+    ],
+    signatureProfile: [
+        {
+            type: 'firma_empleador',
+            name: 'rep_legal_empleador',
+            identification: 'num_id_rep_legal',
+            email: 'correo_empleador'
+        },
+        {
+            type: 'firma_trabajador',
+            name: 'nombre_trabajador',
+            identification: 'num_id_trabajador',
+            email: 'correo_trabajador'
+        }
+    ],
+    name: 'CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO',
+    build: 1,
+    price: 5000,
+    preBuild: false
+}

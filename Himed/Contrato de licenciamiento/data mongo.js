@@ -145,8 +145,19 @@
         },
         {
             name: 'periodo_facturacion',
-            type: 'text',
-            description: 'Ingrese el periodo de facturación'
+            type: 'clausula',
+            description: 'Seleccione el periodo de facturación',
+            value: 'anual',
+            options: [
+                {
+                    name: 'Anual',
+                    value: 'anual'
+                },
+                {
+                    name: 'Mensual',
+                    value: 'mensual'
+                }
+            ]
         },
         {
             name: 'medio_ingreso_plataforma',
@@ -157,6 +168,11 @@
             name: 'num_usuarios',
             type: 'number',
             description: 'Ingrese el número de usuarios'
+        },
+        {
+            name: 'perfil_usuario',
+            type: 'text',
+            description: 'Ingrese el perfil de usuario'
         },
         {
             name: 'migracion_datos',
@@ -221,7 +237,7 @@
         },
         {
             name: 'correo_himed',
-            value: 'ccsandovalt@gmail.com'
+            value: 'carlos.mesa@himedsolutions.com'
         }
     ],
     sign: [
@@ -250,6 +266,7 @@
     ],
     preBuild: false,
     name: 'CONTRATO DE LICENCIAMIENTO PARA EL USO EXCLUSIVO DEL SOFTWARE HIMED',
+    company: ObjectId('6311122f7b8e71e300946385'),
     price: 5000,
-    build: 3
+    build: 4
 }

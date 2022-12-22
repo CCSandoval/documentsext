@@ -1248,8 +1248,7 @@ ningún tipo de responsabilidad de su parte.
 </p>
 
 <p>
-  La EMPRESA: Calle 11B # 43A-27 Edificio Los Cedros Torre 2 Oficina 205,
-  Medellín, Antioquia, Colombia Correo electrónico: ayudamed@himedsolutions.com
+  La EMPRESA: Carrera 48 # 48 sur - 75 Centro múltiple Las Vegas oficina 122, Envigado, Antioquia Correo electrónico: ayudamed@himedsolutions.com
 </p>
 
 <p>
@@ -2665,8 +2664,11 @@ ningún tipo de responsabilidad de su parte.
       <b>2.2 PERIODO DE FACTURACIÓN</b>
     </td>
     <td>
-      <span name="periodo_facturacion">
-        _________________________________________________________
+      <span name="periodo_facturacion_anual">
+        Pago anual anticipado según fecha del licenciamiento; Esta vigencia se puede cambiar durante el transcurso del licensiamiento por otorgamiento de meses adicionales, por referidos efectivos, promociones y/o cambios en la fecha de activación del sistema. Los meses obsequiados sólo se otorgarán al inicio del contrato y no se contabilizarán para la renovación.
+      </span>
+      <span name="periodo_facturacion_mensual">
+        12 pagos mensuales anticipados independiente de la fecha de vigencia del licencimiento; Esta vigencia puede cambiar durante el transcurso del licenciamiento por otorgacmiento de meses adicionales, por referidos efectivos, promociones y/o cambios en la fecha de activación del sistema. Los meses obsequiados sólo se otorgarán al inicio del contrato y no se contabilizarán para la renovación.
       </span>
     </td>
   </tr>
@@ -2680,6 +2682,8 @@ ningún tipo de responsabilidad de su parte.
       <b name="medio_ingreso_plataforma">___________________</b>
       <br />
       Número de usuarios: <b name="num_usuarios">___________________</b>
+      <br />
+      Perfil de usuario: <b name="perfil_usuario">___________________</b>
     </td>
   </tr>
   <tr>
@@ -3425,8 +3429,7 @@ ningún tipo de responsabilidad de su parte.
       <span name="direccion_cliente">___________________</span>
     </td>
     <td>
-      Dirección: Calle 11B # 43A – 27, Edificio Los Cedros, torre 1, oficina
-      305, Medellín.
+      Dirección: Carrera 48 # 48 sur - 75 Centro múltiple Las Vegas oficina 122, Envigado, Antioquia
     </td>
   </tr>
   <tr>

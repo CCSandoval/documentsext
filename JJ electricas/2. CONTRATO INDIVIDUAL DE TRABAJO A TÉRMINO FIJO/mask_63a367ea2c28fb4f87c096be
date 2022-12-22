@@ -1,0 +1,1375 @@
+<style type="text/css">
+  .table_class {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .table_class td {
+    border: 1px solid black;
+    padding: 5px;
+  }
+  .table_class th {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+  }
+</style>
+
+<div>
+  <h2 style="text-align: center">
+    <b>CONTRATO INDIVIDUAL DE TRABAJO A TÉRMINO FIJO</b>
+  </h2>
+
+  <table class="table_class">
+    <tr>
+      <td>
+        <b>Nombre del empleador: </b>
+        <b name="nombre_empleador">______________</b>
+      </td>
+      <td>
+        <b>Dirección del empleador: </b>
+        <b name="dir_empleador">______________</b>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Nombre del trabajador: </b>
+        <b name="nombre_trabajador">______________</b>
+      </td>
+      <td>
+        <b>Dirección del trabajador: </b>
+        <b name="dir_trabajador">______________</b>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Lugar y fecha de nacimiento: </b>
+        <b name="lugar_nacimiento">______________</b> -
+        <b name="fecha_nacimiento">______________</b>
+      </td>
+      <td><b>Cargo u Oficio: </b><b name="cargo">______________</b></td>
+    </tr>
+    <tr>
+      <td><b>Periodos de pago: Quincenal</b></td>
+      <td>
+        <b>Fecha en la que inicia labores: </b>
+        <b name="fecha_inicio_labores">______________</b>
+      </td>
+    </tr>
+    <tr>
+      <td><b>Salario: </b><b name="salario">______________</b></td>
+      <td><b>Ciudad: </b><b name="ciudad_empleador">______________</b></td>
+    </tr>
+    <tr>
+      <td>
+        <b>Termino inicial del contrato: Termino fijo</b>
+      </td>
+      <td>
+        <b>Vence el dia: </b><b name="vencimiento_contrato">______________</b>
+      </td>
+    </tr>
+  </table>
+
+  <p>
+    Entre el señor (a) <span name="rep_legal_empleador">______________</span>,
+    persona mayor de edad, portadora de la
+    <span name="tipo_id_rep_legal_cc">CÉDULA DE CIUDADANIA</span>
+    <span name="tipo_id_rep_legal_ce" hidden>CÉDULA DE EXTRANJERÍA</span>
+    <span name="tipo_id_rep_legal_pep" hidden>
+      PERMISO ESPECIAL DE PERMANENCIA
+    </span>
+    <span name="tipo_id_rep_legal_ppt" hidden>
+      PERMISO POR PROTECCIÓN TEMPORAL
+    </span>
+    No.
+    <span name="num_id_rep_legal">______________</span> de
+    <span name="exp_id_rep_legal">______________</span>, actuando en calidad de
+    representante legal de La Firma
+    <span name="nombre_empleador">______________</span>, persona de derecho
+    privado, legalmente constituida, domiciliada en la ciudad de
+    <span name="ciudad_empleador">______________</span> , quien se identifica
+    con el N.I.T. No. <span name="nit_empleador">______________</span> y quien
+    en adelante se llamará EL EMPLEADOR, y el señor (a)
+    <span name="nombre_trabajador">______________</span> identificado con la
+    <span name="tipo_id_trabajador_cc">CÉDULA DE CIUDADANIA</span>
+    <span name="tipo_id_trabajador_ce" hidden>CÉDULA DE EXTRANJERÍA</span>
+    <span name="tipo_id_trabajador_pep" hidden>
+      PERMISO ESPECIAL DE PERMANENCIA
+    </span>
+    <span name="tipo_id_trabajador_ppt" hidden>
+      PERMISO POR PROTECCIÓN TEMPORAL
+    </span>
+    No. <span name="num_id_trabajador">______________</span> de
+    <span name="exp_id_trabajador">______________</span>, quien en adelante se
+    llamará EL TRABAJADOR, se ha convenido celebrar el presente contrato
+    individual de trabajo, con las condiciones arriba detalladas, cuyas normas
+    principales son las contenidas en el Código Sustantivo de Trabajo y el que
+    se encuentra regido además, por las siguientes cláusulas:
+  </p>
+
+  <p>
+    <b>PRIMERA. OBJETO:</b> El EMPLEADOR contrata los servicios personales del
+    TRABAJADOR y éste se obliga:
+  </p>
+
+  <ol>
+    <li>
+      A poner al servicio del empleador toda su capacidad normal de trabajo, en
+      el desempeño de las funciones propias del oficio mencionado y en las
+      labores anexas y complementarias del mismo, de conformidad con las órdenes
+      e instrucciones que le imparta el EMPLEADOR directamente o a través de sus
+      representantes.
+    </li>
+    <li>
+      A prestar sus servicios de manera exclusiva al EMPLEADOR, es decir, a no
+      prestar directa ni indirectamente servicios laborales a otros empleadores,
+      ni a trabajar por cuenta propia en el mismo oficio, durante la vigencia de
+      este contrato.
+    </li>
+    <li>
+      A guardar absoluta reserva sobre los hechos, documentos, informaciones y
+      en general, sobre todos los asuntos y materias que lleguen a su
+      conocimiento por causa o con ocasión de su contrato de trabajo.
+    </li>
+    <li>
+      Conservar y restituir en buen estado los instrumentos, útiles, y materias
+      primas sobrantes que se le hayan proporcionado para el desempeño de su
+      trabajo.
+    </li>
+    <li>
+      En general todas las obligaciones señaladas en el Código Sustantivo del
+      Trabajo, reglamento de trabajo y disposiciones administrativas.
+    </li>
+  </ol>
+
+  <p>
+    <b>SEGUNA. DURACIÓN:</b> El presente contrato se celebra a término fijo por
+    un periodo de <span name="duracion_contrato">______________</span>. Si antes
+    de la fecha de vencimiento de este término, ninguna de las partes avisare
+    por escrito a la otra de su terminación de no prorrogar el contrato con
+    antelación no inferior a treinta (30) días, este se entenderá prorrogado por
+    un periodo igual al inicialmente pactado. Por tratarse de un contrato a
+    término fijo inferior a un año, únicamente podrá prorrogarse sucesivamente
+    el contrato hasta por tres periodos iguales o inferiores, al cabo de los
+    cuales el término de renovación no podrá ser inferior a un año, y así
+    sucesivamente.
+  </p>
+
+  <p>
+    <b>TERCERA. OBLIGACIONES ESPECIALES DEL EMPLEADOR.</b> - Además de las
+    obligaciones legales y reglamentarias, EL EMPLEADOR se obliga a: 1) Cubrir
+    oportunamente el monto de los salarios en la forma estipulada; 2)
+    Suministrar a EL TRABAJADOR Las dotaciones de ley conforme a los términos de
+    los artículos 230 y s.s del C. S. del T. 3) Prestar toda la colaboración
+    pertinente, tendiente a optimizar las labores encomendadas a EL TRABAJADOR.
+    4) Guardar absoluto respeto a la dignidad personal de EL TRABAJADOR; 5) No
+    deducir, retener o compensar suma alguna del monto del salario y
+    prestaciones en dinero que correspondan a EL TRABAJADOR sin autorización
+    previa escrita de éste para cada caso o sin mandamiento judicial, con
+    excepción de los casos autorizados por la ley; 6) No obligar bajo ninguna
+    forma a EL TRABAJADOR a comprar mercancías o víveres en almacenes, tiendas,
+    proveedurías que establezca EL EMPLEADOR; 7) No hacer, ni autorizar, ni
+    tolerar propaganda política en el sitio de trabajo; 8) No emplear en las
+    certificaciones que expida EL EMPLEADOR, signos convencionales que tiendan a
+    perjudicar al interesado, ni adoptar el sistema de lista negra, cualquiera
+    que sea la modalidad que utilice para que no ocupen a EL TRABAJADOR en otros
+    establecimientos o lo separen del servicio en los mismos. 9) Conceder a EL
+    TRABAJADOR las licencias necesarias para el ejercicio del sufragio, para el
+    desempeño de cargos oficiales transitorios de forzosa aceptación, en caso de
+    grave calamidad doméstica debidamente comprobada, cuando a ello hubiere
+    lugar, o, para asistir a funerales de sus compañeros de trabajo, siempre que
+    avise con la debida antelación a EL EMPLEADOR o a su representante y siempre
+    que, en este último caso, el número de trabajadores que solicita el permiso
+    no perjudique el normal funcionamiento de la institución.
+  </p>
+
+  <p>
+    <b>CUARTA. OBLIGACIONES ESPECIALES DEL TRABAJADOR</b>.- Además de las
+    obligaciones legales y reglamentarias, EL TRABAJADOR se compromete a cumplir
+    las siguientes obligaciones: 1) Realizar la labor contratada cumpliendo
+    estrictamente los niveles de calidad, puntualidad, diligencia, cuidado y
+    pericia que le señale el empleador o los que su oficio le imponga; 2) Obrar
+    con plena observancia de principios éticos que exige su labor; 3) Seguir las
+    directrices determinadas por EL EMPLEADOR; 4) Colocar al servicio de EL
+    EMPLEADOR, toda su capacidad normal de trabajo en el desempeño de sus
+    funciones y en las labores anexas, conexas y complementarias, acatando y
+    cumpliendo las órdenes e instrucciones que le imparta EL EMPLEADOR,; 5) No
+    comunicar a terceros, salvo autorización expresa y escrita del EMPLEADOR o
+    por orden de las autoridades competentes, las informaciones que tenga sobre
+    su trabajo, especialmente sobre las cosas que sean de naturaleza reservada o
+    cuya divulgación pueda ocasionar perjuicios al EMPLEADOR o las personas a
+    quienes preste el servicio; 8) Conservar, mantener y restituir en buen
+    estado, salvo deterioro natural y razonable, los instrumentos y útiles que
+    le hayan sido facilitados para la prestación de sus servicios; 9) Comunicar
+    oportunamente a EL EMPLEADOR las observaciones que estime conducentes para
+    el correcto funcionamiento de las actividades del EMPLEADOR y de su propia
+    labor, evitando daños y perjuicios; 11) Prestar toda la colaboración posible
+    en caso de siniestro o de riesgo inminente que afecten o amenacen a las
+    personas o cosas de EL EMPLEADOR; 12) No sustraer los útiles de trabajo ni
+    ninguna clase de elementos o artefactos, para realizar actividades
+    diferentes a las autorizadas por EL EMPLEADOR o en beneficio personal de EL
+    TRABAJADOR, salvo autorización expresa y escrita del representante legal de
+    la compañía; 13) No disminuir intencionalmente el ritmo de ejecución del
+    trabajo, ni suspender labores, ni promover suspensiones intempestivas del
+    trabajo o incitar a su declaración o mantenimiento, sea que participe o no
+    en ellas; 15) Las invenciones o descubrimientos realizados por EL TRABAJADOR
+    pertenecerán a EL EMPLEADOR con todos los derechos inherentes a tal calidad.
+    16) Aceptar las modificaciones en la labor contratada y en la prestación del
+    servicio que decida EL EMPLEADOR dentro de su poder subordinante, así como
+    las labores necesarias para el cumplimiento cabal del servicio contratado, y
+    las conexas y complementarias del caso; 20) No descuidar ni abandonar el
+    lugar de trabajo, para realizar actividades diferentes a las derivadas del
+    cumplimiento del objeto previsto en el presente contrato; 22) No usar los
+    elementos que sean propiedad de terceras personas sin su autorización o para
+    fines diferentes a los autorizados por su propietario. 23) Cuidar y dar un
+    uso adecuado a los instrumentos, artículos, maquinarias y todos los activos
+    del EMPLEADOR, los cuales le son entregados en perfecto estado; Para lo
+    cual, en caso de deterioro, pérdida o daño alguno en herramientas,
+    artículos, máquinas o cualquier activo de propiedad del EMPLEADOR puesto a
+    su disposición, deberá responder pecuniariamente por los mismos. De igual
+    manera si hubiere pérdida o robo de maquinaria, artículos, herramientas o
+    cualquier activo de propiedad de la compañía, EL TRABAJADOR responsable de
+    los mismos adquiere automáticamente la carga por la pérdida o deterioro y
+    deberá interponer las acciones legales a que haya lugar. 24) EL TRABAJADOR
+    se compromete a hacer uso de los elementos de seguridad personal asignados y
+    entregados en función de la labor para la cual se le contrata PARÁGRAFO: Las
+    partes declaran expresamente que el incumplimiento por parte de EL
+    TRABAJADOR de cualquiera de las obligaciones contempladas en esta cláusula o
+    de las previstas en el artículo 58 del Código Sustantivo del Trabajo,
+    constituye falta grave, aún por la primera vez.
+  </p>
+
+  <p>
+    <b>QUINTA. SEGURIDAD SOCIAL.</b> - De manera expresa, EL TRABAJADOR autoriza
+    los descuentos de las sumas que legalmente le corresponden como cotización
+    para las entidades de seguridad social, PARÁGRAFO PRIMERO: En virtud de la
+    ley, en especial el artículo 208 del Código Sustantivo de Trabajo, en caso
+    de incapacidad superior a 3 días, EL EMPLEADOR, sólo podrá tener como
+    válidas las incapacidades provenientes de la EPS o la ARL a la que se
+    encuentre afiliado EL EMPLEADO, en consecuencia, en caso de incapacidad, si
+    el trabajador no se presenta a prestar sus servicios y no acude a la EPS o a
+    la ARP correspondiente, se entenderá como ausencia no justificada.
+  </p>
+
+  <p>
+    <b>SEXTA. MODIFICACIONES.</b> -EL TRABAJADOR acepta desde ahora expresamente
+    todas las modificaciones determinadas por EL EMPLEADOR, en ejercicio del
+    poder subordinante, de sus condiciones laborales, tales como la jornada de
+    trabajo, el lugar de prestación de servicios, el cargo u oficio y/o
+    funciones y la forma de remuneración.
+  </p>
+
+  <p>
+    <b>SEPTIMA. LEY DE ACOSO LABORAL.</b> - Adicionalmente a que el presente
+    contrato se encuentra sujeto a las normas legales del trabajo, normas
+    internacionales de trabajo como la OIT., EL EMPLEADOR Y el TRABAJADOR (A)
+    COLABORADORA reconocen que así mismo conocen y aceptan los lineamientos
+    planteados en la Ley 1010 del 23 de enero de 2006 llamada la Ley de Acoso
+    Laboral y por tanto será incorporado al presente las disposiciones del
+    mismo.
+  </p>
+
+  <p>
+    <b>OCTAVA. SALARIO:</b> El EMPLEADOR pagará al trabajador por la prestación
+    de sus servicios el salario indicado, pagadero en el lugar, forma, monto y
+    periodicidad que ha sido señalada en la parte preliminar de este contrato.
+  </p>
+
+  <p>
+    <b>Parágrafo primero.</b> Dentro del salario ordinario se encuentra incluida
+    la remuneración de los descansos dominicales y festivos de que tratan los
+    capítulos I, y II del Título VII del C.S.T. Se aclara y se conviene que en
+    los casos en los que el trabajador devengue comisiones o cualquier otra
+    modalidad de salario variable, el 82.5% de dichos ingresos, constituye
+    remuneración ordinaria y el 17.5% restante esta designado a remunerar el
+    descanso en los días dominicales y festivos según la norma citada.
+  </p>
+
+  <p>
+    <b>Parágrafo segundo.</b> El empleador podrá otorgar unos auxilios
+    extralegales en dinero. Dicho auxilio será otorgado por mera liberalidad y
+    por tanto de naturaleza extralegal y se pagara proporcional a los días
+    trabajados: Y sobre estas las partes disponen que NO CONSTITUYA SALARIO,
+    teniendo en cuenta que dichos valores no tienen sentido de enriquecer,
+    aumentar o ingresar al patrimonio del trabajador; sino que es para
+    desempeñar de manera integral las labores asignadas y ayudarlo en el
+    desempeño de sus funciones así como ayudar en la alimentación, habitación o
+    vestuario del trabajador según el Art. 128 del C.S.T. Dichos auxilios se
+    dividen de la siguiente manera (Auxilio extralegal de transporte/rodamiento
+    hasta el 20% del salario pactado en el presente contrato y bono de
+    alimentación hasta el 20% del total del valor remunerado de acuerdo con las
+    condiciones establecidas en el presente contrato). Las partes acuerdan que
+    las sumas así recibidas, no se tendrán en cuenta para la liquidación de
+    prestaciones sociales, ni para liquidación y pago de seguridad social, ni
+    aportes parafiscales, pues como se dijo anteriormente estos no constituyen
+    salario y podrá ser revocado en cualquier momento ya que se entiende como un
+    auxilio extralegal y voluntario para la mejor prestación del servicio.
+  </p>
+
+  <p>
+    <b>PARAGRAFO TERCERO:</b> Los beneficios anteriores, se reconocen por mera
+    liberalidad y en tal sentido no constituyen salario, ni tendrán incidencia
+    alguna para efectos salariales, prestacionales, indemnizatorios o
+    parafiscales. De igual manera las partes reiteran, que todo beneficio
+    diferente al aquí pactado, tales como primas extralegales, bonificaciones o
+    gratificaciones ocasionales, auxilios, beneficios en materia de transporte,
+    alimentación, habitación, pagos efectuados por concepto de elementos de
+    trabajo o medios para su cabal desempeño, como gastos de representación,
+    medios de transporte, elementos de trabajo o cualquier otro en especie o
+    dinero, no tendrán incidencia salarial, prestacional, indemnizatoria o
+    parafiscal. Dicha suma por consenso entre las partes no será constitutiva de
+    factor salarial para efectos de liquidar cesantías, intereses sobre las
+    cesantías, prima legal de servicios, vacaciones, aportes al Sistema General
+    de Seguridad Social Integral y Parafiscalidad, así como cualquier otro
+    derecho y acreencia laboral derivada del contrato de trabajo celebrado, toda
+    vez que las partes entienden y aceptan que dicha suma es entregada a EL
+    TRABAJADOR no para enriquecer su patrimonio, sino para asumir los gastos en
+    que incurre en el desarrollo de las labores para las cuales fue contratado.
+  </p>
+
+  <p>
+    <b>PARAGRAFO CUARTO:</b> Toda vez que los beneficios reconocidos en la
+    presente cláusula se otorgan por mera liberalidad del EMPLEADOR, éste se
+    reserva la posibilidad de suspender, modificar y/o suprimir en cualquier
+    momento el reconocimiento de éstos en forma temporal o definitiva, sin que
+    tal determinación implique una desmejora en las condiciones laborales del
+    TRABAJADOR.
+  </p>
+
+  <p>
+    <b>PARAGRAFO QUINTO:</b> El Empleador podrá reconocer beneficios, primas,
+    prestaciones de naturaleza extralegal, lo que se hace a título de mera
+    liberalidad y estos subsistirán hasta que El Empleador decida su
+    modificación o supresión, atendiendo su capacidad, todos los cuales se
+    otorgan y reconocen, y el trabajador así lo acuerdan sin que tengan carácter
+    salarial y por lo tanto no tienen efecto prestacional o incidencia en la
+    base de aportes en la seguridad social o parafiscal en especial este acuerdo
+    se refiere a auxilios en dinero o en especie, primas periódicas o de
+    antigüedad o en general beneficios de esa naturaleza los que podrán ser
+    modificados o suprimidos por El Empleador de acuerdo con su determinación
+    unilateral tal como fue otorgado.
+  </p>
+
+  <p>
+    <b>NOVENA. HORARIO:</b> El trabajador se obliga a laborar la jornada
+    ordinaria en los turnos y dentro de las horas señaladas por el empleador,
+    pudiendo hacer este ajuste o cambios de horario cuando lo estime
+    conveniente. Por el acuerdo expreso o tácito de las partes podrán repartirse
+    las horas laborables en jornadas ordinarias de la forma prevista en el ART.
+    164 del Código sustantivo del trabajo, modificado por el art. 23 de la ley
+    50 de 1990, teniendo en cuenta que los tiempos de descanso entre las
+    sesiones de la jornada no se computan dentro de la misma según el art 167
+    ibídem.
+  </p>
+
+  <p>
+    <b>DECIMA. PERIODO DE PRUEBA.</b> Las partes acuerdan un periodo de prueba
+    de la quinta parte del contrato de acuerdo al tiempo de duración establecido
+    para el mismo, que no es superior a la quinta parte del término inicial de
+    este contrato ni excede dos meses. En caso de prórrogas o nuevo contrato
+    entre las partes se entenderá que no hay nuevo periodo de prueba. Durante
+    este periodo tanto el empleador como el trabajador, podrán terminar el
+    contrato en cualquier momento en forma unilateral, de conformidad con el
+    artículo 78 del Código Sustantivo del Trabajo, modificado por el artículo 7º
+    de la ley 50 de 1990. Si la duración del contrato fuere superior a treinta
+    días e inferior a un año, se entenderá por renovado por un término inicial
+    al pactado, si antes de la fecha del vencimiento ninguna de las partes
+    avisare por escrito la terminación de no prorrogarlo, con una antelación no
+    inferior a treinta días.
+  </p>
+
+  <p>
+    <b
+      >DECIMA PRIMERA: TRABAJO NOCTURNO, SUPLEMENTARIO, DOMINICAL Y/O
+      FESTIVO:</b
+    >
+    Todo trabajo nocturno, suplementario o en horas extras y todo trabajo en día
+    domingo o festivo se remunerará conforme a la ley, pero, para el
+    reconocimiento económico de dicho trabajo el EMPLEADOR o sus representantes
+    deberán haberlo autorizado o emitido dicho mandato por escrito con la
+    suscripción de una planilla de turnos en donde se demuestre de manera
+    precisa los tiempos laborados. Parágrafo uno. Tratándose de trabajadores de
+    dirección, confianza o manejo, no habrá lugar al pago de horas extras.
+  </p>
+
+  <p>
+    <b>DECIMA SEGUNDA. JORNADAS DE TRABAJO:</b> El TRABAJADOR se obliga a
+    laborar la jornada máxima legal, salvo acuerdo especial, en los turnos y
+    horas señaladas por el empleador, pudiendo hacer ajustes o cambios de
+    trabajo cuando lo estime conveniente. Por acuerdo tácito o expreso entre las
+    partes, podrán repartirse total o parcialmente las horas de trabajo de la
+    jornada ordinaria, con base en lo dispuesto por el art. 164 del C.S.T.,
+    teniendo en cuenta que los tiempos de descanso no se computan dentro de la
+    jornada laboral.
+  </p>
+
+  <p>
+    <b>DECIMA TERCERA. TERMINACIÓN UNILATERAL:</b> Son justas causas para dar
+    por terminado unilateralmente el contrato de trabajo, las enumeradas en el
+    art. 62 del C.S.T. modificado por el art. 7 del Decreto 2351/65 y además las
+    faltas que para el efecto se califiquen como graves en el reglamento de
+    trabajo o las disposiciones administrativas emanadas por el empleador. Se
+    consideran también como faltas graves la vulneración a las disposiciones
+    enumeradas en la cláusula primera de este contrato.
+  </p>
+
+  <p>
+    <b>DECIMA CUARTA. INVENCIONES:</b> Las partes acuerdan que todas las
+    invenciones, descubrimientos y trabajos originales concebidos o hechos por
+    el TRABAJADOR en vigencia del presente contrato pertenecen al empleador por
+    lo cual el trabajador se obliga a no plagiar, falsear, e imitar las
+    invenciones del empleador, las cuales se hayan creado en el desarrollo de su
+    labor.
+  </p>
+
+  <p>
+    <b>DECIMA QUINTA. SANCIONES POR INCUMPLIMIENTO:</b> El TRABAJADOR podrá ser
+    sancionado por el EMPLEADOR suspendiéndolo por uno a tres días sin derecho a
+    remuneración económica, en los siguientes casos:
+  </p>
+
+  <ol>
+    <li>Cuando no efectuare sus labores de manera adecuada.</li>
+    <li>Cuando retrase la entrega de su trabajo.</li>
+    <li>
+      En los eventos mencionados en el art. 62 del Código Sustantivo del trabajo
+      siempre y cuando el EMPLEADOR no desee aún terminar el contrato de trabajo
+      por una de sus justas causas.
+    </li>
+    <li>
+      En los eventos o faltas que hayan sido reguladas en el reglamento de
+      trabajo.
+    </li>
+  </ol>
+
+  <p>
+    <b>DECIMA SEXTA. PROCEDIMIENTO PARA APLICAR SANCIONES:</b> El EMPLEADOR
+    previo a la aplicación de la sanción de que trata la cláusula 8, llamará a
+    descargos al trabajador con el fin de ser escuchada su versión, de dicha
+    actuación se levantará un acta en la cual se dejará estipulada la sanción.
+    En la diligencia de descargos podrán comparecer otros trabajadores y/o
+    representantes del EMPLEADOR. Si la falta corresponde a una justa causa de
+    las que trata el art. 62 del Código Sustantivo de trabajo o del reglamento
+    de trabajo, es potestativo del EMPLEADOR si aplica la sanción o la
+    terminación unilateral del contrato de trabajo.
+  </p>
+
+  <p>
+    <b>DECIMA SEPTIMA.</b> El presente contrato reemplaza en su integridad y
+    deja sin efecto alguno, cualquier otro contrato verbal o escrito celebrado
+    entre las partes con anterioridad. Las modificaciones que se acuerden al
+    presente contrato se realizaran mediante un OTRO SI.
+  </p>
+
+  <p>
+    <b>DECIMA OCTAVA. SOLUCIÓN DE CONTROVERSIAS.</b> Las diferencias o
+    controversias que ocurrieren entre las partes por motivo de la ejecución, o
+    incumplimiento del presente contrato por cualquiera de las partes, serán
+    solucionadas por cualquiera de los mecanismos de solución de conﬂictos
+    contemplados en la ley, por medio de:
+  </p>
+
+  <ol>
+    <li>El arreglo directo.</li>
+    <li>Los centros de conciliación debidamente autorizados.</li>
+    <li>Las inspecciones de trabajo de Bogotá, D.C.</li>
+  </ol>
+
+  <p>
+    <b>DECIMA NOVENA. CONFIDENCIALIDAD:</b> Las partes exponen que la relación
+    empleador y empleado (a), han involucrado o involucrarán divulgación escrita
+    o verbal por parte de los titulares o por miembros de su equipo de trabajo o
+    socios o empresas del grupo, de documentos propios o controlados por alguno
+    de los mencionados anteriormente, que puede incluir información financiera,
+    planes de negocios, información personal, dibujos, ejemplos y prototipos de
+    artefactos, demostraciones, secretos comerciales, información técnica,
+    sistemas de computación, software información de clientes, resultados de
+    investigaciones, listas de clientes y otros datos en forma oral o escrita ya
+    sea que dicha comunicación se produzca verbalmente, visualmente, o mediante
+    demostraciones o cualquier otro medio, tanto en forma de dibujos, modelos,
+    documentos impresos, y/o formato de archivos electrónicos o de cualquier
+    otra manera. Dicha información será estrictamente confidencial y su carácter
+    se prorrogará en el tiempo, incluso si las partes disuelven el presente
+    contrato laboral.
+  </p>
+
+  <p>
+    <b>VIGESIMA. AUTORIZACIÓN TRATAMIENTO DE DATOS:</b> De conformidad con lo
+    señalado por los artículos 3 literal a, 4 literal c, 9,12, 17 literal b de
+    la Ley 1581 de 2012 y Artículos 2.2.2.25.2.1 y siguientes del Decreto 1074
+    de 2015 revalido, actualizo y otorgo de nuevo mi autorización para el
+    tratamiento de mis datos personales para las finalidades abajo señaladas,
+    conforme a la política de tratamiento de JJ INSTALACIONES ELECTRICAS SAS, la
+    cual declaro conocer junto al aviso de privacidad que están disponibles en
+    medio físico en la cartelera institucional de las oficinas del responsable.
+    TIPO DE TRATAMIENTO: Esta autorización le permitirá a JJ INSTALACIONES
+    ELECTRICAS SAS recolectar, recibir, transformar, transferir, almacenar,
+    usar, comunicar, suprimir, compartir, actualizar y transmitir información,
+    FINALIDADES: GESTIÓN ADMINISTRATIVA Y MARKETING, GESTIÓN DE TALENTO HUMANO,
+    DATOS QUE SERAN TRATADOS:
+  </p>
+
+  <ol>
+    <li>
+      Datos generales de identificación de la persona, familiares, beneficiarios
+      o terceros. Ej: Nombre, apellido, tipo de identificación, número de
+      identificación, fecha y lugar de expedición, nombre, estado civil, sexo,
+      etc.
+    </li>
+    <li>
+      Datos específicos de identificación de la persona. Ej: firma,
+      nacionalidad, datos de familia, firma electrónica, otros documentos de
+      identificación, lugar y fecha de nacimiento o muerte, edad, etc.
+    </li>
+    <li>
+      Datos biométricos de la persona. Ej: huella, ADN, iris, Geometría facial o
+      corporal, fotografías, videos, fórmula dactiloscópica, voz, etc.
+    </li>
+    <li>
+      Datos de la descripción morfológica de la persona. Ej: color de piel,
+      color de iris, color y tipo de cabello, señales particulares, estatura,
+      peso, complexión, etc.
+    </li>
+    <li>
+      Datos de ubicación relacionados con actividad comercial o profesional de
+      las personas. Ej: dirección, teléfono, correo electrónico, etc.
+    </li>
+    <li>
+      Datos de ubicación personal relacionados con actividad privada de las
+      personas. Ej: domicilio, teléfono, correo electrónico, etc.
+    </li>
+    <li>
+      Datos relacionados con la salud de la persona en cuanto a órdenes y
+      relación de pruebas complementarias como laboratorio, imagen,
+      endoscópicas, patológicas, estudios, etc.
+    </li>
+    <li>
+      Datos relacionados con el estado de salud de la persona, que incluyen
+      resultados de pruebas, laboratorios, estudios, diagnósticos médicos,
+      generales o especializados, psicológicos o psiquiátricos, medicamentos y/o
+      tratamientos médicos o terapéuticos de cualquier tipo, etc.
+    </li>
+    <li>
+      Población en condición vulnerable. Ej: personas de la tercera edad o
+      menores de 18 años en condición de pobreza, personas con limitaciones
+      sicomotoras, auditivas y visuales en condiciones de pobreza, personas
+      víctimas de la violencia, personas en situación de desplazamiento forzado
+      por violencia, madres gestantes o lactantes o cabeza de familia en
+      situación de vulnerabilidad, menores en condición de abandono o
+      protección, etc.
+    </li>
+    <li>
+      Datos financieros, crediticios y/o derechos de carácter económico de las
+      personas.
+    </li>
+    <li>Datos socioeconómicos como estrato, propiedad de la vivienda, etc.</li>
+    <li>
+      Datos patrimoniales de la persona. Ej: bienes muebles e inmuebles,
+      ingresos, egresos, inversiones, etc.
+    </li>
+    <li>Datos relacionados con la actividad económica de la persona.</li>
+    <li>
+      Datos relacionados con la historia laboral de la persona, experiencia
+      laboral, cargo, fechas de ingreso y retiro, anotaciones, llamados de
+      atención, etc.
+    </li>
+    <li>
+      Datos relacionados con el nivel educativo, capacitación y/o historial
+      académico de la persona, etc.
+    </li>
+    <li>
+      Datos generales relacionados con afiliación y aportes al Sistema Integral
+      de Seguridad Social. Ej: EPS, IPS, ARL, fechas de ingreso/retiro EPS, AFP,
+      etc.
+    </li>
+    <li>
+      Datos personales de acceso a sistemas de información. Ej: usuarios, IP,
+      claves, perfiles, etc.
+    </li>
+    <li>
+      Datos sobre gustos y/o intereses particulares. Ej: deportivos, ocio,
+      gastronómicos, turismo, moda, etc.
+    </li>
+    <li>
+      Datos de antecedentes judiciales y/o disciplinarios de las personas.
+    </li>
+    <li>Cumplimiento y evaluación contractual.</li>
+  </ol>
+
+  <p>
+    La información que he aportado a JJ INSTALACIONES ELECTRICAS SAS la he
+    suministrado de forma voluntaria y es verídica. Declaro que he sido
+    informado que JJ INSTALACIONES ELECTRICAS SAS, como responsable del
+    tratamiento de datos ha puesto a mi disposición para la atención de
+    requerimientos relacionados con el tratamiento de mis datos personales y el
+    ejercicio de los derechos que tengo como titular, su domicilio y los medios
+    de comunicación que a continuación se citan: NOMBRE O RAZÓN SOCIAL:
+    <span name="nombre_empleador">______________</span>, DOMICILIO:
+    <span name="ciudad_empleador">______________</span>, DIRECCIÓN:
+    <span name="dir_empleador">______________</span>, CORREO ELECTRÓNICO:
+    <span name="correo_empleador">______________</span>, TELÉFONO DEL
+    RESPONSABLE: <span name="tel_empleador">______________</span>
+  </p>
+
+  <p>
+    <b>VIGESIMA PRIMERA. CAUSALES DE TERMINACIÓN.</b> El presente contrato se
+    puede dar por terminado:
+  </p>
+
+  <ol>
+    <li>Por mutuo acuerdo de las partes.</li>
+    <li>Por terminación del plazo pactado.</li>
+    <li>Por las demás causales previstas en la Ley.</li>
+  </ol>
+
+  <p>
+    <b>VIGESIMA SEGUNDA. DOMICILIO CONTRACTUAL.</b> Las partes declaran que para
+    todos los efectos legales el domicilio contractual es la ciudad de
+    <span name="domicilio_contractual">______________</span>
+  </p>
+
+  <p>
+    <b>VIGESIMA TERCERA. SUSCRIPCIÓN DEL CONTRATO.</b> El presente contrato se
+    suscribe el día <span name="fecha_suscripcion">______________</span>.
+  </p>
+
+  <br /><br /><br /><br />
+
+  <p>
+    <b>EL EMPLEADOR</b>
+    <br /><br /><br /><br />
+    <span name="rep_legal_empleador">______________</span>
+    <br />
+    <span>
+      Tipo y número de documento:
+      <span name="tipo_id_rep_legal_cc">C.C.</span>
+      <span name="tipo_id_rep_legal_ce" hidden>C.E.</span>
+      <span name="tipo_id_rep_legal_pep" hidden> P.E.P. </span>
+      <span name="tipo_id_rep_legal_ppt" hidden> P.P.T. </span>
+      No.
+      <span name="num_id_rep_legal">______________</span> de
+      <span name="exp_id_rep_legal">______________</span>
+    </span>
+    <br />
+    <b>REPRESENTANTE LEGAL</b>
+    <br />
+    E-mail: <span name="correo_empleador">______________</span>
+  </p>
+
+  <br /><br /><br /><br />
+
+  <p>
+    <b>EL TRABAJADOR</b>
+    <br /><br /><br /><br />
+    <span name="nombre_trabajador">______________</span>
+    <br />
+    <span>
+      Tipo y número de documento:
+      <span name="tipo_id_trabajador_cc">C.C.</span>
+      <span name="tipo_id_trabajador_ce" hidden>C.E.</span>
+      <span name="tipo_id_trabajador_pep" hidden> P.E.P. </span>
+      <span name="tipo_id_trabajador_ppt" hidden> P.P.T. </span>
+      No.
+      <span name="num_id_trabajador">______________</span> de
+      <span name="exp_id_trabajador">______________</span>
+    </span>
+    <br />
+    E-mail: <span name="correo_trabajador">______________</span>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <h2 style="text-align: center; margin: 0px">
+    <b>ACUERDO AUXILIOS EXTRALEGALES</b>
+  </h2>
+  <p style="text-align: center; margin: 0px">
+    (No constitutivo de salario - Art 128 del C.S.T: Ley 344/96 Art 17.)
+  </p>
+
+  <p>
+    Entre los suscritos a saber
+    <span name="rep_legal_empleador">______________</span>, mayor de edad, con
+    domicilio en la ciudad de
+    <span name="ciudad_empleador">______________</span>, identificado con
+    <span name="tipo_id_rep_legal_cc">CÉDULA DE CIUDADANIA</span>
+    <span name="tipo_id_rep_legal_ce" hidden>CÉDULA DE EXTRANJERÍA</span>
+    <span name="tipo_id_rep_legal_pep" hidden>
+      PERMISO ESPECIAL DE PERMANENCIA
+    </span>
+    <span name="tipo_id_rep_legal_ppt" hidden>
+      PERMISO POR PROTECCIÓN TEMPORAL
+    </span>
+    No.
+    <span name="num_id_rep_legal">______________</span> de
+    <span name="exp_id_rep_legal">______________</span>, actuando como
+    representante legal de la empresa
+    <span name="nombre_empleador">______________</span>
+    <span name="nit_empleador">______________</span>, inscrita en la cámara de
+    comercio el <span name="fecha_insc_camara">______________</span>, bajo el
+    número <span name="num_insc_camara">______________</span>, ubicada en la
+    <span name="dir_empleador">______________</span>, celular
+    <span name="cel_empleador">______________</span>
+    Teléfono <span name="tel_empleador">______________</span> y quien adelante
+    se denomina el empleador por una parte, y por otra parte
+    <span name="nombre_trabajador">______________</span> mayor de edad,
+    residenciado en la ciudad de Bogotá identificado con
+    <span name="tipo_id_trabajador_cc">CÉDULA DE CIUDADANIA</span>
+    <span name="tipo_id_trabajador_ce" hidden>CÉDULA DE EXTRANJERÍA</span>
+    <span name="tipo_id_trabajador_pep" hidden>
+      PERMISO ESPECIAL DE PERMANENCIA
+    </span>
+    <span name="tipo_id_trabajador_ppt" hidden>
+      PERMISO POR PROTECCIÓN TEMPORAL
+    </span>
+    No. <span name="num_id_trabajador">______________</span> de
+    <span name="exp_id_trabajador">______________</span>, quien actúa en nombre
+    propio se denominara el trabajador, hemos convenido celebrar el presente
+    acuerdo que hará parte integral del contrato de trabajo en los siguientes
+    términos.
+  </p>
+
+  <p>
+    1. El empleador otorgara unos auxilios extralegales en dinero. Dicho auxilio
+    será otorgado por mera liberalidad y por tanto de naturaleza extralegal: Y
+    sobre estas las partes disponen que <b><u>NO CONSTITUYA SALARIO</u></b
+    >, teniendo en cuenta que dichos valores no tienen sentido de enriquecer,
+    aumentar o ingresar al patrimonio del trabajador; sino que es para
+    desempeñar de manera integral las labores asignadas y ayudarlo en el
+    desempeño de sus funciones, así como ayudar en la alimentación, habitación o
+    vestuario del trabajador según el Art. 128 del C.S.T.
+  </p>
+
+  <ul>
+    <li>
+      Auxilio extralegal de transporte/rodamiento hasta el 20% del salario
+      pactado en el contrato a término fijo Y/O
+    </li>
+    <li>
+      Bono de alimentación hasta el 20% del total del valor remunerado de
+      acuerdo con las condiciones establecidas en el contrato a término fijo.
+    </li>
+  </ul>
+
+  <p>
+    Las partes acuerdan que las sumas así recibidas, no se tendrán en cuenta
+    para la liquidación de prestaciones sociales, ni para liquidación y pago de
+    seguridad social, ni aportes parafiscales.
+  </p>
+
+  <p>
+    Las partes acuerdan que el EMPLEADOR, a su arbitrio y liberalidad podrá en
+    cualquier momento cancelar o retirar el pago de este auxilio extralegal o de
+    cualquier otra que se pacte de forma habitual o esporádica, sin que esto
+    constituya desmejora de sus condiciones laborales; toda vez que como salario
+    y retribución directa a favor del trabajador derivada de su actividad o
+    fuerza laboral únicamente se pactó el salario establecido en el contrato.
+  </p>
+
+  <p>
+    Para constancia de aceptación, las partes firman el acuerdo de voluntades en
+    <span name="ciudad_firma">______________</span> el
+    <span name="fecha_firma">______________</span>.
+  </p>
+
+  <p>Las demás cláusulas del contrato no se modifican.</p>
+
+  <br /><br /><br /><br />
+
+  <p>
+    <span name="rep_legal_empleador">______________</span>
+    <br />
+    El Empleador
+    <br />
+    <span>
+      <span name="tipo_id_rep_legal_cc">C.C.</span>
+      <span name="tipo_id_rep_legal_ce" hidden>C.E.</span>
+      <span name="tipo_id_rep_legal_pep" hidden> P.E.P. </span>
+      <span name="tipo_id_rep_legal_ppt" hidden> P.P.T. </span>
+      No.
+      <span name="num_id_rep_legal">______________</span>
+    </span>
+    <br />
+    <b>REPRESENTANTE LEGAL</b>
+  </p>
+
+  <br /><br /><br /><br />
+
+  <p>
+    <span name="nombre_trabajador">______________</span>
+    <br />
+    El Trabajador
+    <br />
+    <span>
+      <span name="tipo_id_trabajador_cc">C.C.</span>
+      <span name="tipo_id_trabajador_ce" hidden>C.E.</span>
+      <span name="tipo_id_trabajador_pep" hidden> P.E.P. </span>
+      <span name="tipo_id_trabajador_ppt" hidden> P.P.T. </span>
+      No.
+      <span name="num_id_trabajador">______________</span>
+    </span>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p style="text-align: center">
+    <b>
+      OTRO SI Nº 01 <br />
+      AL CONTRATO INDIVIDUAL DE TRABAJO A TERMINO FIJO
+    </b>
+  </p>
+  <hr />
+  <table style="width: 100%">
+    <tr>
+      <td><b>EMPLEADOR</b></td>
+      <td><span name="nombre_empleador">________________</span></td>
+    </tr>
+    <tr>
+      <td>NIT</td>
+      <td><span name="nit_empleador">________________</span></td>
+    </tr>
+    <tr>
+      <td>DOMICILIO</td>
+      <td><span name="ciudad_empleador">________________</span></td>
+    </tr>
+    <tr>
+      <td>DIRECCIÓN DEL EMPLEADOR</td>
+      <td><span name="dir_empleador">________________</span></td>
+    </tr>
+  </table>
+  <hr />
+  <table style="width: 100%">
+    <tr>
+      <td><b>EMPLEADO</b></td>
+      <td><span name="nombre_trabajador">________________</span></td>
+    </tr>
+    <tr>
+      <td>DOCUMENTO DE IDENTIDAD</td>
+      <td>
+        <span name="tipo_id_trabajador_cc">
+          C.C. <span name="num_id_trabajador">________________</span>
+        </span>
+        <span name="tipo_id_trabajador_ce" hidden>
+          C.E. <span name="num_id_trabajador">________________</span>
+        </span>
+        <span name="tipo_id_trabajador_pep" hidden>
+          PEP. <span name="num_id_trabajador">________________</span>
+        </span>
+        <span name="tipo_id_trabajador_ppt" hidden>
+          PPT. <span name="num_id_trabajador">________________</span>
+        </span>
+      </td>
+    </tr>
+    <tr>
+      <td>DOMICILIO</td>
+      <td><span name="ciudad_trabajador">________________</span></td>
+    </tr>
+    <tr>
+      <td>DIRECCION DE RESIDENCIA</td>
+      <td><span name="dir_trabajador">________________</span></td>
+    </tr>
+  </table>
+
+  <p>
+    Entre los suscritos
+    <b name="nombre_trabajador">________________</b> identificado(a) con
+    <span name="tipo_id_trabajador_cc">
+      C.C. <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_ce" hidden>
+      C.E. <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_pep" hidden>
+      PEP. <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_ppt" hidden>
+      PPT. <span name="num_id_trabajador">________________</span>
+    </span>
+    de <span name="exp_id_trabajador">________________</span> actuando en nombre
+    propio y quien en adelante y para efectos de este acuerdo se denominará
+    <b>el TRABAJADOR</b> y el señor(a)
+    <span name="rep_legal_empleador">________________</span> identificado(a) con
+    <span name="tipo_id_rep_legal_cc">
+      C.C. <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_ce" hidden>
+      C.E. <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_pep" hidden>
+      PEP. <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_ppt" hidden>
+      PPT. <span name="num_id_rep_legal">________________</span>
+    </span>
+    de <span name="exp_id_rep_legal">________________</span> actuando en nombre
+    y representación de la empresa
+    <span name="nombre_empleador">________________</span> con número de
+    <b>NIT</b> <b name="nit_empleador">________________</b> y quien en adelante
+    se y para efectos de este acuerdo se denominará <b>EL EMPLEADOR</b>, se ha
+    convenido lo siguiente:
+  </p>
+
+  <p>
+    Las partes de común acuerdo determinan modificar y/o adicionar la siguiente
+    clausula:
+  </p>
+
+  <p>
+    <b>CLAUSULA PRIMERA: EL TRABAJADOR</b> se compromete a permanecer vinculado
+    a la empresa <b>JJ INSTALACIONES ELECTRICAS SAS</b> por un lapso mínimo de
+    dos meses contados a partir de la firma del contrato laboral ejecutando las
+    labores derivadas del contrato de trabajo suscrito el
+    <span name="fecha_suscripcion">________________</span>, de igual manera el
+    trabajador se obliga a asistir y/o capacitarse en las actividades que
+    programe el empleador o quien haga sus veces, para lo cual dichas
+    capacitaciones y/o cursos deberán ser informadas al trabajador con una
+    anticipación de un (1) día. Es oportuno señalar que, de conformidad a lo
+    preceptuado en el artículo 64 del CST, si el trabajador llegare a incumplir
+    el tiempo mínimo de permanencia establecido en el acápite anterior, deberá
+    efectuar la devolución de los dineros cancelados por el empleador por
+    concepto de capacitación y/o estudio.
+  </p>
+
+  <p>
+    <b>PARÁGRAFO:</b> El trabajador autoriza de manera expresa e
+    irrevocablemente a <b>JJ INSTALACIONES ELÉCTRICAS</b>, para que deduzcan de
+    mi salario o liquidación el valor total del curso pagado al centro de
+    entrenamiento.
+  </p>
+
+  <p>Las demás cláusulas del contrato a término fijo siguen vigentes.</p>
+
+  <p>
+    Para constancia, y en señal de aceptación, se firma el presente acuerdo en
+    dos ejemplares, por las partes que en él han intervenido, en la ciudad de
+    <span name="ciudad_firma">________________</span>.
+  </p>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <p>
+    <b>El Empleador</b>
+    <br />
+    <br />
+    <br />
+    <br />
+    Nombres Empleador: <span name="rep_legal_empleador">________________</span>
+    <br />
+    <span name="tipo_id_rep_legal_cc">
+      C.C: <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_ce" hidden>
+      C.E: <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_pep" hidden>
+      PEP: <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_ppt" hidden>
+      PPT: <span name="num_id_rep_legal">________________</span>
+    </span>
+    <br />
+    Cargo: <span name="cargo_empleador">________________</span>
+    <br />
+    Email: <span name="correo_empleador">________________</span>
+  </p>
+
+  <br />
+  <br />
+
+  <p>
+    <b>El Trabajador</b>
+    <br />
+    <br />
+    <br />
+    <br />
+    Nombres Trabajador: <span name="nombre_trabajador">________________</span>
+    <br />
+    <span name="tipo_id_trabajador_cc">
+      C.C: <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_ce" hidden>
+      C.E: <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_pep" hidden>
+      PEP: <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_ppt" hidden>
+      PPT: <span name="num_id_trabajador">________________</span>
+    </span>
+    <br />
+    Email: <span name="correo_trabajador">________________</span>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p style="text-align: center"><b>CONSENTIMIENTO INFORMADO</b></p>
+
+  <p>
+    Yo, <span name="nombre_trabajador">______________</span>, identificado como
+    aparece al pie de mi firma, en mi calidad de trabajador, autorizo
+    expresamente al empleador
+    <span name="nombre_empleador">______________</span>, IDENTIFICADO CON NIT
+    NUMERO <span name="nit_empleador">______________</span> para que se me
+    descuente de mis salarios mensuales y demás acreencias laborales a mi favor
+    las sumas que se adeuden en casino y prestamos que tenga con la empresa,
+    previa liquidación y verificación de las mismas.
+  </p>
+
+  <p>
+    Autorizo expresamente al empleador para que retenga y cobre de mis salarios
+    y liquidación final de Prestaciones Sociales, los saldos que esté adeudando
+    por los conceptos anteriormente citados.
+  </p>
+
+  <p>
+    Nota: Estos dineros no podrán ser tomado de las cesantías ni de sus
+    intereses.
+  </p>
+
+  <p>
+    Para constancia de aceptación, las partes firman el acuerdo de voluntades en
+    <span name="ciudad_firma">______________</span> el
+    <span name="fecha_firma">______________</span>
+  </p>
+
+  <br />
+  <br />
+  <br />
+  <br />
+
+  <p>
+    <b>El Empleador</b>
+    <br />
+    <br />
+    <br />
+    <br />
+    Nombres Empleador: <span name="rep_legal_empleador">________________</span>
+    <br />
+    <span name="tipo_id_rep_legal_cc">
+      C.C: <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_ce" hidden>
+      C.E: <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_pep" hidden>
+      PEP: <span name="num_id_rep_legal">________________</span>
+    </span>
+    <span name="tipo_id_rep_legal_ppt" hidden>
+      PPT: <span name="num_id_rep_legal">________________</span>
+    </span>
+    <br />
+    REPRESENTANTE LEGAL
+    <br />
+    Email: <span name="correo_empleador">________________</span>
+  </p>
+
+  <br />
+  <br />
+
+  <p>
+    <b>El Trabajador</b>
+    <br />
+    <br />
+    <br />
+    <br />
+    Nombres Trabajador: <span name="nombre_trabajador">________________</span>
+    <br />
+    <span name="tipo_id_trabajador_cc">
+      C.C: <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_ce" hidden>
+      C.E: <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_pep" hidden>
+      PEP: <span name="num_id_trabajador">________________</span>
+    </span>
+    <span name="tipo_id_trabajador_ppt" hidden>
+      PPT: <span name="num_id_trabajador">________________</span>
+    </span>
+    <br />
+    Email: <span name="correo_trabajador">________________</span>
+  </p>
+</div>
+
+<div style="page-break-after: always"></div>
+
+<div>
+  <p style="text-align: center">
+    <b>AUTORIZACIÓN GENERAL PARA EL TRATAMIENTO DE DATOS PERSONALES</b>
+  </p>
+
+  <p>
+    En cumplimiento del Régimen General de Habeas Data regulado por la Ley 1581
+    de 2012 y sus Decretos reglamentarios
+    <b>JJ INSTALACIONES ELÉCTRICAS</b> como empresa que almacena y recolecta
+    datos de carácter personal, con la única finalidad de cumplir y desarrollar
+    nuestro objeto social y las diferentes actividades de la sociedad y
+    ajustarse a las normas del derecho de Habeas Data; requiere obtener para el
+    tratamiento de sus datos personales de la presente Autorización, habiendo
+    recibido previamente la siguiente información:
+  </p>
+
+  <ol>
+    <li>
+      <b>JJ INSTALACIONES ELÉCTRICAS</b> actuará como Responsable del
+      Tratamiento de datos personales, los cuales administrará conforme la
+      Política de Tratamiento de Datos Personales de la compañía.
+    </li>
+    <li>
+      Cuando la información que vaya a ser tratada por la compañía, sea de
+      carácter sensible o sea de menores de edad, el otorgamiento de la
+      autorización para el tratamiento, es de carácter facultativo.
+    </li>
+    <li>
+      La empresa garantiza a los titulares de los datos personales, la
+      confidencialidad, libertad, seguridad, veracidad, transparencia, acceso y
+      circulación restringida de los datos personales que administra.
+    </li>
+    <li>
+      La información personal que es tratada por la compañía, es y será
+      utilizada en el desarrollo de las funciones propias de la empresa JJ
+      INSTALACIONES ELÉCTRICAS y especialmente la información recopilada será
+      incorporada dentro de las bases de datos propias de la sociedad con el fin
+      de:
+      <ul>
+        <li>
+          La finalidad del tratamiento de datos personales será usada para
+          contactar al titular e informarle acerca de sus productos lo
+          relacionado con los deberes y derechos que le asisten, la atención a
+          solicitudes, quejas y reclamos, generación de estados de cuenta,
+          extractos, si es el caso actividades de cobranza, ofrecimiento de
+          nuevos productos o beneficios sobre los mismos y toda actividad que
+          establezca un vínculo de comunicación legítima con el Titular y JJ
+          INSTALACIONES ELÉCTRICAS como para dar a conocer su estado actual de
+          los productos tomados con la compañía como la información consagrada
+          en su hoja de vida y/o contrato de trabajo así como La prevención y
+          control del lavado de activos y la financiación del terrorismo.
+        </li>
+        <li>
+          La finalidad del tratamiento de datos sensibles para los clientes será
+          verificar su identidad con la cédula de ciudadanía y la base general
+          de la Registraduría Nacional, en cambio para los trabajadores será
+          para el uso del reloj o timbre que registra el ingreso y salida de las
+          instalaciones de la compañía.
+        </li>
+        <li>
+          Compartir la información con terceros que colaboran con la sociedad y
+          que para el cumplimiento de sus encargos deben acceder en alguna
+          medida a la información, los cuales estarán igualmente sujetos a las
+          obligaciones de confidencialidad, manejo de la información y
+          protección de datos personales a las que está sujeto esta sociedad.
+        </li>
+      </ul>
+    </li>
+  </ol>
+
+  <ol type="a">
+    <li>
+      Garantizar al Titular, en todo tiempo. el pleno y efectivo ejercicio del
+      derecho de hábeas data.
+    </li>
+    <li>
+      Conservar la información bajo las condiciones de seguridad necesarias para
+      impedir su adulteración. pérdida, consulta, uso o acceso no autorizado o
+      fraudulento.
+    </li>
+    <li>
+      Realizar oportunamente la actualización, rectificación o supresión de los
+      datos en los términos de la presente ley.
+    </li>
+    <li>
+      Actualizar la información reportada por los Responsables del Tratamiento
+      dentro de los cinco (5) días hábiles contados a partir de su recibo.
+    </li>
+    <li>
+      Tramitar las consultas y los reclamos formulados por los Titulares en los
+      términos señalados en la presente ley.
+    </li>
+    <li>
+      Adoptar un manual interno de políticas y procedimientos para garantizar el
+      adecuado cumplimiento de la presente ley y, en especial, para la atención
+      de consultas y reclamos por parte de los Titulares.
+    </li>
+    <li>
+      Registrar en la base de datos las leyendas "reclamo en trámite" en la
+      forma en que se regula en la presente ley.
+    </li>
+    <li>
+      Insertar en la base de datos la leyenda "información en discusión
+      judicial" una vez notificado por parte de la autoridad competente sobre
+      procesos judiciales relacionados con la calidad del dato personal.
+    </li>
+    <li>
+      Abstenerse de circular información que esté siendo controvertida por el
+      Titular y cuyo bloqueo haya sido ordenado por la Superintendencia de
+      Industria y Comercio.
+    </li>
+    <li>
+      Permitir el acceso a la información únicamente a las personas que pueden
+      tener acceso a ella.
+    </li>
+    <li>
+      Informar a la Superintendencia de Industria y Comercio cuando se presenten
+      violaciones a los códigos de seguridad y existan riesgos en la
+      administración de la información de los Titulares.
+    </li>
+    <li>
+      Cumplir las instrucciones y requerimientos que imparta la Superintendencia
+      de Industria y Comercio.
+    </li>
+    <li>
+      Que los datos personales solicitados en el presente documento de
+      conocimiento del cliente, deudor, trabajador, proveedor y cualquier sea su
+      naturaleza, son recogidos atendiendo las disposiciones e instrucciones de
+      la Superintendencia Financiera de Colombia y los estándares
+      internacionales para prevenir y controlar el lavado de activos y la
+      financiación del terrorismo.
+    </li>
+    <li>
+      Que conforme con lo dispuesto por el literal b) del articulo 2 de la Ley
+      1581 de 2012, las disposiciones que buscan la protección de datos
+      personales y que se encuentran contenidos en dicha disposición, no son
+      aplicables a las bases y archivos que tengan por finalidad la prevención,
+      detención, monitoreo y control del lavado de activos y en financiamiento
+      del terrorismo, por lo que en principio su utilización no requerirá de una
+      autorizacion de su titular, la cual proviene de la Ley.
+    </li>
+  </ol>
+
+  <ol start="5">
+    <li>
+      El titular de la información personal, tiene los derechos previstos en la
+      Constitución y en la Ley, y especialmente los derechos a conocer,
+      actualizar, rectificar y suprimir los datos suministrados; conocer los
+      usos empleados sobre los datos personales del titular cuando así lo
+      solicite el mismo; revocar la autorización y/o solicitar la supresión del
+      dato suministrado cuando en el tratamiento realizado no se respeten los
+      principios, derechos y garantías constitucionales y legales a favor del
+      titular; y acceder en forma gratuita a sus datos personales que hayan sido
+      objeto de Tratamiento.
+    </li>
+  </ol>
+
+  <p>
+    La compañía ha indicado los siguientes canales de atención para que los
+    Titulares puedan ejercer sus derechos.
+  </p>
+
+  <ul>
+    <li>Por comunicación escrita enviada a las direcciones:</li>
+  </ul>
+
+  <table>
+    <tr>
+      <td>Bogotá D.C.:</td>
+      <td></td>
+      <td>Calle 69 Sur N 95 37 Torre 2 Apto 306</td>
+    </tr>
+    <tr>
+      <td>Correo Electrónico:</td>
+      <td></td>
+      <td>jj@jjelectricas.com</td>
+    </tr>
+  </table>
+
+  <ul>
+    <li>Por comunicación verbal a los siguientes números telefónicos:</li>
+  </ul>
+
+  <table>
+    <tr>
+      <td>PBX Bogotá D.C.</td>
+      <td>3022841568</td>
+    </tr>
+  </table>
+
+  <ol start="6">
+    <li>
+      En el evento en que el titular considere que la empresa, dio un uso
+      contrario al autorizado y a las leyes aplicables, podrá contactar a la
+      empresa a través de una Reclamación a la misma dirección electrónica y
+      teléfono indicado anteriormente.
+    </li>
+  </ol>
+
+  <p>
+    Teniendo en cuenta lo anterior, con la suscripción del presente documento,
+    autorizo de manera voluntaria, previa, expresa e informada a
+    <b> <b>JJ INSTALACIONES ELÉCTRICAS</b> SAS </b> identificada con NIT.
+    <b>901022785</b> y dirección electrónica <b>jj@jjelectricas.com</b> en
+    calidad de <b>RESPONSABLE</b>, para tratar mis datos personales de acuerdo
+    con la Política de Tratamiento de Datos Personales de la Compañía,
+    disponible en la página web de la empresa.
+    <b>JJ INSTALACIONES ELÉCTRICAS</b> SAS, queda autorizado para recolectar,
+    compilar, almacenar, usar, circular, compartir, comunicar, procesar,
+    actualizar, cruzar, transferir, transmitir, depurar, suprimir y disponer mis
+    datos personales recolectados con anterioridad,incluyendo aquellos datos de
+    carácter sensiblede acuerdo con las finalidades relacionadas con el objeto
+    social de la Compañía.
+  </p>
+
+  <p>
+    En cumplimiento de la Ley 1581 de 2012, por lo cual se establece el Régimen
+    General de Protección de Datos” y el Decreto 1377 de 2013; AUTORIZO para que
+    de manera libre, previa, clara, expresa voluntaria y debidamente informada
+    permita a JJ INSTALACIONES ELECTRICAS SAS a recolectar, almacenar, usar,
+    procesar, compilar, intercambiar, dar tratamiento, actualizar y disponer de
+    los datos que han sido suministrados en hojas de vida, contratos, facturas y
+    demás documentos suministrados y que se han incorporado en las bases de
+    datos de la empresa.
+  </p>
+  <p>
+    El titular y/o titulares de los datos personales (empleados, proveedores,
+    prestadores de servicios, personas naturales y/o jurídicas y contratistas)
+    autorizan de manera expresa e inequívoca a JJ INSTALACIONES ELECTRICAS SAS.
+    Para mantener y manejar toda su información a no ser que manifieste lo
+    contrario de manera directa, expresa, inequívoca y por escrito dentro de los
+    treinta (30) días hábiles contados a partir de la recepción de la presente
+    comunicación.
+  </p>
+  <p>
+    Por políticas de seguridad de la información para el tratamiento de
+    información y datos personales, JJ INSTALACIONES ELECTRICAS SAS, cuenta con
+    mecanismos a través de los cuales garantiza su uso de modo seguro y
+    confiable, y en ese mismo orden aseguramos la confidencialidad de los
+    mismos.
+  </p>
+
+  <p>
+    Para constancia se firma el dia
+    <span name="fecha_firma">______________</span> en
+    <span name="ciudad_firma">______________</span>.
+  </p>
+  <br /><br /><br /><br />
+
+  <p>
+    <b>EL RECEPTOR:</b>
+    <br /><br /><br /><br />
+    <span name="nombre_trabajador">______________</span>
+    <br />
+    <span>
+      Tipo y número de documento:
+      <span name="tipo_id_trabajador_cc">C.C.</span>
+      <span name="tipo_id_trabajador_ce" hidden>C.E.</span>
+      <span name="tipo_id_trabajador_pep" hidden> P.E.P. </span>
+      <span name="tipo_id_trabajador_ppt" hidden> P.P.T. </span>
+      No.
+      <span name="num_id_trabajador">______________</span> de
+      <span name="exp_id_trabajador">______________</span>
+    </span>
+    <br />
+    E-mail: <span name="correo_trabajador">______________</span>
+  </p>
+
+  <p>
+    Certifico haber leído todas las cláusulas de este acuerdo, mi firma declara
+    el común acuerdo con la totalidad de este documento.
+  </p>
+</div>
