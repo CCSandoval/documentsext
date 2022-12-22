@@ -1,0 +1,107 @@
+{
+    _id: ObjectId('63a4dacc2c28fb4f87c096c2'),
+    config: [
+        {
+            name: 'nombre_partner',
+            type: 'name',
+            description: 'Ingrese el nombre del partner'
+        },
+        {
+            name: 'ciudad_partner',
+            type: 'name',
+            description: 'Ingrese la ciudad de residencia del partner'
+        },
+        {
+            name: 'id_partner',
+            type: 'number',
+            description: 'Ingrese el número de cédula del partner'
+        },
+        {
+            name: 'exp_id_partner',
+            type: 'name',
+            description: 'Ingrese el lugar de expedición de la cédula del partner'
+        },
+        {
+            name: 'correo_partner',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del partner'
+        },
+        {
+            name: 'cel_partner',
+            type: 'phone',
+            description: 'Ingrese el número telefónico del partner'
+        },
+        {
+            name: 'num_plantas',
+            type: 'number',
+            addText: true,
+            description: 'Ingrese el número de plantas'
+        },
+        {
+            name: 'valor_contrato_num',
+            type: 'number',
+            description: 'Ingrese el valor del contrato en números'
+        },
+        {
+            name: 'valor_contrato_letr',
+            type: 'name',
+            description: 'Ingrese el valor del contrato en letras'
+        },
+        {
+            name: 'valor_num',
+            type: 'number',
+            description: 'Ingrese el valor del costo inicial en números'
+        },
+        {
+            name: 'valor_num',
+            type: 'name',
+            description: 'Ingrese el valor del costo inicial en letras'
+        }
+    ],
+    sign: [
+        'nombre_partner',
+        'ciudad_partner',
+        'id_partner',
+        'exp_id_partner',
+        'correo_partner',
+        'cel_partner',
+        'num_plantas',
+        'valor_contrato_num',
+        'valor_contrato_letr',
+        'valor_num',
+        'valor_num'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_partner',
+            identification: 'id_partner',
+            email: 'correo_partner',
+            phone: 'cel_partner',
+            type: 'firma_partner'
+        },
+        {
+            name: 'nombre_gps',
+            identification: 'id_gps',
+            email: 'correo_gps',
+            type: 'firma_gps'
+        }
+    ],
+    preFill: [
+        {
+            name: 'nombre_gps',
+            value: 'FREDY ARMANDO ARCILLA CASTAÑEDA'
+        },
+        {
+            name: 'cc_gps',
+            value: '79.915.917'
+        },
+        {
+            name: 'correo_gps',
+            value: 'ccsandovalt@gmail.com'
+        }
+    ],
+    name: 'CONTRATO DE MANDATO',
+    price: 5000,
+    build: 0,
+    preBuild: false
+}
