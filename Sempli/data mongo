@@ -1,47 +1,47 @@
 {
-    _id: ObjectId("63a4a5442c28fb4f87c096c0"),
-    config:[
+    _id: ObjectId('63a4a5442c28fb4f87c096c0'),
+    config: [
         {
-            name:'nombre_firmante',
-            type:'name',
-            description:'Nombre del firmante'
+            name: 'nombre_firmante',
+            type: 'name',
+            description: 'Nombre del firmante'
         },
         {
-            name:'id_firmante',
-            type:'text',
-            description:'Número de identificación del firmante'
+            name: 'id_firmante',
+            type: 'text',
+            description: 'Número de identificación del firmante'
         },
         {
-            name:'correo_firmante',
-            type:'email',
-            description:'Correo electrónico del firmante'
+            name: 'correo_firmante',
+            type: 'email',
+            description: 'Correo electrónico del firmante'
         },
         {
-            name:'tel_firmante',
-            type:'phone',
-            description:'Número telefónico del firmante'
+            name: 'tel_firmante',
+            type: 'phone',
+            description: 'Número telefónico del firmante'
         },
         {
-            name:'firmante_2',
-            type:'clausula',
-            value:'n',
-            description:'¿Desea ingresar un segundo firmante?',
-            options:[
+            name: 'firmante_2',
+            type: 'clausula',
+            value: 'n',
+            description: '¿Desea ingresar un segundo firmante?',
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ]
         },
         {
-            name:'nombre_firmante_2',
-            type:'name',
-            description:'Nombre del segundo firmante',
-            prereq:[
+            name: 'nombre_firmante_2',
+            type: 'name',
+            description: 'Nombre del segundo firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -49,10 +49,10 @@
             ]
         },
         {
-            name:'id_firmante_2',
-            type:'text',
-            description:'Número de identificación del segundo firmante',
-            prereq:[
+            name: 'id_firmante_2',
+            type: 'text',
+            description: 'Número de identificación del segundo firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -60,10 +60,10 @@
             ]
         },
         {
-            name:'correo_firmante_2',
-            type:'email',
-            description:'Correo electrónico del segundo firmante',
-            prereq:[
+            name: 'correo_firmante_2',
+            type: 'email',
+            description: 'Correo electrónico del segundo firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -71,10 +71,10 @@
             ]
         },
         {
-            name:'tel_firmante_2',
-            type:'phone',
-            description:'Número telefónico del segundo firmante',
-            prereq:[
+            name: 'tel_firmante_2',
+            type: 'phone',
+            description: 'Número telefónico del segundo firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -82,175 +82,47 @@
             ]
         },
         {
-            name:'firmante_3',
-            type:'clausula',
-            value:'n',
-            description:'¿Desea ingresar un tercer firmante?',
-            options:[
+            name: 'firmante_3',
+            type: 'clausula',
+            value: 'n',
+            description: '¿Desea ingresar un tercer firmante?',
+            options: [
                 {
-                    name:'No',
-                    value:'n'
+                    name: 'No',
+                    value: 'n'
                 },
                 {
-                    name:'Si',
-                    value:'s'
-                }
-            ],
-            prereq:[
-                {
-                    k: 'firmante_2',
-                    v: 's'
-                },
-            ]
-        },
-        {
-            name:'nombre_firmante_3',
-            type:'name',
-            description:'Nombre del tercer firmante',
-            prereq:[
-                {
-                    k: 'firmante_2',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_3',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name:'id_firmante_3',
-            type:'text',
-            description:'Número de identificación del tercer firmante',
-            prereq:[
-                {
-                    k: 'firmante_2',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_3',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name:'correo_firmante_3',
-            type:'email',
-            description:'Correo electrónico del tercer firmante',
-            prereq:[
-                {
-                    k: 'firmante_2',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_3',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name:'tel_firmante_3',
-            type:'phone',
-            description:'Número telefónico del tercer firmante',
-            prereq:[
-                {
-                    k: 'firmante_2',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_3',
-                    v: 's'
-                }
-            ]
-        },
-        {
-            name:'firmante_4',
-            type:'clausula',
-            value:'n',
-            description:'¿Desea ingresar un cuarto firmante?',
-            options:[
-                {
-                    name:'No',
-                    value:'n'
-                },
-                {
-                    name:'Si',
-                    value:'s'
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
                 {
                     k: 'firmante_2',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_3',
-                    v: 's'
-                },
-            ]
-        },
-        {
-            name:'nombre_firmante_4',
-            type:'name',
-            description:'Nombre del cuarto firmante',
-            prereq:[
-                {
-                    k: 'firmante_2',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_3',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_4',
-                    v: 's'
-                },
-            ]
-        },
-        {
-            name:'id_firmante_4',
-            type:'text',
-            description:'Número de identificación del cuarto firmante',
-            prereq:[
-                {
-                    k: 'firmante_2',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_3',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_4',
                     v: 's'
                 }
             ]
         },
         {
-            name:'correo_firmante_4',
-            type:'email',
-            description:'Correo electrónico del cuarto firmante',
-            prereq:[
+            name: 'nombre_firmante_3',
+            type: 'name',
+            description: 'Nombre del tercer firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
                 },
                 {
                     k: 'firmante_3',
-                    v: 's'
-                },
-                {
-                    k: 'firmante_4',
                     v: 's'
                 }
             ]
         },
         {
-            name:'tel_firmante_4',
-            type:'phone',
-            description:'Número telefónico del cuarto firmante',
-            prereq:[
+            name: 'id_firmante_3',
+            type: 'text',
+            description: 'Número de identificación del tercer firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -258,29 +130,70 @@
                 {
                     k: 'firmante_3',
                     v: 's'
-                },
-                {
-                    k: 'firmante_4',
-                    v: 's'
-                },
+                }
             ]
         },
         {
-            name:'firmante_5',
-            type:'clausula',
-            value:'n',
-            description:'¿Desea ingresar un quinto firmante?',
-            options:[
+            name: 'correo_firmante_3',
+            type: 'email',
+            description: 'Correo electrónico del tercer firmante',
+            prereq: [
                 {
-                    name:'No',
-                    value:'n'
+                    k: 'firmante_2',
+                    v: 's'
                 },
                 {
-                    name:'Si',
-                    value:'s'
+                    k: 'firmante_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tel_firmante_3',
+            type: 'phone',
+            description: 'Número telefónico del tercer firmante',
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'firmante_4',
+            type: 'clausula',
+            value: 'n',
+            description: '¿Desea ingresar un cuarto firmante?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
                 }
             ],
-            prereq:[
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_firmante_4',
+            type: 'name',
+            description: 'Nombre del cuarto firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -292,14 +205,14 @@
                 {
                     k: 'firmante_4',
                     v: 's'
-                },
+                }
             ]
         },
         {
-            name:'nombre_firmante_5',
-            type:'name',
-            description:'Nombre del quinto firmante',
-            prereq:[
+            name: 'id_firmante_4',
+            type: 'text',
+            description: 'Número de identificación del cuarto firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -311,18 +224,82 @@
                 {
                     k: 'firmante_4',
                     v: 's'
-                },
-                {
-                    k: 'firmante_5',
-                    v: 's'
-                },
+                }
             ]
         },
         {
-            name:'id_firmante_5',
-            type:'text',
-            description:'Número de identificación del quinto firmante',
-            prereq:[
+            name: 'correo_firmante_4',
+            type: 'email',
+            description: 'Correo electrónico del cuarto firmante',
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tel_firmante_4',
+            type: 'phone',
+            description: 'Número telefónico del cuarto firmante',
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'firmante_5',
+            type: 'clausula',
+            value: 'n',
+            description: '¿Desea ingresar un quinto firmante?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_firmante_5',
+            type: 'name',
+            description: 'Nombre del quinto firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -342,10 +319,10 @@
             ]
         },
         {
-            name:'correo_firmante_5',
-            type:'email',
-            description:'Correo electrónico del quinto firmante',
-            prereq:[
+            name: 'id_firmante_5',
+            type: 'text',
+            description: 'Número de identificación del quinto firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -365,10 +342,10 @@
             ]
         },
         {
-            name:'tel_firmante_5',
-            type:'phone',
-            description:'Número telefónico del quinto firmante',
-            prereq:[
+            name: 'correo_firmante_5',
+            type: 'email',
+            description: 'Correo electrónico del quinto firmante',
+            prereq: [
                 {
                     k: 'firmante_2',
                     v: 's'
@@ -387,68 +364,91 @@
                 }
             ]
         },
+        {
+            name: 'tel_firmante_5',
+            type: 'phone',
+            description: 'Número telefónico del quinto firmante',
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_5',
+                    v: 's'
+                }
+            ]
+        }
     ],
     name: 'SEMPLI',
     price: 5000,
     build: 0,
     preBuild: false,
-    sign:[
+    sign: [
         'correo_firmante',
-        'telefono_firmante',
+        'tel_firmante',
         'id_firmante',
         'nombre_firmante',
         'correo_firmante_2',
-        'telefono_firmante_2',
+        'tel_firmante_2',
         'id_firmante_2',
         'nombre_firmante_2',
         'correo_firmante_3',
-        'telefono_firmante_3',
+        'tel_firmante_3',
         'id_firmante_3',
         'nombre_firmante_3',
         'correo_firmante_4',
-        'telefono_firmante_4',
+        'tel_firmante_4',
         'id_firmante_4',
         'nombre_firmante_4',
         'correo_firmante_5',
-        'telefono_firmante_5',
+        'tel_firmante_5',
         'id_firmante_5',
-        'nombre_firmante_5',
+        'nombre_firmante_5'
     ],
     signatureProfile: [
         {
             email: 'correo_firmante',
-            phone: 'telefono_firmante',
+            phone: 'tel_firmante',
             identification: 'id_firmante',
             name: 'nombre_firmante',
             type: 'firmante'
         },
         {
             email: 'correo_firmante_2',
-            phone: 'telefono_firmante_2',
+            phone: 'tel_firmante_2',
             identification: 'id_firmante_2',
             name: 'nombre_firmante_2',
             type: 'firmante_2'
         },
         {
             email: 'correo_firmante_3',
-            phone: 'telefono_firmante_3',
+            phone: 'tel_firmante_3',
             identification: 'id_firmante_3',
             name: 'nombre_firmante_3',
             type: 'firmante_3'
         },
         {
             email: 'correo_firmante_4',
-            phone: 'telefono_firmante_4',
+            phone: 'tel_firmante_4',
             identification: 'id_firmante_4',
             name: 'nombre_firmante_4',
             type: 'firmante_4'
         },
         {
             email: 'correo_firmante_5',
-            phone: 'telefono_firmante_5',
+            phone: 'tel_firmante_5',
             identification: 'id_firmante_5',
             name: 'nombre_firmante_5',
             type: 'firmante_5'
-        },
-    ],
+        }
+    ]
 }
