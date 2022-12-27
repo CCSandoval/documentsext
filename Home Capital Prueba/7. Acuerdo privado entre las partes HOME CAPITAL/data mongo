@@ -1,0 +1,3691 @@
+{
+    _id: ObjectId('61a8f4944f6f7000094df988'),
+    config: [
+        {
+            description: 'Ingresa el código del documento',
+            type: 'text',
+            name: 'document_code'
+        },
+        {
+            description: 'Ingresa el correo de la persona que diligenciará éste documento',
+            type: 'text',
+            name: 'correo_enviar'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_representante',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: 'Seleccione el sexo del representante',
+            name: 'sexo_representante',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: 'Digite el nombre completo del representante',
+            help: 'nombre',
+            name: 'nombre_representante',
+            type: 'name'
+        },
+        {
+            description: 'Seleccione el tipo de documento del representante',
+            help: 'tipo_documento',
+            name: 'tipo_documento_representante',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía del representante',
+            help: 'cedula',
+            name: 'cedula_representante',
+            prereq: [
+                {
+                    k: 'tipo_documento_representante',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería del representante',
+            help: 'cedula',
+            name: 'cedulae_representante',
+            prereq: [
+                {
+                    k: 'tipo_documento_representante',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de pasaporte del representante',
+            help: 'pasaporte',
+            name: 'pasaporte_representante',
+            prereq: [
+                {
+                    k: 'tipo_documento_representante',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: 'selecione el estado civil del representante',
+            help: 'estado_civil',
+            name: 'estado_representante',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cs'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: 'Digite la dirección del representante',
+            help: 'direccion',
+            name: 'direccion_representante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio de residencia del representante',
+            help: 'municipio',
+            name: 'municipio_representante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el departamento de residencia del representante',
+            help: 'departamento',
+            name: 'departamento_representante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de teléfono del representante',
+            help: 'telefono',
+            name: 'telefono_representante',
+            type: 'text'
+        },
+        {
+            description: 'Digite el correo electrónico del representante',
+            help: 'correo',
+            name: 'correo_representante',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_1',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_inversionista_1',
+            prereq: [
+                {
+                    k: 'tipo_persona_1',
+                    v: 'ju'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_inversionista_1',
+            prereq: [
+                {
+                    k: 'tipo_persona_1',
+                    v: 'ju'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'municipio',
+            name: 'camara_comercio_empresa_inversionista_1',
+            prereq: [
+                {
+                    k: 'tipo_persona_1',
+                    v: 'ju'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_representante_empresa_inversionista_1',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_persona_1',
+                    v: 'ju'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte inversionista'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_inversionista_1',
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte inversionista'
+                }
+            ],
+            name: 'sexo_inversionista_1',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte inversionista'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_inversionista_1',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_inversionista_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_1',
+                    v: 'cc'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_inversionista_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_1',
+                    v: 'ce'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte inversionista'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_inversionista_1',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_1',
+                    v: 'pa'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_expe_documento_inversionista_1',
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte inversionista'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_inversionista_1',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte inversionista'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_inversionista_1',
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_inversionista_1',
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte inversionista'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_inversionista_1',
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte inversionista'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_inversionista_1',
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_1',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte inversionista'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_inversionista_1',
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro inversionista?',
+            name: 'inversionista_2',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_2',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_inversionista_2',
+            prereq: [
+                {
+                    k: 'tipo_persona_2',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_inversionista_2',
+            prereq: [
+                {
+                    k: 'tipo_persona_2',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'municipio',
+            name: 'camara_comercio_empresa_inversionista_2',
+            prereq: [
+                {
+                    k: 'tipo_persona_2',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_representante_empresa_inversionista_2',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_persona_2',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte inversionista'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_inversionista_2',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte inversionista'
+                }
+            ],
+            name: 'sexo_inversionista_2',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte inversionista'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_inversionista_2',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_inversionista_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_2',
+                    v: 'cc'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_inversionista_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_2',
+                    v: 'ce'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte inversionista'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_inversionista_2',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_2',
+                    v: 'pa'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_expe_documento_inversionista_2',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte inversionista'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_inversionista_2',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte inversionista'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_inversionista_2',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_inversionista_2',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte inversionista'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_inversionista_2',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte inversionista'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_inversionista_2',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_2',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte inversionista'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_inversionista_2',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro inversionista?',
+            name: 'inversionista_3',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_3',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_inversionista_3',
+            prereq: [
+                {
+                    k: 'tipo_persona_3',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_inversionista_3',
+            prereq: [
+                {
+                    k: 'tipo_persona_3',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'municipio',
+            name: 'camara_comercio_empresa_inversionista_3',
+            prereq: [
+                {
+                    k: 'tipo_persona_3',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_representante_empresa_inversionista_3',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_persona_3',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte inversionista'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_inversionista_3',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte inversionista'
+                }
+            ],
+            name: 'sexo_inversionista_3',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte inversionista'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_inversionista_3',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_inversionista_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_3',
+                    v: 'cc'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_inversionista_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_3',
+                    v: 'ce'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte inversionista'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_inversionista_3',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_3',
+                    v: 'pa'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_expe_documento_inversionista_3',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte inversionista'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_inversionista_3',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte inversionista'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_inversionista_3',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_inversionista_3',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte inversionista'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_inversionista_3',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte inversionista'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_inversionista_3',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_3',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte inversionista'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_inversionista_3',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro inversionista?',
+            name: 'inversionista_4',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_4',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_inversionista_4',
+            prereq: [
+                {
+                    k: 'tipo_persona_4',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_inversionista_4',
+            prereq: [
+                {
+                    k: 'tipo_persona_4',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'municipio',
+            name: 'camara_comercio_empresa_inversionista_4',
+            prereq: [
+                {
+                    k: 'tipo_persona_4',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_representante_empresa_inversionista_4',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_persona_4',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte inversionista'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_inversionista_4',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte inversionista'
+                }
+            ],
+            name: 'sexo_inversionista_4',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte inversionista'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_inversionista_4',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_inversionista_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_4',
+                    v: 'cc'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_inversionista_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_4',
+                    v: 'ce'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte inversionista'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_inversionista_4',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_4',
+                    v: 'pa'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_expe_documento_inversionista_4',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte inversionista'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_inversionista_4',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte inversionista'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_inversionista_4',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_inversionista_4',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte inversionista'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_inversionista_4',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte inversionista'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_inversionista_4',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_4',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte inversionista'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_inversionista_4',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Desea agregar otro inversionista?',
+            name: 'inversionista_5',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Sí',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'n'
+        },
+        {
+            description: 'Seleccione el tipo de persona',
+            name: 'tipo_persona_5',
+            options: [
+                {
+                    name: 'Natural',
+                    value: 'na'
+                },
+                {
+                    name: 'Jurídica',
+                    value: 'ju'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'na'
+        },
+        {
+            description: 'Digite el nombre de la empresa',
+            help: 'nombre_empresa',
+            name: 'nombre_empresa_inversionista_5',
+            prereq: [
+                {
+                    k: 'tipo_persona_4',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el número Nit de la empresa',
+            help: 'nit_empresa',
+            name: 'nit_empresa_inversionista_5',
+            prereq: [
+                {
+                    k: 'tipo_persona_5',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite la ciudad en la que está ubicada la cámara de comercio en la que está inscrita la empresa',
+            help: 'municipio',
+            name: 'camara_comercio_empresa_inversionista_5',
+            prereq: [
+                {
+                    k: 'tipo_persona_5',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: '¿Cuál es el tipo de representante?',
+            help: 'tipo_repre',
+            name: 'tipo_representante_empresa_inversionista_5',
+            options: [
+                {
+                    label: ' representante legal suplente',
+                    name: 'Representante legal suplente',
+                    value: 'rs'
+                },
+                {
+                    label: ' representante legal',
+                    name: 'Representante legal',
+                    value: 'rl'
+                },
+                {
+                    label: ' apoderado',
+                    name: 'Apoderado',
+                    value: 'a'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'tipo_persona_5',
+                    v: 'ju'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'rs'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el nombre completo de la parte inversionista'
+                }
+            ],
+            help: 'nombre',
+            name: 'nombre_inversionista_5',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el sexo de la parte inversionista'
+                }
+            ],
+            name: 'sexo_inversionista_5',
+            options: [
+                {
+                    name: 'Masculino',
+                    value: 'h'
+                },
+                {
+                    name: 'Femenino',
+                    value: 'm'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'h'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el tipo de documento de la parte inversionista'
+                }
+            ],
+            help: 'tipo_documento',
+            name: 'tipo_documento_inversionista_5',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de Extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de ciudadanía de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedula_inversionista_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_5',
+                    v: 'cc'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de cédula de extranjería de la parte inversionista'
+                }
+            ],
+            help: 'cedula',
+            name: 'cedulae_inversionista_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_5',
+                    v: 'ce'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número del pasaporte de la parte inversionista'
+                }
+            ],
+            help: 'pasaporte',
+            name: 'pasaporte_inversionista_5',
+            prereq: [
+                {
+                    k: 'tipo_documento_inversionista_5',
+                    v: 'pa'
+                },
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'name'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio donde fue expedido el documento de identificación de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_expe_documento_inversionista_5',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Seleccione el estado civil de la parte inversionista'
+                }
+            ],
+            help: 'estado_civil',
+            name: 'estado_inversionista_5',
+            options: [
+                {
+                    label: ' Casado, con sociedad conyugal vigente',
+                    name: 'Casado con sociedad conyugal vigente',
+                    value: 'cv'
+                },
+                {
+                    label: ' Casado, con sociedad conyugal disuelta y liquidada',
+                    name: 'Casado con sociedad conyugal disuelta y liquidada',
+                    value: 'cd'
+                },
+                {
+                    label: ' Soltero, sin unión marital de hecho',
+                    name: 'Soltero sin unión marital de hecho',
+                    value: 'ss'
+                },
+                {
+                    label: ' Soltero, con unión marital de hecho',
+                    name: 'Soltero con unión marital de hecho',
+                    value: 'sc'
+                },
+                {
+                    label: ' Soltero, por efecto de viudez',
+                    name: 'Soltero por efecto de viudez',
+                    value: 'sv'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'select',
+            value: 'cv'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite la dirección de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite la dirección de la parte inversionista'
+                }
+            ],
+            help: 'direccion',
+            name: 'direccion_inversionista_5',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el municipio de domicilio de la parte inversionista'
+                }
+            ],
+            help: 'municipio',
+            name: 'municipio_inversionista_5',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el departamento donde está ubicada la parte inversionista'
+                }
+            ],
+            help: 'departamento',
+            name: 'depart_inversionista_5',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el número de teléfono de la parte inversionista'
+                }
+            ],
+            help: 'telefono',
+            name: 'telefono_inversionista_5',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'ju'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la persona encargada como representante de la empresa inversionista'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'tipo_persona_5',
+                            v: 'na'
+                        }
+                    ],
+                    text: 'Digite el correo electrónico de la parte inversionista'
+                }
+            ],
+            help: 'correo',
+            name: 'correo_inversionista_5',
+            prereq: [
+                {
+                    k: 'inversionista_2',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_3',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_4',
+                    v: 's'
+                },
+                {
+                    k: 'inversionista_5',
+                    v: 's'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            description: 'Digite el valor de la inversión',
+            help: 'valor',
+            name: 'valor_inversion',
+            type: 'currency'
+        },
+        {
+            description: 'Digite el tipo de cuenta bancaría',
+            help: 'cuenta_tipo',
+            name: 'tipo_cuenta',
+            type: 'text'
+        },
+        {
+            description: 'Digite el número de la cuenta bancaría',
+            help: 'cuenta_numero',
+            name: 'numero_cuenta',
+            type: 'text'
+        },
+        {
+            description: 'Digite el nombre del titular de la cuenta bancaría',
+            help: 'nombre',
+            name: 'titular_cuenta',
+            type: 'name'
+        },
+        {
+            description: 'Digite el municipio donde se firma el presente contrato',
+            help: 'municipio',
+            name: 'municipio_firma',
+            type: 'text'
+        },
+        {
+            description: 'Seleccione la fecha en la que se firma el presente contrato',
+            help: 'fecha',
+            name: 'fecha_firma',
+            type: 'date'
+        }
+    ],
+    operation: [],
+    sign: [
+        'tipo_representante',
+        'sexo_representante',
+        'nombre_representante',
+        'tipo_documento_representante',
+        'cedula_representante',
+        'cedulae_representante',
+        'pasaporte_representante',
+        'estado_representante',
+        'direccion_representante',
+        'municipio_representante',
+        'departamento_representante',
+        'telefono_representante',
+        'correo_representante',
+        'tipo_persona_1',
+        'nombre_empresa_inversionista_1',
+        'nit_empresa_inversionista_1',
+        'camara_comercio_empresa_inversionista_1',
+        'tipo_representante_empresa_inversionista_1',
+        'nombre_inversionista_1',
+        'sexo_inversionista_1',
+        'tipo_documento_inversionista_1',
+        'cedula_inversionista_1',
+        'cedulae_inversionista_1',
+        'pasaporte_inversionista_1',
+        'municipio_expe_documento_inversionista_1',
+        'estado_inversionista_1',
+        'direccion_inversionista_1',
+        'municipio_inversionista_1',
+        'depart_inversionista_1',
+        'telefono_inversionista_1',
+        'correo_inversionista_1',
+        'inversionista_2',
+        'tipo_persona_2',
+        'nombre_empresa_inversionista_2',
+        'nit_empresa_inversionista_2',
+        'camara_comercio_empresa_inversionista_2',
+        'tipo_representante_empresa_inversionista_2',
+        'nombre_inversionista_2',
+        'sexo_inversionista_2',
+        'tipo_documento_inversionista_2',
+        'cedula_inversionista_2',
+        'cedulae_inversionista_2',
+        'pasaporte_inversionista_2',
+        'municipio_expe_documento_inversionista_2',
+        'estado_inversionista_2',
+        'direccion_inversionista_2',
+        'municipio_inversionista_2',
+        'depart_inversionista_2',
+        'telefono_inversionista_2',
+        'correo_inversionista_2',
+        'inversionista_3',
+        'tipo_persona_3',
+        'nombre_empresa_inversionista_3',
+        'nit_empresa_inversionista_3',
+        'camara_comercio_empresa_inversionista_3',
+        'tipo_representante_empresa_inversionista_3',
+        'nombre_inversionista_3',
+        'sexo_inversionista_3',
+        'tipo_documento_inversionista_3',
+        'cedula_inversionista_3',
+        'cedulae_inversionista_3',
+        'pasaporte_inversionista_3',
+        'municipio_expe_documento_inversionista_3',
+        'estado_inversionista_3',
+        'direccion_inversionista_3',
+        'municipio_inversionista_3',
+        'depart_inversionista_3',
+        'telefono_inversionista_3',
+        'correo_inversionista_3',
+        'inversionista_4',
+        'tipo_persona_4',
+        'nombre_empresa_inversionista_4',
+        'nit_empresa_inversionista_4',
+        'camara_comercio_empresa_inversionista_4',
+        'tipo_representante_empresa_inversionista_4',
+        'nombre_inversionista_4',
+        'sexo_inversionista_4',
+        'tipo_documento_inversionista_4',
+        'cedula_inversionista_4',
+        'cedulae_inversionista_4',
+        'pasaporte_inversionista_4',
+        'municipio_expe_documento_inversionista_4',
+        'estado_inversionista_4',
+        'direccion_inversionista_4',
+        'municipio_inversionista_4',
+        'depart_inversionista_4',
+        'telefono_inversionista_4',
+        'correo_inversionista_4',
+        'inversionista_5',
+        'tipo_persona_5',
+        'nombre_empresa_inversionista_5',
+        'nit_empresa_inversionista_5',
+        'camara_comercio_empresa_inversionista_5',
+        'tipo_representante_empresa_inversionista_5',
+        'nombre_inversionista_5',
+        'sexo_inversionista_5',
+        'tipo_documento_inversionista_5',
+        'cedula_inversionista_5',
+        'cedulae_inversionista_5',
+        'pasaporte_inversionista_5',
+        'municipio_expe_documento_inversionista_5',
+        'estado_inversionista_5',
+        'direccion_inversionista_5',
+        'municipio_inversionista_5',
+        'depart_inversionista_5',
+        'telefono_inversionista_5',
+        'correo_inversionista_5',
+        'valor_inversion',
+        'tipo_cuenta',
+        'numero_cuenta',
+        'titular_cuenta',
+        'municipio_firma',
+        'fecha_firma'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_representante',
+            identification: 'cedula_representante|cedulae_representante|pasaporte_representante',
+            email: 'correo_representante',
+            type: 'representante'
+        },
+        {
+            name: 'nombre_inversionista_1',
+            identification: 'cedula_inversionista_1|cedulae_inversionista_1|pasaporte_inversionista_1',
+            email: 'correo_inversionista_1',
+            type: 'inversionista_1'
+        },
+        {
+            name: 'nombre_inversionista_2',
+            identification: 'cedula_inversionista_2|cedulae_inversionista_2|pasaporte_inversionista_2',
+            email: 'correo_inversionista_2',
+            type: 'inversionista_2'
+        },
+        {
+            name: 'nombre_inversionista_3',
+            identification: 'cedula_inversionista_3|cedulae_inversionista_3|pasaporte_inversionista_3',
+            email: 'correo_inversionista_3',
+            type: 'inversionista_3'
+        },
+        {
+            name: 'nombre_inversionista_4',
+            identification: 'cedula_inversionista_4|cedulae_inversionista_4|pasaporte_inversionista_4',
+            email: 'correo_inversionista_4',
+            type: 'inversionista_4'
+        },
+        {
+            name: 'nombre_inversionista_5',
+            identification: 'cedula_inversionista_5|cedulae_inversionista_5|pasaporte_inversionista_5',
+            email: 'correo_inversionista_5',
+            type: 'inversionista_5'
+        }
+    ],
+    preFill: [],
+    preBuildData: [
+        'document_code',
+        'correo_enviar'
+    ],
+    name: 'Acuerdo privado entre las partes OVMT',
+    price: 5000,
+    help: {
+        tipo_repre: 'Ejemplo: Inversionista',
+        nombre: 'Ejemplo: Carolina Andrea Diaz Diaz',
+        tipo_documento: 'Ejemplo: Cédula de Ciudadanía',
+        cedula: 'Ejemplo: 1234567890',
+        pasaporte: 'Ejemplo: AAA1234567',
+        estado_civil: 'Ejemplo: Casado, con sociedad conyugal vigente',
+        direccion: 'Ejemplo: Carrera 70 #45-20',
+        municipio: 'Ejemplo: Medellín',
+        departamento: 'Ejemplo: Antioquia',
+        telefono: 'Ejemplo: 3214567890',
+        correo: 'Ejemplo: ejemplo@gmail.com',
+        nombre_empresa: 'Ejemplo: Home Capital S.A.S.',
+        nit_empresa: 'Ejemplo: 890.908.094-1',
+        valor: 'Ejemplo: 900.000',
+        cuenta_tipo: 'Ejemplo: Crédito',
+        cuenta_numero: 'Ejemplo: 1423 5867 7089',
+        fecha: 'Ejemplo: 12 de Diciembre del 2021'
+    },
+    preBuild: true,
+    company: ObjectId('618d299c3b775300099e6214'),
+    build: 1,
+    createdAt: ISODate('2021-12-02T16:30:12.167Z'),
+    updatedAt: ISODate('2021-12-02T16:30:12.167Z')
+}

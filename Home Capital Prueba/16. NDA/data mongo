@@ -1,0 +1,118 @@
+{
+    _id: ObjectId('63ab17222c28fb4f87c096c8'),
+    config: [
+        {
+            name: 'name_receptor',
+            type: 'name',
+            description: 'Nombre completo'
+        },
+        {
+            description: 'Seleccione el tipo de documento CC',
+            name: 'document_type_receptor',
+            options: [
+                {
+                    name: 'Cédula de Ciudadanía',
+                    value: 'cc'
+                },
+                {
+                    name: 'Cédula de extranjería',
+                    value: 'ce'
+                },
+                {
+                    name: 'Pasaporte',
+                    value: 'pa'
+                }
+            ],
+            type: 'clausula',
+            value: 'cc'
+        },
+        {
+            description: 'Digite el número de cédula de ciudadanía CC',
+            name: 'cedula_receptor',
+            prereq: [
+                {
+                    k: 'document_type_receptor',
+                    v: 'cc'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número de cédula de extranjería CC',
+            name: 'cedulae_receptor',
+            prereq: [
+                {
+                    k: 'document_type_receptor',
+                    v: 'ce'
+                }
+            ],
+            type: 'number'
+        },
+        {
+            description: 'Digite el número del pasaporte CC',
+            name: 'pasaporte_receptor',
+            prereq: [
+                {
+                    k: 'document_type_receptor',
+                    v: 'pa'
+                }
+            ],
+            type: 'text'
+        },
+        {
+            name: 'email_receptor',
+            type: 'text',
+            description: 'correo '
+        },
+        {
+            name: 'place_direccion',
+            type: 'text',
+            help: 'direccion',
+            description: 'Dirección'
+        },
+        {
+            name: 'text_telefono',
+            type: 'text',
+            help: 'telefono',
+            description: 'celular'
+        },
+        {
+            name: 'text_correo',
+            type: 'text',
+            description: 'correo'
+        },
+        {
+            name: 'date_fecha',
+            type: 'date',
+            help: 'fecha',
+            description: 'fecha de firma'
+        }
+    ],
+    help: {
+        direccion: 'dirección',
+        telefono: 'celular',
+        fecha: 'fecha de firma'
+    },
+    name: 'NDA',
+    sign: [
+        'name_receptor',
+        'cedula_receptor',
+        'cedulae_receptor',
+        'pasaporte_receptor',
+        'email_receptor'
+    ],
+    signatureProfile: [
+        {
+            email: 'email_receptor',
+            identification: 'cedula_receptor|cedulae_receptor|pasaporte_receptor',
+            name: 'name_receptor',
+            type: 'receptor'
+        }
+    ],
+    build: 0,
+    price: 5000,
+    custom: {
+        noShowHeader: true
+    },
+    company: ObjectId('618d299c3b775300099e6214')
+}

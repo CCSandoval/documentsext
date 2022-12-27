@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('6148a856b0b19e000804f8c5'),
+    _id: ObjectId('61a8e11096593800081b9510'),
     config: [
         {
             description: 'Ingresa el código del documento',
@@ -1862,9 +1862,9 @@
         codigo: 'Ejemplo: 9872023 VH5797S 0001 WX \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
         correo: 'Ejemplo: ejemplo@gmail.com'
     },
-    build: 21,
-    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
-    company: ObjectId('614a3a750aebb000084cbac0'),
-    createdAt: ISODate('2021-09-20T15:27:18.914Z'),
-    updatedAt: ISODate('2021-09-20T15:27:18.914Z')
+    build: 1
+    username:'0f03fff6-2122-4373-bd12-69fa58592bc7',
+    company: ObjectId('618d299c3b775300099e6214'),
+    createdAt: ISODate('2021-12-02T15:06:56.513Z'),
+    updatedAt: ISODate('2021-12-02T15:06:56.513Z')
 }

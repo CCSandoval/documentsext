@@ -1,5 +1,5 @@
 {
-    _id: ObjectId('6148a856b0b19e000804f8c5'),
+    _id: ObjectId('61a8e68fe3c7d10009e99a88'),
     config: [
         {
             description: 'Ingresa el código del documento',
@@ -10,6 +10,18 @@
             description: 'Ingresa el correo de la persona que diligenciará éste documento',
             type: 'text',
             name: 'correo_enviar'
+        },
+        {
+            description: 'Digite el nombre del juzgado',
+            help: 'juzgado_nombre',
+            name: 'nombre_juzgado',
+            type: 'text'
+        },
+        {
+            description: 'Digite el municipio donde está ubicado el juzgado',
+            help: 'lugar',
+            name: 'municipio_juzgado',
+            type: 'text'
         },
         {
             description: 'Digite el nombre completo del poderdante',
@@ -103,27 +115,27 @@
             name: 'estado_poderdante_1',
             options: [
                 {
-                    label: ' casado, con sociedad conyugal vigente,',
+                    label: ' casado, con sociedad conyugal vigente',
                     name: 'Casado con sociedad conyugal vigente',
                     value: 'cc'
                 },
                 {
-                    label: ' casado, con sociedad conyugal disuelta y liquidada,',
+                    label: ' casado, con sociedad conyugal disuelta y liquidada',
                     name: 'Casado con sociedad conyugal disuelta y liquidada',
                     value: 'cs'
                 },
                 {
-                    label: ' soltero, sin unión marital de hecho,',
+                    label: ' soltero, sin unión marital de hecho',
                     name: 'Soltero sin unión marital de hecho',
                     value: 'ss'
                 },
                 {
-                    label: ' soltero, con unión marital de hecho,',
+                    label: ' soltero, con unión marital de hecho',
                     name: 'Soltero con unión marital de hecho',
                     value: 'sc'
                 },
                 {
-                    label: ' Soltero, por efecto de viudez,',
+                    label: ' Soltero, por efecto de viudez',
                     name: 'Soltero por efecto de viudez',
                     value: 'sv'
                 }
@@ -281,27 +293,27 @@
             name: 'estado_poderdante_2',
             options: [
                 {
-                    label: ' casado, con sociedad conyugal vigente,',
+                    label: ' casado, con sociedad conyugal vigente',
                     name: 'Casado con sociedad conyugal vigente',
                     value: 'cc'
                 },
                 {
-                    label: ' casado, con sociedad conyugal disuelta y liquidada,',
+                    label: ' casado, con sociedad conyugal disuelta y liquidada',
                     name: 'Casado con sociedad conyugal disuelta y liquidada',
                     value: 'cs'
                 },
                 {
-                    label: ' soltero, sin unión marital de hecho,',
+                    label: ' soltero, sin unión marital de hecho',
                     name: 'Soltero sin unión marital de hecho',
                     value: 'ss'
                 },
                 {
-                    label: ' soltero, con unión marital de hecho,',
+                    label: ' soltero, con unión marital de hecho',
                     name: 'Soltero con unión marital de hecho',
                     value: 'sc'
                 },
                 {
-                    label: ' Soltero, por efecto de viudez,',
+                    label: ' Soltero, por efecto de viudez',
                     name: 'Soltero por efecto de viudez',
                     value: 'sv'
                 }
@@ -505,27 +517,27 @@
             name: 'estado_poderdante_3',
             options: [
                 {
-                    label: ' casado, con sociedad conyugal vigente,',
+                    label: ' casado, con sociedad conyugal vigente',
                     name: 'Casado con sociedad conyugal vigente',
                     value: 'cc'
                 },
                 {
-                    label: ' casado, con sociedad conyugal disuelta y liquidada,',
+                    label: ' casado, con sociedad conyugal disuelta y liquidada',
                     name: 'Casado con sociedad conyugal disuelta y liquidada',
                     value: 'cs'
                 },
                 {
-                    label: ' soltero, sin unión marital de hecho,',
+                    label: ' soltero, sin unión marital de hecho',
                     name: 'Soltero sin unión marital de hecho',
                     value: 'ss'
                 },
                 {
-                    label: ' soltero, con unión marital de hecho,',
+                    label: ' soltero, con unión marital de hecho',
                     name: 'Soltero con unión marital de hecho',
                     value: 'sc'
                 },
                 {
-                    label: ' Soltero, por efecto de viudez,',
+                    label: ' Soltero, por efecto de viudez',
                     name: 'Soltero por efecto de viudez',
                     value: 'sv'
                 }
@@ -769,27 +781,27 @@
             name: 'estado_poderdante_4',
             options: [
                 {
-                    label: ' casado, con sociedad conyugal vigente,',
+                    label: ' casado, con sociedad conyugal vigente',
                     name: 'Casado con sociedad conyugal vigente',
                     value: 'cc'
                 },
                 {
-                    label: ' casado, con sociedad conyugal disuelta y liquidada,',
+                    label: ' casado, con sociedad conyugal disuelta y liquidada',
                     name: 'Casado con sociedad conyugal disuelta y liquidada',
                     value: 'cs'
                 },
                 {
-                    label: ' soltero, sin unión marital de hecho,',
+                    label: ' soltero, sin unión marital de hecho',
                     name: 'Soltero sin unión marital de hecho',
                     value: 'ss'
                 },
                 {
-                    label: ' soltero, con unión marital de hecho,',
+                    label: ' soltero, con unión marital de hecho',
                     name: 'Soltero con unión marital de hecho',
                     value: 'sc'
                 },
                 {
-                    label: ' Soltero, por efecto de viudez,',
+                    label: ' Soltero, por efecto de viudez',
                     name: 'Soltero por efecto de viudez',
                     value: 'sv'
                 }
@@ -1073,27 +1085,27 @@
             name: 'estado_poderdante_5',
             options: [
                 {
-                    label: ' casado, con sociedad conyugal vigente,',
+                    label: ' casado, con sociedad conyugal vigente',
                     name: 'Casado con sociedad conyugal vigente',
                     value: 'cc'
                 },
                 {
-                    label: ' casado, con sociedad conyugal disuelta y liquidada,',
+                    label: ' casado, con sociedad conyugal disuelta y liquidada',
                     name: 'Casado con sociedad conyugal disuelta y liquidada',
                     value: 'cs'
                 },
                 {
-                    label: ' soltero, sin unión marital de hecho,',
+                    label: ' soltero, sin unión marital de hecho',
                     name: 'Soltero sin unión marital de hecho',
                     value: 'ss'
                 },
                 {
-                    label: ' soltero, con unión marital de hecho,',
+                    label: ' soltero, con unión marital de hecho',
                     name: 'Soltero con unión marital de hecho',
                     value: 'sc'
                 },
                 {
-                    label: ' Soltero, por efecto de viudez,',
+                    label: ' Soltero, por efecto de viudez',
                     name: 'Soltero por efecto de viudez',
                     value: 'sv'
                 }
@@ -1144,65 +1156,6 @@
             type: 'text'
         },
         {
-            description: 'Seleccione el sexo del propietario',
-            help: 'sexo',
-            name: 'sexo_propietario',
-            options: [
-                {
-                    name: 'Femenino',
-                    value: 'm'
-                },
-                {
-                    name: 'Masculino',
-                    value: 'h'
-                }
-            ],
-            type: 'clausula',
-            value: 'm'
-        },
-        {
-            description: 'Digite el nombre completo del propietario del bien inmueble',
-            help: 'nombre',
-            name: 'nombre_propietario',
-            type: 'name'
-        },
-        {
-            description: 'Digite el nombre completo del bien inmueble',
-            help: 'descripcion',
-            name: 'descripcion_inmu',
-            type: 'text'
-        },
-        {
-            description: 'Digite la dirección del bien inmueble',
-            help: 'direccion',
-            name: 'direccion_inmu',
-            type: 'text'
-        },
-        {
-            description: 'Digite el municipio donde está ubicado el bien inmueble',
-            help: 'lugar',
-            name: 'lugar_inmu',
-            type: 'text'
-        },
-        {
-            description: 'Digite el número de matrícula inmobiliaria del bien inmueble',
-            help: 'matricula',
-            name: 'matricula_inmo',
-            type: 'name'
-        },
-        {
-            description: 'Digite el código catastral del inmuble',
-            help: 'codigo',
-            name: 'codigo_cata',
-            type: 'name'
-        },
-        {
-            description: 'Digite el nombre completo del apoderado',
-            help: 'nombre',
-            name: 'nombre_apoderado_1',
-            type: 'name'
-        },
-        {
             description: 'Seleccione el sexo del apoderado',
             help: 'sexo',
             name: 'sexo_apoderado_1',
@@ -1218,6 +1171,12 @@
             ],
             type: 'clausula',
             value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del apoderado',
+            help: 'nombre',
+            name: 'nombre_apoderado_1',
+            type: 'name'
         },
         {
             description: 'Seleccione el tipo de documento del apoderado',
@@ -1284,31 +1243,19 @@
         },
         {
             description: '¿Desea agregar un segundo apoderado?',
-            name: 'apoderado_2',
+            name: 'segundo_apoderado',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sì',
+                    name: 'Sí',
                     value: 's'
                 }
             ],
             type: 'clausula',
             value: 'n'
-        },
-        {
-            description: 'Digite el nombre completo del segundo apoderado',
-            help: 'nombre',
-            name: 'nombre_apoderado_2',
-            prereq: [
-                {
-                    k: 'apoderado_2',
-                    v: 's'
-                }
-            ],
-            type: 'name'
         },
         {
             description: 'Seleccione el sexo del segundo apoderado',
@@ -1326,12 +1273,24 @@
             ],
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 }
             ],
             type: 'clausula',
             value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del segundo apoderado',
+            help: 'nombre',
+            name: 'nombre_apoderado_2',
+            prereq: [
+                {
+                    k: 'segundo_apoderado',
+                    v: 's'
+                }
+            ],
+            type: 'name'
         },
         {
             description: 'Seleccione el tipo de documento del segundo apoderado',
@@ -1351,13 +1310,13 @@
                     value: 'pa'
                 }
             ],
-            type: 'clausula',
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 }
             ],
+            type: 'clausula',
             value: 'cc'
         },
         {
@@ -1370,7 +1329,7 @@
                     v: 'cc'
                 },
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 }
             ],
@@ -1386,14 +1345,14 @@
                     v: 'ce'
                 },
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 }
             ],
             type: 'text'
         },
         {
-            description: 'Digite el número de pasaporte del segundo apoderado',
+            description: 'Digite el número de pasaporte del segundo apoderado ',
             help: 'pasaporte',
             name: 'pasaporte_apoderado_2',
             prereq: [
@@ -1402,7 +1361,7 @@
                     v: 'pa'
                 },
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 }
             ],
@@ -1414,7 +1373,7 @@
             name: 'lugar_expe_cedula_apoderado_2',
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 }
             ],
@@ -1422,41 +1381,25 @@
         },
         {
             description: '¿Desea agregar un tercer apoderado?',
-            name: 'apoderado_3',
+            name: 'tercer_apoderado',
             options: [
                 {
                     name: 'No',
                     value: 'n'
                 },
                 {
-                    name: 'Sì',
+                    name: 'Sí',
                     value: 's'
                 }
             ],
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 }
             ],
             type: 'clausula',
             value: 'n'
-        },
-        {
-            description: 'Digite el nombre completo del tercer apoderado',
-            help: 'nombre',
-            name: 'nombre_apoderado_3',
-            prereq: [
-                {
-                    k: 'apoderado_2',
-                    v: 's'
-                },
-                {
-                    k: 'apoderado_3',
-                    v: 's'
-                }
-            ],
-            type: 'name'
         },
         {
             description: 'Seleccione el sexo del tercer apoderado',
@@ -1474,16 +1417,32 @@
             ],
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 },
                 {
-                    k: 'apoderado_3',
+                    k: 'tercer_apoderado',
                     v: 's'
                 }
             ],
             type: 'clausula',
             value: 'm'
+        },
+        {
+            description: 'Digite el nombre completo del tercer apoderado',
+            help: 'nombre',
+            name: 'nombre_apoderado_3',
+            prereq: [
+                {
+                    k: 'segundo_apoderado',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_apoderado',
+                    v: 's'
+                }
+            ],
+            type: 'name'
         },
         {
             description: 'Seleccione el tipo de documento del tercer apoderado',
@@ -1503,17 +1462,17 @@
                     value: 'pa'
                 }
             ],
-            type: 'clausula',
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 },
                 {
-                    k: 'apoderado_3',
+                    k: 'tercer_apoderado',
                     v: 's'
                 }
             ],
+            type: 'clausula',
             value: 'cc'
         },
         {
@@ -1526,11 +1485,11 @@
                     v: 'cc'
                 },
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 },
                 {
-                    k: 'apoderado_3',
+                    k: 'tercer_apoderado',
                     v: 's'
                 }
             ],
@@ -1546,18 +1505,18 @@
                     v: 'ce'
                 },
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 },
                 {
-                    k: 'apoderado_3',
+                    k: 'tercer_apoderado',
                     v: 's'
                 }
             ],
             type: 'text'
         },
         {
-            description: 'Digite el número de pasaporte del tercer apoderado',
+            description: 'Digite el número de pasaporte del tercer apoderado ',
             help: 'pasaporte',
             name: 'pasaporte_apoderado_3',
             prereq: [
@@ -1566,11 +1525,11 @@
                     v: 'pa'
                 },
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 },
                 {
-                    k: 'apoderado_3',
+                    k: 'tercer_apoderado',
                     v: 's'
                 }
             ],
@@ -1582,11 +1541,11 @@
             name: 'lugar_expe_cedula_apoderado_3',
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 },
                 {
-                    k: 'apoderado_3',
+                    k: 'tercer_apoderado',
                     v: 's'
                 }
             ],
@@ -1682,7 +1641,7 @@
             name: 'correo_apoderado_2',
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 }
             ],
@@ -1694,11 +1653,11 @@
             name: 'correo_apoderado_3',
             prereq: [
                 {
-                    k: 'apoderado_2',
+                    k: 'segundo_apoderado',
                     v: 's'
                 },
                 {
-                    k: 'apoderado_3',
+                    k: 'tercer_apoderado',
                     v: 's'
                 }
             ],
@@ -1707,8 +1666,9 @@
     ],
     operation: [],
     sign: [
+        'nombre_juzgado',
+        'municipio_juzgado',
         'nombre_poderdante_1',
-        'sexo_poderdante_1',
         'tipo_documento_poderdante_1',
         'cedula_poderdante_1',
         'cedulae_poderdante_1',
@@ -1717,7 +1677,6 @@
         'estado_poderdante_1',
         'lugar_poderdante_1',
         'nombre_poderdante_2',
-        'sexo_poderdante_2',
         'tipo_documento_poderdante_2',
         'cedula_poderdante_2',
         'cedulae_poderdante_2',
@@ -1726,7 +1685,6 @@
         'estado_poderdante_2',
         'lugar_poderdante_2',
         'nombre_poderdante_3',
-        'sexo_poderdante_3',
         'tipo_documento_poderdante_3',
         'cedula_poderdante_3',
         'cedulae_poderdante_3',
@@ -1735,7 +1693,6 @@
         'estado_poderdante_3',
         'lugar_poderdante_3',
         'nombre_poderdante_4',
-        'sexo_poderdante_4',
         'tipo_documento_poderdante_4',
         'cedula_poderdante_4',
         'cedulae_poderdante_4',
@@ -1744,7 +1701,6 @@
         'estado_poderdante_4',
         'lugar_poderdante_4',
         'nombre_poderdante_5',
-        'sexo_poderdante_5',
         'tipo_documento_poderdante_5',
         'cedula_poderdante_5',
         'cedulae_poderdante_5',
@@ -1752,29 +1708,22 @@
         'lugar_expe_cedula_poderdante_5',
         'estado_poderdante_5',
         'lugar_poderdante_5',
-        'sexo_propietario',
-        'nombre_propietario',
-        'descripcion_inmu',
-        'direccion_inmu',
-        'lugar_inmu',
-        'matricula_inmo',
-        'codigo_cata',
-        'nombre_apoderado_1',
         'sexo_apoderado_1',
+        'nombre_apoderado_1',
         'tipo_documento_apoderado_1',
         'cedula_apoderado_1',
         'cedulae_apoderado_1',
         'pasaporte_apoderado_1',
         'lugar_expe_cedula_apoderado_1',
-        'nombre_apoderado_2',
         'sexo_apoderado_2',
+        'nombre_apoderado_2',
         'tipo_documento_apoderado_2',
         'cedula_apoderado_2',
         'cedulae_apoderado_2',
         'pasaporte_apoderado_2',
         'lugar_expe_cedula_apoderado_1',
-        'nombre_apoderado_3',
         'sexo_apoderado_3',
+        'nombre_apoderado_3',
         'tipo_documento_apoderado_3',
         'cedula_apoderado_3',
         'cedulae_apoderado_3',
@@ -1787,8 +1736,7 @@
         'correo_poderdante_5',
         'correo_apoderado_1',
         'correo_apoderado_2',
-        'correo_apoderado_3',
-        'document_code'
+        'correo_apoderado_3'
     ],
     signatureProfile: [
         {
@@ -1845,26 +1793,24 @@
         'correo_enviar'
     ],
     preBuild: true,
-    name: 'PODER ESPECIAL CANCELACIÓN AFECTACIÓN A VIVIENDA FAMILIAR',
+    name: 'PODER JUZGADOS',
     price: 5000,
     help: {
-        poderdante: 'Poderdante: Persona que da poder a otra persona para que la represente en un juicio o actuar en su nombre en cualquier situación',
+        juzgado_nombre: 'Juez 5to Civil Municipal',
+        poderdante: 'Persona que da poder a otra persona para que la represente en un juicio o actuar en su nombre en cualquier situación',
         sexo: 'Femenino',
         nombre: 'Ejemplo: Paola Lucia Rueda Daza',
         tipo_documento: 'Cédula de Ciudadanía',
         cedula: 'Ejemplo: 1234567890',
         pasaporte: 'Ejemplo: AAS1234567',
-        descripcion: 'Ejemplo: Urbanización colores 1504 bloque 3',
+        lugar: 'Ejemplo: Medellín',
         estado_civil: 'Ejemplo: casado, con sociedad conyugal vigente',
-        lugar: 'Ejemplo: Bogotá',
-        direccion: 'Ejemplo: Avenida 20 # 98 - 76',
-        matricula: 'Ejemplo: 50S23434 \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
-        codigo: 'Ejemplo: 9872023 VH5797S 0001 WX \nEste número se encuentra en el certificado de libertad y tradición del bien inmueble',
         correo: 'Ejemplo: ejemplo@gmail.com'
     },
-    build: 21,
-    username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
-    company: ObjectId('614a3a750aebb000084cbac0'),
-    createdAt: ISODate('2021-09-20T15:27:18.914Z'),
-    updatedAt: ISODate('2021-09-20T15:27:18.914Z')
+    preBuild: true,
+    company: ObjectId('618d299c3b775300099e6214'),
+    price: 5000,
+    build: 4,
+    createdAt: ISODate('2021-12-02T15:30:23.218Z'),
+    updatedAt: ISODate('2022-03-28T20:59:08.415Z')
 }

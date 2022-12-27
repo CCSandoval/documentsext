@@ -1,0 +1,72 @@
+{
+    _id: ObjectId('628bc9de51fc27d23d929155'),
+    config: [
+        {
+            name: 'nombre_agente_inmo',
+            type: 'name',
+            description: 'Ingrese el nombre del agente inmobiliario'
+        },
+        {
+            name: 'cc_agente_inmo',
+            type: 'number',
+            description: 'Ingrese el número de cédula del agente inmobiliario'
+        },
+        {
+            name: 'dir_agente_inmo',
+            type: 'text',
+            description: 'Ingrese la dirección del agente inmobiliario'
+        },
+        {
+            name: 'tel_agente_inmo',
+            type: 'phone',
+            description: 'Ingrese el número teléfonico del agente inmobiliario'
+        },
+        {
+            name: 'correo_agente_inmo',
+            type: 'email',
+            description: 'Ingrese el correo electrónico del agente inmobiliario'
+        },
+        {
+            name: 'ciudad_firma',
+            type: 'name',
+            description: 'Ingrese la ciudad donde se firma el presente acuerdo'
+        },
+        {
+            name: 'fecha_firma',
+            type: 'date',
+            description: 'Seleccione la fecha de firma'
+        },
+        {
+            name: 'email_enviar',
+            type: 'email',
+            description: 'Ingrese el correo del agente inmobiliario'
+        }
+    ],
+    operation: [],
+    sign: [
+        'nombre_agente_inmo',
+        'cc_agente_inmo',
+        'dir_agente_inmo',
+        'tel_agente_inmo',
+        'correo_agente_inmo'
+    ],
+    signatureProfile: [
+        {
+            name: 'nombre_agente_inmo',
+            identification: 'cc_agente_inmo',
+            email: 'correo_agente_inmo',
+            phone: 'tel_agente_inmo',
+            type: 'firma_inmo'
+        }
+    ],
+    preFill: [],
+    preBuildData: [
+        'email_enviar'
+    ],
+    preBuild: true,
+    name: 'CONTRATO DE CORRETAJE PARA PERSONA NATURAL',
+    company: ObjectId('614a3a750aebb000084cbac0'),
+    username: '111cdc4d-4bcb-4dfc-85d5-94b8a86bb916',
+    price: 5000,
+    build: 8
+}
