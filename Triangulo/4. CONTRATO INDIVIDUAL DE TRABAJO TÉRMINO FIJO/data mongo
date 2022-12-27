@@ -302,24 +302,26 @@
     ],
     signatureProfile: [
         {
-            email:'npinto@triangulum.com.co',
-            name:'Nelly Pinto Sandoval',
-            order:0,
-            role:'APPROVER'
+            email: 'cvillalba@triangulum.com.co',
+            name: 'Carolina Villalba',
+            order: 0,
+            role: 'APPROVER'
         },
         {
             email: 'correo_representante',
             identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
             name: 'nombre_r_empresa',
+            role: 'SIGN',
             type: 'repre_empresa',
-            order:1
+            order: 1
         },
         {
             email: 'correo_trabajador',
             identification: 'cedula_trabajador|cedulae_trabajador|pasaporte_trabajador',
             name: 'nombre_trabajador',
+            role: 'SIGN',
             type: 'trabajador',
-            order:1
+            order: 1
         }
     ],
     preFill: [

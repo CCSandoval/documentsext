@@ -115,17 +115,18 @@
     ],
     signatureProfile: [
         {
-            email:'npinto@triangulum.com.co',
-            name:'Nelly Pinto Sandoval',
-            order:0,
-            role:'APPROVER'
+            email: 'cvillalba@triangulum.com.co',
+            name: 'Carolina Villalba',
+            order: 0,
+            role: 'APPROVER'
         },
         {
             email: 'email_colaborador',
             identification: 'cedula_colaborador|cedulae_colaborador|pasaporte_colaborador',
             name: 'name_colaborador',
             type: 'colaborador',
-            order:1
+            role: 'SIGN',
+            order: 1
         }
     ],
     preBuild: true,

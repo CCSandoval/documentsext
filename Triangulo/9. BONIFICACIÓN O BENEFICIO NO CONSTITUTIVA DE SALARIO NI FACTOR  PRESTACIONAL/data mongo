@@ -206,25 +206,27 @@
     ],
     signatureProfile: [
         {
-            email:'npinto@triangulum.com.co',
-            name:'Nelly Pinto Sandoval',
-            order:0,
-            role:'APPROVER'
+            email: 'cvillalba@triangulum.com.co',
+            name: 'Carolina Villalba',
+            order: 0,
+            role: 'APPROVER'
         },
         {
             name: 'nombre_empleador',
             identification: 'cedula_empleador|cedulae_empleador|pasaporte_empleador',
             type: 'empleador',
-            order:1,
+            order: 1,
+            role: 'SIGN',
             email: 'correo_empleador'
         },
         {
             name: 'nombre_empleado',
             identification: 'cedula_empleado|cedulae_empleado|pasaporte_empleado',
             type: 'empleado',
-            order:1,
+            order: 1,
+            role: 'SIGN',
             email: 'correo_empleado'
-        },
+        }
     ],
     preBuildData: [],
     name: 'BONIFICACIÓN O BENEFICIO NO CONSTITUTIVA DE SALARIO NI FACTOR  PRESTACIONAL',
