@@ -174,6 +174,263 @@
             description:'Ingrese la tasa'
         },
         {
+            name:'nombre_beneficiario',
+            type:'name',
+            description:'Ingrese el nombre del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'tipo_id_beneficiario',
+            type:'select',
+            description:'Seleccione el tipo de identificación del beneficiario',
+            value:'nit',
+            options:[
+                {
+                    name:'NIT',
+                    label:'NIT',
+                    value:'nit'
+                },
+                {
+                    name:'CC',
+                    label:'CC',
+                    value:'cc'
+                },
+                {
+                    name:'CE',
+                    label:'CE',
+                    value:'ce'
+                },
+                {
+                    name:'TI',
+                    label:'TI',
+                    value:'ti'
+                },
+                {
+                    name:'PB',
+                    label:'PB',
+                    value:'pb'
+                },
+                {
+                    name:'RC',
+                    label:'RC',
+                    value:'rc'
+                },
+            ],
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'num_id_beneficiario',
+            type:'text',
+            description:'Ingrese el número de identificación del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'dir_beneficiario',
+            type:'text',
+            description:'Ingrese la dirección del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'ciudad_beneficiario',
+            type:'text',
+            description:'Ingrese la ciudad del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'pais_beneficiario',
+            type:'text',
+            description:'Ingrese el país del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'nombre_banco_beneficiario',
+            type:'name',
+            description:'Ingrese el nombre del banco del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'num_cuenta_beneficiario',
+            type:'text',
+            description:'Ingrese el número de cuenta del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'ciudad_banco_beneficiario',
+            type:'text',
+            description:'Ingrese la ciudad del banco del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'pais_banco_beneficiario',
+            type:'text',
+            description:'Ingrese el pais del banco del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'codigo_beneficiario',
+            type:'text',
+            description:'Ingrese el código ABA / IBAN / TRANSIT u OTRO del banco del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'swift_beneficiario',
+            type:'text',
+            description:'Ingrese el código del banco del SWIFT del beneficiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'nombre_banco_intermediario',
+            type:'name',
+            description:'Ingrese el nombre del intermediario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'num_cuenta_intermediario',
+            type:'text',
+            description:'Ingrese el número de cuenta del banco del intermediario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'ciudad_intermediario',
+            type:'text',
+            description:'Ingrese la ciudad del banco del intermediario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'pais_intermediario',
+            type:'text',
+            description:'Ingrese el pais del banco del intermediario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'swift_intermediario',
+            type:'text',
+            description:'Ingrese el código SWIFT del banco del intermediario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'codigo_intermediario',
+            type:'text',
+            description:'Ingrese el código ABA / IBAN / TRANSIT u OTRO del banco intermediario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'gastos_exterior',
+            type:'clausula',
+            description:'Seleccione por cuenta de quién serán los gastos bancarios',
+            value:'ord',
+            options:[
+                {
+                    name:'ORDENANTE',
+                    value:'ord'
+                },
+                {
+                    name:'BENEFICIARIO',
+                    value:'ben'
+                },
+                {
+                    name:'ORDENANTE ASEGURA EL VALOR DEL GIRO',
+                    value:'ord_2'
+                },
+            ],
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
             name:'forma_pago_1',
             type:'clausula',
             description:'Seleccione la primer forma de pago',
@@ -216,6 +473,17 @@
             name:'num_pago_1',
             type:'text',
             description:'Ingrese el número del primer pago',
+        },
+        {
+            name:'portafolio_1',
+            type:'text',
+            description:'Ingrese el portafolio 1',
+            prereq:[
+                {
+                    k:'forma_pago_1',
+                    v:'d'
+                }
+            ]
         },
         {
             name:'forma_pago_2',
@@ -262,6 +530,17 @@
             description:'Ingrese el número del segundo pago',
         },
         {
+            name:'portafolio_2',
+            type:'text',
+            description:'Ingrese el portafolio 2',
+            prereq:[
+                {
+                    k:'forma_pago_2',
+                    v:'d'
+                }
+            ]
+        },
+        {
             name:'modalidad_compra',
             type:'clausula',
             description:'Ingrese el número del segundo pago',
@@ -275,6 +554,12 @@
                     name:'CHEQUE (REMESA)',
                     value:'cheque'
                 },
+            ],
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'a'
+                }
             ]
         },
         {
@@ -301,21 +586,155 @@
             name:'num_cambiario_3',
             type:'text',
             description:'Ingrese el tercer numeral cambiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'a'
+                }
+            ]
         },
         {
             name:'valor_reint_3',
             type:'number',
             description:'Ingrese el tercer valor reintegrado',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'a'
+                }
+            ]
         },
         {
             name:'num_cambiario_4',
             type:'text',
             description:'Ingrese el cuarto numeral cambiario',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'a'
+                }
+            ]
         },
         {
             name:'valor_reint_4',
             type:'number',
             description:'Ingrese el cuarto valor reintegrado',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'a'
+                }
+            ]
+        },
+        {
+            name:'envio_diferente',
+            type:'clausula',
+            description:'¿El pago se está enviando a un tercero, diferente al vendedor de la mercancia?',
+            value:'s',
+            options:[
+                {
+                    name:'Si',
+                    value:'s',
+                },
+                {
+                    name:'No',
+                    value:'n',
+                },
+            ],
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'num_doc_aduan_1',
+            type:'text',
+            description:'Ingrese el primer número de documento aduanero',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'valor_pagado_1',
+            type:'number',
+            description:'Ingrese el primer valor pagado',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'num_doc_aduan_2',
+            type:'text',
+            description:'Ingrese el segundo número de documento aduanero',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'valor_pagado_2',
+            type:'number',
+            description:'Ingrese el segundo valor pagado',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'num_doc_aduan_3',
+            type:'text',
+            description:'Ingrese el tercer número de documento aduanero',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'valor_pagado_3',
+            type:'number',
+            description:'Ingrese el tercer valor pagado',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'num_doc_aduan_4',
+            type:'text',
+            description:'Ingrese el cuarto número de documento aduanero',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
+        },
+        {
+            name:'valor_pagado_4',
+            type:'number',
+            description:'Ingrese el cuarto valor pagado',
+            prereq:[
+                {
+                    k:'declaracion_cambio',
+                    v:'b'
+                }
+            ]
         },
         {
             name:'observaciones',
@@ -351,6 +770,16 @@
         'valor_reint_1',
         'num_cambiario_2',
         'valor_reint_2',
+        "nombre_beneficiario",
+        "num_id_beneficiario",
+        "ciudad_beneficiario",
+        "pais_beneficiario",
+        "nombre_banco_beneficiario",
+        "num_cuenta_beneficiario",
+        "ciudad_banco_beneficiario",
+        "pais_banco_beneficiario",
+        "swift_beneficiario",
+        "gastos_exterior"
     ],
     signatureProfile:[
         {
@@ -362,6 +791,6 @@
         }
     ],
     name:'Bancolombia',
-    build:0,
+    build:1,
     price:5000
 }
