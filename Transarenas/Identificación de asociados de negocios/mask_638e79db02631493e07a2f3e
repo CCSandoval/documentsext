@@ -112,6 +112,15 @@
         <td>CARGAS EN MAGAYA</td>
         <td>
           <span name="cargas_magaya">__________</span>
+          <span name="carga_magaya_2_n"></span>
+          <span name="carga_magaya_2_s" hidden>
+            - <span name="cargas_magaya_2">__________</span>
+
+            <span name="carga_magaya_3_n"></span>
+            <span name="carga_magaya_3_s" hidden>
+              - <span name="cargas_magaya_3">__________</span>
+            </span>
+          </span>
         </td>
       </tr>
     </table>
@@ -549,6 +558,16 @@
       <td><span name="tipo_cuenta_1">__________</span></td>
       <td>
         <span name="telefono_financ_1">__________</span>
+
+        <span name="segundo_tel_1_n"></span>
+        <span name="segundo_tel_1_s" hidden>
+          - <span name="telefono_financ_1_2">__________</span>
+
+          <span name="tercer_tel_1_n"></span>
+          <span name="tercer_tel_1_s" hidden>
+            - <span name="telefono_financ_1_3">__________</span>
+          </span>
+        </span>
       </td>
       <td>
         <span name="contacto_financ_1">__________</span>
@@ -561,6 +580,16 @@
       <td><span name="tipo_cuenta_2">__________</span></td>
       <td>
         <span name="telefono_financ_2">__________</span>
+
+        <span name="segundo_tel_2_n"></span>
+        <span name="segundo_tel_2_s" hidden>
+          - <span name="telefono_financ_2_2">__________</span>
+
+          <span name="tercer_tel_2_n"></span>
+          <span name="tercer_tel_2_s" hidden>
+            - <span name="telefono_financ_2_3">__________</span>
+          </span>
+        </span>
       </td>
       <td>
         <span name="contacto_financ_2">__________</span>

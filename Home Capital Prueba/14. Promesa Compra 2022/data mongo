@@ -2322,6 +2322,492 @@
             ]
         },
         {
+            name: 'pago_6',
+            description: '¿Desea ingresar otro pago?',
+            value: 'n',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'valor_pago_6',
+            type: 'currency',
+            description: 'Ingrese el valor del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'fecha_pago_6',
+            type: 'date',
+            description: 'Seleccione la fecha del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'instruccion_pago_6',
+            type: 'text',
+            description: 'Ingrese la instruccion del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'condicion_pago_6',
+            type: 'text',
+            description: 'Ingrese la condicion del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'pago_7',
+            description: '¿Desea ingresar otro pago?',
+            value: 'n',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'valor_pago_7',
+            type: 'currency',
+            description: 'Ingrese el valor del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'fecha_pago_7',
+            type: 'date',
+            description: 'Seleccione la fecha del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'instruccion_pago_7',
+            type: 'text',
+            description: 'Ingrese la instruccion del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'condicion_pago_7',
+            type: 'text',
+            description: 'Ingrese la condicion del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'pago_8',
+            description: '¿Desea ingresar otro pago?',
+            value: 'n',
+            type: 'clausula',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'valor_pago_8',
+            type: 'currency',
+            description: 'Ingrese el valor del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+                {
+                    k: 'pago_8',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'fecha_pago_8',
+            type: 'date',
+            description: 'Seleccione la fecha del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+                {
+                    k: 'pago_8',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'instruccion_pago_8',
+            type: 'text',
+            description: 'Ingrese la instruccion del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+                {
+                    k: 'pago_8',
+                    v: 's'
+                },
+            ]
+        },
+        {
+            name: 'condicion_pago_8',
+            type: 'text',
+            description: 'Ingrese la condicion del pago',
+            prereq: [
+                {
+                    k: 'pago_2',
+                    v: 's'
+                },
+                {
+                    k: 'pago_3',
+                    v: 's'
+                },
+                {
+                    k: 'pago_4',
+                    v: 's'
+                },
+                {
+                    k: 'pago_5',
+                    v: 's'
+                },
+                {
+                    k: 'pago_6',
+                    v: 's'
+                },
+                {
+                    k: 'pago_7',
+                    v: 's'
+                },
+                {
+                    k: 'pago_8',
+                    v: 's'
+                },
+            ]
+        },
+        {
             name: 'fecha_firma_contrato',
             description: 'Seleccione la fecha de firma de la promesa',
             type: 'date'
@@ -2471,6 +2957,6 @@
     name: 'Promesa compra 2022',
     username: '0f03fff6-2122-4373-bd12-69fa58592bc7',
     company: ObjectId('618d299c3b775300099e6214'),
-    build: 0,
+    build: 1,
     price: 5000
 }

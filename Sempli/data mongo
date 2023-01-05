@@ -386,11 +386,153 @@
                     v: 's'
                 }
             ]
+        },
+        {
+            name: 'firmante_6',
+            type: 'clausula',
+            value: 'n',
+            description: '¿Desea ingresar un sexto firmante?',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_5',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'nombre_firmante_6',
+            type: 'name',
+            description: 'Nombre del sexto firmante',
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_5',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'id_firmante_6',
+            type: 'text',
+            description: 'Número de identificación del sexto firmante',
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_5',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'correo_firmante_6',
+            type: 'email',
+            description: 'Correo electrónico del sexto firmante',
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_5',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_6',
+                    v: 's'
+                }
+            ]
+        },
+        {
+            name: 'tel_firmante_6',
+            type: 'phone',
+            description: 'Número telefónico del sexto firmante',
+            prereq: [
+                {
+                    k: 'firmante_2',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_3',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_4',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_5',
+                    v: 's'
+                },
+                {
+                    k: 'firmante_6',
+                    v: 's'
+                }
+            ]
         }
     ],
     name: 'SEMPLI',
     price: 5000,
-    build: 0,
+    build: 1,
     preBuild: false,
     sign: [
         'correo_firmante',
@@ -412,7 +554,11 @@
         'correo_firmante_5',
         'tel_firmante_5',
         'id_firmante_5',
-        'nombre_firmante_5'
+        'nombre_firmante_5',
+        'correo_firmante_6',
+        'tel_firmante_6',
+        'id_firmante_6',
+        'nombre_firmante_6'
     ],
     signatureProfile: [
         {
@@ -449,6 +595,13 @@
             identification: 'id_firmante_5',
             name: 'nombre_firmante_5',
             type: 'firmante_5'
+        },
+        {
+            email: 'correo_firmante_6',
+            phone: 'tel_firmante_6',
+            identification: 'id_firmante_6',
+            name: 'nombre_firmante_6',
+            type: 'firmante_6'
         }
     ]
 }

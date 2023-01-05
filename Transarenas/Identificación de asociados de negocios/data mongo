@@ -101,8 +101,72 @@
         },
         {
             name: 'cargas_magaya',
-            type: 'text',
-            description: 'Ingrese las cargas en magaya del cliente'
+            type: 'email',
+            description: 'Ingrese el email de reporte de seguimiento para las cargas en magaya'
+        },
+        {
+            name: 'carga_magaya_2',
+            type: 'clausula',
+            description: '¿Desea ingresar un segundo email de seguimiento?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'cargas_magaya_2',
+            type: 'email',
+            description: 'Ingrese el segundo email de reporte de seguimiento para las cargas en magaya',
+            prereq:[
+                {
+                    k:'carga_magaya_2',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name: 'carga_magaya_3',
+            type: 'clausula',
+            description: '¿Desea ingresar un tercer email de seguimiento?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq:[
+                {
+                    k:'carga_magaya_2',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name: 'cargas_magaya_3',
+            type: 'email',
+            description: 'Ingrese el tercer email de reporte de seguimiento para las cargas en magaya',
+            prereq:[
+                {
+                    k:'carga_magaya_2',
+                    v:'s'
+                },
+                {
+                    k:'carga_magaya_3',
+                    v:'s'
+                }
+            ]
         },
         {
             name: 'trans_mon_extr',
@@ -711,6 +775,70 @@
             description: 'Ingrese el primer número telefónico'
         },
         {
+            name: 'segundo_tel_1',
+            type: 'clausula',
+            description: '¿Desea ingresar un segundo número telefónico para el primer contacto financiero?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'telefono_financ_1_2',
+            type: 'phone',
+            description: 'Ingrese el número telefónico',
+            prereq:[
+                {
+                    k:'segundo_tel_1',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name: 'tercer_tel_1',
+            type: 'clausula',
+            description: '¿Desea ingresar un tercer número telefónico para el primer contacto financiero?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq:[
+                {
+                    k:'segundo_tel_1',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name: 'telefono_financ_1_3',
+            type: 'phone',
+            description: 'Ingrese el número telefónico',
+            prereq:[
+                {
+                    k:'tercer_tel_1',
+                    v:'s'
+                },
+                {
+                    k:'segundo_tel_1',
+                    v:'s'
+                }
+            ]
+        },
+        {
             name: 'contacto_financ_1',
             type: 'text',
             description: 'Ingrese el primer contacto financiero'
@@ -739,6 +867,70 @@
             name: 'telefono_financ_2',
             type: 'phone',
             description: 'Ingrese el segundo número telefónico'
+        },
+        {
+            name: 'segundo_tel_2',
+            type: 'clausula',
+            description: '¿Desea ingresar un segundo número telefónico para el segundo contacto financiero?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ]
+        },
+        {
+            name: 'telefono_financ_2_2',
+            type: 'phone',
+            description: 'Ingrese el número telefónico',
+            prereq:[
+                {
+                    k:'segundo_tel_2',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name: 'tercer_tel_2',
+            type: 'clausula',
+            description: '¿Desea ingresar un tercer número telefónico para el segundo contacto financiero?',
+            value: 'n',
+            options: [
+                {
+                    name: 'No',
+                    value: 'n'
+                },
+                {
+                    name: 'Si',
+                    value: 's'
+                }
+            ],
+            prereq:[
+                {
+                    k:'segundo_tel_2',
+                    v:'s'
+                }
+            ]
+        },
+        {
+            name: 'telefono_financ_2_3',
+            type: 'phone',
+            description: 'Ingrese el número telefónico',
+            prereq:[
+                {
+                    k:'tercer_tel_2',
+                    v:'s'
+                },
+                {
+                    k:'segundo_tel_2',
+                    v:'s'
+                }
+            ]
         },
         {
             name: 'contacto_financ_2',
@@ -974,7 +1166,7 @@
         }
     ],
     prebuild: false,
-    build: 0,
+    build: 1,
     price: 5000,
     name: 'IDENTIFICACIÓN DE ASOCIADOS DE NEGOCIOS - CLIENTE'
 }

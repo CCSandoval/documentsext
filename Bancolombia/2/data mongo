@@ -1,0 +1,367 @@
+{
+    _id: ObjectId("63b716702c28fb4f87c096d2"),
+    config:[
+        {
+            name:'tipo_solicitud',
+            description:'Seleccione el tipo de solicitud',
+            type:'clausula',
+            value:'a',
+            options:[
+                {
+                    name:'Recepción de divisas del exterior',
+                    value:'a'
+                },
+                {
+                    name:'Envío de divisas al exterior',
+                    value:'b'
+                },
+                {
+                    name:'Reenvío giro al exterior 100% vr. Devuelto',
+                    value:'c'
+                },
+            ]
+        },
+        {
+            name:'declaracion_cambio',
+            description:'Seleccione la declaración de cambio',
+            type:'clausula',
+            value:'a',
+            options:[
+                {
+                    name:'Servicios, Transferencias y Otros conceptos',
+                    value:'a'
+                },
+                {
+                    name:'Importaciones de Bienes',
+                    value:'b'
+                },
+                {
+                    name:'No aplica',
+                    value:'g'
+                },
+            ]
+        },
+        {
+            name:'tipo_operacion',
+            description:'Seleccione el tipo de operación',
+            type:'clausula',
+            value:'a',
+            options:[
+                {
+                    name:'Inicial',
+                    value:'a'
+                },
+                {
+                    name:'Devolución',
+                    value:'b'
+                },
+                {
+                    name:'No aplica',
+                    value:'c'
+                },
+            ]
+        },
+        {
+            name:'fecha',
+            type:'date',
+            description:'Seleccione la fecha'
+        },
+        {
+            name:'codigo_moneda',
+            description:'Seleccione el código de moneda',
+            type:'clausula',
+            value:'usd',
+            options:[
+                {
+                    name:'USD - Dólar E.U. de América',
+                    value:'usd'
+                },
+                {
+                    name:'EUR - Euro',
+                    value:'eur'
+                },
+                {
+                    name:'GBP - Libra Esterlina',
+                    value:'gbp'
+                },
+                {
+                    name:'CHF - Franco Suizo',
+                    value:'chf'
+                },
+                {
+                    name:'JPY - Yen Japones',
+                    value:'jpy'
+                },
+                {
+                    name:'CAD - Dólar Canadiense',
+                    value:'cad'
+                },
+                {
+                    name:'AUD - Dólar Australiano',
+                    value:'aud'
+                },
+                {
+                    name:'NZD - Dólar Zelandes',
+                    value:'nzd'
+                },
+            ]
+        },
+        {
+            name:'valor_moneda',
+            type:'number',
+            description:'Ingrese el valor de moneda'
+        },
+        {
+            name:'tipo_id',
+            description:'Seleccione el tipo de identificación',
+            type:'clausula',
+            value:'nit',
+            options:[
+                {
+                    name:'NIT',
+                    value:'nit'
+                },
+                {
+                    name:'CC',
+                    value:'cc'
+                },
+                {
+                    name:'CE',
+                    value:'ce'
+                },
+                {
+                    name:'TI',
+                    value:'ti'
+                },
+                {
+                    name:'PB',
+                    value:'pb'
+                },
+                {
+                    name:'RC',
+                    value:'rc'
+                },
+            ]
+        },
+        {
+            name:'num_id',
+            type:'text',
+            description:'Ingrese el número de identificación'
+        },
+        {
+            name:'dv',
+            type:'text',
+            description:'Ingrese el DV'
+        },
+        {
+            name:'correo',
+            type:'email',
+            description:'Ingrese el correo electrónico'
+        },
+        {
+            name:'telefono',
+            type:'phone',
+            description:'Ingrese el número de teléfono'
+        },
+        {
+            name:'nombre',
+            type:'name',
+            description:'Ingrese el nombre'
+        },
+        {
+            name:'tasa',
+            type:'text',
+            description:'Ingrese la tasa'
+        },
+        {
+            name:'forma_pago_1',
+            type:'clausula',
+            description:'Seleccione la primer forma de pago',
+            value:'a',
+            options:[
+                {
+                    name:'ABONO CUENTA CORRIENTE',
+                    value:'a'
+                },
+                {
+                    name:'ABONO CUENTA DE AHORROS',
+                    value:'b'
+                },
+                {
+                    name:'CHEQUE',
+                    value:'c'
+                },
+                {
+                    name:'SEBRA',
+                    value:'d'
+                },
+                {
+                    name:'Otra',
+                    value:'otra'
+                },
+            ]
+        },
+        {
+            name:'otra_forma_pago_1',
+            type:'text',
+            description:'Ingrese la otra forma de pago',
+            prereq:[
+                {
+                    k:'forma_pago_1',
+                    v:'otra'
+                }
+            ]
+        },
+        {
+            name:'num_pago_1',
+            type:'text',
+            description:'Ingrese el número del primer pago',
+        },
+        {
+            name:'forma_pago_2',
+            type:'clausula',
+            description:'Seleccione la segunda forma de pago',
+            value:'a',
+            options:[
+                {
+                    name:'ABONO CUENTA CORRIENTE',
+                    value:'a'
+                },
+                {
+                    name:'ABONO CUENTA DE AHORROS',
+                    value:'b'
+                },
+                {
+                    name:'CHEQUE',
+                    value:'c'
+                },
+                {
+                    name:'SEBRA',
+                    value:'d'
+                },
+                {
+                    name:'Otra',
+                    value:'otra'
+                },
+            ]
+        },
+        {
+            name:'otra_forma_pago_2',
+            type:'text',
+            description:'Ingrese la otra forma de pago',
+            prereq:[
+                {
+                    k:'forma_pago_2',
+                    v:'otra'
+                }
+            ]
+        },
+        {
+            name:'num_pago_2',
+            type:'text',
+            description:'Ingrese el número del segundo pago',
+        },
+        {
+            name:'modalidad_compra',
+            type:'clausula',
+            description:'Ingrese el número del segundo pago',
+            value:'trans',
+            options:[
+                {
+                    name:'TRANSFERENCIA PROCENDENTE DEL EXTERIOR',
+                    value:'trans'
+                },
+                {
+                    name:'CHEQUE (REMESA)',
+                    value:'cheque'
+                },
+            ]
+        },
+        {
+            name:'num_cambiario_1',
+            type:'text',
+            description:'Ingrese el primer numeral cambiario',
+        },
+        {
+            name:'valor_reint_1',
+            type:'number',
+            description:'Ingrese el primer valor reintegrado',
+        },
+        {
+            name:'num_cambiario_2',
+            type:'text',
+            description:'Ingrese el segundo numeral cambiario',
+        },
+        {
+            name:'valor_reint_2',
+            type:'number',
+            description:'Ingrese el segundo valor reintegrado',
+        },
+        {
+            name:'num_cambiario_3',
+            type:'text',
+            description:'Ingrese el tercer numeral cambiario',
+        },
+        {
+            name:'valor_reint_3',
+            type:'number',
+            description:'Ingrese el tercer valor reintegrado',
+        },
+        {
+            name:'num_cambiario_4',
+            type:'text',
+            description:'Ingrese el cuarto numeral cambiario',
+        },
+        {
+            name:'valor_reint_4',
+            type:'number',
+            description:'Ingrese el cuarto valor reintegrado',
+        },
+        {
+            name:'observaciones',
+            type:'text',
+            description:'Ingrese sus observaciones',
+        },
+        {
+            name:'cargo',
+            type:'text',
+            description:'Ingrese el cargo',
+        },
+    ],
+    sign:[
+        'tipo_solicitud',
+        'declaracion_cambio',
+        'tipo_operacion',
+        'fecha',
+        'codigo_moneda',
+        'valor_moneda',
+        'tipo_id',
+        'num_id',
+        'correo',
+        'telefono',
+        'nombre',
+        'forma_pago_1',
+        'otra_forma_pago_1',
+        'num_pago_1',
+        'forma_pago_2',
+        'otra_forma_pago_2',
+        'num_pago_2',
+        'modalidad_compra',
+        'num_cambiario_1',
+        'valor_reint_1',
+        'num_cambiario_2',
+        'valor_reint_2',
+    ],
+    signatureProfile:[
+        {
+            name:'nombre',
+            identification:'num_id',
+            email:'correo',
+            phone:'telefono',
+            type:'firma'
+        }
+    ],
+    name:'Bancolombia',
+    build:0,
+    price:5000
+}
