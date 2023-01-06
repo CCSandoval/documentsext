@@ -1,753 +1,801 @@
 {
-    _id: ObjectId("63b716702c28fb4f87c096d2"),
-    config:[
+    _id: ObjectId('63b716702c28fb4f87c096d2'),
+    config: [
         {
-            name:'tipo_solicitud',
-            description:'Seleccione el tipo de solicitud',
-            type:'clausula',
-            value:'a',
-            options:[
+            name: 'tipo_solicitud',
+            description: 'Seleccione el tipo de solicitud',
+            type: 'clausula',
+            value: 'a',
+            options: [
                 {
-                    name:'Recepción de divisas del exterior',
-                    value:'a'
+                    name: 'Recepción de divisas del exterior',
+                    value: 'a'
                 },
                 {
-                    name:'Envío de divisas al exterior',
-                    value:'b'
+                    name: 'Envío de divisas al exterior',
+                    value: 'b'
                 },
                 {
-                    name:'Reenvío giro al exterior 100% vr. Devuelto',
-                    value:'c'
-                },
-            ]
-        },
-        {
-            name:'declaracion_cambio',
-            description:'Seleccione la declaración de cambio',
-            type:'clausula',
-            value:'a',
-            options:[
-                {
-                    name:'Servicios, Transferencias y Otros conceptos',
-                    value:'a'
-                },
-                {
-                    name:'Importaciones de Bienes',
-                    value:'b'
-                },
-                {
-                    name:'No aplica',
-                    value:'g'
-                },
-            ]
-        },
-        {
-            name:'tipo_operacion',
-            description:'Seleccione el tipo de operación',
-            type:'clausula',
-            value:'a',
-            options:[
-                {
-                    name:'Inicial',
-                    value:'a'
-                },
-                {
-                    name:'Devolución',
-                    value:'b'
-                },
-                {
-                    name:'No aplica',
-                    value:'c'
-                },
-            ]
-        },
-        {
-            name:'fecha',
-            type:'date',
-            description:'Seleccione la fecha'
-        },
-        {
-            name:'codigo_moneda',
-            description:'Seleccione el código de moneda',
-            type:'clausula',
-            value:'usd',
-            options:[
-                {
-                    name:'USD - Dólar E.U. de América',
-                    value:'usd'
-                },
-                {
-                    name:'EUR - Euro',
-                    value:'eur'
-                },
-                {
-                    name:'GBP - Libra Esterlina',
-                    value:'gbp'
-                },
-                {
-                    name:'CHF - Franco Suizo',
-                    value:'chf'
-                },
-                {
-                    name:'JPY - Yen Japones',
-                    value:'jpy'
-                },
-                {
-                    name:'CAD - Dólar Canadiense',
-                    value:'cad'
-                },
-                {
-                    name:'AUD - Dólar Australiano',
-                    value:'aud'
-                },
-                {
-                    name:'NZD - Dólar Zelandes',
-                    value:'nzd'
-                },
-            ]
-        },
-        {
-            name:'valor_moneda',
-            type:'number',
-            description:'Ingrese el valor de moneda'
-        },
-        {
-            name:'tipo_id',
-            description:'Seleccione el tipo de identificación',
-            type:'clausula',
-            value:'nit',
-            options:[
-                {
-                    name:'NIT',
-                    value:'nit'
-                },
-                {
-                    name:'CC',
-                    value:'cc'
-                },
-                {
-                    name:'CE',
-                    value:'ce'
-                },
-                {
-                    name:'TI',
-                    value:'ti'
-                },
-                {
-                    name:'PB',
-                    value:'pb'
-                },
-                {
-                    name:'RC',
-                    value:'rc'
-                },
-            ]
-        },
-        {
-            name:'num_id',
-            type:'text',
-            description:'Ingrese el número de identificación'
-        },
-        {
-            name:'dv',
-            type:'text',
-            description:'Ingrese el DV'
-        },
-        {
-            name:'correo',
-            type:'email',
-            description:'Ingrese el correo electrónico'
-        },
-        {
-            name:'telefono',
-            type:'phone',
-            description:'Ingrese el número de teléfono'
-        },
-        {
-            name:'nombre',
-            type:'name',
-            description:'Ingrese el nombre'
-        },
-        {
-            name:'tasa',
-            type:'text',
-            description:'Ingrese la tasa'
-        },
-        {
-            name:'nombre_beneficiario',
-            type:'name',
-            description:'Ingrese el nombre del beneficiario',
-            prereq:[
-                {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    name: 'Reenvío giro al exterior 100% vr. Devuelto',
+                    value: 'c'
                 }
             ]
         },
         {
-            name:'tipo_id_beneficiario',
-            type:'select',
-            description:'Seleccione el tipo de identificación del beneficiario',
-            value:'nit',
-            options:[
+            name: 'declaracion_cambio',
+            description: 'Seleccione la declaración de cambio',
+            type: 'clausula',
+            value: 'a',
+            options: [
                 {
-                    name:'NIT',
-                    label:'NIT',
-                    value:'nit'
+                    name: 'Servicios, Transferencias y Otros conceptos',
+                    value: 'a'
                 },
                 {
-                    name:'CC',
-                    label:'CC',
-                    value:'cc'
+                    name: 'Importaciones de Bienes',
+                    value: 'b'
                 },
                 {
-                    name:'CE',
-                    label:'CE',
-                    value:'ce'
+                    name: 'No aplica',
+                    value: 'g'
+                }
+            ]
+        },
+        {
+            name: 'tipo_operacion',
+            description: 'Seleccione el tipo de operación',
+            type: 'clausula',
+            value: 'a',
+            options: [
+                {
+                    name: 'Inicial',
+                    value: 'a'
                 },
                 {
-                    name:'TI',
-                    label:'TI',
-                    value:'ti'
+                    name: 'Devolución',
+                    value: 'b'
                 },
                 {
-                    name:'PB',
-                    label:'PB',
-                    value:'pb'
+                    name: 'No aplica',
+                    value: 'c'
+                }
+            ]
+        },
+        {
+            name: 'fecha',
+            type: 'date',
+            help: 'fecha',
+            description: 'Seleccione la fecha'
+        },
+        {
+            name: 'codigo_moneda',
+            description: 'Seleccione el código de moneda',
+            type: 'clausula',
+            value: 'usd',
+            options: [
+                {
+                    name: 'USD - Dólar E.U. de América',
+                    value: 'usd'
                 },
                 {
-                    name:'RC',
-                    label:'RC',
-                    value:'rc'
+                    name: 'EUR - Euro',
+                    value: 'eur'
                 },
+                {
+                    name: 'GBP - Libra Esterlina',
+                    value: 'gbp'
+                },
+                {
+                    name: 'CHF - Franco Suizo',
+                    value: 'chf'
+                },
+                {
+                    name: 'JPY - Yen Japones',
+                    value: 'jpy'
+                },
+                {
+                    name: 'CAD - Dólar Canadiense',
+                    value: 'cad'
+                },
+                {
+                    name: 'AUD - Dólar Australiano',
+                    value: 'aud'
+                },
+                {
+                    name: 'NZD - Dólar Zelandes',
+                    value: 'nzd'
+                }
+            ]
+        },
+        {
+            name: 'valor_moneda',
+            type: 'number',
+            help: 'valor_moneda',
+            description: 'Ingrese el valor de moneda'
+        },
+        {
+            name: 'tipo_id',
+            description: 'Seleccione el tipo de identificación',
+            help: 'tipo_id_1',
+            type: 'clausula',
+            value: 'nit',
+            options: [
+                {
+                    name: 'NIT',
+                    value: 'nit'
+                },
+                {
+                    name: 'CC',
+                    value: 'cc'
+                },
+                {
+                    name: 'CE',
+                    value: 'ce'
+                },
+                {
+                    name: 'TI',
+                    value: 'ti'
+                },
+                {
+                    name: 'PB',
+                    value: 'pb'
+                },
+                {
+                    name: 'RC',
+                    value: 'rc'
+                }
+            ]
+        },
+        {
+            name: 'num_id',
+            type: 'text',
+            help: 'num_id_1',
+            description: 'Ingrese el número de identificación'
+        },
+        {
+            name: 'dv',
+            type: 'text',
+            help: 'dv',
+            description: 'Ingrese el DV'
+        },
+        {
+            name: 'correo',
+            type: 'email',
+            help: 'correo',
+            description: 'Ingrese el correo electrónico'
+        },
+        {
+            name: 'telefono',
+            type: 'phone',
+            help: 'phone',
+            description: 'Ingrese el número de teléfono'
+        },
+        {
+            name: 'nombre',
+            type: 'name',
+            help: 'nombre_1',
+            description: 'Ingrese el nombre'
+        },
+        {
+            name: 'tasa',
+            type: 'text',
+            description: 'Ingrese la tasa'
+        },
+        {
+            name: 'nombre_beneficiario',
+            type: 'name',
+            help: 'nombre_2',
+            description: 'Ingrese el nombre del beneficiario',
+            prereq: [
+                {
+                    k: 'declaracion_cambio',
+                    v: 'b'
+                }
+            ]
+        },
+        {
+            name: 'tipo_id_beneficiario',
+            type: 'select',
+            description: 'Seleccione el tipo de identificación del beneficiario',
+            help: 'tipo_id_2',
+            value: 'nit',
+            options: [
+                {
+                    name: 'NIT',
+                    label: 'NIT',
+                    value: 'nit'
+                },
+                {
+                    name: 'CC',
+                    label: 'CC',
+                    value: 'cc'
+                },
+                {
+                    name: 'CE',
+                    label: 'CE',
+                    value: 'ce'
+                },
+                {
+                    name: 'TI',
+                    label: 'TI',
+                    value: 'ti'
+                },
+                {
+                    name: 'PB',
+                    label: 'PB',
+                    value: 'pb'
+                },
+                {
+                    name: 'RC',
+                    label: 'RC',
+                    value: 'rc'
+                }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'num_id_beneficiario',
-            type:'text',
-            description:'Ingrese el número de identificación del beneficiario',
-            prereq:[
+            name: 'num_id_beneficiario',
+            help: 'num_id_2',
+            type: 'text',
+            description: 'Ingrese el número de identificación del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'dir_beneficiario',
-            type:'text',
-            description:'Ingrese la dirección del beneficiario',
-            prereq:[
+            name: 'dir_beneficiario',
+            help: 'dir',
+            type: 'text',
+            description: 'Ingrese la dirección del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'ciudad_beneficiario',
-            type:'text',
-            description:'Ingrese la ciudad del beneficiario',
-            prereq:[
+            name: 'ciudad_beneficiario',
+            type: 'text',
+            help: 'ciudad',
+            description: 'Ingrese la ciudad del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'pais_beneficiario',
-            type:'text',
-            description:'Ingrese el país del beneficiario',
-            prereq:[
+            name: 'pais_beneficiario',
+            type: 'text',
+            help: 'pais',
+            description: 'Ingrese el país del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'nombre_banco_beneficiario',
-            type:'name',
-            description:'Ingrese el nombre del banco del beneficiario',
-            prereq:[
+            name: 'nombre_banco_beneficiario',
+            type: 'name',
+            help: 'nombre_banco',
+            description: 'Ingrese el nombre del banco del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'num_cuenta_beneficiario',
-            type:'text',
-            description:'Ingrese el número de cuenta del beneficiario',
-            prereq:[
+            name: 'num_cuenta_beneficiario',
+            type: 'text',
+            help: 'num_cuenta',
+            description: 'Ingrese el número de cuenta del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'ciudad_banco_beneficiario',
-            type:'text',
-            description:'Ingrese la ciudad del banco del beneficiario',
-            prereq:[
+            name: 'ciudad_banco_beneficiario',
+            type: 'text',
+            help: 'ciudad',
+            description: 'Ingrese la ciudad del banco del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'pais_banco_beneficiario',
-            type:'text',
-            description:'Ingrese el pais del banco del beneficiario',
-            prereq:[
+            name: 'pais_banco_beneficiario',
+            type: 'text',
+            help: 'pais',
+            description: 'Ingrese el pais del banco del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'codigo_beneficiario',
-            type:'text',
-            description:'Ingrese el código ABA / IBAN / TRANSIT u OTRO del banco del beneficiario',
-            prereq:[
+            name: 'codigo_beneficiario',
+            type: 'text',
+            description: 'Ingrese el código ABA / IBAN / TRANSIT u OTRO del banco del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'swift_beneficiario',
-            type:'text',
-            description:'Ingrese el código del banco del SWIFT del beneficiario',
-            prereq:[
+            name: 'swift_beneficiario',
+            type: 'text',
+            help: 'swift',
+            description: 'Ingrese el código del banco del SWIFT del beneficiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'nombre_banco_intermediario',
-            type:'name',
-            description:'Ingrese el nombre del intermediario',
-            prereq:[
+            name: 'nombre_banco_intermediario',
+            type: 'name',
+            help: 'nombre_banco',
+            description: 'Ingrese el nombre del intermediario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'num_cuenta_intermediario',
-            type:'text',
-            description:'Ingrese el número de cuenta del banco del intermediario',
-            prereq:[
+            name: 'num_cuenta_intermediario',
+            type: 'text',
+            help: 'num_cuenta',
+            description: 'Ingrese el número de cuenta del banco del intermediario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'ciudad_intermediario',
-            type:'text',
-            description:'Ingrese la ciudad del banco del intermediario',
-            prereq:[
+            name: 'ciudad_intermediario',
+            type: 'text',
+            help: 'ciudad',
+            description: 'Ingrese la ciudad del banco del intermediario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'pais_intermediario',
-            type:'text',
-            description:'Ingrese el pais del banco del intermediario',
-            prereq:[
+            name: 'pais_intermediario',
+            type: 'text',
+            help: 'pais',
+            description: 'Ingrese el pais del banco del intermediario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'swift_intermediario',
-            type:'text',
-            description:'Ingrese el código SWIFT del banco del intermediario',
-            prereq:[
+            name: 'swift_intermediario',
+            type: 'text',
+            help: 'swift',
+            description: 'Ingrese el código SWIFT del banco del intermediario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'codigo_intermediario',
-            type:'text',
-            description:'Ingrese el código ABA / IBAN / TRANSIT u OTRO del banco intermediario',
-            prereq:[
+            name: 'codigo_intermediario',
+            type: 'text',
+            description: 'Ingrese el código ABA / IBAN / TRANSIT u OTRO del banco intermediario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'gastos_exterior',
-            type:'clausula',
-            description:'Seleccione por cuenta de quién serán los gastos bancarios',
-            value:'ord',
-            options:[
+            name: 'gastos_exterior',
+            type: 'clausula',
+            description: 'Seleccione por cuenta de quién serán los gastos bancarios',
+            value: 'ord',
+            options: [
                 {
-                    name:'ORDENANTE',
-                    value:'ord'
+                    name: 'ORDENANTE',
+                    value: 'ord'
                 },
                 {
-                    name:'BENEFICIARIO',
-                    value:'ben'
+                    name: 'BENEFICIARIO',
+                    value: 'ben'
                 },
                 {
-                    name:'ORDENANTE ASEGURA EL VALOR DEL GIRO',
-                    value:'ord_2'
-                },
+                    name: 'ORDENANTE ASEGURA EL VALOR DEL GIRO',
+                    value: 'ord_2'
+                }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'forma_pago_1',
-            type:'clausula',
-            description:'Seleccione la primer forma de pago',
-            value:'a',
-            options:[
+            name: 'forma_pago_1',
+            type: 'clausula',
+            description: 'Seleccione la primer forma de pago',
+            value: 'a',
+            options: [
                 {
-                    name:'ABONO CUENTA CORRIENTE',
-                    value:'a'
+                    name: 'ABONO CUENTA CORRIENTE',
+                    value: 'a'
                 },
                 {
-                    name:'ABONO CUENTA DE AHORROS',
-                    value:'b'
+                    name: 'ABONO CUENTA DE AHORROS',
+                    value: 'b'
                 },
                 {
-                    name:'CHEQUE',
-                    value:'c'
+                    name: 'CHEQUE',
+                    value: 'c'
                 },
                 {
-                    name:'SEBRA',
-                    value:'d'
+                    name: 'SEBRA',
+                    value: 'd'
                 },
                 {
-                    name:'Otra',
-                    value:'otra'
-                },
-            ]
-        },
-        {
-            name:'otra_forma_pago_1',
-            type:'text',
-            description:'Ingrese la otra forma de pago',
-            prereq:[
-                {
-                    k:'forma_pago_1',
-                    v:'otra'
+                    name: 'Otra',
+                    value: 'otra'
                 }
             ]
         },
         {
-            name:'num_pago_1',
-            type:'text',
-            description:'Ingrese el número del primer pago',
-        },
-        {
-            name:'portafolio_1',
-            type:'text',
-            description:'Ingrese el portafolio 1',
-            prereq:[
+            name: 'otra_forma_pago_1',
+            type: 'text',
+            description: 'Ingrese la otra forma de pago',
+            prereq: [
                 {
-                    k:'forma_pago_1',
-                    v:'d'
+                    k: 'forma_pago_1',
+                    v: 'otra'
                 }
             ]
         },
         {
-            name:'forma_pago_2',
-            type:'clausula',
-            description:'Seleccione la segunda forma de pago',
-            value:'a',
-            options:[
-                {
-                    name:'ABONO CUENTA CORRIENTE',
-                    value:'a'
-                },
-                {
-                    name:'ABONO CUENTA DE AHORROS',
-                    value:'b'
-                },
-                {
-                    name:'CHEQUE',
-                    value:'c'
-                },
-                {
-                    name:'SEBRA',
-                    value:'d'
-                },
-                {
-                    name:'Otra',
-                    value:'otra'
-                },
-            ]
+            name: 'num_pago_1',
+            type: 'text',
+            description: 'Ingrese el número del primer pago'
         },
         {
-            name:'otra_forma_pago_2',
-            type:'text',
-            description:'Ingrese la otra forma de pago',
-            prereq:[
+            name: 'portafolio_1',
+            type: 'text',
+            description: 'Ingrese el portafolio 1',
+            prereq: [
                 {
-                    k:'forma_pago_2',
-                    v:'otra'
+                    k: 'forma_pago_1',
+                    v: 'd'
                 }
             ]
         },
         {
-            name:'num_pago_2',
-            type:'text',
-            description:'Ingrese el número del segundo pago',
-        },
-        {
-            name:'portafolio_2',
-            type:'text',
-            description:'Ingrese el portafolio 2',
-            prereq:[
+            name: 'forma_pago_2',
+            type: 'clausula',
+            description: 'Seleccione la segunda forma de pago',
+            value: 'a',
+            options: [
                 {
-                    k:'forma_pago_2',
-                    v:'d'
+                    name: 'ABONO CUENTA CORRIENTE',
+                    value: 'a'
+                },
+                {
+                    name: 'ABONO CUENTA DE AHORROS',
+                    value: 'b'
+                },
+                {
+                    name: 'CHEQUE',
+                    value: 'c'
+                },
+                {
+                    name: 'SEBRA',
+                    value: 'd'
+                },
+                {
+                    name: 'Otra',
+                    value: 'otra'
                 }
             ]
         },
         {
-            name:'modalidad_compra',
-            type:'clausula',
-            description:'Ingrese el número del segundo pago',
-            value:'trans',
-            options:[
+            name: 'otra_forma_pago_2',
+            type: 'text',
+            description: 'Ingrese la otra forma de pago',
+            prereq: [
                 {
-                    name:'TRANSFERENCIA PROCENDENTE DEL EXTERIOR',
-                    value:'trans'
+                    k: 'forma_pago_2',
+                    v: 'otra'
+                }
+            ]
+        },
+        {
+            name: 'num_pago_2',
+            type: 'text',
+            description: 'Ingrese el número del segundo pago'
+        },
+        {
+            name: 'portafolio_2',
+            type: 'text',
+            description: 'Ingrese el portafolio 2',
+            prereq: [
+                {
+                    k: 'forma_pago_2',
+                    v: 'd'
+                }
+            ]
+        },
+        {
+            name: 'modalidad_compra',
+            type: 'clausula',
+            description: 'Ingrese el número del segundo pago',
+            value: 'trans',
+            options: [
+                {
+                    name: 'TRANSFERENCIA PROCENDENTE DEL EXTERIOR',
+                    value: 'trans'
                 },
                 {
-                    name:'CHEQUE (REMESA)',
-                    value:'cheque'
-                },
+                    name: 'CHEQUE (REMESA)',
+                    value: 'cheque'
+                }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'a'
+                    k: 'declaracion_cambio',
+                    v: 'a'
                 }
             ]
         },
         {
-            name:'num_cambiario_1',
-            type:'text',
-            description:'Ingrese el primer numeral cambiario',
+            name: 'num_cambiario_1',
+            type: 'text',
+            description: 'Ingrese el primer numeral cambiario'
         },
         {
-            name:'valor_reint_1',
-            type:'number',
-            description:'Ingrese el primer valor reintegrado',
+            name: 'valor_reint_1',
+            type: 'number',
+            description: 'Ingrese el primer valor reintegrado',
+            help: 'valor_reint'
         },
         {
-            name:'num_cambiario_2',
-            type:'text',
-            description:'Ingrese el segundo numeral cambiario',
+            name: 'num_cambiario_2',
+            type: 'text',
+            description: 'Ingrese el segundo numeral cambiario'
         },
         {
-            name:'valor_reint_2',
-            type:'number',
-            description:'Ingrese el segundo valor reintegrado',
+            name: 'valor_reint_2',
+            type: 'number',
+            description: 'Ingrese el segundo valor reintegrado',
+            help: 'valor_reint'
         },
         {
-            name:'num_cambiario_3',
-            type:'text',
-            description:'Ingrese el tercer numeral cambiario',
-            prereq:[
+            name: 'num_cambiario_3',
+            type: 'text',
+            description: 'Ingrese el tercer numeral cambiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'a'
+                    k: 'declaracion_cambio',
+                    v: 'a'
                 }
             ]
         },
         {
-            name:'valor_reint_3',
-            type:'number',
-            description:'Ingrese el tercer valor reintegrado',
-            prereq:[
+            name: 'valor_reint_3',
+            type: 'number',
+            help: 'valor_reint',
+            description: 'Ingrese el tercer valor reintegrado',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'a'
+                    k: 'declaracion_cambio',
+                    v: 'a'
                 }
             ]
         },
         {
-            name:'num_cambiario_4',
-            type:'text',
-            description:'Ingrese el cuarto numeral cambiario',
-            prereq:[
+            name: 'num_cambiario_4',
+            type: 'text',
+            description: 'Ingrese el cuarto numeral cambiario',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'a'
+                    k: 'declaracion_cambio',
+                    v: 'a'
                 }
             ]
         },
         {
-            name:'valor_reint_4',
-            type:'number',
-            description:'Ingrese el cuarto valor reintegrado',
-            prereq:[
+            name: 'valor_reint_4',
+            type: 'number',
+            help: 'valor_reint',
+            description: 'Ingrese el cuarto valor reintegrado',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'a'
+                    k: 'declaracion_cambio',
+                    v: 'a'
                 }
             ]
         },
         {
-            name:'envio_diferente',
-            type:'clausula',
-            description:'¿El pago se está enviando a un tercero, diferente al vendedor de la mercancia?',
-            value:'s',
-            options:[
+            name: 'envio_diferente',
+            type: 'clausula',
+            description: '¿El pago se está enviando a un tercero, diferente al vendedor de la mercancia?',
+            value: 's',
+            options: [
                 {
-                    name:'Si',
-                    value:'s',
+                    name: 'Si',
+                    value: 's'
                 },
                 {
-                    name:'No',
-                    value:'n',
-                },
+                    name: 'No',
+                    value: 'n'
+                }
             ],
-            prereq:[
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'num_doc_aduan_1',
-            type:'text',
-            description:'Ingrese el primer número de documento aduanero',
-            prereq:[
+            name: 'num_doc_aduan_1',
+            type: 'text',
+            description: 'Ingrese el primer número de documento aduanero',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'valor_pagado_1',
-            type:'number',
-            description:'Ingrese el primer valor pagado',
-            prereq:[
+            name: 'valor_pagado_1',
+            type: 'number',
+            description: 'Ingrese el primer valor pagado',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'num_doc_aduan_2',
-            type:'text',
-            description:'Ingrese el segundo número de documento aduanero',
-            prereq:[
+            name: 'num_doc_aduan_2',
+            type: 'text',
+            description: 'Ingrese el segundo número de documento aduanero',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'valor_pagado_2',
-            type:'number',
-            description:'Ingrese el segundo valor pagado',
-            prereq:[
+            name: 'valor_pagado_2',
+            type: 'number',
+            description: 'Ingrese el segundo valor pagado',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'num_doc_aduan_3',
-            type:'text',
-            description:'Ingrese el tercer número de documento aduanero',
-            prereq:[
+            name: 'num_doc_aduan_3',
+            type: 'text',
+            description: 'Ingrese el tercer número de documento aduanero',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'valor_pagado_3',
-            type:'number',
-            description:'Ingrese el tercer valor pagado',
-            prereq:[
+            name: 'valor_pagado_3',
+            type: 'number',
+            description: 'Ingrese el tercer valor pagado',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'num_doc_aduan_4',
-            type:'text',
-            description:'Ingrese el cuarto número de documento aduanero',
-            prereq:[
+            name: 'num_doc_aduan_4',
+            type: 'text',
+            description: 'Ingrese el cuarto número de documento aduanero',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'valor_pagado_4',
-            type:'number',
-            description:'Ingrese el cuarto valor pagado',
-            prereq:[
+            name: 'valor_pagado_4',
+            type: 'number',
+            description: 'Ingrese el cuarto valor pagado',
+            prereq: [
                 {
-                    k:'declaracion_cambio',
-                    v:'b'
+                    k: 'declaracion_cambio',
+                    v: 'b'
                 }
             ]
         },
         {
-            name:'observaciones',
-            type:'text',
-            description:'Ingrese sus observaciones',
+            name: 'observaciones',
+            type: 'text',
+            description: 'Ingrese sus observaciones'
         },
         {
-            name:'cargo',
-            type:'text',
-            description:'Ingrese el cargo',
-        },
+            name: 'cargo',
+            type: 'text',
+            description: 'Ingrese el cargo'
+        }
     ],
-    sign:[
+    help: {
+        fecha: 'Seleccione una fecha con formato mm/dd/aaaa ejemplo: "01/06/2022"',
+        valor_moneda: 'Ingrese el valor total',
+        tipo_id_1: 'Tipo de identificación de la empresa o persona que realiza la transacción',
+        num_id_1: 'Número de identificación de la empresa o persona que realiza la transacción',
+        dv: 'DV: Digito de verificación',
+        correo: 'Ejemplo: camilo.torres@gmail.com',
+        phone: 'Ejemplo: +573244439332',
+        nombre_1: 'Nombre completo o razón social de la empresa o persona que realiza la transacción',
+        nombre_2: 'Nombre completo o razón social del beneficiario',
+        tipo_id_2: 'Tipo de identificación del beneficiario',
+        num_id_2: 'Número de identificación del beneficiario',
+        dir: 'Ejemplo: "Calle 18A Sur # 140B"',
+        ciudad: 'Ejemplo: "Ibagué"',
+        pais: 'Ejemplo: "Colombia"',
+        nombre_banco: 'Ejemplo: "Bancolombia"',
+        num_cuenta: 'Ejemplo: "543-00045-87"',
+        swift: 'Ejemplo: "COLOCOBM"',
+        valor_reint: 'La suma de los valores reintegrados no debe superar el valor total ingresado'
+    },
+    sign: [
         'tipo_solicitud',
         'declaracion_cambio',
         'tipo_operacion',
@@ -770,27 +818,27 @@
         'valor_reint_1',
         'num_cambiario_2',
         'valor_reint_2',
-        "nombre_beneficiario",
-        "num_id_beneficiario",
-        "ciudad_beneficiario",
-        "pais_beneficiario",
-        "nombre_banco_beneficiario",
-        "num_cuenta_beneficiario",
-        "ciudad_banco_beneficiario",
-        "pais_banco_beneficiario",
-        "swift_beneficiario",
-        "gastos_exterior"
+        'nombre_beneficiario',
+        'num_id_beneficiario',
+        'ciudad_beneficiario',
+        'pais_beneficiario',
+        'nombre_banco_beneficiario',
+        'num_cuenta_beneficiario',
+        'ciudad_banco_beneficiario',
+        'pais_banco_beneficiario',
+        'swift_beneficiario',
+        'gastos_exterior'
     ],
-    signatureProfile:[
+    signatureProfile: [
         {
-            name:'nombre',
-            identification:'num_id',
-            email:'correo',
-            phone:'telefono',
-            type:'firma'
+            name: 'nombre',
+            identification: 'num_id',
+            email: 'correo',
+            phone: 'telefono',
+            type: 'firma'
         }
     ],
-    name:'Bancolombia',
-    build:1,
-    price:5000
+    name: 'Bancolombia',
+    build: 2,
+    price: 5000
 }

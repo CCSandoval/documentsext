@@ -75,7 +75,12 @@
             description: 'Digite el correo electrónico de la parte arrendataria',
             help: 'correo',
             name: 'correo_arrendatario',
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico de la parte arrendataria',
+            name: 'tel_arrendatario',
+            type: 'phone'
         },
         {
             description: 'Digite la dirección del inmueble que se entrega en arrendamiento sin incluir la ciudad',
@@ -1759,7 +1764,18 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del primer testigo',
+            name: 'tel_testigo_1',
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                }
+            ],
+            type: 'phone'
         },
         {
             description: '¿Desea agregar un segundo testigo al presente contrato?',
@@ -1826,7 +1842,22 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del segundo testigo',
+            name: 'tel_testigo_2',
+            prereq: [
+                {
+                    k: 'total_testigo_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_testigo_2',
+                    v: 's'
+                }
+            ],
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del primer deudor solidario',
@@ -1838,7 +1869,18 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del primer deudor solidario',
+            name: 'tel_deudor_1',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                }
+            ],
         },
         {
             description: 'Digite el correo electrónico del segundo deudor solidario',
@@ -1854,7 +1896,22 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del segundo deudor solidario',
+            name: 'tel_deudor_2',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                }
+            ],
         },
         {
             description: 'Digite el correo electrónico del tercer deudor solidario',
@@ -1874,7 +1931,26 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del tercer deudor solidario',
+            name: 'tel_deudor_3',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                }
+            ],
         },
         {
             description: 'Digite el correo electrónico del cuarto deudor solidario',
@@ -1898,7 +1974,30 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del cuarto deudor solidario',
+            name: 'tel_deudor_4',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                }
+            ],
         },
         {
             description: 'Digite el correo electrónico del quinto deudor solidario',
@@ -1926,8 +2025,35 @@
                     v: 's'
                 }
             ],
-            type: 'text'
-        }
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del quinto deudor solidario',
+            name: 'tel_deudor_5',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'total_deudor_1',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_2',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_3',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_4',
+                    v: 's'
+                },
+                {
+                    k: 'total_deudor_5',
+                    v: 's'
+                }
+            ],
+        },
     ],
     operation: [],
     sign: [
@@ -1939,6 +2065,7 @@
         'nombre_arrendatario',
         'direccion_arrendatario',
         'correo_arrendatario',
+        'tel_arrendatario',
         'direccion_inmueble',
         'ciudad_inmueble',
         'numero_parqueadero',
@@ -2002,6 +2129,7 @@
         'pasaporte_testigo_1',
         'nit_testigo_1',
         'correo_testigo_1',
+        'tel_testigo_1',
         'total_testigo_2',
         'nombre_testigo_2',
         'tipo_documento_testigo_2',
@@ -2010,57 +2138,71 @@
         'pasaporte_testigo_2',
         'nit_testigo_2',
         'correo_testigo_2',
+        'tel_testigo_2',
         'correo_deudor_1',
         'correo_deudor_2',
         'correo_deudor_3',
         'correo_deudor_4',
-        'correo_deudor_5'
+        'correo_deudor_5',
+        'tel_deudor_1',
+        'tel_deudor_2',
+        'tel_deudor_3',
+        'tel_deudor_4',
+        'tel_deudor_5'
     ],
     signatureProfile: [
         {
             email: 'correo_arrendatario',
+            phone: 'tel_arrendatario',
             identification: 'cedula_arrendatario|cedulae_arrendatario|pasaporte_arrendatario|nit_arrendatario',
             name: 'nombre_arrendatario',
             type: 'arrendatario'
         },
         {
             email: 'correo_testigo_1',
+            phone: 'tel_testigo_1',
             identification: 'cedula_testigo_1|cedulae_testigo_1|pasaporte_testigo_1|nit_testigo_1',
             name: 'nombre_testigo_1',
             type: 'testigo_1'
         },
         {
             email: 'correo_testigo_2',
+            phone: 'tel_testigo_2',
             identification: 'cedula_testigo_2|cedulae_testigo_2|pasaporte_testigo_2|nit_testigo_2',
             name: 'nombre_testigo_2',
             type: 'testigo_2'
         },
         {
             email: 'correo_deudor_1',
+            phone: 'tel_deudor_1',
             identification: 'cedula_deudor_1|cedulae_deudor_1|pasaporte_deudor_1',
             name: 'nombre_deudor_1',
             type: 'deudor_1'
         },
         {
             email: 'correo_deudor_2',
+            phone: 'tel_deudor_2',
             identification: 'cedula_deudor_2|cedulae_deudor_2|pasaporte_deudor_2',
             name: 'nombre_deudor_2',
             type: 'deudor_2'
         },
         {
             email: 'correo_deudor_3',
+            phone: 'tel_deudor_3',
             identification: 'cedula_deudor_3|cedulae_deudor_3|pasaporte_deudor_3',
             name: 'nombre_deudor_3',
             type: 'deudor_3'
         },
         {
             email: 'correo_deudor_4',
+            phone: 'tel_deudor_4',
             identification: 'cedula_deudor_4|cedulae_deudor_4|pasaporte_deudor_4',
             name: 'nombre_deudor_4',
             type: 'deudor_4'
         },
         {
             email: 'correo_deudor_5',
+            phone: 'tel_deudor_5',
             identification: 'cedula_deudor_5|cedulae_deudor_5|pasaporte_deudor_5',
             name: 'nombre_deudor_5',
             type: 'deudor_5'
@@ -2068,7 +2210,7 @@
     ],
     preBuildData: [],
     name: 'CONTRATO DE ARRENDAMIENTO DE VIVIENDA URBANA ALNAGO',
-    price: 0,
+    price: 5000,
     help: {
         lugar: 'Ejemplo: Avenida siempre viva 12 # 34 - 56',
         nombre: 'Ejemplo: Elon Patarroyo',
@@ -2082,7 +2224,7 @@
         total_personas: 'Ejemplo: 5',
         precio_inmueble: 'Ejemplo: 1200000'
     },
-    build: 11,
+    build: 12,
     custom: {
         noShowHeader: true
     },

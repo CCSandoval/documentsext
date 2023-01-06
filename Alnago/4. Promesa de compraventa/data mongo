@@ -5923,7 +5923,12 @@
             description: 'Digite el correo electrónico del comprador',
             help: 'correo',
             name: 'correo_comprador_1',
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del comprador',
+            name: 'tel_comprador_1',
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del segundo comprador',
@@ -5935,7 +5940,18 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del segundo comprador',
+            name: 'tel_comprador_2',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                }
+            ],
         },
         {
             description: 'Digite el correo electrónico del tercer comprador',
@@ -5951,13 +5967,33 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del tercer comprador',
+            name: 'tel_comprador_3',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'segundo_comprador',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_comprador',
+                    v: 's'
+                }
+            ],
         },
         {
             description: 'Digite el correo electrónico del vendedor',
             help: 'correo',
             name: 'correo_vendedor_1',
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del vendedor',
+            name: 'tel_vendedor_1',
+            type: 'phone'
         },
         {
             description: 'Digite el correo electrónico del segundo vendedor',
@@ -5969,7 +6005,18 @@
                     v: 's'
                 }
             ],
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del segundo vendedor',
+            name: 'tel_vendedor_2',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                }
+            ],
         },
         {
             description: 'Digite el correo electrónico del tercer vendedor',
@@ -5985,8 +6032,23 @@
                     v: 's'
                 }
             ],
-            type: 'text'
-        }
+            type: 'email'
+        },
+        {
+            description: 'Digite el número telefonico del tercer vendedor',
+            name: 'tel_vendedor_3',
+            type: 'phone',
+            prereq: [
+                {
+                    k: 'segundo_vendedor',
+                    v: 's'
+                },
+                {
+                    k: 'tercer_vendedor',
+                    v: 's'
+                }
+            ],
+        },
     ],
     operation: [
         {
@@ -6154,43 +6216,55 @@
         'correo_comprador_3',
         'correo_vendedor_1',
         'correo_vendedor_2',
-        'correo_vendedor_3'
+        'correo_vendedor_3',
+        'tel_comprador_1',
+        'tel_comprador_2',
+        'tel_comprador_3',
+        'tel_vendedor_1',
+        'tel_vendedor_2',
+        'tel_vendedor_3',
     ],
     signatureProfile: [
         {
             name: 'nombre_comprador_1',
             identification: 'cedula_comprador_1|cedulae_comprador_1|pasaporte_comprador_1',
             email: 'correo_comprador_1',
+            phone: 'tel_comprador_1',
             type: 'comprador_1'
         },
         {
             name: 'nombre_comprador_2',
             identification: 'cedula_comprador_2|cedulae_comprador_2|pasaporte_comprador_2',
             email: 'correo_comprador_2',
+            phone: 'tel_comprador_2',
             type: 'comprador_2'
         },
         {
             name: 'nombre_comprador_3',
             identification: 'cedula_comprador_3|cedulae_comprador_3|pasaporte_comprador_3',
             email: 'correo_comprador_3',
+            phone: 'tel_comprador_3',
             type: 'comprador_3'
         },
         {
             name: 'nombre_vendedor_1',
             identification: 'cedula_vendedor_1|cedulae_vendedor_1|pasaporte_vendedor_1',
             email: 'correo_vendedor_1',
+            phone: 'tel_vendedor_1',
             type: 'vendedor_1'
         },
         {
             name: 'nombre_vendedor_2',
             identification: 'cedula_vendedor_2|cedulae_vendedor_2|pasaporte_vendedor_2',
             email: 'correo_vendedor_2',
+            phone: 'tel_vendedor_2',
             type: 'vendedor_2'
         },
         {
             name: 'nombre_vendedor_3',
             identification: 'cedula_vendedor_3|cedulae_vendedor_3|pasaporte_vendedor_3',
             email: 'correo_vendedor_3',
+            phone: 'tel_vendedor_3',
             type: 'vendedor_3'
         }
     ],
@@ -6217,7 +6291,7 @@
     custom: {
         noShowHeader: true
     },
-    build: 39,
+    build: 40,
     username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
     company: ObjectId('6179a50cc930d700099c5bd6'),
     createdAt: ISODate('2021-10-06T21:31:43.788Z'),

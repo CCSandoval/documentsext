@@ -248,7 +248,31 @@
                 }
             ],
             name: 'correo_propietario',
-            type: 'text'
+            type: 'email'
+        },
+        {
+            description: [
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'm'
+                        }
+                    ],
+                    text: 'Digite el número telefonico del propietario'
+                },
+                {
+                    prereq: [
+                        {
+                            k: 'genero_propietario',
+                            v: 'f'
+                        }
+                    ],
+                    text: 'Digite el número telefonico de la propietaria'
+                }
+            ],
+            name: 'tel_propietario',
+            type: 'phone'
         },
         {
             description: [
@@ -697,6 +721,7 @@
     signatureProfile: [
         {
             email: 'correo_propietario',
+            phone: 'phone_propietario',
             identification: 'cedula_propietario|cedulae_propietario|pasaporte_propietario',
             name: 'nombre_propietario',
             type: 'propietario'
@@ -707,8 +732,8 @@
         noShowHeader: true
     },
     name: 'CONTRATO DE ADMINISTRACIÓN DE INMUEBLES',
-    price: 0,
-    build: 12,
+    price: 5000,
+    build: 13,
     company: ObjectId('6179a50cc930d700099c5bd6'),
     username: '541f697e-3af9-47ae-b149-4b66d36d37e9',
     createdAt: ISODate('2021-08-26T14:53:00.657Z'),
