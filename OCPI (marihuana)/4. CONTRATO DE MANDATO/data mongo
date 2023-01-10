@@ -40,6 +40,7 @@
         {
             name: 'valor_contrato_num',
             type: 'number',
+            addText:true,
             description: 'Ingrese el valor del contrato en números'
         },
         {
@@ -47,16 +48,6 @@
             type: 'name',
             description: 'Ingrese el valor del contrato en letras'
         },
-        {
-            name: 'valor_num',
-            type: 'number',
-            description: 'Ingrese el valor del costo inicial en números'
-        },
-        {
-            name: 'valor_num',
-            type: 'name',
-            description: 'Ingrese el valor del costo inicial en letras'
-        }
     ],
     sign: [
         'nombre_partner',
@@ -97,11 +88,11 @@
         },
         {
             name: 'correo_gps',
-            value: 'ccsandovalt@gmail.com'
+            value: 'freddarcila@gmail.com'
         }
     ],
     name: 'CONTRATO DE MANDATO',
     price: 5000,
-    build: 0,
+    build: 1,
     preBuild: false
 }

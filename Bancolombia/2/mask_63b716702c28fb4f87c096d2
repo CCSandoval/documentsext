@@ -121,7 +121,7 @@
         <br />
         <span name="num_id">_________</span>
       </td>
-      <td>
+      <td name="tipo_id_nit">
         <b>DV</b>
         <br />
         <span name="dv">_________</span>
@@ -146,7 +146,7 @@
       <td colspan="3">
         <b>TASA</b>
         <br />
-        <span name="tasa">_________</span>
+        <span name="tasa">_________</span> %
       </td>
     </tr>
   </table>
@@ -292,18 +292,185 @@
       </td>
     </tr>
   </table>
+  <table class="alt_table_class" name="declaracion_cambio_g" hidden>
+    <tr>
+      <th colspan="3" style="text-align: center">DATOS DEL BENEFICIARIO</th>
+    </tr>
+    <tr>
+      <td>
+        <b>* NOMBRE O RAZÓN SOCIAL</b>
+        <br />
+        <span name="nombre_beneficiario">_________</span>
+      </td>
+      <td>
+        <b>TIPO DE IDENTIFICACIÓN</b>
+        <br />
+        <span name="tipo_id_beneficiario">_________</span>
+      </td>
+      <td>
+        <b>* No. IDENTIFICACIÓN</b>
+        <br />
+        <span name="num_id_beneficiario">_________</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>DIRECCIÓN</b>
+        <br />
+        <span name="dir_beneficiario">_________</span>
+      </td>
+      <td>
+        <b>* CIUDAD</b>
+        <br />
+        <span name="ciudad_beneficiario">_________</span>
+      </td>
+      <td>
+        <b>* PAÍS</b>
+        <br />
+        <span name="pais_beneficiario">_________</span>
+      </td>
+    </tr>
+  </table>
+  <table class="alt_table_class" name="declaracion_cambio_g" hidden>
+    <tr>
+      <th style="text-align: center" colspan="4">
+        BANCO DONDE EL BENEFICIARIO TIENE LA CUENTA
+      </th>
+    </tr>
+    <tr>
+      <td>
+        <b>* NOMBRE DEL BANCO BENEFICIARIO</b>
+        <br />
+        <span name="nombre_banco_beneficiario">_________</span>
+      </td>
+      <td>
+        <b>* NÚMERO DE CUENTA DEL BENEFICIARIO</b>
+        <br />
+        <span name="num_cuenta_beneficiario">_________</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>* CIUDAD</b>
+        <br />
+        <span name="ciudad_banco_beneficiario">_________</span>
+      </td>
+      <td>
+        <b>* PAÍS</b>
+        <br />
+        <span name="pais_banco_beneficiario">_________</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>CÓDIGO ABA / IBAN / TRANSIT / OTRO</b>
+        <br />
+        <span name="codigo_beneficiario">_________</span>
+      </td>
+      <td>
+        <b>* CÓDIGO SWIFT DEL BANCO DEL BENEFICIARIO</b>
+        <br />
+        <span name="swift_beneficiario">_________</span>
+      </td>
+    </tr>
+  </table>
+  <table class="alt_table_class" name="declaracion_cambio_g" hidden>
+    <tr>
+      <th style="text-align: center" colspan="4">BANCO INTERMEDIARIO</th>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <b>NOMBRE DEL BANCO INTERMEDIARIO</b>
+        <br />
+        <span name="nombre_banco_intermediario">_________</span>
+      </td>
+      <td colspan="2">
+        <b>NÚMERO DE CUENTA DEL BANCO INTERMEDIARIO</b>
+        <br />
+        <span name="num_cuenta_intermediario">_________</span>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>CIUDAD</b>
+        <br />
+        <span name="ciudad_intermediario">_________</span>
+      </td>
+      <td>
+        <b>PAÍS</b>
+        <br />
+        <span name="pais_intermediario">_________</span>
+      </td>
+      <td>
+        <b>CÓDIGO SWIFT DEL BANCO</b>
+        <br />
+        <span name="swift_intermediario">_________</span>
+      </td>
+      <td>
+        <b>CÓDIGO ABA / IBAN / OTRO</b>
+        <br />
+        <span name="codigo_intermediario">_________</span>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <b>*GASTOS BANCARIOS EN EL EXTERIOR POR CUENTA DE: </b>
+      </td>
+      <td colspan="2">
+        <span name="gastos_exterior_ord">[x]</span>
+        <span name="gastos_exterior_ben" hidden>[_]</span>
+        <span name="gastos_exterior_ord_2" hidden>[_]</span>
+        ORDENANTE <br />
+
+        <span name="gastos_exterior_ord">[_]</span>
+        <span name="gastos_exterior_ben" hidden>[x]</span>
+        <span name="gastos_exterior_ord_2" hidden>[_]</span>
+        BENEFICIARIO <br />
+
+        <span name="gastos_exterior_ord">[_]</span>
+        <span name="gastos_exterior_ben" hidden>[_]</span>
+        <span name="gastos_exterior_ord_2" hidden>[x]</span> ORDENANTE ASEGURA
+        EL VALOR DEL GIRO
+      </td>
+    </tr>
+  </table>
   <table class="alt_table_class">
     <tr>
-      <th colspan="3" style="text-align: center" name="declaracion_cambio_a">
-        * FORMA DE PAGO POR PARTE DE BANCOLOMBIA
+      <th colspan="3" name="declaracion_cambio_a" style="padding: 0px">
+        <p
+          style="
+            background: black;
+            margin: 0px;
+            color: white;
+            text-align: center;
+          "
+        >
+          * FORMA DE PAGO POR PARTE DE BANCOLOMBIA
+        </p>
       </th>
-      <th
-        colspan="3"
-        style="text-align: center"
-        name="declaracion_cambio_b"
-        hidden
-      >
-        * FORMA DE PAGO DEL CLIENTE
+      <th colspan="3" style="padding: 0px" name="declaracion_cambio_b" hidden>
+        <p
+          style="
+            background: black;
+            margin: 0px;
+            color: white;
+            text-align: center;
+          "
+        >
+          * FORMA DE PAGO DEL CLIENTE
+        </p>
+      </th>
+      <th colspan="3" style="padding: 0px" name="declaracion_cambio_g" hidden>
+        <p
+          style="
+            background: black;
+            margin: 0px;
+            color: white;
+            text-align: center;
+          "
+        >
+          * FORMA DE PAGO DEL CLIENTE
+        </p>
       </th>
     </tr>
     <tr>
@@ -411,11 +578,11 @@
       <td><span name="valor_pagado_2">_________</span></td>
     </tr>
     <tr>
-      <td rowspan="2">
+      <td>
         El pago se está enviando a un tercero, dferente al vendedor de la
         mercancia?
       </td>
-      <td rowspan="2">
+      <td>
         SI <span name="envio_diferente_n" hidden>[_]</span>
         <span name="envio_diferente_s">[x]</span>
         <br />
@@ -426,6 +593,13 @@
       <td><span name="valor_pagado_3">_________</span></td>
     </tr>
     <tr>
+      <td name="envio_diferente_s">
+        El tercero quien recibe las divisas tiene calidad de:
+      </td>
+      <td name="envio_diferente_s">
+        <span name="tercero_divisas">_________</span>
+      </td>
+      <td name="envio_diferente_n" colspan="2" hidden></td>
       <td><span name="num_doc_aduan_4">_________</span></td>
       <td><span name="valor_pagado_4">_________</span></td>
     </tr>

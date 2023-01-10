@@ -721,7 +721,7 @@
     signatureProfile: [
         {
             email: 'correo_propietario',
-            phone: 'phone_propietario',
+            phone: 'tel_propietario',
             identification: 'cedula_propietario|cedulae_propietario|pasaporte_propietario',
             name: 'nombre_propietario',
             type: 'propietario'

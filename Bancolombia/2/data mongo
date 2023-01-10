@@ -156,7 +156,13 @@
             name: 'dv',
             type: 'text',
             help: 'dv',
-            description: 'Ingrese el DV'
+            description: 'Ingrese el DV',
+            prereq: [
+                {
+                    k: 'tipo_id',
+                    v: 'nit'
+                }
+            ]
         },
         {
             name: 'correo',
@@ -178,8 +184,8 @@
         },
         {
             name: 'tasa',
-            type: 'text',
-            description: 'Ingrese la tasa'
+            type: 'number',
+            description: 'Ingrese el porcentaje de tasa'
         },
         {
             name: 'nombre_beneficiario',
@@ -190,7 +196,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -235,7 +249,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -247,7 +269,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -259,7 +289,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -271,7 +309,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -283,7 +329,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -295,7 +349,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -307,7 +369,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -319,7 +389,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -331,7 +409,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -342,7 +428,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -354,7 +448,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -366,7 +468,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -378,7 +488,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -390,7 +508,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -402,7 +528,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -414,7 +548,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -425,7 +567,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -451,7 +601,15 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'g'
                 }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_b',
+                'declaracion_cambio_g'
             ]
         },
         {
@@ -589,24 +747,80 @@
         {
             name: 'num_cambiario_1',
             type: 'text',
-            description: 'Ingrese el primer numeral cambiario'
+            description: 'Ingrese el primer numeral cambiario',
+            prereq: [
+                {
+                    k: 'declaracion_cambio',
+                    v: 'a'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'b'
+                }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_a',
+                'declaracion_cambio_b'
+            ]
         },
         {
             name: 'valor_reint_1',
             type: 'number',
             description: 'Ingrese el primer valor reintegrado',
-            help: 'valor_reint'
+            help: 'valor_reint',
+            prereq: [
+                {
+                    k: 'declaracion_cambio',
+                    v: 'a'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'b'
+                }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_a',
+                'declaracion_cambio_b'
+            ]
         },
         {
             name: 'num_cambiario_2',
             type: 'text',
-            description: 'Ingrese el segundo numeral cambiario'
+            description: 'Ingrese el segundo numeral cambiario',
+            prereq: [
+                {
+                    k: 'declaracion_cambio',
+                    v: 'a'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'b'
+                }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_a',
+                'declaracion_cambio_b'
+            ]
         },
         {
             name: 'valor_reint_2',
             type: 'number',
             description: 'Ingrese el segundo valor reintegrado',
-            help: 'valor_reint'
+            help: 'valor_reint',
+            prereq: [
+                {
+                    k: 'declaracion_cambio',
+                    v: 'a'
+                },
+                {
+                    k: 'declaracion_cambio',
+                    v: 'b'
+                }
+            ],
+            prereqOptionals: [
+                'declaracion_cambio_a',
+                'declaracion_cambio_b'
+            ]
         },
         {
             name: 'num_cambiario_3',
@@ -673,6 +887,39 @@
                 {
                     k: 'declaracion_cambio',
                     v: 'b'
+                }
+            ]
+        },
+        {
+            name: 'tercero_divisas',
+            type: 'select',
+            description: 'El tercero quien recibe las divisas tiene calidad de',
+            value: 'ac',
+            options: [
+                {
+                    name: 'Acreedor',
+                    label: 'Acreedor',
+                    value: 'ac'
+                },
+                {
+                    name: 'Cesionario',
+                    label: 'Cesionario',
+                    value: 'ces'
+                },
+                {
+                    name: 'Centros o personas que adelanten la gestión de recaudo y/o pago internacional',
+                    label: 'Centros o personas que adelanten la gestión de recaudo y/o pago internacional',
+                    value: 'cen'
+                }
+            ],
+            prereq: [
+                {
+                    k: 'declaracion_cambio',
+                    v: 'b'
+                },
+                {
+                    k: 'envio_diferente',
+                    v: 's'
                 }
             ]
         },
@@ -839,6 +1086,6 @@
         }
     ],
     name: 'Bancolombia',
-    build: 2,
+    build: 3,
     price: 5000
 }
